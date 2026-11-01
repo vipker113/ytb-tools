@@ -36,6 +36,7 @@ yarn-error.log*
 # local persistent database (contains personal API keys & channel snapshots)
 /data/
 /public/generated-videos/
+/mac-setup-package/
 
 # vercel
 .vercel
