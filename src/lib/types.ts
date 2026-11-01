@@ -203,37 +203,6 @@ export interface GrowthSprintPlan {
   items: GrowthPlanItem[];
 }
 
-export interface AiUsageLogEntry {
-  id: string;
-  timestamp: string;
-  provider: "vertex" | "gemini_free" | "mac_pipeline" | "manual_sync";
-  model: string;
-  feature: string;
-  promptTokens: number;
-  outputTokens: number;
-  thoughtTokens: number;
-  totalTokens: number;
-  imageCount?: number;
-  costUsd: number;
-}
-
-export interface AiUsageSummary {
-  creditLimitUsd: number;
-  trackedVertexCostUsd: number;
-  manualOffsetUsd: number;
-  totalUsedUsd: number;
-  remainingUsd: number;
-  totalPromptTokens: number;
-  totalOutputTokens: number;
-  totalThoughtTokens: number;
-  totalTokens: number;
-  totalImagesGenerated: number;
-  totalTtsCalls: number;
-  totalCalls: number;
-  recentCalls: AiUsageLogEntry[];
-  lastUpdatedAt: string;
-}
-
 export interface StoreData {
   activeChannelId: string;
   myChannels: TrackedChannel[];
@@ -246,7 +215,6 @@ export interface StoreData {
   resolvedVideoIds?: string[];
   autopilotLogs?: AutopilotLogEntry[];
   youtubeOAuth?: YoutubeOAuthState | null;
-  aiUsage?: AiUsageSummary;
   smartLinkClicks: Record<string, number>;
   settings: AppSettings;
 }

@@ -136,18 +136,6 @@ export async function generateNextGrowthSprint(
   store: StoreData,
   options?: {
     fastMode?: boolean;
-    vertexAuth?: { token: string; projectId: string } | null;
-    onUsage?: (info: {
-      provider: "vertex" | "gemini_free";
-      model: string;
-      usageMetadata?: {
-        promptTokenCount?: number;
-        candidatesTokenCount?: number;
-        thoughtsTokenCount?: number;
-        totalTokenCount?: number;
-      };
-      promptChars: number;
-    }) => Promise<void> | void;
   }
 ): Promise<GrowthSprintPlan> {
   const channel =
@@ -319,7 +307,7 @@ export async function generateNextGrowthSprint(
   let aiSummary = `Sprint #${sprintNumber}: Tập trung nhân bản 2 chủ đề thắng lớn nhất kênh (>1.200 views) thành chuỗi Phần 2 để gom khán giả cũ bấm Subscribe, kết hợp 3 chủ đề Outlier 6x–23x từ đối thủ và cố định giờ đăng vàng 17:00–18:30 Giờ VN.`;
   let finalItems = fallbackItems;
 
-  if (geminiKey || options?.vertexAuth) {
+  if (geminiKey) {
     const prompt = `You are an autonomous YouTube Growth Autopilot planning Sprint #${sprintNumber} for the US English Science Shorts channel "${channelTitle}" (${handle}).
 Current stats: ${subs} subscribers, ${videoCount} videos. Target milestone for this 5-day sprint: ${targetSubsGoal} subscribers.
 Proven best upload window in Vietnam time: "${timing.bestWindow}".
@@ -361,115 +349,15 @@ Return pure JSON matching:
   ]
 }`;
 
-    let plannedViaVertex = false;
-    if (options?.vertexAuth) {
-      const vModels = options?.fastMode
-        ? ["gemini-3.6-flash", "gemini-3.8-flash"]
-        : ["gemini-4-argon", "gemini-3.8-flash", "gemini-3.6-flash"];
-      for (const vModel of vModels) {
-        try {
-          const vGenConfig: Record<string, unknown> = {
-            temperature: 0.72,
-            responseMimeType: "application/json",
-          };
-          if (vModel.includes("3.8")) {
-            vGenConfig.thinkingConfig = { thinkingBudget: 256 };
-          }
-          const vUrl = `https://aiplatform.googleapis.com/v1beta1/projects/${options.vertexAuth.projectId}/locations/global/publishers/google/models/${vModel}:generateContent`;
-          const res = await fetch(vUrl, {
-            method: "POST",
-            headers: {
-              Authorization: `Bearer ${options.vertexAuth.token}`,
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              contents: [{ role: "user", parts: [{ text: prompt }] }],
-              generationConfig: vGenConfig,
-            }),
-            cache: "no-store",
-          });
-          if (!res.ok) continue;
-          const json = await res.json();
-          await options.onUsage?.({
-            provider: "vertex",
-            model: vModel,
-            usageMetadata: json?.usageMetadata,
-            promptChars: prompt.length,
-          });
-          const parts: Array<{ text?: string; thought?: boolean }> =
-            json?.candidates?.[0]?.content?.parts || [];
-          const answerPart =
-            parts.find((p) => !p.thought && p.text) || parts[parts.length - 1];
-          const rawText = answerPart?.text;
-          if (!rawText) continue;
-          const cleaned = rawText
-            .replace(/^```json\s*/i, "")
-            .replace(/```\s*$/, "");
-          const parsed = JSON.parse(cleaned) as {
-            strategicSummary?: string;
-            items?: Array<Partial<GrowthPlanItem>>;
-          };
-          if (Array.isArray(parsed.items) && parsed.items.length >= 3) {
-            aiSummary = parsed.strategicSummary || aiSummary;
-            finalItems = parsed.items.map((it, idx) => {
-              const cleanTitle = (
-                it.title ||
-                fallbackItems[idx]?.title ||
-                "Science Short"
-              )
-                .replace(/#\S+/g, "")
-                .trim();
-              const cleanHook = it.hook3s || fallbackItems[idx]?.hook3s || "";
-              return {
-                id: `plan-${sprintNumber}-${idx + 1}-${Date.now()}`,
-                dayLabel: it.dayLabel || `Ngày ${idx + 1}`,
-                scheduledDate: addDaysIso(now, idx),
-                vnPublishWindow: it.vnPublishWindow || "17:00 – 18:15 Giờ VN",
-                strategyType:
-                  it.strategyType === "competitor_outlier" ||
-                  it.strategyType === "channel_optimization"
-                    ? it.strategyType
-                    : "sequel_winner",
-                title: cleanTitle,
-                hook3s: cleanHook,
-                voiceoverScript:
-                  it.voiceoverScript ||
-                  fallbackItems[idx]?.voiceoverScript ||
-                  "",
-                description:
-                  it.description ||
-                  buildDefaultDescription(cleanTitle, cleanHook, handle),
-                tags:
-                  Array.isArray(it.tags) && it.tags.length > 0
-                    ? it.tags
-                    : buildDefaultTags(cleanTitle),
-                pinnedComment:
-                  it.pinnedComment || fallbackItems[idx]?.pinnedComment || "",
-                whySelected:
-                  it.whySelected || fallbackItems[idx]?.whySelected || "",
-                expectedGoal: it.expectedGoal || "+10–20 Subscribers thật",
-                status: "pending",
-              };
-            });
-            plannedViaVertex = true;
-            break;
-          }
-        } catch {
-          // try next model
-        }
-      }
-    }
-
-    const models = plannedViaVertex || !geminiKey
-      ? []
-      : options?.fastMode
+    const preferred =
+      store.settings.geminiModel &&
+      !store.settings.geminiModel.includes("argon")
+        ? store.settings.geminiModel
+        : "gemini-3.8-flash";
+    const models = options?.fastMode
       ? ["gemini-3.6-flash", "gemini-3.5-flash"]
       : Array.from(
-          new Set([
-            store.settings.geminiModel || "gemini-3.8-flash",
-            "gemini-3.6-flash",
-            "gemini-3.5-flash",
-          ])
+          new Set([preferred, "gemini-3.6-flash", "gemini-3.5-flash"])
         );
     for (const model of models) {
       try {
@@ -497,12 +385,6 @@ Return pure JSON matching:
         );
         if (!res.ok) continue;
         const json = await res.json();
-        await options?.onUsage?.({
-          provider: "gemini_free",
-          model,
-          usageMetadata: json?.usageMetadata,
-          promptChars: prompt.length,
-        });
         const parts: Array<{ text?: string; thought?: boolean }> =
           json?.candidates?.[0]?.content?.parts || [];
         const answerPart =

@@ -21,7 +21,6 @@ import type {
   StoreData,
   VideoItem,
 } from "@/lib/types";
-import { CreditMeterWidget } from "./CreditMeterWidget";
 import { DailyCockpitTab } from "./DailyCockpitTab";
 import { GrowthEngineTab } from "./GrowthEngineTab";
 import { IdeaBankTab } from "./IdeaBankTab";
@@ -126,25 +125,6 @@ export function DashboardApp() {
       .catch(() => {})
       .finally(() => setLoaded(true));
   }, [runAutopilot, showToast]);
-
-  useEffect(() => {
-    const syncUsage = () => {
-      fetch("/api/usage")
-        .then((r) => r.json())
-        .then((j) => {
-          if (j?.ok && j.aiUsage) {
-            setStore((prev) => ({ ...prev, aiUsage: j.aiUsage }));
-          }
-        })
-        .catch(() => {});
-    };
-    const timer = setInterval(syncUsage, 15_000);
-    window.addEventListener("focus", syncUsage);
-    return () => {
-      clearInterval(timer);
-      window.removeEventListener("focus", syncUsage);
-    };
-  }, []);
 
   const postStateAction = async (payload: Record<string, unknown>) => {
     const res = await fetch("/api/state", {
@@ -441,13 +421,10 @@ export function DashboardApp() {
           </div>
 
           <div className="flex items-center gap-2.5">
-            <CreditMeterWidget
-              usage={store.aiUsage}
-              onCalibrated={(updatedUsage, message) => {
-                setStore((prev) => ({ ...prev, aiUsage: updatedUsage }));
-                if (message) showToast(message);
-              }}
-            />
+            <span className="hidden md:inline-flex items-center gap-1.5 rounded-xl border border-emerald-500/30 bg-emerald-950/20 px-3 py-2 text-xs font-semibold text-emerald-300">
+              <span className="h-2 w-2 rounded-full bg-emerald-400" />
+              Chế độ 0₫ (Chỉ dùng API miễn phí)
+            </span>
 
             <button
               onClick={() => {
@@ -665,62 +642,6 @@ export function DashboardApp() {
                         err instanceof Error
                           ? err.message
                           : "Không thể upload video"
-                      );
-                    }
-                  }}
-                  onGenerateVideoMp4={async (params) => {
-                    try {
-                      const res = await fetch("/api/video/generate", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify(params),
-                      });
-                      const json = await res.json();
-                      if (!res.ok)
-                        throw new Error(
-                          json.error || "Lỗi dựng video .MP4 tự động"
-                        );
-                      if (json.store) {
-                        setStore(json.store);
-                      }
-                      showToast(
-                        json.message || "Đã dựng xong video .MP4 chuẩn 9:16!"
-                      );
-                    } catch (err) {
-                      showToast(
-                        err instanceof Error
-                          ? err.message
-                          : "Không thể dựng video .MP4"
-                      );
-                    }
-                  }}
-                  onPublishGeneratedMp4={async (params) => {
-                    try {
-                      const res = await fetch("/api/video/generate", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({
-                          action: "publishGenerated",
-                          ...params,
-                        }),
-                      });
-                      const json = await res.json();
-                      if (!res.ok)
-                        throw new Error(
-                          json.error || "Lỗi đẩy video .MP4 lên YouTube Studio"
-                        );
-                      if (json.store) {
-                        setStore(json.store);
-                      }
-                      showToast(
-                        json.message ||
-                          "Đã đẩy video lên YouTube Studio thành công!"
-                      );
-                    } catch (err) {
-                      showToast(
-                        err instanceof Error
-                          ? err.message
-                          : "Không thể đẩy video lên YouTube Studio"
                       );
                     }
                   }}

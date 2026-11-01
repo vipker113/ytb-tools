@@ -1,9 +1,4 @@
 import {
-  getVertexAuthServer,
-  readAiUsageSummary,
-  recordAiUsageCall,
-} from "@/lib/ai-usage";
-import {
   generateAiSeoOptimization,
   runSeoAndConversionAudit,
 } from "@/lib/seo-analyzer";
@@ -21,7 +16,6 @@ export async function POST(request: Request) {
 
     if (body.action === "aiOptimize") {
       const geminiKey = getEffectiveGeminiKey(store);
-      const vertexAuth = await getVertexAuthServer();
       const result = await generateAiSeoOptimization({
         topicOrTitle: String(body.topicOrTitle || ""),
         targetKeyword: String(body.targetKeyword || ""),
@@ -29,18 +23,8 @@ export async function POST(request: Request) {
         niche: String(body.niche || "Sáng tạo nội dung"),
         geminiApiKey: geminiKey,
         preferredModel: store.settings.geminiModel || "gemini-3.8-flash",
-        vertexAuth,
       });
-      const aiUsage = result.usageReport
-        ? await recordAiUsageCall({
-            provider: result.usageReport.provider,
-            model: result.usageReport.model,
-            feature: "Tối ưu Gói SEO AI",
-            usageMetadata: result.usageReport.usageMetadata,
-            fallbackPromptChars: result.usageReport.promptChars,
-          })
-        : await readAiUsageSummary();
-      return Response.json({ ...result, aiUsage });
+      return Response.json(result);
     }
 
     if (body.videoUrl) {

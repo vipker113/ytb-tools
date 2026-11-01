@@ -176,16 +176,13 @@ export function GrowthEngineTab({
             className="rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-3 text-xs sm:text-sm font-medium text-zinc-200 focus:border-red-500 focus:outline-none"
           >
             <option value="gemini-3.8-flash">
-              Gemini 3.8 Flash (Suy luận sâu ~45-60s)
+              Gemini 3.8 Flash (Miễn phí 0₫ — Suy luận sâu)
             </option>
             <option value="gemini-3.6-flash">
-              Gemini 3.6 Flash (Siêu tốc ~2s)
+              Gemini 3.6 Flash (Miễn phí 0₫ — Siêu tốc ~2s)
             </option>
             <option value="gemini-3.5-flash">
-              Gemini 3.5 Flash (Nhanh ~2.5s)
-            </option>
-            <option value="gemini-4-argon">
-              Gemini 4 Argon (Flagship)
+              Gemini 3.5 Flash (Miễn phí 0₫ — Ổn định)
             </option>
           </select>
 

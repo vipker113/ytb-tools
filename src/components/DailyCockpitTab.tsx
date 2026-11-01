@@ -7,10 +7,8 @@ import {
   ClipboardList,
   Clock,
   Copy,
-  Download,
   ExternalLink,
   FastForward,
-  Film,
   History,
   KeyRound,
   ListChecks,
@@ -73,17 +71,6 @@ interface DailyCockpitTabProps {
     tags: string[];
     pinnedComment: string;
   }) => Promise<void>;
-  onGenerateVideoMp4: (params: {
-    episodeId: string;
-    voiceName: string;
-    autoUploadToYoutube: boolean;
-    publishMode: "schedule_golden" | "public_now" | "private_draft";
-  }) => Promise<void>;
-  onPublishGeneratedMp4: (params: {
-    episodeId: string;
-    videoFileName: string;
-    publishMode: "schedule_golden" | "public_now" | "private_draft";
-  }) => Promise<void>;
   onSendToScriptBuilder: (topic: string, sourceTitle?: string) => void;
   onUpdateMilestone: (channelId: string, milestone: number) => Promise<void>;
   onAuditVideoInSeo: (video: VideoItem) => void;
@@ -111,8 +98,6 @@ export function DailyCockpitTab({
   onRescueSingleStudio,
   onRescueAllStudio,
   onUploadShortDirect,
-  onGenerateVideoMp4,
-  onPublishGeneratedMp4,
   onSendToScriptBuilder,
   onUpdateMilestone,
   onAuditVideoInSeo,
@@ -135,9 +120,6 @@ export function DailyCockpitTab({
   const [uploadingVideo, setUploadingVideo] = useState(false);
   const [updatingVideoId, setUpdatingVideoId] = useState<string | null>(null);
   const [updatingAllVideos, setUpdatingAllVideos] = useState(false);
-  const [selectedTtsVoice, setSelectedTtsVoice] = useState("Puck");
-  const [generatingMp4, setGeneratingMp4] = useState(false);
-  const [publishingGenerated, setPublishingGenerated] = useState(false);
 
   const isStudioConnected = Boolean(youtubeOAuth?.refreshToken);
 
@@ -558,132 +540,20 @@ export function DailyCockpitTab({
                   </div>
                 </div>
 
-                {/* Step 1 Automated MP4 Video Engine + Manual Backup */}
+                {/* Step 1 Mac Pipeline Bridge & Zero-Cost Actions */}
                 <div className="space-y-3 pt-3 border-t border-zinc-800/80">
-                  <div className="rounded-xl border border-red-500/40 bg-gradient-to-br from-red-950/35 via-zinc-950 to-zinc-950 p-3.5 space-y-3">
-                    <div className="flex flex-wrap items-center justify-between gap-2">
-                      <span className="text-xs font-extrabold text-white flex items-center gap-1.5">
-                        <Film className="h-4 w-4 text-red-400" />
-                        Xưởng Tự Dựng Video .MP4 (7 Rule Vàng • 1080x1920)
+                  <div className="rounded-xl border border-zinc-800 bg-zinc-950/80 p-3.5 space-y-2">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-xs font-bold text-emerald-300">
+                        🍎 Dựng Video trên Mac (0₫ • Giữ 100% chất lượng gốc)
                       </span>
-                      <select
-                        value={selectedTtsVoice}
-                        onChange={(e) => setSelectedTtsVoice(e.target.value)}
-                        className="rounded-lg border border-zinc-700 bg-zinc-900 px-2.5 py-1 text-[11px] font-semibold text-zinc-200 focus:outline-none"
-                      >
-                        <option value="Puck">🎙️ Giọng Mỹ: Puck (Sôi nổi)</option>
-                        <option value="Charon">🎙️ Giọng Mỹ: Charon (Trầm ấm)</option>
-                        <option value="Fenrir">🎙️ Giọng Mỹ: Fenrir (Mạnh mẽ)</option>
-                        <option value="Aoede">🎙️ Giọng Mỹ: Aoede (Nữ tự nhiên)</option>
-                      </select>
+                      <span className="font-mono text-[10px] text-zinc-500">
+                        GET /api/pipeline
+                      </span>
                     </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      <button
-                        onClick={async () => {
-                          setGeneratingMp4(true);
-                          try {
-                            await onGenerateVideoMp4({
-                              episodeId: todayItem.id,
-                              voiceName: selectedTtsVoice,
-                              autoUploadToYoutube: false,
-                              publishMode,
-                            });
-                          } finally {
-                            setGeneratingMp4(false);
-                          }
-                        }}
-                        disabled={generatingMp4}
-                        className="inline-flex items-center justify-center gap-2 rounded-xl bg-red-600 hover:bg-red-500 disabled:opacity-55 px-3.5 py-2.5 text-xs font-extrabold text-white shadow-lg shadow-red-600/25 transition cursor-pointer"
-                      >
-                        <Sparkles
-                          className={`h-4 w-4 ${
-                            generatingMp4 ? "animate-spin" : ""
-                          }`}
-                        />
-                        {generatingMp4
-                          ? "Đang dựng 6 cảnh 3D + Giọng Mỹ (~40s)..."
-                          : "🎬 Tự Tạo Video .MP4 (Xem Thử Trước)"}
-                      </button>
-
-                      {isStudioConnected && (
-                        <button
-                          onClick={async () => {
-                            setGeneratingMp4(true);
-                            try {
-                              await onGenerateVideoMp4({
-                                episodeId: todayItem.id,
-                                voiceName: selectedTtsVoice,
-                                autoUploadToYoutube: true,
-                                publishMode,
-                              });
-                            } finally {
-                              setGeneratingMp4(false);
-                            }
-                          }}
-                          disabled={generatingMp4}
-                          className="inline-flex items-center justify-center gap-2 rounded-xl bg-amber-500 hover:bg-amber-400 disabled:opacity-55 px-3.5 py-2.5 text-xs font-extrabold text-zinc-950 shadow-lg shadow-amber-500/20 transition cursor-pointer"
-                        >
-                          <Zap className="h-4 w-4" />
-                          {generatingMp4
-                            ? "Đang dựng & Upload tự động..."
-                            : "⚡ Tạo .MP4 & Đăng Hẹn 17:15 VN Luôn"}
-                        </button>
-                      )}
-                    </div>
-
-                    {/* Built-in 9:16 Video Player when MP4 is generated */}
-                    {todayItem.generatedVideoUrl && (
-                      <div className="rounded-xl border border-emerald-500/40 bg-zinc-950 p-3 space-y-2.5">
-                        <div className="flex items-center justify-between gap-2">
-                          <span className="text-xs font-bold text-emerald-300">
-                            ✅ Đã xuất xong Video .MP4 chuẩn Shorts 9:16!
-                          </span>
-                          <a
-                            href={todayItem.generatedVideoUrl}
-                            download={
-                              todayItem.generatedVideoFileName || "short.mp4"
-                            }
-                            className="inline-flex items-center gap-1 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 px-2.5 py-1 text-[11px] font-semibold text-zinc-200"
-                          >
-                            <Download className="h-3 w-3" />
-                            Tải .MP4
-                          </a>
-                        </div>
-
-                        <video
-                          key={todayItem.generatedVideoUrl}
-                          src={todayItem.generatedVideoUrl}
-                          controls
-                          className="mx-auto max-h-80 rounded-xl border border-zinc-800 bg-black"
-                        />
-
-                        {isStudioConnected && todayItem.generatedVideoFileName && (
-                          <button
-                            onClick={async () => {
-                              setPublishingGenerated(true);
-                              try {
-                                await onPublishGeneratedMp4({
-                                  episodeId: todayItem.id,
-                                  videoFileName:
-                                    todayItem.generatedVideoFileName!,
-                                  publishMode,
-                                });
-                              } finally {
-                                setPublishingGenerated(false);
-                              }
-                            }}
-                            disabled={publishingGenerated}
-                            className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-55 px-4 py-2.5 text-xs font-extrabold text-white cursor-pointer"
-                          >
-                            <Rocket className="h-4 w-4" />
-                            {publishingGenerated
-                              ? "Đang Upload lên kênh Proof of Wonder..."
-                              : "🚀 Duyệt Video Này! Đẩy Lên YouTube Hẹn 17:15 VN"}
-                          </button>
-                        )}
-                      </div>
-                    )}
+                    <p className="text-[11px] text-zinc-400 leading-relaxed">
+                      Đã tắt hoàn toàn tạo video bằng Vertex trả phí. Kịch bản tạo video trên máy Mac của bạn có thể lấy tự động đề tài hôm nay qua <code className="text-zinc-200">GET /api/pipeline</code> rồi đẩy file <code className="text-zinc-200">.mp4</code> sang Bước 2 để hẹn lịch 17:15 VN (miễn phí 0₫).
+                    </p>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -698,7 +568,7 @@ export function DailyCockpitTab({
                       )}
                       {copiedId === "step1-vo"
                         ? "Đã chép Lời đọc!"
-                        : "Chép Lời Đọc Thủ Công"}
+                        : "Chép Lời Đọc Voiceover"}
                     </button>
 
                     <button
@@ -708,7 +578,7 @@ export function DailyCockpitTab({
                       className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-zinc-800 bg-zinc-950 hover:bg-zinc-900 px-3 py-2 text-[11px] font-semibold text-zinc-300 cursor-pointer"
                     >
                       <Wand2 className="h-3.5 w-3.5 text-amber-400" />
-                      Mở Chia Cảnh Chi Tiết
+                      Mở Chia Cảnh Chi Tiết (0₫)
                     </button>
                   </div>
                 </div>

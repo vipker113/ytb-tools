@@ -225,16 +225,13 @@ export function SettingsTab({
                 className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2.5 text-sm text-zinc-200 focus:outline-none"
               >
                 <option value="gemini-3.8-flash">
-                  Gemini 3.8 Flash (Đời mới nhất — Suy luận sâu ~45-60s)
+                  Gemini 3.8 Flash (Miễn phí 0₫ — Suy luận sâu ~45-60s)
                 </option>
                 <option value="gemini-3.6-flash">
-                  Gemini 3.6 Flash (Cân bằng — Siêu tốc ~2s)
+                  Gemini 3.6 Flash (Miễn phí 0₫ — Siêu tốc ~2s)
                 </option>
                 <option value="gemini-3.5-flash">
-                  Gemini 3.5 Flash (Nhanh & Ổn định ~2.5s)
-                </option>
-                <option value="gemini-4-argon">
-                  Gemini 4 Argon (Flagship cao cấp)
+                  Gemini 3.5 Flash (Miễn phí 0₫ — Ổn định ~2.5s)
                 </option>
               </select>
             </div>

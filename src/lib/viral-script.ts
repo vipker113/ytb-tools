@@ -130,22 +130,10 @@ export async function generateViralShortBlueprint(params: {
   channelHandle: string;
   geminiApiKey: string;
   preferredModel?: string;
-  vertexAuth?: { token: string; projectId: string } | null;
 }): Promise<{
   blueprint: ViralShortBlueprint;
   usedAi: boolean;
   modelUsed: string;
-  usageReport?: {
-    provider: "vertex" | "gemini_free";
-    model: string;
-    usageMetadata?: {
-      promptTokenCount?: number;
-      candidatesTokenCount?: number;
-      thoughtsTokenCount?: number;
-      totalTokenCount?: number;
-    };
-    promptChars: number;
-  };
 }> {
   const handle = params.channelHandle.startsWith("@")
     ? params.channelHandle
@@ -211,7 +199,7 @@ export async function generateViralShortBlueprint(params: {
       "Kết hợp khung thời lượng vàng 44 giây + Mở đầu nghịch lý trực quan + Kết thúc nối vòng lặp (Infinite Loop) giúp vượt ngưỡng test 1.200 views lên 10.000–100.000+ views trên US Shorts Feed.",
   };
 
-  if (!params.geminiApiKey && !params.vertexAuth) {
+  if (!params.geminiApiKey) {
     return { blueprint: fallback, usedAi: false, modelUsed: "template" };
   }
 
@@ -250,85 +238,13 @@ Return pure JSON matching this exact schema:
   "whyItConvertsSubs": "Giải thích bằng tiếng Việt lý do tâm lý học khiến chủ đề & kịch bản này kéo Subscribers thật mạnh trên thị trường Mỹ"
 }`;
 
-  if (params.vertexAuth) {
-    const vModels = Array.from(
-      new Set([
-        params.preferredModel || "gemini-4-argon",
-        "gemini-4-argon",
-        "gemini-3.8-flash",
-      ])
-    );
-    for (const vModel of vModels) {
-      try {
-        const vGenConfig: Record<string, unknown> = {
-          temperature: 0.75,
-          responseMimeType: "application/json",
-        };
-        if (vModel.includes("3.8")) {
-          vGenConfig.thinkingConfig = { thinkingBudget: 256 };
-        }
-        const vUrl = `https://aiplatform.googleapis.com/v1beta1/projects/${params.vertexAuth.projectId}/locations/global/publishers/google/models/${vModel}:generateContent`;
-        const res = await fetch(vUrl, {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${params.vertexAuth.token}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            contents: [{ role: "user", parts: [{ text: prompt }] }],
-            generationConfig: vGenConfig,
-          }),
-          cache: "no-store",
-        });
-        if (!res.ok) continue;
-        const json = await res.json();
-        const parts: Array<{ text?: string; thought?: boolean }> =
-          json?.candidates?.[0]?.content?.parts || [];
-        const answerPart =
-          parts.find((p) => !p.thought && p.text) || parts[parts.length - 1];
-        const rawText = answerPart?.text;
-        if (!rawText) continue;
-        const cleaned = rawText
-          .replace(/^```json\s*/i, "")
-          .replace(/```\s*$/, "");
-        const parsed = JSON.parse(cleaned) as Partial<ViralShortBlueprint>;
-        if (parsed.winningTitles && parsed.scenes && parsed.first3sHook) {
-          return {
-            usedAi: true,
-            modelUsed: `vertex/${vModel}`,
-            usageReport: {
-              provider: "vertex",
-              model: vModel,
-              usageMetadata: json?.usageMetadata,
-              promptChars: prompt.length,
-            },
-            blueprint: {
-              topic: parsed.topic || topic,
-              winningTitles: parsed.winningTitles,
-              first3sHook: parsed.first3sHook,
-              scenes: parsed.scenes,
-              subTriggerLine: parsed.subTriggerLine || fallback.subTriggerLine,
-              infiniteLoopBridge:
-                parsed.infiniteLoopBridge || fallback.infiniteLoopBridge,
-              pinnedDebateComment:
-                parsed.pinnedDebateComment || fallback.pinnedDebateComment,
-              readyDescription:
-                parsed.readyDescription || fallback.readyDescription,
-              tags: Array.isArray(parsed.tags) ? parsed.tags : fallback.tags,
-              whyItConvertsSubs:
-                parsed.whyItConvertsSubs || fallback.whyItConvertsSubs,
-            },
-          };
-        }
-      } catch {
-        // try next model
-      }
-    }
-  }
-
+  const cleanPreferred =
+    params.preferredModel && !params.preferredModel.includes("argon")
+      ? params.preferredModel
+      : "gemini-3.8-flash";
   const models = Array.from(
     new Set([
-      params.preferredModel || "gemini-3.8-flash",
+      cleanPreferred,
       "gemini-3.8-flash",
       "gemini-3.6-flash",
       "gemini-3.5-flash",
@@ -372,12 +288,6 @@ Return pure JSON matching this exact schema:
         return {
           usedAi: true,
           modelUsed: model,
-          usageReport: {
-            provider: "gemini_free",
-            model,
-            usageMetadata: json?.usageMetadata,
-            promptChars: prompt.length,
-          },
           blueprint: {
             topic: parsed.topic || topic,
             winningTitles: parsed.winningTitles,

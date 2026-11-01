@@ -437,22 +437,10 @@ export async function generateAiSeoOptimization(params: {
   niche: string;
   geminiApiKey: string;
   preferredModel?: string;
-  vertexAuth?: { token: string; projectId: string } | null;
 }): Promise<{
   data: AiOptimizationResult;
   usedAi: boolean;
   modelUsed: string;
-  usageReport?: {
-    provider: "vertex" | "gemini_free";
-    model: string;
-    usageMetadata?: {
-      promptTokenCount?: number;
-      candidatesTokenCount?: number;
-      thoughtsTokenCount?: number;
-      totalTokenCount?: number;
-    };
-    promptChars: number;
-  };
 }> {
   const handle = (params.channelHandle || "@KenhCuaBan").startsWith("@")
     ? params.channelHandle
@@ -511,7 +499,7 @@ export async function generateAiSeoOptimization(params: {
           "Đừng xin Subscribe ở 15 giây đầu tiên! Hãy trao ngay 1 mẹo cực đắt giá ở phút thứ 2–3, ngay sau câu kết luận mẹo đó hãy nói: 'Nếu mẹo nhỏ vừa rồi giúp bạn tiết kiệm thời gian, hãy bấm Đăng ký kênh vì mỗi tuần mình đều chia sẻ 1 quy trình thực chiến như vậy.' — Tỷ lệ bấm Sub thực tế tăng 2.4 lần!",
       };
 
-  if (!params.geminiApiKey && !params.vertexAuth) {
+  if (!params.geminiApiKey) {
     return { data: fallback, usedAi: false, modelUsed: "template" };
   }
 
@@ -536,80 +524,13 @@ Trả về ĐÚNG định dạng JSON thuần (không bọc markdown) theo cấu
   "subTriggerTip": "1 lời khuyên cụ thể bằng tiếng Việt cho video này để tăng tỷ lệ người xem bấm Subscribe thật"
 }`;
 
-  if (params.vertexAuth) {
-    const vModels = Array.from(
-      new Set([
-        params.preferredModel || "gemini-4-argon",
-        "gemini-4-argon",
-        "gemini-3.8-flash",
-      ])
-    );
-    for (const vModel of vModels) {
-      try {
-        const vGenConfig: Record<string, unknown> = {
-          temperature: 0.7,
-          responseMimeType: "application/json",
-        };
-        if (vModel.includes("3.8")) {
-          vGenConfig.thinkingConfig = { thinkingBudget: 256 };
-        }
-        const vUrl = `https://aiplatform.googleapis.com/v1beta1/projects/${params.vertexAuth.projectId}/locations/global/publishers/google/models/${vModel}:generateContent`;
-        const res = await fetch(vUrl, {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${params.vertexAuth.token}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            contents: [{ role: "user", parts: [{ text: prompt }] }],
-            generationConfig: vGenConfig,
-          }),
-          cache: "no-store",
-        });
-        if (!res.ok) continue;
-        const json = await res.json();
-        const parts: Array<{ text?: string; thought?: boolean }> =
-          json?.candidates?.[0]?.content?.parts || [];
-        const answerPart =
-          parts.find((p) => !p.thought && p.text) || parts[parts.length - 1];
-        const rawText = answerPart?.text;
-        if (!rawText) continue;
-        const cleaned = rawText
-          .replace(/^```json\s*/i, "")
-          .replace(/```\s*$/, "");
-        const parsed = JSON.parse(cleaned) as Partial<AiOptimizationResult>;
-        return {
-          usedAi: true,
-          modelUsed: `vertex/${vModel}`,
-          usageReport: {
-            provider: "vertex",
-            model: vModel,
-            usageMetadata: json?.usageMetadata,
-            promptChars: prompt.length,
-          },
-          data: {
-            titles:
-              Array.isArray(parsed.titles) && parsed.titles.length > 0
-                ? parsed.titles
-                : fallback.titles,
-            hookScript5s: parsed.hookScript5s || fallback.hookScript5s,
-            seoDescription: parsed.seoDescription || fallback.seoDescription,
-            tags:
-              Array.isArray(parsed.tags) && parsed.tags.length > 0
-                ? parsed.tags
-                : fallback.tags,
-            subTriggerTip: parsed.subTriggerTip || fallback.subTriggerTip,
-          },
-        };
-      } catch {
-        // fallback
-      }
-    }
-  }
-
+  const cleanPreferred =
+    params.preferredModel && !params.preferredModel.includes("argon")
+      ? params.preferredModel
+      : "gemini-3.8-flash";
   const models = Array.from(
     new Set([
-      params.preferredModel || "gemini-3.8-flash",
+      cleanPreferred,
       "gemini-3.8-flash",
       "gemini-3.6-flash",
       "gemini-3.5-flash",
@@ -652,12 +573,6 @@ Trả về ĐÚNG định dạng JSON thuần (không bọc markdown) theo cấu
       return {
         usedAi: true,
         modelUsed: model,
-        usageReport: {
-          provider: "gemini_free",
-          model,
-          usageMetadata: json?.usageMetadata,
-          promptChars: prompt.length,
-        },
         data: {
           titles:
             Array.isArray(parsed.titles) && parsed.titles.length > 0

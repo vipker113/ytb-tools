@@ -1,8 +1,3 @@
-import {
-  getVertexAuthServer,
-  readAiUsageSummary,
-  recordAiUsageCall,
-} from "@/lib/ai-usage";
 import { getEffectiveGeminiKey, readStore } from "@/lib/store";
 import {
   diagnoseExistingVideosForSubRescue,
@@ -42,7 +37,6 @@ export async function POST(request: Request) {
         ? body.model.trim()
         : store.settings.geminiModel || "gemini-3.8-flash";
 
-    const vertexAuth = await getVertexAuthServer();
     const result = await generateViralShortBlueprint({
       topic,
       sourceOutlierTitle: body.sourceOutlierTitle
@@ -52,20 +46,9 @@ export async function POST(request: Request) {
       channelHandle: activeChannel?.handle || "@proofofwonderscience",
       geminiApiKey: geminiKey,
       preferredModel,
-      vertexAuth,
     });
 
-    const aiUsage = result.usageReport
-      ? await recordAiUsageCall({
-          provider: result.usageReport.provider,
-          model: result.usageReport.model,
-          feature: "Xưởng Chia Cảnh 45s",
-          usageMetadata: result.usageReport.usageMetadata,
-          fallbackPromptChars: result.usageReport.promptChars,
-        })
-      : await readAiUsageSummary();
-
-    return Response.json({ ...result, aiUsage });
+    return Response.json(result);
   } catch (err) {
     const message =
       err instanceof Error ? err.message : "Không thể tạo kịch bản AI lúc này.";

@@ -1,4 +1,3 @@
-import { getVertexAuthServer, recordAiUsageCall } from "@/lib/ai-usage";
 import { generateNextGrowthSprint } from "@/lib/auto-planner";
 import { readStore, writeStore } from "@/lib/store";
 import type { AutopilotLogEntry, GrowthPlanItem, StoreData } from "@/lib/types";
@@ -54,19 +53,8 @@ export async function POST(request: Request) {
 
       if (allDone && store.activePlan.autoContinueEnabled) {
         store.completedSprintsCount = (store.completedSprintsCount || 0) + 1;
-        const vertexAuth = await getVertexAuthServer();
         store.activePlan = await generateNextGrowthSprint(store, {
           fastMode: Boolean(body.fastMode),
-          vertexAuth,
-          onUsage: async (u) => {
-            await recordAiUsageCall({
-              provider: u.provider,
-              model: u.model,
-              feature: `Tự động lập Sprint #${(store.completedSprintsCount || 0) + 1}`,
-              usageMetadata: u.usageMetadata,
-              fallbackPromptChars: u.promptChars,
-            });
-          },
         });
         pushLog(
           store,
@@ -85,23 +73,11 @@ export async function POST(request: Request) {
       return Response.json({ store, autoAdvanced: false });
     }
 
-    // Default or "generateNext": generate a fresh sprint plan
     if (body.incrementSprint) {
       store.completedSprintsCount = (store.completedSprintsCount || 0) + 1;
     }
-    const vertexAuth = await getVertexAuthServer();
     store.activePlan = await generateNextGrowthSprint(store, {
       fastMode: Boolean(body.fastMode),
-      vertexAuth,
-      onUsage: async (u) => {
-        await recordAiUsageCall({
-          provider: u.provider,
-          model: u.model,
-          feature: `Lập mới Sprint #${(store.completedSprintsCount || 0) + 1}`,
-          usageMetadata: u.usageMetadata,
-          fallbackPromptChars: u.promptChars,
-        });
-      },
     });
     pushLog(
       store,
