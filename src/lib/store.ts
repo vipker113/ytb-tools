@@ -1,0 +1,58 @@
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { readAiUsageSummary } from "./ai-usage";
+import { INITIAL_DEMO_STORE } from "./demo-data";
+import type { StoreData } from "./types";
+
+const DATA_DIR = path.join(process.cwd(), "data");
+const DB_PATH = path.join(DATA_DIR, "ytb-growth-db.json");
+
+export async function readStore(): Promise<StoreData> {
+  const aiUsage = await readAiUsageSummary();
+  try {
+    const raw = await readFile(DB_PATH, "utf-8");
+    const parsed = JSON.parse(raw) as StoreData;
+    return {
+      ...INITIAL_DEMO_STORE,
+      ...parsed,
+      aiUsage,
+      settings: {
+        ...INITIAL_DEMO_STORE.settings,
+        ...(parsed.settings ?? {}),
+        youtubeApiKey:
+          parsed.settings?.youtubeApiKey || process.env.YOUTUBE_API_KEY || "",
+        geminiApiKey:
+          parsed.settings?.geminiApiKey || process.env.GEMINI_API_KEY || "",
+      },
+    };
+  } catch {
+    const seeded: StoreData = {
+      ...structuredClone(INITIAL_DEMO_STORE),
+      aiUsage,
+      settings: {
+        ...INITIAL_DEMO_STORE.settings,
+        youtubeApiKey: process.env.YOUTUBE_API_KEY || "",
+        geminiApiKey: process.env.GEMINI_API_KEY || "",
+      },
+    };
+    await writeStore(seeded);
+    return seeded;
+  }
+}
+
+export async function writeStore(data: StoreData): Promise<void> {
+  await mkdir(DATA_DIR, { recursive: true });
+  const latestUsage = await readAiUsageSummary();
+  data.aiUsage = latestUsage;
+  const { aiUsage: _omitUsage, ...persisted } = data;
+  void _omitUsage;
+  await writeFile(DB_PATH, JSON.stringify(persisted, null, 2), "utf-8");
+}
+
+export function getEffectiveYoutubeKey(store: StoreData): string {
+  return (store.settings.youtubeApiKey || process.env.YOUTUBE_API_KEY || "").trim();
+}
+
+export function getEffectiveGeminiKey(store: StoreData): string {
+  return (store.settings.geminiApiKey || process.env.GEMINI_API_KEY || "").trim();
+}

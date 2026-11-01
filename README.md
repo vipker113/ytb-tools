@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SubPulse Studio — Tool Tăng Trưởng Subscribers YouTube Thật
 
-## Getting Started
+Công cụ cá nhân quản lý đa kênh YouTube, săn video **Outlier** (video đột biến lượt xem) của đối thủ, chấm điểm **SEO & Chuyển đổi Sub 100 điểm**, và tạo **Smart Deep Link** mở thẳng ứng dụng YouTube gốc.
 
-First, run the development server:
+## Tính năng chính
+
+1. **Tổng quan & Theo dõi Cột mốc Subscribers (`Overview`)**
+   - Quản lý song song nhiều kênh YouTube cá nhân của bạn.
+   - Theo dõi tiến độ cán mốc (1.000 / 10.000 / 100.000 Subs) và tốc độ tăng Sub trung bình mỗi ngày.
+   - Xếp hạng **Sub-Magnet Score** cho từng video trên kênh để biết chủ đề nào đang kéo Sub tốt nhất.
+   - Tạo nhanh link `?sub_confirmation=1`, mã QR và **Smart Deep Link** (`/go/@handle`) mở thẳng App YouTube trên iOS/Android.
+
+2. **Săn Video Outlier Đối Thủ (`Outlier Hunter`)**
+   - Quét 30 video gần nhất của bất kỳ kênh đối thủ nào chỉ tốn **3 đơn vị quota** (trên 10.000 đơn vị miễn phí/ngày của Google).
+   - Tự động tính **Outlier Score** (`Views / Trung vị kênh`) và **Views-to-Subs Ratio** để phát hiện chủ đề đang được thuật toán YouTube đẩy mạnh.
+   - Nhân bản chủ đề vào Kho Ý Tưởng chỉ với 1 cú nhấp chuột.
+
+3. **SEO Studio & Khám phá Từ khóa Mỏ Vàng (`SEO & Keywords`)**
+   - Chấm điểm 14 tiêu chí SEO & Chuyển đổi người xem thành Subscribers (thang 100 điểm).
+   - Quét Top 15 kết quả tìm kiếm thực tế để đếm số lượng kênh nhỏ (`< 15.000 Subs`) đang lọt Top.
+   - Tích hợp **Google Gemini AI** (tùy chọn) để viết 5 phương án tiêu đề CTR cao, lời mở đầu 5 giây giữ chân người xem, mô tả chuẩn Chapters và bộ thẻ Tags.
+
+4. **Kho Ý Tưởng & Checklist Kéo Sub (`Idea Bank`)**
+   - Quản lý tiến độ sản xuất (`Kho chờ` → `Kịch bản` → `Quay dựng` → `Đã đăng`) kèm 5 bước kiểm tra chuyển đổi Sub trước khi xuất bản.
+
+## Khởi chạy dự án
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Sau đó mở trình duyệt tại: **http://localhost:3000**
