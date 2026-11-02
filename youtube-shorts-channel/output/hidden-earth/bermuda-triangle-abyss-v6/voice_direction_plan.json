@@ -1,0 +1,264 @@
+{
+  "slug": "bermuda-triangle-abyss-v6",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "voice_identity": "en-GB-RyanNeural",
+  "sentence_count": 10,
+  "sentence_cache_hits": 10,
+  "supported_controls": [
+    "sentence_level_speaking_rate_bounded",
+    "sentence_level_pitch_bounded",
+    "exact_inter_sentence_pause_ms",
+    "custom_pronunciation_dictionary",
+    "emphasis_phrase_extraction_and_subtitle_onset_sync",
+    "rms_matched_cross_sentence_consistency",
+    "selective_sentence_rerender_cache"
+  ],
+  "engine_limitations": [
+    "edge-tts does not support zero-shot voice cloning from audio samples.",
+    "Azure-only <mstts:express-as> emotional style XML is rejected by the free Edge endpoint; delivery emotion is approximated cleanly via bounded human rate/pitch/pause prosody without artificial DSP stretching."
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "Beneath the southern edge of the Bermuda Triangle, the Atlantic seafloor plunges more than eight thousand meters into pitch-black abyss.",
+      "delivery": "HOOK",
+      "pace": "MODERATE",
+      "energy": 4,
+      "rate": "+2%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 400,
+      "emphasis_phrases": [
+        "eight thousand meters",
+        "pitch-black abyss"
+      ],
+      "start_s": 0.1,
+      "end_s": 6.516,
+      "cache_key": "1abacd834ed195f99f34",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:HOOK->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "PACE:MODERATE->rate_pct=+1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N02",
+      "text": "That chasm is the Puerto Rico Trench\u2014the deepest point in the entire Atlantic Ocean.",
+      "delivery": "MYSTERIOUS",
+      "pace": "SLOW",
+      "energy": 3,
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 380,
+      "emphasis_phrases": [
+        "Puerto Rico Trench",
+        "deepest point"
+      ],
+      "start_s": 6.916,
+      "end_s": 11.678,
+      "cache_key": "ed31aa1ec475b6024eb1",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "Before modern sonar and deep-sea robots, any ship sinking over trenches this deep simply vanished beyond human reach\u2014turning tragic wrecks into legends.",
+      "delivery": "CALM_EXPLANATION",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "vanished beyond human reach"
+      ],
+      "start_s": 12.058,
+      "end_s": 20.527,
+      "cache_key": "a0aed86e9ddf8ad7702f",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N03",
+      "text": "Above the seafloor, powerful physics takes over.",
+      "delivery": "MEASURED_EVIDENCE",
+      "pace": "MODERATE",
+      "energy": 3,
+      "rate": "+1%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 300,
+      "emphasis_phrases": [
+        "powerful physics"
+      ],
+      "start_s": 20.947,
+      "end_s": 23.75,
+      "cache_key": "1c1903f152251340eb0a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "PACE:MODERATE->rate_pct=+1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N03",
+      "text": "Where the fast, warm Gulf Stream slams into Atlantic storms, sudden thirty-meter rogue waves can overwhelm steel cargo ships in minutes\u2014like the SS Cotopaxi, lost in 1925 and finally identified underwater decades later.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "thirty-meter rogue waves",
+        "SS Cotopaxi"
+      ],
+      "start_s": 24.05,
+      "end_s": 38.042,
+      "cache_key": "319749cabd6f78c59c43",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N04",
+      "text": "Some once blamed giant seafloor methane eruptions for sinking ships.",
+      "delivery": "MYSTERIOUS",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 340,
+      "emphasis_phrases": [
+        "methane eruptions"
+      ],
+      "start_s": 38.482,
+      "end_s": 42.31,
+      "cache_key": "70e08b74c7cbaa7f24f6",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N04",
+      "text": "While dense gas plumes can reduce buoyancy in lab tanks, U.S. Geological Survey records show no massive hydrate blowouts have struck this region in fifteen thousand years.",
+      "delivery": "CALM_EXPLANATION",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 460,
+      "emphasis_phrases": [
+        "no massive hydrate blowouts",
+        "fifteen thousand years"
+      ],
+      "start_s": 42.65,
+      "end_s": 52.472,
+      "cache_key": "ddf3da2aab7474c262de",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 7,
+      "seg_id": "N05",
+      "text": "Yet seismologists did uncover a real anomaly deeper underground.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "real anomaly",
+        "deeper underground"
+      ],
+      "start_s": 52.932,
+      "end_s": 56.762,
+      "cache_key": "4742c5cd483592d94030",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 8,
+      "seg_id": "N06",
+      "text": "Directly beneath Bermuda's crust sits an unusual twenty-kilometer-thick layer of frozen mantle rock\u2014a hidden geological raft holding the surrounding seafloor five hundred meters higher than normal.",
+      "delivery": "CINEMATIC_REVEAL",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 460,
+      "emphasis_phrases": [
+        "twenty-kilometer-thick layer",
+        "geological raft"
+      ],
+      "start_s": 57.202,
+      "end_s": 67.379,
+      "cache_key": "18b6fba8a6e7f4bdd1d9",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 9,
+      "seg_id": "N07",
+      "text": "According to NOAA, ships don't disappear here more often than in any other stormy shipping lane. What hides beneath the Bermuda Triangle isn't folklore\u2014it's extreme ocean physics and an eight-kilometer abyss.",
+      "delivery": "FINAL_IMPRESSION",
+      "pace": "SLOW",
+      "energy": 3,
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "isn't folklore",
+        "eight-kilometer abyss"
+      ],
+      "start_s": 67.839,
+      "end_s": 80.027,
+      "cache_key": "12c67993ebf997da2f99",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:FINAL_IMPRESSION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=380ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ]
+}

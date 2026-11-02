@@ -1,0 +1,1057 @@
+{
+  "schema_name": "proof_of_wonder_production_manifest",
+  "manifest_version": "6.0",
+  "generated_at_utc": "2026-11-02T12:01:58.758962+00:00",
+  "slug": "bermuda-triangle-abyss-v6",
+  "channel_name": "Proof of Wonder",
+  "category_playlist": "Hidden Earth",
+  "topic": "Bermuda Triangle Seafloor \u2014 8,376m Puerto Rico Trench, Gulf Stream Rogue Waves & 20km Sub-Crustal Rock Raft",
+  "production_profile": {
+    "profile_name": "deep_ocean_documentary",
+    "profile_version": "6.0.0",
+    "style_overrides": {
+      "sound_design": {
+        "scene_audio_profile": "deep_ocean_abyss"
+      },
+      "asset_selection": {
+        "target_moving_footage_ratio": 0.85
+      }
+    },
+    "visual_scoring_weights": {
+      "direct_relevance": 0.3,
+      "visual_clarity": 0.22,
+      "authenticity": 0.22,
+      "technical_quality": 0.08,
+      "composition_potential": 0.08,
+      "motion_storytelling": 0.06,
+      "license_verification": 0.04,
+      "min_direct_relevance_floor": 0.35
+    }
+  },
+  "script_version": {
+    "version": "v6.0.0",
+    "script_sha256": "7207814dc0b6c0569f7898fca54d7ca81d79e35f091dac53b800c7c0c768029d",
+    "segment_count": 7,
+    "word_count": 199,
+    "opening_hook_type": "surprising_visual",
+    "layer2_pivot_seg_id": "N05",
+    "scientific_caveat_seg_id": "N04",
+    "factual_references": [
+      {
+        "citation": "NOAA National Ocean Service \u2014 What is the Bermuda Triangle? & Puerto Rico Trench Bathymetry (Milwaukee Deep ~8,376 m).",
+        "url": "https://oceanservice.noaa.gov/facts/bermudatri.html",
+        "doi": null,
+        "supported_claims": "No evidence that mysterious disappearances occur with greater frequency in the Bermuda Triangle than in any other large, well-traveled area of the ocean; Gulf Stream rapid weather/wave changes; deep trenches including the Puerto Rico Trench."
+      },
+      {
+        "citation": "U.S. Geological Survey (USGS) \u2014 Gas Hydrates and the Bermuda Triangle Myth.",
+        "url": "https://www.usgs.gov/faqs/what-bermuda-triangle",
+        "doi": null,
+        "supported_claims": "USGS gas-hydrate research shows no large methane-hydrate releases have occurred in the Bermuda Triangle / Blake Ridge region for roughly the past 15,000 years."
+      },
+      {
+        "citation": "Frazer, W. D., Park, J., & Olugboji, T. \u2014 Seismic receiver-function imaging of a ~20-km-thick low-density underplated rock layer beneath Bermuda supporting the ~500-m Bermuda Swell.",
+        "url": "https://agupubs.onlinelibrary.wiley.com/journal/19448007",
+        "doi": null,
+        "supported_claims": "Identification of an unusual ~20-kilometer-thick underplated rock layer beneath Bermuda's oceanic crust whose buoyancy holds the surrounding Bermuda seafloor swell ~500 meters higher than expected without an active hot-spot plume."
+      },
+      {
+        "citation": "NOAA Ocean Exploration \u2014 Identification of the Wreck of SS Cotopaxi off St. Augustine, Florida (2020).",
+        "url": "https://oceanexplorer.noaa.gov/",
+        "doi": null,
+        "supported_claims": "SS Cotopaxi vanished on a voyage from Charleston to Havana in December 1925 during a severe Atlantic storm and was positively identified underwater ~35 nautical miles off St. Augustine, Florida."
+      }
+    ]
+  },
+  "voice_direction_profile": {
+    "voice_input_mode": "directed_tts",
+    "profile_id": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "annotated_voice_script_file": "/Applications/code/science-knowledge/youtube-shorts-channel/episodes/bermuda_abyss_v6_voice_script.txt",
+    "approval_lock": {
+      "locked": true,
+      "synchronized": true,
+      "approved_at_utc": "2026-11-02T11:44:53.813828+00:00",
+      "script_matches": true,
+      "audio_matches": true,
+      "timings_matches": true
+    }
+  },
+  "audio_source_and_final_narration": {
+    "voice_input_mode": "directed_tts",
+    "uploaded_narration_file": null,
+    "voice_reference_file": null,
+    "voice_owner_consent": false,
+    "narration_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/narration.mp3",
+    "final_audio_mix_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/final_audio_mix.mp3",
+    "word_timings_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/word_timings.json",
+    "total_duration_s": 80.2667,
+    "total_frames_30fps": 2408,
+    "five_layer_stems": {
+      "layer_1_narration": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/work_audio/layer_1_narration.wav",
+      "layer_2_music": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/work_audio/layer_2_music.wav",
+      "layer_3_ambience": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/work_audio/layer_3_ambience.wav",
+      "layer_4_natural_sounds": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/work_audio/layer_4_natural_sounds.wav",
+      "layer_5_cinematic_sfx": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/work_audio/layer_5_cinematic_sfx.wav"
+    },
+    "audio_diagnostics": {
+      "integrated_lufs": -16.0,
+      "loudness_range_lra_lu": 1.6,
+      "true_peak_dbtp": -2.5,
+      "speech_crest_factor_db": 13.5,
+      "clipped_samples_count": 0,
+      "excessive_silence_count": 0,
+      "excessive_silences": [],
+      "voice_peak_dbfs": -1.88
+    }
+  },
+  "source_assets": [
+    {
+      "local_file": "noaa_ex2201_puerto_rico_cp_1080p.mov",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "NOAA Ship Okeanos Explorer EX2201 \u2014 Deepwater ROV & Camera Sled Operations off Puerto Rico (1080p)",
+      "creator_agency": "NOAA Ocean Exploration (U.S. Federal Government)",
+      "source_page_url": "https://oceanexplorer.noaa.gov/1212/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2022/03/EX2201_VID_20220225T190459Z_CPHD.mov",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_ex1811_puerto_rico_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "NOAA Ship Okeanos Explorer EX1811 (Oc\u00e9ano Profundo 2018) \u2014 Deep-Sea Seafloor off Puerto Rico (1080p)",
+      "creator_agency": "NOAA Office of Ocean Exploration and Research",
+      "source_page_url": "https://oceanexplorer.noaa.gov/multimedia/video-shorts-ex1811-urchin/attachment/13700/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/04/ex1811-urchin.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_ex2502_shipwreck_lst884_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "NOAA Ship Okeanos Explorer EX2502 \u2014 Deep-Sea ROV Exploration of Sunken Shipwreck LST-884 (1080p)",
+      "creator_agency": "NOAA Ocean Exploration",
+      "source_page_url": "https://oceanexplorer.noaa.gov/multimedia/connections-to-our-past/ex2502-dive03-0321-lst-884_1920x1080/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2026/09/ex2502-dive03-0321-lst-884_1920x1080.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_ex2502_shipwreck_nevada_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "NOAA Ship Okeanos Explorer EX2502 \u2014 Abyssal ROV Survey of Sunken Shipwreck Hull (1080p)",
+      "creator_agency": "NOAA Ocean Exploration",
+      "source_page_url": "https://oceanexplorer.noaa.gov/multimedia/legendary-battleship/ex2502-dive06-0324-uss-nevada_1920x1080/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2026/09/ex2502-dive06-0324-uss-nevada_1920x1080.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_sonar_mapping_720p.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "NOAA Ocean Exploration \u2014 Multibeam Seafloor Sonar Mapping Visualization",
+      "creator_agency": "NOAA Office of Ocean Exploration and Research",
+      "source_page_url": "https://oceanexplorer.noaa.gov/technology/sonar/sonar-1280/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2020/06/sonar-1280.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_orpheus_hadal_auv_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "NOAA Ocean Exploration / WHOI \u2014 Orpheus Hadal Trench Autonomous Underwater Vehicle Deployment (1080p)",
+      "creator_agency": "NOAA Ocean Exploration / Woods Hole Oceanographic Institution",
+      "source_page_url": "https://oceanexplorer.noaa.gov/news/orpheus-update/orpheus-auv-2/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/08/orpheus-auv.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_gulf_stream_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "NASA GSFC \u2014 Gulf Stream Ocean Current Visualization (1080p)",
+      "creator_agency": "NASA Goddard Space Flight Center Scientific Visualization Studio",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Earth_Day_2020_-_Gulf_Stream_ocean_current_pull_out_to_Earth_observing_fleet.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Earth_Day_2020_-_Gulf_Stream_ocean_current_pull_out_to_Earth_observing_fleet.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_cira_hurricane_irma_atlantic_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "NOAA / CIRA GOES-16 \u2014 Hurricane Irma Crossing the Atlantic & Puerto Rico Trench Corridor (No Labels, 1080p)",
+      "creator_agency": "NOAA NESDIS / CIRA",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Hurricane_Irma_Sails_From_the_Atlantic_Ocean_to_Florida_(CIRA_2017-09-12_-_nolabels).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Hurricane_Irma_Sails_From_the_Atlantic_Ocean_to_Florida_%28CIRA_2017-09-12_-_nolabels%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "usblm_stormy_sea_waves_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "Turbulent Storm Sea Waves Crashing in Gale Winds (1080p)",
+      "creator_agency": "U.S. Department of the Interior / Bureau of Land Management (Bob Wick)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Stormy_Salish_Sea_in_the_San_Juan_Islands_(39965034854).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Stormy_Salish_Sea_in_the_San_Juan_Islands_%2839965034854%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_ex1903_new_seep_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "NOAA Ship Okeanos Explorer EX1903 Windows to the Deep \u2014 Blake Ridge / Southeast U.S. Methane Seep Plume",
+      "creator_agency": "NOAA Office of Ocean Exploration and Research",
+      "source_page_url": "https://oceanexplorer.noaa.gov/multimedia/video-playlist-ex1903-new-seep/attachment/14834/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2019/07/new-seep-1920x1080-1.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_okeanos_control_room_720p.mp4",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "NOAA Ship Okeanos Explorer \u2014 Bridge, Sonar Control Room & ROV Operations",
+      "creator_agency": "NOAA Office of Ocean Exploration and Research",
+      "source_page_url": "https://oceanexplorer.noaa.gov/technology/noaa-ship-okeanos-explorer/attachment/16360/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2017/08/tour-1280x720-1.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_wetlab_scientists_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "NOAA Ocean Exploration \u2014 Shipboard Wet-Lab Marine Sample Examination (1080p)",
+      "creator_agency": "NOAA Ocean Exploration",
+      "source_page_url": "https://oceanexplorer.noaa.gov/multimedia/mysterious-golden-orb-identified/mysterious-golden-orb-identified-1080p/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2026/04/Mysterious-Golden-Orb-Identified-1080p.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_boxcore_scientists_720p.mp4",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "NOAA Ocean Exploration \u2014 Deploying & Sampling a Deep-Sea Sediment Box Corer",
+      "creator_agency": "NOAA Office of Ocean Exploration and Research",
+      "source_page_url": "https://oceanexplorer.noaa.gov/multimedia/video-playlist-technology-box/attachment/11276/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2018/05/boxcore_1280x720.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_ex2502_exploring_lst884.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "Exploring LST-884 \u2014 ROV Deep Discoverer Illuminating Sunken Shipwreck on Seafloor",
+      "creator_agency": "NOAA Ocean Exploration (EX2502)",
+      "source_page_url": "https://oceanexplorer.noaa.gov/exploring-lst-884/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2026/09/ex2502-exploring-lst-884.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_ex2502_lst884_stern_bridge.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "LST-884 Stern Bridge Structure on Deep Seafloor",
+      "creator_agency": "NOAA Ocean Exploration (EX2502)",
+      "source_page_url": "https://oceanexplorer.noaa.gov/lst-884-stern-bridge-structure-2/",
+      "direct_media_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2026/09/ex2502-lst-884-stern-bridge.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "puerto_rico_trench_bathymetry_usgs.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "Bathymetry of the Northeast Corner of the Caribbean Plate and the Puerto Rico Trench",
+      "creator_agency": "U.S. Geological Survey / Uri ten Brink et al.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bathymetry_of_the_northeast_corner_of_the_Caribbean_Plate_showing_the_major_faults_and_plate_boundaries.jpg",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Bathymetry_of_the_northeast_corner_of_the_Caribbean_Plate_showing_the_major_faults_and_plate_boundaries.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "ss_cotopaxi_archival.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "Archival Photograph of Cargo Steamer SS Cotopaxi",
+      "creator_agency": "Historical Maritime Archive / Wikimedia Commons",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:SS_Cotopaxi.jpg",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/SS_Cotopaxi.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_iss071_bermuda.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "ISS071-E-206529 \u2014 Bermuda From 265 Miles Above",
+      "creator_agency": "NASA Johnson Space Center / Earth Science and Remote Sensing Unit",
+      "source_page_url": "https://images.nasa.gov/details/iss071e206529",
+      "direct_media_url": "https://images-assets.nasa.gov/image/iss071e206529/iss071e206529~large.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "noaa_pmel_deep_ocean_hydrophone.wav",
+      "media_type": "audio",
+      "priority_tier": 3,
+      "title": "NOAA PMEL Acoustics Program \u2014 Deep-Ocean Hydrophone Ambient Recording",
+      "creator_agency": "NOAA Pacific Marine Environmental Laboratory",
+      "source_page_url": "https://www.pmel.noaa.gov/acoustics/",
+      "direct_media_url": "https://www.pmel.noaa.gov/acoustics/",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "bermuda_rock_raft_cutaway_v6.mp4",
+      "media_type": "diagram",
+      "priority_tier": 6,
+      "title": "Seismic Cross-Section Model: Bermuda's 20 km Underplated Mantle Rock 'Raft'",
+      "creator_agency": "Proof of Wonder Documentary Studio v6.0",
+      "source_page_url": "local://pipeline/generate_bermuda_abyss_diagram.py",
+      "direct_media_url": "local://assets/raw_footage/hidden_earth_bermuda_abyss_v6/bermuda_rock_raft_cutaway_v6.mp4",
+      "is_first_party_original": true
+    }
+  ],
+  "licensing_metadata": {
+    "strict_zero_cost_budget": true,
+    "source_register_csv": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/source_register.csv",
+    "source_register_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/source_register.md",
+    "excluded_sources_notes": [
+      "noaa_wscnms_pilothouse_wreck.jpg: Excluded because visual inspection revealed a third-party 'Hibbard Inshore' contractor logo in the bottom-left corner.",
+      "dvids_992546_atlantic_ship_1080p.webm: Excluded because visual inspection revealed a green 'UNCLASSIFIED' header banner and sensor crosshair overlay.",
+      "Pseudoscientific 'crystal pyramid' or 'magnetic vortex' clips: Excluded by Proof of Wonder factual integrity standards."
+    ],
+    "licenses": [
+      {
+        "local_file": "noaa_ex2201_puerto_rico_cp_1080p.mov",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "Deepwater Puerto Rico ROV footage: Courtesy of NOAA Ocean Exploration, EX2201 (Public Domain)"
+      },
+      {
+        "local_file": "noaa_ex1811_puerto_rico_1080p.mp4",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "Oc\u00e9ano Profundo 2018 Puerto Rico seafloor ROV video: Courtesy of NOAA Ocean Exploration (Public Domain)"
+      },
+      {
+        "local_file": "noaa_ex2502_shipwreck_lst884_1080p.mp4",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "Deep-sea shipwreck ROV footage (illustrative deep-ocean wreck): Courtesy of NOAA Ocean Exploration, EX2502 (Public Domain)"
+      },
+      {
+        "local_file": "noaa_ex2502_shipwreck_nevada_1080p.mp4",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "Abyssal shipwreck ROV laser survey (illustrative deep-ocean wreck): Courtesy of NOAA Ocean Exploration, EX2502 (Public Domain)"
+      },
+      {
+        "local_file": "noaa_sonar_mapping_720p.mp4",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "Multibeam sonar bathymetry visualization: Courtesy of NOAA Ocean Exploration (Public Domain)"
+      },
+      {
+        "local_file": "noaa_orpheus_hadal_auv_1080p.mp4",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "Orpheus trench AUV deployment footage: Courtesy of NOAA Ocean Exploration (Public Domain)"
+      },
+      {
+        "local_file": "nasa_gulf_stream_1080p.webm",
+        "license": "Public Domain (NASA)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Gulf Stream visualization: NASA/Goddard Space Flight Center Scientific Visualization Studio (Public Domain)"
+      },
+      {
+        "local_file": "noaa_cira_hurricane_irma_atlantic_1080p.webm",
+        "license": "Public Domain (NOAA / CIRA)",
+        "license_url": "https://www.nesdis.noaa.gov/about/nesdis-imagery-and-data-usage-policy",
+        "required_attribution": "GOES-16 Atlantic hurricane satellite imagery: NOAA / CIRA (Public Domain)"
+      },
+      {
+        "local_file": "usblm_stormy_sea_waves_1080p.webm",
+        "license": "Public Domain (U.S. Federal Government / BLM)",
+        "license_url": "https://www.doi.gov/copyright",
+        "required_attribution": "Illustrative stormy ocean surf footage: U.S. Bureau of Land Management (Public Domain)"
+      },
+      {
+        "local_file": "noaa_ex1903_new_seep_1080p.mp4",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "Blake Ridge seafloor methane bubble plume: Courtesy of NOAA Ocean Exploration, EX1903 (Public Domain)"
+      },
+      {
+        "local_file": "noaa_okeanos_control_room_720p.mp4",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "NOAA Ship Okeanos Explorer mission control & bridge operations: Courtesy of NOAA Ocean Exploration (Public Domain)"
+      },
+      {
+        "local_file": "noaa_wetlab_scientists_1080p.mp4",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "Shipboard marine lab examination: Courtesy of NOAA Ocean Exploration (Public Domain)"
+      },
+      {
+        "local_file": "noaa_boxcore_scientists_720p.mp4",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "Deep-sea sediment coring operations: Courtesy of NOAA Ocean Exploration (Public Domain)"
+      },
+      {
+        "local_file": "noaa_ex2502_exploring_lst884.jpg",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "Photo: Courtesy of NOAA Ocean Exploration, EX2502 (Public Domain)"
+      },
+      {
+        "local_file": "noaa_ex2502_lst884_stern_bridge.jpg",
+        "license": "Public Domain (U.S. Federal Government / NOAA)",
+        "license_url": "https://oceanexplorer.noaa.gov/disclaimer.html",
+        "required_attribution": "Photo: Courtesy of NOAA Ocean Exploration, EX2502 (Public Domain)"
+      },
+      {
+        "local_file": "puerto_rico_trench_bathymetry_usgs.jpg",
+        "license": "Public Domain (U.S. Geological Survey)",
+        "license_url": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+        "required_attribution": "Puerto Rico Trench 3D bathymetry: U.S. Geological Survey (Public Domain)"
+      },
+      {
+        "local_file": "ss_cotopaxi_archival.jpg",
+        "license": "Public Domain (Pre-1928 U.S. Publication)",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "required_attribution": "Historical photograph of SS Cotopaxi (Public Domain)"
+      },
+      {
+        "local_file": "nasa_iss071_bermuda.jpg",
+        "license": "Public Domain (NASA)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Astronaut photograph of Bermuda (ISS071-E-206529): NASA Johnson Space Center (Public Domain)"
+      },
+      {
+        "local_file": "noaa_pmel_deep_ocean_hydrophone.wav",
+        "license": "Public Domain (NOAA)",
+        "license_url": "https://www.noaa.gov/disclaimer",
+        "required_attribution": "Deep-ocean hydrophone audio: NOAA PMEL Acoustics Program (Public Domain)"
+      },
+      {
+        "local_file": "bermuda_rock_raft_cutaway_v6.mp4",
+        "license": "100% Original First-Party Graphic",
+        "license_url": "N/A",
+        "required_attribution": "Original illustrative seismic cross-section based on Frazer, Park & Olugboji (Geophysical Research Letters / Carnegie Institution)"
+      }
+    ]
+  },
+  "shot_list": [
+    {
+      "sid": "S01",
+      "kind": "video_full",
+      "src_file": "noaa_ex2201_puerto_rico_cp_1080p.mov",
+      "camera_perspective": "aerial",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Live 1080p NOAA ROV floodlights descending into Puerto Rico abyss (N01)",
+      "editorial_rationale": "Authentic NOAA EX2201 Puerto Rico deepwater ROV footage immediately establishes the 8,000m abyss."
+    },
+    {
+      "sid": "S02",
+      "kind": "still_full",
+      "src_file": "puerto_rico_trench_bathymetry_usgs.jpg",
+      "camera_perspective": "labeled_visualization",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "USGS 3D tectonic bathymetry of the 8,376m Puerto Rico Trench (N02a)",
+      "editorial_rationale": "Shows the exact geological trench at the southern tip of the Bermuda Triangle."
+    },
+    {
+      "sid": "S03",
+      "kind": "video_full",
+      "src_file": "noaa_sonar_mapping_720p.mp4",
+      "camera_perspective": "wide",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "3D multibeam seafloor sonar mapping sweep (N02b)",
+      "editorial_rationale": "Visualizes modern multibeam seafloor sonar mapping deep ocean basins."
+    },
+    {
+      "sid": "S04",
+      "kind": "video_full",
+      "src_file": "noaa_ex2502_shipwreck_lst884_1080p.mp4",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.55,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p NOAA ROV floodlights over sunken steel ship in pitch-black ocean (N02c)",
+      "editorial_rationale": "Conveys how sunken steel ships disappear into total abyssal darkness thousands of meters down."
+    },
+    {
+      "sid": "S05",
+      "kind": "video_full",
+      "src_file": "nasa_gulf_stream_1080p.webm",
+      "camera_perspective": "satellite_or_telescope",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "aerial_sweep",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p NASA SVS Gulf Stream current streamlines (N03a)",
+      "editorial_rationale": "Introduces surface physical oceanography with NASA's Gulf Stream flow visualization."
+    },
+    {
+      "sid": "S06",
+      "kind": "video_full",
+      "src_file": "noaa_cira_hurricane_irma_atlantic_1080p.webm",
+      "camera_perspective": "satellite_or_telescope",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "aerial_sweep",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Real GOES-16 satellite view of major Atlantic hurricane crossing Bermuda Triangle corridor (N03b)",
+      "editorial_rationale": "Shows real NOAA GOES-16 satellite footage of a major hurricane crossing the Bermuda Triangle corridor."
+    },
+    {
+      "sid": "S07",
+      "kind": "video_full",
+      "src_file": "usblm_stormy_sea_waves_1080p.webm",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p sea-level violent storm waves with live surf nat-sound (N03c)",
+      "editorial_rationale": "Delivers visceral sea-level wave turbulence with subtle real storm-surf audio."
+    },
+    {
+      "sid": "S08",
+      "kind": "video_full",
+      "src_file": "noaa_ex2502_shipwreck_nevada_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p NOAA ROV green-laser survey along sunken steel hull (N03d)",
+      "editorial_rationale": "Illustrates how historical lost steamers are forensically surveyed underwater decades later."
+    },
+    {
+      "sid": "S09",
+      "kind": "video_full",
+      "src_file": "noaa_ex1903_new_seep_1080p.mp4",
+      "camera_perspective": "macro",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p NOAA EX1903 Blake Ridge seafloor methane seep & gas bubbles (N04a)",
+      "editorial_rationale": "Shows authentic Western Atlantic (EX1903 Blake Ridge) ROV-illuminated seafloor methane seep."
+    },
+    {
+      "sid": "S10",
+      "kind": "video_full",
+      "src_file": "noaa_ex1903_new_seep_1080p.mp4",
+      "camera_perspective": "labeled_visualization",
+      "visual_complexity": "medium",
+      "spoken_importance": "context",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "NOAA acoustic water-column gas-plume mapping (N04b)",
+      "editorial_rationale": "Visualizes acoustic water-column gas-plume profiling from NOAA EX1903."
+    },
+    {
+      "sid": "S11",
+      "kind": "video_full",
+      "src_file": "noaa_boxcore_scientists_720p.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Marine geologist sampling seafloor sediment box core on deck (N04c)",
+      "editorial_rationale": "Grounds the 15,000-year geological record in hands-on marine sediment core sampling."
+    },
+    {
+      "sid": "S12",
+      "kind": "video_full",
+      "src_file": "noaa_orpheus_hadal_auv_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "medium",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Layer-2 retention pivot: 1080p live shipboard acoustic/seismic telemetry display (N05)",
+      "editorial_rationale": "Live 1080p shipboard acoustic telemetry display driving the mid-story pivot to deep seismic imaging beneath Bermuda."
+    },
+    {
+      "sid": "S13",
+      "kind": "diagram",
+      "src_file": "bermuda_rock_raft_cutaway_v6.mp4",
+      "camera_perspective": "labeled_visualization",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.6,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": false,
+      "has_human_interaction": false,
+      "story_beat": "Seismic cross-section of Bermuda's 20km frozen mantle rock 'raft' (N06a)",
+      "editorial_rationale": "Clearly labeled illustrative seismic cutaway of the 20km underplated mantle rock raft beneath Bermuda."
+    },
+    {
+      "sid": "S14",
+      "kind": "video_full",
+      "src_file": "noaa_wetlab_scientists_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.55,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "1080p gloved marine scientist examining deep-sea specimen in wet lab (N06b)",
+      "editorial_rationale": "Grounds deep-ocean geological analysis in 1080p hands-on shipboard lab inspection."
+    },
+    {
+      "sid": "S15",
+      "kind": "video_full",
+      "src_file": "noaa_orpheus_hadal_auv_1080p.mp4",
+      "camera_perspective": "extreme_wide",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "1080p NOAA/WHOI engineers deploying Orpheus trench robot into open ocean (N07a)",
+      "editorial_rationale": "Connects NOAA's statistical verdict with active modern ocean-trench exploration."
+    },
+    {
+      "sid": "S16",
+      "kind": "video_full",
+      "src_file": "noaa_ex2201_puerto_rico_cp_1080p.mov",
+      "camera_perspective": "aerial",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.6,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Closing 1080p NOAA ROV floodlights in the Puerto Rico abyss (N07b)",
+      "editorial_rationale": "Closes on authentic 1080p NOAA Puerto Rico abyssal ROV lights, seamlessly looping back into Frame 0."
+    }
+  ],
+  "scene_timing": {
+    "fps": 30,
+    "semantic_timeline_manifest_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/semantic_timeline_manifest.json",
+    "timed_scenes": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 9.0667,
+        "duration_s": 9.0667,
+        "start_frame": 0,
+        "end_frame": 272
+      },
+      {
+        "sid": "S02",
+        "start_s": 9.0667,
+        "end_s": 11.8333,
+        "duration_s": 2.7666,
+        "start_frame": 272,
+        "end_frame": 355
+      },
+      {
+        "sid": "S03",
+        "start_s": 11.8333,
+        "end_s": 14.4,
+        "duration_s": 2.5667,
+        "start_frame": 355,
+        "end_frame": 432
+      },
+      {
+        "sid": "S04",
+        "start_s": 14.4,
+        "end_s": 20.6667,
+        "duration_s": 6.2667,
+        "start_frame": 432,
+        "end_frame": 620
+      },
+      {
+        "sid": "S05",
+        "start_s": 20.6667,
+        "end_s": 23.8667,
+        "duration_s": 3.2,
+        "start_frame": 620,
+        "end_frame": 716
+      },
+      {
+        "sid": "S06",
+        "start_s": 23.8667,
+        "end_s": 27.7,
+        "duration_s": 3.8333,
+        "start_frame": 716,
+        "end_frame": 831
+      },
+      {
+        "sid": "S07",
+        "start_s": 27.7,
+        "end_s": 31.7667,
+        "duration_s": 4.0667,
+        "start_frame": 831,
+        "end_frame": 953
+      },
+      {
+        "sid": "S08",
+        "start_s": 31.7667,
+        "end_s": 38.1667,
+        "duration_s": 6.4,
+        "start_frame": 953,
+        "end_frame": 1145
+      },
+      {
+        "sid": "S09",
+        "start_s": 38.1667,
+        "end_s": 42.4333,
+        "duration_s": 4.2666,
+        "start_frame": 1145,
+        "end_frame": 1273
+      },
+      {
+        "sid": "S10",
+        "start_s": 42.4333,
+        "end_s": 45.8,
+        "duration_s": 3.3667,
+        "start_frame": 1273,
+        "end_frame": 1374
+      },
+      {
+        "sid": "S11",
+        "start_s": 45.8,
+        "end_s": 52.6333,
+        "duration_s": 6.8333,
+        "start_frame": 1374,
+        "end_frame": 1579
+      },
+      {
+        "sid": "S12",
+        "start_s": 52.6333,
+        "end_s": 56.9,
+        "duration_s": 4.2667,
+        "start_frame": 1579,
+        "end_frame": 1707
+      },
+      {
+        "sid": "S13",
+        "start_s": 56.9,
+        "end_s": 62.4667,
+        "duration_s": 5.5667,
+        "start_frame": 1707,
+        "end_frame": 1874
+      },
+      {
+        "sid": "S14",
+        "start_s": 62.4667,
+        "end_s": 67.5333,
+        "duration_s": 5.0666,
+        "start_frame": 1874,
+        "end_frame": 2026
+      },
+      {
+        "sid": "S15",
+        "start_s": 67.5333,
+        "end_s": 73.2333,
+        "duration_s": 5.7,
+        "start_frame": 2026,
+        "end_frame": 2197
+      },
+      {
+        "sid": "S16",
+        "start_s": 73.2333,
+        "end_s": 80.2667,
+        "duration_s": 7.0334,
+        "start_frame": 2197,
+        "end_frame": 2408
+      }
+    ]
+  },
+  "subtitle_version": {
+    "version": "v6.0.0",
+    "style": "cinema_boxless",
+    "emphasis_mode": "color_accent",
+    "word_by_word_animation": false,
+    "cue_count": 44,
+    "srt_path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/subtitles.srt"
+  },
+  "thumbnail_variants": {
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/thumbnail.jpg",
+    "mobile_preview_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/thumbnail_small_preview_sheet.jpg",
+    "concepts_comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/thumbnail_concepts_comparison_sheet.jpg",
+    "concepts": [
+      {
+        "concept_id": "A",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/thumbnail_concept_A.jpg",
+        "source_asset": "noaa_ex2502_exploring_lst884.jpg",
+        "matches_opening_scene_asset": false,
+        "headline_text": "8,300M UNDER|BERMUDA",
+        "headline_word_count": 3,
+        "kicker_text": "ATLANTIC ABYSS",
+        "concept_rationale": "Concept C + Text (Selected): Real NOAA ROV cyan floodlights illuminating a sunken steel ship on the pitch-black seafloor with bold 3-word abyssal hook.",
+        "size_kb": 663.9,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "noaa_ex2502_exploring_lst884.jpg",
+          "sharpness_score": 0.51,
+          "subject_separation_score": 60.5,
+          "combined_score": 33.5,
+          "recommended_cx": 0.4725,
+          "recommended_cy": 0.3535
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "B",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/thumbnail_concept_B.jpg",
+        "source_asset": "noaa_ex2502_lst884_stern_bridge.jpg",
+        "matches_opening_scene_asset": false,
+        "headline_text": "BENEATH THE|MISSING SHIPS",
+        "headline_word_count": 4,
+        "kicker_text": "NOAA DEEP ROV",
+        "concept_rationale": "Close-up of encrusted steel ship bridge on the deep blue ocean floor with top-mounted 4-word curiosity headline.",
+        "size_kb": 1296.5,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "noaa_ex2502_lst884_stern_bridge.jpg",
+          "sharpness_score": 3.66,
+          "subject_separation_score": 104.79,
+          "combined_score": 59.28,
+          "recommended_cx": 0.4997,
+          "recommended_cy": 0.4657
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "C",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/thumbnail_concept_C.jpg",
+        "source_asset": "noaa_ex2201_puerto_rico_cp_1080p.mov",
+        "matches_opening_scene_asset": true,
+        "headline_text": "8,376M DEEP|OCEAN TRENCH",
+        "headline_word_count": 4,
+        "kicker_text": "PUERTO RICO TRENCH",
+        "concept_rationale": "Matches Frame 0 opening shot: NOAA camera sled looking straight down at ROV floodlights in the Puerto Rico abyss.",
+        "size_kb": 726.5,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "noaa_ex2201_puerto_rico_cp_1080p.mov",
+          "sharpness_score": 0.75,
+          "subject_separation_score": 31.12,
+          "combined_score": 17.46,
+          "recommended_cx": 0.4178,
+          "recommended_cy": 0.5182
+        },
+        "actual_analytics_outcome": null
+      }
+    ]
+  },
+  "rendering_configuration": {
+    "output_spec": {
+      "aspect_ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video_codec_master": "libx264",
+      "video_crf_master": 15,
+      "video_preset_master": "medium",
+      "video_profile": "high",
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "audio_codec": "aac",
+      "audio_bitrate": "192k",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "target_loudness_lufs": -16.0
+    },
+    "color_science": {
+      "enable_filmic_grade": true,
+      "cast_tame_strength": 0.24,
+      "luma_grain_sigma": 2.0
+    },
+    "benchmarks": {
+      "slug": "bermuda-triangle-abyss-v6",
+      "encode_mode": "master",
+      "shots_render_or_cache_s": 31.122,
+      "timeline_assembly_and_mux_s": 99.867,
+      "thumbnail_concepts_s": 3.754,
+      "total_render_master_s": 134.949,
+      "rendered_frames": 2408,
+      "effective_render_fps": 17.84
+    }
+  },
+  "qa_results": {
+    "qc_measurements_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/qc_measurements.json",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/qc_report.md",
+    "summary": {
+      "overall_pass": true,
+      "failed_gates_count": 0,
+      "moving_footage_pct": 89.62,
+      "whisper_normalized_match_ratio": 0.981,
+      "integrated_lufs": -16.0,
+      "true_peak_dbtp": -2.6,
+      "protected_projects_intact": true
+    }
+  },
+  "final_output_locations": {
+    "output_dir": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6",
+    "master_mp4": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/bermuda-triangle-abyss-v6.mp4",
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/thumbnail.jpg",
+    "subtitles_srt": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/subtitles.srt",
+    "script_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/script.md",
+    "retention_plan_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/retention_plan.md",
+    "storyboard_manifest_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/storyboard_and_shot_manifest.md",
+    "youtube_metadata_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/youtube_metadata.md",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/qc_report.md"
+  }
+}

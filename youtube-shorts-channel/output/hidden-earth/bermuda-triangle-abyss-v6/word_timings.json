@@ -1,0 +1,1843 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "pronunciation_sig": "3abf75ec3b7ffce765daf64c71c4da6f8ddae18fa4fe1f3f6ab94318db5a666c",
+  "total_duration_s": 80.2667,
+  "total_frames_30fps": 2408,
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "Beneath the southern edge of the Bermuda Triangle, the Atlantic seafloor plunges more than eight thousand meters into pitch-black abyss.",
+      "rate": "+2%",
+      "pitch": "-1Hz",
+      "start": 0.1,
+      "end": 6.516,
+      "duration": 6.416,
+      "pause_after": 0.4,
+      "emphasis_words": [
+        "eight",
+        "thousand",
+        "meters",
+        "pitch-black",
+        "abyss"
+      ]
+    },
+    {
+      "seg_id": "N02",
+      "text": "That chasm is the Puerto Rico Trench\u2014the deepest point in the entire Atlantic Ocean. Before modern sonar and deep-sea robots, any ship sinking over trenches this deep simply vanished beyond human reach\u2014turning tragic wrecks into legends.",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "start": 6.916,
+      "end": 20.527,
+      "duration": 13.611,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "Puerto",
+        "Rico",
+        "Trench",
+        "deepest",
+        "vanished"
+      ]
+    },
+    {
+      "seg_id": "N03",
+      "text": "Above the seafloor, powerful physics takes over. Where the fast, warm Gulf Stream slams into Atlantic storms, sudden thirty-meter rogue waves can overwhelm steel cargo ships in minutes\u2014like the SS Cotopaxi, lost in 1925 and finally identified underwater decades later.",
+      "rate": "+1%",
+      "pitch": "-1Hz",
+      "start": 20.947,
+      "end": 38.042,
+      "duration": 17.096,
+      "pause_after": 0.44,
+      "emphasis_words": [
+        "powerful",
+        "physics",
+        "thirty-meter",
+        "rogue",
+        "waves",
+        "Cotopaxi"
+      ]
+    },
+    {
+      "seg_id": "N04",
+      "text": "Some once blamed giant seafloor methane eruptions for sinking ships. While dense gas plumes can reduce buoyancy in lab tanks, U.S. Geological Survey records show no massive hydrate blowouts have struck this region in fifteen thousand years.",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "start": 38.482,
+      "end": 52.472,
+      "duration": 13.989,
+      "pause_after": 0.46,
+      "emphasis_words": [
+        "methane",
+        "eruptions",
+        "no",
+        "massive",
+        "fifteen",
+        "thousand"
+      ]
+    },
+    {
+      "seg_id": "N05",
+      "text": "Yet seismologists did uncover a real anomaly deeper underground.",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 52.932,
+      "end": 56.762,
+      "duration": 3.83,
+      "pause_after": 0.44,
+      "emphasis_words": [
+        "real",
+        "anomaly",
+        "deeper",
+        "underground"
+      ]
+    },
+    {
+      "seg_id": "N06",
+      "text": "Directly beneath Bermuda's crust sits an unusual twenty-kilometer-thick layer of frozen mantle rock\u2014a hidden geological raft holding the surrounding seafloor five hundred meters higher than normal.",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "start": 57.202,
+      "end": 67.379,
+      "duration": 10.177,
+      "pause_after": 0.46,
+      "emphasis_words": [
+        "twenty-kilometer-thick",
+        "geological",
+        "raft",
+        "five",
+        "hundred"
+      ]
+    },
+    {
+      "seg_id": "N07",
+      "text": "According to NOAA, ships don't disappear here more often than in any other stormy shipping lane. What hides beneath the Bermuda Triangle isn't folklore\u2014it's extreme ocean physics and an eight-kilometer abyss.",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "start": 67.839,
+      "end": 80.027,
+      "duration": 12.188,
+      "pause_after": 0.24,
+      "emphasis_words": [
+        "isn't",
+        "folklore",
+        "extreme",
+        "physics",
+        "eight-kilometer",
+        "abyss"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "Beneath the southern edge of the Bermuda Triangle, the Atlantic seafloor plunges more than eight thousand meters into pitch-black abyss.",
+      "delivery": "HOOK",
+      "pace": "MODERATE",
+      "energy": 4,
+      "rate": "+2%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 400,
+      "emphasis_phrases": [
+        "eight thousand meters",
+        "pitch-black abyss"
+      ],
+      "start_s": 0.1,
+      "end_s": 6.516,
+      "cache_key": "1abacd834ed195f99f34",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:HOOK->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "PACE:MODERATE->rate_pct=+1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N02",
+      "text": "That chasm is the Puerto Rico Trench\u2014the deepest point in the entire Atlantic Ocean.",
+      "delivery": "MYSTERIOUS",
+      "pace": "SLOW",
+      "energy": 3,
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 380,
+      "emphasis_phrases": [
+        "Puerto Rico Trench",
+        "deepest point"
+      ],
+      "start_s": 6.916,
+      "end_s": 11.678,
+      "cache_key": "ed31aa1ec475b6024eb1",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "Before modern sonar and deep-sea robots, any ship sinking over trenches this deep simply vanished beyond human reach\u2014turning tragic wrecks into legends.",
+      "delivery": "CALM_EXPLANATION",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "vanished beyond human reach"
+      ],
+      "start_s": 12.058,
+      "end_s": 20.527,
+      "cache_key": "a0aed86e9ddf8ad7702f",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N03",
+      "text": "Above the seafloor, powerful physics takes over.",
+      "delivery": "MEASURED_EVIDENCE",
+      "pace": "MODERATE",
+      "energy": 3,
+      "rate": "+1%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 300,
+      "emphasis_phrases": [
+        "powerful physics"
+      ],
+      "start_s": 20.947,
+      "end_s": 23.75,
+      "cache_key": "1c1903f152251340eb0a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "PACE:MODERATE->rate_pct=+1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N03",
+      "text": "Where the fast, warm Gulf Stream slams into Atlantic storms, sudden thirty-meter rogue waves can overwhelm steel cargo ships in minutes\u2014like the SS Cotopaxi, lost in 1925 and finally identified underwater decades later.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "thirty-meter rogue waves",
+        "SS Cotopaxi"
+      ],
+      "start_s": 24.05,
+      "end_s": 38.042,
+      "cache_key": "319749cabd6f78c59c43",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N04",
+      "text": "Some once blamed giant seafloor methane eruptions for sinking ships.",
+      "delivery": "MYSTERIOUS",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 340,
+      "emphasis_phrases": [
+        "methane eruptions"
+      ],
+      "start_s": 38.482,
+      "end_s": 42.31,
+      "cache_key": "70e08b74c7cbaa7f24f6",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N04",
+      "text": "While dense gas plumes can reduce buoyancy in lab tanks, U.S. Geological Survey records show no massive hydrate blowouts have struck this region in fifteen thousand years.",
+      "delivery": "CALM_EXPLANATION",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 460,
+      "emphasis_phrases": [
+        "no massive hydrate blowouts",
+        "fifteen thousand years"
+      ],
+      "start_s": 42.65,
+      "end_s": 52.472,
+      "cache_key": "ddf3da2aab7474c262de",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 7,
+      "seg_id": "N05",
+      "text": "Yet seismologists did uncover a real anomaly deeper underground.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "real anomaly",
+        "deeper underground"
+      ],
+      "start_s": 52.932,
+      "end_s": 56.762,
+      "cache_key": "4742c5cd483592d94030",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 8,
+      "seg_id": "N06",
+      "text": "Directly beneath Bermuda's crust sits an unusual twenty-kilometer-thick layer of frozen mantle rock\u2014a hidden geological raft holding the surrounding seafloor five hundred meters higher than normal.",
+      "delivery": "CINEMATIC_REVEAL",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 460,
+      "emphasis_phrases": [
+        "twenty-kilometer-thick layer",
+        "geological raft"
+      ],
+      "start_s": 57.202,
+      "end_s": 67.379,
+      "cache_key": "18b6fba8a6e7f4bdd1d9",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 9,
+      "seg_id": "N07",
+      "text": "According to NOAA, ships don't disappear here more often than in any other stormy shipping lane. What hides beneath the Bermuda Triangle isn't folklore\u2014it's extreme ocean physics and an eight-kilometer abyss.",
+      "delivery": "FINAL_IMPRESSION",
+      "pace": "SLOW",
+      "energy": 3,
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "isn't folklore",
+        "eight-kilometer abyss"
+      ],
+      "start_s": 67.839,
+      "end_s": 80.027,
+      "cache_key": "12c67993ebf997da2f99",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:FINAL_IMPRESSION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=380ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "Beneath",
+      "start": 0.1,
+      "end": 0.492,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "the",
+      "start": 0.397,
+      "end": 0.483,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "southern",
+      "start": 0.495,
+      "end": 0.838,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "edge",
+      "start": 0.85,
+      "end": 1.058,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "of",
+      "start": 1.071,
+      "end": 1.144,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "the",
+      "start": 1.157,
+      "end": 1.255,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Bermuda",
+      "start": 1.267,
+      "end": 1.696,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Triangle",
+      "start": 1.708,
+      "end": 2.235,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "the",
+      "start": 2.431,
+      "end": 2.554,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Atlantic",
+      "start": 2.566,
+      "end": 3.007,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "seafloor",
+      "start": 3.019,
+      "end": 3.448,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "plunges",
+      "start": 3.46,
+      "end": 3.926,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "more",
+      "start": 3.938,
+      "end": 4.073,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "than",
+      "start": 4.085,
+      "end": 4.257,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "eight",
+      "start": 4.269,
+      "end": 4.429,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "thousand",
+      "start": 4.441,
+      "end": 4.882,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "meters",
+      "start": 4.894,
+      "end": 5.225,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "into",
+      "start": 5.237,
+      "end": 5.495,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "pitch-black",
+      "start": 5.507,
+      "end": 6.009,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "abyss",
+      "start": 6.022,
+      "end": 6.451,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "That",
+      "start": 6.916,
+      "end": 7.205,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "chasm",
+      "start": 7.109,
+      "end": 7.451,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "is",
+      "start": 7.464,
+      "end": 7.582,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 7.595,
+      "end": 7.688,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Puerto",
+      "start": 7.701,
+      "end": 8.043,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Rico",
+      "start": 8.056,
+      "end": 8.49,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Trench",
+      "start": 8.503,
+      "end": 8.964,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 9.148,
+      "end": 9.267,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "deepest",
+      "start": 9.28,
+      "end": 9.674,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "point",
+      "start": 9.688,
+      "end": 9.977,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "in",
+      "start": 9.99,
+      "end": 10.056,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 10.069,
+      "end": 10.161,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "entire",
+      "start": 10.174,
+      "end": 10.674,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Atlantic",
+      "start": 10.688,
+      "end": 11.148,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Ocean",
+      "start": 11.161,
+      "end": 11.595,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Before",
+      "start": 12.058,
+      "end": 12.437,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "modern",
+      "start": 12.332,
+      "end": 12.648,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "sonar",
+      "start": 12.66,
+      "end": 13.115,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "and",
+      "start": 13.128,
+      "end": 13.266,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "deep-sea",
+      "start": 13.279,
+      "end": 13.721,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "robots",
+      "start": 13.734,
+      "end": 14.302,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "any",
+      "start": 14.516,
+      "end": 14.668,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "ship",
+      "start": 14.681,
+      "end": 14.933,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "sinking",
+      "start": 14.946,
+      "end": 15.324,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "over",
+      "start": 15.337,
+      "end": 15.526,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "trenches",
+      "start": 15.539,
+      "end": 15.956,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "this",
+      "start": 15.968,
+      "end": 16.17,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "deep",
+      "start": 16.183,
+      "end": 16.448,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "simply",
+      "start": 16.461,
+      "end": 16.789,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "vanished",
+      "start": 16.802,
+      "end": 17.168,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "beyond",
+      "start": 17.181,
+      "end": 17.509,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "human",
+      "start": 17.521,
+      "end": 17.9,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "reach",
+      "start": 17.913,
+      "end": 18.216,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "turning",
+      "start": 18.443,
+      "end": 18.771,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "tragic",
+      "start": 18.784,
+      "end": 19.213,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "wrecks",
+      "start": 19.226,
+      "end": 19.529,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "into",
+      "start": 19.542,
+      "end": 19.819,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "legends",
+      "start": 19.832,
+      "end": 20.451,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Above",
+      "start": 20.947,
+      "end": 21.306,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 21.228,
+      "end": 21.314,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "seafloor",
+      "start": 21.327,
+      "end": 21.871,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "powerful",
+      "start": 22.057,
+      "end": 22.527,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "physics",
+      "start": 22.54,
+      "end": 22.948,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "takes",
+      "start": 22.96,
+      "end": 23.27,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "over",
+      "start": 23.282,
+      "end": 23.678,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Where",
+      "start": 24.05,
+      "end": 24.287,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 24.193,
+      "end": 24.281,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "fast",
+      "start": 24.293,
+      "end": 24.781,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "warm",
+      "start": 24.893,
+      "end": 25.168,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Gulf",
+      "start": 25.181,
+      "end": 25.418,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Stream",
+      "start": 25.431,
+      "end": 25.818,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "slams",
+      "start": 25.831,
+      "end": 26.293,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "into",
+      "start": 26.306,
+      "end": 26.556,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Atlantic",
+      "start": 26.568,
+      "end": 27.031,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "storms",
+      "start": 27.043,
+      "end": 27.581,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "sudden",
+      "start": 27.806,
+      "end": 28.118,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "thirty-meter",
+      "start": 28.131,
+      "end": 28.731,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "rogue",
+      "start": 28.743,
+      "end": 29.018,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "waves",
+      "start": 29.031,
+      "end": 29.406,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "can",
+      "start": 29.418,
+      "end": 29.581,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "overwhelm",
+      "start": 29.593,
+      "end": 30.093,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "steel",
+      "start": 30.106,
+      "end": 30.468,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "cargo",
+      "start": 30.481,
+      "end": 30.868,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "ships",
+      "start": 30.881,
+      "end": 31.193,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "in",
+      "start": 31.206,
+      "end": 31.306,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "minutes",
+      "start": 31.318,
+      "end": 31.681,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "like",
+      "start": 31.868,
+      "end": 32.068,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 32.081,
+      "end": 32.218,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "SS",
+      "start": 32.231,
+      "end": 32.606,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "Cotopaxi",
+      "start": 32.618,
+      "end": 33.468,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "lost",
+      "start": 33.668,
+      "end": 33.918,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "in 1925",
+      "start": 33.931,
+      "end": 35.193,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "and",
+      "start": 35.206,
+      "end": 35.306,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "finally",
+      "start": 35.318,
+      "end": 35.781,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "identified",
+      "start": 35.793,
+      "end": 36.518,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "underwater",
+      "start": 36.531,
+      "end": 37.043,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "decades",
+      "start": 37.056,
+      "end": 37.493,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "later",
+      "start": 37.506,
+      "end": 37.956,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Some",
+      "start": 38.482,
+      "end": 38.823,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "once",
+      "start": 38.725,
+      "end": 38.99,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "blamed",
+      "start": 39.003,
+      "end": 39.357,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "giant",
+      "start": 39.369,
+      "end": 39.748,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "seafloor",
+      "start": 39.761,
+      "end": 40.165,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "methane",
+      "start": 40.177,
+      "end": 40.632,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "eruptions",
+      "start": 40.644,
+      "end": 41.187,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "for",
+      "start": 41.2,
+      "end": 41.301,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "sinking",
+      "start": 41.314,
+      "end": 41.743,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "ships",
+      "start": 41.756,
+      "end": 42.248,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "While",
+      "start": 42.65,
+      "end": 42.916,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "dense",
+      "start": 42.831,
+      "end": 43.096,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "gas",
+      "start": 43.108,
+      "end": 43.386,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "plumes",
+      "start": 43.399,
+      "end": 43.815,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "can",
+      "start": 43.828,
+      "end": 43.967,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "reduce",
+      "start": 43.979,
+      "end": 44.346,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "buoyancy",
+      "start": 44.358,
+      "end": 44.863,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "in",
+      "start": 44.876,
+      "end": 45.002,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "lab",
+      "start": 45.015,
+      "end": 45.242,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "tanks",
+      "start": 45.255,
+      "end": 45.671,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "U.S.",
+      "start": 45.899,
+      "end": 46.252,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Geological",
+      "start": 46.265,
+      "end": 46.934,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Survey",
+      "start": 46.947,
+      "end": 47.288,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "records",
+      "start": 47.3,
+      "end": 47.767,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "show",
+      "start": 47.78,
+      "end": 47.982,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "no",
+      "start": 47.995,
+      "end": 48.235,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "massive",
+      "start": 48.247,
+      "end": 48.613,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "hydrate",
+      "start": 48.626,
+      "end": 49.118,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "blowouts",
+      "start": 49.131,
+      "end": 49.649,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "have",
+      "start": 49.661,
+      "end": 49.775,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "struck",
+      "start": 49.788,
+      "end": 50.141,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "this",
+      "start": 50.154,
+      "end": 50.318,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "region",
+      "start": 50.331,
+      "end": 50.722,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "in",
+      "start": 50.735,
+      "end": 50.873,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "fifteen",
+      "start": 50.886,
+      "end": 51.416,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "thousand",
+      "start": 51.429,
+      "end": 51.896,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "years",
+      "start": 51.909,
+      "end": 52.414,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "Yet",
+      "start": 52.932,
+      "end": 53.192,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "seismologists",
+      "start": 53.086,
+      "end": 53.972,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "did",
+      "start": 53.985,
+      "end": 54.154,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "uncover",
+      "start": 54.167,
+      "end": 54.636,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "a",
+      "start": 54.649,
+      "end": 54.714,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "real",
+      "start": 54.727,
+      "end": 55.066,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "anomaly",
+      "start": 55.079,
+      "end": 55.482,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "deeper",
+      "start": 55.495,
+      "end": 55.86,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "underground",
+      "start": 55.873,
+      "end": 56.68,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "Directly",
+      "start": 57.202,
+      "end": 57.714,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "beneath",
+      "start": 57.625,
+      "end": 58.025,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Bermuda's",
+      "start": 58.037,
+      "end": 58.537,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "crust",
+      "start": 58.55,
+      "end": 58.9,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "sits",
+      "start": 58.912,
+      "end": 59.137,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "an",
+      "start": 59.15,
+      "end": 59.25,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "unusual",
+      "start": 59.262,
+      "end": 59.75,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "twenty-kilometer-thick",
+      "start": 59.762,
+      "end": 60.787,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "layer",
+      "start": 60.8,
+      "end": 61.087,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "of",
+      "start": 61.1,
+      "end": 61.187,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "frozen",
+      "start": 61.2,
+      "end": 61.637,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "mantle",
+      "start": 61.65,
+      "end": 62.025,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "rock",
+      "start": 62.037,
+      "end": 62.35,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "a",
+      "start": 62.575,
+      "end": 62.612,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "hidden",
+      "start": 62.625,
+      "end": 62.95,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "geological",
+      "start": 62.962,
+      "end": 63.587,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "raft",
+      "start": 63.6,
+      "end": 63.912,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "holding",
+      "start": 63.925,
+      "end": 64.25,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 64.262,
+      "end": 64.35,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "surrounding",
+      "start": 64.362,
+      "end": 64.887,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "seafloor",
+      "start": 64.9,
+      "end": 65.412,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "five",
+      "start": 65.425,
+      "end": 65.737,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "hundred",
+      "start": 65.75,
+      "end": 66.037,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "meters",
+      "start": 66.05,
+      "end": 66.387,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "higher",
+      "start": 66.4,
+      "end": 66.75,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "than",
+      "start": 66.762,
+      "end": 66.912,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "normal",
+      "start": 66.925,
+      "end": 67.312,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "According",
+      "start": 67.839,
+      "end": 68.3,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "to",
+      "start": 68.209,
+      "end": 68.328,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "NOAA",
+      "start": 68.341,
+      "end": 68.999,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "ships",
+      "start": 69.236,
+      "end": 69.499,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "don't",
+      "start": 69.512,
+      "end": 69.749,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "disappear",
+      "start": 69.762,
+      "end": 70.275,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "here",
+      "start": 70.288,
+      "end": 70.512,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "more",
+      "start": 70.525,
+      "end": 70.749,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "often",
+      "start": 70.762,
+      "end": 71.078,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "than",
+      "start": 71.091,
+      "end": 71.223,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "in",
+      "start": 71.236,
+      "end": 71.354,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "any",
+      "start": 71.367,
+      "end": 71.578,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "other",
+      "start": 71.591,
+      "end": 71.788,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "stormy",
+      "start": 71.802,
+      "end": 72.157,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "shipping",
+      "start": 72.17,
+      "end": 72.538,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "lane",
+      "start": 72.552,
+      "end": 72.999,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "What",
+      "start": 73.909,
+      "end": 74.146,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "hides",
+      "start": 74.159,
+      "end": 74.488,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "beneath",
+      "start": 74.502,
+      "end": 74.883,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "the",
+      "start": 74.896,
+      "end": 74.988,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Bermuda",
+      "start": 75.002,
+      "end": 75.475,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Triangle",
+      "start": 75.488,
+      "end": 76.028,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "isn't",
+      "start": 76.041,
+      "end": 76.265,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "folklore",
+      "start": 76.278,
+      "end": 76.817,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "it's",
+      "start": 77.028,
+      "end": 77.173,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "extreme",
+      "start": 77.186,
+      "end": 77.686,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "ocean",
+      "start": 77.699,
+      "end": 78.041,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "physics",
+      "start": 78.054,
+      "end": 78.488,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "and",
+      "start": 78.502,
+      "end": 78.607,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "an",
+      "start": 78.62,
+      "end": 78.738,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "eight-kilometer",
+      "start": 78.752,
+      "end": 79.436,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "abyss",
+      "start": 79.449,
+      "end": 79.962,
+      "emphasis": true
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "sonar_ping_deep",
+      "time_s": 0.06,
+      "gain_db": -25.0
+    },
+    {
+      "sfx_name": "hydrophone_current_swell",
+      "time_s": 14.48,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "subterranean_gate_boom",
+      "time_s": 27.75,
+      "gain_db": -26.0
+    },
+    {
+      "sfx_name": "sonar_ping_deep",
+      "time_s": 52.693,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 56.95,
+      "gain_db": -26.0
+    }
+  ],
+  "diegetic_nat_sound_active": true,
+  "audio_layers_exported": [
+    "layer_1_narration",
+    "layer_2_music",
+    "layer_3_ambience",
+    "layer_4_natural_sounds",
+    "layer_5_cinematic_sfx"
+  ],
+  "audio_diagnostics": {
+    "integrated_lufs": -16.0,
+    "loudness_range_lra_lu": 1.6,
+    "true_peak_dbtp": -2.5,
+    "speech_crest_factor_db": 13.5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -1.88
+  }
+}

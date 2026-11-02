@@ -1,0 +1,1240 @@
+{
+  "style_profile": "deep_ocean_documentary",
+  "ffprobe": {
+    "duration_s": 80.267,
+    "within_target_window": true,
+    "exact_frame_match": true,
+    "size_bytes": 366474372,
+    "size_mb": 349.5,
+    "video_codec": "h264",
+    "profile": "High",
+    "width": 1080,
+    "height": 1920,
+    "dimensions_exact": true,
+    "r_frame_rate": "30/1",
+    "avg_frame_rate": "30/1",
+    "nb_frames": 2408,
+    "pix_fmt": "yuv420p",
+    "color_space": "bt709",
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "black_segments": [],
+  "loudness": {
+    "integrated_LUFS": -16.0,
+    "LRA_LU": 1.5,
+    "true_peak_dBTP": -2.6,
+    "narration_stem_LUFS": -16.0,
+    "ambience_and_sfx_stem_LUFS": -26.5,
+    "voice_to_ambience_margin_LU": 10.5
+  },
+  "shot_plan_and_pacing_qc": {
+    "style_profile": "deep_ocean_documentary",
+    "total_duration_s": 80.267,
+    "shot_count": 16,
+    "distinct_source_assets_count": 13,
+    "distinct_perspectives": [
+      "aerial",
+      "close_up",
+      "extreme_wide",
+      "labeled_visualization",
+      "macro",
+      "medium",
+      "satellite_or_telescope",
+      "scientific_fieldwork"
+    ],
+    "distinct_perspectives_count": 8,
+    "first_real_motion_start_s": 0.0,
+    "viral_script_audit": {
+      "total_words": 205,
+      "hook_first_sentence_words": 20,
+      "max_sentence_words": 34,
+      "llm_cliche_hits": 0,
+      "jargon_cluster_hits": 0,
+      "flat_prosody_ratio": 0.0,
+      "ending_tail_pause_s": 0.34,
+      "anti_ai_script_pass": true,
+      "errors": [],
+      "warnings": [
+        "Opening hook sentence is 20 words (> 18); tighten first sentence so the core contradiction lands within 2.5 seconds.",
+        "[N03] Sentence has 34 words (> 24): 'Where the fast, warm Gulf Stream slams into Atlantic storms, sudden thir...'",
+        "[N06] Sentence has 27 words (> 24): 'Directly beneath Bermuda's crust sits an unusual twenty-kilometer-thick ...'"
+      ]
+    },
+    "moving_footage_s": 71.935,
+    "moving_footage_pct": 89.62,
+    "meets_moving_footage_goal": true,
+    "still_photography_s": 2.767,
+    "still_photography_pct": 3.45,
+    "human_interaction_shots": 3,
+    "human_interaction_s": 17.6,
+    "human_interaction_pct": 21.93,
+    "illustrative_diagram_s": 5.567,
+    "illustrative_diagram_pct": 6.94,
+    "authentic_visual_pct": 93.07,
+    "pacing_summary": {
+      "min_shot_s": 2.567,
+      "median_shot_s": 5.067,
+      "mean_shot_s": 5.017,
+      "max_shot_s": 9.067,
+      "internal_cuts": 15,
+      "clean_cuts": 11,
+      "dissolves": 4,
+      "dissolve_fraction": 0.267,
+      "speech_boundary_aligned_cuts": 15,
+      "speech_boundary_alignment_pct": 100.0
+    },
+    "errors": [],
+    "warnings": [
+      "[S03:noaa_sonar_mapping_720p.mp4] Effective upscale factor (2.83x) exceeds crisp HD target (2.35x).",
+      "[S09:noaa_ex1903_new_seep_1080p.mp4] Effective upscale factor (2.83x) exceeds crisp HD target (2.35x).",
+      "[S10:noaa_ex1903_new_seep_1080p.mp4] Effective upscale factor (2.83x) exceeds crisp HD target (2.35x).",
+      "[S11:noaa_boxcore_scientists_720p.mp4] Effective upscale factor (2.80x) exceeds crisp HD target (2.35x).",
+      "Opening hook sentence is 20 words (> 18); tighten first sentence so the core contradiction lands within 2.5 seconds.",
+      "[N03] Sentence has 34 words (> 24): 'Where the fast, warm Gulf Stream slams into Atlantic storms, sudden thir...'",
+      "[N06] Sentence has 27 words (> 24): 'Directly beneath Bermuda's crust sits an unusual twenty-kilometer-thick ...'"
+    ],
+    "shots": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 9.0667,
+        "duration_s": 9.067,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.0,
+          "ideal_duration_s": 9.13,
+          "max_recommended_s": 11.53,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "aerial",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 27
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "aerial",
+        "src_file": "noaa_ex2201_puerto_rico_cp_1080p.mov",
+        "transition_in": "opening",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Immediate 0.00s live 1080p abyssal ROV visual hook off Puerto Rico.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.0,
+        "nearest_speech_boundary_kind": "start",
+        "subject_match_kind": "direct_location",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Beneath the southern edge of the Bermuda Triangle the Atlantic seafloor plunges more than eight thousand meters into pitch-black abyss That chasm is the Puerto Rico Trench",
+        "story_beat": "Live 1080p NOAA ROV floodlights descending into Puerto Rico abyss (N01)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 578.6,
+          "crop_height_px": 1028.6,
+          "upscale_factor": 1.867,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S02",
+        "start_s": 9.0667,
+        "end_s": 11.8333,
+        "duration_s": 2.767,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.5,
+          "ideal_duration_s": 4.0,
+          "max_recommended_s": 4.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "labeled_visualization",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": false,
+            "spoken_word_count": 8
+          }
+        },
+        "media_type": "photo",
+        "kind": "still_full",
+        "camera_perspective": "labeled_visualization",
+        "src_file": "puerto_rico_trench_bathymetry_usgs.jpg",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut after 'Trench\u2014' revealing exact 3D bathymetry of the deepest point in the Atlantic Ocean.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.011,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_location",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "the deepest point in the entire Atlantic Ocean",
+        "story_beat": "USGS 3D tectonic bathymetry of the 8,376m Puerto Rico Trench (N02a)",
+        "crop_feasibility": {
+          "source_width": 1500,
+          "source_height": 900,
+          "crop_width_px": 477.6,
+          "crop_height_px": 849.1,
+          "upscale_factor": 2.261,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S03",
+        "start_s": 11.8333,
+        "end_s": 14.4,
+        "duration_s": 2.567,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.23,
+          "ideal_duration_s": 4.73,
+          "max_recommended_s": 9.1,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "aerial",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 6
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "aerial",
+        "src_file": "noaa_sonar_mapping_720p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut after 'Ocean.' matching 'Before modern sonar and deep-sea robots'.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.013,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "contextual_fieldwork",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Before modern sonar and deep-sea robots",
+        "story_beat": "3D multibeam seafloor sonar mapping sweep (N02b)",
+        "crop_feasibility": {
+          "source_width": 1280,
+          "source_height": 720,
+          "crop_width_px": 382.1,
+          "crop_height_px": 679.2,
+          "upscale_factor": 2.827,
+          "feasible": true,
+          "warnings": [
+            "Effective upscale factor (2.83x) exceeds crisp HD target (2.35x)."
+          ]
+        }
+      },
+      {
+        "sid": "S04",
+        "start_s": 14.4,
+        "end_s": 20.6667,
+        "duration_s": 6.267,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.0,
+          "ideal_duration_s": 7.14,
+          "max_recommended_s": 9.54,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 17
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "noaa_ex2502_shipwreck_lst884_1080p.mp4",
+        "transition_in": "dissolve",
+        "transition_duration_s": 0.55,
+        "transition_reason": "Motivated 0.55s dissolve at clause pause descending onto a real sunken steel wreck in abyssal darkness.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.009,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": "Illustrative NOAA deep-sea shipwreck",
+        "spoken_narration": "any ship sinking over trenches this deep simply vanished beyond human reach turning tragic wrecks into legends",
+        "story_beat": "1080p NOAA ROV floodlights over sunken steel ship in pitch-black ocean (N02c)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 578.6,
+          "crop_height_px": 1028.6,
+          "upscale_factor": 1.867,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S05",
+        "start_s": 20.6667,
+        "end_s": 23.8667,
+        "duration_s": 3.2,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.9,
+          "ideal_duration_s": 5.4,
+          "max_recommended_s": 9.1,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "satellite_or_telescope",
+            "camera_movement": "aerial_sweep",
+            "is_moving_footage": true,
+            "spoken_word_count": 7
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "satellite_or_telescope",
+        "src_file": "nasa_gulf_stream_1080p.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut after 'legends.' rising from the abyss to surface ocean-current physics.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.009,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_location",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Above the seafloor powerful physics takes over",
+        "story_beat": "1080p NASA SVS Gulf Stream current streamlines (N03a)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 573.1,
+          "crop_height_px": 1018.9,
+          "upscale_factor": 1.884,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S06",
+        "start_s": 23.8667,
+        "end_s": 27.7,
+        "duration_s": 3.833,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.0,
+          "ideal_duration_s": 5.95,
+          "max_recommended_s": 9.1,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "satellite_or_telescope",
+            "camera_movement": "aerial_sweep",
+            "is_moving_footage": true,
+            "spoken_word_count": 10
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "satellite_or_telescope",
+        "src_file": "noaa_cira_hurricane_irma_atlantic_1080p.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut after 'over.' showing real GOES-16 Atlantic storm colliding with warm Gulf Stream waters.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.003,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_location",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Where the fast warm Gulf Stream slams into Atlantic storms",
+        "story_beat": "Real GOES-16 satellite view of major Atlantic hurricane crossing Bermuda Triangle corridor (N03b)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 552.3,
+          "crop_height_px": 981.8,
+          "upscale_factor": 1.956,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S07",
+        "start_s": 27.7,
+        "end_s": 31.7667,
+        "duration_s": 4.067,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.0,
+          "ideal_duration_s": 5.97,
+          "max_recommended_s": 9.1,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "handheld_field",
+            "is_moving_footage": true,
+            "spoken_word_count": 11
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "usblm_stormy_sea_waves_1080p.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut after 'storms,' dropping from satellite view right down into crashing storm seas.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.006,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "sudden thirty-meter rogue waves can overwhelm steel cargo ships in minutes",
+        "story_beat": "1080p sea-level violent storm waves with live surf nat-sound (N03c)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 573.1,
+          "crop_height_px": 1018.9,
+          "upscale_factor": 1.884,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S08",
+        "start_s": 31.7667,
+        "end_s": 38.1667,
+        "duration_s": 6.4,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.0,
+          "ideal_duration_s": 5.74,
+          "max_recommended_s": 9.1,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "close_up",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 12
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "close_up",
+        "src_file": "noaa_ex2502_shipwreck_nevada_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut after 'minutes\u2014' into underwater ROV identification of a sunken steel vessel.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.007,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": "Illustrative NOAA deep-sea wreck survey",
+        "spoken_narration": "like the SS Cotopaxi lost in 1925 and finally identified underwater decades later",
+        "story_beat": "1080p NOAA ROV green-laser survey along sunken steel hull (N03d)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 578.6,
+          "crop_height_px": 1028.6,
+          "upscale_factor": 1.867,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S09",
+        "start_s": 38.1667,
+        "end_s": 42.4333,
+        "duration_s": 4.267,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.41,
+          "ideal_duration_s": 4.91,
+          "max_recommended_s": 9.1,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "macro",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 10
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "macro",
+        "src_file": "noaa_ex1903_new_seep_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut after 'later.' directly visualizing seafloor methane gas seeps.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.014,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "credible_hypothesis",
+        "context_note": null,
+        "spoken_narration": "Some once blamed giant seafloor methane eruptions for sinking ships",
+        "story_beat": "1080p NOAA EX1903 Blake Ridge seafloor methane seep & gas bubbles (N04a)",
+        "crop_feasibility": {
+          "source_width": 1280,
+          "source_height": 720,
+          "crop_width_px": 382.1,
+          "crop_height_px": 679.2,
+          "upscale_factor": 2.827,
+          "feasible": true,
+          "warnings": [
+            "Effective upscale factor (2.83x) exceeds crisp HD target (2.35x)."
+          ]
+        }
+      },
+      {
+        "sid": "S10",
+        "start_s": 42.4333,
+        "end_s": 45.8,
+        "duration_s": 3.367,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.59,
+          "ideal_duration_s": 5.09,
+          "max_recommended_s": 9.1,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "context",
+            "camera_perspective": "labeled_visualization",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 10
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "labeled_visualization",
+        "src_file": "noaa_ex1903_new_seep_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut after 'ships.' showing NOAA acoustic gas-plume density mapping.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.016,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "contextual_observation",
+        "context_note": null,
+        "spoken_narration": "While dense gas plumes can reduce buoyancy in lab tanks",
+        "story_beat": "NOAA acoustic water-column gas-plume mapping (N04b)",
+        "crop_feasibility": {
+          "source_width": 1280,
+          "source_height": 720,
+          "crop_width_px": 382.1,
+          "crop_height_px": 679.2,
+          "upscale_factor": 2.827,
+          "feasible": true,
+          "warnings": [
+            "Effective upscale factor (2.83x) exceeds crisp HD target (2.35x)."
+          ]
+        }
+      },
+      {
+        "sid": "S11",
+        "start_s": 45.8,
+        "end_s": 52.6333,
+        "duration_s": 6.833,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.0,
+          "ideal_duration_s": 6.43,
+          "max_recommended_s": 9.1,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "handheld_field",
+            "is_moving_footage": true,
+            "spoken_word_count": 17
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "noaa_boxcore_scientists_720p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut after 'tanks,' showing hands-on marine sediment core verification.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.015,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "contextual_fieldwork",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "U.S. Geological Survey records show no massive hydrate blowouts have struck this region in fifteen thousand years",
+        "story_beat": "Marine geologist sampling seafloor sediment box core on deck (N04c)",
+        "crop_feasibility": {
+          "source_width": 1280,
+          "source_height": 720,
+          "crop_width_px": 385.7,
+          "crop_height_px": 685.7,
+          "upscale_factor": 2.8,
+          "feasible": true,
+          "warnings": [
+            "Effective upscale factor (2.80x) exceeds crisp HD target (2.35x)."
+          ]
+        }
+      },
+      {
+        "sid": "S12",
+        "start_s": 52.6333,
+        "end_s": 56.9,
+        "duration_s": 4.267,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.46,
+          "ideal_duration_s": 4.96,
+          "max_recommended_s": 9.1,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "close_up",
+            "camera_movement": "handheld_field",
+            "is_moving_footage": true,
+            "spoken_word_count": 9
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "close_up",
+        "src_file": "noaa_orpheus_hadal_auv_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut after 'years.' launching the Layer-2 geophysical anomaly pivot.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.006,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "contextual_fieldwork",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Yet seismologists did uncover a real anomaly deeper underground",
+        "story_beat": "Layer-2 retention pivot: 1080p live shipboard acoustic/seismic telemetry display (N05)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 573.1,
+          "crop_height_px": 1018.9,
+          "upscale_factor": 1.884,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S13",
+        "start_s": 56.9,
+        "end_s": 62.4667,
+        "duration_s": 5.567,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.5,
+          "ideal_duration_s": 4.0,
+          "max_recommended_s": 4.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "labeled_visualization",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": false,
+            "spoken_word_count": 13
+          }
+        },
+        "media_type": "diagram",
+        "kind": "diagram",
+        "camera_perspective": "labeled_visualization",
+        "src_file": "bermuda_rock_raft_cutaway_v6.mp4",
+        "transition_in": "dissolve",
+        "transition_duration_s": 0.6,
+        "transition_reason": "Motivated 0.60s dissolve descending 20km beneath Bermuda's oceanic crust.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.005,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "illustrative_diagram",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Directly beneath Bermuda's crust sits an unusual twenty-kilometer-thick layer of frozen mantle rock",
+        "story_beat": "Seismic cross-section of Bermuda's 20km frozen mantle rock 'raft' (N06a)",
+        "crop_feasibility": null
+      },
+      {
+        "sid": "S14",
+        "start_s": 62.4667,
+        "end_s": 67.5333,
+        "duration_s": 5.067,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.0,
+          "ideal_duration_s": 5.5,
+          "max_recommended_s": 9.1,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "close_up",
+            "camera_movement": "handheld_field",
+            "is_moving_footage": true,
+            "spoken_word_count": 14
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "close_up",
+        "src_file": "noaa_wetlab_scientists_1080p.mp4",
+        "transition_in": "dissolve",
+        "transition_duration_s": 0.55,
+        "transition_reason": "Restrained 0.55s dissolve at em-dash pause returning from underground seismic diagram to physical marine science.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.004,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "contextual_fieldwork",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "a hidden geological raft holding the surrounding seafloor five hundred meters higher than normal",
+        "story_beat": "1080p gloved marine scientist examining deep-sea specimen in wet lab (N06b)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 578.6,
+          "crop_height_px": 1028.6,
+          "upscale_factor": 1.867,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S15",
+        "start_s": 67.5333,
+        "end_s": 73.2333,
+        "duration_s": 5.7,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.0,
+          "ideal_duration_s": 6.95,
+          "max_recommended_s": 9.35,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "extreme_wide",
+            "camera_movement": "handheld_field",
+            "is_moving_footage": true,
+            "spoken_word_count": 16
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "extreme_wide",
+        "src_file": "noaa_orpheus_hadal_auv_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut after 'normal.' showing modern NOAA trench exploration operations.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.004,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "contextual_fieldwork",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "According to NOAA ships don't disappear here more often than in any other stormy shipping lane",
+        "story_beat": "1080p NOAA/WHOI engineers deploying Orpheus trench robot into open ocean (N07a)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 578.6,
+          "crop_height_px": 1028.6,
+          "upscale_factor": 1.867,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S16",
+        "start_s": 73.2333,
+        "end_s": 80.2667,
+        "duration_s": 7.033,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.0,
+          "ideal_duration_s": 7.14,
+          "max_recommended_s": 9.54,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "aerial",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 16
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "aerial",
+        "src_file": "noaa_ex2201_puerto_rico_cp_1080p.mov",
+        "transition_in": "dissolve",
+        "transition_duration_s": 0.6,
+        "transition_reason": "Gentle 0.60s closing dissolve into pitch-black Puerto Rico abyssal ROV footage matching Frame 0.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.009,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_location",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "What hides beneath the Bermuda Triangle isn't folklore it's extreme ocean physics and an eight-kilometer abyss",
+        "story_beat": "Closing 1080p NOAA ROV floodlights in the Puerto Rico abyss (N07b)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 578.6,
+          "crop_height_px": 1028.6,
+          "upscale_factor": 1.867,
+          "feasible": true,
+          "warnings": []
+        }
+      }
+    ]
+  },
+  "visual_evidence_breakdown": {
+    "total_shots": 16,
+    "moving_footage_s": 71.935,
+    "moving_footage_pct": 89.62,
+    "still_photography_s": 2.767,
+    "still_photography_pct": 3.45,
+    "human_interaction_shots": 3,
+    "human_interaction_s": 17.6,
+    "human_interaction_pct": 21.93,
+    "real_imagery_and_footage_s": 74.7,
+    "real_imagery_and_footage_pct": 93.06,
+    "illustrative_diagram_s": 5.567,
+    "illustrative_diagram_pct": 6.94,
+    "meets_real_target": true,
+    "meets_moving_video_target": true
+  },
+  "editorial_formula_qc": {
+    "first_word_start_s": 0.1,
+    "hook_within_limit": true,
+    "layer2_pivot_seg_id": "N05",
+    "scientific_caveat_seg_id": "N04",
+    "caveat_explicitly_stated": true,
+    "all_passed": true
+  },
+  "full_canvas_qc": {
+    "audited_shots": 16,
+    "suspicious_shots_count": 0,
+    "suspicious_shots": [],
+    "all_full_canvas_pass": true,
+    "shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "sample_t_s": 4.53,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.0,
+        "right_inset_spike_ratio": 1.08,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S02",
+        "kind": "still_full",
+        "sample_t_s": 10.45,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.35,
+        "right_inset_spike_ratio": 1.69,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S03",
+        "kind": "video_full",
+        "sample_t_s": 13.12,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.08,
+        "right_inset_spike_ratio": 1.13,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S04",
+        "kind": "video_full",
+        "sample_t_s": 17.53,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.11,
+        "right_inset_spike_ratio": 1.08,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S05",
+        "kind": "video_full",
+        "sample_t_s": 22.27,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.11,
+        "right_inset_spike_ratio": 2.3,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S06",
+        "kind": "video_full",
+        "sample_t_s": 25.78,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 2.32,
+        "right_inset_spike_ratio": 1.01,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S07",
+        "kind": "video_full",
+        "sample_t_s": 29.73,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.36,
+        "right_inset_spike_ratio": 2.5,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S08",
+        "kind": "video_full",
+        "sample_t_s": 34.97,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.56,
+        "right_inset_spike_ratio": 1.44,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S09",
+        "kind": "video_full",
+        "sample_t_s": 40.3,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.24,
+        "right_inset_spike_ratio": 1.31,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S10",
+        "kind": "video_full",
+        "sample_t_s": 44.12,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.96,
+        "right_inset_spike_ratio": 1.42,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S11",
+        "kind": "video_full",
+        "sample_t_s": 49.22,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.12,
+        "right_inset_spike_ratio": 1.29,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S12",
+        "kind": "video_full",
+        "sample_t_s": 54.77,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.84,
+        "right_inset_spike_ratio": 1.17,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S13",
+        "kind": "diagram",
+        "sample_t_s": 59.68,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.52,
+        "right_inset_spike_ratio": 0.55,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S14",
+        "kind": "video_full",
+        "sample_t_s": 65.0,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.99,
+        "right_inset_spike_ratio": 0.78,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S15",
+        "kind": "video_full",
+        "sample_t_s": 70.38,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.53,
+        "right_inset_spike_ratio": 1.06,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S16",
+        "kind": "video_full",
+        "sample_t_s": 76.75,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.05,
+        "right_inset_spike_ratio": 1.1,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      }
+    ]
+  },
+  "overlay_cleanliness_qc": {
+    "style_profile": "deep_ocean_documentary",
+    "scale_rings_rendered": 0,
+    "locator_huds_rendered": 0,
+    "source_banners_rendered": 0,
+    "callout_badges_rendered": 0,
+    "opening_cover_card_burned": false,
+    "closing_credit_burned": false,
+    "minimal_context_notes_used": [
+      "Illustrative NOAA deep-sea shipwreck",
+      "Illustrative NOAA deep-sea wreck survey"
+    ],
+    "violations": [],
+    "clean_documentary_pass": true
+  },
+  "protected_projects_qc": {
+    "checked_projects": {
+      "blood-falls-v3-documentary": {
+        "mp4_exists": true,
+        "size_mb": 338.67,
+        "intact": true
+      },
+      "brine-pools-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 331.23,
+        "intact": true
+      },
+      "day-in-the-life-of-an-astronaut": {
+        "mp4_exists": true,
+        "size_mb": 126.43,
+        "intact": true
+      },
+      "fermi-paradox-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 413.61,
+        "intact": true
+      },
+      "forbidden-zones-earth-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 544.82,
+        "intact": true
+      },
+      "gemstone-mine-secrets-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 380.86,
+        "intact": true
+      },
+      "how-high-could-you-jump-on-other-planets": {
+        "mp4_exists": true,
+        "size_mb": 34.22,
+        "intact": true
+      },
+      "lava-cave-gold-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 386.85,
+        "intact": true
+      },
+      "mars-helicopter-1-percent-air": {
+        "mp4_exists": true,
+        "size_mb": 118.82,
+        "intact": true
+      },
+      "unreal-places-earth-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 441.92,
+        "intact": true
+      },
+      "venus-hotter-than-mercury": {
+        "mp4_exists": true,
+        "size_mb": 88.07,
+        "intact": true
+      }
+    },
+    "all_intact": true
+  },
+  "wcag_contrast_qc": {
+    "subtitle_style": "cinema_boxless",
+    "emphasis_mode": "color_accent",
+    "backdrop_worst_case_rgb": [
+      240,
+      245,
+      250
+    ],
+    "caption_white_contrast_ratio": 12.07,
+    "caption_gold_contrast_ratio": 9.34,
+    "all_wcag_aaa_pass": true
+  },
+  "viral_anti_ai_qc": {
+    "anti_ai_script_pass": true,
+    "llm_cliche_hits": 0,
+    "jargon_cluster_hits": 0,
+    "ending_tail_pause_s": 0.34,
+    "first_real_motion_start_s": 0.0,
+    "opening_motion_pass": true,
+    "diegetic_nat_sound_active": true,
+    "audible_location_bed_pass": true,
+    "subtitle_style": "cinema_boxless",
+    "filmic_color_grade_enabled": true,
+    "all_viral_anti_ai_pass": true
+  },
+  "thumbnail_qc": {
+    "thumbnail_jpg_bytes": 679791,
+    "under_2mb": true,
+    "width": 1080,
+    "height": 1920,
+    "dimensions_9x16": true,
+    "text_mode": "cinema_hook",
+    "frame0_vs_thumbnail_mae_rgb": 57.125,
+    "cover_variants_exported": 2,
+    "concepts_exported": 3,
+    "concepts_comparison_sheet_exists": true,
+    "preview_sheet_exists": true
+  },
+  "motion_smoothness_qc": {
+    "sampled_shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "min_frame_delta_luma": 3.1564,
+        "median_frame_delta_luma": 3.2723,
+        "max_to_median_ratio": 1.042,
+        "smooth": true
+      },
+      {
+        "sid": "S04",
+        "kind": "video_full",
+        "min_frame_delta_luma": 2.0383,
+        "median_frame_delta_luma": 2.1866,
+        "max_to_median_ratio": 1.129,
+        "smooth": true
+      },
+      {
+        "sid": "S05",
+        "kind": "video_full",
+        "min_frame_delta_luma": 37.5062,
+        "median_frame_delta_luma": 41.0756,
+        "max_to_median_ratio": 1.181,
+        "smooth": true
+      },
+      {
+        "sid": "S06",
+        "kind": "video_full",
+        "min_frame_delta_luma": 5.5387,
+        "median_frame_delta_luma": 6.0235,
+        "max_to_median_ratio": 2.274,
+        "smooth": true
+      }
+    ],
+    "worst_jump_ratio": 2.274,
+    "all_smooth": true
+  },
+  "subtitles_qc": {
+    "cue_count": 44,
+    "max_burned_lines_per_cue": 2,
+    "raw_word_match_ratio": 0.9406,
+    "normalized_word_match_ratio": 0.981,
+    "normalized_diffs": [
+      [
+        "replace",
+        "seafloor methane",
+        "sea flume ethane"
+      ],
+      [
+        "replace",
+        "u s",
+        "us"
+      ]
+    ],
+    "cue_start_vs_whisper_offset_s": {
+      "median": 0.01,
+      "p95_abs": 0.384,
+      "max_abs": 0.492
+    }
+  },
+  "licensing_register_qc": {
+    "source_register_csv_exists": true,
+    "source_register_md_exists": true,
+    "registered_assets_count": 20
+  },
+  "narrative_and_visual_intelligence_qc": {
+    "momentum_pass": true,
+    "momentum_error_count": 0,
+    "momentum_warning_count": 0,
+    "hook_candidates_count": 3,
+    "recommended_hook_id": "H1",
+    "recommended_hook_score": 9.38,
+    "mean_visual_weighted_score": 0.9181,
+    "visual_mismatch_count": 0,
+    "all_shots_eligible": true
+  },
+  "voice_studio_qc": {
+    "voice_input_mode": "directed_tts",
+    "voice_direction_profile": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "sentence_count": 10,
+    "approval_lock_present": true,
+    "approval_lock_synchronized": true
+  },
+  "audio_5layer_health_qc": {
+    "scene_audio_profile": "deep_ocean_abyss",
+    "stems_exported_count": 5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "loudness_range_lra_lu": 1.6,
+    "speech_crest_factor_db": 13.5,
+    "natural_dynamics_pass": true,
+    "all_audio_health_pass": true
+  },
+  "failed_gates": [],
+  "failed_gates_count": 0,
+  "overall_studio_v6_pass": true
+}

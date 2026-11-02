@@ -1,0 +1,11 @@
+{
+  "slug": "bermuda-triangle-abyss-v6",
+  "script_version": "v6.0.0",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "approved_at_utc": "2026-11-02T11:44:53.813828+00:00",
+  "reviewer_note": "Approved via Stage 3 Voice Studio",
+  "script_sha256": "d2e7aaa8b93c898c40b6fcaefe86adbf45d4f9857c32da7b3af4fe0298796e86",
+  "narration_norm_wav_sha256": "db8faefde68ca6ee2868fd4c85d34174aa464138070f9a1d7cd378434b5fd60a",
+  "word_timings_sha256": "cf502390eb9ff4acf557f8cabf1bbdbf73efe436c485f7a510bbcc759a99257b"
+}

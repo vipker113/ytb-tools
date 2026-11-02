@@ -1,0 +1,72 @@
+{
+  "slug": "bermuda-triangle-abyss-v6",
+  "primary_title": "What Actually Lies 8,300 Meters Beneath the Bermuda Triangle?",
+  "concepts_count": 3,
+  "comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/thumbnail_concepts_comparison_sheet.jpg",
+  "ctr_prediction_disclaimer": "Visual sharpness and subject-separation scores verify small-screen mobile legibility only. They do NOT predict real YouTube click-through or swipe-away rates; populate `actual_analytics_outcome` via `analytics_learning.py` once real YouTube Studio impressions/views are available.",
+  "concepts": [
+    {
+      "concept_id": "A",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/thumbnail_concept_A.jpg",
+      "source_asset": "noaa_ex2502_exploring_lst884.jpg",
+      "matches_opening_scene_asset": false,
+      "headline_text": "8,300M UNDER|BERMUDA",
+      "headline_word_count": 3,
+      "kicker_text": "ATLANTIC ABYSS",
+      "concept_rationale": "Concept C + Text (Selected): Real NOAA ROV cyan floodlights illuminating a sunken steel ship on the pitch-black seafloor with bold 3-word abyssal hook.",
+      "size_kb": 663.9,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "noaa_ex2502_exploring_lst884.jpg",
+        "sharpness_score": 0.51,
+        "subject_separation_score": 60.5,
+        "combined_score": 33.5,
+        "recommended_cx": 0.4725,
+        "recommended_cy": 0.3535
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "B",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/thumbnail_concept_B.jpg",
+      "source_asset": "noaa_ex2502_lst884_stern_bridge.jpg",
+      "matches_opening_scene_asset": false,
+      "headline_text": "BENEATH THE|MISSING SHIPS",
+      "headline_word_count": 4,
+      "kicker_text": "NOAA DEEP ROV",
+      "concept_rationale": "Close-up of encrusted steel ship bridge on the deep blue ocean floor with top-mounted 4-word curiosity headline.",
+      "size_kb": 1296.5,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "noaa_ex2502_lst884_stern_bridge.jpg",
+        "sharpness_score": 3.66,
+        "subject_separation_score": 104.79,
+        "combined_score": 59.28,
+        "recommended_cx": 0.4997,
+        "recommended_cy": 0.4657
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "C",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/bermuda-triangle-abyss-v6/thumbnail_concept_C.jpg",
+      "source_asset": "noaa_ex2201_puerto_rico_cp_1080p.mov",
+      "matches_opening_scene_asset": true,
+      "headline_text": "8,376M DEEP|OCEAN TRENCH",
+      "headline_word_count": 4,
+      "kicker_text": "PUERTO RICO TRENCH",
+      "concept_rationale": "Matches Frame 0 opening shot: NOAA camera sled looking straight down at ROV floodlights in the Puerto Rico abyss.",
+      "size_kb": 726.5,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "noaa_ex2201_puerto_rico_cp_1080p.mov",
+        "sharpness_score": 0.75,
+        "subject_separation_score": 31.12,
+        "combined_score": 17.46,
+        "recommended_cx": 0.4178,
+        "recommended_cy": 0.5182
+      },
+      "actual_analytics_outcome": null
+    }
+  ]
+}

@@ -85,10 +85,10 @@
 [PAUSE AFTER: 460ms]
 
 [SEG: N07]
-"According to NOAA, ships don't disappear here more often than in any other stormy shipping lane. What hides beneath the Bermuda Triangle isn't supernatural—it's extreme ocean physics and an eight-kilometer abyss."
+"According to NOAA, ships don't disappear here more often than in any other stormy shipping lane. What hides beneath the Bermuda Triangle isn't folklore—it's extreme ocean physics and an eight-kilometer abyss."
 
 [DELIVERY: FINAL IMPRESSION]
 [PACE: SLOW]
 [ENERGY: 3/5]
-[EMPHASIS: "isn't supernatural", "eight-kilometer abyss"]
+[EMPHASIS: "isn't folklore", "eight-kilometer abyss"]
 [PAUSE AFTER: 240ms]

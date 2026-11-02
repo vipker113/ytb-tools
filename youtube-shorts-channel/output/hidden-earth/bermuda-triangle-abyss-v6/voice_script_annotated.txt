@@ -1,0 +1,103 @@
+# Proof of Wonder — Voice Direction Script (bermuda-triangle-abyss-v6)
+# Profile: mysterious_discovery | Voice: en-GB-RyanNeural
+
+[SEG: N01]
+"Beneath the southern edge of the Bermuda Triangle, the Atlantic seafloor plunges more than eight thousand meters into pitch-black abyss."
+
+[DELIVERY: CURIOUS_HOOK]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "eight", "thousand", "meters", "pitch-black", "abyss"]
+[PAUSE AFTER: 340ms]
+
+[SEG: N02]
+"That chasm is the Puerto Rico Trench—the deepest point in the entire Atlantic Ocean."
+
+[DELIVERY: MEASURED_EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "Puerto", "Rico", "Trench", "deepest"]
+[PAUSE AFTER: 260ms]
+
+"Before modern sonar and deep-sea robots, any ship sinking over trenches this deep simply vanished beyond human reach—turning tragic wrecks into legends."
+
+[DELIVERY: MEASURED_EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "Trench", "vanished"]
+[PAUSE AFTER: 340ms]
+
+[SEG: N03]
+"Above the seafloor, powerful physics takes over."
+
+[DELIVERY: MEASURED_EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "powerful", "physics"]
+[PAUSE AFTER: 260ms]
+
+"Where the fast, warm Gulf Stream slams into Atlantic storms, sudden thirty-meter rogue waves can overwhelm steel cargo ships in minutes—like the SS Cotopaxi, lost in 1925 and finally identified underwater decades later."
+
+[DELIVERY: MEASURED_EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "thirty-meter", "rogue", "waves", "Cotopaxi"]
+[PAUSE AFTER: 340ms]
+
+[SEG: N04]
+"Some once blamed giant seafloor methane eruptions for sinking ships."
+
+[DELIVERY: MEASURED_EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "methane", "eruptions"]
+[PAUSE AFTER: 260ms]
+
+"While dense gas plumes can reduce buoyancy in lab tanks, U.S."
+
+[DELIVERY: MEASURED_EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[PAUSE AFTER: 260ms]
+
+"Geological Survey records show no massive hydrate blowouts have struck this region in fifteen thousand years."
+
+[DELIVERY: MEASURED_EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "no", "massive", "fifteen", "thousand"]
+[PAUSE AFTER: 340ms]
+
+[SEG: N05]
+"Yet seismologists did uncover a real anomaly deeper underground."
+
+[DELIVERY: MEASURED_EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "real", "anomaly", "deeper", "underground"]
+[PAUSE AFTER: 340ms]
+
+[SEG: N06]
+"Directly beneath Bermuda's crust sits an unusual twenty-kilometer-thick layer of frozen mantle rock—a hidden geological raft holding the surrounding seafloor five hundred meters higher than normal."
+
+[DELIVERY: MEASURED_EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "twenty-kilometer-thick", "geological", "raft", "five", "hundred"]
+[PAUSE AFTER: 340ms]
+
+[SEG: N07]
+"According to NOAA, ships don't disappear here more often than in any other stormy shipping lane."
+
+[DELIVERY: MEASURED_EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[PAUSE AFTER: 260ms]
+
+"What hides beneath the Bermuda Triangle isn't folklore—it's extreme ocean physics and an eight-kilometer abyss."
+
+[DELIVERY: MEASURED_EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "isn't", "folklore", "extreme", "physics", "eight-kilometer", "abyss"]
+[PAUSE AFTER: 340ms]

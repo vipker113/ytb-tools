@@ -1,0 +1,10 @@
+{
+  "slug": "bermuda-triangle-abyss-v6",
+  "encode_mode": "master",
+  "shots_render_or_cache_s": 31.122,
+  "timeline_assembly_and_mux_s": 99.867,
+  "thumbnail_concepts_s": 3.754,
+  "total_render_master_s": 134.949,
+  "rendered_frames": 2408,
+  "effective_render_fps": 17.84
+}

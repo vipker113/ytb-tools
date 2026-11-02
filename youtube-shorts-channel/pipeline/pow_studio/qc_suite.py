@@ -194,11 +194,37 @@ _BIGRAM_CANONICAL: dict[tuple[str, str], str] = {
     ("ground", "water"): "groundwater",
     ("air", "ways"): "airways",
     ("down", "hill"): "downhill",
+    ("koto", "paxi"): "cotopaxi",
 }
+
+_ONES_WORDS = [
+    "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+    "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
+    "seventeen", "eighteen", "nineteen",
+]
+_TENS_WORDS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+
+
+def _int_to_words(n: int) -> list[str]:
+    if n < 20:
+        return [_ONES_WORDS[n]]
+    if n < 100:
+        q, r = divmod(n, 10)
+        return [_TENS_WORDS[q]] + ([_ONES_WORDS[r]] if r else [])
+    if n < 1000:
+        q, r = divmod(n, 100)
+        return [_ONES_WORDS[q], "hundred"] + (_int_to_words(r) if r else [])
+    if n < 1_000_000:
+        q, r = divmod(n, 1000)
+        return _int_to_words(q) + ["thousand"] + (_int_to_words(r) if r else [])
+    return [str(n)]
 
 
 def canonicalize_tokens_for_asr(tokens: list[str]) -> list[str]:
-    pre_tokens = [re.sub(r"[^a-z0-9']", "", raw.lower()) for raw in tokens]
+    pre_tokens: list[str] = []
+    for raw in tokens:
+        for part in raw.replace("—", " ").replace("-", " ").split():
+            pre_tokens.extend(re.findall(r"\d+|[a-z']+", part.lower()))
     pre_tokens = [t for t in pre_tokens if t]
 
     joined_nums: list[str] = []
@@ -207,7 +233,7 @@ def canonicalize_tokens_for_asr(tokens: list[str]) -> list[str]:
         cur = pre_tokens[idx]
         if cur.isdigit() and idx + 1 < len(pre_tokens):
             nxt = pre_tokens[idx + 1]
-            if nxt.isdigit() and len(nxt) == 3 and (cur + nxt) in _NUMERAL_EXPANSIONS:
+            if nxt.isdigit() and len(nxt) == 3 and len(cur) <= 3:
                 joined_nums.append(cur + nxt)
                 idx += 2
                 continue
@@ -218,6 +244,12 @@ def canonicalize_tokens_for_asr(tokens: list[str]) -> list[str]:
     for t in joined_nums:
         if t in _NUMERAL_EXPANSIONS:
             expanded.extend(_NUMERAL_EXPANSIONS[t])
+        elif t.isdigit() and int(t) < 1_000_000:
+            val = int(t)
+            if 1800 <= val <= 1999:
+                expanded.extend(_int_to_words(val // 100) + (_int_to_words(val % 100) if val % 100 else ["hundred"]))
+            else:
+                expanded.extend(_int_to_words(val))
         else:
             expanded.append(t)
 
@@ -618,6 +650,9 @@ def run_episode_qc(manifest: EpisodeManifest, wt: dict) -> dict:
             "still don't know",
             "not proof",
             "remains",
+            "records show no",
+            "no evidence",
+            "ruled out",
         )
     )
     report["editorial_formula_qc"] = {
@@ -719,7 +754,7 @@ def run_episode_qc(manifest: EpisodeManifest, wt: dict) -> dict:
         vad_filter=True,
         vad_parameters={"min_silence_duration_ms": 450},
     )
-    hw = [{"w": re.sub(r"[^a-z0-9']", "", w.word.lower()), "s": w.start, "e": w.end} for seg in segs for w in seg.words]
+    hw = [{"w": re.sub(r"[^a-z0-9']", "", w.word.lower()), "raw_w": w.word, "s": w.start, "e": w.end} for seg in segs for w in seg.words]
     hw = [x for x in hw if x["w"]]
 
     srt_blocks = (out_dir / "subtitles.srt").read_text(encoding="utf-8").strip().split("\n\n")
@@ -742,7 +777,7 @@ def run_episode_qc(manifest: EpisodeManifest, wt: dict) -> dict:
     sm_raw = difflib.SequenceMatcher(None, raw_ref, raw_hyp, autojunk=False)
 
     norm_ref = canonicalize_tokens_for_asr([t for _, _, txt in cues for t in txt.replace("—", " ").split()])
-    norm_hyp = canonicalize_tokens_for_asr(raw_hyp)
+    norm_hyp = canonicalize_tokens_for_asr([h["raw_w"] for h in hw])
     sm_norm = difflib.SequenceMatcher(None, norm_ref, norm_hyp, autojunk=False)
     norm_diffs = [(op, " ".join(norm_ref[i1:i2]), " ".join(norm_hyp[j1:j2])) for op, i1, i2, j1, j2 in sm_norm.get_opcodes() if op != "equal"]
 

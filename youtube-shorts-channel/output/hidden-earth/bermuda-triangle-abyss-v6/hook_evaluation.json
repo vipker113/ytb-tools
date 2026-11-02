@@ -1,0 +1,69 @@
+{
+  "slug": "bermuda-triangle-abyss-v6",
+  "evaluated_count": 3,
+  "recommended_hook_id": "H1",
+  "recommended_score": 9.38,
+  "candidates": [
+    {
+      "hook_id": "H1",
+      "archetype": "surprising_visual",
+      "spoken_line": "Beneath the southern edge of the Bermuda Triangle, the Atlantic seafloor plunges more than eight thousand meters into pitch-black abyss.",
+      "word_count": 20,
+      "estimated_spoken_s": 7.55,
+      "opening_visual": "NOAA Okeanos Explorer camera sled looking down at ROV floodlights piercing pitch-black Puerto Rico deepwater abyss",
+      "src_file": "noaa_ex2201_puerto_rico_cp_1080p.mov",
+      "promise_fulfilled_in_seg_id": "N06",
+      "scores": {
+        "immediate_clarity": 8.7,
+        "visual_impact": 9.4,
+        "curiosity": 9.7,
+        "factual_accuracy": 9.5,
+        "relevance_to_story": 9.8,
+        "promise_fulfillment": 9.5
+      },
+      "composite_hook_score": 9.38,
+      "rationale": "Opens with authentic 1080p NOAA Puerto Rico abyssal ROV dive and delivers both the trench/rogue-wave explanation and the 20km sub-crustal rock raft reveal.",
+      "recommended": true
+    },
+    {
+      "hook_id": "H2",
+      "archetype": "credible_mystery",
+      "spoken_line": "When ships vanished in the Bermuda Triangle without a trace, people blamed ocean legends\u2014until sonar mapped what sits 8,300 meters below.",
+      "word_count": 23,
+      "estimated_spoken_s": 8.68,
+      "opening_visual": "Real NOAA ROV floodlights illuminating a sunken steel ship hull in pitch-black deep ocean water",
+      "src_file": "noaa_ex2502_exploring_lst884.jpg",
+      "promise_fulfilled_in_seg_id": "N02",
+      "scores": {
+        "immediate_clarity": 7.65,
+        "visual_impact": 8.8,
+        "curiosity": 9.7,
+        "factual_accuracy": 9.5,
+        "relevance_to_story": 9.8,
+        "promise_fulfillment": 9.5
+      },
+      "composite_hook_score": 9.03,
+      "rationale": "Connects missing-ship legends directly to the extreme 8,376m depth of the Puerto Rico Trench."
+    },
+    {
+      "hook_id": "H3",
+      "archetype": "strong_contrast",
+      "spoken_line": "Deep enough to swallow Mount Everest: that's what waits on the ocean floor at the southern edge of the Bermuda Triangle.",
+      "word_count": 21,
+      "estimated_spoken_s": 7.92,
+      "opening_visual": "USGS/NOAA multibeam bathymetry of the 8,376m Puerto Rico Trench",
+      "src_file": "puerto_rico_trench_bathymetry_usgs.jpg",
+      "promise_fulfilled_in_seg_id": "N02",
+      "scores": {
+        "immediate_clarity": 8.35,
+        "visual_impact": 8.8,
+        "curiosity": 7.4,
+        "factual_accuracy": 9.5,
+        "relevance_to_story": 9.8,
+        "promise_fulfillment": 9.5
+      },
+      "composite_hook_score": 8.72,
+      "rationale": "Uses concrete vertical scale contrast (8,376m vs Everest) to anchor abyssal geography."
+    }
+  ]
+}

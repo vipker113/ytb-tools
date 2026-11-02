@@ -1,0 +1,992 @@
+manifest_version: "6.0"
+script_version: "v6.0.0"
+subtitle_version: "v6.0.0"
+channel_name: "Proof of Wonder"
+playlist: "Hidden Earth"
+slug: "bermuda-triangle-abyss-v6"
+topic: "Bermuda Triangle Seafloor — 8,376m Puerto Rico Trench, Gulf Stream Rogue Waves & 20km Sub-Crustal Rock Raft"
+
+style_profile: "deep_ocean_documentary"
+style_overrides:
+  sound_design:
+    scene_audio_profile: "deep_ocean_abyss"
+  asset_selection:
+    target_moving_footage_ratio: 0.85
+
+voice_input_mode: "directed_tts"
+voice_direction_profile: "mysterious_discovery"
+voice: "en-GB-RyanNeural"
+annotated_voice_script_file: "episodes/bermuda_abyss_v6_voice_script.txt"
+opening_hook_type: "surprising_visual"
+
+primary_title: "What Actually Lies 8,300 Meters Beneath the Bermuda Triangle?"
+alternative_title: "Why Ships Vanished Over the Bermuda Triangle's 8,300m Abyss"
+
+youtube_description: |
+  At the southern edge of the Bermuda Triangle, the Atlantic seafloor plunges more than 8,300 meters into the Puerto Rico Trench—the deepest point in the entire Atlantic Ocean.
+
+  Before modern multibeam sonar and deep-sea remotely operated vehicles (ROVs), ships lost over abyssal waters this deep simply vanished beyond human reach. Above the surface, where the warm, fast-moving Gulf Stream collides with North Atlantic storms, steep rogue waves up to 30 meters high can overwhelm steel vessels in minutes—including the cargo steamer SS Cotopaxi, lost in 1925 and identified underwater off Florida decades later.
+
+  While seafloor methane blowouts were once proposed as a ship-sinking mechanism, U.S. Geological Survey records show no large gas-hydrate releases in this region for roughly 15,000 years. Instead, seismologists analyzing earthquake waves beneath Bermuda uncovered a genuine geological anomaly: an unusual 20-kilometer-thick layer of frozen, lower-density mantle rock underplated beneath the oceanic crust—a hidden geological "raft" holding the Bermuda seafloor swell ~500 meters higher than normal. According to NOAA and U.S. Coast Guard records, vessels do not vanish here at higher rates than in any other heavily traveled, storm-prone ocean corridor.
+
+hashtags:
+  - "#BermudaTriangle"
+  - "#DeepOcean"
+  - "#Oceanography"
+  - "#HiddenEarth"
+  - "#Geology"
+  - "#NOAA"
+
+target_duration_min_s: 66.0
+target_duration_max_s: 90.0
+ambience_preset: "deep_ocean"
+ambience_ducked_lufs_target: -26.5
+nat_sound_bed_file: "noaa_pmel_deep_ocean_hydrophone.wav"
+nat_sound_bed_range_s: [0.0, 28.0]
+nat_sound_gain_db: -17.5
+
+raw_assets_dir: "assets/raw_footage/hidden_earth_bermuda_abyss_v6"
+output_dir: "output/hidden-earth/bermuda-triangle-abyss-v6"
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N05"
+  scientific_caveat_seg_id: "N04"
+  min_real_evidence_ratio: 0.88
+
+hook_candidates:
+  - hook_id: "H1"
+    archetype: "surprising_visual"
+    spoken_line: "Beneath the southern edge of the Bermuda Triangle, the Atlantic seafloor plunges more than eight thousand meters into pitch-black abyss."
+    opening_visual: "NOAA Okeanos Explorer camera sled looking down at ROV floodlights piercing pitch-black Puerto Rico deepwater abyss"
+    src_file: "noaa_ex2201_puerto_rico_cp_1080p.mov"
+    promise_fulfilled_in_seg_id: "N06"
+    rationale: "Opens with authentic 1080p NOAA Puerto Rico abyssal ROV dive and delivers both the trench/rogue-wave explanation and the 20km sub-crustal rock raft reveal."
+  - hook_id: "H2"
+    archetype: "credible_mystery"
+    spoken_line: "When ships vanished in the Bermuda Triangle without a trace, people blamed ocean legends—until sonar mapped what sits 8,300 meters below."
+    opening_visual: "Real NOAA ROV floodlights illuminating a sunken steel ship hull in pitch-black deep ocean water"
+    src_file: "noaa_ex2502_exploring_lst884.jpg"
+    promise_fulfilled_in_seg_id: "N02"
+    rationale: "Connects missing-ship legends directly to the extreme 8,376m depth of the Puerto Rico Trench."
+  - hook_id: "H3"
+    archetype: "strong_contrast"
+    spoken_line: "Deep enough to swallow Mount Everest: that's what waits on the ocean floor at the southern edge of the Bermuda Triangle."
+    opening_visual: "USGS/NOAA multibeam bathymetry of the 8,376m Puerto Rico Trench"
+    src_file: "puerto_rico_trench_bathymetry_usgs.jpg"
+    promise_fulfilled_in_seg_id: "N02"
+    rationale: "Uses concrete vertical scale contrast (8,376m vs Everest) to anchor abyssal geography."
+
+# User-selected Thumbnail: Concept C (Real NOAA deep-sea shipwreck under blue ROV floodlights) WITH bold headline text
+thumbnail_spec:
+  src_file: "noaa_ex2502_exploring_lst884.jpg"
+  headline_text: "8,300M UNDER|BERMUDA"
+  kicker_text: "ATLANTIC ABYSS"
+  cx: 0.40
+  cy: 0.46
+  zoom: 1.03
+  shadow_lift: 0.30
+  clarity_boost: true
+  text_position: "bottom"
+  accent_rgb: [255, 212, 68]
+
+thumbnail_concepts:
+  - concept_id: "A"
+    src_file: "noaa_ex2502_exploring_lst884.jpg"
+    headline_text: "8,300M UNDER|BERMUDA"
+    kicker_text: "ATLANTIC ABYSS"
+    cx: 0.40
+    cy: 0.46
+    zoom: 1.03
+    shadow_lift: 0.30
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 212, 68]
+    concept_rationale: "Concept C + Text (Selected): Real NOAA ROV cyan floodlights illuminating a sunken steel ship on the pitch-black seafloor with bold 3-word abyssal hook."
+  - concept_id: "B"
+    src_file: "noaa_ex2502_lst884_stern_bridge.jpg"
+    headline_text: "BENEATH THE|MISSING SHIPS"
+    kicker_text: "NOAA DEEP ROV"
+    cx: 0.48
+    cy: 0.50
+    zoom: 1.02
+    shadow_lift: 0.18
+    clarity_boost: true
+    text_position: "top"
+    accent_rgb: [108, 224, 255]
+    concept_rationale: "Close-up of encrusted steel ship bridge on the deep blue ocean floor with top-mounted 4-word curiosity headline."
+  - concept_id: "C"
+    src_file: "noaa_ex2201_puerto_rico_cp_1080p.mov"
+    src_time_s: 45.0
+    headline_text: "8,376M DEEP|OCEAN TRENCH"
+    kicker_text: "PUERTO RICO TRENCH"
+    cx: 0.34
+    cy: 0.48
+    zoom: 1.04
+    shadow_lift: 0.25
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 212, 68]
+    concept_rationale: "Matches Frame 0 opening shot: NOAA camera sled looking straight down at ROV floodlights in the Puerto Rico abyss."
+
+narration_segments:
+  - seg_id: "N01"
+    text: "Beneath the southern edge of the Bermuda Triangle, the Atlantic seafloor plunges more than eight thousand meters into pitch-black abyss."
+    emphasis_words: ["eight", "thousand", "meters", "pitch-black", "abyss"]
+    narrative_beat: "opening_hook"
+    viewer_question: "What sits at the bottom of an 8,000-meter drop beneath the Bermuda Triangle?"
+    new_information: "The seafloor along the Bermuda Triangle's southern boundary drops over 8,000 meters into total darkness."
+    visual_reveal: "1080p NOAA Okeanos Explorer camera sled looking down at ROV Deep Discoverer floodlights in the Puerto Rico abyss."
+    emotional_direction: "Immediate abyssal scale and visual intrigue"
+    retention_purpose: "Stop scrolling on Frame 0 with real deep-ocean ROV floodlights piercing pitch-black water"
+
+  - seg_id: "N02"
+    text: "That chasm is the Puerto Rico Trench—the deepest point in the entire Atlantic Ocean. Before modern sonar and deep-sea robots, any ship sinking over trenches this deep simply vanished beyond human reach—turning tragic wrecks into legends."
+    emphasis_words: ["Puerto", "Rico", "Trench", "deepest", "vanished"]
+    narrative_beat: "curiosity_gap"
+    viewer_question: "If extreme depth hid sunken wrecks, what actually caused steel ships to sink so fast above?"
+    new_information: "The 8,376m Puerto Rico Trench made sunken ships unreachable before multibeam sonar and hadal ROVs."
+    visual_reveal: "3D Puerto Rico Trench bathymetry, multibeam sonar mapping, and 1080p NOAA ROV gliding across a sunken steel ship in dark water."
+    emotional_direction: "From maritime legend to forensic oceanography"
+    retention_purpose: "Explain why 'vanished without a trace' happened physically while opening the surface-physics question"
+
+  - seg_id: "N03"
+    text: "Above the seafloor, powerful physics takes over. Where the fast, warm Gulf Stream slams into Atlantic storms, sudden thirty-meter rogue waves can overwhelm steel cargo ships in minutes—like the SS Cotopaxi, lost in 1925 and finally identified underwater decades later."
+    emphasis_words: ["powerful", "physics", "thirty-meter", "rogue", "waves", "Cotopaxi"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "Could seafloor methane blowouts or deeper geological forces also play a role?"
+    new_information: "Gulf Stream current-storm collisions build steep rogue waves up to 30m; SS Cotopaxi (1925) was verified as a real storm wreck."
+    visual_reveal: "NASA 1080p Gulf Stream visualization, GOES-16 Atlantic hurricane satellite view, crashing storm seas, archival SS Cotopaxi, and underwater steel wreck."
+    emotional_direction: "Visceral respect for real North Atlantic ocean physics"
+    retention_purpose: "Ground missing-ship cases in verified Gulf Stream wave physics and a named historical ship (SS Cotopaxi)"
+
+  - seg_id: "N04"
+    text: "Some once blamed giant seafloor methane eruptions for sinking ships. While dense gas plumes can reduce buoyancy in lab tanks, U.S. Geological Survey records show no massive hydrate blowouts have struck this region in fifteen thousand years."
+    emphasis_words: ["methane", "eruptions", "no", "massive", "fifteen", "thousand"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "If methane blowouts aren't happening there today, did scientists find anything truly unusual beneath Bermuda?"
+    new_information: "USGS evidence rules out large regional methane-hydrate blowouts for ~15,000 years despite real cold-seep plumes."
+    visual_reveal: "1080p NOAA EX1903 Blake Ridge methane bubble plume rising in dark water + shipboard sediment/wet-lab verification."
+    emotional_direction: "Rigorous myth-testing and scientific honesty"
+    retention_purpose: "Address the famous methane theory honestly with USGS evidence before pivoting to the real subsurface discovery"
+
+  - seg_id: "N05"
+    text: "Yet seismologists did uncover a real anomaly deeper underground."
+    emphasis_words: ["real", "anomaly", "deeper", "underground"]
+    narrative_beat: "escalation"
+    viewer_question: "What anomaly did seismologists discover deep beneath Bermuda?"
+    new_information: "Earthquake wave recordings beneath Bermuda revealed an unexpected structure below the oceanic crust."
+    visual_reveal: "Shipboard geophysical & sonar mission control team monitoring deep subsurface data."
+    emotional_direction: "Controlled mid-story surprise and curiosity spike"
+    retention_purpose: "Re-ignite viewer retention past the 50% mark with a genuine peer-reviewed geophysical twist"
+
+  - seg_id: "N06"
+    text: "Directly beneath Bermuda's crust sits an unusual twenty-kilometer-thick layer of frozen mantle rock—a hidden geological raft holding the surrounding seafloor five hundred meters higher than normal."
+    emphasis_words: ["twenty-kilometer-thick", "geological", "raft", "five", "hundred"]
+    narrative_beat: "payoff"
+    viewer_question: "So what is the ultimate scientific verdict on the Bermuda Triangle?"
+    new_information: "A 20km-thick underplated layer of lower-density frozen mantle rock buoyantly supports the +500m Bermuda Swell (Frazer, Park & Olugboji)."
+    visual_reveal: "Custom 1080x1920 seismic cross-section of Bermuda's 20km rock raft dissolving to NASA ISS view of Bermuda's turquoise pedestal in deep Atlantic water."
+    emotional_direction: "Awe at hidden planetary architecture"
+    retention_purpose: "Deliver a genuinely surprising, evidence-backed geological payoff viewers haven't heard before"
+
+  - seg_id: "N07"
+    text: "According to NOAA, ships don't disappear here more often than in any other stormy shipping lane. What hides beneath the Bermuda Triangle isn't folklore—it's extreme ocean physics and an eight-kilometer abyss."
+    emphasis_words: ["isn't", "folklore", "extreme", "physics", "eight-kilometer", "abyss"]
+    narrative_beat: "final_impression"
+    viewer_question: "How much of Earth's deep ocean floor still awaits high-resolution exploration?"
+    new_information: "NOAA & USCG statistics confirm normal accident rates for traffic/weather volume; the real wonder is extreme ocean physics and the 8.3km trench."
+    visual_reveal: "Engineers deploying the Orpheus hadal trench robot off stern crane and closing 1080p NOAA ROV dive into dark abyssal water."
+    emotional_direction: "Earned clarity and lasting oceanic wonder"
+    retention_purpose: "Resolve the opening question cleanly and loop visually back into pitch-black abyssal ROV lights"
+
+sfx_cues:
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.06
+    gain_db: -25.0
+  - sfx_name: "hydrophone_current_swell"
+    anchor_type: "shot_start"
+    anchor_ref: "S04"
+    offset_s: 0.08
+    gain_db: -25.5
+  - sfx_name: "subterranean_gate_boom"
+    anchor_type: "shot_start"
+    anchor_ref: "S07"
+    offset_s: 0.05
+    gain_db: -26.0
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S12"
+    offset_s: 0.06
+    gain_db: -25.5
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S13"
+    offset_s: 0.05
+    gain_db: -26.0
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 9.056
+    kind: "video_full"
+    src_file: "noaa_ex2201_puerto_rico_cp_1080p.mov"
+    src_in: 42.0
+    camera_perspective: "aerial"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds", "cinematic_sfx"]
+    reframe_mode: "manual"
+    cx0: 0.34
+    cy0: 0.48
+    cx1: 0.36
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.05
+    shadow_lift: 0.22
+    crop_rationale: "Centers ROV Deep Discoverer's glowing cyan floodlights descending into pitch-black Puerto Rico deepwater."
+    transition_in: "cut"
+    transition_reason: "Immediate 0.00s live 1080p abyssal ROV visual hook off Puerto Rico."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N01"
+    associated_narration_concept: "Beneath the southern edge of the Bermuda Triangle, the Atlantic seafloor plunges more than eight thousand meters into pitch-black abyss. That chasm is the Puerto Rico Trench—"
+    editorial_rationale: "Authentic NOAA EX2201 Puerto Rico deepwater ROV footage immediately establishes the 8,000m abyss."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Live 1080p NOAA ROV floodlights descending into Puerto Rico abyss (N01)"
+    visual_desc: "1080p NOAA camera-sled view of ROV Deep Discoverer shining cyan floodlights into deep water off Puerto Rico."
+
+  - sid: "S02"
+    start_s: 9.056
+    end_s: 11.820
+    kind: "still_full"
+    src_file: "puerto_rico_trench_bathymetry_usgs.jpg"
+    camera_perspective: "labeled_visualization"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.55
+    cy0: 0.52
+    cx1: 0.58
+    cy1: 0.54
+    z0: 1.03
+    z1: 1.06
+    crop_rationale: "Frames the deep purple 8,376m Puerto Rico Trench trough north of Puerto Rico in USGS 3D bathymetry."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'Trench—' revealing exact 3D bathymetry of the deepest point in the Atlantic Ocean."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "the deepest point in the entire Atlantic Ocean."
+    editorial_rationale: "Shows the exact geological trench at the southern tip of the Bermuda Triangle."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "USGS 3D tectonic bathymetry of the 8,376m Puerto Rico Trench (N02a)"
+    visual_desc: "Full-bleed 3D USGS multibeam bathymetry showing the Puerto Rico Trench plunging north of Puerto Rico."
+
+  - sid: "S03"
+    start_s: 11.820
+    end_s: 14.409
+    kind: "video_full"
+    src_file: "noaa_sonar_mapping_720p.mp4"
+    src_in: 84.0
+    camera_perspective: "wide"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.53
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    crop_rationale: "Clean 3D multibeam sonar terrain pass free of burned-in subtitles."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'Ocean.' matching 'Before modern sonar and deep-sea robots'."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "Before modern sonar and deep-sea robots,"
+    editorial_rationale: "Visualizes modern multibeam seafloor sonar mapping deep ocean basins."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "3D multibeam seafloor sonar mapping sweep (N02b)"
+    visual_desc: "Full-screen NOAA 3D multibeam sonar terrain flyover across deep seafloor topography."
+
+  - sid: "S04"
+    start_s: 14.409
+    end_s: 20.676
+    kind: "video_full"
+    src_file: "noaa_ex2502_shipwreck_lst884_1080p.mp4"
+    src_in: 50.0
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience", "cinematic_sfx"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.48
+    cx1: 0.48
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.05
+    shadow_lift: 0.22
+    crop_rationale: "1080p vertical crop tracking NOAA ROV floodlights illuminating a sunken steel ship on the pitch-black seafloor."
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Motivated 0.55s dissolve at clause pause descending onto a real sunken steel wreck in abyssal darkness."
+    context_note: "Illustrative NOAA deep-sea shipwreck"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "any ship sinking over trenches this deep simply vanished beyond human reach—turning tragic wrecks into legends."
+    editorial_rationale: "Conveys how sunken steel ships disappear into total abyssal darkness thousands of meters down."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1080p NOAA ROV floodlights over sunken steel ship in pitch-black ocean (N02c)"
+    visual_desc: "Full-screen 1080p live NOAA ROV video illuminating a sunken steel ship hull in pitch-black deep water."
+
+  - sid: "S05"
+    start_s: 20.676
+    end_s: 23.864
+    kind: "video_full"
+    src_file: "nasa_gulf_stream_1080p.webm"
+    src_in: 5.5
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "aerial_sweep"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    crop_rationale: "1080p NASA SVS ocean-current streamlines sweeping across the Gulf Stream off Florida."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'legends.' rising from the abyss to surface ocean-current physics."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "Above the seafloor, powerful physics takes over."
+    editorial_rationale: "Introduces surface physical oceanography with NASA's Gulf Stream flow visualization."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1080p NASA SVS Gulf Stream current streamlines (N03a)"
+    visual_desc: "Full-screen 1080p NASA visualization of fast-flowing Gulf Stream surface currents in the Western Atlantic."
+
+  - sid: "S06"
+    start_s: 23.864
+    end_s: 27.694
+    kind: "video_full"
+    src_file: "noaa_cira_hurricane_irma_atlantic_1080p.webm"
+    src_in: 6.5
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "aerial_sweep"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.62
+    cy0: 0.48
+    cx1: 0.58
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.10
+    crop_rationale: "Centers spinning Atlantic hurricane eyewall tracking toward the Bahamas/Florida while cropping out corner agency bug."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'over.' showing real GOES-16 Atlantic storm colliding with warm Gulf Stream waters."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "Where the fast, warm Gulf Stream slams into Atlantic storms,"
+    editorial_rationale: "Shows real NOAA GOES-16 satellite footage of a major hurricane crossing the Bermuda Triangle corridor."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Real GOES-16 satellite view of major Atlantic hurricane crossing Bermuda Triangle corridor (N03b)"
+    visual_desc: "Full-screen 1080p NOAA GOES-16 satellite video of a powerful Atlantic hurricane churning toward the Gulf Stream."
+
+  - sid: "S07"
+    start_s: 27.694
+    end_s: 31.774
+    kind: "video_full"
+    src_file: "usblm_stormy_sea_waves_1080p.webm"
+    src_in: 3.0
+    nat_audio_gain_db: -18.5
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds", "cinematic_sfx"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    crop_rationale: "1080p sea-level crop capturing violent foaming storm waves crashing in gale-force wind."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'storms,' dropping from satellite view right down into crashing storm seas."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "sudden thirty-meter rogue waves can overwhelm steel cargo ships in minutes—"
+    editorial_rationale: "Delivers visceral sea-level wave turbulence with subtle real storm-surf audio."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1080p sea-level violent storm waves with live surf nat-sound (N03c)"
+    visual_desc: "Full-screen 1080p live-action video of turbulent foaming storm waves crashing under dark gale clouds."
+
+  - sid: "S08"
+    start_s: 31.774
+    end_s: 38.181
+    kind: "video_full"
+    src_file: "noaa_ex2502_shipwreck_nevada_1080p.mp4"
+    src_in: 56.0
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.05
+    shadow_lift: 0.20
+    crop_rationale: "1080p vertical crop following ROV green laser scalers across an encrusted sunken steel ship hull."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'minutes—' into underwater ROV identification of a sunken steel vessel."
+    context_note: "Illustrative NOAA deep-sea wreck survey"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "like the SS Cotopaxi, lost in 1925 and finally identified underwater decades later."
+    editorial_rationale: "Illustrates how historical lost steamers are forensically surveyed underwater decades later."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1080p NOAA ROV green-laser survey along sunken steel hull (N03d)"
+    visual_desc: "Full-screen 1080p NOAA ROV footage scanning an encrusted sunken steel hull with green laser scalers."
+
+  - sid: "S09"
+    start_s: 38.181
+    end_s: 42.449
+    kind: "video_full"
+    src_file: "noaa_ex1903_new_seep_1080p.mp4"
+    src_in: 49.2
+    camera_perspective: "macro"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    shadow_lift: 0.18
+    crop_rationale: "1080p ROV floodlit view of active Blake Ridge seafloor methane hydrate seep and rising gas bubbles."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'later.' directly visualizing seafloor methane gas seeps."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N04"
+    associated_narration_concept: "Some once blamed giant seafloor methane eruptions for sinking ships."
+    editorial_rationale: "Shows authentic Western Atlantic (EX1903 Blake Ridge) ROV-illuminated seafloor methane seep."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "credible_hypothesis"
+    story_beat: "1080p NOAA EX1903 Blake Ridge seafloor methane seep & gas bubbles (N04a)"
+    visual_desc: "Full-screen 1080p NOAA ROV video of illuminated seafloor methane hydrate seep mats and rising gas bubbles."
+
+  - sid: "S10"
+    start_s: 42.449
+    end_s: 45.785
+    kind: "video_full"
+    src_file: "noaa_ex1903_new_seep_1080p.mp4"
+    src_in: 8.5
+    camera_perspective: "labeled_visualization"
+    visual_complexity: "medium"
+    spoken_importance: "context"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.45
+    cy0: 0.50
+    cx1: 0.48
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    crop_rationale: "Centers NOAA water-column acoustic gas-plume flares rising from mapped seafloor bathymetry."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'ships.' showing NOAA acoustic gas-plume density mapping."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N04"
+    associated_narration_concept: "While dense gas plumes can reduce buoyancy in lab tanks,"
+    editorial_rationale: "Visualizes acoustic water-column gas-plume profiling from NOAA EX1903."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "contextual_observation"
+    story_beat: "NOAA acoustic water-column gas-plume mapping (N04b)"
+    visual_desc: "Full-screen NOAA 3D water-column sonar visualization of gas plumes rising from the seabed."
+
+  - sid: "S11"
+    start_s: 45.785
+    end_s: 52.639
+    kind: "video_full"
+    src_file: "noaa_boxcore_scientists_720p.mp4"
+    src_in: 83.5
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.05
+    crop_rationale: "Centers marine geologist in red survival suit and hard hat hands-on subsampling a seafloor sediment box core."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'tanks,' showing hands-on marine sediment core verification."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N04"
+    associated_narration_concept: "U.S. Geological Survey records show no massive hydrate blowouts have struck this region in fifteen thousand years."
+    editorial_rationale: "Grounds the 15,000-year geological record in hands-on marine sediment core sampling."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Marine geologist sampling seafloor sediment box core on deck (N04c)"
+    visual_desc: "Full-screen live-action video of a marine geologist in deck safety gear sampling a recovered seafloor sediment core."
+
+  - sid: "S12"
+    start_s: 52.639
+    end_s: 56.905
+    kind: "video_full"
+    src_file: "noaa_orpheus_hadal_auv_1080p.mp4"
+    src_in: 91.6
+    camera_perspective: "close_up"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience", "cinematic_sfx"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    crop_rationale: "1080p close-up of live shipboard acoustic/sonar tracking instrumentation aboard the ocean research vessel."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'years.' launching the Layer-2 geophysical anomaly pivot."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "Yet seismologists did uncover a real anomaly deeper underground."
+    editorial_rationale: "Live 1080p shipboard acoustic telemetry display driving the mid-story pivot to deep seismic imaging beneath Bermuda."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Layer-2 retention pivot: 1080p live shipboard acoustic/seismic telemetry display (N05)"
+    visual_desc: "Full-screen 1080p live-action video of shipboard acoustic and sonar tracking instrumentation during deep-ocean operations."
+
+  - sid: "S13"
+    start_s: 56.905
+    end_s: 62.463
+    kind: "diagram"
+    src_file: "bermuda_rock_raft_cutaway_v6.mp4"
+    src_in: 0.40
+    camera_perspective: "labeled_visualization"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience", "cinematic_sfx"]
+    crop_rationale: "Native 1080x1920 seismic cross-section explaining the 20km sub-crustal rock layer invisible to physical cameras."
+    transition_in: "dissolve"
+    transition_duration_s: 0.60
+    transition_reason: "Motivated 0.60s dissolve descending 20km beneath Bermuda's oceanic crust."
+    is_real_evidence: false
+    has_human_interaction: false
+    associated_seg_id: "N06"
+    associated_narration_concept: "Directly beneath Bermuda's crust sits an unusual twenty-kilometer-thick layer of frozen mantle rock—"
+    editorial_rationale: "Clearly labeled illustrative seismic cutaway of the 20km underplated mantle rock raft beneath Bermuda."
+    subject_match_kind: "illustrative_diagram"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Seismic cross-section of Bermuda's 20km frozen mantle rock 'raft' (N06a)"
+    visual_desc: "Full-screen 1080x1920 illustrative geological cross-section showing the 20km rock raft and +500m Bermuda Swell."
+
+  - sid: "S14"
+    start_s: 62.463
+    end_s: 67.537
+    kind: "video_full"
+    src_file: "noaa_wetlab_scientists_1080p.mp4"
+    src_in: 35.0
+    camera_perspective: "close_up"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.05
+    crop_rationale: "1080p close-up of gloved marine scientist hands inspecting a recovered deep-sea specimen in the wet lab."
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Restrained 0.55s dissolve at em-dash pause returning from underground seismic diagram to physical marine science."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N06"
+    associated_narration_concept: "a hidden geological raft holding the surrounding seafloor five hundred meters higher than normal."
+    editorial_rationale: "Grounds deep-ocean geological analysis in 1080p hands-on shipboard lab inspection."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1080p gloved marine scientist examining deep-sea specimen in wet lab (N06b)"
+    visual_desc: "Full-screen 1080p close-up of a gloved scientist inspecting a recovered deep-ocean specimen in the shipboard wet lab."
+
+  - sid: "S15"
+    start_s: 67.537
+    end_s: 73.224
+    kind: "video_full"
+    src_file: "noaa_orpheus_hadal_auv_1080p.mp4"
+    src_in: 63.0
+    camera_perspective: "extreme_wide"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.52
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.05
+    crop_rationale: "1080p stern-deck view of marine engineers lowering the orange Orpheus trench AUV into open ocean swells."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'normal.' showing modern NOAA trench exploration operations."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N07"
+    associated_narration_concept: "According to NOAA, ships don't disappear here more often than in any other stormy shipping lane."
+    editorial_rationale: "Connects NOAA's statistical verdict with active modern ocean-trench exploration."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1080p NOAA/WHOI engineers deploying Orpheus trench robot into open ocean (N07a)"
+    visual_desc: "Full-screen 1080p live-action video of engineers lowering the orange Orpheus hadal trench vehicle off a research ship's stern."
+
+  - sid: "S16"
+    start_s: 73.224
+    end_s: 80.267
+    kind: "video_full"
+    src_file: "noaa_ex2201_puerto_rico_cp_1080p.mov"
+    src_in: 148.0
+    camera_perspective: "aerial"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.35
+    cy0: 0.48
+    cx1: 0.33
+    cy1: 0.46
+    z0: 1.03
+    z1: 1.05
+    shadow_lift: 0.22
+    crop_rationale: "1080p closing shot of ROV Deep Discoverer's cyan floodlights glowing in the pitch-black Puerto Rico abyss, looping cleanly to S01."
+    transition_in: "dissolve"
+    transition_duration_s: 0.60
+    transition_reason: "Gentle 0.60s closing dissolve into pitch-black Puerto Rico abyssal ROV footage matching Frame 0."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N07"
+    associated_narration_concept: "What hides beneath the Bermuda Triangle isn't folklore—it's extreme ocean physics and an eight-kilometer abyss."
+    editorial_rationale: "Closes on authentic 1080p NOAA Puerto Rico abyssal ROV lights, seamlessly looping back into Frame 0."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Closing 1080p NOAA ROV floodlights in the Puerto Rico abyss (N07b)"
+    visual_desc: "Full-screen 1080p NOAA camera-sled view of ROV Deep Discoverer shining cyan floodlights across the dark seafloor off Puerto Rico."
+
+caption_groups: []
+
+assets_register:
+  - local_file: "noaa_ex2201_puerto_rico_cp_1080p.mov"
+    title: "NOAA Ship Okeanos Explorer EX2201 — Deepwater ROV & Camera Sled Operations off Puerto Rico (1080p)"
+    creator_agency: "NOAA Ocean Exploration (U.S. Federal Government)"
+    source_page_url: "https://oceanexplorer.noaa.gov/1212/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2022/03/EX2201_VID_20220225T190459Z_CPHD.mov"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Deepwater Puerto Rico ROV footage: Courtesy of NOAA Ocean Exploration, EX2201 (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+    intended_use: "Opening and closing 1080p views of ROV Deep Discoverer floodlights in pitch-black water off Puerto Rico"
+
+  - local_file: "noaa_ex1811_puerto_rico_1080p.mp4"
+    title: "NOAA Ship Okeanos Explorer EX1811 (Océano Profundo 2018) — Deep-Sea Seafloor off Puerto Rico (1080p)"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/video-shorts-ex1811-urchin/attachment/13700/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/04/ex1811-urchin.mp4"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Océano Profundo 2018 Puerto Rico seafloor ROV video: Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+    intended_use: "1080p close-up ROV traversal across deep rocky terrain off Puerto Rico"
+
+  - local_file: "noaa_ex2502_shipwreck_lst884_1080p.mp4"
+    title: "NOAA Ship Okeanos Explorer EX2502 — Deep-Sea ROV Exploration of Sunken Shipwreck LST-884 (1080p)"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/connections-to-our-past/ex2502-dive03-0321-lst-884_1920x1080/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2026/09/ex2502-dive03-0321-lst-884_1920x1080.mp4"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Deep-sea shipwreck ROV footage (illustrative deep-ocean wreck): Courtesy of NOAA Ocean Exploration, EX2502 (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+    intended_use: "1080p ROV footage illuminating a sunken steel ship hull in deep ocean darkness"
+
+  - local_file: "noaa_ex2502_shipwreck_nevada_1080p.mp4"
+    title: "NOAA Ship Okeanos Explorer EX2502 — Abyssal ROV Survey of Sunken Shipwreck Hull (1080p)"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/legendary-battleship/ex2502-dive06-0324-uss-nevada_1920x1080/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2026/09/ex2502-dive06-0324-uss-nevada_1920x1080.mp4"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Abyssal shipwreck ROV laser survey (illustrative deep-ocean wreck): Courtesy of NOAA Ocean Exploration, EX2502 (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+    intended_use: "1080p ROV green-laser survey along sunken steel hull in abyssal darkness"
+
+  - local_file: "noaa_sonar_mapping_720p.mp4"
+    title: "NOAA Ocean Exploration — Multibeam Seafloor Sonar Mapping Visualization"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://oceanexplorer.noaa.gov/technology/sonar/sonar-1280/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2020/06/sonar-1280.mp4"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Multibeam sonar bathymetry visualization: Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+    intended_use: "3D multibeam sonar mapping revealing deep seafloor terrain and sunken wreck geometry"
+
+  - local_file: "noaa_orpheus_hadal_auv_1080p.mp4"
+    title: "NOAA Ocean Exploration / WHOI — Orpheus Hadal Trench Autonomous Underwater Vehicle Deployment (1080p)"
+    creator_agency: "NOAA Ocean Exploration / Woods Hole Oceanographic Institution"
+    source_page_url: "https://oceanexplorer.noaa.gov/news/orpheus-update/orpheus-auv-2/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/08/orpheus-auv.mp4"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Orpheus trench AUV deployment footage: Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+    intended_use: "1080p shipboard engineers deploying deep-trench autonomous robot off stern crane"
+
+  - local_file: "nasa_gulf_stream_1080p.webm"
+    title: "NASA GSFC — Gulf Stream Ocean Current Visualization (1080p)"
+    creator_agency: "NASA Goddard Space Flight Center Scientific Visualization Studio"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Earth_Day_2020_-_Gulf_Stream_ocean_current_pull_out_to_Earth_observing_fleet.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/7/77/Earth_Day_2020_-_Gulf_Stream_ocean_current_pull_out_to_Earth_observing_fleet.webm"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Gulf Stream visualization: NASA/Goddard Space Flight Center Scientific Visualization Studio (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+    intended_use: "1080p satellite-model visualization of the fast, warm Gulf Stream current off Florida and the western Atlantic"
+
+  - local_file: "noaa_cira_hurricane_irma_atlantic_1080p.webm"
+    title: "NOAA / CIRA GOES-16 — Hurricane Irma Crossing the Atlantic & Puerto Rico Trench Corridor (No Labels, 1080p)"
+    creator_agency: "NOAA NESDIS / CIRA"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Hurricane_Irma_Sails_From_the_Atlantic_Ocean_to_Florida_(CIRA_2017-09-12_-_nolabels).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Hurricane_Irma_Sails_From_the_Atlantic_Ocean_to_Florida_%28CIRA_2017-09-12_-_nolabels%29.webm"
+    license: "Public Domain (NOAA / CIRA)"
+    license_url: "https://www.nesdis.noaa.gov/about/nesdis-imagery-and-data-usage-policy"
+    required_attribution: "GOES-16 Atlantic hurricane satellite imagery: NOAA / CIRA (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+    intended_use: "1080p real GOES-16 satellite footage of a major Atlantic storm churning across the southern Bermuda Triangle corridor"
+
+  - local_file: "usblm_stormy_sea_waves_1080p.webm"
+    title: "Turbulent Storm Sea Waves Crashing in Gale Winds (1080p)"
+    creator_agency: "U.S. Department of the Interior / Bureau of Land Management (Bob Wick)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Stormy_Salish_Sea_in_the_San_Juan_Islands_(39965034854).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Stormy_Salish_Sea_in_the_San_Juan_Islands_%2839965034854%29.webm"
+    license: "Public Domain (U.S. Federal Government / BLM)"
+    license_url: "https://www.doi.gov/copyright"
+    required_attribution: "Illustrative stormy ocean surf footage: U.S. Bureau of Land Management (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+    intended_use: "1080p live turbulent storm waves conveying ocean wave energy"
+
+  - local_file: "noaa_ex1903_new_seep_1080p.mp4"
+    title: "NOAA Ship Okeanos Explorer EX1903 Windows to the Deep — Blake Ridge / Southeast U.S. Methane Seep Plume"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/video-playlist-ex1903-new-seep/attachment/14834/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2019/07/new-seep-1920x1080-1.mp4"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Blake Ridge seafloor methane bubble plume: Courtesy of NOAA Ocean Exploration, EX1903 (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+    intended_use: "Real seafloor methane gas bubbles rising in pitch-black Western Atlantic water"
+
+  - local_file: "noaa_okeanos_control_room_720p.mp4"
+    title: "NOAA Ship Okeanos Explorer — Bridge, Sonar Control Room & ROV Operations"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://oceanexplorer.noaa.gov/technology/noaa-ship-okeanos-explorer/attachment/16360/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2017/08/tour-1280x720-1.mp4"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "NOAA Ship Okeanos Explorer mission control & bridge operations: Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+    intended_use: "Live-action shipboard scientists and NOAA officers monitoring deep-ocean survey screens"
+
+  - local_file: "noaa_wetlab_scientists_1080p.mp4"
+    title: "NOAA Ocean Exploration — Shipboard Wet-Lab Marine Sample Examination (1080p)"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/mysterious-golden-orb-identified/mysterious-golden-orb-identified-1080p/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2026/04/Mysterious-Golden-Orb-Identified-1080p.mp4"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Shipboard marine lab examination: Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+    intended_use: "1080p gloved marine scientist examining recovered deep-sea geological/biological sample"
+
+  - local_file: "noaa_boxcore_scientists_720p.mp4"
+    title: "NOAA Ocean Exploration — Deploying & Sampling a Deep-Sea Sediment Box Corer"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/video-playlist-technology-box/attachment/11276/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2018/05/boxcore_1280x720.mp4"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Deep-sea sediment coring operations: Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+    intended_use: "Marine geologists recovering seafloor sediment cores to test past geological events"
+
+  - local_file: "noaa_ex2502_exploring_lst884.jpg"
+    title: "Exploring LST-884 — ROV Deep Discoverer Illuminating Sunken Shipwreck on Seafloor"
+    creator_agency: "NOAA Ocean Exploration (EX2502)"
+    source_page_url: "https://oceanexplorer.noaa.gov/exploring-lst-884/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2026/09/ex2502-exploring-lst-884.jpg"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Photo: Courtesy of NOAA Ocean Exploration, EX2502 (Public Domain)"
+    media_type: "photo"
+    priority_tier: 5
+    intended_use: "Primary thumbnail (Concept C + Text): Real NOAA ROV cyan floodlights over sunken steel ship hull"
+
+  - local_file: "noaa_ex2502_lst884_stern_bridge.jpg"
+    title: "LST-884 Stern Bridge Structure on Deep Seafloor"
+    creator_agency: "NOAA Ocean Exploration (EX2502)"
+    source_page_url: "https://oceanexplorer.noaa.gov/lst-884-stern-bridge-structure-2/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2026/09/ex2502-lst-884-stern-bridge.jpg"
+    license: "Public Domain (U.S. Federal Government / NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Photo: Courtesy of NOAA Ocean Exploration, EX2502 (Public Domain)"
+    media_type: "photo"
+    priority_tier: 5
+    intended_use: "Thumbnail Concept B: Close-up encrusted steel ship bridge in deep blue ROV light"
+
+  - local_file: "puerto_rico_trench_bathymetry_usgs.jpg"
+    title: "Bathymetry of the Northeast Corner of the Caribbean Plate and the Puerto Rico Trench"
+    creator_agency: "U.S. Geological Survey / Uri ten Brink et al."
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Bathymetry_of_the_northeast_corner_of_the_Caribbean_Plate_showing_the_major_faults_and_plate_boundaries.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/3/39/Bathymetry_of_the_northeast_corner_of_the_Caribbean_Plate_showing_the_major_faults_and_plate_boundaries.jpg"
+    license: "Public Domain (U.S. Geological Survey)"
+    license_url: "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    required_attribution: "Puerto Rico Trench 3D bathymetry: U.S. Geological Survey (Public Domain)"
+    media_type: "photo"
+    priority_tier: 5
+    intended_use: "3D tectonic bathymetry map showing the 8,376m Puerto Rico Trench along the Caribbean-North American plate boundary"
+
+  - local_file: "ss_cotopaxi_archival.jpg"
+    title: "Archival Photograph of Cargo Steamer SS Cotopaxi"
+    creator_agency: "Historical Maritime Archive / Wikimedia Commons"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:SS_Cotopaxi.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/2/2e/SS_Cotopaxi.jpg"
+    license: "Public Domain (Pre-1928 U.S. Publication)"
+    license_url: "https://creativecommons.org/publicdomain/mark/1.0/"
+    required_attribution: "Historical photograph of SS Cotopaxi (Public Domain)"
+    media_type: "photo"
+    priority_tier: 5
+    intended_use: "Historical archival image of SS Cotopaxi lost in December 1925 storm"
+
+  - local_file: "nasa_iss071_bermuda.jpg"
+    title: "ISS071-E-206529 — Bermuda From 265 Miles Above"
+    creator_agency: "NASA Johnson Space Center / Earth Science and Remote Sensing Unit"
+    source_page_url: "https://images.nasa.gov/details/iss071e206529"
+    direct_media_url: "https://images-assets.nasa.gov/image/iss071e206529/iss071e206529~large.jpg"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Astronaut photograph of Bermuda (ISS071-E-206529): NASA Johnson Space Center (Public Domain)"
+    media_type: "photo"
+    priority_tier: 5
+    intended_use: "Orbital view of Bermuda's coral-capped volcanic pedestal rising out of the deep Atlantic"
+
+  - local_file: "noaa_pmel_deep_ocean_hydrophone.wav"
+    title: "NOAA PMEL Acoustics Program — Deep-Ocean Hydrophone Ambient Recording"
+    creator_agency: "NOAA Pacific Marine Environmental Laboratory"
+    source_page_url: "https://www.pmel.noaa.gov/acoustics/"
+    direct_media_url: "https://www.pmel.noaa.gov/acoustics/"
+    license: "Public Domain (NOAA)"
+    license_url: "https://www.noaa.gov/disclaimer"
+    required_attribution: "Deep-ocean hydrophone audio: NOAA PMEL Acoustics Program (Public Domain)"
+    media_type: "audio"
+    priority_tier: 3
+    intended_use: "Authentic low-level deep-ocean hydrophone natural sound bed"
+
+  - local_file: "bermuda_rock_raft_cutaway_v6.mp4"
+    title: "Seismic Cross-Section Model: Bermuda's 20 km Underplated Mantle Rock 'Raft'"
+    creator_agency: "Proof of Wonder Documentary Studio v6.0"
+    source_page_url: "local://pipeline/generate_bermuda_abyss_diagram.py"
+    direct_media_url: "local://assets/raw_footage/hidden_earth_bermuda_abyss_v6/bermuda_rock_raft_cutaway_v6.mp4"
+    license: "100% Original First-Party Graphic"
+    license_url: "N/A"
+    required_attribution: "Original illustrative seismic cross-section based on Frazer, Park & Olugboji (Geophysical Research Letters / Carnegie Institution)"
+    media_type: "diagram"
+    priority_tier: 6
+    intended_use: "Illustrates the 20km-thick lower-density frozen mantle rock layer beneath Bermuda's oceanic crust"
+    is_first_party_original: true
+
+excluded_sources_notes:
+  - "noaa_wscnms_pilothouse_wreck.jpg: Excluded because visual inspection revealed a third-party 'Hibbard Inshore' contractor logo in the bottom-left corner."
+  - "dvids_992546_atlantic_ship_1080p.webm: Excluded because visual inspection revealed a green 'UNCLASSIFIED' header banner and sensor crosshair overlay."
+  - "Pseudoscientific 'crystal pyramid' or 'magnetic vortex' clips: Excluded by Proof of Wonder factual integrity standards."
+
+factual_references:
+  - citation: "NOAA National Ocean Service — What is the Bermuda Triangle? & Puerto Rico Trench Bathymetry (Milwaukee Deep ~8,376 m)."
+    url: "https://oceanservice.noaa.gov/facts/bermudatri.html"
+    supported_claims: "No evidence that mysterious disappearances occur with greater frequency in the Bermuda Triangle than in any other large, well-traveled area of the ocean; Gulf Stream rapid weather/wave changes; deep trenches including the Puerto Rico Trench."
+  - citation: "U.S. Geological Survey (USGS) — Gas Hydrates and the Bermuda Triangle Myth."
+    url: "https://www.usgs.gov/faqs/what-bermuda-triangle"
+    supported_claims: "USGS gas-hydrate research shows no large methane-hydrate releases have occurred in the Bermuda Triangle / Blake Ridge region for roughly the past 15,000 years."
+  - citation: "Frazer, W. D., Park, J., & Olugboji, T. — Seismic receiver-function imaging of a ~20-km-thick low-density underplated rock layer beneath Bermuda supporting the ~500-m Bermuda Swell."
+    url: "https://agupubs.onlinelibrary.wiley.com/journal/19448007"
+    supported_claims: "Identification of an unusual ~20-kilometer-thick underplated rock layer beneath Bermuda's oceanic crust whose buoyancy holds the surrounding Bermuda seafloor swell ~500 meters higher than expected without an active hot-spot plume."
+  - citation: "NOAA Ocean Exploration — Identification of the Wreck of SS Cotopaxi off St. Augustine, Florida (2020)."
+    url: "https://oceanexplorer.noaa.gov/"
+    supported_claims: "SS Cotopaxi vanished on a voyage from Charleston to Havana in December 1925 during a severe Atlantic storm and was positively identified underwater ~35 nautical miles off St. Augustine, Florida."
