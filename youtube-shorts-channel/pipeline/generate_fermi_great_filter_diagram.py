@@ -20,12 +20,12 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-ROOT = Path("/Applications/code/science-knowledge/youtube-shorts-channel")
+ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "assets" / "raw_footage" / "space_and_universe_fermi_paradox_v4"
 OUT_MP4 = RAW / "great_filter_bottleneck_v4.mp4"
 STAR_TEX = RAW / "eso_potw1036a_vlt_laser_milky_way.jpg"
-FONT_BOLD = "/Applications/code/science-knowledge/MoneyPrinterTurbo/resource/fonts/BeVietnamPro-Bold.ttf"
-FONT_MED = "/Applications/code/science-knowledge/MoneyPrinterTurbo/resource/fonts/BeVietnamPro-Medium.ttf"
+FONT_BOLD = str(Path(__file__).resolve().parents[1] / "assets" / "fonts" / "BeVietnamPro-Bold.ttf")
+FONT_MED = str(Path(__file__).resolve().parents[1] / "assets" / "fonts" / "BeVietnamPro-Medium.ttf")
 
 W, H, FPS = 1080, 1920, 30
 DUR_S = 7.2

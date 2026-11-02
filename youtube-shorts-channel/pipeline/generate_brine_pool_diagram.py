@@ -22,11 +22,11 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-ROOT = Path("/Applications/code/science-knowledge/youtube-shorts-channel")
+ROOT = Path(__file__).resolve().parents[1]
 OUT_MP4 = ROOT / "assets" / "raw_footage" / "hidden_earth_brine_pools_v4" / "brine_pool_cutaway_v4.mp4"
 NOAA_TEX = ROOT / "assets" / "raw_footage" / "hidden_earth_brine_pools_20261029" / "noaa_methane_venting_4k.jpg"
-FONT_BOLD = "/Applications/code/science-knowledge/MoneyPrinterTurbo/resource/fonts/BeVietnamPro-Bold.ttf"
-FONT_MED = "/Applications/code/science-knowledge/MoneyPrinterTurbo/resource/fonts/BeVietnamPro-Medium.ttf"
+FONT_BOLD = str(Path(__file__).resolve().parents[1] / "assets" / "fonts" / "BeVietnamPro-Bold.ttf")
+FONT_MED = str(Path(__file__).resolve().parents[1] / "assets" / "fonts" / "BeVietnamPro-Medium.ttf")
 
 W, H, FPS = 1080, 1920, 30
 DUR_S = 8.0
