@@ -22,7 +22,7 @@ import {
   Wrench,
   Zap,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   analyzeChannelTimingVn,
   buildDefaultDescription,
@@ -63,7 +63,9 @@ interface DailyCockpitTabProps {
   onRescueSingleStudio: (videoId: string) => Promise<void>;
   onRescueAllStudio: () => Promise<void>;
   onUploadShortDirect: (params: {
-    file: File;
+    file?: File | null;
+    localEpisodeSlug?: string;
+    advanceSprint?: boolean;
     publishMode: "schedule_golden" | "public_now" | "private_draft";
     episodeId: string;
     title: string;
@@ -74,6 +76,7 @@ interface DailyCockpitTabProps {
   onSendToScriptBuilder: (topic: string, sourceTitle?: string) => void;
   onUpdateMilestone: (channelId: string, milestone: number) => Promise<void>;
   onAuditVideoInSeo: (video: VideoItem) => void;
+  onOpenMacReview?: (slug?: string) => void;
   onGoToSettings: () => void;
 }
 
@@ -101,6 +104,7 @@ export function DailyCockpitTab({
   onSendToScriptBuilder,
   onUpdateMilestone,
   onAuditVideoInSeo,
+  onOpenMacReview,
   onGoToSettings,
 }: DailyCockpitTabProps) {
   const [viewMode, setViewMode] = useState<"cockpit" | "analytics">("cockpit");
@@ -114,12 +118,42 @@ export function DailyCockpitTab({
 
   // Direct Studio states
   const [selectedVideoFile, setSelectedVideoFile] = useState<File | null>(null);
+  const [macEpisodes, setMacEpisodes] = useState<
+    Array<{
+      slug: string;
+      primaryTitle: string;
+      description: string;
+      tags: string[];
+      pinnedComment: string;
+      durationSec: number | null;
+      fileSizeMb: number;
+      qcPassed: boolean;
+    }>
+  >([]);
+  const [selectedMacSlug, setSelectedMacSlug] = useState<string>("");
+  const [macAdvanceSprint, setMacAdvanceSprint] = useState<boolean>(true);
   const [publishMode, setPublishMode] = useState<
     "schedule_golden" | "public_now" | "private_draft"
   >("schedule_golden");
   const [uploadingVideo, setUploadingVideo] = useState(false);
   const [updatingVideoId, setUpdatingVideoId] = useState<string | null>(null);
   const [updatingAllVideos, setUpdatingAllVideos] = useState(false);
+
+  const loadMacOutputs = async () => {
+    try {
+      const res = await fetch("/api/mac-outputs");
+      const json = await res.json();
+      if (json?.ok && Array.isArray(json.episodes)) {
+        setMacEpisodes(json.episodes);
+      }
+    } catch {
+      // ignore offline
+    }
+  };
+
+  useEffect(() => {
+    void loadMacOutputs();
+  }, []);
 
   const isStudioConnected = Boolean(youtubeOAuth?.refreshToken);
 
@@ -226,20 +260,81 @@ export function DailyCockpitTab({
       : buildDefaultTags(todayItem.title)
     : [];
 
+  const selectedMacEp = macEpisodes.find((e) => e.slug === selectedMacSlug);
+
+  const previewTitle = selectedMacEp
+    ? !macAdvanceSprint
+      ? selectedMacEp.primaryTitle
+      : todayItem?.title || selectedMacEp.primaryTitle
+    : todayItem?.title || "";
+
+  const previewDescription =
+    selectedMacEp?.description || readyDescription;
+
+  const previewTags =
+    selectedMacEp && selectedMacEp.tags.length > 0
+      ? selectedMacEp.tags
+      : readyTags;
+
+  const previewPinnedComment =
+    selectedMacEp?.pinnedComment || todayItem?.pinnedComment || "";
+
+  const handleSelectMacSlug = (slug: string) => {
+    setSelectedMacSlug(slug);
+    if (!slug) return;
+    setSelectedVideoFile(null);
+    const picked = macEpisodes.find((e) => e.slug === slug);
+    if (picked && todayItem) {
+      const stopWords = new Set([
+        "what",
+        "when",
+        "where",
+        "which",
+        "from",
+        "into",
+        "that",
+        "this",
+        "these",
+        "those",
+        "with",
+        "have",
+        "happens",
+        "happened",
+        "inside",
+        "earth",
+      ]);
+      const sprintTokens = new Set(
+        todayItem.title
+          .toLowerCase()
+          .split(/[^a-z0-9]+/)
+          .filter((w) => w.length >= 4 && !stopWords.has(w))
+      );
+      const macTokens = `${picked.primaryTitle} ${picked.slug}`
+        .toLowerCase()
+        .split(/[^a-z0-9]+/)
+        .filter((w) => w.length >= 4 && !stopWords.has(w));
+      const overlap = macTokens.filter((w) => sprintTokens.has(w)).length;
+      setMacAdvanceSprint(overlap >= 2);
+    }
+  };
+
   const handleDirectUploadSubmit = async () => {
-    if (!selectedVideoFile || !todayItem) return;
+    if ((!selectedVideoFile && !selectedMacSlug) || !todayItem) return;
     setUploadingVideo(true);
     try {
       await onUploadShortDirect({
-        file: selectedVideoFile,
+        file: selectedMacSlug ? null : selectedVideoFile,
+        localEpisodeSlug: selectedMacSlug || undefined,
+        advanceSprint: selectedMacSlug ? macAdvanceSprint : true,
         publishMode,
         episodeId: todayItem.id,
-        title: todayItem.title,
-        description: readyDescription,
-        tags: readyTags,
-        pinnedComment: todayItem.pinnedComment,
+        title: previewTitle,
+        description: previewDescription,
+        tags: previewTags,
+        pinnedComment: previewPinnedComment,
       });
       setSelectedVideoFile(null);
+      setSelectedMacSlug("");
     } finally {
       setUploadingVideo(false);
     }
@@ -542,18 +637,37 @@ export function DailyCockpitTab({
 
                 {/* Step 1 Mac Pipeline Bridge & Zero-Cost Actions */}
                 <div className="space-y-3 pt-3 border-t border-zinc-800/80">
-                  <div className="rounded-xl border border-zinc-800 bg-zinc-950/80 p-3.5 space-y-2">
+                  <div className="rounded-xl border border-sky-500/35 bg-sky-950/20 p-3.5 space-y-2.5">
                     <div className="flex items-center justify-between gap-2">
-                      <span className="text-xs font-bold text-emerald-300">
-                        🍎 Dựng Video trên Mac (0₫ • Giữ 100% chất lượng gốc)
+                      <span className="text-xs font-extrabold text-sky-300">
+                        🤖 Tạo Video Trên Antigravity App (0₫ • Tự hiện lên Web)
                       </span>
-                      <span className="font-mono text-[10px] text-zinc-500">
-                        GET /api/pipeline
+                      <span className="font-mono text-[10px] text-zinc-400">
+                        pow_documentary_v3
                       </span>
                     </div>
-                    <p className="text-[11px] text-zinc-400 leading-relaxed">
-                      Đã tắt hoàn toàn tạo video bằng Vertex trả phí. Kịch bản tạo video trên máy Mac của bạn có thể lấy tự động đề tài hôm nay qua <code className="text-zinc-200">GET /api/pipeline</code> rồi đẩy file <code className="text-zinc-200">.mp4</code> sang Bước 2 để hẹn lịch 17:15 VN (miễn phí 0₫).
+                    <p className="text-[11px] text-zinc-300 leading-relaxed">
+                      Bấm nút dưới để chép lệnh giao việc cho Antigravity dựng video này (hoặc tự gõ bất kỳ chủ đề nào trong Antigravity). Khi render xong, video tự động xuất hiện trong mục <strong>Kho Video Antigravity</strong> để bạn xem thử, check SEO & bấm Lưu Draft / Đăng.
                     </p>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        copyText(
+                          "step1-agy",
+                          `Hãy tạo video documentary chuẩn Proof of Wonder (pow_documentary_v3) cho bài Sprint hôm nay (${todayItem.id}): "${todayItem.title}". Gợi ý lời thoại: "${fullVoiceoverForTts}". Xuất đầy đủ video + thumbnail + youtube_metadata.md vào youtube-shorts-channel/output để tôi review video, check SEO và bấm lưu Draft / Đăng trên Web.`
+                        )
+                      }
+                      className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-sky-600 hover:bg-sky-500 px-3.5 py-2 text-xs font-extrabold text-white transition cursor-pointer"
+                    >
+                      {copiedId === "step1-agy" ? (
+                        <Check className="h-3.5 w-3.5 text-white" />
+                      ) : (
+                        <Copy className="h-3.5 w-3.5" />
+                      )}
+                      {copiedId === "step1-agy"
+                        ? "Đã chép lệnh! Dán vào Antigravity để tạo video"
+                        : "Copy Lệnh Giao Antigravity Tạo Video Hôm Nay"}
+                    </button>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -610,19 +724,91 @@ export function DailyCockpitTab({
                         </span>
                       </div>
 
+                      {macEpisodes.length > 0 && (
+                        <div className="rounded-xl border border-zinc-800 bg-zinc-950/90 p-2.5 space-y-2">
+                          <div className="flex flex-wrap items-center justify-between gap-2">
+                            <span className="text-[11px] font-bold text-sky-300">
+                              🍎 Kho Video Thành Phẩm Trên Mac ({macEpisodes.length} tập sẵn sàng)
+                            </span>
+                            <div className="flex items-center gap-2">
+                              {onOpenMacReview && (
+                                <button
+                                  type="button"
+                                  onClick={() =>
+                                    onOpenMacReview(
+                                      selectedMacSlug || macEpisodes[0]?.slug
+                                    )
+                                  }
+                                  className="rounded-lg bg-sky-600/25 hover:bg-sky-600/40 border border-sky-500/40 px-2 py-0.5 text-[10px] font-bold text-sky-200 cursor-pointer"
+                                >
+                                  ▶️ Xem Video & Check SEO Chi Tiết
+                                </button>
+                              )}
+                              <button
+                                type="button"
+                                onClick={() => void loadMacOutputs()}
+                                className="text-[10px] text-zinc-400 hover:text-white cursor-pointer"
+                              >
+                                Làm mới
+                              </button>
+                            </div>
+                          </div>
+                          <select
+                            value={selectedMacSlug}
+                            onChange={(e) => handleSelectMacSlug(e.target.value)}
+                            className="w-full rounded-lg border border-zinc-700 bg-zinc-900 px-2.5 py-1.5 text-xs font-semibold text-white focus:outline-none"
+                          >
+                            <option value="">
+                              -- Chọn nhanh tập đã render từ youtube-shorts-channel --
+                            </option>
+                            {macEpisodes.map((ep) => (
+                              <option key={ep.slug} value={ep.slug}>
+                                {ep.qcPassed ? "✅" : "🎬"} {ep.primaryTitle} (
+                                {ep.durationSec ? `${Math.round(ep.durationSec)}s • ` : ""}
+                                {ep.fileSizeMb}MB)
+                              </option>
+                            ))}
+                          </select>
+                          {selectedMacSlug && (
+                            <div className="flex flex-wrap items-center gap-3 text-[11px] text-zinc-300 pt-0.5">
+                              <label className="inline-flex items-center gap-1.5 cursor-pointer">
+                                <input
+                                  type="radio"
+                                  checked={macAdvanceSprint}
+                                  onChange={() => setMacAdvanceSprint(true)}
+                                />
+                                <span>Gắn cho bài Sprint hôm nay (Tự nhảy bước)</span>
+                              </label>
+                              <label className="inline-flex items-center gap-1.5 cursor-pointer">
+                                <input
+                                  type="radio"
+                                  checked={!macAdvanceSprint}
+                                  onChange={() => setMacAdvanceSprint(false)}
+                                />
+                                <span>Đăng lẻ tập Mac này (Giữ nguyên Sprint)</span>
+                              </label>
+                            </div>
+                          )}
+                        </div>
+                      )}
+
                       <div className="grid grid-cols-1 sm:grid-cols-12 gap-2.5">
                         <label className="sm:col-span-7 flex items-center justify-between rounded-xl border border-dashed border-zinc-700 bg-zinc-950 px-3 py-2 text-xs text-zinc-300 hover:border-emerald-500 cursor-pointer truncate">
                           <span className="truncate">
                             {selectedVideoFile
                               ? `🎬 ${selectedVideoFile.name}`
-                              : "Chọn file video (.mp4 / .mov)..."}
+                              : selectedMacEp
+                              ? `🍎 Đã chọn từ Mac: ${selectedMacEp.slug}.mp4`
+                              : "Hoặc chọn file thủ công (.mp4 / .mov)..."}
                           </span>
                           <input
                             type="file"
                             accept="video/mp4,video/quicktime,video/*"
-                            onChange={(e) =>
-                              setSelectedVideoFile(e.target.files?.[0] || null)
-                            }
+                            onChange={(e) => {
+                              const f = e.target.files?.[0] || null;
+                              setSelectedVideoFile(f);
+                              if (f) setSelectedMacSlug("");
+                            }}
                             className="hidden"
                           />
                         </label>
@@ -653,7 +839,10 @@ export function DailyCockpitTab({
 
                       <button
                         onClick={handleDirectUploadSubmit}
-                        disabled={!selectedVideoFile || uploadingVideo}
+                        disabled={
+                          (!selectedVideoFile && !selectedMacSlug) ||
+                          uploadingVideo
+                        }
                         className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-45 px-4 py-2.5 text-xs font-extrabold text-white shadow-lg shadow-emerald-600/20 transition cursor-pointer"
                       >
                         <Rocket
@@ -662,7 +851,9 @@ export function DailyCockpitTab({
                           }`}
                         />
                         {uploadingVideo
-                          ? "Đang truyền file & cài đặt SEO lên YouTube..."
+                          ? "Đang truyền file, Thumbnail & cài đặt SEO lên YouTube..."
+                          : selectedMacSlug && !macAdvanceSprint
+                          ? "Upload Tập Mac Lên YouTube + Thumbnail (Giữ Nguyên Sprint)"
                           : "Upload Thẳng Lên YouTube + Tự Chuyển Bài Ngày Mai"}
                       </button>
                     </div>
@@ -688,11 +879,11 @@ export function DailyCockpitTab({
                           1. Tiêu đề chuẩn (Không #hashtag)
                         </span>
                         <p className="text-xs font-bold text-white mt-0.5 line-clamp-2">
-                          {todayItem.title}
+                          {previewTitle}
                         </p>
                       </div>
                       <button
-                        onClick={() => copyText("meta-title", todayItem.title)}
+                        onClick={() => copyText("meta-title", previewTitle)}
                         className="w-full inline-flex items-center justify-center gap-1.5 rounded-lg border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 py-1 text-[11px] font-semibold text-zinc-300 cursor-pointer"
                       >
                         {copiedId === "meta-title" ? (
@@ -712,11 +903,11 @@ export function DailyCockpitTab({
                           2. Mô tả (Kèm ?sub_confirmation=1)
                         </span>
                         <p className="text-[11px] text-zinc-300 mt-0.5 line-clamp-2 whitespace-pre-line">
-                          {readyDescription}
+                          {previewDescription}
                         </p>
                       </div>
                       <button
-                        onClick={() => copyText("meta-desc", readyDescription)}
+                        onClick={() => copyText("meta-desc", previewDescription)}
                         className="w-full inline-flex items-center justify-center gap-1.5 rounded-lg border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 py-1 text-[11px] font-semibold text-zinc-300 cursor-pointer"
                       >
                         {copiedId === "meta-desc" ? (
@@ -731,15 +922,15 @@ export function DailyCockpitTab({
                     <div className="rounded-xl border border-zinc-800 bg-zinc-950/90 p-2.5 flex flex-col justify-between gap-2">
                       <div>
                         <span className="text-[10px] font-bold uppercase text-sky-400">
-                          3. Bộ Tags ({readyTags.length} từ khóa)
+                          3. Bộ Tags ({previewTags.length} từ khóa)
                         </span>
                         <p className="text-[11px] text-zinc-400 mt-0.5 line-clamp-1">
-                          {readyTags.join(", ")}
+                          {previewTags.join(", ")}
                         </p>
                       </div>
                       <button
                         onClick={() =>
-                          copyText("meta-tags", readyTags.join(", "))
+                          copyText("meta-tags", previewTags.join(", "))
                         }
                         className="w-full inline-flex items-center justify-center gap-1.5 rounded-lg border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 py-1 text-[11px] font-semibold text-zinc-300 cursor-pointer"
                       >
@@ -758,12 +949,12 @@ export function DailyCockpitTab({
                           4. Bình luận Ghim
                         </span>
                         <p className="text-[11px] text-zinc-300 mt-0.5 line-clamp-1">
-                          {todayItem.pinnedComment}
+                          {previewPinnedComment}
                         </p>
                       </div>
                       <button
                         onClick={() =>
-                          copyText("meta-pin", todayItem.pinnedComment)
+                          copyText("meta-pin", previewPinnedComment)
                         }
                         className="w-full inline-flex items-center justify-center gap-1.5 rounded-lg border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 py-1 text-[11px] font-semibold text-zinc-300 cursor-pointer"
                       >

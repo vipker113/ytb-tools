@@ -4,6 +4,7 @@ import type {
   StoreData,
   VideoItem,
 } from "./types";
+import { buildGeminiModelChain } from "./viral-script";
 
 interface TimingBucket {
   id: string;
@@ -349,25 +350,15 @@ Return pure JSON matching:
   ]
 }`;
 
-    const preferred =
-      store.settings.geminiModel &&
-      !store.settings.geminiModel.includes("argon")
-        ? store.settings.geminiModel
-        : "gemini-3.8-flash";
     const models = options?.fastMode
-      ? ["gemini-3.6-flash", "gemini-3.5-flash"]
-      : Array.from(
-          new Set([preferred, "gemini-3.6-flash", "gemini-3.5-flash"])
-        );
+      ? ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-3-flash-preview"]
+      : buildGeminiModelChain(store.settings.geminiModel);
     for (const model of models) {
       try {
         const genConfig: Record<string, unknown> = {
           temperature: 0.72,
           responseMimeType: "application/json",
         };
-        if (model.includes("3.8") || model.includes("3.7")) {
-          genConfig.thinkingConfig = { thinkingBudget: 256 };
-        }
 
         const res = await fetch(
           `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(

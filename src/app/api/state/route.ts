@@ -47,7 +47,7 @@ export async function POST(request: Request) {
     case "addIdea": {
       const incoming = body.idea as Partial<SavedIdea>;
       const newIdea: SavedIdea = {
-        id: `idea-${Date.now()}`,
+        id: `backlog-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
         title: incoming.title || "Ý tưởng video mới",
         remakeTitle: incoming.remakeTitle || incoming.title || "",
         targetKeyword: incoming.targetKeyword || "",

@@ -1,12 +1,24 @@
 import { generateNextGrowthSprint } from "@/lib/auto-planner";
+import {
+  type MacThumbVariant,
+  optimizeThumbnailForYoutube,
+  resolveMacEpisodeAssetFile,
+  saveMacEpisodeOverride,
+} from "@/lib/mac-pipeline";
 import { getEffectiveYoutubeKey, readStore, writeStore } from "@/lib/store";
-import type { AutopilotLogEntry, StoreData } from "@/lib/types";
+import type {
+  AutopilotLogEntry,
+  StoreData,
+  StudioPublishMode,
+} from "@/lib/types";
 import { diagnoseExistingVideosForSubRescue } from "@/lib/viral-script";
 import { fetchTrackedChannelLive } from "@/lib/youtube";
 import {
   applyEpisodeMetadataToVideo,
   getValidYoutubeAccessToken,
+  reconcileStudioState,
   rescueSingleVideoOnStudio,
+  updateOrPromoteStudioVideo,
 } from "@/lib/youtube-studio";
 
 function pushLog(
@@ -233,6 +245,209 @@ export async function POST(request: Request) {
       await writeStore(store);
 
       return Response.json({ ok: true, store, message: msg });
+    }
+
+    // ACTION 4: Update or Promote an already-uploaded Mac Draft/Scheduled/Public video in <1s without re-uploading MP4
+    if (body.action === "promoteOrUpdateMacVideo") {
+      const videoId = String(body.videoId || "").trim();
+      const slug = String(body.slug || "").trim();
+      if (!videoId) {
+        return Response.json(
+          { error: "Thiếu Video ID của video cần cập nhật." },
+          { status: 400 }
+        );
+      }
+
+      const publishModeRaw = String(body.publishMode || "private_draft");
+      const publishMode: StudioPublishMode =
+        publishModeRaw === "public_now" ||
+        publishModeRaw === "schedule_golden" ||
+        publishModeRaw === "unlisted" ||
+        publishModeRaw === "private_draft"
+          ? publishModeRaw
+          : "private_draft";
+
+      const playlistIdRaw = String(body.playlistId || "").trim();
+      const playlistId =
+        playlistIdRaw && playlistIdRaw !== "none" ? playlistIdRaw : undefined;
+
+      const hasPaidProductPlacement = Boolean(
+        body.hasPaidProductPlacement ?? false
+      );
+      const selfDeclaredMadeForKids = Boolean(
+        body.selfDeclaredMadeForKids ?? false
+      );
+      const containsSyntheticMedia = Boolean(
+        body.containsSyntheticMedia ?? false
+      );
+
+      const thumbVariantRaw = String(body.thumbnailVariant || "primary");
+      const chosenThumbVariant: MacThumbVariant =
+        thumbVariantRaw === "variant_b" || thumbVariantRaw === "variant_c"
+          ? thumbVariantRaw
+          : "primary";
+
+      let thumbnailBuffer: ArrayBuffer | null = null;
+      let thumbnailMimeType = "image/jpeg";
+      if (slug && body.updateThumbnail !== false) {
+        const resolvedThumb =
+          (await resolveMacEpisodeAssetFile(slug, chosenThumbVariant)) ||
+          (await resolveMacEpisodeAssetFile(slug, "primary"));
+        if (resolvedThumb) {
+          const opt = await optimizeThumbnailForYoutube(
+            resolvedThumb.filePath,
+            resolvedThumb.mimeType
+          );
+          thumbnailBuffer = opt.buffer;
+          thumbnailMimeType = opt.mimeType;
+        }
+      }
+
+      const title = String(body.title || "").trim();
+      const description = String(body.description || "");
+      const tags: string[] = Array.isArray(body.tags)
+        ? body.tags.map((t: unknown) => String(t).trim()).filter(Boolean)
+        : [];
+      const pinnedComment = body.pinnedComment
+        ? String(body.pinnedComment)
+        : undefined;
+
+      const existingScheduledIsos = Object.values(
+        store.publishedMacEpisodes || {}
+      )
+        .filter(
+          (r) =>
+            r.status === "scheduled" &&
+            r.scheduledAt &&
+            r.slug !== slug &&
+            r.videoId !== videoId
+        )
+        .map((r) => r.scheduledAt!);
+
+      let updateRes: Awaited<ReturnType<typeof updateOrPromoteStudioVideo>>;
+      try {
+        updateRes = await updateOrPromoteStudioVideo({
+          accessToken,
+          videoId,
+          ownerChannelId,
+          title,
+          description,
+          tags,
+          pinnedComment,
+          publishMode,
+          customPublishAtIso: body.customPublishAtIso
+            ? String(body.customPublishAtIso)
+            : undefined,
+          existingScheduledIsos,
+          thumbnailBuffer,
+          thumbnailMimeType,
+          playlistId,
+          hasPaidProductPlacement,
+          selfDeclaredMadeForKids,
+          containsSyntheticMedia,
+        });
+      } catch (err) {
+        // If video was deleted on YouTube Studio, reconcile immediately so UI resets to unposted!
+        await reconcileStudioState(store).catch(() => {});
+        await writeStore(store).catch(() => {});
+        throw err;
+      }
+
+      if (slug) {
+        store.publishedMacEpisodes = store.publishedMacEpisodes || {};
+        store.publishedMacEpisodes[slug] = {
+          slug,
+          videoId,
+          status:
+            publishMode === "private_draft"
+              ? "private_draft"
+              : publishMode === "unlisted"
+              ? "unlisted"
+              : publishMode === "schedule_golden"
+              ? "scheduled"
+              : "public",
+          scheduledAt: updateRes.scheduledAt,
+          watchUrl: updateRes.watchUrl,
+          studioEditUrl: updateRes.studioEditUrl,
+          title,
+          description,
+          tags,
+          thumbnailVariant: chosenThumbVariant,
+          playlistId,
+          hasPaidProductPlacement,
+          selfDeclaredMadeForKids,
+          containsSyntheticMedia,
+          updatedAt: new Date().toISOString(),
+        };
+
+        await saveMacEpisodeOverride(slug, {
+          title,
+          description,
+          tags,
+          pinnedComment,
+          selectedThumbVariant: chosenThumbVariant,
+          publishMode,
+          customPublishAtIso:
+            updateRes.scheduledAt ||
+            (body.customPublishAtIso ? String(body.customPublishAtIso) : undefined),
+          playlistId: playlistId || "",
+          hasPaidProductPlacement,
+          selfDeclaredMadeForKids,
+          containsSyntheticMedia,
+        }).catch(() => {});
+      }
+
+      if (
+        body.advanceSprint &&
+        publishMode !== "private_draft" &&
+        store.activePlan
+      ) {
+        const targetEp = body.episodeId
+          ? store.activePlan.items.find((i) => i.id === body.episodeId)
+          : store.activePlan.items.find((i) => i.status !== "completed");
+        if (targetEp) {
+          targetEp.status = "completed";
+        }
+        const allDone =
+          store.activePlan.items.length > 0 &&
+          store.activePlan.items.every((i) => i.status === "completed");
+        if (allDone && store.activePlan.autoContinueEnabled) {
+          store.completedSprintsCount = (store.completedSprintsCount || 0) + 1;
+          store.activePlan = await generateNextGrowthSprint(store, {
+            fastMode: true,
+          });
+        }
+      }
+
+      await reconcileStudioState(store).catch(() => {});
+
+      const modeLabel =
+        publishMode === "private_draft"
+          ? "Riêng tư / Bản nháp"
+          : publishMode === "unlisted"
+          ? "Không công khai (Unlisted)"
+          : publishMode === "schedule_golden"
+          ? `Hẹn giờ tự phát lúc ${new Date(
+              updateRes.scheduledAt || ""
+            ).toLocaleString("vi-VN", {
+              hour: "2-digit",
+              minute: "2-digit",
+              day: "2-digit",
+              month: "2-digit",
+            })}`
+          : "Đăng Công khai";
+
+      const plLabel = updateRes.playlistAdded ? " + đã thêm vào Playlist" : "";
+      const msg = `⚡ Đã cập nhật video "${title}" trên YouTube Studio (${modeLabel}${plLabel})!`;
+      pushLog(store, "publish", msg);
+      await writeStore(store);
+
+      return Response.json({
+        ok: true,
+        store,
+        uploadResult: updateRes,
+        message: msg,
+      });
     }
 
     return Response.json(

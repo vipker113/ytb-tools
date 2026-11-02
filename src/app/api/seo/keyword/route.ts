@@ -8,10 +8,20 @@ export async function POST(request: Request) {
     const store = await readStore();
     const apiKey = getEffectiveYoutubeKey(store);
 
+    const hasViChars =
+      /[ăâđêôơưĂÂĐÊÔƠƯáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứứửữựýỳỷỹỵ]/.test(
+        keyword
+      );
+    const regionCode = body.regionCode
+      ? String(body.regionCode)
+      : hasViChars
+      ? "VN"
+      : store.settings.defaultCountryCode || "US";
+
     const result = await analyzeKeywordLiveOrDemo({
       keyword,
       apiKey,
-      regionCode: store.settings.defaultCountryCode || "VN",
+      regionCode,
     });
 
     return Response.json(result);

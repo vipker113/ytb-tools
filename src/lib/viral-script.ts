@@ -1,5 +1,32 @@
 import type { VideoItem } from "./types";
 
+export const DEFAULT_GEMINI_MODEL = "gemini-3.6-flash";
+
+export function normalizePreferredGeminiModel(raw?: string): string {
+  const clean = (raw || "").trim();
+  if (
+    !clean ||
+    clean === "gemini-2.5-flash" ||
+    clean === "gemini-2.5-pro" ||
+    clean === "gemini-2.5-flash-lite"
+  ) {
+    return DEFAULT_GEMINI_MODEL;
+  }
+  return clean;
+}
+
+export function buildGeminiModelChain(preferredRaw?: string): string[] {
+  const preferred = normalizePreferredGeminiModel(preferredRaw);
+  return Array.from(
+    new Set([
+      preferred,
+      "gemini-3.6-flash",
+      "gemini-3.5-flash",
+      "gemini-3-flash-preview",
+    ])
+  );
+}
+
 export interface ViralScene {
   timestamp: string;
   visualDirection: string;
@@ -126,6 +153,7 @@ export function diagnoseExistingVideosForSubRescue(
 export async function generateViralShortBlueprint(params: {
   topic: string;
   sourceOutlierTitle?: string;
+  retentionTelemetryContext?: string;
   channelTitle: string;
   channelHandle: string;
   geminiApiKey: string;
@@ -203,62 +231,48 @@ export async function generateViralShortBlueprint(params: {
     return { blueprint: fallback, usedAi: false, modelUsed: "template" };
   }
 
-  const prompt = `You are an elite US YouTube Science Shorts Showrunner (behind channels like Cleo Abram, Zack D. Films, Veritasium Shorts, and AstroKobi).
-Build a complete, high-retention 45-second Infinite-Loop YouTube Short blueprint for the channel "${params.channelTitle}" (${handle}).
+  const prompt = `You are an elite US YouTube Science Documentary Shorts Showrunner (behind Veritasium, Fern, Cleo Abram, and Proof of Wonder).
+Build a complete, high-retention Documentary YouTube Short blueprint (60–80 seconds, pow_documentary_v3 standard) for the channel "${params.channelTitle}" (${handle}).
 
 Topic / Idea: "${topic}"
-${params.sourceOutlierTitle ? `Inspired by proven viral Outlier title: "${params.sourceOutlierTitle}"` : ""}
-
-CRITICAL RULES FOR MAXIMUM REAL SUBSCRIBERS ON YOUTUBE SHORTS:
-1. All English scripts, titles, description, tags, and pinned comment MUST be in crisp, fascinating, 100% accurate US English (zero clickbait lies, real awe-inspiring science, zero hashtags in titles!).
-2. Total voiceover length across scenes MUST be ~110-130 words (40-46 seconds at brisk narration pace).
-3. Design a SEAMLESS INFINITE LOOP: the final words of the last scene must grammatically flow directly into the first words of first3sHook.voiceover!
-4. Place a natural 5-word Subscribe micro-trigger right after the climax reveal (~second 34), NEVER at the start and NEVER as a dead outro screen.
-5. Write "infiniteLoopBridge" and "whyItConvertsSubs" in VIETNAMESE so the Vietnamese channel owner understands how to edit and publish it.
+${params.sourceOutlierTitle ? `Inspired by proven viral Outlier / Winner video: "${params.sourceOutlierTitle}"` : ""}
+${params.retentionTelemetryContext ? `\nREAL CHANNEL RETENTION & VIRAL BENCHMARKS TO EMULATE:\n${params.retentionTelemetryContext}\n` : ""}
+CRITICAL RULES FOR MAXIMUM VIEWER RETENTION & REAL SUBSCRIBERS:
+1. All English scripts, titles, description, tags, and pinned comment MUST be in crisp, factual, 100% accurate US English grounded in real NASA/NOAA/peer-reviewed science (zero clickbait lies, zero hashtags in titles!).
+2. Total voiceover length across scenes MUST be ~145-185 words (60-78 seconds documentary pacing) structured so every 12-15 seconds opens a fresh curiosity loop ("Layer-2 Pivot") so viewers never swipe away!
+3. FIRST 3 SECONDS (0–3s): Must open immediately on the striking visual contradiction + direct spoken paradox question (emulating our 54%–63.5% Stayed-to-Watch winners; NEVER open with slow generic intro or throat-clearing!).
+4. Design a SEAMLESS INFINITE LOOP: the final words of the last scene must flow naturally back into first3sHook.voiceover to push Average Percentage Viewed > 100%!
+5. Write "infiniteLoopBridge" and "whyItConvertsSubs" in VIETNAMESE explaining clearly which retention pattern from our top videos / viral outliers was applied.
 
 Return pure JSON matching this exact schema:
 {
   "topic": "${topic}",
-  "winningTitles": ["4 punchy US English titles, 40-60 chars, NO hashtags, strong curiosity gap"],
+  "winningTitles": ["4 punchy US English documentary titles, 44-66 chars, NO hashtags, strong curiosity gap + real mechanism"],
   "first3sHook": {
-    "visualPrompt": "Exact 0-3s visual/3D/footage prompt that stops scrolling immediately",
-    "voiceover": "Opening spoken hook sentence (must connect smoothly from the final scene's last words!)"
+    "visualPrompt": "Exact 0-3s authentic archival/expedition moving footage + immediate visual contradiction",
+    "voiceover": "Opening spoken paradox question/hook (connects smoothly from final scene's last words!)"
   },
   "scenes": [
-    { "timestamp": "00:03 - 00:13", "visualDirection": "...", "voiceover": "..." },
-    { "timestamp": "00:13 - 00:25", "visualDirection": "...", "voiceover": "..." },
-    { "timestamp": "00:25 - 00:36", "visualDirection": "...", "voiceover": "... (the mind-blowing scientific mechanism/reveal)" },
-    { "timestamp": "00:36 - 00:45 (Sub Trigger + Loop)", "visualDirection": "...", "voiceover": "... (includes brief 'Subscribe to Proof of Wonder for daily strange science' + loop cliffhanger into 00:00)" }
+    { "timestamp": "00:03 - 00:18 (Evidence)", "visualDirection": "Real moving expedition/NASA/NOAA footage proving the anomaly is real", "voiceover": "..." },
+    { "timestamp": "00:18 - 00:38 (Layer-2 Mechanism Pivot)", "visualDirection": "Scientific cross-section diagram + physical mechanism escalation", "voiceover": "... (escalate the mystery right at ~18s so retention stays flat!)" },
+    { "timestamp": "00:38 - 00:56 (Extreme Consequence / Caveat)", "visualDirection": "Real-world human/planetary scale proof", "voiceover": "..." },
+    { "timestamp": "00:56 - 01:10 (Payoff + Sub Trigger + Loop)", "visualDirection": "Memorable documentary resolution shot morphing seamlessly back to Frame 1", "voiceover": "... (includes natural micro-CTA + loop bridge back into 00:00)" }
   ],
-  "subTriggerLine": "Exact micro-CTA sentence used at ~00:36",
-  "infiniteLoopBridge": "Giải thích ngắn gọn bằng tiếng Việt cách câu cuối khớp mượt với câu đầu để tạo Loop >105% thời lượng xem",
-  "pinnedDebateComment": "1 engaging US English question to pin in comments that sparks replies/debate",
-  "readyDescription": "US English SEO description (250-450 chars) including https://www.youtube.com/${handle}?sub_confirmation=1 and 3 clean hashtags at the bottom",
-  "tags": ["12 high-search US English science tags strictly relevant to this topic"],
-  "whyItConvertsSubs": "Giải thích bằng tiếng Việt lý do tâm lý học khiến chủ đề & kịch bản này kéo Subscribers thật mạnh trên thị trường Mỹ"
+  "subTriggerLine": "Exact natural micro-CTA sentence used near the payoff",
+  "infiniteLoopBridge": "Giải thích ngắn gọn bằng tiếng Việt cách câu cuối nối vòng lặp về giây 00:00 + cách giữ chân ở mốc 3s và 18s",
+  "pinnedDebateComment": "1 engaging US English question to pin in comments that sparks scientific debate",
+  "readyDescription": "US English SEO description (300-500 chars) including https://www.youtube.com/${handle}?sub_confirmation=1 and 3 clean hashtags at the bottom",
+  "tags": ["14 high-search US English science tags strictly relevant to this topic"],
+  "whyItConvertsSubs": "Giải thích bằng tiếng Việt công thức giữ chân người xem (dựa trên số liệu % Không vuốt bỏ / % Xem lặp của kênh & Outlier đối thủ) được áp dụng vào kịch bản này"
 }`;
 
-  const cleanPreferred =
-    params.preferredModel && !params.preferredModel.includes("argon")
-      ? params.preferredModel
-      : "gemini-3.8-flash";
-  const models = Array.from(
-    new Set([
-      cleanPreferred,
-      "gemini-3.8-flash",
-      "gemini-3.6-flash",
-      "gemini-3.5-flash",
-    ])
-  );
+  const models = buildGeminiModelChain(params.preferredModel);
   for (const model of models) {
     try {
       const genConfig: Record<string, unknown> = {
         temperature: 0.75,
         responseMimeType: "application/json",
       };
-      if (model.includes("3.8") || model.includes("3.7")) {
-        genConfig.thinkingConfig = { thinkingBudget: 256 };
-      }
 
       const res = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(

@@ -13,7 +13,8 @@ import {
   Wand2,
   Wrench,
 } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import type { RetentionWinnerBenchmark } from "@/app/api/growth/script/route";
 import { formatNumber } from "@/lib/format";
 import type { SavedIdea, TrackedChannel } from "@/lib/types";
 import {
@@ -23,19 +24,21 @@ import {
 
 interface GrowthEngineTabProps {
   channel: TrackedChannel | undefined;
-  initialTopic?: { topic: string; sourceTitle?: string } | null;
+  defaultModel?: string;
+  initialTopic?: { topic: string; sourceTitle?: string; autoRun?: boolean } | null;
   onSaveBlueprintAsIdea: (idea: Partial<SavedIdea>) => Promise<void>;
 }
 
 const SCIENCE_POWER_TOPICS = [
-  "What Happens If You Fall Into Jupiter's Clouds? (No Solid Surface)",
-  "Why Deep-Sea Fish Explode When Pulled to the Surface",
-  "How Astronauts Cry in Space When Tears Can't Fall",
-  "The Cave in Mexico So Hot Humans Survive Only 10 Minutes Inside",
+  "Why Scientists Sealed Movile Cave With 5-Million-Year-Old Toxic Air Forever",
+  "What Actually Happens Inside the Deepest Hole Humans Ever Drilled (12,262m)?",
+  "The Natural Nuclear Reactor in Gabon That Burned for 300,000 Years Underground",
+  "The Cave in Mexico So Hot Humans Survive Only 10 Minutes Without Ice Suits",
 ];
 
 export function GrowthEngineTab({
   channel,
+  defaultModel = "gemini-3.6-flash",
   initialTopic,
   onSaveBlueprintAsIdea,
 }: GrowthEngineTabProps) {
@@ -45,13 +48,16 @@ export function GrowthEngineTab({
   const [sourceOutlierTitle, setSourceOutlierTitle] = useState(
     initialTopic?.sourceTitle || ""
   );
-  const [selectedModel, setSelectedModel] = useState<string>("gemini-3.8-flash");
+  const [selectedModel, setSelectedModel] = useState<string>(
+    defaultModel || "gemini-3.6-flash"
+  );
   const [generating, setGenerating] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [result, setResult] = useState<{
     blueprint: ViralShortBlueprint;
     usedAi: boolean;
     modelUsed?: string;
+    retentionWinners?: RetentionWinnerBenchmark[];
   } | null>(null);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [savedIdea, setSavedIdea] = useState(false);
@@ -70,12 +76,14 @@ export function GrowthEngineTab({
     setTimeout(() => setCopiedKey(null), 1800);
   };
 
-  const handleGenerate = async (customTopic?: string) => {
+  const lastSeedRef = useRef<string>("");
+
+  const handleGenerate = async (customTopic?: string, customSource?: string) => {
     const target = (customTopic ?? topicInput).trim();
     if (!target) return;
-    if (customTopic) {
+    if (customTopic !== undefined) {
       setTopicInput(customTopic);
-      setSourceOutlierTitle("");
+      setSourceOutlierTitle(customSource ?? "");
     }
     setGenerating(true);
     setErrorMsg(null);
@@ -86,7 +94,8 @@ export function GrowthEngineTab({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           topic: target,
-          sourceOutlierTitle: customTopic ? undefined : sourceOutlierTitle,
+          sourceOutlierTitle:
+            customTopic !== undefined ? customSource : sourceOutlierTitle,
           model: selectedModel,
         }),
       });
@@ -99,6 +108,41 @@ export function GrowthEngineTab({
       setGenerating(false);
     }
   };
+
+  useEffect(() => {
+    if (!initialTopic?.topic) return;
+    const sig = `${initialTopic.topic}|${initialTopic.sourceTitle || ""}`;
+    if (lastSeedRef.current === sig) return;
+    lastSeedRef.current = sig;
+    setTopicInput(initialTopic.topic);
+    setSourceOutlierTitle(initialTopic.sourceTitle || "");
+    if (initialTopic.autoRun) {
+      void handleGenerate(initialTopic.topic, initialTopic.sourceTitle);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [initialTopic]);
+
+  const antigravityProductionPrompt = useMemo(() => {
+    if (!result) return "";
+    const bp = result.blueprint;
+    const bestTitle = bp.winningTitles[0] || bp.topic;
+    const sceneLines = bp.scenes
+      .map(
+        (s) =>
+          `- [${s.timestamp}] Visual: ${s.visualDirection}\n  Voiceover: "${s.voiceover}"`
+      )
+      .join("\n");
+    return `Hãy sản xuất video Documentary Shorts chuẩn kênh Proof of Wonder (pow_documentary_v3) theo kịch bản giữ chân người xem dưới đây:
+- Tiêu đề chính: "${bestTitle}"
+- Từ khóa SEO mục tiêu: "${bp.tags[0] || bp.topic}"
+- Mở đầu 0–3s (Hook chống vuốt bỏ):
+  + Hình ảnh: ${bp.first3sHook.visualPrompt}
+  + Lời thoại mở đầu: "${bp.first3sHook.voiceover}"
+- Kịch bản phân cảnh giữ chân & Loop:
+${sceneLines}
+- Bình luận ghim: "${bp.pinnedDebateComment}"
+Hãy tải tư liệu thực tế chuẩn NASA/NOAA/CC-BY, chạy đủ 11 cổng QC và xuất sang đúng thư mục Playlist để tôi duyệt trên Web.`;
+  }, [result]);
 
   const fullVoiceoverText = useMemo(() => {
     if (!result) return "";
@@ -175,14 +219,20 @@ export function GrowthEngineTab({
             onChange={(e) => setSelectedModel(e.target.value)}
             className="rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-3 text-xs sm:text-sm font-medium text-zinc-200 focus:border-red-500 focus:outline-none"
           >
-            <option value="gemini-3.8-flash">
-              Gemini 3.8 Flash (Miễn phí 0₫ — Suy luận sâu)
-            </option>
             <option value="gemini-3.6-flash">
-              Gemini 3.6 Flash (Miễn phí 0₫ — Siêu tốc ~2s)
+              Gemini 3.6 Flash (0₫ • Khuyên dùng • Mới nhất)
             </option>
             <option value="gemini-3.5-flash">
-              Gemini 3.5 Flash (Miễn phí 0₫ — Ổn định)
+              Gemini 3.5 Flash (0₫ • Siêu nhanh ~1s)
+            </option>
+            <option value="gemini-3-flash-preview">
+              Gemini 3 Flash Preview (0₫ • Ổn định)
+            </option>
+            <option value="gemini-3.1-pro-preview">
+              Gemini 3.1 Pro (Cần Billing • Tự fallback 3.6 Flash)
+            </option>
+            <option value="gemini-4-argon">
+              Gemini 4 Argon (Cần Billing • Tự fallback 3.6 Flash)
             </option>
           </select>
 
@@ -193,10 +243,8 @@ export function GrowthEngineTab({
           >
             <Wand2 className="h-4 w-4" />
             {generating
-              ? selectedModel.includes("3.8") || selectedModel.includes("4-")
-                ? `Đang suy luận sâu (${selectedModel})...`
-                : "Gemini AI đang biên kịch..."
-              : "Tạo Kịch Bản 45s Nổ View"}
+              ? "Gemini AI đang biên kịch giữ chân..."
+              : "Tạo Kịch Bản Giữ Chân"}
           </button>
         </form>
 
@@ -220,40 +268,88 @@ export function GrowthEngineTab({
                 </span>
               </div>
 
-              <button
-                onClick={async () => {
-                  await onSaveBlueprintAsIdea({
-                    title: result.blueprint.winningTitles[0] || result.blueprint.topic,
-                    remakeTitle:
-                      result.blueprint.winningTitles[0] || result.blueprint.topic,
-                    targetKeyword: result.blueprint.tags[0] || result.blueprint.topic,
-                    format: "short",
-                    status: "scripting",
-                    tags: result.blueprint.tags,
-                    notes: `🎙️ VOICEOVER:\n${fullVoiceoverText}\n\n💬 PINNED COMMENT:\n${result.blueprint.pinnedDebateComment}`,
-                  });
-                  setSavedIdea(true);
-                }}
-                disabled={savedIdea}
-                className={`inline-flex items-center gap-1.5 rounded-xl px-4 py-2 text-xs font-bold transition cursor-pointer ${
-                  savedIdea
-                    ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
-                    : "bg-amber-500 hover:bg-amber-400 text-zinc-950"
-                }`}
-              >
-                {savedIdea ? (
-                  <>
-                    <Check className="h-3.5 w-3.5" />
-                    Đã lưu kịch bản vào Kho Ý Tưởng
-                  </>
-                ) : (
-                  <>
-                    <BookmarkPlus className="h-3.5 w-3.5" />
-                    Lưu trọn bộ sang Kho Ý Tưởng
-                  </>
-                )}
-              </button>
+              <div className="flex flex-wrap items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() =>
+                    copyText("agy-full-script", antigravityProductionPrompt)
+                  }
+                  className="inline-flex items-center gap-1.5 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-500/40 px-4 py-2 text-xs font-bold text-sky-200 transition cursor-pointer"
+                >
+                  {copiedKey === "agy-full-script" ? (
+                    <>
+                      <Check className="h-3.5 w-3.5 text-emerald-400" />
+                      Đã chép trọn bộ lệnh dựng cho Antigravity!
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="h-3.5 w-3.5" />
+                      Copy Kịch Bản Này Để Antigravity Dựng Video
+                    </>
+                  )}
+                </button>
+
+                <button
+                  onClick={async () => {
+                    await onSaveBlueprintAsIdea({
+                      title:
+                        result.blueprint.winningTitles[0] ||
+                        result.blueprint.topic,
+                      remakeTitle:
+                        result.blueprint.winningTitles[0] ||
+                        result.blueprint.topic,
+                      targetKeyword:
+                        result.blueprint.tags[0] || result.blueprint.topic,
+                      format: "short",
+                      status: "scripting",
+                      tags: result.blueprint.tags,
+                      notes: `🎙️ VOICEOVER:\n${fullVoiceoverText}\n\n💬 PINNED COMMENT:\n${result.blueprint.pinnedDebateComment}`,
+                    });
+                    setSavedIdea(true);
+                  }}
+                  disabled={savedIdea}
+                  className={`inline-flex items-center gap-1.5 rounded-xl px-4 py-2 text-xs font-bold transition cursor-pointer ${
+                    savedIdea
+                      ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
+                      : "bg-amber-500 hover:bg-amber-400 text-zinc-950"
+                  }`}
+                >
+                  {savedIdea ? (
+                    <>
+                      <Check className="h-3.5 w-3.5" />
+                      Đã lưu kịch bản vào Kho Ý Tưởng
+                    </>
+                  ) : (
+                    <>
+                      <BookmarkPlus className="h-3.5 w-3.5" />
+                      Lưu trọn bộ sang Kho Ý Tưởng
+                    </>
+                  )}
+                </button>
+              </div>
             </div>
+
+            {result.retentionWinners && result.retentionWinners.length > 0 && (
+              <div className="rounded-xl border border-emerald-500/25 bg-emerald-950/20 px-4 py-2.5 text-[11px] text-zinc-300 flex flex-wrap items-center gap-2">
+                <span className="font-bold text-emerald-300">
+                  📊 Đã học theo cấu trúc giữ chân tốt nhất của kênh:
+                </span>
+                {result.retentionWinners.slice(0, 3).map((w) => (
+                  <span
+                    key={w.videoId}
+                    className="rounded-md bg-zinc-900/90 border border-zinc-800 px-2 py-0.5 text-zinc-200"
+                  >
+                    {w.title.slice(0, 34)}…{" "}
+                    {w.stayedToWatchPct !== null
+                      ? `(${w.stayedToWatchPct}% ở lại`
+                      : "("}
+                    {w.averageViewPercentage !== null
+                      ? ` • ${w.averageViewPercentage}% xem)`
+                      : ")"}
+                  </span>
+                ))}
+              </div>
+            )}
 
             {/* Winning Titles + Strategy */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">

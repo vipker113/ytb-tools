@@ -312,7 +312,7 @@ export function SeoStudioTab({
                     onChange={(e) => setIsShort(e.target.checked)}
                     className="rounded accent-red-600"
                   />
-                  Là YouTube Shorts (&le; 60s)
+                  Là YouTube Shorts (&le; 3 phút)
                 </label>
               </div>
 

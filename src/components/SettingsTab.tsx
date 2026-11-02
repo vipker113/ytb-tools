@@ -50,9 +50,11 @@ export function SettingsTab({
 }: SettingsTabProps) {
   const [ytKey, setYtKey] = useState(settings.youtubeApiKey || "");
   const [geminiKey, setGeminiKey] = useState(settings.geminiApiKey || "");
-  const [geminiModel, setGeminiModel] = useState(
-    settings.geminiModel || "gemini-3.8-flash"
-  );
+  const [geminiModel, setGeminiModel] = useState(() => {
+    const m = settings.geminiModel || "";
+    if (!m || m.startsWith("gemini-2.5")) return "gemini-3.6-flash";
+    return m;
+  });
   const [clientId, setClientId] = useState(settings.googleClientId || "");
   const [clientSecret, setClientSecret] = useState(
     settings.googleClientSecret || ""
@@ -224,16 +226,26 @@ export function SettingsTab({
                 onChange={(e) => setGeminiModel(e.target.value)}
                 className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2.5 text-sm text-zinc-200 focus:outline-none"
               >
-                <option value="gemini-3.8-flash">
-                  Gemini 3.8 Flash (Miễn phí 0₫ — Suy luận sâu ~45-60s)
-                </option>
                 <option value="gemini-3.6-flash">
-                  Gemini 3.6 Flash (Miễn phí 0₫ — Siêu tốc ~2s)
+                  Gemini 3.6 Flash (Khuyên dùng • Miễn phí 0₫ • Thế hệ mới nhất ~1.5s)
                 </option>
                 <option value="gemini-3.5-flash">
-                  Gemini 3.5 Flash (Miễn phí 0₫ — Ổn định ~2.5s)
+                  Gemini 3.5 Flash (Miễn phí 0₫ • Siêu tốc ~1.0s)
+                </option>
+                <option value="gemini-3-flash-preview">
+                  Gemini 3 Flash Preview (Miễn phí 0₫ • Ổn định)
+                </option>
+                <option value="gemini-3.1-pro-preview">
+                  Gemini 3.1 Pro (Suy luận sâu • Cần bật Billing trên Google AI Studio)
+                </option>
+                <option value="gemini-4-argon">
+                  Gemini 4 Argon (Flagship • Cần bật Billing trên Google AI Studio)
                 </option>
               </select>
+              <p className="mt-1.5 text-[11px] text-zinc-400 leading-relaxed">
+                💡 Gói <strong className="text-emerald-400">Free Tier (0₫)</strong> của Google AI Studio mở tối đa đến{" "}
+                <strong className="text-white">Gemini 3.6 Flash</strong> (các dòng Pro / Argon bị Google giới hạn quota = 0 nếu chưa gắn thẻ Billing; nếu chọn Pro khi dùng key Free, hệ thống sẽ tự động dự phòng mượt sang Gemini 3.6 Flash).
+              </p>
             </div>
 
             <div>
@@ -256,7 +268,7 @@ export function SettingsTab({
             <div className="pt-3 border-t border-zinc-800 space-y-3">
               <div className="flex items-center justify-between gap-2">
                 <label className="text-xs font-bold text-amber-300">
-                  🔐 Quyền Ghi Trực Tiếp YouTube Studio (OAuth 2.0)
+                  🔐 Quyền YouTube Studio & Shorts Analytics (OAuth 2.0 • 0₫)
                 </label>
                 {youtubeOAuth?.refreshToken ? (
                   <span className="rounded-full bg-emerald-500/20 px-2.5 py-0.5 text-[10px] font-bold text-emerald-300">
@@ -358,6 +370,19 @@ export function SettingsTab({
               </li>
               <li>
                 Sao chép chuỗi khóa bắt đầu bằng <code>AIza...</code> dán vào ô phía trên và bấm <strong>Lưu cấu hình API</strong>.
+              </li>
+              <li>
+                Để đọc chỉ số giữ chân Shorts (<code>% Không vuốt bỏ</code> & <code>% APV</code>), mở{" "}
+                <a
+                  href="https://console.cloud.google.com/apis/library/youtubeanalytics.googleapis.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-emerald-400 hover:underline inline-flex items-center gap-1 font-medium"
+                >
+                  Google Cloud — YouTube Analytics API (0₫)
+                  <ExternalLink className="h-3 w-3" />
+                </a>{" "}
+                bấm <strong>Enable (Bật)</strong>, sau đó bấm nút <strong>Đổi tài khoản / Cấp quyền lại</strong> ở trên.
               </li>
               <li>
                 (Tùy chọn) Lấy khóa Gemini miễn phí tại{" "}

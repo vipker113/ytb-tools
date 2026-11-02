@@ -143,6 +143,55 @@ export interface AiOptimizationResult {
   subTriggerTip: string;
 }
 
+export interface AiSeoRewriteProposal {
+  usedAi: boolean;
+  modelUsed: string;
+  reasoningVi: string;
+  protectedCreditsKept: boolean;
+  protectedBlockPreview: string;
+  beforeScore: number;
+  beforeGrade: "S" | "A" | "B" | "C" | "D";
+  afterScore: number;
+  afterGrade: "S" | "A" | "B" | "C" | "D";
+  alternativeTitles: string[];
+  proposed: {
+    title: string;
+    targetKeyword: string;
+    editorialDescription: string;
+    fullDescription: string;
+    tags: string[];
+    pinnedComment: string;
+  };
+}
+
+export interface ScriptContentCheck {
+  id: string;
+  label: string;
+  passed: boolean;
+  detail: string;
+}
+
+export interface ScriptContentAuditResult {
+  score: number;
+  checks: ScriptContentCheck[];
+}
+
+export interface VideoAnalyticsMetrics {
+  videoId: string;
+  views: number;
+  engagedViews?: number;
+  stayedToWatchPct?: number | null;
+  averageViewDurationSec: number;
+  averageViewPercentage: number;
+  likes: number;
+  comments: number;
+  shares: number;
+  subscribersGained: number;
+  subscribersLost: number;
+  netSubscribers: number;
+  estimatedMinutesWatched: number;
+}
+
 export interface AppSettings {
   youtubeApiKey: string;
   geminiApiKey: string;
@@ -160,6 +209,7 @@ export interface YoutubeOAuthState {
   connectedChannelId?: string;
   connectedChannelTitle?: string;
   connectedChannelHandle?: string;
+  hasAnalyticsScope?: boolean;
   connectedAt: string;
 }
 
@@ -203,6 +253,42 @@ export interface GrowthSprintPlan {
   items: GrowthPlanItem[];
 }
 
+export type StudioPublishMode =
+  | "private_draft"
+  | "unlisted"
+  | "schedule_golden"
+  | "public_now";
+
+export interface YoutubePlaylistSummary {
+  id: string;
+  title: string;
+  description: string;
+  itemCount: number;
+  privacyStatus: string;
+  thumbnailUrl?: string;
+}
+
+export interface PublishedMacEpisodeRecord {
+  slug: string;
+  videoId: string;
+  status: "private_draft" | "unlisted" | "scheduled" | "public";
+  scheduledAt?: string;
+  watchUrl: string;
+  studioEditUrl: string;
+  title: string;
+  description?: string;
+  tags?: string[];
+  thumbnailVariant?: "primary" | "variant_b" | "variant_c";
+  playlistId?: string;
+  hasPaidProductPlacement?: boolean;
+  selfDeclaredMadeForKids?: boolean;
+  containsSyntheticMedia?: boolean;
+  embedShortsCoverFrame?: boolean;
+  liveViews?: number;
+  liveLikes?: number;
+  updatedAt: string;
+}
+
 export interface StoreData {
   activeChannelId: string;
   myChannels: TrackedChannel[];
@@ -213,6 +299,7 @@ export interface StoreData {
   lastAutopilotSyncAt?: string;
   autoSyncOnOpen?: boolean;
   resolvedVideoIds?: string[];
+  publishedMacEpisodes?: Record<string, PublishedMacEpisodeRecord>;
   autopilotLogs?: AutopilotLogEntry[];
   youtubeOAuth?: YoutubeOAuthState | null;
   smartLinkClicks: Record<string, number>;

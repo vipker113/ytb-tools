@@ -9,6 +9,7 @@ import {
   fetchCompetitorChannelLive,
   fetchTrackedChannelLive,
 } from "@/lib/youtube";
+import { reconcileStudioState } from "@/lib/youtube-studio";
 
 function pushLog(
   store: StoreData,
@@ -48,7 +49,34 @@ export async function POST(request: Request) {
         )
     );
 
+    const hasPublishedEpisodes =
+      Object.keys(store.publishedMacEpisodes || {}).length > 0;
+
     if (mode === "autoIfStale" && isFresh && hasCompleteMetadata) {
+      // Even when full channel/competitor sync is fresh, do a 1-quota-unit Studio check
+      // if > 2 min elapsed and we have Studio-linked episodes, so Studio deletions/edits show up!
+      if (hasPublishedEpisodes && nowMs - lastSyncMs > 120_000) {
+        const quickRec = await reconcileStudioState(store);
+        if (
+          quickRec.deletedSlugs.length > 0 ||
+          quickRec.updatedSlugs.length > 0 ||
+          quickRec.deletedRecentCount > 0
+        ) {
+          store.lastAutopilotSyncAt = new Date().toISOString();
+          if (quickRec.summaryMessage) {
+            pushLog(store, "sync", quickRec.summaryMessage);
+          }
+          await writeStore(store);
+          return Response.json({
+            skipped: false,
+            store,
+            reconcile: quickRec,
+            message:
+              quickRec.summaryMessage ||
+              "Đã đồng bộ trạng thái video mới nhất từ YouTube Studio!",
+          });
+        }
+      }
       return Response.json({ skipped: true, store });
     }
 
@@ -108,12 +136,19 @@ export async function POST(request: Request) {
       store.competitors = updatedComp;
     }
 
+    // Reconcile Studio deletions & live metadata edits (0s CDN lag via OAuth videos.list!)
+    // Running AFTER fetchTrackedChannelLive ensures any 2-minute YouTube CDN lag on deleted/edited
+    // videos is immediately corrected by live Studio state!
+    const reconcileResult = await reconcileStudioState(store);
+
     const activeCh =
       store.myChannels.find((c) => c.id === store.activeChannelId) ||
       store.myChannels[0];
     const handle = activeCh?.handle || "@proofofwonderscience";
 
-    let statusMessage = "Autopilot đã đồng bộ dữ liệu kênh & sẵn sàng bài đăng hôm nay!";
+    let statusMessage =
+      reconcileResult.summaryMessage ||
+      "Đã đồng bộ dữ liệu kênh & trạng thái YouTube Studio mới nhất!";
 
     // Backfill description & tags on any existing plan items
     if (store.activePlan) {
@@ -178,6 +213,10 @@ export async function POST(request: Request) {
 
     store.lastAutopilotSyncAt = new Date().toISOString();
 
+    if (reconcileResult.summaryMessage) {
+      pushLog(store, "sync", reconcileResult.summaryMessage);
+    }
+
     if (syncedYoutube && activeCh) {
       pushLog(
         store,
@@ -188,7 +227,7 @@ export async function POST(request: Request) {
           syncedCompetitors ? ` + quét mới ${store.competitors.length} kênh đối thủ` : ""
         }.`
       );
-    } else if (!syncedYoutube) {
+    } else if (!syncedYoutube && !reconcileResult.summaryMessage) {
       pushLog(
         store,
         "system",
@@ -200,6 +239,7 @@ export async function POST(request: Request) {
     return Response.json({
       skipped: false,
       store,
+      reconcile: reconcileResult,
       message: statusMessage,
     });
   } catch (err) {

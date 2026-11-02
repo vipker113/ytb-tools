@@ -1,5 +1,6 @@
 import {
   generateAiSeoOptimization,
+  generateAiSeoRewriteDiff,
   runSeoAndConversionAudit,
 } from "@/lib/seo-analyzer";
 import {
@@ -14,15 +15,42 @@ export async function POST(request: Request) {
     const body = await request.json();
     const store = await readStore();
 
+    if (body.action === "aiRewriteSeoDiff") {
+      const geminiKey = getEffectiveGeminiKey(store);
+      const tagsArray: string[] = Array.isArray(body.tags)
+        ? body.tags.map(String)
+        : String(body.tags || "")
+            .split(",")
+            .map((t) => t.trim())
+            .filter(Boolean);
+
+      const proposal = await generateAiSeoRewriteDiff({
+        currentTitle: String(body.title || ""),
+        currentTargetKeyword: String(body.targetKeyword || ""),
+        currentDescription: String(body.description || ""),
+        currentTags: tagsArray,
+        currentPinnedComment: String(body.pinnedComment || ""),
+        narrationScript: body.narrationScript
+          ? String(body.narrationScript)
+          : undefined,
+        channelHandle: String(body.channelHandle || "@proofofwonderscience"),
+        niche: String(body.niche || "Science & Space Documentary Shorts"),
+        isShort: body.isShort !== false,
+        geminiApiKey: geminiKey,
+        preferredModel: store.settings.geminiModel || "gemini-2.5-flash",
+      });
+      return Response.json({ ok: true, proposal });
+    }
+
     if (body.action === "aiOptimize") {
       const geminiKey = getEffectiveGeminiKey(store);
       const result = await generateAiSeoOptimization({
         topicOrTitle: String(body.topicOrTitle || ""),
         targetKeyword: String(body.targetKeyword || ""),
-        channelHandle: String(body.channelHandle || "@KenhCuaBan"),
-        niche: String(body.niche || "Sáng tạo nội dung"),
+        channelHandle: String(body.channelHandle || "@proofofwonderscience"),
+        niche: String(body.niche || "Science & Space Documentary Shorts"),
         geminiApiKey: geminiKey,
-        preferredModel: store.settings.geminiModel || "gemini-3.8-flash",
+        preferredModel: store.settings.geminiModel || "gemini-2.5-flash",
       });
       return Response.json(result);
     }
@@ -33,7 +61,7 @@ export async function POST(request: Request) {
         return Response.json(
           {
             error:
-              "Để quét trực tiếp từ URL YouTube, vui lòng nhập YouTube Data API v3 Key trong mục 'Quản lý Kênh & API' (hoặc nhập Tiêu đề & Mô tả nháp ở chế độ Thủ công).",
+              "Để quét trực tiếp từ URL YouTube, vui lòng nhập YouTube Data API v3 Key trong mục 'Cài đặt & Kết nối' (hoặc nhập Tiêu đề & Mô tả nháp ở chế độ Thủ công).",
           },
           { status: 400 }
         );
@@ -43,7 +71,9 @@ export async function POST(request: Request) {
         title: video.title,
         description: video.description,
         tags: video.tags,
-        targetKeyword: body.targetKeyword ? String(body.targetKeyword) : undefined,
+        targetKeyword: body.targetKeyword
+          ? String(body.targetKeyword)
+          : undefined,
         channelHandle: video.channelHandle || body.channelHandle,
         isShort: video.isShort,
         views: video.views,
@@ -65,7 +95,7 @@ export async function POST(request: Request) {
       description: String(body.description || ""),
       tags: tagsArray,
       targetKeyword: String(body.targetKeyword || ""),
-      channelHandle: String(body.channelHandle || "@KenhCuaBan"),
+      channelHandle: String(body.channelHandle || "@proofofwonderscience"),
       isShort: Boolean(body.isShort),
       views: Number(body.views || 0),
       likes: Number(body.likes || 0),

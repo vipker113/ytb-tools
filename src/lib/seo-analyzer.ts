@@ -1,8 +1,11 @@
 import type {
   AiOptimizationResult,
+  AiSeoRewriteProposal,
+  ScriptContentAuditResult,
   SeoAuditResult,
   SeoCheckItem,
 } from "./types";
+import { buildGeminiModelChain } from "./viral-script";
 
 export interface AuditInput {
   title: string;
@@ -278,7 +281,7 @@ export function runSeoAndConversionAudit(input: AuditInput): SeoAuditResult {
 
   // 12. Subscriber Value Hook / Community Question CTA (8 pts)
   const hasCtaWords =
-    /(đăng ký|subscribe|bình luận|comment|chia sẻ ý kiến|tài liệu|template|quà tặng|link tải|stay curious|what do you think|let us know)/i.test(
+    /(đăng ký|subscribe|bình luận|comment|chia sẻ ý kiến|tài liệu|template|quà tặng|link tải|stay curious|what do you think|let us know|drop it below|share your|which one|follow)/i.test(
       description
     );
   checks.push({
@@ -298,9 +301,10 @@ export function runSeoAndConversionAudit(input: AuditInput): SeoAuditResult {
 
   // 13. Session Chaining / Related Video Link (6 pts)
   const descWithoutSub = descLower.replace(/[^\s]*sub_confirmation=1[^\s]*/g, "");
-  const hasRelatedVideo = /(youtu\.be\/|youtube\.com\/watch|youtube\.com\/playlist)/i.test(
-    descWithoutSub
-  );
+  const hasRelatedVideo =
+    /(youtu\.be\/|youtube\.com\/watch|youtube\.com\/playlist|youtube\.com\/shorts|youtube\.com\/@[^/\s]+\/(shorts|videos|playlists))/i.test(
+      descWithoutSub
+    );
   checks.push({
     id: "conv-bridge",
     category: "conversion",
@@ -406,18 +410,31 @@ export function runSeoAndConversionAudit(input: AuditInput): SeoAuditResult {
         `💬 CÂU HỎI DÀNH CHO BẠN: Bạn đang gặp khó khăn lớn nhất ở bước nào khi ${cleanTopic}? Hãy để lại bình luận bên dưới, mình sẽ đọc và giải đáp chi tiết nhé!`,
       ].join("\n");
 
-  const suggestedTags = Array.from(
-    new Set([
-      cleanTopic.toLowerCase(),
-      `hướng dẫn ${cleanTopic.toLowerCase()}`,
-      `cách ${cleanTopic.toLowerCase()}`,
-      `${cleanTopic.toLowerCase()} cho người mới`,
-      `${cleanTopic.toLowerCase()} 2026`,
-      `kinh nghiệm ${cleanTopic.toLowerCase()}`,
-      `mẹo ${cleanTopic.toLowerCase()}`,
-      channelHandle.replace(/^@/, "").toLowerCase(),
-    ])
-  );
+  const suggestedTags = isEn
+    ? Array.from(
+        new Set([
+          cleanTopic.toLowerCase(),
+          `${cleanTopic.toLowerCase()} explained`,
+          "science shorts",
+          "strange science",
+          "earth mysteries",
+          "space science",
+          "documentary shorts",
+          channelHandle.replace(/^@/, "").toLowerCase(),
+        ])
+      )
+    : Array.from(
+        new Set([
+          cleanTopic.toLowerCase(),
+          `hướng dẫn ${cleanTopic.toLowerCase()}`,
+          `cách ${cleanTopic.toLowerCase()}`,
+          `${cleanTopic.toLowerCase()} cho người mới`,
+          `${cleanTopic.toLowerCase()} 2026`,
+          `kinh nghiệm ${cleanTopic.toLowerCase()}`,
+          `mẹo ${cleanTopic.toLowerCase()}`,
+          channelHandle.replace(/^@/, "").toLowerCase(),
+        ])
+      );
 
   return {
     totalScore,
@@ -524,27 +541,13 @@ Trả về ĐÚNG định dạng JSON thuần (không bọc markdown) theo cấu
   "subTriggerTip": "1 lời khuyên cụ thể bằng tiếng Việt cho video này để tăng tỷ lệ người xem bấm Subscribe thật"
 }`;
 
-  const cleanPreferred =
-    params.preferredModel && !params.preferredModel.includes("argon")
-      ? params.preferredModel
-      : "gemini-3.8-flash";
-  const models = Array.from(
-    new Set([
-      cleanPreferred,
-      "gemini-3.8-flash",
-      "gemini-3.6-flash",
-      "gemini-3.5-flash",
-    ])
-  );
+  const models = buildGeminiModelChain(params.preferredModel);
   for (const model of models) {
     try {
       const genConfig: Record<string, unknown> = {
         temperature: 0.7,
         responseMimeType: "application/json",
       };
-      if (model.includes("3.8") || model.includes("3.7")) {
-        genConfig.thinkingConfig = { thinkingBudget: 256 };
-      }
 
       const res = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(
@@ -593,4 +596,388 @@ Trả về ĐÚNG định dạng JSON thuần (không bọc markdown) theo cấu
   }
 
   return { data: fallback, usedAi: false, modelUsed: "fallback" };
+}
+
+export function splitDescriptionEditorialAndCredits(description: string): {
+  editorialPart: string;
+  lockedCreditsPart: string;
+} {
+  const markers = [
+    "\nScientific Sources:",
+    "\nMedia & Attribution Credits:",
+    "\nMedia Credits:",
+  ];
+  let splitIdx = -1;
+  for (const m of markers) {
+    const idx = description.indexOf(m);
+    if (idx >= 0 && (splitIdx === -1 || idx < splitIdx)) {
+      splitIdx = idx;
+    }
+  }
+
+  if (splitIdx === -1) {
+    return { editorialPart: description.trim(), lockedCreditsPart: "" };
+  }
+  return {
+    editorialPart: description.slice(0, splitIdx).trim(),
+    lockedCreditsPart: description.slice(splitIdx).trim(),
+  };
+}
+
+export function auditShortsScriptAndCompliance(params: {
+  narrationText: string;
+  durationSec?: number | null;
+  description: string;
+}): ScriptContentAuditResult {
+  const text = (params.narrationText || "").trim();
+  const desc = (params.description || "").trim();
+  const sentences = text
+    .split(/(?<=[.!?])\s+/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+  const words = text.split(/\s+/).filter(Boolean);
+  const wordCount = words.length;
+  const dur = params.durationSec && params.durationSec > 0 ? params.durationSec : 0;
+  const wps = dur > 0 ? wordCount / dur : 2.5;
+
+  const firstHook = sentences.slice(0, 2).join(" ");
+  const hookStrong =
+    firstHook.length >= 35 &&
+    !/(welcome back|in this video|today we will|hey guys|let's delve)/i.test(
+      firstHook
+    );
+
+  const pacingGood = wordCount === 0 || (wps >= 1.95 && wps <= 3.15);
+
+  const aiClicheMatch =
+    /(testament to|tapestry of|delve into|it's important to note|in conclusion|realm of)/i.test(
+      text
+    );
+
+  const hasDoiOrCitations =
+    /(doi\.org|scientific sources|et al\.|nasa|nature|science|plos|journal)/i.test(
+      desc
+    );
+  const descUnderLimit =
+    desc.length <= 4950 && !desc.includes("<") && !desc.includes(">");
+
+  const checks = [
+    {
+      id: "hook-3s",
+      label: "Mở đầu trực diện 0–3s (Không câu chào thừa)",
+      passed: wordCount === 0 ? true : hookStrong,
+      detail:
+        wordCount === 0
+          ? "Chưa có file script đính kèm"
+          : hookStrong
+          ? "Vào thẳng nghịch lý / hành động ngay câu đầu tiên"
+          : "Câu đầu hơi chậm, tránh mở bài chung chung",
+    },
+    {
+      id: "pacing-wps",
+      label: "Nhịp đọc Documentary chuẩn (2.0 – 3.1 từ/giây)",
+      passed: pacingGood,
+      detail:
+        dur > 0 && wordCount > 0
+          ? `${wps.toFixed(2)} từ/giây (${wordCount} từ / ${dur.toFixed(1)}s)`
+          : `${wordCount} từ`,
+    },
+    {
+      id: "zero-ai-smell",
+      label: "Ngôn từ tự nhiên (0% văn mẫu sáo rỗng AI)",
+      passed: !aiClicheMatch,
+      detail: !aiClicheMatch
+        ? "Không chứa cụm từ AI sáo rỗng (delve, tapestry, realm...)"
+        : "Phát hiện cụm từ văn mẫu AI cần làm sạch",
+    },
+    {
+      id: "doi-credits",
+      label: "Đầy đủ Nguồn Khoa Học (DOI) & Ghi công CC-BY",
+      passed: hasDoiOrCitations,
+      detail: hasDoiOrCitations
+        ? "Đã đính kèm trích dẫn khoa học & bản quyền an toàn"
+        : "Chưa thấy khối Scientific Sources trong phần mô tả",
+    },
+    {
+      id: "yt-limits",
+      label: "An toàn ký tự YouTube Studio (< 5.000 chars, không dấu <>)",
+      passed: descUnderLimit,
+      detail: `${desc.length}/4950 ký tự hợp lệ`,
+    },
+  ];
+
+  const passedCount = checks.filter((c) => c.passed).length;
+  return {
+    score: Math.round((passedCount / checks.length) * 100),
+    checks,
+  };
+}
+
+export async function generateAiSeoRewriteDiff(params: {
+  currentTitle: string;
+  currentTargetKeyword: string;
+  currentDescription: string;
+  currentTags: string[];
+  currentPinnedComment: string;
+  narrationScript?: string;
+  channelHandle: string;
+  niche: string;
+  isShort: boolean;
+  geminiApiKey: string;
+  preferredModel?: string;
+}): Promise<AiSeoRewriteProposal> {
+  const handle = (params.channelHandle || "@proofofwonderscience").startsWith("@")
+    ? params.channelHandle
+    : `@${params.channelHandle}`;
+
+  const beforeAudit = runSeoAndConversionAudit({
+    title: params.currentTitle,
+    description: params.currentDescription,
+    tags: params.currentTags,
+    targetKeyword: params.currentTargetKeyword,
+    channelHandle: handle,
+    isShort: params.isShort,
+  });
+
+  const { editorialPart, lockedCreditsPart } =
+    splitDescriptionEditorialAndCredits(params.currentDescription);
+
+  const failedChecksText = beforeAudit.checks
+    .filter((c) => !c.passed)
+    .map((c) => `- ${c.label}: ${c.feedback}`)
+    .join("\n");
+
+  const isEn = isLikelyEnglish(
+    `${params.currentTitle} ${params.narrationScript || editorialPart}`
+  );
+
+  const scriptSnippet = (params.narrationScript || "").slice(0, 1800);
+
+  const prompt = `You are a top 0.5% YouTube Science Shorts Growth & SEO Strategist (Veritasium / Cleo Abram / Fern level).
+Analyze this rendered video's spoken script and current metadata, then rewrite its SEO package so it achieves maximum CTR on the US Shorts Shelf AND 92-100/100 SEO + Subscriber Conversion score.
+
+CHANNEL: ${handle} (${params.niche})
+CURRENT SEO SCORE: ${beforeAudit.totalScore}/100 (Grade ${beforeAudit.grade})
+FAILED / WEAK SEO CHECKS TO FIX:
+${failedChecksText || "- Already high score, make Title hookier (curiosity gap, 46-66 chars), tighten opening 2-line keyword snippet, and upgrade Tags + Pinned Comment."}
+
+CURRENT TITLE: "${params.currentTitle}"
+CURRENT TARGET KEYWORD: "${params.currentTargetKeyword}"
+CURRENT EDITORIAL DESCRIPTION (excluding locked citations):
+"""
+${editorialPart.slice(0, 1200)}
+"""
+CURRENT TAGS: ${JSON.stringify(params.currentTags)}
+CURRENT PINNED COMMENT: "${params.currentPinnedComment}"
+
+ACTUAL SPOKEN VIDEO SCRIPT:
+"""
+${scriptSnippet || editorialPart.slice(0, 900)}
+"""
+
+STRICT RULES:
+1. Choose ONE crisp, high-search 2-to-4 word ${isEn ? "US English" : "Vietnamese"} "targetKeyword" matching the core topic.
+2. "bestTitle" MUST be ${isEn ? "natural US English" : "Vietnamese"}, 46–68 characters, ZERO #hashtags, NOT ALL-CAPS, includes a number or strong curiosity/paradox word (Why, What, Inside, Hidden, Locked, Silent, Deadly, etc.), AND naturally contains "targetKeyword" (prefer in the first half of the title!).
+3. Provide "alternativeTitles": 3 distinct high-CTR title options (each 46–68 chars, containing or closely matching targetKeyword, zero #hashtags).
+4. "editorialDescription" (ONLY the editorial summary + CTA — DO NOT include Scientific Sources or Media Credits because the system will automatically re-attach the locked DOI/CC-BY block below your text!):
+   - First sentence (first 140 chars) MUST naturally include "targetKeyword" and hook curiosity.
+   - 2 concise paragraphs summarizing the scientific twist (260–550 chars).
+   - Include exact 1-click subscribe line: 🔔 Subscribe for daily strange science: https://www.youtube.com/${handle}?sub_confirmation=1
+   - Include exact watch-next bridge line: ▶️ Watch more Proof of Wonder Shorts: https://www.youtube.com/${handle}/shorts
+   - End with a short discussion question inviting comments.
+5. "tags": 12–15 high-intent search tags (total 220–430 chars, comma-joined <= 450 chars). Tag #1 MUST be the exact "targetKeyword" in lowercase.
+6. "pinnedComment": 1 irresistible curiosity/debate question matching the video's twist that makes viewers reply in comments.
+7. "reasoningVi": Write 1–2 concise sentences IN VIETNAMESE explaining clearly to the creator what was weak before and why this rewrite improves CTR + SEO.
+
+Return STRICT RAW JSON ONLY:
+{
+  "targetKeyword": "...",
+  "bestTitle": "...",
+  "alternativeTitles": ["...", "...", "..."],
+  "editorialDescription": "...",
+  "tags": ["..."],
+  "pinnedComment": "...",
+  "reasoningVi": "..."
+}`;
+
+  const models = buildGeminiModelChain(params.preferredModel);
+
+  let parsedAi: {
+    targetKeyword?: string;
+    bestTitle?: string;
+    alternativeTitles?: string[];
+    editorialDescription?: string;
+    tags?: string[];
+    pinnedComment?: string;
+    reasoningVi?: string;
+  } | null = null;
+  let usedModel = "fallback";
+  let usedAi = false;
+
+  if (params.geminiApiKey) {
+    for (const model of models) {
+      try {
+        const res = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(
+            params.geminiApiKey
+          )}`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              contents: [{ parts: [{ text: prompt }] }],
+              generationConfig: {
+                temperature: 0.65,
+                responseMimeType: "application/json",
+              },
+            }),
+            cache: "no-store",
+          }
+        );
+        if (!res.ok) continue;
+        const json = await res.json();
+        const parts: Array<{ text?: string; thought?: boolean }> =
+          json?.candidates?.[0]?.content?.parts || [];
+        const answerPart =
+          parts.find((p) => !p.thought && p.text) || parts[parts.length - 1];
+        const rawText = answerPart?.text;
+        if (!rawText) continue;
+        const cleaned = rawText
+          .replace(/^```json\s*/i, "")
+          .replace(/```\s*$/, "")
+          .trim();
+        parsedAi = JSON.parse(cleaned);
+        usedModel = model;
+        usedAi = true;
+        break;
+      } catch {
+        // try next model
+      }
+    }
+  }
+
+  const finalKw = (
+    parsedAi?.targetKeyword ||
+    params.currentTargetKeyword ||
+    params.currentTags[0] ||
+    "strange science"
+  )
+    .replace(/[#<>"]/g, "")
+    .trim();
+
+  const cleanTitle = (
+    parsedAi?.bestTitle ||
+    params.currentTitle.replace(/#\S+/g, "").trim()
+  )
+    .replace(/#\S+/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim()
+    .slice(0, 95);
+
+  let editorialOut = (
+    parsedAi?.editorialDescription || editorialPart
+  ).trim();
+
+  if (!editorialOut.toLowerCase().includes("sub_confirmation=1")) {
+    editorialOut += `\n\n🔔 Subscribe for daily strange science: https://www.youtube.com/${handle}?sub_confirmation=1`;
+  }
+  const withoutSub = editorialOut
+    .toLowerCase()
+    .replace(/[^\s]*sub_confirmation=1[^\s]*/g, "");
+  if (
+    !/(youtu\.be\/|youtube\.com\/watch|youtube\.com\/playlist|youtube\.com\/shorts|youtube\.com\/@[^/\s]+\/shorts)/i.test(
+      withoutSub
+    )
+  ) {
+    editorialOut += `\n▶️ Watch more Proof of Wonder Shorts: https://www.youtube.com/${handle}/shorts`;
+  }
+
+  // Re-attach 100% of locked Scientific Sources & CC-BY Media Credits safely under 4950 chars
+  let fullDescription = editorialOut;
+  if (lockedCreditsPart) {
+    const maxEditorialBudget = Math.max(
+      320,
+      4940 - lockedCreditsPart.length - 2
+    );
+    const safeEditorial =
+      editorialOut.length > maxEditorialBudget
+        ? editorialOut.slice(0, maxEditorialBudget).trimEnd()
+        : editorialOut;
+    fullDescription = `${safeEditorial}\n\n${lockedCreditsPart}`;
+  } else {
+    fullDescription = editorialOut.slice(0, 4940);
+  }
+
+  // Normalize tags: ensure targetKeyword is #1 and total length fits 160-445 chars
+  const rawTags = [
+    finalKw.toLowerCase(),
+    ...(Array.isArray(parsedAi?.tags) ? parsedAi!.tags : params.currentTags),
+    "proof of wonder",
+    "science shorts",
+  ];
+  const dedupTags: string[] = [];
+  const seenTag = new Set<string>();
+  let charBudget = 0;
+  for (const t of rawTags) {
+    const c = String(t).replace(/[#<>"]/g, "").trim();
+    if (!c || c.length > 55) continue;
+    const low = c.toLowerCase();
+    if (seenTag.has(low)) continue;
+    if (charBudget + c.length + 2 > 445) break;
+    seenTag.add(low);
+    dedupTags.push(c);
+    charBudget += c.length + 2;
+    if (dedupTags.length >= 16) break;
+  }
+
+  const finalPinned = (
+    parsedAi?.pinnedComment || params.currentPinnedComment
+  ).trim();
+
+  const altTitles = Array.from(
+    new Set(
+      [
+        cleanTitle,
+        ...(Array.isArray(parsedAi?.alternativeTitles)
+          ? parsedAi!.alternativeTitles
+          : []),
+      ]
+        .map((t) => String(t).replace(/#\S+/g, "").trim())
+        .filter((t) => t.length >= 25)
+    )
+  ).slice(0, 4);
+
+  const afterAudit = runSeoAndConversionAudit({
+    title: cleanTitle,
+    description: fullDescription,
+    tags: dedupTags,
+    targetKeyword: finalKw,
+    channelHandle: handle,
+    isShort: params.isShort,
+  });
+
+  return {
+    usedAi,
+    modelUsed: usedModel,
+    reasoningVi:
+      parsedAi?.reasoningVi ||
+      "Đã đồng bộ từ khóa mục tiêu vào Tiêu đề + 2 dòng đầu Mô tả + Thẻ Tags và khóa an toàn phần Nguồn Khoa Học / Bản quyền CC-BY.",
+    protectedCreditsKept: Boolean(lockedCreditsPart),
+    protectedBlockPreview: lockedCreditsPart
+      ? lockedCreditsPart.split("\n").slice(0, 3).join(" • ").slice(0, 160)
+      : "",
+    beforeScore: beforeAudit.totalScore,
+    beforeGrade: beforeAudit.grade,
+    afterScore: afterAudit.totalScore,
+    afterGrade: afterAudit.grade,
+    alternativeTitles: altTitles,
+    proposed: {
+      title: cleanTitle,
+      targetKeyword: finalKw,
+      editorialDescription: editorialOut,
+      fullDescription,
+      tags: dedupTags,
+      pinnedComment: finalPinned,
+    },
+  };
 }
