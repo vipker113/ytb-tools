@@ -2,6 +2,8 @@
 
 Hệ thống sản xuất phim tài liệu khoa học tự động `\$0` (**Studio v6.0**) + Web Dashboard quản lý kênh YouTube (**ytb-tools**) cho thương hiệu **Proof of Wonder**.
 
+> 📖 **Xem tài liệu hướng dẫn chi tiết từ A → Z cho máy ở nhà tại:** [HOME_SETUP_GUIDE.md](./HOME_SETUP_GUIDE.md)
+
 ## 1. Cài đặt nhanh trên bất kỳ máy mới nào (Mac / Linux)
 
 ### Yêu cầu hệ thống
