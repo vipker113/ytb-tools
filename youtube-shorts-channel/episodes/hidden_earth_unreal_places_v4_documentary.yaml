@@ -1,0 +1,1137 @@
+channel_name: "Proof of Wonder"
+playlist: "Hidden Earth"
+slug: "unreal-places-earth-v4-documentary"
+style_profile: "pow_documentary_v3"
+
+style_overrides:
+  asset_selection:
+    location_authentic_mode: true
+    max_uses_per_asset: 3
+    max_single_still_duration_s: 6.5
+  pacing:
+    min_shot_duration_s: 2.0
+
+primary_title: "3 Places on Earth That Look Fake—Until You Step Inside"
+alternative_title: "3 Real Places on Earth That Shouldn't Physically Exist"
+
+youtube_description: |
+  None of these three places on Earth were made with CGI—and the last one is hot and humid enough to condense water inside human lungs.
+
+  At Kawah Ijen volcano in East Java, Indonesia, pressurized sulfur-rich volcanic gas escapes fumarole cracks at up to 600°C, ignites on contact with air, and condenses into burning liquid sulfur that flows down dark rock as electric-blue flames at night (Delmelle et al., Journal of Volcanology and Geothermal Research, 2000).
+
+  In northern Ethiopia's Danakil Depression, the Dallol hydrothermal field sits above a shallow magma intrusion boiling hyper-saline, iron-rich sulfuric brines down into negative pH values (below 0), creating neon-green and yellow pools where astrobiology surveys found zero active microbial life despite abundant liquid water (Belilla et al., Nature Ecology & Evolution, 2019).
+
+  Three hundred meters beneath Naica in Chihuahua, Mexico, the Cave of the Crystals grew selenite gypsum beams up to 11 meters long and 55 tons over hundreds of thousands of years in mineral-saturated 58°C water (García-Ruiz et al., Geology, 2007; Van Driessche et al., PNAS, 2011). Drained during mining operations, its 58°C air at over 90% humidity is hotter than 37°C human lungs—causing water vapor to condense inside unprotected airways until pumps stopped and groundwater resealed the cavern in 2017.
+
+hashtags:
+  - "#HiddenEarth"
+  - "#UnrealPlaces"
+  - "#Geology"
+  - "#EarthScience"
+  - "#ScienceShorts"
+  - "#ProofOfWonder"
+
+target_duration_min_s: 68.0
+target_duration_max_s: 98.0
+voice: "en-GB-RyanNeural"
+tts_pronunciations:
+  Kawah: "Kahwah"
+  Ijen: "Eejen"
+  Naica: "Nyekah"
+
+ambience_preset: "volcanic_abyss"
+ambience_ducked_lufs_target: -27.0
+nat_sound_bed_file: "volcanic_hydrothermal_cave_bed.wav"
+nat_sound_bed_range_s: [0.5, 102.0]
+nat_sound_gain_db: -11.5
+
+raw_assets_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/hidden_earth_unreal_places_v4"
+extra_assets_dirs:
+  - "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/hidden_earth_gemstone_mines_v4"
+  - "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/hidden_earth_lava_cave_gold_v4"
+  - "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/hidden_earth_forbidden_zones_v4"
+output_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/unreal-places-earth-v4-documentary"
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N06"
+  scientific_caveat_seg_id: "N07"
+  min_real_evidence_ratio: 0.88
+
+thumbnail_spec:
+  src_file: "naica_crystals_vandriessche_ccby.jpg"
+  headline_text: "3 REAL PLACES|LOOK LIKE CGI"
+  kicker_text: "KAWAH IJEN • DALLOL • NAICA"
+  accent_line_index: 1
+  accent_rgb: [255, 212, 59]
+  clarity_boost: true
+  shadow_lift: 0.24
+  alt_headlines:
+    - "LOOKS LIKE CGI|100% REAL EARTH"
+    - "STEP INSIDE HERE|LUNGS DROWN FAST"
+  cx: 0.68
+  cy: 0.52
+  zoom: 1.03
+  text_position: "top"
+
+narration_segments:
+  - seg_id: "N01"
+    text: "None of these three places on Earth are CGI. The last one drowns human lungs from the inside."
+    rate: "+3%"
+    pitch: "+0Hz"
+    pause_after_s: 0.24
+    emphasis_words: ["three", "CGI", "drowns", "lungs"]
+  - seg_id: "N02"
+    text: "At midnight in Indonesia, Kawah Ijen volcano appears to pour rivers of electric-blue lava. Except lava is never blue."
+    rate: "+2%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+    emphasis_words: ["Kawah", "Ijen", "electric-blue", "never", "blue"]
+  - seg_id: "N03"
+    text: "Pressurized sulfur gas shoots from cracks at six hundred degrees Celsius and ignites on contact with air. Some gas condenses into liquid sulfur that keeps burning bright blue as it flows downhill."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+    emphasis_words: ["six", "hundred", "Celsius", "liquid", "sulfur", "blue"]
+  - seg_id: "N04"
+    text: "Cross into Ethiopia's Danakil Depression, and Earth stops looking habitable altogether. At Dallol, shallow volcanic heat boils groundwater packed with iron salts and sulfuric acid."
+    rate: "+2%"
+    pitch: "+1Hz"
+    pause_after_s: 0.26
+    emphasis_words: ["Danakil", "habitable", "Dallol", "sulfuric", "acid"]
+  - seg_id: "N05"
+    text: "Those neon-green pools drop below zero pH into negative acidity. Even with liquid water everywhere, biologists found zero active microbial life inside the ponds."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.28
+    emphasis_words: ["zero", "pH", "negative", "microbial", "life"]
+  - seg_id: "N06"
+    text: "Three hundred meters beneath Naica, Mexico lies an even stranger trap: the Cave of the Crystals. Mineral-rich hot water slowly grew gypsum beams eleven meters long and weighing fifty-five tons."
+    rate: "+2%"
+    pitch: "+1Hz"
+    pause_after_s: 0.28
+    emphasis_words: ["Three", "hundred", "Naica", "Crystals", "eleven", "meters", "fifty-five", "tons"]
+  - seg_id: "N07"
+    text: "Inside, fifty-eight-degree heat meets ninety-five percent humidity—hotter than your own lungs. Without ice suits and chilled air packs, every breath condenses water straight into your airways. That doesn't mean these places break physics—extreme heat and acid simply push chemistry past human limits."
+    rate: "-1%"
+    pitch: "-1Hz"
+    pause_after_s: 0.26
+    emphasis_words: ["fifty-eight-degree", "ninety-five", "hotter", "lungs", "condenses", "limits"]
+  - seg_id: "N08"
+    text: "In twenty seventeen, groundwater flooded the Naica crystal cave shut forever—leaving three real worlds on Earth that look completely impossible."
+    rate: "-1%"
+    pitch: "-1Hz"
+    pause_after_s: 0.24
+    emphasis_words: ["flooded", "forever", "three", "impossible"]
+
+sfx_cues:
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.02
+    gain_db: -18.5
+  - sfx_name: "chapter_whoosh_soft"
+    anchor_type: "shot_start"
+    anchor_ref: "S03"
+    offset_s: 0.04
+    gain_db: -18.5
+  - sfx_name: "fumarole_gas_jet"
+    anchor_type: "shot_start"
+    anchor_ref: "S05"
+    offset_s: 0.05
+    gain_db: -18.0
+  - sfx_name: "chapter_whoosh_soft"
+    anchor_type: "shot_start"
+    anchor_ref: "S07"
+    offset_s: 0.04
+    gain_db: -18.5
+  - sfx_name: "boiling_acid_brine"
+    anchor_type: "shot_start"
+    anchor_ref: "S10"
+    offset_s: 0.05
+    gain_db: -18.5
+  - sfx_name: "subterranean_gate_boom"
+    anchor_type: "shot_start"
+    anchor_ref: "S13"
+    offset_s: 0.04
+    gain_db: -17.5
+  - sfx_name: "cavern_heartbeat_pulse"
+    anchor_type: "shot_start"
+    anchor_ref: "S16"
+    offset_s: 0.05
+    gain_db: -17.5
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S20"
+    offset_s: 0.04
+    gain_db: -19.5
+  - sfx_name: "cave_flood_rush"
+    anchor_type: "shot_start"
+    anchor_ref: "S21"
+    offset_s: 0.05
+    gain_db: -18.0
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 2.670
+    kind: "triptych_hook"
+    src_file: "ijen_blue_fire_crater_1080p.mp4"
+    src_in: 1.00
+    secondary_src_file: "dallol_pools_ccby.jpg"
+    tertiary_src_file: "naica_crystals_vandriessche_ccby.jpg"
+    triptych_centers_y: [0.44, 0.54, 0.62]
+    triptych_labels:
+      - "01 • KAWAH IJEN, INDONESIA"
+      - "02 • DALLOL, ETHIOPIA"
+      - "03 • NAICA CAVE, MEXICO"
+    contrast_gain: 1.12
+    shadow_lift: 0.22
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "None of these three places on Earth are CGI."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Instant 0.0s 3-world vertical triptych showing Kawah Ijen electric-blue sulfur fire, Dallol acid pools, and Naica giant crystals"
+    visual_desc: "Full-canvas 3-band triptych displaying live Kawah Ijen blue fire (Indonesia), Dallol negative-pH pools (Ethiopia), and Naica Cave of the Crystals with a human explorer (Mexico)."
+
+  - sid: "S02"
+    start_s: 2.670
+    end_s: 6.169
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_golden_wall_1080p.mp4"
+    src_in: 12.80
+    cx0: 0.50
+    cy0: 0.49
+    cx1: 0.53
+    cy1: 0.49
+    z0: 1.05
+    z1: 1.09
+    contrast_gain: 1.12
+    shadow_lift: 0.14
+    transition_in: "cut"
+    transition_reason: "Sentence-end breath pause after 'CGI.' to helmeted cavers advancing inside a dark, humid subterranean cavern"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "The last one drowns human lungs from the inside."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Expedition researchers in helmets and headlamps breathing cautiously inside a dark, moisture-slicked subterranean chamber"
+    visual_desc: "Public Domain NASA 1080p footage of helmeted cave scientists illuminated by headlamps inside a dark humid rock chamber."
+
+  - sid: "S03"
+    start_s: 6.169
+    end_s: 11.568
+    kind: "video_full"
+    src_file: "ijen_blue_fire_crater_1080p.mp4"
+    src_in: 0.80
+    cx0: 0.50
+    cy0: 0.45
+    cx1: 0.54
+    cy1: 0.47
+    z0: 1.01
+    z1: 1.05
+    contrast_gain: 1.14
+    shadow_lift: 0.12
+    nat_audio_gain_db: -14.0
+    chapter_stamp: "01 // KAWAH IJEN, INDONESIA • 600°C"
+    chapter_stamp_duration_s: 3.1
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'inside.' to razor-sharp midnight streams of burning electric-blue sulfur inside Kawah Ijen volcano"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "At midnight in Indonesia, Kawah Ijen volcano appears to pour rivers of electric-blue lava."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Midnight streams of glowing electric-blue sulfur flames cascading across Kawah Ijen volcanic rock"
+    visual_desc: "Unzoomed 1080p night footage inside Kawah Ijen volcano, Indonesia showing vivid electric-blue flames flickering across dark volcanic rock."
+
+  - sid: "S04"
+    start_s: 11.568
+    end_s: 14.117
+    kind: "video_full"
+    src_file: "iceland_volcano_1080p.mp4"
+    src_in: 12.20
+    cx0: 0.46
+    cy0: 0.49
+    cx1: 0.49
+    cy1: 0.49
+    z0: 1.04
+    z1: 1.08
+    contrast_gain: 1.12
+    transition_in: "cut"
+    transition_reason: "Sentence-end breath pause after 'lava.' to blazing orange-red molten basalt lava rivers proving real silicate lava is never blue"
+    context_note: "REAL MOLTEN SILICATE LAVA"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "Except lava is never blue."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Incandescent orange-red molten lava river flowing across black volcanic basalt"
+    visual_desc: "CC BY 3.0 1080p aerial footage of incandescent orange-red molten lava rivers during the Geldingadalsgos eruption."
+
+  - sid: "S05"
+    start_s: 14.117
+    end_s: 19.705
+    kind: "still_parallax_25d"
+    src_file: "kawah_ijen_fumarole_vert_cc0.jpg"
+    cx0: 0.48
+    cy0: 0.52
+    cx1: 0.51
+    cy1: 0.49
+    z0: 1.01
+    z1: 1.05
+    parallax_px: 18.0
+    contrast_gain: 1.08
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'blue.' to real Kawah Ijen fumarole vents jetting sulfur gas beside masked miners and condensing molten sulfur"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Pressurized sulfur gas shoots from cracks at six hundred degrees Celsius and ignites on contact with air."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Kawah Ijen miners in respirator masks standing beside roaring yellow sulfur fumaroles and red-orange liquid sulfur"
+    visual_desc: "Native 9:16 4K CC0 photograph at Kawah Ijen crater showing masked sulfur miners beside pressurized yellow fumarole chimneys and condensing molten sulfur."
+
+  - sid: "S06"
+    start_s: 19.705
+    end_s: 25.347
+    kind: "video_full"
+    src_file: "ijen_blue_fire_crater_1080p.mp4"
+    src_in: 5.40
+    cx0: 0.48
+    cy0: 0.46
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.02
+    z1: 1.05
+    contrast_gain: 1.14
+    shadow_lift: 0.12
+    nat_audio_gain_db: -14.5
+    transition_in: "cut"
+    transition_reason: "Sentence-end breath pause after 'air.' back to Kawah Ijen condensed liquid sulfur burning electric-blue downhill"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "Some gas condenses into liquid sulfur that keeps burning bright blue as it flows downhill."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Condensed molten sulfur burning vivid electric-blue as it cascades down Kawah Ijen rock"
+    visual_desc: "Crisp unzoomed 1080p footage inside Kawah Ijen volcano showing condensed liquid sulfur burning bright electric-blue."
+
+  - sid: "S07"
+    start_s: 25.347
+    end_s: 27.916
+    kind: "still_parallax_25d"
+    src_file: "dallol_guide_portrait_ccby.jpg"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.02
+    z1: 1.06
+    parallax_px: 20.0
+    contrast_gain: 1.06
+    chapter_stamp: "02 // DALLOL, ETHIOPIA • pH < 0"
+    chapter_stamp_duration_s: 2.5
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Act II geographical pivot dissolve from Indonesian night crater to blinding hyperacidic salt flats of Dallol, Ethiopia"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Cross into Ethiopia's Danakil Depression,"
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Local Afar guide standing atop blinding yellow, orange, and acid-green hydrothermal salt crust at Dallol, Ethiopia"
+    visual_desc: "Native vertical CC BY 4.0 field photograph by Charlie Fleuren showing a guide standing on the sulfur-yellow and green salt flats of Dallol in Ethiopia's Danakil Depression."
+
+  - sid: "S08"
+    start_s: 27.916
+    end_s: 30.426
+    kind: "still_parallax_25d"
+    src_file: "dallol_danakil_703_ccby.jpg"
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.53
+    cy1: 0.50
+    z0: 1.02
+    z1: 1.06
+    parallax_px: 18.0
+    contrast_gain: 1.08
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'Depression,' to alien porous sulfur chimneys and iron-salt terraces at Dallol"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "and Earth stops looking habitable altogether."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Alien porous sulfur chimneys, rust-orange iron salt crusts, and yellow sulfuric brines at Dallol, Ethiopia"
+    visual_desc: "CC BY 3.0 field photograph by Rolf Cosar at Dallol in the Danakil Depression showing porous sulfur vents, rust-red iron salt terraces, and bright yellow sulfuric pools."
+
+  - sid: "S09"
+    start_s: 30.426
+    end_s: 36.306
+    kind: "video_full"
+    src_file: "beryl_boiling_spring_1080p.mp4"
+    src_in: 1.20
+    cx0: 0.37
+    cy0: 0.61
+    cx1: 0.40
+    cy1: 0.61
+    z0: 1.22
+    z1: 1.26
+    contrast_gain: 1.10
+    nat_audio_gain_db: -12.5
+    transition_in: "cut"
+    transition_reason: "Sentence-end breath pause after 'altogether.' to violently boiling hydrothermal groundwater and roaring steam"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "At Dallol, shallow volcanic heat boils groundwater packed with iron salts and sulfuric acid."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Shallow volcanic heat violently boiling mineral-saturated groundwater"
+    visual_desc: "Live 1080p close-up with natural boiling sound of superheated hydrothermal water violently churning."
+
+  - sid: "S10"
+    start_s: 36.306
+    end_s: 40.585
+    kind: "still_parallax_25d"
+    src_file: "dallol_pools_ccby.jpg"
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.53
+    cy1: 0.50
+    z0: 1.02
+    z1: 1.06
+    parallax_px: 18.0
+    contrast_gain: 1.08
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'acid.' to Dallol's iconic neon-green negative-pH acid brine pools"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "Those neon-green pools drop below zero pH into negative acidity."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Neon-green and sulfur-yellow negative-pH brine pools across Dallol hydrothermal field"
+    visual_desc: "CC BY 2.5 field photograph by Hervé Sthioul showing the neon-green and yellow hyperacidic brine pools of Dallol, Ethiopia."
+
+  - sid: "S11"
+    start_s: 40.585
+    end_s: 42.934
+    kind: "video_full"
+    src_file: "acid_mudpot_1080p.mp4"
+    src_in: 9.20
+    cx0: 0.45
+    cy0: 0.72
+    cx1: 0.47
+    cy1: 0.71
+    z0: 1.35
+    z1: 1.38
+    contrast_gain: 1.10
+    nat_audio_gain_db: -13.0
+    transition_in: "cut"
+    transition_reason: "Sentence-end breath pause after 'acidity.' to bubbling acidic hydrothermal liquid"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "Even with liquid water everywhere,"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Bubbling acidic hydrothermal pool churning hot liquid brine"
+    visual_desc: "Live 1080p close-up of a boiling acidic hydrothermal cauldron churning sulfurous liquid."
+
+  - sid: "S12"
+    start_s: 42.934
+    end_s: 46.981
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_sampling_1080p.mp4"
+    src_in: 38.20
+    cx0: 0.50
+    cy0: 0.49
+    cx1: 0.53
+    cy1: 0.49
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.10
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'everywhere,' to astrobiologists collecting sterile microbial samples in extreme volcanic terrain"
+    context_note: "ASTROBIOLOGY STERILE SAMPLING"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "biologists found zero active microbial life inside the ponds."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Gloved astrobiologists conducting sterile microbial life-detection sampling on volcanic minerals"
+    visual_desc: "Public Domain NASA Astrobiology 1080p footage of gloved scientists performing sterile microbial sampling on extreme volcanic deposits."
+
+  - sid: "S13"
+    start_s: 46.981
+    end_s: 49.021
+    kind: "video_full"
+    src_file: "idrija_shaft_tunnel_1080p.mp4"
+    src_in: 1.50
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.05
+    z1: 1.08
+    contrast_gain: 1.10
+    shadow_lift: 0.14
+    nat_audio_gain_db: -12.5
+    chapter_stamp: "03 // NAICA CAVE, MEXICO • 58°C"
+    chapter_stamp_duration_s: 2.0
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Act III Layer-2 pivot dissolve from surface acid ponds 300 meters underground into a sealed mine tunnel"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Three hundred meters beneath Naica,"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Heavy underground mine shaft door opening into deep rock tunnel 300 meters underground"
+    visual_desc: "Live 1080p underground footage with diegetic sound looking down a rock-lined mine shaft tunnel as the heavy access door opens."
+
+  - sid: "S14"
+    start_s: 49.021
+    end_s: 52.855
+    kind: "still_parallax_25d"
+    src_file: "naica_crystals_vandriessche_ccby.jpg"
+    cx0: 0.68
+    cy0: 0.52
+    cx1: 0.71
+    cy1: 0.50
+    z0: 1.01
+    z1: 1.05
+    parallax_px: 20.0
+    contrast_gain: 1.08
+    shadow_lift: 0.24
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut after 'Naica,' to the real Cave of the Crystals showing an orange-suited human researcher dwarfed by 11-meter selenite columns"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Mexico lies an even stranger trap: the Cave of the Crystals."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Human researcher in orange caving suit and helmet standing tiny beside colossal selenite crystal beams in Naica"
+    visual_desc: "5K CC BY 3.0 expedition photograph by Dr. Alexander Van Driessche inside Naica's Cave of the Crystals framed to clearly show the helmeted researcher beside giant selenite beams."
+
+  - sid: "S15"
+    start_s: 52.855
+    end_s: 59.150
+    kind: "still_parallax_25d"
+    src_file: "naica_crystals_vandriessche_ccby.jpg"
+    crop_box: [0, 0, 3360, 3456]
+    cx0: 0.48
+    cy0: 0.46
+    cx1: 0.52
+    cy1: 0.44
+    z0: 1.02
+    z1: 1.06
+    parallax_px: 20.0
+    contrast_gain: 1.10
+    shadow_lift: 0.16
+    transition_in: "cut"
+    transition_reason: "Sentence-end breath pause after 'Crystals.' to close-up 5K crop of intersecting 11-meter, 55-ton gypsum megacrystal beams"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "Mineral-rich hot water slowly grew gypsum beams eleven meters long and weighing fifty-five tons."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Close-up of intersecting 11-meter, 55-ton translucent selenite crystal beams spanning the Naica cavern ceiling"
+    visual_desc: "High-resolution 3.3K detail crop of Dr. Alexander Van Driessche's Naica photograph highlighting the massive intersecting gypsum crystal beams."
+
+  - sid: "S16"
+    start_s: 59.150
+    end_s: 64.779
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_golden_wall_1080p.mp4"
+    src_in: 59.60
+    cx0: 0.54
+    cy0: 0.50
+    cx1: 0.57
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.08
+    contrast_gain: 1.12
+    shadow_lift: 0.16
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'tons.' to claustrophobic moisture-saturated subterranean cave rock and researcher inside dark chamber"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Inside, fifty-eight-degree heat meets ninety-five percent humidity—hotter than your own lungs."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Cave researcher working inside a sweltering, moisture-glistening subterranean rock chamber"
+    visual_desc: "Public Domain NASA 1080p underground footage showing a helmeted researcher inside a damp, glistening subterranean cavern."
+
+  - sid: "S17"
+    start_s: 64.779
+    end_s: 67.529
+    kind: "video_full"
+    src_file: "niosh_refuge_mine_1080p.mp4"
+    src_in: 84.00
+    cx0: 0.44
+    cy0: 0.48
+    cx1: 0.46
+    cy1: 0.48
+    z0: 1.07
+    z1: 1.10
+    contrast_gain: 1.10
+    transition_in: "cut"
+    transition_reason: "Sentence-end breath pause after 'lungs.' to underground closed-circuit chilled breathing-air life-support packs"
+    context_note: "UNDERGROUND BREATHING PACKS"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Without ice suits and chilled air packs,"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Underground safety specialists operating closed-circuit breathable air cylinders in a mine chamber"
+    visual_desc: "Public Domain CDC/NIOSH 1080p footage of underground mine safety specialists testing breathable air cylinders and thermal refuge gear."
+
+  - sid: "S18"
+    start_s: 67.529
+    end_s: 70.992
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_headlamp_gold_1080p.mp4"
+    src_in: 19.10
+    cx0: 0.57
+    cy0: 0.48
+    cx1: 0.59
+    cy1: 0.46
+    z0: 1.06
+    z1: 1.10
+    contrast_gain: 1.12
+    shadow_lift: 0.14
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'packs,' to cave explorer breathing beneath moisture-beaded cavern rock"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "every breath condenses water straight into your airways."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Helmeted cave scientist illuminated by headlamp beneath moisture-beaded cavern ceiling"
+    visual_desc: "Public Domain NASA 1080p footage inside a dark cave showing a headlamp illuminating moisture-slicked cavern rock above a researcher."
+
+  - sid: "S19"
+    start_s: 70.992
+    end_s: 73.898
+    kind: "video_full"
+    src_file: "nasa_cave_sterile_swab_1080p.mp4"
+    src_in: 70.00
+    cx0: 0.49
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.12
+    shadow_lift: 0.14
+    transition_in: "cut"
+    transition_reason: "Sentence-end breath pause after 'airways.' to subterranean scientist probing mineral chemistry inside dark cavern"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "That doesn't mean these places break physics—"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Subterranean researcher examining cave wall mineral deposits by headlamp"
+    visual_desc: "Public Domain NASA Goddard 1080p underground cave footage showing a researcher inspecting mineral-coated cavern rock."
+
+  - sid: "S20"
+    start_s: 73.898
+    end_s: 77.855
+    kind: "diagram"
+    src_file: "unreal_places_scale_v5.mp4"
+    src_in: 0.00
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.00
+    z1: 1.00
+    transition_in: "cut"
+    transition_reason: "Dash-pause cut after 'physics—' to full-brightness visual scale (11m crystal vs 1.75m human) and 58°C vs 37°C lung-condensation diagram"
+    is_real_evidence: false
+    has_human_interaction: false
+    associated_narration_concept: "extreme heat and acid simply push chemistry past human limits."
+    subject_match_kind: "illustrative_diagram"
+    scientific_claim_status: "illustrative_visualization"
+    story_beat: "First-party visual comparison showing 11m/55t Naica crystal vs 1.75m human, 58°C/95% RH vapor condensing in 37°C lungs, plus 600°C Kawah Ijen and pH < 0 Dallol"
+    visual_desc: "First-party 1080x1920 scientific scale and thermal-condensation diagram over darkened Naica crystal cavern photography."
+
+  - sid: "S21"
+    start_s: 77.855
+    end_s: 82.362
+    kind: "video_full"
+    src_file: "yucatan_flooded_cave_1080p.mp4"
+    src_in: 1.20
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.53
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.08
+    contrast_gain: 1.14
+    shadow_lift: 0.24
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'limits.' to deep Mexican cavern chamber completely submerged underwater"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "In twenty seventeen, groundwater flooded the Naica crystal cave shut forever—"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Clear subterranean groundwater flooding a deep Mexican cavern chamber shut"
+    visual_desc: "CC BY 3.0 1080p underwater footage gliding into a submerged Mexican cavern chamber surrounded by flooded mineral formations."
+
+  - sid: "S22"
+    start_s: 82.362
+    end_s: 85.900
+    kind: "triptych_hook"
+    src_file: "hakkoda_fumarole_1080p.mp4"
+    src_in: 12.00
+    secondary_src_file: "dallol_danakil_703_ccby.jpg"
+    tertiary_src_file: "kawah_ijen_miners_cc0.jpg"
+    triptych_centers_y: [0.50, 0.52, 0.56]
+    triptych_labels:
+      - "600°C BLUE SULFUR • INDONESIA"
+      - "NEGATIVE pH ACID • ETHIOPIA"
+      - "SEALED 58°C GIANTS • EARTH"
+    contrast_gain: 1.10
+    shadow_lift: 0.14
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Dash-pause dissolve after 'forever—' into 3-world visual callback triptych that loops seamlessly back into S01 at 0.00s"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "leaving three real worlds on Earth that look completely impossible."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Three-band final visual callback across Earth's extreme sulfur, acid, and subterranean worlds, looping directly into S01"
+    visual_desc: "Full-canvas 3-band triptych pairing roaring volcanic sulfur fumaroles, Dallol iron-acid chimneys, and Kawah Ijen sulfur miners for a seamless 0.0s loop."
+
+caption_groups:
+  - seg_id: "N01"
+    first_word_idx: 0
+    last_word_idx: 4
+    text: "None of these three places"
+  - seg_id: "N01"
+    first_word_idx: 5
+    last_word_idx: 8
+    text: "on Earth are CGI."
+  - seg_id: "N01"
+    first_word_idx: 9
+    last_word_idx: 14
+    text: "The last one drowns human lungs"
+  - seg_id: "N01"
+    first_word_idx: 15
+    last_word_idx: 17
+    text: "from the inside."
+
+  - seg_id: "N02"
+    first_word_idx: 0
+    last_word_idx: 3
+    text: "At midnight in Indonesia,"
+  - seg_id: "N02"
+    first_word_idx: 4
+    last_word_idx: 7
+    text: "Kawah Ijen volcano appears"
+  - seg_id: "N02"
+    first_word_idx: 8
+    last_word_idx: 13
+    text: "to pour rivers of electric-blue lava."
+  - seg_id: "N02"
+    first_word_idx: 14
+    last_word_idx: 18
+    text: "Except lava is never blue."
+
+  - seg_id: "N03"
+    first_word_idx: 0
+    last_word_idx: 5
+    text: "Pressurized sulfur gas shoots from cracks"
+  - seg_id: "N03"
+    first_word_idx: 6
+    last_word_idx: 10
+    text: "at six hundred degrees Celsius"
+  - seg_id: "N03"
+    first_word_idx: 11
+    last_word_idx: 16
+    text: "and ignites on contact with air."
+  - seg_id: "N03"
+    first_word_idx: 17
+    last_word_idx: 22
+    text: "Some gas condenses into liquid sulfur"
+  - seg_id: "N03"
+    first_word_idx: 23
+    last_word_idx: 27
+    text: "that keeps burning bright blue"
+  - seg_id: "N03"
+    first_word_idx: 28
+    last_word_idx: 31
+    text: "as it flows downhill."
+
+  - seg_id: "N04"
+    first_word_idx: 0
+    last_word_idx: 4
+    text: "Cross into Ethiopia's Danakil Depression,"
+  - seg_id: "N04"
+    first_word_idx: 5
+    last_word_idx: 10
+    text: "and Earth stops looking habitable altogether."
+  - seg_id: "N04"
+    first_word_idx: 11
+    last_word_idx: 15
+    text: "At Dallol, shallow volcanic heat"
+  - seg_id: "N04"
+    first_word_idx: 16
+    last_word_idx: 21
+    text: "boils groundwater packed with iron salts"
+  - seg_id: "N04"
+    first_word_idx: 22
+    last_word_idx: 24
+    text: "and sulfuric acid."
+
+  - seg_id: "N05"
+    first_word_idx: 0
+    last_word_idx: 6
+    text: "Those neon-green pools drop below zero pH"
+  - seg_id: "N05"
+    first_word_idx: 7
+    last_word_idx: 9
+    text: "into negative acidity."
+  - seg_id: "N05"
+    first_word_idx: 10
+    last_word_idx: 14
+    text: "Even with liquid water everywhere,"
+  - seg_id: "N05"
+    first_word_idx: 15
+    last_word_idx: 17
+    text: "biologists found zero"
+  - seg_id: "N05"
+    first_word_idx: 18
+    last_word_idx: 23
+    text: "active microbial life inside the ponds."
+
+  - seg_id: "N06"
+    first_word_idx: 0
+    last_word_idx: 5
+    text: "Three hundred meters beneath Naica, Mexico"
+  - seg_id: "N06"
+    first_word_idx: 6
+    last_word_idx: 10
+    text: "lies an even stranger trap:"
+  - seg_id: "N06"
+    first_word_idx: 11
+    last_word_idx: 15
+    text: "the Cave of the Crystals."
+  - seg_id: "N06"
+    first_word_idx: 16
+    last_word_idx: 20
+    text: "Mineral-rich hot water slowly grew"
+  - seg_id: "N06"
+    first_word_idx: 21
+    last_word_idx: 25
+    text: "gypsum beams eleven meters long"
+  - seg_id: "N06"
+    first_word_idx: 26
+    last_word_idx: 29
+    text: "and weighing fifty-five tons."
+
+  - seg_id: "N07"
+    first_word_idx: 0
+    last_word_idx: 2
+    text: "Inside, fifty-eight-degree heat"
+  - seg_id: "N07"
+    first_word_idx: 3
+    last_word_idx: 6
+    text: "meets ninety-five percent humidity—"
+  - seg_id: "N07"
+    first_word_idx: 7
+    last_word_idx: 11
+    text: "hotter than your own lungs."
+  - seg_id: "N07"
+    first_word_idx: 12
+    last_word_idx: 18
+    text: "Without ice suits and chilled air packs,"
+  - seg_id: "N07"
+    first_word_idx: 19
+    last_word_idx: 22
+    text: "every breath condenses water"
+  - seg_id: "N07"
+    first_word_idx: 23
+    last_word_idx: 26
+    text: "straight into your airways."
+  - seg_id: "N07"
+    first_word_idx: 27
+    last_word_idx: 33
+    text: "That doesn't mean these places break physics—"
+  - seg_id: "N07"
+    first_word_idx: 34
+    last_word_idx: 37
+    text: "extreme heat and acid"
+  - seg_id: "N07"
+    first_word_idx: 38
+    last_word_idx: 43
+    text: "simply push chemistry past human limits."
+
+  - seg_id: "N08"
+    first_word_idx: 0
+    last_word_idx: 4
+    text: "In twenty seventeen, groundwater flooded"
+  - seg_id: "N08"
+    first_word_idx: 5
+    last_word_idx: 10
+    text: "the Naica crystal cave shut forever—"
+  - seg_id: "N08"
+    first_word_idx: 11
+    last_word_idx: 16
+    text: "leaving three real worlds on Earth"
+  - seg_id: "N08"
+    first_word_idx: 17
+    last_word_idx: 20
+    text: "that look completely impossible."
+
+assets_register:
+  - local_file: "ijen_blue_fire_crater_1080p.mp4"
+    title: "Blue Fire inside Ijen Volcano - Indonesia"
+    creator_agency: "Unkempt Casanova (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Blue_Fire_inside_Ijen_Volcano_-_Indonesia.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Blue_Fire_inside_Ijen_Volcano_-_Indonesia.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Unkempt Casanova via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "kawah_ijen_fumarole_vert_cc0.jpg"
+    title: "Kawah Ijen sulfur miners and pressurized yellow fumarole vents (East Java, Indonesia)"
+    creator_agency: "Suseno (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Kawah_Ijen_17_Oktober_2015.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/7/75/Kawah_Ijen_17_Oktober_2015.jpg"
+    license: "CC0"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "Photo: Suseno via Wikimedia Commons (CC0 1.0)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "kawah_ijen_miners_cc0.jpg"
+    title: "Kawah Ijen Sulphur Miners carrying solidified yellow sulfur baskets"
+    creator_agency: "Suseno (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Kawah_Ijen_Sulphur_Miners.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/2/22/Kawah_Ijen_Sulphur_Miners.jpg"
+    license: "CC0"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "Photo: Suseno via Wikimedia Commons (CC0 1.0)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "iceland_volcano_1080p.mp4"
+    title: "Eruption of a volcano in Iceland - Geldingadalsgos molten silicate lava river"
+    creator_agency: "Reykjanes / Geldingadalsgos (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Eruption_of_a_volcano_in_Iceland_-_Geldingadalsgos.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/0/07/Eruption_of_a_volcano_in_Iceland_-_Geldingadalsgos.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Geldingadalsgos Eruption via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "hakkoda_fumarole_1080p.mp4"
+    title: "Hakkōda sulfur fumarole activity"
+    creator_agency: "Mccunicano (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Hakk%C5%8Dda_fumarole_activity.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/6/64/Hakk%C5%8Dda_fumarole_activity.webm"
+    license: "Public Domain"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "Public Domain — Mccunicano via Wikimedia Commons"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "dallol_guide_portrait_ccby.jpg"
+    title: "Afar guide standing on hyperacidic salt flats at Dallol, Danakil Depression, Ethiopia"
+    creator_agency: "Charlie Fleuren (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Ethiopia_Dallol_GuideStanding.JPG"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/6/64/Ethiopia_Dallol_GuideStanding.JPG"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Photo: Charlie Fleuren via Wikimedia Commons (CC BY 4.0)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "dallol_danakil_703_ccby.jpg"
+    title: "Dallol hydrothermal sulfur chimneys and iron-rich sulfuric pools (Danakil Depression, Ethiopia)"
+    creator_agency: "Rolf Cosar"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Danakil_703.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/d/de/Danakil_703.jpg"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Photo: Rolf Cosar via Wikimedia Commons (CC BY 3.0)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "dallol_pools_ccby.jpg"
+    title: "Dallol hydrothermal acid pools in the Danakil Depression, Ethiopia"
+    creator_agency: "Hervé Sthioul"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Dallol-2001.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Dallol-2001.jpg"
+    license: "CC BY 2.5"
+    license_url: "https://creativecommons.org/licenses/by/2.5/"
+    required_attribution: "Photo: Hervé Sthioul via Wikimedia Commons (CC BY 2.5)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "beryl_boiling_spring_1080p.mp4"
+    title: "Boiling hydrothermal pool and superheated steam vent"
+    creator_agency: "G. Edward Johnson (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Beryl_spring_20190715_135607_VID.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/2/26/Beryl_spring_20190715_135607_VID.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: G. Edward Johnson via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "acid_mudpot_1080p.mp4"
+    title: "Acidic boiling mudpot at hydrothermal basin"
+    creator_agency: "G. Edward Johnson (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Mudpot_west_thumb_20190717_135010_VID.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Mudpot_west_thumb_20190717_135010_VID.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: G. Edward Johnson via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "naica_crystals_vandriessche_ccby.jpg"
+    title: "Cristales cueva de Naica — Cave of the Crystals, Naica, Chihuahua, Mexico"
+    creator_agency: "Dr. Alexander Van Driessche"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Cristales_cueva_de_Naica.JPG"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Cristales_cueva_de_Naica.JPG"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Photo: Dr. Alexander Van Driessche via Wikimedia Commons (CC BY 3.0)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "yucatan_flooded_cave_1080p.mp4"
+    title: "Submerged caves of Mexico's Yucatan Peninsula"
+    creator_agency: "H2OWE (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Submerged_caves_of_Yucatan.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/6/60/Submerged_caves_of_Yucatan.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: H2OWE via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "idrija_shaft_tunnel_1080p.mp4"
+    title: "IDRIJA ANTHONY'S SHAFT; OPENING AND CLOSING THE DOOR TO THE MINE"
+    creator_agency: "Sounds of Changes / Idrija UNESCO Global Geopark"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:IDRIJA_ANTHONY%60S_SHAFT;_OPENING_AND_CLOSING_THE_DOOR_TO_THE_MINE.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/3/3e/IDRIJA_ANTHONY%60S_SHAFT%3B_OPENING_AND_CLOSING_THE_DOOR_TO_THE_MINE.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Sounds of Changes / Idrija Mercury Mine Museum (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "niosh_refuge_mine_1080p.mp4"
+    title: "NIOSH Research on Refuge Alternatives for Underground Mines"
+    creator_agency: "U.S. Centers for Disease Control and Prevention / NIOSH"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:NIOSH_Research_on_Refuge_Alternatives_for_Underground_Coal_Mines.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/f/fc/NIOSH_Research_on_Refuge_Alternatives_for_Underground_Coal_Mines.webm"
+    license: "Public Domain"
+    license_url: "https://creativecommons.org/publicdomain/mark/1.0/"
+    required_attribution: "Public Domain — CDC / National Institute for Occupational Safety and Health (NIOSH)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "nasa_mauna_loa_golden_wall_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — Subterranean Cave Fieldwork"
+    creator_agency: "NASA Astrobiology Program / Mike Toillion"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Astrobiology Program / NASA+ (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "nasa_mauna_loa_sampling_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — Sterile Biofilm Sampling"
+    creator_agency: "NASA Astrobiology Program / Mike Toillion"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Astrobiology Program / NASA+ (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "nasa_cave_sterile_swab_1080p.mp4"
+    title: "NASA Astrobiology Sterile Cave Wall Microbial Sampling & Spectroscopy"
+    creator_agency: "NASA Goddard Space Flight Center"
+    source_page_url: "https://images.nasa.gov/"
+    direct_media_url: "local://nasa_cave_sterile_swab_1080p.mp4"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA Goddard Space Flight Center"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "nasa_mauna_loa_headlamp_gold_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — Headlamp Illuminating Damp Cave Ceiling"
+    creator_agency: "NASA Astrobiology Program / Mike Toillion"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Astrobiology Program / NASA+ (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "unreal_places_scale_v5.mp4"
+    title: "Extreme Earth Chemistry & Naica 11m Scale / Lung Condensation Diagram"
+    creator_agency: "Proof of Wonder (First-Party Graphic over CC BY 3.0 Naica Cave photograph by Dr. Alexander Van Driessche)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Cristales_cueva_de_Naica.JPG"
+    direct_media_url: "local://unreal_places_scale_v5.mp4"
+    license: "100% Original First-Party Graphic"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Diagram: Proof of Wonder over Naica Cave photograph by Dr. Alexander Van Driessche (CC BY 3.0)"
+    media_type: "diagram"
+    priority_tier: 6
+    is_first_party_original: true
+
+  - local_file: "volcanic_hydrothermal_cave_bed.wav"
+    title: "Fumarole Gas Hiss, Boiling Hydrothermal Spring & Subterranean Cave Drips Location Bed"
+    creator_agency: "Mccunicano (Public Domain), G. Edward Johnson (CC BY 3.0), & Wikimedia Commons Cave Drips (CC0)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Beryl_spring_20190715_135607_VID.webm"
+    direct_media_url: "local://volcanic_hydrothermal_cave_bed.wav"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Audio: G. Edward Johnson (CC BY 3.0), Mccunicano (Public Domain), & CC0 subterranean water field recording"
+    media_type: "audio"
+    priority_tier: 2
+
+excluded_sources_notes:
+  - "Excluded Yellowstone tourist boardwalk clips (grand_prismatic_nps_1080p.mp4), muted lab interview talking heads (smithsonian_geologist_1080p.mp4), frozen drop water macro (bilovitskiy_ice_crystal_1080p.mp4), and frozen mine icicles (idrija_mine_water_1080p.mp4) per pow_studio v5.0 viewer-experience audit."
+  - "Excluded USGS hydrothermal sampling video (usgs_hydrothermal_sampling_1080p.webm) and USGS Kilauea clip after contact-sheet inspection revealed bottom-left USGS watermarks."
+  - "Excluded all CC BY-SA 3.0/4.0 Kawah Ijen, Dallol, and Naica Commons photographs per pow_documentary_v3 commercial ShareAlike prohibition; used exclusively CC BY, CC0, and Public Domain sources."
+
+factual_references:
+  - citation: "Delmelle, P., Bernard, A., Kusakabe, M., Fischer, T. P., & Takano, B. (2000). Geochemistry of the magmatic-hydrothermal system of Kawah Ijen volcano, East Java, Indonesia. Journal of Volcanology and Geothermal Research, 97(1–4), 31–53."
+    url: "https://doi.org/10.1016/S0377-0273(99)00158-4"
+    doi: "10.1016/S0377-0273(99)00158-4"
+    supported_claims: "High-temperature (up to ~600°C) sulfur-rich magmatic fumarole gases at Kawah Ijen igniting upon contact with atmospheric oxygen and condensing into burning liquid sulfur streams that produce electric-blue flames at night."
+
+  - citation: "Belilla, J., Moreira, D., Jardillier, L., Reboul, G., Benzerara, K., López-García, J. M., Bertolino, P., López-Archilla, A. I., & López-García, P. (2019). Hyperdiverse archaea near life limits at the polyextreme geothermal Dallol area. Nature Ecology & Evolution, 3, 1552–1561."
+    url: "https://doi.org/10.1038/s41559-019-1005-0"
+    doi: "10.1038/s41559-019-1005-0"
+    supported_claims: "Hyperacidic (negative pH < 0), hypersaline, iron- and magnesium-rich boiling hydrothermal brines at Dallol in Ethiopia's Danakil Depression exhibiting an absence of active microbial life despite surface liquid water."
+
+  - citation: "García-Ruiz, J. M., Villasuso, R., Ayora, C., Canals, A., & Otálora, F. (2007). Formation of natural gypsum megacrystals in Naica, Mexico. Geology, 35(4), 327–330."
+    url: "https://doi.org/10.1130/G23393A.1"
+    doi: "10.1130/G23393A.1"
+    supported_claims: "Self-feeding anhydrite-to-gypsum dissolution-crystallization mechanism in ~58°C mineral-rich groundwater at ~290–300 m depth beneath Naica, Mexico growing selenite beams up to ~11 m long and ~55 tons."
+
+  - citation: "Van Driessche, A. E. S., García-Ruiz, J. M., Tsukamoto, K., Patiño-Lopez, L. D., & Satoh, H. (2011). Ultraslow growth rates of giant gypsum crystals. Proceedings of the National Academy of Sciences (PNAS), 108(38), 15721–15726."
+    url: "https://doi.org/10.1073/pnas.1105233108"
+    doi: "10.1073/pnas.1105233108"
+    supported_claims: "Measured ultraslow crystal growth rates inside Naica's Cave of the Crystals, extreme ~58°C high-humidity chamber microclimate exceeding human core/lung temperature (37°C) requiring refrigerated breathing gear, and subsequent re-flooding once mine pumping ceased."

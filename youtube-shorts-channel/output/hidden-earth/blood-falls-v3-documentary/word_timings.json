@@ -1,0 +1,1421 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "total_duration_s": 72.7667,
+  "total_frames_30fps": 2183,
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "In Antarctica's freezing Dry Valleys, a five-story waterfall pours blood-red straight out of solid glacier ice.",
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "start": 0.1,
+      "end": 6.503,
+      "duration": 6.403,
+      "pause_after": 0.22,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N02",
+      "text": "For decades, nobody knew what fed Taylor Glacier's Blood Falls. Today, we know the color comes from chemistry: salty, iron-rich water hits the air and instantly rusts.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 6.723,
+      "end": 17.236,
+      "duration": 10.514,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N03",
+      "text": "Deep under the ice sits a trapped reservoir of hyper-salty brine\u2014likely ancient seawater sealed off as the glacier advanced, though its full history remains under investigation.",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "start": 17.496,
+      "end": 26.887,
+      "duration": 9.39,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N04",
+      "text": "Rust explains the color. What surprised researchers in 2026 was what they pulled from the freezing red mud.",
+      "rate": "+2%",
+      "pitch": "+1Hz",
+      "start": 27.167,
+      "end": 33.723,
+      "duration": 6.556,
+      "pause_after": 0.24,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N05",
+      "text": "Testing 167 ice, sediment, air, and ocean samples across the region, a field team uncovered a hidden community of marine microbes right at the red outflow.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 33.963,
+      "end": 43.73,
+      "duration": 9.767,
+      "pause_after": 0.25,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N06",
+      "text": "Under the microscope were tiny ocean algae like diatoms, alongside single-celled marine drifters\u2014living clues of past ocean connections, miles from open sea.",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "start": 43.98,
+      "end": 53.195,
+      "duration": 9.215,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N07",
+      "text": "Now, that doesn't prove these exact organisms stayed trapped beneath the ice for millions of years. Scientists are still piecing together how they got there.",
+      "rate": "-2%",
+      "pitch": "-1Hz",
+      "start": 53.475,
+      "end": 62.463,
+      "duration": 8.988,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N08",
+      "text": "Blood Falls isn't bleeding. It's a leaking subglacial vault\u2014showing that even beneath 400 meters of Antarctic ice, Earth holds unexpected signs of life.",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 62.743,
+      "end": 72.479,
+      "duration": 9.736,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "In",
+      "start": 0.1,
+      "end": 0.27,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Antarctica's",
+      "start": 0.195,
+      "end": 0.886,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "freezing",
+      "start": 0.898,
+      "end": 1.311,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Dry",
+      "start": 1.323,
+      "end": 1.602,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Valleys",
+      "start": 1.615,
+      "end": 2.1,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "a",
+      "start": 2.306,
+      "end": 2.355,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "five-story",
+      "start": 2.367,
+      "end": 3.022,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "waterfall",
+      "start": 3.034,
+      "end": 3.629,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "pours",
+      "start": 3.641,
+      "end": 3.945,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "blood-red",
+      "start": 3.957,
+      "end": 4.442,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "straight",
+      "start": 4.454,
+      "end": 4.818,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "out",
+      "start": 4.831,
+      "end": 5.013,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "of",
+      "start": 5.025,
+      "end": 5.122,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "solid",
+      "start": 5.134,
+      "end": 5.449,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "glacier",
+      "start": 5.462,
+      "end": 5.971,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "ice",
+      "start": 5.983,
+      "end": 6.445,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "For",
+      "start": 6.723,
+      "end": 6.896,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "decades",
+      "start": 6.804,
+      "end": 7.312,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "nobody",
+      "start": 7.522,
+      "end": 7.893,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "knew",
+      "start": 7.906,
+      "end": 8.141,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "what",
+      "start": 8.153,
+      "end": 8.364,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "fed",
+      "start": 8.376,
+      "end": 8.636,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Taylor",
+      "start": 8.648,
+      "end": 8.982,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Glacier's",
+      "start": 8.995,
+      "end": 9.416,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Blood",
+      "start": 9.428,
+      "end": 9.688,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Falls",
+      "start": 9.7,
+      "end": 10.245,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Today",
+      "start": 11.098,
+      "end": 11.556,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "we",
+      "start": 11.705,
+      "end": 11.804,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "know",
+      "start": 11.816,
+      "end": 11.989,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 12.002,
+      "end": 12.088,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "color",
+      "start": 12.101,
+      "end": 12.361,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "comes",
+      "start": 12.373,
+      "end": 12.67,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "from",
+      "start": 12.682,
+      "end": 12.856,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "chemistry",
+      "start": 12.868,
+      "end": 13.4,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "salty",
+      "start": 13.611,
+      "end": 14.031,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "iron-rich",
+      "start": 14.267,
+      "end": 14.749,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "water",
+      "start": 14.762,
+      "end": 15.133,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "hits",
+      "start": 15.145,
+      "end": 15.405,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 15.418,
+      "end": 15.566,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "air",
+      "start": 15.578,
+      "end": 15.814,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "and",
+      "start": 15.826,
+      "end": 16.049,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "instantly",
+      "start": 16.061,
+      "end": 16.531,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "rusts",
+      "start": 16.544,
+      "end": 17.187,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Deep",
+      "start": 17.496,
+      "end": 17.821,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "under",
+      "start": 17.744,
+      "end": 17.957,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 17.97,
+      "end": 18.082,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "ice",
+      "start": 18.095,
+      "end": 18.382,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "sits",
+      "start": 18.395,
+      "end": 18.607,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "a",
+      "start": 18.619,
+      "end": 18.694,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "trapped",
+      "start": 18.707,
+      "end": 19.032,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "reservoir",
+      "start": 19.044,
+      "end": 19.557,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "of",
+      "start": 19.569,
+      "end": 19.657,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "hyper-salty",
+      "start": 19.669,
+      "end": 20.332,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "brine",
+      "start": 20.345,
+      "end": 20.757,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "likely",
+      "start": 20.944,
+      "end": 21.307,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "ancient",
+      "start": 21.319,
+      "end": 21.669,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "seawater",
+      "start": 21.682,
+      "end": 22.182,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "sealed",
+      "start": 22.194,
+      "end": 22.557,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "off",
+      "start": 22.569,
+      "end": 22.807,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "as",
+      "start": 22.819,
+      "end": 22.932,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 22.944,
+      "end": 23.019,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "glacier",
+      "start": 23.032,
+      "end": 23.52,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "advanced",
+      "start": 23.532,
+      "end": 24.095,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "though",
+      "start": 24.319,
+      "end": 24.444,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "its",
+      "start": 24.457,
+      "end": 24.595,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "full",
+      "start": 24.607,
+      "end": 24.819,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "history",
+      "start": 24.832,
+      "end": 25.169,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "remains",
+      "start": 25.182,
+      "end": 25.694,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "under",
+      "start": 25.707,
+      "end": 25.957,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "investigation",
+      "start": 25.97,
+      "end": 26.832,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Rust",
+      "start": 27.167,
+      "end": 27.485,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "explains",
+      "start": 27.4,
+      "end": 27.89,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "the",
+      "start": 27.903,
+      "end": 27.976,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "color",
+      "start": 27.988,
+      "end": 28.393,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "What",
+      "start": 29.237,
+      "end": 29.458,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "surprised",
+      "start": 29.47,
+      "end": 29.936,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "researchers",
+      "start": 29.948,
+      "end": 30.512,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "in 2026",
+      "start": 30.524,
+      "end": 31.578,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "was",
+      "start": 31.59,
+      "end": 31.713,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "what",
+      "start": 31.725,
+      "end": 31.909,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "they",
+      "start": 31.921,
+      "end": 32.019,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "pulled",
+      "start": 32.032,
+      "end": 32.375,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "from",
+      "start": 32.387,
+      "end": 32.522,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "the",
+      "start": 32.534,
+      "end": 32.608,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "freezing",
+      "start": 32.62,
+      "end": 33.085,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "red",
+      "start": 33.098,
+      "end": 33.294,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "mud",
+      "start": 33.306,
+      "end": 33.649,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Testing",
+      "start": 33.963,
+      "end": 34.409,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "167",
+      "start": 34.315,
+      "end": 35.614,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "ice",
+      "start": 35.627,
+      "end": 36.01,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "sediment",
+      "start": 36.171,
+      "end": 36.604,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "air",
+      "start": 36.827,
+      "end": 37.062,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "and",
+      "start": 37.359,
+      "end": 37.52,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "ocean",
+      "start": 37.533,
+      "end": 37.842,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "samples",
+      "start": 37.854,
+      "end": 38.3,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "across",
+      "start": 38.312,
+      "end": 38.646,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 38.659,
+      "end": 38.758,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "region",
+      "start": 38.77,
+      "end": 39.216,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "a",
+      "start": 39.327,
+      "end": 39.364,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "field",
+      "start": 39.377,
+      "end": 39.711,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "team",
+      "start": 39.723,
+      "end": 39.983,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "uncovered",
+      "start": 39.995,
+      "end": 40.404,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "a",
+      "start": 40.416,
+      "end": 40.466,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "hidden",
+      "start": 40.478,
+      "end": 40.788,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "community",
+      "start": 40.8,
+      "end": 41.332,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "of",
+      "start": 41.344,
+      "end": 41.468,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "marine",
+      "start": 41.481,
+      "end": 41.827,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "microbes",
+      "start": 41.84,
+      "end": 42.372,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "right",
+      "start": 42.384,
+      "end": 42.669,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "at",
+      "start": 42.681,
+      "end": 42.731,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 42.743,
+      "end": 42.83,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "red",
+      "start": 42.842,
+      "end": 43.065,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "outflow",
+      "start": 43.077,
+      "end": 43.671,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Under",
+      "start": 43.98,
+      "end": 44.28,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 44.18,
+      "end": 44.255,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "microscope",
+      "start": 44.267,
+      "end": 44.955,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "were",
+      "start": 44.967,
+      "end": 45.067,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "tiny",
+      "start": 45.08,
+      "end": 45.505,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "ocean",
+      "start": 45.517,
+      "end": 45.817,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "algae",
+      "start": 45.83,
+      "end": 46.142,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "like",
+      "start": 46.155,
+      "end": 46.417,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "diatoms",
+      "start": 46.43,
+      "end": 47.067,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "alongside",
+      "start": 47.267,
+      "end": 47.792,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "single-celled",
+      "start": 47.805,
+      "end": 48.405,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "marine",
+      "start": 48.417,
+      "end": 48.78,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "drifters",
+      "start": 48.792,
+      "end": 49.305,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "living",
+      "start": 49.542,
+      "end": 49.842,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "clues",
+      "start": 49.855,
+      "end": 50.155,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "of",
+      "start": 50.167,
+      "end": 50.255,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "past",
+      "start": 50.267,
+      "end": 50.617,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "ocean",
+      "start": 50.63,
+      "end": 50.917,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "connections",
+      "start": 50.93,
+      "end": 51.58,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "miles",
+      "start": 51.792,
+      "end": 52.18,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "from",
+      "start": 52.192,
+      "end": 52.342,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "open",
+      "start": 52.355,
+      "end": 52.705,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "sea",
+      "start": 52.717,
+      "end": 53.13,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Now",
+      "start": 53.475,
+      "end": 53.883,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "that",
+      "start": 53.961,
+      "end": 54.088,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "doesn't",
+      "start": 54.101,
+      "end": 54.369,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "prove",
+      "start": 54.382,
+      "end": 54.701,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "these",
+      "start": 54.713,
+      "end": 54.905,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "exact",
+      "start": 54.917,
+      "end": 55.313,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "organisms",
+      "start": 55.326,
+      "end": 55.912,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "stayed",
+      "start": 55.925,
+      "end": 56.218,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "trapped",
+      "start": 56.231,
+      "end": 56.537,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "beneath",
+      "start": 56.55,
+      "end": 56.907,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "the",
+      "start": 56.92,
+      "end": 57.047,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "ice",
+      "start": 57.06,
+      "end": 57.328,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "for",
+      "start": 57.341,
+      "end": 57.443,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "millions",
+      "start": 57.456,
+      "end": 57.915,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "of",
+      "start": 57.928,
+      "end": 58.017,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "years",
+      "start": 58.03,
+      "end": 58.565,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Scientists",
+      "start": 59.446,
+      "end": 60.135,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "are",
+      "start": 60.148,
+      "end": 60.314,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "still",
+      "start": 60.327,
+      "end": 60.658,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "piecing",
+      "start": 60.671,
+      "end": 60.99,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "together",
+      "start": 61.003,
+      "end": 61.36,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "how",
+      "start": 61.372,
+      "end": 61.564,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "they",
+      "start": 61.577,
+      "end": 61.73,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "got",
+      "start": 61.742,
+      "end": 62.023,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "there",
+      "start": 62.036,
+      "end": 62.304,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Blood",
+      "start": 62.743,
+      "end": 63.096,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Falls",
+      "start": 63.003,
+      "end": 63.344,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "isn't",
+      "start": 63.356,
+      "end": 63.609,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "bleeding",
+      "start": 63.621,
+      "end": 64.089,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "It's",
+      "start": 64.96,
+      "end": 65.2,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "a",
+      "start": 65.213,
+      "end": 65.276,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "leaking",
+      "start": 65.289,
+      "end": 65.667,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "subglacial",
+      "start": 65.68,
+      "end": 66.311,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "vault",
+      "start": 66.324,
+      "end": 66.652,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "showing",
+      "start": 66.842,
+      "end": 67.17,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "that",
+      "start": 67.182,
+      "end": 67.347,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "even",
+      "start": 67.359,
+      "end": 67.612,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "beneath",
+      "start": 67.624,
+      "end": 68.003,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "400",
+      "start": 68.016,
+      "end": 68.571,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "meters",
+      "start": 68.584,
+      "end": 68.925,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "of",
+      "start": 68.938,
+      "end": 69.026,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Antarctic",
+      "start": 69.039,
+      "end": 69.619,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "ice",
+      "start": 69.632,
+      "end": 69.998,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Earth",
+      "start": 70.225,
+      "end": 70.402,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "holds",
+      "start": 70.415,
+      "end": 70.73,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "unexpected",
+      "start": 70.743,
+      "end": 71.4,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "signs",
+      "start": 71.412,
+      "end": 71.791,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "of",
+      "start": 71.804,
+      "end": 71.879,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "life",
+      "start": 71.892,
+      "end": 72.397,
+      "emphasis": false
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 0.04,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "ice_creak_subtle",
+      "time_s": 2.28,
+      "gain_db": -25.0
+    },
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 17.383,
+      "gain_db": -26.0
+    },
+    {
+      "sfx_name": "microscope_slide_click",
+      "time_s": 37.24,
+      "gain_db": -25.0
+    },
+    {
+      "sfx_name": "katabatic_wind_gust",
+      "time_s": 53.38,
+      "gain_db": -25.5
+    }
+  ],
+  "diegetic_nat_sound_active": true
+}

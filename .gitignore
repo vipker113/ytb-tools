@@ -1,0 +1,45 @@
+# OS & Editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Python caches & virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.uv-cache/
+.uv-python/
+
+# Secrets & local user databases (NEVER commit OAuth/API keys)
+.env
+.env.*
+*.pem
+*client_secret*.json
+
+# Third-party legacy repo (Studio v6 is self-contained inside youtube-shorts-channel)
+MoneyPrinterTurbo/
+
+# Heavy ML checkpoints & raw footage (>10 GB; auto-downloaded or fetched per episode)
+youtube-shorts-channel/assets/models/
+youtube-shorts-channel/assets/raw_footage/
+
+# Heavy rendered video/audio outputs & temporary build caches (keep lightweight .md/.srt/.yaml docs)
+youtube-shorts-channel/output/**/*.mp4
+youtube-shorts-channel/output/**/*.mov
+youtube-shorts-channel/output/**/*.webm
+youtube-shorts-channel/output/**/*.mkv
+youtube-shorts-channel/output/**/*.wav
+youtube-shorts-channel/output/**/*.mp3
+youtube-shorts-channel/output/**/*.flac
+youtube-shorts-channel/output/**/*.m4a
+youtube-shorts-channel/output/**/*.png
+youtube-shorts-channel/output/**/*.jpg
+youtube-shorts-channel/output/**/shots/
+youtube-shorts-channel/output/**/work_audio/
+youtube-shorts-channel/output/**/work_clips/
+youtube-shorts-channel/output/**/.scratch_build/
+youtube-shorts-channel/output/**/voice_acceptance_tests/
+youtube-shorts-channel/output/**/.rights_verification_cache.json

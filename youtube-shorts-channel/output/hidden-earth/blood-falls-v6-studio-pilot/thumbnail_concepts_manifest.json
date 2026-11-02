@@ -1,0 +1,72 @@
+{
+  "slug": "blood-falls-v6-studio-pilot",
+  "primary_title": "Why This Antarctic Glacier Bleeds Deep Red",
+  "concepts_count": 3,
+  "comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/thumbnail_concepts_comparison_sheet.jpg",
+  "ctr_prediction_disclaimer": "Visual sharpness and subject-separation scores verify small-screen mobile legibility only. They do NOT predict real YouTube click-through or swipe-away rates; populate `actual_analytics_outcome` via `analytics_learning.py` once real YouTube Studio impressions/views are available.",
+  "concepts": [
+    {
+      "concept_id": "A",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/thumbnail_concept_A.jpg",
+      "source_asset": "bf_aerial_2013.jpg",
+      "matches_opening_scene_asset": true,
+      "headline_text": "ANTARCTICA'S|RED WATERFALL",
+      "headline_word_count": 3,
+      "kicker_text": "TAYLOR GLACIER",
+      "concept_rationale": "Matches Frame 0 opening NSF photograph; stark crimson-on-white glacier contrast legible at 160x284 mobile size.",
+      "size_kb": 1470.8,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "bf_aerial_2013.jpg",
+        "sharpness_score": 4.11,
+        "subject_separation_score": 100.47,
+        "combined_score": 57.11,
+        "recommended_cx": 0.5714,
+        "recommended_cy": 0.5902
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "B",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/thumbnail_concept_B.jpg",
+      "source_asset": "bf_2010_12_14.jpg",
+      "matches_opening_scene_asset": false,
+      "headline_text": "400M UNDER|SOLID ICE",
+      "headline_word_count": 4,
+      "kicker_text": "HIDDEN EARTH",
+      "concept_rationale": "Human-scale curiosity: USAP researcher with tripod standing directly before the rust-stained Blood Falls ice wall.",
+      "size_kb": 1847.5,
+      "jpeg_quality": 94,
+      "legibility_metrics": {
+        "source_name": "bf_2010_12_14.jpg",
+        "sharpness_score": 6.02,
+        "subject_separation_score": 60.15,
+        "combined_score": 35.79,
+        "recommended_cx": 0.4525,
+        "recommended_cy": 0.4571
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "C",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/thumbnail_concept_C.jpg",
+      "source_asset": "bf_aerial_2013.jpg",
+      "matches_opening_scene_asset": true,
+      "headline_text": "",
+      "headline_word_count": 0,
+      "kicker_text": "",
+      "concept_rationale": "Zero-text pure documentary photograph testing raw natural phenomenon curiosity on mobile Shorts shelf.",
+      "size_kb": 1633.5,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "bf_aerial_2013.jpg",
+        "sharpness_score": 4.11,
+        "subject_separation_score": 100.47,
+        "combined_score": 57.11,
+        "recommended_cx": 0.5714,
+        "recommended_cy": 0.5902
+      },
+      "actual_analytics_outcome": null
+    }
+  ]
+}

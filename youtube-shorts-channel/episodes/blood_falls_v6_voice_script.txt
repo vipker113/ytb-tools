@@ -1,0 +1,107 @@
+# Proof of Wonder — Next-Generation Voice Studio Script (v6.0 Pilot)
+# Episode: blood-falls-v6-studio-pilot
+# Profile: mysterious_discovery | Voice: en-GB-RyanNeural
+
+[SEG: N01]
+"In Antarctica's freezing Dry Valleys, a five-story waterfall pours blood-red straight out of solid glacier ice."
+
+[DELIVERY: HOOK]
+[PACE: MODERATE]
+[ENERGY: 4/5]
+[EMPHASIS: "five-story waterfall", "blood-red"]
+[PAUSE AFTER: 380ms]
+
+[SEG: N02]
+"For decades, nobody knew what fed Taylor Glacier's Blood Falls."
+
+[DELIVERY: MYSTERIOUS]
+[PACE: SLOW]
+[ENERGY: 2/5]
+[EMPHASIS: "nobody knew", "Blood Falls"]
+[PAUSE AFTER: 440ms]
+
+"Today, we know the color comes from chemistry: salty, iron-rich water hits the air and instantly rusts."
+
+[DELIVERY: CALM EXPLANATION]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "iron-rich water", "instantly rusts"]
+[PAUSE AFTER: 360ms]
+
+[SEG: N03]
+"Deep under the ice sits a trapped reservoir of hyper-salty brine—likely ancient seawater sealed off as the glacier advanced, though its full history remains under investigation."
+
+[DELIVERY: MEASURED EVIDENCE]
+[PACE: SLOW]
+[ENERGY: 3/5]
+[EMPHASIS: "trapped reservoir", "ancient seawater"]
+[PAUSE AFTER: 460ms]
+
+[SEG: N04]
+"Rust explains the color."
+
+[DELIVERY: CALM EXPLANATION]
+[PACE: SLOW]
+[ENERGY: 2/5]
+[EMPHASIS: "explains the color"]
+[PAUSE AFTER: 420ms]
+
+"What surprised researchers in 2026 was what they pulled from the freezing red mud."
+
+[DELIVERY: SURPRISED BUT CONTROLLED]
+[PACE: NATURAL]
+[ENERGY: 4/5]
+[EMPHASIS: "surprised researchers", "freezing red mud"]
+[PAUSE AFTER: 480ms]
+
+[SEG: N05]
+"Testing 167 ice, sediment, air, and ocean samples across the region, a field team uncovered a hidden community of marine microbes right at the red outflow."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[PACE: NATURAL]
+[ENERGY: 4/5]
+[EMPHASIS: "167", "hidden community", "marine microbes"]
+[PAUSE AFTER: 380ms]
+
+[SEG: N06]
+"Under the microscope were tiny ocean algae like diatoms, alongside single-celled marine drifters—living clues of past ocean connections, miles from open sea."
+
+[DELIVERY: CINEMATIC REVEAL]
+[PACE: SLOW]
+[ENERGY: 4/5]
+[EMPHASIS: "diatoms", "living clues", "miles from open sea"]
+[PAUSE AFTER: 480ms]
+
+[SEG: N07]
+"Now, that doesn't prove these exact organisms stayed trapped beneath the ice for millions of years."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[PACE: SLOW]
+[ENERGY: 2/5]
+[EMPHASIS: "doesn't prove", "millions of years"]
+[PAUSE AFTER: 380ms]
+
+"Scientists are still piecing together how they got there."
+
+[DELIVERY: CALM EXPLANATION]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "still piecing together"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N08]
+"Blood Falls isn't bleeding."
+
+[DELIVERY: CINEMATIC REVEAL]
+[PACE: SLOW]
+[ENERGY: 3/5]
+[EMPHASIS: "isn't bleeding"]
+[PAUSE AFTER: 360ms]
+
+"It's a leaking subglacial vault—showing that even beneath 400 meters of Antarctic ice, Earth holds unexpected signs of life."
+
+[DELIVERY: FINAL IMPRESSION]
+[PACE: SLOW]
+[ENERGY: 3/5]
+[EMPHASIS: "subglacial vault", "400 meters", "unexpected signs of life"]
+[PAUSE AFTER: 220ms]

@@ -1,0 +1,27 @@
+profile_id: "emotional_reflection"
+display_name: "Emotional Reflection"
+description: "Contemplative, awe-filled human perspective for cosmic scale, ancient history, and fragile Earth ecosystems."
+voice_mode: "directed_tts"
+voice_identity: "en-GB-SoniaNeural"
+accent: "en-GB"
+tone: "warm"
+emotion: "reflection"
+energy: 2
+speaking_speed: "slow"
+base_rate_pct: -4
+base_pitch_hz: -1
+default_pause_after_ms: 420
+consistency_lock: true
+max_rate_delta_pct: 8
+max_pitch_delta_hz: 2
+emphasis_strategy: "bounded_cadence_and_subtitle_highlight"
+pronunciation: {}
+sentence_delivery_presets:
+  REFLECTIVE:
+    rate_delta_pct: -4
+    pitch_delta_hz: -1
+    pause_after_ms: 520
+  FINAL_IMPRESSION:
+    rate_delta_pct: -5
+    pitch_delta_hz: -1
+    pause_after_ms: 450

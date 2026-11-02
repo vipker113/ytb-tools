@@ -1,0 +1,59 @@
+1
+00:00:00,100 --> 00:00:01,480
+Mars has barely any air.
+
+2
+00:00:01,720 --> 00:00:03,880
+So how did NASA fly a helicopter there?
+
+3
+00:00:04,180 --> 00:00:06,340
+Mars's atmosphere is only about
+
+4
+00:00:06,340 --> 00:00:09,040
+one percent as dense as Earth's.
+
+5
+00:00:09,350 --> 00:00:12,140
+That makes generating lift incredibly difficult.
+
+6
+00:00:12,450 --> 00:00:15,680
+Meet Ingenuity, a tiny aircraft weighing
+
+7
+00:00:15,860 --> 00:00:17,950
+just 1.8 kilograms.
+
+8
+00:00:18,250 --> 00:00:21,260
+Ingenuity used two counter-rotating rotors,
+
+9
+00:00:21,450 --> 00:00:24,800
+spinning at roughly 2,500 revolutions per minute,
+
+10
+00:00:25,090 --> 00:00:26,910
+to push enough air downward.
+
+11
+00:00:27,210 --> 00:00:29,490
+NASA planned just five test flights.
+
+12
+00:00:29,790 --> 00:00:33,140
+Ingenuity ended up flying 72 times.
+
+13
+00:00:33,490 --> 00:00:36,960
+A small experiment designed to prove one thing
+
+14
+00:00:37,040 --> 00:00:39,800
+became the first aircraft to achieve powered,
+
+15
+00:00:40,090 --> 00:00:42,200
+controlled flight on another planet.

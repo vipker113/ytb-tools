@@ -1,0 +1,318 @@
+{
+  "slug": "blood-falls-v6-studio-pilot",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "voice_identity": "en-GB-RyanNeural",
+  "sentence_count": 12,
+  "sentence_cache_hits": 12,
+  "supported_controls": [
+    "sentence_level_speaking_rate_bounded",
+    "sentence_level_pitch_bounded",
+    "exact_inter_sentence_pause_ms",
+    "custom_pronunciation_dictionary",
+    "emphasis_phrase_extraction_and_subtitle_onset_sync",
+    "rms_matched_cross_sentence_consistency",
+    "selective_sentence_rerender_cache"
+  ],
+  "engine_limitations": [
+    "edge-tts does not support zero-shot voice cloning from audio samples.",
+    "Azure-only <mstts:express-as> emotional style XML is rejected by the free Edge endpoint; delivery emotion is approximated cleanly via bounded human rate/pitch/pause prosody without artificial DSP stretching."
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "In Antarctica's freezing Dry Valleys, a five-story waterfall pours blood-red straight out of solid glacier ice.",
+      "delivery": "HOOK",
+      "pace": "MODERATE",
+      "energy": 4,
+      "rate": "+2%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 380,
+      "emphasis_phrases": [
+        "five-story waterfall",
+        "blood-red"
+      ],
+      "start_s": 0.1,
+      "end_s": 6.555,
+      "cache_key": "c722646fd0ef90e21b2e",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:HOOK->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "PACE:MODERATE->rate_pct=+1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N02",
+      "text": "For decades, nobody knew what fed Taylor Glacier's Blood Falls.",
+      "delivery": "MYSTERIOUS",
+      "pace": "SLOW",
+      "energy": 2,
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "nobody knew",
+        "Blood Falls"
+      ],
+      "start_s": 6.935,
+      "end_s": 10.781,
+      "cache_key": "72c713e97b3b1d766896",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "Today, we know the color comes from chemistry: salty, iron-rich water hits the air and instantly rusts.",
+      "delivery": "CALM_EXPLANATION",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "iron-rich water",
+        "instantly rusts"
+      ],
+      "start_s": 11.221,
+      "end_s": 17.394,
+      "cache_key": "0a6bc54b87596f2984ba",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N03",
+      "text": "Deep under the ice sits a trapped reservoir of hyper-salty brine\u2014likely ancient seawater sealed off as the glacier advanced, though its full history remains under investigation.",
+      "delivery": "MEASURED_EVIDENCE",
+      "pace": "SLOW",
+      "energy": 3,
+      "rate": "-5%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 460,
+      "emphasis_phrases": [
+        "trapped reservoir",
+        "ancient seawater"
+      ],
+      "start_s": 17.754,
+      "end_s": 27.631,
+      "cache_key": "140fe359342242edef33",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N04",
+      "text": "Rust explains the color.",
+      "delivery": "CALM_EXPLANATION",
+      "pace": "SLOW",
+      "energy": 2,
+      "rate": "-6%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "explains the color"
+      ],
+      "start_s": 28.091,
+      "end_s": 29.48,
+      "cache_key": "7b489a8078da94d8f3ab",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N04",
+      "text": "What surprised researchers in 2026 was what they pulled from the freezing red mud.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_after_ms": 480,
+      "emphasis_phrases": [
+        "surprised researchers",
+        "freezing red mud"
+      ],
+      "start_s": 29.9,
+      "end_s": 34.364,
+      "cache_key": "f49acce9a2b76db7b07a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N05",
+      "text": "Testing 167 ice, sediment, air, and ocean samples across the region, a field team uncovered a hidden community of marine microbes right at the red outflow.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 380,
+      "emphasis_phrases": [
+        "167",
+        "hidden community",
+        "marine microbes"
+      ],
+      "start_s": 34.844,
+      "end_s": 44.698,
+      "cache_key": "10aec53e78b192efcb35",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 7,
+      "seg_id": "N06",
+      "text": "Under the microscope were tiny ocean algae like diatoms, alongside single-celled marine drifters\u2014living clues of past ocean connections, miles from open sea.",
+      "delivery": "CINEMATIC_REVEAL",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 480,
+      "emphasis_phrases": [
+        "diatoms",
+        "living clues",
+        "miles from open sea"
+      ],
+      "start_s": 45.078,
+      "end_s": 54.661,
+      "cache_key": "144822f5d1b9a71fc5da",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 8,
+      "seg_id": "N07",
+      "text": "Now, that doesn't prove these exact organisms stayed trapped beneath the ice for millions of years.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "pace": "SLOW",
+      "energy": 2,
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 380,
+      "emphasis_phrases": [
+        "doesn't prove",
+        "millions of years"
+      ],
+      "start_s": 55.141,
+      "end_s": 60.517,
+      "cache_key": "bf67934ee966863bd62a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 9,
+      "seg_id": "N07",
+      "text": "Scientists are still piecing together how they got there.",
+      "delivery": "CALM_EXPLANATION",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "still piecing together"
+      ],
+      "start_s": 60.897,
+      "end_s": 63.776,
+      "cache_key": "4e3a0c6c3a172a4e3d52",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 10,
+      "seg_id": "N08",
+      "text": "Blood Falls isn't bleeding.",
+      "delivery": "CINEMATIC_REVEAL",
+      "pace": "SLOW",
+      "energy": 3,
+      "rate": "-5%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "isn't bleeding"
+      ],
+      "start_s": 64.196,
+      "end_s": 65.67,
+      "cache_key": "46a240682a6665ac1317",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 11,
+      "seg_id": "N08",
+      "text": "It's a leaking subglacial vault\u2014showing that even beneath 400 meters of Antarctic ice, Earth holds unexpected signs of life.",
+      "delivery": "FINAL_IMPRESSION",
+      "pace": "SLOW",
+      "energy": 3,
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 220,
+      "emphasis_phrases": [
+        "subglacial vault",
+        "400 meters",
+        "unexpected signs of life"
+      ],
+      "start_s": 66.03,
+      "end_s": 73.85,
+      "cache_key": "904c4c704a1be6b9243a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:FINAL_IMPRESSION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=380ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ]
+}

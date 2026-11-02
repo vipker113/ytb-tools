@@ -1,0 +1,343 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 3.441,
+    "word_end_s": 3.216,
+    "next_word_start_s": 4.052,
+    "pause_s": 0.836,
+    "kind": "breath_pause",
+    "after_word": "you"
+  },
+  {
+    "time_s": 6.219,
+    "word_end_s": 6.115,
+    "next_word_start_s": 6.322,
+    "pause_s": 0.207,
+    "kind": "breath_pause",
+    "after_word": "places"
+  },
+  {
+    "time_s": 8.332,
+    "word_end_s": 8.142,
+    "next_word_start_s": 8.522,
+    "pause_s": 0.38,
+    "kind": "breath_pause",
+    "after_word": "completely"
+  },
+  {
+    "time_s": 10.24,
+    "word_end_s": 10.13,
+    "next_word_start_s": 10.35,
+    "pause_s": 0.22,
+    "kind": "breath_pause",
+    "after_word": "reactor"
+  },
+  {
+    "time_s": 13.823,
+    "word_end_s": 13.598,
+    "next_word_start_s": 14.442,
+    "pause_s": 0.844,
+    "kind": "breath_pause",
+    "after_word": "life"
+  },
+  {
+    "time_s": 17.285,
+    "word_end_s": 17.187,
+    "next_word_start_s": 17.383,
+    "pause_s": 0.196,
+    "kind": "breath_pause",
+    "after_word": "rust-red"
+  },
+  {
+    "time_s": 19.747,
+    "word_end_s": 19.589,
+    "next_word_start_s": 19.905,
+    "pause_s": 0.316,
+    "kind": "breath_pause",
+    "after_word": "Forest"
+  },
+  {
+    "time_s": 21.16,
+    "word_end_s": 21.061,
+    "next_word_start_s": 21.259,
+    "pause_s": 0.198,
+    "kind": "breath_pause",
+    "after_word": "vanished"
+  },
+  {
+    "time_s": 22.833,
+    "word_end_s": 22.608,
+    "next_word_start_s": 23.462,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "back"
+  },
+  {
+    "time_s": 24.414,
+    "word_end_s": 24.315,
+    "next_word_start_s": 24.513,
+    "pause_s": 0.198,
+    "kind": "breath_pause",
+    "after_word": "wolves"
+  },
+  {
+    "time_s": 25.435,
+    "word_end_s": 25.343,
+    "next_word_start_s": 25.528,
+    "pause_s": 0.185,
+    "kind": "breath_pause",
+    "after_word": "horses"
+  },
+  {
+    "time_s": 29.478,
+    "word_end_s": 29.303,
+    "next_word_start_s": 29.653,
+    "pause_s": 0.35,
+    "kind": "breath_pause",
+    "after_word": "reserves"
+  },
+  {
+    "time_s": 30.522,
+    "word_end_s": 30.436,
+    "next_word_start_s": 30.608,
+    "pause_s": 0.172,
+    "kind": "breath_pause",
+    "after_word": "stranger"
+  },
+  {
+    "time_s": 35.649,
+    "word_end_s": 35.424,
+    "next_word_start_s": 36.268,
+    "pause_s": 0.844,
+    "kind": "breath_pause",
+    "after_word": "radiation"
+  },
+  {
+    "time_s": 37.88,
+    "word_end_s": 37.788,
+    "next_word_start_s": 37.972,
+    "pause_s": 0.184,
+    "kind": "breath_pause",
+    "after_word": "pigment"
+  },
+  {
+    "time_s": 40.779,
+    "word_end_s": 40.594,
+    "next_word_start_s": 40.963,
+    "pause_s": 0.369,
+    "kind": "breath_pause",
+    "after_word": "energy"
+  },
+  {
+    "time_s": 42.319,
+    "word_end_s": 42.213,
+    "next_word_start_s": 42.424,
+    "pause_s": 0.211,
+    "kind": "breath_pause",
+    "after_word": "France"
+  },
+  {
+    "time_s": 45.384,
+    "word_end_s": 45.159,
+    "next_word_start_s": 46.012,
+    "pause_s": 0.853,
+    "kind": "breath_pause",
+    "after_word": "reason"
+  },
+  {
+    "time_s": 47.937,
+    "word_end_s": 47.832,
+    "next_word_start_s": 48.042,
+    "pause_s": 0.21,
+    "kind": "breath_pause",
+    "after_word": "visitors"
+  },
+  {
+    "time_s": 49.144,
+    "word_end_s": 48.983,
+    "next_word_start_s": 49.305,
+    "pause_s": 0.322,
+    "kind": "breath_pause",
+    "after_word": "poison"
+  },
+  {
+    "time_s": 50.891,
+    "word_end_s": 50.81,
+    "next_word_start_s": 50.971,
+    "pause_s": 0.161,
+    "kind": "breath_pause",
+    "after_word": "years"
+  },
+  {
+    "time_s": 53.811,
+    "word_end_s": 53.706,
+    "next_word_start_s": 53.916,
+    "pause_s": 0.21,
+    "kind": "breath_pause",
+    "after_word": "cool"
+  },
+  {
+    "time_s": 55.329,
+    "word_end_s": 55.104,
+    "next_word_start_s": 55.958,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "air"
+  },
+  {
+    "time_s": 57.189,
+    "word_end_s": 57.096,
+    "next_word_start_s": 57.282,
+    "pause_s": 0.186,
+    "kind": "breath_pause",
+    "after_word": "in"
+  },
+  {
+    "time_s": 58.179,
+    "word_end_s": 58.062,
+    "next_word_start_s": 58.297,
+    "pause_s": 0.235,
+    "kind": "breath_pause",
+    "after_word": "breath"
+  },
+  {
+    "time_s": 58.977,
+    "word_end_s": 58.866,
+    "next_word_start_s": 59.089,
+    "pause_s": 0.223,
+    "kind": "breath_pause",
+    "after_word": "heat"
+  },
+  {
+    "time_s": 61.802,
+    "word_end_s": 61.577,
+    "next_word_start_s": 62.431,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "art"
+  },
+  {
+    "time_s": 66.288,
+    "word_end_s": 66.119,
+    "next_word_start_s": 66.458,
+    "pause_s": 0.339,
+    "kind": "breath_pause",
+    "after_word": "nearby"
+  },
+  {
+    "time_s": 67.633,
+    "word_end_s": 67.505,
+    "next_word_start_s": 67.762,
+    "pause_s": 0.257,
+    "kind": "breath_pause",
+    "after_word": "coast"
+  },
+  {
+    "time_s": 70.942,
+    "word_end_s": 70.85,
+    "next_word_start_s": 71.034,
+    "pause_s": 0.184,
+    "kind": "breath_pause",
+    "after_word": "purpose"
+  },
+  {
+    "time_s": 72.215,
+    "word_end_s": 71.99,
+    "next_word_start_s": 72.835,
+    "pause_s": 0.845,
+    "kind": "breath_pause",
+    "after_word": "creation"
+  },
+  {
+    "time_s": 76.125,
+    "word_end_s": 75.996,
+    "next_word_start_s": 76.254,
+    "pause_s": 0.258,
+    "kind": "breath_pause",
+    "after_word": "sixty-three"
+  },
+  {
+    "time_s": 79.015,
+    "word_end_s": 78.79,
+    "next_word_start_s": 79.636,
+    "pause_s": 0.846,
+    "kind": "breath_pause",
+    "after_word": "immediately"
+  },
+  {
+    "time_s": 82.062,
+    "word_end_s": 81.952,
+    "next_word_start_s": 82.173,
+    "pause_s": 0.221,
+    "kind": "breath_pause",
+    "after_word": "boots"
+  },
+  {
+    "time_s": 84.642,
+    "word_end_s": 84.538,
+    "next_word_start_s": 84.746,
+    "pause_s": 0.208,
+    "kind": "breath_pause",
+    "after_word": "ash"
+  },
+  {
+    "time_s": 85.873,
+    "word_end_s": 85.702,
+    "next_word_start_s": 86.043,
+    "pause_s": 0.341,
+    "kind": "breath_pause",
+    "after_word": "out"
+  },
+  {
+    "time_s": 88.652,
+    "word_end_s": 88.551,
+    "next_word_start_s": 88.753,
+    "pause_s": 0.202,
+    "kind": "breath_pause",
+    "after_word": "gulls"
+  },
+  {
+    "time_s": 91.478,
+    "word_end_s": 91.253,
+    "next_word_start_s": 92.125,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "green"
+  },
+  {
+    "time_s": 94.245,
+    "word_end_s": 94.157,
+    "next_word_start_s": 94.334,
+    "pause_s": 0.177,
+    "kind": "breath_pause",
+    "after_word": "harmless"
+  },
+  {
+    "time_s": 98.328,
+    "word_end_s": 98.16,
+    "next_word_start_s": 98.495,
+    "pause_s": 0.335,
+    "kind": "breath_pause",
+    "after_word": "balance"
+  },
+  {
+    "time_s": 101.677,
+    "word_end_s": 101.452,
+    "next_word_start_s": 102.324,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "alive"
+  },
+  {
+    "time_s": 106.7,
+    "word_end_s": 106.377,
+    "next_word_start_s": 106.7,
+    "pause_s": 0.323,
+    "kind": "segment_end",
+    "after_word": "everything"
+  }
+]

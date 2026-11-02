@@ -1,0 +1,703 @@
+channel_name: "Proof of Wonder"
+playlist: "Hidden Earth"
+slug: "brine-pools-v4-documentary"
+style_profile: "pow_documentary_v3"
+
+primary_title: "How Can a Deadly Lake Exist at the Bottom of the Ocean?"
+alternative_title: "Why Waves Roll Across Deadly Lakes Under the Deep Sea"
+
+youtube_description: |
+  More than a kilometer down on the pitch-black ocean floor, deep-sea ROVs cross an eerie shoreline—into an underwater lake complete with rolling ripples and dark seabed streams.
+
+  Known as deep-sea brine pools, these basins form where buried ancient salt layers beneath regions like the Gulf of Mexico and the Red Sea dissolve into hypersaline water up to eight times saltier than normal seawater. Too dense to mix with overlying ocean water, the brine settles into seafloor depressions behind a razor-sharp density interface, trapping methane and sulfur compounds with zero dissolved oxygen.
+
+  While crabs or fish that stray into the anoxic brine can be rapidly stunned, dense beds of chemosynthetic mussels and tubeworms thrive along the rim without sunlight. In 2022, researchers exploring 1,770 meters down in the Red Sea's Gulf of Aqaba recovered intact sediment cores from undisturbed brine pools preserving over 1,000 years of regional earthquakes, flash floods, and tsunamis (Purkis et al., Communications Earth & Environment, 2022). Scientists also study these extreme chemical interfaces as Earth analogs for ocean worlds such as Europa—though that does not prove life exists beyond Earth.
+
+hashtags:
+  - "#DeepSea"
+  - "#OceanScience"
+  - "#BrinePool"
+  - "#Geology"
+  - "#MarineBiology"
+  - "#HiddenEarth"
+
+target_duration_min_s: 62.0
+target_duration_max_s: 88.0
+voice: "en-GB-RyanNeural"
+ambience_preset: "deep_ocean"
+ambience_ducked_lufs_target: -25.0
+nat_sound_bed_file: "noaa_pmel_seafloor_tremor.wav"
+nat_sound_bed_range_s: [1.0, 74.0]
+nat_sound_gain_db: -17.5
+
+raw_assets_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/hidden_earth_brine_pools_v4"
+extra_assets_dirs:
+  - "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/hidden_earth_brine_pools_20261029"
+output_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/brine-pools-v4-documentary"
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N06"
+  scientific_caveat_seg_id: "N07"
+  min_real_evidence_ratio: 0.90
+
+thumbnail_spec:
+  src_file: "noaa_2018_gom_brine_pool.jpg"
+  headline_text: "A DEADLY LAKE|UNDER THE OCEAN"
+  kicker_text: "1,770M DEEP • ZERO OXYGEN"
+  accent_line_index: 1
+  accent_rgb: [255, 212, 59]
+  clarity_boost: true
+  alt_headlines:
+    - "AN OCEAN LAKE|8X TOO TOXIC"
+    - "WAVES & SHORES|ON THE SEAFLOOR"
+  cx: 0.45
+  cy: 0.55
+  zoom: 1.06
+  text_position: "top"
+
+narration_segments:
+  - seg_id: "N01"
+    text: "A kilometer down on the pitch-black ocean floor, deep-sea cameras cross a literal shoreline—into an underwater lake."
+    rate: "+3%"
+    pitch: "+0Hz"
+    pause_after_s: 0.22
+  - seg_id: "N02"
+    text: "Waves ripple across its mirror-like surface, while dark streams pour down the seabed slope."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N03"
+    text: "Its secret is buried ancient salt. Dissolving beneath the Gulf of Mexico and the Red Sea, it creates brine up to eight times saltier than seawater."
+    rate: "+0%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N04"
+    text: "Too heavy to mix, that dense brine pools in seafloor basins—trapping toxic methane and sulfur with zero oxygen."
+    rate: "+0%"
+    pitch: "+0Hz"
+    pause_after_s: 0.28
+  - seg_id: "N05"
+    text: "Any crab or fish that strays across the rim suffers instant anoxic shock. Yet dense beds of mussels and tubeworms thrive right along that deadly edge."
+    rate: "+2%"
+    pitch: "+1Hz"
+    pause_after_s: 0.25
+  - seg_id: "N06"
+    text: "In 2022, scientists dove 1,770 meters into the Red Sea—and pulled mud cores from untouched brine pools. Without burrowing animals, those layers preserve a thousand years of earthquakes and tsunamis."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N07"
+    text: "Researchers also test these chemical boundaries as stand-ins for icy moons like Europa. Of course, that doesn't prove life exists beyond Earth."
+    rate: "-2%"
+    pitch: "-1Hz"
+    pause_after_s: 0.28
+  - seg_id: "N08"
+    text: "Deep-sea brine pools aren't alien portals. They're toxic underwater lakes—recording Earth's violent past and fueling life in total darkness."
+    rate: "-1%"
+    pitch: "-1Hz"
+    pause_after_s: 0.26
+
+sfx_cues:
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.04
+    gain_db: -25.5
+  - sfx_name: "hydrophone_current_swell"
+    anchor_type: "shot_start"
+    anchor_ref: "S03"
+    offset_s: 0.08
+    gain_db: -25.0
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S05"
+    offset_s: 0.06
+    gain_db: -26.5
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S11"
+    offset_s: 0.05
+    gain_db: -26.0
+  - sfx_name: "microscope_slide_click"
+    anchor_type: "shot_start"
+    anchor_ref: "S15"
+    offset_s: 0.05
+    gain_db: -25.5
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 2.482
+    kind: "video_full"
+    src_file: "noaa_rov_cold_seeps_1080p.mp4"
+    src_in: 250.30
+    cx0: 0.52
+    cy0: 0.52
+    cx1: 0.48
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.05
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "A kilometer down on the pitch-black ocean floor,"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Instant 0.0s live 1080p ROV searchlights crossing Gulf of Mexico brine shoreline"
+    visual_desc: "Live 1080p NOAA ROV Deep Discoverer sweeping searchlights across the curved dark Gulf of Mexico brine lake shoreline in pitch-black water."
+
+  - sid: "S02"
+    start_s: 2.482
+    end_s: 6.476
+    kind: "still_full"
+    src_file: "noaa_2018_gom_brine_pool.jpg"
+    cx0: 0.45
+    cy0: 0.54
+    cx1: 0.48
+    cy1: 0.55
+    z0: 1.04
+    z1: 1.07
+    transition_in: "cut"
+    transition_reason: "Clean breath-pause cut after 'floor' to reveal the razor-sharp brine shoreline"
+    is_real_evidence: true
+    associated_narration_concept: "deep-sea cameras cross a literal shoreline—into an underwater lake."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Gulf of Mexico brine lake shoreline & mirror-dark surface"
+    visual_desc: "Full-bleed 9:16 NOAA ROV photograph of the Gulf of Mexico brine lake shoreline and dense mirror-dark brine surface."
+
+  - sid: "S03"
+    start_s: 6.476
+    end_s: 11.662
+    kind: "video_full"
+    src_file: "noaa_seepscapes_720p.mp4"
+    src_in: 77.20
+    cx0: 0.50
+    cy0: 0.54
+    cx1: 0.48
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'lake.' into live underwater brine stream"
+    is_real_evidence: true
+    associated_narration_concept: "Waves ripple across its mirror-like surface, while dark streams pour down the seabed slope."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Real dark hypersaline underwater stream pouring down seabed slope"
+    visual_desc: "Live NOAA ROV footage of a dense dark hypersaline brine stream pouring down the pale seabed slope."
+
+  - sid: "S04"
+    start_s: 11.662
+    end_s: 13.892
+    kind: "video_full"
+    src_file: "noaa_okeanos_control_room_720p.mp4"
+    src_in: 196.80
+    cx0: 0.52
+    cy0: 0.48
+    cx1: 0.48
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'slope.' to NOAA scientists in ROV control room"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Its secret is buried ancient salt."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NOAA Okeanos Explorer oceanographers inside ROV mission-control room"
+    visual_desc: "NOAA oceanographers inside the dark glowing Okeanos Explorer control room operating deep-sea ROV telemetry."
+
+  - sid: "S05"
+    start_s: 13.892
+    end_s: 17.423
+    kind: "diagram"
+    src_file: "brine_pool_cutaway_v4.mp4"
+    src_in: 0.40
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Motivated dissolve across sentence pause into subsurface geological cross-section"
+    is_real_evidence: false
+    associated_narration_concept: "Dissolving beneath the Gulf of Mexico and the Red Sea,"
+    subject_match_kind: "illustrative_diagram"
+    scientific_claim_status: "illustrative_visualization"
+    story_beat: "Photo-textured geological cross-section of buried salt dissolution"
+    visual_desc: "Full-bleed photo-textured geological cross-section showing buried ancient salt dissolving upward into a seafloor basin."
+
+  - sid: "S06"
+    start_s: 17.423
+    end_s: 20.721
+    kind: "video_full"
+    src_file: "noaa_dive14_sampling_720p.mp4"
+    src_in: 62.10
+    cx0: 0.52
+    cy0: 0.54
+    cx1: 0.48
+    cy1: 0.52
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'Sea,' back to live ROV robotic arm sampling seafloor"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "it creates brine up to eight times saltier than seawater."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "ROV Deep Discoverer hydraulic arm sampling hypersaline seep crust"
+    visual_desc: "Live NOAA ROV hydraulic manipulator arm probing and sampling the seafloor seep crust."
+
+  - sid: "S07"
+    start_s: 20.721
+    end_s: 24.427
+    kind: "video_full"
+    src_file: "noaa_seepscapes_720p.mp4"
+    src_in: 35.20
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'seawater.' to dense circular seafloor brine basin"
+    is_real_evidence: true
+    associated_narration_concept: "Too heavy to mix, that dense brine pools in seafloor basins—"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Dark ink-blue circular seafloor brine pool basin"
+    visual_desc: "Live NOAA ROV hovering over a dark ink-blue circular hypersaline brine pool in a seafloor depression."
+
+  - sid: "S08"
+    start_s: 24.427
+    end_s: 27.837
+    kind: "video_full"
+    src_file: "noaa_ex1903_new_seep_1080p.mp4"
+    src_in: 38.20
+    cx0: 0.52
+    cy0: 0.52
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Em-dash breath cut after 'basins' to active seafloor methane & sulfur vent pit"
+    is_real_evidence: true
+    associated_narration_concept: "trapping toxic methane and sulfur with zero oxygen."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Active seafloor sulfur-mat pit venting toxic methane bubbles"
+    visual_desc: "Live NOAA ROV close-up of a dark seafloor pit lined with white sulfur bacterial mat venting methane gas bubbles."
+
+  - sid: "S09"
+    start_s: 27.837
+    end_s: 32.019
+    kind: "video_full"
+    src_file: "noaa_ex1711_cuskeel.mp4"
+    src_in: 9.50
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.48
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.05
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'oxygen.' to 1080p deep-sea fish at the brine rim"
+    is_real_evidence: true
+    associated_narration_concept: "Any crab or fish that strays across the rim suffers instant anoxic shock."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1080p Gulf of Mexico Brine Pool dive cusk eel along the anoxic margin"
+    visual_desc: "Live 1080p NOAA ROV footage of a deep-sea cusk eel hovering just above the dark Gulf of Mexico brine-pool margin."
+
+  - sid: "S10"
+    start_s: 32.019
+    end_s: 36.668
+    kind: "video_full"
+    src_file: "noaa_rov_cold_seeps_1080p.mp4"
+    src_in: 367.50
+    cx0: 0.50
+    cy0: 0.54
+    cx1: 0.53
+    cy1: 0.52
+    z0: 1.03
+    z1: 1.05
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'shock.' to thriving crabs & mussel beds along the rim"
+    is_real_evidence: true
+    associated_narration_concept: "Yet dense beds of mussels and tubeworms thrive right along that deadly edge."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Deep-sea crabs and dense chemosynthetic mussel beds thriving on the rim"
+    visual_desc: "Live 1080p NOAA ROV footage of deep-sea crabs crawling across dense chemosynthetic mussel beds along the brine rim."
+
+  - sid: "S11"
+    start_s: 36.668
+    end_s: 42.380
+    kind: "video_full"
+    src_file: "noaa_dive14_sampling_720p.mp4"
+    src_in: 98.40
+    cx0: 0.52
+    cy0: 0.48
+    cx1: 0.48
+    cy1: 0.48
+    z0: 1.03
+    z1: 1.05
+    transition_in: "cut"
+    transition_reason: "Layer-2 research pivot cut after 'edge.' to marine expedition scientists recovering ROV sample"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "In 2022, scientists dove 1,770 meters into the Red Sea—"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NOAA expedition marine scientists in hard hats & gloves lifting recovered seafloor sample off ROV"
+    visual_desc: "Real expedition footage of two marine scientists in blue hard hats and gloves lifting a recovered deep-sea crust sample off the ROV basket."
+
+  - sid: "S12"
+    start_s: 42.380
+    end_s: 45.414
+    kind: "video_full"
+    src_file: "noaa_boxcore_scientists_720p.mp4"
+    src_in: 16.20
+    cx0: 0.48
+    cy0: 0.54
+    cx1: 0.48
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Em-dash breath cut after 'Sea—' to sediment corer plunging into the sea"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "and pulled mud cores from untouched brine pools."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Deep-sea sediment box corer plunging into ocean water on steel cable"
+    visual_desc: "Real oceanography fieldwork footage of a yellow seafloor sediment box corer plunging into dark ocean water."
+
+  - sid: "S13"
+    start_s: 45.414
+    end_s: 47.453
+    kind: "video_full"
+    src_file: "noaa_ex1903_new_seep_1080p.mp4"
+    src_in: 18.20
+    cx0: 0.50
+    cy0: 0.54
+    cx1: 0.52
+    cy1: 0.52
+    z0: 1.03
+    z1: 1.05
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'pools.' to abyssal seabed floor"
+    is_real_evidence: true
+    associated_narration_concept: "Without burrowing animals,"
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Wide ROV glide over deep-sea mussel bed and dark seabed"
+    visual_desc: "Live NOAA ROV wide glide over a deep-blue abyssal seabed and chemosynthetic shell bed."
+
+  - sid: "S14"
+    start_s: 47.453
+    end_s: 51.042
+    kind: "video_full"
+    src_file: "noaa_boxcore_scientists_720p.mp4"
+    src_in: 95.80
+    cx0: 0.52
+    cy0: 0.50
+    cx1: 0.48
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'animals,' to orange-gloved oceanographer washing seafloor sediment sample"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "those layers preserve a thousand years of earthquakes and tsunamis."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Upright close-up of orange-gloved oceanographer processing dark seafloor mud sample"
+    visual_desc: "Hands-on upright fieldwork close-up of an oceanographer in orange gloves washing dark seafloor mud in a geological sample sieve."
+
+  - sid: "S15"
+    start_s: 51.042
+    end_s: 56.349
+    kind: "video_full"
+    src_file: "noaa_wetlab_scientists_1080p.mp4"
+    src_in: 38.42
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.05
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'tsunamis.' to 1080p shipboard wet-lab specimen inspection"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Researchers also test these chemical boundaries as stand-ins for icy moons like Europa."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "contextual_observation"
+    story_beat: "1080p gloved marine scientist examining recovered deep-sea specimen in wet lab"
+    visual_desc: "1080p close-up of gloved marine scientist hands examining a recovered deep-sea specimen inside the shipboard wet lab."
+
+  - sid: "S16"
+    start_s: 56.349
+    end_s: 60.389
+    kind: "video_full"
+    src_file: "noaa_rov_seep_bubbles_1080p.mp4"
+    src_in: 18.00
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.05
+    transition_in: "cut"
+    transition_reason: "Caveat sentence cut after 'Europa.' to dark abyssal seep terrain"
+    is_real_evidence: true
+    associated_narration_concept: "Of course, that doesn't prove life exists beyond Earth."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "unresolved_question"
+    story_beat: "1080p dark abyssal cold-seep carbonate terrain during scientific caveat"
+    visual_desc: "Live 1080p NOAA ROV glide across dark cold-seep carbonate rock in pitch-black ocean water."
+
+  - sid: "S17"
+    start_s: 60.389
+    end_s: 63.288
+    kind: "still_full"
+    src_file: "ifremer_napoli_brine_lake_2.jpg"
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.53
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.06
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Motivated dissolve into final synthesis across calm brine shoreline"
+    is_real_evidence: true
+    associated_narration_concept: "Deep-sea brine pools aren't alien portals."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Ifremer ROV Victor 6000 wide view of deep-sea brine lake shoreline"
+    visual_desc: "Full-bleed Ifremer ROV photograph looking across a mirror-calm deep-sea brine lake and shoreline."
+
+  - sid: "S18"
+    start_s: 63.288
+    end_s: 69.700
+    kind: "video_full"
+    src_file: "noaa_rov_seep_bubbles_1080p.mp4"
+    src_in: 4.20
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.48
+    cy1: 0.54
+    z0: 1.03
+    z1: 1.05
+    transition_in: "cut"
+    transition_reason: "Final sentence cut after 'portals.' into 1080p abyssal seep bubbles looping seamlessly to S01"
+    is_real_evidence: true
+    associated_narration_concept: "They're toxic underwater lakes—recording Earth's violent past and fueling life in total darkness."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Closing 1080p abyssal seafloor seep crust looping cleanly to Frame 0"
+    visual_desc: "Live 1080p NOAA ROV glide over dark seafloor carbonate crust and rising seep bubbles, matching S01 abyssal lighting for seamless Short auto-loop."
+
+caption_groups:
+  # N01 (18 words: 0..17)
+  - { seg_id: "N01", first_word_idx: 0, last_word_idx: 7, text: "A kilometer down on the pitch-black ocean floor," }
+  - { seg_id: "N01", first_word_idx: 8, last_word_idx: 13, text: "deep-sea cameras cross a literal shoreline—" }
+  - { seg_id: "N01", first_word_idx: 14, last_word_idx: 17, text: "into an underwater lake." }
+  # N02 (14 words: 0..13)
+  - { seg_id: "N02", first_word_idx: 0, last_word_idx: 5, text: "Waves ripple across its mirror-like surface," }
+  - { seg_id: "N02", first_word_idx: 6, last_word_idx: 13, text: "while dark streams pour down the seabed slope." }
+  # N03 (26 words: 0..25)
+  - { seg_id: "N03", first_word_idx: 0, last_word_idx: 5, text: "Its secret is buried ancient salt." }
+  - { seg_id: "N03", first_word_idx: 6, last_word_idx: 15, text: "Dissolving beneath the Gulf of Mexico and the Red Sea," }
+  - { seg_id: "N03", first_word_idx: 16, last_word_idx: 25, text: "it creates brine up to eight times saltier than seawater." }
+  # N04 (19 words: 0..18)
+  - { seg_id: "N04", first_word_idx: 0, last_word_idx: 10, text: "Too heavy to mix, that dense brine pools in seafloor basins—" }
+  - { seg_id: "N04", first_word_idx: 11, last_word_idx: 18, text: "trapping toxic methane and sulfur with zero oxygen." }
+  # N05 (26 words: 0..25)
+  - { seg_id: "N05", first_word_idx: 0, last_word_idx: 8, text: "Any crab or fish that strays across the rim" }
+  - { seg_id: "N05", first_word_idx: 9, last_word_idx: 12, text: "suffers instant anoxic shock." }
+  - { seg_id: "N05", first_word_idx: 13, last_word_idx: 19, text: "Yet dense beds of mussels and tubeworms" }
+  - { seg_id: "N05", first_word_idx: 20, last_word_idx: 25, text: "thrive right along that deadly edge." }
+  # N06 (30 words: 0..29)
+  - { seg_id: "N06", first_word_idx: 0, last_word_idx: 8, text: "In 2022, scientists dove 1,770 meters into the Red Sea—" }
+  - { seg_id: "N06", first_word_idx: 9, last_word_idx: 16, text: "and pulled mud cores from untouched brine pools." }
+  - { seg_id: "N06", first_word_idx: 17, last_word_idx: 19, text: "Without burrowing animals," }
+  - { seg_id: "N06", first_word_idx: 20, last_word_idx: 29, text: "those layers preserve a thousand years of earthquakes and tsunamis." }
+  # N07 (22 words: 0..21)
+  - { seg_id: "N07", first_word_idx: 0, last_word_idx: 5, text: "Researchers also test these chemical boundaries" }
+  - { seg_id: "N07", first_word_idx: 6, last_word_idx: 12, text: "as stand-ins for icy moons like Europa." }
+  - { seg_id: "N07", first_word_idx: 13, last_word_idx: 21, text: "Of course, that doesn't prove life exists beyond Earth." }
+  # N08 (20 words: 0..19)
+  - { seg_id: "N08", first_word_idx: 0, last_word_idx: 5, text: "Deep-sea brine pools aren't alien portals." }
+  - { seg_id: "N08", first_word_idx: 6, last_word_idx: 9, text: "They're toxic underwater lakes—" }
+  - { seg_id: "N08", first_word_idx: 10, last_word_idx: 19, text: "recording Earth's violent past and fueling life in total darkness." }
+
+assets_register:
+  - local_file: "noaa_2018_gom_brine_pool.jpg"
+    title: "2018 Gulf of Mexico Brine Pool at 1,067 Meters Depth (ROV Deep Discoverer)"
+    creator_agency: "NOAA Office of Ocean Exploration and Research (Gulf of Mexico 2018)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:2018_Gulf_of_Mexico_Brine_Pool.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/8/89/2018_Gulf_of_Mexico_Brine_Pool.jpg"
+    license: "Public Domain"
+    license_url: "https://creativecommons.org/publicdomain/mark/1.0/"
+    required_attribution: "NOAA Office of Ocean Exploration and Research (Public Domain)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "ifremer_napoli_brine_lake_2.jpg"
+    title: "Volcan Napoli et ses lacs de saumure (Ifremer 00577-68902 - 27843)"
+    creator_agency: "Ifremer / MEDECO 2007 Campaign (ROV Victor 6000)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Volcan_Napoli_et_ses_lacs_de_saumure_(Ifremer_00577-68902_-_27843).jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/d/db/Volcan_Napoli_et_ses_lacs_de_saumure_%28Ifremer_00577-68902_-_27843%29.jpg"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Ifremer / MEDECO 2007 (ROV Victor 6000), CC BY 4.0"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "noaa_rov_cold_seeps_1080p.mp4"
+    title: "NOAA Ocean Exploration Deep-Sea Cold Seeps & Brine Pool ROV Footage (Pure NOAA Okeanos Windows)"
+    creator_agency: "NOAA Office of Ocean Exploration and Research (U.S. Federal Government)"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/edu-resources-dsd-cold-seeps/attachment/16425/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2023/03/cold-seeps-1920x1080-1.mp4"
+    license: "Public Domain"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Courtesy of NOAA Ocean Exploration (Public Domain; pure NOAA Okeanos Explorer windows t=250.3–252.8s & t=367.5–372.2s)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "noaa_seepscapes_720p.mp4"
+    title: "NOAA Ocean Exploration Gulf of Mexico Seepscapes — Brine Pools & Underwater Brine Rivers"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/video-playlist-seeps-seepscapes/attachment/14859/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2018/05/seepscapes-1280x720-1.mp4"
+    license: "Public Domain"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "noaa_okeanos_control_room_720p.mp4"
+    title: "Tour of NOAA Ship Okeanos Explorer — ROV Mission Control Room & Scientists"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://oceanexplorer.noaa.gov/technology/noaa-ship-okeanos-explorer/attachment/16360/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2017/08/tour-1280x720-1.mp4"
+    license: "Public Domain"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "noaa_dive14_sampling_720p.mp4"
+    title: "NOAA Ocean Exploration — Deep-Sea ROV Sampling Showcase & Shipboard Scientists"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/sampling-showcase/dive14-sampling-showcase/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/09/dive14-sampling-showcase.mp4"
+    license: "Public Domain"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "noaa_ex1711_cuskeel.mp4"
+    title: "NOAA Ship Okeanos Explorer EX1711 Gulf of Mexico Brine Pool Dive — Cusk Eel"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/video-shorts-ex1711-cuskeel/attachment/12743/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/02/ex1711-cuskeel.mp4"
+    license: "Public Domain"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "noaa_boxcore_scientists_720p.mp4"
+    title: "NOAA Ocean Exploration — Deploying & Sampling a Deep-Sea Sediment Box Corer"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/video-playlist-technology-box/attachment/11276/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2018/05/boxcore_1280x720.mp4"
+    license: "Public Domain"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "noaa_wetlab_scientists_1080p.mp4"
+    title: "NOAA Ocean Exploration — Marine Scientists Examining Recovered Deep-Sea Specimen in Shipboard Wet Lab"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/mysterious-golden-orb-identified/mysterious-golden-orb-identified-1080p/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2026/04/Mysterious-Golden-Orb-Identified-1080p.mp4"
+    license: "Public Domain"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "noaa_ex1903_new_seep_1080p.mp4"
+    title: "NOAA Ship Okeanos Explorer EX1903 Windows to the Deep 2019: New Cold Seep & Methane Plume"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/video-playlist-ex1903-new-seep/attachment/14834/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2019/07/new-seep-1920x1080-1.mp4"
+    license: "Public Domain"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Courtesy of NOAA Office of Ocean Exploration and Research (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "noaa_rov_seep_bubbles_1080p.mp4"
+    title: "NOAA Ship Okeanos Explorer EX2304 — Deep-Sea Cold Seep Carbonate Crust & Rising Gas Bubbles"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://oceanexplorer.noaa.gov/multimedia/video-playlist-ex2304-bubbles/attachment/4404/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/wp-content/uploads/2023/09/dive04-follow-bubbles-1920x1080-1.mp4"
+    license: "Public Domain"
+    license_url: "https://oceanexplorer.noaa.gov/disclaimer.html"
+    required_attribution: "Courtesy of NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "noaa_pmel_seafloor_tremor.wav"
+    title: "NOAA PMEL Acoustic Monitoring Program — Seafloor Hydrophone Recording (tremorx16.wav)"
+    creator_agency: "NOAA Pacific Marine Environmental Laboratory (PMEL)"
+    source_page_url: "https://www.pmel.noaa.gov/acoustics/sounds.html"
+    direct_media_url: "https://www.pmel.noaa.gov/acoustics/sounds/tremorx16.wav"
+    license: "Public Domain"
+    license_url: "https://www.noaa.gov/disclaimer"
+    required_attribution: "NOAA PMEL Acoustic Monitoring Program (Public Domain)"
+    media_type: "audio"
+    priority_tier: 4
+
+  - local_file: "brine_pool_cutaway_v4.mp4"
+    title: "Photo-Textured Geological Cross-Section of Subsurface Salt Dissolution & Seafloor Brine Pool"
+    creator_agency: "Proof of Wonder Studio v4.0 (First-Party Original Graphic using NOAA Public Domain Seafloor Texture)"
+    source_page_url: "First-party programmatic scientific visualization (pipeline/generate_brine_pool_diagram.py)"
+    direct_media_url: "local://assets/raw_footage/hidden_earth_brine_pools_v4/brine_pool_cutaway_v4.mp4"
+    license: "100% Original First-Party Graphic"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "Original illustrative diagram created in-house for Proof of Wonder (incorporating NOAA Public Domain seafloor texture)"
+    media_type: "diagram"
+    priority_tier: 6
+    is_first_party_original: true
+
+excluded_sources_notes:
+  - "Excluded E/V Nautilus / Ocean Exploration Trust ('NAUTILUSLIVE.ORG') windows inside NOAA compilation video (t=140s, t=263s+, t=538s): restricted strictly to pure NOAA Okeanos Explorer federal Public Domain windows."
+  - "Excluded 2025 follow-up paper DOI 10.1038/s43247-025-02029-2: published under CC BY-NC-ND 4.0 (NonCommercial-NoDerivatives), prohibited for commercial/monetized YouTube channels."
+  - "Excluded BBC Blue Planet II ('Jacuzzi of Despair'), Nautilus Live YouTube clips, and OceanX promotional clips: All Rights Reserved."
+
+factual_references:
+  - citation: "Purkis, S. J., Shernisky, H., Swart, P. K., et al. (2022). Discovery of the deep-sea NEOM Brine Pools in the Gulf of Aqaba, Red Sea. Communications Earth & Environment, 3, 146."
+    url: "https://www.nature.com/articles/s43247-022-00482-x"
+    doi: "10.1038/s43247-022-00482-x"
+    supported_claims: "Discovery of intact NEOM Brine Pools at 1,770 m depth in the Red Sea; hypersaline zero-oxygen brine below a sharp pycnocline; stunned rim fauna; >1,000-year undisturbed earthquake, flood, and tsunami sediment record; astrobiological analog context."
+
+  - citation: "NOAA Office of Ocean Exploration and Research — Deep-Sea Cold Seeps, Salt Domes & Gulf of Mexico Brine Pools Fact Sheets & Expedition Logs."
+    url: "https://oceanexplorer.noaa.gov/facts/cold-seeps.html"
+    supported_claims: "Subsurface ancient salt dissolution forming hypersaline brine up to 8x saltier than normal seawater; trapped methane and sulfur compounds; chemosynthetic mussel and tubeworm beds thriving along the rim without sunlight."
+
+  - citation: "Sawyer, D. E., Mason, R. A., Cook, A. E., & Portnov, A. (2019). Submarine landslides induce massive waves in subsea brine pools. Scientific Reports, 9, 128."
+    url: "https://www.nature.com/articles/s41598-018-36781-7"
+    doi: "10.1038/s41598-018-36781-7"
+    supported_claims: "Extreme salinity and density stratification (~1.21 g/cm³) creating sharp internal wave interfaces and anoxic preservation in Gulf of Mexico seafloor brine basins."

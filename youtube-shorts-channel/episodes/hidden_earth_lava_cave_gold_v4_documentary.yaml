@@ -1,0 +1,771 @@
+channel_name: "Proof of Wonder"
+playlist: "Hidden Earth"
+slug: "lava-cave-gold-v4-documentary"
+style_profile: "pow_documentary_v3"
+
+primary_title: "Why Cave Walls Glitter Like Solid Gold—And Why You Can't Touch Them"
+alternative_title: "Inside Sealed Volcanic Caves Where Living 'Gold' Eats Pure Rock"
+
+youtube_description: |
+  Deep inside pitch-black volcanic lava tubes in Hawaiʻi and California's Lava Beds National Monument, headlamp beams transform bare black basalt ceilings into vaults that glitter like 24-karat solid gold.
+
+  Known colloquially as "cave gold," this metallic sheen contains zero gold metal—and touching it is strictly prohibited because a single fingerprint can destroy decades of fragile microbial growth. Up close, the golden crust is a paper-thin biofilm of chemolithotrophic bacteria (including Actinobacteria) surviving in total darkness without photosynthesis by oxidizing iron, manganese, and other minerals in volcanic rock (Northup et al., Astrobiology, 2011; Lavoie et al., PLOS ONE, 2017). Because these bacterial mats are hydrophobic (water-repellent), condensed cave moisture beads up into millions of microscopic spherical droplets that retro-reflect headlamp beams back to the viewer's eyes as a shimmering gold glow.
+
+  NASA astrobiologists in projects such as BRAILLE and BASALT use sterile sampling, UV fluorescence, Raman spectroscopy, and 3D LiDAR inside terrestrial lava tubes to develop non-contact life-detection protocols for future planetary missions. In July 2024, researchers re-analyzing NASA Lunar Reconnaissance Orbiter radar data confirmed an accessible underground lava-tube cave conduit beneath the Mare Tranquillitatis pit on the Moon (Carrer et al., Nature Astronomy, 2024), complementing candidate lava-tube skylight pits imaged on Mars. While subterranean volcanic caves could shield potential biosignatures from harsh surface radiation, microbial life in Earth's lava tubes does not prove life exists inside Martian or lunar caves.
+
+hashtags:
+  - "#HiddenEarth"
+  - "#Astrobiology"
+  - "#NASA"
+  - "#Geology"
+  - "#CaveExploration"
+  - "#ScienceShorts"
+
+target_duration_min_s: 62.0
+target_duration_max_s: 88.0
+voice: "en-GB-RyanNeural"
+ambience_preset: "deep_ocean"
+ambience_ducked_lufs_target: -23.0
+nat_sound_bed_file: "cave_water_drips_cc0.wav"
+nat_sound_bed_range_s: [1.5, 74.0]
+nat_sound_gain_db: -15.5
+
+raw_assets_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/hidden_earth_lava_cave_gold_v4"
+output_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/lava-cave-gold-v4-documentary"
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N06"
+  scientific_caveat_seg_id: "N07"
+  min_real_evidence_ratio: 0.90
+
+thumbnail_spec:
+  src_file: "nps_golden_dome_0.jpg"
+  headline_text: "SOLID GOLD WALLS|THAT ARE ALIVE"
+  kicker_text: "VOLCANIC CAVE • DO NOT TOUCH"
+  accent_line_index: 1
+  accent_rgb: [255, 212, 59]
+  clarity_boost: true
+  alt_headlines:
+    - "LIVING CAVE GOLD|MADE OF BACTERIA"
+    - "GLITTERS LIKE GOLD|EATS PURE ROCK"
+  cx: 0.44
+  cy: 0.50
+  zoom: 1.05
+  text_position: "bottom"
+
+narration_segments:
+  - seg_id: "N01"
+    text: "Deep inside sealed volcanic lava tubes, NASA scientists shine their headlamps upward. Bare black rock suddenly glitters like solid gold."
+    rate: "+3%"
+    pitch: "+0Hz"
+    pause_after_s: 0.24
+  - seg_id: "N02"
+    text: "Explorers are forbidden from touching it, because a single fingerprint destroys decades of growth. Up close, that metallic sheen contains zero gold."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N03"
+    text: "It's a paper-thin mat of extremophile bacteria living in total darkness without sunlight. They pull chemical energy straight out of iron and manganese in rock."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N04"
+    text: "To avoid drowning in cave moisture, the colony weaves a microscopic water-repellent fuzz. Millions of beaded droplets act like tiny lenses—bouncing headlamp beams back as gold."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.28
+  - seg_id: "N05"
+    text: "Wearing sterile gloves, NASA teams scan these fragile walls with ultraviolet light and three-D LiDAR. They're training instruments to spot life without touching it."
+    rate: "+2%"
+    pitch: "+1Hz"
+    pause_after_s: 0.26
+  - seg_id: "N06"
+    text: "Why practice underground? Radiation sterilizes Mars's open surface—yet in 2024, orbital radar confirmed an accessible lava-tube cave beneath the Moon. Deep volcanic pits dot Mars too."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N07"
+    text: "Of course, finding rock-eating microbes in Earth's caves doesn't prove life exists inside Martian or lunar tunnels."
+    rate: "-2%"
+    pitch: "-1Hz"
+    pause_after_s: 0.28
+  - seg_id: "N08"
+    text: "Cave gold isn't buried treasure. It's a living microbial reflector—turning dark volcanic rock into shelter for life."
+    rate: "-1%"
+    pitch: "-1Hz"
+    pause_after_s: 0.26
+
+sfx_cues:
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.04
+    gain_db: -25.5
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S03"
+    offset_s: 0.06
+    gain_db: -26.0
+  - sfx_name: "microscope_slide_click"
+    anchor_type: "shot_start"
+    anchor_ref: "S09"
+    offset_s: 0.05
+    gain_db: -25.5
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S11"
+    offset_s: 0.05
+    gain_db: -26.5
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S13"
+    offset_s: 0.05
+    gain_db: -26.0
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 2.477
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_entry_1080p.mp4"
+    src_in: 40.30
+    cx0: 0.49
+    cy0: 0.48
+    cx1: 0.51
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Deep inside sealed volcanic lava tubes,"
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Instant 0.0s live 1080p NASA expedition descending into dark volcanic lava tube"
+    visual_desc: "Live 1080p NASA astrobiology expedition descending under a volcanic skylight beam into a pitch-black basalt lava tube."
+
+  - sid: "S02"
+    start_s: 2.477
+    end_s: 5.196
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_headlamp_gold_1080p.mp4"
+    src_in: 19.10
+    cx0: 0.57
+    cy0: 0.48
+    cx1: 0.59
+    cy1: 0.46
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'tubes,' to NASA researcher shining headlamp onto mineralized ceiling"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "NASA scientists shine their headlamps upward."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NASA scientist shining caving headlamp inches from glittering lava-tube ceiling"
+    visual_desc: "Live 1080p close-up of a helmeted NASA researcher shining a bright headlamp beam onto a mineralized volcanic cave ceiling."
+
+  - sid: "S03"
+    start_s: 5.196
+    end_s: 8.748
+    kind: "still_full"
+    src_file: "nps_golden_dome_0.jpg"
+    cx0: 0.44
+    cy0: 0.48
+    cx1: 0.47
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'upward.' to reveal the blazing 24-karat golden ceiling vault"
+    is_real_evidence: true
+    associated_narration_concept: "Bare black rock suddenly glitters like solid gold."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Golden Dome Cave basalt vault glittering like solid 24-karat gold"
+    visual_desc: "Full-bleed U.S. National Park Service photograph of Golden Dome Cave's dark basalt ceiling blazing with metallic gold bacterial reflection."
+
+  - sid: "S04"
+    start_s: 8.748
+    end_s: 13.907
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_sampling_1080p.mp4"
+    src_in: 38.20
+    cx0: 0.53
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'gold.' to sterile purple-gloved N95 NASA sampling protocol"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Explorers are forbidden from touching it, because a single fingerprint destroys decades of growth."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NASA microbiologist in N95 mask and sterile purple nitrile gloves carefully handling cave sample"
+    visual_desc: "Live 1080p fieldwork close-up of a masked NASA astrobiologist in sterile purple gloves carefully handling a fragile lava-cave microbial sample."
+
+  - sid: "S05"
+    start_s: 13.907
+    end_s: 17.942
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_golden_wall_1080p.mp4"
+    src_in: 48.80
+    cx0: 0.55
+    cy0: 0.48
+    cx1: 0.58
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'growth.' to close-up inspection of golden cave wall"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Up close, that metallic sheen contains zero gold."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NASA researcher scanning warm golden volcanic rock wall up close"
+    visual_desc: "Live 1080p close-up of a helmeted NASA researcher holding a yellow spectrometer inches from a glittering golden volcanic cave wall."
+
+  - sid: "S06"
+    start_s: 17.942
+    end_s: 22.916
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_conduit_mars_1080p.mp4"
+    src_in: 159.60
+    cx0: 0.54
+    cy0: 0.48
+    cx1: 0.51
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'gold.' to close-up of paper-thin microbial crust on dark basalt"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "It's a paper-thin mat of extremophile bacteria living in total darkness without sunlight."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NASA astrobiologist examining paper-thin golden-tan microbial mat on dark basalt"
+    visual_desc: "Live 1080p close-up of a helmeted NASA scientist inspecting thin golden-tan chemolithotrophic bacterial mats coating dark cave basalt."
+
+  - sid: "S07"
+    start_s: 22.916
+    end_s: 27.139
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_sampling_1080p.mp4"
+    src_in: 69.30
+    cx0: 0.64
+    cy0: 0.52
+    cx1: 0.70
+    cy1: 0.52
+    z0: 1.05
+    z1: 1.07
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'sunlight.' to close-up spectroscopic mineral probe on volcanic rock"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "They pull chemical energy straight out of iron and manganese in rock."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Close-up of scientist aiming Raman mineral probe onto iron- and manganese-rich basalt"
+    visual_desc: "Live 1080p close-up of a NASA scientist holding a non-contact spectroscopic probe inches from iron-rich volcanic cave rock."
+
+  - sid: "S08"
+    start_s: 27.139
+    end_s: 32.251
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_golden_wall_1080p.mp4"
+    src_in: 59.60
+    cx0: 0.54
+    cy0: 0.50
+    cx1: 0.57
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'rock.' to researcher examining damp hydrophobic cave shelf"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "To avoid drowning in cave moisture, the colony weaves a microscopic water-repellent fuzz."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NASA scientist crouching beside glistening golden moisture-beaded volcanic cave wall"
+    visual_desc: "Live 1080p shot of a crouching NASA scientist scanning a glistening moisture-beaded golden microbial wall in total darkness."
+
+  - sid: "S09"
+    start_s: 32.251
+    end_s: 35.657
+    kind: "diagram"
+    src_file: "cave_gold_optics_v4.mp4"
+    src_in: 0.50
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Motivated dissolve across sentence pause into microscopic optical retro-reflection diagram"
+    is_real_evidence: false
+    associated_narration_concept: "Millions of beaded droplets act like tiny lenses—"
+    subject_match_kind: "illustrative_diagram"
+    scientific_claim_status: "illustrative_visualization"
+    story_beat: "Photo-textured optical cross-section showing beaded droplets on hydrophobic bacteria retro-reflecting light"
+    visual_desc: "Full-bleed photo-textured optical diagram showing spherical water droplets perched on hydrophobic Actinobacteria retro-reflecting headlamp rays."
+
+  - sid: "S10"
+    start_s: 35.657
+    end_s: 38.072
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_headlamp_gold_1080p.mp4"
+    src_in: 2.20
+    cx0: 0.56
+    cy0: 0.48
+    cx1: 0.58
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Em-dash breath cut after 'lenses—' back to real headlamp beam reflecting off cave ceiling"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "bouncing headlamp beams back as gold."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Real headlamp beam illuminating sparkling droplets along dark lava-tube ceiling"
+    visual_desc: "Live 1080p cave fieldwork footage of a researcher's headlamp illuminating glistening droplets across the dark basalt ceiling."
+
+  - sid: "S11"
+    start_s: 38.072
+    end_s: 43.935
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_uv_scan_1080p.mp4"
+    src_in: 9.20
+    cx0: 0.58
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    contrast_gain: 1.08
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'gold.' to live ultraviolet fluorescence scan on dark cave wall"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Wearing sterile gloves, NASA teams scan these fragile walls with ultraviolet light and three-D LiDAR."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Multi-bar ultraviolet fluorescence array bathing fragile volcanic cave wall in glowing UV light"
+    visual_desc: "Live 1080p NASA footage of a multi-bar ultraviolet light array bathing the dark volcanic cave wall in glowing electric-blue UV fluorescence while a researcher monitors the scan."
+
+  - sid: "S12"
+    start_s: 43.935
+    end_s: 47.500
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_lidar_uv_1080p.mp4"
+    src_in: 6.80
+    cx0: 0.45
+    cy0: 0.48
+    cx1: 0.56
+    cy1: 0.48
+    z0: 1.03
+    z1: 1.05
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'LiDAR.' to spinning 3D LiDAR cave scanner and non-contact tablet readout"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "They're training instruments to spot life without touching it."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Spinning red 3D LiDAR scanner mapping volcanic lava tube without physical contact"
+    visual_desc: "Live 1080p footage of a tripod-mounted 3D LiDAR scanner spinning inside a volcanic lava tube while a NASA engineer monitors the scan."
+
+  - sid: "S13"
+    start_s: 47.500
+    end_s: 49.328
+    kind: "video_full"
+    src_file: "nasa_hiseas_lava_tube_1080p.mp4"
+    src_in: 71.80
+    cx0: 0.42
+    cy0: 0.48
+    cx1: 0.45
+    cy1: 0.48
+    z0: 1.03
+    z1: 1.05
+    transition_in: "cut"
+    transition_reason: "Layer-2 planetary pivot cut after 'it.' to spacesuited NASA analog crew on Mauna Loa basalt"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Why practice underground?"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Spacesuited NASA HI-SEAS analog astronauts traversing barren volcanic basalt"
+    visual_desc: "Live 1080p NASA Goddard footage of spacesuited HI-SEAS analog astronauts walking across exposed volcanic basalt on Mauna Loa."
+
+  - sid: "S14"
+    start_s: 49.328
+    end_s: 52.815
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_perseverance_1080p.mp4"
+    src_in: 8.95
+    cx0: 0.46
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Question-pause cut after 'underground?' to exposed Martian surface and rover"
+    is_real_evidence: true
+    associated_narration_concept: "Radiation sterilizes Mars's open surface—"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NASA Perseverance rover operating on the radiation-exposed Martian surface"
+    visual_desc: "1080p NASA planetary visualization of the Perseverance rover extending its SHERLOC robotic arm atop an exposed Martian ridge."
+
+  - sid: "S15"
+    start_s: 52.815
+    end_s: 58.622
+    kind: "video_full"
+    src_file: "nasa_lroc_mare_pit_clean_1080p.mp4"
+    src_in: 0.15
+    cx0: 0.53
+    cy0: 0.56
+    cx1: 0.55
+    cy1: 0.54
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Em-dash cut after 'surface—' to NASA LRO orbital observation of the Mare Tranquillitatis pit on the Moon"
+    is_real_evidence: true
+    associated_narration_concept: "yet in 2024, orbital radar confirmed an accessible lava-tube cave beneath the Moon."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NASA Lunar Reconnaissance Orbiter pull-back from the Mare Tranquillitatis lava-tube pit"
+    visual_desc: "1080p NASA LRO orbital zoom-out centered directly on the shadowy Mare Tranquillitatis pit leading to a subsurface lunar cave conduit."
+
+  - sid: "S16"
+    start_s: 58.622
+    end_s: 61.486
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_mars_pits_1080p.mp4"
+    src_in: 2.80
+    cx0: 0.62
+    cy0: 0.44
+    cx1: 0.58
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'Moon.' to HiRISE orbital flyover of Martian volcanic pits"
+    is_real_evidence: true
+    associated_narration_concept: "Deep volcanic pits dot Mars too."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Orbital flyover across deep volcanic lava-tube skylight collapse pits on Mars"
+    visual_desc: "1080p NASA orbital flyover across deep circular volcanic lava-tube collapse pits dotting a Martian volcanic flank."
+
+  - sid: "S17"
+    start_s: 61.486
+    end_s: 68.313
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_conduit_mars_1080p.mp4"
+    src_in: 15.10
+    cx0: 0.58
+    cy0: 0.48
+    cx1: 0.63
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Scientific caveat sentence cut after 'too.' returning inside Earth's dark volcanic conduit"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Of course, finding rock-eating microbes in Earth's caves doesn't prove life exists inside Martian or lunar tunnels."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "unresolved_question"
+    story_beat: "NASA cavers crawling through a dark cylindrical Earth lava-tube tunnel during scientific caveat"
+    visual_desc: "Live 1080p footage of helmeted NASA researchers navigating through a narrow cylindrical basalt lava-tube conduit on Earth."
+
+  - sid: "S18"
+    start_s: 68.313
+    end_s: 72.950
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_lidar_uv_1080p.mp4"
+    src_in: 137.00
+    cx0: 0.66
+    cy0: 0.46
+    cx1: 0.70
+    cy1: 0.46
+    z0: 1.04
+    z1: 1.06
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Motivated dissolve into final synthesis as researchers look up at shimmering cave ceiling"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Cave gold isn't buried treasure. It's a living microbial reflector—"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Two NASA researchers pointing headlamps upward at shimmering mineralized lava-tube vault"
+    visual_desc: "Live 1080p shot of two NASA researchers pointing upward as their headlamps illuminate the mineralized volcanic cave ceiling."
+
+  - sid: "S19"
+    start_s: 72.950
+    end_s: 76.300
+    kind: "video_full"
+    src_file: "nasa_mauna_loa_entry_1080p.mp4"
+    src_in: 34.40
+    cx0: 0.52
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Em-dash cut after 'reflector—' into dark cave entrance descent looping seamlessly to S01"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "turning dark volcanic rock into shelter for life."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Expedition caver descending into dark volcanic cave entrance, looping seamlessly into S01"
+    visual_desc: "Live 1080p NASA expedition shot descending into the dark volcanic cave mouth, matching S01 cave skylight lighting for a seamless Short auto-loop."
+
+caption_groups:
+  # N01 (20 words: 0..19)
+  - { seg_id: "N01", first_word_idx: 0, last_word_idx: 5, text: "Deep inside sealed volcanic lava tubes," }
+  - { seg_id: "N01", first_word_idx: 6, last_word_idx: 11, text: "NASA scientists shine their headlamps upward." }
+  - { seg_id: "N01", first_word_idx: 12, last_word_idx: 19, text: "Bare black rock suddenly glitters like solid gold." }
+  # N02 (21 words: 0..20; word 14 is "Up close")
+  - { seg_id: "N02", first_word_idx: 0, last_word_idx: 5, text: "Explorers are forbidden from touching it," }
+  - { seg_id: "N02", first_word_idx: 6, last_word_idx: 13, text: "because a single fingerprint destroys decades of growth." }
+  - { seg_id: "N02", first_word_idx: 14, last_word_idx: 20, text: "Up close, that metallic sheen contains zero gold." }
+  # N03 (25 words: 0..24)
+  - { seg_id: "N03", first_word_idx: 0, last_word_idx: 6, text: "It's a paper-thin mat of extremophile bacteria" }
+  - { seg_id: "N03", first_word_idx: 7, last_word_idx: 12, text: "living in total darkness without sunlight." }
+  - { seg_id: "N03", first_word_idx: 13, last_word_idx: 18, text: "They pull chemical energy straight out" }
+  - { seg_id: "N03", first_word_idx: 19, last_word_idx: 24, text: "of iron and manganese in rock." }
+  # N04 (27 words: 0..26)
+  - { seg_id: "N04", first_word_idx: 0, last_word_idx: 5, text: "To avoid drowning in cave moisture," }
+  - { seg_id: "N04", first_word_idx: 6, last_word_idx: 12, text: "the colony weaves a microscopic water-repellent fuzz." }
+  - { seg_id: "N04", first_word_idx: 13, last_word_idx: 20, text: "Millions of beaded droplets act like tiny lenses—" }
+  - { seg_id: "N04", first_word_idx: 21, last_word_idx: 26, text: "bouncing headlamp beams back as gold." }
+  # N05 (24 words: 0..23)
+  - { seg_id: "N05", first_word_idx: 0, last_word_idx: 8, text: "Wearing sterile gloves, NASA teams scan these fragile walls" }
+  - { seg_id: "N05", first_word_idx: 9, last_word_idx: 14, text: "with ultraviolet light and three-D LiDAR." }
+  - { seg_id: "N05", first_word_idx: 15, last_word_idx: 23, text: "They're training instruments to spot life without touching it." }
+  # N06 (26 words: 0..25; word 9 is "in 2024")
+  - { seg_id: "N06", first_word_idx: 0, last_word_idx: 2, text: "Why practice underground?" }
+  - { seg_id: "N06", first_word_idx: 3, last_word_idx: 7, text: "Radiation sterilizes Mars's open surface—" }
+  - { seg_id: "N06", first_word_idx: 8, last_word_idx: 12, text: "yet in 2024, orbital radar confirmed" }
+  - { seg_id: "N06", first_word_idx: 13, last_word_idx: 19, text: "an accessible lava-tube cave beneath the Moon." }
+  - { seg_id: "N06", first_word_idx: 20, last_word_idx: 25, text: "Deep volcanic pits dot Mars too." }
+  # N07 (17 words: 0..16)
+  - { seg_id: "N07", first_word_idx: 0, last_word_idx: 7, text: "Of course, finding rock-eating microbes in Earth's caves" }
+  - { seg_id: "N07", first_word_idx: 8, last_word_idx: 16, text: "doesn't prove life exists inside Martian or lunar tunnels." }
+  # N08 (18 words: 0..17)
+  - { seg_id: "N08", first_word_idx: 0, last_word_idx: 4, text: "Cave gold isn't buried treasure." }
+  - { seg_id: "N08", first_word_idx: 5, last_word_idx: 9, text: "It's a living microbial reflector—" }
+  - { seg_id: "N08", first_word_idx: 10, last_word_idx: 17, text: "turning dark volcanic rock into shelter for life." }
+
+assets_register:
+  - local_file: "nps_golden_dome_0.jpg"
+    title: "Golden Dome Cave — West Wall of Second Pool Room, Lava Beds National Monument"
+    creator_agency: "U.S. National Park Service (Lava Beds National Monument)"
+    source_page_url: "https://www.nps.gov/places/golden-dome-cave.htm"
+    direct_media_url: "https://www.nps.gov/common/uploads/cropped_image/primary/9D3DEABD-90B9-C5CB-86EF4F419B7B3E5B.jpg"
+    license: "Public Domain"
+    license_url: "https://www.nps.gov/aboutus/disclaimer.htm"
+    required_attribution: "Courtesy of U.S. National Park Service / Lava Beds National Monument (Public Domain)"
+    media_type: "photo"
+    priority_tier: 1
+
+  - local_file: "nasa_pia09704_mars_cave_skylight.jpg"
+    title: "PIA09704: Candidate Cavern Entrance Northeast of Arsia Mons (HiRISE PSP_003647_1745)"
+    creator_agency: "NASA / JPL-Caltech / University of Arizona"
+    source_page_url: "https://images.nasa.gov/details/PIA09704"
+    direct_media_url: "https://images-assets.nasa.gov/image/PIA09704/PIA09704~orig.jpg"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA / JPL-Caltech / University of Arizona (Public Domain)"
+    media_type: "photo"
+    priority_tier: 4
+
+  - local_file: "nasa_mauna_loa_entry_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — Expedition Entry & Basalt Hike (NASA+)"
+    creator_agency: "NASA Astrobiology Program / Mike Toillion (U.S. Federal Government)"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Astrobiology Program / NASA+ (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_mauna_loa_sampling_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — Sterile Biofilm Sampling & Raman Spectroscopy"
+    creator_agency: "NASA Astrobiology Program / Mike Toillion"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Astrobiology Program / NASA+ (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_mauna_loa_golden_wall_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — Golden Cave Wall & Handheld Biosignature Scanner"
+    creator_agency: "NASA Astrobiology Program / Mike Toillion"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Astrobiology Program / NASA+ (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_mauna_loa_headlamp_gold_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — Headlamp Illuminating Microbial Ceiling & Gas Sampling"
+    creator_agency: "NASA Astrobiology Program / Mike Toillion"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Astrobiology Program / NASA+ (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_mauna_loa_lidar_uv_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — 3D LiDAR Cave Mapping & Mineralized Vault"
+    creator_agency: "NASA Astrobiology Program / Mike Toillion"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Astrobiology Program / NASA+ (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_mauna_loa_uv_scan_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — Multi-Bar Ultraviolet Fluorescence Biofilm Scan"
+    creator_agency: "NASA Astrobiology Program / Mike Toillion"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Astrobiology Program / NASA+ (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_mauna_loa_conduit_mars_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — Cylindrical Conduit Crawl & Microbial Wall Inspection"
+    creator_agency: "NASA Astrobiology Program / Mike Toillion"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Astrobiology Program / NASA+ (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_mauna_loa_mars_pits_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — Martian Volcanic Lava-Tube Skylight Pits Flyover"
+    creator_agency: "NASA Astrobiology Program / JPL-Caltech / University of Arizona"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Astrobiology Program / NASA+ (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "nasa_mauna_loa_perseverance_1080p.mp4"
+    title: "Our Alien Earth: The Lava Tubes of Mauna Loa, Hawai'i — Mars Perseverance Rover SHERLOC Arm Visualization"
+    creator_agency: "NASA / JPL-Caltech"
+    source_page_url: "https://plus.nasa.gov/video/our-alien-earth-the-lava-tubes-of-mauna-loa-hawaii/"
+    direct_media_url: "https://nasaplus.akamaized.net/output/17494-7.m3u8"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA / JPL-Caltech (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "nasa_lroc_lunar_pit_1080p.mov"
+    title: "Peeking Into Lunar Pits — Mare Tranquillitatis Pit LROC Master (GSFC_20140717_LROC_m11612_Lunar_Pit)"
+    creator_agency: "NASA's Goddard Space Flight Center / Arizona State University (LROC)"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20140717_LROC_m11612_Lunar_Pit"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20140717_LROC_m11612_Lunar_Pit/GSFC_20140717_LROC_m11612_Lunar_Pit~orig.mov"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA's Goddard Space Flight Center / ASU LROC (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "nasa_lroc_mare_pit_clean_1080p.mp4"
+    title: "Peeking Into Lunar Pits — Mare Tranquillitatis Pit Text-Free Orbital Pull-Back (LROC GSFC_20140717_LROC_m11612)"
+    creator_agency: "NASA's Goddard Space Flight Center / Arizona State University (LROC)"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20140717_LROC_m11612_Lunar_Pit"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20140717_LROC_m11612_Lunar_Pit/GSFC_20140717_LROC_m11612_Lunar_Pit~orig.mov"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA's Goddard Space Flight Center / ASU LROC (Public Domain; clean text-free window t=50.82–53.90s)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "nasa_hiseas_lava_tube_1080p.mp4"
+    title: "Planetary Fieldwork: A HI-SEAS Adventure on Mauna Loa, Hawai'i (GSFC_20170426_HISEAS_m12577_mini-LHR)"
+    creator_agency: "NASA's Goddard Space Flight Center"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20170426_HISEAS_m12577_mini-LHR"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20170426_HISEAS_m12577_mini-LHR/GSFC_20170426_HISEAS_m12577_mini-LHR~large.mp4"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA's Goddard Space Flight Center (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "cave_water_drips_cc0.wav"
+    title: "Smodinkna pečina, vodne kapljice (Subterranean Cave Water Droplets Field Recording)"
+    creator_agency: "Wikimedia Commons Field Recording (CC0 1.0 Universal)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Smodinkna_pe%C4%8Dina,_vodne_kapljice.flac"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/69/Smodinkna_pe%C4%8Dina%2C_vodne_kapljice.flac/Smodinkna_pe%C4%8Dina%2C_vodne_kapljice.flac.ogg"
+    license: "CC0"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "Subterranean cave water-droplet field recording via Wikimedia Commons (CC0 1.0 Public Domain Dedication)"
+    media_type: "audio"
+    priority_tier: 4
+
+  - local_file: "cave_gold_optics_v4.mp4"
+    title: "Photo-Textured Optical Cross-Section: Hydrophobic Actinobacteria Droplet Retro-Reflection"
+    creator_agency: "Proof of Wonder Studio v4.0 (First-Party Original Graphic using NPS Public Domain Basalt Texture)"
+    source_page_url: "First-party programmatic scientific visualization (pipeline/generate_lava_cave_gold_diagram.py)"
+    direct_media_url: "local://assets/raw_footage/hidden_earth_lava_cave_gold_v4/cave_gold_optics_v4.mp4"
+    license: "100% Original First-Party Graphic"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "Original illustrative diagram created in-house for Proof of Wonder (incorporating U.S. NPS Public Domain basalt texture)"
+    media_type: "diagram"
+    priority_tier: 6
+    is_first_party_original: true
+
+excluded_sources_notes:
+  - "Excluded Wikimedia File:A114 Golden Dome Lava Tube Cave 2004.jpg: licensed under FAL (Free Art License copyleft), replaced with pure U.S. National Park Service Public Domain photography."
+  - "Excluded baked-in interview lower-third frames inside NASA+ Our Alien Earth (e.g., t=48s, t=26s, t=2s, t=20s, t=32–37s) and baked-in caption frames inside LROC video (t=8–50.6s): verified 100% clean text-free windows via multi-frame contact sheets."
+
+factual_references:
+  - citation: "Northup, D. E., Melim, L. A., Spilde, M. N., Hathaway, J. J. M., et al. (2011). Lava Cave Microbial Communities Within Mats and Secondary Mineral Deposits: Implications for Life Detection on Other Planets. Astrobiology, 11(7), 601–618."
+    url: "https://www.liebertpub.com/doi/10.1089/ast.2010.0562"
+    doi: "10.1089/ast.2010.0562"
+    supported_claims: "Golden, yellow, tan, and white chemolithotrophic microbial mats (including Actinobacteria) coating dark volcanic lava tube walls in Hawaiʻi and North America; mineral oxidation in total darkness; planetary biosignature analog significance."
+
+  - citation: "Lavoie, K. H., Winter, A. S., Read, K. J. H., Hughes, E. M., Spilde, M. N., & Northup, D. E. (2017). Comparison of bacterial communities from lava cave microbial mats to overlying surface soils from Lava Beds National Monument, USA. PLOS ONE, 12(2), e0169339."
+    url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169339"
+    doi: "10.1371/journal.pone.0169339"
+    supported_claims: "Distinct subsurface Actinobacteria and Proteobacteria biofilms thriving inside Lava Beds National Monument volcanic caves; water-repellent (hydrophobic) surface droplets and fragility to human contact."
+
+  - citation: "U.S. National Park Service — Golden Dome Cave, Lava Beds National Monument Official Geological & Ecological Guide."
+    url: "https://www.nps.gov/places/golden-dome-cave.htm"
+    supported_claims: "'Cave gold' metallic sheen caused by headlamp light reflecting off water droplets beaded on hydrophobic bacteria; strict do-not-touch conservation rule because damage takes decades to recover."
+
+  - citation: "Carrer, L., Pozzobon, R., Sauro, F., Castelletti, D., Patterson, G. W., & Bruzzone, L. (2024). Radar evidence of an accessible cave conduit on the Moon below the Mare Tranquillitatis pit. Nature Astronomy, 8, 1119–1126."
+    url: "https://www.nature.com/articles/s41550-024-02302-y"
+    doi: "10.1038/s41550-024-02302-y"
+    supported_claims: "2024 orbital radar confirmation of an accessible subsurface volcanic lava-tube cave conduit beneath the Mare Tranquillitatis pit on the Moon, shielded from surface radiation."

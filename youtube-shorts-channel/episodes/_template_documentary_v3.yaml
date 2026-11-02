@@ -1,0 +1,152 @@
+# Reusable Documentary Episode Template — Proof of Wonder (`pow_documentary_v3`)
+#
+# Copy this file to `episodes/<topic_slug>.yaml` for any new topic (astronomy / James Webb,
+# planetary science, deep ocean, archaeology, strange natural phenomena).
+#
+# Channel-wide documentary defaults (full-bleed 1080x1920 9:16, 30 fps H.264/AAC, zero rings,
+# zero source banners, zero HUDs, zero burned-in title cards, >=80% moving-footage target,
+# subject-first thumbnail, narration-driven pacing, restrained dissolves) are inherited
+# automatically from `config/proof_of_wonder_style.yaml`.
+
+channel_name: "Proof of Wonder"
+playlist: "Space & Universe"  # Match channel playlists: "Hidden Earth" (output/hidden-earth) or "Space & Universe" (output/space-and-universe)
+slug: "example-topic-slug"
+style_profile: "pow_documentary_v3"
+
+# Optional story-specific overrides (leave empty `{}` to use standard documentary rules):
+style_overrides: {}
+  # opening_and_thumbnail:
+  #   thumbnail_text_mode: "none"   # "minimal_headline" (<=4 words) | "none"
+
+primary_title: "Clear, Factual Curiosity Title Grounded in the Central Subject"
+alternative_title: "Alternative Accurate Title"
+
+youtube_description: |
+  Concise, scientifically accurate summary of the phenomenon, mechanism, and caveats.
+  (Required media attributions and scientific citations are appended automatically to
+  `youtube_metadata.md` from `assets_register` and `factual_references`.)
+
+hashtags:
+  - "#Science"
+  - "#Space"
+  - "#Documentary"
+
+target_duration_min_s: 48.0
+target_duration_max_s: 85.0
+voice: "en-GB-RyanNeural"  # Broadcast documentary voice (avoid overused TikTok stock Andrew)
+ambience_preset: "deep_space"  # "polar_glacial" | "deep_space" | "deep_ocean" | "none"
+ambience_ducked_lufs_target: -32.0
+# Optional authentic speech-free location audio extracted from real expedition video:
+nat_sound_bed_file: null  # e.g. "expedition_field_clip.webm"
+nat_sound_bed_range_s: [1.0, 35.0]
+nat_sound_gain_db: -15.5
+
+raw_assets_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/example-topic-slug"
+extra_assets_dirs: []
+output_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/example-topic-slug"
+
+editorial_formula:
+  hook_max_start_s: 2.0
+  layer2_pivot_seg_id: "N04"
+  scientific_caveat_seg_id: "N06"
+  min_real_evidence_ratio: 0.85
+
+thumbnail_spec:
+  src_file: "hero_subject_clip.mp4"
+  src_time_s: 2.4
+  headline_text: "A DEADLY LAKE|UNDER THE OCEAN"
+  kicker_text: "1,770M DEEP • ZERO OXYGEN"
+  accent_line_index: 1
+  accent_rgb: [255, 212, 59]
+  clarity_boost: true
+  alt_headlines:
+    - "AN OCEAN LAKE|8X TOO TOXIC"
+  text_position: "top"
+
+narration_segments:
+  - seg_id: "N01"
+    text: "Start mid-mystery with a concrete physical contradiction in <= 15 words."
+    rate: "+3%"
+    pitch: "+0Hz"
+    pause_after_s: 0.22
+  - seg_id: "N02"
+    text: "Active, spoken explanation of what happens physically."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N03"
+    text: "Supporting real-world observational context."
+    rate: "+0%"
+    pitch: "+0Hz"
+    pause_after_s: 0.28
+  - seg_id: "N04"
+    text: "Mid-video re-hook pivoting to the deeper discovery."
+    rate: "+2%"
+    pitch: "+1Hz"
+    pause_after_s: 0.24
+  - seg_id: "N05"
+    text: "Plain-English evidence from field or laboratory samples (avoid 4-word Latin lists)."
+    rate: "+0%"
+    pitch: "+0Hz"
+    pause_after_s: 0.28
+  - seg_id: "N06"
+    text: "Now, that doesn't prove everything—scientists are still studying how these pieces connect."
+    rate: "-2%"
+    pitch: "-1Hz"
+    pause_after_s: 0.28
+  - seg_id: "N07"
+    text: "Sharp closing thought designed to loop seamlessly back into 0.0s."
+    rate: "-1%"
+    pitch: "-1Hz"
+    pause_after_s: 0.30
+
+sfx_cues: []
+
+# Required Workflow Order:
+# 0. Harvest authentic & human-fieldwork videos: `python pipeline/run_documentary.py search-videos --query "<topic> scientist field"`
+# 1. Run `python pipeline/run_documentary.py audio --manifest episodes/<topic>.yaml`
+# 2. Read `<output_dir>/speech_boundaries.json` and `word_timings.json`
+# 3. Assign shot start_s / end_s to exact completed sentences and natural speech pauses (>=80% moving video, <=15% still photos, 0 consecutive stills)
+# 4. Run `python pipeline/run_documentary.py plan-check --manifest episodes/<topic>.yaml`
+# 5. Run `python pipeline/run_documentary.py all --manifest episodes/<topic>.yaml --reuse-tts`
+shots:
+  - sid: "S01"
+    start_s: 0.0
+    end_s: 5.5
+    kind: "video_full"
+    src_file: "hero_subject_clip.mp4"
+    src_in: 1.0
+    reframe_mode: "auto_salient"
+    z0: 1.02
+    z1: 1.04
+    crop_rationale: "Tracks central subject edge-to-edge in 9:16 above mobile subtitle zone."
+    transition_in: "cut"
+    transition_reason: "Subject-first opening frame."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Opening hook sentence"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Opening visual hook"
+    visual_desc: "Full-screen moving observation of the central subject."
+
+caption_groups:
+  - {seg_id: "N01", first_word_idx: 0, last_word_idx: 9, text: "Immediate hook grounded in what the viewer sees."}
+
+assets_register:
+  - local_file: "hero_subject_clip.mp4"
+    title: "Official Archival Moving Observation"
+    creator_agency: "NASA / ESA / CSA STScI"
+    source_page_url: "https://webbtelescope.org/"
+    direct_media_url: "https://webbtelescope.org/"
+    license: "Public Domain (NASA / STScI)"
+    license_url: "https://webbtelescope.org/copyright"
+    required_attribution: "Video: NASA, ESA, CSA, STScI (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+    intended_use: "Primary moving observational footage"
+
+factual_references:
+  - citation: "Author et al. (Year). Title. Journal."
+    url: "https://doi.org/"
+    supported_claims: "Core factual claims and caveats."

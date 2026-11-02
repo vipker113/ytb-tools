@@ -1,0 +1,223 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 5.77,
+    "word_end_s": 5.545,
+    "next_word_start_s": 6.381,
+    "pause_s": 0.836,
+    "kind": "breath_pause",
+    "after_word": "galaxy"
+  },
+  {
+    "time_s": 9.596,
+    "word_end_s": 9.439,
+    "next_word_start_s": 9.752,
+    "pause_s": 0.313,
+    "kind": "breath_pause",
+    "after_word": "ignited"
+  },
+  {
+    "time_s": 12.061,
+    "word_end_s": 11.956,
+    "next_word_start_s": 12.166,
+    "pause_s": 0.21,
+    "kind": "breath_pause",
+    "after_word": "speed"
+  },
+  {
+    "time_s": 15.621,
+    "word_end_s": 15.396,
+    "next_word_start_s": 16.25,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "years"
+  },
+  {
+    "time_s": 17.364,
+    "word_end_s": 17.277,
+    "next_word_start_s": 17.45,
+    "pause_s": 0.173,
+    "kind": "breath_pause",
+    "after_word": "time"
+  },
+  {
+    "time_s": 18.137,
+    "word_end_s": 18.032,
+    "next_word_start_s": 18.242,
+    "pause_s": 0.21,
+    "kind": "breath_pause",
+    "after_word": "blink"
+  },
+  {
+    "time_s": 20.322,
+    "word_end_s": 20.21,
+    "next_word_start_s": 20.433,
+    "pause_s": 0.223,
+    "kind": "breath_pause",
+    "after_word": "asked"
+  },
+  {
+    "time_s": 21.577,
+    "word_end_s": 21.386,
+    "next_word_start_s": 21.768,
+    "pause_s": 0.382,
+    "kind": "breath_pause",
+    "after_word": "everybody"
+  },
+  {
+    "time_s": 27.996,
+    "word_end_s": 27.771,
+    "next_word_start_s": 28.625,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "systems"
+  },
+  {
+    "time_s": 30.723,
+    "word_end_s": 30.617,
+    "next_word_start_s": 30.828,
+    "pause_s": 0.211,
+    "kind": "breath_pause",
+    "after_word": "listening"
+  },
+  {
+    "time_s": 33.213,
+    "word_end_s": 33.043,
+    "next_word_start_s": 33.384,
+    "pause_s": 0.341,
+    "kind": "breath_pause",
+    "after_word": "zero"
+  },
+  {
+    "time_s": 35.839,
+    "word_end_s": 35.715,
+    "next_word_start_s": 35.962,
+    "pause_s": 0.247,
+    "kind": "breath_pause",
+    "after_word": "rare"
+  },
+  {
+    "time_s": 38.279,
+    "word_end_s": 38.054,
+    "next_word_start_s": 38.908,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "Filter"
+  },
+  {
+    "time_s": 43.859,
+    "word_end_s": 43.697,
+    "next_word_start_s": 44.02,
+    "pause_s": 0.323,
+    "kind": "breath_pause",
+    "after_word": "survives"
+  },
+  {
+    "time_s": 45.7,
+    "word_end_s": 45.613,
+    "next_word_start_s": 45.787,
+    "pause_s": 0.174,
+    "kind": "breath_pause",
+    "after_word": "us"
+  },
+  {
+    "time_s": 47.942,
+    "word_end_s": 47.717,
+    "next_word_start_s": 48.571,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "jackpot"
+  },
+  {
+    "time_s": 49.474,
+    "word_end_s": 49.388,
+    "next_word_start_s": 49.561,
+    "pause_s": 0.173,
+    "kind": "breath_pause",
+    "after_word": "Earth"
+  },
+  {
+    "time_s": 54.881,
+    "word_end_s": 54.709,
+    "next_word_start_s": 55.053,
+    "pause_s": 0.344,
+    "kind": "breath_pause",
+    "after_word": "life"
+  },
+  {
+    "time_s": 57.77,
+    "word_end_s": 57.545,
+    "next_word_start_s": 58.39,
+    "pause_s": 0.845,
+    "kind": "breath_pause",
+    "after_word": "us"
+  },
+  {
+    "time_s": 61.355,
+    "word_end_s": 61.257,
+    "next_word_start_s": 61.453,
+    "pause_s": 0.196,
+    "kind": "breath_pause",
+    "after_word": "often"
+  },
+  {
+    "time_s": 65.246,
+    "word_end_s": 65.081,
+    "next_word_start_s": 65.412,
+    "pause_s": 0.331,
+    "kind": "breath_pause",
+    "after_word": "arrives"
+  },
+  {
+    "time_s": 68.257,
+    "word_end_s": 68.161,
+    "next_word_start_s": 68.352,
+    "pause_s": 0.191,
+    "kind": "breath_pause",
+    "after_word": "alone"
+  },
+  {
+    "time_s": 72.824,
+    "word_end_s": 72.638,
+    "next_word_start_s": 73.01,
+    "pause_s": 0.372,
+    "kind": "breath_pause",
+    "after_word": "ocean"
+  },
+  {
+    "time_s": 74.92,
+    "word_end_s": 74.832,
+    "next_word_start_s": 75.008,
+    "pause_s": 0.176,
+    "kind": "breath_pause",
+    "after_word": "quiet"
+  },
+  {
+    "time_s": 77.178,
+    "word_end_s": 76.953,
+    "next_word_start_s": 77.825,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "know"
+  },
+  {
+    "time_s": 78.468,
+    "word_end_s": 78.367,
+    "next_word_start_s": 78.569,
+    "pause_s": 0.202,
+    "kind": "breath_pause",
+    "after_word": "Tonight"
+  },
+  {
+    "time_s": 82.9,
+    "word_end_s": 82.559,
+    "next_word_start_s": 82.9,
+    "pause_s": 0.341,
+    "kind": "segment_end",
+    "after_word": "worlds"
+  }
+]

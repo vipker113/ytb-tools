@@ -1,0 +1,75 @@
+1
+00:00:00,113 --> 00:00:02,068
+Why is Venus hotter than Mercury,
+
+2
+00:00:02,413 --> 00:00:03,942
+even though it's farther from the Sun?
+
+3
+00:00:04,275 --> 00:00:06,055
+Closer Mercury hits four hundred thirty
+
+4
+00:00:06,075 --> 00:00:07,480
+degrees Celsius by day,
+
+5
+00:00:07,875 --> 00:00:09,655
+but with almost no atmosphere,
+
+6
+00:00:10,000 --> 00:00:11,992
+that heat escapes into space at night,
+
+7
+00:00:12,312 --> 00:00:15,318
+plunging to minus one hundred eighty degrees.
+
+8
+00:00:15,637 --> 00:00:17,243
+Venus looks like it should be cooler,
+
+9
+00:00:17,375 --> 00:00:20,005
+because thick pale clouds of sulfuric acid
+
+10
+00:00:20,025 --> 00:00:22,955
+reflect about seventy-five percent of sunlight.
+
+11
+00:00:23,288 --> 00:00:24,567
+Yet the sunlight that gets
+
+12
+00:00:24,587 --> 00:00:26,780
+through warms the rocky surface,
+
+13
+00:00:26,938 --> 00:00:29,167
+and its dense carbon dioxide atmosphere,
+
+14
+00:00:29,512 --> 00:00:31,655
+ninety-six point five percent pure,
+
+15
+00:00:31,863 --> 00:00:34,080
+blocks outgoing infrared heat.
+
+16
+00:00:34,400 --> 00:00:36,518
+While Mercury cools every night,
+
+17
+00:00:36,925 --> 00:00:38,368
+Venus stays locked near
+
+18
+00:00:38,450 --> 00:00:40,793
+four hundred sixty-four degrees Celsius,
+
+19
+00:00:40,950 --> 00:00:42,092
+day and night.

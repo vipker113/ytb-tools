@@ -1,0 +1,1442 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "total_duration_s": 76.9333,
+  "total_frames_30fps": 2308,
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "Movies picture gemstone mines as glittering crystal caves. In real underground mines, workers drill through solid grey rock.",
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "start": 0.1,
+      "end": 7.77,
+      "duration": 7.67,
+      "pause_after": 0.24,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N02",
+      "text": "Miners listen for the drill bit to suddenly drop into a hollow pocket. Inside, they don't find clean air\u2014they hit sticky wet clay.",
+      "rate": "+2%",
+      "pitch": "+0Hz",
+      "start": 8.01,
+      "end": 15.783,
+      "duration": 7.773,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N03",
+      "text": "Millions of years ago, superheated mineral fluids cooled inside sealed granite cavities. Thick pocket clay cushioned razor-sharp emeralds, tourmaline, and fluorite as they grew.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 16.043,
+      "end": 26.226,
+      "duration": 10.184,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N04",
+      "text": "Only after miners rinse away that grey mud do raw crystal faces flash with color. Yet above ground, jewelers slice out cloudy specks as worthless flaws.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 26.486,
+      "end": 35.885,
+      "duration": 9.399,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N05",
+      "text": "To deep-Earth geologists, those rejected flaws are priceless. Some rough diamonds blast upward through volcanic pipes from more than six hundred kilometers down.",
+      "rate": "+2%",
+      "pitch": "+1Hz",
+      "start": 36.145,
+      "end": 45.432,
+      "duration": 9.287,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N06",
+      "text": "Firing X-ray beams into flawed diamonds, scientists found ringwoodite\u2014a deep mineral locking away water. In twenty eighteen, diamonds even revealed Ice-Seven: solid high-pressure water ice.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 45.692,
+      "end": 57.615,
+      "duration": 11.923,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N07",
+      "text": "That doesn't mean an open underground ocean sloshes beneath Earth's crust. Most of that deep water stays trapped inside crystal rock and microscopic fluid pockets.",
+      "rate": "-2%",
+      "pitch": "-1Hz",
+      "start": 57.895,
+      "end": 67.243,
+      "duration": 9.347,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N08",
+      "text": "Jewelers polish away tiny inclusions for sparkle. Scientists read those same crystal traps as time capsules\u2014carried up through solid mine rock.",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 67.523,
+      "end": 76.703,
+      "duration": 9.181,
+      "pause_after": 0.24,
+      "emphasis_words": []
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "Movies",
+      "start": 0.1,
+      "end": 0.537,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "picture",
+      "start": 0.459,
+      "end": 0.798,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "gemstone",
+      "start": 0.81,
+      "end": 1.308,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "mines",
+      "start": 1.32,
+      "end": 1.66,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "as",
+      "start": 1.672,
+      "end": 1.781,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "glittering",
+      "start": 1.794,
+      "end": 2.243,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "crystal",
+      "start": 2.255,
+      "end": 2.631,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "caves",
+      "start": 2.643,
+      "end": 3.238,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "In",
+      "start": 4.074,
+      "end": 4.292,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "real",
+      "start": 4.304,
+      "end": 4.547,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "underground",
+      "start": 4.559,
+      "end": 5.069,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "mines",
+      "start": 5.081,
+      "end": 5.494,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "workers",
+      "start": 5.651,
+      "end": 6.052,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "drill",
+      "start": 6.064,
+      "end": 6.355,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "through",
+      "start": 6.367,
+      "end": 6.574,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "solid",
+      "start": 6.586,
+      "end": 6.926,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "grey",
+      "start": 6.938,
+      "end": 7.229,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "rock",
+      "start": 7.241,
+      "end": 7.702,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Miners",
+      "start": 8.01,
+      "end": 8.451,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "listen",
+      "start": 8.366,
+      "end": 8.648,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "for",
+      "start": 8.66,
+      "end": 8.734,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 8.746,
+      "end": 8.844,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "drill",
+      "start": 8.856,
+      "end": 9.15,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "bit",
+      "start": 9.163,
+      "end": 9.322,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "to",
+      "start": 9.334,
+      "end": 9.408,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "suddenly",
+      "start": 9.42,
+      "end": 9.824,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "drop",
+      "start": 9.837,
+      "end": 10.131,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "into",
+      "start": 10.143,
+      "end": 10.413,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "a",
+      "start": 10.425,
+      "end": 10.474,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "hollow",
+      "start": 10.486,
+      "end": 10.829,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "pocket",
+      "start": 10.842,
+      "end": 11.307,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Inside",
+      "start": 12.152,
+      "end": 12.765,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "they",
+      "start": 12.924,
+      "end": 13.01,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "don't",
+      "start": 13.022,
+      "end": 13.243,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "find",
+      "start": 13.255,
+      "end": 13.561,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "clean",
+      "start": 13.574,
+      "end": 13.88,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "air",
+      "start": 13.892,
+      "end": 14.113,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "they",
+      "start": 14.321,
+      "end": 14.431,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "hit",
+      "start": 14.444,
+      "end": 14.676,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "sticky",
+      "start": 14.689,
+      "end": 15.02,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "wet",
+      "start": 15.032,
+      "end": 15.277,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "clay",
+      "start": 15.289,
+      "end": 15.718,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Millions",
+      "start": 16.043,
+      "end": 16.513,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "of",
+      "start": 16.425,
+      "end": 16.512,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "years",
+      "start": 16.524,
+      "end": 16.809,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "ago",
+      "start": 16.821,
+      "end": 17.093,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "superheated",
+      "start": 17.279,
+      "end": 17.848,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "mineral",
+      "start": 17.861,
+      "end": 18.158,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "fluids",
+      "start": 18.17,
+      "end": 18.541,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "cooled",
+      "start": 18.554,
+      "end": 18.863,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "inside",
+      "start": 18.876,
+      "end": 19.346,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "sealed",
+      "start": 19.358,
+      "end": 19.717,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "granite",
+      "start": 19.73,
+      "end": 20.076,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "cavities",
+      "start": 20.088,
+      "end": 20.769,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Thick",
+      "start": 21.623,
+      "end": 21.907,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "pocket",
+      "start": 21.92,
+      "end": 22.229,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "clay",
+      "start": 22.241,
+      "end": 22.464,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "cushioned",
+      "start": 22.477,
+      "end": 22.86,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "razor-sharp",
+      "start": 22.873,
+      "end": 23.479,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "emeralds",
+      "start": 23.491,
+      "end": 23.949,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "tourmaline",
+      "start": 24.135,
+      "end": 24.667,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "and",
+      "start": 24.816,
+      "end": 24.952,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "fluorite",
+      "start": 24.964,
+      "end": 25.484,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "as",
+      "start": 25.496,
+      "end": 25.583,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "they",
+      "start": 25.595,
+      "end": 25.707,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "grew",
+      "start": 25.719,
+      "end": 26.152,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Only",
+      "start": 26.486,
+      "end": 26.808,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "after",
+      "start": 26.725,
+      "end": 26.997,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "miners",
+      "start": 27.01,
+      "end": 27.406,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "rinse",
+      "start": 27.418,
+      "end": 27.665,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "away",
+      "start": 27.678,
+      "end": 27.925,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "that",
+      "start": 27.938,
+      "end": 28.123,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "grey",
+      "start": 28.136,
+      "end": 28.433,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "mud",
+      "start": 28.445,
+      "end": 28.705,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "do",
+      "start": 28.717,
+      "end": 28.878,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "raw",
+      "start": 28.891,
+      "end": 29.126,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "crystal",
+      "start": 29.138,
+      "end": 29.547,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "faces",
+      "start": 29.559,
+      "end": 29.918,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "flash",
+      "start": 29.93,
+      "end": 30.264,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "with",
+      "start": 30.277,
+      "end": 30.462,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "color",
+      "start": 30.475,
+      "end": 30.834,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Yet",
+      "start": 31.687,
+      "end": 31.898,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "above",
+      "start": 31.91,
+      "end": 32.195,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "ground",
+      "start": 32.207,
+      "end": 32.69,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "jewelers",
+      "start": 32.838,
+      "end": 33.259,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "slice",
+      "start": 33.271,
+      "end": 33.618,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "out",
+      "start": 33.63,
+      "end": 33.816,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "cloudy",
+      "start": 33.828,
+      "end": 34.2,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "specks",
+      "start": 34.212,
+      "end": 34.583,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "as",
+      "start": 34.596,
+      "end": 34.719,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "worthless",
+      "start": 34.732,
+      "end": 35.19,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "flaws",
+      "start": 35.202,
+      "end": 35.796,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "To",
+      "start": 36.145,
+      "end": 36.305,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "deep-Earth",
+      "start": 36.22,
+      "end": 36.661,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "geologists",
+      "start": 36.674,
+      "end": 37.47,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "those",
+      "start": 37.654,
+      "end": 37.887,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "rejected",
+      "start": 37.899,
+      "end": 38.401,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "flaws",
+      "start": 38.414,
+      "end": 38.781,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "are",
+      "start": 38.794,
+      "end": 38.892,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "priceless",
+      "start": 38.904,
+      "end": 39.639,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Some",
+      "start": 40.484,
+      "end": 40.815,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "rough",
+      "start": 40.827,
+      "end": 41.072,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "diamonds",
+      "start": 41.084,
+      "end": 41.513,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "blast",
+      "start": 41.525,
+      "end": 41.93,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "upward",
+      "start": 41.942,
+      "end": 42.224,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "through",
+      "start": 42.236,
+      "end": 42.457,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "volcanic",
+      "start": 42.469,
+      "end": 42.996,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "pipes",
+      "start": 43.008,
+      "end": 43.327,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "from",
+      "start": 43.339,
+      "end": 43.474,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "more",
+      "start": 43.486,
+      "end": 43.609,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "than",
+      "start": 43.621,
+      "end": 43.768,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "six",
+      "start": 43.78,
+      "end": 44.075,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "hundred",
+      "start": 44.087,
+      "end": 44.356,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "kilometers",
+      "start": 44.369,
+      "end": 44.896,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "down",
+      "start": 44.908,
+      "end": 45.373,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Firing",
+      "start": 45.692,
+      "end": 46.299,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "X-ray",
+      "start": 46.207,
+      "end": 46.541,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "beams",
+      "start": 46.553,
+      "end": 46.912,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "into",
+      "start": 46.924,
+      "end": 47.147,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "flawed",
+      "start": 47.16,
+      "end": 47.531,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "diamonds",
+      "start": 47.543,
+      "end": 48.051,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "scientists",
+      "start": 48.249,
+      "end": 48.843,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "found",
+      "start": 48.855,
+      "end": 49.152,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "ringwoodite",
+      "start": 49.165,
+      "end": 49.821,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "a",
+      "start": 50.006,
+      "end": 50.08,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "deep",
+      "start": 50.093,
+      "end": 50.34,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "mineral",
+      "start": 50.353,
+      "end": 50.662,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "locking",
+      "start": 50.674,
+      "end": 51.009,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "away",
+      "start": 51.021,
+      "end": 51.293,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "water",
+      "start": 51.306,
+      "end": 51.776,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "In",
+      "start": 52.629,
+      "end": 52.827,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "twenty",
+      "start": 52.84,
+      "end": 53.199,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "eighteen",
+      "start": 53.211,
+      "end": 53.681,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "diamonds",
+      "start": 53.78,
+      "end": 54.214,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "even",
+      "start": 54.226,
+      "end": 54.498,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "revealed",
+      "start": 54.511,
+      "end": 54.969,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Ice-Seven",
+      "start": 54.981,
+      "end": 55.587,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "solid",
+      "start": 55.785,
+      "end": 56.095,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "high-pressure",
+      "start": 56.107,
+      "end": 56.652,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "water",
+      "start": 56.664,
+      "end": 57.048,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "ice",
+      "start": 57.06,
+      "end": 57.555,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "That",
+      "start": 57.895,
+      "end": 58.086,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "doesn't",
+      "start": 58.002,
+      "end": 58.257,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "mean",
+      "start": 58.27,
+      "end": 58.487,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "an",
+      "start": 58.499,
+      "end": 58.614,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "open",
+      "start": 58.627,
+      "end": 58.92,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "underground",
+      "start": 58.933,
+      "end": 59.494,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "ocean",
+      "start": 59.507,
+      "end": 59.813,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "sloshes",
+      "start": 59.826,
+      "end": 60.285,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "beneath",
+      "start": 60.298,
+      "end": 60.693,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Earth's",
+      "start": 60.706,
+      "end": 60.961,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "crust",
+      "start": 60.974,
+      "end": 61.497,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Most",
+      "start": 62.378,
+      "end": 62.722,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "of",
+      "start": 62.735,
+      "end": 62.799,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "that",
+      "start": 62.812,
+      "end": 62.977,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "deep",
+      "start": 62.99,
+      "end": 63.207,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "water",
+      "start": 63.22,
+      "end": 63.551,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "stays",
+      "start": 63.564,
+      "end": 63.908,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "trapped",
+      "start": 63.921,
+      "end": 64.227,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "inside",
+      "start": 64.24,
+      "end": 64.699,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "crystal",
+      "start": 64.712,
+      "end": 65.146,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "rock",
+      "start": 65.158,
+      "end": 65.414,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "and",
+      "start": 65.426,
+      "end": 65.516,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "microscopic",
+      "start": 65.528,
+      "end": 66.23,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "fluid",
+      "start": 66.243,
+      "end": 66.574,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "pockets",
+      "start": 66.587,
+      "end": 67.135,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Jewelers",
+      "start": 67.523,
+      "end": 68.04,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "polish",
+      "start": 67.965,
+      "end": 68.268,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "away",
+      "start": 68.281,
+      "end": 68.559,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "tiny",
+      "start": 68.571,
+      "end": 68.95,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "inclusions",
+      "start": 68.963,
+      "end": 69.569,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "for",
+      "start": 69.581,
+      "end": 69.682,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "sparkle",
+      "start": 69.695,
+      "end": 70.263,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Scientists",
+      "start": 71.135,
+      "end": 71.867,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "read",
+      "start": 71.88,
+      "end": 72.145,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "those",
+      "start": 72.157,
+      "end": 72.423,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "same",
+      "start": 72.435,
+      "end": 72.7,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "crystal",
+      "start": 72.713,
+      "end": 73.104,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "traps",
+      "start": 73.117,
+      "end": 73.509,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "as",
+      "start": 73.521,
+      "end": 73.647,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "time",
+      "start": 73.66,
+      "end": 73.95,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "capsules",
+      "start": 73.963,
+      "end": 74.569,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "carried",
+      "start": 74.746,
+      "end": 75.087,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "up",
+      "start": 75.099,
+      "end": 75.264,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "through",
+      "start": 75.276,
+      "end": 75.516,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "solid",
+      "start": 75.529,
+      "end": 75.895,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "mine",
+      "start": 75.907,
+      "end": 76.185,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "rock",
+      "start": 76.198,
+      "end": 76.615,
+      "emphasis": false
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 0.04,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "sonar_ping_deep",
+      "time_s": 21.05,
+      "gain_db": -26.0
+    },
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 39.917,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "microscope_slide_click",
+      "time_s": 48.183,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "sonar_ping_deep",
+      "time_s": 70.517,
+      "gain_db": -26.5
+    }
+  ],
+  "diegetic_nat_sound_active": true
+}

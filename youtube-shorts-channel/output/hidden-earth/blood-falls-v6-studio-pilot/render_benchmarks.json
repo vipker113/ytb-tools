@@ -1,0 +1,10 @@
+{
+  "slug": "blood-falls-v6-studio-pilot",
+  "encode_mode": "master",
+  "shots_render_or_cache_s": 0.008,
+  "timeline_assembly_and_mux_s": 117.714,
+  "thumbnail_concepts_s": 3.413,
+  "total_render_master_s": 121.324,
+  "rendered_frames": 2222,
+  "effective_render_fps": 18.31
+}

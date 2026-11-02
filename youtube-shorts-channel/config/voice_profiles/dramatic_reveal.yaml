@@ -1,0 +1,31 @@
+profile_id: "dramatic_reveal"
+display_name: "Dramatic Reveal"
+description: "High-tension, deliberate pacing with crisp pauses before major scientific twists and scale reveals."
+voice_mode: "directed_tts"
+voice_identity: "en-GB-RyanNeural"
+accent: "en-GB"
+tone: "documentary"
+emotion: "surprise"
+energy: 4
+speaking_speed: "natural"
+base_rate_pct: 0
+base_pitch_hz: 0
+default_pause_after_ms: 380
+consistency_lock: true
+max_rate_delta_pct: 11
+max_pitch_delta_hz: 2
+emphasis_strategy: "bounded_cadence_and_subtitle_highlight"
+pronunciation: {}
+sentence_delivery_presets:
+  OPENING_HOOK:
+    rate_delta_pct: 3
+    pitch_delta_hz: 1
+    pause_after_ms: 260
+  CINEMATIC_REVEAL:
+    rate_delta_pct: -5
+    pitch_delta_hz: -1
+    pause_after_ms: 680
+  ESCALATION:
+    rate_delta_pct: 2
+    pitch_delta_hz: 1
+    pause_after_ms: 340

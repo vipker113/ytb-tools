@@ -1,0 +1,199 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 3.463,
+    "word_end_s": 3.238,
+    "next_word_start_s": 4.074,
+    "pause_s": 0.836,
+    "kind": "breath_pause",
+    "after_word": "caves"
+  },
+  {
+    "time_s": 7.856,
+    "word_end_s": 7.702,
+    "next_word_start_s": 8.01,
+    "pause_s": 0.308,
+    "kind": "breath_pause",
+    "after_word": "rock"
+  },
+  {
+    "time_s": 11.532,
+    "word_end_s": 11.307,
+    "next_word_start_s": 12.152,
+    "pause_s": 0.845,
+    "kind": "breath_pause",
+    "after_word": "pocket"
+  },
+  {
+    "time_s": 14.217,
+    "word_end_s": 14.113,
+    "next_word_start_s": 14.321,
+    "pause_s": 0.208,
+    "kind": "breath_pause",
+    "after_word": "air"
+  },
+  {
+    "time_s": 15.88,
+    "word_end_s": 15.718,
+    "next_word_start_s": 16.043,
+    "pause_s": 0.325,
+    "kind": "breath_pause",
+    "after_word": "clay"
+  },
+  {
+    "time_s": 17.186,
+    "word_end_s": 17.093,
+    "next_word_start_s": 17.279,
+    "pause_s": 0.186,
+    "kind": "breath_pause",
+    "after_word": "ago"
+  },
+  {
+    "time_s": 20.994,
+    "word_end_s": 20.769,
+    "next_word_start_s": 21.623,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "cavities"
+  },
+  {
+    "time_s": 24.042,
+    "word_end_s": 23.949,
+    "next_word_start_s": 24.135,
+    "pause_s": 0.186,
+    "kind": "breath_pause",
+    "after_word": "emeralds"
+  },
+  {
+    "time_s": 26.319,
+    "word_end_s": 26.152,
+    "next_word_start_s": 26.486,
+    "pause_s": 0.334,
+    "kind": "breath_pause",
+    "after_word": "grew"
+  },
+  {
+    "time_s": 31.059,
+    "word_end_s": 30.834,
+    "next_word_start_s": 31.687,
+    "pause_s": 0.853,
+    "kind": "breath_pause",
+    "after_word": "color"
+  },
+  {
+    "time_s": 35.971,
+    "word_end_s": 35.796,
+    "next_word_start_s": 36.145,
+    "pause_s": 0.349,
+    "kind": "breath_pause",
+    "after_word": "flaws"
+  },
+  {
+    "time_s": 37.562,
+    "word_end_s": 37.47,
+    "next_word_start_s": 37.654,
+    "pause_s": 0.184,
+    "kind": "breath_pause",
+    "after_word": "geologists"
+  },
+  {
+    "time_s": 39.864,
+    "word_end_s": 39.639,
+    "next_word_start_s": 40.484,
+    "pause_s": 0.845,
+    "kind": "breath_pause",
+    "after_word": "priceless"
+  },
+  {
+    "time_s": 45.532,
+    "word_end_s": 45.373,
+    "next_word_start_s": 45.692,
+    "pause_s": 0.319,
+    "kind": "breath_pause",
+    "after_word": "down"
+  },
+  {
+    "time_s": 48.15,
+    "word_end_s": 48.051,
+    "next_word_start_s": 48.249,
+    "pause_s": 0.198,
+    "kind": "breath_pause",
+    "after_word": "diamonds"
+  },
+  {
+    "time_s": 49.913,
+    "word_end_s": 49.821,
+    "next_word_start_s": 50.006,
+    "pause_s": 0.185,
+    "kind": "breath_pause",
+    "after_word": "ringwoodite"
+  },
+  {
+    "time_s": 52.001,
+    "word_end_s": 51.776,
+    "next_word_start_s": 52.629,
+    "pause_s": 0.853,
+    "kind": "breath_pause",
+    "after_word": "water"
+  },
+  {
+    "time_s": 55.686,
+    "word_end_s": 55.587,
+    "next_word_start_s": 55.785,
+    "pause_s": 0.198,
+    "kind": "breath_pause",
+    "after_word": "Ice-Seven"
+  },
+  {
+    "time_s": 57.725,
+    "word_end_s": 57.555,
+    "next_word_start_s": 57.895,
+    "pause_s": 0.34,
+    "kind": "breath_pause",
+    "after_word": "ice"
+  },
+  {
+    "time_s": 61.722,
+    "word_end_s": 61.497,
+    "next_word_start_s": 62.378,
+    "pause_s": 0.881,
+    "kind": "breath_pause",
+    "after_word": "crust"
+  },
+  {
+    "time_s": 67.329,
+    "word_end_s": 67.135,
+    "next_word_start_s": 67.523,
+    "pause_s": 0.388,
+    "kind": "breath_pause",
+    "after_word": "pockets"
+  },
+  {
+    "time_s": 70.488,
+    "word_end_s": 70.263,
+    "next_word_start_s": 71.135,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "sparkle"
+  },
+  {
+    "time_s": 74.657,
+    "word_end_s": 74.569,
+    "next_word_start_s": 74.746,
+    "pause_s": 0.177,
+    "kind": "breath_pause",
+    "after_word": "capsules"
+  },
+  {
+    "time_s": 76.933,
+    "word_end_s": 76.615,
+    "next_word_start_s": 76.933,
+    "pause_s": 0.318,
+    "kind": "segment_end",
+    "after_word": "rock"
+  }
+]

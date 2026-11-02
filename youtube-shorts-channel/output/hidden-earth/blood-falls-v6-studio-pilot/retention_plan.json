@@ -1,0 +1,109 @@
+{
+  "slug": "blood-falls-v6-studio-pilot",
+  "style_profile": "mysterious_earth_exploration",
+  "target_duration_range_s": [
+    68.0,
+    90.0
+  ],
+  "planned_duration_s": 73.85,
+  "timing_source": "word_timings",
+  "rows": [
+    {
+      "time": "0.1\u20136.6s",
+      "start_s": 0.1,
+      "end_s": 6.55,
+      "seg_id": "N01",
+      "narrative_beat": "opening_hook",
+      "viewer_question": "How can liquid red water pour out of solid Antarctic glacier ice?",
+      "new_information": "A five-story crimson plume emerges directly from Taylor Glacier in Antarctica's McMurdo Dry Valleys.",
+      "visual_reveal": "Full-bleed NSF photograph of Blood Falls cutting to 1080p helicopter sweep along Antarctic glacier fissures.",
+      "emotional_direction": "Immediate visual astonishment grounded in real expedition imagery",
+      "retention_purpose": "Stop scrolling on Frame 0 with an unmistakable real-world visual anomaly"
+    },
+    {
+      "time": "6.9\u201317.4s",
+      "start_s": 6.93,
+      "end_s": 17.39,
+      "seg_id": "N02",
+      "narrative_beat": "curiosity_gap",
+      "viewer_question": "Where does hyper-salty iron water come from inside a frozen glacier?",
+      "new_information": "Early red-algae guesses were wrong; dissolved ferrous iron in hypersaline water oxidizes on contact with air.",
+      "visual_reveal": "Landsat LIMA flyover up Taylor Valley followed by hands-on lab ice inspection and USAP field instrumentation.",
+      "emotional_direction": "Controlled scientific intrigue shifting from surface mystery to subglacial source",
+      "retention_purpose": "Answer the superficial color question quickly while opening the deeper subsurface question"
+    },
+    {
+      "time": "17.8\u201327.6s",
+      "start_s": 17.75,
+      "end_s": 27.63,
+      "seg_id": "N03",
+      "narrative_beat": "evidence_and_discovery",
+      "viewer_question": "Could anything survive inside dark, salty water sealed beneath 400 meters of ice?",
+      "new_information": "A hypersaline brine system beneath Taylor Glacier likely traces to ancient marine water, with ongoing radar/geochemical study.",
+      "visual_reveal": "Subglacial cross-section diagram dissolving to New Harbor coast and NASA airborne ice-penetrating radar.",
+      "emotional_direction": "Subterranean scale and scientific rigor",
+      "retention_purpose": "Build spatial understanding of the hidden brine system before the 2026 biological twist"
+    },
+    {
+      "time": "28.1\u201334.4s",
+      "start_s": 28.09,
+      "end_s": 34.36,
+      "seg_id": "N04",
+      "narrative_beat": "escalation",
+      "viewer_question": "What unexpected evidence did researchers pull from Blood Falls' freezing red mud in 2026?",
+      "new_information": "Chemistry was only half the story\u20142026 field sampling uncovered an unexpected biological signature in the red sediment.",
+      "visual_reveal": "Red NSF helicopter hovering over a field scientist kneeling on McMurdo rock and snow with live rotor nat-sound.",
+      "emotional_direction": "Mid-story curiosity re-ignition",
+      "retention_purpose": "Prevent mid-video drop-off by pivoting from geology to a fresh 2026 Nature Geoscience discovery"
+    },
+    {
+      "time": "34.8\u201344.7s",
+      "start_s": 34.84,
+      "end_s": 44.7,
+      "seg_id": "N05",
+      "narrative_beat": "evidence_and_discovery",
+      "viewer_question": "What kind of marine microbes were hiding miles away from the open ocean?",
+      "new_information": "Across 167 regional samples (Zoumplis et al., 2026), red outflow ice and sediment held a distinct marine-related microbial community.",
+      "visual_reveal": "USAP glaciologists excavating glacier ice in red parkas and preparing cold-room microscope slides.",
+      "emotional_direction": "Methodical expedition discovery",
+      "retention_purpose": "Ground the twist in concrete sample scale (167 samples) and visible human fieldwork"
+    },
+    {
+      "time": "45.1\u201354.7s",
+      "start_s": 45.08,
+      "end_s": 54.66,
+      "seg_id": "N06",
+      "narrative_beat": "payoff",
+      "viewer_question": "Did these ocean micro-eukaryotes stay trapped beneath the glacier for millions of years?",
+      "new_information": "Micro-eukaryotes including diatoms and flagellated marine drifters appear in the brine-fed outflow miles inland from Ross Sea leads.",
+      "visual_reveal": "Optical dissolve from microscope prep into live gliding diatoms, swimming flagellates, and dark Ross Sea ice leads.",
+      "emotional_direction": "Wonder at microscopic evidence connecting glacier interior to ancient seas",
+      "retention_purpose": "Deliver the central visual and scientific reveal promised by the 2026 pivot"
+    },
+    {
+      "time": "55.1\u201363.8s",
+      "start_s": 55.14,
+      "end_s": 63.78,
+      "seg_id": "N07",
+      "narrative_beat": "payoff",
+      "viewer_question": "What is known fact versus active scientific investigation?",
+      "new_information": "Finding marine-related taxa does not prove continuous multi-million-year isolation of those exact cells; transport pathways remain studied.",
+      "visual_reveal": "Sweeping Transantarctic mountain aerials and backlit Antarctic researcher inspecting remote ice instrumentation.",
+      "emotional_direction": "Intellectual honesty and earned trust",
+      "retention_purpose": "Strengthen documentary credibility by explicitly separating verified evidence from open questions"
+    },
+    {
+      "time": "64.2\u201373.8s",
+      "start_s": 64.2,
+      "end_s": 73.85,
+      "seg_id": "N08",
+      "narrative_beat": "final_impression",
+      "viewer_question": "What else lies hidden beneath Earth's ice sheets\u2014and icy moons beyond?",
+      "new_information": "Reframes Blood Falls from visual oddity to a natural window into subglacial habitability beneath 400m of ice.",
+      "visual_reveal": "Researcher standing directly before Blood Falls dissolving to 2026 Operation Deep Freeze expedition across vast sea ice.",
+      "emotional_direction": "Lasting scientific awe without generic subscribe prompts",
+      "retention_purpose": "Resolve the opening hook cleanly and leave a memorable closing insight"
+    }
+  ],
+  "markdown_table": "# Audience Retention Plan \u2014 `blood-falls-v6-studio-pilot` (`73.8s` Target/Actual Runtime)\n\n- **Production Profile:** `mysterious_earth_exploration`\n- **Configured Target Window:** `68\u201390s`\n- **Timing Basis:** `Authoritative Narration Master (word_timings.json)`\n\n| Time | Narrative beat | Viewer question | New information | Visual reveal | Emotional direction | Retention purpose |\n|---|---|---|---|---|---|---|\n| `0.1\u20136.6s` | **opening_hook** (`N01`) | How can liquid red water pour out of solid Antarctic glacier ice? | A five-story crimson plume emerges directly from Taylor Glacier in Antarctica's McMurdo Dry Valleys. | Full-bleed NSF photograph of Blood Falls cutting to 1080p helicopter sweep along Antarctic glacier fissures. | Immediate visual astonishment grounded in real expedition imagery | Stop scrolling on Frame 0 with an unmistakable real-world visual anomaly |\n| `6.9\u201317.4s` | **curiosity_gap** (`N02`) | Where does hyper-salty iron water come from inside a frozen glacier? | Early red-algae guesses were wrong; dissolved ferrous iron in hypersaline water oxidizes on contact with air. | Landsat LIMA flyover up Taylor Valley followed by hands-on lab ice inspection and USAP field instrumentation. | Controlled scientific intrigue shifting from surface mystery to subglacial source | Answer the superficial color question quickly while opening the deeper subsurface question |\n| `17.8\u201327.6s` | **evidence_and_discovery** (`N03`) | Could anything survive inside dark, salty water sealed beneath 400 meters of ice? | A hypersaline brine system beneath Taylor Glacier likely traces to ancient marine water, with ongoing radar/geochemical study. | Subglacial cross-section diagram dissolving to New Harbor coast and NASA airborne ice-penetrating radar. | Subterranean scale and scientific rigor | Build spatial understanding of the hidden brine system before the 2026 biological twist |\n| `28.1\u201334.4s` | **escalation** (`N04`) | What unexpected evidence did researchers pull from Blood Falls' freezing red mud in 2026? | Chemistry was only half the story\u20142026 field sampling uncovered an unexpected biological signature in the red sediment. | Red NSF helicopter hovering over a field scientist kneeling on McMurdo rock and snow with live rotor nat-sound. | Mid-story curiosity re-ignition | Prevent mid-video drop-off by pivoting from geology to a fresh 2026 Nature Geoscience discovery |\n| `34.8\u201344.7s` | **evidence_and_discovery** (`N05`) | What kind of marine microbes were hiding miles away from the open ocean? | Across 167 regional samples (Zoumplis et al., 2026), red outflow ice and sediment held a distinct marine-related microbial community. | USAP glaciologists excavating glacier ice in red parkas and preparing cold-room microscope slides. | Methodical expedition discovery | Ground the twist in concrete sample scale (167 samples) and visible human fieldwork |\n| `45.1\u201354.7s` | **payoff** (`N06`) | Did these ocean micro-eukaryotes stay trapped beneath the glacier for millions of years? | Micro-eukaryotes including diatoms and flagellated marine drifters appear in the brine-fed outflow miles inland from Ross Sea leads. | Optical dissolve from microscope prep into live gliding diatoms, swimming flagellates, and dark Ross Sea ice leads. | Wonder at microscopic evidence connecting glacier interior to ancient seas | Deliver the central visual and scientific reveal promised by the 2026 pivot |\n| `55.1\u201363.8s` | **payoff** (`N07`) | What is known fact versus active scientific investigation? | Finding marine-related taxa does not prove continuous multi-million-year isolation of those exact cells; transport pathways remain studied. | Sweeping Transantarctic mountain aerials and backlit Antarctic researcher inspecting remote ice instrumentation. | Intellectual honesty and earned trust | Strengthen documentary credibility by explicitly separating verified evidence from open questions |\n| `64.2\u201373.8s` | **final_impression** (`N08`) | What else lies hidden beneath Earth's ice sheets\u2014and icy moons beyond? | Reframes Blood Falls from visual oddity to a natural window into subglacial habitability beneath 400m of ice. | Researcher standing directly before Blood Falls dissolving to 2026 Operation Deep Freeze expedition across vast sea ice. | Lasting scientific awe without generic subscribe prompts | Resolve the opening hook cleanly and leave a memorable closing insight |\n"
+}

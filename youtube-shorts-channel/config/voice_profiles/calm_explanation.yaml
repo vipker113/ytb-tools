@@ -1,0 +1,27 @@
+profile_id: "calm_explanation"
+display_name: "Calm Explanation"
+description: "Warm, grounded, patient explanatory delivery suited for intricate physics, geology, or biological mechanisms."
+voice_mode: "directed_tts"
+voice_identity: "en-GB-RyanNeural"
+accent: "en-GB"
+tone: "warm"
+emotion: "curiosity"
+energy: 2
+speaking_speed: "slow"
+base_rate_pct: -3
+base_pitch_hz: -1
+default_pause_after_ms: 380
+consistency_lock: true
+max_rate_delta_pct: 8
+max_pitch_delta_hz: 2
+emphasis_strategy: "bounded_cadence_and_subtitle_highlight"
+pronunciation: {}
+sentence_delivery_presets:
+  CALM:
+    rate_delta_pct: -3
+    pitch_delta_hz: -1
+    pause_after_ms: 400
+  EVIDENCE:
+    rate_delta_pct: -2
+    pitch_delta_hz: 0
+    pause_after_ms: 360

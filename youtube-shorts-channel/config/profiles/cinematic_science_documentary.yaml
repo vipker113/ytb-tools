@@ -1,0 +1,72 @@
+profile_name: "cinematic_science_documentary"
+profile_version: "6.0.0"
+description: "Evidence-driven scientific discoveries, laboratory breakthroughs, and counterintuitive physics/biology stories."
+
+narrative_retention:
+  category_focus: "Scientific discoveries, peer-reviewed breakthroughs, and counterintuitive natural mechanisms"
+  default_target_duration_range_s: [70.0, 88.0]
+  preferred_beat_structure:
+    - "opening_hook"
+    - "curiosity_gap"
+    - "evidence_and_discovery"
+    - "escalation"
+    - "payoff"
+    - "final_impression"
+  preferred_hook_archetypes:
+    - "unexpected_fact"
+    - "paradox"
+    - "surprising_visual"
+  max_info_drought_s: 13.0
+  min_central_payoff_time_fraction: 0.32
+
+asset_selection:
+  target_moving_footage_ratio: 0.80
+  max_still_photo_ratio: 0.16
+  prefer_human_fieldwork_interaction: true
+  min_human_interaction_shots: 3
+  min_distinct_perspectives: 4
+  scoring_weights:
+    direct_relevance: 0.32
+    visual_clarity: 0.22
+    authenticity: 0.20
+    technical_quality: 0.10
+    composition_potential: 0.08
+    motion_storytelling: 0.04
+    license_verification: 0.04
+    min_direct_relevance_floor: 0.35
+
+sound_design:
+  default_voice: "en-GB-RyanNeural"
+  default_voice_profile: "scientific_authority"
+  scene_audio_profile: "scientific_discovery"
+  enable_5layer_mixing: true
+  enable_diegetic_nat_sound: true
+  target_bed_lufs: -27.0
+  music_layer_gain_db: -21.0
+  ambience_layer_gain_db: -22.5
+  natural_sounds_layer_gain_db: -16.5
+  cinematic_sfx_layer_gain_db: -25.5
+
+pacing:
+  adaptive_duration_enabled: true
+  reference_shot_duration_range_s: [3.4, 6.6]
+  min_shot_duration_s: 2.4
+  max_shot_duration_s: 12.0
+  dissolve_duration_s: 0.55
+  max_dissolve_fraction_of_cuts: 0.35
+
+color_science:
+  enable_filmic_grade: true
+  cast_tame_strength: 0.20
+  luma_grain_sigma: 1.9
+
+subtitles:
+  style: "cinema_boxless"
+  emphasis_mode: "color_accent"
+  enable_keyword_color_flash: true
+  word_by_word_animation: false
+
+opening_and_thumbnail:
+  thumbnail_text_mode: "cinema_hook"
+  thumbnail_max_words: 6
+  thumbnail_concepts_count: 3

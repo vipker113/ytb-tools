@@ -1,0 +1,1351 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "total_duration_s": 69.7,
+  "total_frames_30fps": 2091,
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "A kilometer down on the pitch-black ocean floor, deep-sea cameras cross a literal shoreline\u2014into an underwater lake.",
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "start": 0.1,
+      "end": 6.396,
+      "duration": 6.296,
+      "pause_after": 0.22,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N02",
+      "text": "Waves ripple across its mirror-like surface, while dark streams pour down the seabed slope.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 6.616,
+      "end": 11.572,
+      "duration": 4.956,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N03",
+      "text": "Its secret is buried ancient salt. Dissolving beneath the Gulf of Mexico and the Red Sea, it creates brine up to eight times saltier than seawater.",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "start": 11.832,
+      "end": 20.628,
+      "duration": 8.795,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N04",
+      "text": "Too heavy to mix, that dense brine pools in seafloor basins\u2014trapping toxic methane and sulfur with zero oxygen.",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "start": 20.888,
+      "end": 27.73,
+      "duration": 6.842,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N05",
+      "text": "Any crab or fish that strays across the rim suffers instant anoxic shock. Yet dense beds of mussels and tubeworms thrive right along that deadly edge.",
+      "rate": "+2%",
+      "pitch": "+1Hz",
+      "start": 28.01,
+      "end": 36.575,
+      "duration": 8.565,
+      "pause_after": 0.25,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N06",
+      "text": "In 2022, scientists dove 1,770 meters into the Red Sea\u2014and pulled mud cores from untouched brine pools. Without burrowing animals, those layers preserve a thousand years of earthquakes and tsunamis.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 36.825,
+      "end": 50.942,
+      "duration": 14.117,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N07",
+      "text": "Researchers also test these chemical boundaries as stand-ins for icy moons like Europa. Of course, that doesn't prove life exists beyond Earth.",
+      "rate": "-2%",
+      "pitch": "-1Hz",
+      "start": 51.202,
+      "end": 60.292,
+      "duration": 9.091,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N08",
+      "text": "Deep-sea brine pools aren't alien portals. They're toxic underwater lakes\u2014recording Earth's violent past and fueling life in total darkness.",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 60.572,
+      "end": 69.442,
+      "duration": 8.87,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "A",
+      "start": 0.1,
+      "end": 0.234,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "kilometer",
+      "start": 0.159,
+      "end": 0.644,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "down",
+      "start": 0.656,
+      "end": 0.935,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "on",
+      "start": 0.948,
+      "end": 1.033,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "the",
+      "start": 1.045,
+      "end": 1.13,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "pitch-black",
+      "start": 1.142,
+      "end": 1.651,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "ocean",
+      "start": 1.664,
+      "end": 1.967,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "floor",
+      "start": 1.979,
+      "end": 2.355,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "deep-sea",
+      "start": 2.61,
+      "end": 3.035,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "cameras",
+      "start": 3.047,
+      "end": 3.435,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "cross",
+      "start": 3.448,
+      "end": 3.715,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "a",
+      "start": 3.727,
+      "end": 3.787,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "literal",
+      "start": 3.8,
+      "end": 4.2,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "shoreline",
+      "start": 4.212,
+      "end": 4.722,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "into",
+      "start": 4.952,
+      "end": 5.256,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "an",
+      "start": 5.268,
+      "end": 5.365,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "underwater",
+      "start": 5.377,
+      "end": 5.911,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "lake",
+      "start": 5.923,
+      "end": 6.336,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Waves",
+      "start": 6.616,
+      "end": 7.049,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "ripple",
+      "start": 6.963,
+      "end": 7.272,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "across",
+      "start": 7.284,
+      "end": 7.594,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "its",
+      "start": 7.606,
+      "end": 7.755,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "mirror-like",
+      "start": 7.767,
+      "end": 8.25,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "surface",
+      "start": 8.262,
+      "end": 8.856,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "while",
+      "start": 9.005,
+      "end": 9.24,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "dark",
+      "start": 9.252,
+      "end": 9.549,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "streams",
+      "start": 9.562,
+      "end": 10.02,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "pour",
+      "start": 10.032,
+      "end": 10.242,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "down",
+      "start": 10.255,
+      "end": 10.539,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 10.552,
+      "end": 10.626,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "seabed",
+      "start": 10.638,
+      "end": 11.022,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "slope",
+      "start": 11.034,
+      "end": 11.492,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Its",
+      "start": 11.832,
+      "end": 12.07,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "secret",
+      "start": 11.979,
+      "end": 12.354,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "is",
+      "start": 12.367,
+      "end": 12.504,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "buried",
+      "start": 12.517,
+      "end": 12.842,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "ancient",
+      "start": 12.854,
+      "end": 13.217,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "salt",
+      "start": 13.229,
+      "end": 13.667,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Dissolving",
+      "start": 14.529,
+      "end": 15.067,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "beneath",
+      "start": 15.079,
+      "end": 15.442,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 15.454,
+      "end": 15.554,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Gulf",
+      "start": 15.567,
+      "end": 15.829,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "of",
+      "start": 15.842,
+      "end": 15.942,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Mexico",
+      "start": 15.954,
+      "end": 16.467,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "and",
+      "start": 16.479,
+      "end": 16.604,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 16.617,
+      "end": 16.692,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Red",
+      "start": 16.704,
+      "end": 16.954,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Sea",
+      "start": 16.967,
+      "end": 17.304,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "it",
+      "start": 17.542,
+      "end": 17.617,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "creates",
+      "start": 17.629,
+      "end": 18.017,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "brine",
+      "start": 18.029,
+      "end": 18.392,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "up",
+      "start": 18.404,
+      "end": 18.529,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "to",
+      "start": 18.542,
+      "end": 18.642,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "eight",
+      "start": 18.654,
+      "end": 18.879,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "times",
+      "start": 18.892,
+      "end": 19.279,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "saltier",
+      "start": 19.292,
+      "end": 19.742,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "than",
+      "start": 19.754,
+      "end": 19.904,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "seawater",
+      "start": 19.917,
+      "end": 20.554,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Too",
+      "start": 20.888,
+      "end": 21.138,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "heavy",
+      "start": 21.052,
+      "end": 21.277,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "to",
+      "start": 21.29,
+      "end": 21.402,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "mix",
+      "start": 21.415,
+      "end": 21.84,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "that",
+      "start": 22.015,
+      "end": 22.165,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "dense",
+      "start": 22.177,
+      "end": 22.465,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "brine",
+      "start": 22.477,
+      "end": 22.815,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "pools",
+      "start": 22.827,
+      "end": 23.177,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "in",
+      "start": 23.19,
+      "end": 23.315,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "seafloor",
+      "start": 23.327,
+      "end": 23.752,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "basins",
+      "start": 23.765,
+      "end": 24.327,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "trapping",
+      "start": 24.527,
+      "end": 24.927,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "toxic",
+      "start": 24.94,
+      "end": 25.352,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "methane",
+      "start": 25.365,
+      "end": 25.865,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "and",
+      "start": 25.877,
+      "end": 26.04,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "sulfur",
+      "start": 26.052,
+      "end": 26.452,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "with",
+      "start": 26.465,
+      "end": 26.615,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "zero",
+      "start": 26.627,
+      "end": 27.04,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "oxygen",
+      "start": 27.052,
+      "end": 27.665,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Any",
+      "start": 28.01,
+      "end": 28.242,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "crab",
+      "start": 28.167,
+      "end": 28.449,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "or",
+      "start": 28.461,
+      "end": 28.583,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "fish",
+      "start": 28.596,
+      "end": 28.914,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "that",
+      "start": 28.927,
+      "end": 29.074,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "strays",
+      "start": 29.086,
+      "end": 29.441,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "across",
+      "start": 29.454,
+      "end": 29.797,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 29.809,
+      "end": 29.907,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "rim",
+      "start": 29.919,
+      "end": 30.115,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "suffers",
+      "start": 30.128,
+      "end": 30.483,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "instant",
+      "start": 30.495,
+      "end": 30.863,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "anoxic",
+      "start": 30.875,
+      "end": 31.329,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "shock",
+      "start": 31.341,
+      "end": 31.794,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Yet",
+      "start": 32.639,
+      "end": 32.859,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "dense",
+      "start": 32.872,
+      "end": 33.129,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "beds",
+      "start": 33.141,
+      "end": 33.411,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "of",
+      "start": 33.423,
+      "end": 33.509,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "mussels",
+      "start": 33.521,
+      "end": 33.987,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "and",
+      "start": 33.999,
+      "end": 34.097,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "tubeworms",
+      "start": 34.109,
+      "end": 34.673,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "thrive",
+      "start": 34.685,
+      "end": 35.041,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "right",
+      "start": 35.053,
+      "end": 35.31,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "along",
+      "start": 35.323,
+      "end": 35.592,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "that",
+      "start": 35.605,
+      "end": 35.776,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "deadly",
+      "start": 35.788,
+      "end": 36.131,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "edge",
+      "start": 36.144,
+      "end": 36.511,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "In 2022",
+      "start": 36.825,
+      "end": 37.951,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "scientists",
+      "start": 38.086,
+      "end": 38.729,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "dove",
+      "start": 38.741,
+      "end": 39.014,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "1,770",
+      "start": 39.026,
+      "end": 40.821,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "meters",
+      "start": 40.833,
+      "end": 41.204,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "into",
+      "start": 41.217,
+      "end": 41.489,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 41.501,
+      "end": 41.6,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Red",
+      "start": 41.613,
+      "end": 41.86,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Sea",
+      "start": 41.873,
+      "end": 42.232,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "and",
+      "start": 42.529,
+      "end": 42.628,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "pulled",
+      "start": 42.64,
+      "end": 42.925,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "mud",
+      "start": 42.937,
+      "end": 43.185,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "cores",
+      "start": 43.197,
+      "end": 43.543,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "from",
+      "start": 43.556,
+      "end": 43.717,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "untouched",
+      "start": 43.729,
+      "end": 44.286,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "brine",
+      "start": 44.298,
+      "end": 44.62,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "pools",
+      "start": 44.633,
+      "end": 45.189,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Without",
+      "start": 46.043,
+      "end": 46.488,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "burrowing",
+      "start": 46.501,
+      "end": 46.897,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "animals",
+      "start": 46.909,
+      "end": 47.367,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "those",
+      "start": 47.54,
+      "end": 47.763,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "layers",
+      "start": 47.776,
+      "end": 48.097,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "preserve",
+      "start": 48.11,
+      "end": 48.493,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "a",
+      "start": 48.506,
+      "end": 48.555,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "thousand",
+      "start": 48.568,
+      "end": 49.063,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "years",
+      "start": 49.075,
+      "end": 49.335,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "of",
+      "start": 49.347,
+      "end": 49.446,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "earthquakes",
+      "start": 49.459,
+      "end": 50.028,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "and",
+      "start": 50.04,
+      "end": 50.127,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "tsunamis",
+      "start": 50.139,
+      "end": 50.882,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Researchers",
+      "start": 51.202,
+      "end": 51.878,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "also",
+      "start": 51.774,
+      "end": 52.119,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "test",
+      "start": 52.131,
+      "end": 52.476,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "these",
+      "start": 52.489,
+      "end": 52.693,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "chemical",
+      "start": 52.705,
+      "end": 53.126,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "boundaries",
+      "start": 53.139,
+      "end": 53.751,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "as",
+      "start": 53.764,
+      "end": 53.866,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "stand-ins",
+      "start": 53.879,
+      "end": 54.402,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "for",
+      "start": 54.415,
+      "end": 54.542,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "icy",
+      "start": 54.555,
+      "end": 54.899,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "moons",
+      "start": 54.912,
+      "end": 55.307,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "like",
+      "start": 55.32,
+      "end": 55.537,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Europa",
+      "start": 55.55,
+      "end": 56.124,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Of",
+      "start": 57.005,
+      "end": 57.196,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "course",
+      "start": 57.209,
+      "end": 57.681,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "that",
+      "start": 57.86,
+      "end": 58.0,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "doesn't",
+      "start": 58.013,
+      "end": 58.28,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "prove",
+      "start": 58.293,
+      "end": 58.612,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "life",
+      "start": 58.625,
+      "end": 58.905,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "exists",
+      "start": 58.918,
+      "end": 59.403,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "beyond",
+      "start": 59.416,
+      "end": 59.773,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Earth",
+      "start": 59.786,
+      "end": 60.206,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Deep-sea",
+      "start": 60.572,
+      "end": 61.103,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "brine",
+      "start": 61.017,
+      "end": 61.371,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "pools",
+      "start": 61.384,
+      "end": 61.775,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "aren't",
+      "start": 61.788,
+      "end": 62.028,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "alien",
+      "start": 62.04,
+      "end": 62.406,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "portals",
+      "start": 62.419,
+      "end": 63.063,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "They're",
+      "start": 63.935,
+      "end": 64.175,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "toxic",
+      "start": 64.187,
+      "end": 64.604,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "underwater",
+      "start": 64.616,
+      "end": 65.147,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "lakes",
+      "start": 65.159,
+      "end": 65.538,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "recording",
+      "start": 65.765,
+      "end": 66.258,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Earth's",
+      "start": 66.271,
+      "end": 66.574,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "violent",
+      "start": 66.586,
+      "end": 67.015,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "past",
+      "start": 67.028,
+      "end": 67.407,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "and",
+      "start": 67.42,
+      "end": 67.508,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "fueling",
+      "start": 67.521,
+      "end": 67.925,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "life",
+      "start": 67.937,
+      "end": 68.228,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "in",
+      "start": 68.24,
+      "end": 68.366,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "total",
+      "start": 68.379,
+      "end": 68.733,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "darkness",
+      "start": 68.745,
+      "end": 69.364,
+      "emphasis": false
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 0.04,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "hydrophone_current_swell",
+      "time_s": 6.547,
+      "gain_db": -25.0
+    },
+    {
+      "sfx_name": "sonar_ping_deep",
+      "time_s": 13.96,
+      "gain_db": -26.5
+    },
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 36.717,
+      "gain_db": -26.0
+    },
+    {
+      "sfx_name": "microscope_slide_click",
+      "time_s": 51.083,
+      "gain_db": -25.5
+    }
+  ],
+  "diegetic_nat_sound_active": true
+}

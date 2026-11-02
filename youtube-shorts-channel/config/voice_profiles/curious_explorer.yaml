@@ -1,0 +1,31 @@
+profile_id: "curious_explorer"
+display_name: "Curious Explorer"
+description: "Inquisitive, forward-leaning expedition narrator driven by genuine field curiosity and observational energy."
+voice_mode: "directed_tts"
+voice_identity: "en-US-AndrewMultilingualNeural"
+accent: "en-US"
+tone: "curious"
+emotion: "curiosity"
+energy: 4
+speaking_speed: "moderate"
+base_rate_pct: 2
+base_pitch_hz: 0
+default_pause_after_ms: 280
+consistency_lock: true
+max_rate_delta_pct: 10
+max_pitch_delta_hz: 2
+emphasis_strategy: "bounded_cadence_and_subtitle_highlight"
+pronunciation: {}
+sentence_delivery_presets:
+  OPENING_HOOK:
+    rate_delta_pct: 3
+    pitch_delta_hz: 1
+    pause_after_ms: 250
+  SURPRISED_BUT_CONTROLLED:
+    rate_delta_pct: 1
+    pitch_delta_hz: 1
+    pause_after_ms: 340
+  CINEMATIC_REVEAL:
+    rate_delta_pct: -3
+    pitch_delta_hz: 0
+    pause_after_ms: 520

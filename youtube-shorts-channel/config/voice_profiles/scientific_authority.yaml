@@ -1,0 +1,33 @@
+profile_id: "scientific_authority"
+display_name: "Scientific Authority"
+description: "Clear, credible, unhurried research communicator prioritizing precision, calm clarity, and analytical trust."
+voice_mode: "directed_tts"
+voice_identity: "en-GB-RyanNeural"
+accent: "en-GB"
+tone: "serious"
+emotion: "curiosity"
+energy: 3
+speaking_speed: "natural"
+base_rate_pct: 0
+base_pitch_hz: -1
+default_pause_after_ms: 330
+consistency_lock: true
+max_rate_delta_pct: 9
+max_pitch_delta_hz: 2
+emphasis_strategy: "bounded_cadence_and_subtitle_highlight"
+pronunciation:
+  haptophytes: "hap-toe-fites"
+  dinoflagellates: "die-no-flaj-uh-lates"
+sentence_delivery_presets:
+  OPENING_HOOK:
+    rate_delta_pct: 2
+    pitch_delta_hz: 0
+    pause_after_ms: 260
+  EVIDENCE:
+    rate_delta_pct: 0
+    pitch_delta_hz: 0
+    pause_after_ms: 320
+  CAVEAT:
+    rate_delta_pct: -3
+    pitch_delta_hz: -1
+    pause_after_ms: 360

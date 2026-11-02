@@ -1,0 +1,1133 @@
+channel_name: "Proof of Wonder"
+playlist: "Hidden Earth"
+slug: "forbidden-zones-earth-v4-documentary"
+style_profile: "pow_documentary_v3"
+
+primary_title: "3 Forbidden Places Humans Are Banned From—And What Happened Inside"
+alternative_title: "Why Humans Are Strictly Locked Out of These 3 Places on Earth"
+
+youtube_description: |
+  Every forbidden zone on Earth looks like a warning designed to keep people alive. Look inside three of the planet's strictest off-limits zones, however, and the true reason for the ban flips completely.
+
+  Around Chernobyl's shattered Reactor 4, an exclusion zone still restricts normal human habitation where fallout scorched pine stands into the Red Forest. Yet once human activity vanished, camera traps and aerial surveys revealed gray wolves, Przewalski's wild horses, and elk multiplying at densities matching or exceeding uncontaminated nature reserves (Deryabina et al., Current Biology, 2015)—while robots inside the reactor walls discovered melanin-rich black fungi growing toward gamma radiation and converting ionizing energy into metabolic growth (Dadachova et al., PLOS ONE, 2007).
+
+  In southwestern France, Lascaux Cave is sealed forever for the opposite reason: human breath. Exhaled CO2, body warmth, and shoe-borne spores triggered algae and white Fusarium solani mold across 17,000-year-old Paleolithic paintings (Bastian et al., Microbiology, 2010). Meanwhile off Iceland, volcanic Surtsey Island has barred visitors since erupting from the sea in 1963—forcing permitted scientists to scrub every seed from their boots so biologists could watch ocean waves and nesting gulls build a 60-species ecosystem on barren lava from zero (Magnússon et al., Surtsey Research, 2014).
+
+hashtags:
+  - "#HiddenEarth"
+  - "#ForbiddenPlaces"
+  - "#ScienceShorts"
+  - "#Chernobyl"
+  - "#Ecology"
+  - "#EarthScience"
+
+target_duration_min_s: 92.0
+target_duration_max_s: 128.0
+voice: "en-GB-RyanNeural"
+ambience_preset: "polar_glacial"
+ambience_ducked_lufs_target: -23.0
+nat_sound_bed_file: "forbidden_zones_wind_geiger_bed.wav"
+nat_sound_bed_range_s: [0.5, 138.0]
+nat_sound_gain_db: -14.5
+
+raw_assets_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/hidden_earth_forbidden_zones_v4"
+output_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/forbidden-zones-earth-v4-documentary"
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N07"
+  scientific_caveat_seg_id: "N08"
+  min_real_evidence_ratio: 0.88
+
+thumbnail_spec:
+  src_file: "dosimeter_chernobyl_ccby.jpg"
+  headline_text: "3 PLACES HUMANS|ARE BANNED FROM"
+  kicker_text: "CHERNOBYL • LASCAUX • SURTSEY"
+  accent_line_index: 1
+  accent_rgb: [255, 212, 59]
+  clarity_boost: true
+  shadow_lift: 0.12
+  alt_headlines:
+    - "FORBIDDEN ZONES|NO HUMANS ALLOWED"
+    - "LOCKED OUT FOREVER|WHAT GREW INSIDE"
+  cx: 0.49
+  cy: 0.52
+  zoom: 1.04
+  text_position: "bottom"
+
+narration_segments:
+  - seg_id: "N01"
+    text: "Every forbidden zone on Earth looks like a warning built to save you. Step inside three locked-off places, and the real danger flips completely."
+    rate: "+3%"
+    pitch: "+0Hz"
+    pause_after_s: 0.24
+  - seg_id: "N02"
+    text: "Around Chernobyl's shattered reactor, a giant exclusion zone still bars normal human life. Radiation there burned whole pine stands rust-red, creating what workers named the Red Forest."
+    rate: "+2%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N03"
+    text: "Yet once people vanished, wildlife surged back. Gray wolves, wild horses, and deer multiplied across empty towns faster than in nearby reserves."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N04"
+    text: "Even stranger, robots probing inside the reactor walls found pitch-black fungi growing toward radiation. Packed with dark melanin pigment, those fungi harvest lethal gamma rays for energy."
+    rate: "+2%"
+    pitch: "+1Hz"
+    pause_after_s: 0.26
+  - seg_id: "N05"
+    text: "In southwestern France, Lascaux Cave is locked for the exact opposite reason. Humans aren't banned to save visitors—we are the poison."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N06"
+    text: "For seventeen thousand years, prehistoric animal paintings survived inside cool, sealed limestone air. When crowds poured in, human breath, body heat, and shoe spores triggered white mold that ate the art. France sealed the real cave forever and built an exact copy nearby."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.28
+  - seg_id: "N07"
+    text: "Off Iceland's coast, Surtsey Island bans humans for an even stricter purpose: pure creation. When an undersea volcano boiled up in nineteen sixty-three, scientists quarantined the barren rock immediately. Researchers scrub every seed from their boots—and when one stray tomato sprouted in ash, they ripped it out."
+    rate: "+2%"
+    pitch: "+1Hz"
+    pause_after_s: 0.28
+  - seg_id: "N08"
+    text: "Carried only by ocean waves and nesting gulls, sixty plant species turned black lava green. That doesn't mean radiation is harmless, or that sealed caves ever recover once human crowds break their balance."
+    rate: "-1%"
+    pitch: "-1Hz"
+    pause_after_s: 0.26
+  - seg_id: "N09"
+    text: "Some forbidden zones lock us out to keep our bodies alive. The rarest ones lock us out because a single human footprint changes everything."
+    rate: "-1%"
+    pitch: "-1Hz"
+    pause_after_s: 0.24
+
+sfx_cues:
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.04
+    gain_db: -25.5
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S09"
+    offset_s: 0.05
+    gain_db: -26.0
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S11"
+    offset_s: 0.05
+    gain_db: -25.5
+  - sfx_name: "microscope_slide_click"
+    anchor_type: "shot_start"
+    anchor_ref: "S15"
+    offset_s: 0.05
+    gain_db: -25.5
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S23"
+    offset_s: 0.05
+    gain_db: -26.5
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 3.441
+    kind: "video_full"
+    src_file: "pripyat_vehicles_dosimeter_720p.mp4"
+    src_in: 54.50
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.53
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.10
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Every forbidden zone on Earth looks like a warning built to save you."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Instant 0.0s live radiation probe held over rusted radioactive Pripyat vehicles"
+    visual_desc: "Live handheld Ludlum Geiger probe held by a field researcher directly over rusted radioactive vehicles inside the Chernobyl Exclusion Zone."
+
+  - sid: "S02"
+    start_s: 3.441
+    end_s: 8.332
+    kind: "video_full"
+    src_file: "chernobyl_unit3_pumps_1080p.mp4"
+    src_in: 12.50
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.47
+    cy1: 0.48
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.12
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'you.' to nuclear technicians in protective coats inside Chernobyl pump hall"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Step inside three locked-off places, and the real danger flips completely."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Nuclear technicians in white protective coats walking inside Chernobyl reactor pump hall"
+    visual_desc: "Live 1080p footage of nuclear technicians in white radiation coats inspecting the industrial circulation pump hall at Chernobyl."
+
+  - sid: "S03"
+    start_s: 8.332
+    end_s: 13.823
+    kind: "video_full"
+    src_file: "chernobyl_arch_720p.mp4"
+    src_in: 31.80
+    cx0: 0.56
+    cy0: 0.48
+    cx1: 0.59
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.11
+    contrast_gain: 1.08
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'completely.' to massive steel New Safe Confinement arch sealing Reactor 4"
+    is_real_evidence: true
+    associated_narration_concept: "Around Chernobyl's shattered reactor, a giant exclusion zone still bars normal human life."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Chernobyl New Safe Confinement steel arch towering behind security perimeter fencing"
+    visual_desc: "Live footage of the massive steel New Safe Confinement arch sealing Chernobyl Reactor 4 behind barbed perimeter fencing."
+
+  - sid: "S04"
+    start_s: 13.823
+    end_s: 17.285
+    kind: "video_full"
+    src_file: "geiger_counter_1080p.mp4"
+    src_in: 8.00
+    cx0: 0.64
+    cy0: 0.50
+    cx1: 0.67
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.10
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'life.' to spiking Geiger counter measuring ionizing radiation"
+    is_real_evidence: true
+    associated_narration_concept: "Radiation there burned whole pine stands rust-red,"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Close-up of active Geiger counter flashing and registering ionizing radiation pulses"
+    visual_desc: "Live 1080p close-up of a radiation Geiger counter flashing sharply as ionizing particles strike the detector tube."
+
+  - sid: "S05"
+    start_s: 17.285
+    end_s: 19.747
+    kind: "video_full"
+    src_file: "chernobyl_red_forest_camp_720p.mp4"
+    src_in: 4.00
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.53
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.10
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'rust-red,' to abandoned structures deep inside Chernobyl's Red Forest"
+    is_real_evidence: true
+    associated_narration_concept: "creating what workers named the Red Forest."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Overgrown abandoned camp swallowed by dense pines inside Chernobyl's Red Forest"
+    visual_desc: "Live field footage of abandoned structures overtaken by dense pine woodland inside Chernobyl's radioactive Red Forest."
+
+  - sid: "S06"
+    start_s: 19.747
+    end_s: 22.833
+    kind: "video_full"
+    src_file: "gray_wolves_1080p.mp4"
+    src_in: 13.50
+    cx0: 0.51
+    cy0: 0.48
+    cx1: 0.53
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.11
+    contrast_gain: 1.08
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'Forest.' to wild Eurasian gray wolf standing alert on a ridge"
+    is_real_evidence: true
+    associated_narration_concept: "Yet once people vanished, wildlife surged back."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Wild Eurasian gray wolf standing alert atop a rocky wilderness ridge"
+    visual_desc: "Live 1080p wildlife footage of an adult Eurasian gray wolf standing alert on a rocky mountain ridge."
+
+  - sid: "S07"
+    start_s: 22.833
+    end_s: 25.435
+    kind: "still_full"
+    src_file: "przewalski_horse_chernobyl_ccby.jpg"
+    cx0: 0.62
+    cy0: 0.50
+    cx1: 0.64
+    cy1: 0.49
+    z0: 1.03
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'back.' to real Przewalski's wild horses inside the Chernobyl Exclusion Zone"
+    is_real_evidence: true
+    associated_narration_concept: "Gray wolves, wild horses,"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Wild Przewalski's horses roaming freely inside the Chernobyl Biosphere Reserve"
+    visual_desc: "CC BY 4.0 field photograph from the Chernobyl Radiation and Ecological Biosphere Reserve showing wild Przewalski's horses."
+
+  - sid: "S08"
+    start_s: 25.435
+    end_s: 29.478
+    kind: "video_full"
+    src_file: "chernobyl_deer_forest_720p.mp4"
+    src_in: 53.50
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.47
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.08
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'horses,' to hands scanning shed wild deer antlers near Chernobyl"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "and deer multiplied across empty towns faster than in nearby reserves."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Researcher scanning shed wild deer antlers near Chernobyl with an analog Ludlum radiation meter"
+    visual_desc: "Live field video of hands holding a radiation detector beside shed wild deer antlers on the ground near Chernobyl."
+
+  - sid: "S09"
+    start_s: 29.478
+    end_s: 35.649
+    kind: "video_full"
+    src_file: "chernobyl_unit3_pumps_1080p.mp4"
+    src_in: 47.20
+    cx0: 0.45
+    cy0: 0.49
+    cx1: 0.48
+    cy1: 0.49
+    z0: 1.07
+    z1: 1.10
+    contrast_gain: 1.12
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'reserves.' to nuclear technician with handheld radiation detector inside Chernobyl reactor walls"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Even stranger, robots probing inside the reactor walls found pitch-black fungi growing toward radiation."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Nuclear technician in white radiation coat holding digital radiation probe inside Chernobyl reactor walls"
+    visual_desc: "Live 1080p interior footage of nuclear technicians in white protective coats holding a glowing digital radiation detector along Chernobyl reactor walls."
+
+  - sid: "S10"
+    start_s: 35.649
+    end_s: 40.779
+    kind: "video_full"
+    src_file: "forest_fungi_closeup_1080p.mp4"
+    src_in: 1.50
+    cx0: 0.50
+    cy0: 0.49
+    cx1: 0.53
+    cy1: 0.48
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.12
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'radiation.' to close-up dark melanized fungi analog"
+    context_note: "MELANIZED FUNGI ANALOG"
+    is_real_evidence: true
+    associated_narration_concept: "Packed with dark melanin pigment, those fungi harvest lethal gamma rays for energy."
+    subject_match_kind: "representative_organism_microscopy"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Macro close-up of dark forest fungi growing on bark"
+    visual_desc: "Live 1080p macro video of dark-pigmented fungi clusters clinging to weathered bark."
+
+  - sid: "S11"
+    start_s: 40.779
+    end_s: 49.144
+    kind: "video_full"
+    src_file: "nasa_cave_sterile_swab_1080p.mp4"
+    src_in: 43.20
+    cx0: 0.41
+    cy0: 0.50
+    cx1: 0.44
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.12
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Act II geographical pivot dissolve from Chernobyl reactor fungi to sterile cave conservation"
+    context_note: "STERILE CAVE MICROBIOLOGY"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "In southwestern France, Lascaux Cave is locked for the exact opposite reason. Humans aren't banned to save visitors—we are the poison."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "N95-masked cave scientist in helmet and sterile purple nitrile gloves working inside pale limestone cave"
+    visual_desc: "Live 1080p footage of an N95-masked cave microbiologist wearing a headlamp and sterile purple nitrile gloves inside a limestone cave."
+
+  - sid: "S12"
+    start_s: 49.144
+    end_s: 55.329
+    kind: "video_full"
+    src_file: "lascaux_voa_1080p.mp4"
+    src_in: 46.00
+    cx0: 0.48
+    cy0: 0.48
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.07
+    z1: 1.10
+    contrast_gain: 1.12
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'poison.' to 17,000-year-old Paleolithic animal paintings on Lascaux limestone"
+    is_real_evidence: true
+    associated_narration_concept: "For seventeen thousand years, prehistoric animal paintings survived inside cool, sealed limestone air."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Sweeping view across 17,000-year-old Paleolithic bulls and horses painted on Lascaux limestone"
+    visual_desc: "Public Domain Voice of America 1080p camera glide across prehistoric Paleolithic animal murals on Lascaux limestone walls."
+
+  - sid: "S13"
+    start_s: 55.329
+    end_s: 61.802
+    kind: "video_full"
+    src_file: "nasa_cave_sterile_swab_1080p.mp4"
+    src_in: 70.00
+    cx0: 0.49
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.12
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'air.' to scientist probing microbial contamination on fragile cave rock"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "When crowds poured in, human breath, body heat, and shoe spores triggered white mold that ate the art."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Cave microbiologist with headlamp pressing diagnostic sensor onto fragile cave wall"
+    visual_desc: "Live 1080p close-up of a cave scientist illuminated by a headlamp examining microbial deposits on a subterranean rock wall."
+
+  - sid: "S14"
+    start_s: 61.802
+    end_s: 66.288
+    kind: "video_full"
+    src_file: "lascaux_voa_1080p.mp4"
+    src_in: 103.00
+    cx0: 0.49
+    cy0: 0.49
+    cx1: 0.52
+    cy1: 0.49
+    z0: 1.07
+    z1: 1.10
+    contrast_gain: 1.10
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'art.' to masked conservators inspecting Lascaux murals by flashlight"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "France sealed the real cave forever and built an exact copy nearby."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Masked Lascaux conservators inspecting Paleolithic cave murals with handheld lights"
+    visual_desc: "Public Domain 1080p footage of masked conservation specialists using handheld lights beside Lascaux cave paintings."
+
+  - sid: "S15"
+    start_s: 66.288
+    end_s: 72.215
+    kind: "video_full"
+    src_file: "iceland_volcano_1080p.mp4"
+    src_in: 13.50
+    cx0: 0.46
+    cy0: 0.49
+    cx1: 0.49
+    cy1: 0.49
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.10
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Act III geographical pivot dissolve from sealed French limestone cave to volcanic Iceland"
+    context_note: "ICELANDIC BASALTIC ERUPTION"
+    is_real_evidence: true
+    associated_narration_concept: "Off Iceland's coast, Surtsey Island bans humans for an even stricter purpose: pure creation."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Glowing Icelandic basaltic volcanic cone pouring molten lava across dark ash"
+    visual_desc: "Live 1080p aerial footage of an erupting Icelandic basaltic volcano cone sending incandescent lava across black rock."
+
+  - sid: "S16"
+    start_s: 72.215
+    end_s: 76.125
+    kind: "video_full"
+    src_file: "nasa_new_volcanic_island_1080p.mp4"
+    src_in: 78.40
+    cx0: 0.41
+    cy0: 0.50
+    cx1: 0.43
+    cy1: 0.49
+    z0: 1.08
+    z1: 1.11
+    contrast_gain: 1.10
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'creation.' to archival 1963 submarine eruption of Surtsey Island"
+    is_real_evidence: true
+    associated_narration_concept: "When an undersea volcano boiled up in nineteen sixty-three,"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Archival 1963 Surtsey submarine volcanic eruption blasting steam and ash from the North Atlantic"
+    visual_desc: "Public Domain archival footage of the 1963 Surtsey volcanic eruption boiling upward out of the ocean off Iceland."
+
+  - sid: "S17"
+    start_s: 76.125
+    end_s: 79.015
+    kind: "still_full"
+    src_file: "surtsey_island_ccby.jpg"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.49
+    z0: 1.03
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'sixty-three,' to quarantined volcanic Surtsey Island isolated in the sea"
+    is_real_evidence: true
+    associated_narration_concept: "scientists quarantined the barren rock immediately."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Isolated volcanic Surtsey Island rising out of the North Atlantic off Iceland"
+    visual_desc: "CC BY 2.0 aerial photograph by Brian Gratwicke showing quarantined Surtsey Island rising starkly from the North Atlantic."
+
+  - sid: "S18"
+    start_s: 79.015
+    end_s: 82.062
+    kind: "video_full"
+    src_file: "gray_wolves_1080p.mp4"
+    src_in: 33.00
+    cx0: 0.56
+    cy0: 0.50
+    cx1: 0.58
+    cy1: 0.50
+    z0: 1.07
+    z1: 1.10
+    contrast_gain: 1.08
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'immediately.' to field ecologists working in rugged coastal terrain"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Researchers scrub every seed from their boots—"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Field biologists in rugged boots and weather gear setting up observation gear in treeless terrain"
+    visual_desc: "Live 1080p fieldwork shot of researchers in weather gear and hiking boots working across open rocky terrain."
+
+  - sid: "S19"
+    start_s: 82.062
+    end_s: 85.873
+    kind: "video_full"
+    src_file: "iceland_volcano_1080p.mp4"
+    src_in: 48.00
+    cx0: 0.52
+    cy0: 0.49
+    cx1: 0.54
+    cy1: 0.49
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.10
+    transition_in: "cut"
+    transition_reason: "Dash-pause cut after 'boots—' to barren black Icelandic volcanic ash and basalt crust"
+    is_real_evidence: true
+    associated_narration_concept: "and when one stray tomato sprouted in ash, they ripped it out."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Barren dark volcanic ash slopes and steaming basalt crater in Iceland"
+    visual_desc: "Live 1080p footage of dark volcanic ash and fresh black basalt rock surrounding an Icelandic crater."
+
+  - sid: "S20"
+    start_s: 85.873
+    end_s: 88.652
+    kind: "video_full"
+    src_file: "sea_gulls_flock_1080p.mp4"
+    src_in: 5.50
+    cx0: 0.50
+    cy0: 0.49
+    cx1: 0.53
+    cy1: 0.49
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.08
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'out.' to dense colony of sea gulls rising off coastal waves"
+    is_real_evidence: true
+    associated_narration_concept: "Carried only by ocean waves and nesting gulls,"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Dense flock of gulls wheeling above wind-swept water"
+    visual_desc: "Live 1080p footage of hundreds of gulls lifting off chop and wheeling over open water."
+
+  - sid: "S21"
+    start_s: 88.652
+    end_s: 91.478
+    kind: "video_full"
+    src_file: "nasa_new_volcanic_island_1080p.mp4"
+    src_in: 83.60
+    cx0: 0.56
+    cy0: 0.46
+    cx1: 0.58
+    cy1: 0.47
+    z0: 1.13
+    z1: 1.16
+    contrast_gain: 1.10
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'gulls,' to satellite zoom over Surtsey Island's green gull-fertilized meadow on black lava"
+    is_real_evidence: true
+    associated_narration_concept: "sixty plant species turned black lava green."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Overhead zoom onto Surtsey Island revealing bright green vegetation colonizing black basalt"
+    visual_desc: "Public Domain high-resolution overhead zoom onto Surtsey Island showing twin craters and bright green gull-fertilized plant growth on black basalt."
+
+  - sid: "S22"
+    start_s: 91.478
+    end_s: 94.245
+    kind: "video_full"
+    src_file: "geiger_counter_1080p.mp4"
+    src_in: 24.00
+    cx0: 0.66
+    cy0: 0.50
+    cx1: 0.64
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.10
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'green.' to active radiation detector reinforcing scientific caveat"
+    is_real_evidence: true
+    associated_narration_concept: "That doesn't mean radiation is harmless,"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Close-up of active Geiger counter pulsing during scientific caveat"
+    visual_desc: "Live 1080p close-up of a radiation Geiger counter pulsing rapidly on dark laboratory surface."
+
+  - sid: "S23"
+    start_s: 94.245
+    end_s: 98.328
+    kind: "diagram"
+    src_file: "forbidden_zones_comparison_v4.mp4"
+    src_in: 3.20
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.00
+    z1: 1.00
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'harmless,' to first-party 3-zone quarantine architecture comparison diagram"
+    is_real_evidence: false
+    associated_narration_concept: "or that sealed caves ever recover once human crowds break their balance."
+    subject_match_kind: "illustrative_diagram"
+    scientific_claim_status: "illustrative_visualization"
+    story_beat: "First-party comparative diagram of Chernobyl, Lascaux Cave, and Surtsey Island bans"
+    visual_desc: "First-party photo-textured 9:16 architectural diagram comparing Chernobyl's radiation ban, Lascaux's human-breath seal, and Surtsey's zero-seed quarantine."
+
+  - sid: "S24"
+    start_s: 98.328
+    end_s: 101.677
+    kind: "video_full"
+    src_file: "chernobyl_red_forest_camp_720p.mp4"
+    src_in: 29.00
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.08
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'balance.' to analog radiation meter resting in Chernobyl grass"
+    is_real_evidence: true
+    associated_narration_concept: "Some forbidden zones lock us out to keep our bodies alive."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Analog Ludlum Geiger counter resting in overgrown grass inside Chernobyl Exclusion Zone"
+    visual_desc: "Live field shot of an analog Ludlum radiation meter resting in tall wild grass inside Chernobyl's Exclusion Zone."
+
+  - sid: "S25"
+    start_s: 101.677
+    end_s: 106.700
+    kind: "video_full"
+    src_file: "sea_gulls_flock_1080p.mp4"
+    src_in: 19.50
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.53
+    cy1: 0.48
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.08
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'alive.' to wild gulls soaring across untouched sky, looping seamlessly into 0.0s Chernobyl Geiger probe"
+    is_real_evidence: true
+    associated_narration_concept: "The rarest ones lock us out because a single human footprint changes everything."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Wild gulls soaring freely across untouched coastal sky looping back into 0.0s radiation probe"
+    visual_desc: "Live 1080p footage of wild gulls soaring freely across open storm-lit sky with zero human presence."
+
+caption_groups:
+  - seg_id: "N01"
+    first_word_idx: 0
+    last_word_idx: 4
+    text: "Every forbidden zone on Earth"
+  - seg_id: "N01"
+    first_word_idx: 5
+    last_word_idx: 12
+    text: "looks like a warning built to save you."
+  - seg_id: "N01"
+    first_word_idx: 13
+    last_word_idx: 17
+    text: "Step inside three locked-off places,"
+  - seg_id: "N01"
+    first_word_idx: 18
+    last_word_idx: 23
+    text: "and the real danger flips completely."
+
+  - seg_id: "N02"
+    first_word_idx: 0
+    last_word_idx: 3
+    text: "Around Chernobyl's shattered reactor,"
+  - seg_id: "N02"
+    first_word_idx: 4
+    last_word_idx: 8
+    text: "a giant exclusion zone still"
+  - seg_id: "N02"
+    first_word_idx: 9
+    last_word_idx: 12
+    text: "bars normal human life."
+  - seg_id: "N02"
+    first_word_idx: 13
+    last_word_idx: 19
+    text: "Radiation there burned whole pine stands rust-red,"
+  - seg_id: "N02"
+    first_word_idx: 20
+    last_word_idx: 26
+    text: "creating what workers named the Red Forest."
+
+  - seg_id: "N03"
+    first_word_idx: 0
+    last_word_idx: 3
+    text: "Yet once people vanished,"
+  - seg_id: "N03"
+    first_word_idx: 4
+    last_word_idx: 6
+    text: "wildlife surged back."
+  - seg_id: "N03"
+    first_word_idx: 7
+    last_word_idx: 12
+    text: "Gray wolves, wild horses, and deer"
+  - seg_id: "N03"
+    first_word_idx: 13
+    last_word_idx: 16
+    text: "multiplied across empty towns"
+  - seg_id: "N03"
+    first_word_idx: 17
+    last_word_idx: 21
+    text: "faster than in nearby reserves."
+
+  - seg_id: "N04"
+    first_word_idx: 0
+    last_word_idx: 4
+    text: "Even stranger, robots probing inside"
+  - seg_id: "N04"
+    first_word_idx: 5
+    last_word_idx: 10
+    text: "the reactor walls found pitch-black fungi"
+  - seg_id: "N04"
+    first_word_idx: 11
+    last_word_idx: 13
+    text: "growing toward radiation."
+  - seg_id: "N04"
+    first_word_idx: 14
+    last_word_idx: 18
+    text: "Packed with dark melanin pigment,"
+  - seg_id: "N04"
+    first_word_idx: 19
+    last_word_idx: 26
+    text: "those fungi harvest lethal gamma rays for energy."
+
+  - seg_id: "N05"
+    first_word_idx: 0
+    last_word_idx: 4
+    text: "In southwestern France, Lascaux Cave"
+  - seg_id: "N05"
+    first_word_idx: 5
+    last_word_idx: 11
+    text: "is locked for the exact opposite reason."
+  - seg_id: "N05"
+    first_word_idx: 12
+    last_word_idx: 17
+    text: "Humans aren't banned to save visitors—"
+  - seg_id: "N05"
+    first_word_idx: 18
+    last_word_idx: 21
+    text: "we are the poison."
+
+  - seg_id: "N06"
+    first_word_idx: 0
+    last_word_idx: 3
+    text: "For 17,000 years,"
+  - seg_id: "N06"
+    first_word_idx: 4
+    last_word_idx: 8
+    text: "prehistoric animal paintings survived inside"
+  - seg_id: "N06"
+    first_word_idx: 9
+    last_word_idx: 12
+    text: "cool, sealed limestone air."
+  - seg_id: "N06"
+    first_word_idx: 13
+    last_word_idx: 18
+    text: "When crowds poured in, human breath,"
+  - seg_id: "N06"
+    first_word_idx: 19
+    last_word_idx: 23
+    text: "body heat, and shoe spores"
+  - seg_id: "N06"
+    first_word_idx: 24
+    last_word_idx: 30
+    text: "triggered white mold that ate the art."
+  - seg_id: "N06"
+    first_word_idx: 31
+    last_word_idx: 36
+    text: "France sealed the real cave forever"
+  - seg_id: "N06"
+    first_word_idx: 37
+    last_word_idx: 42
+    text: "and built an exact copy nearby."
+
+  - seg_id: "N07"
+    first_word_idx: 0
+    last_word_idx: 4
+    text: "Off Iceland's coast, Surtsey Island"
+  - seg_id: "N07"
+    first_word_idx: 5
+    last_word_idx: 11
+    text: "bans humans for an even stricter purpose:"
+  - seg_id: "N07"
+    first_word_idx: 12
+    last_word_idx: 13
+    text: "pure creation."
+  - seg_id: "N07"
+    first_word_idx: 14
+    last_word_idx: 19
+    text: "When an undersea volcano boiled up"
+  - seg_id: "N07"
+    first_word_idx: 20
+    last_word_idx: 22
+    text: "in 1963,"
+  - seg_id: "N07"
+    first_word_idx: 23
+    last_word_idx: 28
+    text: "scientists quarantined the barren rock immediately."
+  - seg_id: "N07"
+    first_word_idx: 29
+    last_word_idx: 35
+    text: "Researchers scrub every seed from their boots—"
+  - seg_id: "N07"
+    first_word_idx: 36
+    last_word_idx: 43
+    text: "and when one stray tomato sprouted in ash,"
+  - seg_id: "N07"
+    first_word_idx: 44
+    last_word_idx: 47
+    text: "they ripped it out."
+
+  - seg_id: "N08"
+    first_word_idx: 0
+    last_word_idx: 4
+    text: "Carried only by ocean waves"
+  - seg_id: "N08"
+    first_word_idx: 5
+    last_word_idx: 7
+    text: "and nesting gulls,"
+  - seg_id: "N08"
+    first_word_idx: 8
+    last_word_idx: 14
+    text: "60 plant species turned black lava green."
+  - seg_id: "N08"
+    first_word_idx: 15
+    last_word_idx: 20
+    text: "That doesn't mean radiation is harmless,"
+  - seg_id: "N08"
+    first_word_idx: 21
+    last_word_idx: 26
+    text: "or that sealed caves ever recover"
+  - seg_id: "N08"
+    first_word_idx: 27
+    last_word_idx: 32
+    text: "once human crowds break their balance."
+
+  - seg_id: "N09"
+    first_word_idx: 0
+    last_word_idx: 5
+    text: "Some forbidden zones lock us out"
+  - seg_id: "N09"
+    first_word_idx: 6
+    last_word_idx: 10
+    text: "to keep our bodies alive."
+  - seg_id: "N09"
+    first_word_idx: 11
+    last_word_idx: 16
+    text: "The rarest ones lock us out"
+  - seg_id: "N09"
+    first_word_idx: 17
+    last_word_idx: 23
+    text: "because a single human footprint changes everything."
+
+assets_register:
+  - local_file: "pripyat_vehicles_dosimeter_720p.mp4"
+    title: "Radioactive vehicles near the Yanov train station, Pripyat"
+    creator_agency: "bionerd23 (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Radioactive_vehicles_near_the_Yanov_train_station,_Pripyat.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/9/94/Radioactive_vehicles_near_the_Yanov_train_station%2C_Pripyat.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: bionerd23 via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "chernobyl_red_forest_camp_720p.mp4"
+    title: "Radioactive Young Pioneer camp nestled in Chernobyl's Red Forest"
+    creator_agency: "bionerd23 (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Radioactive_Young_Pioneer_camp_nestled_in_Chernobyl%27s_%22Red_Forest%22.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/e/e1/Radioactive_Young_Pioneer_camp_nestled_in_Chernobyl%27s_%22Red_Forest%22.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: bionerd23 via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "chernobyl_unit3_pumps_1080p.mp4"
+    title: "Chernobyl Nuclear Power Plant - Unit 3 Main Circulation Pumps"
+    creator_agency: "Carl Montgomery (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Chernobyl_Nuclear_Power_Plant-_Unit_3_Main_Circulation_Pumps.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/8/82/Chernobyl_Nuclear_Power_Plant-_Unit_3_Main_Circulation_Pumps.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Carl Montgomery via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "chernobyl_arch_720p.mp4"
+    title: "Chernobyl Nuclear Power Plant New Safe Confinement"
+    creator_agency: "State Emergency Service of Ukraine (DSNS)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Chernobyl_Nuclear_Power_Plant_confinement_after_drone_strike,_2025-02-14_(000).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Chernobyl_Nuclear_Power_Plant_confinement_after_drone_strike%2C_2025-02-14_%28000%29.webm"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Video: State Emergency Service of Ukraine (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "chernobyl_deer_forest_720p.mp4"
+    title: "Deer antlers shed near Chernobyl Nuclear Power Plant"
+    creator_agency: "bionerd23 (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Deer_antlers_shed_near_Chernobyl_Nuclear_Power_Plant.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/5/53/Deer_antlers_shed_near_Chernobyl_Nuclear_Power_Plant.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: bionerd23 via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "geiger_counter_1080p.mp4"
+    title: "Geiger Counter radiation measurement demonstration"
+    creator_agency: "Switch & Lever (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Uranium_glass_cup_VS_DIY_Geiger_Counter.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/3/32/Uranium_glass_cup_VS_DIY_Geiger_Counter.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Switch & Lever via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "gray_wolves_1080p.mp4"
+    title: "Gray wolves in wild habitat (Vicart - loups)"
+    creator_agency: "Parc Alpha / Vicart (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Vicart_-_loups.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/8/89/Vicart_-_loups.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Parc Alpha / Vicart via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "forest_fungi_closeup_1080p.mp4"
+    title: "Dark forest fungi cluster close-up (Pokljuka)"
+    creator_agency: "Petar Milošević / Pokljuka (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:2022-09-07_POKLJUKA_Fungi_%C5%A0TOROVKE.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/3/34/2022-09-07_POKLJUKA_Fungi_%C5%A0TOROVKE.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Pokljuka Fungi via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "lascaux_voa_1080p.mp4"
+    title: "Lascaux Cave Paleolithic Paintings & Conservation (VOA 2021)"
+    creator_agency: "Voice of America (U.S. Federal Government)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Lascaux_2021_VOA.ogg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/5/57/Lascaux_2021_VOA.ogg"
+    license: "Public Domain"
+    license_url: "https://creativecommons.org/publicdomain/mark/1.0/"
+    required_attribution: "Public Domain — Voice of America (VOA)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_cave_sterile_swab_1080p.mp4"
+    title: "NASA Astrobiology Sterile Cave Wall Microbial Sampling & Spectroscopy"
+    creator_agency: "NASA Goddard Space Flight Center"
+    source_page_url: "https://images.nasa.gov/"
+    direct_media_url: "local://nasa_cave_sterile_swab_1080p.mp4"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA Goddard Space Flight Center"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "iceland_volcano_1080p.mp4"
+    title: "Eruption of a volcano in Iceland - Geldingadalsgos"
+    creator_agency: "Reykjanes / Geldingadalsgos (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Eruption_of_a_volcano_in_Iceland_-_Geldingadalsgos.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/0/07/Eruption_of_a_volcano_in_Iceland_-_Geldingadalsgos.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Geldingadalsgos Eruption via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "nasa_new_volcanic_island_1080p.mp4"
+    title: "The Birth of a New Volcanic Island (GSFC_20171211_Tonga_m12800_NewIsland1)"
+    creator_agency: "NASA Goddard Space Flight Center / NOAA"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20171211_Tonga_m12800_NewIsland1"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20171211_Tonga_m12800_NewIsland1/GSFC_20171211_Tonga_m12800_NewIsland1~large.mp4"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA Goddard Space Flight Center / NOAA"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "sea_gulls_flock_1080p.mp4"
+    title: "Flock of gulls along rocky shore"
+    creator_agency: "Wikimedia Commons Contributor"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Flock_of_gulls_on_Lake_Erie.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flock_of_gulls_on_Lake_Erie.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Flock of gulls via Wikimedia Commons (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "herring_gull_closeup_cc0_1080p.mp4"
+    title: "Herring gull foraging on dark soil"
+    creator_agency: "Wikimedia Commons (CC0)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Herring_gull_performs_a_rain_dance_2024-01-22.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Herring_gull_performs_a_rain_dance_2024-01-22.webm"
+    license: "CC0"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "Video: CC0 1.0 Public Domain Dedication"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "forbidden_zones_comparison_v4.mp4"
+    title: "Earth's Strictest Quarantines — Comparative Scientific Diagram"
+    creator_agency: "Proof of Wonder (First-Party Graphic over CC BY 2.0 Surtsey basalt photo by Brian Gratwicke)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Surtsey_by_Brian_Gratwicke.jpg"
+    direct_media_url: "local://forbidden_zones_comparison_v4.mp4"
+    license: "100% Original First-Party Graphic"
+    license_url: "https://creativecommons.org/licenses/by/2.0/"
+    required_attribution: "Diagram: Proof of Wonder over Surtsey Island photo by Brian Gratwicke (CC BY 2.0)"
+    media_type: "diagram"
+    priority_tier: 6
+    is_first_party_original: true
+
+  - local_file: "dosimeter_chernobyl_ccby.jpg"
+    title: "Dosimeter measuring radiation in the Chernobyl Exclusion Zone"
+    creator_agency: "iiyama / Wikimedia Commons"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Dosimeter_measuring_radiation_in_the_Chernobyl_Exclusion_Zone.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Dosimeter_measuring_radiation_in_the_Chernobyl_Exclusion_Zone.jpg"
+    license: "CC BY 2.0"
+    license_url: "https://creativecommons.org/licenses/by/2.0/"
+    required_attribution: "Photo: Dosimeter in Chernobyl Exclusion Zone via Wikimedia Commons (CC BY 2.0)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "przewalski_horse_chernobyl_ccby.jpg"
+    title: "Przewalski's horse in Chernobyl Exclusion Zone"
+    creator_agency: "Chernobyl Radiation and Ecological Biosphere Reserve"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Przewalski%E2%80%99s_horse_in_Chernobyl.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Przewalski%E2%80%99s_horse_in_Chernobyl.jpg"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Photo: Przewalski's horse in Chernobyl (CC BY 4.0)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "surtsey_island_ccby.jpg"
+    title: "Surtsey Volcanic Island off Iceland"
+    creator_agency: "Brian Gratwicke"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Surtsey_by_Brian_Gratwicke.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Surtsey_by_Brian_Gratwicke.jpg"
+    license: "CC BY 2.0"
+    license_url: "https://creativecommons.org/licenses/by/2.0/"
+    required_attribution: "Photo: Brian Gratwicke (CC BY 2.0)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "forbidden_zones_wind_geiger_bed.wav"
+    title: "Chernobyl Red Forest Wind & Subtle Geiger Counter Location Bed"
+    creator_agency: "bionerd23 (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Radioactive_Young_Pioneer_camp_nestled_in_Chernobyl%27s_%22Red_Forest%22.webm"
+    direct_media_url: "local://forbidden_zones_wind_geiger_bed.wav"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Audio: bionerd23 via Wikimedia Commons (CC BY 3.0)"
+    media_type: "audio"
+    priority_tier: 2
+
+excluded_sources_notes:
+  - "Excluded CDC MicrobeNet tutorial video and NASA ISS Microbiology promo reel after contact-sheet audit revealed software screencasts and burned-in promotional typography."
+  - "Excluded CC BY-SA 3.0/4.0 Chernobyl and Surtsey photographs on Wikimedia Commons per pow_documentary_v3 commercial ShareAlike prohibition."
+
+factual_references:
+  - citation: "Deryabina, T. G., Kuchmel, S. V., Nagorskaya, L. L., Hinton, T. G., Beasley, J. C., Lerebours, A., & Smith, J. T. (2015). Long-term census data reveal abundant wildlife populations at Chernobyl. Current Biology, 25(19), R824–R826."
+    url: "https://doi.org/10.1016/j.cub.2015.08.017"
+    doi: "10.1016/j.cub.2015.08.017"
+    supported_claims: "Multi-year winter track and wildlife census showing elk, roe deer, wild boar, Przewalski's horses, and gray wolves thriving in the Chernobyl Exclusion Zone after human evacuation, with wolf density ~7x higher than surrounding reserves."
+
+  - citation: "Dadachova, E., Bryan, R. A., Huang, X., Moadel, T., Schweitzer, A. D., Aisen, P., Nosanchuk, J. D., & Casadevall, A. (2007). Ionizing radiation changes the electronic properties of melanin and enhances the growth of melanized fungi. PLOS ONE, 2(5), e457."
+    url: "https://doi.org/10.1371/journal.pone.0000457"
+    doi: "10.1371/journal.pone.0000457"
+    supported_claims: "Melanin-rich fungi including Cladosporium sphaerospermum isolated from Chernobyl reactor walls exhibit directional radiotropism and enhanced metabolic growth under ionizing gamma radiation."
+
+  - citation: "Bastian, F., Jurado, V., Nováková, A., Alabouvette, C., & Saiz-Jimenez, C. (2010). The microbiology of Lascaux Cave. Microbiology, 156(3), 644–652."
+    url: "https://doi.org/10.1099/mic.0.036160-0"
+    doi: "10.1099/mic.0.036160-0"
+    supported_claims: "Visitor respiration (CO2, heat, water vapor), artificial lighting, and tracked organic microbes disrupted Lascaux Cave's microclimate, causing green algae ('maladie verte') and white Fusarium solani fungal outbreaks that forced permanent public closure and construction of replica caves."
+
+  - citation: "Magnússon, B., Magnússon, S. H., Ólafsson, E., & Sigurdsson, B. D. (2014). Plant colonization, succession and ecosystem development on Surtsey with reference to neighbouring islands. Biogeosciences, 11, 5521–5537."
+    url: "https://doi.org/10.5194/bg-11-5521-2014"
+    doi: "10.5194/bg-11-5521-2014"
+    supported_claims: "Strict human quarantine on volcanic Surtsey Island since its 1963 submarine eruption, biosecurity protocols preventing anthropogenic seed introduction (including removal of an accidental human-introduced tomato plant), and seagull-driven nutrient enrichment enabling >60 vascular plant species to colonize barren basalt."

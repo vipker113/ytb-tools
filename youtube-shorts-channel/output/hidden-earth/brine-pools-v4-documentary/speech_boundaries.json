@@ -1,0 +1,183 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 2.482,
+    "word_end_s": 2.355,
+    "next_word_start_s": 2.61,
+    "pause_s": 0.255,
+    "kind": "breath_pause",
+    "after_word": "floor"
+  },
+  {
+    "time_s": 4.837,
+    "word_end_s": 4.722,
+    "next_word_start_s": 4.952,
+    "pause_s": 0.23,
+    "kind": "breath_pause",
+    "after_word": "shoreline"
+  },
+  {
+    "time_s": 6.476,
+    "word_end_s": 6.336,
+    "next_word_start_s": 6.616,
+    "pause_s": 0.28,
+    "kind": "breath_pause",
+    "after_word": "lake"
+  },
+  {
+    "time_s": 11.662,
+    "word_end_s": 11.492,
+    "next_word_start_s": 11.832,
+    "pause_s": 0.34,
+    "kind": "breath_pause",
+    "after_word": "slope"
+  },
+  {
+    "time_s": 13.892,
+    "word_end_s": 13.667,
+    "next_word_start_s": 14.529,
+    "pause_s": 0.862,
+    "kind": "breath_pause",
+    "after_word": "salt"
+  },
+  {
+    "time_s": 17.423,
+    "word_end_s": 17.304,
+    "next_word_start_s": 17.542,
+    "pause_s": 0.238,
+    "kind": "breath_pause",
+    "after_word": "Sea"
+  },
+  {
+    "time_s": 20.721,
+    "word_end_s": 20.554,
+    "next_word_start_s": 20.888,
+    "pause_s": 0.334,
+    "kind": "breath_pause",
+    "after_word": "seawater"
+  },
+  {
+    "time_s": 21.928,
+    "word_end_s": 21.84,
+    "next_word_start_s": 22.015,
+    "pause_s": 0.175,
+    "kind": "breath_pause",
+    "after_word": "mix"
+  },
+  {
+    "time_s": 24.427,
+    "word_end_s": 24.327,
+    "next_word_start_s": 24.527,
+    "pause_s": 0.2,
+    "kind": "breath_pause",
+    "after_word": "basins"
+  },
+  {
+    "time_s": 27.837,
+    "word_end_s": 27.665,
+    "next_word_start_s": 28.01,
+    "pause_s": 0.345,
+    "kind": "breath_pause",
+    "after_word": "oxygen"
+  },
+  {
+    "time_s": 32.019,
+    "word_end_s": 31.794,
+    "next_word_start_s": 32.639,
+    "pause_s": 0.845,
+    "kind": "breath_pause",
+    "after_word": "shock"
+  },
+  {
+    "time_s": 36.668,
+    "word_end_s": 36.511,
+    "next_word_start_s": 36.825,
+    "pause_s": 0.314,
+    "kind": "breath_pause",
+    "after_word": "edge"
+  },
+  {
+    "time_s": 42.38,
+    "word_end_s": 42.232,
+    "next_word_start_s": 42.529,
+    "pause_s": 0.297,
+    "kind": "breath_pause",
+    "after_word": "Sea"
+  },
+  {
+    "time_s": 45.414,
+    "word_end_s": 45.189,
+    "next_word_start_s": 46.043,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "pools"
+  },
+  {
+    "time_s": 47.453,
+    "word_end_s": 47.367,
+    "next_word_start_s": 47.54,
+    "pause_s": 0.173,
+    "kind": "breath_pause",
+    "after_word": "animals"
+  },
+  {
+    "time_s": 51.042,
+    "word_end_s": 50.882,
+    "next_word_start_s": 51.202,
+    "pause_s": 0.32,
+    "kind": "breath_pause",
+    "after_word": "tsunamis"
+  },
+  {
+    "time_s": 56.349,
+    "word_end_s": 56.124,
+    "next_word_start_s": 57.005,
+    "pause_s": 0.881,
+    "kind": "breath_pause",
+    "after_word": "Europa"
+  },
+  {
+    "time_s": 57.77,
+    "word_end_s": 57.681,
+    "next_word_start_s": 57.86,
+    "pause_s": 0.179,
+    "kind": "breath_pause",
+    "after_word": "course"
+  },
+  {
+    "time_s": 60.389,
+    "word_end_s": 60.206,
+    "next_word_start_s": 60.572,
+    "pause_s": 0.366,
+    "kind": "breath_pause",
+    "after_word": "Earth"
+  },
+  {
+    "time_s": 63.288,
+    "word_end_s": 63.063,
+    "next_word_start_s": 63.935,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "portals"
+  },
+  {
+    "time_s": 65.651,
+    "word_end_s": 65.538,
+    "next_word_start_s": 65.765,
+    "pause_s": 0.227,
+    "kind": "breath_pause",
+    "after_word": "lakes"
+  },
+  {
+    "time_s": 69.7,
+    "word_end_s": 69.364,
+    "next_word_start_s": 69.7,
+    "pause_s": 0.336,
+    "kind": "segment_end",
+    "after_word": "darkness"
+  }
+]

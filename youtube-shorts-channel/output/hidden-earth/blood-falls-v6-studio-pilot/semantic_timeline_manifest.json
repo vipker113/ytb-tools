@@ -1,0 +1,1095 @@
+{
+  "slug": "blood-falls-v6-studio-pilot",
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "associated_seg_id": "N01",
+      "timeline_start_s": 0.0,
+      "timeline_end_s": 2.2333,
+      "duration_s": 2.233,
+      "narration_start_s": 0.1,
+      "narration_end_s": 2.113,
+      "spoken_narration": "In Antarctica's freezing Dry Valleys",
+      "selected_asset": "bf_aerial_2013.jpg",
+      "media_type": "photo",
+      "source_creator": "Peter Rejcek / National Science Foundation",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blood_Falls_aerial_view_2013-12-21.jpg",
+      "license": "Public Domain (U.S. Federal Government / NSF)",
+      "visual_purpose": "Immediate visual hook showing the actual Blood Falls plume (N01a)",
+      "camera_perspective": "aerial",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.585,
+          0.455
+        ],
+        "center_end": [
+          0.58,
+          0.445
+        ],
+        "zoom_range": [
+          1.01,
+          1.03
+        ],
+        "rationale": "Centers the unmistakable crimson Blood Falls cascade in upper-middle 9:16 frame well clear of captions."
+      },
+      "transition": {
+        "type": "opening",
+        "duration_s": 0.0,
+        "reason": "Subject-first opening frame at 0.00s showing the real Blood Falls plume immediately before cutting to live 1080p helicopter motion."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "aerial",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 5
+        }
+      },
+      "why_shot_belongs_here": "Immediate authentic visual proof of the crimson plume on Taylor Glacier."
+    },
+    {
+      "scene_id": "S02",
+      "associated_seg_id": "N01",
+      "timeline_start_s": 2.2333,
+      "timeline_end_s": 6.7333,
+      "duration_s": 4.5,
+      "narration_start_s": 2.321,
+      "narration_end_s": 6.5,
+      "spoken_narration": "a five-story waterfall pours blood-red straight out of solid glacier ice",
+      "selected_asset": "nasa_m12666_nansen_scientists_ice.mp4",
+      "media_type": "video",
+      "source_creator": "NASA Goddard Space Flight Center (Joy Ng / Ryan Walker / Christine Dow)",
+      "source_url": "https://images.nasa.gov/details/GSFC_20170811_Nansen_m12666",
+      "license": "Public Domain (NASA)",
+      "visual_purpose": "Live 1080p helicopter sweep along towering Victoria Land glacier fissures (N01b)",
+      "camera_perspective": "extreme_wide",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.45,
+          0.5
+        ],
+        "center_end": [
+          0.47,
+          0.48
+        ],
+        "zoom_range": [
+          1.02,
+          1.04
+        ],
+        "rationale": "1080p vertical crop following live helicopter camera sweeping along towering fractured Antarctic glacier fissures."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Breath-pause cut into real 1080p helicopter glacier motion within 2.2s."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 6.33,
+        "max_recommended_s": 8.73,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "extreme_wide",
+          "camera_movement": "aerial_sweep",
+          "is_moving_footage": true,
+          "spoken_word_count": 11
+        }
+      },
+      "why_shot_belongs_here": "Conveys physical scale of a five-story Antarctic glacier terminus in live motion."
+    },
+    {
+      "scene_id": "S03",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 6.7333,
+      "timeline_end_s": 10.9333,
+      "duration_s": 4.2,
+      "narration_start_s": 6.935,
+      "narration_end_s": 10.706,
+      "spoken_narration": "For decades nobody knew what fed Taylor Glacier's Blood Falls",
+      "selected_asset": "nasa_svs_3482_lima_flyover.mp4",
+      "media_type": "video",
+      "source_creator": "NASA GSFC Scientific Visualization Studio / USGS / NSF",
+      "source_url": "https://svs.gsfc.nasa.gov/3482",
+      "license": "Public Domain (NASA / USGS / NSF LIMA)",
+      "visual_purpose": "Moving geographic flight up Taylor Valley onto Taylor Glacier (N02a)",
+      "camera_perspective": "satellite_or_telescope",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.52,
+          0.5
+        ],
+        "center_end": [
+          0.55,
+          0.49
+        ],
+        "zoom_range": [
+          1.06,
+          1.08
+        ],
+        "rationale": "Full-bleed vertical crop tracking the natural-color satellite flight up snow-free Taylor Valley onto Taylor Glacier."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at sentence pause into moving geographic flight up Taylor Glacier."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 5.74,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "satellite_or_telescope",
+          "camera_movement": "aerial_sweep",
+          "is_moving_footage": true,
+          "spoken_word_count": 10
+        }
+      },
+      "why_shot_belongs_here": "Establishes exact Dry Valleys geography of Taylor Glacier from real NASA/USGS Landsat imagery."
+    },
+    {
+      "scene_id": "S04",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 10.9333,
+      "timeline_end_s": 14.2333,
+      "duration_s": 3.3,
+      "narration_start_s": 11.221,
+      "narration_end_s": 14.104,
+      "spoken_narration": "Today we know the color comes from chemistry salty",
+      "selected_asset": "wiki_zdf_ice_core_lab_720p.webm",
+      "media_type": "video",
+      "source_creator": "ZDF / Terra X / Frank Wilhelms / AWI (Wikimedia Commons)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Klima-Archiv_Eislabor_(ZDF,_Terra_X)_720p_HD_50FPS.webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Hands-on examination of trapped Antarctic glacier ice inclusions (N02b)",
+      "camera_perspective": "macro",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.46,
+          0.46
+        ],
+        "center_end": [
+          0.46,
+          0.48
+        ],
+        "zoom_range": [
+          1.03,
+          1.05
+        ],
+        "rationale": "Centers metal laboratory tweezers holding an extracted piece of ancient bubble-rich Antarctic glacier ice."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at sentence pause after 'Falls.' to hands-on laboratory examination of extracted glacier ice."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.94,
+        "ideal_duration_s": 4.44,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "macro",
+          "camera_movement": "handheld_field",
+          "is_moving_footage": true,
+          "spoken_word_count": 9
+        }
+      },
+      "why_shot_belongs_here": "Shifts from satellite geography to close-up physical chemistry of glacier ice."
+    },
+    {
+      "scene_id": "S05",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 14.2333,
+      "timeline_end_s": 17.5333,
+      "duration_s": 3.3,
+      "narration_start_s": 14.344,
+      "narration_end_s": 17.324,
+      "spoken_narration": "iron-rich water hits the air and instantly rusts",
+      "selected_asset": "nasa_svs14197_scientists_in_field_1080p.webm",
+      "media_type": "video",
+      "source_creator": "NASA Goddard Space Flight Center Scientific Visualization Studio (SVS #14197)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Scientists_in_the_Field_(SVS14197_-_Compilation4-SnowEx-GRIPS).webm",
+      "license": "Public Domain (NASA)",
+      "visual_purpose": "Hands-on Antarctic field scientists working on exposed glacier ice in cold air (N02c)",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.45,
+          0.5
+        ],
+        "center_end": [
+          0.46,
+          0.5
+        ],
+        "zoom_range": [
+          1.02,
+          1.04
+        ],
+        "rationale": "1080p handheld close-up of Antarctic field researchers hands-on calibrating ice-sheet field sensors."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at clause pause showing researchers working directly on exposed Antarctic ice."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.1,
+        "ideal_duration_s": 4.6,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "handheld_field",
+          "is_moving_footage": true,
+          "spoken_word_count": 8
+        }
+      },
+      "why_shot_belongs_here": "Grounds surface air-contact oxidation in real Antarctic ice-surface fieldwork."
+    },
+    {
+      "scene_id": "S06",
+      "associated_seg_id": "N03",
+      "timeline_start_s": 17.5333,
+      "timeline_end_s": 21.2667,
+      "duration_s": 3.733,
+      "narration_start_s": 17.754,
+      "narration_end_s": 21.175,
+      "spoken_narration": "Deep under the ice sits a trapped reservoir of hyper-salty brine",
+      "selected_asset": "subglacial_brine_clean_v3.mp4",
+      "media_type": "diagram",
+      "source_creator": "Proof of Wonder Documentary Studio v6.0",
+      "source_url": "local://pipeline/generate_blood_falls_diagram.py",
+      "license": "100% Original First-Party Graphic",
+      "visual_purpose": "Subglacial trapped brine reservoir 400m beneath Taylor Glacier (N03a)",
+      "camera_perspective": "labeled_visualization",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.02,
+          1.04
+        ],
+        "rationale": "Native 1080x1920 photo-textured cross-section explaining subsurface brine geometry invisible to surface cameras."
+      },
+      "transition": {
+        "type": "dissolve",
+        "duration_s": 0.55,
+        "reason": "Restrained 0.55s dissolve at segment pause transitioning 400m beneath the glacier surface."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "labeled_visualization",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 11
+        }
+      },
+      "why_shot_belongs_here": "Visualizes subglacial brine conduit geometry that no physical camera can film underground."
+    },
+    {
+      "scene_id": "S07",
+      "associated_seg_id": "N03",
+      "timeline_start_s": 21.2667,
+      "timeline_end_s": 24.8,
+      "duration_s": 3.533,
+      "narration_start_s": 21.373,
+      "narration_end_s": 24.688,
+      "spoken_narration": "likely ancient seawater sealed off as the glacier advanced",
+      "selected_asset": "nasa_svs_3482_lima_flyover.mp4",
+      "media_type": "video",
+      "source_creator": "NASA GSFC Scientific Visualization Studio / USGS / NSF",
+      "source_url": "https://svs.gsfc.nasa.gov/3482",
+      "license": "Public Domain (NASA / USGS / NSF LIMA)",
+      "visual_purpose": "Coastal McMurdo Sound to Taylor Valley ancient marine basin geometry (N03b)",
+      "camera_perspective": "satellite_or_telescope",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.48,
+          0.52
+        ],
+        "center_end": [
+          0.54,
+          0.49
+        ],
+        "zoom_range": [
+          1.06,
+          1.08
+        ],
+        "rationale": "Full-bleed crop framing New Harbor where McMurdo Sound's sea ice meets the mouth of Taylor Valley."
+      },
+      "transition": {
+        "type": "dissolve",
+        "duration_s": 0.55,
+        "reason": "Restrained 0.55s dissolve at em-dash pause returning from underground diagram to coastal valley geography."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 5.14,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "satellite_or_telescope",
+          "camera_movement": "aerial_sweep",
+          "is_moving_footage": true,
+          "spoken_word_count": 9
+        }
+      },
+      "why_shot_belongs_here": "Shows the real McMurdo Sound marine coastline connected to Taylor Valley's ancient basin."
+    },
+    {
+      "scene_id": "S08",
+      "associated_seg_id": "N03",
+      "timeline_start_s": 24.8,
+      "timeline_end_s": 27.8,
+      "duration_s": 3.0,
+      "narration_start_s": 24.925,
+      "narration_end_s": 27.57,
+      "spoken_narration": "though its full history remains under investigation",
+      "selected_asset": "nasa_svs_11621_across_ross_720p.mov",
+      "media_type": "video",
+      "source_creator": "NASA Goddard Space Flight Center / Michael Studinger / Jefferson Beck",
+      "source_url": "https://svs.gsfc.nasa.gov/11621",
+      "license": "Public Domain (NASA)",
+      "visual_purpose": "Scientists probing subglacial ice history with airborne radar (N03c)",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.48,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.03,
+          1.05
+        ],
+        "rationale": "Frames NASA Antarctic airborne ice-radar specialists monitoring live subglacial radargrams."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at clause pause matching ongoing subglacial radar investigation."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.68,
+        "ideal_duration_s": 4.18,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "context",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "handheld_field",
+          "is_moving_footage": true,
+          "spoken_word_count": 7
+        }
+      },
+      "why_shot_belongs_here": "Shows real airborne ice-penetrating radar researchers probing subglacial water layers."
+    },
+    {
+      "scene_id": "S09",
+      "associated_seg_id": "N04",
+      "timeline_start_s": 27.8,
+      "timeline_end_s": 34.5,
+      "duration_s": 6.7,
+      "narration_start_s": 28.091,
+      "narration_end_s": 34.291,
+      "spoken_narration": "Rust explains the color What surprised researchers in 2026 was what they pulled from the freezing red mud",
+      "selected_asset": "nasa_m11707_mcmurdo_black_island.mp4",
+      "media_type": "video",
+      "source_creator": "NASA Goddard Space Flight Center / Operation IceBridge",
+      "source_url": "https://images.nasa.gov/details/GSFC_20141008_Black_Island_m11707",
+      "license": "Public Domain (NASA)",
+      "visual_purpose": "Mid-video retention pivot: NSF helicopter & field researcher on McMurdo rock and snow (N04)",
+      "camera_perspective": "extreme_wide",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.51
+        ],
+        "center_end": [
+          0.51,
+          0.5
+        ],
+        "zoom_range": [
+          1.13,
+          1.15
+        ],
+        "rationale": "Centers the red National Science Foundation helicopter hovering directly over a field researcher kneeling on bare McMurdo rock and snow."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at segment pause launching the 2026 field-discovery escalation with real NSF helicopter action."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": -17.5
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 7.4,
+        "max_recommended_s": 9.8,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "extreme_wide",
+          "camera_movement": "handheld_field",
+          "is_moving_footage": true,
+          "spoken_word_count": 17
+        }
+      },
+      "why_shot_belongs_here": "High-energy authentic NSF expedition shot re-engaging viewer attention at the Layer-2 pivot."
+    },
+    {
+      "scene_id": "S10",
+      "associated_seg_id": "N05",
+      "timeline_start_s": 34.5,
+      "timeline_end_s": 38.1333,
+      "duration_s": 3.633,
+      "narration_start_s": 34.844,
+      "narration_end_s": 37.973,
+      "spoken_narration": "Testing 167 ice sediment air",
+      "selected_asset": "nasa_m12666_nansen_scientists_ice.mp4",
+      "media_type": "video",
+      "source_creator": "NASA Goddard Space Flight Center (Joy Ng / Ryan Walker / Christine Dow)",
+      "source_url": "https://images.nasa.gov/details/GSFC_20170811_Nansen_m12666",
+      "license": "Public Domain (NASA)",
+      "visual_purpose": "Hands-on USAP glaciologists excavating Antarctic glacier ice in the field (N05a)",
+      "camera_perspective": "close_up",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.48,
+          0.52
+        ],
+        "center_end": [
+          0.49,
+          0.51
+        ],
+        "zoom_range": [
+          1.02,
+          1.04
+        ],
+        "rationale": "1080p full-screen vertical crop on glaciologists in red USAP parkas kneeling hands-on digging in Antarctic glacier ice."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at segment pause after 'mud.' showing hands-on Antarctic ice & sediment field sampling."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.32,
+        "ideal_duration_s": 3.82,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "close_up",
+          "camera_movement": "handheld_field",
+          "is_moving_footage": true,
+          "spoken_word_count": 5
+        }
+      },
+      "why_shot_belongs_here": "Directly visualizes hands-on Antarctic field sampling as the 167 samples are cited."
+    },
+    {
+      "scene_id": "S11",
+      "associated_seg_id": "N05",
+      "timeline_start_s": 38.1333,
+      "timeline_end_s": 44.8667,
+      "duration_s": 6.733,
+      "narration_start_s": 38.273,
+      "narration_end_s": 44.648,
+      "spoken_narration": "and ocean samples across the region a field team uncovered a hidden community of marine microbes right at the red outflow",
+      "selected_asset": "wiki_zdf_ice_core_lab_720p.webm",
+      "media_type": "video",
+      "source_creator": "ZDF / Terra X / Frank Wilhelms / AWI (Wikimedia Commons)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Klima-Archiv_Eislabor_(ZDF,_Terra_X)_720p_HD_50FPS.webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Glaciologist preparing extracted Antarctic ice sample under subzero microscope (N05b)",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.44,
+          0.48
+        ],
+        "center_end": [
+          0.45,
+          0.48
+        ],
+        "zoom_range": [
+          1.03,
+          1.05
+        ],
+        "rationale": "Centers a glaciologist in a cold-room parka placing an extracted Antarctic ice specimen onto a microscope stage."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at list pause showing laboratory microscope analysis of Antarctic samples."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 6.64,
+        "max_recommended_s": 9.04,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 21
+        }
+      },
+      "why_shot_belongs_here": "Bridges outdoor glacier excavation to subzero laboratory microscopy."
+    },
+    {
+      "scene_id": "S12",
+      "associated_seg_id": "N06",
+      "timeline_start_s": 44.8667,
+      "timeline_end_s": 48.4,
+      "duration_s": 3.533,
+      "narration_start_s": 45.078,
+      "narration_end_s": 48.285,
+      "spoken_narration": "Under the microscope were tiny ocean algae like diatoms",
+      "selected_asset": "micro_diatom_seah.webm",
+      "media_type": "video",
+      "source_creator": "Brandon Seah (Wikimedia Commons)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Diatom_movement_DSC_1511.webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Marine-related micro-eukaryote taxa: live gliding diatoms (N06a)",
+      "camera_perspective": "macro",
+      "crop_and_framing": {
+        "reframe_mode": "auto_salient",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.04,
+          1.06
+        ],
+        "rationale": "Full-screen vertical reframing tracking live gliding diatoms in brightfield microscopy."
+      },
+      "transition": {
+        "type": "dissolve",
+        "duration_s": 0.55,
+        "reason": "Motivated 0.55s optical dissolve from the researcher's microscope directly into live gliding diatoms."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 5.11,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "macro",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 9
+        }
+      },
+      "why_shot_belongs_here": "Shows actual living diatom cells gliding under light microscopy with transparent illustrative context note."
+    },
+    {
+      "scene_id": "S13",
+      "associated_seg_id": "N06",
+      "timeline_start_s": 48.4,
+      "timeline_end_s": 50.7333,
+      "duration_s": 2.333,
+      "narration_start_s": 48.494,
+      "narration_end_s": 50.616,
+      "spoken_narration": "alongside single-celled marine drifters",
+      "selected_asset": "wiki_holt_flagellate_1080p.webm",
+      "media_type": "video",
+      "source_creator": "Holt et al. (2023) / Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Holt_et_al._(2023)_Swimming_cells_of_Eleftheros_xomoi_and_flagella_beating,_visualised_by_light_microscopy.webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "1080p live swimming flagellated marine micro-eukaryotes (N06b)",
+      "camera_perspective": "close_up",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.51
+        ],
+        "center_end": [
+          0.52,
+          0.5
+        ],
+        "zoom_range": [
+          1.06,
+          1.08
+        ],
+        "rationale": "1080p phase-contrast crop centered on actively swimming flagellated single-celled marine drifters."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at comma pause after 'diatoms,' showing 1080p live swimming single-celled marine drifters."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.68,
+        "ideal_duration_s": 4.18,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 4
+        }
+      },
+      "why_shot_belongs_here": "Visualizes single-celled flagellated marine micro-eukaryotes at 1080p clarity."
+    },
+    {
+      "scene_id": "S14",
+      "associated_seg_id": "N06",
+      "timeline_start_s": 50.7333,
+      "timeline_end_s": 54.8333,
+      "duration_s": 4.1,
+      "narration_start_s": 50.863,
+      "narration_end_s": 54.6,
+      "spoken_narration": "living clues of past ocean connections miles from open sea",
+      "selected_asset": "nasa_svs_11621_across_ross_720p.mov",
+      "media_type": "video",
+      "source_creator": "NASA Goddard Space Flight Center / Michael Studinger / Jefferson Beck",
+      "source_url": "https://svs.gsfc.nasa.gov/11621",
+      "license": "Public Domain (NASA)",
+      "visual_purpose": "Real Antarctic Ross Sea open-water leads & fractured sea ice (N06c)",
+      "camera_perspective": "aerial",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.52,
+          0.48
+        ],
+        "zoom_range": [
+          1.03,
+          1.05
+        ],
+        "rationale": "Frames dark open Ross Sea water leads amid fractured Antarctic sea-ice floes."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at em-dash pause directly visualizing 'past ocean connections, miles from open sea.'"
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 5.3,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "aerial",
+          "camera_movement": "aerial_sweep",
+          "is_moving_footage": true,
+          "spoken_word_count": 10
+        }
+      },
+      "why_shot_belongs_here": "Contrasts microscopic ocean drifters with vast fractured Ross Sea ice miles from Taylor Glacier."
+    },
+    {
+      "scene_id": "S15",
+      "associated_seg_id": "N07",
+      "timeline_start_s": 54.8333,
+      "timeline_end_s": 60.6667,
+      "duration_s": 5.833,
+      "narration_start_s": 55.141,
+      "narration_end_s": 60.436,
+      "spoken_narration": "Now that doesn't prove these exact organisms stayed trapped beneath the ice for millions of years",
+      "selected_asset": "nasa_svs_10028_mcmurdo_oib_720p.mov",
+      "media_type": "video",
+      "source_creator": "NASA Goddard Space Flight Center / Operation IceBridge (Jefferson Beck)",
+      "source_url": "https://svs.gsfc.nasa.gov/10028",
+      "license": "Public Domain (NASA)",
+      "visual_purpose": "Mandatory scientific caveat against unproven multi-million-year isolation claims (N07a)",
+      "camera_perspective": "extreme_wide",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.38,
+          0.5
+        ],
+        "center_end": [
+          0.38,
+          0.48
+        ],
+        "zoom_range": [
+          1.03,
+          1.05
+        ],
+        "rationale": "Left-of-center 9:16 crop captures uninterrupted Transantarctic mountain peaks and vast glacier ice."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at segment pause returning to vast Antarctic glacier scale for the scientific caveat."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 6.88,
+        "max_recommended_s": 9.28,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "extreme_wide",
+          "camera_movement": "aerial_sweep",
+          "is_moving_footage": true,
+          "spoken_word_count": 16
+        }
+      },
+      "why_shot_belongs_here": "Provides contemplative geological scale while delivering the mandatory scientific caveat."
+    },
+    {
+      "scene_id": "S16",
+      "associated_seg_id": "N07",
+      "timeline_start_s": 60.6667,
+      "timeline_end_s": 63.8667,
+      "duration_s": 3.2,
+      "narration_start_s": 60.897,
+      "narration_end_s": 63.626,
+      "spoken_narration": "Scientists are still piecing together how they got there",
+      "selected_asset": "nasa_svs14197_scientists_in_field_1080p.webm",
+      "media_type": "video",
+      "source_creator": "NASA Goddard Space Flight Center Scientific Visualization Studio (SVS #14197)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Scientists_in_the_Field_(SVS14197_-_Compilation4-SnowEx-GRIPS).webm",
+      "license": "Public Domain (NASA)",
+      "visual_purpose": "Sunlit 1080p Antarctic researcher inspecting remote field instrumentation on the ice (N07b)",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.72,
+          0.55
+        ],
+        "center_end": [
+          0.7,
+          0.54
+        ],
+        "zoom_range": [
+          1.03,
+          1.05
+        ],
+        "rationale": "1080p sunlit shot tracking an Antarctic field scientist in a red parka inspecting a remote glacier station."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at sentence pause matching 'Scientists are still piecing together how they got there.'"
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.04,
+        "ideal_duration_s": 4.54,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "context",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "handheld_field",
+          "is_moving_footage": true,
+          "spoken_word_count": 9
+        }
+      },
+      "why_shot_belongs_here": "Shows active field researchers continuing ongoing investigation on the ice."
+    },
+    {
+      "scene_id": "S17",
+      "associated_seg_id": "N08",
+      "timeline_start_s": 63.8667,
+      "timeline_end_s": 67.8667,
+      "duration_s": 4.0,
+      "narration_start_s": 64.196,
+      "narration_end_s": 67.756,
+      "spoken_narration": "Blood Falls isn't bleeding It's a leaking subglacial vault",
+      "selected_asset": "bf_2010_12_14.jpg",
+      "media_type": "photo",
+      "source_creator": "Peter Rejcek / National Science Foundation",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blood_Falls_2010-12-14.jpg",
+      "license": "Public Domain (U.S. Federal Government / NSF)",
+      "visual_purpose": "Scientist standing directly before Blood Falls' crimson ice, mud, and brine (N08a)",
+      "camera_perspective": "close_up",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.51
+        ],
+        "center_end": [
+          0.51,
+          0.49
+        ],
+        "zoom_range": [
+          1.01,
+          1.03
+        ],
+        "rationale": "Frames Blood Falls' rust-red ice wall, dark moraine mud, orange brine apron, AND a researcher with tripod standing directly in front of it."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut at segment pause returning directly to a scientist standing before Blood Falls."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 9
+        }
+      },
+      "why_shot_belongs_here": "Brings the viewer back face-to-face with Blood Falls now armed with full scientific understanding."
+    },
+    {
+      "scene_id": "S18",
+      "associated_seg_id": "N08",
+      "timeline_start_s": 67.8667,
+      "timeline_end_s": 74.0667,
+      "duration_s": 6.2,
+      "narration_start_s": 67.953,
+      "narration_end_s": 73.782,
+      "spoken_narration": "showing that even beneath 400 meters of Antarctic ice Earth holds unexpected signs of life",
+      "selected_asset": "dvids_994230_nsf_heli_2026.mp4",
+      "media_type": "video",
+      "source_creator": "U.S. Coast Guard / National Science Foundation (Operation Deep Freeze 2026)",
+      "source_url": "https://www.dvidshub.net/video/994230/uscgc-polar-star-wagb-10-conducts-helicopter-operation-with-national-science-foundation-antarctica-during-operation-deep-freeze-2026",
+      "license": "Public Domain (U.S. Federal Government \u2014 DoD / USCG / NSF)",
+      "visual_purpose": "Final moving 1080p documentary payoff: 2026 NSF field team on vast Antarctic ice (N08b)",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.54,
+          0.5
+        ],
+        "center_end": [
+          0.52,
+          0.48
+        ],
+        "zoom_range": [
+          1.02,
+          1.04
+        ],
+        "rationale": "1080p full-screen vertical view of a 2026 NSF helicopter and field researchers walking out onto vast fractured McMurdo Sound ice."
+      },
+      "transition": {
+        "type": "dissolve",
+        "duration_s": 0.6,
+        "reason": "Gentle 0.60s final dissolve into live 1080p 2026 NSF Antarctic field expedition across vast sea ice."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 6.75,
+        "max_recommended_s": 9.15,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "handheld_field",
+          "is_moving_footage": true,
+          "spoken_word_count": 15
+        }
+      },
+      "why_shot_belongs_here": "Closes on authentic 2026 NSF Antarctic expedition motion, echoing the white-and-red palette of Frame 0."
+    }
+  ]
+}

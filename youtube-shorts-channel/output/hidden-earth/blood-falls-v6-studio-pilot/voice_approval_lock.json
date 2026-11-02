@@ -1,0 +1,11 @@
+{
+  "slug": "blood-falls-v6-studio-pilot",
+  "script_version": "v6.0.0",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "approved_at_utc": "2026-11-02T10:12:48.091406+00:00",
+  "reviewer_note": "Authoritative 74.067s Pilot Voice Master (2-pass linear mix)",
+  "script_sha256": "d46dacad6a76b26518a885433179fc50783245e8f5dfb6fa92dbd29f3cc0696d",
+  "narration_norm_wav_sha256": "da09749dd3de09bb535284e6bc79681abd421be065c2fbae409e6d168b90bffa",
+  "word_timings_sha256": "f24d2268b3d15d171a53ea49d82854fe658cbe05696e866e509be05fd68af53f"
+}

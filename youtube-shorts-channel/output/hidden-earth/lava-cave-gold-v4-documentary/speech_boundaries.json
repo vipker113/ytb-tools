@@ -1,0 +1,199 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 2.477,
+    "word_end_s": 2.386,
+    "next_word_start_s": 2.568,
+    "pause_s": 0.182,
+    "kind": "breath_pause",
+    "after_word": "tubes"
+  },
+  {
+    "time_s": 5.196,
+    "word_end_s": 4.971,
+    "next_word_start_s": 5.806,
+    "pause_s": 0.835,
+    "kind": "breath_pause",
+    "after_word": "upward"
+  },
+  {
+    "time_s": 8.748,
+    "word_end_s": 8.598,
+    "next_word_start_s": 8.898,
+    "pause_s": 0.3,
+    "kind": "breath_pause",
+    "after_word": "gold"
+  },
+  {
+    "time_s": 10.785,
+    "word_end_s": 10.699,
+    "next_word_start_s": 10.872,
+    "pause_s": 0.173,
+    "kind": "breath_pause",
+    "after_word": "it"
+  },
+  {
+    "time_s": 13.907,
+    "word_end_s": 13.682,
+    "next_word_start_s": 14.535,
+    "pause_s": 0.853,
+    "kind": "breath_pause",
+    "after_word": "growth"
+  },
+  {
+    "time_s": 15.358,
+    "word_end_s": 15.265,
+    "next_word_start_s": 15.451,
+    "pause_s": 0.186,
+    "kind": "breath_pause",
+    "after_word": "Up close"
+  },
+  {
+    "time_s": 17.942,
+    "word_end_s": 17.778,
+    "next_word_start_s": 18.107,
+    "pause_s": 0.329,
+    "kind": "breath_pause",
+    "after_word": "gold"
+  },
+  {
+    "time_s": 22.916,
+    "word_end_s": 22.691,
+    "next_word_start_s": 23.544,
+    "pause_s": 0.853,
+    "kind": "breath_pause",
+    "after_word": "sunlight"
+  },
+  {
+    "time_s": 27.139,
+    "word_end_s": 26.973,
+    "next_word_start_s": 27.304,
+    "pause_s": 0.331,
+    "kind": "breath_pause",
+    "after_word": "rock"
+  },
+  {
+    "time_s": 32.251,
+    "word_end_s": 32.026,
+    "next_word_start_s": 32.879,
+    "pause_s": 0.853,
+    "kind": "breath_pause",
+    "after_word": "fuzz"
+  },
+  {
+    "time_s": 35.657,
+    "word_end_s": 35.565,
+    "next_word_start_s": 35.75,
+    "pause_s": 0.185,
+    "kind": "breath_pause",
+    "after_word": "lenses"
+  },
+  {
+    "time_s": 38.072,
+    "word_end_s": 37.904,
+    "next_word_start_s": 38.24,
+    "pause_s": 0.336,
+    "kind": "breath_pause",
+    "after_word": "gold"
+  },
+  {
+    "time_s": 43.935,
+    "word_end_s": 43.71,
+    "next_word_start_s": 44.554,
+    "pause_s": 0.844,
+    "kind": "breath_pause",
+    "after_word": "LiDAR"
+  },
+  {
+    "time_s": 47.5,
+    "word_end_s": 47.324,
+    "next_word_start_s": 47.676,
+    "pause_s": 0.352,
+    "kind": "breath_pause",
+    "after_word": "it"
+  },
+  {
+    "time_s": 49.328,
+    "word_end_s": 49.103,
+    "next_word_start_s": 49.956,
+    "pause_s": 0.853,
+    "kind": "breath_pause",
+    "after_word": "underground"
+  },
+  {
+    "time_s": 52.815,
+    "word_end_s": 52.716,
+    "next_word_start_s": 52.914,
+    "pause_s": 0.198,
+    "kind": "breath_pause",
+    "after_word": "surface"
+  },
+  {
+    "time_s": 54.394,
+    "word_end_s": 54.239,
+    "next_word_start_s": 54.548,
+    "pause_s": 0.309,
+    "kind": "breath_pause",
+    "after_word": "in 2024"
+  },
+  {
+    "time_s": 58.622,
+    "word_end_s": 58.397,
+    "next_word_start_s": 59.251,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "Moon"
+  },
+  {
+    "time_s": 61.486,
+    "word_end_s": 61.318,
+    "next_word_start_s": 61.653,
+    "pause_s": 0.335,
+    "kind": "breath_pause",
+    "after_word": "too"
+  },
+  {
+    "time_s": 62.3,
+    "word_end_s": 62.204,
+    "next_word_start_s": 62.395,
+    "pause_s": 0.191,
+    "kind": "breath_pause",
+    "after_word": "course"
+  },
+  {
+    "time_s": 68.313,
+    "word_end_s": 68.135,
+    "next_word_start_s": 68.491,
+    "pause_s": 0.356,
+    "kind": "breath_pause",
+    "after_word": "tunnels"
+  },
+  {
+    "time_s": 70.346,
+    "word_end_s": 70.121,
+    "next_word_start_s": 70.992,
+    "pause_s": 0.871,
+    "kind": "breath_pause",
+    "after_word": "treasure"
+  },
+  {
+    "time_s": 72.95,
+    "word_end_s": 72.849,
+    "next_word_start_s": 73.051,
+    "pause_s": 0.202,
+    "kind": "breath_pause",
+    "after_word": "reflector"
+  },
+  {
+    "time_s": 76.3,
+    "word_end_s": 75.98,
+    "next_word_start_s": 76.3,
+    "pause_s": 0.32,
+    "kind": "segment_end",
+    "after_word": "life"
+  }
+]

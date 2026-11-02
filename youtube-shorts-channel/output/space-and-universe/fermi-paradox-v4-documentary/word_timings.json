@@ -1,0 +1,1636 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "total_duration_s": 82.9,
+  "total_frames_30fps": 2487,
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "NASA's Kepler space telescope revealed over three hundred million rocky habitable worlds across our galaxy. Billions of older stars formed long before our Sun ignited.",
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "start": 0.1,
+      "end": 9.512,
+      "duration": 9.412,
+      "pause_after": 0.24,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N02",
+      "text": "Even crawling at one percent of light speed, a starship fleet crosses the galaxy in ten million years. In cosmic time, that's a blink\u2014so physicist Enrico Fermi asked: where is everybody?",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 9.752,
+      "end": 21.508,
+      "duration": 11.756,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N03",
+      "text": "Since nineteen sixty, giant radio dishes and optical telescopes have scanned thousands of nearby star systems. Across more than sixty years of listening, confirmed alien signals equal zero.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 21.768,
+      "end": 33.124,
+      "duration": 11.355,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N04",
+      "text": "To explain why alien life feels so rare, Robin Hanson proposed the Great Filter. Between dead rock and starflight sits at least one brutal barrier almost nothing survives.",
+      "rate": "+1%",
+      "pitch": "+1Hz",
+      "start": 33.384,
+      "end": 43.76,
+      "duration": 10.376,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N05",
+      "text": "If that filter lies behind us, we already hit the cosmic jackpot. On early Earth, simple microbes stalled for nearly two billion years before two cells merged into complex life.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 44.02,
+      "end": 54.773,
+      "duration": 10.754,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N06",
+      "text": "The darker option puts the Great Filter ahead of us. Perhaps rocky worlds sprout intelligent species often\u2014only to wipe themselves out once nuclear or climate tech arrives.",
+      "rate": "+2%",
+      "pitch": "+1Hz",
+      "start": 55.053,
+      "end": 65.152,
+      "duration": 10.098,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N07",
+      "text": "Still, radio silence doesn't prove we're alone: astronomers calculate our searches have sampled barely a glass from the cosmic ocean.",
+      "rate": "-2%",
+      "pitch": "-1Hz",
+      "start": 65.412,
+      "end": 72.73,
+      "duration": 7.318,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N08",
+      "text": "Until one signal breaks the quiet, Earth remains the only voice we know. Tonight, our telescopes keep listening across three hundred million silent worlds.",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 73.01,
+      "end": 82.67,
+      "duration": 9.66,
+      "pause_after": 0.24,
+      "emphasis_words": []
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "NASA's",
+      "start": 0.1,
+      "end": 0.549,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Kepler",
+      "start": 0.472,
+      "end": 0.812,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "space",
+      "start": 0.824,
+      "end": 1.164,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "telescope",
+      "start": 1.176,
+      "end": 1.722,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "revealed",
+      "start": 1.734,
+      "end": 2.147,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "over",
+      "start": 2.159,
+      "end": 2.353,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "three",
+      "start": 2.365,
+      "end": 2.62,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "hundred",
+      "start": 2.632,
+      "end": 2.924,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "million",
+      "start": 2.936,
+      "end": 3.348,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "rocky",
+      "start": 3.36,
+      "end": 3.615,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "habitable",
+      "start": 3.627,
+      "end": 4.113,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "worlds",
+      "start": 4.125,
+      "end": 4.404,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "across",
+      "start": 4.416,
+      "end": 4.805,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "our",
+      "start": 4.817,
+      "end": 5.011,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "galaxy",
+      "start": 5.023,
+      "end": 5.545,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Billions",
+      "start": 6.381,
+      "end": 6.818,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "of",
+      "start": 6.83,
+      "end": 6.915,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "older",
+      "start": 6.927,
+      "end": 7.157,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "stars",
+      "start": 7.17,
+      "end": 7.522,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "formed",
+      "start": 7.534,
+      "end": 7.801,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "long",
+      "start": 7.813,
+      "end": 8.08,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "before",
+      "start": 8.092,
+      "end": 8.42,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "our",
+      "start": 8.432,
+      "end": 8.59,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Sun",
+      "start": 8.602,
+      "end": 8.832,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "ignited",
+      "start": 8.844,
+      "end": 9.439,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Even",
+      "start": 9.752,
+      "end": 10.087,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "crawling",
+      "start": 10.0,
+      "end": 10.396,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "at",
+      "start": 10.409,
+      "end": 10.52,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "one",
+      "start": 10.533,
+      "end": 10.743,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "percent",
+      "start": 10.755,
+      "end": 11.127,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "of",
+      "start": 11.139,
+      "end": 11.226,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "light",
+      "start": 11.238,
+      "end": 11.51,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "speed",
+      "start": 11.523,
+      "end": 11.956,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "a",
+      "start": 12.166,
+      "end": 12.216,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "starship",
+      "start": 12.228,
+      "end": 12.686,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "fleet",
+      "start": 12.698,
+      "end": 12.983,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "crosses",
+      "start": 12.995,
+      "end": 13.354,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 13.367,
+      "end": 13.466,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "galaxy",
+      "start": 13.478,
+      "end": 13.985,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "in",
+      "start": 13.998,
+      "end": 14.183,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "ten",
+      "start": 14.196,
+      "end": 14.481,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "million",
+      "start": 14.493,
+      "end": 14.852,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "years",
+      "start": 14.864,
+      "end": 15.396,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "In",
+      "start": 16.25,
+      "end": 16.46,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "cosmic",
+      "start": 16.473,
+      "end": 16.893,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "time",
+      "start": 16.906,
+      "end": 17.277,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "that's",
+      "start": 17.45,
+      "end": 17.624,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "a",
+      "start": 17.636,
+      "end": 17.698,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "blink",
+      "start": 17.71,
+      "end": 18.032,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "so",
+      "start": 18.242,
+      "end": 18.416,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "physicist",
+      "start": 18.428,
+      "end": 18.973,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Enrico",
+      "start": 18.985,
+      "end": 19.443,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Fermi",
+      "start": 19.455,
+      "end": 19.802,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "asked",
+      "start": 19.814,
+      "end": 20.21,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "where",
+      "start": 20.433,
+      "end": 20.643,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "is",
+      "start": 20.656,
+      "end": 20.891,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "everybody",
+      "start": 20.903,
+      "end": 21.386,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Since",
+      "start": 21.768,
+      "end": 22.078,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "nineteen",
+      "start": 21.992,
+      "end": 22.412,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "sixty",
+      "start": 22.425,
+      "end": 22.821,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "giant",
+      "start": 22.969,
+      "end": 23.378,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "radio",
+      "start": 23.39,
+      "end": 23.774,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "dishes",
+      "start": 23.786,
+      "end": 24.17,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "and",
+      "start": 24.182,
+      "end": 24.281,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "optical",
+      "start": 24.294,
+      "end": 24.702,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "telescopes",
+      "start": 24.714,
+      "end": 25.333,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "have",
+      "start": 25.346,
+      "end": 25.457,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "scanned",
+      "start": 25.469,
+      "end": 25.705,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "thousands",
+      "start": 25.717,
+      "end": 26.2,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "of",
+      "start": 26.212,
+      "end": 26.299,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "nearby",
+      "start": 26.311,
+      "end": 26.756,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "star",
+      "start": 26.769,
+      "end": 27.091,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "systems",
+      "start": 27.103,
+      "end": 27.771,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Across",
+      "start": 28.625,
+      "end": 29.058,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "more",
+      "start": 29.07,
+      "end": 29.219,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "than",
+      "start": 29.231,
+      "end": 29.38,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "sixty",
+      "start": 29.392,
+      "end": 29.726,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "years",
+      "start": 29.739,
+      "end": 30.06,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "of",
+      "start": 30.073,
+      "end": 30.147,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "listening",
+      "start": 30.159,
+      "end": 30.617,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "confirmed",
+      "start": 30.828,
+      "end": 31.348,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "alien",
+      "start": 31.36,
+      "end": 31.719,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "signals",
+      "start": 31.731,
+      "end": 32.177,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "equal",
+      "start": 32.189,
+      "end": 32.56,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "zero",
+      "start": 32.573,
+      "end": 33.043,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "To",
+      "start": 33.384,
+      "end": 33.544,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "explain",
+      "start": 33.462,
+      "end": 33.896,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "why",
+      "start": 33.908,
+      "end": 34.156,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "alien",
+      "start": 34.168,
+      "end": 34.539,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "life",
+      "start": 34.552,
+      "end": 34.799,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "feels",
+      "start": 34.812,
+      "end": 35.17,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "so",
+      "start": 35.183,
+      "end": 35.381,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "rare",
+      "start": 35.393,
+      "end": 35.715,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Robin",
+      "start": 35.962,
+      "end": 36.198,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Hanson",
+      "start": 36.21,
+      "end": 36.631,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "proposed",
+      "start": 36.643,
+      "end": 37.113,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "the",
+      "start": 37.126,
+      "end": 37.212,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Great",
+      "start": 37.225,
+      "end": 37.559,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Filter",
+      "start": 37.571,
+      "end": 38.054,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Between",
+      "start": 38.908,
+      "end": 39.328,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "dead",
+      "start": 39.341,
+      "end": 39.564,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "rock",
+      "start": 39.576,
+      "end": 39.823,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "and",
+      "start": 39.836,
+      "end": 39.922,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "starflight",
+      "start": 39.935,
+      "end": 40.504,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "sits",
+      "start": 40.516,
+      "end": 40.776,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "at",
+      "start": 40.789,
+      "end": 40.888,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "least",
+      "start": 40.9,
+      "end": 41.148,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "one",
+      "start": 41.16,
+      "end": 41.445,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "brutal",
+      "start": 41.457,
+      "end": 41.816,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "barrier",
+      "start": 41.828,
+      "end": 42.224,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "almost",
+      "start": 42.237,
+      "end": 42.633,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "nothing",
+      "start": 42.645,
+      "end": 42.992,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "survives",
+      "start": 43.004,
+      "end": 43.697,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "If",
+      "start": 44.02,
+      "end": 44.23,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "that",
+      "start": 44.141,
+      "end": 44.314,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "filter",
+      "start": 44.326,
+      "end": 44.685,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "lies",
+      "start": 44.698,
+      "end": 44.97,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "behind",
+      "start": 44.982,
+      "end": 45.391,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "us",
+      "start": 45.403,
+      "end": 45.613,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "we",
+      "start": 45.787,
+      "end": 45.923,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "already",
+      "start": 45.935,
+      "end": 46.294,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "hit",
+      "start": 46.306,
+      "end": 46.542,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 46.554,
+      "end": 46.628,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "cosmic",
+      "start": 46.641,
+      "end": 47.061,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "jackpot",
+      "start": 47.074,
+      "end": 47.717,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "On",
+      "start": 48.571,
+      "end": 48.818,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "early",
+      "start": 48.831,
+      "end": 49.091,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Earth",
+      "start": 49.103,
+      "end": 49.388,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "simple",
+      "start": 49.561,
+      "end": 49.87,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "microbes",
+      "start": 49.883,
+      "end": 50.402,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "stalled",
+      "start": 50.415,
+      "end": 50.724,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "for",
+      "start": 50.737,
+      "end": 50.823,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "nearly",
+      "start": 50.836,
+      "end": 51.157,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "two",
+      "start": 51.17,
+      "end": 51.417,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "billion",
+      "start": 51.43,
+      "end": 51.789,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "years",
+      "start": 51.801,
+      "end": 52.123,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "before",
+      "start": 52.135,
+      "end": 52.457,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "two",
+      "start": 52.469,
+      "end": 52.729,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "cells",
+      "start": 52.742,
+      "end": 53.125,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "merged",
+      "start": 53.138,
+      "end": 53.509,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "into",
+      "start": 53.521,
+      "end": 53.781,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "complex",
+      "start": 53.794,
+      "end": 54.264,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "life",
+      "start": 54.276,
+      "end": 54.709,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "The",
+      "start": 55.053,
+      "end": 55.213,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "darker",
+      "start": 55.119,
+      "end": 55.449,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "option",
+      "start": 55.462,
+      "end": 55.793,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "puts",
+      "start": 55.805,
+      "end": 56.05,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 56.062,
+      "end": 56.16,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Great",
+      "start": 56.172,
+      "end": 56.491,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Filter",
+      "start": 56.503,
+      "end": 56.859,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "ahead",
+      "start": 56.871,
+      "end": 57.104,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "of",
+      "start": 57.116,
+      "end": 57.214,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "us",
+      "start": 57.226,
+      "end": 57.545,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Perhaps",
+      "start": 58.39,
+      "end": 58.831,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "rocky",
+      "start": 58.843,
+      "end": 59.162,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "worlds",
+      "start": 59.174,
+      "end": 59.529,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "sprout",
+      "start": 59.542,
+      "end": 59.897,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "intelligent",
+      "start": 59.909,
+      "end": 60.436,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "species",
+      "start": 60.448,
+      "end": 60.902,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "often",
+      "start": 60.914,
+      "end": 61.257,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "only",
+      "start": 61.453,
+      "end": 61.686,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "to",
+      "start": 61.698,
+      "end": 61.821,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "wipe",
+      "start": 61.833,
+      "end": 62.14,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "themselves",
+      "start": 62.152,
+      "end": 62.679,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "out",
+      "start": 62.691,
+      "end": 62.863,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "once",
+      "start": 62.875,
+      "end": 63.169,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "nuclear",
+      "start": 63.181,
+      "end": 63.659,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "or",
+      "start": 63.672,
+      "end": 63.782,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "climate",
+      "start": 63.794,
+      "end": 64.272,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "tech",
+      "start": 64.284,
+      "end": 64.468,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "arrives",
+      "start": 64.48,
+      "end": 65.081,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Still",
+      "start": 65.412,
+      "end": 65.884,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "radio",
+      "start": 65.954,
+      "end": 66.375,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "silence",
+      "start": 66.388,
+      "end": 66.872,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "doesn't",
+      "start": 66.885,
+      "end": 67.204,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "prove",
+      "start": 67.217,
+      "end": 67.536,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "we're",
+      "start": 67.548,
+      "end": 67.803,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "alone",
+      "start": 67.816,
+      "end": 68.161,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "astronomers",
+      "start": 68.352,
+      "end": 68.875,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "calculate",
+      "start": 68.888,
+      "end": 69.5,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "our",
+      "start": 69.513,
+      "end": 69.678,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "searches",
+      "start": 69.691,
+      "end": 70.125,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "have",
+      "start": 70.138,
+      "end": 70.252,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "sampled",
+      "start": 70.265,
+      "end": 70.724,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "barely",
+      "start": 70.737,
+      "end": 71.056,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "a",
+      "start": 71.069,
+      "end": 71.132,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "glass",
+      "start": 71.145,
+      "end": 71.502,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "from",
+      "start": 71.515,
+      "end": 71.655,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "the",
+      "start": 71.668,
+      "end": 71.732,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "cosmic",
+      "start": 71.745,
+      "end": 72.191,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "ocean",
+      "start": 72.204,
+      "end": 72.638,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Until",
+      "start": 73.01,
+      "end": 73.389,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "one",
+      "start": 73.291,
+      "end": 73.556,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "signal",
+      "start": 73.569,
+      "end": 73.948,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "breaks",
+      "start": 73.96,
+      "end": 74.251,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "the",
+      "start": 74.263,
+      "end": 74.352,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "quiet",
+      "start": 74.364,
+      "end": 74.832,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Earth",
+      "start": 75.008,
+      "end": 75.185,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "remains",
+      "start": 75.198,
+      "end": 75.64,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "the",
+      "start": 75.652,
+      "end": 75.816,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "only",
+      "start": 75.829,
+      "end": 76.094,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "voice",
+      "start": 76.107,
+      "end": 76.423,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "we",
+      "start": 76.435,
+      "end": 76.587,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "know",
+      "start": 76.599,
+      "end": 76.953,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Tonight",
+      "start": 77.825,
+      "end": 78.367,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "our",
+      "start": 78.569,
+      "end": 78.734,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "telescopes",
+      "start": 78.746,
+      "end": 79.441,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "keep",
+      "start": 79.453,
+      "end": 79.706,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "listening",
+      "start": 79.718,
+      "end": 80.097,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "across",
+      "start": 80.11,
+      "end": 80.501,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "three",
+      "start": 80.514,
+      "end": 80.766,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "hundred",
+      "start": 80.779,
+      "end": 81.082,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "million",
+      "start": 81.095,
+      "end": 81.537,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "silent",
+      "start": 81.549,
+      "end": 81.966,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "worlds",
+      "start": 81.979,
+      "end": 82.559,
+      "emphasis": false
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 0.04,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "sonar_ping_deep",
+      "time_s": 21.627,
+      "gain_db": -26.5
+    },
+    {
+      "sfx_name": "paper_data_reveal",
+      "time_s": 38.317,
+      "gain_db": -26.0
+    },
+    {
+      "sfx_name": "microscope_slide_click",
+      "time_s": 47.983,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 54.917,
+      "gain_db": -26.0
+    },
+    {
+      "sfx_name": "locator_ping_soft",
+      "time_s": 72.893,
+      "gain_db": -26.5
+    }
+  ],
+  "diegetic_nat_sound_active": true
+}

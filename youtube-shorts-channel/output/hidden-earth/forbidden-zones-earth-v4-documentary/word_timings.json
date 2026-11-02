@@ -1,0 +1,2027 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "total_duration_s": 106.7,
+  "total_frames_30fps": 3201,
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "Every forbidden zone on Earth looks like a warning built to save you. Step inside three locked-off places, and the real danger flips completely.",
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "start": 0.1,
+      "end": 8.282,
+      "duration": 8.182,
+      "pause_after": 0.24,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N02",
+      "text": "Around Chernobyl's shattered reactor, a giant exclusion zone still bars normal human life. Radiation there burned whole pine stands rust-red, creating what workers named the Red Forest.",
+      "rate": "+2%",
+      "pitch": "+0Hz",
+      "start": 8.522,
+      "end": 19.645,
+      "duration": 11.123,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N03",
+      "text": "Yet once people vanished, wildlife surged back. Gray wolves, wild horses, and deer multiplied across empty towns faster than in nearby reserves.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 19.905,
+      "end": 29.393,
+      "duration": 9.488,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N04",
+      "text": "Even stranger, robots probing inside the reactor walls found pitch-black fungi growing toward radiation. Packed with dark melanin pigment, those fungi harvest lethal gamma rays for energy.",
+      "rate": "+2%",
+      "pitch": "+1Hz",
+      "start": 29.653,
+      "end": 40.703,
+      "duration": 11.05,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N05",
+      "text": "In southwestern France, Lascaux Cave is locked for the exact opposite reason. Humans aren't banned to save visitors\u2014we are the poison.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 40.963,
+      "end": 49.045,
+      "duration": 8.082,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N06",
+      "text": "For seventeen thousand years, prehistoric animal paintings survived inside cool, sealed limestone air. When crowds poured in, human breath, body heat, and shoe spores triggered white mold that ate the art. France sealed the real cave forever and built an exact copy nearby.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 49.305,
+      "end": 66.178,
+      "duration": 16.873,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N07",
+      "text": "Off Iceland's coast, Surtsey Island bans humans for an even stricter purpose: pure creation. When an undersea volcano boiled up in nineteen sixty-three, scientists quarantined the barren rock immediately. Researchers scrub every seed from their boots\u2014and when one stray tomato sprouted in ash, they ripped it out.",
+      "rate": "+2%",
+      "pitch": "+1Hz",
+      "start": 66.458,
+      "end": 85.763,
+      "duration": 19.305,
+      "pause_after": 0.28,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N08",
+      "text": "Carried only by ocean waves and nesting gulls, sixty plant species turned black lava green. That doesn't mean radiation is harmless, or that sealed caves ever recover once human crowds break their balance.",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 86.043,
+      "end": 98.235,
+      "duration": 12.191,
+      "pause_after": 0.26,
+      "emphasis_words": []
+    },
+    {
+      "seg_id": "N09",
+      "text": "Some forbidden zones lock us out to keep our bodies alive. The rarest ones lock us out because a single human footprint changes everything.",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 98.495,
+      "end": 106.452,
+      "duration": 7.958,
+      "pause_after": 0.24,
+      "emphasis_words": []
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "Every",
+      "start": 0.1,
+      "end": 0.403,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "forbidden",
+      "start": 0.328,
+      "end": 0.728,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "zone",
+      "start": 0.74,
+      "end": 1.007,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "on",
+      "start": 1.02,
+      "end": 1.153,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Earth",
+      "start": 1.165,
+      "end": 1.359,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "looks",
+      "start": 1.372,
+      "end": 1.639,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "like",
+      "start": 1.651,
+      "end": 1.833,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "a",
+      "start": 1.845,
+      "end": 1.881,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "warning",
+      "start": 1.893,
+      "end": 2.294,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "built",
+      "start": 2.306,
+      "end": 2.549,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "to",
+      "start": 2.561,
+      "end": 2.634,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "save",
+      "start": 2.646,
+      "end": 2.949,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "you",
+      "start": 2.961,
+      "end": 3.216,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Step",
+      "start": 4.052,
+      "end": 4.392,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "inside",
+      "start": 4.404,
+      "end": 4.865,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "three",
+      "start": 4.877,
+      "end": 5.181,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "locked-off",
+      "start": 5.193,
+      "end": 5.618,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "places",
+      "start": 5.63,
+      "end": 6.115,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "and",
+      "start": 6.322,
+      "end": 6.431,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "the",
+      "start": 6.443,
+      "end": 6.528,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "real",
+      "start": 6.54,
+      "end": 6.843,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "danger",
+      "start": 6.856,
+      "end": 7.232,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "flips",
+      "start": 7.244,
+      "end": 7.559,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "completely",
+      "start": 7.572,
+      "end": 8.142,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Around",
+      "start": 8.522,
+      "end": 8.951,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Chernobyl's",
+      "start": 8.855,
+      "end": 9.296,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "shattered",
+      "start": 9.308,
+      "end": 9.615,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "reactor",
+      "start": 9.627,
+      "end": 10.13,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "a",
+      "start": 10.35,
+      "end": 10.411,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "giant",
+      "start": 10.424,
+      "end": 10.828,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "exclusion",
+      "start": 10.84,
+      "end": 11.392,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "zone",
+      "start": 11.404,
+      "end": 11.686,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "still",
+      "start": 11.698,
+      "end": 12.004,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "bars",
+      "start": 12.017,
+      "end": 12.384,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "normal",
+      "start": 12.397,
+      "end": 12.715,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "human",
+      "start": 12.728,
+      "end": 13.107,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "life",
+      "start": 13.12,
+      "end": 13.598,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Radiation",
+      "start": 14.442,
+      "end": 15.141,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "there",
+      "start": 15.153,
+      "end": 15.276,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "burned",
+      "start": 15.288,
+      "end": 15.606,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "whole",
+      "start": 15.619,
+      "end": 15.839,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "pine",
+      "start": 15.852,
+      "end": 16.133,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "stands",
+      "start": 16.146,
+      "end": 16.526,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "rust-red",
+      "start": 16.538,
+      "end": 17.187,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "creating",
+      "start": 17.383,
+      "end": 17.849,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "what",
+      "start": 17.861,
+      "end": 18.008,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "workers",
+      "start": 18.021,
+      "end": 18.425,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "named",
+      "start": 18.437,
+      "end": 18.744,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 18.756,
+      "end": 18.83,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Red",
+      "start": 18.842,
+      "end": 19.05,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Forest",
+      "start": 19.062,
+      "end": 19.589,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Yet",
+      "start": 19.905,
+      "end": 20.141,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "once",
+      "start": 20.046,
+      "end": 20.294,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "people",
+      "start": 20.306,
+      "end": 20.628,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "vanished",
+      "start": 20.64,
+      "end": 21.061,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "wildlife",
+      "start": 21.259,
+      "end": 21.791,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "surged",
+      "start": 21.804,
+      "end": 22.187,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "back",
+      "start": 22.2,
+      "end": 22.608,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Gray",
+      "start": 23.462,
+      "end": 23.833,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "wolves",
+      "start": 23.845,
+      "end": 24.315,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "wild",
+      "start": 24.513,
+      "end": 24.848,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "horses",
+      "start": 24.86,
+      "end": 25.343,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "and",
+      "start": 25.528,
+      "end": 25.64,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "deer",
+      "start": 25.652,
+      "end": 25.838,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "multiplied",
+      "start": 25.85,
+      "end": 26.444,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "across",
+      "start": 26.457,
+      "end": 26.778,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "empty",
+      "start": 26.791,
+      "end": 27.063,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "towns",
+      "start": 27.075,
+      "end": 27.422,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "faster",
+      "start": 27.434,
+      "end": 27.83,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "than",
+      "start": 27.843,
+      "end": 27.991,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "in",
+      "start": 28.004,
+      "end": 28.152,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "nearby",
+      "start": 28.164,
+      "end": 28.573,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "reserves",
+      "start": 28.585,
+      "end": 29.303,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Even",
+      "start": 29.653,
+      "end": 30.021,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "stranger",
+      "start": 29.934,
+      "end": 30.436,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "robots",
+      "start": 30.608,
+      "end": 30.987,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "probing",
+      "start": 31.0,
+      "end": 31.404,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "inside",
+      "start": 31.416,
+      "end": 31.821,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "the",
+      "start": 31.833,
+      "end": 31.907,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "reactor",
+      "start": 31.919,
+      "end": 32.336,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "walls",
+      "start": 32.348,
+      "end": 32.691,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "found",
+      "start": 32.703,
+      "end": 32.973,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "pitch-black",
+      "start": 32.985,
+      "end": 33.475,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "fungi",
+      "start": 33.487,
+      "end": 33.904,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "growing",
+      "start": 33.916,
+      "end": 34.272,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "toward",
+      "start": 34.284,
+      "end": 34.676,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "radiation",
+      "start": 34.688,
+      "end": 35.424,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Packed",
+      "start": 36.268,
+      "end": 36.562,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "with",
+      "start": 36.575,
+      "end": 36.71,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "dark",
+      "start": 36.722,
+      "end": 37.016,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "melanin",
+      "start": 37.028,
+      "end": 37.359,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "pigment",
+      "start": 37.371,
+      "end": 37.788,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "those",
+      "start": 37.972,
+      "end": 38.18,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "fungi",
+      "start": 38.192,
+      "end": 38.646,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "harvest",
+      "start": 38.658,
+      "end": 39.038,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "lethal",
+      "start": 39.05,
+      "end": 39.393,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "gamma",
+      "start": 39.406,
+      "end": 39.7,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "rays",
+      "start": 39.712,
+      "end": 40.006,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "for",
+      "start": 40.018,
+      "end": 40.165,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "energy",
+      "start": 40.178,
+      "end": 40.594,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "In",
+      "start": 40.963,
+      "end": 41.161,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "southwestern",
+      "start": 41.075,
+      "end": 41.731,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "France",
+      "start": 41.743,
+      "end": 42.213,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Lascaux",
+      "start": 42.424,
+      "end": 42.981,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Cave",
+      "start": 42.993,
+      "end": 43.241,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "is",
+      "start": 43.253,
+      "end": 43.389,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "locked",
+      "start": 43.401,
+      "end": 43.661,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "for",
+      "start": 43.674,
+      "end": 43.76,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 43.773,
+      "end": 43.884,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "exact",
+      "start": 43.897,
+      "end": 44.28,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "opposite",
+      "start": 44.293,
+      "end": 44.701,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "reason",
+      "start": 44.713,
+      "end": 45.159,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Humans",
+      "start": 46.012,
+      "end": 46.483,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "aren't",
+      "start": 46.495,
+      "end": 46.705,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "banned",
+      "start": 46.718,
+      "end": 46.941,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "to",
+      "start": 46.953,
+      "end": 47.015,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "save",
+      "start": 47.027,
+      "end": 47.324,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "visitors",
+      "start": 47.337,
+      "end": 47.832,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "we",
+      "start": 48.042,
+      "end": 48.228,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "are",
+      "start": 48.24,
+      "end": 48.327,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 48.339,
+      "end": 48.438,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "poison",
+      "start": 48.45,
+      "end": 48.983,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "For",
+      "start": 49.305,
+      "end": 49.478,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "seventeen",
+      "start": 49.386,
+      "end": 49.919,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "thousand",
+      "start": 49.931,
+      "end": 50.377,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "years",
+      "start": 50.389,
+      "end": 50.81,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "prehistoric",
+      "start": 50.971,
+      "end": 51.664,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "animal",
+      "start": 51.676,
+      "end": 51.998,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "paintings",
+      "start": 52.01,
+      "end": 52.481,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "survived",
+      "start": 52.493,
+      "end": 52.938,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "inside",
+      "start": 52.951,
+      "end": 53.421,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "cool",
+      "start": 53.434,
+      "end": 53.706,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "sealed",
+      "start": 53.916,
+      "end": 54.213,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "limestone",
+      "start": 54.226,
+      "end": 54.795,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "air",
+      "start": 54.807,
+      "end": 55.104,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "When",
+      "start": 55.958,
+      "end": 56.205,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "crowds",
+      "start": 56.218,
+      "end": 56.601,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "poured",
+      "start": 56.614,
+      "end": 56.911,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "in",
+      "start": 56.923,
+      "end": 57.096,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "human",
+      "start": 57.282,
+      "end": 57.604,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "breath",
+      "start": 57.616,
+      "end": 58.062,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "body",
+      "start": 58.297,
+      "end": 58.52,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "heat",
+      "start": 58.532,
+      "end": 58.866,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "and",
+      "start": 59.089,
+      "end": 59.188,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "shoe",
+      "start": 59.2,
+      "end": 59.423,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "spores",
+      "start": 59.436,
+      "end": 59.832,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "triggered",
+      "start": 59.844,
+      "end": 60.141,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "white",
+      "start": 60.153,
+      "end": 60.45,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "mold",
+      "start": 60.463,
+      "end": 60.723,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "that",
+      "start": 60.735,
+      "end": 60.859,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "ate",
+      "start": 60.871,
+      "end": 61.02,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 61.032,
+      "end": 61.156,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "art",
+      "start": 61.168,
+      "end": 61.577,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "France",
+      "start": 62.431,
+      "end": 62.876,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "sealed",
+      "start": 62.888,
+      "end": 63.148,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 63.161,
+      "end": 63.235,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "real",
+      "start": 63.247,
+      "end": 63.569,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "cave",
+      "start": 63.582,
+      "end": 63.866,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "forever",
+      "start": 63.879,
+      "end": 64.312,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "and",
+      "start": 64.324,
+      "end": 64.448,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "built",
+      "start": 64.46,
+      "end": 64.708,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "an",
+      "start": 64.72,
+      "end": 64.819,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "exact",
+      "start": 64.832,
+      "end": 65.228,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "copy",
+      "start": 65.24,
+      "end": 65.537,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "nearby",
+      "start": 65.549,
+      "end": 66.119,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Off",
+      "start": 66.458,
+      "end": 66.703,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Iceland's",
+      "start": 66.622,
+      "end": 67.076,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "coast",
+      "start": 67.088,
+      "end": 67.505,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Surtsey",
+      "start": 67.762,
+      "end": 68.228,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Island",
+      "start": 68.24,
+      "end": 68.632,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "bans",
+      "start": 68.644,
+      "end": 68.926,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "humans",
+      "start": 68.939,
+      "end": 69.355,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "for",
+      "start": 69.367,
+      "end": 69.478,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "an",
+      "start": 69.49,
+      "end": 69.613,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "even",
+      "start": 69.625,
+      "end": 69.907,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "stricter",
+      "start": 69.919,
+      "end": 70.311,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "purpose",
+      "start": 70.323,
+      "end": 70.85,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "pure",
+      "start": 71.034,
+      "end": 71.316,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "creation",
+      "start": 71.328,
+      "end": 71.99,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "When",
+      "start": 72.835,
+      "end": 73.08,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "an",
+      "start": 73.092,
+      "end": 73.165,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "undersea",
+      "start": 73.178,
+      "end": 73.582,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "volcano",
+      "start": 73.594,
+      "end": 74.158,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "boiled",
+      "start": 74.17,
+      "end": 74.526,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "up",
+      "start": 74.538,
+      "end": 74.71,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "in",
+      "start": 74.722,
+      "end": 74.844,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "nineteen",
+      "start": 74.857,
+      "end": 75.298,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "sixty-three",
+      "start": 75.31,
+      "end": 75.996,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "scientists",
+      "start": 76.254,
+      "end": 76.866,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "quarantined",
+      "start": 76.879,
+      "end": 77.479,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "the",
+      "start": 77.491,
+      "end": 77.577,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "barren",
+      "start": 77.59,
+      "end": 77.969,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "rock",
+      "start": 77.982,
+      "end": 78.178,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "immediately",
+      "start": 78.19,
+      "end": 78.79,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Researchers",
+      "start": 79.636,
+      "end": 80.224,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "scrub",
+      "start": 80.237,
+      "end": 80.567,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "every",
+      "start": 80.58,
+      "end": 80.837,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "seed",
+      "start": 80.849,
+      "end": 81.143,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "from",
+      "start": 81.156,
+      "end": 81.315,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "their",
+      "start": 81.327,
+      "end": 81.462,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "boots",
+      "start": 81.474,
+      "end": 81.952,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "and",
+      "start": 82.173,
+      "end": 82.283,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "when",
+      "start": 82.295,
+      "end": 82.479,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "one",
+      "start": 82.491,
+      "end": 82.724,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "stray",
+      "start": 82.737,
+      "end": 83.055,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "tomato",
+      "start": 83.067,
+      "end": 83.607,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "sprouted",
+      "start": 83.619,
+      "end": 84.109,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "in",
+      "start": 84.121,
+      "end": 84.232,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "ash",
+      "start": 84.244,
+      "end": 84.538,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "they",
+      "start": 84.746,
+      "end": 84.893,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "ripped",
+      "start": 84.906,
+      "end": 85.212,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "it",
+      "start": 85.224,
+      "end": 85.322,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "out",
+      "start": 85.335,
+      "end": 85.702,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Carried",
+      "start": 86.043,
+      "end": 86.447,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "only",
+      "start": 86.366,
+      "end": 86.644,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "by",
+      "start": 86.657,
+      "end": 86.872,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "ocean",
+      "start": 86.884,
+      "end": 87.238,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "waves",
+      "start": 87.25,
+      "end": 87.629,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "and",
+      "start": 87.642,
+      "end": 87.755,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "nesting",
+      "start": 87.768,
+      "end": 88.109,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "gulls",
+      "start": 88.122,
+      "end": 88.551,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "sixty",
+      "start": 88.753,
+      "end": 89.069,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "plant",
+      "start": 89.081,
+      "end": 89.397,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "species",
+      "start": 89.409,
+      "end": 89.902,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "turned",
+      "start": 89.914,
+      "end": 90.205,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "black",
+      "start": 90.217,
+      "end": 90.483,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "lava",
+      "start": 90.495,
+      "end": 90.786,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "green",
+      "start": 90.798,
+      "end": 91.253,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "That",
+      "start": 92.125,
+      "end": 92.327,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "doesn't",
+      "start": 92.339,
+      "end": 92.592,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "mean",
+      "start": 92.604,
+      "end": 92.819,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "radiation",
+      "start": 92.832,
+      "end": 93.412,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "is",
+      "start": 93.425,
+      "end": 93.577,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "harmless",
+      "start": 93.589,
+      "end": 94.157,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "or",
+      "start": 94.334,
+      "end": 94.435,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "that",
+      "start": 94.448,
+      "end": 94.65,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "sealed",
+      "start": 94.662,
+      "end": 94.991,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "caves",
+      "start": 95.003,
+      "end": 95.357,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "ever",
+      "start": 95.37,
+      "end": 95.546,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "recover",
+      "start": 95.559,
+      "end": 95.963,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "once",
+      "start": 95.976,
+      "end": 96.279,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "human",
+      "start": 96.291,
+      "end": 96.645,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "crowds",
+      "start": 96.657,
+      "end": 97.112,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "break",
+      "start": 97.125,
+      "end": 97.415,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "their",
+      "start": 97.428,
+      "end": 97.554,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "balance",
+      "start": 97.566,
+      "end": 98.16,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "Some",
+      "start": 98.495,
+      "end": 98.823,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "forbidden",
+      "start": 98.725,
+      "end": 99.116,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "zones",
+      "start": 99.129,
+      "end": 99.457,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "lock",
+      "start": 99.47,
+      "end": 99.71,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "us",
+      "start": 99.723,
+      "end": 99.836,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "out",
+      "start": 99.849,
+      "end": 100.026,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "to",
+      "start": 100.038,
+      "end": 100.101,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "keep",
+      "start": 100.114,
+      "end": 100.354,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "our",
+      "start": 100.366,
+      "end": 100.556,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "bodies",
+      "start": 100.568,
+      "end": 100.884,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "alive",
+      "start": 100.897,
+      "end": 101.452,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "The",
+      "start": 102.324,
+      "end": 102.488,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "rarest",
+      "start": 102.501,
+      "end": 102.943,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "ones",
+      "start": 102.955,
+      "end": 103.284,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "lock",
+      "start": 103.296,
+      "end": 103.511,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "us",
+      "start": 103.524,
+      "end": 103.662,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "out",
+      "start": 103.675,
+      "end": 103.877,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "because",
+      "start": 103.89,
+      "end": 104.117,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "a",
+      "start": 104.13,
+      "end": 104.18,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "single",
+      "start": 104.193,
+      "end": 104.572,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "human",
+      "start": 104.584,
+      "end": 104.95,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "footprint",
+      "start": 104.963,
+      "end": 105.405,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "changes",
+      "start": 105.417,
+      "end": 105.847,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "everything",
+      "start": 105.859,
+      "end": 106.377,
+      "emphasis": false
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 0.04,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "sonar_ping_deep",
+      "time_s": 29.517,
+      "gain_db": -26.0
+    },
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 40.817,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "microscope_slide_click",
+      "time_s": 66.35,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "sonar_ping_deep",
+      "time_s": 94.283,
+      "gain_db": -26.5
+    }
+  ],
+  "diegetic_nat_sound_active": true
+}

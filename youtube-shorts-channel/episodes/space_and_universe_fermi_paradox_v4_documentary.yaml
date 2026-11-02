@@ -1,0 +1,825 @@
+channel_name: "Proof of Wonder"
+playlist: "Space & Universe"
+slug: "fermi-paradox-v4-documentary"
+style_profile: "pow_documentary_v3"
+
+primary_title: "300 Million Habitable Worlds—So Why Is Space Dead Silent?"
+alternative_title: "The Great Filter: Why 60 Years of Alien Searches Found Nothing"
+
+youtube_description: |
+  NASA's Kepler space telescope data indicates our Milky Way galaxy holds over 300 million rocky planets orbiting inside the liquid-water habitable zones of sun-like stars—and billions of those star systems formed billions of years before our Sun ignited (Bryson et al., The Astronomical Journal, 2021).
+
+  Even traveling at just 1% of light speed, a spacefaring civilization with self-replicating probes or starships could cross the entire Milky Way in roughly 10 million years—a brief blink in a 13-billion-year-old galaxy (Hart, QJRAS, 1975; Fermi, 1950 / Jones, LA-10311-MS, 1985). Yet since Frank Drake's Project Ozma began scanning nearby stars in 1960, over six decades of radio and optical SETI observations have detected zero confirmed extraterrestrial signals.
+
+  Economist Robin Hanson (1998) framed this contradiction as "The Great Filter": somewhere between lifeless rock and galaxy-spanning starflight sits at least one extreme evolutionary or technological bottleneck that almost nothing survives. Either that filter lies behind us—such as Earth's nearly two-billion-year microbial stall before two simple prokaryotes merged via endosymbiosis into complex eukaryotic cells—or it lies ahead of us, if technological civilizations routinely destroy themselves before reaching the stars. Crucially, radio silence does not prove we are alone: astronomers calculate that all SETI surveys combined have sampled only a tiny fraction—often compared to a single glass of water—from the vast multi-dimensional cosmic ocean (Wright, Kanodia, & Lubar, The Astronomical Journal, 2018).
+
+hashtags:
+  - "#FermiParadox"
+  - "#Astrobiology"
+  - "#SpaceScience"
+  - "#GreatFilter"
+  - "#NASA"
+  - "#ScienceShorts"
+
+target_duration_min_s: 62.0
+target_duration_max_s: 88.0
+voice: "en-GB-RyanNeural"
+ambience_preset: "deep_space"
+ambience_ducked_lufs_target: -23.0
+nat_sound_bed_file: "cassini_deep_space_radio_bed.wav"
+nat_sound_bed_range_s: [1.0, 80.0]
+nat_sound_gain_db: -15.5
+
+raw_assets_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/space_and_universe_fermi_paradox_v4"
+output_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/fermi-paradox-v4-documentary"
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N06"
+  scientific_caveat_seg_id: "N07"
+  min_real_evidence_ratio: 0.90
+
+thumbnail_spec:
+  src_file: "eso_potw1222a_alma_milky_way.jpg"
+  headline_text: "300M PLANETS|ZERO ALIENS?"
+  kicker_text: "60 YEARS • ZERO SIGNALS"
+  accent_line_index: 1
+  accent_rgb: [255, 212, 59]
+  clarity_boost: true
+  shadow_lift: 0.26
+  alt_headlines:
+    - "60 YEARS LISTENING|ZERO ALIENS"
+    - "300M WORLDS|NO ALIEN SIGNALS"
+  cx: 0.63
+  cy: 0.50
+  zoom: 1.01
+  text_position: "top"
+
+narration_segments:
+  - seg_id: "N01"
+    text: "NASA's Kepler space telescope revealed over three hundred million rocky habitable worlds across our galaxy. Billions of older stars formed long before our Sun ignited."
+    rate: "+3%"
+    pitch: "+0Hz"
+    pause_after_s: 0.24
+  - seg_id: "N02"
+    text: "Even crawling at one percent of light speed, a starship fleet crosses the galaxy in ten million years. In cosmic time, that's a blink—so physicist Enrico Fermi asked: where is everybody?"
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N03"
+    text: "Since nineteen sixty, giant radio dishes and optical telescopes have scanned thousands of nearby star systems. Across more than sixty years of listening, confirmed alien signals equal zero."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N04"
+    text: "To explain why alien life feels so rare, Robin Hanson proposed the Great Filter. Between dead rock and starflight sits at least one brutal barrier almost nothing survives."
+    rate: "+1%"
+    pitch: "+1Hz"
+    pause_after_s: 0.26
+  - seg_id: "N05"
+    text: "If that filter lies behind us, we already hit the cosmic jackpot. On early Earth, simple microbes stalled for nearly two billion years before two cells merged into complex life."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.28
+  - seg_id: "N06"
+    text: "The darker option puts the Great Filter ahead of us. Perhaps rocky worlds sprout intelligent species often—only to wipe themselves out once nuclear or climate tech arrives."
+    rate: "+2%"
+    pitch: "+1Hz"
+    pause_after_s: 0.26
+  - seg_id: "N07"
+    text: "Still, radio silence doesn't prove we're alone: astronomers calculate our searches have sampled barely a glass from the cosmic ocean."
+    rate: "-2%"
+    pitch: "-1Hz"
+    pause_after_s: 0.28
+  - seg_id: "N08"
+    text: "Until one signal breaks the quiet, Earth remains the only voice we know. Tonight, our telescopes keep listening across three hundred million silent worlds."
+    rate: "-1%"
+    pitch: "-1Hz"
+    pause_after_s: 0.24
+
+sfx_cues:
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.04
+    gain_db: -25.5
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S06"
+    offset_s: 0.06
+    gain_db: -26.5
+  - sfx_name: "paper_data_reveal"
+    anchor_type: "shot_start"
+    anchor_ref: "S10"
+    offset_s: 0.05
+    gain_db: -26.0
+  - sfx_name: "microscope_slide_click"
+    anchor_type: "shot_start"
+    anchor_ref: "S12"
+    offset_s: 0.05
+    gain_db: -25.5
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S13"
+    offset_s: 0.05
+    gain_db: -26.0
+  - sfx_name: "locator_ping_soft"
+    anchor_type: "shot_start"
+    anchor_ref: "S18"
+    offset_s: 0.06
+    gain_db: -26.5
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 5.770
+    kind: "video_full"
+    src_file: "eso_vlt_laser_milky_way_1080p.mp4"
+    src_in: 0.40
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    is_real_evidence: true
+    associated_narration_concept: "NASA's Kepler space telescope revealed over three hundred million rocky habitable worlds across our galaxy."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Instant 0.0s live 1080p observatory domes tracking the blazing Milky Way core with golden laser guide beam"
+    visual_desc: "Live 1080p Paranal Very Large Telescope domes rotating beneath the dense Milky Way starfield as a golden laser beam pierces the galactic core."
+
+  - sid: "S02"
+    start_s: 5.770
+    end_s: 9.596
+    kind: "video_full"
+    src_file: "nasa_life_in_universe_1080p.mp4"
+    src_in: 343.20
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end pause cut after 'galaxy.' (0.836s pause) to Kepler exoplanet transit across older sun-like star"
+    is_real_evidence: true
+    associated_narration_concept: "Billions of older stars formed long before our Sun ignited."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NASA Kepler rocky exoplanet transiting in front of a bright sun-like star"
+    visual_desc: "Full-bleed NASA Goddard visualization of a rocky exoplanet silhouetted as it transits across the glowing disk of a distant sun-like star."
+
+  - sid: "S03"
+    start_s: 9.596
+    end_s: 15.621
+    kind: "video_full"
+    src_file: "eso_paranal_milky_way_1080p.mp4"
+    src_in: 2.00
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.53
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'ignited.' to sweeping galactic starfield motion across the Milky Way plane"
+    is_real_evidence: true
+    associated_narration_concept: "Even crawling at one percent of light speed, a starship fleet crosses the galaxy in ten million years."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Sweeping real Milky Way galactic band rotating above Paranal observatory domes"
+    visual_desc: "Live 1080p time-lapse of billions of stars in the Milky Way band sweeping across the sky above open observatory domes."
+
+  - sid: "S04"
+    start_s: 15.621
+    end_s: 18.137
+    kind: "video_full"
+    src_file: "nasa_jwst_cleanroom_1080p.mp4"
+    src_in: 18.20
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'years.' (0.854s pause) to two NASA engineers gazing up at giant golden mirror"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "In cosmic time, that's a blink—"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Two NASA engineers silhouetted in dark chamber gazing up at Webb's giant golden honeycomb mirror"
+    visual_desc: "Live 1080p NASA footage of two engineers standing inside a dark test chamber looking up at the towering 6.5-meter golden primary mirror."
+
+  - sid: "S05"
+    start_s: 18.137
+    end_s: 21.577
+    kind: "video_full"
+    src_file: "eso_alma_control_room_5.m4v"
+    src_in: 3.30
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Em-dash breath cut after 'blink—' to two astronomers questioning live sky-survey data"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "so physicist Enrico Fermi asked: where is everybody?"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Two observatory astronomers leaning side by side studying sky-survey telemetry"
+    visual_desc: "Live observatory control-room shot of two astronomers closely inspecting deep-sky observation data side by side."
+
+  - sid: "S06"
+    start_s: 21.577
+    end_s: 27.996
+    kind: "video_full"
+    src_file: "eso_alma_antennas_motion_1080p.mp4"
+    src_in: 0.60
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'everybody?' to giant radio telescope dishes pivoting skyward"
+    is_real_evidence: true
+    associated_narration_concept: "Since nineteen sixty, giant radio dishes and optical telescopes have scanned thousands of nearby star systems."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Close-up of giant white ALMA radio telescope antennas slewing in unison toward deep space"
+    visual_desc: "Live 1080p close-up of massive white radio-telescope dishes pivoting in synchronization toward the sky on the Chajnantor Plateau."
+
+  - sid: "S07"
+    start_s: 27.996
+    end_s: 30.723
+    kind: "video_full"
+    src_file: "eso_alma_dishes_1080p.mp4"
+    src_in: 1.00
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.53
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'systems.' (0.854s pause) to wide array of giant radio dishes listening across high desert"
+    is_real_evidence: true
+    associated_narration_concept: "Across more than sixty years of listening,"
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Wide array of dozens of white radio-telescope antennas aimed into deep space"
+    visual_desc: "Live 1080p wide shot of the ALMA radio telescope array aimed skyward across the high-altitude Atacama desert."
+
+  - sid: "S08"
+    start_s: 30.723
+    end_s: 33.213
+    kind: "video_full"
+    src_file: "eso_alma_control_room_10.m4v"
+    src_in: 3.80
+    cx0: 0.52
+    cy0: 0.50
+    cx1: 0.54
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'listening,' to radio astronomer pointing at flat frequency spectra"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "confirmed alien signals equal zero."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Radio astronomer pointing at live radio-frequency spectra on dual control-room monitors"
+    visual_desc: "Live observatory control-room close-up of a radio astronomer examining baseline radio-frequency plots across dual displays."
+
+  - sid: "S09"
+    start_s: 33.213
+    end_s: 38.279
+    kind: "video_full"
+    src_file: "eso_alma_control_room_1.m4v"
+    src_in: 3.20
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.53
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'zero.' to three astronomers analyzing sky-survey data in observatory control room"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "To explain why alien life feels so rare, Robin Hanson proposed the Great Filter."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "credible_hypothesis"
+    story_beat: "Three astronomers collaborating at multi-screen observation consoles"
+    visual_desc: "Live observatory footage of three astronomers seated at multi-monitor consoles analyzing deep-sky observation data."
+
+  - sid: "S10"
+    start_s: 38.279
+    end_s: 43.859
+    kind: "diagram"
+    src_file: "great_filter_bottleneck_v4.mp4"
+    src_in: 0.15
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Motivated dissolve across sentence pause (0.854s) into photo-textured Great Filter bottleneck visualization"
+    is_real_evidence: false
+    associated_narration_concept: "Between dead rock and starflight sits at least one brutal barrier almost nothing survives."
+    subject_match_kind: "illustrative_diagram"
+    scientific_claim_status: "illustrative_visualization"
+    story_beat: "Photo-textured Great Filter diagram showing evolutionary trajectories narrowing through a red bottleneck"
+    visual_desc: "First-party photo-textured 9:16 diagram over real Milky Way stars showing candidate worlds narrowing from lifeless rock through the Great Filter bottleneck."
+
+  - sid: "S11"
+    start_s: 43.859
+    end_s: 47.942
+    kind: "video_full"
+    src_file: "nasa_jwst_cleanroom_1080p.mp4"
+    src_in: 63.50
+    cx0: 0.48
+    cy0: 0.48
+    cx1: 0.51
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'survives.' to cleanroom NASA engineer working beside Webb's golden mirror"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "If that filter lies behind us, we already hit the cosmic jackpot."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "credible_hypothesis"
+    story_beat: "Cleanroom NASA engineer on lift inspecting the gleaming golden segments of Webb's mirror"
+    visual_desc: "Live 1080p NASA cleanroom shot of a suited engineer elevated beside the gleaming gold-coated beryllium segments of the James Webb Space Telescope."
+
+  - sid: "S12"
+    start_s: 47.942
+    end_s: 54.881
+    kind: "video_full"
+    src_file: "nasa_elvis_eukaryote_30fps.mp4"
+    src_in: 1.00
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    contrast_gain: 1.10
+    context_note: "LIVING EUKARYOTIC CELL • NASA MICROSCOPY"
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'jackpot.' (0.854s pause) to real NASA holographic microscopy of living eukaryotic cells"
+    is_real_evidence: true
+    associated_narration_concept: "On early Earth, simple microbes stalled for nearly two billion years before two cells merged into complex life."
+    subject_match_kind: "representative_organism_microscopy"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Real 2025 NASA ELVIS digital holographic microscopy of living complex eukaryotic cells swimming"
+    visual_desc: "Authentic NASA JSC ELVIS holographic microscope video showing living nucleated Euglena eukaryotic cells swimming across the field of view."
+
+  - sid: "S13"
+    start_s: 54.881
+    end_s: 57.770
+    kind: "video_full"
+    src_file: "eso_alma_control_room_3.m4v"
+    src_in: 3.30
+    cx0: 0.52
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Segment-end cut at Layer-2 pivot ('The darker option puts the Great Filter ahead of us.')"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "The darker option puts the Great Filter ahead of us."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "credible_hypothesis"
+    story_beat: "Close-up of astronomer gazing intently at live sky-monitoring console"
+    visual_desc: "Live close-up of an observatory astronomer leaning forward with serious concentration while monitoring deep-space array data."
+
+  - sid: "S14"
+    start_s: 57.770
+    end_s: 61.355
+    kind: "video_full"
+    src_file: "nasa_iss_night_earth_1080p.mp4"
+    src_in: 158.00
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'us.' (0.845s pause) to real ISS view of Milky Way rising above glowing habitable horizon"
+    is_real_evidence: true
+    associated_narration_concept: "Perhaps rocky worlds sprout intelligent species often—"
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "credible_hypothesis"
+    story_beat: "Real ISS orbital footage of the Milky Way rising above Earth's glowing blue-green atmospheric horizon"
+    visual_desc: "Live 1080p International Space Station footage of the starry Milky Way rising above a living rocky world's glowing atmospheric limb."
+
+  - sid: "S15"
+    start_s: 61.355
+    end_s: 65.246
+    kind: "video_full"
+    src_file: "nasa_iss_night_earth_1080p.mp4"
+    src_in: 141.20
+    cx0: 0.50
+    cy0: 0.44
+    cx1: 0.53
+    cy1: 0.43
+    z0: 1.18
+    z1: 1.21
+    contrast_gain: 1.16
+    transition_in: "cut"
+    transition_reason: "Em-dash breath cut after 'often—' to real ISS orbital pass over Earth's glowing city power grids and storms"
+    is_real_evidence: true
+    associated_narration_concept: "only to wipe themselves out once nuclear or climate tech arrives."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "credible_hypothesis"
+    story_beat: "Real ISS night flyover of humanity's glowing city-light power grids under thin atmospheric airglow"
+    visual_desc: "Live 1080p International Space Station orbital footage passing over sprawling golden webs of human city lights and lightning flashes beneath Earth's thin atmosphere."
+
+  - sid: "S16"
+    start_s: 65.246
+    end_s: 68.257
+    kind: "video_full"
+    src_file: "nasa_voyager1_dsn_team_1080p.mp4"
+    src_in: 2.00
+    cx0: 0.48
+    cy0: 0.48
+    cx1: 0.51
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Segment-end cut at scientific caveat ('Still, radio silence doesn't prove we're alone:')"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Still, radio silence doesn't prove we're alone:"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NASA JPL Deep Space Network engineers gathered around laptops monitoring faint interstellar radio telemetry"
+    visual_desc: "Live 1080p NASA JPL footage of Voyager 1 flight engineers seated around telemetry laptops waiting for a faint deep-space radio carrier signal."
+
+  - sid: "S17"
+    start_s: 68.257
+    end_s: 72.824
+    kind: "video_full"
+    src_file: "eso_alma_transporter_1080p.mp4"
+    src_in: 1.20
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.53
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Colon clause pause cut to engineers walking beside giant radio dish transporter across high desert"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "astronomers calculate our searches have sampled barely a glass from the cosmic ocean."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Engineers in safety gear walking beside a 12-meter radio dish carried across the Atacama plateau"
+    visual_desc: "Live 1080p fieldwork shot of observatory engineers walking alongside a giant yellow crawler transporting a 12-meter radio antenna."
+
+  - sid: "S18"
+    start_s: 72.824
+    end_s: 77.178
+    kind: "still_full"
+    src_file: "nasa_pia23645_pale_blue_dot.jpg"
+    cx0: 0.56
+    cy0: 0.51
+    cx1: 0.58
+    cy1: 0.52
+    z0: 1.03
+    z1: 1.05
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Motivated dissolve into Voyager 1's iconic Pale Blue Dot photograph for the emotional synthesis"
+    is_real_evidence: true
+    associated_narration_concept: "Until one signal breaks the quiet, Earth remains the only voice we know."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Voyager 1's Pale Blue Dot — Earth suspended as a tiny pixel in a scattered sunbeam 6 billion km away"
+    visual_desc: "Full-bleed NASA/JPL-Caltech Pale Blue Dot Revisited photograph showing Earth as a single luminous speck suspended inside a scattered ray of sunlight."
+
+  - sid: "S19"
+    start_s: 77.178
+    end_s: 82.900
+    kind: "video_full"
+    src_file: "eso_vlt_four_lasers_1080p.mp4"
+    src_in: 6.12
+    cx0: 0.52
+    cy0: 0.48
+    cx1: 0.52
+    cy1: 0.45
+    z0: 1.04
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Final sentence cut (0.872s pause) to four golden laser beams piercing the Milky Way, looping back into S01"
+    is_real_evidence: true
+    associated_narration_concept: "Tonight, our telescopes keep listening across three hundred million silent worlds."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Four golden VLT laser beams shooting straight into the glittering Milky Way starfield"
+    visual_desc: "Live 1080p observatory footage of four golden sodium laser guide beams firing straight out of a rotating telescope dome into the starry Milky Way."
+
+caption_groups:
+  # N01 (25 words: 0..24)
+  - { seg_id: "N01", first_word_idx: 0, last_word_idx: 4, text: "NASA's Kepler space telescope revealed" }
+  - { seg_id: "N01", first_word_idx: 5, last_word_idx: 8, text: "over three hundred million" }
+  - { seg_id: "N01", first_word_idx: 9, last_word_idx: 14, text: "rocky habitable worlds across our galaxy." }
+  - { seg_id: "N01", first_word_idx: 15, last_word_idx: 19, text: "Billions of older stars formed" }
+  - { seg_id: "N01", first_word_idx: 20, last_word_idx: 24, text: "long before our Sun ignited." }
+  # N02 (32 words: 0..31)
+  - { seg_id: "N02", first_word_idx: 0, last_word_idx: 7, text: "Even crawling at one percent of light speed," }
+  - { seg_id: "N02", first_word_idx: 8, last_word_idx: 12, text: "a starship fleet crosses the" }
+  - { seg_id: "N02", first_word_idx: 13, last_word_idx: 17, text: "galaxy in ten million years." }
+  - { seg_id: "N02", first_word_idx: 18, last_word_idx: 23, text: "In cosmic time, that's a blink—" }
+  - { seg_id: "N02", first_word_idx: 24, last_word_idx: 28, text: "so physicist Enrico Fermi asked:" }
+  - { seg_id: "N02", first_word_idx: 29, last_word_idx: 31, text: "where is everybody?" }
+  # N03 (28 words: 0..27)
+  - { seg_id: "N03", first_word_idx: 0, last_word_idx: 5, text: "Since nineteen sixty, giant radio dishes" }
+  - { seg_id: "N03", first_word_idx: 6, last_word_idx: 10, text: "and optical telescopes have scanned" }
+  - { seg_id: "N03", first_word_idx: 11, last_word_idx: 15, text: "thousands of nearby star systems." }
+  - { seg_id: "N03", first_word_idx: 16, last_word_idx: 22, text: "Across more than sixty years of listening," }
+  - { seg_id: "N03", first_word_idx: 23, last_word_idx: 27, text: "confirmed alien signals equal zero." }
+  # N04 (28 words: 0..27)
+  - { seg_id: "N04", first_word_idx: 0, last_word_idx: 7, text: "To explain why alien life feels so rare," }
+  - { seg_id: "N04", first_word_idx: 8, last_word_idx: 13, text: "Robin Hanson proposed the Great Filter." }
+  - { seg_id: "N04", first_word_idx: 14, last_word_idx: 19, text: "Between dead rock and starflight sits" }
+  - { seg_id: "N04", first_word_idx: 20, last_word_idx: 27, text: "at least one brutal barrier almost nothing survives." }
+  # N05 (30 words: 0..29)
+  - { seg_id: "N05", first_word_idx: 0, last_word_idx: 5, text: "If that filter lies behind us," }
+  - { seg_id: "N05", first_word_idx: 6, last_word_idx: 11, text: "we already hit the cosmic jackpot." }
+  - { seg_id: "N05", first_word_idx: 12, last_word_idx: 17, text: "On early Earth, simple microbes stalled" }
+  - { seg_id: "N05", first_word_idx: 18, last_word_idx: 22, text: "for nearly two billion years" }
+  - { seg_id: "N05", first_word_idx: 23, last_word_idx: 29, text: "before two cells merged into complex life." }
+  # N06 (28 words: 0..27)
+  - { seg_id: "N06", first_word_idx: 0, last_word_idx: 9, text: "The darker option puts the Great Filter ahead of us." }
+  - { seg_id: "N06", first_word_idx: 10, last_word_idx: 16, text: "Perhaps rocky worlds sprout intelligent species often—" }
+  - { seg_id: "N06", first_word_idx: 17, last_word_idx: 21, text: "only to wipe themselves out" }
+  - { seg_id: "N06", first_word_idx: 22, last_word_idx: 27, text: "once nuclear or climate tech arrives." }
+  # N07 (20 words: 0..19)
+  - { seg_id: "N07", first_word_idx: 0, last_word_idx: 6, text: "Still, radio silence doesn't prove we're alone:" }
+  - { seg_id: "N07", first_word_idx: 7, last_word_idx: 13, text: "astronomers calculate our searches have sampled barely" }
+  - { seg_id: "N07", first_word_idx: 14, last_word_idx: 19, text: "a glass from the cosmic ocean." }
+  # N08 (24 words: 0..23)
+  - { seg_id: "N08", first_word_idx: 0, last_word_idx: 5, text: "Until one signal breaks the quiet," }
+  - { seg_id: "N08", first_word_idx: 6, last_word_idx: 12, text: "Earth remains the only voice we know." }
+  - { seg_id: "N08", first_word_idx: 13, last_word_idx: 18, text: "Tonight, our telescopes keep listening across" }
+  - { seg_id: "N08", first_word_idx: 19, last_word_idx: 23, text: "three hundred million silent worlds." }
+
+assets_register:
+  - local_file: "eso_potw1222a_alma_milky_way.jpg"
+    title: "ALMA Beneath the Southern Milky Way (ESO Picture of the Week potw1222a)"
+    creator_agency: "European Southern Observatory (ESO) / Babak Tafreshi (twanight.org)"
+    source_page_url: "https://www.eso.org/public/images/potw1222a/"
+    direct_media_url: "https://cdn.eso.org/images/large/potw1222a.jpg"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO/B. Tafreshi (CC BY 4.0, https://www.eso.org/public/images/potw1222a/)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "eso_potw1036a_vlt_laser_milky_way.jpg"
+    title: "Laser Towards the Milky Way's Centre (ESO Picture of the Week potw1036a)"
+    creator_agency: "European Southern Observatory (ESO) / Yuri Beletsky"
+    source_page_url: "https://www.eso.org/public/images/potw1036a/"
+    direct_media_url: "https://cdn.eso.org/images/large/potw1036a.jpg"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO/Y. Beletsky (CC BY 4.0, https://www.eso.org/public/images/potw1036a/)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "nasa_pia23645_pale_blue_dot.jpg"
+    title: "PIA23645: Pale Blue Dot Revisited (Voyager 1 Narrow-Angle Camera, Feb. 14, 1990 / 2020 Remaster)"
+    creator_agency: "NASA / JPL-Caltech"
+    source_page_url: "https://images.nasa.gov/details/PIA23645"
+    direct_media_url: "https://images-assets.nasa.gov/image/PIA23645/PIA23645~orig.jpg"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA / JPL-Caltech (Public Domain)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "eso_vlt_laser_milky_way_1080p.mp4"
+    title: "VLT UT3 and UT4 Tracking the Milky Way with Laser Guide Star (gl_southwest_ut3_ut4_lgs)"
+    creator_agency: "European Southern Observatory (ESO) / G. Lambert"
+    source_page_url: "https://www.eso.org/public/videos/gl_southwest_ut3_ut4_lgs/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_1080p25_screen/gl_southwest_ut3_ut4_lgs.mp4"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO/G. Lambert (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "eso_paranal_milky_way_1080p.mp4"
+    title: "The Milky Way Over Paranal Observatory & VLT Laser Guide Star (uhd_bt_paranal_06)"
+    creator_agency: "European Southern Observatory (ESO) / B. Tafreshi"
+    source_page_url: "https://www.eso.org/public/videos/uhd_bt_paranal_06/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_1080p25_screen/uhd_bt_paranal_06.mp4"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO/B. Tafreshi (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "eso_vlt_four_lasers_1080p.mp4"
+    title: "First Light for the Four Laser Guide Star Facility on ESO's Very Large Telescope (eso1613a)"
+    creator_agency: "European Southern Observatory (ESO)"
+    source_page_url: "https://www.eso.org/public/videos/eso1613a/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_1080p25_screen/eso1613a.mp4"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "eso_alma_antennas_motion_1080p.mp4"
+    title: "ALMA Radio Telescope Antennas Moving in Synchronization on Chajnantor (uhd_alma7_2014)"
+    creator_agency: "European Southern Observatory (ESO) / C. Malin"
+    source_page_url: "https://www.eso.org/public/videos/uhd_alma7_2014/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_1080p25_screen/uhd_alma7_2014.mp4"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO/C. Malin (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "eso_alma_dishes_1080p.mp4"
+    title: "Wide Array of ALMA Radio Antennas on the Chajnantor Plateau (uhd_alma3_2014)"
+    creator_agency: "European Southern Observatory (ESO) / C. Malin"
+    source_page_url: "https://www.eso.org/public/videos/uhd_alma3_2014/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_1080p25_screen/uhd_alma3_2014.mp4"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO/C. Malin (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "eso_alma_transporter_1080p.mp4"
+    title: "ALMA Engineers Escorting 12-Meter Radio Antenna on Crawler Transporter (uhd_alma8_2014)"
+    creator_agency: "European Southern Observatory (ESO) / C. Malin"
+    source_page_url: "https://www.eso.org/public/videos/uhd_alma8_2014/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_1080p25_screen/uhd_alma8_2014.mp4"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO/C. Malin (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "eso_alma_control_room_1.m4v"
+    title: "Astronomers at the ALMA OSF Control Room During Observations — Part 1 (alma12observations1)"
+    creator_agency: "European Southern Observatory (ESO)"
+    source_page_url: "https://www.eso.org/public/videos/alma12observations1/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_and_apple/alma12observations1.m4v"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "eso_alma_control_room_3.m4v"
+    title: "Astronomers at the ALMA OSF Control Room During Observations — Part 3 (alma12observations3)"
+    creator_agency: "European Southern Observatory (ESO)"
+    source_page_url: "https://www.eso.org/public/videos/alma12observations3/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_and_apple/alma12observations3.m4v"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "eso_alma_control_room_5.m4v"
+    title: "Astronomers at the ALMA OSF Control Room During Observations — Part 5 (alma12observations5)"
+    creator_agency: "European Southern Observatory (ESO)"
+    source_page_url: "https://www.eso.org/public/videos/alma12observations5/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_and_apple/alma12observations5.m4v"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "eso_alma_control_room_10.m4v"
+    title: "Astronomers Inspecting Radio-Frequency Spectra at ALMA Control Room — Part 10 (alma12observations10)"
+    creator_agency: "European Southern Observatory (ESO)"
+    source_page_url: "https://www.eso.org/public/videos/alma12observations10/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_and_apple/alma12observations10.m4v"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Credit: ESO (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "nasa_jwst_cleanroom_1080p.mp4"
+    title: "Webb Telescope Mirror Beauty Shot Resource Reel — Engineers & Golden Primary Mirror"
+    creator_agency: "NASA's Goddard Space Flight Center"
+    source_page_url: "https://images.nasa.gov/details/Webb_Telescope_Mirror_Beauty_Shot_Resource_Reel"
+    direct_media_url: "https://images-assets.nasa.gov/video/Webb_Telescope_Mirror_Beauty_Shot_Resource_Reel/Webb_Telescope_Mirror_Beauty_Shot_Resource_Reel~large.mp4"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA's Goddard Space Flight Center (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "nasa_voyager1_dsn_team_1080p.mp4"
+    title: "Voyager 1 Team Monitoring Deep Space Network Engineering Telemetry (JPL-20240425-VOYAGEf-0001)"
+    creator_agency: "NASA / JPL-Caltech"
+    source_page_url: "https://images.nasa.gov/details/JPL-20240425-VOYAGEf-0001-Voyager%201%20Team%20Reacts%20to%20Receiving%20Engineering%20Data%20From%20Spacecraft"
+    direct_media_url: "https://images-assets.nasa.gov/video/JPL-20240425-VOYAGEf-0001-Voyager%201%20Team%20Reacts%20to%20Receiving%20Engineering%20Data%20From%20Spacecraft/JPL-20240425-VOYAGEf-0001-Voyager%201%20Team%20Reacts%20to%20Receiving%20Engineering%20Data%20From%20Spacecraft~large.mp4"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA / JPL-Caltech (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "nasa_life_in_universe_1080p.mp4"
+    title: "Searching for Life in the Universe — Kepler Habitable Zone & Exoplanet Transit (GSFC_20171115_m12776_LifeInTheUniverse)"
+    creator_agency: "NASA's Goddard Space Flight Center"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20171115_m12776_LifeInTheUniverse"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20171115_m12776_LifeInTheUniverse/GSFC_20171115_m12776_LifeInTheUniverse~large.mp4"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA's Goddard Space Flight Center (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "nasa_iss_night_earth_1080p.mp4"
+    title: "ISS Night Earth City-Light Networks & Milky Way Airglow Horizon (GSFC_20181022_ICON_m12902_Airglow)"
+    creator_agency: "NASA's Goddard Space Flight Center / ISS Earth Science & Remote Sensing Unit"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20181022_ICON_m12902_Airglow"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20181022_ICON_m12902_Airglow/GSFC_20181022_ICON_m12902_Airglow~large.mp4"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA's Goddard Space Flight Center / ISS Crew Earth Observations (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_elvis_eukaryote_30fps.mp4"
+    title: "ELVIS Digital Holographic Microscopy of Living Eukaryotic Euglena Cells (jsc2025m000382)"
+    creator_agency: "NASA Johnson Space Center / Portland State University ELVIS Astrobiology Team"
+    source_page_url: "https://images.nasa.gov/details/jsc2025m000382"
+    direct_media_url: "https://images-assets.nasa.gov/video/jsc2025m000382/jsc2025m000382~orig.mp4"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA Johnson Space Center / ELVIS Astrobiology Project (Public Domain)"
+    media_type: "video"
+    priority_tier: 4
+
+  - local_file: "cassini_deep_space_radio_bed.wav"
+    title: "PIA07967: Radio & Plasma Wave Science (RPWS) Spacecraft Radio Emissions Bed (Cassini)"
+    creator_agency: "NASA / JPL / University of Iowa"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Bizarre_Sounds_of_Saturn%E2%80%99s_Radio_Emissions_(PIA07967).wav"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/6/64/Bizarre_Sounds_of_Saturn%E2%80%99s_Radio_Emissions_%28PIA07967%29.wav"
+    license: "Public Domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Deep-space RPWS radio recording courtesy of NASA / JPL / University of Iowa (Public Domain, PIA07967)"
+    media_type: "audio"
+    priority_tier: 4
+
+  - local_file: "great_filter_bottleneck_v4.mp4"
+    title: "Photo-Textured Evolutionary Bottleneck Visualization: Robin Hanson's Great Filter"
+    creator_agency: "Proof of Wonder Studio v4.0 (First-Party Original Graphic over ESO CC BY 4.0 Starfield)"
+    source_page_url: "First-party programmatic scientific visualization (pipeline/generate_fermi_great_filter_diagram.py)"
+    direct_media_url: "local://assets/raw_footage/space_and_universe_fermi_paradox_v4/great_filter_bottleneck_v4.mp4"
+    license: "100% Original First-Party Graphic"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Original illustrative diagram created in-house for Proof of Wonder (incorporating starfield texture Credit: ESO/Y. Beletsky, CC BY 4.0)"
+    media_type: "diagram"
+    priority_tier: 6
+    is_first_party_original: true
+
+excluded_sources_notes:
+  - "Excluded NASA We are SCaN (nasa_scan_dsn_dishes_1080p.mp4) and ESO News eso2510a: contained burned-in HUD text or news subtitles."
+  - "Excluded ESO blue logo slates at head/tail of alma12observations clips (using strictly clean 3.0–11.8s interior observation windows) and JWST title slate at 0–15s."
+
+factual_references:
+  - citation: "Bryson, S., Kunimoto, M., Kopparapu, R. K., Coughlin, J. L., Borucki, W. J., et al. (2021). The Occurrence of Rocky Habitable-Zone Planets around Solar-Like Stars from Kepler Data. The Astronomical Journal, 161(1), 36."
+    url: "https://iopscience.iop.org/article/10.3847/1538-3881/abc418"
+    doi: "10.3847/1538-3881/abc418"
+    supported_claims: "NASA Kepler occurrence-rate analysis showing sun-like stars commonly host rocky habitable-zone exoplanets (~300 million+ potentially habitable rocky worlds across the Milky Way)."
+
+  - citation: "Hart, M. H. (1975). An Explanation for the Absence of Extraterrestrials on Earth. Quarterly Journal of the Royal Astronomical Society, 16, 128–135; & Jones, E. M. (1985). 'Where is everybody?' An account of Fermi's question. Los Alamos National Laboratory Report LA-10311-MS."
+    url: "https://fas.org/irp/agency/dod/jason/fermi.pdf"
+    supported_claims: "Enrico Fermi's 1950 Los Alamos question ('Where is everybody?') and galactic crossing timescales (~10 million years even at sub-relativistic ~1% c starflight speeds); zero confirmed extraterrestrial signals since Project Ozma in 1960."
+
+  - citation: "Hanson, R. (1998). The Great Filter — Are We Almost Past It? George Mason University / Future of Humanity Research Paper."
+    url: "https://mason.gmu.edu/~rhanson/greatfilter.html"
+    supported_claims: "The Great Filter framework: an extreme evolutionary or technological barrier between dead matter and galaxy-spanning civilization, located either behind us (e.g., Earth's ~2-billion-year prokaryote-to-eukaryote transition) or ahead of us (technological self-destruction)."
+
+  - citation: "Wright, J. T., Kanodia, S., & Lubar, E. (2018). How Much SETI Has Been Done? Finding Needles in the n-Dimensional Cosmic Haystack. The Astronomical Journal, 156(6), 260."
+    url: "https://iopscience.iop.org/article/10.3847/1538-3881/aae099"
+    doi: "10.3847/1538-3881/aae099"
+    supported_claims: "Quantitative nine-dimensional SETI search-volume calculation demonstrating that all radio/optical SETI surveys to date have sampled only a minute fraction (comparable to a glass/hot-tub of water out of Earth's oceans), meaning silence does not prove we are alone."

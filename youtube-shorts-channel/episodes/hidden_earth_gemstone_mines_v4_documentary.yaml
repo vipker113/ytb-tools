@@ -1,0 +1,925 @@
+channel_name: "Proof of Wonder"
+playlist: "Hidden Earth"
+slug: "gemstone-mine-secrets-v4-documentary"
+style_profile: "pow_documentary_v3"
+
+primary_title: "What's Actually Inside Gemstone Mines—From Mud Pockets to 660 km Ice"
+alternative_title: "Why Gem Miners Dig Clay Pockets—And Scientists Hunt 'Ruined' Diamonds"
+
+youtube_description: |
+  Movies picture gemstone mines as open, glittering crystal caverns. Inside real underground hard-rock pegmatite and vein mines, miners drill through solid grey rock listening for the drill bit to drop into a sealed miarolitic cavity ("gem pocket")—only to find the pocket packed with thick, sticky hydrothermal clay rather than empty air.
+
+  Formed as volatile-rich granitic fluids cooled underground, that kaolinite- and smectite-rich pocket clay cushioned delicate emerald, tourmaline, quartz, and fluorite crystals as they grew (London, 2008). Only after miners rinse away the grey mud do sharp crystal faces flash with color—yet above ground, gem cutters slice away cloudy internal bubbles and dark mineral specks ("inclusions") as value-destroying flaws.
+
+  To deep-Earth geologists, those rejected inclusions are indestructible time capsules. Firing synchrotron X-ray beams into super-deep rough diamonds carried rapidly upward through volcanic kimberlite pipes from 410 to over 660 kilometers down, researchers discovered hydrous ringwoodite (~1.4 wt% water; Pearson et al., Nature, 2014) and natural cubic Ice-VII—a solid high-pressure phase of water ice sealed at gigapascal pressures (Tschauner et al., Science, 2018). While this does not mean a sloshing underground sea exists beneath Earth's crust, it proves Earth's deep mantle transition zone locks away vast reservoirs of water inside high-pressure crystal lattices and microscopic fluid pockets.
+
+hashtags:
+  - "#HiddenEarth"
+  - "#Geology"
+  - "#Gemstones"
+  - "#Diamonds"
+  - "#EarthScience"
+  - "#ScienceShorts"
+
+target_duration_min_s: 62.0
+target_duration_max_s: 88.0
+voice: "en-GB-RyanNeural"
+ambience_preset: "deep_ocean"
+ambience_ducked_lufs_target: -23.0
+nat_sound_bed_file: "mine_tunnel_drill_drips_bed.wav"
+nat_sound_bed_range_s: [0.5, 92.0]
+nat_sound_gain_db: -15.0
+
+raw_assets_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/hidden_earth_gemstone_mines_v4"
+output_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/gemstone-mine-secrets-v4-documentary"
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N06"
+  scientific_caveat_seg_id: "N07"
+  min_real_evidence_ratio: 0.88
+
+thumbnail_spec:
+  src_file: "muzo_emerald_portrait_cc0.jpg"
+  headline_text: "HIDDEN INSIDE|GEMSTONE MINES"
+  kicker_text: "MUD POCKETS • 660 KM ICE"
+  accent_line_index: 1
+  accent_rgb: [255, 212, 59]
+  clarity_boost: true
+  shadow_lift: 0.14
+  alt_headlines:
+    - "WHAT GEM MINERS|ACTUALLY FIND"
+    - "OCEAN ICE INSIDE|DEEP DIAMONDS"
+  cx: 0.50
+  cy: 0.48
+  zoom: 1.04
+  text_position: "bottom"
+
+narration_segments:
+  - seg_id: "N01"
+    text: "Movies picture gemstone mines as glittering crystal caves. In real underground mines, workers drill through solid grey rock."
+    rate: "+3%"
+    pitch: "+0Hz"
+    pause_after_s: 0.24
+  - seg_id: "N02"
+    text: "Miners listen for the drill bit to suddenly drop into a hollow pocket. Inside, they don't find clean air—they hit sticky wet clay."
+    rate: "+2%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N03"
+    text: "Millions of years ago, superheated mineral fluids cooled inside sealed granite cavities. Thick pocket clay cushioned razor-sharp emeralds, tourmaline, and fluorite as they grew."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N04"
+    text: "Only after miners rinse away that grey mud do raw crystal faces flash with color. Yet above ground, jewelers slice out cloudy specks as worthless flaws."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.26
+  - seg_id: "N05"
+    text: "To deep-Earth geologists, those rejected flaws are priceless. Some rough diamonds blast upward through volcanic pipes from more than six hundred kilometers down."
+    rate: "+2%"
+    pitch: "+1Hz"
+    pause_after_s: 0.26
+  - seg_id: "N06"
+    text: "Firing X-ray beams into flawed diamonds, scientists found ringwoodite—a deep mineral locking away water. In twenty eighteen, diamonds even revealed Ice-Seven: solid high-pressure water ice."
+    rate: "+1%"
+    pitch: "+0Hz"
+    pause_after_s: 0.28
+  - seg_id: "N07"
+    text: "That doesn't mean an open underground ocean sloshes beneath Earth's crust. Most of that deep water stays trapped inside crystal rock and microscopic fluid pockets."
+    rate: "-2%"
+    pitch: "-1Hz"
+    pause_after_s: 0.28
+  - seg_id: "N08"
+    text: "Jewelers polish away tiny inclusions for sparkle. Scientists read those same crystal traps as time capsules—carried up through solid mine rock."
+    rate: "-1%"
+    pitch: "-1Hz"
+    pause_after_s: 0.24
+
+sfx_cues:
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.04
+    gain_db: -25.5
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S06"
+    offset_s: 0.05
+    gain_db: -26.0
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S11"
+    offset_s: 0.05
+    gain_db: -25.5
+  - sfx_name: "microscope_slide_click"
+    anchor_type: "shot_start"
+    anchor_ref: "S13"
+    offset_s: 0.05
+    gain_db: -25.5
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S19"
+    offset_s: 0.05
+    gain_db: -26.5
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 3.463
+    kind: "video_full"
+    src_file: "velenje_roadheader_1080p.mp4"
+    src_in: 1.20
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.53
+    cy1: 0.48
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.12
+    is_real_evidence: true
+    associated_narration_concept: "Movies picture gemstone mines as glittering crystal caves."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Instant 0.0s live 1080p underground rock cutter grinding into solid dark mine rock"
+    visual_desc: "Live 1080p underground roadheader rock-cutting machine grinding into solid dark rock under water spray."
+
+  - sid: "S02"
+    start_s: 3.463
+    end_s: 7.856
+    kind: "video_full"
+    src_file: "velenje_mine_drilling_1080p.mp4"
+    src_in: 8.50
+    cx0: 0.52
+    cy0: 0.50
+    cx1: 0.55
+    cy1: 0.50
+    z0: 1.16
+    z1: 1.19
+    contrast_gain: 1.14
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'caves.' to real underground miners drilling solid rock"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "In real underground mines, workers drill through solid grey rock."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Helmeted underground miners with headlamps drilling into solid mine rock"
+    visual_desc: "Live 1080p underground miners wearing helmets and headlamps operating rock drills inside a timbered mine drift."
+
+  - sid: "S03"
+    start_s: 7.856
+    end_s: 11.532
+    kind: "video_full"
+    src_file: "velenje_mine_drilling_1080p.mp4"
+    src_in: 24.50
+    cx0: 0.58
+    cy0: 0.50
+    cx1: 0.55
+    cy1: 0.48
+    z0: 1.16
+    z1: 1.19
+    contrast_gain: 1.12
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'rock.' to close-up of miner pressing drill upward listening for pocket drop"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Miners listen for the drill bit to suddenly drop into a hollow pocket."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Close-up of underground miner driving pneumatic drill upward into mine rock"
+    visual_desc: "Live 1080p close-up of a helmeted miner driving a pneumatic rock drill upward into solid underground rock."
+
+  - sid: "S04"
+    start_s: 11.532
+    end_s: 15.880
+    kind: "video_full"
+    src_file: "idrija_shaft_tunnel_1080p.mp4"
+    src_in: 1.10
+    cx0: 0.48
+    cy0: 0.48
+    cx1: 0.45
+    cy1: 0.48
+    z0: 1.05
+    z1: 1.08
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'pocket.' to opening an underground shaft door into wet mineralized rock"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Inside, they don't find clean air—they hit sticky wet clay."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Mine worker opening heavy iron door into damp underground rock drift"
+    visual_desc: "Live 1080p underground worker swinging open a heavy iron mine bulkhead door into a damp rock-walled drift."
+
+  - sid: "S05"
+    start_s: 15.880
+    end_s: 20.994
+    kind: "video_full"
+    src_file: "idrija_mine_water_1080p.mp4"
+    src_in: 6.20
+    cx0: 0.52
+    cy0: 0.48
+    cx1: 0.55
+    cy1: 0.50
+    z0: 1.08
+    z1: 1.11
+    contrast_gain: 1.14
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Temporal dissolve into ancient mineral-rich fluids cooling inside underground rock cavities"
+    is_real_evidence: true
+    associated_narration_concept: "Millions of years ago, superheated mineral fluids cooled inside sealed granite cavities."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Mineral-rich underground fluids streaming across crystalline formations inside a sealed shaft"
+    visual_desc: "Live 1080p underground shaft where mineral-laden water streams across glittering mineral stalactites and rock."
+
+  - sid: "S06"
+    start_s: 20.994
+    end_s: 24.042
+    kind: "still_full"
+    src_file: "muzo_emerald_portrait_cc0.jpg"
+    cx0: 0.50
+    cy0: 0.53
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.08
+    z1: 1.11
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'cavities.' to vibrant raw Muzo emeralds jutting out of stained pocket matrix"
+    is_real_evidence: true
+    associated_narration_concept: "Thick pocket clay cushioned razor-sharp emeralds,"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Raw green Muzo Mine emerald crystals emerging from iron-stained clay and host rock"
+    visual_desc: "CC0 macro photograph of vivid hexagonal green emerald crystals jutting out of orange-brown Muzo Mine host rock."
+
+  - sid: "S07"
+    start_s: 24.042
+    end_s: 26.319
+    kind: "video_full"
+    src_file: "blue_fluorite_matrix_720p.mp4"
+    src_in: 12.00
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.46
+    z0: 1.03
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'emeralds,' to intact cubic blue fluorite crystal on pocket matrix"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "tourmaline, and fluorite as they grew."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Hands rotating an intact cubic blue fluorite crystal on sparkling drusy quartz rock"
+    visual_desc: "Live vertical close-up of human hands rotating a sharp cubic blue fluorite crystal grown on grey quartz matrix."
+
+  - sid: "S08"
+    start_s: 26.319
+    end_s: 31.059
+    kind: "video_full"
+    src_file: "tourmaline_ore_720p.mp4"
+    src_in: 0.20
+    cx0: 0.50
+    cy0: 0.46
+    cx1: 0.50
+    cy1: 0.49
+    z0: 1.03
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'grew.' to bare hands rinsing cloudy mine mud off raw green tourmaline ore"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Only after miners rinse away that grey mud do raw crystal faces flash with color."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Rinsing cloudy grey mine clay off raw green tourmaline and quartz crystal ore in water"
+    visual_desc: "Live vertical close-up of hands washing grey mine mud off raw green tourmaline crystal clusters in a basin of water."
+
+  - sid: "S09"
+    start_s: 31.059
+    end_s: 35.963
+    kind: "video_full"
+    src_file: "azurite_pocket_720p.mp4"
+    src_in: 5.20
+    cx0: 0.50
+    cy0: 0.47
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'color.' to rough pocket crystals packed with cloudy mineral inclusions"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Yet above ground, jewelers slice out cloudy specks as worthless flaws."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Hands inspecting rough pocket mineral crystals filled with cloudy specks and matrix"
+    visual_desc: "Live vertical close-up of hands turning a rough quartzite pocket specimen lined with blue crystals and iron-stained specks."
+
+  - sid: "S10"
+    start_s: 35.963
+    end_s: 39.850
+    kind: "video_full"
+    src_file: "smithsonian_geologist_1080p.mp4"
+    src_in: 18.00
+    cx0: 0.52
+    cy0: 0.46
+    cx1: 0.50
+    cy1: 0.46
+    z0: 1.04
+    z1: 1.07
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Editorial pivot dissolve from gem-cutting rejection to Smithsonian deep-Earth mineral laboratory"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "To deep-Earth geologists, those rejected flaws are priceless."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Smithsonian geologist Dr. Liz Cottrell beside hydraulic deep-mantle rock press"
+    visual_desc: "Live 1080p shot of Smithsonian geologist Dr. Liz Cottrell in front of a high-pressure piston-cylinder mantle rock press."
+
+  - sid: "S11"
+    start_s: 39.850
+    end_s: 45.519
+    kind: "diagram"
+    src_file: "deep_diamond_ice7_diagram_v4.mp4"
+    src_in: 0.00
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.00
+    z1: 1.00
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'priceless.' to 410–660 km kimberlite pipe diamond ascent diagram"
+    is_real_evidence: false
+    associated_narration_concept: "Some rough diamonds blast upward through volcanic pipes from more than six hundred kilometers down."
+    subject_match_kind: "illustrative_diagram"
+    scientific_claim_status: "illustrative_visualization"
+    story_beat: "First-party diagram of super-deep diamond ascending via kimberlite pipe from 410–660 km"
+    visual_desc: "First-party photo-textured 9:16 geological diagram showing a rough diamond carrying Ringwoodite and Ice-VII upward from 410–660 km."
+
+  - sid: "S12"
+    start_s: 45.519
+    end_s: 48.135
+    kind: "video_full"
+    src_file: "niosh_silica_mine_1080p.mp4"
+    src_in: 141.20
+    cx0: 0.48
+    cy0: 0.47
+    cx1: 0.46
+    cy1: 0.47
+    z0: 1.06
+    z1: 1.08
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'down.' to laboratory mineral spectroscopy analysis"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Firing X-ray beams into flawed diamonds,"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Researcher preparing crystalline mineral sample beside spectroscopy instrument"
+    visual_desc: "Live 1080p laboratory close-up of a researcher preparing a crystalline sample next to a benchtop spectrometer."
+
+  - sid: "S13"
+    start_s: 48.135
+    end_s: 51.987
+    kind: "video_full"
+    src_file: "terrax_diamonds_720p.mp4"
+    src_in: 30.10
+    cx0: 0.54
+    cy0: 0.48
+    cx1: 0.56
+    cy1: 0.48
+    z0: 1.06
+    z1: 1.09
+    contrast_gain: 1.14
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'diamonds,' to rough diamond crystal locked inside dark mantle rock"
+    is_real_evidence: true
+    associated_narration_concept: "scientists found ringwoodite—a deep mineral locking away water."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Rough diamond crystal locked inside glowing dark mantle host rock"
+    visual_desc: "Close-up moving shot of a rough natural diamond crystal embedded inside dark mantle rock."
+
+  - sid: "S14"
+    start_s: 51.987
+    end_s: 55.672
+    kind: "video_full"
+    src_file: "niosh_silica_mine_1080p.mp4"
+    src_in: 149.80
+    cx0: 0.42
+    cy0: 0.47
+    cx1: 0.44
+    cy1: 0.47
+    z0: 1.06
+    z1: 1.08
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'water.' to gloved mineral scientist running laboratory sample analysis"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "In twenty eighteen, diamonds even revealed Ice-Seven:"
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Scientist in white lab coat and nitrile gloves analyzing mineral samples in laboratory"
+    visual_desc: "Live 1080p shot of a mineral scientist in white coat and blue nitrile gloves analyzing crystalline samples in a spectroscopy lab."
+
+  - sid: "S15"
+    start_s: 55.672
+    end_s: 57.711
+    kind: "video_full"
+    src_file: "bilovitskiy_ice_crystal_1080p.mp4"
+    src_in: 5.50
+    cx0: 0.34
+    cy0: 0.50
+    cx1: 0.36
+    cy1: 0.48
+    z0: 1.05
+    z1: 1.08
+    transition_in: "cut"
+    transition_reason: "Colon pause cut after 'Ice-Seven:' to laboratory macro crystallization of solid water ice"
+    context_note: "LABORATORY ICE CRYSTALLIZATION"
+    is_real_evidence: true
+    associated_narration_concept: "solid high-pressure water ice."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Macro laboratory footage of liquid water locking rapidly into solid crystalline ice"
+    visual_desc: "Live 1080p macro laboratory footage of a clear water droplet crystallizing into solid translucent ice."
+
+  - sid: "S16"
+    start_s: 57.711
+    end_s: 61.707
+    kind: "video_full"
+    src_file: "idrija_mine_water_1080p.mp4"
+    src_in: 19.20
+    cx0: 0.45
+    cy0: 0.48
+    cx1: 0.48
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.11
+    contrast_gain: 1.15
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Scientific caveat dissolve clarifying deep mantle water is not an open subterranean sea"
+    is_real_evidence: true
+    associated_narration_concept: "That doesn't mean an open underground ocean sloshes beneath Earth's crust."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Underground shaft water trickling down mineralized rock walls rather than open sea"
+    visual_desc: "Live 1080p close-up of underground water trickling across dark mineralized shaft rock."
+
+  - sid: "S17"
+    start_s: 61.707
+    end_s: 67.314
+    kind: "video_full"
+    src_file: "blue_fluorite_matrix_720p.mp4"
+    src_in: 1.50
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.46
+    z0: 1.03
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'crust.' to sunlight revealing internal planes inside translucent crystal rock"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Most of that deep water stays trapped inside crystal rock and microscopic fluid pockets."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Translucent gem crystal held in sunlight showing internal growth planes and fluid traps"
+    visual_desc: "Live vertical close-up of hands holding a translucent cubic crystal on matrix with internal planes glowing in sunlight."
+
+  - sid: "S18"
+    start_s: 67.314
+    end_s: 70.474
+    kind: "video_full"
+    src_file: "terrax_diamonds_720p.mp4"
+    src_in: 3.50
+    cx0: 0.56
+    cy0: 0.48
+    cx1: 0.58
+    cy1: 0.48
+    z0: 1.06
+    z1: 1.09
+    transition_in: "cut"
+    transition_reason: "Segment-end cut after 'pockets.' to sparkling faceted diamond solitaire polished for clarity"
+    is_real_evidence: true
+    associated_narration_concept: "Jewelers polish away tiny inclusions for sparkle."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Brilliant-cut polished diamond ring rotating under jeweler's display lights"
+    visual_desc: "Live close-up of a faceted, inclusion-free diamond solitaire ring rotating smoothly on a jeweler's turntable."
+
+  - sid: "S19"
+    start_s: 70.474
+    end_s: 74.644
+    kind: "still_full"
+    src_file: "diamond_micro_inclusions_ccby.jpg"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.03
+    z1: 1.06
+    transition_in: "cut"
+    transition_reason: "Sentence-end cut after 'sparkle.' to real microscope view of high-pressure micro-inclusions inside a mantle diamond"
+    is_real_evidence: true
+    associated_narration_concept: "Scientists read those same crystal traps as time capsules—"
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Microscope photograph of high-pressure fluid and mineral micro-inclusions trapped inside a mantle diamond"
+    visual_desc: "CC BY 4.0 scientific photomicrograph revealing clusters of microscopic high-pressure inclusions sealed inside a natural diamond."
+
+  - sid: "S20"
+    start_s: 74.644
+    end_s: 76.933
+    kind: "video_full"
+    src_file: "niosh_refuge_mine_1080p.mp4"
+    src_in: 84.00
+    cx0: 0.44
+    cy0: 0.48
+    cx1: 0.46
+    cy1: 0.48
+    z0: 1.06
+    z1: 1.08
+    contrast_gain: 1.12
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'capsules—' to underground miner in solid rock tunnel looping seamlessly into 0.0s rock cutting"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "carried up through solid mine rock."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Helmeted underground miner working inside dark rock tunnel looping back into 0.0s underground rock cutting"
+    visual_desc: "Live 1080p underground miner in hardhat and headlamp working inside a dark rock-walled mine drift."
+
+caption_groups:
+  - seg_id: "N01"
+    first_word_idx: 0
+    last_word_idx: 3
+    text: "Movies picture gemstone mines"
+  - seg_id: "N01"
+    first_word_idx: 4
+    last_word_idx: 7
+    text: "as glittering crystal caves."
+  - seg_id: "N01"
+    first_word_idx: 8
+    last_word_idx: 11
+    text: "In real underground mines,"
+  - seg_id: "N01"
+    first_word_idx: 12
+    last_word_idx: 17
+    text: "workers drill through solid grey rock."
+
+  - seg_id: "N02"
+    first_word_idx: 0
+    last_word_idx: 5
+    text: "Miners listen for the drill bit"
+  - seg_id: "N02"
+    first_word_idx: 6
+    last_word_idx: 12
+    text: "to suddenly drop into a hollow pocket."
+  - seg_id: "N02"
+    first_word_idx: 13
+    last_word_idx: 18
+    text: "Inside, they don't find clean air—"
+  - seg_id: "N02"
+    first_word_idx: 19
+    last_word_idx: 23
+    text: "they hit sticky wet clay."
+
+  - seg_id: "N03"
+    first_word_idx: 0
+    last_word_idx: 3
+    text: "Millions of years ago,"
+  - seg_id: "N03"
+    first_word_idx: 4
+    last_word_idx: 7
+    text: "superheated mineral fluids cooled"
+  - seg_id: "N03"
+    first_word_idx: 8
+    last_word_idx: 11
+    text: "inside sealed granite cavities."
+  - seg_id: "N03"
+    first_word_idx: 12
+    last_word_idx: 17
+    text: "Thick pocket clay cushioned razor-sharp emeralds,"
+  - seg_id: "N03"
+    first_word_idx: 18
+    last_word_idx: 23
+    text: "tourmaline, and fluorite as they grew."
+
+  - seg_id: "N04"
+    first_word_idx: 0
+    last_word_idx: 7
+    text: "Only after miners rinse away that grey mud"
+  - seg_id: "N04"
+    first_word_idx: 8
+    last_word_idx: 14
+    text: "do raw crystal faces flash with color."
+  - seg_id: "N04"
+    first_word_idx: 15
+    last_word_idx: 20
+    text: "Yet above ground, jewelers slice out"
+  - seg_id: "N04"
+    first_word_idx: 21
+    last_word_idx: 25
+    text: "cloudy specks as worthless flaws."
+
+  - seg_id: "N05"
+    first_word_idx: 0
+    last_word_idx: 2
+    text: "To deep-Earth geologists,"
+  - seg_id: "N05"
+    first_word_idx: 3
+    last_word_idx: 7
+    text: "those rejected flaws are priceless."
+  - seg_id: "N05"
+    first_word_idx: 8
+    last_word_idx: 13
+    text: "Some rough diamonds blast upward"
+  - seg_id: "N05"
+    first_word_idx: 14
+    last_word_idx: 18
+    text: "through volcanic pipes from more"
+  - seg_id: "N05"
+    first_word_idx: 19
+    last_word_idx: 22
+    text: "than 600 kilometers down."
+
+  - seg_id: "N06"
+    first_word_idx: 0
+    last_word_idx: 5
+    text: "Firing X-ray beams into flawed diamonds,"
+  - seg_id: "N06"
+    first_word_idx: 6
+    last_word_idx: 8
+    text: "scientists found ringwoodite—"
+  - seg_id: "N06"
+    first_word_idx: 9
+    last_word_idx: 14
+    text: "a deep mineral locking away water."
+  - seg_id: "N06"
+    first_word_idx: 15
+    last_word_idx: 21
+    text: "In 2018, diamonds even revealed Ice-Seven:"
+  - seg_id: "N06"
+    first_word_idx: 22
+    last_word_idx: 25
+    text: "solid high-pressure water ice."
+
+  - seg_id: "N07"
+    first_word_idx: 0
+    last_word_idx: 6
+    text: "That doesn't mean an open underground ocean"
+  - seg_id: "N07"
+    first_word_idx: 7
+    last_word_idx: 10
+    text: "sloshes beneath Earth's crust."
+  - seg_id: "N07"
+    first_word_idx: 11
+    last_word_idx: 17
+    text: "Most of that deep water stays trapped"
+  - seg_id: "N07"
+    first_word_idx: 18
+    last_word_idx: 24
+    text: "inside crystal rock and microscopic fluid pockets."
+
+  - seg_id: "N08"
+    first_word_idx: 0
+    last_word_idx: 6
+    text: "Jewelers polish away tiny inclusions for sparkle."
+  - seg_id: "N08"
+    first_word_idx: 7
+    last_word_idx: 12
+    text: "Scientists read those same crystal traps"
+  - seg_id: "N08"
+    first_word_idx: 13
+    last_word_idx: 15
+    text: "as time capsules—"
+  - seg_id: "N08"
+    first_word_idx: 16
+    last_word_idx: 21
+    text: "carried up through solid mine rock."
+
+assets_register:
+  - local_file: "velenje_roadheader_1080p.mp4"
+    title: "The Velenje Coal Mine, Cutting of coal with roadheader machine"
+    creator_agency: "Sounds of Changes / Premogovnik Velenje"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:The_Velenje_Coal_Mine,_Cutting_of_coal_with_roadheader_machine.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/e/e5/The_Velenje_Coal_Mine%2C_Cutting_of_coal_with_roadheader_machine.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Sounds of Changes / Coal Mining Museum of Slovenia (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "idrija_shaft_tunnel_1080p.mp4"
+    title: "IDRIJA ANTHONY'S SHAFT; OPENING AND CLOSING THE DOOR TO THE MINE"
+    creator_agency: "Sounds of Changes / Idrija UNESCO Global Geopark"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:IDRIJA_ANTHONY%60S_SHAFT;_OPENING_AND_CLOSING_THE_DOOR_TO_THE_MINE.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/3/3e/IDRIJA_ANTHONY%60S_SHAFT%3B_OPENING_AND_CLOSING_THE_DOOR_TO_THE_MINE.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Sounds of Changes / Idrija Mercury Mine Museum (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "velenje_mine_drilling_1080p.mp4"
+    title: "The Velenje Coal Mine, Drilling and a preparation for blasting"
+    creator_agency: "Sounds of Changes / Premogovnik Velenje"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:The_Velenje_Coal_Mine,_Drilling_and_a_preparation_for_blasting.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/4/4e/The_Velenje_Coal_Mine%2C_Drilling_and_a_preparation_for_blasting.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Sounds of Changes / Coal Mining Museum of Slovenia (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "niosh_refuge_mine_1080p.mp4"
+    title: "NIOSH Research on Refuge Alternatives for Underground Coal Mines"
+    creator_agency: "U.S. Centers for Disease Control and Prevention / NIOSH"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:NIOSH_Research_on_Refuge_Alternatives_for_Underground_Coal_Mines.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/f/fc/NIOSH_Research_on_Refuge_Alternatives_for_Underground_Coal_Mines.webm"
+    license: "Public Domain"
+    license_url: "https://creativecommons.org/publicdomain/mark/1.0/"
+    required_attribution: "Public Domain — CDC / National Institute for Occupational Safety and Health (NIOSH)"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "idrija_mine_water_1080p.mp4"
+    title: "IDRIJA, ANTHONY'S SHAFT; THE WATER IN THE MINE"
+    creator_agency: "Sounds of Changes / Idrija UNESCO Global Geopark"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:IDRIJA,_ANTHONY%60S_SHAFT;_THE_WATER_IN_THE_MINE.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/8/87/IDRIJA%2C_ANTHONY%60S_SHAFT%3B_THE_WATER_IN_THE_MINE.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Video: Sounds of Changes / Idrija Mercury Mine Museum (CC BY 3.0)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "tourmaline_ore_720p.mp4"
+    title: "Tourmaline ore (1)"
+    creator_agency: "François Nguyen"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Tourmaline_ore_(1).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/5/53/Tourmaline_ore_%281%29.webm"
+    license: "CC BY 2.0"
+    license_url: "https://creativecommons.org/licenses/by/2.0/"
+    required_attribution: "Video: François Nguyen (CC BY 2.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "azurite_pocket_720p.mp4"
+    title: "Azurite, crystal royal blue, quartzite"
+    creator_agency: "François Nguyen"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Azurite,_crystal_royal_blue,_quartzite..webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Azurite%2C_crystal_royal_blue%2C_quartzite..webm"
+    license: "CC BY 2.0"
+    license_url: "https://creativecommons.org/licenses/by/2.0/"
+    required_attribution: "Video: François Nguyen (CC BY 2.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "blue_fluorite_matrix_720p.mp4"
+    title: "Intact blue fluorite mineral crystal, crystal bottom band rock"
+    creator_agency: "François Nguyen"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Intact_blue_fluorite_mineral_crystal,_crystal_bottom_band_rock_(Remove_audio).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Intact_blue_fluorite_mineral_crystal%2C_crystal_bottom_band_rock_%28Remove_audio%29.webm"
+    license: "CC BY 2.0"
+    license_url: "https://creativecommons.org/licenses/by/2.0/"
+    required_attribution: "Video: François Nguyen (CC BY 2.0)"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "terrax_diamonds_720p.mp4"
+    title: "So entstehen Diamanten (ZDF Terra X)"
+    creator_agency: "ZDF / Terra X / Spiegel TV / Jens Nicolai, Oliver Roetz, Hauke Ketelsen"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:So_entstehen_Diamanten_(CC_BY_4.0).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/6/6d/So_entstehen_Diamanten_%28CC_BY_4.0%29.webm"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Video: ZDF / Terra X / Spiegel TV / Jens Nicolai, Oliver Roetz, Hauke Ketelsen (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "smithsonian_geologist_1080p.mp4"
+    title: "Smithsonian geologist Dr. Liz Cottrell in National Museum of Natural History high-pressure petrology laboratory"
+    creator_agency: "Smithsonian Institution / National Museum of Natural History"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Smithsonian_geologist_puts_Eyjafjallaj%C3%B6kull_eruption_in_perspective.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/2/25/Smithsonian_geologist_puts_Eyjafjallaj%C3%B6kull_eruption_in_perspective.webm"
+    license: "Public Domain"
+    license_url: "https://creativecommons.org/publicdomain/mark/1.0/"
+    required_attribution: "Public Domain — Smithsonian Institution National Museum of Natural History"
+    media_type: "video"
+    priority_tier: 3
+
+  - local_file: "niosh_silica_mine_1080p.mp4"
+    title: "A new field-based approach to silica monitoring for mines (FTIR mineral spectroscopy laboratory)"
+    creator_agency: "U.S. Centers for Disease Control and Prevention / NIOSH"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:A_new_field-based_approach_to_silica_monitoring_for_mines.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/c/c9/A_new_field-based_approach_to_silica_monitoring_for_mines.webm"
+    license: "Public Domain"
+    license_url: "https://creativecommons.org/publicdomain/mark/1.0/"
+    required_attribution: "Public Domain — CDC / National Institute for Occupational Safety and Health (NIOSH)"
+    media_type: "video"
+    priority_tier: 4
+
+  - local_file: "bilovitskiy_ice_crystal_1080p.mp4"
+    title: "Frozen drop — Macro laboratory crystallization of water ice"
+    creator_agency: "Maxim Bilovitskiy"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Frozen_drop.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Frozen_drop.webm"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Video: Maxim Bilovitskiy (CC BY 4.0)"
+    media_type: "video"
+    priority_tier: 4
+
+  - local_file: "deep_diamond_ice7_diagram_v4.mp4"
+    title: "Deep Mantle Diamond Time Capsule (410–660 km Ringwoodite & Ice-VII Kimberlite Ascent)"
+    creator_agency: "Proof of Wonder (First-Party Graphic over Géry Parent Public Domain kimberlite rock)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Diamant_sur_kimberlite_3(R%C3%A9publique_d%27Afrique_du_Sud).jpg"
+    direct_media_url: "local://deep_diamond_ice7_diagram_v4.mp4"
+    license: "100% Original First-Party Graphic"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "Diagram: Proof of Wonder over Public Domain kimberlite rock texture by Géry Parent"
+    media_type: "diagram"
+    priority_tier: 6
+    is_first_party_original: true
+
+  - local_file: "muzo_emerald_portrait_cc0.jpg"
+    title: "Béryl var. émeraude sur gangue (Muzo Mine, Boyacá, Colombia)"
+    creator_agency: "Géry Parent"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:B%C3%A9ryl_var._%C3%A9meraude_sur_gangue_(Muzo_Mine_Boyaca_-_Colombie).jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/5/5c/B%C3%A9ryl_var._%C3%A9meraude_sur_gangue_%28Muzo_Mine_Boyaca_-_Colombie%29.jpg"
+    license: "CC0"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "Photo: Géry Parent (CC0 1.0 Public Domain Dedication)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "diamond_in_kimberlite_pd.jpg"
+    title: "Diamant sur kimberlite 3 (Republic of South Africa)"
+    creator_agency: "Géry Parent"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Diamant_sur_kimberlite_3(R%C3%A9publique_d%27Afrique_du_Sud).jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Diamant_sur_kimberlite_3%28R%C3%A9publique_d%27Afrique_du_Sud%29.jpg"
+    license: "Public Domain"
+    license_url: "https://creativecommons.org/publicdomain/mark/1.0/"
+    required_attribution: "Public Domain — Géry Parent"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "diamond_micro_inclusions_ccby.jpg"
+    title: "Micro-inclusions in high-pressure mantle CO2 diamond"
+    creator_agency: "Evgenii Barannik & Andrei Shiryaev"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Micro-inclusions_in_CO2_diamond.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/2/23/Micro-inclusions_in_CO2_diamond.jpg"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Photomicrograph: Evgenii Barannik & Andrei Shiryaev (CC BY 4.0)"
+    media_type: "photo"
+    priority_tier: 5
+
+  - local_file: "mine_tunnel_drill_drips_bed.wav"
+    title: "Underground Mine Water Trickle & Rock Tunnel Resonance (Idrija & Velenje Mines)"
+    creator_agency: "Sounds of Changes (Idrija & Velenje Mine Museums)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:IDRIJA,_ANTHONY%60S_SHAFT;_THE_WATER_IN_THE_MINE.webm"
+    direct_media_url: "local://mine_tunnel_drill_drips_bed.wav"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Audio: Sounds of Changes / Idrija & Velenje Mine Museums (CC BY 3.0)"
+    media_type: "audio"
+    priority_tier: 2
+
+excluded_sources_notes:
+  - "Excluded Rob Lavinsky / iRocks.com mineral photographs on Wikimedia Commons: licensed under CC BY-SA 3.0 (ShareAlike copyleft forbidden by pow_documentary_v3); replaced exclusively with CC0 and Public Domain macro photography by Géry Parent."
+  - "Excluded NASA SVS 15045 GEMx vertical clip and Université Paris-Sud crystallography animation due to baked-in social/subtitle text overlays verified during contact-sheet audit."
+
+factual_references:
+  - citation: "London, D. (2008). Pegmatites. The Canadian Mineralogist Special Publication 10, Mineralogical Association of Canada."
+    url: "https://www.mineralogicalassociation.ca/"
+    supported_claims: "Granitic pegmatite fractional crystallization concentrating H2O, boron, lithium, and beryllium into sealed miarolitic cavities ('gem pockets') lined with hydrothermal clays (kaolinite/smectite) hosting euhedral tourmaline, beryl/emerald, fluorite, and quartz."
+
+  - citation: "Pearson, D. G., Brenker, F. E., Nestola, F., McNeill, J., Nasdala, L., Hutchison, M. T., Matveev, S., Mather, K., Silversmit, G., Schmitz, S., Vekemans, B., & Vincze, L. (2014). Hydrous mantle transition zone indicated by ringwoodite included within diamond. Nature, 507, 221–224."
+    url: "https://www.nature.com/articles/nature13080"
+    doi: "10.1038/nature13080"
+    supported_claims: "Discovery of terrestrial hydrous ringwoodite (~1.4–1.5 wt% water) sealed inside a super-deep rough diamond from Juína, Brazil, demonstrating water-rich regions in Earth's 410–660 km mantle transition zone."
+
+  - citation: "Tschauner, O., Huang, S., Greenberg, E., Prakapenka, V. B., Ma, C., Rossman, G. R., Shen, A. H., Zhang, D., Newville, M., Lanzirotti, A., & Tait, K. (2018). Ice-VII inclusions in diamonds: Evidence for aqueous fluid in Earth's deep mantle. Science, 359(6380), 1136–1139."
+    url: "https://www.science.org/doi/10.1126/science.aao3030"
+    doi: "10.1126/science.aao3030"
+    supported_claims: "Synchrotron X-ray diffraction identification of natural solid high-pressure cubic water ice (Ice-VII) preserved at gigapascal residual pressures inside deep-mantle diamonds from 410–800 km depth."
+
+  - citation: "Shigley, J. E., Laurs, B. M., Janse, A. J. A., Elen, S., & Dirlam, D. M. (2000–2023). Gem Localities & Inclusion Research, Gems & Gemology, Gemological Institute of America (GIA)."
+    url: "https://www.gia.edu/gems-gemology"
+    supported_claims: "Contrast between commercial lapidary clarity grading (removing cloudy fluid and mineral inclusions) and geological research using diamond/corundum/beryl inclusions to reconstruct mantle and crustal formation conditions."

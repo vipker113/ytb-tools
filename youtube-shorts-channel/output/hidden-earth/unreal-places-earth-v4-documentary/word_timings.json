@@ -1,0 +1,1689 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "pronunciation_sig": "{\"pron\": {\"Ijen\": \"Eejen\", \"Kawah\": \"Kahwah\", \"Naica\": \"Nyekah\"}, \"segs\": [[\"N01\", \"None of these three places on Earth are CGI. The last one drowns human lungs from the inside.\", null, \"+3%\", \"+0Hz\", 0.24], [\"N02\", \"At midnight in Indonesia, Kawah Ijen volcano appears to pour rivers of electric-blue lava. Except lava is never blue.\", null, \"+2%\", \"+0Hz\", 0.26], [\"N03\", \"Pressurized sulfur gas shoots from cracks at six hundred degrees Celsius and ignites on contact with air. Some gas condenses into liquid sulfur that keeps burning bright blue as it flows downhill.\", null, \"+1%\", \"+0Hz\", 0.26], [\"N04\", \"Cross into Ethiopia's Danakil Depression, and Earth stops looking habitable altogether. At Dallol, shallow volcanic heat boils groundwater packed with iron salts and sulfuric acid.\", null, \"+2%\", \"+1Hz\", 0.26], [\"N05\", \"Those neon-green pools drop below zero pH into negative acidity. Even with liquid water everywhere, biologists found zero active microbial life inside the ponds.\", null, \"+1%\", \"+0Hz\", 0.28], [\"N06\", \"Three hundred meters beneath Naica, Mexico lies an even stranger trap: the Cave of the Crystals. Mineral-rich hot water slowly grew gypsum beams eleven meters long and weighing fifty-five tons.\", null, \"+2%\", \"+1Hz\", 0.28], [\"N07\", \"Inside, fifty-eight-degree heat meets ninety-five percent humidity\\u2014hotter than your own lungs. Without ice suits and chilled air packs, every breath condenses water straight into your airways. That doesn't mean these places break physics\\u2014extreme heat and acid simply push chemistry past human limits.\", null, \"-1%\", \"-1Hz\", 0.26], [\"N08\", \"In twenty seventeen, groundwater flooded the Naica crystal cave shut forever\\u2014leaving three real worlds on Earth that look completely impossible.\", null, \"-1%\", \"-1Hz\", 0.24]]}",
+  "total_duration_s": 85.9,
+  "total_frames_30fps": 2577,
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "None of these three places on Earth are CGI. The last one drowns human lungs from the inside.",
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "start": 0.1,
+      "end": 6.086,
+      "duration": 5.986,
+      "pause_after": 0.24,
+      "emphasis_words": [
+        "three",
+        "CGI",
+        "drowns",
+        "lungs"
+      ]
+    },
+    {
+      "seg_id": "N02",
+      "text": "At midnight in Indonesia, Kawah Ijen volcano appears to pour rivers of electric-blue lava. Except lava is never blue.",
+      "rate": "+2%",
+      "pitch": "+0Hz",
+      "start": 6.326,
+      "end": 14.021,
+      "duration": 7.695,
+      "pause_after": 0.26,
+      "emphasis_words": [
+        "Kawah",
+        "Ijen",
+        "electric-blue",
+        "never",
+        "blue"
+      ]
+    },
+    {
+      "seg_id": "N03",
+      "text": "Pressurized sulfur gas shoots from cracks at six hundred degrees Celsius and ignites on contact with air. Some gas condenses into liquid sulfur that keeps burning bright blue as it flows downhill.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 14.281,
+      "end": 25.249,
+      "duration": 10.968,
+      "pause_after": 0.26,
+      "emphasis_words": [
+        "six",
+        "hundred",
+        "Celsius",
+        "liquid",
+        "sulfur",
+        "blue"
+      ]
+    },
+    {
+      "seg_id": "N04",
+      "text": "Cross into Ethiopia's Danakil Depression, and Earth stops looking habitable altogether. At Dallol, shallow volcanic heat boils groundwater packed with iron salts and sulfuric acid.",
+      "rate": "+2%",
+      "pitch": "+1Hz",
+      "start": 25.509,
+      "end": 36.209,
+      "duration": 10.699,
+      "pause_after": 0.26,
+      "emphasis_words": [
+        "Danakil",
+        "habitable",
+        "Dallol",
+        "sulfuric",
+        "acid"
+      ]
+    },
+    {
+      "seg_id": "N05",
+      "text": "Those neon-green pools drop below zero pH into negative acidity. Even with liquid water everywhere, biologists found zero active microbial life inside the ponds.",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 36.469,
+      "end": 46.875,
+      "duration": 10.406,
+      "pause_after": 0.28,
+      "emphasis_words": [
+        "zero",
+        "pH",
+        "negative",
+        "microbial",
+        "life"
+      ]
+    },
+    {
+      "seg_id": "N06",
+      "text": "Three hundred meters beneath Naica, Mexico lies an even stranger trap: the Cave of the Crystals. Mineral-rich hot water slowly grew gypsum beams eleven meters long and weighing fifty-five tons.",
+      "rate": "+2%",
+      "pitch": "+1Hz",
+      "start": 47.155,
+      "end": 59.043,
+      "duration": 11.888,
+      "pause_after": 0.28,
+      "emphasis_words": [
+        "Three",
+        "hundred",
+        "Naica",
+        "Crystals",
+        "eleven",
+        "meters",
+        "fifty-five",
+        "tons"
+      ]
+    },
+    {
+      "seg_id": "N07",
+      "text": "Inside, fifty-eight-degree heat meets ninety-five percent humidity\u2014hotter than your own lungs. Without ice suits and chilled air packs, every breath condenses water straight into your airways. That doesn't mean these places break physics\u2014extreme heat and acid simply push chemistry past human limits.",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 59.323,
+      "end": 77.764,
+      "duration": 18.441,
+      "pause_after": 0.26,
+      "emphasis_words": [
+        "fifty-eight-degree",
+        "ninety-five",
+        "hotter",
+        "lungs",
+        "condenses",
+        "limits"
+      ]
+    },
+    {
+      "seg_id": "N08",
+      "text": "In twenty seventeen, groundwater flooded the Naica crystal cave shut forever\u2014leaving three real worlds on Earth that look completely impossible.",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 78.024,
+      "end": 85.664,
+      "duration": 7.641,
+      "pause_after": 0.24,
+      "emphasis_words": [
+        "flooded",
+        "forever",
+        "three",
+        "impossible"
+      ]
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "None",
+      "start": 0.1,
+      "end": 0.343,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "of",
+      "start": 0.261,
+      "end": 0.334,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "these",
+      "start": 0.346,
+      "end": 0.613,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "three",
+      "start": 0.625,
+      "end": 0.844,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "places",
+      "start": 0.856,
+      "end": 1.28,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "on",
+      "start": 1.293,
+      "end": 1.462,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Earth",
+      "start": 1.475,
+      "end": 1.705,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "are",
+      "start": 1.717,
+      "end": 1.802,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "CGI",
+      "start": 1.814,
+      "end": 2.445,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "The",
+      "start": 3.281,
+      "end": 3.439,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "last",
+      "start": 3.451,
+      "end": 3.791,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "one",
+      "start": 3.803,
+      "end": 4.046,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "drowns",
+      "start": 4.058,
+      "end": 4.422,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "human",
+      "start": 4.434,
+      "end": 4.798,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "lungs",
+      "start": 4.811,
+      "end": 5.102,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "from",
+      "start": 5.114,
+      "end": 5.26,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "the",
+      "start": 5.272,
+      "end": 5.357,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "inside",
+      "start": 5.369,
+      "end": 6.012,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "At",
+      "start": 6.326,
+      "end": 6.522,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "midnight",
+      "start": 6.441,
+      "end": 6.87,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "in",
+      "start": 6.882,
+      "end": 6.98,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Indonesia",
+      "start": 6.992,
+      "end": 7.544,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Kawah",
+      "start": 7.764,
+      "end": 8.083,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Ijen",
+      "start": 8.095,
+      "end": 8.463,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "volcano",
+      "start": 8.475,
+      "end": 9.026,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "appears",
+      "start": 9.039,
+      "end": 9.382,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "to",
+      "start": 9.394,
+      "end": 9.492,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "pour",
+      "start": 9.504,
+      "end": 9.737,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "rivers",
+      "start": 9.749,
+      "end": 10.056,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "of",
+      "start": 10.068,
+      "end": 10.166,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "electric-blue",
+      "start": 10.178,
+      "end": 10.828,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "lava",
+      "start": 10.84,
+      "end": 11.343,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Except",
+      "start": 12.187,
+      "end": 12.665,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "lava",
+      "start": 12.677,
+      "end": 13.02,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "is",
+      "start": 13.033,
+      "end": 13.217,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "never",
+      "start": 13.229,
+      "end": 13.535,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "blue",
+      "start": 13.547,
+      "end": 13.952,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "Pressurized",
+      "start": 14.281,
+      "end": 14.9,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "sulfur",
+      "start": 14.814,
+      "end": 15.148,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "gas",
+      "start": 15.161,
+      "end": 15.408,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "shoots",
+      "start": 15.421,
+      "end": 15.718,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "from",
+      "start": 15.73,
+      "end": 15.891,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "cracks",
+      "start": 15.903,
+      "end": 16.275,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "at",
+      "start": 16.287,
+      "end": 16.374,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "six",
+      "start": 16.386,
+      "end": 16.658,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "hundred",
+      "start": 16.671,
+      "end": 16.943,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "degrees",
+      "start": 16.955,
+      "end": 17.327,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Celsius",
+      "start": 17.339,
+      "end": 17.846,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "and",
+      "start": 17.859,
+      "end": 17.958,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "ignites",
+      "start": 17.97,
+      "end": 18.44,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "on",
+      "start": 18.453,
+      "end": 18.564,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "contact",
+      "start": 18.577,
+      "end": 19.059,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "with",
+      "start": 19.072,
+      "end": 19.232,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "air",
+      "start": 19.245,
+      "end": 19.48,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Some",
+      "start": 20.333,
+      "end": 20.643,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "gas",
+      "start": 20.655,
+      "end": 20.928,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "condenses",
+      "start": 20.94,
+      "end": 21.46,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "into",
+      "start": 21.472,
+      "end": 21.707,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "liquid",
+      "start": 21.72,
+      "end": 22.116,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "sulfur",
+      "start": 22.128,
+      "end": 22.475,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "that",
+      "start": 22.487,
+      "end": 22.648,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "keeps",
+      "start": 22.66,
+      "end": 22.932,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "burning",
+      "start": 22.945,
+      "end": 23.353,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "bright",
+      "start": 23.366,
+      "end": 23.65,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "blue",
+      "start": 23.663,
+      "end": 23.997,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "as",
+      "start": 24.009,
+      "end": 24.133,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "it",
+      "start": 24.145,
+      "end": 24.257,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "flows",
+      "start": 24.269,
+      "end": 24.591,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "downhill",
+      "start": 24.603,
+      "end": 25.185,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Cross",
+      "start": 25.509,
+      "end": 25.828,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "into",
+      "start": 25.74,
+      "end": 25.998,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Ethiopia's",
+      "start": 26.01,
+      "end": 26.843,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Danakil",
+      "start": 26.855,
+      "end": 27.284,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "Depression",
+      "start": 27.297,
+      "end": 27.811,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "and",
+      "start": 28.02,
+      "end": 28.179,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Earth",
+      "start": 28.191,
+      "end": 28.412,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "stops",
+      "start": 28.424,
+      "end": 28.792,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "looking",
+      "start": 28.804,
+      "end": 29.098,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "habitable",
+      "start": 29.11,
+      "end": 29.601,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "altogether",
+      "start": 29.613,
+      "end": 30.201,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "At",
+      "start": 31.046,
+      "end": 31.266,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Dallol",
+      "start": 31.279,
+      "end": 31.671,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "shallow",
+      "start": 31.842,
+      "end": 32.124,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "volcanic",
+      "start": 32.136,
+      "end": 32.639,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "heat",
+      "start": 32.651,
+      "end": 32.859,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "boils",
+      "start": 32.872,
+      "end": 33.19,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "groundwater",
+      "start": 33.203,
+      "end": 33.877,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "packed",
+      "start": 33.889,
+      "end": 34.195,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "with",
+      "start": 34.207,
+      "end": 34.342,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "iron",
+      "start": 34.354,
+      "end": 34.612,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "salts",
+      "start": 34.624,
+      "end": 34.967,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "and",
+      "start": 34.979,
+      "end": 35.102,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "sulfuric",
+      "start": 35.114,
+      "end": 35.752,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "acid",
+      "start": 35.764,
+      "end": 36.144,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "Those",
+      "start": 36.469,
+      "end": 36.741,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "neon-green",
+      "start": 36.671,
+      "end": 37.253,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "pools",
+      "start": 37.265,
+      "end": 37.612,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "drop",
+      "start": 37.624,
+      "end": 37.884,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "below",
+      "start": 37.897,
+      "end": 38.218,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "zero",
+      "start": 38.231,
+      "end": 38.627,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "pH",
+      "start": 38.639,
+      "end": 39.122,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "into",
+      "start": 39.134,
+      "end": 39.369,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "negative",
+      "start": 39.382,
+      "end": 39.815,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "acidity",
+      "start": 39.827,
+      "end": 40.36,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Even",
+      "start": 41.213,
+      "end": 41.56,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "with",
+      "start": 41.572,
+      "end": 41.683,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "liquid",
+      "start": 41.696,
+      "end": 42.03,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "water",
+      "start": 42.042,
+      "end": 42.364,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "everywhere",
+      "start": 42.376,
+      "end": 42.81,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "biologists",
+      "start": 43.057,
+      "end": 43.676,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "found",
+      "start": 43.688,
+      "end": 44.01,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "zero",
+      "start": 44.022,
+      "end": 44.418,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "active",
+      "start": 44.431,
+      "end": 44.728,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "microbial",
+      "start": 44.74,
+      "end": 45.409,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "life",
+      "start": 45.421,
+      "end": 45.693,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "inside",
+      "start": 45.706,
+      "end": 46.188,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 46.201,
+      "end": 46.275,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "ponds",
+      "start": 46.287,
+      "end": 46.807,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Three",
+      "start": 47.155,
+      "end": 47.449,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "hundred",
+      "start": 47.373,
+      "end": 47.679,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "meters",
+      "start": 47.691,
+      "end": 48.035,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "beneath",
+      "start": 48.047,
+      "end": 48.427,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Naica",
+      "start": 48.439,
+      "end": 48.929,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "Mexico",
+      "start": 49.113,
+      "end": 49.616,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "lies",
+      "start": 49.628,
+      "end": 49.971,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "an",
+      "start": 49.983,
+      "end": 50.106,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "even",
+      "start": 50.118,
+      "end": 50.4,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "stranger",
+      "start": 50.412,
+      "end": 50.878,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "trap",
+      "start": 50.89,
+      "end": 51.233,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 51.405,
+      "end": 51.491,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Cave",
+      "start": 51.503,
+      "end": 51.736,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "of",
+      "start": 51.748,
+      "end": 51.821,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 51.834,
+      "end": 51.907,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Crystals",
+      "start": 51.919,
+      "end": 52.63,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "Mineral-rich",
+      "start": 53.475,
+      "end": 54.112,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "hot",
+      "start": 54.124,
+      "end": 54.345,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "water",
+      "start": 54.357,
+      "end": 54.688,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "slowly",
+      "start": 54.7,
+      "end": 55.105,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "grew",
+      "start": 55.117,
+      "end": 55.387,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "gypsum",
+      "start": 55.399,
+      "end": 55.84,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "beams",
+      "start": 55.852,
+      "end": 56.195,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "eleven",
+      "start": 56.208,
+      "end": 56.551,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "meters",
+      "start": 56.563,
+      "end": 56.906,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "long",
+      "start": 56.918,
+      "end": 57.237,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "and",
+      "start": 57.249,
+      "end": 57.384,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "weighing",
+      "start": 57.396,
+      "end": 57.715,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "fifty-five",
+      "start": 57.727,
+      "end": 58.389,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "tons",
+      "start": 58.401,
+      "end": 58.977,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "Inside",
+      "start": 59.323,
+      "end": 59.967,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "fifty-eight-degree",
+      "start": 60.034,
+      "end": 60.842,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "heat",
+      "start": 60.855,
+      "end": 61.082,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "meets",
+      "start": 61.095,
+      "end": 61.347,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "ninety-five",
+      "start": 61.36,
+      "end": 62.004,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "percent",
+      "start": 62.016,
+      "end": 62.383,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "humidity",
+      "start": 62.395,
+      "end": 62.913,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "hotter",
+      "start": 63.127,
+      "end": 63.38,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "than",
+      "start": 63.393,
+      "end": 63.531,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "your",
+      "start": 63.544,
+      "end": 63.733,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "own",
+      "start": 63.746,
+      "end": 63.973,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "lungs",
+      "start": 63.986,
+      "end": 64.554,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "Without",
+      "start": 65.426,
+      "end": 65.88,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "ice",
+      "start": 65.893,
+      "end": 66.108,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "suits",
+      "start": 66.12,
+      "end": 66.398,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "and",
+      "start": 66.411,
+      "end": 66.537,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "chilled",
+      "start": 66.55,
+      "end": 66.878,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "air",
+      "start": 66.891,
+      "end": 66.954,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "packs",
+      "start": 66.966,
+      "end": 67.421,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "every",
+      "start": 67.636,
+      "end": 67.863,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "breath",
+      "start": 67.875,
+      "end": 68.191,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "condenses",
+      "start": 68.204,
+      "end": 68.785,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "water",
+      "start": 68.797,
+      "end": 69.163,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "straight",
+      "start": 69.176,
+      "end": 69.529,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "into",
+      "start": 69.542,
+      "end": 69.795,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "your",
+      "start": 69.807,
+      "end": 70.06,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "airways",
+      "start": 70.072,
+      "end": 70.767,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "That",
+      "start": 71.638,
+      "end": 71.84,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "doesn't",
+      "start": 71.853,
+      "end": 72.105,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "mean",
+      "start": 72.118,
+      "end": 72.345,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "these",
+      "start": 72.358,
+      "end": 72.598,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "places",
+      "start": 72.61,
+      "end": 73.014,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "break",
+      "start": 73.027,
+      "end": 73.305,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "physics",
+      "start": 73.317,
+      "end": 73.785,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "extreme",
+      "start": 74.012,
+      "end": 74.517,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "heat",
+      "start": 74.529,
+      "end": 74.833,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "and",
+      "start": 74.845,
+      "end": 74.921,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "acid",
+      "start": 74.934,
+      "end": 75.274,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "simply",
+      "start": 75.287,
+      "end": 75.666,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "push",
+      "start": 75.678,
+      "end": 75.969,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "chemistry",
+      "start": 75.981,
+      "end": 76.487,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "past",
+      "start": 76.499,
+      "end": 76.84,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "human",
+      "start": 76.853,
+      "end": 77.206,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "limits",
+      "start": 77.219,
+      "end": 77.686,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N08",
+      "word": "In",
+      "start": 78.024,
+      "end": 78.213,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "twenty",
+      "start": 78.119,
+      "end": 78.435,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "seventeen",
+      "start": 78.448,
+      "end": 79.028,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "groundwater",
+      "start": 79.193,
+      "end": 79.887,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "flooded",
+      "start": 79.9,
+      "end": 80.228,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N08",
+      "word": "the",
+      "start": 80.241,
+      "end": 80.316,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Naica",
+      "start": 80.329,
+      "end": 80.783,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "crystal",
+      "start": 80.796,
+      "end": 81.2,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "cave",
+      "start": 81.213,
+      "end": 81.503,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "shut",
+      "start": 81.516,
+      "end": 81.768,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "forever",
+      "start": 81.781,
+      "end": 82.248,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N08",
+      "word": "leaving",
+      "start": 82.475,
+      "end": 82.791,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "three",
+      "start": 82.804,
+      "end": 83.069,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N08",
+      "word": "real",
+      "start": 83.081,
+      "end": 83.422,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "worlds",
+      "start": 83.435,
+      "end": 83.763,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "on",
+      "start": 83.776,
+      "end": 83.915,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Earth",
+      "start": 83.927,
+      "end": 84.155,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "that",
+      "start": 84.167,
+      "end": 84.306,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "look",
+      "start": 84.319,
+      "end": 84.42,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "completely",
+      "start": 84.432,
+      "end": 84.937,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "impossible",
+      "start": 84.95,
+      "end": 85.594,
+      "emphasis": true
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 0.02,
+      "gain_db": -18.5
+    },
+    {
+      "sfx_name": "chapter_whoosh_soft",
+      "time_s": 6.207,
+      "gain_db": -18.5
+    },
+    {
+      "sfx_name": "fumarole_gas_jet",
+      "time_s": 14.183,
+      "gain_db": -18.0
+    },
+    {
+      "sfx_name": "chapter_whoosh_soft",
+      "time_s": 25.373,
+      "gain_db": -18.5
+    },
+    {
+      "sfx_name": "boiling_acid_brine",
+      "time_s": 36.35,
+      "gain_db": -18.5
+    },
+    {
+      "sfx_name": "subterranean_gate_boom",
+      "time_s": 47.007,
+      "gain_db": -17.5
+    },
+    {
+      "sfx_name": "cavern_heartbeat_pulse",
+      "time_s": 59.183,
+      "gain_db": -17.5
+    },
+    {
+      "sfx_name": "sonar_ping_deep",
+      "time_s": 73.94,
+      "gain_db": -19.5
+    },
+    {
+      "sfx_name": "cave_flood_rush",
+      "time_s": 77.917,
+      "gain_db": -18.0
+    }
+  ],
+  "diegetic_nat_sound_active": true
+}

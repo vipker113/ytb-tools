@@ -1,0 +1,67 @@
+1
+00:00:00,100 --> 00:00:01,865
+How high could you jump on other planets?
+
+2
+00:00:02,171 --> 00:00:04,430
+Say you manage half a meter on Earth.
+
+3
+00:00:04,709 --> 00:00:06,853
+On Mars, the same jump reaches
+
+4
+00:00:06,733 --> 00:00:08,747
+about 1.3 meters.
+
+5
+00:00:09,052 --> 00:00:09,971
+Tiny Mercury?
+
+6
+00:00:10,276 --> 00:00:11,170
+Almost the same.
+
+7
+00:00:11,462 --> 00:00:13,863
+On the Moon, you'd rise 3 meters
+
+8
+00:00:13,743 --> 00:00:16,298
+and float for nearly four seconds.
+
+9
+00:00:16,591 --> 00:00:19,494
+On Jupiter, from a platform in its clouds,
+
+10
+00:00:19,774 --> 00:00:22,690
+you'd barely clear 20 centimeters.
+
+11
+00:00:23,008 --> 00:00:25,706
+Saturn has 95 times Earth's mass,
+
+12
+00:00:25,972 --> 00:00:28,270
+yet you'd jump a bit higher there than at home.
+
+13
+00:00:28,562 --> 00:00:29,481
+And on Pluto,
+
+14
+00:00:29,774 --> 00:00:32,265
+one push sends you nearly 8 meters up.
+
+15
+00:00:32,570 --> 00:00:33,515
+Same legs.
+
+16
+00:00:33,794 --> 00:00:34,546
+Same jump.
+
+17
+00:00:34,851 --> 00:00:36,685
+Gravity decides the rest.

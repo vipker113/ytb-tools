@@ -1,0 +1,80 @@
+profile_name: "space_discovery"
+profile_version: "6.0.0"
+description: "Space & astronomy, telescope observations, planetary missions, and cosmic mysteries with restrained authentic sound design."
+
+narrative_retention:
+  category_focus: "Space, astronomy, planetary exploration, and verifiable observational discoveries"
+  default_target_duration_range_s: [70.0, 90.0]
+  preferred_beat_structure:
+    - "opening_hook"
+    - "curiosity_gap"
+    - "evidence_and_discovery"
+    - "escalation"
+    - "payoff"
+    - "final_impression"
+  preferred_hook_archetypes:
+    - "paradox"
+    - "unexpected_fact"
+    - "surprising_visual"
+  max_info_drought_s: 14.5
+  min_central_payoff_time_fraction: 0.32
+
+composition:
+  enable_synthetic_25d_parallax: true
+  still_max_zoom_delta: 0.045
+  still_max_pan_delta_norm: 0.045
+
+asset_selection:
+  location_authentic_mode: true
+  target_moving_footage_ratio: 0.65
+  max_still_photo_ratio: 0.32
+  prefer_human_fieldwork_interaction: true
+  min_human_interaction_shots: 2
+  min_distinct_perspectives: 4
+  scoring_weights:
+    direct_relevance: 0.32
+    visual_clarity: 0.20
+    authenticity: 0.20
+    technical_quality: 0.12
+    composition_potential: 0.10
+    motion_storytelling: 0.03
+    license_verification: 0.03
+    min_direct_relevance_floor: 0.35
+
+sound_design:
+  default_voice: "en-GB-RyanNeural"
+  default_voice_profile: "cinematic_documentary"
+  scene_audio_profile: "space_vacuum_restrained"
+  enable_5layer_mixing: true
+  enable_diegetic_nat_sound: false
+  forbid_fake_space_transmissions: true
+  target_bed_lufs: -27.5
+  music_layer_gain_db: -19.5
+  ambience_layer_gain_db: -21.5
+  natural_sounds_layer_gain_db: -28.0
+  cinematic_sfx_layer_gain_db: -26.5
+
+pacing:
+  adaptive_duration_enabled: true
+  reference_shot_duration_range_s: [4.2, 8.0]
+  establishing_wide_bonus_s: 1.3
+  min_shot_duration_s: 2.6
+  max_shot_duration_s: 14.0
+  dissolve_duration_s: 0.70
+  max_dissolve_fraction_of_cuts: 0.42
+
+color_science:
+  enable_filmic_grade: true
+  cast_tame_strength: 0.10
+  luma_grain_sigma: 1.5
+
+subtitles:
+  style: "minimal_editorial"
+  emphasis_mode: "subtle_warm"
+  enable_keyword_color_flash: true
+  word_by_word_animation: false
+
+opening_and_thumbnail:
+  thumbnail_text_mode: "cinema_hook"
+  thumbnail_max_words: 5
+  thumbnail_concepts_count: 3

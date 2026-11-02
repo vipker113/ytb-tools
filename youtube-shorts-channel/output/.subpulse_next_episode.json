@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "channel": {
+    "id": "UCtUnbMhnWa2O2RLTcXqC2yQ",
+    "handle": "@proofofwonderscience",
+    "title": "Proof of Wonder",
+    "subscribers": 10,
+    "totalViews": 6883,
+    "videoCount": 8,
+    "targetMilestone": 100
+  },
+  "sprint": {
+    "sprintNumber": 1,
+    "completedSteps": 0,
+    "totalSteps": 5,
+    "bestPublishWindowVn": "16:00 – 19:00 Giờ VN (Chiều Châu Âu + Bình minh Mỹ)",
+    "autoContinueEnabled": true
+  },
+  "nextEpisode": {
+    "episodeId": "plan-1-1",
+    "dayLabel": "Bước 1 (Hôm nay)",
+    "scheduledDate": "2026-10-30",
+    "vnPublishWindow": "Thực hiện ngay trong 10 phút + Đăng 17:00 Giờ VN",
+    "strategyType": "channel_optimization",
+    "title": "Why the Sun Should Be Silent Yet NASA Recorded Its Roar",
+    "hook3s": "...which means if space had air for just one second, the Sun would sound like a chainsaw roaring right next to your ear.",
+    "voiceoverScript": "Space is a vacuum, so sound waves shouldn't travel at all. Yet solar physicists at Stanford and NASA tracked massive pressure waves churning across the Sun's surface—vibrations ten thousand miles wide. Even from 93 million miles away, if air filled the gap between Earth and the Sun, it would blast your eardrums at 100 decibels nonstop, day and night. Follow Proof of Wonder for daily strange science—because that hidden solar vibration...",
+    "fullNarration": "which means if space had air for just one second, the Sun would sound like a chainsaw roaring right next to your ear. Space is a vacuum, so sound waves shouldn't travel at all. Yet solar physicists at Stanford and NASA tracked massive pressure waves churning across the Sun's surface—vibrations ten thousand miles wide. Even from 93 million miles away, if air filled the gap between Earth and the Sun, it would blast your eardrums at 100 decibels nonstop, day and night. Follow Proof of Wonder for daily strange science—because that hidden solar vibration...",
+    "description": "The Terrifying Secret Noise of the Sun — If space had air for one second, the Sun would deafen you like a roaring chainsaw held against your ear.\n\n🔬 Subscribe to Proof of Wonder for daily strange science:\n👉 https://www.youtube.com/@proofofwonderscience?sub_confirmation=1\n\n#ScienceShorts #Science #Space #ProofOfWonder\n\n📚 SCIENTIFIC SOURCES:\n• NASA Solar Physics / Helioseismology Research (SOHO MDI & SDO HMI Instruments)\n• Stanford Solar Center, Stanford University (Acoustic Pressure Waves and Solar Sound Studies)",
+    "tags": [
+      "science",
+      "space",
+      "sun",
+      "astronomy",
+      "physics",
+      "nasa",
+      "sound",
+      "solarsystem",
+      "earth",
+      "proofofwonder"
+    ],
+    "pinnedComment": "If space wasn't a vacuum and the Sun roared at 100 dB every second of your life, how do you think life on Earth would have evolved?",
+    "status": "pending"
+  }
+}

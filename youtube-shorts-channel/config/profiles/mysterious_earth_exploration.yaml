@@ -1,0 +1,74 @@
+profile_name: "mysterious_earth_exploration"
+profile_name_display: "Mysterious Earth Exploration"
+profile_version: "6.0.0"
+description: "Hidden Earth, extreme geological formations, subglacial vaults, sealed caves, and remote real-world expeditions."
+
+narrative_retention:
+  category_focus: "Hidden Earth, extraordinary real-world locations, geological anomalies, and field expeditions"
+  default_target_duration_range_s: [70.0, 90.0]
+  preferred_beat_structure:
+    - "opening_hook"
+    - "curiosity_gap"
+    - "evidence_and_discovery"
+    - "escalation"
+    - "payoff"
+    - "final_impression"
+  preferred_hook_archetypes:
+    - "surprising_visual"
+    - "credible_mystery"
+    - "strong_contrast"
+  max_info_drought_s: 14.0
+  min_central_payoff_time_fraction: 0.30
+
+asset_selection:
+  target_moving_footage_ratio: 0.80
+  max_still_photo_ratio: 0.15
+  prefer_human_fieldwork_interaction: true
+  min_human_interaction_shots: 4
+  min_distinct_perspectives: 5
+  scoring_weights:
+    direct_relevance: 0.30
+    visual_clarity: 0.20
+    authenticity: 0.22
+    technical_quality: 0.10
+    composition_potential: 0.10
+    motion_storytelling: 0.05
+    license_verification: 0.03
+    min_direct_relevance_floor: 0.35
+
+sound_design:
+  default_voice: "en-GB-RyanNeural"
+  default_voice_profile: "mysterious_discovery"
+  scene_audio_profile: "polar_glacial"
+  enable_5layer_mixing: true
+  enable_diegetic_nat_sound: true
+  target_bed_lufs: -26.0
+  music_layer_gain_db: -20.5
+  ambience_layer_gain_db: -21.0
+  natural_sounds_layer_gain_db: -15.0
+  cinematic_sfx_layer_gain_db: -25.0
+
+pacing:
+  adaptive_duration_enabled: true
+  reference_shot_duration_range_s: [3.6, 7.2]
+  establishing_wide_bonus_s: 1.1
+  min_shot_duration_s: 2.2
+  max_shot_duration_s: 13.5
+  dissolve_duration_s: 0.60
+  max_dissolve_fraction_of_cuts: 0.35
+
+color_science:
+  enable_filmic_grade: true
+  cast_tame_strength: 0.16
+  luma_grain_sigma: 2.2
+
+subtitles:
+  style: "cinema_boxless"
+  emphasis_mode: "color_accent"
+  enable_keyword_color_flash: true
+  word_by_word_animation: false
+
+opening_and_thumbnail:
+  thumbnail_text_mode: "cinema_hook"
+  thumbnail_max_words: 6
+  thumbnail_concepts_count: 3

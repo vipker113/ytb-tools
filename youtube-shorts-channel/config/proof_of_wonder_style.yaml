@@ -1,0 +1,168 @@
+# Proof of Wonder — Reusable Viral Documentary Shorts Style Profile (v4.0)
+# Centralized default rules for all channel episodes across astronomy, planetary
+# science, extreme Earth geology, deep-ocean exploration, biology, and physics.
+# Engineered for Top-0.5% YouTube Shorts retention & zero "AI-slop" fingerprint.
+
+profile_name: "pow_documentary_v3"
+profile_version: "5.0.0"
+
+# 1. Video Dimensions, Frame Rate & Export Format
+output:
+  aspect_ratio: "9:16"
+  width: 1080
+  height: 1920
+  fps: 30
+  video_codec_master: "libx264"
+  video_crf_master: 15
+  video_preset_master: "medium"
+  video_profile: "high"
+  pixel_format: "yuv420p"
+  color_space: "bt709"
+  audio_codec: "aac"
+  audio_bitrate: "192k"
+  audio_sample_rate_hz: 48000
+  audio_channels: 2
+  target_loudness_lufs: -16.0
+
+# 2. Full-Screen Vertical Composition & Intelligent Reframing
+composition:
+  fill_canvas_edge_to_edge: true
+  allow_inset_frames: false
+  allow_blurred_pillarbox_backgrounds: false
+  allow_decorative_borders: false
+  never_stretch_aspect_ratio: true
+  never_hallucinate_outpainting: true
+  subject_reframe_mode: "salient_auto_or_keyframed"
+  keep_subject_above_subtitle_zone_y: 1440
+  min_cropped_source_height_px: 540
+  max_upscale_factor_warn: 2.35
+  min_post_crop_laplacian_std: 4.2
+  enable_synthetic_25d_parallax: true
+  still_max_zoom_delta: 0.055
+  still_max_pan_delta_norm: 0.06
+
+# 3. Unified 35mm Documentary Color Science & Living Optical Grain
+color_science:
+  enable_filmic_grade: true
+  cast_tame_strength: 0.22
+  luma_grain_sigma: 2.3
+
+# 4. Decorative & AI-Looking Graphics Disabled by Default (Cinema Chapter Stamps Allowed)
+overlays:
+  show_source_banners_in_video: false
+  show_closing_credit_card_in_video: false
+  show_animated_circles_or_rings: false
+  show_locator_hud_cards: false
+  show_callout_warning_badges: false
+  show_dashboard_study_cards: false
+  burn_opening_cover_card_into_video: false
+  allow_minimal_context_captions: true
+  max_context_labels_per_video: 6
+  context_label_max_words: 7
+  allow_cinema_chapter_stamps: true
+  max_chapter_stamps_per_video: 5
+
+# 5. Asset Sourcing, Moving Footage Priority & Human Fieldwork Interaction
+asset_selection:
+  zero_cost_budget_strict: true
+  location_authentic_mode: false
+  forbid_muted_talking_heads: true
+  target_moving_footage_ratio: 0.80
+  max_still_photo_ratio: 0.15
+  max_single_still_duration_s: 4.5
+  forbid_consecutive_still_shots: true
+  prefer_human_fieldwork_interaction: true
+  min_human_interaction_shots: 4
+  min_authentic_evidence_ratio: 0.85
+  max_illustrative_diagram_ratio: 0.12
+  priority_hierarchy:
+    - "1_actual_subject_or_human_interaction_with_phenomenon_video"
+    - "2_relevant_real_world_closeup_or_wide_video"
+    - "3_genuine_hands_on_scientific_fieldwork_or_expedition_video"
+    - "4_authentic_scientific_observation_or_experiment_video"
+    - "5_real_photograph_only_briefly_when_video_unavailable"
+    - "6_minimal_photo_textured_scientific_diagram"
+  max_uses_per_asset: 2
+  max_duration_share_per_asset: 0.30
+  require_narration_alignment_audit: true
+  require_scientific_claim_status: true
+  allowed_commercial_licenses:
+    - "Public Domain"
+    - "CC0"
+    - "CC BY"
+    - "100% Original First-Party Graphic"
+  auto_append_credits_to_youtube_description: true
+
+# 6. Top-0.5% Viral Retention, Spoken Script & Anti-AI Smell Rules
+viral_retention:
+  max_opening_still_duration_s: 2.3
+  max_hook_first_sentence_words: 18
+  max_spoken_sentence_words: 24
+  block_ai_cliche_phrases: true
+  block_jargon_lists: true
+  enforce_seamless_loop_tail: true
+  max_ending_tail_pause_s: 0.55
+
+# 7. Broadcast Vocal Mastering & Real Diegetic Location Audio ("Nat-Sound")
+sound_design:
+  default_voice: "en-GB-RyanNeural"
+  enable_broadcast_vocal_mastering: true
+  enable_diegetic_nat_sound: true
+  studio_room_tone_dbfs: -52.0
+  target_bed_lufs: -27.0
+  min_audible_bed_margin_lu: 9.0
+  max_audible_bed_margin_lu: 16.5
+
+# 8. Meaning-Driven Shot Planning, Pacing & Restrained Transitions
+pacing:
+  narration_first_required: true
+  reference_shot_duration_range_s: [3.2, 6.5]
+  min_shot_duration_s: 1.8
+  max_shot_duration_s: 12.0
+  prefer_sentence_and_clause_boundaries: true
+  speech_pause_snap_tolerance_s: 0.35
+  default_transition: "cut"
+  allowed_transitions:
+    - "cut"
+    - "dissolve"
+  dissolve_duration_s: 0.60
+  dissolve_range_s: [0.45, 0.95]
+  max_dissolve_fraction_of_cuts: 0.35
+
+# 9. Cinema Boxless Editorial Subtitles (No PowerPoint Grey Rectangles)
+subtitles:
+  enabled: true
+  font_size_px: 48
+  line_height_px: 60
+  max_lines_per_cue: 2
+  max_line_width_px: 880
+  vertical_center_y_px: 1515
+  style: "cinema_boxless"
+  scrim_rgba: [6, 10, 18, 186]
+  text_rgba: [252, 253, 255, 255]
+  stroke_width_px: 4
+  enable_keyword_color_flash: true
+  min_first_cue_start_s: 0.08
+
+# 10. Subject-First Opening Frame & High-CTR Content-Driven Cinema Thumbnail
+opening_and_thumbnail:
+  max_central_subject_delay_s: 1.2
+  forbid_intro_logos_and_title_cards: true
+  thumbnail_aspect_ratio: "9:16"
+  thumbnail_subject_first: true
+  thumbnail_text_mode: "cinema_hook"
+  thumbnail_max_words: 6
+  thumbnail_forbid_boxes_badges_rings: true
+  thumbnail_max_bytes: 1950000
+
+# 11. Automated & Visual Quality Assurance Gates
+qa:
+  require_exact_dimensions_and_fps: true
+  require_zero_black_frames: true
+  require_full_canvas_coverage_audit: true
+  max_letterbox_or_border_band_px: 6
+  require_overlay_cleanliness_audit: true
+  min_whisper_normalized_match_ratio: 0.96
+  min_wcag_caption_contrast_ratio: 7.0
+  protect_existing_episode_outputs: true
+  export_visual_contact_sheets: true

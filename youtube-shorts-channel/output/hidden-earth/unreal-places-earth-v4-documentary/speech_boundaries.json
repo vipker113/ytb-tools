@@ -1,0 +1,223 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 2.67,
+    "word_end_s": 2.445,
+    "next_word_start_s": 3.281,
+    "pause_s": 0.836,
+    "kind": "breath_pause",
+    "after_word": "CGI"
+  },
+  {
+    "time_s": 6.169,
+    "word_end_s": 6.012,
+    "next_word_start_s": 6.326,
+    "pause_s": 0.314,
+    "kind": "breath_pause",
+    "after_word": "inside"
+  },
+  {
+    "time_s": 7.654,
+    "word_end_s": 7.544,
+    "next_word_start_s": 7.764,
+    "pause_s": 0.22,
+    "kind": "breath_pause",
+    "after_word": "Indonesia"
+  },
+  {
+    "time_s": 11.568,
+    "word_end_s": 11.343,
+    "next_word_start_s": 12.187,
+    "pause_s": 0.844,
+    "kind": "breath_pause",
+    "after_word": "lava"
+  },
+  {
+    "time_s": 14.117,
+    "word_end_s": 13.952,
+    "next_word_start_s": 14.281,
+    "pause_s": 0.329,
+    "kind": "breath_pause",
+    "after_word": "blue"
+  },
+  {
+    "time_s": 19.705,
+    "word_end_s": 19.48,
+    "next_word_start_s": 20.333,
+    "pause_s": 0.853,
+    "kind": "breath_pause",
+    "after_word": "air"
+  },
+  {
+    "time_s": 25.347,
+    "word_end_s": 25.185,
+    "next_word_start_s": 25.509,
+    "pause_s": 0.324,
+    "kind": "breath_pause",
+    "after_word": "downhill"
+  },
+  {
+    "time_s": 27.916,
+    "word_end_s": 27.811,
+    "next_word_start_s": 28.02,
+    "pause_s": 0.209,
+    "kind": "breath_pause",
+    "after_word": "Depression"
+  },
+  {
+    "time_s": 30.426,
+    "word_end_s": 30.201,
+    "next_word_start_s": 31.046,
+    "pause_s": 0.845,
+    "kind": "breath_pause",
+    "after_word": "altogether"
+  },
+  {
+    "time_s": 31.756,
+    "word_end_s": 31.671,
+    "next_word_start_s": 31.842,
+    "pause_s": 0.171,
+    "kind": "breath_pause",
+    "after_word": "Dallol"
+  },
+  {
+    "time_s": 36.306,
+    "word_end_s": 36.144,
+    "next_word_start_s": 36.469,
+    "pause_s": 0.325,
+    "kind": "breath_pause",
+    "after_word": "acid"
+  },
+  {
+    "time_s": 40.585,
+    "word_end_s": 40.36,
+    "next_word_start_s": 41.213,
+    "pause_s": 0.853,
+    "kind": "breath_pause",
+    "after_word": "acidity"
+  },
+  {
+    "time_s": 42.934,
+    "word_end_s": 42.81,
+    "next_word_start_s": 43.057,
+    "pause_s": 0.247,
+    "kind": "breath_pause",
+    "after_word": "everywhere"
+  },
+  {
+    "time_s": 46.981,
+    "word_end_s": 46.807,
+    "next_word_start_s": 47.155,
+    "pause_s": 0.348,
+    "kind": "breath_pause",
+    "after_word": "ponds"
+  },
+  {
+    "time_s": 49.021,
+    "word_end_s": 48.929,
+    "next_word_start_s": 49.113,
+    "pause_s": 0.184,
+    "kind": "breath_pause",
+    "after_word": "Naica"
+  },
+  {
+    "time_s": 51.319,
+    "word_end_s": 51.233,
+    "next_word_start_s": 51.405,
+    "pause_s": 0.172,
+    "kind": "breath_pause",
+    "after_word": "trap"
+  },
+  {
+    "time_s": 52.855,
+    "word_end_s": 52.63,
+    "next_word_start_s": 53.475,
+    "pause_s": 0.845,
+    "kind": "breath_pause",
+    "after_word": "Crystals"
+  },
+  {
+    "time_s": 59.15,
+    "word_end_s": 58.977,
+    "next_word_start_s": 59.323,
+    "pause_s": 0.346,
+    "kind": "breath_pause",
+    "after_word": "tons"
+  },
+  {
+    "time_s": 63.02,
+    "word_end_s": 62.913,
+    "next_word_start_s": 63.127,
+    "pause_s": 0.214,
+    "kind": "breath_pause",
+    "after_word": "humidity"
+  },
+  {
+    "time_s": 64.779,
+    "word_end_s": 64.554,
+    "next_word_start_s": 65.426,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "lungs"
+  },
+  {
+    "time_s": 67.529,
+    "word_end_s": 67.421,
+    "next_word_start_s": 67.636,
+    "pause_s": 0.215,
+    "kind": "breath_pause",
+    "after_word": "packs"
+  },
+  {
+    "time_s": 70.992,
+    "word_end_s": 70.767,
+    "next_word_start_s": 71.638,
+    "pause_s": 0.871,
+    "kind": "breath_pause",
+    "after_word": "airways"
+  },
+  {
+    "time_s": 73.898,
+    "word_end_s": 73.785,
+    "next_word_start_s": 74.012,
+    "pause_s": 0.227,
+    "kind": "breath_pause",
+    "after_word": "physics"
+  },
+  {
+    "time_s": 77.855,
+    "word_end_s": 77.686,
+    "next_word_start_s": 78.024,
+    "pause_s": 0.338,
+    "kind": "breath_pause",
+    "after_word": "limits"
+  },
+  {
+    "time_s": 79.111,
+    "word_end_s": 79.028,
+    "next_word_start_s": 79.193,
+    "pause_s": 0.165,
+    "kind": "breath_pause",
+    "after_word": "seventeen"
+  },
+  {
+    "time_s": 82.362,
+    "word_end_s": 82.248,
+    "next_word_start_s": 82.475,
+    "pause_s": 0.227,
+    "kind": "breath_pause",
+    "after_word": "forever"
+  },
+  {
+    "time_s": 85.9,
+    "word_end_s": 85.594,
+    "next_word_start_s": 85.9,
+    "pause_s": 0.306,
+    "kind": "segment_end",
+    "after_word": "impossible"
+  }
+]

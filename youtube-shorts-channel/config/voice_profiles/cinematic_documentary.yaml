@@ -1,0 +1,42 @@
+profile_id: "cinematic_documentary"
+display_name: "Cinematic Documentary"
+description: "Warm, poised BBC/National Geographic theatrical documentary narration with measured gravitas and natural breath pauses."
+voice_mode: "directed_tts"
+voice_identity: "en-GB-RyanNeural"
+accent: "en-GB"
+tone: "documentary"
+emotion: "wonder"
+energy: 3
+speaking_speed: "natural"
+base_rate_pct: 0
+base_pitch_hz: 0
+default_pause_after_ms: 340
+consistency_lock: true
+max_rate_delta_pct: 10
+max_pitch_delta_hz: 2
+emphasis_strategy: "bounded_cadence_and_subtitle_highlight"
+pronunciation:
+  McMurdo: "Mick-Murdo"
+  subglacial: "sub-glay-shul"
+  Taylor: "Taylor"
+sentence_delivery_presets:
+  OPENING_HOOK:
+    rate_delta_pct: 2
+    pitch_delta_hz: 0
+    pause_after_ms: 280
+  MYSTERIOUS:
+    rate_delta_pct: -4
+    pitch_delta_hz: -1
+    pause_after_ms: 480
+  CINEMATIC_REVEAL:
+    rate_delta_pct: -3
+    pitch_delta_hz: 0
+    pause_after_ms: 600
+  EVIDENCE:
+    rate_delta_pct: 1
+    pitch_delta_hz: 0
+    pause_after_ms: 320
+  CAVEAT:
+    rate_delta_pct: -2
+    pitch_delta_hz: -1
+    pause_after_ms: 340

@@ -1,0 +1,215 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 2.203,
+    "word_end_s": 2.1,
+    "next_word_start_s": 2.306,
+    "pause_s": 0.206,
+    "kind": "breath_pause",
+    "after_word": "Valleys"
+  },
+  {
+    "time_s": 6.584,
+    "word_end_s": 6.445,
+    "next_word_start_s": 6.723,
+    "pause_s": 0.278,
+    "kind": "breath_pause",
+    "after_word": "ice"
+  },
+  {
+    "time_s": 7.417,
+    "word_end_s": 7.312,
+    "next_word_start_s": 7.522,
+    "pause_s": 0.21,
+    "kind": "breath_pause",
+    "after_word": "decades"
+  },
+  {
+    "time_s": 10.47,
+    "word_end_s": 10.245,
+    "next_word_start_s": 11.098,
+    "pause_s": 0.853,
+    "kind": "breath_pause",
+    "after_word": "Falls"
+  },
+  {
+    "time_s": 13.506,
+    "word_end_s": 13.4,
+    "next_word_start_s": 13.611,
+    "pause_s": 0.211,
+    "kind": "breath_pause",
+    "after_word": "chemistry"
+  },
+  {
+    "time_s": 14.149,
+    "word_end_s": 14.031,
+    "next_word_start_s": 14.267,
+    "pause_s": 0.236,
+    "kind": "breath_pause",
+    "after_word": "salty"
+  },
+  {
+    "time_s": 17.341,
+    "word_end_s": 17.187,
+    "next_word_start_s": 17.496,
+    "pause_s": 0.309,
+    "kind": "segment_end",
+    "after_word": "rusts"
+  },
+  {
+    "time_s": 20.851,
+    "word_end_s": 20.757,
+    "next_word_start_s": 20.944,
+    "pause_s": 0.187,
+    "kind": "breath_pause",
+    "after_word": "brine"
+  },
+  {
+    "time_s": 24.207,
+    "word_end_s": 24.095,
+    "next_word_start_s": 24.319,
+    "pause_s": 0.224,
+    "kind": "breath_pause",
+    "after_word": "advanced"
+  },
+  {
+    "time_s": 27.0,
+    "word_end_s": 26.832,
+    "next_word_start_s": 27.167,
+    "pause_s": 0.335,
+    "kind": "breath_pause",
+    "after_word": "investigation"
+  },
+  {
+    "time_s": 28.618,
+    "word_end_s": 28.393,
+    "next_word_start_s": 29.237,
+    "pause_s": 0.844,
+    "kind": "breath_pause",
+    "after_word": "color"
+  },
+  {
+    "time_s": 33.806,
+    "word_end_s": 33.649,
+    "next_word_start_s": 33.963,
+    "pause_s": 0.314,
+    "kind": "breath_pause",
+    "after_word": "mud"
+  },
+  {
+    "time_s": 36.09,
+    "word_end_s": 36.01,
+    "next_word_start_s": 36.171,
+    "pause_s": 0.161,
+    "kind": "breath_pause",
+    "after_word": "ice"
+  },
+  {
+    "time_s": 36.715,
+    "word_end_s": 36.604,
+    "next_word_start_s": 36.827,
+    "pause_s": 0.223,
+    "kind": "breath_pause",
+    "after_word": "sediment"
+  },
+  {
+    "time_s": 37.21,
+    "word_end_s": 37.062,
+    "next_word_start_s": 37.359,
+    "pause_s": 0.297,
+    "kind": "breath_pause",
+    "after_word": "air"
+  },
+  {
+    "time_s": 43.825,
+    "word_end_s": 43.671,
+    "next_word_start_s": 43.98,
+    "pause_s": 0.309,
+    "kind": "breath_pause",
+    "after_word": "outflow"
+  },
+  {
+    "time_s": 47.167,
+    "word_end_s": 47.067,
+    "next_word_start_s": 47.267,
+    "pause_s": 0.2,
+    "kind": "breath_pause",
+    "after_word": "diatoms"
+  },
+  {
+    "time_s": 49.424,
+    "word_end_s": 49.305,
+    "next_word_start_s": 49.542,
+    "pause_s": 0.237,
+    "kind": "breath_pause",
+    "after_word": "drifters"
+  },
+  {
+    "time_s": 51.686,
+    "word_end_s": 51.58,
+    "next_word_start_s": 51.792,
+    "pause_s": 0.212,
+    "kind": "breath_pause",
+    "after_word": "connections"
+  },
+  {
+    "time_s": 53.303,
+    "word_end_s": 53.13,
+    "next_word_start_s": 53.475,
+    "pause_s": 0.345,
+    "kind": "breath_pause",
+    "after_word": "sea"
+  },
+  {
+    "time_s": 58.79,
+    "word_end_s": 58.565,
+    "next_word_start_s": 59.446,
+    "pause_s": 0.881,
+    "kind": "breath_pause",
+    "after_word": "years"
+  },
+  {
+    "time_s": 62.523,
+    "word_end_s": 62.304,
+    "next_word_start_s": 62.743,
+    "pause_s": 0.439,
+    "kind": "breath_pause",
+    "after_word": "there"
+  },
+  {
+    "time_s": 64.314,
+    "word_end_s": 64.089,
+    "next_word_start_s": 64.96,
+    "pause_s": 0.871,
+    "kind": "breath_pause",
+    "after_word": "bleeding"
+  },
+  {
+    "time_s": 66.747,
+    "word_end_s": 66.652,
+    "next_word_start_s": 66.842,
+    "pause_s": 0.19,
+    "kind": "breath_pause",
+    "after_word": "vault"
+  },
+  {
+    "time_s": 70.112,
+    "word_end_s": 69.998,
+    "next_word_start_s": 70.225,
+    "pause_s": 0.227,
+    "kind": "breath_pause",
+    "after_word": "ice"
+  },
+  {
+    "time_s": 72.767,
+    "word_end_s": 72.397,
+    "next_word_start_s": 72.767,
+    "pause_s": 0.37,
+    "kind": "segment_end",
+    "after_word": "life"
+  }
+]

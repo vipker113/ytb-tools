@@ -1,0 +1,38 @@
+profile_id: "mysterious_discovery"
+display_name: "Mysterious Discovery"
+description: "Intimate, suspenseful, atmospheric documentary tone ideal for Hidden Earth, subglacial vaults, and deep-earth anomalies."
+voice_mode: "directed_tts"
+voice_identity: "en-GB-RyanNeural"
+accent: "en-GB"
+tone: "mysterious"
+emotion: "suspense"
+energy: 3
+speaking_speed: "natural"
+base_rate_pct: -1
+base_pitch_hz: -1
+default_pause_after_ms: 360
+consistency_lock: true
+max_rate_delta_pct: 10
+max_pitch_delta_hz: 2
+emphasis_strategy: "bounded_cadence_and_subtitle_highlight"
+pronunciation:
+  McMurdo: "Mick-Murdo"
+  subglacial: "sub-glay-shul"
+  nanospheres: "nano-spheres"
+sentence_delivery_presets:
+  MYSTERIOUS:
+    rate_delta_pct: -3
+    pitch_delta_hz: -1
+    pause_after_ms: 480
+  SURPRISED_BUT_CONTROLLED:
+    rate_delta_pct: 2
+    pitch_delta_hz: 1
+    pause_after_ms: 340
+  CINEMATIC_REVEAL:
+    rate_delta_pct: -4
+    pitch_delta_hz: 0
+    pause_after_ms: 620
+  CAVEAT:
+    rate_delta_pct: -2
+    pitch_delta_hz: -1
+    pause_after_ms: 340

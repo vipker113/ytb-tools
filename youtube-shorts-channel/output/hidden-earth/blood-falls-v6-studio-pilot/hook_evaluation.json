@@ -1,0 +1,69 @@
+{
+  "slug": "blood-falls-v6-studio-pilot",
+  "evaluated_count": 3,
+  "recommended_hook_id": "H1",
+  "recommended_score": 9.41,
+  "candidates": [
+    {
+      "hook_id": "H1",
+      "archetype": "surprising_visual",
+      "spoken_line": "In Antarctica's freezing Dry Valleys, a five-story waterfall pours blood-red straight out of solid glacier ice.",
+      "word_count": 16,
+      "estimated_spoken_s": 6.04,
+      "opening_visual": "Full-bleed NSF photograph of Blood Falls crimson plume on white Taylor Glacier ice",
+      "src_file": "bf_aerial_2013.jpg",
+      "promise_fulfilled_in_seg_id": "N06",
+      "scores": {
+        "immediate_clarity": 9.4,
+        "visual_impact": 8.8,
+        "curiosity": 9.7,
+        "factual_accuracy": 9.5,
+        "relevance_to_story": 9.8,
+        "promise_fulfillment": 9.5
+      },
+      "composite_hook_score": 9.41,
+      "rationale": "Explains both the iron-oxidation chemistry behind the red plume and the 2026 marine microbe discovery in the outflow mud.",
+      "recommended": true
+    },
+    {
+      "hook_id": "H3",
+      "archetype": "paradox",
+      "spoken_line": "At minus seventeen degrees Celsius, water shouldn't flow\u2014yet a red waterfall pours continuously out of Taylor Glacier.",
+      "word_count": 18,
+      "estimated_spoken_s": 6.79,
+      "opening_visual": "Aerial view of red brine flowing across frozen Taylor Glacier terminus",
+      "src_file": "bf_aerial_2013.jpg",
+      "promise_fulfilled_in_seg_id": "N03",
+      "scores": {
+        "immediate_clarity": 9.4,
+        "visual_impact": 8.8,
+        "curiosity": 8.9,
+        "factual_accuracy": 9.5,
+        "relevance_to_story": 9.8,
+        "promise_fulfillment": 9.5
+      },
+      "composite_hook_score": 9.25,
+      "rationale": "Shows how hypersaline brine lowers the freezing point above a hidden subglacial reservoir."
+    },
+    {
+      "hook_id": "H2",
+      "archetype": "credible_mystery",
+      "spoken_line": "For more than a century, explorers stared at a crimson stain pouring out of solid Antarctic ice\u2014and guessed the wrong cause.",
+      "word_count": 22,
+      "estimated_spoken_s": 8.3,
+      "opening_visual": "Field scientist with tripod standing before Blood Falls ice wall",
+      "src_file": "bf_2010_12_14.jpg",
+      "promise_fulfilled_in_seg_id": "N02",
+      "scores": {
+        "immediate_clarity": 8.0,
+        "visual_impact": 8.8,
+        "curiosity": 8.2,
+        "factual_accuracy": 9.5,
+        "relevance_to_story": 9.37,
+        "promise_fulfillment": 9.5
+      },
+      "composite_hook_score": 8.75,
+      "rationale": "Reveals how iron brine replaced the red-algae hypothesis and what 2026 DNA/microscopy sampling uncovered."
+    }
+  ]
+}

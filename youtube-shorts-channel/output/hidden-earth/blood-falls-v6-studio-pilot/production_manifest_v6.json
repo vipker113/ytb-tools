@@ -1,0 +1,1006 @@
+{
+  "schema_name": "proof_of_wonder_production_manifest",
+  "manifest_version": "6.0",
+  "generated_at_utc": "2026-11-02T10:16:26.420157+00:00",
+  "slug": "blood-falls-v6-studio-pilot",
+  "channel_name": "Proof of Wonder",
+  "category_playlist": "Hidden Earth",
+  "topic": "Antarctica's Blood Falls \u2014 Subglacial Iron Brine & 2026 Marine Micro-Eukaryote Discovery",
+  "production_profile": {
+    "profile_name": "mysterious_earth_exploration",
+    "profile_version": "6.0.0",
+    "style_overrides": {
+      "sound_design": {
+        "scene_audio_profile": "polar_glacial"
+      },
+      "asset_selection": {
+        "target_moving_footage_ratio": 0.82
+      }
+    },
+    "visual_scoring_weights": {
+      "direct_relevance": 0.3,
+      "visual_clarity": 0.2,
+      "authenticity": 0.22,
+      "technical_quality": 0.1,
+      "composition_potential": 0.1,
+      "motion_storytelling": 0.05,
+      "license_verification": 0.03,
+      "min_direct_relevance_floor": 0.35
+    }
+  },
+  "script_version": {
+    "version": "v6.0.0",
+    "script_sha256": "c960856efe7f69ec73352175371ffa86ae483570fb31c42c526ecbacff4659bf",
+    "segment_count": 8,
+    "word_count": 183,
+    "opening_hook_type": "surprising_visual",
+    "layer2_pivot_seg_id": "N04",
+    "scientific_caveat_seg_id": "N07",
+    "factual_references": [
+      {
+        "citation": "Zoumplis, A. et al. (2026). Molecular evidence for a relict marine community in an Antarctic Dry Valleys subglacial brine-fed system. Nature Geoscience, 19, 1105\u20131114.",
+        "url": "https://www.nature.com/articles/s41561-026-02054-6",
+        "doi": "10.1038/s41561-026-02054-6",
+        "supported_claims": "167 regional samples across water, sediment, airborne, and marine reference sites; distinctive marine-related micro-eukaryotic community (diatoms, haptophytes, dinoflagellates, ciliates) around Taylor Glacier terminus; caveat that continuous multi-million-year subglacial survival of exact sampled organisms is not proven."
+      },
+      {
+        "citation": "Yale News (August 4, 2026). Red marks the spot: A network of complex microbes discovered at mysterious Blood Falls.",
+        "url": "https://news.yale.edu/2026/08/04/red-marks-spot-network-complex-microbes-discovered-mysterious-blood-falls",
+        "doi": null,
+        "supported_claims": "Accessible research summary and context on ongoing investigation into microbial connectivity."
+      },
+      {
+        "citation": "NASA Earth Observatory \u2014 Blood Falls, Antarctica's Dry Valleys.",
+        "url": "https://science.nasa.gov/earth/earth-observatory/blood-falls-antarcticas-dry-valleys-35535/",
+        "doi": null,
+        "supported_claims": "Location at Taylor Glacier terminus in McMurdo Dry Valleys; salty iron-rich brine oxidizing on air contact; hypothesized ancient seawater origin."
+      },
+      {
+        "citation": "National Science Foundation (U.S. Antarctic Program) \u2014 Science on the Ice (Fifth Edition).",
+        "url": "https://nsf-gov-resources.nsf.gov/files/NSF-Science-on-the-Ice-fifth-edition.pdf",
+        "doi": null,
+        "supported_claims": "U.S. Antarctic Program / McMurdo Dry Valleys LTER scientific field context."
+      }
+    ]
+  },
+  "voice_direction_profile": {
+    "voice_input_mode": "directed_tts",
+    "profile_id": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "annotated_voice_script_file": "/Applications/code/science-knowledge/youtube-shorts-channel/episodes/blood_falls_v6_voice_script.txt",
+    "approval_lock": {
+      "locked": true,
+      "synchronized": true,
+      "approved_at_utc": "2026-11-02T10:12:48.091406+00:00",
+      "script_matches": true,
+      "audio_matches": true,
+      "timings_matches": true
+    }
+  },
+  "audio_source_and_final_narration": {
+    "voice_input_mode": "directed_tts",
+    "uploaded_narration_file": null,
+    "voice_reference_file": null,
+    "voice_owner_consent": false,
+    "narration_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/narration.mp3",
+    "final_audio_mix_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/final_audio_mix.mp3",
+    "word_timings_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/word_timings.json",
+    "total_duration_s": 74.0667,
+    "total_frames_30fps": 2222,
+    "five_layer_stems": {
+      "layer_1_narration": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/work_audio/layer_1_narration.wav",
+      "layer_2_music": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/work_audio/layer_2_music.wav",
+      "layer_3_ambience": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/work_audio/layer_3_ambience.wav",
+      "layer_4_natural_sounds": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/work_audio/layer_4_natural_sounds.wav",
+      "layer_5_cinematic_sfx": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/work_audio/layer_5_cinematic_sfx.wav"
+    },
+    "audio_diagnostics": {
+      "integrated_lufs": -16.0,
+      "loudness_range_lra_lu": 1.5,
+      "true_peak_dbtp": -2.1,
+      "speech_crest_factor_db": 13.9,
+      "clipped_samples_count": 0,
+      "excessive_silence_count": 0,
+      "excessive_silences": [],
+      "voice_peak_dbfs": -2.33
+    }
+  },
+  "source_assets": [
+    {
+      "local_file": "nasa_svs_3482_lima_flyover.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "NASA SVS #3482 \u2014 Antarctica: Flyover of McMurdo Dry Valleys & Taylor Glacier (LIMA)",
+      "creator_agency": "NASA GSFC Scientific Visualization Studio / USGS / NSF",
+      "source_page_url": "https://svs.gsfc.nasa.gov/3482",
+      "direct_media_url": "https://svs.gsfc.nasa.gov/vis/a000000/a003400/a003482/Flyover.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_m12666_nansen_scientists_ice.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "NASA GSFC m12666 \u2014 Scientists Bury GPS in Antarctic Ice to Measure Effects of Tides (Victoria Land)",
+      "creator_agency": "NASA Goddard Space Flight Center (Joy Ng / Ryan Walker / Christine Dow)",
+      "source_page_url": "https://images.nasa.gov/details/GSFC_20170811_Nansen_m12666",
+      "direct_media_url": "https://images-assets.nasa.gov/video/GSFC_20170811_Nansen_m12666/GSFC_20170811_Nansen_m12666~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_m11707_mcmurdo_black_island.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "NASA GSFC m11707 \u2014 OIB: Fourwheeling Antarctica (McMurdo Sound / NSF Helicopter Field Ops)",
+      "creator_agency": "NASA Goddard Space Flight Center / Operation IceBridge",
+      "source_page_url": "https://images.nasa.gov/details/GSFC_20141008_Black_Island_m11707",
+      "direct_media_url": "https://images-assets.nasa.gov/video/GSFC_20141008_Black_Island_m11707/GSFC_20141008_Black_Island_m11707~medium.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "dvids_994230_nsf_heli_2026.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "DVIDS #994230 \u2014 USCGC Polar Star conducts helicopter operation with National Science Foundation in Antarctica (Operation Deep Freeze 2026)",
+      "creator_agency": "U.S. Coast Guard / National Science Foundation (Operation Deep Freeze 2026)",
+      "source_page_url": "https://www.dvidshub.net/video/994230/uscgc-polar-star-wagb-10-conducts-helicopter-operation-with-national-science-foundation-antarctica-during-operation-deep-freeze-2026",
+      "direct_media_url": "https://d34w7g4gy10iej.cloudfront.net/video/2601/DOD_111500385/DOD_111500385.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_svs14197_scientists_in_field_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "File:Scientists in the Field (SVS14197 - Compilation4-SnowEx-GRIPS).webm",
+      "creator_agency": "NASA Goddard Space Flight Center Scientific Visualization Studio (SVS #14197)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Scientists_in_the_Field_(SVS14197_-_Compilation4-SnowEx-GRIPS).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Scientists_in_the_Field_%28SVS14197_-_Compilation4-SnowEx-GRIPS%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_svs_10028_mcmurdo_oib_720p.mov",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "NASA SVS #10028 \u2014 OIB: McMurdo Accomplished",
+      "creator_agency": "NASA Goddard Space Flight Center / Operation IceBridge (Jefferson Beck)",
+      "source_page_url": "https://svs.gsfc.nasa.gov/10028",
+      "direct_media_url": "https://svs.gsfc.nasa.gov/vis/a010000/a010000/a010028/MCMURDO_FINAL_youtube_hq.mov",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_svs_11621_across_ross_720p.mov",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "NASA SVS #10028 / #11621 \u2014 OIB: Across the Ross",
+      "creator_agency": "NASA Goddard Space Flight Center / Michael Studinger / Jefferson Beck",
+      "source_page_url": "https://svs.gsfc.nasa.gov/11621",
+      "direct_media_url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011621/ACROSS_THE_ROSS_youtube_hq.mov",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "wiki_zdf_ice_core_lab_720p.webm",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "File:Klima-Archiv Eislabor (ZDF, Terra X) 720p HD 50FPS.webm",
+      "creator_agency": "ZDF / Terra X / Frank Wilhelms / AWI (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Klima-Archiv_Eislabor_(ZDF,_Terra_X)_720p_HD_50FPS.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Klima-Archiv_Eislabor_%28ZDF%2C_Terra_X%29_720p_HD_50FPS.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "micro_diatom_seah.webm",
+      "media_type": "video",
+      "priority_tier": 4,
+      "title": "File:Diatom movement DSC 1511.webm",
+      "creator_agency": "Brandon Seah (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Diatom_movement_DSC_1511.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Diatom_movement_DSC_1511.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "wiki_holt_flagellate_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 4,
+      "title": "File:Holt et al. (2023) Swimming cells of Eleftheros xomoi and flagella beating, visualised by light microscopy.webm",
+      "creator_agency": "Holt et al. (2023) / Wikimedia Commons",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Holt_et_al._(2023)_Swimming_cells_of_Eleftheros_xomoi_and_flagella_beating,_visualised_by_light_microscopy.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Holt_et_al._%282023%29_Swimming_cells_of_Eleftheros_xomoi_and_flagella_beating%2C_visualised_by_light_microscopy.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "bf_aerial_2013.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "File:Blood Falls aerial view 2013-12-21.jpg",
+      "creator_agency": "Peter Rejcek / National Science Foundation",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Blood_Falls_aerial_view_2013-12-21.jpg",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Blood_Falls_aerial_view_2013-12-21.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "bf_2010_12_14.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "File:Blood Falls 2010-12-14.jpg",
+      "creator_agency": "Peter Rejcek / National Science Foundation",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Blood_Falls_2010-12-14.jpg",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Blood_Falls_2010-12-14.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "subglacial_brine_clean_v3.mp4",
+      "media_type": "diagram",
+      "priority_tier": 6,
+      "title": "Photo-Textured Geological Cross-Section: Hypothesized Subglacial Brine System Beneath Taylor Glacier",
+      "creator_agency": "Proof of Wonder Documentary Studio v6.0",
+      "source_page_url": "local://pipeline/generate_blood_falls_diagram.py",
+      "direct_media_url": "local://work_clips/subglacial_brine_clean_v3.mp4",
+      "is_first_party_original": true
+    }
+  ],
+  "licensing_metadata": {
+    "strict_zero_cost_budget": true,
+    "source_register_csv": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/source_register.csv",
+    "source_register_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/source_register.md",
+    "excluded_sources_notes": [
+      "USAP-DC Blood Falls time-lapse & thermal datasets (usap-dc.org/view/dataset/601164 & 601169): Excluded by commercial-rights gate because USAP-DC licenses them under CC BY-NC 4.0 (Non-Commercial), prohibiting monetized YouTube reuse.",
+      "PBS Terra ('Why is this Antarctic Glacier Bleeding?'): Excluded because broadcast video is copyrighted by PBS rather than open Public Domain / CC BY.",
+      "Internet Archive NSF Science Nation clips (640x360 SD): Excluded by 9:16 crop-feasibility gate (< 540px vertical height)."
+    ],
+    "licenses": [
+      {
+        "local_file": "nasa_svs_3482_lima_flyover.mp4",
+        "license": "Public Domain (NASA / USGS / NSF LIMA)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Satellite flyover: NASA/GSFC Scientific Visualization Studio, USGS, and NSF (SVS #3482, Public Domain)"
+      },
+      {
+        "local_file": "nasa_m12666_nansen_scientists_ice.mp4",
+        "license": "Public Domain (NASA)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Antarctic glacier fieldwork & helicopter footage: NASA/Goddard Space Flight Center (GSFC_20170811_Nansen_m12666, Public Domain)"
+      },
+      {
+        "local_file": "nasa_m11707_mcmurdo_black_island.mp4",
+        "license": "Public Domain (NASA)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "NSF helicopter field operations in McMurdo: NASA/Goddard Space Flight Center (GSFC_20141008_Black_Island_m11707, Public Domain)"
+      },
+      {
+        "local_file": "dvids_994230_nsf_heli_2026.mp4",
+        "license": "Public Domain (U.S. Federal Government \u2014 DoD / USCG / NSF)",
+        "license_url": "https://www.dvidshub.net/about/copyright",
+        "required_attribution": "2026 NSF Antarctic helicopter field operations: U.S. Coast Guard / National Science Foundation, Operation Deep Freeze 2026 (DVIDS #994230, Public Domain)"
+      },
+      {
+        "local_file": "nasa_svs14197_scientists_in_field_1080p.webm",
+        "license": "Public Domain (NASA)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Antarctic field instrumentation team: NASA/GSFC Scientific Visualization Studio (SVS #14197, Public Domain)"
+      },
+      {
+        "local_file": "nasa_svs_10028_mcmurdo_oib_720p.mov",
+        "license": "Public Domain (NASA)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Transantarctic glacier aerial footage: NASA/Goddard Space Flight Center, SVS #10028 (Public Domain)"
+      },
+      {
+        "local_file": "nasa_svs_11621_across_ross_720p.mov",
+        "license": "Public Domain (NASA)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Antarctic airborne ice-radar survey footage: NASA/Goddard Space Flight Center, SVS #11621 (Public Domain)"
+      },
+      {
+        "local_file": "wiki_zdf_ice_core_lab_720p.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Antarctic ice-core laboratory & microscopy prep footage: ZDF / Terra X, \"Klima-Archiv Eislabor\", CC BY 4.0 (cropped for 9:16)"
+      },
+      {
+        "local_file": "micro_diatom_seah.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Illustrative live diatom microscopy: Brandon Seah, \"Diatom movement DSC 1511\", CC BY 4.0 (cropped for 9:16; illustrative taxon, not Blood Falls specimen)"
+      },
+      {
+        "local_file": "wiki_holt_flagellate_1080p.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Illustrative live marine micro-eukaryote microscopy: Holt et al. (2023), CC BY 4.0 (cropped for 9:16; illustrative taxon, not Blood Falls specimen)"
+      },
+      {
+        "local_file": "bf_aerial_2013.jpg",
+        "license": "Public Domain (U.S. Federal Government / NSF)",
+        "license_url": "https://www.nsf.gov/policies/reuse.jsp",
+        "required_attribution": "Photo: Peter Rejcek / National Science Foundation (Public Domain)"
+      },
+      {
+        "local_file": "bf_2010_12_14.jpg",
+        "license": "Public Domain (U.S. Federal Government / NSF)",
+        "license_url": "https://www.nsf.gov/policies/reuse.jsp",
+        "required_attribution": "Photo: Peter Rejcek / National Science Foundation (Public Domain)"
+      },
+      {
+        "local_file": "subglacial_brine_clean_v3.mp4",
+        "license": "100% Original First-Party Graphic",
+        "license_url": "N/A",
+        "required_attribution": "Original illustrative geological cross-section textured with NSF Antarctic aerial imagery (Public Domain), based on Mikucki et al. / Zoumplis et al. (2026)"
+      }
+    ]
+  },
+  "shot_list": [
+    {
+      "sid": "S01",
+      "kind": "still_full",
+      "src_file": "bf_aerial_2013.jpg",
+      "camera_perspective": "aerial",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Immediate visual hook showing the actual Blood Falls plume (N01a)",
+      "editorial_rationale": "Immediate authentic visual proof of the crimson plume on Taylor Glacier."
+    },
+    {
+      "sid": "S02",
+      "kind": "video_full",
+      "src_file": "nasa_m12666_nansen_scientists_ice.mp4",
+      "camera_perspective": "extreme_wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "aerial_sweep",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Live 1080p helicopter sweep along towering Victoria Land glacier fissures (N01b)",
+      "editorial_rationale": "Conveys physical scale of a five-story Antarctic glacier terminus in live motion."
+    },
+    {
+      "sid": "S03",
+      "kind": "video_full",
+      "src_file": "nasa_svs_3482_lima_flyover.mp4",
+      "camera_perspective": "satellite_or_telescope",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "aerial_sweep",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Moving geographic flight up Taylor Valley onto Taylor Glacier (N02a)",
+      "editorial_rationale": "Establishes exact Dry Valleys geography of Taylor Glacier from real NASA/USGS Landsat imagery."
+    },
+    {
+      "sid": "S04",
+      "kind": "video_full",
+      "src_file": "wiki_zdf_ice_core_lab_720p.webm",
+      "camera_perspective": "macro",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Hands-on examination of trapped Antarctic glacier ice inclusions (N02b)",
+      "editorial_rationale": "Shifts from satellite geography to close-up physical chemistry of glacier ice."
+    },
+    {
+      "sid": "S05",
+      "kind": "video_full",
+      "src_file": "nasa_svs14197_scientists_in_field_1080p.webm",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Hands-on Antarctic field scientists working on exposed glacier ice in cold air (N02c)",
+      "editorial_rationale": "Grounds surface air-contact oxidation in real Antarctic ice-surface fieldwork."
+    },
+    {
+      "sid": "S06",
+      "kind": "diagram",
+      "src_file": "subglacial_brine_clean_v3.mp4",
+      "camera_perspective": "labeled_visualization",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.55,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": false,
+      "has_human_interaction": false,
+      "story_beat": "Subglacial trapped brine reservoir 400m beneath Taylor Glacier (N03a)",
+      "editorial_rationale": "Visualizes subglacial brine conduit geometry that no physical camera can film underground."
+    },
+    {
+      "sid": "S07",
+      "kind": "video_full",
+      "src_file": "nasa_svs_3482_lima_flyover.mp4",
+      "camera_perspective": "satellite_or_telescope",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "aerial_sweep",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.55,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Coastal McMurdo Sound to Taylor Valley ancient marine basin geometry (N03b)",
+      "editorial_rationale": "Shows the real McMurdo Sound marine coastline connected to Taylor Valley's ancient basin."
+    },
+    {
+      "sid": "S08",
+      "kind": "video_full",
+      "src_file": "nasa_svs_11621_across_ross_720p.mov",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "context",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Scientists probing subglacial ice history with airborne radar (N03c)",
+      "editorial_rationale": "Shows real airborne ice-penetrating radar researchers probing subglacial water layers."
+    },
+    {
+      "sid": "S09",
+      "kind": "video_full",
+      "src_file": "nasa_m11707_mcmurdo_black_island.mp4",
+      "camera_perspective": "extreme_wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Mid-video retention pivot: NSF helicopter & field researcher on McMurdo rock and snow (N04)",
+      "editorial_rationale": "High-energy authentic NSF expedition shot re-engaging viewer attention at the Layer-2 pivot."
+    },
+    {
+      "sid": "S10",
+      "kind": "video_full",
+      "src_file": "nasa_m12666_nansen_scientists_ice.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Hands-on USAP glaciologists excavating Antarctic glacier ice in the field (N05a)",
+      "editorial_rationale": "Directly visualizes hands-on Antarctic field sampling as the 167 samples are cited."
+    },
+    {
+      "sid": "S11",
+      "kind": "video_full",
+      "src_file": "wiki_zdf_ice_core_lab_720p.webm",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Glaciologist preparing extracted Antarctic ice sample under subzero microscope (N05b)",
+      "editorial_rationale": "Bridges outdoor glacier excavation to subzero laboratory microscopy."
+    },
+    {
+      "sid": "S12",
+      "kind": "video_full",
+      "src_file": "micro_diatom_seah.webm",
+      "camera_perspective": "macro",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "auto_salient",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.55,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Marine-related micro-eukaryote taxa: live gliding diatoms (N06a)",
+      "editorial_rationale": "Shows actual living diatom cells gliding under light microscopy with transparent illustrative context note."
+    },
+    {
+      "sid": "S13",
+      "kind": "video_full",
+      "src_file": "wiki_holt_flagellate_1080p.webm",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p live swimming flagellated marine micro-eukaryotes (N06b)",
+      "editorial_rationale": "Visualizes single-celled flagellated marine micro-eukaryotes at 1080p clarity."
+    },
+    {
+      "sid": "S14",
+      "kind": "video_full",
+      "src_file": "nasa_svs_11621_across_ross_720p.mov",
+      "camera_perspective": "aerial",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "aerial_sweep",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Real Antarctic Ross Sea open-water leads & fractured sea ice (N06c)",
+      "editorial_rationale": "Contrasts microscopic ocean drifters with vast fractured Ross Sea ice miles from Taylor Glacier."
+    },
+    {
+      "sid": "S15",
+      "kind": "video_full",
+      "src_file": "nasa_svs_10028_mcmurdo_oib_720p.mov",
+      "camera_perspective": "extreme_wide",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "aerial_sweep",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Mandatory scientific caveat against unproven multi-million-year isolation claims (N07a)",
+      "editorial_rationale": "Provides contemplative geological scale while delivering the mandatory scientific caveat."
+    },
+    {
+      "sid": "S16",
+      "kind": "video_full",
+      "src_file": "nasa_svs14197_scientists_in_field_1080p.webm",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "context",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Sunlit 1080p Antarctic researcher inspecting remote field instrumentation on the ice (N07b)",
+      "editorial_rationale": "Shows active field researchers continuing ongoing investigation on the ice."
+    },
+    {
+      "sid": "S17",
+      "kind": "still_full",
+      "src_file": "bf_2010_12_14.jpg",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Scientist standing directly before Blood Falls' crimson ice, mud, and brine (N08a)",
+      "editorial_rationale": "Brings the viewer back face-to-face with Blood Falls now armed with full scientific understanding."
+    },
+    {
+      "sid": "S18",
+      "kind": "video_full",
+      "src_file": "dvids_994230_nsf_heli_2026.mp4",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.6,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Final moving 1080p documentary payoff: 2026 NSF field team on vast Antarctic ice (N08b)",
+      "editorial_rationale": "Closes on authentic 2026 NSF Antarctic expedition motion, echoing the white-and-red palette of Frame 0."
+    }
+  ],
+  "scene_timing": {
+    "fps": 30,
+    "semantic_timeline_manifest_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/semantic_timeline_manifest.json",
+    "timed_scenes": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 2.2333,
+        "duration_s": 2.2333,
+        "start_frame": 0,
+        "end_frame": 67
+      },
+      {
+        "sid": "S02",
+        "start_s": 2.2333,
+        "end_s": 6.7333,
+        "duration_s": 4.5,
+        "start_frame": 67,
+        "end_frame": 202
+      },
+      {
+        "sid": "S03",
+        "start_s": 6.7333,
+        "end_s": 10.9333,
+        "duration_s": 4.2,
+        "start_frame": 202,
+        "end_frame": 328
+      },
+      {
+        "sid": "S04",
+        "start_s": 10.9333,
+        "end_s": 14.2333,
+        "duration_s": 3.3,
+        "start_frame": 328,
+        "end_frame": 427
+      },
+      {
+        "sid": "S05",
+        "start_s": 14.2333,
+        "end_s": 17.5333,
+        "duration_s": 3.3,
+        "start_frame": 427,
+        "end_frame": 526
+      },
+      {
+        "sid": "S06",
+        "start_s": 17.5333,
+        "end_s": 21.2667,
+        "duration_s": 3.7334,
+        "start_frame": 526,
+        "end_frame": 638
+      },
+      {
+        "sid": "S07",
+        "start_s": 21.2667,
+        "end_s": 24.8,
+        "duration_s": 3.5333,
+        "start_frame": 638,
+        "end_frame": 744
+      },
+      {
+        "sid": "S08",
+        "start_s": 24.8,
+        "end_s": 27.8,
+        "duration_s": 3.0,
+        "start_frame": 744,
+        "end_frame": 834
+      },
+      {
+        "sid": "S09",
+        "start_s": 27.8,
+        "end_s": 34.5,
+        "duration_s": 6.7,
+        "start_frame": 834,
+        "end_frame": 1035
+      },
+      {
+        "sid": "S10",
+        "start_s": 34.5,
+        "end_s": 38.1333,
+        "duration_s": 3.6333,
+        "start_frame": 1035,
+        "end_frame": 1144
+      },
+      {
+        "sid": "S11",
+        "start_s": 38.1333,
+        "end_s": 44.8667,
+        "duration_s": 6.7334,
+        "start_frame": 1144,
+        "end_frame": 1346
+      },
+      {
+        "sid": "S12",
+        "start_s": 44.8667,
+        "end_s": 48.4,
+        "duration_s": 3.5333,
+        "start_frame": 1346,
+        "end_frame": 1452
+      },
+      {
+        "sid": "S13",
+        "start_s": 48.4,
+        "end_s": 50.7333,
+        "duration_s": 2.3333,
+        "start_frame": 1452,
+        "end_frame": 1522
+      },
+      {
+        "sid": "S14",
+        "start_s": 50.7333,
+        "end_s": 54.8333,
+        "duration_s": 4.1,
+        "start_frame": 1522,
+        "end_frame": 1645
+      },
+      {
+        "sid": "S15",
+        "start_s": 54.8333,
+        "end_s": 60.6667,
+        "duration_s": 5.8334,
+        "start_frame": 1645,
+        "end_frame": 1820
+      },
+      {
+        "sid": "S16",
+        "start_s": 60.6667,
+        "end_s": 63.8667,
+        "duration_s": 3.2,
+        "start_frame": 1820,
+        "end_frame": 1916
+      },
+      {
+        "sid": "S17",
+        "start_s": 63.8667,
+        "end_s": 67.8667,
+        "duration_s": 4.0,
+        "start_frame": 1916,
+        "end_frame": 2036
+      },
+      {
+        "sid": "S18",
+        "start_s": 67.8667,
+        "end_s": 74.0667,
+        "duration_s": 6.2,
+        "start_frame": 2036,
+        "end_frame": 2222
+      }
+    ]
+  },
+  "subtitle_version": {
+    "version": "v6.0.0",
+    "style": "cinema_boxless",
+    "emphasis_mode": "color_accent",
+    "word_by_word_animation": false,
+    "cue_count": 36,
+    "srt_path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/subtitles.srt"
+  },
+  "thumbnail_variants": {
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/thumbnail.jpg",
+    "mobile_preview_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/thumbnail_small_preview_sheet.jpg",
+    "concepts_comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/thumbnail_concepts_comparison_sheet.jpg",
+    "concepts": [
+      {
+        "concept_id": "A",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/thumbnail_concept_A.jpg",
+        "source_asset": "bf_aerial_2013.jpg",
+        "matches_opening_scene_asset": true,
+        "headline_text": "ANTARCTICA'S|RED WATERFALL",
+        "headline_word_count": 3,
+        "kicker_text": "TAYLOR GLACIER",
+        "concept_rationale": "Matches Frame 0 opening NSF photograph; stark crimson-on-white glacier contrast legible at 160x284 mobile size.",
+        "size_kb": 1470.8,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "bf_aerial_2013.jpg",
+          "sharpness_score": 4.11,
+          "subject_separation_score": 100.47,
+          "combined_score": 57.11,
+          "recommended_cx": 0.5714,
+          "recommended_cy": 0.5902
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "B",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/thumbnail_concept_B.jpg",
+        "source_asset": "bf_2010_12_14.jpg",
+        "matches_opening_scene_asset": false,
+        "headline_text": "400M UNDER|SOLID ICE",
+        "headline_word_count": 4,
+        "kicker_text": "HIDDEN EARTH",
+        "concept_rationale": "Human-scale curiosity: USAP researcher with tripod standing directly before the rust-stained Blood Falls ice wall.",
+        "size_kb": 1847.5,
+        "jpeg_quality": 94,
+        "legibility_metrics": {
+          "source_name": "bf_2010_12_14.jpg",
+          "sharpness_score": 6.02,
+          "subject_separation_score": 60.15,
+          "combined_score": 35.79,
+          "recommended_cx": 0.4525,
+          "recommended_cy": 0.4571
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "C",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/thumbnail_concept_C.jpg",
+        "source_asset": "bf_aerial_2013.jpg",
+        "matches_opening_scene_asset": true,
+        "headline_text": "",
+        "headline_word_count": 0,
+        "kicker_text": "",
+        "concept_rationale": "Zero-text pure documentary photograph testing raw natural phenomenon curiosity on mobile Shorts shelf.",
+        "size_kb": 1633.5,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "bf_aerial_2013.jpg",
+          "sharpness_score": 4.11,
+          "subject_separation_score": 100.47,
+          "combined_score": 57.11,
+          "recommended_cx": 0.5714,
+          "recommended_cy": 0.5902
+        },
+        "actual_analytics_outcome": null
+      }
+    ]
+  },
+  "rendering_configuration": {
+    "output_spec": {
+      "aspect_ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video_codec_master": "libx264",
+      "video_crf_master": 15,
+      "video_preset_master": "medium",
+      "video_profile": "high",
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "audio_codec": "aac",
+      "audio_bitrate": "192k",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "target_loudness_lufs": -16.0
+    },
+    "color_science": {
+      "enable_filmic_grade": true,
+      "cast_tame_strength": 0.16,
+      "luma_grain_sigma": 2.2
+    },
+    "benchmarks": {
+      "slug": "blood-falls-v6-studio-pilot",
+      "encode_mode": "master",
+      "shots_render_or_cache_s": 0.008,
+      "timeline_assembly_and_mux_s": 117.714,
+      "thumbnail_concepts_s": 3.413,
+      "total_render_master_s": 121.324,
+      "rendered_frames": 2222,
+      "effective_render_fps": 18.31
+    }
+  },
+  "qa_results": {
+    "qc_measurements_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/qc_measurements.json",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/qc_report.md",
+    "summary": {
+      "overall_pass": true,
+      "failed_gates_count": 0,
+      "moving_footage_pct": 86.54,
+      "whisper_normalized_match_ratio": 0.9767,
+      "integrated_lufs": -16.0,
+      "true_peak_dbtp": -2.1,
+      "protected_projects_intact": true
+    }
+  },
+  "final_output_locations": {
+    "output_dir": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot",
+    "master_mp4": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/blood-falls-v6-studio-pilot.mp4",
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/thumbnail.jpg",
+    "subtitles_srt": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/subtitles.srt",
+    "script_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/script.md",
+    "retention_plan_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/retention_plan.md",
+    "storyboard_manifest_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/storyboard_and_shot_manifest.md",
+    "youtube_metadata_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/youtube_metadata.md",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot/qc_report.md"
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "videos_analyzed_count": 8,
+  "methodology_disclaimer": "Correlation != Causation: Category, hook, voice, and pacing averages below summarize observed historical associations only. Small sample sizes (N < 15 per group) are subject to topic variance and impression-cohort shifts.",
+  "category_associations": {},
+  "opening_hook_associations": {},
+  "video_reviews": [
+    {
+      "video_id": "nwRCGwb779Y",
+      "title": "What's Actually Inside Gemstone Mines? \ud83d\udc8e\u2728",
+      "slug": "gemstone-mine-secrets-v4-documentary",
+      "metrics": {
+        "video_id": "nwRCGwb779Y",
+        "title": "What's Actually Inside Gemstone Mines? \ud83d\udc8e\u2728",
+        "slug": "gemstone-mine-secrets-v4-documentary",
+        "views": 1091,
+        "engaged_views": 1091,
+        "viewed_vs_swiped_away_pct": null,
+        "average_view_duration_s": null,
+        "average_percentage_viewed_pct": null,
+        "likes": 11,
+        "comments": 1,
+        "subscribers_gained": 0,
+        "traffic_sources": {},
+        "retention_curve_pct": [],
+        "rewatch_spikes_count": 0,
+        "video_duration_s": 77.0,
+        "topic_category": "hidden-earth",
+        "opening_hook_type": "",
+        "thumbnail_concept": "",
+        "voice_direction_profile": "",
+        "editing_style_profile": "pow_documentary_v3",
+        "mean_shot_duration_s": 3.847,
+        "spoken_wpm": 146.5,
+        "layer2_reveal_time_s": 36.145
+      },
+      "findings": [
+        {
+          "question": "Was the narration too slow or too fast?",
+          "observation": "Narration cadence (146.5 WPM) sits inside natural documentary range (135\u2013175 WPM).",
+          "evidence_level": "measured_cadence"
+        },
+        {
+          "question": "Subscriber & returning-interest signal",
+          "observation": "Generated 0 subscribers across 1091 views (0.0 subs / 1,000 views).",
+          "evidence_level": "direct_metric"
+        }
+      ],
+      "future_creative_recommendations": [],
+      "causation_guardrail": "Observational Diagnostics Only: Associations between hook type, shot duration, voice profile, or thumbnail concept and retention metrics represent correlation on observational channel data, NOT proven causation. Confirm hypotheses across multiple topics and YouTube Studio A/B tests."
+    },
+    {
+      "video_id": "Fc8guMtDjmk",
+      "title": "Why These Lava Cave Walls Look Like Gold",
+      "slug": "",
+      "metrics": {
+        "video_id": "Fc8guMtDjmk",
+        "title": "Why These Lava Cave Walls Look Like Gold",
+        "slug": "",
+        "views": 1272,
+        "engaged_views": 1272,
+        "viewed_vs_swiped_away_pct": null,
+        "average_view_duration_s": null,
+        "average_percentage_viewed_pct": null,
+        "likes": 14,
+        "comments": 3,
+        "subscribers_gained": 0,
+        "traffic_sources": {},
+        "retention_curve_pct": [],
+        "rewatch_spikes_count": 0,
+        "video_duration_s": 77.0,
+        "topic_category": "",
+        "opening_hook_type": "",
+        "thumbnail_concept": "",
+        "voice_direction_profile": "",
+        "editing_style_profile": "",
+        "mean_shot_duration_s": null,
+        "spoken_wpm": null,
+        "layer2_reveal_time_s": null
+      },
+      "findings": [
+        {
+          "question": "Subscriber & returning-interest signal",
+          "observation": "Generated 0 subscribers across 1272 views (0.0 subs / 1,000 views).",
+          "evidence_level": "direct_metric"
+        }
+      ],
+      "future_creative_recommendations": [],
+      "causation_guardrail": "Observational Diagnostics Only: Associations between hook type, shot duration, voice profile, or thumbnail concept and retention metrics represent correlation on observational channel data, NOT proven causation. Confirm hypotheses across multiple topics and YouTube Studio A/B tests."
+    },
+    {
+      "video_id": "9E7xFVkGdp8",
+      "title": "The Deadly Lakes Hidden Beneath the Ocean",
+      "slug": "",
+      "metrics": {
+        "video_id": "9E7xFVkGdp8",
+        "title": "The Deadly Lakes Hidden Beneath the Ocean",
+        "slug": "",
+        "views": 1294,
+        "engaged_views": 1294,
+        "viewed_vs_swiped_away_pct": null,
+        "average_view_duration_s": null,
+        "average_percentage_viewed_pct": null,
+        "likes": 30,
+        "comments": 3,
+        "subscribers_gained": 0,
+        "traffic_sources": {},
+        "retention_curve_pct": [],
+        "rewatch_spikes_count": 0,
+        "video_duration_s": 70.0,
+        "topic_category": "",
+        "opening_hook_type": "",
+        "thumbnail_concept": "",
+        "voice_direction_profile": "",
+        "editing_style_profile": "",
+        "mean_shot_duration_s": null,
+        "spoken_wpm": null,
+        "layer2_reveal_time_s": null
+      },
+      "findings": [
+        {
+          "question": "Subscriber & returning-interest signal",
+          "observation": "Generated 0 subscribers across 1294 views (0.0 subs / 1,000 views).",
+          "evidence_level": "direct_metric"
+        }
+      ],
+      "future_creative_recommendations": [],
+      "causation_guardrail": "Observational Diagnostics Only: Associations between hook type, shot duration, voice profile, or thumbnail concept and retention metrics represent correlation on observational channel data, NOT proven causation. Confirm hypotheses across multiple topics and YouTube Studio A/B tests."
+    },
+    {
+      "video_id": "tM1dJ3ziTFA",
+      "title": "Why This Antarctic Glacier Looks Like It's Bleeding",
+      "slug": "blood-falls-v3-documentary",
+      "metrics": {
+        "video_id": "tM1dJ3ziTFA",
+        "title": "Why This Antarctic Glacier Looks Like It's Bleeding",
+        "slug": "blood-falls-v3-documentary",
+        "views": 1229,
+        "engaged_views": 1229,
+        "viewed_vs_swiped_away_pct": null,
+        "average_view_duration_s": null,
+        "average_percentage_viewed_pct": null,
+        "likes": 31,
+        "comments": 1,
+        "subscribers_gained": 0,
+        "traffic_sources": {},
+        "retention_curve_pct": [],
+        "rewatch_spikes_count": 0,
+        "video_duration_s": 85.0,
+        "topic_category": "hidden-earth",
+        "opening_hook_type": "",
+        "thumbnail_concept": "",
+        "voice_direction_profile": "",
+        "editing_style_profile": "pow_documentary_v3",
+        "mean_shot_duration_s": 4.043,
+        "spoken_wpm": 130.6,
+        "layer2_reveal_time_s": 33.963
+      },
+      "findings": [
+        {
+          "question": "Was the narration too slow or too fast?",
+          "observation": "Narration cadence (130.6 WPM) sits inside natural documentary range (135\u2013175 WPM).",
+          "evidence_level": "measured_cadence"
+        },
+        {
+          "question": "Subscriber & returning-interest signal",
+          "observation": "Generated 0 subscribers across 1229 views (0.0 subs / 1,000 views).",
+          "evidence_level": "direct_metric"
+        }
+      ],
+      "future_creative_recommendations": [],
+      "causation_guardrail": "Observational Diagnostics Only: Associations between hook type, shot duration, voice profile, or thumbnail concept and retention metrics represent correlation on observational channel data, NOT proven causation. Confirm hypotheses across multiple topics and YouTube Studio A/B tests."
+    },
+    {
+      "video_id": "_M_oO2APa-E",
+      "title": "What Do Astronauts Actually Do All Day in Space? \ud83d\ude80",
+      "slug": "",
+      "metrics": {
+        "video_id": "_M_oO2APa-E",
+        "title": "What Do Astronauts Actually Do All Day in Space? \ud83d\ude80",
+        "slug": "",
+        "views": 1198,
+        "engaged_views": 1198,
+        "viewed_vs_swiped_away_pct": null,
+        "average_view_duration_s": null,
+        "average_percentage_viewed_pct": null,
+        "likes": 19,
+        "comments": 2,
+        "subscribers_gained": 0,
+        "traffic_sources": {},
+        "retention_curve_pct": [],
+        "rewatch_spikes_count": 0,
+        "video_duration_s": 120.0,
+        "topic_category": "",
+        "opening_hook_type": "",
+        "thumbnail_concept": "",
+        "voice_direction_profile": "",
+        "editing_style_profile": "",
+        "mean_shot_duration_s": null,
+        "spoken_wpm": null,
+        "layer2_reveal_time_s": null
+      },
+      "findings": [
+        {
+          "question": "Subscriber & returning-interest signal",
+          "observation": "Generated 0 subscribers across 1198 views (0.0 subs / 1,000 views).",
+          "evidence_level": "direct_metric"
+        }
+      ],
+      "future_creative_recommendations": [],
+      "causation_guardrail": "Observational Diagnostics Only: Associations between hook type, shot duration, voice profile, or thumbnail concept and retention metrics represent correlation on observational channel data, NOT proven causation. Confirm hypotheses across multiple topics and YouTube Studio A/B tests."
+    },
+    {
+      "video_id": "41-VcG5tVWw",
+      "title": "How High Could You Jump on Other Worlds? \ud83c\udf0e\ud83d\ude80",
+      "slug": "how-high-could-you-jump-on-other-planets",
+      "metrics": {
+        "video_id": "41-VcG5tVWw",
+        "title": "How High Could You Jump on Other Worlds? \ud83c\udf0e\ud83d\ude80",
+        "slug": "how-high-could-you-jump-on-other-planets",
+        "views": 1275,
+        "engaged_views": 1275,
+        "viewed_vs_swiped_away_pct": null,
+        "average_view_duration_s": null,
+        "average_percentage_viewed_pct": null,
+        "likes": 15,
+        "comments": 1,
+        "subscribers_gained": 0,
+        "traffic_sources": {},
+        "retention_curve_pct": [],
+        "rewatch_spikes_count": 0,
+        "video_duration_s": 39.0,
+        "topic_category": "space-and-universe",
+        "opening_hook_type": "",
+        "thumbnail_concept": "",
+        "voice_direction_profile": "",
+        "editing_style_profile": "",
+        "mean_shot_duration_s": null,
+        "spoken_wpm": 140.0,
+        "layer2_reveal_time_s": null
+      },
+      "findings": [
+        {
+          "question": "Was the narration too slow or too fast?",
+          "observation": "Narration cadence (140.0 WPM) sits inside natural documentary range (135\u2013175 WPM).",
+          "evidence_level": "measured_cadence"
+        },
+        {
+          "question": "Subscriber & returning-interest signal",
+          "observation": "Generated 0 subscribers across 1275 views (0.0 subs / 1,000 views).",
+          "evidence_level": "direct_metric"
+        }
+      ],
+      "future_creative_recommendations": [],
+      "causation_guardrail": "Observational Diagnostics Only: Associations between hook type, shot duration, voice profile, or thumbnail concept and retention metrics represent correlation on observational channel data, NOT proven causation. Confirm hypotheses across multiple topics and YouTube Studio A/B tests."
+    },
+    {
+      "video_id": "P1VLkr9n3rA",
+      "title": "Mars Has Almost No Air\u2014So How Did NASA Fly a Helicopter There?",
+      "slug": "",
+      "metrics": {
+        "video_id": "P1VLkr9n3rA",
+        "title": "Mars Has Almost No Air\u2014So How Did NASA Fly a Helicopter There?",
+        "slug": "",
+        "views": 1076,
+        "engaged_views": 1076,
+        "viewed_vs_swiped_away_pct": null,
+        "average_view_duration_s": null,
+        "average_percentage_viewed_pct": null,
+        "likes": 5,
+        "comments": 1,
+        "subscribers_gained": 0,
+        "traffic_sources": {},
+        "retention_curve_pct": [],
+        "rewatch_spikes_count": 0,
+        "video_duration_s": 45.0,
+        "topic_category": "",
+        "opening_hook_type": "",
+        "thumbnail_concept": "",
+        "voice_direction_profile": "",
+        "editing_style_profile": "",
+        "mean_shot_duration_s": null,
+        "spoken_wpm": null,
+        "layer2_reveal_time_s": null
+      },
+      "findings": [
+        {
+          "question": "Subscriber & returning-interest signal",
+          "observation": "Generated 0 subscribers across 1076 views (0.0 subs / 1,000 views).",
+          "evidence_level": "direct_metric"
+        }
+      ],
+      "future_creative_recommendations": [],
+      "causation_guardrail": "Observational Diagnostics Only: Associations between hook type, shot duration, voice profile, or thumbnail concept and retention metrics represent correlation on observational channel data, NOT proven causation. Confirm hypotheses across multiple topics and YouTube Studio A/B tests."
+    },
+    {
+      "video_id": "G82mYpKEdI0",
+      "title": "Venus Reflects Most Sunlight\u2014So Why Is It Hotter Than Mercury?",
+      "slug": "venus-hotter-than-mercury",
+      "metrics": {
+        "video_id": "G82mYpKEdI0",
+        "title": "Venus Reflects Most Sunlight\u2014So Why Is It Hotter Than Mercury?",
+        "slug": "venus-hotter-than-mercury",
+        "views": 304,
+        "engaged_views": 304,
+        "viewed_vs_swiped_away_pct": null,
+        "average_view_duration_s": null,
+        "average_percentage_viewed_pct": null,
+        "likes": 8,
+        "comments": 4,
+        "subscribers_gained": 0,
+        "traffic_sources": {},
+        "retention_curve_pct": [],
+        "rewatch_spikes_count": 0,
+        "video_duration_s": 43.0,
+        "topic_category": "space-and-universe",
+        "opening_hook_type": "",
+        "thumbnail_concept": "",
+        "voice_direction_profile": "",
+        "editing_style_profile": "",
+        "mean_shot_duration_s": null,
+        "spoken_wpm": 145.1,
+        "layer2_reveal_time_s": null
+      },
+      "findings": [
+        {
+          "question": "Was the narration too slow or too fast?",
+          "observation": "Narration cadence (145.1 WPM) sits inside natural documentary range (135\u2013175 WPM).",
+          "evidence_level": "measured_cadence"
+        },
+        {
+          "question": "Subscriber & returning-interest signal",
+          "observation": "Generated 0 subscribers across 304 views (0.0 subs / 1,000 views).",
+          "evidence_level": "direct_metric"
+        }
+      ],
+      "future_creative_recommendations": [],
+      "causation_guardrail": "Observational Diagnostics Only: Associations between hook type, shot duration, voice profile, or thumbnail concept and retention metrics represent correlation on observational channel data, NOT proven causation. Confirm hypotheses across multiple topics and YouTube Studio A/B tests."
+    }
+  ]
+}

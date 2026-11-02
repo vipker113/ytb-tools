@@ -1,0 +1,943 @@
+manifest_version: "6.0"
+script_version: "v6.0.0"
+subtitle_version: "v6.0.0"
+channel_name: "Proof of Wonder"
+playlist: "Hidden Earth"
+slug: "blood-falls-v6-studio-pilot"
+topic: "Antarctica's Blood Falls — Subglacial Iron Brine & 2026 Marine Micro-Eukaryote Discovery"
+
+style_profile: "mysterious_earth_exploration"
+style_overrides:
+  sound_design:
+    scene_audio_profile: "polar_glacial"
+  asset_selection:
+    target_moving_footage_ratio: 0.82
+
+voice_input_mode: "directed_tts"
+voice_direction_profile: "mysterious_discovery"
+voice: "en-GB-RyanNeural"
+annotated_voice_script_file: "/Applications/code/science-knowledge/youtube-shorts-channel/episodes/blood_falls_v6_voice_script.txt"
+opening_hook_type: "surprising_visual"
+
+primary_title: "Why This Antarctic Glacier Bleeds Deep Red"
+alternative_title: "What Scientists Pulled From Antarctica's Blood Falls in 2026"
+
+youtube_description: |
+  At the terminus of Taylor Glacier in Antarctica's McMurdo Dry Valleys, a five-story crimson plume stains the white ice—earning the name Blood Falls.
+
+  The red color itself comes from chemistry: hyper-salty, iron-rich brine emerging from a subglacial system oxidizes on contact with air, instantly rusting. Scientists hypothesize that the brine traces back to ancient seawater sealed beneath the advancing glacier, though its full isolation history remains under active investigation.
+
+  In August 2026, researchers analyzing 167 regional ice, sediment, air, and marine samples published a new finding in Nature Geoscience: red-hued ice and sediment around the Taylor Glacier terminus held a distinctive community of marine-related micro-eukaryotes—including diatoms, haptophytes, dinoflagellates, and ciliates. While this does not prove those exact organisms survived continuously trapped under the ice for millions of years, it reveals unexpected biological clues beneath 400 meters of Antarctic ice.
+
+hashtags:
+  - "#Antarctica"
+  - "#BloodFalls"
+  - "#HiddenEarth"
+  - "#EarthScience"
+  - "#Geology"
+  - "#Microbiology"
+
+target_duration_min_s: 68.0
+target_duration_max_s: 90.0
+ambience_preset: "polar_glacial"
+ambience_ducked_lufs_target: -27.5
+nat_sound_bed_file: "nasa_svs14197_scientists_in_field_1080p.webm"
+nat_sound_bed_range_s: [1.0, 38.0]
+nat_sound_gain_db: -15.5
+
+raw_assets_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/assets/raw_footage/hidden_earth_blood_falls_v3"
+output_dir: "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/blood-falls-v6-studio-pilot"
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N04"
+  scientific_caveat_seg_id: "N07"
+  min_real_evidence_ratio: 0.88
+
+hook_candidates:
+  - hook_id: "H1"
+    archetype: "surprising_visual"
+    spoken_line: "In Antarctica's freezing Dry Valleys, a five-story waterfall pours blood-red straight out of solid glacier ice."
+    opening_visual: "Full-bleed NSF photograph of Blood Falls crimson plume on white Taylor Glacier ice"
+    src_file: "bf_aerial_2013.jpg"
+    promise_fulfilled_in_seg_id: "N06"
+    rationale: "Explains both the iron-oxidation chemistry behind the red plume and the 2026 marine microbe discovery in the outflow mud."
+  - hook_id: "H2"
+    archetype: "credible_mystery"
+    spoken_line: "For more than a century, explorers stared at a crimson stain pouring out of solid Antarctic ice—and guessed the wrong cause."
+    opening_visual: "Field scientist with tripod standing before Blood Falls ice wall"
+    src_file: "bf_2010_12_14.jpg"
+    promise_fulfilled_in_seg_id: "N02"
+    rationale: "Reveals how iron brine replaced the red-algae hypothesis and what 2026 DNA/microscopy sampling uncovered."
+  - hook_id: "H3"
+    archetype: "paradox"
+    spoken_line: "At minus seventeen degrees Celsius, water shouldn't flow—yet a red waterfall pours continuously out of Taylor Glacier."
+    opening_visual: "Aerial view of red brine flowing across frozen Taylor Glacier terminus"
+    src_file: "bf_aerial_2013.jpg"
+    promise_fulfilled_in_seg_id: "N03"
+    rationale: "Shows how hypersaline brine lowers the freezing point above a hidden subglacial reservoir."
+
+thumbnail_spec:
+  src_file: "bf_aerial_2013.jpg"
+  headline_text: "ANTARCTICA'S|RED WATERFALL"
+  kicker_text: "TAYLOR GLACIER"
+  cx: 0.585
+  cy: 0.475
+  zoom: 1.03
+  text_position: "top"
+
+thumbnail_concepts:
+  - concept_id: "A"
+    src_file: "bf_aerial_2013.jpg"
+    headline_text: "ANTARCTICA'S|RED WATERFALL"
+    kicker_text: "TAYLOR GLACIER"
+    cx: 0.585
+    cy: 0.475
+    zoom: 1.03
+    text_position: "top"
+    accent_rgb: [255, 214, 92]
+    concept_rationale: "Matches Frame 0 opening NSF photograph; stark crimson-on-white glacier contrast legible at 160x284 mobile size."
+  - concept_id: "B"
+    src_file: "bf_2010_12_14.jpg"
+    headline_text: "400M UNDER|SOLID ICE"
+    kicker_text: "HIDDEN EARTH"
+    cx: 0.50
+    cy: 0.50
+    zoom: 1.02
+    text_position: "top"
+    accent_rgb: [255, 196, 88]
+    concept_rationale: "Human-scale curiosity: USAP researcher with tripod standing directly before the rust-stained Blood Falls ice wall."
+  - concept_id: "C"
+    src_file: "bf_aerial_2013.jpg"
+    headline_text: ""
+    cx: 0.585
+    cy: 0.465
+    zoom: 1.06
+    text_position: "bottom"
+    concept_rationale: "Zero-text pure documentary photograph testing raw natural phenomenon curiosity on mobile Shorts shelf."
+
+narration_segments:
+  - seg_id: "N01"
+    text: "In Antarctica's freezing Dry Valleys, a five-story waterfall pours blood-red straight out of solid glacier ice."
+    emphasis_words: ["five-story", "waterfall", "blood-red"]
+    narrative_beat: "opening_hook"
+    viewer_question: "How can liquid red water pour out of solid Antarctic glacier ice?"
+    new_information: "A five-story crimson plume emerges directly from Taylor Glacier in Antarctica's McMurdo Dry Valleys."
+    visual_reveal: "Full-bleed NSF photograph of Blood Falls cutting to 1080p helicopter sweep along Antarctic glacier fissures."
+    emotional_direction: "Immediate visual astonishment grounded in real expedition imagery"
+    retention_purpose: "Stop scrolling on Frame 0 with an unmistakable real-world visual anomaly"
+
+  - seg_id: "N02"
+    text: "For decades, nobody knew what fed Taylor Glacier's Blood Falls. Today, we know the color comes from chemistry: salty, iron-rich water hits the air and instantly rusts."
+    emphasis_words: ["nobody", "knew", "iron-rich", "rusts"]
+    narrative_beat: "curiosity_gap"
+    viewer_question: "Where does hyper-salty iron water come from inside a frozen glacier?"
+    new_information: "Early red-algae guesses were wrong; dissolved ferrous iron in hypersaline water oxidizes on contact with air."
+    visual_reveal: "Landsat LIMA flyover up Taylor Valley followed by hands-on lab ice inspection and USAP field instrumentation."
+    emotional_direction: "Controlled scientific intrigue shifting from surface mystery to subglacial source"
+    retention_purpose: "Answer the superficial color question quickly while opening the deeper subsurface question"
+
+  - seg_id: "N03"
+    text: "Deep under the ice sits a trapped reservoir of hyper-salty brine—likely ancient seawater sealed off as the glacier advanced, though its full history remains under investigation."
+    emphasis_words: ["trapped", "reservoir", "ancient", "seawater"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "Could anything survive inside dark, salty water sealed beneath 400 meters of ice?"
+    new_information: "A hypersaline brine system beneath Taylor Glacier likely traces to ancient marine water, with ongoing radar/geochemical study."
+    visual_reveal: "Subglacial cross-section diagram dissolving to New Harbor coast and NASA airborne ice-penetrating radar."
+    emotional_direction: "Subterranean scale and scientific rigor"
+    retention_purpose: "Build spatial understanding of the hidden brine system before the 2026 biological twist"
+
+  - seg_id: "N04"
+    text: "Rust explains the color. What surprised researchers in 2026 was what they pulled from the freezing red mud."
+    emphasis_words: ["surprised", "researchers", "freezing", "mud"]
+    narrative_beat: "escalation"
+    viewer_question: "What unexpected evidence did researchers pull from Blood Falls' freezing red mud in 2026?"
+    new_information: "Chemistry was only half the story—2026 field sampling uncovered an unexpected biological signature in the red sediment."
+    visual_reveal: "Red NSF helicopter hovering over a field scientist kneeling on McMurdo rock and snow with live rotor nat-sound."
+    emotional_direction: "Mid-story curiosity re-ignition"
+    retention_purpose: "Prevent mid-video drop-off by pivoting from geology to a fresh 2026 Nature Geoscience discovery"
+
+  - seg_id: "N05"
+    text: "Testing 167 ice, sediment, air, and ocean samples across the region, a field team uncovered a hidden community of marine microbes right at the red outflow."
+    emphasis_words: ["167", "hidden", "community", "marine", "microbes"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "What kind of marine microbes were hiding miles away from the open ocean?"
+    new_information: "Across 167 regional samples (Zoumplis et al., 2026), red outflow ice and sediment held a distinct marine-related microbial community."
+    visual_reveal: "USAP glaciologists excavating glacier ice in red parkas and preparing cold-room microscope slides."
+    emotional_direction: "Methodical expedition discovery"
+    retention_purpose: "Ground the twist in concrete sample scale (167 samples) and visible human fieldwork"
+
+  - seg_id: "N06"
+    text: "Under the microscope were tiny ocean algae like diatoms, alongside single-celled marine drifters—living clues of past ocean connections, miles from open sea."
+    emphasis_words: ["diatoms", "living", "clues", "miles"]
+    narrative_beat: "payoff"
+    viewer_question: "Did these ocean micro-eukaryotes stay trapped beneath the glacier for millions of years?"
+    new_information: "Micro-eukaryotes including diatoms and flagellated marine drifters appear in the brine-fed outflow miles inland from Ross Sea leads."
+    visual_reveal: "Optical dissolve from microscope prep into live gliding diatoms, swimming flagellates, and dark Ross Sea ice leads."
+    emotional_direction: "Wonder at microscopic evidence connecting glacier interior to ancient seas"
+    retention_purpose: "Deliver the central visual and scientific reveal promised by the 2026 pivot"
+
+  - seg_id: "N07"
+    text: "Now, that doesn't prove these exact organisms stayed trapped beneath the ice for millions of years. Scientists are still piecing together how they got there."
+    emphasis_words: ["doesn't", "prove", "millions", "still"]
+    narrative_beat: "payoff"
+    viewer_question: "What is known fact versus active scientific investigation?"
+    new_information: "Finding marine-related taxa does not prove continuous multi-million-year isolation of those exact cells; transport pathways remain studied."
+    visual_reveal: "Sweeping Transantarctic mountain aerials and backlit Antarctic researcher inspecting remote ice instrumentation."
+    emotional_direction: "Intellectual honesty and earned trust"
+    retention_purpose: "Strengthen documentary credibility by explicitly separating verified evidence from open questions"
+
+  - seg_id: "N08"
+    text: "Blood Falls isn't bleeding. It's a leaking subglacial vault—showing that even beneath 400 meters of Antarctic ice, Earth holds unexpected signs of life."
+    emphasis_words: ["isn't", "bleeding", "subglacial", "vault", "400", "life"]
+    narrative_beat: "final_impression"
+    viewer_question: "What else lies hidden beneath Earth's ice sheets—and icy moons beyond?"
+    new_information: "Reframes Blood Falls from visual oddity to a natural window into subglacial habitability beneath 400m of ice."
+    visual_reveal: "Researcher standing directly before Blood Falls dissolving to 2026 Operation Deep Freeze expedition across vast sea ice."
+    emotional_direction: "Lasting scientific awe without generic subscribe prompts"
+    retention_purpose: "Resolve the opening hook cleanly and leave a memorable closing insight"
+
+sfx_cues:
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.04
+    gain_db: -25.5
+  - sfx_name: "ice_creak_subtle"
+    anchor_type: "shot_start"
+    anchor_ref: "S02"
+    offset_s: 0.08
+    gain_db: -25.0
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S06"
+    offset_s: 0.05
+    gain_db: -26.0
+  - sfx_name: "microscope_slide_click"
+    anchor_type: "shot_start"
+    anchor_ref: "S11"
+    offset_s: 0.04
+    gain_db: -25.0
+  - sfx_name: "katabatic_wind_gust"
+    anchor_type: "shot_start"
+    anchor_ref: "S15"
+    offset_s: 0.08
+    gain_db: -25.5
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 2.217
+    kind: "still_full"
+    src_file: "bf_aerial_2013.jpg"
+    camera_perspective: "aerial"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience", "cinematic_sfx"]
+    reframe_mode: "manual"
+    cx0: 0.585
+    cy0: 0.455
+    cx1: 0.580
+    cy1: 0.445
+    z0: 1.01
+    z1: 1.03
+    crop_rationale: "Centers the unmistakable crimson Blood Falls cascade in upper-middle 9:16 frame well clear of captions."
+    transition_in: "cut"
+    transition_reason: "Subject-first opening frame at 0.00s showing the real Blood Falls plume immediately before cutting to live 1080p helicopter motion."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "In Antarctica's freezing Dry Valleys,"
+    editorial_rationale: "Immediate authentic visual proof of the crimson plume on Taylor Glacier."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Immediate visual hook showing the actual Blood Falls plume (N01a)"
+    visual_desc: "Full-bleed 9:16 natural-color NSF photograph of crimson brine spilling down white Taylor Glacier ice."
+
+  - sid: "S02"
+    start_s: 2.217
+    end_s: 6.717
+    kind: "video_full"
+    src_file: "nasa_m12666_nansen_scientists_ice.mp4"
+    src_in: 26.0
+    camera_perspective: "extreme_wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "aerial_sweep"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds", "cinematic_sfx"]
+    reframe_mode: "manual"
+    cx0: 0.45
+    cy0: 0.50
+    cx1: 0.47
+    cy1: 0.48
+    z0: 1.02
+    z1: 1.04
+    crop_rationale: "1080p vertical crop following live helicopter camera sweeping along towering fractured Antarctic glacier fissures."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut into real 1080p helicopter glacier motion within 2.2s."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "a five-story waterfall pours blood-red straight out of solid glacier ice."
+    editorial_rationale: "Conveys physical scale of a five-story Antarctic glacier terminus in live motion."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Live 1080p helicopter sweep along towering Victoria Land glacier fissures (N01b)"
+    visual_desc: "Full-screen 1080p live helicopter footage flying along deep vertical fissures at an Antarctic glacier front."
+
+  - sid: "S03"
+    start_s: 6.717
+    end_s: 10.931
+    kind: "video_full"
+    src_file: "nasa_svs_3482_lima_flyover.mp4"
+    src_in: 192.0
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "aerial_sweep"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.50
+    cx1: 0.55
+    cy1: 0.49
+    z0: 1.06
+    z1: 1.08
+    crop_rationale: "Full-bleed vertical crop tracking the natural-color satellite flight up snow-free Taylor Valley onto Taylor Glacier."
+    transition_in: "cut"
+    transition_reason: "Clean cut at sentence pause into moving geographic flight up Taylor Glacier."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "For decades, nobody knew what fed Taylor Glacier's Blood Falls."
+    editorial_rationale: "Establishes exact Dry Valleys geography of Taylor Glacier from real NASA/USGS Landsat imagery."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Moving geographic flight up Taylor Valley onto Taylor Glacier (N02a)"
+    visual_desc: "Full-screen moving natural-color NASA/USGS Landsat LIMA 3D flyover up Taylor Valley to Taylor Glacier."
+
+  - sid: "S04"
+    start_s: 10.931
+    end_s: 14.224
+    kind: "video_full"
+    src_file: "wiki_zdf_ice_core_lab_720p.webm"
+    src_in: 111.4
+    camera_perspective: "macro"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.46
+    cy0: 0.46
+    cx1: 0.46
+    cy1: 0.48
+    z0: 1.03
+    z1: 1.05
+    crop_rationale: "Centers metal laboratory tweezers holding an extracted piece of ancient bubble-rich Antarctic glacier ice."
+    transition_in: "cut"
+    transition_reason: "Clean cut at sentence pause after 'Falls.' to hands-on laboratory examination of extracted glacier ice."
+    context_note: "Extracted Antarctic glacier ice sample"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Today, we know the color comes from chemistry: salty,"
+    editorial_rationale: "Shifts from satellite geography to close-up physical chemistry of glacier ice."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Hands-on examination of trapped Antarctic glacier ice inclusions (N02b)"
+    visual_desc: "Full-screen live macro video of a researcher's tweezers holding a translucent chunk of ancient Antarctic glacier ice."
+
+  - sid: "S05"
+    start_s: 14.224
+    end_s: 17.539
+    kind: "video_full"
+    src_file: "nasa_svs14197_scientists_in_field_1080p.webm"
+    src_in: 52.8
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.45
+    cy0: 0.50
+    cx1: 0.46
+    cy1: 0.50
+    z0: 1.02
+    z1: 1.04
+    crop_rationale: "1080p handheld close-up of Antarctic field researchers hands-on calibrating ice-sheet field sensors."
+    transition_in: "cut"
+    transition_reason: "Clean cut at clause pause showing researchers working directly on exposed Antarctic ice."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "iron-rich water hits the air and instantly rusts."
+    editorial_rationale: "Grounds surface air-contact oxidation in real Antarctic ice-surface fieldwork."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Hands-on Antarctic field scientists working on exposed glacier ice in cold air (N02c)"
+    visual_desc: "Full-screen 1080p handheld live-action video of Antarctic researchers rigging field instruments on the ice."
+
+  - sid: "S06"
+    start_s: 17.539
+    end_s: 21.274
+    kind: "diagram"
+    src_file: "subglacial_brine_clean_v3.mp4"
+    src_in: 0.50
+    camera_perspective: "labeled_visualization"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience", "cinematic_sfx"]
+    crop_rationale: "Native 1080x1920 photo-textured cross-section explaining subsurface brine geometry invisible to surface cameras."
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Restrained 0.55s dissolve at segment pause transitioning 400m beneath the glacier surface."
+    is_real_evidence: false
+    has_human_interaction: false
+    associated_narration_concept: "Deep under the ice sits a trapped reservoir of hyper-salty brine—"
+    editorial_rationale: "Visualizes subglacial brine conduit geometry that no physical camera can film underground."
+    subject_match_kind: "illustrative_diagram"
+    scientific_claim_status: "credible_hypothesis"
+    story_beat: "Subglacial trapped brine reservoir 400m beneath Taylor Glacier (N03a)"
+    visual_desc: "Photo-textured full-screen geological cross-section showing trapped subglacial brine rising to Blood Falls."
+
+  - sid: "S07"
+    start_s: 21.274
+    end_s: 24.806
+    kind: "video_full"
+    src_file: "nasa_svs_3482_lima_flyover.mp4"
+    src_in: 146.5
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "aerial_sweep"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.52
+    cx1: 0.54
+    cy1: 0.49
+    z0: 1.06
+    z1: 1.08
+    crop_rationale: "Full-bleed crop framing New Harbor where McMurdo Sound's sea ice meets the mouth of Taylor Valley."
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Restrained 0.55s dissolve at em-dash pause returning from underground diagram to coastal valley geography."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "likely ancient seawater sealed off as the glacier advanced,"
+    editorial_rationale: "Shows the real McMurdo Sound marine coastline connected to Taylor Valley's ancient basin."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "credible_hypothesis"
+    story_beat: "Coastal McMurdo Sound to Taylor Valley ancient marine basin geometry (N03b)"
+    visual_desc: "Full-screen moving NASA/USGS satellite pass from McMurdo Sound / New Harbor into Taylor Valley."
+
+  - sid: "S08"
+    start_s: 24.806
+    end_s: 27.795
+    kind: "video_full"
+    src_file: "nasa_svs_11621_across_ross_720p.mov"
+    src_in: 82.80
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "context"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.03
+    z1: 1.05
+    crop_rationale: "Frames NASA Antarctic airborne ice-radar specialists monitoring live subglacial radargrams."
+    transition_in: "cut"
+    transition_reason: "Clean cut at clause pause matching ongoing subglacial radar investigation."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "though its full history remains under investigation."
+    editorial_rationale: "Shows real airborne ice-penetrating radar researchers probing subglacial water layers."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "credible_hypothesis"
+    story_beat: "Scientists probing subglacial ice history with airborne radar (N03c)"
+    visual_desc: "Full-screen live-action video of NASA scientists monitoring airborne ice-penetrating radar over Antarctica."
+
+  - sid: "S09"
+    start_s: 27.795
+    end_s: 34.516
+    kind: "video_full"
+    src_file: "nasa_m11707_mcmurdo_black_island.mp4"
+    src_in: 196.9
+    nat_audio_gain_db: -17.5
+    camera_perspective: "extreme_wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.51
+    cx1: 0.51
+    cy1: 0.50
+    z0: 1.13
+    z1: 1.15
+    crop_rationale: "Centers the red National Science Foundation helicopter hovering directly over a field researcher kneeling on bare McMurdo rock and snow."
+    transition_in: "cut"
+    transition_reason: "Clean cut at segment pause launching the 2026 field-discovery escalation with real NSF helicopter action."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Rust explains the color. What surprised researchers in 2026 was what they pulled from the freezing red mud."
+    editorial_rationale: "High-energy authentic NSF expedition shot re-engaging viewer attention at the Layer-2 pivot."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Mid-video retention pivot: NSF helicopter & field researcher on McMurdo rock and snow (N04)"
+    visual_desc: "Full-screen live-action video (with subtle real rotor nat-sound) of a red NSF helicopter hovering over a researcher on McMurdo rock and snow."
+
+  - sid: "S10"
+    start_s: 34.516
+    end_s: 38.123
+    kind: "video_full"
+    src_file: "nasa_m12666_nansen_scientists_ice.mp4"
+    src_in: 117.55
+    camera_perspective: "close_up"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.52
+    cx1: 0.49
+    cy1: 0.51
+    z0: 1.02
+    z1: 1.04
+    crop_rationale: "1080p full-screen vertical crop on glaciologists in red USAP parkas kneeling hands-on digging in Antarctic glacier ice."
+    transition_in: "cut"
+    transition_reason: "Clean cut at segment pause after 'mud.' showing hands-on Antarctic ice & sediment field sampling."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Testing 167 ice, sediment, air,"
+    editorial_rationale: "Directly visualizes hands-on Antarctic field sampling as the 167 samples are cited."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Hands-on USAP glaciologists excavating Antarctic glacier ice in the field (N05a)"
+    visual_desc: "Full-screen 1080p live-action video of Antarctic researchers in red USAP parkas kneeling hands-on in glacier ice."
+
+  - sid: "S11"
+    start_s: 38.123
+    end_s: 44.863
+    kind: "video_full"
+    src_file: "wiki_zdf_ice_core_lab_720p.webm"
+    src_in: 91.8
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "music", "ambience", "cinematic_sfx"]
+    reframe_mode: "manual"
+    cx0: 0.44
+    cy0: 0.48
+    cx1: 0.45
+    cy1: 0.48
+    z0: 1.03
+    z1: 1.05
+    crop_rationale: "Centers a glaciologist in a cold-room parka placing an extracted Antarctic ice specimen onto a microscope stage."
+    transition_in: "cut"
+    transition_reason: "Clean cut at list pause showing laboratory microscope analysis of Antarctic samples."
+    context_note: "Antarctic ice-core microscopy prep"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "and ocean samples across the region, a field team uncovered a hidden community of marine microbes right at the red outflow."
+    editorial_rationale: "Bridges outdoor glacier excavation to subzero laboratory microscopy."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Glaciologist preparing extracted Antarctic ice sample under subzero microscope (N05b)"
+    visual_desc: "Full-screen live-action video of a glaciologist in thermal gear placing an Antarctic ice sample onto a laboratory microscope."
+
+  - sid: "S12"
+    start_s: 44.863
+    end_s: 48.389
+    kind: "video_full"
+    src_file: "micro_diatom_seah.webm"
+    src_in: 2.0
+    camera_perspective: "macro"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "auto_salient"
+    z0: 1.04
+    z1: 1.06
+    contrast_gain: 1.12
+    crop_rationale: "Full-screen vertical reframing tracking live gliding diatoms in brightfield microscopy."
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Motivated 0.55s optical dissolve from the researcher's microscope directly into live gliding diatoms."
+    context_note: "Illustrative live diatom microscopy"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "Under the microscope were tiny ocean algae like diatoms,"
+    editorial_rationale: "Shows actual living diatom cells gliding under light microscopy with transparent illustrative context note."
+    subject_match_kind: "representative_organism_microscopy"
+    scientific_claim_status: "contextual_observation"
+    story_beat: "Marine-related micro-eukaryote taxa: live gliding diatoms (N06a)"
+    visual_desc: "Full-screen live light-microscopy video of gliding diatoms (clearly noted as illustrative microscopy)."
+
+  - sid: "S13"
+    start_s: 48.389
+    end_s: 50.739
+    kind: "video_full"
+    src_file: "wiki_holt_flagellate_1080p.webm"
+    src_in: 30.5
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.51
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.08
+    crop_rationale: "1080p phase-contrast crop centered on actively swimming flagellated single-celled marine drifters."
+    transition_in: "cut"
+    transition_reason: "Clean cut at comma pause after 'diatoms,' showing 1080p live swimming single-celled marine drifters."
+    context_note: "Illustrative live marine drifters"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "alongside single-celled marine drifters—"
+    editorial_rationale: "Visualizes single-celled flagellated marine micro-eukaryotes at 1080p clarity."
+    subject_match_kind: "representative_organism_microscopy"
+    scientific_claim_status: "contextual_observation"
+    story_beat: "1080p live swimming flagellated marine micro-eukaryotes (N06b)"
+    visual_desc: "Full-screen 1080p live phase-contrast microscopy video of swimming marine micro-eukaryotes with beating flagella."
+
+  - sid: "S14"
+    start_s: 50.739
+    end_s: 54.825
+    kind: "video_full"
+    src_file: "nasa_svs_11621_across_ross_720p.mov"
+    src_in: 100.2
+    camera_perspective: "aerial"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "aerial_sweep"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.03
+    z1: 1.05
+    crop_rationale: "Frames dark open Ross Sea water leads amid fractured Antarctic sea-ice floes."
+    transition_in: "cut"
+    transition_reason: "Clean cut at em-dash pause directly visualizing 'past ocean connections, miles from open sea.'"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "living clues of past ocean connections, miles from open sea."
+    editorial_rationale: "Contrasts microscopic ocean drifters with vast fractured Ross Sea ice miles from Taylor Glacier."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Real Antarctic Ross Sea open-water leads & fractured sea ice (N06c)"
+    visual_desc: "Full-screen aerial video looking straight down onto dark open Antarctic ocean leads breaking through fractured sea ice."
+
+  - sid: "S15"
+    start_s: 54.825
+    end_s: 60.661
+    kind: "video_full"
+    src_file: "nasa_svs_10028_mcmurdo_oib_720p.mov"
+    src_in: 92.8
+    camera_perspective: "extreme_wide"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "aerial_sweep"
+    scene_audio_layers: ["narration", "music", "ambience", "cinematic_sfx"]
+    reframe_mode: "manual"
+    cx0: 0.38
+    cy0: 0.50
+    cx1: 0.38
+    cy1: 0.48
+    z0: 1.03
+    z1: 1.05
+    crop_rationale: "Left-of-center 9:16 crop captures uninterrupted Transantarctic mountain peaks and vast glacier ice."
+    transition_in: "cut"
+    transition_reason: "Clean cut at segment pause returning to vast Antarctic glacier scale for the scientific caveat."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_narration_concept: "Now, that doesn't prove these exact organisms stayed trapped beneath the ice for millions of years."
+    editorial_rationale: "Provides contemplative geological scale while delivering the mandatory scientific caveat."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "unresolved_question"
+    story_beat: "Mandatory scientific caveat against unproven multi-million-year isolation claims (N07a)"
+    visual_desc: "Full-screen sweeping aerial video over Transantarctic mountain ridges and glacier ice near McMurdo."
+
+  - sid: "S16"
+    start_s: 60.661
+    end_s: 63.851
+    kind: "video_full"
+    src_file: "nasa_svs14197_scientists_in_field_1080p.webm"
+    src_in: 16.2
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "context"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.72
+    cy0: 0.55
+    cx1: 0.70
+    cy1: 0.54
+    z0: 1.03
+    z1: 1.05
+    crop_rationale: "1080p sunlit shot tracking an Antarctic field scientist in a red parka inspecting a remote glacier station."
+    transition_in: "cut"
+    transition_reason: "Clean cut at sentence pause matching 'Scientists are still piecing together how they got there.'"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Scientists are still piecing together how they got there."
+    editorial_rationale: "Shows active field researchers continuing ongoing investigation on the ice."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "unresolved_question"
+    story_beat: "Sunlit 1080p Antarctic researcher inspecting remote field instrumentation on the ice (N07b)"
+    visual_desc: "Full-screen 1080p live-action video of a backlit Antarctic researcher in a red parka working at an ice-sheet station."
+
+  - sid: "S17"
+    start_s: 63.851
+    end_s: 67.855
+    kind: "still_full"
+    src_file: "bf_2010_12_14.jpg"
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.51
+    cx1: 0.51
+    cy1: 0.49
+    z0: 1.01
+    z1: 1.03
+    crop_rationale: "Frames Blood Falls' rust-red ice wall, dark moraine mud, orange brine apron, AND a researcher with tripod standing directly in front of it."
+    transition_in: "cut"
+    transition_reason: "Clean cut at segment pause returning directly to a scientist standing before Blood Falls."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "Blood Falls isn't bleeding. It's a leaking subglacial vault—"
+    editorial_rationale: "Brings the viewer back face-to-face with Blood Falls now armed with full scientific understanding."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Scientist standing directly before Blood Falls' crimson ice, mud, and brine (N08a)"
+    visual_desc: "Full-screen NSF photograph of a field researcher with tripod standing before Blood Falls' rust-stained ice cliff and orange sediment floor."
+
+  - sid: "S18"
+    start_s: 67.855
+    end_s: 74.067
+    kind: "video_full"
+    src_file: "dvids_994230_nsf_heli_2026.mp4"
+    src_in: 2.0
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.54
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.02
+    z1: 1.04
+    crop_rationale: "1080p full-screen vertical view of a 2026 NSF helicopter and field researchers walking out onto vast fractured McMurdo Sound ice."
+    transition_in: "dissolve"
+    transition_duration_s: 0.60
+    transition_reason: "Gentle 0.60s final dissolve into live 1080p 2026 NSF Antarctic field expedition across vast sea ice."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_narration_concept: "showing that even beneath 400 meters of Antarctic ice, Earth holds unexpected signs of life."
+    editorial_rationale: "Closes on authentic 2026 NSF Antarctic expedition motion, echoing the white-and-red palette of Frame 0."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Final moving 1080p documentary payoff: 2026 NSF field team on vast Antarctic ice (N08b)"
+    visual_desc: "Full-screen 1080p live-action video (Operation Deep Freeze 2026) of an NSF helicopter and researchers on vast fractured Antarctic ice."
+
+caption_groups: []
+
+assets_register:
+  - local_file: "nasa_svs_3482_lima_flyover.mp4"
+    title: "NASA SVS #3482 — Antarctica: Flyover of McMurdo Dry Valleys & Taylor Glacier (LIMA)"
+    creator_agency: "NASA GSFC Scientific Visualization Studio / USGS / NSF"
+    source_page_url: "https://svs.gsfc.nasa.gov/3482"
+    direct_media_url: "https://svs.gsfc.nasa.gov/vis/a000000/a003400/a003482/Flyover.mp4"
+    license: "Public Domain (NASA / USGS / NSF LIMA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Satellite flyover: NASA/GSFC Scientific Visualization Studio, USGS, and NSF (SVS #3482, Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+    intended_use: "Moving natural-color satellite flyover of Taylor Glacier, Taylor Valley, and New Harbor"
+
+  - local_file: "nasa_m12666_nansen_scientists_ice.mp4"
+    title: "NASA GSFC m12666 — Scientists Bury GPS in Antarctic Ice to Measure Effects of Tides (Victoria Land)"
+    creator_agency: "NASA Goddard Space Flight Center (Joy Ng / Ryan Walker / Christine Dow)"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20170811_Nansen_m12666"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20170811_Nansen_m12666/GSFC_20170811_Nansen_m12666~large.mp4"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Antarctic glacier fieldwork & helicopter footage: NASA/Goddard Space Flight Center (GSFC_20170811_Nansen_m12666, Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+    intended_use: "1080p live-action footage of glaciologists in red USAP parkas working hands-on in Victoria Land glacier ice and helicopter glacier flyby"
+
+  - local_file: "nasa_m11707_mcmurdo_black_island.mp4"
+    title: "NASA GSFC m11707 — OIB: Fourwheeling Antarctica (McMurdo Sound / NSF Helicopter Field Ops)"
+    creator_agency: "NASA Goddard Space Flight Center / Operation IceBridge"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20141008_Black_Island_m11707"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20141008_Black_Island_m11707/GSFC_20141008_Black_Island_m11707~medium.mp4"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "NSF helicopter field operations in McMurdo: NASA/Goddard Space Flight Center (GSFC_20141008_Black_Island_m11707, Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+    intended_use: "Live-action red National Science Foundation helicopter hovering over field researcher on bare McMurdo rock and snow"
+
+  - local_file: "dvids_994230_nsf_heli_2026.mp4"
+    title: "DVIDS #994230 — USCGC Polar Star conducts helicopter operation with National Science Foundation in Antarctica (Operation Deep Freeze 2026)"
+    creator_agency: "U.S. Coast Guard / National Science Foundation (Operation Deep Freeze 2026)"
+    source_page_url: "https://www.dvidshub.net/video/994230/uscgc-polar-star-wagb-10-conducts-helicopter-operation-with-national-science-foundation-antarctica-during-operation-deep-freeze-2026"
+    direct_media_url: "https://d34w7g4gy10iej.cloudfront.net/video/2601/DOD_111500385/DOD_111500385.mp4"
+    license: "Public Domain (U.S. Federal Government — DoD / USCG / NSF)"
+    license_url: "https://www.dvidshub.net/about/copyright"
+    required_attribution: "2026 NSF Antarctic helicopter field operations: U.S. Coast Guard / National Science Foundation, Operation Deep Freeze 2026 (DVIDS #994230, Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+    intended_use: "1080p live-action 2026 NSF helicopter and field personnel walking out onto fractured McMurdo Sound ice"
+
+  - local_file: "nasa_svs14197_scientists_in_field_1080p.webm"
+    title: "File:Scientists in the Field (SVS14197 - Compilation4-SnowEx-GRIPS).webm"
+    creator_agency: "NASA Goddard Space Flight Center Scientific Visualization Studio (SVS #14197)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Scientists_in_the_Field_(SVS14197_-_Compilation4-SnowEx-GRIPS).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/0/07/Scientists_in_the_Field_%28SVS14197_-_Compilation4-SnowEx-GRIPS%29.webm"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Antarctic field instrumentation team: NASA/GSFC Scientific Visualization Studio (SVS #14197, Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+    intended_use: "1080p live-action researchers in red USAP parkas kneeling hands-on at Antarctic ice instruments"
+
+  - local_file: "nasa_svs_10028_mcmurdo_oib_720p.mov"
+    title: "NASA SVS #10028 — OIB: McMurdo Accomplished"
+    creator_agency: "NASA Goddard Space Flight Center / Operation IceBridge (Jefferson Beck)"
+    source_page_url: "https://svs.gsfc.nasa.gov/10028"
+    direct_media_url: "https://svs.gsfc.nasa.gov/vis/a010000/a010000/a010028/MCMURDO_FINAL_youtube_hq.mov"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Transantarctic glacier aerial footage: NASA/Goddard Space Flight Center, SVS #10028 (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+    intended_use: "Sweeping aerial footage over Transantarctic mountain peaks and glaciers"
+
+  - local_file: "nasa_svs_11621_across_ross_720p.mov"
+    title: "NASA SVS #10028 / #11621 — OIB: Across the Ross"
+    creator_agency: "NASA Goddard Space Flight Center / Michael Studinger / Jefferson Beck"
+    source_page_url: "https://svs.gsfc.nasa.gov/11621"
+    direct_media_url: "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011621/ACROSS_THE_ROSS_youtube_hq.mov"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Antarctic airborne ice-radar survey footage: NASA/Goddard Space Flight Center, SVS #11621 (Public Domain)"
+    media_type: "video"
+    priority_tier: 3
+    intended_use: "Live-action NASA scientists monitoring airborne subglacial ice-penetrating radar"
+
+  - local_file: "wiki_zdf_ice_core_lab_720p.webm"
+    title: "File:Klima-Archiv Eislabor (ZDF, Terra X) 720p HD 50FPS.webm"
+    creator_agency: "ZDF / Terra X / Frank Wilhelms / AWI (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Klima-Archiv_Eislabor_(ZDF,_Terra_X)_720p_HD_50FPS.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Klima-Archiv_Eislabor_%28ZDF%2C_Terra_X%29_720p_HD_50FPS.webm"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Antarctic ice-core laboratory & microscopy prep footage: ZDF / Terra X, \"Klima-Archiv Eislabor\", CC BY 4.0 (cropped for 9:16)"
+    media_type: "video"
+    priority_tier: 3
+    intended_use: "Hands-on laboratory handling and microscope preparation of extracted Antarctic glacier ice cores"
+
+  - local_file: "micro_diatom_seah.webm"
+    title: "File:Diatom movement DSC 1511.webm"
+    creator_agency: "Brandon Seah (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Diatom_movement_DSC_1511.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Diatom_movement_DSC_1511.webm"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Illustrative live diatom microscopy: Brandon Seah, \"Diatom movement DSC 1511\", CC BY 4.0 (cropped for 9:16; illustrative taxon, not Blood Falls specimen)"
+    media_type: "video"
+    priority_tier: 4
+    intended_use: "Full-screen illustrative live light microscopy of gliding diatoms"
+
+  - local_file: "wiki_holt_flagellate_1080p.webm"
+    title: "File:Holt et al. (2023) Swimming cells of Eleftheros xomoi and flagella beating, visualised by light microscopy.webm"
+    creator_agency: "Holt et al. (2023) / Wikimedia Commons"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Holt_et_al._(2023)_Swimming_cells_of_Eleftheros_xomoi_and_flagella_beating,_visualised_by_light_microscopy.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Holt_et_al._%282023%29_Swimming_cells_of_Eleftheros_xomoi_and_flagella_beating%2C_visualised_by_light_microscopy.webm"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Illustrative live marine micro-eukaryote microscopy: Holt et al. (2023), CC BY 4.0 (cropped for 9:16; illustrative taxon, not Blood Falls specimen)"
+    media_type: "video"
+    priority_tier: 4
+    intended_use: "1080p full-screen illustrative live phase-contrast microscopy of swimming flagellated micro-eukaryotes"
+
+  - local_file: "bf_aerial_2013.jpg"
+    title: "File:Blood Falls aerial view 2013-12-21.jpg"
+    creator_agency: "Peter Rejcek / National Science Foundation"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Blood_Falls_aerial_view_2013-12-21.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/5/50/Blood_Falls_aerial_view_2013-12-21.jpg"
+    license: "Public Domain (U.S. Federal Government / NSF)"
+    license_url: "https://www.nsf.gov/policies/reuse.jsp"
+    required_attribution: "Photo: Peter Rejcek / National Science Foundation (Public Domain)"
+    media_type: "photo"
+    priority_tier: 5
+    intended_use: "Opening hook and clean mobile cover showing the actual crimson Blood Falls plume"
+
+  - local_file: "bf_2010_12_14.jpg"
+    title: "File:Blood Falls 2010-12-14.jpg"
+    creator_agency: "Peter Rejcek / National Science Foundation"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Blood_Falls_2010-12-14.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Blood_Falls_2010-12-14.jpg"
+    license: "Public Domain (U.S. Federal Government / NSF)"
+    license_url: "https://www.nsf.gov/policies/reuse.jsp"
+    required_attribution: "Photo: Peter Rejcek / National Science Foundation (Public Domain)"
+    media_type: "photo"
+    priority_tier: 5
+    intended_use: "Shows a field researcher with tripod standing directly in front of Blood Falls' rust-stained ice cliff, dark mud, and orange sediment"
+
+  - local_file: "subglacial_brine_clean_v3.mp4"
+    title: "Photo-Textured Geological Cross-Section: Hypothesized Subglacial Brine System Beneath Taylor Glacier"
+    creator_agency: "Proof of Wonder Documentary Studio v6.0"
+    source_page_url: "local://pipeline/generate_blood_falls_diagram.py"
+    direct_media_url: "local://work_clips/subglacial_brine_clean_v3.mp4"
+    license: "100% Original First-Party Graphic"
+    license_url: "N/A"
+    required_attribution: "Original illustrative geological cross-section textured with NSF Antarctic aerial imagery (Public Domain), based on Mikucki et al. / Zoumplis et al. (2026)"
+    media_type: "diagram"
+    priority_tier: 6
+    intended_use: "Explains underground subglacial brine conduit geometry that surface cameras cannot film"
+    is_first_party_original: true
+
+excluded_sources_notes:
+  - "USAP-DC Blood Falls time-lapse & thermal datasets (usap-dc.org/view/dataset/601164 & 601169): Excluded by commercial-rights gate because USAP-DC licenses them under CC BY-NC 4.0 (Non-Commercial), prohibiting monetized YouTube reuse."
+  - "PBS Terra ('Why is this Antarctic Glacier Bleeding?'): Excluded because broadcast video is copyrighted by PBS rather than open Public Domain / CC BY."
+  - "Internet Archive NSF Science Nation clips (640x360 SD): Excluded by 9:16 crop-feasibility gate (< 540px vertical height)."
+
+factual_references:
+  - citation: "Zoumplis, A. et al. (2026). Molecular evidence for a relict marine community in an Antarctic Dry Valleys subglacial brine-fed system. Nature Geoscience, 19, 1105–1114."
+    url: "https://www.nature.com/articles/s41561-026-02054-6"
+    doi: "10.1038/s41561-026-02054-6"
+    supported_claims: "167 regional samples across water, sediment, airborne, and marine reference sites; distinctive marine-related micro-eukaryotic community (diatoms, haptophytes, dinoflagellates, ciliates) around Taylor Glacier terminus; caveat that continuous multi-million-year subglacial survival of exact sampled organisms is not proven."
+  - citation: "Yale News (August 4, 2026). Red marks the spot: A network of complex microbes discovered at mysterious Blood Falls."
+    url: "https://news.yale.edu/2026/08/04/red-marks-spot-network-complex-microbes-discovered-mysterious-blood-falls"
+    supported_claims: "Accessible research summary and context on ongoing investigation into microbial connectivity."
+  - citation: "NASA Earth Observatory — Blood Falls, Antarctica's Dry Valleys."
+    url: "https://science.nasa.gov/earth/earth-observatory/blood-falls-antarcticas-dry-valleys-35535/"
+    supported_claims: "Location at Taylor Glacier terminus in McMurdo Dry Valleys; salty iron-rich brine oxidizing on air contact; hypothesized ancient seawater origin."
+  - citation: "National Science Foundation (U.S. Antarctic Program) — Science on the Ice (Fifth Edition)."
+    url: "https://nsf-gov-resources.nsf.gov/files/NSF-Science-on-the-Ice-fifth-edition.pdf"
+    supported_claims: "U.S. Antarctic Program / McMurdo Dry Valleys LTER scientific field context."
