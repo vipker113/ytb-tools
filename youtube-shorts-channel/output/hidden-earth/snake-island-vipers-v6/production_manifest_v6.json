@@ -1,0 +1,1125 @@
+{
+  "schema_name": "proof_of_wonder_production_manifest",
+  "manifest_version": "6.0",
+  "generated_at_utc": "2026-11-03T10:04:05.460935+00:00",
+  "slug": "snake-island-vipers-v6",
+  "channel_name": "Proof of Wonder",
+  "category_playlist": "Hidden Earth",
+  "topic": "Ilha da Queimada Grande (Snake Island, Brazil) \u2014 2,000\u20134,000 Golden Lancehead Pit Vipers, 90 Vipers per Hectare & Eye-Level Canopy Ambush",
+  "production_profile": {
+    "profile_name": "mysterious_earth_exploration",
+    "profile_version": "6.0.0",
+    "style_overrides": {
+      "sound_design": {
+        "scene_audio_profile": "wildlife_field"
+      },
+      "asset_selection": {
+        "target_moving_footage_ratio": 0.85,
+        "min_human_interaction_shots": 2
+      }
+    },
+    "visual_scoring_weights": {
+      "direct_relevance": 0.3,
+      "visual_clarity": 0.2,
+      "authenticity": 0.22,
+      "technical_quality": 0.1,
+      "composition_potential": 0.1,
+      "motion_storytelling": 0.05,
+      "license_verification": 0.03,
+      "min_direct_relevance_floor": 0.35
+    }
+  },
+  "script_version": {
+    "version": "v6.0.0",
+    "script_sha256": "87cea9cfcb6edcec428f3795434180279becb545020575fe66adda501d448d7b",
+    "segment_count": 7,
+    "word_count": 189,
+    "opening_hook_type": "surprising_visual",
+    "layer2_pivot_seg_id": "N04",
+    "scientific_caveat_seg_id": "N03",
+    "factual_references": [
+      {
+        "citation": "Marques, O. A. V., Martins, M., Develey, P. F., Macarr\u00e3o, A., & Sazima, I. (2012) / Instituto Butantan \u2014 Population ecology, arboreal foraging, and avian diet of Bothrops insularis on Ilha da Queimada Grande, S\u00e3o Paulo, Brazil.",
+        "url": "https://butantan.gov.br/",
+        "doi": null,
+        "supported_claims": "Total population estimated at ~2,000\u20134,000 Bothrops insularis across 43 hectares (~50\u201390 vipers per hectare in forest habitat; no scientific evidence for the 1\u20135 snakes per m\u00b2 urban myth); semi-arboreal ambush foraging on migratory passerine birds."
+      },
+      {
+        "citation": "Guimar\u00e3es, M., Mungu\u00eda-Steyer, R., Doherty, P. F., Martins, M., & Sawaya, R. J. \u2014 Post-glacial sea-level isolation (~11,000 years BP) of Ilha da Queimada Grande 33 km off S\u00e3o Paulo.",
+        "url": "https://www.iucnredlist.org/",
+        "doi": null,
+        "supported_claims": "Rising Holocene sea levels ~11,000 years ago submerged the continental-shelf connection to mainland Brazil, isolating ancestral Bothrops jararaca populations without terrestrial mammalian prey."
+      },
+      {
+        "citation": "Zelanis, A. et al. / Instituto Butantan Toxinology \u2014 Differential venom potency of Bothrops insularis toward avian prey.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/",
+        "doi": null,
+        "supported_claims": "Bothrops insularis venom exhibits up to fivefold higher lethality against avian prey than mainland relatives, causing rapid immobilization and tissue necrosis so struck birds cannot fly off the island."
+      },
+      {
+        "citation": "Marinha do Brasil / ICMBio \u2014 ARIE das Ilhas Queimada Pequena e Queimada Grande Restricted Access & Automated 1909 Lighthouse.",
+        "url": "https://www.gov.br/icmbio/pt-br",
+        "doi": null,
+        "supported_claims": "Civilian landing is prohibited by the Brazilian Navy and ICMBio except for permitted scientific teams and Navy maintenance of the automated 1909 lighthouse."
+      }
+    ]
+  },
+  "voice_direction_profile": {
+    "voice_input_mode": "directed_tts",
+    "profile_id": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "annotated_voice_script_file": "/Applications/code/science-knowledge/youtube-shorts-channel/episodes/snake_island_v6_voice_script.txt",
+    "approval_lock": {
+      "locked": true,
+      "synchronized": true,
+      "approved_at_utc": "2026-11-03T09:36:22.548446+00:00",
+      "script_matches": true,
+      "audio_matches": true,
+      "timings_matches": true
+    }
+  },
+  "audio_source_and_final_narration": {
+    "voice_input_mode": "directed_tts",
+    "uploaded_narration_file": null,
+    "voice_reference_file": null,
+    "voice_owner_consent": false,
+    "narration_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/narration.mp3",
+    "final_audio_mix_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/final_audio_mix.mp3",
+    "word_timings_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/word_timings.json",
+    "total_duration_s": 72.0333,
+    "total_frames_30fps": 2161,
+    "five_layer_stems": {
+      "layer_1_narration": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/work_audio/layer_1_narration.wav",
+      "layer_2_music": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/work_audio/layer_2_music.wav",
+      "layer_3_ambience": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/work_audio/layer_3_ambience.wav",
+      "layer_4_natural_sounds": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/work_audio/layer_4_natural_sounds.wav",
+      "layer_5_cinematic_sfx": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/work_audio/layer_5_cinematic_sfx.wav"
+    },
+    "audio_diagnostics": {
+      "integrated_lufs": -16.0,
+      "loudness_range_lra_lu": 1.5,
+      "true_peak_dbtp": -1.7,
+      "speech_crest_factor_db": 14.3,
+      "clipped_samples_count": 0,
+      "excessive_silence_count": 0,
+      "excessive_silences": [],
+      "voice_peak_dbfs": -1.75
+    }
+  },
+  "source_assets": [
+    {
+      "local_file": "snakes_intertwined_mating_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Multiple Intertwined Snakes Coiled in Green Tree Branches (1080p)",
+      "creator_agency": "Wikimedia Commons (Japanese rat snakes Elaphe climacophora in tree canopy)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Japanese_rat_snakes_(Elaphe_climacophora)_mating.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Japanese_rat_snakes_%28Elaphe_climacophora%29_mating.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "butantan_pit_vipers_cluster_720p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Cobras do Butantan \u2014 Clustered Brazilian Pit Vipers at Instituto Butantan, S\u00e3o Paulo",
+      "creator_agency": "Rogerio Ramos / Instituto Butantan Serpentarium (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Cobras_do_Butantan.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Cobras_do_Butantan.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "vipera_modras_cluster_4_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "Clustered Horned Vipers (Vipera ammodytes) Coiled Together on Forest Leaf Litter (1080p)",
+      "creator_agency": "Petar Milo\u0161evi\u0107 / Zoo Ljubljana (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:2023-02-17_ZOO_LJUBLJANA_SERPENTES_Vipera_ammodytes_MODRAS_4.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/2023-02-17_ZOO_LJUBLJANA_SERPENTES_Vipera_ammodytes_MODRAS_4.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "vipera_modras_cluster_3_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "Multiple Horned Vipers (Vipera ammodytes) Coiled Side-by-Side on Branches (1080p)",
+      "creator_agency": "Petar Milo\u0161evi\u0107 / Zoo Ljubljana (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:2023-02-17_ZOO_LJUBLJANA_SERPENTES_Vipera_ammodytes_MODRAS_3.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/2023-02-17_ZOO_LJUBLJANA_SERPENTES_Vipera_ammodytes_MODRAS_3.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "vipera_modras_cluster_2_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "Camouflaged Horned Vipers (Vipera ammodytes) Coiled Beneath Fallen Branch (1080p)",
+      "creator_agency": "Petar Milo\u0161evi\u0107 / Zoo Ljubljana (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:2023-02-17_ZOO_LJUBLJANA_SERPENTES_Vipera_ammodytes_MODRAS_2.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/2023-02-17_ZOO_LJUBLJANA_SERPENTES_Vipera_ammodytes_MODRAS_2.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "vipera_modras_cluster_1_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "Macro Close-Up of Venomous Viper Head (Vipera ammodytes, 1080p)",
+      "creator_agency": "Petar Milo\u0161evi\u0107 / Zoo Ljubljana (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:2023-02-17_ZOO_LJUBLJANA_SERPENTES_Vipera_ammodytes_MODRAS.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/2023-02-17_ZOO_LJUBLJANA_SERPENTES_Vipera_ammodytes_MODRAS.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "two_snakes_intertwined_slovenia_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "Two Intertwined Wild Snakes Writhing Together in Tight Coils (1080p)",
+      "creator_agency": "Wikimedia Commons (TWO BLACK SNAKES SLOVENIA)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:TWO_BLACK_SNAKES_SLOVENIA_CRUEL_LOVE.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/TWO_BLACK_SNAKES_SLOVENIA_CRUEL_LOVE.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "elaphe_cluster_ljubljana_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "Dense Knot of Coiled Snakes in Rock Crevice (1080p)",
+      "creator_agency": "Wikimedia Commons (SERPENTES Elaphe quatuorlineata)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:2023-08-18_ZOO_LJUBLJANA_SERPENTES_Elaphe_quatuorlineata_PROGASTI_GO%C5%BD.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/2023-08-18_ZOO_LJUBLJANA_SERPENTES_Elaphe_quatuorlineata_PROGASTI_GO%C5%BD.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "boa_tree_trunk_vertical_1080x1920.webm",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "Snake Coiled Inside Hollow Tree Trunk (Native 1080x1920 Vertical)",
+      "creator_agency": "Parke Nacional Arikok / Wikimedia Commons",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Boa_constrictor_scondi_den_troncon_seco,_Parke_Arikok,_Santa_Cruz_Aruba_04.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Boa_constrictor_scondi_den_troncon_seco%2C_Parke_Arikok%2C_Santa_Cruz_Aruba_04.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "viper_ambushing_bird_iran_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Venomous Viper Ambushing a Landing Migratory Bird in Mid-Air (1080p)",
+      "creator_agency": "Behzad Fathinia et al. / Wikimedia Commons",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Iran_-_Pseudocerastes_urarachnoides_2015.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Iran_-_Pseudocerastes_urarachnoides_2015.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "pit_viper_strike_nature_srep.ogv",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "High-Speed Infrared Recording of Pit-Viper Ambush Strike in Nature",
+      "creator_agency": "Higham, T. E. et al., Nature Scientific Reports (srep40412-s1)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Rattlesnakes-are-extremely-fast-and-variable-when-striking-at-kangaroo-rats-in-nature-Three-srep40412-s1.ogv",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Rattlesnakes-are-extremely-fast-and-variable-when-striking-at-kangaroo-rats-in-nature-Three-srep40412-s1.ogv",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "pit_viper_venom_fangs_slowmo_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Milking Adult Pit Viper Venom in Slow Motion (1080p)",
+      "creator_agency": "Rushen / Queen Saovabha Memorial Institute Venom Research (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Milking_Adult_Malayan_Pit_Viper_(Calloselasma_rhodostoma)_Venom,_in_Slow_Motion.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Milking_Adult_Malayan_Pit_Viper_%28Calloselasma_rhodostoma%29_Venom%2C_in_Slow_Motion.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "pit_viper_fangs_closeup_slowmo_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Close-Up Slow-Motion Pit Viper Fangs Releasing Venom (1080p)",
+      "creator_agency": "Rushen / Queen Saovabha Memorial Institute Venom Research (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Milking_Juvenile_Malayan_Pit_Viper_(Calloselasma_rhodostoma)_Venom,_in_Slow_Motion.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Milking_Juvenile_Malayan_Pit_Viper_%28Calloselasma_rhodostoma%29_Venom%2C_in_Slow_Motion.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "san_juan_rocky_island_aerial_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "Rocky Coastal Island Cliffs and Solitary Lighthouse Aerial Sweep (1080p)",
+      "creator_agency": "Wikimedia Commons (San Juan Islands rocky coast & lighthouse)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:San_Jaun_Islands.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/San_Jaun_Islands.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "queimada_grande_coast_itanhaem.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "Ilha da Queimada Grande Viewed from Offshore Off Itanha\u00e9m, S\u00e3o Paulo, Brazil",
+      "creator_agency": "Prefeitura Municipal de Itanha\u00e9m / Wikimedia Commons",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ilha_da_Queimada_Grande_-_Itanha%C3%A9m.jpg",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Ilha_da_Queimada_Grande_-_Itanha%C3%A9m.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "bothrops_insularis_qg_oavm_4.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "Golden Lancehead (Bothrops insularis) Coiled on a Tree Branch on Ilha da Queimada Grande",
+      "creator_agency": "Otavio A. V. Marques (Instituto Butantan / Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bothrops_insularis_Queimada_Grande_SP_OAVM.jpg",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Bothrops_insularis_Queimada_Grande_SP_OAVM.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "jungle_rainforest_canopy_ambience.wav",
+      "media_type": "audio",
+      "priority_tier": 3,
+      "title": "Subtropical Island Rainforest Canopy Breeze & Cliff Surf Natural Sound Bed",
+      "creator_agency": "Proof of Wonder Documentary Studio v6.0",
+      "source_page_url": "local://assets/raw_footage/hidden_earth_snake_island_v6/jungle_rainforest_canopy_ambience.wav",
+      "direct_media_url": "local://assets/raw_footage/hidden_earth_snake_island_v6/jungle_rainforest_canopy_ambience.wav",
+      "is_first_party_original": true
+    },
+    {
+      "local_file": "snake_island_density_trap_v6.mp4",
+      "media_type": "diagram",
+      "priority_tier": 6,
+      "title": "Geological Sea-Level Isolation & 90-Vipers-per-Hectare Survey Density Model",
+      "creator_agency": "Proof of Wonder Documentary Studio v6.0",
+      "source_page_url": "local://pipeline/generate_snake_island_diagram.py",
+      "direct_media_url": "local://assets/raw_footage/hidden_earth_snake_island_v6/snake_island_density_trap_v6.mp4",
+      "is_first_party_original": true
+    }
+  ],
+  "licensing_metadata": {
+    "strict_zero_cost_budget": true,
+    "source_register_csv": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/source_register.csv",
+    "source_register_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/source_register.md",
+    "excluded_sources_notes": [
+      "brazil_navy_coastal_ops_1080p.webm: Excluded and deleted because visual inspection revealed TV Brasil broadcast logos and a sign-language inset box.",
+      "arboreal_vine_snake_branches_1080p.webm: Excluded and deleted because visual inspection showed museum exhibit text panels in the background.",
+      "butantan_serpentarium_cobras.webm t=0..155s: Excluded iguana/indoor glass segments; extracted only the clean t=156..195.5s Brazilian pit-viper leaf-litter clusters."
+    ],
+    "licenses": [
+      {
+        "local_file": "snakes_intertwined_mating_1080p.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Canopy intertwined snakes video: Wikimedia Commons contributor, CC BY 4.0"
+      },
+      {
+        "local_file": "butantan_pit_vipers_cluster_720p.mp4",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "required_attribution": "Instituto Butantan pit vipers video ('Cobras do Butantan'): Rogerio Ramos, CC BY 3.0"
+      },
+      {
+        "local_file": "vipera_modras_cluster_4_1080p.mp4",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "required_attribution": "Clustered vipers video (Vipera ammodytes 4): Petar Milo\u0161evi\u0107 / Wikimedia Commons, CC BY 3.0"
+      },
+      {
+        "local_file": "vipera_modras_cluster_3_1080p.mp4",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "required_attribution": "Clustered vipers video (Vipera ammodytes 3): Petar Milo\u0161evi\u0107 / Wikimedia Commons, CC BY 3.0"
+      },
+      {
+        "local_file": "vipera_modras_cluster_2_1080p.mp4",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "required_attribution": "Camouflaged vipers video (Vipera ammodytes 2): Petar Milo\u0161evi\u0107 / Wikimedia Commons, CC BY 3.0"
+      },
+      {
+        "local_file": "vipera_modras_cluster_1_1080p.mp4",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "required_attribution": "Macro viper portrait video (Vipera ammodytes): Petar Milo\u0161evi\u0107 / Wikimedia Commons, CC BY 3.0"
+      },
+      {
+        "local_file": "two_snakes_intertwined_slovenia_1080p.webm",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "required_attribution": "Intertwined wild snakes video: Wikimedia Commons contributor, CC BY 3.0"
+      },
+      {
+        "local_file": "elaphe_cluster_ljubljana_1080p.webm",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "required_attribution": "Rock-crevice coiled snakes video: Wikimedia Commons contributor, CC BY 3.0"
+      },
+      {
+        "local_file": "boa_tree_trunk_vertical_1080x1920.webm",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "required_attribution": "Tree-trunk snake footage: Public Domain / CC0"
+      },
+      {
+        "local_file": "viper_ambushing_bird_iran_1080p.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Viper bird-ambush footage (Pseudocerastes urarachnoides): Behzad Fathinia et al., CC BY 4.0"
+      },
+      {
+        "local_file": "pit_viper_strike_nature_srep.ogv",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "High-speed pit-viper strike video: Higham et al., Nature Scientific Reports (2017), CC BY 4.0"
+      },
+      {
+        "local_file": "pit_viper_venom_fangs_slowmo_1080p.mp4",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Slow-motion pit-viper venom extraction video: Rushen / Wikimedia Commons, CC BY 4.0"
+      },
+      {
+        "local_file": "pit_viper_fangs_closeup_slowmo_1080p.mp4",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Close-up pit-viper fang venom extraction video: Rushen / Wikimedia Commons, CC BY 4.0"
+      },
+      {
+        "local_file": "san_juan_rocky_island_aerial_1080p.webm",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "required_attribution": "Rocky island cliffs & coastal lighthouse aerial footage: Wikimedia Commons contributor, CC BY 2.0"
+      },
+      {
+        "local_file": "queimada_grande_coast_itanhaem.jpg",
+        "license": "CC BY 2.5",
+        "license_url": "https://creativecommons.org/licenses/by/2.5/",
+        "required_attribution": "Ilha da Queimada Grande photograph: Prefeitura de Itanha\u00e9m / Wikimedia Commons, CC BY 2.5"
+      },
+      {
+        "local_file": "bothrops_insularis_qg_oavm_4.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Bothrops insularis on Ilha da Queimada Grande photograph: Otavio A. V. Marques (Instituto Butantan), CC BY 4.0"
+      },
+      {
+        "local_file": "jungle_rainforest_canopy_ambience.wav",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "required_attribution": "First-party synthesized subtropical island canopy & surf atmosphere (CC0)"
+      },
+      {
+        "local_file": "snake_island_density_trap_v6.mp4",
+        "license": "100% Original First-Party Graphic",
+        "license_url": "N/A",
+        "required_attribution": "Original illustrative survey density & sea-level isolation graphic based on Marques et al. / Instituto Butantan"
+      }
+    ]
+  },
+  "shot_list": [
+    {
+      "sid": "S01",
+      "kind": "video_full",
+      "src_file": "snakes_intertwined_mating_1080p.webm",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Multiple real snakes coiled and tangled high in green tree branches at eye level (N01)",
+      "editorial_rationale": "Opens with real 1080p footage of multiple heavy snakes tangled across green branches to create instant visceral tension."
+    },
+    {
+      "sid": "S02",
+      "kind": "still_full",
+      "src_file": "queimada_grande_coast_itanhaem.jpg",
+      "camera_perspective": "wide",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Authentic boat-level view of Ilha da Queimada Grande off S\u00e3o Paulo, Brazil (N02a)",
+      "editorial_rationale": "Shows the actual forbidden Brazilian island from boat level."
+    },
+    {
+      "sid": "S03",
+      "kind": "video_full",
+      "src_file": "vipera_modras_cluster_3_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p multiple venomous vipers coiled side-by-side over branches and dry leaves (N02b)",
+      "editorial_rationale": "Matches 'overrun by venomous snakes' with real multi-viper 1080p footage."
+    },
+    {
+      "sid": "S04",
+      "kind": "video_full",
+      "src_file": "san_juan_rocky_island_aerial_1080p.webm",
+      "camera_perspective": "aerial",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "aerial_sweep",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p aerial sweep over wave-battered rocky island cliffs (N02c)",
+      "editorial_rationale": "Reinforces the physical isolation and steep wave-lashed cliffs enforcing quarantine."
+    },
+    {
+      "sid": "S05",
+      "kind": "video_full",
+      "src_file": "butantan_pit_vipers_cluster_720p.mp4",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Multiple Brazilian pit vipers coiled over one another on leaf litter at Instituto Butantan (N03a)",
+      "editorial_rationale": "Shows real Brazilian pit vipers clustered on leaf litter inside S\u00e3o Paulo's Instituto Butantan."
+    },
+    {
+      "sid": "S06",
+      "kind": "video_full",
+      "src_file": "vipera_modras_cluster_4_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p overlapping venomous vipers layered across forest leaf litter (N03b)",
+      "editorial_rationale": "Maintains relentless multi-snake density visuals while stating the scientific survey caveat."
+    },
+    {
+      "sid": "S07",
+      "kind": "video_full",
+      "src_file": "snake_island_density_trap_v6.mp4",
+      "camera_perspective": "labeled_visualization",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.5,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": false,
+      "has_human_interaction": false,
+      "story_beat": "1080x1920 Butantan survey density grid: up to 90 deadly vipers per hectare (N03c)",
+      "editorial_rationale": "Makes '90 deadly vipers per hectare' instantly visual and concrete with pulsing survey markers."
+    },
+    {
+      "sid": "S08",
+      "kind": "video_full",
+      "src_file": "vipera_modras_cluster_2_1080p.mp4",
+      "camera_perspective": "macro",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p camouflaged venomous viper staring from beneath a gnarled branch beside another viper coil (N03d)",
+      "editorial_rationale": "Shows how easily multiple camouflaged vipers blend into rocks and branches along the forest floor."
+    },
+    {
+      "sid": "S09",
+      "kind": "video_full",
+      "src_file": "two_snakes_intertwined_slovenia_1080p.webm",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Two intertwined black snakes writhing tightly across the ground (N04a)",
+      "editorial_rationale": "Visceral writhing multi-snake motion amplifies the mid-video dread pivot."
+    },
+    {
+      "sid": "S10",
+      "kind": "video_full",
+      "src_file": "boa_tree_trunk_vertical_1080x1920.webm",
+      "camera_perspective": "first_person_pov",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Native 1080x1920 POV discovering a real snake coiled inside a tree trunk (N04b)",
+      "editorial_rationale": "First-person vertical perspective discovering a snake hidden inside a tree trunk at chest/head height."
+    },
+    {
+      "sid": "S11",
+      "kind": "video_full",
+      "src_file": "elaphe_cluster_ljubljana_1080p.webm",
+      "camera_perspective": "macro",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p macro knot of overlapping snake coils packed into a rock crevice (N05a)",
+      "editorial_rationale": "Conveys claustrophobic crowding of thousands of snakes stranded on a rocky 43-hectare island."
+    },
+    {
+      "sid": "S12",
+      "kind": "still_full",
+      "src_file": "bothrops_insularis_qg_oavm_4.jpg",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Authentic 5K Golden Lancehead coiled on a branch on Ilha da Queimada Grande (N05b)",
+      "editorial_rationale": "Direct on-island herpetological evidence captured on Ilha da Queimada Grande by Otavio A. V. Marques."
+    },
+    {
+      "sid": "S13",
+      "kind": "video_full",
+      "src_file": "viper_ambushing_bird_iran_1080p.webm",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p real venomous viper ambushing a landing bird in mid-air (N05c)",
+      "editorial_rationale": "Unforgettable real 1080p wildlife footage of a camouflaged viper ambushing a landing bird synced to the exact spoken word."
+    },
+    {
+      "sid": "S14",
+      "kind": "video_full",
+      "src_file": "pit_viper_strike_nature_srep.ogv",
+      "camera_perspective": "wide",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Nature Scientific Reports high-speed infrared pit-viper ambush strike (N06a)",
+      "editorial_rationale": "Peer-reviewed Nature Scientific Reports high-speed infrared footage underscores nocturnal pit-viper strike speed."
+    },
+    {
+      "sid": "S15",
+      "kind": "video_full",
+      "src_file": "pit_viper_venom_fangs_slowmo_1080p.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "1080p slow-motion herpetologist extracting pit-viper venom from live fangs (N06b)",
+      "editorial_rationale": "Authentic hands-on herpetological venom extraction visually proves the physical reality of pit-viper fangs and venom."
+    },
+    {
+      "sid": "S16",
+      "kind": "video_full",
+      "src_file": "pit_viper_fangs_closeup_slowmo_1080p.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "1080p tight slow-motion close-up of pit-viper fangs releasing venom droplets (N06c)",
+      "editorial_rationale": "Second closer slow-motion venom-extraction angle intensifies the payoff beat."
+    },
+    {
+      "sid": "S17",
+      "kind": "video_full",
+      "src_file": "butantan_pit_vipers_cluster_720p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Dense pile of coiled Brazilian pit vipers covering the dark forest floor (N06d)",
+      "editorial_rationale": "Matches 'onto the forest floor' with heavy coiled Brazilian pit vipers covering dark leaf litter."
+    },
+    {
+      "sid": "S18",
+      "kind": "video_full",
+      "src_file": "san_juan_rocky_island_aerial_1080p.webm",
+      "camera_perspective": "wide",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "aerial_sweep",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.55,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Solitary white coastal lighthouse standing unmanned on windswept island cliffs (N07a)",
+      "editorial_rationale": "Evokes the haunting human retreat after Queimada Grande's 1909 lighthouse was automated."
+    },
+    {
+      "sid": "S19",
+      "kind": "video_full",
+      "src_file": "snakes_intertwined_mating_1080p.webm",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1080p multiple snakes gliding across green canopy branches \u2014 seamless loop tail (N07b)",
+      "editorial_rationale": "Ends on multiple live snakes tangled in green tree branches so Frame N loops seamlessly into Frame 0."
+    }
+  ],
+  "scene_timing": {
+    "fps": 30,
+    "semantic_timeline_manifest_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/semantic_timeline_manifest.json",
+    "timed_scenes": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 6.0667,
+        "duration_s": 6.0667,
+        "start_frame": 0,
+        "end_frame": 182
+      },
+      {
+        "sid": "S02",
+        "start_s": 6.0667,
+        "end_s": 10.1667,
+        "duration_s": 4.1,
+        "start_frame": 182,
+        "end_frame": 305
+      },
+      {
+        "sid": "S03",
+        "start_s": 10.1667,
+        "end_s": 13.3667,
+        "duration_s": 3.2,
+        "start_frame": 305,
+        "end_frame": 401
+      },
+      {
+        "sid": "S04",
+        "start_s": 13.3667,
+        "end_s": 18.7333,
+        "duration_s": 5.3666,
+        "start_frame": 401,
+        "end_frame": 562
+      },
+      {
+        "sid": "S05",
+        "start_s": 18.7333,
+        "end_s": 22.4333,
+        "duration_s": 3.7,
+        "start_frame": 562,
+        "end_frame": 673
+      },
+      {
+        "sid": "S06",
+        "start_s": 22.4333,
+        "end_s": 26.0333,
+        "duration_s": 3.6,
+        "start_frame": 673,
+        "end_frame": 781
+      },
+      {
+        "sid": "S07",
+        "start_s": 26.0333,
+        "end_s": 29.3333,
+        "duration_s": 3.3,
+        "start_frame": 781,
+        "end_frame": 880
+      },
+      {
+        "sid": "S08",
+        "start_s": 29.3333,
+        "end_s": 34.9667,
+        "duration_s": 5.6334,
+        "start_frame": 880,
+        "end_frame": 1049
+      },
+      {
+        "sid": "S09",
+        "start_s": 34.9667,
+        "end_s": 37.8667,
+        "duration_s": 2.9,
+        "start_frame": 1049,
+        "end_frame": 1136
+      },
+      {
+        "sid": "S10",
+        "start_s": 37.8667,
+        "end_s": 41.8333,
+        "duration_s": 3.9666,
+        "start_frame": 1136,
+        "end_frame": 1255
+      },
+      {
+        "sid": "S11",
+        "start_s": 41.8333,
+        "end_s": 45.5,
+        "duration_s": 3.6667,
+        "start_frame": 1255,
+        "end_frame": 1365
+      },
+      {
+        "sid": "S12",
+        "start_s": 45.5,
+        "end_s": 48.0667,
+        "duration_s": 2.5667,
+        "start_frame": 1365,
+        "end_frame": 1442
+      },
+      {
+        "sid": "S13",
+        "start_s": 48.0667,
+        "end_s": 53.6667,
+        "duration_s": 5.6,
+        "start_frame": 1442,
+        "end_frame": 1610
+      },
+      {
+        "sid": "S14",
+        "start_s": 53.6667,
+        "end_s": 56.3333,
+        "duration_s": 2.6666,
+        "start_frame": 1610,
+        "end_frame": 1690
+      },
+      {
+        "sid": "S15",
+        "start_s": 56.3333,
+        "end_s": 59.3,
+        "duration_s": 2.9667,
+        "start_frame": 1690,
+        "end_frame": 1779
+      },
+      {
+        "sid": "S16",
+        "start_s": 59.3,
+        "end_s": 61.6667,
+        "duration_s": 2.3667,
+        "start_frame": 1779,
+        "end_frame": 1850
+      },
+      {
+        "sid": "S17",
+        "start_s": 61.6667,
+        "end_s": 64.3,
+        "duration_s": 2.6333,
+        "start_frame": 1850,
+        "end_frame": 1929
+      },
+      {
+        "sid": "S18",
+        "start_s": 64.3,
+        "end_s": 67.4,
+        "duration_s": 3.1,
+        "start_frame": 1929,
+        "end_frame": 2022
+      },
+      {
+        "sid": "S19",
+        "start_s": 67.4,
+        "end_s": 72.0333,
+        "duration_s": 4.6333,
+        "start_frame": 2022,
+        "end_frame": 2161
+      }
+    ]
+  },
+  "subtitle_version": {
+    "version": "v6.0.0",
+    "style": "cinema_boxless",
+    "emphasis_mode": "color_accent",
+    "word_by_word_animation": false,
+    "cue_count": 41,
+    "srt_path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/subtitles.srt"
+  },
+  "thumbnail_variants": {
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/thumbnail.jpg",
+    "mobile_preview_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/thumbnail_small_preview_sheet.jpg",
+    "concepts_comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/thumbnail_concepts_comparison_sheet.jpg",
+    "concepts": [
+      {
+        "concept_id": "A",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/thumbnail_concept_A.jpg",
+        "source_asset": "snakes_intertwined_mating_1080p.webm",
+        "matches_opening_scene_asset": true,
+        "headline_text": "4,000 VIPERS|ONE ISLAND",
+        "headline_word_count": 4,
+        "kicker_text": "HUMANS BANNED",
+        "concept_rationale": "Matches Frame 0 opening hook: multiple real snakes coiled and tangled together in green tree branches at eye level.",
+        "size_kb": 841.1,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "snakes_intertwined_mating_1080p.webm",
+          "sharpness_score": 1.91,
+          "subject_separation_score": 61.16,
+          "combined_score": 34.5,
+          "recommended_cx": 0.5367,
+          "recommended_cy": 0.4662
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "B",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/thumbnail_concept_B.jpg",
+        "source_asset": "bothrops_insularis_qg_oavm_4.jpg",
+        "matches_opening_scene_asset": false,
+        "headline_text": "DON'T LOOK|UP",
+        "headline_word_count": 3,
+        "kicker_text": "BRAZIL'S SNAKE ISLAND",
+        "concept_rationale": "Authentic 5K field photograph of a Golden Lancehead coiled on a rainforest branch inside Ilha da Queimada Grande.",
+        "size_kb": 1207.1,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "bothrops_insularis_qg_oavm_4.jpg",
+          "sharpness_score": 1.61,
+          "subject_separation_score": 77.9,
+          "combined_score": 43.57,
+          "recommended_cx": 0.5443,
+          "recommended_cy": 0.4757
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "C",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/thumbnail_concept_C.jpg",
+        "source_asset": "vipera_modras_cluster_1_1080p.mp4",
+        "matches_opening_scene_asset": false,
+        "headline_text": "90 VIPERS|PER HECTARE",
+        "headline_word_count": 4,
+        "kicker_text": "FORBIDDEN FOREST",
+        "concept_rationale": "Extreme macro close-up of a venomous viper head staring directly into the camera.",
+        "size_kb": 563.5,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "vipera_modras_cluster_1_1080p.mp4",
+          "sharpness_score": 0.68,
+          "subject_separation_score": 48.25,
+          "combined_score": 26.84,
+          "recommended_cx": 0.4863,
+          "recommended_cy": 0.4049
+        },
+        "actual_analytics_outcome": null
+      }
+    ]
+  },
+  "rendering_configuration": {
+    "output_spec": {
+      "aspect_ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video_codec_master": "libx264",
+      "video_crf_master": 15,
+      "video_preset_master": "medium",
+      "video_profile": "high",
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "audio_codec": "aac",
+      "audio_bitrate": "192k",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "target_loudness_lufs": -16.0
+    },
+    "color_science": {
+      "enable_filmic_grade": true,
+      "cast_tame_strength": 0.16,
+      "luma_grain_sigma": 2.2
+    },
+    "benchmarks": {
+      "slug": "snake-island-vipers-v6",
+      "encode_mode": "master",
+      "shots_render_or_cache_s": 0.007,
+      "timeline_assembly_and_mux_s": 75.405,
+      "thumbnail_concepts_s": 4.381,
+      "total_render_master_s": 79.964,
+      "rendered_frames": 2161,
+      "effective_render_fps": 27.02
+    }
+  },
+  "qa_results": {
+    "qc_measurements_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/qc_measurements.json",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/qc_report.md",
+    "summary": {
+      "overall_pass": true,
+      "failed_gates_count": 0,
+      "moving_footage_pct": 86.17,
+      "whisper_normalized_match_ratio": 0.9949,
+      "integrated_lufs": -16.1,
+      "true_peak_dbtp": -1.7,
+      "protected_projects_intact": true
+    }
+  },
+  "final_output_locations": {
+    "output_dir": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6",
+    "master_mp4": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/snake-island-vipers-v6.mp4",
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/thumbnail.jpg",
+    "subtitles_srt": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/subtitles.srt",
+    "script_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/script.md",
+    "retention_plan_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/retention_plan.md",
+    "storyboard_manifest_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/storyboard_and_shot_manifest.md",
+    "youtube_metadata_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/youtube_metadata.md",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/qc_report.md"
+  }
+}

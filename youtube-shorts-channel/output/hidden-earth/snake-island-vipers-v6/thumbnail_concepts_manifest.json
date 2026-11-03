@@ -1,0 +1,72 @@
+{
+  "slug": "snake-island-vipers-v6",
+  "primary_title": "Snake Island: Why 4,000 Deadly Vipers Rule This Forest",
+  "concepts_count": 3,
+  "comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/thumbnail_concepts_comparison_sheet.jpg",
+  "ctr_prediction_disclaimer": "Visual sharpness and subject-separation scores verify small-screen mobile legibility only. They do NOT predict real YouTube click-through or swipe-away rates; populate `actual_analytics_outcome` via `analytics_learning.py` once real YouTube Studio impressions/views are available.",
+  "concepts": [
+    {
+      "concept_id": "A",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/thumbnail_concept_A.jpg",
+      "source_asset": "snakes_intertwined_mating_1080p.webm",
+      "matches_opening_scene_asset": true,
+      "headline_text": "4,000 VIPERS|ONE ISLAND",
+      "headline_word_count": 4,
+      "kicker_text": "HUMANS BANNED",
+      "concept_rationale": "Matches Frame 0 opening hook: multiple real snakes coiled and tangled together in green tree branches at eye level.",
+      "size_kb": 841.1,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "snakes_intertwined_mating_1080p.webm",
+        "sharpness_score": 1.91,
+        "subject_separation_score": 61.16,
+        "combined_score": 34.5,
+        "recommended_cx": 0.5367,
+        "recommended_cy": 0.4662
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "B",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/thumbnail_concept_B.jpg",
+      "source_asset": "bothrops_insularis_qg_oavm_4.jpg",
+      "matches_opening_scene_asset": false,
+      "headline_text": "DON'T LOOK|UP",
+      "headline_word_count": 3,
+      "kicker_text": "BRAZIL'S SNAKE ISLAND",
+      "concept_rationale": "Authentic 5K field photograph of a Golden Lancehead coiled on a rainforest branch inside Ilha da Queimada Grande.",
+      "size_kb": 1207.1,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "bothrops_insularis_qg_oavm_4.jpg",
+        "sharpness_score": 1.61,
+        "subject_separation_score": 77.9,
+        "combined_score": 43.57,
+        "recommended_cx": 0.5443,
+        "recommended_cy": 0.4757
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "C",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/thumbnail_concept_C.jpg",
+      "source_asset": "vipera_modras_cluster_1_1080p.mp4",
+      "matches_opening_scene_asset": false,
+      "headline_text": "90 VIPERS|PER HECTARE",
+      "headline_word_count": 4,
+      "kicker_text": "FORBIDDEN FOREST",
+      "concept_rationale": "Extreme macro close-up of a venomous viper head staring directly into the camera.",
+      "size_kb": 563.5,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "vipera_modras_cluster_1_1080p.mp4",
+        "sharpness_score": 0.68,
+        "subject_separation_score": 48.25,
+        "combined_score": 26.84,
+        "recommended_cx": 0.4863,
+        "recommended_cy": 0.4049
+      },
+      "actual_analytics_outcome": null
+    }
+  ]
+}

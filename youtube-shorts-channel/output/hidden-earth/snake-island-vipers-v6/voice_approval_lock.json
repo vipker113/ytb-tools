@@ -1,0 +1,11 @@
+{
+  "slug": "snake-island-vipers-v6",
+  "script_version": "v6.0.0",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "approved_at_utc": "2026-11-03T09:36:22.548446+00:00",
+  "reviewer_note": "Approved via Stage 3 Voice Studio",
+  "script_sha256": "a46c6e0a6015423cb293ae7ad2e731041b3610d9b7df6b19044a815288ad5610",
+  "narration_norm_wav_sha256": "24d5e653e764616d67a9cb8a482c5fc44012b83cfbe218ada7ea28e99b0cfffe",
+  "word_timings_sha256": "6830513a9458a05300a15648bd69318878abc43007841ad530ba2407842f0880"
+}

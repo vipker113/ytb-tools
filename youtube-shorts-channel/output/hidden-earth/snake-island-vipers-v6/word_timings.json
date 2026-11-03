@@ -1,0 +1,1863 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "pronunciation_sig": "32ee192600f33fe14439d6531074a23a313d1d92908df51dd3005589bb4fe398",
+  "total_duration_s": 72.0333,
+  "total_frames_30fps": 2161,
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "Imagine four thousand deadly pit vipers trapped on one tiny island\u2014hanging from the trees at eye level.",
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "start": 0.1,
+      "end": 5.894,
+      "duration": 5.794,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "four",
+        "thousand",
+        "deadly",
+        "vipers",
+        "eye",
+        "level"
+      ]
+    },
+    {
+      "seg_id": "N02",
+      "text": "Thirty-three kilometers off Brazil sits Ilha da Queimada Grande\u2014a steep island completely overrun by venomous snakes. The danger is so extreme that Brazil's Navy banned unauthorized civilians from ever stepping ashore.",
+      "rate": "+2%",
+      "pitch": "-2Hz",
+      "start": 6.314,
+      "end": 18.585,
+      "duration": 12.271,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "Brazil",
+        "Queimada",
+        "Grande",
+        "overrun",
+        "banned",
+        "civilians"
+      ]
+    },
+    {
+      "seg_id": "N03",
+      "text": "Viral myths claim five snakes wait on every square meter. Butantan Institute surveys show no evidence of that rumor\u2014yet still count up to ninety deadly vipers per hectare. Walk just one hundred meters through this forest, and dozens of camouflaged vipers surround you.",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "start": 19.005,
+      "end": 34.814,
+      "duration": 15.809,
+      "pause_after": 0.44,
+      "emphasis_words": [
+        "five",
+        "snakes",
+        "no",
+        "evidence",
+        "ninety",
+        "deadly",
+        "dozens",
+        "vipers"
+      ]
+    },
+    {
+      "seg_id": "N04",
+      "text": "Even worse, they don't just slither underfoot. In this silent forest, danger hangs directly above your head.",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 35.254,
+      "end": 41.664,
+      "duration": 6.411,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "worse",
+        "don't",
+        "slither",
+        "underfoot",
+        "above",
+        "head"
+      ]
+    },
+    {
+      "seg_id": "N05",
+      "text": "Trapped by rising seas eleven thousand years ago without mammals, thousands of vipers climbed into the trees. Today they hang coiled at neck height along dense branches, waiting to ambush landing birds.",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "start": 42.084,
+      "end": 53.547,
+      "duration": 11.463,
+      "pause_after": 0.44,
+      "emphasis_words": [
+        "eleven",
+        "thousand",
+        "climbed",
+        "trees",
+        "neck",
+        "height",
+        "ambush",
+        "birds"
+      ]
+    },
+    {
+      "seg_id": "N06",
+      "text": "To stop bitten prey from flying out to sea, they evolved venom up to five times more potent. A single strike melts flesh in seconds\u2014dropping birds straight onto the forest floor.",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "start": 53.987,
+      "end": 64.144,
+      "duration": 10.157,
+      "pause_after": 0.44,
+      "emphasis_words": [
+        "five",
+        "times",
+        "more",
+        "potent",
+        "melts",
+        "flesh",
+        "seconds"
+      ]
+    },
+    {
+      "seg_id": "N07",
+      "text": "Humans staffed a lighthouse here in 1909\u2014before automating the tower and abandoning the forest to four thousand vipers.",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "start": 64.584,
+      "end": 71.795,
+      "duration": 7.21,
+      "pause_after": 0.24,
+      "emphasis_words": [
+        "lighthouse",
+        "1909",
+        "automating",
+        "abandoning",
+        "four",
+        "thousand",
+        "vipers"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "Imagine four thousand deadly pit vipers trapped on one tiny island\u2014hanging from the trees at eye level.",
+      "delivery": "HOOK",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "four thousand deadly pit vipers",
+        "eye level"
+      ],
+      "start_s": 0.1,
+      "end_s": 5.894,
+      "cache_key": "c203e2a9e6d4a7fca38e",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:HOOK->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N02",
+      "text": "Thirty-three kilometers off Brazil sits Ilha da Queimada Grande\u2014a steep island completely overrun by venomous snakes.",
+      "delivery": "MYSTERIOUS",
+      "pace": "MODERATE",
+      "energy": 4,
+      "rate": "+2%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "Ilha da Queimada Grande",
+        "overrun by venomous snakes"
+      ],
+      "start_s": 6.314,
+      "end_s": 13.226,
+      "cache_key": "d56c00fec21746bae511",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:MODERATE->rate_pct=+1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "The danger is so extreme that Brazil's Navy banned unauthorized civilians from ever stepping ashore.",
+      "delivery": "MEASURED_EVIDENCE",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "banned unauthorized civilians",
+        "stepping ashore"
+      ],
+      "start_s": 13.586,
+      "end_s": 18.585,
+      "cache_key": "6d918b514f74721e32b7",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N03",
+      "text": "Viral myths claim five snakes wait on every square meter.",
+      "delivery": "MYSTERIOUS",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 320,
+      "emphasis_phrases": [
+        "five snakes",
+        "square meter"
+      ],
+      "start_s": 19.005,
+      "end_s": 22.302,
+      "cache_key": "f248f7c73f0af02a4819",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N03",
+      "text": "Butantan Institute surveys show no evidence of that rumor\u2014yet still count up to ninety deadly vipers per hectare.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 380,
+      "emphasis_phrases": [
+        "no evidence",
+        "ninety deadly vipers"
+      ],
+      "start_s": 22.622,
+      "end_s": 29.201,
+      "cache_key": "eb2afdb00ceb89ceddb7",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N03",
+      "text": "Walk just one hundred meters through this forest, and dozens of camouflaged vipers surround you.",
+      "delivery": "MYSTERIOUS",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "dozens of camouflaged vipers",
+        "surround you"
+      ],
+      "start_s": 29.581,
+      "end_s": 34.814,
+      "cache_key": "1080c995c7d64bbf9e3a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N04",
+      "text": "Even worse, they don't just slither underfoot.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "don't just slither underfoot"
+      ],
+      "start_s": 35.254,
+      "end_s": 37.706,
+      "cache_key": "db6d2f0668e0a32b0859",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 7,
+      "seg_id": "N04",
+      "text": "In this silent forest, danger hangs directly above your head.",
+      "delivery": "MYSTERIOUS",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "directly above your head"
+      ],
+      "start_s": 38.066,
+      "end_s": 41.664,
+      "cache_key": "ccbe4f96abea946d2f9a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 8,
+      "seg_id": "N05",
+      "text": "Trapped by rising seas eleven thousand years ago without mammals, thousands of vipers climbed into the trees.",
+      "delivery": "CALM_EXPLANATION",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "eleven thousand years ago",
+        "climbed into the trees"
+      ],
+      "start_s": 42.084,
+      "end_s": 47.911,
+      "cache_key": "3487855b3f471deafecc",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 9,
+      "seg_id": "N05",
+      "text": "Today they hang coiled at neck height along dense branches, waiting to ambush landing birds.",
+      "delivery": "MYSTERIOUS",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "coiled at neck height",
+        "ambush landing birds"
+      ],
+      "start_s": 48.271,
+      "end_s": 53.547,
+      "cache_key": "139cb325572bc4044dbf",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 10,
+      "seg_id": "N06",
+      "text": "To stop bitten prey from flying out to sea, they evolved venom up to five times more potent.",
+      "delivery": "CINEMATIC_REVEAL",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "five times more potent"
+      ],
+      "start_s": 53.987,
+      "end_s": 59.142,
+      "cache_key": "3411b5fc589a7b283383",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 11,
+      "seg_id": "N06",
+      "text": "A single strike melts flesh in seconds\u2014dropping birds straight onto the forest floor.",
+      "delivery": "CINEMATIC_REVEAL",
+      "pace": "MODERATE",
+      "energy": 5,
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "melts flesh in seconds",
+        "forest floor"
+      ],
+      "start_s": 59.502,
+      "end_s": 64.144,
+      "cache_key": "566d08e3d43b7140bfc8",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:MODERATE->rate_pct=+1%",
+        "ENERGY:5/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 12,
+      "seg_id": "N07",
+      "text": "Humans staffed a lighthouse here in 1909\u2014before automating the tower and abandoning the forest to four thousand vipers.",
+      "delivery": "FINAL_IMPRESSION",
+      "pace": "SLOW",
+      "energy": 3,
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "automating the tower",
+        "four thousand vipers"
+      ],
+      "start_s": 64.584,
+      "end_s": 71.795,
+      "cache_key": "b1adb7410c67aa81e41a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:FINAL_IMPRESSION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=380ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "Imagine",
+      "start": 0.1,
+      "end": 0.66,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "four",
+      "start": 0.555,
+      "end": 0.79,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "thousand",
+      "start": 0.803,
+      "end": 1.311,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "deadly",
+      "start": 1.324,
+      "end": 1.649,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "pit",
+      "start": 1.662,
+      "end": 1.897,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "vipers",
+      "start": 1.91,
+      "end": 2.3,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "trapped",
+      "start": 2.313,
+      "end": 2.652,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "on",
+      "start": 2.665,
+      "end": 2.808,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "one",
+      "start": 2.821,
+      "end": 3.107,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "tiny",
+      "start": 3.12,
+      "end": 3.511,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "island",
+      "start": 3.524,
+      "end": 3.967,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "hanging",
+      "start": 4.24,
+      "end": 4.488,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "from",
+      "start": 4.501,
+      "end": 4.644,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "the",
+      "start": 4.657,
+      "end": 4.735,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "trees",
+      "start": 4.748,
+      "end": 5.139,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "at",
+      "start": 5.152,
+      "end": 5.243,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "eye",
+      "start": 5.256,
+      "end": 5.347,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "level",
+      "start": 5.36,
+      "end": 5.829,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Thirty-three",
+      "start": 6.314,
+      "end": 6.951,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "kilometers",
+      "start": 6.864,
+      "end": 7.428,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "off",
+      "start": 7.44,
+      "end": 7.636,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Brazil",
+      "start": 7.648,
+      "end": 8.004,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "sits",
+      "start": 8.016,
+      "end": 8.286,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Ilha",
+      "start": 8.298,
+      "end": 8.629,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "da",
+      "start": 8.641,
+      "end": 8.984,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Queimada",
+      "start": 8.996,
+      "end": 9.523,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Grande",
+      "start": 9.536,
+      "end": 10.05,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "a",
+      "start": 10.283,
+      "end": 10.332,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "steep",
+      "start": 10.344,
+      "end": 10.688,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "island",
+      "start": 10.7,
+      "end": 11.055,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "completely",
+      "start": 11.067,
+      "end": 11.533,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "overrun",
+      "start": 11.545,
+      "end": 12.023,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "by",
+      "start": 12.036,
+      "end": 12.195,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "venomous",
+      "start": 12.207,
+      "end": 12.612,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "snakes",
+      "start": 12.624,
+      "end": 13.175,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "The",
+      "start": 13.586,
+      "end": 13.736,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "danger",
+      "start": 13.645,
+      "end": 14.045,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "is",
+      "start": 14.058,
+      "end": 14.183,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "so",
+      "start": 14.195,
+      "end": 14.37,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "extreme",
+      "start": 14.383,
+      "end": 14.833,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "that",
+      "start": 14.845,
+      "end": 15.008,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Brazil's",
+      "start": 15.02,
+      "end": 15.495,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Navy",
+      "start": 15.508,
+      "end": 15.833,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "banned",
+      "start": 15.845,
+      "end": 16.133,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "unauthorized",
+      "start": 16.145,
+      "end": 16.745,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "civilians",
+      "start": 16.758,
+      "end": 17.283,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "from",
+      "start": 17.295,
+      "end": 17.458,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "ever",
+      "start": 17.47,
+      "end": 17.658,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "stepping",
+      "start": 17.67,
+      "end": 18.045,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "ashore",
+      "start": 18.058,
+      "end": 18.495,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "Viral",
+      "start": 19.005,
+      "end": 19.447,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "myths",
+      "start": 19.36,
+      "end": 19.613,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "claim",
+      "start": 19.625,
+      "end": 19.979,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "five",
+      "start": 19.991,
+      "end": 20.332,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "snakes",
+      "start": 20.345,
+      "end": 20.698,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "wait",
+      "start": 20.711,
+      "end": 21.014,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "on",
+      "start": 21.027,
+      "end": 21.166,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "every",
+      "start": 21.178,
+      "end": 21.405,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "square",
+      "start": 21.418,
+      "end": 21.759,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "meter",
+      "start": 21.772,
+      "end": 22.226,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "Butantan",
+      "start": 22.622,
+      "end": 23.26,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Institute",
+      "start": 23.143,
+      "end": 23.68,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "surveys",
+      "start": 23.693,
+      "end": 24.168,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "show",
+      "start": 24.18,
+      "end": 24.455,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "no",
+      "start": 24.468,
+      "end": 24.755,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "evidence",
+      "start": 24.768,
+      "end": 25.168,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "of",
+      "start": 25.18,
+      "end": 25.28,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "that",
+      "start": 25.293,
+      "end": 25.518,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "rumor",
+      "start": 25.53,
+      "end": 25.868,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "yet",
+      "start": 26.18,
+      "end": 26.318,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "still",
+      "start": 26.33,
+      "end": 26.63,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "count",
+      "start": 26.643,
+      "end": 26.968,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "up",
+      "start": 26.98,
+      "end": 27.105,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "to",
+      "start": 27.118,
+      "end": 27.218,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "ninety",
+      "start": 27.23,
+      "end": 27.668,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "deadly",
+      "start": 27.68,
+      "end": 28.043,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "vipers",
+      "start": 28.055,
+      "end": 28.443,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "per",
+      "start": 28.455,
+      "end": 28.568,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "hectare",
+      "start": 28.58,
+      "end": 29.105,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Walk",
+      "start": 29.581,
+      "end": 29.946,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "just",
+      "start": 29.843,
+      "end": 30.077,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "one",
+      "start": 30.09,
+      "end": 30.351,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "hundred",
+      "start": 30.364,
+      "end": 30.676,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "meters",
+      "start": 30.689,
+      "end": 31.067,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "through",
+      "start": 31.08,
+      "end": 31.301,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "this",
+      "start": 31.314,
+      "end": 31.51,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "forest",
+      "start": 31.523,
+      "end": 32.004,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "and",
+      "start": 32.239,
+      "end": 32.33,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "dozens",
+      "start": 32.343,
+      "end": 32.734,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "of",
+      "start": 32.747,
+      "end": 32.838,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "camouflaged",
+      "start": 32.851,
+      "end": 33.541,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "vipers",
+      "start": 33.554,
+      "end": 33.957,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "surround",
+      "start": 33.97,
+      "end": 34.452,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "you",
+      "start": 34.465,
+      "end": 34.726,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "Even",
+      "start": 35.254,
+      "end": 35.592,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "worse",
+      "start": 35.486,
+      "end": 35.929,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "they",
+      "start": 36.059,
+      "end": 36.176,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "don't",
+      "start": 36.189,
+      "end": 36.423,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "just",
+      "start": 36.436,
+      "end": 36.645,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "slither",
+      "start": 36.658,
+      "end": 36.983,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "underfoot",
+      "start": 36.996,
+      "end": 37.634,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "In",
+      "start": 38.066,
+      "end": 38.261,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "this",
+      "start": 38.157,
+      "end": 38.352,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "silent",
+      "start": 38.365,
+      "end": 38.756,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "forest",
+      "start": 38.769,
+      "end": 39.251,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "danger",
+      "start": 39.459,
+      "end": 39.824,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "hangs",
+      "start": 39.837,
+      "end": 40.188,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "directly",
+      "start": 40.201,
+      "end": 40.696,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "above",
+      "start": 40.709,
+      "end": 40.982,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "your",
+      "start": 40.995,
+      "end": 41.113,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "head",
+      "start": 41.126,
+      "end": 41.594,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "Trapped",
+      "start": 42.084,
+      "end": 42.459,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "by",
+      "start": 42.365,
+      "end": 42.503,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "rising",
+      "start": 42.515,
+      "end": 42.953,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "seas",
+      "start": 42.965,
+      "end": 43.228,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "eleven",
+      "start": 43.24,
+      "end": 43.59,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "thousand",
+      "start": 43.603,
+      "end": 44.053,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "years",
+      "start": 44.065,
+      "end": 44.29,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "ago",
+      "start": 44.303,
+      "end": 44.528,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "without",
+      "start": 44.54,
+      "end": 44.903,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "mammals",
+      "start": 44.915,
+      "end": 45.39,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "thousands",
+      "start": 45.603,
+      "end": 46.04,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "of",
+      "start": 46.053,
+      "end": 46.128,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "vipers",
+      "start": 46.14,
+      "end": 46.54,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "climbed",
+      "start": 46.553,
+      "end": 46.94,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "into",
+      "start": 46.953,
+      "end": 47.178,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 47.19,
+      "end": 47.278,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "trees",
+      "start": 47.29,
+      "end": 47.853,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "Today",
+      "start": 48.271,
+      "end": 48.675,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "they",
+      "start": 48.571,
+      "end": 48.727,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "hang",
+      "start": 48.74,
+      "end": 48.988,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "coiled",
+      "start": 49.001,
+      "end": 49.352,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "at",
+      "start": 49.365,
+      "end": 49.456,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "neck",
+      "start": 49.469,
+      "end": 49.717,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "height",
+      "start": 49.73,
+      "end": 50.003,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "along",
+      "start": 50.016,
+      "end": 50.303,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "dense",
+      "start": 50.316,
+      "end": 50.602,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "branches",
+      "start": 50.615,
+      "end": 51.24,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "waiting",
+      "start": 51.436,
+      "end": 51.826,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "to",
+      "start": 51.839,
+      "end": 51.943,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "ambush",
+      "start": 51.956,
+      "end": 52.373,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "landing",
+      "start": 52.386,
+      "end": 52.829,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "birds",
+      "start": 52.842,
+      "end": 53.441,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "To",
+      "start": 53.987,
+      "end": 54.137,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "stop",
+      "start": 54.05,
+      "end": 54.35,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "bitten",
+      "start": 54.363,
+      "end": 54.638,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "prey",
+      "start": 54.65,
+      "end": 54.95,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "from",
+      "start": 54.963,
+      "end": 55.163,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "flying",
+      "start": 55.175,
+      "end": 55.588,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "out",
+      "start": 55.6,
+      "end": 55.738,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "to",
+      "start": 55.75,
+      "end": 55.838,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "sea",
+      "start": 55.85,
+      "end": 56.213,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "they",
+      "start": 56.45,
+      "end": 56.563,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "evolved",
+      "start": 56.575,
+      "end": 56.938,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "venom",
+      "start": 56.95,
+      "end": 57.25,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "up",
+      "start": 57.263,
+      "end": 57.4,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "to",
+      "start": 57.413,
+      "end": 57.5,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "five",
+      "start": 57.513,
+      "end": 57.888,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "times",
+      "start": 57.9,
+      "end": 58.3,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "more",
+      "start": 58.313,
+      "end": 58.513,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "potent",
+      "start": 58.525,
+      "end": 59.075,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "A",
+      "start": 59.502,
+      "end": 59.648,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "single",
+      "start": 59.566,
+      "end": 59.918,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "strike",
+      "start": 59.93,
+      "end": 60.27,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "melts",
+      "start": 60.282,
+      "end": 60.561,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "flesh",
+      "start": 60.573,
+      "end": 60.889,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "in",
+      "start": 60.901,
+      "end": 61.035,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "seconds",
+      "start": 61.047,
+      "end": 61.556,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "dropping",
+      "start": 61.787,
+      "end": 62.2,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "birds",
+      "start": 62.212,
+      "end": 62.54,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "straight",
+      "start": 62.552,
+      "end": 62.94,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "onto",
+      "start": 62.952,
+      "end": 63.146,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 63.158,
+      "end": 63.243,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "forest",
+      "start": 63.256,
+      "end": 63.656,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "floor",
+      "start": 63.668,
+      "end": 64.081,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "Humans",
+      "start": 64.584,
+      "end": 64.992,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "staffed",
+      "start": 64.885,
+      "end": 65.24,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "a",
+      "start": 65.253,
+      "end": 65.306,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "lighthouse",
+      "start": 65.319,
+      "end": 65.859,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "here",
+      "start": 65.872,
+      "end": 66.069,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "in 1909",
+      "start": 66.082,
+      "end": 67.319,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "before",
+      "start": 67.503,
+      "end": 67.819,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "automating",
+      "start": 67.832,
+      "end": 68.424,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "the",
+      "start": 68.438,
+      "end": 68.517,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "tower",
+      "start": 68.53,
+      "end": 68.951,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "and",
+      "start": 68.964,
+      "end": 69.082,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "abandoning",
+      "start": 69.096,
+      "end": 69.635,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "the",
+      "start": 69.648,
+      "end": 69.714,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "forest",
+      "start": 69.727,
+      "end": 70.135,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "to",
+      "start": 70.148,
+      "end": 70.24,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "four",
+      "start": 70.253,
+      "end": 70.582,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "thousand",
+      "start": 70.596,
+      "end": 71.109,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "vipers",
+      "start": 71.122,
+      "end": 71.727,
+      "emphasis": true
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "cavern_heartbeat_pulse",
+      "time_s": 0.08,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "subterranean_gate_boom",
+      "time_s": 18.793,
+      "gain_db": -26.0
+    },
+    {
+      "sfx_name": "cavern_heartbeat_pulse",
+      "time_s": 35.017,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 48.107,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "cavern_heartbeat_pulse",
+      "time_s": 61.727,
+      "gain_db": -26.0
+    }
+  ],
+  "diegetic_nat_sound_active": true,
+  "audio_layers_exported": [
+    "layer_1_narration",
+    "layer_2_music",
+    "layer_3_ambience",
+    "layer_4_natural_sounds",
+    "layer_5_cinematic_sfx"
+  ],
+  "audio_diagnostics": {
+    "integrated_lufs": -16.0,
+    "loudness_range_lra_lu": 1.5,
+    "true_peak_dbtp": -1.7,
+    "speech_crest_factor_db": 14.3,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -1.75
+  }
+}

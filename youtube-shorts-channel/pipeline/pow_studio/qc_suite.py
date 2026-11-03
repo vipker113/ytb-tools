@@ -93,6 +93,8 @@ _NUMERAL_EXPANSIONS: dict[str, list[str]] = {
     "1986": ["nineteen", "eighty", "six"],
     "1963": ["nineteen", "sixty", "three"],
     "1960": ["nineteen", "sixty"],
+    "1925": ["nineteen", "twenty", "five"],
+    "1909": ["nineteen", "oh", "nine"],
     "17000": ["seventeen", "thousand"],
     "2600": ["two", "thousand", "six", "hundred"],
     "1770": ["one", "thousand", "seven", "hundred", "seventy"],

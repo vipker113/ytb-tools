@@ -1,0 +1,97 @@
+{
+  "slug": "snake-island-vipers-v6",
+  "style_profile": "mysterious_earth_exploration",
+  "target_duration_range_s": [
+    66.0,
+    90.0
+  ],
+  "planned_duration_s": 71.8,
+  "timing_source": "word_timings",
+  "rows": [
+    {
+      "time": "0.1\u20135.9s",
+      "start_s": 0.1,
+      "end_s": 5.89,
+      "seg_id": "N01",
+      "narrative_beat": "opening_hook",
+      "viewer_question": "Where on Earth are thousands of deadly vipers hanging in the trees at eye level?",
+      "new_information": "Up to 4,000 venomous pit vipers are trapped on a single tiny island, coiled in branches at human eye height.",
+      "visual_reveal": "1080p real footage of multiple thick snakes tangled and hanging across green tree branches staring at the camera.",
+      "emotional_direction": "Immediate visceral dread and claustrophobic curiosity",
+      "retention_purpose": "Stop scrolling on Frame 0 with real multi-snake canopy footage matching the spoken eye-level hook"
+    },
+    {
+      "time": "6.3\u201318.6s",
+      "start_s": 6.31,
+      "end_s": 18.59,
+      "seg_id": "N02",
+      "narrative_beat": "curiosity_gap",
+      "viewer_question": "How dense is the snake population that the Brazilian Navy had to ban civilian landings?",
+      "new_information": "Ilha da Queimada Grande lies 33 km off S\u00e3o Paulo, Brazil, under a strict Brazilian Navy civilian landing ban.",
+      "visual_reveal": "Authentic coastal view of steep rocky Ilha da Queimada Grande and surf-battered island cliffs.",
+      "emotional_direction": "Forbidden isolation and rising tension",
+      "retention_purpose": "Establish the real Brazilian island and official naval quarantine before revealing the true density numbers"
+    },
+    {
+      "time": "19.0\u201334.8s",
+      "start_s": 19.0,
+      "end_s": 34.81,
+      "seg_id": "N03",
+      "narrative_beat": "evidence_and_discovery",
+      "viewer_question": "Why are up to ninety venomous vipers packed into every hectare\u2014and where are they hiding?",
+      "new_information": "Instituto Butantan surveys debunk the 5-per-m\u00b2 rumor (no evidence) while confirming an extraordinary 50\u201390 vipers per hectare (~2,000\u20134,000 snakes across 43 ha).",
+      "visual_reveal": "Clustered Brazilian pit vipers at Instituto Butantan, layered wild vipers on forest leaf litter, and a 90-vipers-per-hectare survey density map.",
+      "emotional_direction": "Chilling realization that the verified scientific density is still terrifying",
+      "retention_purpose": "Build trust by correcting the viral myth while proving that walking 100 meters crosses dozens of hidden pit vipers"
+    },
+    {
+      "time": "35.3\u201341.7s",
+      "start_s": 35.25,
+      "end_s": 41.66,
+      "seg_id": "N04",
+      "narrative_beat": "escalation",
+      "viewer_question": "If they aren't just on the forest floor, how do they hunt?",
+      "new_information": "Unlike mainland pit vipers that stay mostly on the ground, Snake Island's vipers occupy vertical forest space overhead.",
+      "visual_reveal": "Two jet-black snakes writhing and twisting around each other in tight coils and snakes hanging in branches.",
+      "emotional_direction": "Sudden claustrophobic vertical dread",
+      "retention_purpose": "Trigger the mid-video retention pivot from ground density to overhead canopy ambush"
+    },
+    {
+      "time": "42.1\u201353.5s",
+      "start_s": 42.08,
+      "end_s": 53.55,
+      "seg_id": "N05",
+      "narrative_beat": "escalation",
+      "viewer_question": "What happened to their venom when they had to stop birds from flying away?",
+      "new_information": "Post-glacial sea-level rise 11,000 years ago stranded the vipers without ground mammals, driving thousands into branches to ambush migratory passerine birds.",
+      "visual_reveal": "Dense rock-crevice snake cluster, snake coiled inside a hollow tree trunk, authentic 5K Golden Lancehead on a Queimada Grande branch, and real 1080p viper ambushing a landing bird.",
+      "emotional_direction": "Skin-crawling tension watching real snakes coiled in branches and striking a bird in mid-air",
+      "retention_purpose": "Deliver the evolutionary reason why thousands of pit vipers hang at neck height"
+    },
+    {
+      "time": "54.0\u201364.1s",
+      "start_s": 53.99,
+      "end_s": 64.14,
+      "seg_id": "N06",
+      "narrative_beat": "payoff",
+      "viewer_question": "Did humans ever try to live on this viper-ruled island?",
+      "new_information": "Natural selection favored ultra-fast hemotoxic/necrotic venom up to 5x more potent against avian prey so struck birds drop immediately rather than dying over the ocean.",
+      "visual_reveal": "High-speed infrared pit-viper strike and 1080p slow-motion venom dripping from pit-viper fangs.",
+      "emotional_direction": "Visceral awe at evolutionary lethality",
+      "retention_purpose": "Pay off the biological stakes with real high-speed strike and slow-motion venom fang footage"
+    },
+    {
+      "time": "64.6\u201371.8s",
+      "start_s": 64.58,
+      "end_s": 71.8,
+      "seg_id": "N07",
+      "narrative_beat": "final_impression",
+      "viewer_question": "What happens inside a forest completely surrendered by humans to 4,000 evolved predators?",
+      "new_information": "The 1909 Queimada Grande lighthouse was automated in the 1920s, leaving the entire island forest to ~2,000\u20134,000 Golden Lanceheads.",
+      "visual_reveal": "Lonely white coastal lighthouse on windswept cliffs, dense pile of coiled Brazilian pit vipers, and seamless canopy multi-snake loop.",
+      "emotional_direction": "Haunting, unforgettable final image of an island surrendered to vipers",
+      "retention_purpose": "Close with the eerie automated lighthouse fact and loop seamlessly back into tangled tree snakes"
+    }
+  ],
+  "markdown_table": "# Audience Retention Plan \u2014 `snake-island-vipers-v6` (`71.8s` Target/Actual Runtime)\n\n- **Production Profile:** `mysterious_earth_exploration`\n- **Configured Target Window:** `66\u201390s`\n- **Timing Basis:** `Authoritative Narration Master (word_timings.json)`\n\n| Time | Narrative beat | Viewer question | New information | Visual reveal | Emotional direction | Retention purpose |\n|---|---|---|---|---|---|---|\n| `0.1\u20135.9s` | **opening_hook** (`N01`) | Where on Earth are thousands of deadly vipers hanging in the trees at eye level? | Up to 4,000 venomous pit vipers are trapped on a single tiny island, coiled in branches at human eye height. | 1080p real footage of multiple thick snakes tangled and hanging across green tree branches staring at the camera. | Immediate visceral dread and claustrophobic curiosity | Stop scrolling on Frame 0 with real multi-snake canopy footage matching the spoken eye-level hook |\n| `6.3\u201318.6s` | **curiosity_gap** (`N02`) | How dense is the snake population that the Brazilian Navy had to ban civilian landings? | Ilha da Queimada Grande lies 33 km off S\u00e3o Paulo, Brazil, under a strict Brazilian Navy civilian landing ban. | Authentic coastal view of steep rocky Ilha da Queimada Grande and surf-battered island cliffs. | Forbidden isolation and rising tension | Establish the real Brazilian island and official naval quarantine before revealing the true density numbers |\n| `19.0\u201334.8s` | **evidence_and_discovery** (`N03`) | Why are up to ninety venomous vipers packed into every hectare\u2014and where are they hiding? | Instituto Butantan surveys debunk the 5-per-m\u00b2 rumor (no evidence) while confirming an extraordinary 50\u201390 vipers per hectare (~2,000\u20134,000 snakes across 43 ha). | Clustered Brazilian pit vipers at Instituto Butantan, layered wild vipers on forest leaf litter, and a 90-vipers-per-hectare survey density map. | Chilling realization that the verified scientific density is still terrifying | Build trust by correcting the viral myth while proving that walking 100 meters crosses dozens of hidden pit vipers |\n| `35.3\u201341.7s` | **escalation** (`N04`) | If they aren't just on the forest floor, how do they hunt? | Unlike mainland pit vipers that stay mostly on the ground, Snake Island's vipers occupy vertical forest space overhead. | Two jet-black snakes writhing and twisting around each other in tight coils and snakes hanging in branches. | Sudden claustrophobic vertical dread | Trigger the mid-video retention pivot from ground density to overhead canopy ambush |\n| `42.1\u201353.5s` | **escalation** (`N05`) | What happened to their venom when they had to stop birds from flying away? | Post-glacial sea-level rise 11,000 years ago stranded the vipers without ground mammals, driving thousands into branches to ambush migratory passerine birds. | Dense rock-crevice snake cluster, snake coiled inside a hollow tree trunk, authentic 5K Golden Lancehead on a Queimada Grande branch, and real 1080p viper ambushing a landing bird. | Skin-crawling tension watching real snakes coiled in branches and striking a bird in mid-air | Deliver the evolutionary reason why thousands of pit vipers hang at neck height |\n| `54.0\u201364.1s` | **payoff** (`N06`) | Did humans ever try to live on this viper-ruled island? | Natural selection favored ultra-fast hemotoxic/necrotic venom up to 5x more potent against avian prey so struck birds drop immediately rather than dying over the ocean. | High-speed infrared pit-viper strike and 1080p slow-motion venom dripping from pit-viper fangs. | Visceral awe at evolutionary lethality | Pay off the biological stakes with real high-speed strike and slow-motion venom fang footage |\n| `64.6\u201371.8s` | **final_impression** (`N07`) | What happens inside a forest completely surrendered by humans to 4,000 evolved predators? | The 1909 Queimada Grande lighthouse was automated in the 1920s, leaving the entire island forest to ~2,000\u20134,000 Golden Lanceheads. | Lonely white coastal lighthouse on windswept cliffs, dense pile of coiled Brazilian pit vipers, and seamless canopy multi-snake loop. | Haunting, unforgettable final image of an island surrendered to vipers | Close with the eerie automated lighthouse fact and loop seamlessly back into tangled tree snakes |\n"
+}

@@ -1,0 +1,343 @@
+{
+  "slug": "snake-island-vipers-v6",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "voice_identity": "en-GB-RyanNeural",
+  "sentence_count": 13,
+  "sentence_cache_hits": 13,
+  "supported_controls": [
+    "sentence_level_speaking_rate_bounded",
+    "sentence_level_pitch_bounded",
+    "exact_inter_sentence_pause_ms",
+    "custom_pronunciation_dictionary",
+    "emphasis_phrase_extraction_and_subtitle_onset_sync",
+    "rms_matched_cross_sentence_consistency",
+    "selective_sentence_rerender_cache"
+  ],
+  "engine_limitations": [
+    "edge-tts does not support zero-shot voice cloning from audio samples.",
+    "Azure-only <mstts:express-as> emotional style XML is rejected by the free Edge endpoint; delivery emotion is approximated cleanly via bounded human rate/pitch/pause prosody without artificial DSP stretching."
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "Imagine four thousand deadly pit vipers trapped on one tiny island\u2014hanging from the trees at eye level.",
+      "delivery": "HOOK",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "four thousand deadly pit vipers",
+        "eye level"
+      ],
+      "start_s": 0.1,
+      "end_s": 5.894,
+      "cache_key": "c203e2a9e6d4a7fca38e",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:HOOK->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N02",
+      "text": "Thirty-three kilometers off Brazil sits Ilha da Queimada Grande\u2014a steep island completely overrun by venomous snakes.",
+      "delivery": "MYSTERIOUS",
+      "pace": "MODERATE",
+      "energy": 4,
+      "rate": "+2%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "Ilha da Queimada Grande",
+        "overrun by venomous snakes"
+      ],
+      "start_s": 6.314,
+      "end_s": 13.226,
+      "cache_key": "d56c00fec21746bae511",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:MODERATE->rate_pct=+1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "The danger is so extreme that Brazil's Navy banned unauthorized civilians from ever stepping ashore.",
+      "delivery": "MEASURED_EVIDENCE",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "banned unauthorized civilians",
+        "stepping ashore"
+      ],
+      "start_s": 13.586,
+      "end_s": 18.585,
+      "cache_key": "6d918b514f74721e32b7",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N03",
+      "text": "Viral myths claim five snakes wait on every square meter.",
+      "delivery": "MYSTERIOUS",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 320,
+      "emphasis_phrases": [
+        "five snakes",
+        "square meter"
+      ],
+      "start_s": 19.005,
+      "end_s": 22.302,
+      "cache_key": "f248f7c73f0af02a4819",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N03",
+      "text": "Butantan Institute surveys show no evidence of that rumor\u2014yet still count up to ninety deadly vipers per hectare.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 380,
+      "emphasis_phrases": [
+        "no evidence",
+        "ninety deadly vipers"
+      ],
+      "start_s": 22.622,
+      "end_s": 29.201,
+      "cache_key": "eb2afdb00ceb89ceddb7",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N03",
+      "text": "Walk just one hundred meters through this forest, and dozens of camouflaged vipers surround you.",
+      "delivery": "MYSTERIOUS",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "dozens of camouflaged vipers",
+        "surround you"
+      ],
+      "start_s": 29.581,
+      "end_s": 34.814,
+      "cache_key": "1080c995c7d64bbf9e3a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N04",
+      "text": "Even worse, they don't just slither underfoot.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "don't just slither underfoot"
+      ],
+      "start_s": 35.254,
+      "end_s": 37.706,
+      "cache_key": "db6d2f0668e0a32b0859",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 7,
+      "seg_id": "N04",
+      "text": "In this silent forest, danger hangs directly above your head.",
+      "delivery": "MYSTERIOUS",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "directly above your head"
+      ],
+      "start_s": 38.066,
+      "end_s": 41.664,
+      "cache_key": "ccbe4f96abea946d2f9a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 8,
+      "seg_id": "N05",
+      "text": "Trapped by rising seas eleven thousand years ago without mammals, thousands of vipers climbed into the trees.",
+      "delivery": "CALM_EXPLANATION",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "eleven thousand years ago",
+        "climbed into the trees"
+      ],
+      "start_s": 42.084,
+      "end_s": 47.911,
+      "cache_key": "3487855b3f471deafecc",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 9,
+      "seg_id": "N05",
+      "text": "Today they hang coiled at neck height along dense branches, waiting to ambush landing birds.",
+      "delivery": "MYSTERIOUS",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "coiled at neck height",
+        "ambush landing birds"
+      ],
+      "start_s": 48.271,
+      "end_s": 53.547,
+      "cache_key": "139cb325572bc4044dbf",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 10,
+      "seg_id": "N06",
+      "text": "To stop bitten prey from flying out to sea, they evolved venom up to five times more potent.",
+      "delivery": "CINEMATIC_REVEAL",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "five times more potent"
+      ],
+      "start_s": 53.987,
+      "end_s": 59.142,
+      "cache_key": "3411b5fc589a7b283383",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 11,
+      "seg_id": "N06",
+      "text": "A single strike melts flesh in seconds\u2014dropping birds straight onto the forest floor.",
+      "delivery": "CINEMATIC_REVEAL",
+      "pace": "MODERATE",
+      "energy": 5,
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "melts flesh in seconds",
+        "forest floor"
+      ],
+      "start_s": 59.502,
+      "end_s": 64.144,
+      "cache_key": "566d08e3d43b7140bfc8",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:MODERATE->rate_pct=+1%",
+        "ENERGY:5/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 12,
+      "seg_id": "N07",
+      "text": "Humans staffed a lighthouse here in 1909\u2014before automating the tower and abandoning the forest to four thousand vipers.",
+      "delivery": "FINAL_IMPRESSION",
+      "pace": "SLOW",
+      "energy": 3,
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "automating the tower",
+        "four thousand vipers"
+      ],
+      "start_s": 64.584,
+      "end_s": 71.795,
+      "cache_key": "b1adb7410c67aa81e41a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:FINAL_IMPRESSION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=380ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ]
+}

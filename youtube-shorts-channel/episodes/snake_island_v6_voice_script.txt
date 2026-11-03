@@ -1,0 +1,115 @@
+# Proof of Wonder — Next-Generation Voice Studio Script (v6.0)
+# Episode: snake-island-vipers-v6
+# Title: Snake Island: Why 4,000 Deadly Vipers Rule This Forest
+# Production Profile: mysterious_earth_exploration | Voice Preset: mysterious_discovery (en-GB-RyanNeural)
+
+[SEG: N01]
+"Imagine four thousand deadly pit vipers trapped on one tiny island—hanging from the trees at eye level."
+
+[DELIVERY: HOOK]
+[PACE: SLOW]
+[ENERGY: 4/5]
+[EMPHASIS: "four thousand deadly pit vipers", "eye level"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N02]
+"Thirty-three kilometers off Brazil sits Ilha da Queimada Grande—a steep island completely overrun by venomous snakes."
+
+[DELIVERY: MYSTERIOUS]
+[PACE: MODERATE]
+[ENERGY: 4/5]
+[EMPHASIS: "Ilha da Queimada Grande", "overrun by venomous snakes"]
+[PAUSE AFTER: 360ms]
+
+"The danger is so extreme that Brazil's Navy banned unauthorized civilians from ever stepping ashore."
+
+[DELIVERY: MEASURED EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 4/5]
+[EMPHASIS: "banned unauthorized civilians", "stepping ashore"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N03]
+"Viral myths claim five snakes wait on every square meter."
+
+[DELIVERY: MYSTERIOUS]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "five snakes", "square meter"]
+[PAUSE AFTER: 320ms]
+
+"Butantan Institute surveys show no evidence of that rumor—yet still count up to ninety deadly vipers per hectare."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[PACE: NATURAL]
+[ENERGY: 4/5]
+[EMPHASIS: "no evidence", "ninety deadly vipers"]
+[PAUSE AFTER: 380ms]
+
+"Walk just one hundred meters through this forest, and dozens of camouflaged vipers surround you."
+
+[DELIVERY: MYSTERIOUS]
+[PACE: SLOW]
+[ENERGY: 4/5]
+[EMPHASIS: "dozens of camouflaged vipers", "surround you"]
+[PAUSE AFTER: 440ms]
+
+[SEG: N04]
+"Even worse, they don't just slither underfoot."
+
+[DELIVERY: SURPRISED BUT CONTROLLED]
+[PACE: SLOW]
+[ENERGY: 4/5]
+[EMPHASIS: "don't just slither underfoot"]
+[PAUSE AFTER: 360ms]
+
+"In this silent forest, danger hangs directly above your head."
+
+[DELIVERY: MYSTERIOUS]
+[PACE: SLOW]
+[ENERGY: 4/5]
+[EMPHASIS: "directly above your head"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N05]
+"Trapped by rising seas eleven thousand years ago without mammals, thousands of vipers climbed into the trees."
+
+[DELIVERY: CALM EXPLANATION]
+[PACE: NATURAL]
+[ENERGY: 4/5]
+[EMPHASIS: "eleven thousand years ago", "climbed into the trees"]
+[PAUSE AFTER: 360ms]
+
+"Today they hang coiled at neck height along dense branches, waiting to ambush landing birds."
+
+[DELIVERY: MYSTERIOUS]
+[PACE: SLOW]
+[ENERGY: 4/5]
+[EMPHASIS: "coiled at neck height", "ambush landing birds"]
+[PAUSE AFTER: 440ms]
+
+[SEG: N06]
+"To stop bitten prey from flying out to sea, they evolved venom up to five times more potent."
+
+[DELIVERY: CINEMATIC REVEAL]
+[PACE: NATURAL]
+[ENERGY: 4/5]
+[EMPHASIS: "five times more potent"]
+[PAUSE AFTER: 360ms]
+
+"A single strike melts flesh in seconds—dropping birds straight onto the forest floor."
+
+[DELIVERY: CINEMATIC REVEAL]
+[PACE: MODERATE]
+[ENERGY: 5/5]
+[EMPHASIS: "melts flesh in seconds", "forest floor"]
+[PAUSE AFTER: 440ms]
+
+[SEG: N07]
+"Humans staffed a lighthouse here in 1909—before automating the tower and abandoning the forest to four thousand vipers."
+
+[DELIVERY: FINAL IMPRESSION]
+[PACE: SLOW]
+[ENERGY: 3/5]
+[EMPHASIS: "automating the tower", "four thousand vipers"]
+[PAUSE AFTER: 240ms]

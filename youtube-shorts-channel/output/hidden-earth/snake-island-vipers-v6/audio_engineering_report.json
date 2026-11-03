@@ -1,0 +1,29 @@
+{
+  "slug": "snake-island-vipers-v6",
+  "voice_input_mode": "directed_tts",
+  "scene_audio_profile": "wildlife_field",
+  "stems": {
+    "layer_1_narration": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/work_audio/layer_1_narration.wav",
+    "layer_2_music": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/work_audio/layer_2_music.wav",
+    "layer_3_ambience": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/work_audio/layer_3_ambience.wav",
+    "layer_4_natural_sounds": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/work_audio/layer_4_natural_sounds.wav",
+    "layer_5_cinematic_sfx": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-vipers-v6/work_audio/layer_5_cinematic_sfx.wav"
+  },
+  "layers_active": {
+    "narration": true,
+    "music": true,
+    "ambience": true,
+    "natural_sounds": true,
+    "cinematic_sfx": true
+  },
+  "diagnostics": {
+    "integrated_lufs": -16.0,
+    "loudness_range_lra_lu": 1.5,
+    "true_peak_dbtp": -1.7,
+    "speech_crest_factor_db": 14.3,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -1.75
+  }
+}

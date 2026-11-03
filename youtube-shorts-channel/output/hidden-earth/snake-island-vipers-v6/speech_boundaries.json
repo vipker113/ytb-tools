@@ -1,0 +1,191 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 4.104,
+    "word_end_s": 3.967,
+    "next_word_start_s": 4.24,
+    "pause_s": 0.273,
+    "kind": "breath_pause",
+    "after_word": "island"
+  },
+  {
+    "time_s": 6.054,
+    "word_end_s": 5.829,
+    "next_word_start_s": 6.314,
+    "pause_s": 0.485,
+    "kind": "breath_pause",
+    "after_word": "level"
+  },
+  {
+    "time_s": 10.166,
+    "word_end_s": 10.05,
+    "next_word_start_s": 10.283,
+    "pause_s": 0.233,
+    "kind": "breath_pause",
+    "after_word": "Grande"
+  },
+  {
+    "time_s": 13.381,
+    "word_end_s": 13.175,
+    "next_word_start_s": 13.586,
+    "pause_s": 0.411,
+    "kind": "breath_pause",
+    "after_word": "snakes"
+  },
+  {
+    "time_s": 18.72,
+    "word_end_s": 18.495,
+    "next_word_start_s": 19.005,
+    "pause_s": 0.51,
+    "kind": "breath_pause",
+    "after_word": "ashore"
+  },
+  {
+    "time_s": 22.424,
+    "word_end_s": 22.226,
+    "next_word_start_s": 22.622,
+    "pause_s": 0.396,
+    "kind": "breath_pause",
+    "after_word": "meter"
+  },
+  {
+    "time_s": 26.024,
+    "word_end_s": 25.868,
+    "next_word_start_s": 26.18,
+    "pause_s": 0.312,
+    "kind": "breath_pause",
+    "after_word": "rumor"
+  },
+  {
+    "time_s": 29.33,
+    "word_end_s": 29.105,
+    "next_word_start_s": 29.581,
+    "pause_s": 0.476,
+    "kind": "breath_pause",
+    "after_word": "hectare"
+  },
+  {
+    "time_s": 32.121,
+    "word_end_s": 32.004,
+    "next_word_start_s": 32.239,
+    "pause_s": 0.235,
+    "kind": "breath_pause",
+    "after_word": "forest"
+  },
+  {
+    "time_s": 34.951,
+    "word_end_s": 34.726,
+    "next_word_start_s": 35.254,
+    "pause_s": 0.528,
+    "kind": "breath_pause",
+    "after_word": "you"
+  },
+  {
+    "time_s": 37.85,
+    "word_end_s": 37.634,
+    "next_word_start_s": 38.066,
+    "pause_s": 0.432,
+    "kind": "breath_pause",
+    "after_word": "underfoot"
+  },
+  {
+    "time_s": 39.355,
+    "word_end_s": 39.251,
+    "next_word_start_s": 39.459,
+    "pause_s": 0.208,
+    "kind": "breath_pause",
+    "after_word": "forest"
+  },
+  {
+    "time_s": 41.819,
+    "word_end_s": 41.594,
+    "next_word_start_s": 42.084,
+    "pause_s": 0.49,
+    "kind": "breath_pause",
+    "after_word": "head"
+  },
+  {
+    "time_s": 45.496,
+    "word_end_s": 45.39,
+    "next_word_start_s": 45.603,
+    "pause_s": 0.213,
+    "kind": "breath_pause",
+    "after_word": "mammals"
+  },
+  {
+    "time_s": 48.062,
+    "word_end_s": 47.853,
+    "next_word_start_s": 48.271,
+    "pause_s": 0.418,
+    "kind": "breath_pause",
+    "after_word": "trees"
+  },
+  {
+    "time_s": 51.338,
+    "word_end_s": 51.24,
+    "next_word_start_s": 51.436,
+    "pause_s": 0.196,
+    "kind": "breath_pause",
+    "after_word": "branches"
+  },
+  {
+    "time_s": 53.666,
+    "word_end_s": 53.441,
+    "next_word_start_s": 53.987,
+    "pause_s": 0.546,
+    "kind": "breath_pause",
+    "after_word": "birds"
+  },
+  {
+    "time_s": 56.332,
+    "word_end_s": 56.213,
+    "next_word_start_s": 56.45,
+    "pause_s": 0.237,
+    "kind": "breath_pause",
+    "after_word": "sea"
+  },
+  {
+    "time_s": 59.288,
+    "word_end_s": 59.075,
+    "next_word_start_s": 59.502,
+    "pause_s": 0.427,
+    "kind": "breath_pause",
+    "after_word": "potent"
+  },
+  {
+    "time_s": 61.671,
+    "word_end_s": 61.556,
+    "next_word_start_s": 61.787,
+    "pause_s": 0.231,
+    "kind": "breath_pause",
+    "after_word": "seconds"
+  },
+  {
+    "time_s": 64.306,
+    "word_end_s": 64.081,
+    "next_word_start_s": 64.584,
+    "pause_s": 0.503,
+    "kind": "breath_pause",
+    "after_word": "floor"
+  },
+  {
+    "time_s": 67.411,
+    "word_end_s": 67.319,
+    "next_word_start_s": 67.503,
+    "pause_s": 0.184,
+    "kind": "breath_pause",
+    "after_word": "in 1909"
+  },
+  {
+    "time_s": 72.033,
+    "word_end_s": 71.727,
+    "next_word_start_s": 72.033,
+    "pause_s": 0.306,
+    "kind": "segment_end",
+    "after_word": "vipers"
+  }
+]
