@@ -1,0 +1,151 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 2.381,
+    "word_end_s": 2.277,
+    "next_word_start_s": 2.485,
+    "pause_s": 0.208,
+    "kind": "breath_pause",
+    "after_word": "silent"
+  },
+  {
+    "time_s": 5.601,
+    "word_end_s": 5.376,
+    "next_word_start_s": 5.86,
+    "pause_s": 0.484,
+    "kind": "breath_pause",
+    "after_word": "hole"
+  },
+  {
+    "time_s": 9.948,
+    "word_end_s": 9.738,
+    "next_word_start_s": 10.158,
+    "pause_s": 0.42,
+    "kind": "breath_pause",
+    "after_word": "cluster"
+  },
+  {
+    "time_s": 12.259,
+    "word_end_s": 12.159,
+    "next_word_start_s": 12.358,
+    "pause_s": 0.199,
+    "kind": "breath_pause",
+    "after_word": "vacuum"
+  },
+  {
+    "time_s": 17.408,
+    "word_end_s": 17.183,
+    "next_word_start_s": 17.663,
+    "pause_s": 0.48,
+    "kind": "breath_pause",
+    "after_word": "light-years"
+  },
+  {
+    "time_s": 24.943,
+    "word_end_s": 24.737,
+    "next_word_start_s": 25.149,
+    "pause_s": 0.412,
+    "kind": "breath_pause",
+    "after_word": "gas"
+  },
+  {
+    "time_s": 29.688,
+    "word_end_s": 29.582,
+    "next_word_start_s": 29.794,
+    "pause_s": 0.212,
+    "kind": "breath_pause",
+    "after_word": "cavities"
+  },
+  {
+    "time_s": 31.894,
+    "word_end_s": 31.669,
+    "next_word_start_s": 32.154,
+    "pause_s": 0.485,
+    "kind": "breath_pause",
+    "after_word": "outward"
+  },
+  {
+    "time_s": 36.013,
+    "word_end_s": 35.804,
+    "next_word_start_s": 36.222,
+    "pause_s": 0.418,
+    "kind": "breath_pause",
+    "after_word": "C"
+  },
+  {
+    "time_s": 38.932,
+    "word_end_s": 38.815,
+    "next_word_start_s": 39.049,
+    "pause_s": 0.234,
+    "kind": "breath_pause",
+    "after_word": "years"
+  },
+  {
+    "time_s": 43.545,
+    "word_end_s": 43.32,
+    "next_word_start_s": 43.842,
+    "pause_s": 0.522,
+    "kind": "breath_pause",
+    "after_word": "detect"
+  },
+  {
+    "time_s": 47.539,
+    "word_end_s": 47.35,
+    "next_word_start_s": 47.728,
+    "pause_s": 0.378,
+    "kind": "breath_pause",
+    "after_word": "vacuum"
+  },
+  {
+    "time_s": 53.36,
+    "word_end_s": 53.244,
+    "next_word_start_s": 53.476,
+    "pause_s": 0.232,
+    "kind": "breath_pause",
+    "after_word": "octaves"
+  },
+  {
+    "time_s": 55.66,
+    "word_end_s": 55.435,
+    "next_word_start_s": 56.466,
+    "pause_s": 1.031,
+    "kind": "breath_pause",
+    "after_word": "roar"
+  },
+  {
+    "time_s": 59.532,
+    "word_end_s": 59.44,
+    "next_word_start_s": 59.624,
+    "pause_s": 0.184,
+    "kind": "breath_pause",
+    "after_word": "cluster"
+  },
+  {
+    "time_s": 64.579,
+    "word_end_s": 64.354,
+    "next_word_start_s": 64.835,
+    "pause_s": 0.481,
+    "kind": "breath_pause",
+    "after_word": "collapse"
+  },
+  {
+    "time_s": 66.783,
+    "word_end_s": 66.684,
+    "next_word_start_s": 66.882,
+    "pause_s": 0.198,
+    "kind": "breath_pause",
+    "after_word": "all"
+  },
+  {
+    "time_s": 70.633,
+    "word_end_s": 70.303,
+    "next_word_start_s": 70.633,
+    "pause_s": 0.33,
+    "kind": "segment_end",
+    "after_word": "note"
+  }
+]

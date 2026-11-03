@@ -1,0 +1,72 @@
+{
+  "slug": "perseus-black-hole-sound-v6",
+  "primary_title": "Space Is Not Silent: The Real Sound of a Black Hole",
+  "concepts_count": 3,
+  "comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/thumbnail_concepts_comparison_sheet.jpg",
+  "ctr_prediction_disclaimer": "Visual sharpness and subject-separation scores verify small-screen mobile legibility only. They do NOT predict real YouTube click-through or swipe-away rates; populate `actual_analytics_outcome` via `analytics_learning.py` once real YouTube Studio impressions/views are available.",
+  "concepts": [
+    {
+      "concept_id": "A",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/thumbnail_concept_A.jpg",
+      "source_asset": "perseus_sonification_chandra_1080p.mp4",
+      "matches_opening_scene_asset": true,
+      "headline_text": "REAL BLACK HOLE|SOUND",
+      "headline_word_count": 4,
+      "kicker_text": "NASA CHANDRA X-RAY",
+      "concept_rationale": "Matches Frame 0 opening hook: NASA Chandra's crimson radial X-ray acoustic scan around the Perseus black hole.",
+      "size_kb": 888.4,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "perseus_sonification_chandra_1080p.mp4",
+        "sharpness_score": 1.73,
+        "subject_separation_score": 97.99,
+        "combined_score": 54.67,
+        "recommended_cx": 0.5154,
+        "recommended_cy": 0.5341
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "B",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/thumbnail_concept_B.jpg",
+      "source_asset": "eht_m87_black_hole_4k.jpg",
+      "matches_opening_scene_asset": false,
+      "headline_text": "SPACE IS NOT|SILENT",
+      "headline_word_count": 4,
+      "kicker_text": "250M LIGHT-YEARS AWAY",
+      "concept_rationale": "Iconic real Event Horizon Telescope supermassive black hole ring against deep black space.",
+      "size_kb": 285.6,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "eht_m87_black_hole_4k.jpg",
+        "sharpness_score": 0.2,
+        "subject_separation_score": 106.25,
+        "combined_score": 58.52,
+        "recommended_cx": 0.4903,
+        "recommended_cy": 0.5075
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "C",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/thumbnail_concept_C.jpg",
+      "source_asset": "perseus_sound_waves_xray_clean.jpg",
+      "matches_opening_scene_asset": false,
+      "headline_text": "57 OCTAVES|BELOW HEARING",
+      "headline_word_count": 4,
+      "kicker_text": "CHANDRA SOUND WAVES",
+      "concept_rationale": "Authentic 2003 Chandra X-ray acoustic ripple map showing concentric sound waves around NGC 1275.",
+      "size_kb": 970.5,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "perseus_sound_waves_xray_clean.jpg",
+        "sharpness_score": 2.33,
+        "subject_separation_score": 95.24,
+        "combined_score": 53.43,
+        "recommended_cx": 0.5465,
+        "recommended_cy": 0.4859
+      },
+      "actual_analytics_outcome": null
+    }
+  ]
+}

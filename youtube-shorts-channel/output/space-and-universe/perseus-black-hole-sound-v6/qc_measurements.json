@@ -1,0 +1,1337 @@
+{
+  "style_profile": "space_discovery",
+  "ffprobe": {
+    "duration_s": 70.633,
+    "within_target_window": true,
+    "exact_frame_match": true,
+    "size_bytes": 172287419,
+    "size_mb": 164.31,
+    "video_codec": "h264",
+    "profile": "High",
+    "width": 1080,
+    "height": 1920,
+    "dimensions_exact": true,
+    "r_frame_rate": "30/1",
+    "avg_frame_rate": "30/1",
+    "nb_frames": 2119,
+    "pix_fmt": "yuv420p",
+    "color_space": "bt709",
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "black_segments": [],
+  "loudness": {
+    "integrated_LUFS": -16.0,
+    "LRA_LU": 1.9,
+    "true_peak_dBTP": -1.4,
+    "narration_stem_LUFS": -16.1,
+    "ambience_and_sfx_stem_LUFS": -26.1,
+    "voice_to_ambience_margin_LU": 10.0
+  },
+  "shot_plan_and_pacing_qc": {
+    "style_profile": "space_discovery",
+    "total_duration_s": 70.633,
+    "shot_count": 18,
+    "distinct_source_assets_count": 13,
+    "distinct_perspectives": [
+      "aerial",
+      "close_up",
+      "extreme_wide",
+      "first_person_pov",
+      "labeled_visualization",
+      "macro",
+      "medium",
+      "satellite_or_telescope",
+      "scientific_fieldwork"
+    ],
+    "distinct_perspectives_count": 9,
+    "first_real_motion_start_s": 0.0,
+    "viral_script_audit": {
+      "total_words": 182,
+      "hook_first_sentence_words": 18,
+      "max_sentence_words": 24,
+      "llm_cliche_hits": 0,
+      "jargon_cluster_hits": 0,
+      "flat_prosody_ratio": 0.0,
+      "ending_tail_pause_s": 0.34,
+      "anti_ai_script_pass": true,
+      "errors": [],
+      "warnings": []
+    },
+    "moving_footage_s": 57.399,
+    "moving_footage_pct": 81.26,
+    "meets_moving_footage_goal": true,
+    "still_photography_s": 8.634,
+    "still_photography_pct": 12.22,
+    "human_interaction_shots": 2,
+    "human_interaction_s": 8.0,
+    "human_interaction_pct": 11.33,
+    "illustrative_diagram_s": 4.6,
+    "illustrative_diagram_pct": 6.51,
+    "authentic_visual_pct": 93.49,
+    "pacing_summary": {
+      "min_shot_s": 2.2,
+      "median_shot_s": 4.1,
+      "mean_shot_s": 3.924,
+      "max_shot_s": 5.6,
+      "internal_cuts": 17,
+      "clean_cuts": 15,
+      "dissolves": 2,
+      "dissolve_fraction": 0.118,
+      "speech_boundary_aligned_cuts": 14,
+      "speech_boundary_alignment_pct": 82.4
+    },
+    "errors": [],
+    "warnings": [
+      "[S05:eso_alma_control_room_10.m4v] Effective upscale factor (2.83x) exceeds crisp HD target (2.35x).",
+      "[S06] Cut at 21.67s is 3.28s from nearest speech pause",
+      "[S13:eso_alma_control_room_1.m4v] Effective upscale factor (2.83x) exceeds crisp HD target (2.35x).",
+      "[S14] Cut at 51.27s is 2.09s from nearest speech pause",
+      "[S15] Cut at 56.37s is 0.71s from nearest speech pause",
+      "Asset 'perseus_sonification_chandra_1080p.mp4' used 3 times (exceeds max_uses_per_asset=2)."
+    ],
+    "shots": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 5.6,
+        "duration_s": 5.6,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 7.68,
+          "max_recommended_s": 10.08,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "satellite_or_telescope",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 18
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "satellite_or_telescope",
+        "src_file": "perseus_sonification_chandra_1080p.mp4",
+        "transition_in": "opening",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Immediate 0.00s real NASA Chandra Perseus X-ray scan hook.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.0,
+        "nearest_speech_boundary_kind": "start",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "You were taught that space is completely silent until NASA captured the real sound of a black hole",
+        "story_beat": "NASA Chandra radial X-ray scan of Perseus supermassive black hole pressure waves (N01)",
+        "crop_feasibility": {
+          "source_width": 1080,
+          "source_height": 1080,
+          "crop_width_px": 510.5,
+          "crop_height_px": 907.6,
+          "upscale_factor": 2.116,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S02",
+        "start_s": 5.6,
+        "end_s": 9.9333,
+        "duration_s": 4.333,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 5.79,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "aerial",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 11
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "aerial",
+        "src_file": "eso_m87_zoom_4k.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Sentence-pause cut after 'hole' launching 250 million light-years into deep intergalactic space.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.001,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_location",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Two hundred fifty million light-years away sits the Perseus galaxy cluster",
+        "story_beat": "4K deep-space telescope zoom across distant galaxies (N02a)",
+        "crop_feasibility": {
+          "source_width": 3840,
+          "source_height": 2160,
+          "crop_width_px": 1135.5,
+          "crop_height_px": 2018.7,
+          "upscale_factor": 0.951,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S03",
+        "start_s": 9.9333,
+        "end_s": 12.2667,
+        "duration_s": 2.333,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.62,
+          "ideal_duration_s": 5.12,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "medium",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 7
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "nasa_bh_approaching_4k.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Sentence-pause cut after 'cluster' contrasting silent empty interstellar vacuum.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.015,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "While empty space is a silent vacuum",
+        "story_beat": "4K silent glide across empty interstellar vacuum (N02b)",
+        "crop_feasibility": {
+          "source_width": 3840,
+          "source_height": 2160,
+          "crop_width_px": 1125.0,
+          "crop_height_px": 2000.0,
+          "upscale_factor": 0.96,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S04",
+        "start_s": 12.2667,
+        "end_s": 17.4,
+        "duration_s": 5.133,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 7.01,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "extreme_wide",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 14
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "extreme_wide",
+        "src_file": "perseus_cluster_wave_4k.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clause-pause cut after 'vacuum' revealing the superheated intracluster plasma cloud.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.008,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "this giant cluster is wrapped in superheated plasma spanning hundreds of thousands of light-years",
+        "story_beat": "4K NASA visualization of superheated X-ray plasma enveloping the Perseus cluster (N02c)",
+        "crop_feasibility": {
+          "source_width": 3840,
+          "source_height": 2160,
+          "crop_width_px": 1047.4,
+          "crop_height_px": 1862.1,
+          "upscale_factor": 1.031,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S05",
+        "start_s": 17.4,
+        "end_s": 21.6667,
+        "duration_s": 4.267,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.38,
+          "ideal_duration_s": 4.88,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "handheld_field",
+            "is_moving_footage": true,
+            "spoken_word_count": 7
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "eso_alma_control_room_10.m4v",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Sentence-pause cut after 'light-years' introducing the 2003 astronomers analyzing telescope data.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.008,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "contextual_fieldwork",
+        "scientific_claim_status": "verified_fact",
+        "context_note": "Observatory spectral data analysis",
+        "spoken_narration": "In 2003 astronomers studying NASA's Chandra X-ray images",
+        "story_beat": "Real astronomer examining spectral plots in observatory control room (N03a)",
+        "crop_feasibility": {
+          "source_width": 1280,
+          "source_height": 720,
+          "crop_width_px": 382.1,
+          "crop_height_px": 679.2,
+          "upscale_factor": 2.827,
+          "feasible": true,
+          "warnings": [
+            "Effective upscale factor (2.83x) exceeds crisp HD target (2.35x)."
+          ]
+        }
+      },
+      {
+        "sid": "S06",
+        "start_s": 21.6667,
+        "end_s": 24.9333,
+        "duration_s": 3.267,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.5,
+          "ideal_duration_s": 4.0,
+          "max_recommended_s": 4.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "satellite_or_telescope",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": false,
+            "spoken_word_count": 8
+          }
+        },
+        "media_type": "photo",
+        "kind": "still_full",
+        "camera_perspective": "satellite_or_telescope",
+        "src_file": "perseus_sound_waves_xray_clean.jpg",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Word-boundary cut after 'images' revealing the actual 2003 Chandra X-ray concentric ripples image.",
+        "cut_speech_boundary_aligned": false,
+        "nearest_speech_boundary_s": 3.276,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": "Chandra X-ray sound ripples (2003)",
+        "spoken_narration": "noticed giant concentric ripples rolling through that gas",
+        "story_beat": "Landmark 2003 NASA Chandra X-ray map of concentric sound ripples in Perseus (N03b)",
+        "crop_feasibility": {
+          "source_width": 2160,
+          "source_height": 2160,
+          "crop_width_px": 1125.0,
+          "crop_height_px": 2000.0,
+          "upscale_factor": 0.96,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S07",
+        "start_s": 24.9333,
+        "end_s": 29.7,
+        "duration_s": 4.767,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.2,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "macro",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 12
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "macro",
+        "src_file": "nasa_bh_jets_orbit_4k.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Sentence-pause cut after 'gas' erupting into 4K NASA supercomputer relativistic black hole jets.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.01,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": "NASA SVS relativistic jet simulation",
+        "spoken_narration": "Relativistic jets blasting from the central black hole were inflating enormous cavities",
+        "story_beat": "4K NASA supercomputer simulation of relativistic jets blasting from an active black hole (N03c)",
+        "crop_feasibility": {
+          "source_width": 4000,
+          "source_height": 4000,
+          "crop_width_px": 1630.4,
+          "crop_height_px": 2898.6,
+          "upscale_factor": 0.662,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S08",
+        "start_s": 29.7,
+        "end_s": 31.9,
+        "duration_s": 2.2,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.5,
+          "ideal_duration_s": 4.0,
+          "max_recommended_s": 4.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "close_up",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": false,
+            "spoken_word_count": 5
+          }
+        },
+        "media_type": "photo",
+        "kind": "still_full",
+        "camera_perspective": "close_up",
+        "src_file": "perseus_cavities_xray_clean.jpg",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Em-dash pause cut after 'cavities' showing the actual X-ray cavities inflated inside Perseus.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.012,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "pushing true sound waves outward",
+        "story_beat": "Chandra 3-color X-ray image of twin black hole cavities in Perseus (N03d)",
+        "crop_feasibility": {
+          "source_width": 2160,
+          "source_height": 2160,
+          "crop_width_px": 1135.5,
+          "crop_height_px": 2018.7,
+          "upscale_factor": 0.951,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S09",
+        "start_s": 31.9,
+        "end_s": 36.0,
+        "duration_s": 4.1,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 5.84,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "macro",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 11
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "macro",
+        "src_file": "nasa_bh_upclose_4k.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Sentence-pause cut after 'outward' into the ominous event horizon as the 57-octave pitch drop is revealed.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.006,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "The pitch hit a deep B-flat fifty-seven octaves below middle C",
+        "story_beat": "4K NASA close-up of a supermassive black hole event horizon shadow (N04a)",
+        "crop_feasibility": {
+          "source_width": 3840,
+          "source_height": 2160,
+          "crop_width_px": 1104.5,
+          "crop_height_px": 1963.6,
+          "upscale_factor": 0.978,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S10",
+        "start_s": 36.0,
+        "end_s": 38.9333,
+        "duration_s": 2.933,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.72,
+          "ideal_duration_s": 5.22,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "first_person_pov",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 7
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "first_person_pov",
+        "src_file": "nasa_bh_orbiting_4k.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Sentence-pause cut after 'C' sweeping past the photon ring on 'nearly ten million years'.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.013,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Each oscillation takes nearly ten million years",
+        "story_beat": "4K NASA supercomputer sweep past a black hole photon ring (N04b)",
+        "crop_feasibility": {
+          "source_width": 3840,
+          "source_height": 2160,
+          "crop_width_px": 1084.8,
+          "crop_height_px": 1928.6,
+          "upscale_factor": 0.996,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S11",
+        "start_s": 38.9333,
+        "end_s": 43.5333,
+        "duration_s": 4.6,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.5,
+          "ideal_duration_s": 4.0,
+          "max_recommended_s": 4.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "labeled_visualization",
+            "camera_movement": "static",
+            "is_moving_footage": false,
+            "spoken_word_count": 11
+          }
+        },
+        "media_type": "diagram",
+        "kind": "video_full",
+        "camera_perspective": "labeled_visualization",
+        "src_file": "perseus_57_octaves_diagram_v6.mp4",
+        "transition_in": "dissolve",
+        "transition_duration_s": 0.55,
+        "transition_reason": "Smooth 0.55s dissolve after 'years' visualizing the 144-quadrillion-fold frequency drop.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.001,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "illustrative_diagram",
+        "scientific_claim_status": "illustrative_visualization",
+        "context_note": "Illustrative 57-octave acoustic scale",
+        "spoken_narration": "one hundred forty-four quadrillion times deeper than human ears can detect",
+        "story_beat": "1080x1920 acoustic scale plunging 57 octaves below middle C (N04c)",
+        "crop_feasibility": null
+      },
+      {
+        "sid": "S12",
+        "start_s": 43.5333,
+        "end_s": 47.5333,
+        "duration_s": 4.0,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.16,
+          "ideal_duration_s": 5.66,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "medium",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 10
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "nasa_bh_approaching_4k.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Sentence-pause cut after 'detect' dropping natural sound to zero on 'no evidence of sound traveling through empty vacuum'.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.012,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Telescopes show no evidence of sound traveling through empty vacuum",
+        "story_beat": "4K approach through silent vacuum toward a gravitationally lensed black hole (N05a)",
+        "crop_feasibility": {
+          "source_width": 3840,
+          "source_height": 2160,
+          "crop_width_px": 1125.0,
+          "crop_height_px": 2000.0,
+          "upscale_factor": 0.96,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S13",
+        "start_s": 47.5333,
+        "end_s": 51.2667,
+        "duration_s": 3.733,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.46,
+          "ideal_duration_s": 4.96,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "handheld_field",
+            "is_moving_footage": true,
+            "spoken_word_count": 8
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "eso_alma_control_room_1.m4v",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Sentence-pause cut after 'vacuum' showing real observatory data processing before the acoustic roar reveal.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.006,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "contextual_fieldwork",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Instead NASA extracted Chandra's real X-ray pressure ripples",
+        "story_beat": "Observatory astronomers collaborating across multi-screen data consoles (N05b)",
+        "crop_feasibility": {
+          "source_width": 1280,
+          "source_height": 720,
+          "crop_width_px": 382.1,
+          "crop_height_px": 679.2,
+          "upscale_factor": 2.827,
+          "feasible": true,
+          "warnings": [
+            "Effective upscale factor (2.83x) exceeds crisp HD target (2.35x)."
+          ]
+        }
+      },
+      {
+        "sid": "S14",
+        "start_s": 51.2667,
+        "end_s": 56.3667,
+        "duration_s": 5.1,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 5.79,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "close_up",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 11
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "close_up",
+        "src_file": "perseus_sonification_chandra_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Word-boundary cut after 'ripples' unleashing NASA's official Perseus X-ray radar scan and 0.95s un-ducked black hole roar.",
+        "cut_speech_boundary_aligned": false,
+        "nearest_speech_boundary_s": 2.093,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": "Official NASA Chandra sonification",
+        "spoken_narration": "and scaled them up fifty-seven octaves revealing this haunting cosmic roar",
+        "story_beat": "Official NASA Perseus X-ray sonification sweep with solo black hole acoustic wail (N05c)",
+        "crop_feasibility": {
+          "source_width": 1080,
+          "source_height": 1080,
+          "crop_width_px": 506.2,
+          "crop_height_px": 900.0,
+          "upscale_factor": 2.133,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S15",
+        "start_s": 56.3667,
+        "end_s": 59.5333,
+        "duration_s": 3.167,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.5,
+          "ideal_duration_s": 4.0,
+          "max_recommended_s": 4.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "satellite_or_telescope",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": false,
+            "spoken_word_count": 9
+          }
+        },
+        "media_type": "photo",
+        "kind": "still_full",
+        "camera_perspective": "satellite_or_telescope",
+        "src_file": "ngc1275_hst_chandra_4k.jpg",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Breath-pause cut at the end of the solo roar into the 4.7K Hubble + Chandra view of NGC 1275.",
+        "cut_speech_boundary_aligned": false,
+        "nearest_speech_boundary_s": 0.707,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": "NGC 1275 (Hubble + Chandra)",
+        "spoken_narration": "Those acoustic waves carry colossal energy across the cluster",
+        "story_beat": "4.7K Hubble + Chandra composite of active galaxy NGC 1275 at the heart of Perseus (N06a)",
+        "crop_feasibility": {
+          "source_width": 4689,
+          "source_height": 3513,
+          "crop_width_px": 1829.7,
+          "crop_height_px": 3252.8,
+          "upscale_factor": 0.59,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S16",
+        "start_s": 59.5333,
+        "end_s": 64.5667,
+        "duration_s": 5.033,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 7.11,
+          "max_recommended_s": 9.51,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "aerial",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 15
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "aerial",
+        "src_file": "perseus_cluster_wave_4k.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clause-pause cut after 'cluster' illustrating how sound waves heat the cluster gas for billions of years.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.001,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "heating the surrounding gas for billions of years so trillions of stars cannot chaotically collapse",
+        "story_beat": "4K NASA Chandra thermal X-ray wave across the Perseus galaxy cluster (N06b)",
+        "crop_feasibility": {
+          "source_width": 3840,
+          "source_height": 2160,
+          "crop_width_px": 1056.5,
+          "crop_height_px": 1878.3,
+          "upscale_factor": 1.022,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S17",
+        "start_s": 64.5667,
+        "end_s": 66.7667,
+        "duration_s": 2.2,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.49,
+          "ideal_duration_s": 4.99,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "medium",
+            "camera_movement": "aerial_sweep",
+            "is_moving_footage": true,
+            "spoken_word_count": 6
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "nasa_bh_orbiting_4k.webm",
+        "transition_in": "dissolve",
+        "transition_duration_s": 0.5,
+        "transition_reason": "Motivated 0.50s dissolve after 'collapse' into the final reflective takeaway ('The universe isn't silent after all').",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.012,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "The universe isn't silent after all",
+        "story_beat": "4K orbital sweep around a glowing supermassive black hole accretion disk (N07a)",
+        "crop_feasibility": {
+          "source_width": 3840,
+          "source_height": 2160,
+          "crop_width_px": 1125.0,
+          "crop_height_px": 2000.0,
+          "upscale_factor": 0.96,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S18",
+        "start_s": 66.7667,
+        "end_s": 70.6333,
+        "duration_s": 3.867,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.02,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 11
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "perseus_sonification_chandra_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Em-dash pause cut after 'all' returning to Chandra's Perseus X-ray acoustic ripples for a seamless loop into S01.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.016,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "we simply needed an X-ray telescope to hear its deepest note",
+        "story_beat": "NASA Chandra Perseus X-ray acoustic ripples \u2014 seamless loop tail into S01 (N07b)",
+        "crop_feasibility": {
+          "source_width": 1080,
+          "source_height": 1080,
+          "crop_width_px": 519.2,
+          "crop_height_px": 923.1,
+          "upscale_factor": 2.08,
+          "feasible": true,
+          "warnings": []
+        }
+      }
+    ]
+  },
+  "visual_evidence_breakdown": {
+    "total_shots": 18,
+    "moving_footage_s": 57.399,
+    "moving_footage_pct": 81.26,
+    "still_photography_s": 8.634,
+    "still_photography_pct": 12.22,
+    "human_interaction_shots": 2,
+    "human_interaction_s": 8.0,
+    "human_interaction_pct": 11.33,
+    "real_imagery_and_footage_s": 66.033,
+    "real_imagery_and_footage_pct": 93.49,
+    "illustrative_diagram_s": 4.6,
+    "illustrative_diagram_pct": 6.51,
+    "meets_real_target": true,
+    "meets_moving_video_target": true
+  },
+  "editorial_formula_qc": {
+    "first_word_start_s": 0.1,
+    "hook_within_limit": true,
+    "layer2_pivot_seg_id": "N04",
+    "scientific_caveat_seg_id": "N05",
+    "caveat_explicitly_stated": true,
+    "all_passed": true
+  },
+  "full_canvas_qc": {
+    "audited_shots": 18,
+    "suspicious_shots_count": 0,
+    "suspicious_shots": [],
+    "all_full_canvas_pass": true,
+    "shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "sample_t_s": 2.8,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.0,
+        "right_inset_spike_ratio": 1.18,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S02",
+        "kind": "video_full",
+        "sample_t_s": 7.77,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.56,
+        "right_inset_spike_ratio": 1.31,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S03",
+        "kind": "video_full",
+        "sample_t_s": 11.1,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.0,
+        "right_inset_spike_ratio": 1.22,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S04",
+        "kind": "video_full",
+        "sample_t_s": 14.83,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.77,
+        "right_inset_spike_ratio": 0.75,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S05",
+        "kind": "video_full",
+        "sample_t_s": 19.53,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.91,
+        "right_inset_spike_ratio": 2.17,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S06",
+        "kind": "still_full",
+        "sample_t_s": 23.3,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.61,
+        "right_inset_spike_ratio": 1.63,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S07",
+        "kind": "video_full",
+        "sample_t_s": 27.32,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.8,
+        "right_inset_spike_ratio": 0.84,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S08",
+        "kind": "still_full",
+        "sample_t_s": 30.8,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 2.07,
+        "right_inset_spike_ratio": 1.83,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S09",
+        "kind": "video_full",
+        "sample_t_s": 33.95,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.15,
+        "right_inset_spike_ratio": 1.14,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S10",
+        "kind": "video_full",
+        "sample_t_s": 37.47,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.89,
+        "right_inset_spike_ratio": 1.46,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S11",
+        "kind": "video_full",
+        "sample_t_s": 41.23,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.47,
+        "right_inset_spike_ratio": 0.45,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S12",
+        "kind": "video_full",
+        "sample_t_s": 45.53,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.46,
+        "right_inset_spike_ratio": 1.54,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S13",
+        "kind": "video_full",
+        "sample_t_s": 49.4,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.97,
+        "right_inset_spike_ratio": 0.83,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S14",
+        "kind": "video_full",
+        "sample_t_s": 53.82,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.93,
+        "right_inset_spike_ratio": 1.04,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S15",
+        "kind": "still_full",
+        "sample_t_s": 57.95,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.09,
+        "right_inset_spike_ratio": 1.01,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S16",
+        "kind": "video_full",
+        "sample_t_s": 62.05,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.79,
+        "right_inset_spike_ratio": 0.76,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S17",
+        "kind": "video_full",
+        "sample_t_s": 65.67,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.13,
+        "right_inset_spike_ratio": 1.52,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S18",
+        "kind": "video_full",
+        "sample_t_s": 68.7,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.97,
+        "right_inset_spike_ratio": 1.13,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      }
+    ]
+  },
+  "overlay_cleanliness_qc": {
+    "style_profile": "space_discovery",
+    "scale_rings_rendered": 0,
+    "locator_huds_rendered": 0,
+    "source_banners_rendered": 0,
+    "callout_badges_rendered": 0,
+    "opening_cover_card_burned": false,
+    "closing_credit_burned": false,
+    "minimal_context_notes_used": [
+      "Chandra X-ray sound ripples (2003)",
+      "Illustrative 57-octave acoustic scale",
+      "NASA SVS relativistic jet simulation",
+      "NGC 1275 (Hubble + Chandra)",
+      "Observatory spectral data analysis",
+      "Official NASA Chandra sonification"
+    ],
+    "violations": [],
+    "clean_documentary_pass": true
+  },
+  "protected_projects_qc": {
+    "checked_projects": {
+      "blood-falls-v3-documentary": {
+        "mp4_exists": true,
+        "size_mb": 338.67,
+        "intact": true
+      },
+      "brine-pools-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 331.23,
+        "intact": true
+      },
+      "day-in-the-life-of-an-astronaut": {
+        "mp4_exists": true,
+        "size_mb": 126.43,
+        "intact": true
+      },
+      "fermi-paradox-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 413.61,
+        "intact": true
+      },
+      "forbidden-zones-earth-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 544.82,
+        "intact": true
+      },
+      "gemstone-mine-secrets-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 380.86,
+        "intact": true
+      },
+      "how-high-could-you-jump-on-other-planets": {
+        "mp4_exists": true,
+        "size_mb": 34.22,
+        "intact": true
+      },
+      "lava-cave-gold-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 386.85,
+        "intact": true
+      },
+      "mars-helicopter-1-percent-air": {
+        "mp4_exists": true,
+        "size_mb": 118.82,
+        "intact": true
+      },
+      "unreal-places-earth-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 441.92,
+        "intact": true
+      },
+      "venus-hotter-than-mercury": {
+        "mp4_exists": true,
+        "size_mb": 88.07,
+        "intact": true
+      }
+    },
+    "all_intact": true
+  },
+  "wcag_contrast_qc": {
+    "subtitle_style": "cinema_boxless",
+    "emphasis_mode": "subtle_warm",
+    "backdrop_worst_case_rgb": [
+      240,
+      245,
+      250
+    ],
+    "caption_white_contrast_ratio": 12.07,
+    "caption_gold_contrast_ratio": 9.34,
+    "all_wcag_aaa_pass": true
+  },
+  "viral_anti_ai_qc": {
+    "anti_ai_script_pass": true,
+    "llm_cliche_hits": 0,
+    "jargon_cluster_hits": 0,
+    "ending_tail_pause_s": 0.34,
+    "first_real_motion_start_s": 0.0,
+    "opening_motion_pass": true,
+    "diegetic_nat_sound_active": true,
+    "audible_location_bed_pass": true,
+    "subtitle_style": "cinema_boxless",
+    "filmic_color_grade_enabled": true,
+    "all_viral_anti_ai_pass": true
+  },
+  "thumbnail_qc": {
+    "thumbnail_jpg_bytes": 909693,
+    "under_2mb": true,
+    "width": 1080,
+    "height": 1920,
+    "dimensions_9x16": true,
+    "text_mode": "cinema_hook",
+    "frame0_vs_thumbnail_mae_rgb": 30.166,
+    "cover_variants_exported": 2,
+    "concepts_exported": 3,
+    "concepts_comparison_sheet_exists": true,
+    "preview_sheet_exists": true
+  },
+  "motion_smoothness_qc": {
+    "sampled_shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "min_frame_delta_luma": 1.2927,
+        "median_frame_delta_luma": 1.3729,
+        "max_to_median_ratio": 1.038,
+        "smooth": true
+      },
+      {
+        "sid": "S02",
+        "kind": "video_full",
+        "min_frame_delta_luma": 0.8084,
+        "median_frame_delta_luma": 2.9719,
+        "max_to_median_ratio": 1.115,
+        "smooth": true
+      },
+      {
+        "sid": "S04",
+        "kind": "video_full",
+        "min_frame_delta_luma": 6.5572,
+        "median_frame_delta_luma": 7.5081,
+        "max_to_median_ratio": 1.247,
+        "smooth": true
+      },
+      {
+        "sid": "S05",
+        "kind": "video_full",
+        "min_frame_delta_luma": 1.7767,
+        "median_frame_delta_luma": 4.2657,
+        "max_to_median_ratio": 1.574,
+        "smooth": true
+      }
+    ],
+    "worst_jump_ratio": 1.574,
+    "all_smooth": true
+  },
+  "subtitles_qc": {
+    "cue_count": 40,
+    "max_burned_lines_per_cue": 2,
+    "raw_word_match_ratio": 0.9547,
+    "normalized_word_match_ratio": 1.0,
+    "normalized_diffs": [],
+    "cue_start_vs_whisper_offset_s": {
+      "median": 0.034,
+      "p95_abs": 0.104,
+      "max_abs": 0.131
+    }
+  },
+  "licensing_register_qc": {
+    "source_register_csv_exists": true,
+    "source_register_md_exists": true,
+    "registered_assets_count": 15
+  },
+  "narrative_and_visual_intelligence_qc": {
+    "momentum_pass": true,
+    "momentum_error_count": 0,
+    "momentum_warning_count": 0,
+    "hook_candidates_count": 3,
+    "recommended_hook_id": "H2",
+    "recommended_hook_score": 9.28,
+    "mean_visual_weighted_score": 0.9351,
+    "visual_mismatch_count": 0,
+    "all_shots_eligible": true
+  },
+  "voice_studio_qc": {
+    "voice_input_mode": "directed_tts",
+    "voice_direction_profile": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "sentence_count": 11,
+    "approval_lock_present": true,
+    "approval_lock_synchronized": true
+  },
+  "audio_5layer_health_qc": {
+    "scene_audio_profile": "scientific_discovery",
+    "stems_exported_count": 5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "loudness_range_lra_lu": 1.9,
+    "speech_crest_factor_db": 14.5,
+    "natural_dynamics_pass": true,
+    "all_audio_health_pass": true
+  },
+  "failed_gates": [],
+  "failed_gates_count": 0,
+  "overall_studio_v6_pass": true
+}

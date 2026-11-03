@@ -1,0 +1,11 @@
+{
+  "slug": "perseus-black-hole-sound-v6",
+  "script_version": "v6.0.0",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "approved_at_utc": "2026-11-03T11:04:50.358678+00:00",
+  "reviewer_note": "Approved via Stage 3 Voice Studio",
+  "script_sha256": "3b2d906d66596bd6ac0fc2fcf4744f35138e3568c19ec31075fc5017d5c7ed33",
+  "narration_norm_wav_sha256": "f70287bb923cba91081c1bd130db8f466147e3aaf2c20576a85612f6e59cba0c",
+  "word_timings_sha256": "da4a0b39b472462ae46b559884a8670847a84f83dd4a160edea8597eb32bb0e4"
+}

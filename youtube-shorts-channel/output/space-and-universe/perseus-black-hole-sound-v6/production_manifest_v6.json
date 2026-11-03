@@ -1,0 +1,1035 @@
+{
+  "schema_name": "proof_of_wonder_production_manifest",
+  "manifest_version": "6.0",
+  "generated_at_utc": "2026-11-03T11:46:06.311351+00:00",
+  "slug": "perseus-black-hole-sound-v6",
+  "channel_name": "Proof of Wonder",
+  "category_playlist": "Space & Universe",
+  "topic": "Perseus Galaxy Cluster Supermassive Black Hole Sound (NASA Chandra X-ray Observatory) \u2014 B-Flat 57 Octaves Below Middle C & True Acoustic Pressure Waves",
+  "production_profile": {
+    "profile_name": "space_discovery",
+    "profile_version": "6.0.0",
+    "style_overrides": {
+      "sound_design": {
+        "scene_audio_profile": "scientific_discovery",
+        "enable_diegetic_nat_sound": true,
+        "natural_sounds_layer_gain_db": -15.0
+      },
+      "asset_selection": {
+        "target_moving_footage_ratio": 0.82,
+        "min_human_interaction_shots": 2
+      },
+      "pacing": {
+        "min_shot_duration_s": 2.2
+      },
+      "subtitles": {
+        "style": "cinema_boxless"
+      }
+    },
+    "visual_scoring_weights": {
+      "direct_relevance": 0.32,
+      "visual_clarity": 0.2,
+      "authenticity": 0.2,
+      "technical_quality": 0.12,
+      "composition_potential": 0.1,
+      "motion_storytelling": 0.03,
+      "license_verification": 0.03,
+      "min_direct_relevance_floor": 0.35
+    }
+  },
+  "script_version": {
+    "version": "v6.0.0",
+    "script_sha256": "28557c321d1ca9bbe35ed0f17a01cbc1836f3ca2d3938c7c4a34a7d9543c67db",
+    "segment_count": 7,
+    "word_count": 177,
+    "opening_hook_type": "paradox",
+    "layer2_pivot_seg_id": "N04",
+    "scientific_caveat_seg_id": "N05",
+    "factual_references": [
+      {
+        "citation": "Fabian, A. C., Sanders, J. S., Allen, S. W., Crawford, C. S., Iwasawa, K., Johnstone, R. M., Schmidt, R. W., & Taylor, G. B. (2003). A deep Chandra observation of the Perseus cluster: shocks and ripples. Monthly Notices of the Royal Astronomical Society, 344(3), L43\u2013L47.",
+        "url": "https://chandra.harvard.edu/photo/2003/perseus/",
+        "doi": null,
+        "supported_claims": "Discovery of concentric X-ray pressure ripples (~30,000 light-years across) in the hot intracluster gas of the Perseus galaxy cluster (~250 million light-years away, centered on NGC 1275), corresponding to a B-flat ~57 octaves below middle C (~9.6\u201310 million years per oscillation) that heats intracluster gas against cooling collapse."
+      },
+      {
+        "citation": "NASA / Chandra X-ray Center & SYSTEM Sounds (Russo, M., Santaguida, A., & Arcand, K., 2022). New NASA Black Hole Sonifications with a Remix \u2014 Perseus Galaxy Cluster.",
+        "url": "https://chandra.si.edu/sound/perseus.html",
+        "doi": null,
+        "supported_claims": "Extraction of actual radial X-ray acoustic pressure waves observed by Chandra in the Perseus cluster and upward resynthesis by 57\u201358 octaves (~144\u2013288 quadrillion times higher than original frequency) into the audible human range."
+      }
+    ]
+  },
+  "voice_direction_profile": {
+    "voice_input_mode": "directed_tts",
+    "profile_id": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "annotated_voice_script_file": "/Applications/code/science-knowledge/youtube-shorts-channel/episodes/perseus_sound_v6_voice_script.txt",
+    "approval_lock": {
+      "locked": true,
+      "synchronized": true,
+      "approved_at_utc": "2026-11-03T11:04:50.358678+00:00",
+      "script_matches": true,
+      "audio_matches": true,
+      "timings_matches": true
+    }
+  },
+  "audio_source_and_final_narration": {
+    "voice_input_mode": "directed_tts",
+    "uploaded_narration_file": null,
+    "voice_reference_file": null,
+    "voice_owner_consent": false,
+    "narration_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/narration.mp3",
+    "final_audio_mix_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/final_audio_mix.mp3",
+    "word_timings_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/word_timings.json",
+    "total_duration_s": 70.6333,
+    "total_frames_30fps": 2119,
+    "five_layer_stems": {
+      "layer_1_narration": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/work_audio/layer_1_narration.wav",
+      "layer_2_music": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/work_audio/layer_2_music.wav",
+      "layer_3_ambience": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/work_audio/layer_3_ambience.wav",
+      "layer_4_natural_sounds": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/work_audio/layer_4_natural_sounds.wav",
+      "layer_5_cinematic_sfx": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/work_audio/layer_5_cinematic_sfx.wav"
+    },
+    "audio_diagnostics": {
+      "integrated_lufs": -16.0,
+      "loudness_range_lra_lu": 1.9,
+      "true_peak_dbtp": -1.5,
+      "speech_crest_factor_db": 14.5,
+      "clipped_samples_count": 0,
+      "excessive_silence_count": 0,
+      "excessive_silences": [],
+      "voice_peak_dbfs": -1.51
+    }
+  },
+  "source_assets": [
+    {
+      "local_file": "perseus_sonification_chandra_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Data Sonification: Black Hole at the Center of the Perseus Galaxy Cluster (X-ray)",
+      "creator_agency": "NASA / CXC / SAO / K. Arcand, SYSTEM Sounds (M. Russo, A. Santaguida)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Data_Sonification-_Black_Hole_at_the_Center_of_the_Perseus_Galaxy_Cluster_(X-ray).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Data_Sonification-_Black_Hole_at_the_Center_of_the_Perseus_Galaxy_Cluster_%28X-ray%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "perseus_nasa_acoustic_roar.wav",
+      "media_type": "audio",
+      "priority_tier": 1,
+      "title": "Official NASA Chandra Perseus Galaxy Cluster Black Hole Acoustic Sonification Audio (57\u201358 Octaves Scaled)",
+      "creator_agency": "NASA / CXC / SAO / SYSTEM Sounds",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Data_Sonification-_Black_Hole_at_the_Center_of_the_Perseus_Galaxy_Cluster_(X-ray).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Data_Sonification-_Black_Hole_at_the_Center_of_the_Perseus_Galaxy_Cluster_%28X-ray%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "perseus_cluster_wave_4k.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Gigantic Wave Discovered in Perseus Galaxy Cluster (4K X-Ray & Hydrodynamic Visualization)",
+      "creator_agency": "NASA's Goddard Space Flight Center / Chandra X-ray Observatory",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Gigantic_Wave_Discovered_in_Perseus_Galaxy_Cluster.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Gigantic_Wave_Discovered_in_Perseus_Galaxy_Cluster.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "perseus_sound_waves_xray_clean.jpg",
+      "media_type": "photo",
+      "priority_tier": 1,
+      "title": "Perseus Cluster: Chandra 'Hears' a Supermassive Black Hole in Perseus \u2014 Acoustic Ripples Map (2003)",
+      "creator_agency": "NASA / CXC / IoA / A. Fabian et al.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Perseus_Cluster-_Chandra_%22Hears%22_a_Supermassive_Black_Hole_in_Perseus_(2003-perseus_-_perseus_xray).tiff",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Perseus_Cluster-_Chandra_%22Hears%22_a_Supermassive_Black_Hole_in_Perseus_%282003-perseus_-_perseus_xray%29.tiff",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "perseus_cavities_xray_clean.jpg",
+      "media_type": "photo",
+      "priority_tier": 1,
+      "title": "Perseus Cluster: Chandra 3-Color X-ray View of Black Hole Cavities in NGC 1275 (2003)",
+      "creator_agency": "NASA / CXC / IoA / A. Fabian et al.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Perseus_Cluster-_Chandra_%22Hears%22_a_Supermassive_Black_Hole_in_Perseus_(2003-perseus_-_perseus_xray).tiff",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Perseus_Cluster-_Chandra_%22Hears%22_a_Supermassive_Black_Hole_in_Perseus_%282003-perseus_-_perseus_xray%29.tiff",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "ngc1275_hst_chandra_4k.jpg",
+      "media_type": "photo",
+      "priority_tier": 1,
+      "title": "NGC 1275 (Perseus A) Multi-Wavelength Hubble + Chandra + VLA Composite (4.7K)",
+      "creator_agency": "NASA / CXC / SAO / STScI / NRAO / A. Fabian et al.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:NGC_1275_HST+CXO_(49559400073).png",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/NGC_1275_HST%2BCXO_%2849559400073%29.png",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "eht_m87_black_hole_4k.jpg",
+      "media_type": "photo",
+      "priority_tier": 2,
+      "title": "First Image of a Supermassive Black Hole Shadow in Messier 87 (Event Horizon Telescope, 4.3K)",
+      "creator_agency": "Event Horizon Telescope Collaboration",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87_crop_max_res.jpg",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_bh_jets_orbit_4k.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Simulations of Supermassive Black Hole Relativistic Jets & Winds (SVS14203, 4K)",
+      "creator_agency": "NASA's Scientific Visualization Studio / Goddard Space Flight Center",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Simulations_of_Weak_Black_Hole_Jets_(SVS14203_-_AGNwinds_TiltOrbit_30Degrees_4k_30).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Simulations_of_Weak_Black_Hole_Jets_%28SVS14203_-_AGNwinds_TiltOrbit_30Degrees_4k_30%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_bh_approaching_4k.webm",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "Black Hole with Accretion Disk Visualization \u2014 Approaching a Black Hole (SVS14619, 4K)",
+      "creator_agency": "NASA's Goddard Space Flight Center / Jeremy Schnittman & Brian P. Powell",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Black_Hole_with_Accretion_Disk_Visualization_(SVS14619_-_1-Approaching_a_black_hole-4K).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Black_Hole_with_Accretion_Disk_Visualization_%28SVS14619_-_1-Approaching_a_black_hole-4K%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_bh_orbiting_4k.webm",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "Black Hole with Accretion Disk Visualization \u2014 Orbiting a Black Hole (SVS14619, 4K)",
+      "creator_agency": "NASA's Goddard Space Flight Center / Jeremy Schnittman & Brian P. Powell",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Black_Hole_with_Accretion_Disk_Visualization_(SVS14619_-_2-Orbiting_a_black_hole-4K).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Black_Hole_with_Accretion_Disk_Visualization_%28SVS14619_-_2-Orbiting_a_black_hole-4K%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_bh_upclose_4k.webm",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "Black Hole with Accretion Disk Visualization \u2014 Event Horizon Up Close (SVS14619, 4K)",
+      "creator_agency": "NASA's Goddard Space Flight Center / Jeremy Schnittman & Brian P. Powell",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Black_Hole_with_Accretion_Disk_Visualization_(SVS14619_-_4-Black_hole_up_close-4K).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Black_Hole_with_Accretion_Disk_Visualization_%28SVS14619_-_4-Black_hole_up_close-4K%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "eso_m87_zoom_4k.webm",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "Zooming in to the Heart of Messier 87 Across Deep Space (4K)",
+      "creator_agency": "European Southern Observatory (ESO) / Digitized Sky Survey 2 / NASA/ESA Hubble",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Zooming_in_to_the_Heart_of_Messier_87.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Zooming_in_to_the_Heart_of_Messier_87.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "eso_alma_control_room_10.m4v",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "Astronomer Inspecting Spectral Plots on Dual Observatory Control-Room Monitors",
+      "creator_agency": "European Southern Observatory (ESO)",
+      "source_page_url": "https://www.eso.org/public/videos/alma12observations10/",
+      "direct_media_url": "https://cdn.eso.org/videos/hd_and_apple/alma12observations10.m4v",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "eso_alma_control_room_1.m4v",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "Astronomers Collaborating at Multi-Screen Observatory Data Consoles",
+      "creator_agency": "European Southern Observatory (ESO)",
+      "source_page_url": "https://www.eso.org/public/videos/alma12observations1/",
+      "direct_media_url": "https://cdn.eso.org/videos/hd_and_apple/alma12observations1.m4v",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "perseus_57_octaves_diagram_v6.mp4",
+      "media_type": "diagram",
+      "priority_tier": 6,
+      "title": "Perseus Cluster 30,000-Light-Year X-Ray Ripples & 57-Octaves-Below-Middle-C Frequency Scale",
+      "creator_agency": "Proof of Wonder Documentary Studio v6.0",
+      "source_page_url": "local://pipeline/generate_perseus_sound_diagram.py",
+      "direct_media_url": "local://assets/raw_footage/space_perseus_black_hole_v6/perseus_57_octaves_diagram_v6.mp4",
+      "is_first_party_original": true
+    }
+  ],
+  "licensing_metadata": {
+    "strict_zero_cost_budget": true,
+    "source_register_csv": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/source_register.csv",
+    "source_register_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/source_register.md",
+    "excluded_sources_notes": [
+      "eso_eht_astronomers_4k.webm: Excluded and deleted because visual inspection revealed burned-in blue narration captions.",
+      "perseus_cluster_wave_4k.webm t=25..95s: Excluded corner-labeled segments; used only clean 4K plasma dynamics at t=9.5..18s and t=107..116s."
+    ],
+    "licenses": [
+      {
+        "local_file": "perseus_sonification_chandra_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Courtesy of NASA/CXC/SAO/K. Arcand & SYSTEM Sounds (Public Domain)"
+      },
+      {
+        "local_file": "perseus_nasa_acoustic_roar.wav",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Audio sonification courtesy of NASA/CXC/SAO/SYSTEM Sounds (Public Domain)"
+      },
+      {
+        "local_file": "perseus_cluster_wave_4k.webm",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Courtesy of NASA's Goddard Space Flight Center / CXC (Public Domain)"
+      },
+      {
+        "local_file": "perseus_sound_waves_xray_clean.jpg",
+        "license": "Public domain",
+        "license_url": "https://chandra.harvard.edu/photo/2003/perseus/",
+        "required_attribution": "X-ray: NASA/CXC/IoA/A. Fabian et al. (Public Domain)"
+      },
+      {
+        "local_file": "perseus_cavities_xray_clean.jpg",
+        "license": "Public domain",
+        "license_url": "https://chandra.harvard.edu/photo/2003/perseus/",
+        "required_attribution": "X-ray: NASA/CXC/IoA/A. Fabian et al. (Public Domain)"
+      },
+      {
+        "local_file": "ngc1275_hst_chandra_4k.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "required_attribution": "NGC 1275 composite: NASA/CXC/SAO/STScI, CC BY 2.0"
+      },
+      {
+        "local_file": "eht_m87_black_hole_4k.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "M87* black hole image: Event Horizon Telescope Collaboration, CC BY 4.0"
+      },
+      {
+        "local_file": "nasa_bh_jets_orbit_4k.webm",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Courtesy of NASA's Scientific Visualization Studio (Public Domain)"
+      },
+      {
+        "local_file": "nasa_bh_approaching_4k.webm",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Courtesy of NASA's Goddard Space Flight Center / J. Schnittman & B. Powell (Public Domain)"
+      },
+      {
+        "local_file": "nasa_bh_orbiting_4k.webm",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Courtesy of NASA's Goddard Space Flight Center / J. Schnittman & B. Powell (Public Domain)"
+      },
+      {
+        "local_file": "nasa_bh_upclose_4k.webm",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Courtesy of NASA's Goddard Space Flight Center / J. Schnittman & B. Powell (Public Domain)"
+      },
+      {
+        "local_file": "eso_m87_zoom_4k.webm",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "required_attribution": "Deep-space galaxy zoom video: ESO/Digitized Sky Survey 2/Hubble, CC BY 3.0"
+      },
+      {
+        "local_file": "eso_alma_control_room_10.m4v",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Observatory control-room footage: ESO, CC BY 4.0"
+      },
+      {
+        "local_file": "eso_alma_control_room_1.m4v",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Observatory control-room team footage: ESO, CC BY 4.0"
+      },
+      {
+        "local_file": "perseus_57_octaves_diagram_v6.mp4",
+        "license": "100% Original First-Party Graphic",
+        "license_url": "N/A",
+        "required_attribution": "Original illustrative 57-octave acoustic scale & Perseus ripple diagram based on Fabian et al. (2003) / NASA Chandra"
+      }
+    ]
+  },
+  "shot_list": [
+    {
+      "sid": "S01",
+      "kind": "video_full",
+      "src_file": "perseus_sonification_chandra_1080p.mp4",
+      "camera_perspective": "satellite_or_telescope",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "NASA Chandra radial X-ray scan of Perseus supermassive black hole pressure waves (N01)",
+      "editorial_rationale": "Opens at Frame 0 with NASA's authentic Perseus X-ray sonification sweep and subtle acoustic wail."
+    },
+    {
+      "sid": "S02",
+      "kind": "video_full",
+      "src_file": "eso_m87_zoom_4k.webm",
+      "camera_perspective": "aerial",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4K deep-space telescope zoom across distant galaxies (N02a)",
+      "editorial_rationale": "Conveys the immense 250-million-light-year distance across silent intergalactic vacuum."
+    },
+    {
+      "sid": "S03",
+      "kind": "video_full",
+      "src_file": "nasa_bh_approaching_4k.webm",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4K silent glide across empty interstellar vacuum (N02b)",
+      "editorial_rationale": "Mutes natural sounds across empty starlight to make the silent vacuum contrast palpable."
+    },
+    {
+      "sid": "S04",
+      "kind": "video_full",
+      "src_file": "perseus_cluster_wave_4k.webm",
+      "camera_perspective": "extreme_wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4K NASA visualization of superheated X-ray plasma enveloping the Perseus cluster (N02c)",
+      "editorial_rationale": "Visually contrasts empty vacuum with the vast 10-million-degree Perseus plasma medium."
+    },
+    {
+      "sid": "S05",
+      "kind": "video_full",
+      "src_file": "eso_alma_control_room_10.m4v",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Real astronomer examining spectral plots in observatory control room (N03a)",
+      "editorial_rationale": "Grounds the 2003 astronomical discovery in real human observational research."
+    },
+    {
+      "sid": "S06",
+      "kind": "still_full",
+      "src_file": "perseus_sound_waves_xray_clean.jpg",
+      "camera_perspective": "satellite_or_telescope",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Landmark 2003 NASA Chandra X-ray map of concentric sound ripples in Perseus (N03b)",
+      "editorial_rationale": "Shows the exact 2003 NASA Chandra X-ray ripple observation that proved black hole sound waves."
+    },
+    {
+      "sid": "S07",
+      "kind": "video_full",
+      "src_file": "nasa_bh_jets_orbit_4k.webm",
+      "camera_perspective": "macro",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4K NASA supercomputer simulation of relativistic jets blasting from an active black hole (N03c)",
+      "editorial_rationale": "Visualizes the exact bipolar jet piston mechanism inflating cavities in Perseus."
+    },
+    {
+      "sid": "S08",
+      "kind": "still_full",
+      "src_file": "perseus_cavities_xray_clean.jpg",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Chandra 3-color X-ray image of twin black hole cavities in Perseus (N03d)",
+      "editorial_rationale": "Directly displays the dark X-ray cavities in Perseus A imaged by Chandra."
+    },
+    {
+      "sid": "S09",
+      "kind": "video_full",
+      "src_file": "nasa_bh_upclose_4k.webm",
+      "camera_perspective": "macro",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4K NASA close-up of a supermassive black hole event horizon shadow (N04a)",
+      "editorial_rationale": "Matches the deep B-flat abyss with a looming 4K close-up of a supermassive black hole shadow."
+    },
+    {
+      "sid": "S10",
+      "kind": "video_full",
+      "src_file": "nasa_bh_orbiting_4k.webm",
+      "camera_perspective": "first_person_pov",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4K NASA supercomputer sweep past a black hole photon ring (N04b)",
+      "editorial_rationale": "Evokes abyssal cosmic time scale as the camera sweeps close past the warped photon ring."
+    },
+    {
+      "sid": "S11",
+      "kind": "video_full",
+      "src_file": "perseus_57_octaves_diagram_v6.mp4",
+      "camera_perspective": "labeled_visualization",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.55,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": false,
+      "has_human_interaction": false,
+      "story_beat": "1080x1920 acoustic scale plunging 57 octaves below middle C (N04c)",
+      "editorial_rationale": "Makes '57 octaves below middle C' and '144 quadrillion times deeper' visually concrete at a glance."
+    },
+    {
+      "sid": "S12",
+      "kind": "video_full",
+      "src_file": "nasa_bh_approaching_4k.webm",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4K approach through silent vacuum toward a gravitationally lensed black hole (N05a)",
+      "editorial_rationale": "Reinforces the scientific caveat by muting acoustic waves over empty interstellar vacuum."
+    },
+    {
+      "sid": "S13",
+      "kind": "video_full",
+      "src_file": "eso_alma_control_room_1.m4v",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Observatory astronomers collaborating across multi-screen data consoles (N05b)",
+      "editorial_rationale": "Shows human astrophysicists translating telescope observations into physical wave profiles."
+    },
+    {
+      "sid": "S14",
+      "kind": "video_full",
+      "src_file": "perseus_sonification_chandra_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Official NASA Perseus X-ray sonification sweep with solo black hole acoustic wail (N05c)",
+      "editorial_rationale": "Climactic audio-visual reveal pairing NASA's radial scan with the real Perseus black hole acoustic wail across the 1.03s pause."
+    },
+    {
+      "sid": "S15",
+      "kind": "still_full",
+      "src_file": "ngc1275_hst_chandra_4k.jpg",
+      "camera_perspective": "satellite_or_telescope",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4.7K Hubble + Chandra composite of active galaxy NGC 1275 at the heart of Perseus (N06a)",
+      "editorial_rationale": "Reveals the giant galaxy NGC 1275 whose tendrils and gas are sculpted by black hole acoustic energy."
+    },
+    {
+      "sid": "S16",
+      "kind": "video_full",
+      "src_file": "perseus_cluster_wave_4k.webm",
+      "camera_perspective": "aerial",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4K NASA Chandra thermal X-ray wave across the Perseus galaxy cluster (N06b)",
+      "editorial_rationale": "Shows the cluster-wide thermal X-ray structure sustained against gravitational cooling collapse."
+    },
+    {
+      "sid": "S17",
+      "kind": "video_full",
+      "src_file": "nasa_bh_orbiting_4k.webm",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "aerial_sweep",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.5,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4K orbital sweep around a glowing supermassive black hole accretion disk (N07a)",
+      "editorial_rationale": "Delivers cinematic awe on the opening clause of the final impression."
+    },
+    {
+      "sid": "S18",
+      "kind": "video_full",
+      "src_file": "perseus_sonification_chandra_1080p.mp4",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "NASA Chandra Perseus X-ray acoustic ripples \u2014 seamless loop tail into S01 (N07b)",
+      "editorial_rationale": "Closes on Chandra's Perseus X-ray acoustic wave field (`src_in` 0.15s + 3.85s = 4.00s where `S01` begins!) for a seamless loop."
+    }
+  ],
+  "scene_timing": {
+    "fps": 30,
+    "semantic_timeline_manifest_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/semantic_timeline_manifest.json",
+    "timed_scenes": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 5.6,
+        "duration_s": 5.6,
+        "start_frame": 0,
+        "end_frame": 168
+      },
+      {
+        "sid": "S02",
+        "start_s": 5.6,
+        "end_s": 9.9333,
+        "duration_s": 4.3333,
+        "start_frame": 168,
+        "end_frame": 298
+      },
+      {
+        "sid": "S03",
+        "start_s": 9.9333,
+        "end_s": 12.2667,
+        "duration_s": 2.3334,
+        "start_frame": 298,
+        "end_frame": 368
+      },
+      {
+        "sid": "S04",
+        "start_s": 12.2667,
+        "end_s": 17.4,
+        "duration_s": 5.1333,
+        "start_frame": 368,
+        "end_frame": 522
+      },
+      {
+        "sid": "S05",
+        "start_s": 17.4,
+        "end_s": 21.6667,
+        "duration_s": 4.2667,
+        "start_frame": 522,
+        "end_frame": 650
+      },
+      {
+        "sid": "S06",
+        "start_s": 21.6667,
+        "end_s": 24.9333,
+        "duration_s": 3.2666,
+        "start_frame": 650,
+        "end_frame": 748
+      },
+      {
+        "sid": "S07",
+        "start_s": 24.9333,
+        "end_s": 29.7,
+        "duration_s": 4.7667,
+        "start_frame": 748,
+        "end_frame": 891
+      },
+      {
+        "sid": "S08",
+        "start_s": 29.7,
+        "end_s": 31.9,
+        "duration_s": 2.2,
+        "start_frame": 891,
+        "end_frame": 957
+      },
+      {
+        "sid": "S09",
+        "start_s": 31.9,
+        "end_s": 36.0,
+        "duration_s": 4.1,
+        "start_frame": 957,
+        "end_frame": 1080
+      },
+      {
+        "sid": "S10",
+        "start_s": 36.0,
+        "end_s": 38.9333,
+        "duration_s": 2.9333,
+        "start_frame": 1080,
+        "end_frame": 1168
+      },
+      {
+        "sid": "S11",
+        "start_s": 38.9333,
+        "end_s": 43.5333,
+        "duration_s": 4.6,
+        "start_frame": 1168,
+        "end_frame": 1306
+      },
+      {
+        "sid": "S12",
+        "start_s": 43.5333,
+        "end_s": 47.5333,
+        "duration_s": 4.0,
+        "start_frame": 1306,
+        "end_frame": 1426
+      },
+      {
+        "sid": "S13",
+        "start_s": 47.5333,
+        "end_s": 51.2667,
+        "duration_s": 3.7334,
+        "start_frame": 1426,
+        "end_frame": 1538
+      },
+      {
+        "sid": "S14",
+        "start_s": 51.2667,
+        "end_s": 56.3667,
+        "duration_s": 5.1,
+        "start_frame": 1538,
+        "end_frame": 1691
+      },
+      {
+        "sid": "S15",
+        "start_s": 56.3667,
+        "end_s": 59.5333,
+        "duration_s": 3.1666,
+        "start_frame": 1691,
+        "end_frame": 1786
+      },
+      {
+        "sid": "S16",
+        "start_s": 59.5333,
+        "end_s": 64.5667,
+        "duration_s": 5.0334,
+        "start_frame": 1786,
+        "end_frame": 1937
+      },
+      {
+        "sid": "S17",
+        "start_s": 64.5667,
+        "end_s": 66.7667,
+        "duration_s": 2.2,
+        "start_frame": 1937,
+        "end_frame": 2003
+      },
+      {
+        "sid": "S18",
+        "start_s": 66.7667,
+        "end_s": 70.6333,
+        "duration_s": 3.8666,
+        "start_frame": 2003,
+        "end_frame": 2119
+      }
+    ]
+  },
+  "subtitle_version": {
+    "version": "v6.0.0",
+    "style": "cinema_boxless",
+    "emphasis_mode": "subtle_warm",
+    "word_by_word_animation": false,
+    "cue_count": 40,
+    "srt_path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/subtitles.srt"
+  },
+  "thumbnail_variants": {
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/thumbnail.jpg",
+    "mobile_preview_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/thumbnail_small_preview_sheet.jpg",
+    "concepts_comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/thumbnail_concepts_comparison_sheet.jpg",
+    "concepts": [
+      {
+        "concept_id": "A",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/thumbnail_concept_A.jpg",
+        "source_asset": "perseus_sonification_chandra_1080p.mp4",
+        "matches_opening_scene_asset": true,
+        "headline_text": "REAL BLACK HOLE|SOUND",
+        "headline_word_count": 4,
+        "kicker_text": "NASA CHANDRA X-RAY",
+        "concept_rationale": "Matches Frame 0 opening hook: NASA Chandra's crimson radial X-ray acoustic scan around the Perseus black hole.",
+        "size_kb": 888.4,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "perseus_sonification_chandra_1080p.mp4",
+          "sharpness_score": 1.73,
+          "subject_separation_score": 97.99,
+          "combined_score": 54.67,
+          "recommended_cx": 0.5154,
+          "recommended_cy": 0.5341
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "B",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/thumbnail_concept_B.jpg",
+        "source_asset": "eht_m87_black_hole_4k.jpg",
+        "matches_opening_scene_asset": false,
+        "headline_text": "SPACE IS NOT|SILENT",
+        "headline_word_count": 4,
+        "kicker_text": "250M LIGHT-YEARS AWAY",
+        "concept_rationale": "Iconic real Event Horizon Telescope supermassive black hole ring against deep black space.",
+        "size_kb": 285.6,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "eht_m87_black_hole_4k.jpg",
+          "sharpness_score": 0.2,
+          "subject_separation_score": 106.25,
+          "combined_score": 58.52,
+          "recommended_cx": 0.4903,
+          "recommended_cy": 0.5075
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "C",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/thumbnail_concept_C.jpg",
+        "source_asset": "perseus_sound_waves_xray_clean.jpg",
+        "matches_opening_scene_asset": false,
+        "headline_text": "57 OCTAVES|BELOW HEARING",
+        "headline_word_count": 4,
+        "kicker_text": "CHANDRA SOUND WAVES",
+        "concept_rationale": "Authentic 2003 Chandra X-ray acoustic ripple map showing concentric sound waves around NGC 1275.",
+        "size_kb": 970.5,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "perseus_sound_waves_xray_clean.jpg",
+          "sharpness_score": 2.33,
+          "subject_separation_score": 95.24,
+          "combined_score": 53.43,
+          "recommended_cx": 0.5465,
+          "recommended_cy": 0.4859
+        },
+        "actual_analytics_outcome": null
+      }
+    ]
+  },
+  "rendering_configuration": {
+    "output_spec": {
+      "aspect_ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video_codec_master": "libx264",
+      "video_crf_master": 15,
+      "video_preset_master": "medium",
+      "video_profile": "high",
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "audio_codec": "aac",
+      "audio_bitrate": "192k",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "target_loudness_lufs": -16.0
+    },
+    "color_science": {
+      "enable_filmic_grade": true,
+      "cast_tame_strength": 0.1,
+      "luma_grain_sigma": 1.5
+    },
+    "benchmarks": {
+      "slug": "perseus-black-hole-sound-v6",
+      "encode_mode": "master",
+      "shots_render_or_cache_s": 0.007,
+      "timeline_assembly_and_mux_s": 59.051,
+      "thumbnail_concepts_s": 3.078,
+      "total_render_master_s": 62.274,
+      "rendered_frames": 2119,
+      "effective_render_fps": 34.03
+    }
+  },
+  "qa_results": {
+    "qc_measurements_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/qc_measurements.json",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/qc_report.md",
+    "summary": {
+      "overall_pass": true,
+      "failed_gates_count": 0,
+      "moving_footage_pct": 81.26,
+      "whisper_normalized_match_ratio": 1.0,
+      "integrated_lufs": -16.0,
+      "true_peak_dbtp": -1.4,
+      "protected_projects_intact": true
+    }
+  },
+  "final_output_locations": {
+    "output_dir": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6",
+    "master_mp4": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/perseus-black-hole-sound-v6.mp4",
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/thumbnail.jpg",
+    "subtitles_srt": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/subtitles.srt",
+    "script_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/script.md",
+    "retention_plan_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/retention_plan.md",
+    "storyboard_manifest_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/storyboard_and_shot_manifest.md",
+    "youtube_metadata_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/youtube_metadata.md",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v6/qc_report.md"
+  }
+}

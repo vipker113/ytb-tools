@@ -1,0 +1,99 @@
+# Proof of Wonder — Next-Generation Voice Studio Script (v6.0)
+# Episode: perseus-black-hole-sound-v6
+# Title: Space Is Not Silent: The Real Sound of a Black Hole
+# Production Profile: space_discovery | Voice Preset: mysterious_discovery (en-GB-RyanNeural)
+
+[SEG: N01]
+"You were taught that space is completely silent—until NASA captured the real sound of a black hole."
+
+[DELIVERY: HOOK]
+[PACE: SLOW]
+[ENERGY: 4/5]
+[EMPHASIS: "completely silent", "real sound of a black hole"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N02]
+"Two hundred fifty million light-years away sits the Perseus galaxy cluster."
+
+[DELIVERY: MYSTERIOUS]
+[PACE: NATURAL]
+[ENERGY: 4/5]
+[EMPHASIS: "Two hundred fifty million", "Perseus galaxy cluster"]
+[PAUSE AFTER: 340ms]
+
+"While empty space is a silent vacuum, this giant cluster is wrapped in superheated plasma spanning hundreds of thousands of light-years."
+
+[DELIVERY: MEASURED EVIDENCE]
+[PACE: NATURAL]
+[ENERGY: 4/5]
+[EMPHASIS: "silent vacuum", "superheated plasma"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N03]
+"In 2003, astronomers studying NASA's Chandra X-ray images noticed giant concentric ripples rolling through that gas."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[PACE: NATURAL]
+[ENERGY: 4/5]
+[EMPHASIS: "Chandra X-ray images", "concentric ripples"]
+[PAUSE AFTER: 360ms]
+
+"Relativistic jets blasting from the central black hole were inflating enormous cavities—pushing true sound waves outward."
+
+[DELIVERY: DRAMATIC REVEAL]
+[PACE: NATURAL]
+[ENERGY: 4/5]
+[EMPHASIS: "Relativistic jets", "true sound waves"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N04]
+"The pitch hit a deep B-flat fifty-seven octaves below middle C."
+
+[DELIVERY: SURPRISED BUT CONTROLLED]
+[PACE: SLOW]
+[ENERGY: 4/5]
+[EMPHASIS: "deep B-flat", "fifty-seven octaves"]
+[PAUSE AFTER: 360ms]
+
+"Each oscillation takes nearly ten million years—one hundred forty-four quadrillion times deeper than human ears can detect."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[PACE: SLOW]
+[ENERGY: 4/5]
+[EMPHASIS: "ten million years", "one hundred forty-four quadrillion"]
+[PAUSE AFTER: 440ms]
+
+[SEG: N05]
+"Telescopes show no evidence of sound traveling through empty vacuum."
+
+[DELIVERY: CALM EXPLANATION]
+[PACE: NATURAL]
+[ENERGY: 3/5]
+[EMPHASIS: "no evidence", "empty vacuum"]
+[PAUSE AFTER: 320ms]
+
+"Instead, NASA extracted Chandra's real X-ray pressure ripples and scaled them up fifty-seven octaves—revealing this haunting cosmic roar."
+
+[DELIVERY: CINEMATIC REVEAL]
+[PACE: SLOW]
+[ENERGY: 5/5]
+[EMPHASIS: "real X-ray pressure ripples", "haunting cosmic roar"]
+[PAUSE AFTER: 940ms]
+
+[SEG: N06]
+"Those acoustic waves carry colossal energy across the cluster, heating the surrounding gas for billions of years so trillions of stars cannot chaotically collapse."
+
+[DELIVERY: DRAMATIC REVEAL]
+[PACE: MODERATE]
+[ENERGY: 4/5]
+[EMPHASIS: "colossal energy", "billions of years"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N07]
+"The universe isn't silent after all—we simply needed an X-ray telescope to hear its deepest note."
+
+[DELIVERY: FINAL IMPRESSION]
+[PACE: SLOW]
+[ENERGY: 3/5]
+[EMPHASIS: "isn't silent after all", "deepest note"]
+[PAUSE AFTER: 240ms]

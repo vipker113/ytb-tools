@@ -1,0 +1,999 @@
+manifest_version: "6.0"
+script_version: "v6.0.0"
+subtitle_version: "v6.0.0"
+channel_name: "Proof of Wonder"
+playlist: "Space & Universe"
+slug: "perseus-black-hole-sound-v6"
+topic: "Perseus Galaxy Cluster Supermassive Black Hole Sound (NASA Chandra X-ray Observatory) — B-Flat 57 Octaves Below Middle C & True Acoustic Pressure Waves"
+
+style_profile: "space_discovery"
+style_overrides:
+  sound_design:
+    scene_audio_profile: "scientific_discovery"
+    enable_diegetic_nat_sound: true
+    natural_sounds_layer_gain_db: -15.0
+  asset_selection:
+    target_moving_footage_ratio: 0.82
+    min_human_interaction_shots: 2
+  pacing:
+    min_shot_duration_s: 2.2
+  subtitles:
+    style: "cinema_boxless"
+
+voice_input_mode: "directed_tts"
+voice_direction_profile: "mysterious_discovery"
+voice: "en-GB-RyanNeural"
+annotated_voice_script_file: "episodes/perseus_sound_v6_voice_script.txt"
+opening_hook_type: "paradox"
+
+primary_title: "Space Is Not Silent: The Real Sound of a Black Hole"
+alternative_title: "NASA Captured the Real Sound of a Supermassive Black Hole"
+
+youtube_description: |
+  Most people learn that no sound can travel through space. Across empty interstellar vacuum, that remains completely true—yet inside giant galaxy clusters, NASA's Chandra X-ray Observatory discovered the deepest acoustic sound waves ever detected in the universe.
+
+  Roughly 250 million light-years from Earth, the Perseus galaxy cluster (centered on active giant galaxy NGC 1275) is enveloped in superheated 10-million-degree X-ray-emitting plasma spanning hundreds of thousands of light-years. In 2003, astronomers led by Prof. Andrew Fabian at the University of Cambridge analyzed 53 hours of Chandra X-ray data and discovered concentric pressure ripples ~30,000 light-years wide rolling outward through the cluster gas—driven by relativistic black hole jets inflating giant cavities.
+
+  Those ripples are true acoustic sound waves oscillating at a deep B-flat roughly 57 octaves below middle C—about 144 quadrillion times lower than human ears can detect, taking nearly 10 million years per single oscillation. In 2022, NASA extracted Chandra's radial X-ray pressure waves and resynthesized them upward by 57 to 58 octaves into human hearing, while revealing how those colossal acoustic waves heat the cluster gas for billions of years and prevent runaway star collapse.
+
+hashtags:
+  - "#BlackHole"
+  - "#NASA"
+  - "#SpaceSounds"
+  - "#PerseusCluster"
+  - "#Astronomy"
+  - "#ProofOfWonder"
+
+target_duration_min_s: 66.0
+target_duration_max_s: 90.0
+ambience_preset: "deep_space"
+ambience_ducked_lufs_target: -26.0
+nat_sound_bed_file: "perseus_nasa_acoustic_roar.wav"
+nat_sound_bed_range_s: [0.5, 33.2]
+nat_sound_gain_db: -15.5
+
+raw_assets_dir: "assets/raw_footage/space_perseus_black_hole_v6"
+output_dir: "output/space-and-universe/perseus-black-hole-sound-v6"
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N04"
+  scientific_caveat_seg_id: "N05"
+  min_real_evidence_ratio: 0.88
+
+hook_candidates:
+  - hook_id: "H1"
+    archetype: "paradox"
+    spoken_line: "You were taught that space is completely silent—until NASA captured the real sound of a black hole."
+    opening_visual: "Official NASA Chandra radial X-ray scan sweeping across glowing crimson pressure ripples around the Perseus supermassive black hole"
+    src_file: "perseus_sonification_chandra_1080p.mp4"
+    promise_fulfilled_in_seg_id: "N05"
+    rationale: "Shatters the universal 'space is silent' belief at 0.00s over real NASA Chandra Perseus X-ray acoustic wave scan."
+  - hook_id: "H2"
+    archetype: "unexpected_fact"
+    spoken_line: "Two hundred fifty million light-years away, a supermassive black hole is singing a note fifty-seven octaves below human hearing."
+    opening_visual: "4K NASA supermassive black hole gravitational lensing approach"
+    src_file: "nasa_bh_approaching_4k.webm"
+    promise_fulfilled_in_seg_id: "N04"
+    rationale: "Leads with the mind-bending 57-octave acoustic fact."
+  - hook_id: "H3"
+    archetype: "surprising_visual"
+    spoken_line: "Every ten million years, a single sound wave thirty thousand light-years wide rolls out of this black hole."
+    opening_visual: "Hubble and Chandra 4.7K composite of NGC 1275 plasma filaments"
+    src_file: "ngc1275_hst_chandra_4k.jpg"
+    promise_fulfilled_in_seg_id: "N03"
+    rationale: "Highlights the 30,000-light-year physical scale of the X-ray acoustic waves."
+
+thumbnail_spec:
+  src_file: "perseus_sonification_chandra_1080p.mp4"
+  src_time_s: 11.8
+  headline_text: "REAL BLACK HOLE|SOUND"
+  kicker_text: "NASA CHANDRA X-RAY"
+  cx: 0.50
+  cy: 0.44
+  zoom: 1.17
+  shadow_lift: 0.08
+  clarity_boost: true
+  text_position: "bottom"
+  accent_rgb: [255, 196, 68]
+
+thumbnail_concepts:
+  - concept_id: "A"
+    src_file: "perseus_sonification_chandra_1080p.mp4"
+    src_time_s: 11.8
+    headline_text: "REAL BLACK HOLE|SOUND"
+    kicker_text: "NASA CHANDRA X-RAY"
+    cx: 0.50
+    cy: 0.44
+    zoom: 1.17
+    shadow_lift: 0.08
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 196, 68]
+    concept_rationale: "Matches Frame 0 opening hook: NASA Chandra's crimson radial X-ray acoustic scan around the Perseus black hole."
+  - concept_id: "B"
+    src_file: "eht_m87_black_hole_4k.jpg"
+    headline_text: "SPACE IS NOT|SILENT"
+    kicker_text: "250M LIGHT-YEARS AWAY"
+    cx: 0.50
+    cy: 0.48
+    zoom: 1.06
+    shadow_lift: 0.06
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 138, 72]
+    concept_rationale: "Iconic real Event Horizon Telescope supermassive black hole ring against deep black space."
+  - concept_id: "C"
+    src_file: "perseus_sound_waves_xray_clean.jpg"
+    headline_text: "57 OCTAVES|BELOW HEARING"
+    kicker_text: "CHANDRA SOUND WAVES"
+    cx: 0.50
+    cy: 0.48
+    zoom: 1.06
+    shadow_lift: 0.06
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [120, 214, 255]
+    concept_rationale: "Authentic 2003 Chandra X-ray acoustic ripple map showing concentric sound waves around NGC 1275."
+
+narration_segments:
+  - seg_id: "N01"
+    text: "You were taught that space is completely silent—until NASA captured the real sound of a black hole."
+    emphasis_words: ["completely", "silent", "NASA", "real", "sound", "black", "hole"]
+    narrative_beat: "opening_hook"
+    viewer_question: "How could NASA record real sound from a black hole if space is a vacuum?"
+    new_information: "NASA captured genuine acoustic waves from a supermassive black hole, overturning the assumption that all of space is silent."
+    visual_reveal: "NASA Chandra radial X-ray scan sweeping across glowing crimson pressure waves in the Perseus cluster."
+    emotional_direction: "Immediate eerie awe and cognitive dissonance"
+    retention_purpose: "Stop scrolling at 0.00s by challenging a universal textbook belief with authentic NASA X-ray data"
+
+  - seg_id: "N02"
+    text: "Two hundred fifty million light-years away sits the Perseus galaxy cluster. While empty space is a silent vacuum, this giant cluster is wrapped in superheated plasma spanning hundreds of thousands of light-years."
+    emphasis_words: ["Two", "hundred", "fifty", "Perseus", "silent", "vacuum", "superheated", "plasma"]
+    narrative_beat: "curiosity_gap"
+    viewer_question: "What is vibrating that giant cloud of superheated gas?"
+    new_information: "Unlike empty vacuum between stars, the Perseus cluster (~250M light-years away) is filled with dense 10-million-degree X-ray plasma capable of carrying physical pressure waves."
+    visual_reveal: "4K deep-space zoom through galaxy cluster stars and NASA 4K Perseus X-ray plasma cloud swirling across hundreds of thousands of light-years."
+    emotional_direction: "Vast cosmic scale and rising scientific intrigue"
+    retention_purpose: "Explain the real physical medium that makes sound propagation possible without violating physics"
+
+  - seg_id: "N03"
+    text: "In 2003, astronomers studying NASA's Chandra X-ray images noticed giant concentric ripples rolling through that gas. Relativistic jets blasting from the central black hole were inflating enormous cavities—pushing true sound waves outward."
+    emphasis_words: ["2003", "Chandra", "concentric", "ripples", "Relativistic", "jets", "true", "sound"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "What note do those 30,000-light-year black hole sound waves play?"
+    new_information: "Cambridge astronomers (Fabian et al., 2003) spotted 30,000-light-year concentric X-ray ripples driven by relativistic jets from NGC 1275's central supermassive black hole."
+    visual_reveal: "Observatory astronomers inspecting spectral plots, authentic 2003 Chandra X-ray ripple map, and 4K NASA supercomputer black hole jets inflating plasma cavities."
+    emotional_direction: "Investigative discovery and awe at relativistic power"
+    retention_purpose: "Show the exact observational X-ray evidence and physical engine driving the sound waves"
+
+  - seg_id: "N04"
+    text: "The pitch hit a deep B-flat fifty-seven octaves below middle C. Each oscillation takes nearly ten million years—one hundred forty-four quadrillion times deeper than human ears can detect."
+    emphasis_words: ["B-flat", "fifty-seven", "octaves", "ten", "million", "quadrillion", "deeper"]
+    narrative_beat: "escalation"
+    viewer_question: "How did NASA turn a 10-million-year oscillation into something our ears can actually hear?"
+    new_information: "The Perseus black hole's fundamental tone is B-flat 57 octaves below middle C (~9.6M–10M years per wave, 144 quadrillion times below human hearing)."
+    visual_reveal: "4K NASA supermassive black hole horizon close-up and native 1080x1920 acoustic scale plunging 57 octaves below middle C."
+    emotional_direction: "Vertiginous cosmic scale"
+    retention_purpose: "Escalate wonder with the staggering 57-octave / 10-million-year acoustic measurement"
+
+  - seg_id: "N05"
+    text: "Telescopes show no evidence of sound traveling through empty vacuum. Instead, NASA extracted Chandra's real X-ray pressure ripples and scaled them up fifty-seven octaves—revealing this haunting cosmic roar."
+    emphasis_words: ["no", "evidence", "empty", "vacuum", "real", "scaled", "haunting", "roar"]
+    narrative_beat: "escalation"
+    viewer_question: "What does that haunting cosmic roar actually do to the galaxies around it?"
+    new_information: "Clarifies that microphones cannot hear across empty vacuum; NASA resynthesized Chandra's radial X-ray acoustic waves upward by 57–58 octaves into audible sound."
+    visual_reveal: "Astronomers at multi-screen consoles followed by NASA's official Perseus X-ray radar scan synced to the authentic Perseus black hole acoustic wail."
+    emotional_direction: "Spine-chilling auditory awe"
+    retention_purpose: "Deliver the promised real NASA black hole sound while preserving strict scientific honesty"
+
+  - seg_id: "N06"
+    text: "Those acoustic waves carry colossal energy across the cluster, heating the surrounding gas for billions of years so trillions of stars cannot chaotically collapse."
+    emphasis_words: ["colossal", "energy", "heating", "billions", "trillions", "collapse"]
+    narrative_beat: "payoff"
+    viewer_question: "How does this change the way we perceive the dark universe?"
+    new_information: "Dissipating black hole sound waves solve the galaxy-cluster cooling-flow puzzle by heating intracluster plasma for billions of years."
+    visual_reveal: "4.7K Hubble + Chandra composite of NGC 1275 filaments and 4K NASA Perseus cluster thermal wave dynamics."
+    emotional_direction: "Profound scientific satisfaction"
+    retention_purpose: "Reveal that the black hole's sound isn't a mere curiosity—it regulates an entire galaxy cluster's evolution"
+
+  - seg_id: "N07"
+    text: "The universe isn't silent after all—we simply needed an X-ray telescope to hear its deepest note."
+    emphasis_words: ["universe", "isn't", "silent", "X-ray", "deepest", "note"]
+    narrative_beat: "final_impression"
+    viewer_question: "What other cosmic symphonies are echoing through galaxy clusters right now?"
+    new_information: "Synthesizes X-ray astronomy's ability to reveal physical acoustic symphonies hidden far below human hearing."
+    visual_reveal: "4K NASA orbiting black hole and seamless loop back into Chandra's glowing Perseus X-ray ripples."
+    emotional_direction: "Lingering cosmic wonder"
+    retention_purpose: "Leave a memorable closing insight and loop seamlessly into Frame 0"
+
+sfx_cues:
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.05
+    gain_db: -25.5
+  - sfx_name: "subterranean_gate_boom"
+    anchor_type: "shot_start"
+    anchor_ref: "S07"
+    offset_s: 0.06
+    gain_db: -26.0
+  - sfx_name: "cavern_heartbeat_pulse"
+    anchor_type: "shot_start"
+    anchor_ref: "S11"
+    offset_s: 0.05
+    gain_db: -26.0
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S15"
+    offset_s: 0.04
+    gain_db: -25.0
+  - sfx_name: "cavern_heartbeat_pulse"
+    anchor_type: "shot_start"
+    anchor_ref: "S18"
+    offset_s: 0.06
+    gain_db: -26.0
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 5.601
+    kind: "video_full"
+    src_file: "perseus_sonification_chandra_1080p.mp4"
+    src_in: 4.0
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds", "cinematic_sfx"]
+    nat_audio_gain_db: -3.5
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.44
+    cx1: 0.50
+    cy1: 0.45
+    z0: 1.17
+    z1: 1.19
+    crop_rationale: "Fills 9:16 edge-to-edge with NASA Chandra's crimson Perseus X-ray acoustic ripples and rotating radar sweep."
+    transition_in: "cut"
+    transition_reason: "Immediate 0.00s real NASA Chandra Perseus X-ray scan hook."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N01"
+    associated_narration_concept: "You were taught that space is completely silent—until NASA captured the real sound of a black hole."
+    editorial_rationale: "Opens at Frame 0 with NASA's authentic Perseus X-ray sonification sweep and subtle acoustic wail."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NASA Chandra radial X-ray scan of Perseus supermassive black hole pressure waves (N01)"
+    visual_desc: "Official NASA Chandra X-ray scan sweeping across glowing crimson acoustic ripples around the Perseus cluster core."
+
+  - sid: "S02"
+    start_s: 5.601
+    end_s: 9.948
+    kind: "video_full"
+    src_file: "eso_m87_zoom_4k.webm"
+    src_in: 7.5
+    camera_perspective: "aerial"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.07
+    crop_rationale: "4K deep-space flight toward a distant galaxy cluster across vacuum."
+    transition_in: "cut"
+    transition_reason: "Sentence-pause cut after 'hole' launching 250 million light-years into deep intergalactic space."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "Two hundred fifty million light-years away sits the Perseus galaxy cluster."
+    editorial_rationale: "Conveys the immense 250-million-light-year distance across silent intergalactic vacuum."
+    subject_match_kind: "direct_location"
+    scientific_claim_status: "verified_fact"
+    story_beat: "4K deep-space telescope zoom across distant galaxies (N02a)"
+    visual_desc: "4K astronomical zoom flying past foreground stars toward a distant galaxy cluster."
+
+  - sid: "S03"
+    start_s: 9.948
+    end_s: 12.259
+    kind: "video_full"
+    src_file: "nasa_bh_approaching_4k.webm"
+    src_in: 1.8
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.05
+    z1: 1.08
+    crop_rationale: "Glides silently across empty star-filled vacuum with natural sound muted."
+    transition_in: "cut"
+    transition_reason: "Sentence-pause cut after 'cluster' contrasting silent empty interstellar vacuum."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "While empty space is a silent vacuum,"
+    editorial_rationale: "Mutes natural sounds across empty starlight to make the silent vacuum contrast palpable."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "4K silent glide across empty interstellar vacuum (N02b)"
+    visual_desc: "4K NASA visualization gliding across silent star-filled space."
+
+  - sid: "S04"
+    start_s: 12.259
+    end_s: 17.408
+    kind: "video_full"
+    src_file: "perseus_cluster_wave_4k.webm"
+    src_in: 9.5
+    camera_perspective: "extreme_wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.12
+    z1: 1.16
+    crop_rationale: "Centers the swirling 4K glowing orange-red superheated X-ray plasma enveloping the Perseus galaxy cluster."
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'vacuum' revealing the superheated intracluster plasma cloud."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "this giant cluster is wrapped in superheated plasma spanning hundreds of thousands of light-years."
+    editorial_rationale: "Visually contrasts empty vacuum with the vast 10-million-degree Perseus plasma medium."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "4K NASA visualization of superheated X-ray plasma enveloping the Perseus cluster (N02c)"
+    visual_desc: "4K glowing red-orange cloud of superheated intracluster plasma swirling across hundreds of thousands of light-years."
+
+  - sid: "S05"
+    start_s: 17.408
+    end_s: 21.656
+    kind: "video_full"
+    src_file: "eso_alma_control_room_10.m4v"
+    src_in: 3.8
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.50
+    cx1: 0.54
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.06
+    crop_rationale: "Frames a real astronomer pointing directly at spectral observation data on dual control-room monitors."
+    transition_in: "cut"
+    transition_reason: "Sentence-pause cut after 'light-years' introducing the 2003 astronomers analyzing telescope data."
+    context_note: "Observatory spectral data analysis"
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N03"
+    associated_narration_concept: "In 2003, astronomers studying NASA's Chandra X-ray images"
+    editorial_rationale: "Grounds the 2003 astronomical discovery in real human observational research."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Real astronomer examining spectral plots in observatory control room (N03a)"
+    visual_desc: "1080p footage of an astronomer pointing at live observation plots across dual observatory monitors."
+
+  - sid: "S06"
+    start_s: 21.656
+    end_s: 24.943
+    kind: "still_full"
+    src_file: "perseus_sound_waves_xray_clean.jpg"
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.08
+    crop_rationale: "Centers Prof. Andrew Fabian's landmark 2003 Chandra X-ray image showing concentric acoustic ripples around Perseus A."
+    transition_in: "cut"
+    transition_reason: "Word-boundary cut after 'images' revealing the actual 2003 Chandra X-ray concentric ripples image."
+    context_note: "Chandra X-ray sound ripples (2003)"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "noticed giant concentric ripples rolling through that gas."
+    editorial_rationale: "Shows the exact 2003 NASA Chandra X-ray ripple observation that proved black hole sound waves."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Landmark 2003 NASA Chandra X-ray map of concentric sound ripples in Perseus (N03b)"
+    visual_desc: "Processed NASA Chandra X-ray image revealing concentric blue-white acoustic pressure ripples around NGC 1275."
+
+  - sid: "S07"
+    start_s: 24.943
+    end_s: 29.688
+    kind: "video_full"
+    src_file: "nasa_bh_jets_orbit_4k.webm"
+    src_in: 1.2
+    camera_perspective: "macro"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience", "cinematic_sfx"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.46
+    cx1: 0.50
+    cy1: 0.46
+    z0: 1.34
+    z1: 1.38
+    shadow_lift: 0.14
+    crop_rationale: "Zooms tightly in 4K so the twin glowing relativistic jets fill the entire 1080x1920 vertical canvas edge-to-edge."
+    transition_in: "cut"
+    transition_reason: "Sentence-pause cut after 'gas' erupting into 4K NASA supercomputer relativistic black hole jets."
+    context_note: "NASA SVS relativistic jet simulation"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "Relativistic jets blasting from the central black hole were inflating enormous cavities—"
+    editorial_rationale: "Visualizes the exact bipolar jet piston mechanism inflating cavities in Perseus."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "4K NASA supercomputer simulation of relativistic jets blasting from an active black hole (N03c)"
+    visual_desc: "4K NASA Goddard simulation of twin relativistic jets erupting vertically from a central supermassive black hole."
+
+  - sid: "S08"
+    start_s: 29.688
+    end_s: 31.894
+    kind: "still_full"
+    src_file: "perseus_cavities_xray_clean.jpg"
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.07
+    crop_rationale: "Centers the twin dark X-ray cavities ('bubbles') blown into the hot Perseus gas by the central black hole."
+    transition_in: "cut"
+    transition_reason: "Em-dash pause cut after 'cavities' showing the actual X-ray cavities inflated inside Perseus."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "pushing true sound waves outward."
+    editorial_rationale: "Directly displays the dark X-ray cavities in Perseus A imaged by Chandra."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Chandra 3-color X-ray image of twin black hole cavities in Perseus (N03d)"
+    visual_desc: "NASA Chandra 3-color X-ray image showing two dark bubbles blown into bright superheated gas around Perseus A."
+
+  - sid: "S09"
+    start_s: 31.894
+    end_s: 36.013
+    kind: "video_full"
+    src_file: "nasa_bh_upclose_4k.webm"
+    src_in: 1.5
+    camera_perspective: "macro"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.10
+    crop_rationale: "Fills the vertical frame with the ominous dark event horizon shadow and warped light ring in 4K."
+    transition_in: "cut"
+    transition_reason: "Sentence-pause cut after 'outward' into the ominous event horizon as the 57-octave pitch drop is revealed."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N04"
+    associated_narration_concept: "The pitch hit a deep B-flat fifty-seven octaves below middle C."
+    editorial_rationale: "Matches the deep B-flat abyss with a looming 4K close-up of a supermassive black hole shadow."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "4K NASA close-up of a supermassive black hole event horizon shadow (N04a)"
+    visual_desc: "4K NASA visualization of glowing relativistic gas warping around the black shadow of an event horizon."
+
+  - sid: "S10"
+    start_s: 36.013
+    end_s: 38.932
+    kind: "video_full"
+    src_file: "nasa_bh_orbiting_4k.webm"
+    src_in: 9.0
+    camera_perspective: "first_person_pov"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.10
+    crop_rationale: "4K NASA supercomputer POV sweeping close past the warped photon ring against a full-canvas Milky Way starfield."
+    transition_in: "cut"
+    transition_reason: "Sentence-pause cut after 'C' sweeping past the photon ring on 'nearly ten million years'."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N04"
+    associated_narration_concept: "Each oscillation takes nearly ten million years—"
+    editorial_rationale: "Evokes abyssal cosmic time scale as the camera sweeps close past the warped photon ring."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "4K NASA supercomputer sweep past a black hole photon ring (N04b)"
+    visual_desc: "4K supercomputer visualization sweeping past the glowing warped accretion ring of a supermassive black hole."
+
+  - sid: "S11"
+    start_s: 38.932
+    end_s: 43.545
+    kind: "video_full"
+    src_file: "perseus_57_octaves_diagram_v6.mp4"
+    src_in: 0.4
+    camera_perspective: "labeled_visualization"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "music", "ambience", "cinematic_sfx"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.00
+    z1: 1.00
+    shadow_lift: 0.08
+    crop_rationale: "Native 1080x1920 visualization of 30,000-light-year waves (1 wave = 9.6M years) and the 57-octave drop below middle C."
+    transition_in: "dissolve"
+    transition_duration_s: 0.55
+    transition_reason: "Smooth 0.55s dissolve after 'years' visualizing the 144-quadrillion-fold frequency drop."
+    context_note: "Illustrative 57-octave acoustic scale"
+    is_real_evidence: false
+    has_human_interaction: false
+    associated_seg_id: "N04"
+    associated_narration_concept: "one hundred forty-four quadrillion times deeper than human ears can detect."
+    editorial_rationale: "Makes '57 octaves below middle C' and '144 quadrillion times deeper' visually concrete at a glance."
+    subject_match_kind: "illustrative_diagram"
+    scientific_claim_status: "illustrative_visualization"
+    story_beat: "1080x1920 acoustic scale plunging 57 octaves below middle C (N04c)"
+    visual_desc: "Animated 1080x1920 physics diagram comparing Middle C and human hearing down 57 octaves to the Perseus black hole."
+
+  - sid: "S12"
+    start_s: 43.545
+    end_s: 47.539
+    kind: "video_full"
+    src_file: "nasa_bh_approaching_4k.webm"
+    src_in: 7.8
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.05
+    z1: 1.08
+    crop_rationale: "Approaching a black hole across silent star-filled vacuum with natural sounds muted to emphasize vacuum silence."
+    transition_in: "cut"
+    transition_reason: "Sentence-pause cut after 'detect' dropping natural sound to zero on 'no evidence of sound traveling through empty vacuum'."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "Telescopes show no evidence of sound traveling through empty vacuum."
+    editorial_rationale: "Reinforces the scientific caveat by muting acoustic waves over empty interstellar vacuum."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "4K approach through silent vacuum toward a gravitationally lensed black hole (N05a)"
+    visual_desc: "4K NASA visualization gliding silently across starlight warped by a black hole's gravity."
+
+  - sid: "S13"
+    start_s: 47.539
+    end_s: 51.266
+    kind: "video_full"
+    src_file: "eso_alma_control_room_1.m4v"
+    src_in: 3.2
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.53
+    cy1: 0.48
+    z0: 1.04
+    z1: 1.06
+    crop_rationale: "Shows astronomers working at multi-screen observation consoles as NASA's X-ray data extraction is explained."
+    transition_in: "cut"
+    transition_reason: "Sentence-pause cut after 'vacuum' showing real observatory data processing before the acoustic roar reveal."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N05"
+    associated_narration_concept: "Instead, NASA extracted Chandra's real X-ray pressure ripples"
+    editorial_rationale: "Shows human astrophysicists translating telescope observations into physical wave profiles."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Observatory astronomers collaborating across multi-screen data consoles (N05b)"
+    visual_desc: "1080p footage of three astronomers analyzing astronomical sky-survey data at control consoles."
+
+  - sid: "S14"
+    start_s: 51.266
+    end_s: 56.380
+    kind: "video_full"
+    src_file: "perseus_sonification_chandra_1080p.mp4"
+    src_in: 14.0
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds", "cinematic_sfx"]
+    nat_audio_gain_db: -3.0
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.44
+    cx1: 0.50
+    cy1: 0.44
+    z0: 1.17
+    z1: 1.20
+    crop_rationale: "Locks onto NASA Chandra's radial sweep crossing bright Perseus X-ray ripples while the authentic Perseus roar swells solo."
+    transition_in: "cut"
+    transition_reason: "Word-boundary cut after 'ripples' unleashing NASA's official Perseus X-ray radar scan and 0.95s un-ducked black hole roar."
+    context_note: "Official NASA Chandra sonification"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "and scaled them up fifty-seven octaves—revealing this haunting cosmic roar."
+    editorial_rationale: "Climactic audio-visual reveal pairing NASA's radial scan with the real Perseus black hole acoustic wail across the 1.03s pause."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Official NASA Perseus X-ray sonification sweep with solo black hole acoustic wail (N05c)"
+    visual_desc: "NASA Chandra radial scan sweeping over crimson X-ray ripples as the resynthesized Perseus black hole roar resonates."
+
+  - sid: "S15"
+    start_s: 56.380
+    end_s: 59.532
+    kind: "still_full"
+    src_file: "ngc1275_hst_chandra_4k.jpg"
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds", "cinematic_sfx"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.08
+    crop_rationale: "Centers the luminous core and sweeping magnetic filaments of NGC 1275 (Perseus A) in 4.7K Hubble + Chandra detail."
+    transition_in: "cut"
+    transition_reason: "Breath-pause cut at the end of the solo roar into the 4.7K Hubble + Chandra view of NGC 1275."
+    context_note: "NGC 1275 (Hubble + Chandra)"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N06"
+    associated_narration_concept: "Those acoustic waves carry colossal energy across the cluster,"
+    editorial_rationale: "Reveals the giant galaxy NGC 1275 whose tendrils and gas are sculpted by black hole acoustic energy."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "4.7K Hubble + Chandra composite of active galaxy NGC 1275 at the heart of Perseus (N06a)"
+    visual_desc: "4.7K multi-wavelength Hubble and Chandra composite showing glowing violet X-ray shells and red filaments around NGC 1275."
+
+  - sid: "S16"
+    start_s: 59.532
+    end_s: 64.579
+    kind: "video_full"
+    src_file: "perseus_cluster_wave_4k.webm"
+    src_in: 107.0
+    camera_perspective: "aerial"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.12
+    z1: 1.15
+    crop_rationale: "Frames the 4K Perseus thermal X-ray wave front warming intracluster gas across hundreds of thousands of light-years."
+    transition_in: "cut"
+    transition_reason: "Clause-pause cut after 'cluster' illustrating how sound waves heat the cluster gas for billions of years."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N06"
+    associated_narration_concept: "heating the surrounding gas for billions of years so trillions of stars cannot chaotically collapse."
+    editorial_rationale: "Shows the cluster-wide thermal X-ray structure sustained against gravitational cooling collapse."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "4K NASA Chandra thermal X-ray wave across the Perseus galaxy cluster (N06b)"
+    visual_desc: "4K multi-band X-ray visualization of giant thermal waves sweeping across the Perseus galaxy cluster."
+
+  - sid: "S17"
+    start_s: 64.579
+    end_s: 66.783
+    kind: "video_full"
+    src_file: "nasa_bh_orbiting_4k.webm"
+    src_in: 3.0
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "aerial_sweep"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.05
+    z1: 1.08
+    crop_rationale: "Majestic 4K orbital sweep around a luminous supermassive black hole."
+    transition_in: "dissolve"
+    transition_duration_s: 0.50
+    transition_reason: "Motivated 0.50s dissolve after 'collapse' into the final reflective takeaway ('The universe isn't silent after all')."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N07"
+    associated_narration_concept: "The universe isn't silent after all—"
+    editorial_rationale: "Delivers cinematic awe on the opening clause of the final impression."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "4K orbital sweep around a glowing supermassive black hole accretion disk (N07a)"
+    visual_desc: "4K NASA visualization orbiting smoothly around the warped glowing accretion disk of a supermassive black hole."
+
+  - sid: "S18"
+    start_s: 66.783
+    end_s: 70.633
+    kind: "video_full"
+    src_file: "perseus_sonification_chandra_1080p.mp4"
+    src_in: 0.15
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds", "cinematic_sfx"]
+    nat_audio_gain_db: -3.5
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.44
+    cx1: 0.50
+    cy1: 0.44
+    z0: 1.17
+    z1: 1.17
+    crop_rationale: "Returns to NASA Chandra's crimson Perseus X-ray ripples ending at t=4.00s so Frame N loops seamlessly into S01 Frame 0."
+    transition_in: "cut"
+    transition_reason: "Em-dash pause cut after 'all' returning to Chandra's Perseus X-ray acoustic ripples for a seamless loop into S01."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N07"
+    associated_narration_concept: "we simply needed an X-ray telescope to hear its deepest note."
+    editorial_rationale: "Closes on Chandra's Perseus X-ray acoustic wave field (`src_in` 0.15s + 3.85s = 4.00s where `S01` begins!) for a seamless loop."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "NASA Chandra Perseus X-ray acoustic ripples — seamless loop tail into S01 (N07b)"
+    visual_desc: "NASA Chandra radial X-ray scan sweeping smoothly toward the exact starting angle of Frame 0."
+
+assets_register:
+  - local_file: "perseus_sonification_chandra_1080p.mp4"
+    title: "Data Sonification: Black Hole at the Center of the Perseus Galaxy Cluster (X-ray)"
+    creator_agency: "NASA / CXC / SAO / K. Arcand, SYSTEM Sounds (M. Russo, A. Santaguida)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Data_Sonification-_Black_Hole_at_the_Center_of_the_Perseus_Galaxy_Cluster_(X-ray).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/1/11/Data_Sonification-_Black_Hole_at_the_Center_of_the_Perseus_Galaxy_Cluster_%28X-ray%29.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA/CXC/SAO/K. Arcand & SYSTEM Sounds (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+    intended_use: "Opening hook (S01), primary thumbnail (Concept A), climactic acoustic roar reveal (S12), and seamless closing loop (S16)"
+
+  - local_file: "perseus_nasa_acoustic_roar.wav"
+    title: "Official NASA Chandra Perseus Galaxy Cluster Black Hole Acoustic Sonification Audio (57–58 Octaves Scaled)"
+    creator_agency: "NASA / CXC / SAO / SYSTEM Sounds"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Data_Sonification-_Black_Hole_at_the_Center_of_the_Perseus_Galaxy_Cluster_(X-ray).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/1/11/Data_Sonification-_Black_Hole_at_the_Center_of_the_Perseus_Galaxy_Cluster_%28X-ray%29.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Audio sonification courtesy of NASA/CXC/SAO/SYSTEM Sounds (Public Domain)"
+    media_type: "audio"
+    priority_tier: 1
+    intended_use: "Scene-gated authentic NASA Perseus black hole resynthesized acoustic wave audio"
+
+  - local_file: "perseus_cluster_wave_4k.webm"
+    title: "Gigantic Wave Discovered in Perseus Galaxy Cluster (4K X-Ray & Hydrodynamic Visualization)"
+    creator_agency: "NASA's Goddard Space Flight Center / Chandra X-ray Observatory"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Gigantic_Wave_Discovered_in_Perseus_Galaxy_Cluster.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Gigantic_Wave_Discovered_in_Perseus_Galaxy_Cluster.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA's Goddard Space Flight Center / CXC (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+    intended_use: "4K superheated X-ray plasma enveloping the Perseus cluster (S03, S14)"
+
+  - local_file: "perseus_sound_waves_xray_clean.jpg"
+    title: "Perseus Cluster: Chandra 'Hears' a Supermassive Black Hole in Perseus — Acoustic Ripples Map (2003)"
+    creator_agency: "NASA / CXC / IoA / A. Fabian et al."
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Perseus_Cluster-_Chandra_%22Hears%22_a_Supermassive_Black_Hole_in_Perseus_(2003-perseus_-_perseus_xray).tiff"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/4/47/Perseus_Cluster-_Chandra_%22Hears%22_a_Supermassive_Black_Hole_in_Perseus_%282003-perseus_-_perseus_xray%29.tiff"
+    license: "Public domain"
+    license_url: "https://chandra.harvard.edu/photo/2003/perseus/"
+    required_attribution: "X-ray: NASA/CXC/IoA/A. Fabian et al. (Public Domain)"
+    media_type: "photo"
+    priority_tier: 1
+    intended_use: "Landmark 2003 Chandra X-ray image of concentric sound ripples in Perseus (S05 & Thumbnail Concept C)"
+
+  - local_file: "perseus_cavities_xray_clean.jpg"
+    title: "Perseus Cluster: Chandra 3-Color X-ray View of Black Hole Cavities in NGC 1275 (2003)"
+    creator_agency: "NASA / CXC / IoA / A. Fabian et al."
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Perseus_Cluster-_Chandra_%22Hears%22_a_Supermassive_Black_Hole_in_Perseus_(2003-perseus_-_perseus_xray).tiff"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/4/47/Perseus_Cluster-_Chandra_%22Hears%22_a_Supermassive_Black_Hole_in_Perseus_%282003-perseus_-_perseus_xray%29.tiff"
+    license: "Public domain"
+    license_url: "https://chandra.harvard.edu/photo/2003/perseus/"
+    required_attribution: "X-ray: NASA/CXC/IoA/A. Fabian et al. (Public Domain)"
+    media_type: "photo"
+    priority_tier: 1
+    intended_use: "Authentic Chandra 3-color X-ray image of twin black hole plasma cavities in Perseus (S07)"
+
+  - local_file: "ngc1275_hst_chandra_4k.jpg"
+    title: "NGC 1275 (Perseus A) Multi-Wavelength Hubble + Chandra + VLA Composite (4.7K)"
+    creator_agency: "NASA / CXC / SAO / STScI / NRAO / A. Fabian et al."
+    source_page_url: "https://commons.wikimedia.org/wiki/File:NGC_1275_HST+CXO_(49559400073).png"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/5/59/NGC_1275_HST%2BCXO_%2849559400073%29.png"
+    license: "CC BY 2.0"
+    license_url: "https://creativecommons.org/licenses/by/2.0/"
+    required_attribution: "NGC 1275 composite: NASA/CXC/SAO/STScI, CC BY 2.0"
+    media_type: "photo"
+    priority_tier: 1
+    intended_use: "4.7K multi-wavelength view of giant galaxy NGC 1275 and gas filaments heated by black hole sound waves (S13)"
+
+  - local_file: "eht_m87_black_hole_4k.jpg"
+    title: "First Image of a Supermassive Black Hole Shadow in Messier 87 (Event Horizon Telescope, 4.3K)"
+    creator_agency: "Event Horizon Telescope Collaboration"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87_crop_max_res.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "M87* black hole image: Event Horizon Telescope Collaboration, CC BY 4.0"
+    media_type: "photo"
+    priority_tier: 2
+    intended_use: "Thumbnail Concept B: Real Event Horizon Telescope supermassive black hole shadow"
+
+  - local_file: "nasa_bh_jets_orbit_4k.webm"
+    title: "Simulations of Supermassive Black Hole Relativistic Jets & Winds (SVS14203, 4K)"
+    creator_agency: "NASA's Scientific Visualization Studio / Goddard Space Flight Center"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Simulations_of_Weak_Black_Hole_Jets_(SVS14203_-_AGNwinds_TiltOrbit_30Degrees_4k_30).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Simulations_of_Weak_Black_Hole_Jets_%28SVS14203_-_AGNwinds_TiltOrbit_30Degrees_4k_30%29.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA's Scientific Visualization Studio (Public Domain)"
+    media_type: "video"
+    priority_tier: 1
+    intended_use: "4K NASA supercomputer simulation of twin relativistic jets erupting from an active galactic black hole (S06)"
+
+  - local_file: "nasa_bh_approaching_4k.webm"
+    title: "Black Hole with Accretion Disk Visualization — Approaching a Black Hole (SVS14619, 4K)"
+    creator_agency: "NASA's Goddard Space Flight Center / Jeremy Schnittman & Brian P. Powell"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Black_Hole_with_Accretion_Disk_Visualization_(SVS14619_-_1-Approaching_a_black_hole-4K).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Black_Hole_with_Accretion_Disk_Visualization_%28SVS14619_-_1-Approaching_a_black_hole-4K%29.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA's Goddard Space Flight Center / J. Schnittman & B. Powell (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+    intended_use: "4K approach across silent interstellar vacuum toward a gravitationally lensed black hole (S10)"
+
+  - local_file: "nasa_bh_orbiting_4k.webm"
+    title: "Black Hole with Accretion Disk Visualization — Orbiting a Black Hole (SVS14619, 4K)"
+    creator_agency: "NASA's Goddard Space Flight Center / Jeremy Schnittman & Brian P. Powell"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Black_Hole_with_Accretion_Disk_Visualization_(SVS14619_-_2-Orbiting_a_black_hole-4K).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/4/48/Black_Hole_with_Accretion_Disk_Visualization_%28SVS14619_-_2-Orbiting_a_black_hole-4K%29.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA's Goddard Space Flight Center / J. Schnittman & B. Powell (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+    intended_use: "4K orbital sweep around a supermassive black hole (S10 & S17)"
+
+  - local_file: "nasa_bh_upclose_4k.webm"
+    title: "Black Hole with Accretion Disk Visualization — Event Horizon Up Close (SVS14619, 4K)"
+    creator_agency: "NASA's Goddard Space Flight Center / Jeremy Schnittman & Brian P. Powell"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Black_Hole_with_Accretion_Disk_Visualization_(SVS14619_-_4-Black_hole_up_close-4K).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Black_Hole_with_Accretion_Disk_Visualization_%28SVS14619_-_4-Black_hole_up_close-4K%29.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Courtesy of NASA's Goddard Space Flight Center / J. Schnittman & B. Powell (Public Domain)"
+    media_type: "video"
+    priority_tier: 2
+    intended_use: "4K close-up of the dark event horizon shadow as the 57-octave B-flat pitch is introduced (S08)"
+
+  - local_file: "eso_m87_zoom_4k.webm"
+    title: "Zooming in to the Heart of Messier 87 Across Deep Space (4K)"
+    creator_agency: "European Southern Observatory (ESO) / Digitized Sky Survey 2 / NASA/ESA Hubble"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Zooming_in_to_the_Heart_of_Messier_87.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/7/70/Zooming_in_to_the_Heart_of_Messier_87.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Deep-space galaxy zoom video: ESO/Digitized Sky Survey 2/Hubble, CC BY 3.0"
+    media_type: "video"
+    priority_tier: 2
+    intended_use: "4K deep-space zoom conveying the 250-million-light-year distance across intergalactic vacuum (S02)"
+
+  - local_file: "eso_alma_control_room_10.m4v"
+    title: "Astronomer Inspecting Spectral Plots on Dual Observatory Control-Room Monitors"
+    creator_agency: "European Southern Observatory (ESO)"
+    source_page_url: "https://www.eso.org/public/videos/alma12observations10/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_and_apple/alma12observations10.m4v"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Observatory control-room footage: ESO, CC BY 4.0"
+    media_type: "video"
+    priority_tier: 3
+    intended_use: "Real astronomer examining spectral observation data on dual monitors (S04)"
+
+  - local_file: "eso_alma_control_room_1.m4v"
+    title: "Astronomers Collaborating at Multi-Screen Observatory Data Consoles"
+    creator_agency: "European Southern Observatory (ESO)"
+    source_page_url: "https://www.eso.org/public/videos/alma12observations1/"
+    direct_media_url: "https://cdn.eso.org/videos/hd_and_apple/alma12observations1.m4v"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Observatory control-room team footage: ESO, CC BY 4.0"
+    media_type: "video"
+    priority_tier: 3
+    intended_use: "Real astronomers collaborating across multi-screen data consoles during sonification data extraction beat (S11)"
+
+  - local_file: "perseus_57_octaves_diagram_v6.mp4"
+    title: "Perseus Cluster 30,000-Light-Year X-Ray Ripples & 57-Octaves-Below-Middle-C Frequency Scale"
+    creator_agency: "Proof of Wonder Documentary Studio v6.0"
+    source_page_url: "local://pipeline/generate_perseus_sound_diagram.py"
+    direct_media_url: "local://assets/raw_footage/space_perseus_black_hole_v6/perseus_57_octaves_diagram_v6.mp4"
+    license: "100% Original First-Party Graphic"
+    license_url: "N/A"
+    required_attribution: "Original illustrative 57-octave acoustic scale & Perseus ripple diagram based on Fabian et al. (2003) / NASA Chandra"
+    media_type: "diagram"
+    priority_tier: 6
+    intended_use: "Visualizes the 30,000-light-year wavelength (~9.6M-year period) and 57-octave / 144-quadrillion-fold pitch drop (S09)"
+    is_first_party_original: true
+
+excluded_sources_notes:
+  - "eso_eht_astronomers_4k.webm: Excluded and deleted because visual inspection revealed burned-in blue narration captions."
+  - "perseus_cluster_wave_4k.webm t=25..95s: Excluded corner-labeled segments; used only clean 4K plasma dynamics at t=9.5..18s and t=107..116s."
+
+factual_references:
+  - citation: "Fabian, A. C., Sanders, J. S., Allen, S. W., Crawford, C. S., Iwasawa, K., Johnstone, R. M., Schmidt, R. W., & Taylor, G. B. (2003). A deep Chandra observation of the Perseus cluster: shocks and ripples. Monthly Notices of the Royal Astronomical Society, 344(3), L43–L47."
+    url: "https://chandra.harvard.edu/photo/2003/perseus/"
+    supported_claims: "Discovery of concentric X-ray pressure ripples (~30,000 light-years across) in the hot intracluster gas of the Perseus galaxy cluster (~250 million light-years away, centered on NGC 1275), corresponding to a B-flat ~57 octaves below middle C (~9.6–10 million years per oscillation) that heats intracluster gas against cooling collapse."
+  - citation: "NASA / Chandra X-ray Center & SYSTEM Sounds (Russo, M., Santaguida, A., & Arcand, K., 2022). New NASA Black Hole Sonifications with a Remix — Perseus Galaxy Cluster."
+    url: "https://chandra.si.edu/sound/perseus.html"
+    supported_claims: "Extraction of actual radial X-ray acoustic pressure waves observed by Chandra in the Perseus cluster and upward resynthesis by 57–58 octaves (~144–288 quadrillion times higher than original frequency) into the audible human range."

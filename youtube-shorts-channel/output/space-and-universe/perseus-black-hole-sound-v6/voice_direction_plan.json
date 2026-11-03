@@ -1,0 +1,296 @@
+{
+  "slug": "perseus-black-hole-sound-v6",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "voice_identity": "en-GB-RyanNeural",
+  "sentence_count": 11,
+  "sentence_cache_hits": 11,
+  "supported_controls": [
+    "sentence_level_speaking_rate_bounded",
+    "sentence_level_pitch_bounded",
+    "exact_inter_sentence_pause_ms",
+    "custom_pronunciation_dictionary",
+    "emphasis_phrase_extraction_and_subtitle_onset_sync",
+    "rms_matched_cross_sentence_consistency",
+    "selective_sentence_rerender_cache"
+  ],
+  "engine_limitations": [
+    "edge-tts does not support zero-shot voice cloning from audio samples.",
+    "Azure-only <mstts:express-as> emotional style XML is rejected by the free Edge endpoint; delivery emotion is approximated cleanly via bounded human rate/pitch/pause prosody without artificial DSP stretching."
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "You were taught that space is completely silent\u2014until NASA captured the real sound of a black hole.",
+      "delivery": "HOOK",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "completely silent",
+        "real sound of a black hole"
+      ],
+      "start_s": 0.1,
+      "end_s": 5.44,
+      "cache_key": "5cad054525fcd736dd7e",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:HOOK->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N02",
+      "text": "Two hundred fifty million light-years away sits the Perseus galaxy cluster.",
+      "delivery": "MYSTERIOUS",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 340,
+      "emphasis_phrases": [
+        "Two hundred fifty million",
+        "Perseus galaxy cluster"
+      ],
+      "start_s": 5.86,
+      "end_s": 9.818,
+      "cache_key": "42ae1324c445fccce0b5",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "While empty space is a silent vacuum, this giant cluster is wrapped in superheated plasma spanning hundreds of thousands of light-years.",
+      "delivery": "MEASURED_EVIDENCE",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "silent vacuum",
+        "superheated plasma"
+      ],
+      "start_s": 10.158,
+      "end_s": 17.243,
+      "cache_key": "6e190a2acc68dcc8426c",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N03",
+      "text": "In 2003, astronomers studying NASA's Chandra X-ray images noticed giant concentric ripples rolling through that gas.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "Chandra X-ray images",
+        "concentric ripples"
+      ],
+      "start_s": 17.663,
+      "end_s": 24.789,
+      "cache_key": "08b6aa2a51242f0ff42a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N03",
+      "text": "Relativistic jets blasting from the central black hole were inflating enormous cavities\u2014pushing true sound waves outward.",
+      "delivery": "DRAMATIC_REVEAL",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "Relativistic jets",
+        "true sound waves"
+      ],
+      "start_s": 25.149,
+      "end_s": 31.734,
+      "cache_key": "01c679214c6b3f85bd9a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:DRAMATIC_REVEAL->bounded_prosody(rate=-4%,pitch=+0Hz,pause=640ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N04",
+      "text": "The pitch hit a deep B-flat fifty-seven octaves below middle C.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "deep B-flat",
+        "fifty-seven octaves"
+      ],
+      "start_s": 32.154,
+      "end_s": 35.862,
+      "cache_key": "0a168aa97fdf4a109500",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N04",
+      "text": "Each oscillation takes nearly ten million years\u2014one hundred forty-four quadrillion times deeper than human ears can detect.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "ten million years",
+        "one hundred forty-four quadrillion"
+      ],
+      "start_s": 36.222,
+      "end_s": 43.402,
+      "cache_key": "54e3a7a0d7c6a36e23c7",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 7,
+      "seg_id": "N05",
+      "text": "Telescopes show no evidence of sound traveling through empty vacuum.",
+      "delivery": "CALM_EXPLANATION",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 320,
+      "emphasis_phrases": [
+        "no evidence",
+        "empty vacuum"
+      ],
+      "start_s": 43.842,
+      "end_s": 47.408,
+      "cache_key": "e4ef0b53a149fa800a82",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 8,
+      "seg_id": "N05",
+      "text": "Instead, NASA extracted Chandra's real X-ray pressure ripples and scaled them up fifty-seven octaves\u2014revealing this haunting cosmic roar.",
+      "delivery": "CINEMATIC_REVEAL",
+      "pace": "SLOW",
+      "energy": 5,
+      "rate": "-3%",
+      "pitch": "+0Hz",
+      "pause_after_ms": 940,
+      "emphasis_phrases": [
+        "real X-ray pressure ripples",
+        "haunting cosmic roar"
+      ],
+      "start_s": 47.728,
+      "end_s": 55.526,
+      "cache_key": "f7cebb68f57ad1be50d1",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:5/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 9,
+      "seg_id": "N06",
+      "text": "Those acoustic waves carry colossal energy across the cluster, heating the surrounding gas for billions of years so trillions of stars cannot chaotically collapse.",
+      "delivery": "DRAMATIC_REVEAL",
+      "pace": "MODERATE",
+      "energy": 4,
+      "rate": "+2%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "colossal energy",
+        "billions of years"
+      ],
+      "start_s": 56.466,
+      "end_s": 64.415,
+      "cache_key": "e47ec1558b0067fb7981",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:DRAMATIC_REVEAL->bounded_prosody(rate=-4%,pitch=+0Hz,pause=640ms)",
+        "PACE:MODERATE->rate_pct=+1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 10,
+      "seg_id": "N07",
+      "text": "The universe isn't silent after all\u2014we simply needed an X-ray telescope to hear its deepest note.",
+      "delivery": "FINAL_IMPRESSION",
+      "pace": "SLOW",
+      "energy": 3,
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "isn't silent after all",
+        "deepest note"
+      ],
+      "start_s": 64.835,
+      "end_s": 70.378,
+      "cache_key": "c9092123d60aba326ded",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:FINAL_IMPRESSION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=380ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ]
+}

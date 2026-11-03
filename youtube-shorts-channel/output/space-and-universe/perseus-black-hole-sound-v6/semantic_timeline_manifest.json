@@ -1,0 +1,1096 @@
+{
+  "slug": "perseus-black-hole-sound-v6",
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "associated_seg_id": "N01",
+      "timeline_start_s": 0.0,
+      "timeline_end_s": 5.6,
+      "duration_s": 5.6,
+      "narration_start_s": 0.1,
+      "narration_end_s": 5.376,
+      "spoken_narration": "You were taught that space is completely silent until NASA captured the real sound of a black hole",
+      "selected_asset": "perseus_sonification_chandra_1080p.mp4",
+      "media_type": "video",
+      "source_creator": "NASA / CXC / SAO / K. Arcand, SYSTEM Sounds (M. Russo, A. Santaguida)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Data_Sonification-_Black_Hole_at_the_Center_of_the_Perseus_Galaxy_Cluster_(X-ray).webm",
+      "license": "Public domain",
+      "visual_purpose": "NASA Chandra radial X-ray scan of Perseus supermassive black hole pressure waves (N01)",
+      "camera_perspective": "satellite_or_telescope",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.44
+        ],
+        "center_end": [
+          0.5,
+          0.45
+        ],
+        "zoom_range": [
+          1.17,
+          1.19
+        ],
+        "rationale": "Fills 9:16 edge-to-edge with NASA Chandra's crimson Perseus X-ray acoustic ripples and rotating radar sweep."
+      },
+      "transition": {
+        "type": "opening",
+        "duration_s": 0.0,
+        "reason": "Immediate 0.00s real NASA Chandra Perseus X-ray scan hook."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": -3.5
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 7.68,
+        "max_recommended_s": 10.08,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "satellite_or_telescope",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 18
+        }
+      },
+      "why_shot_belongs_here": "Opens at Frame 0 with NASA's authentic Perseus X-ray sonification sweep and subtle acoustic wail."
+    },
+    {
+      "scene_id": "S02",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 5.6,
+      "timeline_end_s": 9.9333,
+      "duration_s": 4.333,
+      "narration_start_s": 5.86,
+      "narration_end_s": 9.738,
+      "spoken_narration": "Two hundred fifty million light-years away sits the Perseus galaxy cluster",
+      "selected_asset": "eso_m87_zoom_4k.webm",
+      "media_type": "video",
+      "source_creator": "European Southern Observatory (ESO) / Digitized Sky Survey 2 / NASA/ESA Hubble",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zooming_in_to_the_Heart_of_Messier_87.webm",
+      "license": "CC BY 3.0",
+      "visual_purpose": "4K deep-space telescope zoom across distant galaxies (N02a)",
+      "camera_perspective": "aerial",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.04,
+          1.07
+        ],
+        "rationale": "4K deep-space flight toward a distant galaxy cluster across vacuum."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Sentence-pause cut after 'hole' launching 250 million light-years into deep intergalactic space."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 5.79,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "aerial",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 11
+        }
+      },
+      "why_shot_belongs_here": "Conveys the immense 250-million-light-year distance across silent intergalactic vacuum."
+    },
+    {
+      "scene_id": "S03",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 9.9333,
+      "timeline_end_s": 12.2667,
+      "duration_s": 2.333,
+      "narration_start_s": 10.158,
+      "narration_end_s": 12.159,
+      "spoken_narration": "While empty space is a silent vacuum",
+      "selected_asset": "nasa_bh_approaching_4k.webm",
+      "media_type": "video",
+      "source_creator": "NASA's Goddard Space Flight Center / Jeremy Schnittman & Brian P. Powell",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_Hole_with_Accretion_Disk_Visualization_(SVS14619_-_1-Approaching_a_black_hole-4K).webm",
+      "license": "Public domain",
+      "visual_purpose": "4K silent glide across empty interstellar vacuum (N02b)",
+      "camera_perspective": "medium",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.05,
+          1.08
+        ],
+        "rationale": "Glides silently across empty star-filled vacuum with natural sound muted."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Sentence-pause cut after 'cluster' contrasting silent empty interstellar vacuum."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.62,
+        "ideal_duration_s": 5.12,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 7
+        }
+      },
+      "why_shot_belongs_here": "Mutes natural sounds across empty starlight to make the silent vacuum contrast palpable."
+    },
+    {
+      "scene_id": "S04",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 12.2667,
+      "timeline_end_s": 17.4,
+      "duration_s": 5.133,
+      "narration_start_s": 12.358,
+      "narration_end_s": 17.183,
+      "spoken_narration": "this giant cluster is wrapped in superheated plasma spanning hundreds of thousands of light-years",
+      "selected_asset": "perseus_cluster_wave_4k.webm",
+      "media_type": "video",
+      "source_creator": "NASA's Goddard Space Flight Center / Chandra X-ray Observatory",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gigantic_Wave_Discovered_in_Perseus_Galaxy_Cluster.webm",
+      "license": "Public domain",
+      "visual_purpose": "4K NASA visualization of superheated X-ray plasma enveloping the Perseus cluster (N02c)",
+      "camera_perspective": "extreme_wide",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.12,
+          1.16
+        ],
+        "rationale": "Centers the swirling 4K glowing orange-red superheated X-ray plasma enveloping the Perseus galaxy cluster."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clause-pause cut after 'vacuum' revealing the superheated intracluster plasma cloud."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 7.01,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "extreme_wide",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 14
+        }
+      },
+      "why_shot_belongs_here": "Visually contrasts empty vacuum with the vast 10-million-degree Perseus plasma medium."
+    },
+    {
+      "scene_id": "S05",
+      "associated_seg_id": "N03",
+      "timeline_start_s": 17.4,
+      "timeline_end_s": 21.6667,
+      "duration_s": 4.267,
+      "narration_start_s": 17.663,
+      "narration_end_s": 21.65,
+      "spoken_narration": "In 2003 astronomers studying NASA's Chandra X-ray images",
+      "selected_asset": "eso_alma_control_room_10.m4v",
+      "media_type": "video",
+      "source_creator": "European Southern Observatory (ESO)",
+      "source_url": "https://www.eso.org/public/videos/alma12observations10/",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Real astronomer examining spectral plots in observatory control room (N03a)",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.52,
+          0.5
+        ],
+        "center_end": [
+          0.54,
+          0.5
+        ],
+        "zoom_range": [
+          1.04,
+          1.06
+        ],
+        "rationale": "Frames a real astronomer pointing directly at spectral observation data on dual control-room monitors."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Sentence-pause cut after 'light-years' introducing the 2003 astronomers analyzing telescope data."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.38,
+        "ideal_duration_s": 4.88,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "handheld_field",
+          "is_moving_footage": true,
+          "spoken_word_count": 7
+        }
+      },
+      "why_shot_belongs_here": "Grounds the 2003 astronomical discovery in real human observational research."
+    },
+    {
+      "scene_id": "S06",
+      "associated_seg_id": "N03",
+      "timeline_start_s": 21.6667,
+      "timeline_end_s": 24.9333,
+      "duration_s": 3.267,
+      "narration_start_s": 21.662,
+      "narration_end_s": 24.737,
+      "spoken_narration": "noticed giant concentric ripples rolling through that gas",
+      "selected_asset": "perseus_sound_waves_xray_clean.jpg",
+      "media_type": "photo",
+      "source_creator": "NASA / CXC / IoA / A. Fabian et al.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Perseus_Cluster-_Chandra_%22Hears%22_a_Supermassive_Black_Hole_in_Perseus_(2003-perseus_-_perseus_xray).tiff",
+      "license": "Public domain",
+      "visual_purpose": "Landmark 2003 NASA Chandra X-ray map of concentric sound ripples in Perseus (N03b)",
+      "camera_perspective": "satellite_or_telescope",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.48
+        ],
+        "zoom_range": [
+          1.04,
+          1.08
+        ],
+        "rationale": "Centers Prof. Andrew Fabian's landmark 2003 Chandra X-ray image showing concentric acoustic ripples around Perseus A."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Word-boundary cut after 'images' revealing the actual 2003 Chandra X-ray concentric ripples image."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "satellite_or_telescope",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 8
+        }
+      },
+      "why_shot_belongs_here": "Shows the exact 2003 NASA Chandra X-ray ripple observation that proved black hole sound waves."
+    },
+    {
+      "scene_id": "S07",
+      "associated_seg_id": "N03",
+      "timeline_start_s": 24.9333,
+      "timeline_end_s": 29.7,
+      "duration_s": 4.767,
+      "narration_start_s": 25.149,
+      "narration_end_s": 29.582,
+      "spoken_narration": "Relativistic jets blasting from the central black hole were inflating enormous cavities",
+      "selected_asset": "nasa_bh_jets_orbit_4k.webm",
+      "media_type": "video",
+      "source_creator": "NASA's Scientific Visualization Studio / Goddard Space Flight Center",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Simulations_of_Weak_Black_Hole_Jets_(SVS14203_-_AGNwinds_TiltOrbit_30Degrees_4k_30).webm",
+      "license": "Public domain",
+      "visual_purpose": "4K NASA supercomputer simulation of relativistic jets blasting from an active black hole (N03c)",
+      "camera_perspective": "macro",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.46
+        ],
+        "center_end": [
+          0.5,
+          0.46
+        ],
+        "zoom_range": [
+          1.34,
+          1.38
+        ],
+        "rationale": "Zooms tightly in 4K so the twin glowing relativistic jets fill the entire 1080x1920 vertical canvas edge-to-edge."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Sentence-pause cut after 'gas' erupting into 4K NASA supercomputer relativistic black hole jets."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 6.2,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "macro",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 12
+        }
+      },
+      "why_shot_belongs_here": "Visualizes the exact bipolar jet piston mechanism inflating cavities in Perseus."
+    },
+    {
+      "scene_id": "S08",
+      "associated_seg_id": "N03",
+      "timeline_start_s": 29.7,
+      "timeline_end_s": 31.9,
+      "duration_s": 2.2,
+      "narration_start_s": 29.794,
+      "narration_end_s": 31.669,
+      "spoken_narration": "pushing true sound waves outward",
+      "selected_asset": "perseus_cavities_xray_clean.jpg",
+      "media_type": "photo",
+      "source_creator": "NASA / CXC / IoA / A. Fabian et al.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Perseus_Cluster-_Chandra_%22Hears%22_a_Supermassive_Black_Hole_in_Perseus_(2003-perseus_-_perseus_xray).tiff",
+      "license": "Public domain",
+      "visual_purpose": "Chandra 3-color X-ray image of twin black hole cavities in Perseus (N03d)",
+      "camera_perspective": "close_up",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.04,
+          1.07
+        ],
+        "rationale": "Centers the twin dark X-ray cavities ('bubbles') blown into the hot Perseus gas by the central black hole."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Em-dash pause cut after 'cavities' showing the actual X-ray cavities inflated inside Perseus."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 5
+        }
+      },
+      "why_shot_belongs_here": "Directly displays the dark X-ray cavities in Perseus A imaged by Chandra."
+    },
+    {
+      "scene_id": "S09",
+      "associated_seg_id": "N04",
+      "timeline_start_s": 31.9,
+      "timeline_end_s": 36.0,
+      "duration_s": 4.1,
+      "narration_start_s": 32.154,
+      "narration_end_s": 35.804,
+      "spoken_narration": "The pitch hit a deep B-flat fifty-seven octaves below middle C",
+      "selected_asset": "nasa_bh_upclose_4k.webm",
+      "media_type": "video",
+      "source_creator": "NASA's Goddard Space Flight Center / Jeremy Schnittman & Brian P. Powell",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_Hole_with_Accretion_Disk_Visualization_(SVS14619_-_4-Black_hole_up_close-4K).webm",
+      "license": "Public domain",
+      "visual_purpose": "4K NASA close-up of a supermassive black hole event horizon shadow (N04a)",
+      "camera_perspective": "macro",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.06,
+          1.1
+        ],
+        "rationale": "Fills the vertical frame with the ominous dark event horizon shadow and warped light ring in 4K."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Sentence-pause cut after 'outward' into the ominous event horizon as the 57-octave pitch drop is revealed."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 5.84,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "macro",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 11
+        }
+      },
+      "why_shot_belongs_here": "Matches the deep B-flat abyss with a looming 4K close-up of a supermassive black hole shadow."
+    },
+    {
+      "scene_id": "S10",
+      "associated_seg_id": "N04",
+      "timeline_start_s": 36.0,
+      "timeline_end_s": 38.9333,
+      "duration_s": 2.933,
+      "narration_start_s": 36.222,
+      "narration_end_s": 38.815,
+      "spoken_narration": "Each oscillation takes nearly ten million years",
+      "selected_asset": "nasa_bh_orbiting_4k.webm",
+      "media_type": "video",
+      "source_creator": "NASA's Goddard Space Flight Center / Jeremy Schnittman & Brian P. Powell",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_Hole_with_Accretion_Disk_Visualization_(SVS14619_-_2-Orbiting_a_black_hole-4K).webm",
+      "license": "Public domain",
+      "visual_purpose": "4K NASA supercomputer sweep past a black hole photon ring (N04b)",
+      "camera_perspective": "first_person_pov",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.08,
+          1.12
+        ],
+        "rationale": "4K NASA supercomputer POV sweeping close past the warped photon ring against a full-canvas Milky Way starfield."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Sentence-pause cut after 'C' sweeping past the photon ring on 'nearly ten million years'."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.72,
+        "ideal_duration_s": 5.22,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "first_person_pov",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 7
+        }
+      },
+      "why_shot_belongs_here": "Evokes abyssal cosmic time scale as the camera sweeps close past the warped photon ring."
+    },
+    {
+      "scene_id": "S11",
+      "associated_seg_id": "N04",
+      "timeline_start_s": 38.9333,
+      "timeline_end_s": 43.5333,
+      "duration_s": 4.6,
+      "narration_start_s": 39.049,
+      "narration_end_s": 43.32,
+      "spoken_narration": "one hundred forty-four quadrillion times deeper than human ears can detect",
+      "selected_asset": "perseus_57_octaves_diagram_v6.mp4",
+      "media_type": "diagram",
+      "source_creator": "Proof of Wonder Documentary Studio v6.0",
+      "source_url": "local://pipeline/generate_perseus_sound_diagram.py",
+      "license": "100% Original First-Party Graphic",
+      "visual_purpose": "1080x1920 acoustic scale plunging 57 octaves below middle C (N04c)",
+      "camera_perspective": "labeled_visualization",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.0,
+          1.0
+        ],
+        "rationale": "Native 1080x1920 visualization of 30,000-light-year waves (1 wave = 9.6M years) and the 57-octave drop below middle C."
+      },
+      "transition": {
+        "type": "dissolve",
+        "duration_s": 0.55,
+        "reason": "Smooth 0.55s dissolve after 'years' visualizing the 144-quadrillion-fold frequency drop."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "labeled_visualization",
+          "camera_movement": "static",
+          "is_moving_footage": false,
+          "spoken_word_count": 11
+        }
+      },
+      "why_shot_belongs_here": "Makes '57 octaves below middle C' and '144 quadrillion times deeper' visually concrete at a glance."
+    },
+    {
+      "scene_id": "S12",
+      "associated_seg_id": "N05",
+      "timeline_start_s": 43.5333,
+      "timeline_end_s": 47.5333,
+      "duration_s": 4.0,
+      "narration_start_s": 43.842,
+      "narration_end_s": 47.35,
+      "spoken_narration": "Telescopes show no evidence of sound traveling through empty vacuum",
+      "selected_asset": "nasa_bh_approaching_4k.webm",
+      "media_type": "video",
+      "source_creator": "NASA's Goddard Space Flight Center / Jeremy Schnittman & Brian P. Powell",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_Hole_with_Accretion_Disk_Visualization_(SVS14619_-_1-Approaching_a_black_hole-4K).webm",
+      "license": "Public domain",
+      "visual_purpose": "4K approach through silent vacuum toward a gravitationally lensed black hole (N05a)",
+      "camera_perspective": "medium",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.05,
+          1.08
+        ],
+        "rationale": "Approaching a black hole across silent star-filled vacuum with natural sounds muted to emphasize vacuum silence."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Sentence-pause cut after 'detect' dropping natural sound to zero on 'no evidence of sound traveling through empty vacuum'."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.16,
+        "ideal_duration_s": 5.66,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 10
+        }
+      },
+      "why_shot_belongs_here": "Reinforces the scientific caveat by muting acoustic waves over empty interstellar vacuum."
+    },
+    {
+      "scene_id": "S13",
+      "associated_seg_id": "N05",
+      "timeline_start_s": 47.5333,
+      "timeline_end_s": 51.2667,
+      "duration_s": 3.733,
+      "narration_start_s": 47.728,
+      "narration_end_s": 51.26,
+      "spoken_narration": "Instead NASA extracted Chandra's real X-ray pressure ripples",
+      "selected_asset": "eso_alma_control_room_1.m4v",
+      "media_type": "video",
+      "source_creator": "European Southern Observatory (ESO)",
+      "source_url": "https://www.eso.org/public/videos/alma12observations1/",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Observatory astronomers collaborating across multi-screen data consoles (N05b)",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.48
+        ],
+        "center_end": [
+          0.53,
+          0.48
+        ],
+        "zoom_range": [
+          1.04,
+          1.06
+        ],
+        "rationale": "Shows astronomers working at multi-screen observation consoles as NASA's X-ray data extraction is explained."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Sentence-pause cut after 'vacuum' showing real observatory data processing before the acoustic roar reveal."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.46,
+        "ideal_duration_s": 4.96,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "handheld_field",
+          "is_moving_footage": true,
+          "spoken_word_count": 8
+        }
+      },
+      "why_shot_belongs_here": "Shows human astrophysicists translating telescope observations into physical wave profiles."
+    },
+    {
+      "scene_id": "S14",
+      "associated_seg_id": "N05",
+      "timeline_start_s": 51.2667,
+      "timeline_end_s": 56.3667,
+      "duration_s": 5.1,
+      "narration_start_s": 51.273,
+      "narration_end_s": 55.435,
+      "spoken_narration": "and scaled them up fifty-seven octaves revealing this haunting cosmic roar",
+      "selected_asset": "perseus_sonification_chandra_1080p.mp4",
+      "media_type": "video",
+      "source_creator": "NASA / CXC / SAO / K. Arcand, SYSTEM Sounds (M. Russo, A. Santaguida)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Data_Sonification-_Black_Hole_at_the_Center_of_the_Perseus_Galaxy_Cluster_(X-ray).webm",
+      "license": "Public domain",
+      "visual_purpose": "Official NASA Perseus X-ray sonification sweep with solo black hole acoustic wail (N05c)",
+      "camera_perspective": "close_up",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.44
+        ],
+        "center_end": [
+          0.5,
+          0.44
+        ],
+        "zoom_range": [
+          1.17,
+          1.2
+        ],
+        "rationale": "Locks onto NASA Chandra's radial sweep crossing bright Perseus X-ray ripples while the authentic Perseus roar swells solo."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Word-boundary cut after 'ripples' unleashing NASA's official Perseus X-ray radar scan and 0.95s un-ducked black hole roar."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": -3.0
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 5.79,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 11
+        }
+      },
+      "why_shot_belongs_here": "Climactic audio-visual reveal pairing NASA's radial scan with the real Perseus black hole acoustic wail across the 1.03s pause."
+    },
+    {
+      "scene_id": "S15",
+      "associated_seg_id": "N06",
+      "timeline_start_s": 56.3667,
+      "timeline_end_s": 59.5333,
+      "duration_s": 3.167,
+      "narration_start_s": 56.466,
+      "narration_end_s": 59.44,
+      "spoken_narration": "Those acoustic waves carry colossal energy across the cluster",
+      "selected_asset": "ngc1275_hst_chandra_4k.jpg",
+      "media_type": "photo",
+      "source_creator": "NASA / CXC / SAO / STScI / NRAO / A. Fabian et al.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:NGC_1275_HST+CXO_(49559400073).png",
+      "license": "CC BY 2.0",
+      "visual_purpose": "4.7K Hubble + Chandra composite of active galaxy NGC 1275 at the heart of Perseus (N06a)",
+      "camera_perspective": "satellite_or_telescope",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.48
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.04,
+          1.08
+        ],
+        "rationale": "Centers the luminous core and sweeping magnetic filaments of NGC 1275 (Perseus A) in 4.7K Hubble + Chandra detail."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Breath-pause cut at the end of the solo roar into the 4.7K Hubble + Chandra view of NGC 1275."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "satellite_or_telescope",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 9
+        }
+      },
+      "why_shot_belongs_here": "Reveals the giant galaxy NGC 1275 whose tendrils and gas are sculpted by black hole acoustic energy."
+    },
+    {
+      "scene_id": "S16",
+      "associated_seg_id": "N06",
+      "timeline_start_s": 59.5333,
+      "timeline_end_s": 64.5667,
+      "duration_s": 5.033,
+      "narration_start_s": 59.624,
+      "narration_end_s": 64.354,
+      "spoken_narration": "heating the surrounding gas for billions of years so trillions of stars cannot chaotically collapse",
+      "selected_asset": "perseus_cluster_wave_4k.webm",
+      "media_type": "video",
+      "source_creator": "NASA's Goddard Space Flight Center / Chandra X-ray Observatory",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gigantic_Wave_Discovered_in_Perseus_Galaxy_Cluster.webm",
+      "license": "Public domain",
+      "visual_purpose": "4K NASA Chandra thermal X-ray wave across the Perseus galaxy cluster (N06b)",
+      "camera_perspective": "aerial",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.12,
+          1.15
+        ],
+        "rationale": "Frames the 4K Perseus thermal X-ray wave front warming intracluster gas across hundreds of thousands of light-years."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clause-pause cut after 'cluster' illustrating how sound waves heat the cluster gas for billions of years."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 7.11,
+        "max_recommended_s": 9.51,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "aerial",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 15
+        }
+      },
+      "why_shot_belongs_here": "Shows the cluster-wide thermal X-ray structure sustained against gravitational cooling collapse."
+    },
+    {
+      "scene_id": "S17",
+      "associated_seg_id": "N07",
+      "timeline_start_s": 64.5667,
+      "timeline_end_s": 66.7667,
+      "duration_s": 2.2,
+      "narration_start_s": 64.835,
+      "narration_end_s": 66.684,
+      "spoken_narration": "The universe isn't silent after all",
+      "selected_asset": "nasa_bh_orbiting_4k.webm",
+      "media_type": "video",
+      "source_creator": "NASA's Goddard Space Flight Center / Jeremy Schnittman & Brian P. Powell",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_Hole_with_Accretion_Disk_Visualization_(SVS14619_-_2-Orbiting_a_black_hole-4K).webm",
+      "license": "Public domain",
+      "visual_purpose": "4K orbital sweep around a glowing supermassive black hole accretion disk (N07a)",
+      "camera_perspective": "medium",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.05,
+          1.08
+        ],
+        "rationale": "Majestic 4K orbital sweep around a luminous supermassive black hole."
+      },
+      "transition": {
+        "type": "dissolve",
+        "duration_s": 0.5,
+        "reason": "Motivated 0.50s dissolve after 'collapse' into the final reflective takeaway ('The universe isn't silent after all')."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.49,
+        "ideal_duration_s": 4.99,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "medium",
+          "camera_movement": "aerial_sweep",
+          "is_moving_footage": true,
+          "spoken_word_count": 6
+        }
+      },
+      "why_shot_belongs_here": "Delivers cinematic awe on the opening clause of the final impression."
+    },
+    {
+      "scene_id": "S18",
+      "associated_seg_id": "N07",
+      "timeline_start_s": 66.7667,
+      "timeline_end_s": 70.6333,
+      "duration_s": 3.867,
+      "narration_start_s": 66.882,
+      "narration_end_s": 70.303,
+      "spoken_narration": "we simply needed an X-ray telescope to hear its deepest note",
+      "selected_asset": "perseus_sonification_chandra_1080p.mp4",
+      "media_type": "video",
+      "source_creator": "NASA / CXC / SAO / K. Arcand, SYSTEM Sounds (M. Russo, A. Santaguida)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Data_Sonification-_Black_Hole_at_the_Center_of_the_Perseus_Galaxy_Cluster_(X-ray).webm",
+      "license": "Public domain",
+      "visual_purpose": "NASA Chandra Perseus X-ray acoustic ripples \u2014 seamless loop tail into S01 (N07b)",
+      "camera_perspective": "medium",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.44
+        ],
+        "center_end": [
+          0.5,
+          0.44
+        ],
+        "zoom_range": [
+          1.17,
+          1.17
+        ],
+        "rationale": "Returns to NASA Chandra's crimson Perseus X-ray ripples ending at t=4.00s so Frame N loops seamlessly into S01 Frame 0."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Em-dash pause cut after 'all' returning to Chandra's Perseus X-ray acoustic ripples for a seamless loop into S01."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": -3.5
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 6.02,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "medium",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 11
+        }
+      },
+      "why_shot_belongs_here": "Closes on Chandra's Perseus X-ray acoustic wave field (`src_in` 0.15s + 3.85s = 4.00s where `S01` begins!) for a seamless loop."
+    }
+  ]
+}

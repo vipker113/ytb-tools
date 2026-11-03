@@ -1,0 +1,97 @@
+{
+  "slug": "perseus-black-hole-sound-v6",
+  "style_profile": "space_discovery",
+  "target_duration_range_s": [
+    66.0,
+    90.0
+  ],
+  "planned_duration_s": 70.38,
+  "timing_source": "word_timings",
+  "rows": [
+    {
+      "time": "0.1\u20135.4s",
+      "start_s": 0.1,
+      "end_s": 5.44,
+      "seg_id": "N01",
+      "narrative_beat": "opening_hook",
+      "viewer_question": "How could NASA record real sound from a black hole if space is a vacuum?",
+      "new_information": "NASA captured genuine acoustic waves from a supermassive black hole, overturning the assumption that all of space is silent.",
+      "visual_reveal": "NASA Chandra radial X-ray scan sweeping across glowing crimson pressure waves in the Perseus cluster.",
+      "emotional_direction": "Immediate eerie awe and cognitive dissonance",
+      "retention_purpose": "Stop scrolling at 0.00s by challenging a universal textbook belief with authentic NASA X-ray data"
+    },
+    {
+      "time": "5.9\u201317.2s",
+      "start_s": 5.86,
+      "end_s": 17.24,
+      "seg_id": "N02",
+      "narrative_beat": "curiosity_gap",
+      "viewer_question": "What is vibrating that giant cloud of superheated gas?",
+      "new_information": "Unlike empty vacuum between stars, the Perseus cluster (~250M light-years away) is filled with dense 10-million-degree X-ray plasma capable of carrying physical pressure waves.",
+      "visual_reveal": "4K deep-space zoom through galaxy cluster stars and NASA 4K Perseus X-ray plasma cloud swirling across hundreds of thousands of light-years.",
+      "emotional_direction": "Vast cosmic scale and rising scientific intrigue",
+      "retention_purpose": "Explain the real physical medium that makes sound propagation possible without violating physics"
+    },
+    {
+      "time": "17.7\u201331.7s",
+      "start_s": 17.66,
+      "end_s": 31.73,
+      "seg_id": "N03",
+      "narrative_beat": "evidence_and_discovery",
+      "viewer_question": "What note do those 30,000-light-year black hole sound waves play?",
+      "new_information": "Cambridge astronomers (Fabian et al., 2003) spotted 30,000-light-year concentric X-ray ripples driven by relativistic jets from NGC 1275's central supermassive black hole.",
+      "visual_reveal": "Observatory astronomers inspecting spectral plots, authentic 2003 Chandra X-ray ripple map, and 4K NASA supercomputer black hole jets inflating plasma cavities.",
+      "emotional_direction": "Investigative discovery and awe at relativistic power",
+      "retention_purpose": "Show the exact observational X-ray evidence and physical engine driving the sound waves"
+    },
+    {
+      "time": "32.2\u201343.4s",
+      "start_s": 32.15,
+      "end_s": 43.4,
+      "seg_id": "N04",
+      "narrative_beat": "escalation",
+      "viewer_question": "How did NASA turn a 10-million-year oscillation into something our ears can actually hear?",
+      "new_information": "The Perseus black hole's fundamental tone is B-flat 57 octaves below middle C (~9.6M\u201310M years per wave, 144 quadrillion times below human hearing).",
+      "visual_reveal": "4K NASA supermassive black hole horizon close-up and native 1080x1920 acoustic scale plunging 57 octaves below middle C.",
+      "emotional_direction": "Vertiginous cosmic scale",
+      "retention_purpose": "Escalate wonder with the staggering 57-octave / 10-million-year acoustic measurement"
+    },
+    {
+      "time": "43.8\u201355.5s",
+      "start_s": 43.84,
+      "end_s": 55.53,
+      "seg_id": "N05",
+      "narrative_beat": "escalation",
+      "viewer_question": "What does that haunting cosmic roar actually do to the galaxies around it?",
+      "new_information": "Clarifies that microphones cannot hear across empty vacuum; NASA resynthesized Chandra's radial X-ray acoustic waves upward by 57\u201358 octaves into audible sound.",
+      "visual_reveal": "Astronomers at multi-screen consoles followed by NASA's official Perseus X-ray radar scan synced to the authentic Perseus black hole acoustic wail.",
+      "emotional_direction": "Spine-chilling auditory awe",
+      "retention_purpose": "Deliver the promised real NASA black hole sound while preserving strict scientific honesty"
+    },
+    {
+      "time": "56.5\u201364.4s",
+      "start_s": 56.47,
+      "end_s": 64.42,
+      "seg_id": "N06",
+      "narrative_beat": "payoff",
+      "viewer_question": "How does this change the way we perceive the dark universe?",
+      "new_information": "Dissipating black hole sound waves solve the galaxy-cluster cooling-flow puzzle by heating intracluster plasma for billions of years.",
+      "visual_reveal": "4.7K Hubble + Chandra composite of NGC 1275 filaments and 4K NASA Perseus cluster thermal wave dynamics.",
+      "emotional_direction": "Profound scientific satisfaction",
+      "retention_purpose": "Reveal that the black hole's sound isn't a mere curiosity\u2014it regulates an entire galaxy cluster's evolution"
+    },
+    {
+      "time": "64.8\u201370.4s",
+      "start_s": 64.83,
+      "end_s": 70.38,
+      "seg_id": "N07",
+      "narrative_beat": "final_impression",
+      "viewer_question": "What other cosmic symphonies are echoing through galaxy clusters right now?",
+      "new_information": "Synthesizes X-ray astronomy's ability to reveal physical acoustic symphonies hidden far below human hearing.",
+      "visual_reveal": "4K NASA orbiting black hole and seamless loop back into Chandra's glowing Perseus X-ray ripples.",
+      "emotional_direction": "Lingering cosmic wonder",
+      "retention_purpose": "Leave a memorable closing insight and loop seamlessly into Frame 0"
+    }
+  ],
+  "markdown_table": "# Audience Retention Plan \u2014 `perseus-black-hole-sound-v6` (`70.4s` Target/Actual Runtime)\n\n- **Production Profile:** `space_discovery`\n- **Configured Target Window:** `66\u201390s`\n- **Timing Basis:** `Authoritative Narration Master (word_timings.json)`\n\n| Time | Narrative beat | Viewer question | New information | Visual reveal | Emotional direction | Retention purpose |\n|---|---|---|---|---|---|---|\n| `0.1\u20135.4s` | **opening_hook** (`N01`) | How could NASA record real sound from a black hole if space is a vacuum? | NASA captured genuine acoustic waves from a supermassive black hole, overturning the assumption that all of space is silent. | NASA Chandra radial X-ray scan sweeping across glowing crimson pressure waves in the Perseus cluster. | Immediate eerie awe and cognitive dissonance | Stop scrolling at 0.00s by challenging a universal textbook belief with authentic NASA X-ray data |\n| `5.9\u201317.2s` | **curiosity_gap** (`N02`) | What is vibrating that giant cloud of superheated gas? | Unlike empty vacuum between stars, the Perseus cluster (~250M light-years away) is filled with dense 10-million-degree X-ray plasma capable of carrying physical pressure waves. | 4K deep-space zoom through galaxy cluster stars and NASA 4K Perseus X-ray plasma cloud swirling across hundreds of thousands of light-years. | Vast cosmic scale and rising scientific intrigue | Explain the real physical medium that makes sound propagation possible without violating physics |\n| `17.7\u201331.7s` | **evidence_and_discovery** (`N03`) | What note do those 30,000-light-year black hole sound waves play? | Cambridge astronomers (Fabian et al., 2003) spotted 30,000-light-year concentric X-ray ripples driven by relativistic jets from NGC 1275's central supermassive black hole. | Observatory astronomers inspecting spectral plots, authentic 2003 Chandra X-ray ripple map, and 4K NASA supercomputer black hole jets inflating plasma cavities. | Investigative discovery and awe at relativistic power | Show the exact observational X-ray evidence and physical engine driving the sound waves |\n| `32.2\u201343.4s` | **escalation** (`N04`) | How did NASA turn a 10-million-year oscillation into something our ears can actually hear? | The Perseus black hole's fundamental tone is B-flat 57 octaves below middle C (~9.6M\u201310M years per wave, 144 quadrillion times below human hearing). | 4K NASA supermassive black hole horizon close-up and native 1080x1920 acoustic scale plunging 57 octaves below middle C. | Vertiginous cosmic scale | Escalate wonder with the staggering 57-octave / 10-million-year acoustic measurement |\n| `43.8\u201355.5s` | **escalation** (`N05`) | What does that haunting cosmic roar actually do to the galaxies around it? | Clarifies that microphones cannot hear across empty vacuum; NASA resynthesized Chandra's radial X-ray acoustic waves upward by 57\u201358 octaves into audible sound. | Astronomers at multi-screen consoles followed by NASA's official Perseus X-ray radar scan synced to the authentic Perseus black hole acoustic wail. | Spine-chilling auditory awe | Deliver the promised real NASA black hole sound while preserving strict scientific honesty |\n| `56.5\u201364.4s` | **payoff** (`N06`) | How does this change the way we perceive the dark universe? | Dissipating black hole sound waves solve the galaxy-cluster cooling-flow puzzle by heating intracluster plasma for billions of years. | 4.7K Hubble + Chandra composite of NGC 1275 filaments and 4K NASA Perseus cluster thermal wave dynamics. | Profound scientific satisfaction | Reveal that the black hole's sound isn't a mere curiosity\u2014it regulates an entire galaxy cluster's evolution |\n| `64.8\u201370.4s` | **final_impression** (`N07`) | What other cosmic symphonies are echoing through galaxy clusters right now? | Synthesizes X-ray astronomy's ability to reveal physical acoustic symphonies hidden far below human hearing. | 4K NASA orbiting black hole and seamless loop back into Chandra's glowing Perseus X-ray ripples. | Lingering cosmic wonder | Leave a memorable closing insight and loop seamlessly into Frame 0 |\n"
+}
