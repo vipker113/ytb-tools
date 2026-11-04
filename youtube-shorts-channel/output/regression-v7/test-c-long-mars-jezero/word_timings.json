@@ -1,0 +1,3615 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "active_tts_provider": "edge_tts",
+  "segmentation_method": "contrast_directed_rms_matched_segmented",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "cinematic_documentary",
+  "pronunciation_sig": "b93b93c2359314249cb39aa75fd8c0c96459963128a63b0aa157fb9288f5eb1b",
+  "total_duration_s": 134.3667,
+  "total_frames_30fps": 4031,
+  "continuity_review": {
+    "segment_count": 25,
+    "max_adjacent_rms_jump_db": 0.73,
+    "max_spectral_centroid_ratio": 1.118,
+    "clipped_word_boundaries_count": 0,
+    "unnatural_pause_count": 0,
+    "continuity_pass": true,
+    "issues": [],
+    "joins": [
+      {
+        "from_sentence": 0,
+        "to_sentence": 1,
+        "rms_jump_db": 0.03,
+        "spectral_centroid_ratio": 1.062,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 1,
+        "to_sentence": 2,
+        "rms_jump_db": 0.39,
+        "spectral_centroid_ratio": 1.024,
+        "pause_s": 0.46
+      },
+      {
+        "from_sentence": 2,
+        "to_sentence": 3,
+        "rms_jump_db": 0.04,
+        "spectral_centroid_ratio": 1.084,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 3,
+        "to_sentence": 4,
+        "rms_jump_db": 0.06,
+        "spectral_centroid_ratio": 1.036,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 4,
+        "to_sentence": 5,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.035,
+        "pause_s": 0.45
+      },
+      {
+        "from_sentence": 5,
+        "to_sentence": 6,
+        "rms_jump_db": 0.01,
+        "spectral_centroid_ratio": 1.017,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 6,
+        "to_sentence": 7,
+        "rms_jump_db": 0.0,
+        "spectral_centroid_ratio": 1.055,
+        "pause_s": 0.45
+      },
+      {
+        "from_sentence": 7,
+        "to_sentence": 8,
+        "rms_jump_db": 0.07,
+        "spectral_centroid_ratio": 1.084,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 8,
+        "to_sentence": 9,
+        "rms_jump_db": 0.12,
+        "spectral_centroid_ratio": 1.113,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 9,
+        "to_sentence": 10,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.098,
+        "pause_s": 0.45
+      },
+      {
+        "from_sentence": 10,
+        "to_sentence": 11,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.118,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 11,
+        "to_sentence": 12,
+        "rms_jump_db": 0.04,
+        "spectral_centroid_ratio": 1.069,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 12,
+        "to_sentence": 13,
+        "rms_jump_db": 0.41,
+        "spectral_centroid_ratio": 1.04,
+        "pause_s": 0.48
+      },
+      {
+        "from_sentence": 13,
+        "to_sentence": 14,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.033,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 14,
+        "to_sentence": 15,
+        "rms_jump_db": 0.0,
+        "spectral_centroid_ratio": 1.095,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 15,
+        "to_sentence": 16,
+        "rms_jump_db": 0.35,
+        "spectral_centroid_ratio": 1.044,
+        "pause_s": 0.48
+      },
+      {
+        "from_sentence": 16,
+        "to_sentence": 17,
+        "rms_jump_db": 0.0,
+        "spectral_centroid_ratio": 1.036,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 17,
+        "to_sentence": 18,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.063,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 18,
+        "to_sentence": 19,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.024,
+        "pause_s": 0.46
+      },
+      {
+        "from_sentence": 19,
+        "to_sentence": 20,
+        "rms_jump_db": 0.09,
+        "spectral_centroid_ratio": 1.041,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 20,
+        "to_sentence": 21,
+        "rms_jump_db": 0.26,
+        "spectral_centroid_ratio": 1.034,
+        "pause_s": 0.46
+      },
+      {
+        "from_sentence": 21,
+        "to_sentence": 22,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.047,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 22,
+        "to_sentence": 23,
+        "rms_jump_db": 0.73,
+        "spectral_centroid_ratio": 1.065,
+        "pause_s": 0.5
+      },
+      {
+        "from_sentence": 23,
+        "to_sentence": 24,
+        "rms_jump_db": 0.1,
+        "spectral_centroid_ratio": 1.02,
+        "pause_s": 0.24
+      }
+    ]
+  },
+  "contrast_summary": {
+    "sentence_count": 25,
+    "distinct_delivery_styles": [
+      "CALM_EXPLORATION",
+      "CINEMATIC_REVEAL",
+      "EMOTIONAL_REFLECTION",
+      "MYSTERIOUS",
+      "SCIENTIFIC_AUTHORITY",
+      "SURPRISED_BUT_CONTROLLED"
+    ],
+    "distinct_delivery_count": 6,
+    "energy_min": 2,
+    "energy_max": 4,
+    "energy_span": 2,
+    "blocked_theatrical_count": 0,
+    "rebalanced_overdrama_count": 0,
+    "contrast_healthy": true,
+    "guardrail_notes": []
+  },
+  "invalidated_artifacts": [],
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "Mars holds an atmosphere ninety-nine percent thinner than Earth's. Yet inside a bone-dry Martian basin, a four-pound rotorcraft spun up its blades and lifted off.",
+      "delivery": "MYSTERIOUS",
+      "rate": "-5%",
+      "pitch": "-1Hz",
+      "start": 0.1,
+      "end": 9.311,
+      "duration": 9.211,
+      "pause_after": 0.46,
+      "emphasis_words": [
+        "ninety-nine percent",
+        "lifted off"
+      ]
+    },
+    {
+      "seg_id": "N02",
+      "text": "That basin is Jezero Crater, forty-five kilometers wide. Orbital cameras mapped a fan-shaped river delta carved by liquid water over three billion years ago. Landing a rover safely among its boulder fields took years of planning.",
+      "delivery": "CALM_EXPLORATION",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "start": 9.771,
+      "end": 22.74,
+      "duration": 12.969,
+      "pause_after": 0.45,
+      "emphasis_words": [
+        "Jezero Crater",
+        "river delta",
+        "three billion"
+      ]
+    },
+    {
+      "seg_id": "N03",
+      "text": "In February 2021, a rocket-powered sky crane lowered the Perseverance rover onto that ancient lake floor. Tucked beneath the rover's belly rode Ingenuity, folded tight against freezing minus ninety degree nights.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "start": 23.19,
+      "end": 35.423,
+      "duration": 12.233,
+      "pause_after": 0.45,
+      "emphasis_words": [
+        "sky crane",
+        "minus ninety"
+      ]
+    },
+    {
+      "seg_id": "N04",
+      "text": "On Earth, helicopters push against dense air at a few hundred revolutions per minute. On Mars, surface pressure matches Earth's sky thirty kilometers high. Standard blades would spin without generating enough lift to leave the ground.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "start": 35.873,
+      "end": 48.65,
+      "duration": 12.777,
+      "pause_after": 0.45,
+      "emphasis_words": [
+        "thirty kilometers",
+        "lift"
+      ]
+    },
+    {
+      "seg_id": "N05",
+      "text": "Engineers solved the physics problem with ultra-stiff carbon-fiber rotors spanning four feet across. Counter-rotating blades spin past two thousand five hundred revolutions per minute. Because radio signals take minutes to arrive, onboard cameras steer every flight alone.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "start": 49.1,
+      "end": 63.552,
+      "duration": 14.452,
+      "pause_after": 0.48,
+      "emphasis_words": [
+        "carbon-fiber",
+        "two thousand five hundred",
+        "steer"
+      ]
+    },
+    {
+      "seg_id": "N06",
+      "text": "What began as a thirty-day, five-flight test soon changed the entire surface mission. Ingenuity flew seventy-two times over nearly three years, scouting sand ripples and steep ridges from above. Those aerial maps guided Perseverance straight toward the ancient river mouth.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "rate": "+1%",
+      "pitch": "+1Hz",
+      "start": 64.212,
+      "end": 79.434,
+      "duration": 15.222,
+      "pause_after": 0.48,
+      "emphasis_words": [
+        "seventy-two times",
+        "three years",
+        "ancient river"
+      ]
+    },
+    {
+      "seg_id": "N07",
+      "text": "At the delta front, rover cameras revealed tilted stone layers stacked above fine-grained mudstones. On Earth, slow lake currents trap organic molecules inside clay and silt. Rounded cobbles higher up point to sudden, high-energy floods.",
+      "delivery": "CALM_EXPLORATION",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "start": 79.914,
+      "end": 93.48,
+      "duration": 13.566,
+      "pause_after": 0.46,
+      "emphasis_words": [
+        "mudstones",
+        "organic molecules",
+        "floods"
+      ]
+    },
+    {
+      "seg_id": "N08",
+      "text": "Using its rotary coring drill, Perseverance cut finger-sized rock cores from those ancient lake beds. Each core was measured, photographed, and sealed inside an airtight titanium tube.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "start": 93.94,
+      "end": 104.521,
+      "duration": 10.58,
+      "pause_after": 0.46,
+      "emphasis_words": [
+        "rock cores",
+        "titanium tube"
+      ]
+    },
+    {
+      "seg_id": "N09",
+      "text": "Ultraviolet laser scans inside the rover detected carbonate minerals, phosphate grains, and carbon-bearing compounds locked inside those lake sediments. Every ingredient needed for ancient habitable water once met on this crater floor.",
+      "delivery": "CINEMATIC_REVEAL",
+      "rate": "-3%",
+      "pitch": "+0Hz",
+      "start": 105.161,
+      "end": 118.596,
+      "duration": 13.435,
+      "pause_after": 0.5,
+      "emphasis_words": [
+        "carbonate",
+        "carbon-bearing",
+        "habitable water"
+      ]
+    },
+    {
+      "seg_id": "N10",
+      "text": "Planetary scientists are still studying whether those carbon compounds formed through non-living chemistry or ancient microbial life. Until Earth laboratories open the sealed tubes, Mars's biological past remains an open question across a silent red horizon.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "rate": "-5%",
+      "pitch": "-1Hz",
+      "start": 119.096,
+      "end": 133.867,
+      "duration": 14.771,
+      "pause_after": 0.5,
+      "emphasis_words": [
+        "still studying",
+        "open question"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "Mars holds an atmosphere ninety-nine percent thinner than Earth's.",
+      "delivery": "MYSTERIOUS",
+      "emotional_tone": "curious_restraint",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-5%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "ninety-nine percent"
+      ],
+      "start_s": 0.1,
+      "end_s": 3.4,
+      "cache_key": "3fdca0152b8fd54fcb0d",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-4%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N01",
+      "text": "Yet inside a bone-dry Martian basin, a four-pound rotorcraft spun up its blades and lifted off.",
+      "delivery": "MYSTERIOUS",
+      "emotional_tone": "curious_restraint",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-5%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 460,
+      "emphasis_phrases": [
+        "lifted off"
+      ],
+      "start_s": 3.64,
+      "end_s": 9.311,
+      "cache_key": "e2e866aab65a6d86e461",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-4%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "That basin is Jezero Crater, forty-five kilometers wide.",
+      "delivery": "CALM_EXPLORATION",
+      "emotional_tone": "immersive_scale",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "Jezero Crater"
+      ],
+      "start_s": 9.771,
+      "end_s": 13.508,
+      "cache_key": "b48ed28e7db6f62ef88c",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLORATION->bounded_prosody(rate=-2%,pitch=+0Hz,pause=410ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N02",
+      "text": "Orbital cameras mapped a fan-shaped river delta carved by liquid water over three billion years ago.",
+      "delivery": "CALM_EXPLORATION",
+      "emotional_tone": "immersive_scale",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "river delta",
+        "three billion"
+      ],
+      "start_s": 13.748,
+      "end_s": 18.94,
+      "cache_key": "82bb8a8cc06290529833",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLORATION->bounded_prosody(rate=-2%,pitch=+0Hz,pause=410ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N02",
+      "text": "Landing a rover safely among its boulder fields took years of planning.",
+      "delivery": "CALM_EXPLORATION",
+      "emotional_tone": "immersive_scale",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 450,
+      "emphasis_phrases": [],
+      "start_s": 19.18,
+      "end_s": 22.74,
+      "cache_key": "471c9e4cc58b250d1da4",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLORATION->bounded_prosody(rate=-2%,pitch=+0Hz,pause=410ms)",
+        "PACE:NATURAL->rate_pct=+0%"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N03",
+      "text": "In February 2021, a rocket-powered sky crane lowered the Perseverance rover onto that ancient lake floor.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "measured_precision",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "sky crane"
+      ],
+      "start_s": 23.19,
+      "end_s": 29.496,
+      "cache_key": "8b5c712be8c3f57d043f",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N03",
+      "text": "Tucked beneath the rover's belly rode Ingenuity, folded tight against freezing minus ninety degree nights.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "measured_precision",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 450,
+      "emphasis_phrases": [
+        "minus ninety"
+      ],
+      "start_s": 29.736,
+      "end_s": 35.423,
+      "cache_key": "8c2539af09a8a3d0c141",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 7,
+      "seg_id": "N04",
+      "text": "On Earth, helicopters push against dense air at a few hundred revolutions per minute.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "precise_clarity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [],
+      "start_s": 35.873,
+      "end_s": 40.427,
+      "cache_key": "d8d4d184c7ed077e9860",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%"
+      ]
+    },
+    {
+      "sentence_index": 8,
+      "seg_id": "N04",
+      "text": "On Mars, surface pressure matches Earth's sky thirty kilometers high.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "precise_clarity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "thirty kilometers"
+      ],
+      "start_s": 40.667,
+      "end_s": 44.747,
+      "cache_key": "3edd466e9c18fa0a89ed",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 9,
+      "seg_id": "N04",
+      "text": "Standard blades would spin without generating enough lift to leave the ground.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "precise_clarity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 450,
+      "emphasis_phrases": [
+        "lift"
+      ],
+      "start_s": 44.987,
+      "end_s": 48.65,
+      "cache_key": "9cacd8a32187d8ac18f4",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 10,
+      "seg_id": "N05",
+      "text": "Engineers solved the physics problem with ultra-stiff carbon-fiber rotors spanning four feet across.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "focused_engineering",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "carbon-fiber"
+      ],
+      "start_s": 49.1,
+      "end_s": 53.982,
+      "cache_key": "d3f515b9ab45465ceb58",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 11,
+      "seg_id": "N05",
+      "text": "Counter-rotating blades spin past two thousand five hundred revolutions per minute.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "focused_engineering",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "two thousand five hundred"
+      ],
+      "start_s": 54.222,
+      "end_s": 58.452,
+      "cache_key": "159c7f51c4091c3a86ff",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 12,
+      "seg_id": "N05",
+      "text": "Because radio signals take minutes to arrive, onboard cameras steer every flight alone.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "focused_engineering",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 480,
+      "emphasis_phrases": [
+        "steer"
+      ],
+      "start_s": 58.692,
+      "end_s": 63.552,
+      "cache_key": "e18ef6c0a203dafe00ef",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 13,
+      "seg_id": "N06",
+      "text": "What began as a thirty-day, five-flight test soon changed the entire surface mission.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+1%",
+      "pitch": "+1Hz",
+      "pause_before_ms": 180,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [],
+      "start_s": 64.212,
+      "end_s": 68.827,
+      "cache_key": "425fbcb7bfbcc7d66d59",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.01
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->bounded_prosody(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "ENERGY:4/5->subtle_intensity_nudge"
+      ]
+    },
+    {
+      "sentence_index": 14,
+      "seg_id": "N06",
+      "text": "Ingenuity flew seventy-two times over nearly three years, scouting sand ripples and steep ridges from above.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+1%",
+      "pitch": "+1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "seventy-two times",
+        "three years"
+      ],
+      "start_s": 69.067,
+      "end_s": 75.303,
+      "cache_key": "79b9bf7a36d03f3ee59a",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.01
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->bounded_prosody(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 15,
+      "seg_id": "N06",
+      "text": "Those aerial maps guided Perseverance straight toward the ancient river mouth.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+1%",
+      "pitch": "+1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 480,
+      "emphasis_phrases": [
+        "ancient river"
+      ],
+      "start_s": 75.543,
+      "end_s": 79.434,
+      "cache_key": "7ecc7ee26b65043793f6",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.01
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->bounded_prosody(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 16,
+      "seg_id": "N07",
+      "text": "At the delta front, rover cameras revealed tilted stone layers stacked above fine-grained mudstones.",
+      "delivery": "CALM_EXPLORATION",
+      "emotional_tone": "observational_wonder",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "mudstones"
+      ],
+      "start_s": 79.914,
+      "end_s": 85.233,
+      "cache_key": "3a77b36a34b9a31f8747",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLORATION->bounded_prosody(rate=-2%,pitch=+0Hz,pause=410ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 17,
+      "seg_id": "N07",
+      "text": "On Earth, slow lake currents trap organic molecules inside clay and silt.",
+      "delivery": "CALM_EXPLORATION",
+      "emotional_tone": "observational_wonder",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "organic molecules"
+      ],
+      "start_s": 85.473,
+      "end_s": 89.914,
+      "cache_key": "9b21008c5b937565ba45",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLORATION->bounded_prosody(rate=-2%,pitch=+0Hz,pause=410ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 18,
+      "seg_id": "N07",
+      "text": "Rounded cobbles higher up point to sudden, high-energy floods.",
+      "delivery": "CALM_EXPLORATION",
+      "emotional_tone": "observational_wonder",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 460,
+      "emphasis_phrases": [
+        "floods"
+      ],
+      "start_s": 90.154,
+      "end_s": 93.48,
+      "cache_key": "5578a4f0189112d34992",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLORATION->bounded_prosody(rate=-2%,pitch=+0Hz,pause=410ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 19,
+      "seg_id": "N08",
+      "text": "Using its rotary coring drill, Perseverance cut finger-sized rock cores from those ancient lake beds.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "deliberate_focus",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "rock cores"
+      ],
+      "start_s": 93.94,
+      "end_s": 99.604,
+      "cache_key": "de4c2d9985462e5f5048",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 20,
+      "seg_id": "N08",
+      "text": "Each core was measured, photographed, and sealed inside an airtight titanium tube.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "deliberate_focus",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 460,
+      "emphasis_phrases": [
+        "titanium tube"
+      ],
+      "start_s": 99.844,
+      "end_s": 104.521,
+      "cache_key": "f70d0f5507bb300f64bb",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 21,
+      "seg_id": "N09",
+      "text": "Ultraviolet laser scans inside the rover detected carbonate minerals, phosphate grains, and carbon-bearing compounds locked inside those lake sediments.",
+      "delivery": "CINEMATIC_REVEAL",
+      "emotional_tone": "earned_significance",
+      "pace": "SLOW",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-3%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 180,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "carbonate",
+        "carbon-bearing"
+      ],
+      "start_s": 105.161,
+      "end_s": 113.983,
+      "cache_key": "ef3ad8d2ae5378d5b75e",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.58,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 0.97
+      },
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-3%,pitch=+0Hz,pause=600ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 22,
+      "seg_id": "N09",
+      "text": "Every ingredient needed for ancient habitable water once met on this crater floor.",
+      "delivery": "CINEMATIC_REVEAL",
+      "emotional_tone": "earned_significance",
+      "pace": "SLOW",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-3%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 500,
+      "emphasis_phrases": [
+        "habitable water"
+      ],
+      "start_s": 114.223,
+      "end_s": 118.596,
+      "cache_key": "89834ecdf24d29e77156",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.58,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 0.97
+      },
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-3%,pitch=+0Hz,pause=600ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 23,
+      "seg_id": "N10",
+      "text": "Planetary scientists are still studying whether those carbon compounds formed through non-living chemistry or ancient microbial life.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "credible_wonder",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-5%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "still studying"
+      ],
+      "start_s": 119.096,
+      "end_s": 126.399,
+      "cache_key": "50646a8724be799f6864",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 24,
+      "seg_id": "N10",
+      "text": "Until Earth laboratories open the sealed tubes, Mars's biological past remains an open question across a silent red horizon.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "credible_wonder",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-5%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 500,
+      "emphasis_phrases": [
+        "open question"
+      ],
+      "start_s": 126.639,
+      "end_s": 133.867,
+      "cache_key": "9d5cb4908b926c5918a8",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "Mars",
+      "start": 0.1,
+      "end": 0.455,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "holds",
+      "start": 0.364,
+      "end": 0.654,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "an",
+      "start": 0.667,
+      "end": 0.759,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "atmosphere",
+      "start": 0.772,
+      "end": 1.298,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "ninety-nine",
+      "start": 1.312,
+      "end": 1.983,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "percent",
+      "start": 1.996,
+      "end": 2.39,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "thinner",
+      "start": 2.404,
+      "end": 2.627,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "than",
+      "start": 2.64,
+      "end": 2.825,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Earth's",
+      "start": 2.838,
+      "end": 3.325,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Yet",
+      "start": 3.64,
+      "end": 3.903,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "inside",
+      "start": 3.802,
+      "end": 4.249,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "a",
+      "start": 4.263,
+      "end": 4.328,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "bone-dry",
+      "start": 4.342,
+      "end": 4.855,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Martian",
+      "start": 4.868,
+      "end": 5.302,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "basin",
+      "start": 5.315,
+      "end": 5.789,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "a",
+      "start": 5.973,
+      "end": 6.013,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "four-pound",
+      "start": 6.026,
+      "end": 6.605,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "rotorcraft",
+      "start": 6.618,
+      "end": 7.289,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "spun",
+      "start": 7.302,
+      "end": 7.565,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "up",
+      "start": 7.578,
+      "end": 7.697,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "its",
+      "start": 7.71,
+      "end": 7.842,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "blades",
+      "start": 7.855,
+      "end": 8.289,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "and",
+      "start": 8.302,
+      "end": 8.42,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "lifted",
+      "start": 8.434,
+      "end": 8.802,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "off",
+      "start": 8.815,
+      "end": 9.223,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "That",
+      "start": 9.771,
+      "end": 10.033,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "basin",
+      "start": 9.943,
+      "end": 10.306,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "is",
+      "start": 10.318,
+      "end": 10.456,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Jezero",
+      "start": 10.468,
+      "end": 11.018,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Crater",
+      "start": 11.031,
+      "end": 11.506,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "forty-five",
+      "start": 11.706,
+      "end": 12.318,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "kilometers",
+      "start": 12.331,
+      "end": 12.843,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "wide",
+      "start": 12.856,
+      "end": 13.431,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Orbital",
+      "start": 13.748,
+      "end": 14.198,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "cameras",
+      "start": 14.111,
+      "end": 14.511,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "mapped",
+      "start": 14.524,
+      "end": 14.799,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "a",
+      "start": 14.811,
+      "end": 14.874,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "fan-shaped",
+      "start": 14.886,
+      "end": 15.436,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "river",
+      "start": 15.449,
+      "end": 15.686,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "delta",
+      "start": 15.699,
+      "end": 16.011,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "carved",
+      "start": 16.024,
+      "end": 16.386,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "by",
+      "start": 16.399,
+      "end": 16.524,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "liquid",
+      "start": 16.536,
+      "end": 16.911,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "water",
+      "start": 16.924,
+      "end": 17.236,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "over",
+      "start": 17.249,
+      "end": 17.499,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "three",
+      "start": 17.511,
+      "end": 17.824,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "billion",
+      "start": 17.836,
+      "end": 18.199,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "years",
+      "start": 18.211,
+      "end": 18.486,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "ago",
+      "start": 18.499,
+      "end": 18.861,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Landing",
+      "start": 19.18,
+      "end": 19.605,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "a",
+      "start": 19.524,
+      "end": 19.561,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "rover",
+      "start": 19.574,
+      "end": 19.899,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "safely",
+      "start": 19.911,
+      "end": 20.361,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "among",
+      "start": 20.374,
+      "end": 20.674,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "its",
+      "start": 20.686,
+      "end": 20.799,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "boulder",
+      "start": 20.811,
+      "end": 21.149,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "fields",
+      "start": 21.161,
+      "end": 21.586,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "took",
+      "start": 21.599,
+      "end": 21.811,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "years",
+      "start": 21.824,
+      "end": 22.099,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "of",
+      "start": 22.111,
+      "end": 22.186,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "planning",
+      "start": 22.199,
+      "end": 22.661,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "In",
+      "start": 23.19,
+      "end": 23.39,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "February 2021",
+      "start": 23.306,
+      "end": 24.681,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "a",
+      "start": 24.881,
+      "end": 24.931,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "rocket-powered",
+      "start": 24.944,
+      "end": 25.644,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "sky",
+      "start": 25.656,
+      "end": 25.969,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "crane",
+      "start": 25.981,
+      "end": 26.356,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "lowered",
+      "start": 26.369,
+      "end": 26.669,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 26.681,
+      "end": 26.769,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Perseverance",
+      "start": 26.781,
+      "end": 27.531,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "rover",
+      "start": 27.544,
+      "end": 27.881,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "onto",
+      "start": 27.894,
+      "end": 28.106,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "that",
+      "start": 28.119,
+      "end": 28.306,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "ancient",
+      "start": 28.319,
+      "end": 28.656,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "lake",
+      "start": 28.669,
+      "end": 28.931,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "floor",
+      "start": 28.944,
+      "end": 29.419,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Tucked",
+      "start": 29.736,
+      "end": 30.011,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "beneath",
+      "start": 29.935,
+      "end": 30.272,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 30.285,
+      "end": 30.372,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "rover's",
+      "start": 30.385,
+      "end": 30.76,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "belly",
+      "start": 30.772,
+      "end": 30.997,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "rode",
+      "start": 31.01,
+      "end": 31.322,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Ingenuity",
+      "start": 31.335,
+      "end": 32.047,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "folded",
+      "start": 32.272,
+      "end": 32.647,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "tight",
+      "start": 32.66,
+      "end": 32.922,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "against",
+      "start": 32.935,
+      "end": 33.285,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "freezing",
+      "start": 33.297,
+      "end": 33.71,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "minus",
+      "start": 33.722,
+      "end": 34.072,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "ninety",
+      "start": 34.085,
+      "end": 34.46,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "degree",
+      "start": 34.472,
+      "end": 34.81,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "nights",
+      "start": 34.822,
+      "end": 35.335,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "On",
+      "start": 35.873,
+      "end": 36.123,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Earth",
+      "start": 36.03,
+      "end": 36.368,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "helicopters",
+      "start": 36.593,
+      "end": 37.143,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "push",
+      "start": 37.155,
+      "end": 37.38,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "against",
+      "start": 37.393,
+      "end": 37.768,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "dense",
+      "start": 37.78,
+      "end": 38.08,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "air",
+      "start": 38.093,
+      "end": 38.28,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "at",
+      "start": 38.293,
+      "end": 38.518,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "a",
+      "start": 38.53,
+      "end": 38.58,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "few",
+      "start": 38.593,
+      "end": 38.843,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "hundred",
+      "start": 38.855,
+      "end": 39.13,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "revolutions",
+      "start": 39.143,
+      "end": 39.768,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "per",
+      "start": 39.78,
+      "end": 39.943,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "minute",
+      "start": 39.955,
+      "end": 40.355,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "On",
+      "start": 40.667,
+      "end": 40.904,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Mars",
+      "start": 40.791,
+      "end": 41.228,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "surface",
+      "start": 41.428,
+      "end": 41.891,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "pressure",
+      "start": 41.903,
+      "end": 42.191,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "matches",
+      "start": 42.203,
+      "end": 42.603,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Earth's",
+      "start": 42.616,
+      "end": 42.916,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "sky",
+      "start": 42.928,
+      "end": 43.228,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "thirty",
+      "start": 43.241,
+      "end": 43.641,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "kilometers",
+      "start": 43.653,
+      "end": 44.216,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "high",
+      "start": 44.228,
+      "end": 44.678,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Standard",
+      "start": 44.987,
+      "end": 45.462,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "blades",
+      "start": 45.378,
+      "end": 45.691,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "would",
+      "start": 45.703,
+      "end": 45.866,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "spin",
+      "start": 45.878,
+      "end": 46.153,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "without",
+      "start": 46.166,
+      "end": 46.491,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "generating",
+      "start": 46.503,
+      "end": 47.028,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "enough",
+      "start": 47.041,
+      "end": 47.303,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "lift",
+      "start": 47.316,
+      "end": 47.566,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "to",
+      "start": 47.578,
+      "end": 47.666,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "leave",
+      "start": 47.678,
+      "end": 47.916,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "the",
+      "start": 47.928,
+      "end": 48.003,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "ground",
+      "start": 48.016,
+      "end": 48.578,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Engineers",
+      "start": 49.1,
+      "end": 49.687,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "solved",
+      "start": 49.611,
+      "end": 49.898,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 49.911,
+      "end": 49.986,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "physics",
+      "start": 49.998,
+      "end": 50.348,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "problem",
+      "start": 50.361,
+      "end": 50.761,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "with",
+      "start": 50.773,
+      "end": 50.911,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "ultra-stiff",
+      "start": 50.923,
+      "end": 51.486,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "carbon-fiber",
+      "start": 51.498,
+      "end": 52.186,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "rotors",
+      "start": 52.198,
+      "end": 52.536,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "spanning",
+      "start": 52.548,
+      "end": 52.948,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "four",
+      "start": 52.961,
+      "end": 53.073,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "feet",
+      "start": 53.086,
+      "end": 53.361,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "across",
+      "start": 53.373,
+      "end": 53.911,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Counter-rotating",
+      "start": 54.222,
+      "end": 55.072,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "blades",
+      "start": 54.996,
+      "end": 55.321,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "spin",
+      "start": 55.333,
+      "end": 55.608,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "past",
+      "start": 55.621,
+      "end": 55.958,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "two",
+      "start": 55.971,
+      "end": 56.108,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "thousand",
+      "start": 56.121,
+      "end": 56.583,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "five",
+      "start": 56.596,
+      "end": 56.921,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "hundred",
+      "start": 56.933,
+      "end": 57.233,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "revolutions",
+      "start": 57.246,
+      "end": 57.833,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "per",
+      "start": 57.846,
+      "end": 57.983,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "minute",
+      "start": 57.996,
+      "end": 58.396,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Because",
+      "start": 58.692,
+      "end": 59.017,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "radio",
+      "start": 58.926,
+      "end": 59.351,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "signals",
+      "start": 59.363,
+      "end": 59.813,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "take",
+      "start": 59.826,
+      "end": 60.051,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "minutes",
+      "start": 60.063,
+      "end": 60.388,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "to",
+      "start": 60.401,
+      "end": 60.513,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "arrive",
+      "start": 60.526,
+      "end": 60.963,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "onboard",
+      "start": 61.188,
+      "end": 61.626,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "cameras",
+      "start": 61.638,
+      "end": 62.013,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "steer",
+      "start": 62.026,
+      "end": 62.388,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "every",
+      "start": 62.401,
+      "end": 62.651,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "flight",
+      "start": 62.663,
+      "end": 62.988,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "alone",
+      "start": 63.001,
+      "end": 63.488,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "What",
+      "start": 64.212,
+      "end": 64.447,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "began",
+      "start": 64.362,
+      "end": 64.709,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "as",
+      "start": 64.721,
+      "end": 64.82,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "a",
+      "start": 64.832,
+      "end": 64.894,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "thirty-day",
+      "start": 64.907,
+      "end": 65.612,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "five-flight",
+      "start": 65.822,
+      "end": 66.392,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "test",
+      "start": 66.404,
+      "end": 66.676,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "soon",
+      "start": 66.689,
+      "end": 66.936,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "changed",
+      "start": 66.949,
+      "end": 67.308,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 67.32,
+      "end": 67.407,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "entire",
+      "start": 67.419,
+      "end": 67.889,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "surface",
+      "start": 67.902,
+      "end": 68.347,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "mission",
+      "start": 68.359,
+      "end": 68.756,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Ingenuity",
+      "start": 69.067,
+      "end": 69.785,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "flew",
+      "start": 69.693,
+      "end": 69.978,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "seventy-two",
+      "start": 69.99,
+      "end": 70.609,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "times",
+      "start": 70.621,
+      "end": 71.018,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "over",
+      "start": 71.03,
+      "end": 71.203,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "nearly",
+      "start": 71.216,
+      "end": 71.55,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "three",
+      "start": 71.562,
+      "end": 71.871,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "years",
+      "start": 71.884,
+      "end": 72.317,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "scouting",
+      "start": 72.466,
+      "end": 72.973,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "sand",
+      "start": 72.985,
+      "end": 73.295,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "ripples",
+      "start": 73.307,
+      "end": 73.716,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "and",
+      "start": 73.728,
+      "end": 73.839,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "steep",
+      "start": 73.852,
+      "end": 74.223,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "ridges",
+      "start": 74.235,
+      "end": 74.57,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "from",
+      "start": 74.582,
+      "end": 74.718,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "above",
+      "start": 74.73,
+      "end": 75.225,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Those",
+      "start": 75.543,
+      "end": 75.877,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "aerial",
+      "start": 75.798,
+      "end": 76.169,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "maps",
+      "start": 76.182,
+      "end": 76.479,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "guided",
+      "start": 76.491,
+      "end": 76.838,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Perseverance",
+      "start": 76.85,
+      "end": 77.518,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "straight",
+      "start": 77.531,
+      "end": 77.84,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "toward",
+      "start": 77.853,
+      "end": 78.15,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 78.162,
+      "end": 78.298,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "ancient",
+      "start": 78.31,
+      "end": 78.657,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "river",
+      "start": 78.669,
+      "end": 78.867,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "mouth",
+      "start": 78.88,
+      "end": 79.35,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "At",
+      "start": 79.914,
+      "end": 80.101,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "the",
+      "start": 80.008,
+      "end": 80.095,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "delta",
+      "start": 80.108,
+      "end": 80.408,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "front",
+      "start": 80.42,
+      "end": 80.758,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "rover",
+      "start": 80.883,
+      "end": 81.133,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "cameras",
+      "start": 81.145,
+      "end": 81.558,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "revealed",
+      "start": 81.57,
+      "end": 81.983,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "tilted",
+      "start": 81.995,
+      "end": 82.358,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "stone",
+      "start": 82.37,
+      "end": 82.695,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "layers",
+      "start": 82.708,
+      "end": 83.008,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "stacked",
+      "start": 83.02,
+      "end": 83.345,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "above",
+      "start": 83.358,
+      "end": 83.67,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "fine-grained",
+      "start": 83.683,
+      "end": 84.345,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "mudstones",
+      "start": 84.358,
+      "end": 85.145,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "On",
+      "start": 85.473,
+      "end": 85.723,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Earth",
+      "start": 85.637,
+      "end": 86.0,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "slow",
+      "start": 86.2,
+      "end": 86.475,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "lake",
+      "start": 86.487,
+      "end": 86.712,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "currents",
+      "start": 86.725,
+      "end": 87.1,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "trap",
+      "start": 87.112,
+      "end": 87.4,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "organic",
+      "start": 87.412,
+      "end": 87.8,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "molecules",
+      "start": 87.812,
+      "end": 88.35,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "inside",
+      "start": 88.362,
+      "end": 88.862,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "clay",
+      "start": 88.875,
+      "end": 89.2,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "and",
+      "start": 89.212,
+      "end": 89.362,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "silt",
+      "start": 89.375,
+      "end": 89.837,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Rounded",
+      "start": 90.154,
+      "end": 90.629,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "cobbles",
+      "start": 90.548,
+      "end": 90.911,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "higher",
+      "start": 90.923,
+      "end": 91.261,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "up",
+      "start": 91.273,
+      "end": 91.423,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "point",
+      "start": 91.436,
+      "end": 91.661,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "to",
+      "start": 91.673,
+      "end": 91.736,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "sudden",
+      "start": 91.748,
+      "end": 92.161,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "high-energy",
+      "start": 92.336,
+      "end": 92.823,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "floods",
+      "start": 92.836,
+      "end": 93.398,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N08",
+      "word": "Using",
+      "start": 93.94,
+      "end": 94.403,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "its",
+      "start": 94.303,
+      "end": 94.403,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "rotary",
+      "start": 94.416,
+      "end": 94.816,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "coring",
+      "start": 94.828,
+      "end": 95.203,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "drill",
+      "start": 95.216,
+      "end": 95.616,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Perseverance",
+      "start": 95.791,
+      "end": 96.491,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "cut",
+      "start": 96.503,
+      "end": 96.753,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "finger-sized",
+      "start": 96.766,
+      "end": 97.403,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "rock",
+      "start": 97.416,
+      "end": 97.678,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N08",
+      "word": "cores",
+      "start": 97.691,
+      "end": 98.016,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N08",
+      "word": "from",
+      "start": 98.028,
+      "end": 98.166,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "those",
+      "start": 98.178,
+      "end": 98.416,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "ancient",
+      "start": 98.428,
+      "end": 98.778,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "lake",
+      "start": 98.791,
+      "end": 99.041,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "beds",
+      "start": 99.053,
+      "end": 99.516,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "Each",
+      "start": 99.844,
+      "end": 100.132,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "core",
+      "start": 100.052,
+      "end": 100.24,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "was",
+      "start": 100.252,
+      "end": 100.427,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "measured",
+      "start": 100.44,
+      "end": 100.827,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "photographed",
+      "start": 101.027,
+      "end": 101.727,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "and",
+      "start": 101.852,
+      "end": 101.952,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "sealed",
+      "start": 101.965,
+      "end": 102.302,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "inside",
+      "start": 102.315,
+      "end": 102.777,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "an",
+      "start": 102.79,
+      "end": 102.902,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "airtight",
+      "start": 102.915,
+      "end": 103.327,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N08",
+      "word": "titanium",
+      "start": 103.34,
+      "end": 103.977,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N08",
+      "word": "tube",
+      "start": 103.99,
+      "end": 104.44,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N09",
+      "word": "Ultraviolet",
+      "start": 105.161,
+      "end": 105.895,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "laser",
+      "start": 105.792,
+      "end": 106.127,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "scans",
+      "start": 106.14,
+      "end": 106.527,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "inside",
+      "start": 106.54,
+      "end": 107.029,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "the",
+      "start": 107.042,
+      "end": 107.107,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "rover",
+      "start": 107.12,
+      "end": 107.455,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "detected",
+      "start": 107.467,
+      "end": 107.983,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "carbonate",
+      "start": 107.996,
+      "end": 108.486,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N09",
+      "word": "minerals",
+      "start": 108.498,
+      "end": 108.988,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "phosphate",
+      "start": 109.22,
+      "end": 109.632,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "grains",
+      "start": 109.645,
+      "end": 110.199,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "and",
+      "start": 110.444,
+      "end": 110.573,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "carbon-bearing",
+      "start": 110.586,
+      "end": 111.333,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N09",
+      "word": "compounds",
+      "start": 111.346,
+      "end": 111.965,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "locked",
+      "start": 111.978,
+      "end": 112.248,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "inside",
+      "start": 112.261,
+      "end": 112.738,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "those",
+      "start": 112.751,
+      "end": 113.034,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "lake",
+      "start": 113.047,
+      "end": 113.266,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "sediments",
+      "start": 113.279,
+      "end": 113.898,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "Every",
+      "start": 114.223,
+      "end": 114.546,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "ingredient",
+      "start": 114.457,
+      "end": 114.999,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "needed",
+      "start": 115.011,
+      "end": 115.334,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "for",
+      "start": 115.347,
+      "end": 115.475,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "ancient",
+      "start": 115.488,
+      "end": 115.849,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "habitable",
+      "start": 115.862,
+      "end": 116.352,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N09",
+      "word": "water",
+      "start": 116.365,
+      "end": 116.725,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N09",
+      "word": "once",
+      "start": 116.738,
+      "end": 117.022,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "met",
+      "start": 117.035,
+      "end": 117.292,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "on",
+      "start": 117.305,
+      "end": 117.408,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "this",
+      "start": 117.421,
+      "end": 117.589,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "crater",
+      "start": 117.602,
+      "end": 117.975,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N09",
+      "word": "floor",
+      "start": 117.988,
+      "end": 118.478,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "Planetary",
+      "start": 119.096,
+      "end": 119.609,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "scientists",
+      "start": 119.516,
+      "end": 120.148,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "are",
+      "start": 120.161,
+      "end": 120.371,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "still",
+      "start": 120.384,
+      "end": 120.727,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N10",
+      "word": "studying",
+      "start": 120.74,
+      "end": 121.2,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N10",
+      "word": "whether",
+      "start": 121.213,
+      "end": 121.437,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "those",
+      "start": 121.45,
+      "end": 121.727,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "carbon",
+      "start": 121.74,
+      "end": 122.148,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "compounds",
+      "start": 122.161,
+      "end": 122.766,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "formed",
+      "start": 122.779,
+      "end": 123.082,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "through",
+      "start": 123.095,
+      "end": 123.345,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "non-living",
+      "start": 123.358,
+      "end": 123.924,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "chemistry",
+      "start": 123.937,
+      "end": 124.49,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "or",
+      "start": 124.503,
+      "end": 124.7,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "ancient",
+      "start": 124.713,
+      "end": 125.069,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "microbial",
+      "start": 125.082,
+      "end": 125.792,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "life",
+      "start": 125.805,
+      "end": 126.305,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "Until",
+      "start": 126.639,
+      "end": 127.021,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "Earth",
+      "start": 126.927,
+      "end": 127.085,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "laboratories",
+      "start": 127.099,
+      "end": 127.783,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "open",
+      "start": 127.796,
+      "end": 128.085,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N10",
+      "word": "the",
+      "start": 128.099,
+      "end": 128.177,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "sealed",
+      "start": 128.191,
+      "end": 128.52,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "tubes",
+      "start": 128.533,
+      "end": 128.98,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "Mars's",
+      "start": 129.191,
+      "end": 129.625,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "biological",
+      "start": 129.638,
+      "end": 130.362,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "past",
+      "start": 130.375,
+      "end": 130.717,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "remains",
+      "start": 130.73,
+      "end": 131.164,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "an",
+      "start": 131.177,
+      "end": 131.309,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "open",
+      "start": 131.322,
+      "end": 131.599,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N10",
+      "word": "question",
+      "start": 131.612,
+      "end": 132.006,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N10",
+      "word": "across",
+      "start": 132.02,
+      "end": 132.362,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "a",
+      "start": 132.375,
+      "end": 132.441,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "silent",
+      "start": 132.454,
+      "end": 132.888,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "red",
+      "start": 132.901,
+      "end": 133.099,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N10",
+      "word": "horizon",
+      "start": 133.112,
+      "end": 133.783,
+      "emphasis": false
+    }
+  ],
+  "sfx_applied": [],
+  "diegetic_nat_sound_active": false,
+  "adaptive_audio_profile": "mystery_and_discovery",
+  "music_sections_count": 3,
+  "ambience_sections_count": 0,
+  "scene_optimization_counts": {
+    "Keep": 12,
+    "Merge": 1,
+    "Replace": 1,
+    "Remove": 1
+  },
+  "audio_layers_exported": [
+    "layer_1_narration",
+    "layer_2_music",
+    "layer_3_ambience",
+    "layer_4_natural_sounds",
+    "layer_5_cinematic_sfx"
+  ],
+  "audio_diagnostics": {
+    "integrated_lufs": -16.0,
+    "loudness_range_lra_lu": 1.6,
+    "true_peak_dbtp": -1.5,
+    "speech_crest_factor_db": 14.5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -1.5
+  }
+}

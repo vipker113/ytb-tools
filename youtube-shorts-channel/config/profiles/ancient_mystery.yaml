@@ -1,0 +1,79 @@
+profile_name: "ancient_mystery"
+profile_version: "7.0.0"
+description: "Historical & paleo-geological atmosphere with restrained acoustic warmth and evidence-led narrative progression."
+
+narrative_retention:
+  category_focus: "Ancient geological records, fossil discoveries, archaeological science, and Earth's deep-time mysteries"
+  default_target_duration_range_s: [65.0, 150.0]
+  preferred_beat_structure:
+    - "opening_hook"
+    - "curiosity_gap"
+    - "evidence_and_discovery"
+    - "escalation"
+    - "payoff"
+    - "final_impression"
+  preferred_hook_archetypes:
+    - "credible_mystery"
+    - "unexpected_fact"
+    - "strong_contrast"
+  max_info_drought_s: 15.5
+  min_central_payoff_time_fraction: 0.28
+
+asset_selection:
+  location_authentic_mode: true
+  target_moving_footage_ratio: 0.65
+  max_still_photo_ratio: 0.32
+  prefer_human_fieldwork_interaction: true
+  min_human_interaction_shots: 2
+  min_distinct_perspectives: 4
+  scoring_weights:
+    direct_relevance: 0.34
+    visual_clarity: 0.20
+    authenticity: 0.22
+    technical_quality: 0.08
+    composition_potential: 0.08
+    motion_storytelling: 0.04
+    license_verification: 0.04
+    min_direct_relevance_floor: 0.35
+
+sound_design:
+  default_voice: "en-GB-RyanNeural"
+  default_voice_profile: "mysterious_discovery"
+  scene_audio_profile: "ancient_archaeology"
+  adaptive_audio_profile: "mystery_and_discovery"
+  enable_5layer_mixing: true
+  enable_diegetic_nat_sound: true
+  allow_no_music: true
+  target_bed_lufs: -27.5
+  music_layer_gain_db: -21.5
+  ambience_layer_gain_db: -22.5
+  natural_sounds_layer_gain_db: -17.0
+  cinematic_sfx_layer_gain_db: -26.5
+  music_duck_under_speech_db: -11.0
+  music_duck_important_phrase_db: -15.5
+
+pacing:
+  adaptive_duration_enabled: true
+  enable_intelligent_scene_editing: true
+  reference_shot_duration_range_s: [4.0, 8.2]
+  establishing_wide_bonus_s: 1.2
+  min_shot_duration_s: 2.5
+  max_shot_duration_s: 15.0
+  dissolve_duration_s: 0.65
+  max_dissolve_fraction_of_cuts: 0.36
+
+color_science:
+  enable_filmic_grade: true
+  cast_tame_strength: 0.18
+  luma_grain_sigma: 2.1
+
+subtitles:
+  style: "cinema_boxless"
+  emphasis_mode: "subtle_warm"
+  enable_keyword_color_flash: true
+  word_by_word_animation: false
+
+opening_and_thumbnail:
+  thumbnail_text_mode: "cinema_hook"
+  thumbnail_max_words: 6
+  thumbnail_concepts_count: 3

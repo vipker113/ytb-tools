@@ -1,0 +1,2212 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "active_tts_provider": "edge_tts",
+  "segmentation_method": "contrast_directed_rms_matched_segmented",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "pronunciation_sig": "80f22f439e3da59e5330eace134b4341aa810990649ca6a7787e60a6d8d84011",
+  "total_duration_s": 81.0667,
+  "total_frames_30fps": 2432,
+  "continuity_review": {
+    "segment_count": 15,
+    "max_adjacent_rms_jump_db": 0.76,
+    "max_spectral_centroid_ratio": 1.234,
+    "clipped_word_boundaries_count": 0,
+    "unnatural_pause_count": 0,
+    "continuity_pass": true,
+    "issues": [],
+    "joins": [
+      {
+        "from_sentence": 0,
+        "to_sentence": 1,
+        "rms_jump_db": 0.04,
+        "spectral_centroid_ratio": 1.028,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 1,
+        "to_sentence": 2,
+        "rms_jump_db": 0.37,
+        "spectral_centroid_ratio": 1.021,
+        "pause_s": 0.44
+      },
+      {
+        "from_sentence": 2,
+        "to_sentence": 3,
+        "rms_jump_db": 0.04,
+        "spectral_centroid_ratio": 1.068,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 3,
+        "to_sentence": 4,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.189,
+        "pause_s": 0.42
+      },
+      {
+        "from_sentence": 4,
+        "to_sentence": 5,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.164,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 5,
+        "to_sentence": 6,
+        "rms_jump_db": 0.33,
+        "spectral_centroid_ratio": 1.116,
+        "pause_s": 0.44
+      },
+      {
+        "from_sentence": 6,
+        "to_sentence": 7,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.09,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 7,
+        "to_sentence": 8,
+        "rms_jump_db": 0.11,
+        "spectral_centroid_ratio": 1.098,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 8,
+        "to_sentence": 9,
+        "rms_jump_db": 0.34,
+        "spectral_centroid_ratio": 1.116,
+        "pause_s": 0.46
+      },
+      {
+        "from_sentence": 9,
+        "to_sentence": 10,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.017,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 10,
+        "to_sentence": 11,
+        "rms_jump_db": 0.41,
+        "spectral_centroid_ratio": 1.031,
+        "pause_s": 0.44
+      },
+      {
+        "from_sentence": 11,
+        "to_sentence": 12,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.102,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 12,
+        "to_sentence": 13,
+        "rms_jump_db": 0.76,
+        "spectral_centroid_ratio": 1.127,
+        "pause_s": 0.46
+      },
+      {
+        "from_sentence": 13,
+        "to_sentence": 14,
+        "rms_jump_db": 0.15,
+        "spectral_centroid_ratio": 1.234,
+        "pause_s": 0.24
+      }
+    ]
+  },
+  "contrast_summary": {
+    "sentence_count": 15,
+    "distinct_delivery_styles": [
+      "CALM_EXPLORATION",
+      "CINEMATIC_REVEAL",
+      "EMOTIONAL_REFLECTION",
+      "MYSTERIOUS",
+      "SCIENTIFIC_AUTHORITY",
+      "SURPRISED_BUT_CONTROLLED"
+    ],
+    "distinct_delivery_count": 6,
+    "energy_min": 2,
+    "energy_max": 4,
+    "energy_span": 2,
+    "blocked_theatrical_count": 0,
+    "rebalanced_overdrama_count": 0,
+    "contrast_healthy": true,
+    "guardrail_notes": []
+  },
+  "invalidated_artifacts": [],
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "Twenty meters beneath Greenland's frozen surface, trillions of liters of liquid water never freeze. Across thousands of square kilometers, a hidden reservoir flows inside solid polar ice.",
+      "delivery": "MYSTERIOUS",
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "start": 0.1,
+      "end": 11.802,
+      "duration": 11.702,
+      "pause_after": 0.44,
+      "emphasis_words": [
+        "Twenty meters",
+        "never freeze"
+      ]
+    },
+    {
+      "seg_id": "N02",
+      "text": "Even through minus thirty degree winter nights, this buried water stays liquid inside porous snow. Until 2011, ice models assumed summer meltwater simply refroze near the surface.",
+      "delivery": "CALM_EXPLORATION",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 12.242,
+      "end": 23.122,
+      "duration": 10.88,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "minus thirty",
+        "2011"
+      ]
+    },
+    {
+      "seg_id": "N03",
+      "text": "While drilling cores near Helheim Glacier, field teams pulled up dripping wet snow from twenty meters down. Heavy autumn snowfall acts like an insulating blanket, sealing summer warmth inside.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "start": 23.542,
+      "end": 34.63,
+      "duration": 11.088,
+      "pause_after": 0.44,
+      "emphasis_words": [
+        "Helheim Glacier",
+        "insulating blanket"
+      ]
+    },
+    {
+      "seg_id": "N04",
+      "text": "Airborne radar flights and ground sensors then uncovered a deeper surprise. That buried water does not stay locked in place. It drains downward through deep crevasses toward the glacier bed.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "start": 35.23,
+      "end": 45.24,
+      "duration": 10.01,
+      "pause_after": 0.46,
+      "emphasis_words": [
+        "radar",
+        "crevasses",
+        "glacier bed"
+      ]
+    },
+    {
+      "seg_id": "N05",
+      "text": "At the bedrock, pressurized water lubricates the ice base and speeds glacier motion toward dark coastal fjords. Freshwater plumes then rise from hundreds of meters below the sea surface.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "start": 45.7,
+      "end": 56.489,
+      "duration": 10.788,
+      "pause_after": 0.44,
+      "emphasis_words": [
+        "lubricates",
+        "coastal fjords"
+      ]
+    },
+    {
+      "seg_id": "N06",
+      "text": "When mineral-rich meltwater enters the North Atlantic, ocean expeditions track how it stirs surface nutrients above the deep twilight zone. Hidden glacier plumbing shapes marine food webs miles offshore.",
+      "delivery": "CINEMATIC_REVEAL",
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "start": 56.929,
+      "end": 68.45,
+      "duration": 11.522,
+      "pause_after": 0.46,
+      "emphasis_words": [
+        "North Atlantic",
+        "twilight zone"
+      ]
+    },
+    {
+      "seg_id": "N07",
+      "text": "Glaciologists are still studying how fast these aquifers drain into the sea, so long-term sea-level forecasts remain an open question. Beneath solid white ice, a dark river keeps moving.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "start": 68.91,
+      "end": 80.6,
+      "duration": 11.69,
+      "pause_after": 0.45,
+      "emphasis_words": [
+        "still studying",
+        "open question"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "Twenty meters beneath Greenland's frozen surface, trillions of liters of liquid water never freeze.",
+      "delivery": "MYSTERIOUS",
+      "emotional_tone": "curious_restraint",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "Twenty meters",
+        "never freeze"
+      ],
+      "start_s": 0.1,
+      "end_s": 6.06,
+      "cache_key": "8809ce1e948d00b2ec73",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.94
+      },
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N01",
+      "text": "Across thousands of square kilometers, a hidden reservoir flows inside solid polar ice.",
+      "delivery": "MYSTERIOUS",
+      "emotional_tone": "curious_restraint",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 440,
+      "emphasis_phrases": [],
+      "start_s": 6.3,
+      "end_s": 11.802,
+      "cache_key": "81fe42f2db9a4ecc2286",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.94
+      },
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:2/5->subtle_intensity_nudge"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "Even through minus thirty degree winter nights, this buried water stays liquid inside porous snow.",
+      "delivery": "CALM_EXPLORATION",
+      "emotional_tone": "immersive_inquiry",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "minus thirty"
+      ],
+      "start_s": 12.242,
+      "end_s": 17.789,
+      "cache_key": "9f1c4df4d5961b575ed8",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLORATION->bounded_prosody(rate=-2%,pitch=+0Hz,pause=410ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N02",
+      "text": "Until 2011, ice models assumed summer meltwater simply refroze near the surface.",
+      "delivery": "CALM_EXPLORATION",
+      "emotional_tone": "immersive_inquiry",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "2011"
+      ],
+      "start_s": 18.029,
+      "end_s": 23.122,
+      "cache_key": "79be30a9104506471551",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLORATION->bounded_prosody(rate=-2%,pitch=+0Hz,pause=410ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N03",
+      "text": "While drilling cores near Helheim Glacier, field teams pulled up dripping wet snow from twenty meters down.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "confident_explanation",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "Helheim Glacier"
+      ],
+      "start_s": 23.542,
+      "end_s": 29.337,
+      "cache_key": "7b75e46a00a338ee7c04",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N03",
+      "text": "Heavy autumn snowfall acts like an insulating blanket, sealing summer warmth inside.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "confident_explanation",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "insulating blanket"
+      ],
+      "start_s": 29.577,
+      "end_s": 34.63,
+      "cache_key": "40c664458dbc8993e263",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N04",
+      "text": "Airborne radar flights and ground sensors then uncovered a deeper surprise.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 160,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "radar"
+      ],
+      "start_s": 35.23,
+      "end_s": 39.062,
+      "cache_key": "283d490e15579212830d",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 7,
+      "seg_id": "N04",
+      "text": "That buried water does not stay locked in place.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [],
+      "start_s": 39.302,
+      "end_s": 41.782,
+      "cache_key": "64d8ff49535e0ed0ffbb",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge"
+      ]
+    },
+    {
+      "sentence_index": 8,
+      "seg_id": "N04",
+      "text": "It drains downward through deep crevasses toward the glacier bed.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 460,
+      "emphasis_phrases": [
+        "crevasses",
+        "glacier bed"
+      ],
+      "start_s": 42.022,
+      "end_s": 45.24,
+      "cache_key": "51566b3a444324ec943b",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 9,
+      "seg_id": "N05",
+      "text": "At the bedrock, pressurized water lubricates the ice base and speeds glacier motion toward dark coastal fjords.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "measured_gravity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "lubricates",
+        "coastal fjords"
+      ],
+      "start_s": 45.7,
+      "end_s": 52.343,
+      "cache_key": "84f397f030ecdc108689",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 10,
+      "seg_id": "N05",
+      "text": "Freshwater plumes then rise from hundreds of meters below the sea surface.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "measured_gravity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 440,
+      "emphasis_phrases": [],
+      "start_s": 52.583,
+      "end_s": 56.489,
+      "cache_key": "11f7f56ec1fb6d8cf991",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%"
+      ]
+    },
+    {
+      "sentence_index": 11,
+      "seg_id": "N06",
+      "text": "When mineral-rich meltwater enters the North Atlantic, ocean expeditions track how it stirs surface nutrients above the deep twilight zone.",
+      "delivery": "CINEMATIC_REVEAL",
+      "emotional_tone": "earned_significance",
+      "pace": "SLOW",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "North Atlantic",
+        "twilight zone"
+      ],
+      "start_s": 56.929,
+      "end_s": 64.654,
+      "cache_key": "fe204f11008cef09e0e4",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.58,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 0.96
+      },
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 12,
+      "seg_id": "N06",
+      "text": "Hidden glacier plumbing shapes marine food webs miles offshore.",
+      "delivery": "CINEMATIC_REVEAL",
+      "emotional_tone": "earned_significance",
+      "pace": "SLOW",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 460,
+      "emphasis_phrases": [],
+      "start_s": 64.894,
+      "end_s": 68.45,
+      "cache_key": "a27ada9bc2795cca7201",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.58,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 0.96
+      },
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge"
+      ]
+    },
+    {
+      "sentence_index": 13,
+      "seg_id": "N07",
+      "text": "Glaciologists are still studying how fast these aquifers drain into the sea, so long-term sea-level forecasts remain an open question.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "reflective_resonance",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "still studying",
+        "open question"
+      ],
+      "start_s": 68.91,
+      "end_s": 77.133,
+      "cache_key": "062679f7049facb19271",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.94
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 14,
+      "seg_id": "N07",
+      "text": "Beneath solid white ice, a dark river keeps moving.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "reflective_resonance",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 450,
+      "emphasis_phrases": [],
+      "start_s": 77.373,
+      "end_s": 80.6,
+      "cache_key": "77168a20c0fc87ac624b",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.94
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:2/5->subtle_intensity_nudge"
+      ]
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "Twenty",
+      "start": 0.1,
+      "end": 0.472,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "meters",
+      "start": 0.381,
+      "end": 0.78,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "beneath",
+      "start": 0.794,
+      "end": 1.219,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Greenland's",
+      "start": 1.233,
+      "end": 1.804,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "frozen",
+      "start": 1.818,
+      "end": 2.256,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "surface",
+      "start": 2.27,
+      "end": 2.868,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "trillions",
+      "start": 3.081,
+      "end": 3.533,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "of",
+      "start": 3.546,
+      "end": 3.639,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "liters",
+      "start": 3.653,
+      "end": 4.052,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "of",
+      "start": 4.065,
+      "end": 4.171,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "liquid",
+      "start": 4.185,
+      "end": 4.57,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "water",
+      "start": 4.584,
+      "end": 4.956,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "never",
+      "start": 4.969,
+      "end": 5.262,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "freeze",
+      "start": 5.275,
+      "end": 5.967,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "Across",
+      "start": 6.3,
+      "end": 6.778,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "thousands",
+      "start": 6.693,
+      "end": 7.145,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "of",
+      "start": 7.158,
+      "end": 7.238,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "square",
+      "start": 7.252,
+      "end": 7.571,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "kilometers",
+      "start": 7.584,
+      "end": 8.289,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "a",
+      "start": 8.488,
+      "end": 8.528,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "hidden",
+      "start": 8.541,
+      "end": 8.887,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "reservoir",
+      "start": 8.9,
+      "end": 9.419,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "flows",
+      "start": 9.432,
+      "end": 9.858,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "inside",
+      "start": 9.871,
+      "end": 10.403,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "solid",
+      "start": 10.416,
+      "end": 10.775,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "polar",
+      "start": 10.789,
+      "end": 11.174,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "ice",
+      "start": 11.188,
+      "end": 11.706,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Even",
+      "start": 12.242,
+      "end": 12.571,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "through",
+      "start": 12.479,
+      "end": 12.757,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "minus",
+      "start": 12.77,
+      "end": 13.174,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "thirty",
+      "start": 13.187,
+      "end": 13.515,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "degree",
+      "start": 13.527,
+      "end": 13.83,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "winter",
+      "start": 13.843,
+      "end": 14.146,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "nights",
+      "start": 14.159,
+      "end": 14.588,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "this",
+      "start": 14.79,
+      "end": 14.992,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "buried",
+      "start": 15.005,
+      "end": 15.333,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "water",
+      "start": 15.346,
+      "end": 15.674,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "stays",
+      "start": 15.687,
+      "end": 16.027,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "liquid",
+      "start": 16.04,
+      "end": 16.368,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "inside",
+      "start": 16.381,
+      "end": 16.873,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "porous",
+      "start": 16.886,
+      "end": 17.265,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "snow",
+      "start": 17.277,
+      "end": 17.694,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Until 2011",
+      "start": 18.029,
+      "end": 19.102,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "ice",
+      "start": 19.146,
+      "end": 19.336,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "models",
+      "start": 19.348,
+      "end": 19.74,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "assumed",
+      "start": 19.752,
+      "end": 20.194,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "summer",
+      "start": 20.207,
+      "end": 20.485,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "meltwater",
+      "start": 20.497,
+      "end": 21.078,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "simply",
+      "start": 21.091,
+      "end": 21.419,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "refroze",
+      "start": 21.432,
+      "end": 22.075,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "near",
+      "start": 22.088,
+      "end": 22.265,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 22.277,
+      "end": 22.353,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "surface",
+      "start": 22.366,
+      "end": 23.022,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "While",
+      "start": 23.542,
+      "end": 23.82,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "drilling",
+      "start": 23.746,
+      "end": 24.062,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "cores",
+      "start": 24.074,
+      "end": 24.415,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "near",
+      "start": 24.428,
+      "end": 24.668,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Helheim",
+      "start": 24.68,
+      "end": 25.11,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "Glacier",
+      "start": 25.122,
+      "end": 25.64,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "field",
+      "start": 25.817,
+      "end": 26.12,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "teams",
+      "start": 26.132,
+      "end": 26.435,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "pulled",
+      "start": 26.448,
+      "end": 26.713,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "up",
+      "start": 26.726,
+      "end": 26.877,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "dripping",
+      "start": 26.89,
+      "end": 27.231,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "wet",
+      "start": 27.243,
+      "end": 27.458,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "snow",
+      "start": 27.471,
+      "end": 27.837,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "from",
+      "start": 27.849,
+      "end": 28.064,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "twenty",
+      "start": 28.077,
+      "end": 28.43,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "meters",
+      "start": 28.443,
+      "end": 28.784,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "down",
+      "start": 28.796,
+      "end": 29.276,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Heavy",
+      "start": 29.577,
+      "end": 29.918,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "autumn",
+      "start": 29.827,
+      "end": 30.219,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "snowfall",
+      "start": 30.232,
+      "end": 30.774,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "acts",
+      "start": 30.787,
+      "end": 31.014,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "like",
+      "start": 31.027,
+      "end": 31.229,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "an",
+      "start": 31.242,
+      "end": 31.33,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "insulating",
+      "start": 31.343,
+      "end": 32.012,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "blanket",
+      "start": 32.024,
+      "end": 32.567,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "sealing",
+      "start": 32.757,
+      "end": 33.11,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "summer",
+      "start": 33.123,
+      "end": 33.451,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "warmth",
+      "start": 33.464,
+      "end": 33.868,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "inside",
+      "start": 33.881,
+      "end": 34.55,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Airborne",
+      "start": 35.23,
+      "end": 35.643,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "radar",
+      "start": 35.57,
+      "end": 35.92,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "flights",
+      "start": 35.933,
+      "end": 36.358,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "and",
+      "start": 36.37,
+      "end": 36.445,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "ground",
+      "start": 36.458,
+      "end": 36.783,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "sensors",
+      "start": 36.795,
+      "end": 37.22,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "then",
+      "start": 37.233,
+      "end": 37.433,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "uncovered",
+      "start": 37.445,
+      "end": 37.845,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "a",
+      "start": 37.858,
+      "end": 37.933,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "deeper",
+      "start": 37.945,
+      "end": 38.283,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "surprise",
+      "start": 38.295,
+      "end": 38.983,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "That",
+      "start": 39.302,
+      "end": 39.527,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "buried",
+      "start": 39.438,
+      "end": 39.726,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "water",
+      "start": 39.738,
+      "end": 40.113,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "does",
+      "start": 40.126,
+      "end": 40.301,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "not",
+      "start": 40.313,
+      "end": 40.463,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "stay",
+      "start": 40.476,
+      "end": 40.688,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "locked",
+      "start": 40.701,
+      "end": 41.063,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "in",
+      "start": 41.076,
+      "end": 41.176,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "place",
+      "start": 41.188,
+      "end": 41.713,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "It",
+      "start": 42.022,
+      "end": 42.209,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "drains",
+      "start": 42.125,
+      "end": 42.475,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "downward",
+      "start": 42.487,
+      "end": 42.875,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "through",
+      "start": 42.887,
+      "end": 43.1,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "deep",
+      "start": 43.112,
+      "end": 43.362,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "crevasses",
+      "start": 43.375,
+      "end": 43.85,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "toward",
+      "start": 43.862,
+      "end": 44.2,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "the",
+      "start": 44.212,
+      "end": 44.287,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "glacier",
+      "start": 44.3,
+      "end": 44.775,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "bed",
+      "start": 44.787,
+      "end": 45.162,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "At",
+      "start": 45.7,
+      "end": 45.877,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 45.851,
+      "end": 45.939,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "bedrock",
+      "start": 45.952,
+      "end": 46.52,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "pressurized",
+      "start": 46.697,
+      "end": 47.252,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "water",
+      "start": 47.265,
+      "end": 47.606,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "lubricates",
+      "start": 47.619,
+      "end": 48.237,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 48.25,
+      "end": 48.363,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "ice",
+      "start": 48.376,
+      "end": 48.641,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "base",
+      "start": 48.654,
+      "end": 49.007,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "and",
+      "start": 49.02,
+      "end": 49.159,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "speeds",
+      "start": 49.172,
+      "end": 49.55,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "glacier",
+      "start": 49.563,
+      "end": 50.03,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "motion",
+      "start": 50.043,
+      "end": 50.447,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "toward",
+      "start": 50.459,
+      "end": 50.889,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "dark",
+      "start": 50.901,
+      "end": 51.204,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "coastal",
+      "start": 51.217,
+      "end": 51.634,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "fjords",
+      "start": 51.646,
+      "end": 52.278,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "Freshwater",
+      "start": 52.583,
+      "end": 53.265,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "plumes",
+      "start": 53.188,
+      "end": 53.517,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "then",
+      "start": 53.529,
+      "end": 53.718,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "rise",
+      "start": 53.731,
+      "end": 54.072,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "from",
+      "start": 54.085,
+      "end": 54.236,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "hundreds",
+      "start": 54.249,
+      "end": 54.602,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "of",
+      "start": 54.615,
+      "end": 54.703,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "meters",
+      "start": 54.716,
+      "end": 55.082,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "below",
+      "start": 55.095,
+      "end": 55.41,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 55.423,
+      "end": 55.524,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "sea",
+      "start": 55.537,
+      "end": 55.764,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "surface",
+      "start": 55.777,
+      "end": 56.421,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "When",
+      "start": 56.929,
+      "end": 57.202,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "mineral-rich",
+      "start": 57.109,
+      "end": 57.669,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "meltwater",
+      "start": 57.682,
+      "end": 58.255,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "enters",
+      "start": 58.268,
+      "end": 58.606,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 58.619,
+      "end": 58.71,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "North",
+      "start": 58.723,
+      "end": 59.01,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "Atlantic",
+      "start": 59.023,
+      "end": 59.583,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "ocean",
+      "start": 59.804,
+      "end": 60.077,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "expeditions",
+      "start": 60.09,
+      "end": 60.755,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "track",
+      "start": 60.768,
+      "end": 61.08,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "how",
+      "start": 61.093,
+      "end": 61.288,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "it",
+      "start": 61.301,
+      "end": 61.419,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "stirs",
+      "start": 61.432,
+      "end": 61.809,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "surface",
+      "start": 61.822,
+      "end": 62.226,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "nutrients",
+      "start": 62.239,
+      "end": 62.812,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "above",
+      "start": 62.825,
+      "end": 63.15,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 63.163,
+      "end": 63.281,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "deep",
+      "start": 63.294,
+      "end": 63.58,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "twilight",
+      "start": 63.593,
+      "end": 64.114,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "zone",
+      "start": 64.127,
+      "end": 64.583,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "Hidden",
+      "start": 64.894,
+      "end": 65.246,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "glacier",
+      "start": 65.117,
+      "end": 65.56,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "plumbing",
+      "start": 65.573,
+      "end": 65.911,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "shapes",
+      "start": 65.924,
+      "end": 66.276,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "marine",
+      "start": 66.289,
+      "end": 66.679,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "food",
+      "start": 66.692,
+      "end": 67.031,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "webs",
+      "start": 67.044,
+      "end": 67.357,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "miles",
+      "start": 67.37,
+      "end": 67.76,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "offshore",
+      "start": 67.773,
+      "end": 68.32,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Glaciologists",
+      "start": 68.91,
+      "end": 69.934,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "are",
+      "start": 69.83,
+      "end": 70.029,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "still",
+      "start": 70.042,
+      "end": 70.401,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "studying",
+      "start": 70.415,
+      "end": 70.893,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "how",
+      "start": 70.907,
+      "end": 71.133,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "fast",
+      "start": 71.146,
+      "end": 71.572,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "these",
+      "start": 71.585,
+      "end": 71.824,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "aquifers",
+      "start": 71.838,
+      "end": 72.303,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "drain",
+      "start": 72.316,
+      "end": 72.649,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "into",
+      "start": 72.662,
+      "end": 72.915,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "the",
+      "start": 72.928,
+      "end": 73.034,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "sea",
+      "start": 73.048,
+      "end": 73.42,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "so",
+      "start": 73.686,
+      "end": 73.806,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "long-term",
+      "start": 73.819,
+      "end": 74.444,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "sea-level",
+      "start": 74.457,
+      "end": 74.989,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "forecasts",
+      "start": 75.002,
+      "end": 75.627,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "remain",
+      "start": 75.641,
+      "end": 76.04,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "an",
+      "start": 76.053,
+      "end": 76.159,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "open",
+      "start": 76.173,
+      "end": 76.452,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "question",
+      "start": 76.465,
+      "end": 77.037,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "Beneath",
+      "start": 77.373,
+      "end": 77.786,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "solid",
+      "start": 77.677,
+      "end": 78.009,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "white",
+      "start": 78.023,
+      "end": 78.368,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "ice",
+      "start": 78.382,
+      "end": 78.727,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "a",
+      "start": 78.9,
+      "end": 78.98,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "dark",
+      "start": 78.993,
+      "end": 79.313,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "river",
+      "start": 79.326,
+      "end": 79.565,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "keeps",
+      "start": 79.578,
+      "end": 79.951,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "moving",
+      "start": 79.964,
+      "end": 80.496,
+      "emphasis": false
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "ice_creak_subtle",
+      "time_s": 0.65,
+      "gain_db": -24.5,
+      "shot_id": "S01",
+      "purpose": "Subtle glacier firn creak as researchers cross Helheim ice"
+    },
+    {
+      "sfx_name": "hydrophone_current_swell",
+      "time_s": 57.2,
+      "gain_db": -24.0,
+      "shot_id": "S08",
+      "purpose": "Restrained deep-water swell as ocean research vessel deploys sensors"
+    }
+  ],
+  "diegetic_nat_sound_active": false,
+  "adaptive_audio_profile": "mystery_and_discovery",
+  "music_sections_count": 2,
+  "ambience_sections_count": 3,
+  "scene_optimization_counts": {
+    "Keep": 7,
+    "Merge": 1,
+    "Replace": 0,
+    "Remove": 1
+  },
+  "audio_layers_exported": [
+    "layer_1_narration",
+    "layer_2_music",
+    "layer_3_ambience",
+    "layer_4_natural_sounds",
+    "layer_5_cinematic_sfx"
+  ],
+  "audio_diagnostics": {
+    "integrated_lufs": -16.0,
+    "loudness_range_lra_lu": 1.7,
+    "true_peak_dbtp": -1.5,
+    "speech_crest_factor_db": 14.5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -1.5
+  }
+}

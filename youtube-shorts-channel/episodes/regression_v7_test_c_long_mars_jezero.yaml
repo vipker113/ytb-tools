@@ -1,0 +1,498 @@
+manifest_version: "7.0"
+script_version: "1.0"
+subtitle_version: "1.0"
+channel_name: "Proof of Wonder"
+playlist: "Space & Universe"
+topic: "Powered flight in Mars's 1% atmosphere and Perseverance's investigation of Jezero Crater's ancient river delta"
+slug: "test-c-long-mars-jezero"
+style_profile: "space_discovery"
+adaptive_audio_profile: "auto"
+adaptive_duration_mode: true
+enable_intelligent_scene_editing: true
+voice_direction_profile: "cinematic_documentary"
+voice: "en-GB-RyanNeural"
+ambience_preset: "deep_space"
+
+primary_title: "How NASA Flew Over an Ancient River on Mars"
+alternative_title: "Inside Jezero Crater: Flight and Ancient Water on Mars"
+youtube_description: "A two-and-a-half-minute documentary exploring how Ingenuity achieved powered flight in Mars's ultra-thin air to scout Jezero Crater's ancient river delta for Perseverance."
+hashtags: ["#mars", "#nasa", "#perseverance", "#spaceexploration", "#documentary"]
+opening_hook_type: "paradox"
+
+raw_assets_dir: "assets/raw_footage/regression_v7_long_space"
+output_dir: "output/regression-v7/test-c-long-mars-jezero"
+
+editorial_formula:
+  hook_max_start_s: 2.0
+  layer2_pivot_seg_id: "N06"
+  scientific_caveat_seg_id: "N10"
+  min_real_evidence_ratio: 0.85
+
+tts_pronunciations:
+  Jezero: "Jez-eh-roh"
+  biosignatures: "bio-signatures"
+
+narration_segments:
+  - seg_id: "N01"
+    text: "Mars holds an atmosphere ninety-nine percent thinner than Earth's. Yet inside a bone-dry Martian basin, a four-pound rotorcraft spun up its blades and lifted off."
+    delivery: "MYSTERIOUS"
+    emotional_tone: "curious_restraint"
+    pace: "SLOW"
+    energy: 2
+    pause_after_s: 0.46
+    emphasis_words: ["ninety-nine percent", "lifted off"]
+    narrative_beat: "opening_hook"
+    viewer_question: "How can a rotorcraft fly where there is almost no air?"
+    new_information: "Ingenuity achieved powered aerodynamic flight in an atmosphere 99% thinner than Earth's."
+
+  - seg_id: "N02"
+    text: "That basin is Jezero Crater, forty-five kilometers wide. Orbital cameras mapped a fan-shaped river delta carved by liquid water over three billion years ago. Landing a rover safely among its boulder fields took years of planning."
+    delivery: "CALM_EXPLORATION"
+    emotional_tone: "immersive_scale"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_s: 0.45
+    emphasis_words: ["Jezero Crater", "river delta", "three billion"]
+    narrative_beat: "curiosity_gap"
+    viewer_question: "Why did NASA target Jezero Crater despite dangerous terrain?"
+    new_information: "Orbital imagery revealed a preserved 3.5-billion-year-old river delta inside Jezero Crater."
+
+  - seg_id: "N03"
+    text: "In February 2021, a rocket-powered sky crane lowered the Perseverance rover onto that ancient lake floor. Tucked beneath the rover's belly rode Ingenuity, folded tight against freezing minus ninety degree nights."
+    delivery: "SCIENTIFIC_AUTHORITY"
+    emotional_tone: "measured_precision"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_s: 0.45
+    emphasis_words: ["sky crane", "minus ninety"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "How did Ingenuity reach the Martian surface intact?"
+    new_information: "Perseverance delivered Ingenuity beneath its chassis and survived -90 C nights."
+
+  - seg_id: "N04"
+    text: "On Earth, helicopters push against dense air at a few hundred revolutions per minute. On Mars, surface pressure matches Earth's sky thirty kilometers high. Standard blades would spin without generating enough lift to leave the ground."
+    delivery: "SCIENTIFIC_AUTHORITY"
+    emotional_tone: "precise_clarity"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_s: 0.45
+    emphasis_words: ["thirty kilometers", "lift"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "Why do ordinary helicopter designs fail on Mars?"
+    new_information: "Martian surface air density equals Earth's stratosphere at 30 kilometers altitude."
+
+  - seg_id: "N05"
+    text: "Engineers solved the physics problem with ultra-stiff carbon-fiber rotors spanning four feet across. Counter-rotating blades spin past two thousand five hundred revolutions per minute. Because radio signals take minutes to arrive, onboard cameras steer every flight alone."
+    delivery: "SCIENTIFIC_AUTHORITY"
+    emotional_tone: "focused_engineering"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_s: 0.48
+    emphasis_words: ["carbon-fiber", "two thousand five hundred", "steer"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "How did JPL engineer lift and autonomous control in 1% air?"
+    new_information: "Counter-rotating carbon blades at 2,500 RPM and autonomous visual navigation enabled flight."
+
+  - seg_id: "N06"
+    text: "What began as a thirty-day, five-flight test soon changed the entire surface mission. Ingenuity flew seventy-two times over nearly three years, scouting sand ripples and steep ridges from above. Those aerial maps guided Perseverance straight toward the ancient river mouth."
+    delivery: "SURPRISED_BUT_CONTROLLED"
+    emotional_tone: "controlled_discovery"
+    pace: "NATURAL"
+    energy: 4
+    pause_before_s: 0.18
+    pause_after_s: 0.48
+    emphasis_words: ["seventy-two times", "three years", "ancient river"]
+    narrative_beat: "escalation"
+    viewer_question: "How did a technology demo transform Mars surface science?"
+    new_information: "Ingenuity completed 72 flights across nearly three years as an aerial scout."
+
+  - seg_id: "N07"
+    text: "At the delta front, rover cameras revealed tilted stone layers stacked above fine-grained mudstones. On Earth, slow lake currents trap organic molecules inside clay and silt. Rounded cobbles higher up point to sudden, high-energy floods."
+    delivery: "CALM_EXPLORATION"
+    emotional_tone: "observational_wonder"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_s: 0.46
+    emphasis_words: ["mudstones", "organic molecules", "floods"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "What geological history did Perseverance uncover in the delta rocks?"
+    new_information: "Mudstones record calm habitable lake waters, capped by boulder conglomerates from late floods."
+
+  - seg_id: "N08"
+    text: "Using its rotary coring drill, Perseverance cut finger-sized rock cores from those ancient lake beds. Each core was measured, photographed, and sealed inside an airtight titanium tube."
+    delivery: "SCIENTIFIC_AUTHORITY"
+    emotional_tone: "deliberate_focus"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_s: 0.46
+    emphasis_words: ["rock cores", "titanium tube"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "How is Perseverance preserving Martian rock evidence?"
+    new_information: "Perseverance drilled and hermetically sealed intact delta mudstone cores in titanium tubes."
+
+  - seg_id: "N09"
+    text: "Ultraviolet laser scans inside the rover detected carbonate minerals, phosphate grains, and carbon-bearing compounds locked inside those lake sediments. Every ingredient needed for ancient habitable water once met on this crater floor."
+    delivery: "CINEMATIC_REVEAL"
+    emotional_tone: "earned_significance"
+    pace: "SLOW"
+    energy: 4
+    pause_before_s: 0.18
+    pause_after_s: 0.50
+    emphasis_words: ["carbonate", "carbon-bearing", "habitable water"]
+    narrative_beat: "payoff"
+    viewer_question: "What chemical clues did rover instruments detect inside the delta?"
+    new_information: "Laser spectroscopy confirmed carbonates, phosphates, and organic-bearing minerals."
+
+  - seg_id: "N10"
+    text: "Planetary scientists are still studying whether those carbon compounds formed through non-living chemistry or ancient microbial life. Until Earth laboratories open the sealed tubes, Mars's biological past remains an open question across a silent red horizon."
+    delivery: "EMOTIONAL_REFLECTION"
+    emotional_tone: "credible_wonder"
+    pace: "SLOW"
+    energy: 2
+    pause_after_s: 0.50
+    emphasis_words: ["still studying", "open question"]
+    narrative_beat: "final_impression"
+    viewer_question: "Does organic carbon in Jezero mudstones prove ancient Martian life?"
+    new_information: "Abiotic geology can also produce organics, so laboratory sample return remains essential."
+
+sfx_cues:
+  - sfx_name: "chapter_whoosh_soft"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    gain_db: -22.0
+    purpose: "Decorative transition whoosh (must be rejected by v7 sfx_planner)"
+  - sfx_name: "sonar_ping_deep"
+    anchor_type: "shot_start"
+    anchor_ref: "S03"
+    gain_db: -22.0
+    purpose: "Sci-fi ping on Mars orbital photo (must be rejected in vacuum/space)"
+  - sfx_name: "subterranean_gate_boom"
+    anchor_type: "shot_start"
+    anchor_ref: "S09"
+    gain_db: -20.0
+    purpose: "Trailer boom on cut (must be rejected by v7 sfx_planner)"
+
+shots:
+  - sid: "S01"
+    start_s: 0.0
+    end_s: 7.5
+    kind: "video_full"
+    src_file: "nasa_ingenuity_flight2.mp4"
+    src_in: 8.0
+    camera_perspective: "aerial"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N01"
+    story_beat: "Ingenuity Mars Helicopter spinning up and lifting off inside Jezero Crater"
+    visual_desc: "Real Mastcam-Z video of NASA's Ingenuity helicopter hovering above Martian soil"
+    editorial_rationale: "Immediate authentic Mars flight footage fulfilling the opening paradox"
+
+  - sid: "S02"
+    start_s: 7.5
+    end_s: 12.2
+    kind: "video_full"
+    src_file: "nasa_ingenuity_flight2.mp4"
+    src_in: 14.0
+    camera_perspective: "aerial"
+    visual_complexity: "medium"
+    spoken_importance: "context"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N01"
+    story_beat: "Continuation of Ingenuity hover over Wright Brothers Field"
+    visual_desc: "Same Ingenuity hover clip seeded to verify Merge"
+    editorial_rationale: "Consecutive same-asset shot merged cleanly by scene_editor"
+
+  - sid: "S03"
+    start_s: 12.2
+    end_s: 16.6
+    kind: "still_full"
+    src_file: "nasa_pia24096_jezero_orbital.jpg"
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N02"
+    story_beat: "Orbital view of Jezero Crater's ancient fan-shaped river delta"
+    visual_desc: "Mars orbital imagery showing ancient river channel entering Jezero Crater"
+    editorial_rationale: "Establishes the 45-km crater geometry and ancient river delta from orbit"
+
+  - sid: "S04"
+    start_s: 16.6
+    end_s: 27.6
+    kind: "video_full"
+    src_file: "nasa_explore_jezero_crater.mp4"
+    src_in: 12.0
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N02"
+    story_beat: "Boulder-strewn Jezero Crater basin mapped for safe rover touchdown"
+    visual_desc: "Wide Martian surface panorama across Jezero Crater boulder fields"
+    editorial_rationale: "Shows the rugged crater terrain that demanded precision landing"
+
+  - sid: "S05"
+    start_s: 27.6
+    end_s: 28.8
+    kind: "still_full"
+    src_file: "nasa_pia25220_ingenuity_ridge.jpg"
+    camera_perspective: "wide"
+    visual_complexity: "low"
+    spoken_importance: "context"
+    scene_audio_layers: ["narration"]
+    associated_seg_id: "N03"
+    story_beat: "Decorative filler b-roll cut"
+    visual_desc: "Decorative filler Mars ridge still"
+    editorial_rationale: "Short filler shot seeded to verify automatic Remove decision"
+
+  - sid: "S06"
+    start_s: 28.8
+    end_s: 40.8
+    kind: "video_full"
+    src_file: "nasa_perseverance_year_review.mp4"
+    src_in: 8.0
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    has_human_interaction: true
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N03"
+    story_beat: "Sky-crane touchdown of Perseverance and Ingenuity deployment on Mars"
+    visual_desc: "NASA onboard descent footage and JPL team confirming Perseverance touchdown"
+    editorial_rationale: "Directly visualizes sky-crane delivery onto the crater floor"
+
+  - sid: "S07"
+    start_s: 40.8
+    end_s: 54.0
+    kind: "video_full"
+    src_file: "nasa_explore_jezero_crater.mp4"
+    src_in: 36.0
+    camera_perspective: "extreme_wide"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N04"
+    story_beat: "Thin Martian sky above Jezero Crater matching Earth's 30-km stratosphere"
+    visual_desc: "Extreme wide Martian sky and crater rim under ultra-thin atmosphere"
+    editorial_rationale: "Visualizes Mars's near-vacuum surface environment where standard blades fail"
+
+  - sid: "S08"
+    start_s: 54.0
+    end_s: 67.5
+    kind: "video_full"
+    src_file: "nasa_ingenuity_flight4.mp4"
+    src_in: 2.0
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N05"
+    story_beat: "Counter-rotating carbon-fiber rotors spinning past 2,500 RPM during Flight 4"
+    visual_desc: "Ingenuity rotorcraft accelerating across Martian surface during autonomous Flight 4"
+    editorial_rationale: "Directly visualizes the counter-rotating blades and autonomous flight control"
+
+  - sid: "S09"
+    start_s: 67.5
+    end_s: 80.5
+    kind: "video_full"
+    src_file: "nasa_ingenuity_flight2.mp4"
+    src_in: 28.0
+    camera_perspective: "aerial"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    transition_in: "dissolve"
+    transition_duration_s: 0.65
+    transition_reason: "Pivot from five-flight tech demo to three-year 72-flight aerial scout"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N06"
+    story_beat: "Ingenuity scouting Martian ridges and sand ripples ahead of Perseverance"
+    visual_desc: "Ingenuity climbing and translating laterally above Martian rock outcrops"
+    editorial_rationale: "Marks the narrative escalation as Ingenuity becomes an aerial geological scout"
+
+  - sid: "S10"
+    start_s: 80.5
+    end_s: 84.8
+    kind: "still_full"
+    src_file: "nasa_pia25220_ingenuity_ridge.jpg"
+    camera_perspective: "first_person_pov"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N06"
+    story_beat: "Aerial color photograph captured by Ingenuity looking down on rocky Martian ridges"
+    visual_desc: "Downward aerial reconnaissance photo taken by Ingenuity's color camera over Jezero"
+    editorial_rationale: "Authentic Ingenuity-eye aerial scout photograph guiding rover path planning"
+
+  - sid: "S11"
+    start_s: 84.8
+    end_s: 97.5
+    kind: "video_full"
+    src_file: "nasa_explore_jezero_crater.mp4"
+    src_in: 62.0
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N07"
+    story_beat: "Perseverance approaching layered sedimentary delta cliffs inside Jezero"
+    visual_desc: "Rover panorama panning across ancient sedimentary delta escarpments on Mars"
+    editorial_rationale: "Connects aerial scouting to the layered lakebed rocks at the delta front"
+
+  - sid: "S12"
+    start_s: 97.5
+    end_s: 101.8
+    kind: "still_full"
+    src_file: "nasa_pia24096_jezero_orbital.jpg"
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N07"
+    story_beat: "Close outcrop view of tilted delta mudstones and flood cobble layers"
+    visual_desc: "Repeated photo seeded so scene_editor replaces with unused delta outcrop photo"
+    editorial_rationale: "Seeded duplicate still replaced automatically with nasa_pia24923_delta_outcrop.jpg"
+
+  - sid: "S13"
+    start_s: 101.8
+    end_s: 113.5
+    kind: "video_full"
+    src_file: "nasa_perseverance_year_review.mp4"
+    src_in: 54.0
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    has_human_interaction: true
+    transition_in: "dissolve"
+    transition_duration_s: 0.65
+    transition_reason: "Shift from delta outcrop observation to rotary core drilling"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N08"
+    story_beat: "Perseverance coring drill extracting rock cores and sealing titanium sample tubes"
+    visual_desc: "Perseverance robotic arm drilling Martian rock core and sealing sample tube"
+    editorial_rationale: "Shows actual rock core extraction and hermetic titanium tube sealing"
+
+  - sid: "S14"
+    start_s: 113.5
+    end_s: 126.5
+    kind: "video_full"
+    src_file: "nasa_ingenuity_flight4.mp4"
+    src_in: 19.0
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N09"
+    story_beat: "Ancient habitable lakebed sediments across Jezero Crater holding carbonates and organics"
+    visual_desc: "Wide Martian basin floor where carbonate minerals and organic compounds were detected"
+    editorial_rationale: "Supports the chemical payoff of ancient habitable water on the crater floor"
+
+  - sid: "S15"
+    start_s: 126.5
+    end_s: 139.5
+    kind: "video_full"
+    src_file: "nasa_perseverance_year_review.mp4"
+    src_in: 112.0
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    has_human_interaction: true
+    scene_audio_layers: ["narration", "music"]
+    associated_seg_id: "N10"
+    story_beat: "Planetary scientists evaluating Martian spectra and preparing for Earth sample return"
+    visual_desc: "JPL planetary science team analyzing rover mineral data on Earth"
+    editorial_rationale: "Grounds the closing scientific caveat in ongoing Earth-lab sample return work"
+
+thumbnail_spec:
+  concept_id: "A"
+  src_file: "nasa_ingenuity_flight2.mp4"
+  src_time_s: 9.0
+  headline_text: "FLIGHT IN|1% AIR"
+  accent_line_index: 1
+
+assets_register:
+  - local_file: "nasa_ingenuity_flight2.mp4"
+    title: "NASA's Ingenuity Mars Helicopter Second Flight Recap"
+    creator_agency: "NASA / Jet Propulsion Laboratory-Caltech / ASU"
+    source_page_url: "https://images.nasa.gov/details/JPL-20210422-TECHf-0001-Ingenuity%202nd%20Flight%20Recap"
+    direct_media_url: "https://images-assets.nasa.gov/video/JPL-20210422-TECHf-0001-Ingenuity%202nd%20Flight%20Recap/collection.json"
+    license: "Public Domain (17 U.S.C. § 105)"
+    license_url: "https://www.jpl.nasa.gov/jpl-image-use-policy/"
+    required_attribution: "NASA/JPL-Caltech/ASU"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_ingenuity_flight4.mp4"
+    title: "Ingenuity Mars Helicopter Fourth Flight Across Jezero Crater"
+    creator_agency: "NASA / Jet Propulsion Laboratory-Caltech"
+    source_page_url: "https://images.nasa.gov/details/JPL-20210430-TECHf-0001-Mars%20Helicopter%204th%20Flight"
+    direct_media_url: "https://images-assets.nasa.gov/video/JPL-20210430-TECHf-0001-Mars%20Helicopter%204th%20Flight/collection.json"
+    license: "Public Domain (17 U.S.C. § 105)"
+    license_url: "https://www.jpl.nasa.gov/jpl-image-use-policy/"
+    required_attribution: "NASA/JPL-Caltech"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_explore_jezero_crater.mp4"
+    title: "Explore Mars' Jezero Crater with NASA's Perseverance Rover"
+    creator_agency: "NASA / Jet Propulsion Laboratory-Caltech"
+    source_page_url: "https://images.nasa.gov/details/JPL-20211221-M2020f-0001-Explore_Mars_Jezero_Crater_with_NASAs_Perseverance_Rover"
+    direct_media_url: "https://images-assets.nasa.gov/video/JPL-20211221-M2020f-0001-Explore_Mars_Jezero_Crater_with_NASAs_Perseverance_Rover/collection.json"
+    license: "Public Domain (17 U.S.C. § 105)"
+    license_url: "https://www.jpl.nasa.gov/jpl-image-use-policy/"
+    required_attribution: "NASA/JPL-Caltech/ASU/MSSS"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_perseverance_year_review.mp4"
+    title: "NASA Perseverance Mars Rover Year in Review"
+    creator_agency: "NASA / Jet Propulsion Laboratory-Caltech"
+    source_page_url: "https://images.nasa.gov/details/JPL-20211227-M2020f-0001-Perseverance_Year_in_Review"
+    direct_media_url: "https://images-assets.nasa.gov/video/JPL-20211227-M2020f-0001-Perseverance_Year_in_Review/collection.json"
+    license: "Public Domain (17 U.S.C. § 105)"
+    license_url: "https://www.jpl.nasa.gov/jpl-image-use-policy/"
+    required_attribution: "NASA/JPL-Caltech"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "nasa_pia24096_jezero_orbital.jpg"
+    title: "PIA24096: Jezero Crater Ancient River Delta Orbital Mosaic"
+    creator_agency: "NASA / JPL-Caltech / MSSS / JHU-APL"
+    source_page_url: "https://images.nasa.gov/details/PIA24096"
+    direct_media_url: "https://images-assets.nasa.gov/image/PIA24096/PIA24096~orig.jpg"
+    license: "Public Domain (17 U.S.C. § 105)"
+    license_url: "https://www.jpl.nasa.gov/jpl-image-use-policy/"
+    required_attribution: "NASA/JPL-Caltech/MSSS/JHU-APL"
+    media_type: "photo"
+    priority_tier: 4
+
+  - local_file: "nasa_pia24923_delta_outcrop.jpg"
+    title: "PIA24923: Perseverance Mastcam-Z View of Jezero Delta Sedimentary Layers and Flood Boulders"
+    creator_agency: "NASA / JPL-Caltech / ASU / MSSS"
+    source_page_url: "https://images.nasa.gov/details/PIA24923"
+    direct_media_url: "https://images-assets.nasa.gov/image/PIA24923/PIA24923~orig.jpg"
+    license: "Public Domain (17 U.S.C. § 105)"
+    license_url: "https://www.jpl.nasa.gov/jpl-image-use-policy/"
+    required_attribution: "NASA/JPL-Caltech/ASU/MSSS"
+    media_type: "photo"
+    priority_tier: 4
+
+  - local_file: "nasa_pia25220_ingenuity_ridge.jpg"
+    title: "PIA25220: Ingenuity Helicopter Aerial Reconnaissance View of Fortun Ridge in Jezero Crater"
+    creator_agency: "NASA / JPL-Caltech"
+    source_page_url: "https://images.nasa.gov/details/PIA24923"
+    direct_media_url: "https://images-assets.nasa.gov/image/PIA25220/PIA25220~orig.jpg"
+    license: "Public Domain (17 U.S.C. § 105)"
+    license_url: "https://www.jpl.nasa.gov/jpl-image-use-policy/"
+    required_attribution: "NASA/JPL-Caltech"
+    media_type: "photo"
+    priority_tier: 4
+
+factual_references:
+  - citation: "Mangold et al. (2021), Perseverance rover reveals an ancient delta-lake system and flood deposits at Jezero crater, Mars, Science 374(6568), 711-717"
+    url: "https://doi.org/10.1126/science.abl4051"
+    doi: "10.1126/science.abl4051"
+    supported_claims: "Tilted delta strata, fine-grained lake mudstones, and late high-energy boulder flood conglomerates"
+  - citation: "Balaram et al. (2021), Ingenuity Mars Helicopter: From Technology Demonstration to Extraterrestrial Scout, Space Science Reviews"
+    url: "https://mars.nasa.gov/technology/helicopter/"
+    supported_claims: "Aerodynamic flight in ~1% Earth air density using counter-rotating carbon-fiber rotors near 2,500 RPM"

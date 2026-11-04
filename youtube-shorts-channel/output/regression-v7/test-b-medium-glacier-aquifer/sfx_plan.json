@@ -1,0 +1,67 @@
+{
+  "slug": "test-b-medium-glacier-aquifer",
+  "adaptive_audio_profile": "mystery_and_discovery",
+  "max_cues_cap": 2,
+  "proposed_cues_count": 3,
+  "approved_cues_count": 2,
+  "rejected_for_silence_count": 1,
+  "silence_preferred_when_zero": false,
+  "approved_cues": [
+    {
+      "cue_id": "SFX01",
+      "sfx_name": "ice_creak_subtle",
+      "time_s": 0.65,
+      "gain_db": -24.5,
+      "shot_id": "S01",
+      "purpose": "Subtle glacier firn creak as researchers cross Helheim ice",
+      "visual_event": "Glacier surface and crevasse field",
+      "origin_type": "first_party_acoustic_synthesis",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "six_question_audit": {
+        "q1_narration_happening": "Twenty meters beneath Greenland's frozen surface, trillions of liters of liquid water never freeze. Across thousands of square kilometers, a",
+        "q2_visible_on_screen": "Aerial footage of Greenland glacier ice sheet and crevasse field Aerial sweep over Greenland's Helheim Glacier ice sheet Glacier surface and",
+        "q3_viewer_understanding": "Subtle glacier firn creak as researchers cross Helheim ice",
+        "q4_materially_improves_moment": true,
+        "q5_authentic_relevant_legal": true,
+        "q6_silence_or_ambience_better": false
+      }
+    },
+    {
+      "cue_id": "SFX02",
+      "sfx_name": "hydrophone_current_swell",
+      "time_s": 57.2,
+      "gain_db": -24.0,
+      "shot_id": "S08",
+      "purpose": "Restrained deep-water swell as ocean research vessel deploys sensors",
+      "visual_event": "Ocean research vessel working in deep North Atlantic water",
+      "origin_type": "first_party_acoustic_synthesis",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "six_question_audit": {
+        "q1_narration_happening": "When mineral-rich meltwater enters the North Atlantic, ocean expeditions track how it stirs surface nutrients above the deep twilight zone. ",
+        "q2_visible_on_screen": "Oceanographers aboard research ship deploying underwater sensors into deep ocean Ocean research vessel tracking nutrients above the deep twi",
+        "q3_viewer_understanding": "Restrained deep-water swell as ocean research vessel deploys sensors",
+        "q4_materially_improves_moment": true,
+        "q5_authentic_relevant_legal": true,
+        "q6_silence_or_ambience_better": false
+      }
+    }
+  ],
+  "rejected_cues": [
+    {
+      "cue_index": 1,
+      "sfx_name": "subterranean_gate_boom",
+      "proposed_time_s": 23.333,
+      "shot_id": "S03",
+      "decision": "REJECT_FOR_SILENCE",
+      "reason": "Decorative transition whoosh/boom/UI sound violates Studio v7 documentary restraint.",
+      "six_question_audit": {
+        "q1_narration_happening": "Even through minus thirty degree winter nights, this buried water stays liquid inside porous snow. Until 2011, ice models assumed summer mel",
+        "q2_visible_on_screen": "Polar researchers operating snow and ice survey instruments on glacier Polar scientists and NASA IceBridge instruments surveying subzero sno",
+        "q3_viewer_understanding": "Decorative transition boom (rejected by v7 sfx_planner)",
+        "q4_materially_improves_moment": false,
+        "q5_authentic_relevant_legal": false,
+        "q6_silence_or_ambience_better": true
+      }
+    }
+  ]
+}

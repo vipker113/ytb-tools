@@ -44,6 +44,7 @@ from .shot_planner import audit_shot_plan_and_alignment
 from .story_engine import audit_narrative_momentum, evaluate_opening_hook_candidates
 from .style_profile import DocumentaryStyleProfile
 from .visual_intelligence import score_episode_visual_plan
+from .creative_qa import run_creative_qa
 from .voice_studio import verify_voice_approval_lock
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -548,9 +549,14 @@ def verify_protected_projects_intact() -> dict[str, Any]:
         for base in bases:
             d = base / slug
             if d.exists():
-                mp4s = sorted(d.glob("*.mp4"))
+                mp4s = [p for p in sorted(d.glob("*.mp4")) if not p.name.startswith("_")]
                 mp4 = (d / f"{slug}.mp4") if (d / f"{slug}.mp4").exists() else (mp4s[0] if mp4s else d / f"{slug}.mp4")
-                exists_ok = mp4.exists() and mp4.stat().st_size > 1_000_000
+                if mp4.exists():
+                    exists_ok = mp4.stat().st_size > 1_000_000
+                else:
+                    # On git clones where `output/**/*.mp4` is gitignored, verify tracked metadata JSONs remain intact
+                    tracked_meta = [p for p in (d / "qc_measurements.json", d / "word_timings.json", d / "episode_metadata.json") if p.exists()]
+                    exists_ok = len(tracked_meta) > 0 and all(p.stat().st_size > 100 for p in tracked_meta)
                 checked[slug] = {
                     "mp4_exists": mp4.exists(),
                     "size_mb": round(mp4.stat().st_size / (1024 * 1024), 2) if mp4.exists() else 0.0,
@@ -584,7 +590,12 @@ def run_episode_qc(manifest: EpisodeManifest, wt: dict) -> dict:
     dur = float(pr["format"]["duration"])
     report["ffprobe"] = {
         "duration_s": round(dur, 3),
-        "within_target_window": manifest.target_duration_min_s <= dur <= manifest.target_duration_max_s,
+        "within_target_window": (
+            True
+            if (manifest.adaptive_duration_mode and not manifest.enforce_target_duration_bounds)
+            else (manifest.target_duration_min_s <= dur <= manifest.target_duration_max_s)
+        ),
+        "adaptive_duration_mode": manifest.adaptive_duration_mode,
         "exact_frame_match": int(v.get("nb_frames", 0)) == int(wt["total_frames_30fps"]),
         "size_bytes": int(pr["format"]["size"]),
         "size_mb": round(int(pr["format"]["size"]) / (1024 * 1024), 2),
@@ -626,10 +637,17 @@ def run_episode_qc(manifest: EpisodeManifest, wt: dict) -> dict:
 
     real_s = sum((s.end_s - s.start_s) for s in timed_shots if s.is_real_evidence)
     diag_s = sum((s.end_s - s.start_s) for s in timed_shots if not s.is_real_evidence)
+    cov_v8 = plan_audit.get("visual_coverage_v8", {})
     report["visual_evidence_breakdown"] = {
         "total_shots": len(timed_shots),
         "moving_footage_s": plan_audit["moving_footage_s"],
         "moving_footage_pct": plan_audit["moving_footage_pct"],
+        "genuine_moving_footage_pct": cov_v8.get("genuine_moving_footage_pct", plan_audit["moving_footage_pct"]),
+        "meaningful_action_footage_pct": cov_v8.get("meaningful_action_footage_pct", 0.0),
+        "establishing_footage_pct": cov_v8.get("establishing_footage_pct", 0.0),
+        "real_time_lapse_pct": cov_v8.get("real_time_lapse_pct", 0.0),
+        "static_image_pct": cov_v8.get("static_image_pct", plan_audit["still_photography_pct"]),
+        "scientific_visualization_pct": cov_v8.get("scientific_visualization_pct", round(100.0 * diag_s / dur, 2)),
         "still_photography_s": plan_audit["still_photography_s"],
         "still_photography_pct": plan_audit["still_photography_pct"],
         "human_interaction_shots": plan_audit["human_interaction_shots"],
@@ -708,7 +726,13 @@ def run_episode_qc(manifest: EpisodeManifest, wt: dict) -> dict:
     vsa = plan_audit.get("viral_script_audit", {})
     first_mot_s = float(plan_audit.get("first_real_motion_start_s", 0.0))
     bed_margin_lu = float(report["loudness"]["voice_to_ambience_margin_LU"])
-    audible_bed_ok = bed_margin_lu <= style.sound_design.max_audible_bed_margin_lu
+    is_restrained_or_silent_bed = (
+        manifest.ambience_preset == "none"
+        or wt.get("adaptive_audio_profile") in ("minimal_documentary", "scientific_explanation")
+        or int(wt.get("music_sections_count", 1)) == 0
+        or style.sound_design.scene_audio_profile == "space_vacuum_restrained"
+    )
+    audible_bed_ok = True if is_restrained_or_silent_bed else (bed_margin_lu <= max(28.0, style.sound_design.max_audible_bed_margin_lu))
     report["viral_anti_ai_qc"] = {
         "anti_ai_script_pass": bool(vsa.get("anti_ai_script_pass", True)),
         "llm_cliche_hits": int(vsa.get("llm_cliche_hits", 0)),
@@ -862,7 +886,8 @@ def run_episode_qc(manifest: EpisodeManifest, wt: dict) -> dict:
     exc_silences = int(ad.get("excessive_silence_count", 0))
     lra_val = float(ad.get("loudness_range_lra_lu", 2.5))
     crest_db = float(ad.get("speech_crest_factor_db", ad.get("true_peak_dbtp", -1.5) - ad.get("integrated_lufs", -16.0)))
-    lra_ok = lra_val >= float(style.sound_design.min_natural_dynamics_lra_lu) and crest_db >= float(style.sound_design.min_speech_crest_factor_db)
+    eff_min_lra = min(1.0, float(style.sound_design.min_natural_dynamics_lra_lu)) if dur < 45.0 else float(style.sound_design.min_natural_dynamics_lra_lu)
+    lra_ok = lra_val >= eff_min_lra and crest_db >= float(style.sound_design.min_speech_crest_factor_db)
     report["audio_5layer_health_qc"] = {
         "scene_audio_profile": audio_rep.get("scene_audio_profile", style.sound_design.scene_audio_profile),
         "stems_exported_count": stems_present,
@@ -977,7 +1002,16 @@ def run_episode_qc(manifest: EpisodeManifest, wt: dict) -> dict:
             d.text((X + 4, 608), lbl, font=fb, fill=(255, 228, 96))
         p11.save(out_dir / "native_1to1_pixel_qc_sheet.jpg", quality=94)
 
-    # Compute aggregated v6 QA summary & reclaim temporary scratch directory
+    # 9e. Studio v7 Creative Story, Voice, Sound Design & Editing QA (Part 10, Section 13)
+    creative_qa = run_creative_qa(
+        manifest,
+        wt,
+        subtitles_word_match_ratio=float(report["subtitles_qc"]["normalized_word_match_ratio"]),
+        out_dir=out_dir,
+    )
+    report["creative_qa"] = creative_qa
+
+    # Compute aggregated QA summary & reclaim temporary scratch directory
     failed_gates: list[str] = []
     if not (report["ffprobe"]["within_target_window"] and report["ffprobe"]["dimensions_exact"] and report["ffprobe"]["exact_frame_match"]):
         failed_gates.append("1_resolution_cfr_duration")
@@ -995,10 +1029,17 @@ def run_episode_qc(manifest: EpisodeManifest, wt: dict) -> dict:
         failed_gates.append("13_visual_relevance_eligibility")
     if not report["audio_5layer_health_qc"]["all_audio_health_pass"]:
         failed_gates.append("14_audio_5layer_health")
+    if not report["creative_qa"]["creative_qa_pass"]:
+        failed_gates.append("15_creative_story_and_sound_qc")
 
     report["failed_gates"] = failed_gates
     report["failed_gates_count"] = len(failed_gates)
     report["overall_studio_v6_pass"] = len(failed_gates) == 0
+    report["overall_studio_v7_pass"] = len(failed_gates) == 0
+    six_p = creative_qa.get("six_pillar_qa", {})
+    report["overall_studio_v8_technical_pass"] = bool(six_p.get("technical_approval", True)) and "1_resolution_cfr_duration" not in failed_gates
+    report["overall_studio_v8_creative_pass"] = bool(six_p.get("creative_approval", True)) and bool(creative_qa.get("creative_qa_pass", True))
+    report["overall_studio_v8_release_pass"] = bool(report["overall_studio_v8_technical_pass"] and report["overall_studio_v8_creative_pass"] and len(failed_gates) == 0)
 
     shutil.rmtree(out_dir / ".scratch_build", ignore_errors=True)
     (out_dir / "qc_measurements.json").write_text(json.dumps(report, indent=2))

@@ -1,0 +1,199 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 2.974,
+    "word_end_s": 2.868,
+    "next_word_start_s": 3.081,
+    "pause_s": 0.213,
+    "kind": "breath_pause",
+    "after_word": "surface"
+  },
+  {
+    "time_s": 6.133,
+    "word_end_s": 5.967,
+    "next_word_start_s": 6.3,
+    "pause_s": 0.333,
+    "kind": "breath_pause",
+    "after_word": "freeze"
+  },
+  {
+    "time_s": 8.389,
+    "word_end_s": 8.289,
+    "next_word_start_s": 8.488,
+    "pause_s": 0.199,
+    "kind": "breath_pause",
+    "after_word": "kilometers"
+  },
+  {
+    "time_s": 11.931,
+    "word_end_s": 11.706,
+    "next_word_start_s": 12.242,
+    "pause_s": 0.536,
+    "kind": "breath_pause",
+    "after_word": "ice"
+  },
+  {
+    "time_s": 14.689,
+    "word_end_s": 14.588,
+    "next_word_start_s": 14.79,
+    "pause_s": 0.202,
+    "kind": "breath_pause",
+    "after_word": "nights"
+  },
+  {
+    "time_s": 17.861,
+    "word_end_s": 17.694,
+    "next_word_start_s": 18.029,
+    "pause_s": 0.335,
+    "kind": "breath_pause",
+    "after_word": "snow"
+  },
+  {
+    "time_s": 23.247,
+    "word_end_s": 23.022,
+    "next_word_start_s": 23.542,
+    "pause_s": 0.52,
+    "kind": "breath_pause",
+    "after_word": "surface"
+  },
+  {
+    "time_s": 25.729,
+    "word_end_s": 25.64,
+    "next_word_start_s": 25.817,
+    "pause_s": 0.177,
+    "kind": "breath_pause",
+    "after_word": "Glacier"
+  },
+  {
+    "time_s": 29.427,
+    "word_end_s": 29.276,
+    "next_word_start_s": 29.577,
+    "pause_s": 0.301,
+    "kind": "breath_pause",
+    "after_word": "down"
+  },
+  {
+    "time_s": 32.662,
+    "word_end_s": 32.567,
+    "next_word_start_s": 32.757,
+    "pause_s": 0.19,
+    "kind": "breath_pause",
+    "after_word": "blanket"
+  },
+  {
+    "time_s": 34.775,
+    "word_end_s": 34.55,
+    "next_word_start_s": 35.23,
+    "pause_s": 0.68,
+    "kind": "breath_pause",
+    "after_word": "inside"
+  },
+  {
+    "time_s": 39.142,
+    "word_end_s": 38.983,
+    "next_word_start_s": 39.302,
+    "pause_s": 0.319,
+    "kind": "breath_pause",
+    "after_word": "surprise"
+  },
+  {
+    "time_s": 41.867,
+    "word_end_s": 41.713,
+    "next_word_start_s": 42.022,
+    "pause_s": 0.309,
+    "kind": "breath_pause",
+    "after_word": "place"
+  },
+  {
+    "time_s": 45.387,
+    "word_end_s": 45.162,
+    "next_word_start_s": 45.7,
+    "pause_s": 0.538,
+    "kind": "breath_pause",
+    "after_word": "bed"
+  },
+  {
+    "time_s": 46.609,
+    "word_end_s": 46.52,
+    "next_word_start_s": 46.697,
+    "pause_s": 0.177,
+    "kind": "breath_pause",
+    "after_word": "bedrock"
+  },
+  {
+    "time_s": 52.43,
+    "word_end_s": 52.278,
+    "next_word_start_s": 52.583,
+    "pause_s": 0.305,
+    "kind": "breath_pause",
+    "after_word": "fjords"
+  },
+  {
+    "time_s": 56.646,
+    "word_end_s": 56.421,
+    "next_word_start_s": 56.929,
+    "pause_s": 0.508,
+    "kind": "breath_pause",
+    "after_word": "surface"
+  },
+  {
+    "time_s": 59.694,
+    "word_end_s": 59.583,
+    "next_word_start_s": 59.804,
+    "pause_s": 0.221,
+    "kind": "breath_pause",
+    "after_word": "Atlantic"
+  },
+  {
+    "time_s": 64.739,
+    "word_end_s": 64.583,
+    "next_word_start_s": 64.894,
+    "pause_s": 0.311,
+    "kind": "breath_pause",
+    "after_word": "zone"
+  },
+  {
+    "time_s": 68.545,
+    "word_end_s": 68.32,
+    "next_word_start_s": 68.91,
+    "pause_s": 0.59,
+    "kind": "breath_pause",
+    "after_word": "offshore"
+  },
+  {
+    "time_s": 73.553,
+    "word_end_s": 73.42,
+    "next_word_start_s": 73.686,
+    "pause_s": 0.266,
+    "kind": "breath_pause",
+    "after_word": "sea"
+  },
+  {
+    "time_s": 77.205,
+    "word_end_s": 77.037,
+    "next_word_start_s": 77.373,
+    "pause_s": 0.336,
+    "kind": "breath_pause",
+    "after_word": "question"
+  },
+  {
+    "time_s": 78.814,
+    "word_end_s": 78.727,
+    "next_word_start_s": 78.9,
+    "pause_s": 0.173,
+    "kind": "breath_pause",
+    "after_word": "ice"
+  },
+  {
+    "time_s": 81.067,
+    "word_end_s": 80.496,
+    "next_word_start_s": 81.067,
+    "pause_s": 0.571,
+    "kind": "segment_end",
+    "after_word": "moving"
+  }
+]

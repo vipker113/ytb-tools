@@ -1,0 +1,64 @@
+{
+  "slug": "test-a-short-antarctic-brine",
+  "adaptive_audio_profile": "minimal_documentary",
+  "max_cues_cap": 1,
+  "proposed_cues_count": 3,
+  "approved_cues_count": 1,
+  "rejected_for_silence_count": 2,
+  "silence_preferred_when_zero": false,
+  "approved_cues": [
+    {
+      "cue_id": "SFX01",
+      "sfx_name": "ice_creak_subtle",
+      "time_s": 0.55,
+      "gain_db": -25.0,
+      "shot_id": "S01",
+      "purpose": "Subtle structural glacier ice creak while scientists cross ice sheet",
+      "visual_event": "Scientists walking across Antarctic glacier ice",
+      "origin_type": "first_party_acoustic_synthesis",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "six_question_audit": {
+        "q1_narration_happening": "In East Antarctica, crimson water pours straight out of solid white glacier ice. Even at minus seventeen degrees Celsius, the flow never fre",
+        "q2_visible_on_screen": "NASA field scientists traversing wind-swept Antarctic glacier ice sheet Field scientists working across East Antarctic glacier ice Scientist",
+        "q3_viewer_understanding": "Subtle structural glacier ice creak while scientists cross ice sheet",
+        "q4_materially_improves_moment": true,
+        "q5_authentic_relevant_legal": true,
+        "q6_silence_or_ambience_better": false
+      }
+    }
+  ],
+  "rejected_cues": [
+    {
+      "cue_index": 1,
+      "sfx_name": "chapter_whoosh_soft",
+      "proposed_time_s": 0.0,
+      "shot_id": "S01",
+      "decision": "REJECT_FOR_SILENCE",
+      "reason": "Decorative transition whoosh/boom/UI sound violates Studio v7 documentary restraint.",
+      "six_question_audit": {
+        "q1_narration_happening": "In East Antarctica, crimson water pours straight out of solid white glacier ice. Even at minus seventeen degrees Celsius, the flow never fre",
+        "q2_visible_on_screen": "NASA field scientists traversing wind-swept Antarctic glacier ice sheet Field scientists working across East Antarctic glacier ice ",
+        "q3_viewer_understanding": "Decorative transition whoosh (should be rejected by v7 sfx_planner)",
+        "q4_materially_improves_moment": false,
+        "q5_authentic_relevant_legal": false,
+        "q6_silence_or_ambience_better": true
+      }
+    },
+    {
+      "cue_index": 2,
+      "sfx_name": "sonar_ping_deep",
+      "proposed_time_s": 9.2,
+      "shot_id": "S01",
+      "decision": "REJECT_FOR_SILENCE",
+      "reason": "Sound 'sonar_ping_deep' does not match visible on-screen action in S01 ('NASA field scientists traversing wind-swept Antarctic glacier ice'); silence and natural ambience work better.",
+      "six_question_audit": {
+        "q1_narration_happening": "In East Antarctica, crimson water pours straight out of solid white glacier ice. Even at minus seventeen degrees Celsius, the flow never fre",
+        "q2_visible_on_screen": "NASA field scientists traversing wind-swept Antarctic glacier ice sheet Field scientists working across East Antarctic glacier ice ",
+        "q3_viewer_understanding": "Unrelated underwater sonar on surface photo (should be rejected)",
+        "q4_materially_improves_moment": false,
+        "q5_authentic_relevant_legal": false,
+        "q6_silence_or_ambience_better": true
+      }
+    }
+  ]
+}

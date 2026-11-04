@@ -1,0 +1,60 @@
+{
+  "slug": "test-c-long-mars-jezero",
+  "adaptive_audio_profile": "mystery_and_discovery",
+  "max_cues_cap": 4,
+  "proposed_cues_count": 3,
+  "approved_cues_count": 0,
+  "rejected_for_silence_count": 3,
+  "silence_preferred_when_zero": true,
+  "approved_cues": [],
+  "rejected_cues": [
+    {
+      "cue_index": 1,
+      "sfx_name": "chapter_whoosh_soft",
+      "proposed_time_s": 0.0,
+      "shot_id": "S01",
+      "decision": "REJECT_FOR_SILENCE",
+      "reason": "Decorative transition whoosh/boom/UI sound violates Studio v7 documentary restraint.",
+      "six_question_audit": {
+        "q1_narration_happening": "Mars holds an atmosphere ninety-nine percent thinner than Earth's. Yet inside a bone-dry Martian basin, a four-pound rotorcraft spun up its ",
+        "q2_visible_on_screen": "Real Mastcam-Z video of NASA's Ingenuity helicopter hovering above Martian soil Ingenuity Mars Helicopter spinning up and lifting off inside",
+        "q3_viewer_understanding": "Decorative transition whoosh (must be rejected by v7 sfx_planner)",
+        "q4_materially_improves_moment": false,
+        "q5_authentic_relevant_legal": false,
+        "q6_silence_or_ambience_better": true
+      }
+    },
+    {
+      "cue_index": 2,
+      "sfx_name": "sonar_ping_deep",
+      "proposed_time_s": 11.767,
+      "shot_id": "S01",
+      "decision": "REJECT_FOR_SILENCE",
+      "reason": "Shot S01 excludes 'cinematic_sfx' in scene_audio_layers.",
+      "six_question_audit": {
+        "q1_narration_happening": "That basin is Jezero Crater, forty-five kilometers wide. Orbital cameras mapped a fan-shaped river delta carved by liquid water over three b",
+        "q2_visible_on_screen": "Real Mastcam-Z video of NASA's Ingenuity helicopter hovering above Martian soil Ingenuity Mars Helicopter spinning up and lifting off inside",
+        "q3_viewer_understanding": "Sci-fi ping on Mars orbital photo (must be rejected in vacuum/space)",
+        "q4_materially_improves_moment": false,
+        "q5_authentic_relevant_legal": false,
+        "q6_silence_or_ambience_better": true
+      }
+    },
+    {
+      "cue_index": 3,
+      "sfx_name": "subterranean_gate_boom",
+      "proposed_time_s": 63.767,
+      "shot_id": "S08",
+      "decision": "REJECT_FOR_SILENCE",
+      "reason": "Decorative transition whoosh/boom/UI sound violates Studio v7 documentary restraint.",
+      "six_question_audit": {
+        "q1_narration_happening": "Engineers solved the physics problem with ultra-stiff carbon-fiber rotors spanning four feet across. Counter-rotating blades spin past two t",
+        "q2_visible_on_screen": "Ingenuity rotorcraft accelerating across Martian surface during autonomous Flight 4 Counter-rotating carbon-fiber rotors spinning past 2,500",
+        "q3_viewer_understanding": "Trailer boom on cut (must be rejected by v7 sfx_planner)",
+        "q4_materially_improves_moment": false,
+        "q5_authentic_relevant_legal": false,
+        "q6_silence_or_ambience_better": true
+      }
+    }
+  ]
+}

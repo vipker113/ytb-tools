@@ -94,6 +94,17 @@ class AssetSelectionStyleConfig(BaseModel):
     location_authentic_mode: bool = False
     forbid_muted_talking_heads: bool = True
     target_moving_footage_ratio: float = 0.80
+    # Footage-First v8.0 configurable targets (Part 4, Sections 9 & 10)
+    target_genuine_moving_footage_ratio: float = 0.70
+    target_meaningful_action_footage_ratio: float = 0.50
+    max_static_image_ratio: float = 0.20
+    max_scientific_visualization_ratio: float = 0.10
+    auto_animate_stills_by_default: bool = False
+    allow_extended_still_for_essential_evidence: bool = True
+    forbid_multi_crop_single_photo: bool = True
+    forbid_presentation_slide_graphics: bool = True
+    max_single_infographic_duration_s: float = 4.0
+    require_preproduction_feasibility_gate: bool = True
     max_still_photo_ratio: float = 0.15
     max_single_still_duration_s: float = 5.5
     forbid_consecutive_still_shots: bool = True
@@ -161,6 +172,7 @@ class NarrativeRetentionStyleConfig(BaseModel):
 class PacingStyleConfig(BaseModel):
     narration_first_required: bool = True
     adaptive_duration_enabled: bool = True
+    enable_intelligent_scene_editing: bool = True
     reference_shot_duration_range_s: tuple[float, float] = (3.6, 7.2)
     min_shot_duration_s: float = 2.4
     max_shot_duration_s: float = 15.0
@@ -188,12 +200,16 @@ class ViralRetentionStyleConfig(BaseModel):
     block_ai_cliche_phrases: bool = True
     block_jargon_lists: bool = True
     enforce_seamless_loop_tail: bool = True
+    loop_tail_max_episode_duration_s: float = 72.0
     max_ending_tail_pause_s: float = 0.55
 
 
 class SoundDesignStyleConfig(BaseModel):
     default_voice: str = "en-GB-RyanNeural"
     default_voice_profile: str = "cinematic_documentary"
+    tts_provider: Literal["auto", "elevenlabs", "edge_tts"] = "auto"
+    elevenlabs_model_id: str = "eleven_multilingual_v2"
+    elevenlabs_voice_id: str = ""
     scene_audio_profile: Literal[
         "polar_glacial",
         "subterranean_earth",
@@ -202,7 +218,17 @@ class SoundDesignStyleConfig(BaseModel):
         "volcanic_abyss",
         "scientific_discovery",
         "wildlife_field",
+        "ancient_archaeology",
+        "minimal_investigation",
     ] = "scientific_discovery"
+    adaptive_audio_profile: Literal[
+        "auto",
+        "minimal_documentary",
+        "immersive_exploration",
+        "mystery_and_discovery",
+        "scientific_explanation",
+    ] = "auto"
+    allow_no_music: bool = True
     enable_5layer_mixing: bool = True
     enable_broadcast_vocal_mastering: bool = True
     enable_diegetic_nat_sound: bool = True
@@ -214,6 +240,7 @@ class SoundDesignStyleConfig(BaseModel):
     natural_sounds_layer_gain_db: float = -15.5
     cinematic_sfx_layer_gain_db: float = -25.0
     music_duck_under_speech_db: float = -10.5
+    music_duck_important_phrase_db: float = -14.5
     min_audible_bed_margin_lu: float = 8.5
     max_audible_bed_margin_lu: float = 16.5
     min_natural_dynamics_lra_lu: float = 1.4
@@ -267,11 +294,14 @@ class QAStyleConfig(BaseModel):
     min_wcag_caption_contrast_ratio: float = 7.0
     protect_existing_episode_outputs: bool = True
     export_visual_contact_sheets: bool = True
+    require_six_pillar_creative_qa: bool = True
+    block_creative_approval_on_slideshow_or_proxy: bool = True
 
 
 class DocumentaryStyleProfile(BaseModel):
     profile_name: str = "pow_documentary_v3"
-    profile_version: str = "6.0.0"
+    profile_name_display: str = ""
+    profile_version: str = "7.0.0"
     description: str = "Proof of Wonder Authentic Full-Screen Documentary Profile"
     output: OutputStyleConfig = Field(default_factory=OutputStyleConfig)
     narrative_retention: NarrativeRetentionStyleConfig = Field(default_factory=NarrativeRetentionStyleConfig)

@@ -1,0 +1,10 @@
+{
+  "slug": "test-b-medium-glacier-aquifer",
+  "encode_mode": "master",
+  "shots_render_or_cache_s": 0.016,
+  "timeline_assembly_and_mux_s": 148.435,
+  "thumbnail_concepts_s": 3.6,
+  "total_render_master_s": 152.247,
+  "rendered_frames": 2432,
+  "effective_render_fps": 15.97
+}

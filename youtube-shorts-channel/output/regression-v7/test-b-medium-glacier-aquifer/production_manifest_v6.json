@@ -1,0 +1,555 @@
+{
+  "schema_name": "proof_of_wonder_production_manifest",
+  "manifest_version": "7.0",
+  "generated_at_utc": "2026-11-03T18:38:38.180347+00:00",
+  "slug": "test-b-medium-glacier-aquifer",
+  "channel_name": "Proof of Wonder",
+  "category_playlist": "Hidden Earth",
+  "topic": "Greenland's perennial liquid firn aquifer beneath Helheim Glacier and ocean nutrient transport",
+  "production_profile": {
+    "profile_name": "mysterious_earth_exploration",
+    "profile_version": "6.0.0",
+    "style_overrides": {},
+    "visual_scoring_weights": {
+      "direct_relevance": 0.3,
+      "visual_clarity": 0.2,
+      "authenticity": 0.22,
+      "technical_quality": 0.1,
+      "composition_potential": 0.1,
+      "motion_storytelling": 0.05,
+      "license_verification": 0.03,
+      "min_direct_relevance_floor": 0.35
+    }
+  },
+  "script_version": {
+    "version": "1.0",
+    "script_sha256": "a4b540c392a08a46ef0d8c65bf199bfef41fa61b3feccfc420da58753675988f",
+    "segment_count": 7,
+    "word_count": 200,
+    "opening_hook_type": "credible_mystery",
+    "layer2_pivot_seg_id": "N04",
+    "scientific_caveat_seg_id": "N07",
+    "factual_references": [
+      {
+        "citation": "Forster et al. (2014), Extensive liquid meltwater storage in firn within the Greenland ice sheet, Nature Geoscience 7, 95-98",
+        "url": "https://doi.org/10.1038/ngeo2043",
+        "doi": "10.1038/ngeo2043",
+        "supported_claims": "Discovery of perennial liquid firn aquifer insulated by high snow accumulation"
+      },
+      {
+        "citation": "Miller et al. (2017), Basal drainage of Helheim Glacier firn aquifer, Geophysical Research Letters",
+        "url": "https://svs.gsfc.nasa.gov/12509",
+        "doi": null,
+        "supported_claims": "Crevasse pathways draining Helheim Glacier firn water toward bedrock and ocean"
+      }
+    ]
+  },
+  "voice_direction_profile": {
+    "voice_input_mode": "directed_tts",
+    "profile_id": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "annotated_voice_script_file": null,
+    "approval_lock": {
+      "locked": false,
+      "synchronized": false,
+      "detail": "No voice_approval_lock.json written yet."
+    }
+  },
+  "audio_source_and_final_narration": {
+    "voice_input_mode": "directed_tts",
+    "uploaded_narration_file": null,
+    "voice_reference_file": null,
+    "voice_owner_consent": false,
+    "narration_mp3": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\narration.mp3",
+    "final_audio_mix_mp3": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\final_audio_mix.mp3",
+    "word_timings_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\word_timings.json",
+    "total_duration_s": 81.0667,
+    "total_frames_30fps": 2432,
+    "five_layer_stems": {
+      "layer_1_narration": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\work_audio\\layer_1_narration.wav",
+      "layer_2_music": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\work_audio\\layer_2_music.wav",
+      "layer_3_ambience": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\work_audio\\layer_3_ambience.wav",
+      "layer_4_natural_sounds": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\work_audio\\layer_4_natural_sounds.wav",
+      "layer_5_cinematic_sfx": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\work_audio\\layer_5_cinematic_sfx.wav"
+    },
+    "audio_diagnostics": {
+      "integrated_lufs": -16.0,
+      "loudness_range_lra_lu": 1.7,
+      "true_peak_dbtp": -1.5,
+      "speech_crest_factor_db": 14.5,
+      "clipped_samples_count": 0,
+      "excessive_silence_count": 0,
+      "excessive_silences": [],
+      "voice_peak_dbfs": -1.5
+    }
+  },
+  "source_assets": [
+    {
+      "local_file": "nasa_helheim_glacier_aquifer.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Water in Helheim Glacier Makes Its Way to the Ocean",
+      "creator_agency": "NASA Goddard Space Flight Center",
+      "source_page_url": "https://images.nasa.gov/details/GSFC_20170215_Helheim_m12509_Aquifer",
+      "direct_media_url": "https://images-assets.nasa.gov/video/GSFC_20170215_Helheim_m12509_Aquifer/collection.json",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_icebridge_fieldwork_2017.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "NASA Operation IceBridge Polar Survey Fieldwork",
+      "creator_agency": "NASA Goddard Space Flight Center",
+      "source_page_url": "https://images.nasa.gov/details/GSFC_20180213_Big_Year_OIB_m12860_2017",
+      "direct_media_url": "https://images-assets.nasa.gov/video/GSFC_20180213_Big_Year_OIB_m12860_2017/collection.json",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_exports_twilight_ocean.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "NASA EXPORTS Two Research Vessels Leave for the Ocean Twilight Zone",
+      "creator_agency": "NASA Goddard Space Flight Center",
+      "source_page_url": "https://images.nasa.gov/details/GSFC_20180808_m13032_EXPORTS",
+      "direct_media_url": "https://images-assets.nasa.gov/video/GSFC_20180808_m13032_EXPORTS/collection.json",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "bf_aerial_2013.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "Aerial Glacier Terminus Reference",
+      "creator_agency": "National Science Foundation",
+      "source_page_url": "https://photolibrary.usap.gov/",
+      "direct_media_url": "https://photolibrary.usap.gov/",
+      "is_first_party_original": false
+    }
+  ],
+  "licensing_metadata": {
+    "strict_zero_cost_budget": true,
+    "source_register_csv": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\source_register.csv",
+    "source_register_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\source_register.md",
+    "excluded_sources_notes": [],
+    "licenses": [
+      {
+        "local_file": "nasa_helheim_glacier_aquifer.mp4",
+        "license": "Public Domain (17 U.S.C. \u00a7 105)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "NASA GSFC"
+      },
+      {
+        "local_file": "nasa_icebridge_fieldwork_2017.mp4",
+        "license": "Public Domain (17 U.S.C. \u00a7 105)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "NASA GSFC / Operation IceBridge"
+      },
+      {
+        "local_file": "nasa_exports_twilight_ocean.mp4",
+        "license": "Public Domain (17 U.S.C. \u00a7 105)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "NASA GSFC / EXPORTS"
+      },
+      {
+        "local_file": "bf_aerial_2013.jpg",
+        "license": "Public Domain (US Federal Government / NSF)",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "required_attribution": "NSF"
+      }
+    ]
+  },
+  "shot_list": [
+    {
+      "sid": "S01",
+      "kind": "video_full",
+      "src_file": "nasa_helheim_glacier_aquifer.mp4",
+      "camera_perspective": "aerial",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Aerial sweep over Greenland's Helheim Glacier ice sheet",
+      "editorial_rationale": "Opens immediately on real Helheim Glacier moving footage"
+    },
+    {
+      "sid": "S02",
+      "kind": "video_full",
+      "src_file": "nasa_helheim_glacier_aquifer.mp4",
+      "camera_perspective": "aerial",
+      "visual_complexity": "medium",
+      "spoken_importance": "context",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Duplicate aerial glacier sweep seeded for Merge",
+      "editorial_rationale": "Consecutive same-asset shot merged by scene_editor"
+    },
+    {
+      "sid": "S03",
+      "kind": "video_full",
+      "src_file": "nasa_icebridge_fieldwork_2017.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Polar scientists and NASA IceBridge instruments surveying subzero snow",
+      "editorial_rationale": "Shows real polar scientific team investigating snowpack layers"
+    },
+    {
+      "sid": "S04",
+      "kind": "video_full",
+      "src_file": "nasa_helheim_glacier_aquifer.mp4",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Helheim Glacier firn drilling and buried liquid water layer",
+      "editorial_rationale": "Demonstrates the insulating snow blanket and firn core discovery"
+    },
+    {
+      "sid": "S05",
+      "kind": "still_full",
+      "src_file": "bf_aerial_2013.jpg",
+      "camera_perspective": "wide",
+      "visual_complexity": "low",
+      "spoken_importance": "context",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Decorative filler b-roll still",
+      "editorial_rationale": "Seeded filler shot to verify automatic Remove decision"
+    },
+    {
+      "sid": "S06",
+      "kind": "video_full",
+      "src_file": "nasa_icebridge_fieldwork_2017.mp4",
+      "camera_perspective": "first_person_pov",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.6,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Airborne radar flight mapping deep glacier crevasse drainage",
+      "editorial_rationale": "Visualizes the radar pivot revealing crevasse drainage to bedrock"
+    },
+    {
+      "sid": "S07",
+      "kind": "video_full",
+      "src_file": "nasa_helheim_glacier_aquifer.mp4",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Glacier meltwater lubricating ice motion toward dark coastal fjord",
+      "editorial_rationale": "Bridges basal glacier lubrication to deep coastal fjords"
+    },
+    {
+      "sid": "S08",
+      "kind": "video_full",
+      "src_file": "nasa_exports_twilight_ocean.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.65,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Ocean research vessel tracking nutrients above the deep twilight zone",
+      "editorial_rationale": "Connects glacial meltwater runoff to deep-ocean marine ecosystem research"
+    },
+    {
+      "sid": "S09",
+      "kind": "video_full",
+      "src_file": "nasa_exports_twilight_ocean.mp4",
+      "camera_perspective": "extreme_wide",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Open dark ocean horizon as researchers measure ongoing drainage rates",
+      "editorial_rationale": "Reflective closing image supporting the sea-level caveat"
+    }
+  ],
+  "scene_timing": {
+    "fps": 30,
+    "semantic_timeline_manifest_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\semantic_timeline_manifest.json",
+    "timed_scenes": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 12.0333,
+        "duration_s": 12.0333,
+        "start_frame": 0,
+        "end_frame": 361
+      },
+      {
+        "sid": "S03",
+        "start_s": 12.0333,
+        "end_s": 23.3333,
+        "duration_s": 11.3,
+        "start_frame": 361,
+        "end_frame": 700
+      },
+      {
+        "sid": "S04",
+        "start_s": 23.3333,
+        "end_s": 34.8667,
+        "duration_s": 11.5334,
+        "start_frame": 700,
+        "end_frame": 1046
+      },
+      {
+        "sid": "S06",
+        "start_s": 34.8667,
+        "end_s": 45.4667,
+        "duration_s": 10.6,
+        "start_frame": 1046,
+        "end_frame": 1364
+      },
+      {
+        "sid": "S07",
+        "start_s": 45.4667,
+        "end_s": 56.7,
+        "duration_s": 11.2333,
+        "start_frame": 1364,
+        "end_frame": 1701
+      },
+      {
+        "sid": "S08",
+        "start_s": 56.7,
+        "end_s": 68.6667,
+        "duration_s": 11.9667,
+        "start_frame": 1701,
+        "end_frame": 2060
+      },
+      {
+        "sid": "S09",
+        "start_s": 68.6667,
+        "end_s": 81.0667,
+        "duration_s": 12.4,
+        "start_frame": 2060,
+        "end_frame": 2432
+      }
+    ]
+  },
+  "subtitle_version": {
+    "version": "1.0",
+    "style": "cinema_boxless",
+    "emphasis_mode": "color_accent",
+    "word_by_word_animation": false,
+    "cue_count": 42,
+    "srt_path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\subtitles.srt"
+  },
+  "thumbnail_variants": {
+    "primary_thumbnail_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\thumbnail.jpg",
+    "mobile_preview_sheet_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\thumbnail_small_preview_sheet.jpg",
+    "concepts_comparison_sheet_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\thumbnail_concepts_comparison_sheet.jpg",
+    "concepts": [
+      {
+        "concept_id": "A",
+        "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\thumbnail_concept_A.jpg",
+        "source_asset": "nasa_helheim_glacier_aquifer.mp4",
+        "matches_opening_scene_asset": true,
+        "headline_text": "LIQUID RIVER|INSIDE ICE",
+        "headline_word_count": 4,
+        "kicker_text": "",
+        "concept_rationale": "Primary opening-matched focal subject + concise curiosity hook",
+        "size_kb": 580.9,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "nasa_helheim_glacier_aquifer.mp4",
+          "sharpness_score": 0.98,
+          "subject_separation_score": 73.01,
+          "combined_score": 40.6,
+          "recommended_cx": 0.4684,
+          "recommended_cy": 0.5648
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "B",
+        "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\thumbnail_concept_B.jpg",
+        "source_asset": "nasa_helheim_glacier_aquifer.mp4",
+        "matches_opening_scene_asset": true,
+        "headline_text": "",
+        "headline_word_count": 0,
+        "kicker_text": "",
+        "concept_rationale": "Pure authentic phenomenon close-up with zero text overlay",
+        "size_kb": 552.7,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "nasa_helheim_glacier_aquifer.mp4",
+          "sharpness_score": 0.98,
+          "subject_separation_score": 73.01,
+          "combined_score": 40.6,
+          "recommended_cx": 0.4684,
+          "recommended_cy": 0.5648
+        },
+        "actual_analytics_outcome": null
+      }
+    ]
+  },
+  "rendering_configuration": {
+    "output_spec": {
+      "aspect_ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video_codec_master": "libx264",
+      "video_crf_master": 15,
+      "video_preset_master": "medium",
+      "video_profile": "high",
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "audio_codec": "aac",
+      "audio_bitrate": "192k",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "target_loudness_lufs": -16.0
+    },
+    "color_science": {
+      "enable_filmic_grade": true,
+      "cast_tame_strength": 0.16,
+      "luma_grain_sigma": 2.2
+    },
+    "benchmarks": {
+      "slug": "test-b-medium-glacier-aquifer",
+      "encode_mode": "master",
+      "shots_render_or_cache_s": 0.016,
+      "timeline_assembly_and_mux_s": 148.435,
+      "thumbnail_concepts_s": 3.6,
+      "total_render_master_s": 152.247,
+      "rendered_frames": 2432,
+      "effective_render_fps": 15.97
+    }
+  },
+  "qa_results": {
+    "qc_measurements_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\qc_measurements.json",
+    "qc_report_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\qc_report.md",
+    "summary": {
+      "overall_pass": false,
+      "failed_gates_count": 3,
+      "moving_footage_pct": 100.0,
+      "whisper_normalized_match_ratio": 0.9926,
+      "integrated_lufs": -16.0,
+      "true_peak_dbtp": -1.5,
+      "protected_projects_intact": false
+    }
+  },
+  "studio_v7_intelligence": {
+    "adaptive_audio_profile": "mystery_and_discovery",
+    "music_plan_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\music_plan.json",
+    "ambience_plan_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\ambience_plan.json",
+    "sfx_plan_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\sfx_plan.json",
+    "scene_optimization_report_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\scene_optimization_report.json",
+    "unified_av_timeline_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\unified_av_timeline.json",
+    "creative_qa_report_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\creative_qa_report.json",
+    "scene_optimization_counts": {
+      "Keep": 7,
+      "Merge": 1,
+      "Replace": 0,
+      "Remove": 1
+    },
+    "music_sections_count": 2,
+    "ambience_sections_count": 3,
+    "approved_sfx_count": 2,
+    "creative_qa_pass": false
+  },
+  "final_output_locations": {
+    "output_dir": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer",
+    "master_mp4": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\test-b-medium-glacier-aquifer.mp4",
+    "primary_thumbnail_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\thumbnail.jpg",
+    "subtitles_srt": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\subtitles.srt",
+    "script_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\script.md",
+    "retention_plan_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\retention_plan.md",
+    "storyboard_manifest_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\storyboard_and_shot_manifest.md",
+    "youtube_metadata_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\youtube_metadata.md",
+    "qc_report_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\qc_report.md"
+  }
+}

@@ -1,0 +1,1068 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "active_tts_provider": "edge_tts",
+  "segmentation_method": "contrast_directed_rms_matched_segmented",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "scientific_authority",
+  "pronunciation_sig": "d4e9baa017fbcdb7a20688ea2927939753ad95e0851d863101cc4bfae32e624a",
+  "total_duration_s": 37.0667,
+  "total_frames_30fps": 1112,
+  "continuity_review": {
+    "segment_count": 7,
+    "max_adjacent_rms_jump_db": 0.72,
+    "max_spectral_centroid_ratio": 1.154,
+    "clipped_word_boundaries_count": 0,
+    "unnatural_pause_count": 0,
+    "continuity_pass": true,
+    "issues": [],
+    "joins": [
+      {
+        "from_sentence": 0,
+        "to_sentence": 1,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.045,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 1,
+        "to_sentence": 2,
+        "rms_jump_db": 0.27,
+        "spectral_centroid_ratio": 1.04,
+        "pause_s": 0.38
+      },
+      {
+        "from_sentence": 2,
+        "to_sentence": 3,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.154,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 3,
+        "to_sentence": 4,
+        "rms_jump_db": 0.37,
+        "spectral_centroid_ratio": 1.098,
+        "pause_s": 0.4
+      },
+      {
+        "from_sentence": 4,
+        "to_sentence": 5,
+        "rms_jump_db": 0.01,
+        "spectral_centroid_ratio": 1.008,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 5,
+        "to_sentence": 6,
+        "rms_jump_db": 0.72,
+        "spectral_centroid_ratio": 1.017,
+        "pause_s": 0.42
+      }
+    ]
+  },
+  "contrast_summary": {
+    "legacy_v6_fallback": true
+  },
+  "invalidated_artifacts": [],
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "In East Antarctica, crimson water pours straight out of solid white glacier ice. Even at minus seventeen degrees Celsius, the flow never freezes.",
+      "delivery": "MYSTERIOUS",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "start": 0.1,
+      "end": 8.994,
+      "duration": 8.894,
+      "pause_after": 0.38,
+      "emphasis_words": [
+        "crimson",
+        "minus seventeen"
+      ]
+    },
+    {
+      "seg_id": "N02",
+      "text": "In 1911, early explorers blamed red surface algae. Chemical sampling decades later ruled algae out completely and pointed to dissolved iron.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "start": 9.374,
+      "end": 17.935,
+      "duration": 8.561,
+      "pause_after": 0.4,
+      "emphasis_words": [
+        "1911",
+        "iron"
+      ]
+    },
+    {
+      "seg_id": "N03",
+      "text": "Ice-penetrating radar traced the brine to hypersaline seawater trapped four hundred meters underground. High salt content lowers its freezing point, and dissolved iron rusts red when it meets air.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 18.475,
+      "end": 28.856,
+      "duration": 10.381,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "radar",
+        "four hundred",
+        "rusts red"
+      ]
+    },
+    {
+      "seg_id": "N04",
+      "text": "Researchers are still studying how completely sealed those deep microbes remain, yet they survive in total darkness without oxygen.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "start": 29.276,
+      "end": 36.642,
+      "duration": 7.366,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "still studying",
+        "darkness"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "In East Antarctica, crimson water pours straight out of solid white glacier ice.",
+      "delivery": "MYSTERIOUS",
+      "emotional_tone": "curious_restraint",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "crimson"
+      ],
+      "start_s": 0.1,
+      "end_s": 4.914,
+      "cache_key": "a14caaaf087ab69c9b9c",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N01",
+      "text": "Even at minus seventeen degrees Celsius, the flow never freezes.",
+      "delivery": "MYSTERIOUS",
+      "emotional_tone": "curious_restraint",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 380,
+      "emphasis_phrases": [
+        "minus seventeen"
+      ],
+      "start_s": 5.154,
+      "end_s": 8.994,
+      "cache_key": "50f37efbe395125202ac",
+      "cache_hit": false,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "In 1911, early explorers blamed red surface algae.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "confident_clarity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "1911"
+      ],
+      "start_s": 9.374,
+      "end_s": 12.951,
+      "cache_key": "d562228b1098eccc5571",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N02",
+      "text": "Chemical sampling decades later ruled algae out completely and pointed to dissolved iron.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "confident_clarity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 400,
+      "emphasis_phrases": [
+        "iron"
+      ],
+      "start_s": 13.191,
+      "end_s": 17.935,
+      "cache_key": "ec9212b1162500d24d27",
+      "cache_hit": false,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N03",
+      "text": "Ice-penetrating radar traced the brine to hypersaline seawater trapped four hundred meters underground.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 140,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "radar",
+        "four hundred"
+      ],
+      "start_s": 18.475,
+      "end_s": 23.862,
+      "cache_key": "3fa0d73d71014186a1fc",
+      "cache_hit": false,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.01
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->bounded_prosody(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N03",
+      "text": "High salt content lowers its freezing point, and dissolved iron rusts red when it meets air.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "rusts red"
+      ],
+      "start_s": 24.102,
+      "end_s": 28.856,
+      "cache_key": "5936d102dcfdef1b5a67",
+      "cache_hit": false,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.01
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->bounded_prosody(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N04",
+      "text": "Researchers are still studying how completely sealed those deep microbes remain, yet they survive in total darkness without oxygen.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "credible_reflection",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "still studying",
+        "darkness"
+      ],
+      "start_s": 29.276,
+      "end_s": 36.642,
+      "cache_key": "311c4f082d32c1d71cdb",
+      "cache_hit": false,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "In",
+      "start": 0.1,
+      "end": 0.284,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "East",
+      "start": 0.248,
+      "end": 0.498,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Antarctica",
+      "start": 0.511,
+      "end": 1.208,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "crimson",
+      "start": 1.314,
+      "end": 1.708,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "water",
+      "start": 1.722,
+      "end": 2.077,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "pours",
+      "start": 2.09,
+      "end": 2.432,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "straight",
+      "start": 2.445,
+      "end": 2.814,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "out",
+      "start": 2.827,
+      "end": 2.998,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "of",
+      "start": 3.011,
+      "end": 3.103,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "solid",
+      "start": 3.116,
+      "end": 3.432,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "white",
+      "start": 3.445,
+      "end": 3.735,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "glacier",
+      "start": 3.748,
+      "end": 4.301,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "ice",
+      "start": 4.314,
+      "end": 4.827,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Even",
+      "start": 5.154,
+      "end": 5.509,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "at",
+      "start": 5.412,
+      "end": 5.504,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "minus",
+      "start": 5.517,
+      "end": 5.873,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "seventeen",
+      "start": 5.886,
+      "end": 6.346,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "degrees",
+      "start": 6.36,
+      "end": 6.767,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "Celsius",
+      "start": 6.781,
+      "end": 7.36,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "the",
+      "start": 7.504,
+      "end": 7.596,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "flow",
+      "start": 7.61,
+      "end": 7.886,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "never",
+      "start": 7.899,
+      "end": 8.188,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "freezes",
+      "start": 8.202,
+      "end": 8.899,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "In 1911",
+      "start": 9.374,
+      "end": 10.386,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "early",
+      "start": 10.427,
+      "end": 10.677,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "explorers",
+      "start": 10.69,
+      "end": 11.252,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "blamed",
+      "start": 11.265,
+      "end": 11.627,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "red",
+      "start": 11.64,
+      "end": 11.927,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "surface",
+      "start": 11.94,
+      "end": 12.377,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "algae",
+      "start": 12.39,
+      "end": 12.877,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Chemical",
+      "start": 13.191,
+      "end": 13.641,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "sampling",
+      "start": 13.557,
+      "end": 14.057,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "decades",
+      "start": 14.07,
+      "end": 14.495,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "later",
+      "start": 14.507,
+      "end": 14.795,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "ruled",
+      "start": 14.807,
+      "end": 15.145,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "algae",
+      "start": 15.157,
+      "end": 15.595,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "out",
+      "start": 15.607,
+      "end": 15.82,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "completely",
+      "start": 15.832,
+      "end": 16.345,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "and",
+      "start": 16.357,
+      "end": 16.495,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "pointed",
+      "start": 16.507,
+      "end": 16.882,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "to",
+      "start": 16.895,
+      "end": 16.97,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "dissolved",
+      "start": 16.982,
+      "end": 17.457,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "iron",
+      "start": 17.47,
+      "end": 17.857,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "Ice-penetrating",
+      "start": 18.475,
+      "end": 19.354,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "radar",
+      "start": 19.271,
+      "end": 19.593,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "traced",
+      "start": 19.605,
+      "end": 19.94,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 19.952,
+      "end": 20.026,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "brine",
+      "start": 20.039,
+      "end": 20.36,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "to",
+      "start": 20.373,
+      "end": 20.459,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "hypersaline",
+      "start": 20.472,
+      "end": 21.289,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "seawater",
+      "start": 21.301,
+      "end": 21.808,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "trapped",
+      "start": 21.821,
+      "end": 22.143,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "four",
+      "start": 22.155,
+      "end": 22.341,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "hundred",
+      "start": 22.353,
+      "end": 22.675,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "meters",
+      "start": 22.687,
+      "end": 23.034,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "underground",
+      "start": 23.046,
+      "end": 23.789,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "High",
+      "start": 24.102,
+      "end": 24.35,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "salt",
+      "start": 24.263,
+      "end": 24.56,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "content",
+      "start": 24.573,
+      "end": 24.981,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "lowers",
+      "start": 24.993,
+      "end": 25.29,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "its",
+      "start": 25.303,
+      "end": 25.439,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "freezing",
+      "start": 25.451,
+      "end": 25.86,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "point",
+      "start": 25.872,
+      "end": 26.231,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "and",
+      "start": 26.466,
+      "end": 26.528,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "dissolved",
+      "start": 26.54,
+      "end": 26.974,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "iron",
+      "start": 26.986,
+      "end": 27.246,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "rusts",
+      "start": 27.258,
+      "end": 27.568,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "red",
+      "start": 27.58,
+      "end": 27.877,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "when",
+      "start": 27.889,
+      "end": 28.038,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "it",
+      "start": 28.05,
+      "end": 28.137,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "meets",
+      "start": 28.149,
+      "end": 28.459,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "air",
+      "start": 28.471,
+      "end": 28.731,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Researchers",
+      "start": 29.276,
+      "end": 29.96,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "are",
+      "start": 29.875,
+      "end": 30.006,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "still",
+      "start": 30.02,
+      "end": 30.348,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "studying",
+      "start": 30.362,
+      "end": 30.822,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "how",
+      "start": 30.835,
+      "end": 31.006,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "completely",
+      "start": 31.02,
+      "end": 31.546,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "sealed",
+      "start": 31.559,
+      "end": 31.941,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "those",
+      "start": 31.954,
+      "end": 32.191,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "deep",
+      "start": 32.204,
+      "end": 32.48,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "microbes",
+      "start": 32.493,
+      "end": 33.059,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "remain",
+      "start": 33.072,
+      "end": 33.546,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "yet",
+      "start": 33.691,
+      "end": 33.796,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "they",
+      "start": 33.809,
+      "end": 33.941,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "survive",
+      "start": 33.954,
+      "end": 34.467,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "in",
+      "start": 34.48,
+      "end": 34.598,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "total",
+      "start": 34.612,
+      "end": 35.006,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "darkness",
+      "start": 35.02,
+      "end": 35.506,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "without",
+      "start": 35.52,
+      "end": 35.941,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "oxygen",
+      "start": 35.954,
+      "end": 36.572,
+      "emphasis": false
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "chapter_whoosh_soft",
+      "time_s": 0.0,
+      "gain_db": -22.0
+    },
+    {
+      "sfx_name": "sonar_ping_deep",
+      "time_s": 9.267,
+      "gain_db": -22.0
+    },
+    {
+      "sfx_name": "ice_creak_subtle",
+      "time_s": 0.55,
+      "gain_db": -25.0
+    }
+  ],
+  "diegetic_nat_sound_active": true,
+  "adaptive_audio_profile": "legacy_v6",
+  "music_sections_count": 1,
+  "ambience_sections_count": 1,
+  "scene_optimization_counts": {
+    "Keep": 7,
+    "Merge": 0,
+    "Replace": 0,
+    "Remove": 0
+  },
+  "audio_layers_exported": [
+    "layer_1_narration",
+    "layer_2_music",
+    "layer_3_ambience",
+    "layer_4_natural_sounds",
+    "layer_5_cinematic_sfx"
+  ],
+  "audio_diagnostics": {
+    "integrated_lufs": -16.0,
+    "loudness_range_lra_lu": 1.4,
+    "true_peak_dbtp": -1.5,
+    "speech_crest_factor_db": 14.5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -1.52
+  }
+}

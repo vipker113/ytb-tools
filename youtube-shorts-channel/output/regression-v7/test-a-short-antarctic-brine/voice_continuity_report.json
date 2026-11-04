@@ -1,0 +1,53 @@
+{
+  "segment_count": 7,
+  "max_adjacent_rms_jump_db": 0.72,
+  "max_spectral_centroid_ratio": 1.163,
+  "clipped_word_boundaries_count": 0,
+  "unnatural_pause_count": 0,
+  "continuity_pass": true,
+  "issues": [],
+  "joins": [
+    {
+      "from_sentence": 0,
+      "to_sentence": 1,
+      "rms_jump_db": 0.05,
+      "spectral_centroid_ratio": 1.044,
+      "pause_s": 0.24
+    },
+    {
+      "from_sentence": 1,
+      "to_sentence": 2,
+      "rms_jump_db": 0.27,
+      "spectral_centroid_ratio": 1.042,
+      "pause_s": 0.38
+    },
+    {
+      "from_sentence": 2,
+      "to_sentence": 3,
+      "rms_jump_db": 0.02,
+      "spectral_centroid_ratio": 1.163,
+      "pause_s": 0.24
+    },
+    {
+      "from_sentence": 3,
+      "to_sentence": 4,
+      "rms_jump_db": 0.37,
+      "spectral_centroid_ratio": 1.102,
+      "pause_s": 0.4
+    },
+    {
+      "from_sentence": 4,
+      "to_sentence": 5,
+      "rms_jump_db": 0.02,
+      "spectral_centroid_ratio": 1.008,
+      "pause_s": 0.24
+    },
+    {
+      "from_sentence": 5,
+      "to_sentence": 6,
+      "rms_jump_db": 0.72,
+      "spectral_centroid_ratio": 1.02,
+      "pause_s": 0.42
+    }
+  ]
+}

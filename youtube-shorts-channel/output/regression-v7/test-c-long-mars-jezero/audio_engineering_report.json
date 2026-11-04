@@ -1,0 +1,57 @@
+{
+  "slug": "test-c-long-mars-jezero",
+  "engine_version": "7.0",
+  "legacy_v6_fallback": false,
+  "voice_input_mode": "directed_tts",
+  "scene_audio_profile": "space_vacuum_restrained",
+  "adaptive_audio_profile": "mystery_and_discovery",
+  "scene_optimization_counts": {
+    "Keep": 12,
+    "Merge": 1,
+    "Replace": 1,
+    "Remove": 1
+  },
+  "music_sections_count": 3,
+  "ambience_sections_count": 0,
+  "approved_sfx_count": 0,
+  "rejected_sfx_count": 3,
+  "bed_calibration": {
+    "pre_bed_lufs": -41.2,
+    "ceiling_lufs": -27.4,
+    "applied_bed_gain_db": 0.0,
+    "post_bed_lufs": -41.2
+  },
+  "voice_to_bed_margin_lu": 25.3,
+  "stem_loudness_lufs": {
+    "narration": -15.9,
+    "music": -41.2,
+    "ambience": -70.0,
+    "natural_sounds": -70.0,
+    "cinematic_sfx": -70.0,
+    "combined_bed": -41.2
+  },
+  "stems": {
+    "layer_1_narration": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-c-long-mars-jezero\\work_audio\\layer_1_narration.wav",
+    "layer_2_music": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-c-long-mars-jezero\\work_audio\\layer_2_music.wav",
+    "layer_3_ambience": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-c-long-mars-jezero\\work_audio\\layer_3_ambience.wav",
+    "layer_4_natural_sounds": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-c-long-mars-jezero\\work_audio\\layer_4_natural_sounds.wav",
+    "layer_5_cinematic_sfx": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-c-long-mars-jezero\\work_audio\\layer_5_cinematic_sfx.wav"
+  },
+  "layers_active": {
+    "narration": true,
+    "music": true,
+    "ambience": false,
+    "natural_sounds": false,
+    "cinematic_sfx": false
+  },
+  "diagnostics": {
+    "integrated_lufs": -16.0,
+    "loudness_range_lra_lu": 1.6,
+    "true_peak_dbtp": -1.5,
+    "speech_crest_factor_db": 14.5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -1.5
+  }
+}

@@ -1,0 +1,344 @@
+manifest_version: "7.0"
+script_version: "1.0"
+subtitle_version: "1.0"
+channel_name: "Proof of Wonder"
+playlist: "Hidden Earth"
+topic: "Greenland's perennial liquid firn aquifer beneath Helheim Glacier and ocean nutrient transport"
+slug: "test-b-medium-glacier-aquifer"
+style_profile: "mysterious_earth_exploration"
+adaptive_audio_profile: "mystery_and_discovery"
+adaptive_duration_mode: true
+enable_intelligent_scene_editing: true
+voice_direction_profile: "mysterious_discovery"
+voice: "en-GB-RyanNeural"
+ambience_preset: "polar_glacial"
+
+primary_title: "The Hidden Liquid River Inside Greenland's Ice"
+alternative_title: "Why Water Stayed Liquid Inside Subzero Greenland Ice"
+youtube_description: "How glaciologists drilling near Helheim Glacier discovered a perennial liquid aquifer insulated beneath subzero snow, draining into the deep North Atlantic."
+hashtags: ["#greenland", "#glacier", "#oceanscience", "#documentary"]
+opening_hook_type: "credible_mystery"
+
+raw_assets_dir: "assets/raw_footage/regression_v7_medium_ocean"
+extra_assets_dirs:
+  - "assets/raw_footage/hidden_earth_blood_falls_v3"
+output_dir: "output/regression-v7/test-b-medium-glacier-aquifer"
+
+editorial_formula:
+  hook_max_start_s: 2.0
+  layer2_pivot_seg_id: "N04"
+  scientific_caveat_seg_id: "N07"
+  min_real_evidence_ratio: 0.85
+
+narration_segments:
+  - seg_id: "N01"
+    text: "Twenty meters beneath Greenland's frozen surface, trillions of liters of liquid water never freeze. Across thousands of square kilometers, a hidden reservoir flows inside solid polar ice."
+    delivery: "MYSTERIOUS"
+    emotional_tone: "curious_restraint"
+    pace: "SLOW"
+    energy: 2
+    pause_after_s: 0.44
+    emphasis_words: ["Twenty meters", "never freeze"]
+    narrative_beat: "opening_hook"
+    viewer_question: "How can liquid water survive inside subzero Greenland ice?"
+    new_information: "A vast perennial liquid aquifer spans thousands of square kilometers inside Greenland's ice sheet."
+
+  - seg_id: "N02"
+    text: "Even through minus thirty degree winter nights, this buried water stays liquid inside porous snow. Until 2011, ice models assumed summer meltwater simply refroze near the surface."
+    delivery: "CALM_EXPLORATION"
+    emotional_tone: "immersive_inquiry"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_s: 0.42
+    emphasis_words: ["minus thirty", "2011"]
+    narrative_beat: "curiosity_gap"
+    viewer_question: "Why did climate models miss this underground water?"
+    new_information: "Prior to 2011 core drilling, models assumed summer meltwater refroze in winter."
+
+  - seg_id: "N03"
+    text: "While drilling cores near Helheim Glacier, field teams pulled up dripping wet snow from twenty meters down. Heavy autumn snowfall acts like an insulating blanket, sealing summer warmth inside."
+    delivery: "SCIENTIFIC_AUTHORITY"
+    emotional_tone: "confident_explanation"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_s: 0.44
+    emphasis_words: ["Helheim Glacier", "insulating blanket"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "What physical mechanism keeps the aquifer from freezing?"
+    new_information: "Thick autumn snow insulates the porous firn layer from bitter winter air."
+
+  - seg_id: "N04"
+    text: "Airborne radar flights and ground sensors then uncovered a deeper surprise. That buried water does not stay locked in place. It drains downward through deep crevasses toward the glacier bed."
+    delivery: "SURPRISED_BUT_CONTROLLED"
+    emotional_tone: "controlled_discovery"
+    pace: "NATURAL"
+    energy: 4
+    pause_before_s: 0.16
+    pause_after_s: 0.46
+    emphasis_words: ["radar", "crevasses", "glacier bed"]
+    narrative_beat: "escalation"
+    viewer_question: "Where does all of that hidden glacier water go?"
+    new_information: "Deep crevasse fractures route aquifer water downward to the bedrock."
+
+  - seg_id: "N05"
+    text: "At the bedrock, pressurized water lubricates the ice base and speeds glacier motion toward dark coastal fjords. Freshwater plumes then rise from hundreds of meters below the sea surface."
+    delivery: "SCIENTIFIC_AUTHORITY"
+    emotional_tone: "measured_gravity"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_s: 0.44
+    emphasis_words: ["lubricates", "coastal fjords"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "What happens when aquifer water reaches the base of the glacier?"
+    new_information: "Basal water lubricates ice sliding and injects buoyant freshwater plumes into deep fjords."
+
+  - seg_id: "N06"
+    text: "When mineral-rich meltwater enters the North Atlantic, ocean expeditions track how it stirs surface nutrients above the deep twilight zone. Hidden glacier plumbing shapes marine food webs miles offshore."
+    delivery: "CINEMATIC_REVEAL"
+    emotional_tone: "earned_significance"
+    pace: "SLOW"
+    energy: 4
+    pause_after_s: 0.46
+    emphasis_words: ["North Atlantic", "twilight zone"]
+    narrative_beat: "payoff"
+    viewer_question: "How does subglacial drainage affect open-ocean life?"
+    new_information: "Glacial meltwater plumes deliver iron and silica nutrients above the ocean twilight zone."
+
+  - seg_id: "N07"
+    text: "Glaciologists are still studying how fast these aquifers drain into the sea, so long-term sea-level forecasts remain an open question. Beneath solid white ice, a dark river keeps moving."
+    delivery: "EMOTIONAL_REFLECTION"
+    emotional_tone: "reflective_resonance"
+    pace: "SLOW"
+    energy: 2
+    pause_after_s: 0.45
+    emphasis_words: ["still studying", "open question"]
+    narrative_beat: "final_impression"
+    viewer_question: "What remains unresolved for future sea-level projections?"
+    new_information: "Exact aquifer drainage rates into the ocean remain an active research question."
+
+sfx_cues:
+  - sfx_name: "subterranean_gate_boom"
+    anchor_type: "shot_start"
+    anchor_ref: "S04"
+    gain_db: -20.0
+    purpose: "Decorative transition boom (rejected by v7 sfx_planner)"
+  - sfx_name: "ice_creak_subtle"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.65
+    gain_db: -24.5
+    purpose: "Subtle glacier firn creak as researchers cross Helheim ice"
+    visual_event: "Glacier surface and crevasse field"
+  - sfx_name: "hydrophone_current_swell"
+    anchor_type: "shot_start"
+    anchor_ref: "S08"
+    offset_s: 0.50
+    gain_db: -24.0
+    purpose: "Restrained deep-water swell as ocean research vessel deploys sensors"
+    visual_event: "Ocean research vessel working in deep North Atlantic water"
+
+shots:
+  - sid: "S01"
+    start_s: 0.0
+    end_s: 8.5
+    kind: "video_full"
+    src_file: "nasa_helheim_glacier_aquifer.mp4"
+    src_in: 2.0
+    camera_perspective: "aerial"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds", "cinematic_sfx"]
+    associated_seg_id: "N01"
+    story_beat: "Aerial sweep over Greenland's Helheim Glacier ice sheet"
+    visual_desc: "Aerial footage of Greenland glacier ice sheet and crevasse field"
+    editorial_rationale: "Opens immediately on real Helheim Glacier moving footage"
+
+  - sid: "S02"
+    start_s: 8.5
+    end_s: 12.5
+    kind: "video_full"
+    src_file: "nasa_helheim_glacier_aquifer.mp4"
+    src_in: 9.0
+    camera_perspective: "aerial"
+    visual_complexity: "medium"
+    spoken_importance: "context"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    associated_seg_id: "N01"
+    story_beat: "Duplicate aerial glacier sweep seeded for Merge"
+    visual_desc: "Same Greenland glacier ice sheet aerial sweep"
+    editorial_rationale: "Consecutive same-asset shot merged by scene_editor"
+
+  - sid: "S03"
+    start_s: 12.5
+    end_s: 23.5
+    kind: "video_full"
+    src_file: "nasa_icebridge_fieldwork_2017.mp4"
+    src_in: 4.0
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    has_human_interaction: true
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    associated_seg_id: "N02"
+    story_beat: "Polar scientists and NASA IceBridge instruments surveying subzero snow"
+    visual_desc: "Polar researchers operating snow and ice survey instruments on glacier"
+    editorial_rationale: "Shows real polar scientific team investigating snowpack layers"
+
+  - sid: "S04"
+    start_s: 23.5
+    end_s: 34.5
+    kind: "video_full"
+    src_file: "nasa_helheim_glacier_aquifer.mp4"
+    src_in: 26.0
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    has_human_interaction: true
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    associated_seg_id: "N03"
+    story_beat: "Helheim Glacier firn drilling and buried liquid water layer"
+    visual_desc: "Scientists on Helheim Glacier studying porous firn snow aquifer"
+    editorial_rationale: "Demonstrates the insulating snow blanket and firn core discovery"
+
+  - sid: "S05"
+    start_s: 34.5
+    end_s: 35.7
+    kind: "still_full"
+    src_file: "bf_aerial_2013.jpg"
+    camera_perspective: "wide"
+    visual_complexity: "low"
+    spoken_importance: "context"
+    scene_audio_layers: ["narration", "ambience"]
+    associated_seg_id: "N03"
+    story_beat: "Decorative filler b-roll still"
+    visual_desc: "Decorative filler shot"
+    editorial_rationale: "Seeded filler shot to verify automatic Remove decision"
+
+  - sid: "S06"
+    start_s: 35.7
+    end_s: 47.0
+    kind: "video_full"
+    src_file: "nasa_icebridge_fieldwork_2017.mp4"
+    src_in: 22.0
+    camera_perspective: "first_person_pov"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    has_human_interaction: true
+    transition_in: "dissolve"
+    transition_duration_s: 0.60
+    transition_reason: "Pivot from surface snowpack to deep radar crevasse drainage"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    associated_seg_id: "N04"
+    story_beat: "Airborne radar flight mapping deep glacier crevasse drainage"
+    visual_desc: "NASA IceBridge aircraft radar survey over deep glacier fractures"
+    editorial_rationale: "Visualizes the radar pivot revealing crevasse drainage to bedrock"
+
+  - sid: "S07"
+    start_s: 47.0
+    end_s: 58.0
+    kind: "video_full"
+    src_file: "nasa_helheim_glacier_aquifer.mp4"
+    src_in: 38.0
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    associated_seg_id: "N05"
+    story_beat: "Glacier meltwater lubricating ice motion toward dark coastal fjord"
+    visual_desc: "Helheim Glacier terminus meeting deep fjord ocean water"
+    editorial_rationale: "Bridges basal glacier lubrication to deep coastal fjords"
+
+  - sid: "S08"
+    start_s: 58.0
+    end_s: 69.5
+    kind: "video_full"
+    src_file: "nasa_exports_twilight_ocean.mp4"
+    src_in: 6.0
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    has_human_interaction: true
+    transition_in: "dissolve"
+    transition_duration_s: 0.65
+    transition_reason: "Location shift from Greenland glacier terminus to open ocean research vessel"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds", "cinematic_sfx"]
+    associated_seg_id: "N06"
+    story_beat: "Ocean research vessel tracking nutrients above the deep twilight zone"
+    visual_desc: "Oceanographers aboard research ship deploying underwater sensors into deep ocean"
+    editorial_rationale: "Connects glacial meltwater runoff to deep-ocean marine ecosystem research"
+
+  - sid: "S09"
+    start_s: 69.5
+    end_s: 80.5
+    kind: "video_full"
+    src_file: "nasa_exports_twilight_ocean.mp4"
+    src_in: 24.0
+    camera_perspective: "extreme_wide"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    associated_seg_id: "N07"
+    story_beat: "Open dark ocean horizon as researchers measure ongoing drainage rates"
+    visual_desc: "Wide ocean research horizon at dusk during deep sea expedition"
+    editorial_rationale: "Reflective closing image supporting the sea-level caveat"
+
+thumbnail_spec:
+  concept_id: "A"
+  src_file: "nasa_helheim_glacier_aquifer.mp4"
+  src_time_s: 8.0
+  headline_text: "LIQUID RIVER|INSIDE ICE"
+  accent_line_index: 1
+
+assets_register:
+  - local_file: "nasa_helheim_glacier_aquifer.mp4"
+    title: "Water in Helheim Glacier Makes Its Way to the Ocean"
+    creator_agency: "NASA Goddard Space Flight Center"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20170215_Helheim_m12509_Aquifer"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20170215_Helheim_m12509_Aquifer/collection.json"
+    license: "Public Domain (17 U.S.C. § 105)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "NASA GSFC"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "nasa_icebridge_fieldwork_2017.mp4"
+    title: "NASA Operation IceBridge Polar Survey Fieldwork"
+    creator_agency: "NASA Goddard Space Flight Center"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20180213_Big_Year_OIB_m12860_2017"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20180213_Big_Year_OIB_m12860_2017/collection.json"
+    license: "Public Domain (17 U.S.C. § 105)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "NASA GSFC / Operation IceBridge"
+    media_type: "video"
+    priority_tier: 2
+
+  - local_file: "nasa_exports_twilight_ocean.mp4"
+    title: "NASA EXPORTS Two Research Vessels Leave for the Ocean Twilight Zone"
+    creator_agency: "NASA Goddard Space Flight Center"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20180808_m13032_EXPORTS"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20180808_m13032_EXPORTS/collection.json"
+    license: "Public Domain (17 U.S.C. § 105)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "NASA GSFC / EXPORTS"
+    media_type: "video"
+    priority_tier: 1
+
+  - local_file: "bf_aerial_2013.jpg"
+    title: "Aerial Glacier Terminus Reference"
+    creator_agency: "National Science Foundation"
+    source_page_url: "https://photolibrary.usap.gov/"
+    direct_media_url: "https://photolibrary.usap.gov/"
+    license: "Public Domain (US Federal Government / NSF)"
+    license_url: "https://creativecommons.org/publicdomain/mark/1.0/"
+    required_attribution: "NSF"
+    media_type: "photo"
+    priority_tier: 5
+
+factual_references:
+  - citation: "Forster et al. (2014), Extensive liquid meltwater storage in firn within the Greenland ice sheet, Nature Geoscience 7, 95-98"
+    url: "https://doi.org/10.1038/ngeo2043"
+    doi: "10.1038/ngeo2043"
+    supported_claims: "Discovery of perennial liquid firn aquifer insulated by high snow accumulation"
+  - citation: "Miller et al. (2017), Basal drainage of Helheim Glacier firn aquifer, Geophysical Research Letters"
+    url: "https://svs.gsfc.nasa.gov/12509"
+    supported_claims: "Crevasse pathways draining Helheim Glacier firn water toward bedrock and ocean"

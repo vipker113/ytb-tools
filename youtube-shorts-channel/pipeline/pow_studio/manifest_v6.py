@@ -222,6 +222,20 @@ def export_versioned_production_manifest(
             ),
         },
         # 14. Final output locations
+        "studio_v7_intelligence": {
+            "adaptive_audio_profile": audio_rep.get("adaptive_audio_profile", wt.get("adaptive_audio_profile", "auto")),
+            "music_plan_json": str(out_dir / "music_plan.json"),
+            "ambience_plan_json": str(out_dir / "ambience_plan.json"),
+            "sfx_plan_json": str(out_dir / "sfx_plan.json"),
+            "scene_optimization_report_json": str(out_dir / "scene_optimization_report.json"),
+            "unified_av_timeline_json": str(out_dir / "unified_av_timeline.json"),
+            "creative_qa_report_json": str(out_dir / "creative_qa_report.json"),
+            "scene_optimization_counts": audio_rep.get("scene_optimization_counts", wt.get("scene_optimization_counts", {})),
+            "music_sections_count": audio_rep.get("music_sections_count", wt.get("music_sections_count", 0)),
+            "ambience_sections_count": audio_rep.get("ambience_sections_count", wt.get("ambience_sections_count", 0)),
+            "approved_sfx_count": audio_rep.get("approved_sfx_count", len(wt.get("sfx_applied", []))),
+            "creative_qa_pass": (qc or {}).get("creative_qa", {}).get("creative_qa_pass", True),
+        },
         "final_output_locations": {
             "output_dir": str(out_dir.resolve()),
             "master_mp4": str((out_dir / f"{manifest.slug}.mp4").resolve()),
@@ -237,4 +251,5 @@ def export_versioned_production_manifest(
 
     manifest_out = out_dir / "production_manifest_v6.json"
     manifest_out.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    (out_dir / "production_manifest_v7.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
     return payload

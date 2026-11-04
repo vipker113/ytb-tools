@@ -1,0 +1,685 @@
+{
+  "slug": "test-b-medium-glacier-aquifer",
+  "active_tts_provider": "edge_tts",
+  "elevenlabs_configured": false,
+  "elevenlabs_target_model": "eleven_multilingual_v2",
+  "segmentation_strategy": {
+    "method": "contrast_directed_rms_matched_segmented",
+    "reason": "Multi-beat emotional contrast active; using bounded prosody + active RMS matching + raised-cosine fades + studio room-tone bed."
+  },
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "voice_identity": "en-GB-RyanNeural",
+  "sentence_count": 15,
+  "sentence_cache_hits": 15,
+  "contrast_guardrail_summary": {
+    "sentence_count": 15,
+    "distinct_delivery_styles": [
+      "CALM_EXPLORATION",
+      "CINEMATIC_REVEAL",
+      "EMOTIONAL_REFLECTION",
+      "MYSTERIOUS",
+      "SCIENTIFIC_AUTHORITY",
+      "SURPRISED_BUT_CONTROLLED"
+    ],
+    "distinct_delivery_count": 6,
+    "energy_min": 2,
+    "energy_max": 4,
+    "energy_span": 2,
+    "blocked_theatrical_count": 0,
+    "rebalanced_overdrama_count": 0,
+    "contrast_healthy": true,
+    "guardrail_notes": []
+  },
+  "continuity_review": {
+    "segment_count": 15,
+    "max_adjacent_rms_jump_db": 0.76,
+    "max_spectral_centroid_ratio": 1.234,
+    "clipped_word_boundaries_count": 0,
+    "unnatural_pause_count": 0,
+    "continuity_pass": true,
+    "issues": [],
+    "joins": [
+      {
+        "from_sentence": 0,
+        "to_sentence": 1,
+        "rms_jump_db": 0.04,
+        "spectral_centroid_ratio": 1.028,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 1,
+        "to_sentence": 2,
+        "rms_jump_db": 0.37,
+        "spectral_centroid_ratio": 1.021,
+        "pause_s": 0.44
+      },
+      {
+        "from_sentence": 2,
+        "to_sentence": 3,
+        "rms_jump_db": 0.04,
+        "spectral_centroid_ratio": 1.068,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 3,
+        "to_sentence": 4,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.189,
+        "pause_s": 0.42
+      },
+      {
+        "from_sentence": 4,
+        "to_sentence": 5,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.164,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 5,
+        "to_sentence": 6,
+        "rms_jump_db": 0.33,
+        "spectral_centroid_ratio": 1.116,
+        "pause_s": 0.44
+      },
+      {
+        "from_sentence": 6,
+        "to_sentence": 7,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.09,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 7,
+        "to_sentence": 8,
+        "rms_jump_db": 0.11,
+        "spectral_centroid_ratio": 1.098,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 8,
+        "to_sentence": 9,
+        "rms_jump_db": 0.34,
+        "spectral_centroid_ratio": 1.116,
+        "pause_s": 0.46
+      },
+      {
+        "from_sentence": 9,
+        "to_sentence": 10,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.017,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 10,
+        "to_sentence": 11,
+        "rms_jump_db": 0.41,
+        "spectral_centroid_ratio": 1.031,
+        "pause_s": 0.44
+      },
+      {
+        "from_sentence": 11,
+        "to_sentence": 12,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.102,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 12,
+        "to_sentence": 13,
+        "rms_jump_db": 0.76,
+        "spectral_centroid_ratio": 1.127,
+        "pause_s": 0.46
+      },
+      {
+        "from_sentence": 13,
+        "to_sentence": 14,
+        "rms_jump_db": 0.15,
+        "spectral_centroid_ratio": 1.234,
+        "pause_s": 0.24
+      }
+    ]
+  },
+  "invalidated_stale_artifacts_on_regeneration": [],
+  "supported_controls": [
+    "elevenlabs_model_capability_aware_settings",
+    "elevenlabs_request_stitching_when_supported",
+    "sentence_level_speaking_rate_bounded",
+    "sentence_level_pitch_bounded",
+    "pre_and_post_sentence_pause_ms",
+    "custom_pronunciation_dictionary",
+    "anti_overdrama_contrast_rebalancer",
+    "post_concatenation_continuity_reviewer",
+    "automatic_dependent_cache_invalidation"
+  ],
+  "engine_limitations": [
+    "ELEVENLABS_API_KEY not set in environment; running $0 neural edge-tts fallback while preserving full ElevenLabs model-specific voice_settings payloads.",
+    "edge-tts does not support zero-shot voice cloning from audio samples."
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "Twenty meters beneath Greenland's frozen surface, trillions of liters of liquid water never freeze.",
+      "delivery": "MYSTERIOUS",
+      "emotional_tone": "curious_restraint",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "Twenty meters",
+        "never freeze"
+      ],
+      "start_s": 0.1,
+      "end_s": 6.06,
+      "cache_key": "8809ce1e948d00b2ec73",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.94
+      },
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N01",
+      "text": "Across thousands of square kilometers, a hidden reservoir flows inside solid polar ice.",
+      "delivery": "MYSTERIOUS",
+      "emotional_tone": "curious_restraint",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 440,
+      "emphasis_phrases": [],
+      "start_s": 6.3,
+      "end_s": 11.802,
+      "cache_key": "81fe42f2db9a4ecc2286",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.94
+      },
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:2/5->subtle_intensity_nudge"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "Even through minus thirty degree winter nights, this buried water stays liquid inside porous snow.",
+      "delivery": "CALM_EXPLORATION",
+      "emotional_tone": "immersive_inquiry",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "minus thirty"
+      ],
+      "start_s": 12.242,
+      "end_s": 17.789,
+      "cache_key": "9f1c4df4d5961b575ed8",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLORATION->bounded_prosody(rate=-2%,pitch=+0Hz,pause=410ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N02",
+      "text": "Until 2011, ice models assumed summer meltwater simply refroze near the surface.",
+      "delivery": "CALM_EXPLORATION",
+      "emotional_tone": "immersive_inquiry",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "2011"
+      ],
+      "start_s": 18.029,
+      "end_s": 23.122,
+      "cache_key": "79be30a9104506471551",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLORATION->bounded_prosody(rate=-2%,pitch=+0Hz,pause=410ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N03",
+      "text": "While drilling cores near Helheim Glacier, field teams pulled up dripping wet snow from twenty meters down.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "confident_explanation",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "Helheim Glacier"
+      ],
+      "start_s": 23.542,
+      "end_s": 29.337,
+      "cache_key": "7b75e46a00a338ee7c04",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N03",
+      "text": "Heavy autumn snowfall acts like an insulating blanket, sealing summer warmth inside.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "confident_explanation",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "insulating blanket"
+      ],
+      "start_s": 29.577,
+      "end_s": 34.63,
+      "cache_key": "40c664458dbc8993e263",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N04",
+      "text": "Airborne radar flights and ground sensors then uncovered a deeper surprise.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 160,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "radar"
+      ],
+      "start_s": 35.23,
+      "end_s": 39.062,
+      "cache_key": "283d490e15579212830d",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 7,
+      "seg_id": "N04",
+      "text": "That buried water does not stay locked in place.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [],
+      "start_s": 39.302,
+      "end_s": 41.782,
+      "cache_key": "64d8ff49535e0ed0ffbb",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge"
+      ]
+    },
+    {
+      "sentence_index": 8,
+      "seg_id": "N04",
+      "text": "It drains downward through deep crevasses toward the glacier bed.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 460,
+      "emphasis_phrases": [
+        "crevasses",
+        "glacier bed"
+      ],
+      "start_s": 42.022,
+      "end_s": 45.24,
+      "cache_key": "51566b3a444324ec943b",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 9,
+      "seg_id": "N05",
+      "text": "At the bedrock, pressurized water lubricates the ice base and speeds glacier motion toward dark coastal fjords.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "measured_gravity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "lubricates",
+        "coastal fjords"
+      ],
+      "start_s": 45.7,
+      "end_s": 52.343,
+      "cache_key": "84f397f030ecdc108689",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 10,
+      "seg_id": "N05",
+      "text": "Freshwater plumes then rise from hundreds of meters below the sea surface.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "measured_gravity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 440,
+      "emphasis_phrases": [],
+      "start_s": 52.583,
+      "end_s": 56.489,
+      "cache_key": "11f7f56ec1fb6d8cf991",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%"
+      ]
+    },
+    {
+      "sentence_index": 11,
+      "seg_id": "N06",
+      "text": "When mineral-rich meltwater enters the North Atlantic, ocean expeditions track how it stirs surface nutrients above the deep twilight zone.",
+      "delivery": "CINEMATIC_REVEAL",
+      "emotional_tone": "earned_significance",
+      "pace": "SLOW",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "North Atlantic",
+        "twilight zone"
+      ],
+      "start_s": 56.929,
+      "end_s": 64.654,
+      "cache_key": "fe204f11008cef09e0e4",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.58,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 0.96
+      },
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 12,
+      "seg_id": "N06",
+      "text": "Hidden glacier plumbing shapes marine food webs miles offshore.",
+      "delivery": "CINEMATIC_REVEAL",
+      "emotional_tone": "earned_significance",
+      "pace": "SLOW",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 460,
+      "emphasis_phrases": [],
+      "start_s": 64.894,
+      "end_s": 68.45,
+      "cache_key": "a27ada9bc2795cca7201",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.58,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 0.96
+      },
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge"
+      ]
+    },
+    {
+      "sentence_index": 13,
+      "seg_id": "N07",
+      "text": "Glaciologists are still studying how fast these aquifers drain into the sea, so long-term sea-level forecasts remain an open question.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "reflective_resonance",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "still studying",
+        "open question"
+      ],
+      "start_s": 68.91,
+      "end_s": 77.133,
+      "cache_key": "062679f7049facb19271",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.94
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 14,
+      "seg_id": "N07",
+      "text": "Beneath solid white ice, a dark river keeps moving.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "reflective_resonance",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-6%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 450,
+      "emphasis_phrases": [],
+      "start_s": 77.373,
+      "end_s": 80.6,
+      "cache_key": "77168a20c0fc87ac624b",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.94
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:2/5->subtle_intensity_nudge"
+      ]
+    }
+  ]
+}

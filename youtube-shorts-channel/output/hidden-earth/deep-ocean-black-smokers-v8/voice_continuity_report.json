@@ -1,0 +1,81 @@
+{
+  "segment_count": 11,
+  "max_adjacent_rms_jump_db": 0.21,
+  "max_spectral_centroid_ratio": 1.189,
+  "clipped_word_boundaries_count": 0,
+  "unnatural_pause_count": 0,
+  "continuity_pass": true,
+  "issues": [],
+  "joins": [
+    {
+      "from_sentence": 0,
+      "to_sentence": 1,
+      "rms_jump_db": 0.05,
+      "spectral_centroid_ratio": 1.097,
+      "pause_s": 0.38
+    },
+    {
+      "from_sentence": 1,
+      "to_sentence": 2,
+      "rms_jump_db": 0.07,
+      "spectral_centroid_ratio": 1.074,
+      "pause_s": 0.32
+    },
+    {
+      "from_sentence": 2,
+      "to_sentence": 3,
+      "rms_jump_db": 0.1,
+      "spectral_centroid_ratio": 1.147,
+      "pause_s": 0.42
+    },
+    {
+      "from_sentence": 3,
+      "to_sentence": 4,
+      "rms_jump_db": 0.03,
+      "spectral_centroid_ratio": 1.186,
+      "pause_s": 0.34
+    },
+    {
+      "from_sentence": 4,
+      "to_sentence": 5,
+      "rms_jump_db": 0.15,
+      "spectral_centroid_ratio": 1.081,
+      "pause_s": 0.44
+    },
+    {
+      "from_sentence": 5,
+      "to_sentence": 6,
+      "rms_jump_db": 0.13,
+      "spectral_centroid_ratio": 1.085,
+      "pause_s": 0.34
+    },
+    {
+      "from_sentence": 6,
+      "to_sentence": 7,
+      "rms_jump_db": 0.21,
+      "spectral_centroid_ratio": 1.189,
+      "pause_s": 0.42
+    },
+    {
+      "from_sentence": 7,
+      "to_sentence": 8,
+      "rms_jump_db": 0.03,
+      "spectral_centroid_ratio": 1.033,
+      "pause_s": 0.3
+    },
+    {
+      "from_sentence": 8,
+      "to_sentence": 9,
+      "rms_jump_db": 0.12,
+      "spectral_centroid_ratio": 1.108,
+      "pause_s": 0.42
+    },
+    {
+      "from_sentence": 9,
+      "to_sentence": 10,
+      "rms_jump_db": 0.06,
+      "spectral_centroid_ratio": 1.182,
+      "pause_s": 0.32
+    }
+  ]
+}

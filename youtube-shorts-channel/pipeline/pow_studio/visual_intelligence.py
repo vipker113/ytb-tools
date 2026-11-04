@@ -281,8 +281,17 @@ def score_episode_visual_plan(
     reg = {a.local_file: a for a in manifest.assets_register}
     search_dirs = manifest.all_asset_search_dirs()
 
+    wt_path = Path(manifest.output_dir) / "word_timings.json"
+    if wt_path.exists():
+        from .schema import resolve_timed_shots
+
+        wt_data = json.loads(wt_path.read_text(encoding="utf-8"))
+        active_shots = resolve_timed_shots(manifest, int(wt_data["total_frames_30fps"]), style.output.fps)
+    else:
+        active_shots = list(manifest.shots)
+
     shot_scores: list[dict[str, Any]] = []
-    for s in manifest.shots:
+    for s in active_shots:
         asset = reg.get(s.src_file)
         lic = asset.license if asset else "Unknown"
         meta_txt = " ".join(

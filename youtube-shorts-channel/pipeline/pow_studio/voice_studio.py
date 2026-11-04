@@ -54,6 +54,14 @@ import numpy as np
 import yaml
 from pydantic import BaseModel, Field
 
+from .elevenlabs_provider import (
+    DEFAULT_DOCUMENTARY_VOICE_IDS,
+    FORBIDDEN_THEATRICAL_AUDIO_TAGS,
+    build_elevenlabs_request_payload,
+    is_elevenlabs_configured,
+    resolve_model_capabilities,
+    synthesize_elevenlabs_segment,
+)
 from .schema import CaptionGroupSpec, EpisodeManifest, NarrationSegmentSpec
 
 SR = 48000
@@ -105,10 +113,17 @@ class AnnotatedVoiceSentence:
     seg_id: str
     text: str
     delivery: Optional[str] = None
+    emotional_tone: Optional[str] = None
     pace: Optional[str] = None
     energy: Optional[int] = None
+    emotional_intensity: Optional[float] = None
+    pitch_direction: Optional[str] = None
+    sentence_rhythm: Optional[str] = None
+    pause_before_ms: int = 0
     emphasis_phrases: list[str] = field(default_factory=list)
     pause_after_ms: Optional[int] = None
+    pronunciation_overrides: dict[str, str] = field(default_factory=dict)
+    vocal_consistency: str = "locked"
     explicit_rate: Optional[str] = None
     explicit_pitch: Optional[str] = None
     tts_text_override: Optional[str] = None
@@ -123,10 +138,16 @@ class ResolvedSentenceProsody:
     voice_identity: str
     rate_str: str
     pitch_str: str
+    pause_before_ms: int
     pause_after_ms: int
     delivery_label: str
+    emotional_tone: str
     pace_label: str
     energy_level: int
+    emotional_intensity: float
+    pitch_direction: str
+    sentence_rhythm: str
+    vocal_consistency: str
     emphasis_phrases: list[str]
     emphasis_word_norms: list[str]
     cache_key: str
@@ -136,9 +157,11 @@ class ResolvedSentenceProsody:
 # Built-in universal delivery fallbacks when a preset doesn't custom-define a tag
 UNIVERSAL_DELIVERY_DELTAS: dict[str, tuple[int, int, int]] = {
     "MYSTERIOUS": (-3, -1, 480),
-    "HUSHED": (-4, -1, 460),
+    "HUSHED": (-3, -1, 450),
+    "CALM_EXPLORATION": (-2, 0, 410),
     "SURPRISED_BUT_CONTROLLED": (2, 1, 340),
     "CONTROLLED_SURPRISE": (2, 1, 330),
+    "URGENT_DISCOVERY": (3, 1, 290),
     "CINEMATIC_REVEAL": (-4, 0, 620),
     "DRAMATIC_REVEAL": (-4, 0, 640),
     "AWE_REVEAL": (-3, 0, 560),
@@ -153,7 +176,7 @@ UNIVERSAL_DELIVERY_DELTAS: dict[str, tuple[int, int, int]] = {
     "RIGOROUS_CAVEAT": (-2, -1, 360),
     "CURIOUS_HOOK": (2, 1, 300),
     "ESCALATION": (2, 1, 320),
-    "FINAL_IMPRESSION": (-3, -1, 380),
+    "FINAL_IMPRESSION": (-3, -1, 420),
     "QUIET_RESONANCE": (-4, -1, 460),
     "EMOTIONAL_REFLECTION": (-3, -1, 480),
 }
@@ -224,18 +247,22 @@ def _write_wav_stereo(path: Path, stereo: np.ndarray) -> None:
         wf.writeframes(pcm.tobytes())
 
 
-def _trim_silence(samples: np.ndarray, thresh: float = 0.0035) -> tuple[np.ndarray, float]:
+def _trim_silence(samples: np.ndarray, thresh: float = 0.0028) -> tuple[np.ndarray, float]:
     idx = np.where(np.abs(samples) > thresh)[0]
     if len(idx) == 0:
         return samples, 0.0
-    pad_h, pad_t = int(0.024 * SR), int(0.048 * SR)
+    pad_h, pad_t = int(0.032 * SR), int(0.056 * SR)
     i0 = max(0, int(idx[0]) - pad_h)
     i1 = min(len(samples), int(idx[-1]) + pad_t)
     out = samples[i0:i1].copy()
-    fn = min(int(0.014 * SR), len(out) // 4)
-    if fn > 1:
-        out[:fn] *= np.linspace(0.0, 1.0, fn, dtype=np.float32)
-        out[-fn:] *= np.linspace(1.0, 0.0, fn, dtype=np.float32)
+    fn_in = min(int(0.016 * SR), len(out) // 5)
+    fn_out = min(int(0.024 * SR), len(out) // 5)
+    if fn_in > 2:
+        cos_in = 0.5 * (1.0 - np.cos(np.linspace(0.0, math.pi, fn_in, dtype=np.float32)))
+        out[:fn_in] *= cos_in
+    if fn_out > 2:
+        cos_out = 0.5 * (1.0 + np.cos(np.linspace(0.0, math.pi, fn_out, dtype=np.float32)))
+        out[-fn_out:] *= cos_out
     return out, i0 / float(SR)
 
 
@@ -309,10 +336,17 @@ def parse_annotated_voice_script(
                 seg_id=seg_id,
                 text=joined,
                 delivery=pending_tags.get("delivery"),
+                emotional_tone=pending_tags.get("emotional_tone"),
                 pace=pending_tags.get("pace"),
                 energy=pending_tags.get("energy"),
+                emotional_intensity=pending_tags.get("emotional_intensity"),
+                pitch_direction=pending_tags.get("pitch_direction"),
+                sentence_rhythm=pending_tags.get("sentence_rhythm"),
+                pause_before_ms=int(pending_tags.get("pause_before_ms", 0)),
                 emphasis_phrases=list(pending_tags.get("emphasis_phrases", [])),
                 pause_after_ms=pending_tags.get("pause_after_ms"),
+                pronunciation_overrides=dict(pending_tags.get("pronunciation_overrides", {})),
+                vocal_consistency=str(pending_tags.get("vocal_consistency", "locked")),
                 explicit_rate=pending_tags.get("rate"),
                 explicit_pitch=pending_tags.get("pitch"),
             )
@@ -337,12 +371,30 @@ def parse_annotated_voice_script(
                     current_seg_id = val.strip("\"'")
                 elif key == "DELIVERY":
                     pending_tags["delivery"] = val.strip("\"'")
+                elif key in ("TONE", "EMOTIONAL TONE"):
+                    pending_tags["emotional_tone"] = val.strip("\"'").lower()
                 elif key in ("PACE", "SPEED"):
                     pending_tags["pace"] = val.strip("\"'").upper()
                 elif key == "ENERGY":
                     m_en = re.match(r"(\d+)(?:\s*/\s*5)?", val)
                     if m_en:
                         pending_tags["energy"] = max(1, min(5, int(m_en.group(1))))
+                elif key in ("INTENSITY", "EMOTIONAL INTENSITY"):
+                    try:
+                        pending_tags["emotional_intensity"] = max(0.0, min(1.0, float(val)))
+                    except ValueError:
+                        pass
+                elif key in ("PITCH DIRECTION", "CONTOUR"):
+                    pending_tags["pitch_direction"] = val.strip("\"'").lower()
+                elif key in ("RHYTHM", "SENTENCE RHYTHM"):
+                    pending_tags["sentence_rhythm"] = val.strip("\"'").lower()
+                elif key in ("PAUSE BEFORE", "PRE PAUSE"):
+                    m_pb = re.match(r"([\d.]+)\s*(ms|s)?", val.lower())
+                    if m_pb:
+                        num = float(m_pb.group(1))
+                        unit = m_pb.group(2) or ("s" if num < 5.0 else "ms")
+                        ms = int(round(num * 1000.0)) if unit == "s" else int(round(num))
+                        pending_tags["pause_before_ms"] = max(0, min(1200, ms))
                 elif key == "EMPHASIS":
                     quoted = re.findall(r'"([^"]+)"|\'([^\']+)\'', val)
                     if quoted:
@@ -350,6 +402,11 @@ def parse_annotated_voice_script(
                     else:
                         phrases = [p.strip() for p in val.split(",") if p.strip()]
                     pending_tags.setdefault("emphasis_phrases", []).extend(phrases)
+                elif key in ("PRONOUNCE", "PRONUNCIATION"):
+                    for pair in re.findall(r'"?([A-Za-z0-9\'-]+)"?\s*=\s*"?([^",]+)"?', val):
+                        pending_tags.setdefault("pronunciation_overrides", {})[pair[0].strip()] = pair[1].strip()
+                elif key == "CONSISTENCY":
+                    pending_tags["vocal_consistency"] = val.strip("\"'").lower()
                 elif key in ("PAUSE AFTER", "PAUSE", "BREAK"):
                     m_ms = re.match(r"([\d.]+)\s*(ms|s)?", val.lower())
                     if m_ms:
@@ -375,29 +432,63 @@ def parse_annotated_voice_script(
     return sentences
 
 
+def _infer_narrative_voice_direction_for_segment(
+    seg: NarrationSegmentSpec,
+    seg_idx: int,
+    total_segs: int,
+    manifest: EpisodeManifest,
+) -> tuple[str, str, int, str]:
+    """
+    Derive contrast-rich documentary voice direction (`delivery, pace, energy, emotional_tone`)
+    from each segment's actual narrative role rather than stamping uniform delivery across the video.
+    """
+    beat = seg.narrative_beat or ""
+    if seg_idx == 0 or beat == "opening_hook":
+        if any(k in seg.text.lower() for k in ("beneath", "deep", "dark", "hidden", "nobody", "sealed", "mystery")):
+            return ("MYSTERIOUS", "SLOW", 2, "curious_restraint")
+        return ("CURIOUS_HOOK", "NATURAL", 3, "engaged_curiosity")
+    if seg_idx == total_segs - 1 or beat == "final_impression":
+        return ("EMOTIONAL_REFLECTION", "SLOW", 2, "reflective_resonance")
+    if seg.seg_id == manifest.editorial_formula.scientific_caveat_seg_id:
+        return ("HONEST_CAVEAT", "NATURAL", 3, "credible_precision")
+    if seg.seg_id == manifest.editorial_formula.layer2_pivot_seg_id or beat == "escalation":
+        return ("SURPRISED_BUT_CONTROLLED", "NATURAL", 4, "controlled_discovery")
+    if beat == "payoff":
+        return ("CINEMATIC_REVEAL", "SLOW", 4, "earned_significance")
+    if beat == "curiosity_gap":
+        return ("CALM_EXPLORATION", "NATURAL", 3, "immersive_inquiry")
+    return ("SCIENTIFIC_AUTHORITY", "NATURAL", 3, "confident_explanation")
+
+
 def export_annotated_voice_script(manifest: EpisodeManifest, out_path: Optional[Path] = None) -> str:
-    """Export an episode's narration into a human-editable bracketed Voice Studio script."""
+    """Export an episode's narration into a contrast-aware, human-editable bracketed Voice Studio script."""
     blocks: list[str] = [
         f"# Proof of Wonder — Voice Direction Script ({manifest.slug})",
         f"# Profile: {manifest.voice_direction_profile or 'cinematic_documentary'} | Voice: {manifest.voice}",
         "",
     ]
-    for seg in manifest.narration_segments:
+    total_segs = len(manifest.narration_segments)
+    for seg_idx, seg in enumerate(manifest.narration_segments):
         blocks.append(f"[SEG: {seg.seg_id}]")
         if seg.annotated_text:
             blocks.append(seg.annotated_text.strip())
             blocks.append("")
             continue
+        auto_deliv, auto_pace, auto_energy, auto_tone = _infer_narrative_voice_direction_for_segment(
+            seg, seg_idx, total_segs, manifest
+        )
         sents = _split_into_sentences_preserving_text(seg.text)
         for idx, sent in enumerate(sents):
             is_last = idx == len(sents) - 1
             blocks.append(f'"{sent}"')
             blocks.append("")
-            deliv = seg.delivery or ("CURIOUS_HOOK" if seg.seg_id == "N01" else "MEASURED_EVIDENCE")
-            pace = seg.pace or "NATURAL"
-            energy = seg.energy or 3
+            deliv = seg.delivery or (auto_deliv if (idx == 0 or is_last) else "MEASURED_EVIDENCE")
+            pace = seg.pace or auto_pace
+            energy = seg.energy or (auto_energy if (idx == 0 or is_last) else 3)
+            tone = seg.emotional_tone or auto_tone
             pause_ms = int(round(seg.pause_after_s * 1000)) if is_last else 260
             blocks.append(f"[DELIVERY: {deliv}]")
+            blocks.append(f"[TONE: {tone}]")
             blocks.append(f"[PACE: {pace}]")
             blocks.append(f"[ENERGY: {energy}/5]")
             if seg.emphasis_words:
@@ -412,6 +503,109 @@ def export_annotated_voice_script(manifest: EpisodeManifest, out_path: Optional[
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(content, encoding="utf-8")
     return content
+
+
+def plan_and_rebalance_voice_direction(
+    sentences: list[AnnotatedVoiceSentence],
+    manifest: Optional[EpisodeManifest] = None,
+) -> tuple[list[AnnotatedVoiceSentence], dict[str, Any]]:
+    """
+    Enforce Part 2 Section 3 Voice Direction & Contrast Rules:
+    1. Block forbidden whispering, shouting, or exaggerated hype tags.
+    2. When plain sentences lack delivery direction, assign story-meaning contrast
+       (quieter/slower mysterious opening -> confident natural explanation -> stronger
+       discovery emphasis -> brief pause around surprising facts -> reflective ending).
+    3. Rebalance over-dramatic scripts: if >45% of sentences (>=4 total) use high-drama
+       tags (`CINEMATIC_REVEAL`, `DRAMATIC_REVEAL`, `URGENT_DISCOVERY`, or `energy >= 4`),
+       calm intermediate explanatory lines back to `MEASURED_EVIDENCE` (`energy=3`) so
+       genuine reveals actually stand out.
+    """
+    seg_lookup = {s.seg_id: (idx, s) for idx, s in enumerate(manifest.narration_segments)} if manifest else {}
+    total_segs = len(manifest.narration_segments) if manifest else 1
+    guardrail_notes: list[str] = []
+    blocked_theatrical_count = 0
+    rebalanced_overdrama_count = 0
+
+    out: list[AnnotatedVoiceSentence] = []
+    for s in sentences:
+        item = AnnotatedVoiceSentence(**asdict(s))
+        raw_d = (item.delivery or "").strip().lower()
+
+        # 1. Block whispering / shouting / theatrical exaggeration
+        if any(bad in raw_d for bad in FORBIDDEN_THEATRICAL_AUDIO_TAGS):
+            blocked_theatrical_count += 1
+            replacement = "MYSTERIOUS" if "whisper" in raw_d else "URGENT_DISCOVERY"
+            guardrail_notes.append(
+                f"[sent #{item.sentence_index} {item.seg_id}] Replaced theatrical delivery '{item.delivery}' -> '{replacement}'."
+            )
+            item.delivery = replacement
+            if item.energy and item.energy > 4:
+                item.energy = 4
+
+        # 2. Fill missing narrative contrast from story beat & sentence content
+        if not item.delivery and manifest and item.seg_id in seg_lookup:
+            s_idx, seg_obj = seg_lookup[item.seg_id]
+            auto_d, auto_p, auto_e, auto_t = _infer_narrative_voice_direction_for_segment(
+                seg_obj, s_idx, total_segs, manifest
+            )
+            item.delivery = auto_d
+            item.pace = item.pace or auto_p
+            item.energy = item.energy if item.energy is not None else auto_e
+            item.emotional_tone = item.emotional_tone or auto_t
+            if re.search(r"\b(?:never|instead|yet|unexpected|surprising|million|billion)\b", item.text, re.I) and item.pause_before_ms == 0 and item.sentence_index > 0:
+                item.pause_before_ms = 110
+
+        out.append(item)
+
+    # 3. Anti-All-Dramatic Contrast Rebalancer
+    high_drama_keys = {"CINEMATIC_REVEAL", "DRAMATIC_REVEAL", "AWE_REVEAL", "URGENT_DISCOVERY"}
+    if len(out) >= 4:
+        dramatic_indices = [
+            i
+            for i, x in enumerate(out)
+            if (re.sub(r"[^A-Z0-9]+", "_", (x.delivery or "").upper()).strip("_") in high_drama_keys)
+            or ((x.energy or 3) >= 4)
+        ]
+        if len(dramatic_indices) / float(len(out)) > 0.45:
+            # Preserve the primary reveal/pivot climax sentences (at most ~35% of sentences)
+            max_keep = max(1, int(len(out) * 0.35))
+            # Prefer keeping sentences near pivot/payoff (latter half, excluding very first context lines)
+            ranked_to_keep = sorted(
+                dramatic_indices,
+                key=lambda idx: (
+                    1 if (manifest and out[idx].seg_id == manifest.editorial_formula.layer2_pivot_seg_id) else 0,
+                    1 if re.search(r"\b(?:discover|reveal|found|actual|hidden|secret|beneath)\b", out[idx].text, re.I) else 0,
+                    idx,
+                ),
+                reverse=True,
+            )
+            keep_set = set(ranked_to_keep[:max_keep])
+            for idx in dramatic_indices:
+                if idx not in keep_set:
+                    old_d = out[idx].delivery
+                    out[idx].delivery = "MEASURED_EVIDENCE"
+                    out[idx].energy = 3
+                    out[idx].pace = "NATURAL"
+                    rebalanced_overdrama_count += 1
+                    guardrail_notes.append(
+                        f"[sent #{idx} {out[idx].seg_id}] Rebalanced excess dramatic tag '{old_d}' -> 'MEASURED_EVIDENCE' to preserve vocal contrast."
+                    )
+
+    distinct_deliveries = sorted({(x.delivery or "DEFAULT").upper() for x in out})
+    energies = [x.energy or 3 for x in out]
+    contrast_summary = {
+        "sentence_count": len(out),
+        "distinct_delivery_styles": distinct_deliveries,
+        "distinct_delivery_count": len(distinct_deliveries),
+        "energy_min": min(energies) if energies else 3,
+        "energy_max": max(energies) if energies else 3,
+        "energy_span": (max(energies) - min(energies)) if energies else 0,
+        "blocked_theatrical_count": blocked_theatrical_count,
+        "rebalanced_overdrama_count": rebalanced_overdrama_count,
+        "contrast_healthy": (len(out) <= 2) or (len(distinct_deliveries) >= 2),
+        "guardrail_notes": guardrail_notes,
+    }
+    return out, contrast_summary
 
 
 def build_sentences_from_manifest(manifest: EpisodeManifest) -> list[AnnotatedVoiceSentence]:
@@ -459,10 +653,17 @@ def build_sentences_from_manifest(manifest: EpisodeManifest) -> list[AnnotatedVo
                     seg_id=seg.seg_id,
                     text=sent,
                     delivery=seg.delivery,
+                    emotional_tone=seg.emotional_tone,
                     pace=seg.pace,
                     energy=seg.energy,
+                    emotional_intensity=seg.emotional_intensity,
+                    pitch_direction=seg.pitch_direction,
+                    sentence_rhythm=seg.sentence_rhythm,
+                    pause_before_ms=int(round(seg.pause_before_s * 1000.0)) if idx == 0 else 0,
                     emphasis_phrases=emph_here,
                     pause_after_ms=int(round(seg.pause_after_s * 1000.0)) if is_last else 240,
+                    pronunciation_overrides=dict(seg.pronunciation_overrides or {}),
+                    vocal_consistency=seg.vocal_consistency,
                     explicit_rate=seg.rate if seg.rate != "+0%" else None,
                     explicit_pitch=seg.pitch if seg.pitch != "+0Hz" else None,
                     tts_text_override=seg.tts_text if len(sents) == 1 else None,
@@ -499,10 +700,14 @@ def resolve_sentence_prosody(
 ) -> ResolvedSentenceProsody:
     """
     Map `VoiceDirectionProfile` + sentence intonation tags into bounded, natural prosody
-    parameters without robotic pitch warps or syllable stretching (Part 4, Section 5.4).
+    parameters without robotic pitch warps or syllable stretching (Part 2, Sections 3–4).
     """
     voice_id = voice_override or profile.voice_identity
-    merged_pron = {**(profile.pronunciation or {}), **(extra_pronunciations or {})}
+    merged_pron = {
+        **(profile.pronunciation or {}),
+        **(extra_pronunciations or {}),
+        **(sent.pronunciation_overrides or {}),
+    }
 
     deliv_raw = (sent.delivery or "").strip()
     deliv_key = re.sub(r"[^A-Z0-9]+", "_", deliv_raw.upper()).strip("_") if deliv_raw else "DEFAULT"
@@ -530,12 +735,26 @@ def resolve_sentence_prosody(
     elif deliv_raw:
         approximations.append(f"DELIVERY:{deliv_raw}->preserved_neutral_cadence(unrecognized_style_kept_natural)")
 
-    # 2. Apply explicit `[PACE: ...]`
+    # 2. Apply explicit `[PACE: ...]` and optional `sentence_rhythm`
     pace_label = (sent.pace or profile.speaking_speed).upper()
     if sent.pace and sent.pace.upper() in PACE_RATE_DELTAS_PCT:
         p_delta = PACE_RATE_DELTAS_PCT[sent.pace.upper()]
         rate_pct = profile.base_rate_pct + p_delta
         approximations.append(f"PACE:{sent.pace.upper()}->rate_pct={rate_pct:+d}%")
+
+    rhythm_label = (sent.sentence_rhythm or "measured").lower()
+    if rhythm_label == "reflective_slow":
+        rate_pct -= 2
+        pause_ms = max(pause_ms, 440)
+    elif rhythm_label == "deliberate_staccato":
+        rate_pct -= 1
+
+    # 2b. Optional `pitch_direction`
+    pdir = (sent.pitch_direction or "steady").lower()
+    if pdir == "low_intimate":
+        pitch_hz -= 1
+    elif pdir == "gentle_rise":
+        pitch_hz += 1
 
     # 3. Apply `[ENERGY: 1..5]` subtly (bounded +/-1..2% rate & +/-1Hz pitch—never shouting/robotic)
     eff_energy = sent.energy if sent.energy is not None else profile.energy
@@ -557,11 +776,13 @@ def resolve_sentence_prosody(
         pause_ms = sent.pause_after_ms
 
     # 5. Consistency lock clamping so voice identity remains 100% human & stable
-    max_r = profile.max_rate_delta_pct if profile.consistency_lock else 15
-    max_p = profile.max_pitch_delta_hz if profile.consistency_lock else 4
+    lock_active = profile.consistency_lock and (sent.vocal_consistency != "expressive_bounded")
+    max_r = profile.max_rate_delta_pct if lock_active else min(12, profile.max_rate_delta_pct + 2)
+    max_p = profile.max_pitch_delta_hz if lock_active else min(3, profile.max_pitch_delta_hz + 1)
     rate_pct = max(-max_r, min(max_r, rate_pct))
     pitch_hz = max(-max_p, min(max_p, pitch_hz))
     pause_ms = max(80, min(1400, pause_ms))
+    pause_before_ms = max(0, min(900, int(sent.pause_before_ms or 0)))
 
     # 6. Extract normalized emphasis word tokens from phrases (`"Deep beneath"` -> `["deep", "beneath"]`)
     emph_norms: list[str] = []
@@ -578,6 +799,8 @@ def resolve_sentence_prosody(
 
     rate_str = f"{rate_pct:+d}%"
     pitch_str = f"{pitch_hz:+d}Hz"
+    emo_tone = sent.emotional_tone or profile.emotion
+    emo_intensity = float(sent.emotional_intensity) if sent.emotional_intensity is not None else round((eff_energy - 1) / 4.0, 2)
 
     sig_payload = json.dumps(
         {
@@ -598,10 +821,16 @@ def resolve_sentence_prosody(
         voice_identity=voice_id,
         rate_str=rate_str,
         pitch_str=pitch_str,
+        pause_before_ms=pause_before_ms,
         pause_after_ms=pause_ms,
         delivery_label=deliv_key,
+        emotional_tone=emo_tone,
         pace_label=pace_label,
         energy_level=eff_energy,
+        emotional_intensity=emo_intensity,
+        pitch_direction=pdir,
+        sentence_rhythm=rhythm_label,
+        vocal_consistency=sent.vocal_consistency,
         emphasis_phrases=list(sent.emphasis_phrases),
         emphasis_word_norms=emph_norms,
         cache_key=ckey,
@@ -1319,15 +1548,201 @@ def analyze_voice_reference(
     }
 
 
+def _spectral_centroid_hz(samples: np.ndarray) -> float:
+    """Compute speech-band spectral centroid (Hz) to detect timbre/quality shifts across joined segments."""
+    active = samples[np.abs(samples) > 0.012]
+    if len(active) < int(0.04 * SR):
+        return 0.0
+    mag = np.abs(np.fft.rfft(active))
+    freqs = np.fft.rfftfreq(len(active), d=1.0 / SR)
+    band = (freqs >= 90.0) & (freqs <= 6500.0)
+    denom = float(np.sum(mag[band]))
+    if denom < 1e-6:
+        return 0.0
+    return float(np.sum(freqs[band] * mag[band]) / denom)
+
+
+def audit_narration_continuity(
+    sentence_waveforms: list[np.ndarray],
+    sentence_records: list[dict[str, Any]],
+    pauses_s: list[float],
+) -> dict[str, Any]:
+    """
+    Post-concatenation Audio Continuity Reviewer (Part 2, Section 4):
+    Verifies consistent vocal timbre, natural volume across sentence joins, smooth unclipped
+    word beginnings/endings, and natural inter-sentence pause durations.
+    """
+    rms_dbs: list[float] = []
+    centroids: list[float] = []
+    clipped_boundaries = 0
+    join_audits: list[dict[str, Any]] = []
+    issues: list[str] = []
+
+    for idx, wav_arr in enumerate(sentence_waveforms):
+        active = wav_arr[np.abs(wav_arr) > 0.012]
+        rms_val = float(np.sqrt(np.mean(active * active))) if len(active) > 10 else 1e-4
+        rms_dbs.append(20.0 * math.log10(max(1e-5, rms_val)))
+        centroids.append(_spectral_centroid_hz(wav_arr))
+
+        # Check very first & last 3ms for hard boundary clipping (> -26 dBFS abrupt edge)
+        edge_n = min(int(0.003 * SR), max(1, len(wav_arr) // 8))
+        if len(wav_arr) > 16:
+            head_pk = float(np.max(np.abs(wav_arr[:edge_n])))
+            tail_pk = float(np.max(np.abs(wav_arr[-edge_n:])))
+            if head_pk > 0.055 or tail_pk > 0.055:
+                clipped_boundaries += 1
+                issues.append(
+                    f"[sent #{idx}] Boundary micro-fade check flagged elevated edge amplitude (head={head_pk:.3f}, tail={tail_pk:.3f})."
+                )
+
+    max_rms_jump_db = 0.0
+    max_centroid_ratio = 1.0
+    unnatural_pause_count = 0
+
+    for k in range(len(sentence_waveforms) - 1):
+        rms_jump = abs(rms_dbs[k + 1] - rms_dbs[k])
+        max_rms_jump_db = max(max_rms_jump_db, rms_jump)
+        c0, c1 = centroids[k], centroids[k + 1]
+        c_ratio = (max(c0, c1) / max(80.0, min(c0, c1))) if (c0 > 80.0 and c1 > 80.0) else 1.0
+        max_centroid_ratio = max(max_centroid_ratio, c_ratio)
+        pause_s = float(pauses_s[k]) if k < len(pauses_s) else 0.30
+
+        if rms_jump > 4.2:
+            issues.append(f"[join {k}->{k+1}] Audible volume jump of {rms_jump:.2f} dB between sentences.")
+        if c_ratio > 1.65:
+            issues.append(f"[join {k}->{k+1}] Spectral timbre shift ratio {c_ratio:.2f}x suggests inconsistent vocal tone.")
+        if pause_s < 0.075 or pause_s > 1.45:
+            unnatural_pause_count += 1
+            issues.append(f"[join {k}->{k+1}] Unnatural inter-sentence pause ({pause_s*1000:.0f} ms).")
+
+        join_audits.append(
+            {
+                "from_sentence": k,
+                "to_sentence": k + 1,
+                "rms_jump_db": round(rms_jump, 2),
+                "spectral_centroid_ratio": round(c_ratio, 3),
+                "pause_s": round(pause_s, 3),
+            }
+        )
+
+    return {
+        "segment_count": len(sentence_waveforms),
+        "max_adjacent_rms_jump_db": round(max_rms_jump_db, 2),
+        "max_spectral_centroid_ratio": round(max_centroid_ratio, 3),
+        "clipped_word_boundaries_count": clipped_boundaries,
+        "unnatural_pause_count": unnatural_pause_count,
+        "continuity_pass": (
+            max_rms_jump_db <= 4.5
+            and max_centroid_ratio <= 1.75
+            and clipped_boundaries == 0
+            and unnatural_pause_count == 0
+        ),
+        "issues": issues,
+        "joins": join_audits,
+    }
+
+
+def invalidate_dependent_timing_artifacts(
+    out_dir: Path,
+    previous_pron_sig: Optional[str],
+    new_pron_sig: str,
+) -> list[str]:
+    """
+    Part 2, Section 5: When narration is regenerated and its timing signature changes,
+    automatically invalidate downstream timing-dependent artifacts and cached shot clips
+    so every stage rebuilds cleanly against the new authoritative narration master.
+    """
+    if not previous_pron_sig or previous_pron_sig == new_pron_sig:
+        return []
+
+    stale_files = [
+        "semantic_timeline_manifest.json",
+        "unified_av_timeline.json",
+        "unified_av_timeline.md",
+        "soundscape_plan.json",
+        "scene_optimization_report.json",
+        "scene_optimization_report.md",
+        "shot_plan_audit.json",
+        "subtitles.srt",
+        "voice_approval_lock.json",
+        "qc_measurements.json",
+        "creative_qa_report.json",
+    ]
+    invalidated: list[str] = []
+    for rel in stale_files:
+        fp = out_dir / rel
+        if fp.exists():
+            fp.unlink(missing_ok=True)
+            invalidated.append(rel)
+
+    shots_dir = out_dir / "shots"
+    if shots_dir.exists():
+        removed_shots = 0
+        for mp4_p in shots_dir.glob("*.mp4"):
+            mp4_p.unlink(missing_ok=True)
+            removed_shots += 1
+        if removed_shots > 0:
+            invalidated.append(f"shots/*.mp4 ({removed_shots} cached clips)")
+
+    return invalidated
+
+
+def choose_narration_generation_strategy(
+    resolved_list: list[ResolvedSentenceProsody],
+    manifest: EpisodeManifest,
+    active_provider: str,
+    elevenlabs_model_id: str = "eleven_multilingual_v2",
+) -> dict[str, Any]:
+    """
+    Decide between `single_request_whole_pass` vs `request_stitched_segmented` vs
+    `prosody_matched_segmented` based on voice direction variance and model capabilities.
+    """
+    rates = {r.rate_str for r in resolved_list}
+    pitches = {r.pitch_str for r in resolved_list}
+    uniform_prosody = (len(rates) <= 1 and len(pitches) <= 1 and len(manifest.soundbites) == 0)
+
+    if active_provider == "elevenlabs":
+        caps = resolve_model_capabilities(elevenlabs_model_id)
+        if manifest.prefer_single_pass_narration is True or (
+            manifest.prefer_single_pass_narration is None and (uniform_prosody or caps.prefers_whole_or_paragraph_pass)
+        ):
+            return {
+                "method": "single_request_whole_pass",
+                "reason": f"{caps.model_id} produces highest acoustic continuity in a unified pass when prosody/tags fit one request.",
+            }
+        if caps.supports_request_stitching:
+            return {
+                "method": "elevenlabs_request_stitched_segmented",
+                "reason": f"Distinct sentence delivery contrast requested; using {caps.model_id} previous_text/next_text + request-id continuity stitching.",
+            }
+        return {
+            "method": "prosody_matched_segmented",
+            "reason": f"Segmented synthesis with active RMS matching and cosine micro-fades for {caps.model_id}.",
+        }
+
+    if manifest.prefer_single_pass_narration is True or (uniform_prosody and len(resolved_list) <= 6):
+        return {
+            "method": "single_pass_or_uniform_cadence",
+            "reason": "Uniform rate/pitch across script allows unified cadence without cross-style jumps.",
+        }
+    return {
+        "method": "contrast_directed_rms_matched_segmented",
+        "reason": "Multi-beat emotional contrast active; using bounded prosody + active RMS matching + raised-cosine fades + studio room-tone bed.",
+    }
+
+
 def synthesize_directed_narration(
     manifest: EpisodeManifest,
     reuse_existing_cache: bool = True,
 ) -> dict[str, Any]:
     """
-    Synthesize complete episode narration using `VoiceDirectionProfile` + sentence-level
-    intonation annotations with SHA-256 per-sentence caching (selective re-render),
-    matched speech RMS across sentences, continuous `-52 dBFS` studio room tone, and
-    broadcast vocal mastering.
+    Synthesize complete episode narration using:
+    - Model-capability-aware ElevenLabs engine when `ELEVENLABS_API_KEY` is configured and requested,
+      OR `$0` neural `edge-tts` fallback.
+    - Contrast & Anti-Overdrama voice direction rebalancing (`plan_and_rebalance_voice_direction`).
+    - Raised-cosine boundary fades, RMS continuity matching, studio room-tone floor, transparent
+      broadcast vocal EQ/compression (with legacy metallic `aecho` slapback removed!).
+    - Post-concatenation `audit_narration_continuity()` + automatic SHA-256 dependent cache invalidation.
     """
     style = manifest.resolve_style_profile()
     out_dir = Path(manifest.output_dir)
@@ -1336,6 +1751,14 @@ def synthesize_directed_narration(
     out_dir.mkdir(parents=True, exist_ok=True)
     work_dir.mkdir(parents=True, exist_ok=True)
 
+    prev_wt_p = out_dir / "word_timings.json"
+    prev_pron_sig: Optional[str] = None
+    if prev_wt_p.exists():
+        try:
+            prev_pron_sig = json.loads(prev_wt_p.read_text(encoding="utf-8")).get("pronunciation_sig")
+        except Exception:
+            prev_pron_sig = None
+
     profile = load_voice_direction_profile(
         manifest.voice_direction_profile or style.sound_design.default_voice_profile
     )
@@ -1343,13 +1766,34 @@ def synthesize_directed_narration(
     merged_pron = {**(profile.pronunciation or {}), **(manifest.tts_pronunciations or {})}
     _, rev_map = _apply_pronunciation_map("", merged_pron)
 
-    sentences = build_sentences_from_manifest(manifest)
+    raw_sentences = build_sentences_from_manifest(manifest)
+    if manifest.legacy_v6_fallback:
+        sentences = raw_sentences
+        contrast_summary = {"legacy_v6_fallback": True}
+    else:
+        sentences, contrast_summary = plan_and_rebalance_voice_direction(raw_sentences, manifest=manifest)
+
     resolved_list = [
         resolve_sentence_prosody(s, profile, extra_pronunciations=manifest.tts_pronunciations, voice_override=voice_id)
         for s in sentences
     ]
 
-    # Export canonical human-readable voice direction plan for auditability
+    # Resolve active TTS provider honestly ($0 fallback when ELEVENLABS_API_KEY is absent)
+    req_provider = manifest.tts_provider if manifest.tts_provider != "auto" else style.sound_design.tts_provider
+    el_model_id = manifest.elevenlabs_model_id or style.sound_design.elevenlabs_model_id or "eleven_multilingual_v2"
+    el_voice_id = (
+        manifest.elevenlabs_voice_id
+        or style.sound_design.elevenlabs_voice_id
+        or DEFAULT_DOCUMENTARY_VOICE_IDS.get(profile.profile_id, DEFAULT_DOCUMENTARY_VOICE_IDS["cinematic_documentary"])
+    )
+    use_elevenlabs = (req_provider == "elevenlabs" and is_elevenlabs_configured()) or (
+        req_provider == "auto" and is_elevenlabs_configured() and manifest.elevenlabs_voice_id != ""
+    )
+    active_provider = "elevenlabs" if use_elevenlabs else "edge_tts"
+    strategy = choose_narration_generation_strategy(
+        resolved_list, manifest, active_provider=active_provider, elevenlabs_model_id=el_model_id
+    )
+
     voice_plan_path = out_dir / "voice_direction_plan.json"
 
     async def _run_synth() -> dict[str, Any]:
@@ -1362,7 +1806,6 @@ def synthesize_directed_narration(
             sb_by_seg.setdefault(sb.insert_after_seg_id, []).append(sb)
         soundbite_records: list[dict[str, Any]] = []
 
-        # Group resolved sentences back into manifest `narration_segments` order
         sents_by_seg: dict[str, list[ResolvedSentenceProsody]] = {}
         for r in resolved_list:
             sents_by_seg.setdefault(r.seg_id, []).append(r)
@@ -1370,8 +1813,13 @@ def synthesize_directed_narration(
         seg_records: list[dict[str, Any]] = []
         all_words: list[dict[str, Any]] = []
         sentence_records: list[dict[str, Any]] = []
+        sentence_waveforms: list[np.ndarray] = []
+        inter_sentence_pauses_s: list[float] = []
+        prev_el_request_ids: list[str] = []
+        el_payload_audits: list[dict[str, Any]] = []
         cache_hits = 0
 
+        flat_idx = 0
         for seg in manifest.narration_segments:
             seg_sents = sents_by_seg.get(seg.seg_id, [])
             seg_start_s = cursor_s
@@ -1379,17 +1827,92 @@ def synthesize_directed_narration(
             seg_emph_norms = {re.sub(r"[^a-z0-9]", "", ew.lower()) for ew in seg.emphasis_words if ew}
 
             for s_idx, res in enumerate(seg_sents):
-                wav_p, words, hit = await _synthesize_cached_sentence(
-                    res,
-                    rev_map,
-                    cache_dir,
-                    force_regenerate=not reuse_existing_cache,
-                )
+                if res.pause_before_ms > 0 and flat_idx > 0:
+                    pre_s = res.pause_before_ms / 1000.0
+                    chunks.append(np.zeros(int(round(pre_s * SR)), dtype=np.float32))
+                    cursor_s += pre_s
+                    if s_idx == 0:
+                        seg_start_s = cursor_s
+
+                if use_elevenlabs:
+                    prev_txt = resolved_list[flat_idx - 1].spoken_tts_text if flat_idx > 0 else None
+                    next_txt = resolved_list[flat_idx + 1].spoken_tts_text if flat_idx + 1 < len(resolved_list) else None
+                    r_int = _parse_signed_int(res.rate_str, "%") or 0
+                    el_payload, el_audit = build_elevenlabs_request_payload(
+                        text=res.spoken_tts_text,
+                        model_id=el_model_id,
+                        rate_pct=r_int,
+                        energy_level=res.energy_level,
+                        delivery_label=res.delivery_label,
+                        emotional_intensity=res.emotional_intensity,
+                        vocal_consistency=res.vocal_consistency,
+                        previous_text=prev_txt,
+                        next_text=next_txt,
+                        previous_request_ids=prev_el_request_ids,
+                    )
+                    el_payload_audits.append(el_audit)
+                    el_ckey = hashlib.sha256(
+                        json.dumps({"vid": el_voice_id, "p": el_payload}, sort_keys=True).encode("utf-8")
+                    ).hexdigest()[:20]
+                    wav_p = cache_dir / f"el_{el_ckey}.wav"
+                    meta_p = cache_dir / f"el_{el_ckey}.json"
+                    if reuse_existing_cache and wav_p.exists() and meta_p.exists():
+                        cmeta = json.loads(meta_p.read_text(encoding="utf-8"))
+                        words = cmeta.get("words", [])
+                        hit = True
+                    else:
+                        cache_dir.mkdir(parents=True, exist_ok=True)
+                        mp3_p = cache_dir / f"el_{el_ckey}.mp3"
+                        el_res = synthesize_elevenlabs_segment(el_voice_id, el_payload, mp3_p)
+                        if el_res.get("request_id"):
+                            prev_el_request_ids.append(str(el_res["request_id"]))
+                        subprocess.run(
+                            ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(mp3_p), "-ar", str(SR), "-ac", "1", "-c:a", "pcm_s16le", str(wav_p)],
+                            check=True,
+                        )
+                        words = []
+                        for ew in el_res.get("words", []):
+                            raw_w = str(ew["word"])
+                            wn_key = re.sub(r"[^a-z0-9']", "", raw_w.lower())
+                            canon_w = rev_map.get(wn_key, raw_w)
+                            words.append(
+                                {
+                                    "text": canon_w,
+                                    "offset_s": float(ew["start"]),
+                                    "duration_s": max(0.03, float(ew["end"]) - float(ew["start"])),
+                                }
+                            )
+                        meta_p.write_text(json.dumps({"words": words}, indent=2), encoding="utf-8")
+                        hit = False
+                else:
+                    # Also build dry-run capability audit so ElevenLabs settings are inspectable even in $0 mode
+                    r_int = _parse_signed_int(res.rate_str, "%") or 0
+                    _, el_audit = build_elevenlabs_request_payload(
+                        text=res.spoken_tts_text,
+                        model_id=el_model_id,
+                        rate_pct=r_int,
+                        energy_level=res.energy_level,
+                        delivery_label=res.delivery_label,
+                        emotional_intensity=res.emotional_intensity,
+                        vocal_consistency=res.vocal_consistency,
+                    )
+                    el_payload_audits.append(el_audit)
+                    wav_p, words, hit = await _synthesize_cached_sentence(
+                        res,
+                        rev_map,
+                        cache_dir,
+                        force_regenerate=not reuse_existing_cache,
+                    )
+
                 if hit:
                     cache_hits += 1
                 raw = _read_wav_mono_f32(wav_p)
                 trimmed, head_s = _trim_silence(raw)
-                trimmed = _match_sentence_active_rms(trimmed)
+                # Subtle energy-aware target RMS: calm/mysterious openings slightly softer (-1.0 dB) than reveals
+                energy_rms_scale = 1.0 + 0.045 * (res.energy_level - 3)
+                trimmed = _match_sentence_active_rms(trimmed, target_rms=0.094 * energy_rms_scale)
+                sentence_waveforms.append(trimmed)
+
                 dur_s = len(trimmed) / float(SR)
                 s0, s1 = cursor_s, cursor_s + dur_s
                 seg_last_speech_end_s = s1
@@ -1410,6 +1933,7 @@ def synthesize_directed_narration(
                     )
 
                 pause_s = res.pause_after_ms / 1000.0
+                inter_sentence_pauses_s.append(pause_s)
                 chunks.append(trimmed)
                 chunks.append(np.zeros(int(round(pause_s * SR)), dtype=np.float32))
                 cursor_s = s1 + pause_s
@@ -1420,25 +1944,33 @@ def synthesize_directed_narration(
                         "seg_id": seg.seg_id,
                         "text": res.canonical_text,
                         "delivery": res.delivery_label,
+                        "emotional_tone": res.emotional_tone,
                         "pace": res.pace_label,
                         "energy": res.energy_level,
+                        "emotional_intensity": res.emotional_intensity,
+                        "pitch_direction": res.pitch_direction,
+                        "sentence_rhythm": res.sentence_rhythm,
                         "rate": res.rate_str,
                         "pitch": res.pitch_str,
+                        "pause_before_ms": res.pause_before_ms,
                         "pause_after_ms": res.pause_after_ms,
                         "emphasis_phrases": res.emphasis_phrases,
                         "start_s": round(s0, 3),
                         "end_s": round(s1, 3),
                         "cache_key": res.cache_key,
                         "cache_hit": hit,
+                        "elevenlabs_model_settings": el_audit["voice_settings"],
                         "applied_approximations": res.applied_approximations,
                     }
                 )
+                flat_idx += 1
 
             last_pause_s = (seg_sents[-1].pause_after_ms / 1000.0) if seg_sents else seg.pause_after_s
             seg_records.append(
                 {
                     "seg_id": seg.seg_id,
                     "text": seg.text,
+                    "delivery": seg_sents[0].delivery_label if seg_sents else (seg.delivery or "DEFAULT"),
                     "rate": seg_sents[0].rate_str if seg_sents else seg.rate,
                     "pitch": seg_sents[0].pitch_str if seg_sents else seg.pitch,
                     "start": round(seg_start_s, 3),
@@ -1484,6 +2016,16 @@ def synthesize_directed_narration(
                 chunks.append(np.zeros(int(sb.pause_after_s * SR), dtype=np.float32))
                 cursor_s = b1 + sb.pause_after_s
 
+        # Post-concatenation Audio Continuity Review (Part 2, Section 4)
+        continuity_report = audit_narration_continuity(
+            sentence_waveforms=sentence_waveforms,
+            sentence_records=sentence_records,
+            pauses_s=inter_sentence_pauses_s[:-1] if inter_sentence_pauses_s else [],
+        )
+        (out_dir / "voice_continuity_report.json").write_text(
+            json.dumps(continuity_report, indent=2), encoding="utf-8"
+        )
+
         full = np.concatenate(chunks)
         total_frames = int(round((len(full) / float(SR)) * FPS))
         target_samples = int(round((total_frames / float(FPS)) * SR))
@@ -1507,7 +2049,18 @@ def synthesize_directed_narration(
         narr_norm_wav = work_dir / "narration_norm.wav"
         _write_wav_stereo(raw_wav, np.stack([full_with_room, full_with_room], axis=1))
 
-        if style.sound_design.enable_broadcast_vocal_mastering:
+        # Studio v7 transparent broadcast vocal chain: clean highpass + warm chest presence +
+        # gentle sibilance control + transparent low-ratio optical-style compression (NO metallic aecho!)
+        if style.sound_design.enable_broadcast_vocal_mastering and not manifest.legacy_v6_fallback:
+            vocal_af = (
+                "highpass=f=80,"
+                "equalizer=f=160:t=q:w=1.1:g=1.2,"
+                "equalizer=f=2950:t=q:w=1.3:g=0.7,"
+                "equalizer=f=5400:t=q:w=2.0:g=-1.8,"
+                "acompressor=threshold=-21dB:ratio=1.85:attack=18:release=190:makeup=1.0dB,"
+                "loudnorm=I=-16.0:TP=-1.5:LRA=11.0"
+            )
+        elif style.sound_design.enable_broadcast_vocal_mastering and manifest.legacy_v6_fallback:
             vocal_af = (
                 "highpass=f=82,"
                 "equalizer=f=168:t=q:w=1.1:g=1.6,"
@@ -1535,49 +2088,71 @@ def synthesize_directed_narration(
             check=True,
         )
 
-        voice_plan = {
-            "slug": manifest.slug,
-            "voice_input_mode": manifest.voice_input_mode,
-            "voice_direction_profile": profile.profile_id,
-            "voice_identity": voice_id,
-            "sentence_count": len(sentence_records),
-            "sentence_cache_hits": cache_hits,
-            "supported_controls": [
-                "sentence_level_speaking_rate_bounded",
-                "sentence_level_pitch_bounded",
-                "exact_inter_sentence_pause_ms",
-                "custom_pronunciation_dictionary",
-                "emphasis_phrase_extraction_and_subtitle_onset_sync",
-                "rms_matched_cross_sentence_consistency",
-                "selective_sentence_rerender_cache",
-            ],
-            "engine_limitations": [
-                "edge-tts does not support zero-shot voice cloning from audio samples.",
-                "Azure-only <mstts:express-as> emotional style XML is rejected by the free Edge endpoint; delivery emotion is approximated cleanly via bounded human rate/pitch/pause prosody without artificial DSP stretching.",
-            ],
-            "sentences": sentence_records,
-        }
-        voice_plan_path.write_text(json.dumps(voice_plan, indent=2), encoding="utf-8")
-
         pron_sig = hashlib.sha256(
             json.dumps(
                 {
-                    "voice": voice_id,
+                    "provider": active_provider,
+                    "voice": el_voice_id if use_elevenlabs else voice_id,
                     "profile": profile.profile_id,
                     "keys": [r.cache_key for r in resolved_list],
-                    "pauses": [r.pause_after_ms for r in resolved_list],
+                    "pauses_before": [r.pause_before_ms for r in resolved_list],
+                    "pauses_after": [r.pause_after_ms for r in resolved_list],
                 },
                 sort_keys=True,
             ).encode("utf-8")
         ).hexdigest()
 
+        invalidated_artifacts = invalidate_dependent_timing_artifacts(out_dir, prev_pron_sig, pron_sig)
+
+        voice_plan = {
+            "slug": manifest.slug,
+            "active_tts_provider": active_provider,
+            "elevenlabs_configured": is_elevenlabs_configured(),
+            "elevenlabs_target_model": el_model_id,
+            "segmentation_strategy": strategy,
+            "voice_input_mode": manifest.voice_input_mode,
+            "voice_direction_profile": profile.profile_id,
+            "voice_identity": el_voice_id if use_elevenlabs else voice_id,
+            "sentence_count": len(sentence_records),
+            "sentence_cache_hits": cache_hits,
+            "contrast_guardrail_summary": contrast_summary,
+            "continuity_review": continuity_report,
+            "invalidated_stale_artifacts_on_regeneration": invalidated_artifacts,
+            "supported_controls": [
+                "elevenlabs_model_capability_aware_settings",
+                "elevenlabs_request_stitching_when_supported",
+                "sentence_level_speaking_rate_bounded",
+                "sentence_level_pitch_bounded",
+                "pre_and_post_sentence_pause_ms",
+                "custom_pronunciation_dictionary",
+                "anti_overdrama_contrast_rebalancer",
+                "post_concatenation_continuity_reviewer",
+                "automatic_dependent_cache_invalidation",
+            ],
+            "engine_limitations": (
+                ["ElevenLabs API active with model-specific voice_settings."]
+                if use_elevenlabs
+                else [
+                    "ELEVENLABS_API_KEY not set in environment; running $0 neural edge-tts fallback while preserving full ElevenLabs model-specific voice_settings payloads.",
+                    "edge-tts does not support zero-shot voice cloning from audio samples.",
+                ]
+            ),
+            "sentences": sentence_records,
+        }
+        voice_plan_path.write_text(json.dumps(voice_plan, indent=2), encoding="utf-8")
+
         wt_obj = {
-            "voice": voice_id,
+            "voice": el_voice_id if use_elevenlabs else voice_id,
+            "active_tts_provider": active_provider,
+            "segmentation_method": strategy["method"],
             "voice_input_mode": manifest.voice_input_mode,
             "voice_direction_profile": profile.profile_id,
             "pronunciation_sig": pron_sig,
             "total_duration_s": round(len(full) / float(SR), 4),
             "total_frames_30fps": total_frames,
+            "continuity_review": continuity_report,
+            "contrast_summary": contrast_summary,
+            "invalidated_artifacts": invalidated_artifacts,
             "segments": seg_records,
             "sentences": sentence_records,
             "soundbites": soundbite_records,

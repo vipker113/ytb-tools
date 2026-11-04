@@ -1,0 +1,48 @@
+{
+  "slug": "deep-ocean-black-smokers-v8",
+  "adaptive_audio_profile": "immersive_exploration",
+  "max_cues_cap": 2,
+  "proposed_cues_count": 2,
+  "approved_cues_count": 1,
+  "rejected_for_silence_count": 1,
+  "silence_preferred_when_zero": false,
+  "approved_cues": [
+    {
+      "cue_id": "SFX01",
+      "sfx_name": "cavern_heartbeat_pulse",
+      "time_s": 25.893,
+      "gain_db": -26.0,
+      "shot_id": "S05",
+      "purpose": "Quiet tension pulse on mid-video reveal that the chimney walls are alive and moving",
+      "visual_event": "Thousands of blind vent shrimp revealed moving across chimney wall",
+      "origin_type": "first_party_acoustic_synthesis",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "six_question_audit": {
+        "q1_narration_happening": "You would expect bare, sterile rock around poison that hot. Instead, the chimney walls are moving.",
+        "q2_visible_on_screen": "Submersible Nautile filming Mid-Atlantic Ridge TAG and Snake Pit hydrothermal chimneys covered in swarming shrimp Chimney walls at TAG and S",
+        "q3_viewer_understanding": "Quiet tension pulse on mid-video reveal that the chimney walls are alive and moving",
+        "q4_materially_improves_moment": true,
+        "q5_authentic_relevant_legal": true,
+        "q6_silence_or_ambience_better": false
+      }
+    }
+  ],
+  "rejected_cues": [
+    {
+      "cue_index": 1,
+      "sfx_name": "glacial_sub_drop",
+      "proposed_time_s": 0.08,
+      "shot_id": "S01",
+      "decision": "REJECT_FOR_SILENCE",
+      "reason": "Shot S01 excludes 'cinematic_sfx' in scene_audio_layers.",
+      "six_question_audit": {
+        "q1_narration_happening": "Two miles underwater, black chimneys blast three-hundred-sixty-degree water\u2014without boiling into steam.",
+        "q2_visible_on_screen": "ROV Victor 6000 close-up of active hydrothermal black smoker chimney ejecting dense black mineral plumes 360\u00b0C seafloor black smoker chimney",
+        "q3_viewer_understanding": "Subtle low-frequency abyssal pressure weight on opening black smoker plume",
+        "q4_materially_improves_moment": false,
+        "q5_authentic_relevant_legal": true,
+        "q6_silence_or_ambience_better": true
+      }
+    }
+  ]
+}

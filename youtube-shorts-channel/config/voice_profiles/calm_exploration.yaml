@@ -1,0 +1,42 @@
+profile_id: "calm_exploration"
+display_name: "Calm Exploration"
+description: "Relaxed, immersive, unhurried documentary narration ideal for remote islands, deep landscapes, and observational nature stories."
+voice_mode: "directed_tts"
+voice_identity: "en-GB-RyanNeural"
+accent: "en-GB"
+tone: "immersive_observational"
+emotion: "calm_wonder"
+energy: 2
+speaking_speed: "slow"
+base_rate_pct: -2
+base_pitch_hz: -1
+default_pause_after_ms: 410
+consistency_lock: true
+max_rate_delta_pct: 8
+max_pitch_delta_hz: 2
+emphasis_strategy: "gentle_cadence_and_natural_breath"
+pronunciation:
+  pycnocline: "pik-noh-klyne"
+  halocline: "hal-oh-klyne"
+  bathypelagic: "bath-ee-puh-laj-ik"
+sentence_delivery_presets:
+  CALM_EXPLORATION:
+    rate_delta_pct: -2
+    pitch_delta_hz: 0
+    pause_after_ms: 420
+  MYSTERIOUS:
+    rate_delta_pct: -3
+    pitch_delta_hz: -1
+    pause_after_ms: 480
+  MEASURED_EVIDENCE:
+    rate_delta_pct: 0
+    pitch_delta_hz: 0
+    pause_after_ms: 360
+  CINEMATIC_REVEAL:
+    rate_delta_pct: -3
+    pitch_delta_hz: 0
+    pause_after_ms: 560
+  EMOTIONAL_REFLECTION:
+    rate_delta_pct: -4
+    pitch_delta_hz: -1
+    pause_after_ms: 520

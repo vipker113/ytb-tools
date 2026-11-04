@@ -132,11 +132,30 @@ def _video_codec_args(
     style: Optional[DocumentaryStyleProfile] = None,
 ) -> list[str]:
     if encode_mode == "draft":
+        if sys.platform == "darwin":
+            return [
+                "-c:v",
+                "h264_videotoolbox",
+                "-b:v",
+                "10M",
+                "-pix_fmt",
+                "yuv420p",
+                "-colorspace",
+                "bt709",
+                "-color_primaries",
+                "bt709",
+                "-color_trc",
+                "bt709",
+            ]
         return [
             "-c:v",
-            "h264_videotoolbox",
-            "-b:v",
-            "10M",
+            "libx264",
+            "-preset",
+            "veryfast",
+            "-crf",
+            "19",
+            "-profile:v",
+            "high",
             "-pix_fmt",
             "yuv420p",
             "-colorspace",
@@ -430,23 +449,41 @@ def render_single_shot(
         if s.shadow_lift > 1e-3:
             src_im = _apply_selective_shadow_lift(src_im, s.shadow_lift)
 
+        suppress_auto_motion = (
+            s.disable_artificial_still_motion is True
+            or (
+                s.disable_artificial_still_motion is None
+                and not style.asset_selection.auto_animate_stills_by_default
+                and s.kind == "still_full"
+                and s.camera_movement != "tracking"
+                and not s.reframe_keyframes
+            )
+        )
+
         if s.reframe_mode == "auto_salient":
             scx, scy = estimate_salient_subject_center(src_im)
             cx0, cy0 = scx, scy
-            cx1, cy1 = min(0.82, scx + 0.015), max(0.22, scy - 0.012)
+            if suppress_auto_motion:
+                cx1, cy1 = cx0, cy0
+            else:
+                cx1, cy1 = min(0.82, scx + 0.015), max(0.22, scy - 0.012)
         else:
-            cx0, cy0, cx1, cy1 = s.cx0, s.cy0, s.cx1, s.cy1
+            cx0, cy0 = s.cx0, s.cy0
+            cx1, cy1 = (cx0, cy0) if suppress_auto_motion else (s.cx1, s.cy1)
 
         z0 = max(1.0, s.z0)
         max_dz = style.composition.still_max_zoom_delta
-        if abs(s.z1 - z0) > max_dz:
+        if suppress_auto_motion:
+            z1 = z0
+        elif abs(s.z1 - z0) > max_dz:
             z1 = z0 + (max_dz if s.z1 >= z0 else -max_dz)
             z1 = max(1.0, z1)
         else:
             z1 = max(1.0, s.z1)
 
         use_25d = (
-            style.composition.enable_synthetic_25d_parallax
+            not suppress_auto_motion
+            and style.composition.enable_synthetic_25d_parallax
             and s.kind == "still_parallax_25d"
             and s.parallax_px > 0.0
         )

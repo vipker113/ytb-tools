@@ -1,0 +1,36 @@
+{
+  "slug": "test-b-medium-glacier-aquifer",
+  "creative_qa_pass": false,
+  "severity_counts": {
+    "CRITICAL": 0,
+    "MAJOR": 1,
+    "MINOR": 0,
+    "INFO": 0
+  },
+  "voice_metrics": {
+    "speaking_rate_wpm": 147.3,
+    "max_boundary_rms_jump_db": 0.76,
+    "high_drama_segment_ratio": 0.286
+  },
+  "soundscape_metrics": {
+    "adaptive_audio_profile": "mystery_and_discovery",
+    "music_sections_count": 2,
+    "audible_ambience_sections_count": 3,
+    "approved_sfx_count": 2,
+    "rejected_sfx_for_silence_count": 1,
+    "voice_to_bed_margin_lu": 23.8
+  },
+  "editing_metrics": {
+    "final_scene_count": 7,
+    "mean_scene_duration_s": 11.58,
+    "sync_issues_count": 0
+  },
+  "issues": [
+    {
+      "severity": "MAJOR",
+      "pillar": "visual_and_audio_qa",
+      "code": "redundant_consecutive_scene",
+      "message": "Consecutive surviving shots S08 and S09 repeat the exact same visual source 'nasa_exports_twilight_ocean.mp4' without narrative reason."
+    }
+  ]
+}

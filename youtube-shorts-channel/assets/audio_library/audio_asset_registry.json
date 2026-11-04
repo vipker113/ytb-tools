@@ -1,0 +1,748 @@
+{
+  "registry_version": "7.0",
+  "budget_usd": 0.0,
+  "asset_count": 27,
+  "assets": [
+    {
+      "asset_name": "Flowing-water-100019.ogg_utm_source_commons.wikimedia",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Flowing-water-100019.ogg",
+      "creator": "Fg2",
+      "license": "Public domain",
+      "attribution_requirements": "No attribution legally required (Public Domain / CC0); archived in registry.",
+      "duration_s": 18.856,
+      "audio_category": "authentic_field_recording",
+      "tags": [
+        "flowing",
+        "water"
+      ],
+      "technical_characteristics": {
+        "mime": "application/ogg",
+        "bytes": 346900,
+        "sample_rate_hz": 44100,
+        "channels": 2,
+        "codec": "vorbis"
+      },
+      "intended_usage": "Verified authentic archival/field audio matching ' Flowing water'",
+      "downloaded_file_location": "assets/audio_library/field_recordings/Flowing-water-100019.ogg_utm_source_commons.wikimedia.org_utm_campaign_imageinfo_utm_content_original",
+      "origin_type": "authentic_field_or_archival_recording",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "Sine_Wave_10Hz_30s.ogg_utm_source_commons.wikimedia",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sine_Wave_10Hz_30s.ogg",
+      "creator": "Inductiveload",
+      "license": "Public domain",
+      "attribution_requirements": "No attribution legally required (Public Domain / CC0); archived in registry.",
+      "duration_s": 30.0,
+      "audio_category": "authentic_field_recording",
+      "tags": [
+        "ocean",
+        "waves",
+        "wind"
+      ],
+      "technical_characteristics": {
+        "mime": "application/ogg",
+        "bytes": 52618,
+        "sample_rate_hz": 8000,
+        "channels": 1,
+        "codec": "vorbis"
+      },
+      "intended_usage": "Verified authentic archival/field audio matching 'ocean waves wind'",
+      "downloaded_file_location": "assets/audio_library/field_recordings/Sine_Wave_10Hz_30s.ogg_utm_source_commons.wikimedia.org_utm_campaign_imageinfo_utm_content_original",
+      "origin_type": "authentic_field_or_archival_recording",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "Sine_Wave_20Hz_30s.ogg_utm_source_commons.wikimedia",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sine_Wave_20Hz_30s.ogg",
+      "creator": "Inductiveload",
+      "license": "Public domain",
+      "attribution_requirements": "No attribution legally required (Public Domain / CC0); archived in registry.",
+      "duration_s": 30.0,
+      "audio_category": "authentic_field_recording",
+      "tags": [
+        "ocean",
+        "waves",
+        "wind"
+      ],
+      "technical_characteristics": {
+        "mime": "application/ogg",
+        "bytes": 58298,
+        "sample_rate_hz": 8000,
+        "channels": 1,
+        "codec": "vorbis"
+      },
+      "intended_usage": "Verified authentic archival/field audio matching 'ocean waves wind'",
+      "downloaded_file_location": "assets/audio_library/field_recordings/Sine_Wave_20Hz_30s.ogg_utm_source_commons.wikimedia.org_utm_campaign_imageinfo_utm_content_original",
+      "origin_type": "authentic_field_or_archival_recording",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "Small_sea_waves_at_rocky_beach.opus_utm_source_commons.wikimedia",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Small_sea_waves_at_rocky_beach.opus",
+      "creator": "mnalis",
+      "license": "CC BY 3.0",
+      "attribution_requirements": "Credit in off-screen source register / video description: mnalis (CC BY 3.0, https://commons.wikimedia.org/wiki/File:Small_sea_waves_at_rocky_beach.opus)",
+      "duration_s": 9.96,
+      "audio_category": "authentic_field_recording",
+      "tags": [
+        "waves",
+        "beach"
+      ],
+      "technical_characteristics": {
+        "mime": "application/ogg",
+        "bytes": 18817,
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "codec": "opus"
+      },
+      "intended_usage": "Verified authentic archival/field audio matching 'Waves on beach'",
+      "downloaded_file_location": "assets/audio_library/field_recordings/Small_sea_waves_at_rocky_beach.opus_utm_source_commons.wikimedia.org_utm_campaign_imageinfo_utm_content_original",
+      "origin_type": "authentic_field_or_archival_recording",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "boiling_acid_brine",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 2.4,
+      "audio_category": "sfx",
+      "tags": [
+        "hydrothermal",
+        "geothermal",
+        "vent",
+        "acid_pool"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -2.83,
+        "rms_dbfs": -15.47
+      },
+      "intended_usage": "Low-level thermal bubbling texture ONLY when active geothermal vents/pools are visible",
+      "downloaded_file_location": "assets/sfx_cc0/boiling_acid_brine.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "cave_flood_rush",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 2.5,
+      "audio_category": "sfx",
+      "tags": [
+        "cave",
+        "water",
+        "underground_river",
+        "karst"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -2.99,
+        "rms_dbfs": -16.65
+      },
+      "intended_usage": "Subterranean water flow texture ONLY when flowing cave water is visible",
+      "downloaded_file_location": "assets/sfx_cc0/cave_flood_rush.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "cavern_heartbeat_pulse",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 2.1,
+      "audio_category": "sfx",
+      "tags": [
+        "subterranean",
+        "deep_earth",
+        "pulse"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -4.85,
+        "rms_dbfs": -18.96
+      },
+      "intended_usage": "Ultra-subtle deep acoustic pulse for rare geological reveals",
+      "downloaded_file_location": "assets/sfx_cc0/cavern_heartbeat_pulse.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "chapter_whoosh_soft",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 0.75,
+      "audio_category": "deprecated_transition_sfx",
+      "tags": [
+        "deprecated",
+        "transition",
+        "whoosh"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -8.1,
+        "rms_dbfs": -21.35
+      },
+      "intended_usage": "LEGACY v6 ONLY: Decorative transition whoosh \u2014 preserved for fallback, disallowed in Studio v7",
+      "downloaded_file_location": "assets/sfx_cc0/chapter_whoosh_soft.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": false
+    },
+    {
+      "asset_name": "fumarole_gas_jet",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 2.2,
+      "audio_category": "sfx",
+      "tags": [
+        "volcano",
+        "fumarole",
+        "steam",
+        "vent"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -2.71,
+        "rms_dbfs": -20.42
+      },
+      "intended_usage": "Restrained volcanic gas vent hiss ONLY when active fumarole plume is on screen",
+      "downloaded_file_location": "assets/sfx_cc0/fumarole_gas_jet.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "glacial_sub_drop",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 1.6,
+      "audio_category": "sfx",
+      "tags": [
+        "glacier",
+        "ice",
+        "subglacial",
+        "reveal_low"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -1.71,
+        "rms_dbfs": -13.51
+      },
+      "intended_usage": "Subtle low-frequency ice-mass resonance when glacier fracture or subglacial cavity is visible",
+      "downloaded_file_location": "assets/sfx_cc0/glacial_sub_drop.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "hydrophone_current_swell",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 2.4,
+      "audio_category": "sfx",
+      "tags": [
+        "ocean",
+        "underwater",
+        "current",
+        "brine",
+        "deep_sea"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -2.25,
+        "rms_dbfs": -15.86
+      },
+      "intended_usage": "Restrained low-pass underwater current swell for submerged ocean/ROV footage",
+      "downloaded_file_location": "assets/sfx_cc0/hydrophone_current_swell.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "ice_creak_subtle",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 1.8,
+      "audio_category": "sfx",
+      "tags": [
+        "ice",
+        "glacier",
+        "crevasse",
+        "polar"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -1.74,
+        "rms_dbfs": -12.26
+      },
+      "intended_usage": "Subtle structural ice stress creak only when glacier/ice surface is directly shown on screen",
+      "downloaded_file_location": "assets/sfx_cc0/ice_creak_subtle.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "katabatic_wind_gust",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 2.6,
+      "audio_category": "sfx",
+      "tags": [
+        "wind",
+        "polar",
+        "aerial",
+        "ridge",
+        "island"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -2.62,
+        "rms_dbfs": -18.1
+      },
+      "intended_usage": "Restrained filtered air movement for exposed polar or high-altitude aerial geography",
+      "downloaded_file_location": "assets/sfx_cc0/katabatic_wind_gust.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "locator_ping_soft",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 1.0,
+      "audio_category": "deprecated_transition_sfx",
+      "tags": [
+        "deprecated",
+        "ui_ping",
+        "map"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -2.78,
+        "rms_dbfs": -17.72
+      },
+      "intended_usage": "LEGACY v6 ONLY: Decorative UI map ping \u2014 preserved for fallback, disallowed in Studio v7",
+      "downloaded_file_location": "assets/sfx_cc0/locator_ping_soft.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": false
+    },
+    {
+      "asset_name": "microscope_slide_click",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 0.3,
+      "audio_category": "sfx",
+      "tags": [
+        "microscope",
+        "laboratory",
+        "instrument",
+        "sample"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -8.51,
+        "rms_dbfs": -29.67
+      },
+      "intended_usage": "Subtle mechanical detent ONLY when laboratory/microscopy equipment handling is visible",
+      "downloaded_file_location": "assets/sfx_cc0/microscope_slide_click.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "mus_ancient_modal_drone_cc0",
+      "source_url": "first-party://pow_studio/audio_registry.py",
+      "creator": "Proof of Wonder Studio (First-Party Acoustic Synthesis)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required (100% first-party original synthesis)",
+      "duration_s": 28.0,
+      "audio_category": "music",
+      "tags": [
+        "ancient_mystery",
+        "archaeology",
+        "historical",
+        "evidence",
+        "modal"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -7.13,
+        "rms_dbfs": -14.19,
+        "tempo_bpm": 56,
+        "energy": "low_moderate",
+        "instrumentation": "Restrained open-fifth acoustic modal resonance (D2-A2-C3)",
+        "frequency_band_hz": "73-520 Hz (vocal pocket carved)"
+      },
+      "intended_usage": "Ancient geological or archaeological mysteries and evidence-led progression",
+      "downloaded_file_location": "assets/audio_library/music_beds/mus_ancient_modal_drone_cc0.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "mus_deep_abyssal_pedal_cc0",
+      "source_url": "first-party://pow_studio/audio_registry.py",
+      "creator": "Proof of Wonder Studio (First-Party Acoustic Synthesis)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required (100% first-party original synthesis)",
+      "duration_s": 28.0,
+      "audio_category": "music",
+      "tags": [
+        "deep_ocean",
+        "space",
+        "spacious",
+        "low_frequency",
+        "immersive"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -6.94,
+        "rms_dbfs": -16.43,
+        "tempo_bpm": 44,
+        "energy": "low",
+        "instrumentation": "Deep spacious G1-D2 sub-harmonic pedal below speech band",
+        "frequency_band_hz": "49-310 Hz (strictly below speech band)"
+      },
+      "intended_usage": "Deep ocean abyssal trenches and spacious cosmic scale moments",
+      "downloaded_file_location": "assets/audio_library/music_beds/mus_deep_abyssal_pedal_cc0.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "mus_discovery_ascent_cc0",
+      "source_url": "first-party://pow_studio/audio_registry.py",
+      "creator": "Proof of Wonder Studio (First-Party Acoustic Synthesis)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required (100% first-party original synthesis)",
+      "duration_s": 28.0,
+      "audio_category": "music",
+      "tags": [
+        "building_discovery",
+        "escalation",
+        "payoff",
+        "awe",
+        "cinematic_science"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -6.38,
+        "rms_dbfs": -17.29,
+        "tempo_bpm": 66,
+        "energy": "moderate",
+        "instrumentation": "Ascending warm major-sixth harmonic progression (D-F-G-A)",
+        "frequency_band_hz": "73-760 Hz (vocal pocket carved)"
+      },
+      "intended_usage": "Building scientific discovery and central mechanism payoff sections",
+      "downloaded_file_location": "assets/audio_library/music_beds/mus_discovery_ascent_cc0.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "mus_minimal_glass_pulse_cc0",
+      "source_url": "first-party://pow_studio/audio_registry.py",
+      "creator": "Proof of Wonder Studio (First-Party Acoustic Synthesis)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required (100% first-party original synthesis)",
+      "duration_s": 28.0,
+      "audio_category": "music",
+      "tags": [
+        "minimal",
+        "scientific_explanation",
+        "calm",
+        "sparse",
+        "high_intelligibility"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -7.54,
+        "rms_dbfs": -19.23,
+        "tempo_bpm": 54,
+        "energy": "very_low",
+        "instrumentation": "Sparse damped glass-harmonic intervals over soft A2 pedal",
+        "frequency_band_hz": "110-920 Hz (320-2850 Hz vocal pocket attenuated)"
+      },
+      "intended_usage": "Scientific explanation and minimal documentary context where speech clarity is paramount",
+      "downloaded_file_location": "assets/audio_library/music_beds/mus_minimal_glass_pulse_cc0.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "mus_mysterious_undertow_cc0",
+      "source_url": "first-party://pow_studio/audio_registry.py",
+      "creator": "Proof of Wonder Studio (First-Party Acoustic Synthesis)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required (100% first-party original synthesis)",
+      "duration_s": 28.0,
+      "audio_category": "music",
+      "tags": [
+        "mystery",
+        "opening_hook",
+        "curiosity_gap",
+        "restrained_tension",
+        "earth"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -7.13,
+        "rms_dbfs": -16.36,
+        "tempo_bpm": 52,
+        "energy": "low",
+        "instrumentation": "Restrained Dorian modal low-register resonance (C2-G2-D3)",
+        "frequency_band_hz": "65-480 Hz (below primary vocal formants)"
+      },
+      "intended_usage": "Opening curiosity hooks and mysterious scientific anomalies without horror clich\u00e9s",
+      "downloaded_file_location": "assets/audio_library/music_beds/mus_mysterious_undertow_cc0.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "mus_reflective_piano_settle_cc0",
+      "source_url": "first-party://pow_studio/audio_registry.py",
+      "creator": "Proof of Wonder Studio (First-Party Acoustic Synthesis)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required (100% first-party original synthesis)",
+      "duration_s": 28.0,
+      "audio_category": "music",
+      "tags": [
+        "reflective",
+        "final_explanation",
+        "ending",
+        "soft",
+        "felt_piano"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -7.54,
+        "rms_dbfs": -20.91,
+        "tempo_bpm": 48,
+        "energy": "very_low",
+        "instrumentation": "Soft damped felt-piano fifths with long natural decay",
+        "frequency_band_hz": "110-700 Hz (vocal pocket carved)"
+      },
+      "intended_usage": "Final reflection, scientific caveats, and calm documentary conclusions",
+      "downloaded_file_location": "assets/audio_library/music_beds/mus_reflective_piano_settle_cc0.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "mus_reveal_harmonic_accent_cc0",
+      "source_url": "first-party://pow_studio/audio_registry.py",
+      "creator": "Proof of Wonder Studio (First-Party Acoustic Synthesis)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required (100% first-party original synthesis)",
+      "duration_s": 4.2,
+      "audio_category": "music_accent",
+      "tags": [
+        "reveal",
+        "discovery",
+        "subtle_accent",
+        "non_impact"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -6.94,
+        "rms_dbfs": -20.05,
+        "tempo_bpm": 0,
+        "energy": "controlled_accent",
+        "instrumentation": "Warm 4.2s G2-D3-A3 harmonic swell (replaces loud trailer impacts)",
+        "frequency_band_hz": "98-680 Hz"
+      },
+      "intended_usage": "Subtle musical accent reinforcing a major scientific reveal without masking speech",
+      "downloaded_file_location": "assets/audio_library/music_beds/mus_reveal_harmonic_accent_cc0.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "mus_warm_cello_exploration_cc0",
+      "source_url": "first-party://pow_studio/audio_registry.py",
+      "creator": "Proof of Wonder Studio (First-Party Acoustic Synthesis)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required (100% first-party original synthesis)",
+      "duration_s": 28.0,
+      "audio_category": "music",
+      "tags": [
+        "exploration",
+        "establishing_context",
+        "warm",
+        "cello",
+        "documentary"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -6.75,
+        "rms_dbfs": -16.72,
+        "tempo_bpm": 60,
+        "energy": "low_moderate",
+        "instrumentation": "Warm bowed low-string open fifth progression (D2-G2-E2-A1)",
+        "frequency_band_hz": "55-640 Hz (vocal pocket carved)"
+      },
+      "intended_usage": "Establishing geography, fieldwork exploration, and steady documentary storytelling",
+      "downloaded_file_location": "assets/audio_library/music_beds/mus_warm_cello_exploration_cc0.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "nasa_m12666_antarctic_wind_field_audio",
+      "source_url": "https://svs.gsfc.nasa.gov/12666",
+      "creator": "NASA Goddard Space Flight Center / Operation IceBridge Field Team",
+      "license": "Public Domain (17 U.S.C. \u00a7 105 US Government Work)",
+      "attribution_requirements": "Credit NASA Goddard Space Flight Center in off-screen source register",
+      "duration_s": 37.0,
+      "audio_category": "authentic_field_recording",
+      "tags": [
+        "antarctica",
+        "wind",
+        "ice",
+        "fieldwork",
+        "authentic",
+        "polar"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "slice_s": [
+          1.0,
+          38.0
+        ]
+      },
+      "intended_usage": "Genuine Antarctic ice-sheet field wind and expedition atmosphere",
+      "downloaded_file_location": "assets/raw_footage/hidden_earth_blood_falls_v3/nasa_m12666_nansen_scientists_ice.mp4",
+      "origin_type": "authentic_field_or_archival_recording",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "paper_data_reveal",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 0.95,
+      "audio_category": "deprecated_transition_sfx",
+      "tags": [
+        "deprecated",
+        "ui_click",
+        "data"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -4.32,
+        "rms_dbfs": -16.66
+      },
+      "intended_usage": "LEGACY v6 ONLY: Decorative card sound \u2014 preserved for fallback, disallowed in Studio v7",
+      "downloaded_file_location": "assets/sfx_cc0/paper_data_reveal.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": false
+    },
+    {
+      "asset_name": "sonar_ping_deep",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 1.45,
+      "audio_category": "sfx",
+      "tags": [
+        "sonar",
+        "bathymetry",
+        "rov",
+        "mapping",
+        "instrument"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -5.53,
+        "rms_dbfs": -19.95
+      },
+      "intended_usage": "Acoustic mapping ping ONLY when bathymetric sonar/ROV instrument operation is narrated and shown",
+      "downloaded_file_location": "assets/sfx_cc0/sonar_ping_deep.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": true
+    },
+    {
+      "asset_name": "subterranean_gate_boom",
+      "source_url": "first-party://pow_studio/sfx_library.py",
+      "creator": "Proof of Wonder Studio (First-Party Procedural Synthesis \u2014 NOT authentic field audio)",
+      "license": "CC0 1.0 Public Domain Dedication (First-Party Original)",
+      "attribution_requirements": "None required; must NOT be misrepresented as authentic wildlife/field recording",
+      "duration_s": 2.0,
+      "audio_category": "deprecated_transition_sfx",
+      "tags": [
+        "deprecated",
+        "impact",
+        "boom"
+      ],
+      "technical_characteristics": {
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "peak_dbfs": -3.14,
+        "rms_dbfs": -16.4
+      },
+      "intended_usage": "LEGACY v6 ONLY: Decorative low boom \u2014 preserved for fallback, disallowed in Studio v7",
+      "downloaded_file_location": "assets/sfx_cc0/subterranean_gate_boom.wav",
+      "origin_type": "first_party_acoustic_synthesis",
+      "monetization_safe": true,
+      "allow_in_v7_creative_edit": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "test-a-short-antarctic-brine",
+  "encode_mode": "master",
+  "shots_render_or_cache_s": 0.021,
+  "timeline_assembly_and_mux_s": 57.567,
+  "thumbnail_concepts_s": 4.024,
+  "total_render_master_s": 61.763,
+  "rendered_frames": 1112,
+  "effective_render_fps": 18.0
+}

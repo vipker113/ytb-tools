@@ -1,0 +1,36 @@
+{
+  "slug": "test-a-short-antarctic-brine",
+  "creative_qa_pass": true,
+  "severity_counts": {
+    "CRITICAL": 0,
+    "MAJOR": 0,
+    "MINOR": 0,
+    "INFO": 1
+  },
+  "voice_metrics": {
+    "speaking_rate_wpm": 147.3,
+    "max_boundary_rms_jump_db": 0.72,
+    "high_drama_segment_ratio": 0.25
+  },
+  "soundscape_metrics": {
+    "adaptive_audio_profile": "minimal_documentary",
+    "music_sections_count": 0,
+    "audible_ambience_sections_count": 1,
+    "approved_sfx_count": 1,
+    "rejected_sfx_for_silence_count": 2,
+    "voice_to_bed_margin_lu": 26.4
+  },
+  "editing_metrics": {
+    "final_scene_count": 5,
+    "mean_scene_duration_s": 7.41,
+    "sync_issues_count": 0
+  },
+  "issues": [
+    {
+      "severity": "INFO",
+      "pillar": "music_and_effect_qa",
+      "code": "intentional_no_music",
+      "message": "Episode intentionally uses zero background music so narration and authentic environment carry the story."
+    }
+  ]
+}

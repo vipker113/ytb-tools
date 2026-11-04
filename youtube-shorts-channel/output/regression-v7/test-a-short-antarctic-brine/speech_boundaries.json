@@ -1,0 +1,71 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 4.99,
+    "word_end_s": 4.827,
+    "next_word_start_s": 5.154,
+    "pause_s": 0.327,
+    "kind": "breath_pause",
+    "after_word": "ice"
+  },
+  {
+    "time_s": 9.124,
+    "word_end_s": 8.899,
+    "next_word_start_s": 9.374,
+    "pause_s": 0.475,
+    "kind": "breath_pause",
+    "after_word": "freezes"
+  },
+  {
+    "time_s": 13.034,
+    "word_end_s": 12.877,
+    "next_word_start_s": 13.191,
+    "pause_s": 0.314,
+    "kind": "breath_pause",
+    "after_word": "algae"
+  },
+  {
+    "time_s": 18.082,
+    "word_end_s": 17.857,
+    "next_word_start_s": 18.475,
+    "pause_s": 0.618,
+    "kind": "breath_pause",
+    "after_word": "iron"
+  },
+  {
+    "time_s": 23.944,
+    "word_end_s": 23.789,
+    "next_word_start_s": 24.098,
+    "pause_s": 0.309,
+    "kind": "breath_pause",
+    "after_word": "underground"
+  },
+  {
+    "time_s": 26.345,
+    "word_end_s": 26.227,
+    "next_word_start_s": 26.462,
+    "pause_s": 0.235,
+    "kind": "breath_pause",
+    "after_word": "point"
+  },
+  {
+    "time_s": 28.952,
+    "word_end_s": 28.727,
+    "next_word_start_s": 29.272,
+    "pause_s": 0.545,
+    "kind": "breath_pause",
+    "after_word": "air"
+  },
+  {
+    "time_s": 37.067,
+    "word_end_s": 36.568,
+    "next_word_start_s": 37.067,
+    "pause_s": 0.499,
+    "kind": "segment_end",
+    "after_word": "oxygen"
+  }
+]

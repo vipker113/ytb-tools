@@ -1,0 +1,121 @@
+{
+  "slug": "test-b-medium-glacier-aquifer",
+  "adaptive_audio_profile": {
+    "selected_profile": "mystery_and_discovery",
+    "selection_reason": "Explicitly configured adaptive audio profile 'mystery_and_discovery'.",
+    "script_metrics": {
+      "narration_duration_s": 81.067,
+      "segment_count": 7,
+      "sentence_count": 15,
+      "quantitative_fact_cues": 7,
+      "mystery_cues": 4,
+      "environmental_cues": 10,
+      "has_diegetic_field_audio": false
+    }
+  },
+  "emotional_progression": {
+    "opening_emotion": "Restrained curiosity and sense of place",
+    "curiosity_increase_at_s": 12.24,
+    "calm_authoritative_stretches": [
+      {
+        "seg_id": "N02",
+        "start_s": 12.24,
+        "end_s": 23.12
+      },
+      {
+        "seg_id": "N03",
+        "start_s": 23.54,
+        "end_s": 34.63
+      },
+      {
+        "seg_id": "N05",
+        "start_s": 45.7,
+        "end_s": 56.49
+      }
+    ],
+    "significant_reveal": {
+      "present": true,
+      "seg_id": "N06",
+      "start_s": 56.93
+    },
+    "requires_tension": true,
+    "less_prominent_windows": [
+      {
+        "reason": "Pre-reveal hush & central empirical explanation intelligibility",
+        "start_s": 55.78,
+        "end_s": 59.13
+      }
+    ],
+    "ending_approach": "Softer reflective resolution allowing the scientific takeaway to settle"
+  },
+  "music_present": true,
+  "music_sections_count": 2,
+  "structure_rationale": "Two differentiated sections follow the 81.1s story shift from initial inquiry/context into deeper scientific discovery and resolution.",
+  "sections": [
+    {
+      "section_id": "M01",
+      "story_stage": "opening_curiosity_and_context",
+      "track_name": "mus_mysterious_undertow_cc0",
+      "start_s": 0.0,
+      "end_s": 34.35,
+      "base_gain_db": -23.3,
+      "fade_in_s": 0.65,
+      "fade_out_s": 1.1,
+      "purpose": "Establish atmosphere and curiosity without overshadowing opening evidence"
+    },
+    {
+      "section_id": "M02",
+      "story_stage": "building_discovery",
+      "track_name": "mus_discovery_ascent_cc0",
+      "start_s": 35.2,
+      "end_s": 81.067,
+      "base_gain_db": -22.5,
+      "fade_in_s": 1.15,
+      "fade_out_s": 1.35,
+      "purpose": "Support discovery payoff and let the final scientific insight settle"
+    }
+  ],
+  "silence_windows": [
+    {
+      "start_s": 33.925,
+      "end_s": 35.125,
+      "purpose": "Intentional pre-pivot hush before deeper scientific mechanism"
+    }
+  ],
+  "musical_accents": [
+    {
+      "asset_name": "mus_reveal_harmonic_accent_cc0",
+      "time_s": 56.646,
+      "gain_db": -23.5,
+      "purpose": "Controlled harmonic bloom reinforcing central reveal (N06) without loud impact"
+    }
+  ],
+  "track_evaluations": [
+    {
+      "section_id": "M01",
+      "track_name": "mus_mysterious_undertow_cc0",
+      "emotional_appropriateness": "Establish atmosphere and curiosity without overshadowing opening evidence",
+      "tempo_bpm": 52,
+      "energy": "low",
+      "instrumentation": "Restrained Dorian modal low-register resonance (C2-G2-D3)",
+      "frequency_range": "65-480 Hz (below primary vocal formants)",
+      "narration_compatibility": "320-2850 Hz vocal pocket carved + dynamic speech & important-phrase ducking",
+      "transition_alignment": "Snapped to verified inter-sentence speech boundary",
+      "available_duration_s": 28.0,
+      "commercial_license": "CC0 1.0 Public Domain Dedication (First-Party Original)"
+    },
+    {
+      "section_id": "M02",
+      "track_name": "mus_discovery_ascent_cc0",
+      "emotional_appropriateness": "Support discovery payoff and let the final scientific insight settle",
+      "tempo_bpm": 66,
+      "energy": "moderate",
+      "instrumentation": "Ascending warm major-sixth harmonic progression (D-F-G-A)",
+      "frequency_range": "73-760 Hz (vocal pocket carved)",
+      "narration_compatibility": "320-2850 Hz vocal pocket carved + dynamic speech & important-phrase ducking",
+      "transition_alignment": "Snapped to verified inter-sentence speech boundary",
+      "available_duration_s": 28.0,
+      "commercial_license": "CC0 1.0 Public Domain Dedication (First-Party Original)"
+    }
+  ]
+}

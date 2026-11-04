@@ -33,6 +33,8 @@ from collections import Counter
 from pathlib import Path
 from typing import Any, Optional
 
+from .deduplication import audit_visual_repetition_and_progression, resolve_canonical_source_id
+from .media_classifier import compute_visual_coverage_metrics
 from .reframing import evaluate_crop_feasibility
 from .schema import EpisodeManifest, ShotSpecModel, resolve_timed_shots
 from .script_linter import audit_viral_shorts_script
@@ -380,30 +382,41 @@ def audit_shot_plan_and_alignment(
         else:
             mtype = "photo"
             still_photo_s += dur
-            still_photo_uses[s.src_file] += 1
-            if style.asset_selection.forbid_repeated_same_image_zoom and still_photo_uses[s.src_file] > 1:
+            canon_still_id = resolve_canonical_source_id(asset_spec, s.src_file)
+            still_photo_uses[canon_still_id] += 1
+            is_permitted_callback = bool(getattr(s, "intentional_callback", False) and getattr(s, "callback_purpose", ""))
+            if (
+                (style.asset_selection.forbid_repeated_same_image_zoom or style.asset_selection.forbid_multi_crop_single_photo)
+                and still_photo_uses[canon_still_id] > 1
+                and not is_permitted_callback
+            ):
                 errors.append(
-                    f"[{s.sid}] Still photograph '{s.src_file}' is reused multiple times; "
-                    "artificial visual variety by zooming into the same image repeatedly is forbidden."
+                    f"[{s.sid}] Still photograph '{s.src_file}' is reused multiple times (canonical source '{canon_still_id}'); "
+                    "splitting or re-cropping one photograph into multiple fake scenes is forbidden."
                 )
             if idx == 0 and dur > style.viral_retention.max_opening_still_duration_s + 0.08:
                 errors.append(
                     f"[{s.sid}] Opening shot is a static photo lasting {dur:.2f}s (> {style.viral_retention.max_opening_still_duration_s:.2f}s viral hook cap); "
                     "cut to real live-action moving footage within ~2s so viewers never swipe away on a slow photo pan."
                 )
-            elif dur > style.asset_selection.max_single_still_duration_s + 0.05:
+            elif dur > style.asset_selection.max_single_still_duration_s + 0.05 and not (
+                getattr(s, "essential_historical_or_scientific_evidence", False)
+                and style.asset_selection.allow_extended_still_for_essential_evidence
+            ):
                 warnings.append(
                     f"[{s.sid}] Static photo duration {dur:.2f}s exceeds max_single_still_duration_s ({style.asset_selection.max_single_still_duration_s:.2f}s)."
                 )
+            # Footage-First v8 fix: NEVER exempt consecutive 2.5D parallax or re-cropped still photos unless running legacy_v6_fallback!
             allow_25d_pair = (
-                style.asset_selection.location_authentic_mode
+                bool(getattr(manifest, "legacy_v6_fallback", False))
+                and style.asset_selection.location_authentic_mode
                 and s.kind == "still_parallax_25d"
                 and s.parallax_px >= 8.0
                 and (idx == 0 or timed_shots[idx - 1].src_file != s.src_file or timed_shots[idx - 1].crop_box != s.crop_box)
             )
             if style.asset_selection.forbid_consecutive_still_shots and prev_mtype == "photo" and not allow_25d_pair:
                 errors.append(
-                    f"[{s.sid}] Consecutive static photo shots ({timed_shots[idx - 1].sid} -> {s.sid}) are forbidden in {style.profile_name}; interleave real moving footage."
+                    f"[{s.sid}] Consecutive static photo shots ({timed_shots[idx - 1].sid} -> {s.sid}, including animated stills) are forbidden in {style.profile_name}; interleave real moving footage."
                 )
 
         persp = _infer_shot_perspective(s, mtype)
@@ -497,7 +510,15 @@ def audit_shot_plan_and_alignment(
                 max_upscale_warn=style.composition.max_upscale_factor_warn,
                 contains_wide_axes_or_text=bool(asset_spec and not asset_spec.allow_cropping),
             )
-            crop_info = feas.__dict__
+            crop_info = {
+                **feas.__dict__,
+                "is_native_full_hd_vertical": bool(feas.crop_width_px >= style.output.width - 1 and feas.crop_height_px >= style.output.height - 1),
+                "honest_quality_tier": (
+                    "native_1080x1920"
+                    if (feas.crop_width_px >= style.output.width - 1 and feas.crop_height_px >= style.output.height - 1)
+                    else ("hd_vertical_reframe" if feas.crop_height_px >= 960 else "upscaled_sub_hd_crop")
+                ),
+            }
             for cw_msg in feas.warnings:
                 warnings.append(f"[{s.sid}:{s.src_file}] {cw_msg}")
             if mtype == "video" and vid_dur > 0 and (s.src_in + dur) > vid_dur + 0.35:
@@ -505,10 +526,23 @@ def audit_shot_plan_and_alignment(
                     f"[{s.sid}] Video window [{s.src_in:.2f}s..{s.src_in + dur:.2f}s] exceeds clip duration {vid_dur:.2f}s ({s.src_file})."
                 )
             if mtype == "video":
-                mot = audit_clip_real_motion(resolved_path, start_s=s.src_in, duration_s=min(dur, 3.5))
+                mot = audit_clip_real_motion(
+                    resolved_path,
+                    start_s=s.src_in,
+                    duration_s=min(dur, 3.5),
+                    metadata_hint=f"{getattr(asset_spec, 'title', '') if asset_spec else ''} {s.visual_desc} {s.story_beat}",
+                )
                 if mot.get("valid") and not mot.get("is_real_moving_footage"):
+                    # Do NOT let an animated JPEG or frozen slide masquerade as moving footage!
+                    moving_video_s = max(0.0, moving_video_s - dur)
+                    if mot.get("is_dense_presentation_graphic"):
+                        diagram_s += dur
+                        mtype = "diagram"
+                    else:
+                        still_photo_s += dur
+                        mtype = "photo"
                     warnings.append(
-                        f"[{s.sid}:{s.src_file}] Low temporal motion ({mot.get('median_temporal_diff')}); verify clip is genuine moving footage rather than a static image."
+                        f"[{s.sid}:{s.src_file}] Reclassified from video to '{mot.get('inferred_media_class')}' ({mot.get('diagnostic_note')})."
                     )
 
         # Scientific integrity & representative-material disclosure check
@@ -621,13 +655,36 @@ def audit_shot_plan_and_alignment(
         first_vid = next((sa for sa in shot_audits if sa["media_type"] == "video"), None)
         first_motion_s = float(first_vid["start_s"]) if first_vid else total_dur
 
+    coverage_v8 = compute_visual_coverage_metrics(
+        timed_shots,
+        manifest.assets_register,
+        manifest=manifest,
+        probe_pixels=True,
+    )
+    rep_audit = audit_visual_repetition_and_progression(
+        manifest,
+        timed_shots,
+        wt=wt,
+        probe_pixels=True,
+    )
+    # Use source-honest v8 coverage whenever static panels inside triptychs or animated stills would have inflated moving_video_s
+    if coverage_v8["genuine_moving_footage_s"] < moving_video_s - 0.05:
+        moving_video_s = float(coverage_v8["genuine_moving_footage_s"])
+        still_photo_s = float(coverage_v8["static_image_s"])
+        diagram_s = float(coverage_v8["scientific_visualization_s"])
+        moving_ratio = moving_video_s / total_dur
+        still_ratio = still_photo_s / total_dur
+        diagram_ratio = diagram_s / total_dur
+        authentic_ratio = (moving_video_s + still_photo_s) / total_dur
+
     build_semantic_timeline_manifest(manifest, wt, style)
 
     return {
         "style_profile": style.profile_name,
         "total_duration_s": round(total_dur, 3),
         "shot_count": len(timed_shots),
-        "distinct_source_assets_count": len(asset_uses),
+        "distinct_source_assets_count": rep_audit["distinct_canonical_assets_count"],
+        "raw_unique_filenames_count": len(asset_uses),
         "distinct_perspectives": distinct_perspectives,
         "distinct_perspectives_count": len(distinct_perspectives),
         "first_real_motion_start_s": round(first_motion_s, 3),
@@ -643,6 +700,14 @@ def audit_shot_plan_and_alignment(
         "illustrative_diagram_s": round(diagram_s, 3),
         "illustrative_diagram_pct": round(diagram_ratio * 100.0, 2),
         "authentic_visual_pct": round(authentic_ratio * 100.0, 2),
+        # 5-Part Footage-First v8.0 Coverage Metrics (Part 2, Section 5)
+        "visual_coverage_v8": coverage_v8,
+        "genuine_moving_footage_pct": coverage_v8["genuine_moving_footage_pct"],
+        "meaningful_action_footage_pct": coverage_v8["meaningful_action_footage_pct"],
+        "establishing_footage_pct": coverage_v8["establishing_footage_pct"],
+        "static_image_pct": coverage_v8["static_image_pct"],
+        "scientific_visualization_pct": coverage_v8["scientific_visualization_pct"],
+        "repetition_and_progression": rep_audit,
         "pacing_summary": {
             "min_shot_s": round(min(durations), 3) if durations else 0.0,
             "median_shot_s": round(sorted(durations)[len(durations) // 2], 3) if durations else 0.0,

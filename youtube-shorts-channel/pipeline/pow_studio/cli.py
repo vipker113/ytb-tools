@@ -36,7 +36,14 @@ from pow_studio.analytics_learning import (  # noqa: E402
     parse_retention_curve_csv,
     parse_youtube_studio_csv,
 )
+from pow_studio.ambience_planner import plan_environmental_ambience  # noqa: E402
 from pow_studio.audio_engine import build_episode_audio  # noqa: E402
+from pow_studio.audio_registry import ensure_audio_asset_registry, harvest_verified_wikimedia_audio  # noqa: E402
+from pow_studio.creative_qa import run_creative_qa  # noqa: E402
+from pow_studio.music_planner import plan_story_music  # noqa: E402
+from pow_studio.scene_editor import optimize_episode_scenes  # noqa: E402
+from pow_studio.sfx_planner import plan_context_sfx  # noqa: E402
+from pow_studio.timeline_builder import build_unified_av_timeline  # noqa: E402
 from pow_studio.compositor import (  # noqa: E402
     build_preview_sheet,
     render_all_shots,
@@ -244,7 +251,9 @@ def run_all(
             console.print(f"[bold red]✗ Shot Plan Error:[/bold red] {err}")
         raise typer.Exit(code=1)
 
-    console.print(f"[4/7] Rendering {len(ep.shots)} Full-Screen 9:16 Shots...")
+    from pow_studio.schema import resolve_timed_shots as _rts
+    _opt_shots = _rts(ep, int(wt["total_frames_30fps"]), style.output.fps)
+    console.print(f"[4/7] Rendering {len(_opt_shots)} Intelligent Story-Optimized 9:16 Shots (from {len(ep.shots)} candidates)...")
     render_all_shots(ep, wt, encode_mode=mode)
 
     console.print("[5/7] Exporting Pre-Render Storyboard Contact Sheet...")
@@ -680,6 +689,202 @@ def analytics_review_cmd(
         f"[bold green]✓ Analytics Learning Report Generated:[/bold green] "
         f"{rep['videos_analyzed_count']} videos analyzed -> {out_dir / 'performance_review.md'}"
     )
+
+
+
+
+# ==============================================================================
+# PROOF OF WONDER STUDIO v7.0 ? STORY-AWARE AUDIO, SCENE EDITING & CREATIVE QA
+# ==============================================================================
+
+
+@app.command(name="optimize-scenes")
+def optimize_scenes_cmd(
+    manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
+) -> None:
+    """Evaluate every shot (Keep / Replace / Merge / Remove) against finalized narration."""
+    ep = _load(manifest)
+    wt = json.loads((Path(ep.output_dir) / "word_timings.json").read_text(encoding="utf-8"))
+    rep = optimize_episode_scenes(ep, wt, fps=ep.resolve_style_profile().output.fps, persist_report=True)
+    c = rep["counts"]
+    console.print(
+        f"[bold green]? Scene Optimization Complete:[/bold green] "
+        f"{rep['original_scene_count']} -> [cyan]{rep['final_scene_count']} scenes[/cyan] "
+        f"(Keep={c['Keep']}, Merge={c['Merge']}, Replace={c['Replace']}, Remove={c['Remove']})."
+    )
+
+
+@app.command(name="plan-soundscape")
+def plan_soundscape_cmd(
+    manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
+) -> None:
+    """Generate story-aware music, continuous location ambience, 6-question SFX & unified timeline."""
+    from pow_studio.schema import resolve_timed_shots
+
+    ep = _load(manifest)
+    out_dir = Path(ep.output_dir)
+    wt = json.loads((out_dir / "word_timings.json").read_text(encoding="utf-8"))
+    t_shots = resolve_timed_shots(ep, int(wt["total_frames_30fps"]), ep.resolve_style_profile().output.fps)
+    m_plan = plan_story_music(ep, wt, t_shots, out_dir=out_dir)
+    aprof = str((m_plan.get("adaptive_audio_profile") or {}).get("selected_profile", "minimal_documentary"))
+    a_plan = plan_environmental_ambience(ep, wt, t_shots, adaptive_audio_profile=aprof, out_dir=out_dir)
+    s_plan = plan_context_sfx(ep, wt, t_shots, a_plan, adaptive_audio_profile=aprof, out_dir=out_dir)
+    tl = build_unified_av_timeline(ep, wt, music_plan=m_plan, ambience_plan=a_plan, sfx_plan=s_plan, out_dir=out_dir)
+    console.print(
+        f"[bold green]? Soundscape & Unified Timeline Ready:[/bold green] "
+        f"profile=[cyan]{aprof}[/cyan] | music={m_plan['music_sections_count']} sec | "
+        f"ambience={a_plan['audible_ambience_sections_count']} sec | "
+        f"SFX={s_plan['approved_cues_count']} approved ({s_plan['rejected_for_silence_count']} rejected for silence) | "
+        f"sync_issues={tl['sync_issues_count']}"
+    )
+
+
+@app.command(name="creative-qc")
+def creative_qc_cmd(
+    manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
+) -> None:
+    """Run Studio v7 Voice QA, Music & Effect QA, and Visual & Audio Creative QA."""
+    ep = _load(manifest)
+    out_dir = Path(ep.output_dir)
+    wt = json.loads((out_dir / "word_timings.json").read_text(encoding="utf-8"))
+    rep = run_creative_qa(ep, wt, out_dir=out_dir)
+    sc = rep["severity_counts"]
+    console.print(
+        f"[bold {'green' if rep['creative_qa_pass'] else 'red'}]Creative QA Pass={rep['creative_qa_pass']}[/bold {'green' if rep['creative_qa_pass'] else 'red'}] "
+        f"(CRITICAL={sc['CRITICAL']}, MAJOR={sc['MAJOR']}, MINOR={sc['MINOR']}, INFO={sc['INFO']}) -> {out_dir / 'creative_qa_report.md'}"
+    )
+    if not rep["creative_qa_pass"]:
+        raise typer.Exit(code=1)
+
+
+@app.command(name="audio-registry")
+def audio_registry_cmd(
+    harvest_query: Optional[str] = typer.Option(None, "--harvest", "-q", help="Optional Wikimedia Commons $0 PD/CC audio query"),
+    limit: int = typer.Option(2, "--limit", "-n"),
+) -> None:
+    """Inspect or expand the commercial-safe reusable Audio Asset Registry ($0)."""
+    reg = ensure_audio_asset_registry()
+    if harvest_query:
+        added = harvest_verified_wikimedia_audio(harvest_query, max_results=limit, download=True)
+        reg = ensure_audio_asset_registry()
+        console.print(f"[cyan]Harvested {len(added)} verified Commons audio recording(s) for '{harvest_query}'.[/cyan]")
+    console.print(f"[bold green]? Audio Asset Registry Ready:[/bold green] {len(reg)} commercial-cleared assets cataloged.")
+
+
+# ==============================================================================
+# PROOF OF WONDER STUDIO v8.0 — FOOTAGE-FIRST STORYTELLING, FEASIBILITY & 6-PILLAR QA
+# ==============================================================================
+
+
+@app.command(name="feasibility")
+def feasibility_cmd(
+    manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest to evaluate before production"),
+    out_dir: Optional[Path] = typer.Option(None, "--out-dir", help="Optional output folder for visual_feasibility_report.md"),
+    accept_limited: bool = typer.Option(False, "--accept-limited", help="Explicitly accept limited visual coverage if archives lack real footage"),
+) -> None:
+    """Run Pre-Production Visual Feasibility Gate (Part 3, Section 8) before script lock or rendering."""
+    from pow_studio.action_storytelling import analyze_visual_feasibility
+
+    ep = _load(manifest)
+    rep = analyze_visual_feasibility(
+        topic=ep.topic or ep.primary_title,
+        narration_segments=ep.narration_segments,
+        available_assets=ep.assets_register,
+        user_accepted_limited_visuals=accept_limited,
+        out_dir=out_dir,
+    )
+    tbl = Table(title=f"Visual Feasibility Report — {ep.slug} ({rep['feasibility_status']})")
+    tbl.add_column("Story beat", style="cyan")
+    tbl.add_column("Required visual", style="white")
+    tbl.add_column("Available footage", style="green")
+    tbl.add_column("Evidence relevance", style="yellow")
+    tbl.add_column("Coverage status", style="magenta")
+    for r in rep["feasibility_table"]:
+        tbl.add_row(r["story_beat"], r["required_visual"], r["available_footage"], r["evidence_relevance"], r["coverage_status"])
+    console.print(tbl)
+    if not rep["can_proceed_to_production"]:
+        console.print("[bold red]✗ Visual Feasibility Gate Blocked Production:[/bold red] Insufficient real footage for essential story events.")
+        raise typer.Exit(code=1)
+
+
+@app.command(name="discover-footage")
+def discover_footage_cmd(
+    topic: str = typer.Option(..., "--topic", "-t", help="Documentary topic (generates multi-purpose Subject+Action queries)"),
+    online: bool = typer.Option(True, "--online/--offline", help="Query NASA, Wikimedia Commons & Internet Archive ($0 APIs)"),
+    limit: int = typer.Option(4, "--limit", "-n", help="Max results per query per archive"),
+) -> None:
+    """Discover real documentary footage using Subject + Action multi-intent queries ($0)."""
+    from pow_studio.video_sourcing import discover_footage_first_by_purpose
+
+    res = discover_footage_first_by_purpose(topic=topic, max_per_query=limit, online=online)
+    q_tbl = Table(title=f"Generated Subject + Action Footage Queries — '{topic}'")
+    q_tbl.add_column("Purpose", style="cyan")
+    q_tbl.add_column("Query", style="white")
+    q_tbl.add_column("Target Media Class", style="green")
+    for q in res["planned_queries"]:
+        q_tbl.add_row(q["purpose"], q["query"], q["target_media_class"])
+    console.print(q_tbl)
+    console.print(f"[bold green]✓ Unique commercial-safe video candidates discovered:[/bold green] {res['total_unique_video_candidates']}")
+
+
+@app.command(name="plan-storyboard")
+def plan_storyboard_cmd(
+    manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
+    out_dir: Optional[Path] = typer.Option(None, "--out-dir", help="Optional directory to export action_storyboard_plan.md"),
+) -> None:
+    """Build 11-field Footage-First Action Storyboard dry-run plan (Part 3, Section 7)."""
+    from pow_studio.action_storytelling import build_action_storyboard_plan
+
+    ep = _load(manifest)
+    plan = build_action_storyboard_plan(
+        slug=ep.slug,
+        topic=ep.topic or ep.primary_title,
+        narration_segments=ep.narration_segments,
+        available_assets=ep.assets_register,
+        total_duration_s=float(ep.shots[-1].end_s),
+        out_dir=out_dir,
+    )
+    cm = plan["coverage_metrics"]
+    console.print(
+        f"[bold green]✓ Action Storyboard Planned ({plan['planned_scene_count']} scenes, {plan['planned_total_duration_s']}s):[/bold green] "
+        f"Genuine Moving={cm['genuine_moving_footage_pct']}% | Meaningful Action={cm['meaningful_action_footage_pct']}% | "
+        f"Establishing={cm['establishing_footage_pct']}% | Static={cm['static_image_pct']}% | Sci-Viz={cm['scientific_visualization_pct']}%"
+    )
+
+
+@app.command(name="qa-6pillar")
+def qa_6pillar_cmd(
+    manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
+    out_dir: Optional[Path] = typer.Option(None, "--out-dir", help="Optional directory for six_pillar_qa_report.md (never overwrites protected dirs)"),
+) -> None:
+    """Run 6-Pillar Future-Video QA (Media, Semantic, Repetition, Timeline, Technical, Creative) in dry-run or post-render mode."""
+    from pow_studio.creative_qa import run_six_pillar_workflow_qa
+
+    ep = _load(manifest)
+    wt_p = Path(ep.output_dir) / "word_timings.json"
+    wt = json.loads(wt_p.read_text(encoding="utf-8")) if wt_p.exists() else None
+    mp4_p = Path(ep.output_dir) / f"{ep.slug}.mp4"
+    rep = run_six_pillar_workflow_qa(
+        manifest=ep,
+        wt=wt,
+        rendered_mp4=mp4_p if mp4_p.exists() else None,
+        probe_pixels=True,
+        out_dir=out_dir,
+    )
+    vc = rep["visual_coverage_metrics"]
+    console.print(
+        f"[bold cyan]6-Pillar QA ({ep.slug}):[/bold cyan] "
+        f"Technical=[bold]{'PASS' if rep['technical_approval'] else 'FAIL'}[/bold] | "
+        f"Creative=[bold]{'PASS' if rep['creative_approval'] else 'FAIL'}[/bold] | "
+        f"Release=[bold {'green' if rep['overall_release_approval'] else 'red'}]{'APPROVED' if rep['overall_release_approval'] else 'BLOCKED'}[/bold {'green' if rep['overall_release_approval'] else 'red'}]\n"
+        f"  • Genuine Moving: {vc['genuine_moving_footage_pct']}% | Meaningful Action: {vc['meaningful_action_footage_pct']}% | "
+        f"Establishing: {vc['establishing_footage_pct']}% | Static: {vc['static_image_pct']}% (Animated Stills: {vc['animated_still_pct']}%) | "
+        f"Sci-Viz: {vc['scientific_visualization_pct']}%"
+    )
+    for iss in rep["issues"]:
+        console.print(f"  [{iss['severity']}] ({iss['pillar']}) {iss['code']}: {iss['message']}")
+    if not rep["overall_release_approval"]:
+        raise typer.Exit(code=1)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,368 @@
+{
+  "style_profile": "mysterious_earth_exploration",
+  "total_duration_s": 81.067,
+  "shot_count": 7,
+  "distinct_source_assets_count": 3,
+  "distinct_perspectives": [
+    "aerial",
+    "extreme_wide",
+    "first_person_pov",
+    "medium",
+    "scientific_fieldwork"
+  ],
+  "distinct_perspectives_count": 5,
+  "first_real_motion_start_s": 0.0,
+  "viral_script_audit": {
+    "total_words": 200,
+    "hook_first_sentence_words": 14,
+    "max_sentence_words": 20,
+    "llm_cliche_hits": 0,
+    "jargon_cluster_hits": 0,
+    "flat_prosody_ratio": 0.0,
+    "ending_tail_pause_s": 0.45,
+    "anti_ai_script_pass": true,
+    "errors": [],
+    "warnings": []
+  },
+  "moving_footage_s": 81.066,
+  "moving_footage_pct": 100.0,
+  "meets_moving_footage_goal": true,
+  "still_photography_s": 0.0,
+  "still_photography_pct": 0.0,
+  "human_interaction_shots": 4,
+  "human_interaction_s": 45.4,
+  "human_interaction_pct": 56.0,
+  "illustrative_diagram_s": 0.0,
+  "illustrative_diagram_pct": 0.0,
+  "authentic_visual_pct": 100.0,
+  "pacing_summary": {
+    "min_shot_s": 10.6,
+    "median_shot_s": 11.533,
+    "mean_shot_s": 11.581,
+    "max_shot_s": 12.4,
+    "internal_cuts": 6,
+    "clean_cuts": 4,
+    "dissolves": 2,
+    "dissolve_fraction": 0.333,
+    "speech_boundary_aligned_cuts": 6,
+    "speech_boundary_alignment_pct": 100.0
+  },
+  "errors": [],
+  "warnings": [
+    "[S01:nasa_helheim_glacier_aquifer.mp4] Effective upscale factor (2.77x) exceeds crisp HD target (2.35x).",
+    "[S04:nasa_helheim_glacier_aquifer.mp4] Effective upscale factor (2.77x) exceeds crisp HD target (2.35x).",
+    "[S07:nasa_helheim_glacier_aquifer.mp4] Effective upscale factor (2.77x) exceeds crisp HD target (2.35x).",
+    "Asset 'nasa_helheim_glacier_aquifer.mp4' used 3 times (exceeds max_uses_per_asset=2).",
+    "Asset 'nasa_helheim_glacier_aquifer.mp4' occupies 42.9% of runtime (exceeds 30% cap).",
+    "Asset 'nasa_exports_twilight_ocean.mp4' occupies 30.1% of runtime (exceeds 30% cap)."
+  ],
+  "shots": [
+    {
+      "sid": "S01",
+      "start_s": 0.0,
+      "end_s": 12.0333,
+      "duration_s": 12.033,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 8.56,
+        "max_recommended_s": 10.96,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "aerial",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 27
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "aerial",
+      "src_file": "nasa_helheim_glacier_aquifer.mp4",
+      "transition_in": "opening",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.0,
+      "nearest_speech_boundary_kind": "start",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Twenty meters beneath Greenland's frozen surface trillions of liters of liquid water never freeze Across thousands of square kilometers a hidden reservoir flows inside solid polar ice",
+      "story_beat": "Aerial sweep over Greenland's Helheim Glacier ice sheet",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 389.4,
+        "crop_height_px": 692.3,
+        "upscale_factor": 2.773,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (2.77x) exceeds crisp HD target (2.35x)."
+        ]
+      }
+    },
+    {
+      "sid": "S03",
+      "start_s": 12.0333,
+      "end_s": 23.3333,
+      "duration_s": 11.3,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 8.27,
+        "max_recommended_s": 10.67,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 26
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "scientific_fieldwork",
+      "src_file": "nasa_icebridge_fieldwork_2017.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.102,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Even through minus thirty degree winter nights this buried water stays liquid inside porous snow Until 2011 ice models assumed summer meltwater simply refroze near the surface",
+      "story_beat": "Polar scientists and NASA IceBridge instruments surveying subzero snow",
+      "crop_feasibility": {
+        "source_width": 1920,
+        "source_height": 1080,
+        "crop_width_px": 584.1,
+        "crop_height_px": 1038.5,
+        "upscale_factor": 1.849,
+        "feasible": true,
+        "warnings": []
+      }
+    },
+    {
+      "sid": "S04",
+      "start_s": 23.3333,
+      "end_s": 34.8667,
+      "duration_s": 11.533,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 8.55,
+        "max_recommended_s": 10.95,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "medium",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 29
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "medium",
+      "src_file": "nasa_helheim_glacier_aquifer.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.086,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "While drilling cores near Helheim Glacier field teams pulled up dripping wet snow from twenty meters down Heavy autumn snowfall acts like an insulating blanket sealing summer warmth inside",
+      "story_beat": "Helheim Glacier firn drilling and buried liquid water layer",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 389.4,
+        "crop_height_px": 692.3,
+        "upscale_factor": 2.773,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (2.77x) exceeds crisp HD target (2.35x)."
+        ]
+      }
+    },
+    {
+      "sid": "S06",
+      "start_s": 34.8667,
+      "end_s": 45.4667,
+      "duration_s": 10.6,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 9.2,
+        "max_recommended_s": 11.6,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "first_person_pov",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 30
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "first_person_pov",
+      "src_file": "nasa_icebridge_fieldwork_2017.mp4",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.6,
+      "transition_reason": "Pivot from surface snowpack to deep radar crevasse drainage",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.092,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Airborne radar flights and ground sensors then uncovered a deeper surprise That buried water does not stay locked in place It drains downward through deep crevasses toward the glacier bed",
+      "story_beat": "Airborne radar flight mapping deep glacier crevasse drainage",
+      "crop_feasibility": {
+        "source_width": 1920,
+        "source_height": 1080,
+        "crop_width_px": 584.1,
+        "crop_height_px": 1038.5,
+        "upscale_factor": 1.849,
+        "feasible": true,
+        "warnings": []
+      }
+    },
+    {
+      "sid": "S07",
+      "start_s": 45.4667,
+      "end_s": 56.7,
+      "duration_s": 11.233,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 8.55,
+        "max_recommended_s": 10.95,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "medium",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 29
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "medium",
+      "src_file": "nasa_helheim_glacier_aquifer.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.08,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "At the bedrock pressurized water lubricates the ice base and speeds glacier motion toward dark coastal fjords Freshwater plumes then rise from hundreds of meters below the sea surface",
+      "story_beat": "Glacier meltwater lubricating ice motion toward dark coastal fjord",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 389.4,
+        "crop_height_px": 692.3,
+        "upscale_factor": 2.773,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (2.77x) exceeds crisp HD target (2.35x)."
+        ]
+      }
+    },
+    {
+      "sid": "S08",
+      "start_s": 56.7,
+      "end_s": 68.6667,
+      "duration_s": 11.967,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 9.07,
+        "max_recommended_s": 11.47,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 29
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "scientific_fieldwork",
+      "src_file": "nasa_exports_twilight_ocean.mp4",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.65,
+      "transition_reason": "Location shift from Greenland glacier terminus to open ocean research vessel",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.054,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "When mineral-rich meltwater enters the North Atlantic ocean expeditions track how it stirs surface nutrients above the deep twilight zone Hidden glacier plumbing shapes marine food webs miles offshore",
+      "story_beat": "Ocean research vessel tracking nutrients above the deep twilight zone",
+      "crop_feasibility": {
+        "source_width": 1920,
+        "source_height": 1080,
+        "crop_width_px": 584.1,
+        "crop_height_px": 1038.5,
+        "upscale_factor": 1.849,
+        "feasible": true,
+        "warnings": []
+      }
+    },
+    {
+      "sid": "S09",
+      "start_s": 68.6667,
+      "end_s": 81.0667,
+      "duration_s": 12.4,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 8.58,
+        "max_recommended_s": 10.98,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "extreme_wide",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 29
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "extreme_wide",
+      "src_file": "nasa_exports_twilight_ocean.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.122,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Glaciologists are still studying how fast these aquifers drain into the sea so long-term sea-level forecasts remain an open question Beneath solid white ice a dark river keeps moving",
+      "story_beat": "Open dark ocean horizon as researchers measure ongoing drainage rates",
+      "crop_feasibility": {
+        "source_width": 1920,
+        "source_height": 1080,
+        "crop_width_px": 584.1,
+        "crop_height_px": 1038.5,
+        "upscale_factor": 1.849,
+        "feasible": true,
+        "warnings": []
+      }
+    }
+  ]
+}

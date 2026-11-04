@@ -1,0 +1,51 @@
+{
+  "slug": "test-b-medium-glacier-aquifer",
+  "primary_title": "The Hidden Liquid River Inside Greenland's Ice",
+  "concepts_count": 2,
+  "comparison_sheet_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\thumbnail_concepts_comparison_sheet.jpg",
+  "ctr_prediction_disclaimer": "Visual sharpness and subject-separation scores verify small-screen mobile legibility only. They do NOT predict real YouTube click-through or swipe-away rates; populate `actual_analytics_outcome` via `analytics_learning.py` once real YouTube Studio impressions/views are available.",
+  "concepts": [
+    {
+      "concept_id": "A",
+      "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\thumbnail_concept_A.jpg",
+      "source_asset": "nasa_helheim_glacier_aquifer.mp4",
+      "matches_opening_scene_asset": true,
+      "headline_text": "LIQUID RIVER|INSIDE ICE",
+      "headline_word_count": 4,
+      "kicker_text": "",
+      "concept_rationale": "Primary opening-matched focal subject + concise curiosity hook",
+      "size_kb": 580.9,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "nasa_helheim_glacier_aquifer.mp4",
+        "sharpness_score": 0.98,
+        "subject_separation_score": 73.01,
+        "combined_score": 40.6,
+        "recommended_cx": 0.4684,
+        "recommended_cy": 0.5648
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "B",
+      "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-b-medium-glacier-aquifer\\thumbnail_concept_B.jpg",
+      "source_asset": "nasa_helheim_glacier_aquifer.mp4",
+      "matches_opening_scene_asset": true,
+      "headline_text": "",
+      "headline_word_count": 0,
+      "kicker_text": "",
+      "concept_rationale": "Pure authentic phenomenon close-up with zero text overlay",
+      "size_kb": 552.7,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "nasa_helheim_glacier_aquifer.mp4",
+        "sharpness_score": 0.98,
+        "subject_separation_score": 73.01,
+        "combined_score": 40.6,
+        "recommended_cx": 0.4684,
+        "recommended_cy": 0.5648
+      },
+      "actual_analytics_outcome": null
+    }
+  ]
+}

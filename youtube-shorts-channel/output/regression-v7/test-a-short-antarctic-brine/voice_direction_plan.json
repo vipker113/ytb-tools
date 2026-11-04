@@ -1,0 +1,355 @@
+{
+  "slug": "test-a-short-antarctic-brine",
+  "active_tts_provider": "edge_tts",
+  "elevenlabs_configured": false,
+  "elevenlabs_target_model": "eleven_multilingual_v2",
+  "segmentation_strategy": {
+    "method": "contrast_directed_rms_matched_segmented",
+    "reason": "Multi-beat emotional contrast active; using bounded prosody + active RMS matching + raised-cosine fades + studio room-tone bed."
+  },
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "scientific_authority",
+  "voice_identity": "en-GB-RyanNeural",
+  "sentence_count": 7,
+  "sentence_cache_hits": 7,
+  "contrast_guardrail_summary": {
+    "sentence_count": 7,
+    "distinct_delivery_styles": [
+      "EMOTIONAL_REFLECTION",
+      "MYSTERIOUS",
+      "SCIENTIFIC_AUTHORITY",
+      "SURPRISED_BUT_CONTROLLED"
+    ],
+    "distinct_delivery_count": 4,
+    "energy_min": 2,
+    "energy_max": 4,
+    "energy_span": 2,
+    "blocked_theatrical_count": 0,
+    "rebalanced_overdrama_count": 0,
+    "contrast_healthy": true,
+    "guardrail_notes": []
+  },
+  "continuity_review": {
+    "segment_count": 7,
+    "max_adjacent_rms_jump_db": 0.72,
+    "max_spectral_centroid_ratio": 1.163,
+    "clipped_word_boundaries_count": 0,
+    "unnatural_pause_count": 0,
+    "continuity_pass": true,
+    "issues": [],
+    "joins": [
+      {
+        "from_sentence": 0,
+        "to_sentence": 1,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.044,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 1,
+        "to_sentence": 2,
+        "rms_jump_db": 0.27,
+        "spectral_centroid_ratio": 1.042,
+        "pause_s": 0.38
+      },
+      {
+        "from_sentence": 2,
+        "to_sentence": 3,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.163,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 3,
+        "to_sentence": 4,
+        "rms_jump_db": 0.37,
+        "spectral_centroid_ratio": 1.102,
+        "pause_s": 0.4
+      },
+      {
+        "from_sentence": 4,
+        "to_sentence": 5,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.008,
+        "pause_s": 0.24
+      },
+      {
+        "from_sentence": 5,
+        "to_sentence": 6,
+        "rms_jump_db": 0.72,
+        "spectral_centroid_ratio": 1.02,
+        "pause_s": 0.42
+      }
+    ]
+  },
+  "invalidated_stale_artifacts_on_regeneration": [],
+  "supported_controls": [
+    "elevenlabs_model_capability_aware_settings",
+    "elevenlabs_request_stitching_when_supported",
+    "sentence_level_speaking_rate_bounded",
+    "sentence_level_pitch_bounded",
+    "pre_and_post_sentence_pause_ms",
+    "custom_pronunciation_dictionary",
+    "anti_overdrama_contrast_rebalancer",
+    "post_concatenation_continuity_reviewer",
+    "automatic_dependent_cache_invalidation"
+  ],
+  "engine_limitations": [
+    "ELEVENLABS_API_KEY not set in environment; running $0 neural edge-tts fallback while preserving full ElevenLabs model-specific voice_settings payloads.",
+    "edge-tts does not support zero-shot voice cloning from audio samples."
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "In East Antarctica, crimson water pours straight out of solid white glacier ice.",
+      "delivery": "MYSTERIOUS",
+      "emotional_tone": "curious_restraint",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "crimson"
+      ],
+      "start_s": 0.1,
+      "end_s": 4.914,
+      "cache_key": "a14caaaf087ab69c9b9c",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N01",
+      "text": "Even at minus seventeen degrees Celsius, the flow never freezes.",
+      "delivery": "MYSTERIOUS",
+      "emotional_tone": "curious_restraint",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 380,
+      "emphasis_phrases": [
+        "minus seventeen"
+      ],
+      "start_s": 5.154,
+      "end_s": 8.994,
+      "cache_key": "50f37efbe395125202ac",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "In 1911, early explorers blamed red surface algae.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "confident_clarity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "1911"
+      ],
+      "start_s": 9.374,
+      "end_s": 12.951,
+      "cache_key": "d562228b1098eccc5571",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N02",
+      "text": "Chemical sampling decades later ruled algae out completely and pointed to dissolved iron.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "confident_clarity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.5,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 400,
+      "emphasis_phrases": [
+        "iron"
+      ],
+      "start_s": 13.191,
+      "end_s": 17.935,
+      "cache_key": "ec9212b1162500d24d27",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.14,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N03",
+      "text": "Ice-penetrating radar traced the brine to hypersaline seawater trapped four hundred meters underground.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 140,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "radar",
+        "four hundred"
+      ],
+      "start_s": 18.475,
+      "end_s": 23.858,
+      "cache_key": "3fa0d73d71014186a1fc",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.01
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->bounded_prosody(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N03",
+      "text": "High salt content lowers its freezing point, and dissolved iron rusts red when it meets air.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "controlled_discovery",
+      "pace": "NATURAL",
+      "energy": 4,
+      "emotional_intensity": 0.75,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "rusts red"
+      ],
+      "start_s": 24.098,
+      "end_s": 28.852,
+      "cache_key": "5936d102dcfdef1b5a67",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.21,
+        "use_speaker_boost": true,
+        "speed": 1.01
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->bounded_prosody(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:NATURAL->rate_pct=+0%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N04",
+      "text": "Researchers are still studying how completely sealed those deep microbes remain, yet they survive in total darkness without oxygen.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "credible_reflection",
+      "pace": "SLOW",
+      "energy": 2,
+      "emotional_intensity": 0.25,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "still studying",
+        "darkness"
+      ],
+      "start_s": 29.272,
+      "end_s": 36.639,
+      "cache_key": "311c4f082d32c1d71cdb",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.07,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:SLOW->rate_pct=-4%",
+        "ENERGY:2/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ]
+}

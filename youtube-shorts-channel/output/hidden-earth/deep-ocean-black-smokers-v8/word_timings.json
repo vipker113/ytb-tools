@@ -1,0 +1,1862 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "active_tts_provider": "edge_tts",
+  "segmentation_method": "contrast_directed_rms_matched_segmented",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "pronunciation_sig": "46ac3ca189d698a52cc3940ab56dcacbc5147e17eba86c1c627db9244f226558",
+  "total_duration_s": 68.8,
+  "total_frames_30fps": 2064,
+  "continuity_review": {
+    "segment_count": 11,
+    "max_adjacent_rms_jump_db": 0.21,
+    "max_spectral_centroid_ratio": 1.189,
+    "clipped_word_boundaries_count": 0,
+    "unnatural_pause_count": 0,
+    "continuity_pass": true,
+    "issues": [],
+    "joins": [
+      {
+        "from_sentence": 0,
+        "to_sentence": 1,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.097,
+        "pause_s": 0.38
+      },
+      {
+        "from_sentence": 1,
+        "to_sentence": 2,
+        "rms_jump_db": 0.07,
+        "spectral_centroid_ratio": 1.074,
+        "pause_s": 0.32
+      },
+      {
+        "from_sentence": 2,
+        "to_sentence": 3,
+        "rms_jump_db": 0.1,
+        "spectral_centroid_ratio": 1.147,
+        "pause_s": 0.42
+      },
+      {
+        "from_sentence": 3,
+        "to_sentence": 4,
+        "rms_jump_db": 0.03,
+        "spectral_centroid_ratio": 1.186,
+        "pause_s": 0.34
+      },
+      {
+        "from_sentence": 4,
+        "to_sentence": 5,
+        "rms_jump_db": 0.15,
+        "spectral_centroid_ratio": 1.081,
+        "pause_s": 0.44
+      },
+      {
+        "from_sentence": 5,
+        "to_sentence": 6,
+        "rms_jump_db": 0.13,
+        "spectral_centroid_ratio": 1.085,
+        "pause_s": 0.34
+      },
+      {
+        "from_sentence": 6,
+        "to_sentence": 7,
+        "rms_jump_db": 0.21,
+        "spectral_centroid_ratio": 1.189,
+        "pause_s": 0.42
+      },
+      {
+        "from_sentence": 7,
+        "to_sentence": 8,
+        "rms_jump_db": 0.03,
+        "spectral_centroid_ratio": 1.033,
+        "pause_s": 0.3
+      },
+      {
+        "from_sentence": 8,
+        "to_sentence": 9,
+        "rms_jump_db": 0.12,
+        "spectral_centroid_ratio": 1.108,
+        "pause_s": 0.42
+      },
+      {
+        "from_sentence": 9,
+        "to_sentence": 10,
+        "rms_jump_db": 0.06,
+        "spectral_centroid_ratio": 1.182,
+        "pause_s": 0.32
+      }
+    ]
+  },
+  "contrast_summary": {
+    "sentence_count": 11,
+    "distinct_delivery_styles": [
+      "CALM EXPLANATION",
+      "CINEMATIC REVEAL",
+      "EMOTIONAL REFLECTION",
+      "HOOK",
+      "MEASURED EVIDENCE",
+      "MYSTERIOUS",
+      "SCIENTIFIC AUTHORITY",
+      "SURPRISED BUT CONTROLLED"
+    ],
+    "distinct_delivery_count": 8,
+    "energy_min": 3,
+    "energy_max": 3,
+    "energy_span": 0,
+    "blocked_theatrical_count": 0,
+    "rebalanced_overdrama_count": 0,
+    "contrast_healthy": true,
+    "guardrail_notes": []
+  },
+  "invalidated_artifacts": [],
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "Two miles underwater, black chimneys blast three-hundred-sixty-degree water\u2014without boiling into steam.",
+      "delivery": "HOOK",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 0.1,
+      "end": 6.195,
+      "duration": 6.095,
+      "pause_after": 0.38,
+      "emphasis_words": [
+        "Two",
+        "miles",
+        "black",
+        "chimneys",
+        "three-hundred-sixty-degree",
+        "boiling"
+      ]
+    },
+    {
+      "seg_id": "N02",
+      "text": "Along the Mid-Atlantic Ridge, three hundred sixty atmospheres of crushing ocean weight trap superheated water as liquid. When robotic arms thrust a steel thermometer inside, that scalding fluid hits two-degree seawater\u2014freezing dissolved metals into towering black chimneys.",
+      "delivery": "CALM_EXPLANATION",
+      "rate": "-2%",
+      "pitch": "-1Hz",
+      "start": 6.575,
+      "end": 22.074,
+      "duration": 15.499,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "Mid-Atlantic",
+        "three",
+        "hundred",
+        "sixty",
+        "thermometer",
+        "two-degree",
+        "towering"
+      ]
+    },
+    {
+      "seg_id": "N03",
+      "text": "You would expect bare, sterile rock around poison that hot. Instead, the chimney walls are moving.",
+      "delivery": "CALM_EXPLANATION",
+      "rate": "-2%",
+      "pitch": "-1Hz",
+      "start": 22.494,
+      "end": 28.398,
+      "duration": 5.904,
+      "pause_after": 0.44,
+      "emphasis_words": [
+        "bare",
+        "sterile",
+        "Instead",
+        "chimney",
+        "walls",
+        "moving"
+      ]
+    },
+    {
+      "seg_id": "N04",
+      "text": "Up to twenty-five hundred pale shrimp pack every square meter in total darkness\u2014centimeters from water hot enough to melt lead. Look closely, and none of them have eyeballs.",
+      "delivery": "MEASURED_EVIDENCE",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 28.838,
+      "end": 38.593,
+      "duration": 9.755,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "twenty-five",
+        "hundred",
+        "shrimp",
+        "melt",
+        "lead",
+        "none",
+        "eyeballs"
+      ]
+    },
+    {
+      "seg_id": "N05",
+      "text": "Across their backs sits a white light-sensing organ that detects the faint infrared glow of scalding vents. It keeps them inside a narrow 20-degree safety zone\u2014close enough to farm sulfur-eating bacteria in their gills without cooking alive.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "rate": "-2%",
+      "pitch": "-2Hz",
+      "start": 39.013,
+      "end": 52.49,
+      "duration": 13.477,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "white",
+        "light-sensing",
+        "infrared",
+        "20-degree",
+        "sulfur-eating",
+        "bacteria",
+        "gills",
+        "cooking"
+      ]
+    },
+    {
+      "seg_id": "N06",
+      "text": "Since 1977, researchers still debate whether Earth's first cells sparked in deep vents or shallow surface pools. Either way, these blind shrimp prove whole ecosystems can thrive without sunlight\u2014making underwater chimneys a prime target in Europa's hidden ocean.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "rate": "-2%",
+      "pitch": "-2Hz",
+      "start": 52.91,
+      "end": 68.448,
+      "duration": 15.539,
+      "pause_after": 0.36,
+      "emphasis_words": [
+        "1977",
+        "debate",
+        "deep",
+        "vents",
+        "surface",
+        "pools",
+        "without",
+        "sunlight",
+        "Europa's",
+        "ocean"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "Two miles underwater, black chimneys blast three-hundred-sixty-degree water\u2014without boiling into steam.",
+      "delivery": "HOOK",
+      "emotional_tone": "quiet_tension",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.72,
+      "pitch_direction": "falling",
+      "sentence_rhythm": "crisp",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 380,
+      "emphasis_phrases": [
+        "Two miles underwater",
+        "three-hundred-sixty-degree water",
+        "without boiling"
+      ],
+      "start_s": 0.1,
+      "end_s": 6.195,
+      "cache_key": "9f369a5817e01f416bd6",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.202,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:HOOK->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N02",
+      "text": "Along the Mid-Atlantic Ridge, three hundred sixty atmospheres of crushing ocean weight trap superheated water as liquid.",
+      "delivery": "CALM_EXPLANATION",
+      "emotional_tone": "calm_clarity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.48,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-2%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 320,
+      "emphasis_phrases": [
+        "three hundred sixty atmospheres",
+        "trap superheated water"
+      ],
+      "start_s": 6.575,
+      "end_s": 13.027,
+      "cache_key": "dd0ca3142e7cf9de527c",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.134,
+        "use_speaker_boost": true,
+        "speed": 0.98
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "When robotic arms thrust a steel thermometer inside, that scalding fluid hits two-degree seawater\u2014freezing dissolved metals into towering black chimneys.",
+      "delivery": "MEASURED_EVIDENCE",
+      "emotional_tone": "grounded_authority",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.56,
+      "pitch_direction": "falling",
+      "sentence_rhythm": "steady",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "steel thermometer",
+        "two-degree seawater",
+        "towering black chimneys"
+      ],
+      "start_s": 13.347,
+      "end_s": 22.074,
+      "cache_key": "1306d786e768afed39d7",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.157,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N03",
+      "text": "You would expect bare, sterile rock around poison that hot.",
+      "delivery": "CALM_EXPLANATION",
+      "emotional_tone": "quiet_wonder",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.44,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "slow",
+      "rate": "-2%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 340,
+      "emphasis_phrases": [
+        "bare, sterile rock"
+      ],
+      "start_s": 22.494,
+      "end_s": 25.723,
+      "cache_key": "cd2baa21abec19890a97",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.123,
+        "use_speaker_boost": true,
+        "speed": 0.98
+      },
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N03",
+      "text": "Instead, the chimney walls are moving.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "emotional_tone": "hushed_reveal",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.68,
+      "pitch_direction": "falling",
+      "sentence_rhythm": "deliberate",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "chimney walls are moving"
+      ],
+      "start_s": 26.063,
+      "end_s": 28.398,
+      "cache_key": "d38a174d8fe99f6edf5f",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.19,
+        "use_speaker_boost": true,
+        "speed": 1.01
+      },
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N04",
+      "text": "Up to twenty-five hundred pale shrimp pack every square meter in total darkness\u2014centimeters from water hot enough to melt lead.",
+      "delivery": "MEASURED_EVIDENCE",
+      "emotional_tone": "focused_awe",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.58,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 340,
+      "emphasis_phrases": [
+        "twenty-five hundred pale shrimp",
+        "melt lead"
+      ],
+      "start_s": 28.838,
+      "end_s": 35.75,
+      "cache_key": "ee6a3f6472b37859938d",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.162,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N04",
+      "text": "Look closely, and none of them have eyeballs.",
+      "delivery": "MYSTERIOUS",
+      "emotional_tone": "quiet_intrigue",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.54,
+      "pitch_direction": "falling",
+      "sentence_rhythm": "slow",
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "none of them",
+        "eyeballs"
+      ],
+      "start_s": 36.09,
+      "end_s": 38.593,
+      "cache_key": "124ffe4e7541a3eefa8a",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.151,
+        "use_speaker_boost": true,
+        "speed": 0.96
+      },
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 7,
+      "seg_id": "N05",
+      "text": "Across their backs sits a white light-sensing organ that detects the faint infrared glow of scalding vents.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "clear_precision",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.52,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-2%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 300,
+      "emphasis_phrases": [
+        "white light-sensing organ",
+        "faint infrared glow"
+      ],
+      "start_s": 39.013,
+      "end_s": 44.561,
+      "cache_key": "c18b6b5ba4f7250875e3",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.146,
+        "use_speaker_boost": true,
+        "speed": 0.98
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 8,
+      "seg_id": "N05",
+      "text": "It keeps them inside a narrow 20-degree safety zone\u2014close enough to farm sulfur-eating bacteria in their gills without cooking alive.",
+      "delivery": "CINEMATIC_REVEAL",
+      "emotional_tone": "controlled_marvel",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.66,
+      "pitch_direction": "falling",
+      "sentence_rhythm": "deliberate",
+      "rate": "-5%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "narrow 20-degree safety zone",
+        "sulfur-eating bacteria",
+        "without cooking alive"
+      ],
+      "start_s": 44.861,
+      "end_s": 52.49,
+      "cache_key": "0565ce964a9fe80ae60c",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.58,
+        "similarity_boost": 0.8,
+        "style": 0.185,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 9,
+      "seg_id": "N06",
+      "text": "Since 1977, researchers still debate whether Earth's first cells sparked in deep vents or shallow surface pools.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "emotional_tone": "balanced_nuance",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.46,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-2%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 320,
+      "emphasis_phrases": [
+        "Since 1977",
+        "deep vents",
+        "shallow surface pools"
+      ],
+      "start_s": 52.91,
+      "end_s": 59.635,
+      "cache_key": "950e41405d7ebc98dac7",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.129,
+        "use_speaker_boost": true,
+        "speed": 0.98
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 10,
+      "seg_id": "N06",
+      "text": "Either way, these blind shrimp prove whole ecosystems can thrive without sunlight\u2014making underwater chimneys a prime target in Europa's hidden ocean.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "resonant_payoff",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.6,
+      "pitch_direction": "falling",
+      "sentence_rhythm": "unhurried",
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "thrive without sunlight",
+        "Europa's hidden ocean"
+      ],
+      "start_s": 59.955,
+      "end_s": 68.448,
+      "cache_key": "b36df8c0b8a4772fba39",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.168,
+        "use_speaker_boost": true,
+        "speed": 0.96
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "Two",
+      "start": 0.1,
+      "end": 0.365,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "miles",
+      "start": 0.281,
+      "end": 0.723,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "underwater",
+      "start": 0.735,
+      "end": 1.379,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "black",
+      "start": 1.644,
+      "end": 1.922,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "chimneys",
+      "start": 1.935,
+      "end": 2.351,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "blast",
+      "start": 2.364,
+      "end": 2.755,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "three-hundred-sixty-degree",
+      "start": 2.768,
+      "end": 3.904,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "water",
+      "start": 3.917,
+      "end": 4.334,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "without",
+      "start": 4.548,
+      "end": 4.902,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "boiling",
+      "start": 4.915,
+      "end": 5.331,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "into",
+      "start": 5.344,
+      "end": 5.596,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "steam",
+      "start": 5.609,
+      "end": 6.114,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Along",
+      "start": 6.575,
+      "end": 6.919,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 6.841,
+      "end": 6.905,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Mid-Atlantic",
+      "start": 6.918,
+      "end": 7.568,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Ridge",
+      "start": 7.581,
+      "end": 7.938,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "three",
+      "start": 8.155,
+      "end": 8.41,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "hundred",
+      "start": 8.423,
+      "end": 8.754,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "sixty",
+      "start": 8.767,
+      "end": 9.175,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "atmospheres",
+      "start": 9.188,
+      "end": 9.838,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "of",
+      "start": 9.851,
+      "end": 9.94,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "crushing",
+      "start": 9.953,
+      "end": 10.374,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "ocean",
+      "start": 10.387,
+      "end": 10.693,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "weight",
+      "start": 10.706,
+      "end": 10.923,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "trap",
+      "start": 10.935,
+      "end": 11.242,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "superheated",
+      "start": 11.254,
+      "end": 11.879,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "water",
+      "start": 11.892,
+      "end": 12.262,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "as",
+      "start": 12.275,
+      "end": 12.453,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "liquid",
+      "start": 12.466,
+      "end": 12.938,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "When",
+      "start": 13.347,
+      "end": 13.625,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "robotic",
+      "start": 13.536,
+      "end": 14.066,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "arms",
+      "start": 14.079,
+      "end": 14.357,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "thrust",
+      "start": 14.369,
+      "end": 14.698,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "a",
+      "start": 14.71,
+      "end": 14.761,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "steel",
+      "start": 14.773,
+      "end": 15.127,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "thermometer",
+      "start": 15.139,
+      "end": 15.632,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "inside",
+      "start": 15.645,
+      "end": 16.288,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "that",
+      "start": 16.49,
+      "end": 16.617,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "scalding",
+      "start": 16.629,
+      "end": 17.109,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "fluid",
+      "start": 17.122,
+      "end": 17.45,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "hits",
+      "start": 17.463,
+      "end": 17.703,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "two-degree",
+      "start": 17.715,
+      "end": 18.195,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "seawater",
+      "start": 18.208,
+      "end": 18.839,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "freezing",
+      "start": 19.091,
+      "end": 19.483,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "dissolved",
+      "start": 19.496,
+      "end": 19.912,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "metals",
+      "start": 19.925,
+      "end": 20.291,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "into",
+      "start": 20.304,
+      "end": 20.569,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "towering",
+      "start": 20.581,
+      "end": 21.074,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "black",
+      "start": 21.086,
+      "end": 21.364,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "chimneys",
+      "start": 21.377,
+      "end": 21.983,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "You",
+      "start": 22.494,
+      "end": 22.673,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "would",
+      "start": 22.583,
+      "end": 22.711,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "expect",
+      "start": 22.724,
+      "end": 23.119,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "bare",
+      "start": 23.132,
+      "end": 23.387,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "sterile",
+      "start": 23.604,
+      "end": 24.101,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "rock",
+      "start": 24.114,
+      "end": 24.318,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "around",
+      "start": 24.331,
+      "end": 24.688,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "poison",
+      "start": 24.701,
+      "end": 25.058,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "that",
+      "start": 25.07,
+      "end": 25.198,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "hot",
+      "start": 25.211,
+      "end": 25.632,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Instead",
+      "start": 26.063,
+      "end": 26.657,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 26.769,
+      "end": 26.868,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "chimney",
+      "start": 26.88,
+      "end": 27.215,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "walls",
+      "start": 27.227,
+      "end": 27.623,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "are",
+      "start": 27.635,
+      "end": 27.772,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "moving",
+      "start": 27.784,
+      "end": 28.328,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "Up",
+      "start": 28.838,
+      "end": 29.04,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "to",
+      "start": 28.956,
+      "end": 29.045,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "twenty-five",
+      "start": 29.057,
+      "end": 29.663,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "hundred",
+      "start": 29.676,
+      "end": 29.992,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "pale",
+      "start": 30.004,
+      "end": 30.332,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "shrimp",
+      "start": 30.345,
+      "end": 30.598,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "pack",
+      "start": 30.61,
+      "end": 30.85,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "every",
+      "start": 30.863,
+      "end": 31.103,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "square",
+      "start": 31.115,
+      "end": 31.456,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "meter",
+      "start": 31.469,
+      "end": 31.848,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "in",
+      "start": 31.86,
+      "end": 32.024,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "total",
+      "start": 32.037,
+      "end": 32.403,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "darkness",
+      "start": 32.416,
+      "end": 32.946,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "centimeters",
+      "start": 33.135,
+      "end": 33.742,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "from",
+      "start": 33.754,
+      "end": 33.931,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "water",
+      "start": 33.944,
+      "end": 34.297,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "hot",
+      "start": 34.31,
+      "end": 34.575,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "enough",
+      "start": 34.587,
+      "end": 34.878,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "to",
+      "start": 34.891,
+      "end": 34.966,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "melt",
+      "start": 34.979,
+      "end": 35.244,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "lead",
+      "start": 35.257,
+      "end": 35.661,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "Look",
+      "start": 36.09,
+      "end": 36.324,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "closely",
+      "start": 36.221,
+      "end": 36.768,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "and",
+      "start": 37.002,
+      "end": 37.146,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "none",
+      "start": 37.159,
+      "end": 37.367,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "of",
+      "start": 37.38,
+      "end": 37.471,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "them",
+      "start": 37.484,
+      "end": 37.601,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "have",
+      "start": 37.614,
+      "end": 37.797,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "eyeballs",
+      "start": 37.81,
+      "end": 38.513,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "Across",
+      "start": 39.013,
+      "end": 39.446,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "their",
+      "start": 39.357,
+      "end": 39.484,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "backs",
+      "start": 39.497,
+      "end": 39.841,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "sits",
+      "start": 39.854,
+      "end": 40.071,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "a",
+      "start": 40.084,
+      "end": 40.147,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "white",
+      "start": 40.16,
+      "end": 40.543,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "light-sensing",
+      "start": 40.556,
+      "end": 41.232,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "organ",
+      "start": 41.244,
+      "end": 41.55,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "that",
+      "start": 41.563,
+      "end": 41.678,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "detects",
+      "start": 41.691,
+      "end": 42.112,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 42.124,
+      "end": 42.214,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "faint",
+      "start": 42.226,
+      "end": 42.558,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "infrared",
+      "start": 42.571,
+      "end": 43.068,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "glow",
+      "start": 43.081,
+      "end": 43.323,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "of",
+      "start": 43.336,
+      "end": 43.438,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "scalding",
+      "start": 43.451,
+      "end": 43.961,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "vents",
+      "start": 43.974,
+      "end": 44.459,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "It",
+      "start": 44.861,
+      "end": 45.059,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "keeps",
+      "start": 44.957,
+      "end": 45.22,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "them",
+      "start": 45.233,
+      "end": 45.378,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "inside",
+      "start": 45.391,
+      "end": 45.865,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "a",
+      "start": 45.878,
+      "end": 45.93,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "narrow",
+      "start": 45.943,
+      "end": 46.312,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "20-degree",
+      "start": 46.325,
+      "end": 47.036,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "safety",
+      "start": 47.049,
+      "end": 47.457,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "zone",
+      "start": 47.47,
+      "end": 47.746,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "close",
+      "start": 47.917,
+      "end": 48.246,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "enough",
+      "start": 48.259,
+      "end": 48.562,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "to",
+      "start": 48.575,
+      "end": 48.654,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "farm",
+      "start": 48.667,
+      "end": 49.022,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "sulfur-eating",
+      "start": 49.036,
+      "end": 49.733,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "bacteria",
+      "start": 49.746,
+      "end": 50.378,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "in",
+      "start": 50.391,
+      "end": 50.496,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "their",
+      "start": 50.509,
+      "end": 50.654,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "gills",
+      "start": 50.667,
+      "end": 51.075,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "without",
+      "start": 51.088,
+      "end": 51.443,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "cooking",
+      "start": 51.457,
+      "end": 51.799,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "alive",
+      "start": 51.812,
+      "end": 52.391,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "Since 1977",
+      "start": 52.91,
+      "end": 54.415,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "researchers",
+      "start": 54.412,
+      "end": 54.935,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "still",
+      "start": 54.948,
+      "end": 55.203,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "debate",
+      "start": 55.216,
+      "end": 55.56,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "whether",
+      "start": 55.573,
+      "end": 55.866,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Earth's",
+      "start": 55.879,
+      "end": 56.172,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "first",
+      "start": 56.185,
+      "end": 56.504,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "cells",
+      "start": 56.517,
+      "end": 56.836,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "sparked",
+      "start": 56.848,
+      "end": 57.231,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "in",
+      "start": 57.244,
+      "end": 57.384,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "deep",
+      "start": 57.397,
+      "end": 57.69,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "vents",
+      "start": 57.703,
+      "end": 58.009,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "or",
+      "start": 58.022,
+      "end": 58.098,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "shallow",
+      "start": 58.111,
+      "end": 58.519,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "surface",
+      "start": 58.532,
+      "end": 58.991,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "pools",
+      "start": 59.004,
+      "end": 59.553,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "Either",
+      "start": 59.955,
+      "end": 60.267,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "way",
+      "start": 60.228,
+      "end": 60.541,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "these",
+      "start": 60.762,
+      "end": 60.996,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "blind",
+      "start": 61.009,
+      "end": 61.361,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "shrimp",
+      "start": 61.374,
+      "end": 61.673,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "prove",
+      "start": 61.686,
+      "end": 61.999,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "whole",
+      "start": 62.012,
+      "end": 62.298,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "ecosystems",
+      "start": 62.311,
+      "end": 63.054,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "can",
+      "start": 63.067,
+      "end": 63.262,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "thrive",
+      "start": 63.275,
+      "end": 63.653,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "without",
+      "start": 63.666,
+      "end": 64.004,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "sunlight",
+      "start": 64.017,
+      "end": 64.59,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "making",
+      "start": 64.785,
+      "end": 65.163,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "underwater",
+      "start": 65.176,
+      "end": 65.71,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "chimneys",
+      "start": 65.723,
+      "end": 66.127,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "a",
+      "start": 66.14,
+      "end": 66.205,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "prime",
+      "start": 66.218,
+      "end": 66.556,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "target",
+      "start": 66.569,
+      "end": 66.999,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "in",
+      "start": 67.012,
+      "end": 67.103,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Yoo-roh-puhz",
+      "start": 67.116,
+      "end": 67.637,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "hidden",
+      "start": 67.65,
+      "end": 67.923,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "ocean",
+      "start": 67.936,
+      "end": 68.379,
+      "emphasis": true
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "cavern_heartbeat_pulse",
+      "time_s": 25.893,
+      "gain_db": -26.0,
+      "shot_id": "S05",
+      "purpose": "Quiet tension pulse on mid-video reveal that the chimney walls are alive and moving"
+    }
+  ],
+  "diegetic_nat_sound_active": false,
+  "adaptive_audio_profile": "immersive_exploration",
+  "music_sections_count": 2,
+  "ambience_sections_count": 5,
+  "scene_optimization_counts": {
+    "Keep": 10,
+    "Merge": 0,
+    "Replace": 0,
+    "Remove": 0
+  },
+  "audio_layers_exported": [
+    "layer_1_narration",
+    "layer_2_music",
+    "layer_3_ambience",
+    "layer_4_natural_sounds",
+    "layer_5_cinematic_sfx"
+  ],
+  "audio_diagnostics": {
+    "integrated_lufs": -16.0,
+    "loudness_range_lra_lu": 1.9,
+    "true_peak_dbtp": -1.5,
+    "speech_crest_factor_db": 14.5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -1.5
+  }
+}

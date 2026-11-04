@@ -1,0 +1,85 @@
+{
+  "slug": "deep-ocean-black-smokers-v8",
+  "style_profile": "deep_ocean_exploration",
+  "target_duration_range_s": [
+    60.0,
+    78.0
+  ],
+  "planned_duration_s": 64.15,
+  "timing_source": "estimated_wpm",
+  "rows": [
+    {
+      "time": "0.1\u20134.4s",
+      "start_s": 0.1,
+      "end_s": 4.41,
+      "seg_id": "N01",
+      "narrative_beat": "opening_hook",
+      "viewer_question": "How can 360\u00b0C water blast out of the ocean floor without boiling into steam?",
+      "new_information": "Two miles beneath the ocean surface, seafloor black smoker chimneys eject ~360\u00b0C liquid water without flashing to steam.",
+      "visual_reveal": "1080p ROV Victor 6000 footage of jet-black superheated fluid billowing violently out of an active hydrothermal chimney.",
+      "emotional_direction": "Immediate visual shock and counterintuitive physics intrigue",
+      "retention_purpose": "Stop scrolling on Frame 0 with real roaring black underwater smoke and a 13-word physics contradiction"
+    },
+    {
+      "time": "4.8\u201319.3s",
+      "start_s": 4.75,
+      "end_s": 19.26,
+      "seg_id": "N02",
+      "narrative_beat": "evidence_and_discovery",
+      "viewer_question": "Could anything possibly survive next to toxic, metal-rich water hot enough to melt lead?",
+      "new_information": "360 bar hydrostatic pressure suppresses boiling; ROV temperature probes confirm >350\u00b0C fluid precipitating iron/sulfide chimneys upon meeting 2\u00b0C seawater.",
+      "visual_reveal": "4K submarine descent onto the Mid-Atlantic Ridge, ROV Victor 6000 manipulator arm inserting a steel temperature probe into the vent, and towering 20-meter sulfide spires.",
+      "emotional_direction": "Grounded scientific authority backed by real robotic oceanography",
+      "retention_purpose": "Resolve the boiling paradox visually with a real ROV thermometer probe while escalating to chimney formation"
+    },
+    {
+      "time": "19.6\u201325.9s",
+      "start_s": 19.6,
+      "end_s": 25.88,
+      "seg_id": "N03",
+      "narrative_beat": "escalation",
+      "viewer_question": "What kind of creature is crawling all over a 360\u00b0C toxic chimney wall?",
+      "new_information": "Rather than lifeless rock, the sulfide walls right beside the scalding plumes are carpeted in dense, moving animal life.",
+      "visual_reveal": "Submersible Nautile revealing TAG and Snake Pit black smoker walls completely covered in writhing white swarms.",
+      "emotional_direction": "Hushed mid-video twist that flips a geology story into an alien-like biology mystery",
+      "retention_purpose": "Execute the Layer-2 retention pivot at ~20s so viewers stay locked in for the biological reveal"
+    },
+    {
+      "time": "26.2\u201337.2s",
+      "start_s": 26.22,
+      "end_s": 37.2,
+      "seg_id": "N04",
+      "narrative_beat": "escalation",
+      "viewer_question": "If these shrimp have no eyeballs in pitch darkness, how do they avoid swimming two centimeters into 360\u00b0C water and cooking instantly?",
+      "new_information": "Rimicaris exoculata pack up to 2,500 shrimp/m\u00b2 inches from 360\u00b0C plumes (lead melts at 327\u00b0C) and possess zero normal eyes.",
+      "visual_reveal": "1080p close-up of swarming Rimicaris exoculata shrimp crowded beside turbulent scalding vent water.",
+      "emotional_direction": "Visceral fascination and razor-thin survival tension",
+      "retention_purpose": "Plant an irresistible survival puzzle: how does a blind animal dodge invisible 360\u00b0C heat?"
+    },
+    {
+      "time": "37.5\u201349.7s",
+      "start_s": 37.54,
+      "end_s": 49.7,
+      "seg_id": "N05",
+      "narrative_beat": "payoff",
+      "viewer_question": "What does a sunlight-free ecosystem mean for life beyond Earth?",
+      "new_information": "A rhodopsin-packed dorsal organ on their carapace senses faint thermal vent radiance, letting them hover in the warm mixing zone where gill bacteria oxidize hydrogen sulfide into food.",
+      "visual_reveal": "Extreme SMOOVE observatory macro close-up clearly showing the bright white dorsal strip along the backs of blind Rimicaris shrimp and vent mussels, followed by active BioBaz vent sampling.",
+      "emotional_direction": "Scientific awe at evolutionary engineering",
+      "retention_purpose": "Deliver visual proof of the white dorsal 'back-eye' right as the narrator describes it"
+    },
+    {
+      "time": "50.0\u201364.2s",
+      "start_s": 50.04,
+      "end_s": 64.15,
+      "seg_id": "N06",
+      "narrative_beat": "final_impression",
+      "viewer_question": "Are black smokers erupting right now beneath the ice oceans of Europa and Enceladus?",
+      "new_information": "While abiogenesis researchers still debate deep hydrothermal vents versus shallow surface hot-spring pools, chemosynthetic vent ecosystems prove complex life needs zero sunlight\u2014guiding ocean-world exploration on Europa.",
+      "visual_reveal": "Dense hydrothermal oasis thriving in total abyssal darkness, closing on a roaring black smoker chimney that loops seamlessly back into Frame 0.",
+      "emotional_direction": "Expansive cosmic wonder grounded in honest scientific nuance",
+      "retention_purpose": "State the real origin-of-life caveat cleanly and close on a visual callback that drives seamless auto-replay into S01"
+    }
+  ],
+  "markdown_table": "# Audience Retention Plan \u2014 `deep-ocean-black-smokers-v8` (`64.2s` Target/Actual Runtime)\n\n- **Production Profile:** `deep_ocean_exploration`\n- **Configured Target Window:** `60\u201378s`\n- **Timing Basis:** `Pre-Generation Spoken Cadence Estimate`\n\n| Time | Narrative beat | Viewer question | New information | Visual reveal | Emotional direction | Retention purpose |\n|---|---|---|---|---|---|---|\n| `0.1\u20134.4s` | **opening_hook** (`N01`) | How can 360\u00b0C water blast out of the ocean floor without boiling into steam? | Two miles beneath the ocean surface, seafloor black smoker chimneys eject ~360\u00b0C liquid water without flashing to steam. | 1080p ROV Victor 6000 footage of jet-black superheated fluid billowing violently out of an active hydrothermal chimney. | Immediate visual shock and counterintuitive physics intrigue | Stop scrolling on Frame 0 with real roaring black underwater smoke and a 13-word physics contradiction |\n| `4.8\u201319.3s` | **evidence_and_discovery** (`N02`) | Could anything possibly survive next to toxic, metal-rich water hot enough to melt lead? | 360 bar hydrostatic pressure suppresses boiling; ROV temperature probes confirm >350\u00b0C fluid precipitating iron/sulfide chimneys upon meeting 2\u00b0C seawater. | 4K submarine descent onto the Mid-Atlantic Ridge, ROV Victor 6000 manipulator arm inserting a steel temperature probe into the vent, and towering 20-meter sulfide spires. | Grounded scientific authority backed by real robotic oceanography | Resolve the boiling paradox visually with a real ROV thermometer probe while escalating to chimney formation |\n| `19.6\u201325.9s` | **escalation** (`N03`) | What kind of creature is crawling all over a 360\u00b0C toxic chimney wall? | Rather than lifeless rock, the sulfide walls right beside the scalding plumes are carpeted in dense, moving animal life. | Submersible Nautile revealing TAG and Snake Pit black smoker walls completely covered in writhing white swarms. | Hushed mid-video twist that flips a geology story into an alien-like biology mystery | Execute the Layer-2 retention pivot at ~20s so viewers stay locked in for the biological reveal |\n| `26.2\u201337.2s` | **escalation** (`N04`) | If these shrimp have no eyeballs in pitch darkness, how do they avoid swimming two centimeters into 360\u00b0C water and cooking instantly? | Rimicaris exoculata pack up to 2,500 shrimp/m\u00b2 inches from 360\u00b0C plumes (lead melts at 327\u00b0C) and possess zero normal eyes. | 1080p close-up of swarming Rimicaris exoculata shrimp crowded beside turbulent scalding vent water. | Visceral fascination and razor-thin survival tension | Plant an irresistible survival puzzle: how does a blind animal dodge invisible 360\u00b0C heat? |\n| `37.5\u201349.7s` | **payoff** (`N05`) | What does a sunlight-free ecosystem mean for life beyond Earth? | A rhodopsin-packed dorsal organ on their carapace senses faint thermal vent radiance, letting them hover in the warm mixing zone where gill bacteria oxidize hydrogen sulfide into food. | Extreme SMOOVE observatory macro close-up clearly showing the bright white dorsal strip along the backs of blind Rimicaris shrimp and vent mussels, followed by active BioBaz vent sampling. | Scientific awe at evolutionary engineering | Deliver visual proof of the white dorsal 'back-eye' right as the narrator describes it |\n| `50.0\u201364.2s` | **final_impression** (`N06`) | Are black smokers erupting right now beneath the ice oceans of Europa and Enceladus? | While abiogenesis researchers still debate deep hydrothermal vents versus shallow surface hot-spring pools, chemosynthetic vent ecosystems prove complex life needs zero sunlight\u2014guiding ocean-world exploration on Europa. | Dense hydrothermal oasis thriving in total abyssal darkness, closing on a roaring black smoker chimney that loops seamlessly back into Frame 0. | Expansive cosmic wonder grounded in honest scientific nuance | State the real origin-of-life caveat cleanly and close on a visual callback that drives seamless auto-replay into S01 |\n"
+}

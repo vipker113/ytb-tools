@@ -1,0 +1,97 @@
+{
+  "slug": "test-b-medium-glacier-aquifer",
+  "style_profile": "mysterious_earth_exploration",
+  "target_duration_range_s": [
+    20.0,
+    240.0
+  ],
+  "planned_duration_s": 80.6,
+  "timing_source": "word_timings",
+  "rows": [
+    {
+      "time": "0.1\u201311.8s",
+      "start_s": 0.1,
+      "end_s": 11.8,
+      "seg_id": "N01",
+      "narrative_beat": "opening_hook",
+      "viewer_question": "How can liquid water survive inside subzero Greenland ice?",
+      "new_information": "A vast perennial liquid aquifer spans thousands of square kilometers inside Greenland's ice sheet.",
+      "visual_reveal": "S01: Aerial footage of Greenland glacier ice sheet and crevasse field; S02: Same Greenland glacier ice sheet aerial sweep",
+      "emotional_direction": "Immediate visual shock & curiosity",
+      "retention_purpose": "Stop scroll within 1-3s with a verified anomaly and clear story promise"
+    },
+    {
+      "time": "12.2\u201323.1s",
+      "start_s": 12.24,
+      "end_s": 23.12,
+      "seg_id": "N02",
+      "narrative_beat": "curiosity_gap",
+      "viewer_question": "Why did climate models miss this underground water?",
+      "new_information": "Prior to 2011 core drilling, models assumed summer meltwater refroze in winter.",
+      "visual_reveal": "S02: Same Greenland glacier ice sheet aerial sweep; S03: Polar researchers operating snow and ice survey instruments on glaci",
+      "emotional_direction": "Intrigue & puzzled anticipation",
+      "retention_purpose": "Establish the central 'how/why' question without giving away the deeper layer"
+    },
+    {
+      "time": "23.5\u201334.6s",
+      "start_s": 23.54,
+      "end_s": 34.63,
+      "seg_id": "N03",
+      "narrative_beat": "evidence_and_discovery",
+      "viewer_question": "What physical mechanism keeps the aquifer from freezing?",
+      "new_information": "Thick autumn snow insulates the porous firn layer from bitter winter air.",
+      "visual_reveal": "S03: Polar researchers operating snow and ice survey instruments on glaci; S04: Scientists on Helheim Glacier studying porous firn snow aquifer",
+      "emotional_direction": "Grounded investigative focus",
+      "retention_purpose": "Deliver progressive empirical observations and real fieldwork visuals"
+    },
+    {
+      "time": "35.2\u201345.2s",
+      "start_s": 35.23,
+      "end_s": 45.24,
+      "seg_id": "N04",
+      "narrative_beat": "escalation",
+      "viewer_question": "Where does all of that hidden glacier water go?",
+      "new_information": "Deep crevasse fractures route aquifer water downward to the bedrock.",
+      "visual_reveal": "S05: Decorative filler shot; S06: NASA IceBridge aircraft radar survey over deep glacier fractures",
+      "emotional_direction": "Controlled surprise & deepening wonder",
+      "retention_purpose": "Pivot past the surface answer into a deeper, unexpected scientific clue"
+    },
+    {
+      "time": "45.7\u201356.5s",
+      "start_s": 45.7,
+      "end_s": 56.49,
+      "seg_id": "N05",
+      "narrative_beat": "evidence_and_discovery",
+      "viewer_question": "What happens when aquifer water reaches the base of the glacier?",
+      "new_information": "Basal water lubricates ice sliding and injects buoyant freshwater plumes into deep fjords.",
+      "visual_reveal": "S06: NASA IceBridge aircraft radar survey over deep glacier fractures; S07: Helheim Glacier terminus meeting deep fjord ocean water",
+      "emotional_direction": "Grounded investigative focus",
+      "retention_purpose": "Deliver progressive empirical observations and real fieldwork visuals"
+    },
+    {
+      "time": "56.9\u201368.5s",
+      "start_s": 56.93,
+      "end_s": 68.45,
+      "seg_id": "N06",
+      "narrative_beat": "payoff",
+      "viewer_question": "How does subglacial drainage affect open-ocean life?",
+      "new_information": "Glacial meltwater plumes deliver iron and silica nutrients above the ocean twilight zone.",
+      "visual_reveal": "S07: Helheim Glacier terminus meeting deep fjord ocean water; S08: Oceanographers aboard research ship deploying underwater sensors int",
+      "emotional_direction": "Intellectual clarity & scientific respect",
+      "retention_purpose": "Resolve the core mystery honestly while qualifying what remains under study"
+    },
+    {
+      "time": "68.9\u201380.6s",
+      "start_s": 68.91,
+      "end_s": 80.6,
+      "seg_id": "N07",
+      "narrative_beat": "final_impression",
+      "viewer_question": "What remains unresolved for future sea-level projections?",
+      "new_information": "Exact aquifer drainage rates into the ocean remain an active research question.",
+      "visual_reveal": "S08: Oceanographers aboard research ship deploying underwater sensors int; S09: Wide ocean research horizon at dusk during deep sea expedition",
+      "emotional_direction": "Lasting awe & seamless reflective resonance",
+      "retention_purpose": "Leave a memorable scientific insight without weakening the ending via generic CTAs"
+    }
+  ],
+  "markdown_table": "# Audience Retention Plan \u2014 `test-b-medium-glacier-aquifer` (`80.6s` Target/Actual Runtime)\n\n- **Production Profile:** `mysterious_earth_exploration`\n- **Configured Target Window:** `20\u2013240s`\n- **Timing Basis:** `Authoritative Narration Master (word_timings.json)`\n\n| Time | Narrative beat | Viewer question | New information | Visual reveal | Emotional direction | Retention purpose |\n|---|---|---|---|---|---|---|\n| `0.1\u201311.8s` | **opening_hook** (`N01`) | How can liquid water survive inside subzero Greenland ice? | A vast perennial liquid aquifer spans thousands of square kilometers inside Greenland's ice sheet. | S01: Aerial footage of Greenland glacier ice sheet and crevasse field; S02: Same Greenland glacier ice sheet aerial sweep | Immediate visual shock & curiosity | Stop scroll within 1-3s with a verified anomaly and clear story promise |\n| `12.2\u201323.1s` | **curiosity_gap** (`N02`) | Why did climate models miss this underground water? | Prior to 2011 core drilling, models assumed summer meltwater refroze in winter. | S02: Same Greenland glacier ice sheet aerial sweep; S03: Polar researchers operating snow and ice survey instruments on glaci | Intrigue & puzzled anticipation | Establish the central 'how/why' question without giving away the deeper layer |\n| `23.5\u201334.6s` | **evidence_and_discovery** (`N03`) | What physical mechanism keeps the aquifer from freezing? | Thick autumn snow insulates the porous firn layer from bitter winter air. | S03: Polar researchers operating snow and ice survey instruments on glaci; S04: Scientists on Helheim Glacier studying porous firn snow aquifer | Grounded investigative focus | Deliver progressive empirical observations and real fieldwork visuals |\n| `35.2\u201345.2s` | **escalation** (`N04`) | Where does all of that hidden glacier water go? | Deep crevasse fractures route aquifer water downward to the bedrock. | S05: Decorative filler shot; S06: NASA IceBridge aircraft radar survey over deep glacier fractures | Controlled surprise & deepening wonder | Pivot past the surface answer into a deeper, unexpected scientific clue |\n| `45.7\u201356.5s` | **evidence_and_discovery** (`N05`) | What happens when aquifer water reaches the base of the glacier? | Basal water lubricates ice sliding and injects buoyant freshwater plumes into deep fjords. | S06: NASA IceBridge aircraft radar survey over deep glacier fractures; S07: Helheim Glacier terminus meeting deep fjord ocean water | Grounded investigative focus | Deliver progressive empirical observations and real fieldwork visuals |\n| `56.9\u201368.5s` | **payoff** (`N06`) | How does subglacial drainage affect open-ocean life? | Glacial meltwater plumes deliver iron and silica nutrients above the ocean twilight zone. | S07: Helheim Glacier terminus meeting deep fjord ocean water; S08: Oceanographers aboard research ship deploying underwater sensors int | Intellectual clarity & scientific respect | Resolve the core mystery honestly while qualifying what remains under study |\n| `68.9\u201380.6s` | **final_impression** (`N07`) | What remains unresolved for future sea-level projections? | Exact aquifer drainage rates into the ocean remain an active research question. | S08: Oceanographers aboard research ship deploying underwater sensors int; S09: Wide ocean research horizon at dusk during deep sea expedition | Lasting awe & seamless reflective resonance | Leave a memorable scientific insight without weakening the ending via generic CTAs |\n"
+}

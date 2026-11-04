@@ -1,0 +1,376 @@
+{
+  "style_profile": "scientific_investigation",
+  "total_duration_s": 37.067,
+  "shot_count": 7,
+  "distinct_source_assets_count": 4,
+  "distinct_perspectives": [
+    "aerial",
+    "close_up",
+    "extreme_wide",
+    "scientific_fieldwork"
+  ],
+  "distinct_perspectives_count": 4,
+  "first_real_motion_start_s": 0.0,
+  "viral_script_audit": {
+    "total_words": 92,
+    "hook_first_sentence_words": 13,
+    "max_sentence_words": 19,
+    "llm_cliche_hits": 0,
+    "jargon_cluster_hits": 0,
+    "flat_prosody_ratio": 0.0,
+    "ending_tail_pause_s": 0.42,
+    "anti_ai_script_pass": true,
+    "errors": [],
+    "warnings": []
+  },
+  "moving_footage_s": 27.467,
+  "moving_footage_pct": 74.1,
+  "meets_moving_footage_goal": true,
+  "still_photography_s": 9.599,
+  "still_photography_pct": 25.9,
+  "human_interaction_shots": 3,
+  "human_interaction_s": 17.9,
+  "human_interaction_pct": 48.29,
+  "illustrative_diagram_s": 0.0,
+  "illustrative_diagram_pct": 0.0,
+  "authentic_visual_pct": 100.0,
+  "pacing_summary": {
+    "min_shot_s": 1.133,
+    "median_shot_s": 4.333,
+    "mean_shot_s": 5.295,
+    "max_shot_s": 9.567,
+    "internal_cuts": 6,
+    "clean_cuts": 6,
+    "dissolves": 0,
+    "dissolve_fraction": 0.0,
+    "speech_boundary_aligned_cuts": 1,
+    "speech_boundary_alignment_pct": 16.7
+  },
+  "errors": [
+    "[S04] Consecutive static photo shots (S03 -> S04) are forbidden in scientific_investigation; interleave real moving footage.",
+    "[S06] Still photograph 'bf_2010_12_14.jpg' is reused multiple times; artificial visual variety by zooming into the same image repeatedly is forbidden."
+  ],
+  "warnings": [
+    "[S01:nasa_m12666_nansen_scientists_ice.mp4] Effective upscale factor (2.77x) exceeds crisp HD target (2.35x).",
+    "[S02] Cut at 5.67s is 0.68s from nearest speech pause (slices word 'minus')",
+    "[S02:nasa_m12666_nansen_scientists_ice.mp4] Effective upscale factor (2.77x) exceeds crisp HD target (2.35x).",
+    "[S04] Cut at 13.60s is 0.57s from nearest speech pause",
+    "[S04] Shot duration 1.13s is shorter than minimum 2.50s.",
+    "[S05] Cut at 14.73s is 1.70s from nearest speech pause",
+    "[S06] Cut at 24.30s is 0.35s from nearest speech pause",
+    "[S07] Cut at 28.43s is 0.52s from nearest speech pause",
+    "[S07:nasa_m12666_nansen_scientists_ice.mp4] Effective upscale factor (2.77x) exceeds crisp HD target (2.35x).",
+    "Asset 'nasa_m12666_nansen_scientists_ice.mp4' used 3 times (exceeds max_uses_per_asset=2).",
+    "Asset 'nasa_m12666_nansen_scientists_ice.mp4' occupies 48.3% of runtime (exceeds 30% cap).",
+    "Static photo ratio is 25.9% (exceeds max_still_photo_ratio=24%)."
+  ],
+  "shots": [
+    {
+      "sid": "S01",
+      "start_s": 0.0,
+      "end_s": 5.6667,
+      "duration_s": 5.667,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.8,
+        "ideal_duration_s": 5.97,
+        "max_recommended_s": 9.3,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 15
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "scientific_fieldwork",
+      "src_file": "nasa_m12666_nansen_scientists_ice.mp4",
+      "transition_in": "opening",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.0,
+      "nearest_speech_boundary_kind": "start",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "In East Antarctica crimson water pours straight out of solid white glacier ice Even at",
+      "story_beat": "Field scientists working across East Antarctic glacier ice",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 389.4,
+        "crop_height_px": 692.3,
+        "upscale_factor": 2.773,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (2.77x) exceeds crisp HD target (2.35x)."
+        ]
+      }
+    },
+    {
+      "sid": "S02",
+      "start_s": 5.6667,
+      "end_s": 9.2667,
+      "duration_s": 3.6,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 2.97,
+        "ideal_duration_s": 4.47,
+        "max_recommended_s": 9.3,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "context",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 8
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "scientific_fieldwork",
+      "src_file": "nasa_m12666_nansen_scientists_ice.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": false,
+      "nearest_speech_boundary_s": 0.677,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "minus seventeen degrees Celsius the flow never freezes",
+      "story_beat": "Same Antarctic glacier ice sheet traversal",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 389.4,
+        "crop_height_px": 692.3,
+        "upscale_factor": 2.773,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (2.77x) exceeds crisp HD target (2.35x)."
+        ]
+      }
+    },
+    {
+      "sid": "S03",
+      "start_s": 9.2667,
+      "end_s": 13.6,
+      "duration_s": 4.333,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "close_up",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 8
+        }
+      },
+      "media_type": "photo",
+      "kind": "still_full",
+      "camera_perspective": "close_up",
+      "src_file": "bf_2010_12_14.jpg",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.143,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "In 1911 early explorers blamed red surface algae Chemical",
+      "story_beat": "Crimson Blood Falls outflow staining white glacier ice",
+      "crop_feasibility": {
+        "source_width": 4160,
+        "source_height": 2340,
+        "crop_width_px": 1265.6,
+        "crop_height_px": 2250.0,
+        "upscale_factor": 0.853,
+        "feasible": true,
+        "warnings": []
+      }
+    },
+    {
+      "sid": "S04",
+      "start_s": 13.6,
+      "end_s": 14.7333,
+      "duration_s": 1.133,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 3.95,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "low",
+          "spoken_importance": "context",
+          "camera_perspective": "aerial",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 3
+        }
+      },
+      "media_type": "photo",
+      "kind": "still_full",
+      "camera_perspective": "aerial",
+      "src_file": "bf_aerial_2013.jpg",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": false,
+      "nearest_speech_boundary_s": 0.566,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "sampling decades later",
+      "story_beat": "Decorative filler b-roll cut",
+      "crop_feasibility": {
+        "source_width": 3008,
+        "source_height": 2000,
+        "crop_width_px": 1081.7,
+        "crop_height_px": 1923.1,
+        "upscale_factor": 0.998,
+        "feasible": true,
+        "warnings": []
+      }
+    },
+    {
+      "sid": "S05",
+      "start_s": 14.7333,
+      "end_s": 24.3,
+      "duration_s": 9.567,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.8,
+        "ideal_duration_s": 8.4,
+        "max_recommended_s": 10.8,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "aerial",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 23
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "aerial",
+      "src_file": "nasa_pig_iceberg_2013.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": false,
+      "nearest_speech_boundary_s": 1.699,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "ruled algae out completely and pointed to dissolved iron Ice-penetrating radar traced the brine to hypersaline seawater trapped four hundred meters underground High",
+      "story_beat": "Aerial radar survey over fractured Antarctic glacier ice",
+      "crop_feasibility": {
+        "source_width": 1920,
+        "source_height": 1080,
+        "crop_width_px": 584.1,
+        "crop_height_px": 1038.5,
+        "upscale_factor": 1.849,
+        "feasible": true,
+        "warnings": []
+      }
+    },
+    {
+      "sid": "S06",
+      "start_s": 24.3,
+      "end_s": 28.4333,
+      "duration_s": 4.133,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "extreme_wide",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 14
+        }
+      },
+      "media_type": "photo",
+      "kind": "still_full",
+      "camera_perspective": "extreme_wide",
+      "src_file": "bf_2010_12_14.jpg",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": false,
+      "nearest_speech_boundary_s": 0.354,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "salt content lowers its freezing point and dissolved iron rusts red when it meets",
+      "story_beat": "Taylor Glacier valley and iron brine terminus",
+      "crop_feasibility": {
+        "source_width": 4160,
+        "source_height": 2340,
+        "crop_width_px": 1265.6,
+        "crop_height_px": 2250.0,
+        "upscale_factor": 0.853,
+        "feasible": true,
+        "warnings": []
+      }
+    },
+    {
+      "sid": "S07",
+      "start_s": 28.4333,
+      "end_s": 37.0667,
+      "duration_s": 8.633,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.8,
+        "ideal_duration_s": 6.87,
+        "max_recommended_s": 9.3,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 20
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "scientific_fieldwork",
+      "src_file": "nasa_m12666_nansen_scientists_ice.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Clean cut aligned to narration boundary",
+      "cut_speech_boundary_aligned": false,
+      "nearest_speech_boundary_s": 0.523,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "air Researchers are still studying how completely sealed those deep microbes remain yet they survive in total darkness without oxygen",
+      "story_beat": "Antarctic researchers continuing polar field measurements",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 389.4,
+        "crop_height_px": 692.3,
+        "upscale_factor": 2.773,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (2.77x) exceeds crisp HD target (2.35x)."
+        ]
+      }
+    }
+  ]
+}

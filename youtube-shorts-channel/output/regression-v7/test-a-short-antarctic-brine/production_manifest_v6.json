@@ -1,0 +1,489 @@
+{
+  "schema_name": "proof_of_wonder_production_manifest",
+  "manifest_version": "7.0",
+  "generated_at_utc": "2026-11-03T18:10:33.068031+00:00",
+  "slug": "test-a-short-antarctic-brine",
+  "channel_name": "Proof of Wonder",
+  "category_playlist": "Hidden Earth",
+  "topic": "Subglacial iron-rich brine at Blood Falls, Taylor Glacier, Antarctica",
+  "production_profile": {
+    "profile_name": "scientific_investigation",
+    "profile_version": "7.0.0",
+    "style_overrides": {},
+    "visual_scoring_weights": {
+      "direct_relevance": 0.36,
+      "visual_clarity": 0.24,
+      "authenticity": 0.2,
+      "technical_quality": 0.08,
+      "composition_potential": 0.06,
+      "motion_storytelling": 0.03,
+      "license_verification": 0.03,
+      "min_direct_relevance_floor": 0.38
+    }
+  },
+  "script_version": {
+    "version": "1.0",
+    "script_sha256": "05df291952c659dd6844a2edaa22c591c872b4fc4426b731838dab6327ee4953",
+    "segment_count": 4,
+    "word_count": 92,
+    "opening_hook_type": "surprising_visual",
+    "layer2_pivot_seg_id": "N03",
+    "scientific_caveat_seg_id": "N04",
+    "factual_references": [
+      {
+        "citation": "Mikucki et al. (2009), A contemporary microbially maintained subglacial ferrous 'ocean', Science 324(5925), 397-400",
+        "url": "https://doi.org/10.1126/science.1167350",
+        "doi": "10.1126/science.1167350",
+        "supported_claims": "Iron-rich subglacial brine chemistry and anaerobic microbial metabolism"
+      },
+      {
+        "citation": "Badgeley et al. (2017), An englacial hydrologic system of brine pathways feeds Blood Falls, Journal of Glaciology",
+        "url": "https://doi.org/10.1017/jog.2017.16",
+        "doi": "10.1017/jog.2017.16",
+        "supported_claims": "Radar evidence of pressurized brine conduits beneath Taylor Glacier"
+      }
+    ]
+  },
+  "voice_direction_profile": {
+    "voice_input_mode": "directed_tts",
+    "profile_id": "scientific_authority",
+    "voice_identity": "en-GB-RyanNeural",
+    "annotated_voice_script_file": null,
+    "approval_lock": {
+      "locked": false,
+      "synchronized": false,
+      "detail": "No voice_approval_lock.json written yet."
+    }
+  },
+  "audio_source_and_final_narration": {
+    "voice_input_mode": "directed_tts",
+    "uploaded_narration_file": null,
+    "voice_reference_file": null,
+    "voice_owner_consent": false,
+    "narration_mp3": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\narration.mp3",
+    "final_audio_mix_mp3": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\final_audio_mix.mp3",
+    "word_timings_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\word_timings.json",
+    "total_duration_s": 37.0667,
+    "total_frames_30fps": 1112,
+    "five_layer_stems": {
+      "layer_1_narration": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\work_audio\\layer_1_narration.wav",
+      "layer_2_music": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\work_audio\\layer_2_music.wav",
+      "layer_3_ambience": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\work_audio\\layer_3_ambience.wav",
+      "layer_4_natural_sounds": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\work_audio\\layer_4_natural_sounds.wav",
+      "layer_5_cinematic_sfx": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\work_audio\\layer_5_cinematic_sfx.wav"
+    },
+    "audio_diagnostics": {
+      "integrated_lufs": -16.0,
+      "loudness_range_lra_lu": 1.6,
+      "true_peak_dbtp": -1.5,
+      "speech_crest_factor_db": 14.5,
+      "clipped_samples_count": 0,
+      "excessive_silence_count": 0,
+      "excessive_silences": [],
+      "voice_peak_dbfs": -1.53
+    }
+  },
+  "source_assets": [
+    {
+      "local_file": "nasa_m12666_nansen_scientists_ice.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "NASA Scientists on Nansen Ice Sheet, Antarctica",
+      "creator_agency": "NASA Goddard Space Flight Center",
+      "source_page_url": "https://svs.gsfc.nasa.gov/12666",
+      "direct_media_url": "https://svs.gsfc.nasa.gov/12666",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "nasa_pig_iceberg_2013.mp4",
+      "media_type": "video",
+      "priority_tier": 2,
+      "title": "NASA Operation IceBridge Aerial Survey of Antarctic Glacier Fracture",
+      "creator_agency": "NASA Goddard Space Flight Center",
+      "source_page_url": "https://images.nasa.gov/details/GSFC_20140425_PIG_m11529_Iceberg",
+      "direct_media_url": "https://images-assets.nasa.gov/video/GSFC_20140425_PIG_m11529_Iceberg/collection.json",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "bf_2010_12_14.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "Blood Falls Outflow at Taylor Glacier, McMurdo Dry Valleys",
+      "creator_agency": "National Science Foundation / Peter Rejcek",
+      "source_page_url": "https://photolibrary.usap.gov/",
+      "direct_media_url": "https://photolibrary.usap.gov/",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "bf_aerial_2013.jpg",
+      "media_type": "photo",
+      "priority_tier": 5,
+      "title": "Aerial View of Blood Falls and Taylor Glacier Terminus",
+      "creator_agency": "National Science Foundation / Michael Van Woert",
+      "source_page_url": "https://photolibrary.usap.gov/",
+      "direct_media_url": "https://photolibrary.usap.gov/",
+      "is_first_party_original": false
+    }
+  ],
+  "licensing_metadata": {
+    "strict_zero_cost_budget": true,
+    "source_register_csv": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\source_register.csv",
+    "source_register_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\source_register.md",
+    "excluded_sources_notes": [],
+    "licenses": [
+      {
+        "local_file": "nasa_m12666_nansen_scientists_ice.mp4",
+        "license": "Public Domain (17 U.S.C. \u00a7 105)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "NASA Goddard Space Flight Center"
+      },
+      {
+        "local_file": "nasa_pig_iceberg_2013.mp4",
+        "license": "Public Domain (17 U.S.C. \u00a7 105)",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "NASA GSFC / Operation IceBridge"
+      },
+      {
+        "local_file": "bf_2010_12_14.jpg",
+        "license": "Public Domain (US Federal Government / NSF)",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "required_attribution": "NSF / Peter Rejcek"
+      },
+      {
+        "local_file": "bf_aerial_2013.jpg",
+        "license": "Public Domain (US Federal Government / NSF)",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "required_attribution": "NSF / USAP"
+      }
+    ]
+  },
+  "shot_list": [
+    {
+      "sid": "S01",
+      "kind": "video_full",
+      "src_file": "nasa_m12666_nansen_scientists_ice.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Field scientists working across East Antarctic glacier ice",
+      "editorial_rationale": "Immediate authentic live-action Antarctic fieldwork hook"
+    },
+    {
+      "sid": "S02",
+      "kind": "video_full",
+      "src_file": "nasa_m12666_nansen_scientists_ice.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "context",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Same Antarctic glacier ice sheet traversal",
+      "editorial_rationale": "Consecutive duplicate subject shot seeded to test Merge"
+    },
+    {
+      "sid": "S03",
+      "kind": "still_full",
+      "src_file": "bf_2010_12_14.jpg",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Crimson Blood Falls outflow staining white glacier ice",
+      "editorial_rationale": "Direct photographic evidence of the crimson brine plume"
+    },
+    {
+      "sid": "S04",
+      "kind": "still_full",
+      "src_file": "bf_aerial_2013.jpg",
+      "camera_perspective": "wide",
+      "visual_complexity": "low",
+      "spoken_importance": "context",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Decorative filler b-roll cut",
+      "editorial_rationale": "Decorative filler seeded to verify Remove decision"
+    },
+    {
+      "sid": "S05",
+      "kind": "video_full",
+      "src_file": "nasa_pig_iceberg_2013.mp4",
+      "camera_perspective": "aerial",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Aerial radar survey over fractured Antarctic glacier ice",
+      "editorial_rationale": "Visualizes airborne glacier survey and deep ice fracture pathways"
+    },
+    {
+      "sid": "S06",
+      "kind": "still_full",
+      "src_file": "bf_2010_12_14.jpg",
+      "camera_perspective": "wide",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Taylor Glacier valley and iron brine terminus",
+      "editorial_rationale": "Repeated still seeded so scene_editor replaces with unused bf_aerial_2013.jpg"
+    },
+    {
+      "sid": "S07",
+      "kind": "video_full",
+      "src_file": "nasa_m12666_nansen_scientists_ice.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Antarctic researchers continuing polar field measurements",
+      "editorial_rationale": "Grounds the closing scientific caveat in ongoing fieldwork"
+    }
+  ],
+  "scene_timing": {
+    "fps": 30,
+    "semantic_timeline_manifest_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\semantic_timeline_manifest.json",
+    "timed_scenes": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 9.2,
+        "duration_s": 9.2,
+        "start_frame": 0,
+        "end_frame": 276
+      },
+      {
+        "sid": "S03",
+        "start_s": 9.2,
+        "end_s": 13.0333,
+        "duration_s": 3.8333,
+        "start_frame": 276,
+        "end_frame": 391
+      },
+      {
+        "sid": "S05",
+        "start_s": 13.0333,
+        "end_s": 23.9333,
+        "duration_s": 10.9,
+        "start_frame": 391,
+        "end_frame": 718
+      },
+      {
+        "sid": "S06",
+        "start_s": 23.9333,
+        "end_s": 28.4333,
+        "duration_s": 4.5,
+        "start_frame": 718,
+        "end_frame": 853
+      },
+      {
+        "sid": "S07",
+        "start_s": 28.4333,
+        "end_s": 37.0667,
+        "duration_s": 8.6334,
+        "start_frame": 853,
+        "end_frame": 1112
+      }
+    ]
+  },
+  "subtitle_version": {
+    "version": "1.0",
+    "style": "scientific_plain",
+    "emphasis_mode": "color_accent",
+    "word_by_word_animation": false,
+    "cue_count": 18,
+    "srt_path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\subtitles.srt"
+  },
+  "thumbnail_variants": {
+    "primary_thumbnail_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\thumbnail.jpg",
+    "mobile_preview_sheet_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\thumbnail_small_preview_sheet.jpg",
+    "concepts_comparison_sheet_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\thumbnail_concepts_comparison_sheet.jpg",
+    "concepts": [
+      {
+        "concept_id": "A",
+        "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\thumbnail_concept_A.jpg",
+        "source_asset": "bf_2010_12_14.jpg",
+        "matches_opening_scene_asset": false,
+        "headline_text": "IRON UNDER|THE ICE",
+        "headline_word_count": 4,
+        "kicker_text": "",
+        "concept_rationale": "Primary opening-matched focal subject + concise curiosity hook",
+        "size_kb": 1265.4,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "bf_2010_12_14.jpg",
+          "sharpness_score": 2.64,
+          "subject_separation_score": 46.52,
+          "combined_score": 26.77,
+          "recommended_cx": 0.4935,
+          "recommended_cy": 0.5226
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "B",
+        "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\thumbnail_concept_B.jpg",
+        "source_asset": "bf_2010_12_14.jpg",
+        "matches_opening_scene_asset": false,
+        "headline_text": "",
+        "headline_word_count": 0,
+        "kicker_text": "",
+        "concept_rationale": "Pure authentic phenomenon close-up with zero text overlay",
+        "size_kb": 1349.3,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "bf_2010_12_14.jpg",
+          "sharpness_score": 2.64,
+          "subject_separation_score": 46.52,
+          "combined_score": 26.77,
+          "recommended_cx": 0.4935,
+          "recommended_cy": 0.5226
+        },
+        "actual_analytics_outcome": null
+      }
+    ]
+  },
+  "rendering_configuration": {
+    "output_spec": {
+      "aspect_ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video_codec_master": "libx264",
+      "video_crf_master": 15,
+      "video_preset_master": "medium",
+      "video_profile": "high",
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "audio_codec": "aac",
+      "audio_bitrate": "192k",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "target_loudness_lufs": -16.0
+    },
+    "color_science": {
+      "enable_filmic_grade": true,
+      "cast_tame_strength": 0.16,
+      "luma_grain_sigma": 1.6
+    },
+    "benchmarks": {
+      "slug": "test-a-short-antarctic-brine",
+      "encode_mode": "master",
+      "shots_render_or_cache_s": 0.021,
+      "timeline_assembly_and_mux_s": 57.567,
+      "thumbnail_concepts_s": 4.024,
+      "total_render_master_s": 61.763,
+      "rendered_frames": 1112,
+      "effective_render_fps": 18.0
+    }
+  },
+  "qa_results": {
+    "qc_measurements_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\qc_measurements.json",
+    "qc_report_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\qc_report.md",
+    "summary": {
+      "overall_pass": false,
+      "failed_gates_count": 1,
+      "moving_footage_pct": 77.52,
+      "whisper_normalized_match_ratio": 1.0,
+      "integrated_lufs": -16.1,
+      "true_peak_dbtp": -1.5,
+      "protected_projects_intact": false
+    }
+  },
+  "studio_v7_intelligence": {
+    "adaptive_audio_profile": "minimal_documentary",
+    "music_plan_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\music_plan.json",
+    "ambience_plan_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\ambience_plan.json",
+    "sfx_plan_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\sfx_plan.json",
+    "scene_optimization_report_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\scene_optimization_report.json",
+    "unified_av_timeline_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\unified_av_timeline.json",
+    "creative_qa_report_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\creative_qa_report.json",
+    "scene_optimization_counts": {
+      "Keep": 4,
+      "Merge": 1,
+      "Replace": 1,
+      "Remove": 1
+    },
+    "music_sections_count": 0,
+    "ambience_sections_count": 1,
+    "approved_sfx_count": 1,
+    "creative_qa_pass": true
+  },
+  "final_output_locations": {
+    "output_dir": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine",
+    "master_mp4": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\test-a-short-antarctic-brine.mp4",
+    "primary_thumbnail_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\thumbnail.jpg",
+    "subtitles_srt": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\subtitles.srt",
+    "script_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\script.md",
+    "retention_plan_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\retention_plan.md",
+    "storyboard_manifest_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\storyboard_and_shot_manifest.md",
+    "youtube_metadata_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\youtube_metadata.md",
+    "qc_report_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\qc_report.md"
+  }
+}

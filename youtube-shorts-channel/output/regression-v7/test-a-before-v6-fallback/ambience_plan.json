@@ -1,0 +1,35 @@
+{
+  "slug": "test-a-before-v6-fallback",
+  "ambience_sections_total": 1,
+  "audible_ambience_sections_count": 1,
+  "silent_or_vacuum_sections_count": 0,
+  "continuous_across_connected_scenes": true,
+  "sections": [
+    {
+      "ambience_id": "A01",
+      "environment": "polar_glacial",
+      "label": "Restrained Antarctic katabatic air floor",
+      "start_s": 0.0,
+      "end_s": 37.067,
+      "duration_s": 37.067,
+      "shot_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07"
+      ],
+      "audible": true,
+      "band_hz": [
+        115.0,
+        480.0
+      ],
+      "target_gain_db": -27.5,
+      "crossfade_s": 0.45,
+      "authentic_field_bed_file": "nasa_m12666_nansen_scientists_ice.mp4",
+      "provenance": "authentic_expedition_field_audio"
+    }
+  ]
+}

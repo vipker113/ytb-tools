@@ -1,0 +1,41 @@
+profile_id: "urgent_discovery"
+display_name: "Urgent Discovery"
+description: "Focused, elevated momentum reserved for genuinely critical scientific turning points, active volcanic/tectonic hazards, and breakthrough discoveries without shouting or hype."
+voice_mode: "directed_tts"
+voice_identity: "en-GB-RyanNeural"
+accent: "en-GB"
+tone: "focused_urgent"
+emotion: "controlled_urgency"
+energy: 4
+speaking_speed: "moderate"
+base_rate_pct: 2
+base_pitch_hz: 0
+default_pause_after_ms: 300
+consistency_lock: true
+max_rate_delta_pct: 10
+max_pitch_delta_hz: 2
+emphasis_strategy: "crisp_articulation_with_contrast_pauses"
+pronunciation:
+  hydrothermal: "hy-droh-thur-mul"
+  seismometer: "syze-mom-ih-ter"
+sentence_delivery_presets:
+  URGENT_DISCOVERY:
+    rate_delta_pct: 3
+    pitch_delta_hz: 1
+    pause_after_ms: 290
+  MEASURED_EVIDENCE:
+    rate_delta_pct: 0
+    pitch_delta_hz: 0
+    pause_after_ms: 320
+  SURPRISED_BUT_CONTROLLED:
+    rate_delta_pct: 2
+    pitch_delta_hz: 1
+    pause_after_ms: 340
+  CINEMATIC_REVEAL:
+    rate_delta_pct: -3
+    pitch_delta_hz: 0
+    pause_after_ms: 580
+  CAVEAT:
+    rate_delta_pct: -2
+    pitch_delta_hz: -1
+    pause_after_ms: 360

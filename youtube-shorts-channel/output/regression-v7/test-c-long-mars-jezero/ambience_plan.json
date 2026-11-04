@@ -1,0 +1,41 @@
+{
+  "slug": "test-c-long-mars-jezero",
+  "ambience_sections_total": 1,
+  "audible_ambience_sections_count": 0,
+  "silent_or_vacuum_sections_count": 1,
+  "continuous_across_connected_scenes": true,
+  "sections": [
+    {
+      "ambience_id": "A01",
+      "environment": "silent",
+      "label": "Intentional silence",
+      "start_s": 0.0,
+      "end_s": 134.367,
+      "duration_s": 134.367,
+      "shot_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15"
+      ],
+      "audible": false,
+      "band_hz": [
+        0.0,
+        0.0
+      ],
+      "target_gain_db": -90.0,
+      "crossfade_s": 0.45,
+      "authentic_field_bed_file": null,
+      "provenance": "intentional_vacuum_silence"
+    }
+  ]
+}

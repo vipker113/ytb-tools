@@ -1,0 +1,306 @@
+{
+  "slug": "test-a-short-antarctic-brine",
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "associated_seg_id": "N01",
+      "timeline_start_s": 0.0,
+      "timeline_end_s": 9.2,
+      "duration_s": 9.2,
+      "narration_start_s": 0.1,
+      "narration_end_s": 8.899,
+      "spoken_narration": "In East Antarctica crimson water pours straight out of solid white glacier ice Even at minus seventeen degrees Celsius the flow never freezes",
+      "selected_asset": "nasa_m12666_nansen_scientists_ice.mp4",
+      "media_type": "video",
+      "source_creator": "NASA Goddard Space Flight Center",
+      "source_url": "https://svs.gsfc.nasa.gov/12666",
+      "license": "Public Domain (17 U.S.C. \u00a7 105)",
+      "visual_purpose": "Field scientists working across East Antarctic glacier ice",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.02,
+          1.04
+        ],
+        "rationale": ""
+      },
+      "transition": {
+        "type": "opening",
+        "duration_s": 0.0,
+        "reason": "Clean cut aligned to narration boundary"
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.8,
+        "ideal_duration_s": 7.42,
+        "max_recommended_s": 9.82,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 23
+        }
+      },
+      "why_shot_belongs_here": "Immediate authentic live-action Antarctic fieldwork hook"
+    },
+    {
+      "scene_id": "S03",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 9.2,
+      "timeline_end_s": 13.0333,
+      "duration_s": 3.833,
+      "narration_start_s": 9.374,
+      "narration_end_s": 12.877,
+      "spoken_narration": "In 1911 early explorers blamed red surface algae",
+      "selected_asset": "bf_2010_12_14.jpg",
+      "media_type": "photo",
+      "source_creator": "National Science Foundation / Peter Rejcek",
+      "source_url": "https://photolibrary.usap.gov/",
+      "license": "Public Domain (US Federal Government / NSF)",
+      "visual_purpose": "Crimson Blood Falls outflow staining white glacier ice",
+      "camera_perspective": "close_up",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.02,
+          1.04
+        ],
+        "rationale": ""
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut aligned to narration boundary"
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "close_up",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 7
+        }
+      },
+      "why_shot_belongs_here": "Direct photographic evidence of the crimson brine plume"
+    },
+    {
+      "scene_id": "S05",
+      "associated_seg_id": "N03",
+      "timeline_start_s": 13.0333,
+      "timeline_end_s": 23.9333,
+      "duration_s": 10.9,
+      "narration_start_s": 13.191,
+      "narration_end_s": 23.789,
+      "spoken_narration": "Chemical sampling decades later ruled algae out completely and pointed to dissolved iron Ice-penetrating radar traced the brine to hypersaline seawater trapped four hundred meters underground",
+      "selected_asset": "nasa_pig_iceberg_2013.mp4",
+      "media_type": "video",
+      "source_creator": "NASA Goddard Space Flight Center",
+      "source_url": "https://images.nasa.gov/details/GSFC_20140425_PIG_m11529_Iceberg",
+      "license": "Public Domain (17 U.S.C. \u00a7 105)",
+      "visual_purpose": "Aerial radar survey over fractured Antarctic glacier ice",
+      "camera_perspective": "aerial",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.02,
+          1.04
+        ],
+        "rationale": ""
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut aligned to narration boundary"
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.8,
+        "ideal_duration_s": 8.95,
+        "max_recommended_s": 11.35,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "aerial",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 26
+        }
+      },
+      "why_shot_belongs_here": "Visualizes airborne glacier survey and deep ice fracture pathways"
+    },
+    {
+      "scene_id": "S06",
+      "associated_seg_id": "N03",
+      "timeline_start_s": 23.9333,
+      "timeline_end_s": 28.4333,
+      "duration_s": 4.5,
+      "narration_start_s": 24.098,
+      "narration_end_s": 28.455,
+      "spoken_narration": "High salt content lowers its freezing point and dissolved iron rusts red when it meets",
+      "selected_asset": "bf_aerial_2013.jpg",
+      "media_type": "photo",
+      "source_creator": "National Science Foundation / Michael Van Woert",
+      "source_url": "https://photolibrary.usap.gov/",
+      "license": "Public Domain (US Federal Government / NSF)",
+      "visual_purpose": "Taylor Glacier valley and iron brine terminus",
+      "camera_perspective": "aerial",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.02,
+          1.04
+        ],
+        "rationale": ""
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut aligned to narration boundary"
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "aerial",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 15
+        }
+      },
+      "why_shot_belongs_here": "Repeated still seeded so scene_editor replaces with unused bf_aerial_2013.jpg"
+    },
+    {
+      "scene_id": "S07",
+      "associated_seg_id": "N04",
+      "timeline_start_s": 28.4333,
+      "timeline_end_s": 37.0667,
+      "duration_s": 8.633,
+      "narration_start_s": 28.467,
+      "narration_end_s": 36.568,
+      "spoken_narration": "air Researchers are still studying how completely sealed those deep microbes remain yet they survive in total darkness without oxygen",
+      "selected_asset": "nasa_m12666_nansen_scientists_ice.mp4",
+      "media_type": "video",
+      "source_creator": "NASA Goddard Space Flight Center",
+      "source_url": "https://svs.gsfc.nasa.gov/12666",
+      "license": "Public Domain (17 U.S.C. \u00a7 105)",
+      "visual_purpose": "Antarctic researchers continuing polar field measurements",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.02,
+          1.04
+        ],
+        "rationale": ""
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Clean cut aligned to narration boundary"
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.8,
+        "ideal_duration_s": 6.87,
+        "max_recommended_s": 9.3,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 20
+        }
+      },
+      "why_shot_belongs_here": "Grounds the closing scientific caveat in ongoing fieldwork"
+    }
+  ]
+}

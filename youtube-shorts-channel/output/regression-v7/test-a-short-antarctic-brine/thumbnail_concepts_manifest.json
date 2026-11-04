@@ -1,0 +1,51 @@
+{
+  "slug": "test-a-short-antarctic-brine",
+  "primary_title": "Why This Antarctic Glacier Bleeds Rust-Red Brine",
+  "concepts_count": 2,
+  "comparison_sheet_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\thumbnail_concepts_comparison_sheet.jpg",
+  "ctr_prediction_disclaimer": "Visual sharpness and subject-separation scores verify small-screen mobile legibility only. They do NOT predict real YouTube click-through or swipe-away rates; populate `actual_analytics_outcome` via `analytics_learning.py` once real YouTube Studio impressions/views are available.",
+  "concepts": [
+    {
+      "concept_id": "A",
+      "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\thumbnail_concept_A.jpg",
+      "source_asset": "bf_2010_12_14.jpg",
+      "matches_opening_scene_asset": false,
+      "headline_text": "IRON UNDER|THE ICE",
+      "headline_word_count": 4,
+      "kicker_text": "",
+      "concept_rationale": "Primary opening-matched focal subject + concise curiosity hook",
+      "size_kb": 1265.4,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "bf_2010_12_14.jpg",
+        "sharpness_score": 2.64,
+        "subject_separation_score": 46.52,
+        "combined_score": 26.77,
+        "recommended_cx": 0.4935,
+        "recommended_cy": 0.5226
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "B",
+      "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-short-antarctic-brine\\thumbnail_concept_B.jpg",
+      "source_asset": "bf_2010_12_14.jpg",
+      "matches_opening_scene_asset": false,
+      "headline_text": "",
+      "headline_word_count": 0,
+      "kicker_text": "",
+      "concept_rationale": "Pure authentic phenomenon close-up with zero text overlay",
+      "size_kb": 1349.3,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "bf_2010_12_14.jpg",
+        "sharpness_score": 2.64,
+        "subject_separation_score": 46.52,
+        "combined_score": 26.77,
+        "recommended_cx": 0.4935,
+        "recommended_cy": 0.5226
+      },
+      "actual_analytics_outcome": null
+    }
+  ]
+}

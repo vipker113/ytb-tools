@@ -1,0 +1,327 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 3.482,
+    "word_end_s": 3.325,
+    "next_word_start_s": 3.64,
+    "pause_s": 0.315,
+    "kind": "breath_pause",
+    "after_word": "Earth's"
+  },
+  {
+    "time_s": 5.881,
+    "word_end_s": 5.789,
+    "next_word_start_s": 5.973,
+    "pause_s": 0.184,
+    "kind": "breath_pause",
+    "after_word": "basin"
+  },
+  {
+    "time_s": 9.448,
+    "word_end_s": 9.223,
+    "next_word_start_s": 9.771,
+    "pause_s": 0.548,
+    "kind": "breath_pause",
+    "after_word": "off"
+  },
+  {
+    "time_s": 11.606,
+    "word_end_s": 11.506,
+    "next_word_start_s": 11.706,
+    "pause_s": 0.2,
+    "kind": "breath_pause",
+    "after_word": "Crater"
+  },
+  {
+    "time_s": 13.589,
+    "word_end_s": 13.431,
+    "next_word_start_s": 13.748,
+    "pause_s": 0.317,
+    "kind": "breath_pause",
+    "after_word": "wide"
+  },
+  {
+    "time_s": 19.02,
+    "word_end_s": 18.861,
+    "next_word_start_s": 19.18,
+    "pause_s": 0.319,
+    "kind": "breath_pause",
+    "after_word": "ago"
+  },
+  {
+    "time_s": 22.886,
+    "word_end_s": 22.661,
+    "next_word_start_s": 23.19,
+    "pause_s": 0.529,
+    "kind": "breath_pause",
+    "after_word": "planning"
+  },
+  {
+    "time_s": 24.781,
+    "word_end_s": 24.681,
+    "next_word_start_s": 24.881,
+    "pause_s": 0.2,
+    "kind": "breath_pause",
+    "after_word": "February 2021"
+  },
+  {
+    "time_s": 29.578,
+    "word_end_s": 29.419,
+    "next_word_start_s": 29.736,
+    "pause_s": 0.317,
+    "kind": "breath_pause",
+    "after_word": "floor"
+  },
+  {
+    "time_s": 32.159,
+    "word_end_s": 32.047,
+    "next_word_start_s": 32.272,
+    "pause_s": 0.225,
+    "kind": "breath_pause",
+    "after_word": "Ingenuity"
+  },
+  {
+    "time_s": 35.56,
+    "word_end_s": 35.335,
+    "next_word_start_s": 35.873,
+    "pause_s": 0.538,
+    "kind": "breath_pause",
+    "after_word": "nights"
+  },
+  {
+    "time_s": 36.481,
+    "word_end_s": 36.368,
+    "next_word_start_s": 36.593,
+    "pause_s": 0.225,
+    "kind": "breath_pause",
+    "after_word": "Earth"
+  },
+  {
+    "time_s": 40.511,
+    "word_end_s": 40.355,
+    "next_word_start_s": 40.667,
+    "pause_s": 0.312,
+    "kind": "breath_pause",
+    "after_word": "minute"
+  },
+  {
+    "time_s": 41.328,
+    "word_end_s": 41.228,
+    "next_word_start_s": 41.428,
+    "pause_s": 0.2,
+    "kind": "breath_pause",
+    "after_word": "Mars"
+  },
+  {
+    "time_s": 44.832,
+    "word_end_s": 44.678,
+    "next_word_start_s": 44.987,
+    "pause_s": 0.309,
+    "kind": "breath_pause",
+    "after_word": "high"
+  },
+  {
+    "time_s": 48.803,
+    "word_end_s": 48.578,
+    "next_word_start_s": 49.1,
+    "pause_s": 0.522,
+    "kind": "breath_pause",
+    "after_word": "ground"
+  },
+  {
+    "time_s": 54.067,
+    "word_end_s": 53.911,
+    "next_word_start_s": 54.222,
+    "pause_s": 0.311,
+    "kind": "breath_pause",
+    "after_word": "across"
+  },
+  {
+    "time_s": 58.544,
+    "word_end_s": 58.396,
+    "next_word_start_s": 58.692,
+    "pause_s": 0.296,
+    "kind": "breath_pause",
+    "after_word": "minute"
+  },
+  {
+    "time_s": 61.076,
+    "word_end_s": 60.963,
+    "next_word_start_s": 61.188,
+    "pause_s": 0.225,
+    "kind": "breath_pause",
+    "after_word": "arrive"
+  },
+  {
+    "time_s": 63.713,
+    "word_end_s": 63.488,
+    "next_word_start_s": 64.212,
+    "pause_s": 0.724,
+    "kind": "breath_pause",
+    "after_word": "alone"
+  },
+  {
+    "time_s": 65.717,
+    "word_end_s": 65.612,
+    "next_word_start_s": 65.822,
+    "pause_s": 0.21,
+    "kind": "breath_pause",
+    "after_word": "thirty-day"
+  },
+  {
+    "time_s": 68.911,
+    "word_end_s": 68.756,
+    "next_word_start_s": 69.067,
+    "pause_s": 0.311,
+    "kind": "breath_pause",
+    "after_word": "mission"
+  },
+  {
+    "time_s": 75.384,
+    "word_end_s": 75.225,
+    "next_word_start_s": 75.543,
+    "pause_s": 0.318,
+    "kind": "breath_pause",
+    "after_word": "above"
+  },
+  {
+    "time_s": 79.575,
+    "word_end_s": 79.35,
+    "next_word_start_s": 79.914,
+    "pause_s": 0.564,
+    "kind": "breath_pause",
+    "after_word": "mouth"
+  },
+  {
+    "time_s": 85.309,
+    "word_end_s": 85.145,
+    "next_word_start_s": 85.473,
+    "pause_s": 0.328,
+    "kind": "breath_pause",
+    "after_word": "mudstones"
+  },
+  {
+    "time_s": 86.1,
+    "word_end_s": 86.0,
+    "next_word_start_s": 86.2,
+    "pause_s": 0.2,
+    "kind": "breath_pause",
+    "after_word": "Earth"
+  },
+  {
+    "time_s": 89.995,
+    "word_end_s": 89.837,
+    "next_word_start_s": 90.154,
+    "pause_s": 0.317,
+    "kind": "breath_pause",
+    "after_word": "silt"
+  },
+  {
+    "time_s": 92.249,
+    "word_end_s": 92.161,
+    "next_word_start_s": 92.336,
+    "pause_s": 0.175,
+    "kind": "breath_pause",
+    "after_word": "sudden"
+  },
+  {
+    "time_s": 93.623,
+    "word_end_s": 93.398,
+    "next_word_start_s": 93.94,
+    "pause_s": 0.542,
+    "kind": "breath_pause",
+    "after_word": "floods"
+  },
+  {
+    "time_s": 95.703,
+    "word_end_s": 95.616,
+    "next_word_start_s": 95.791,
+    "pause_s": 0.175,
+    "kind": "breath_pause",
+    "after_word": "drill"
+  },
+  {
+    "time_s": 99.68,
+    "word_end_s": 99.516,
+    "next_word_start_s": 99.844,
+    "pause_s": 0.328,
+    "kind": "breath_pause",
+    "after_word": "beds"
+  },
+  {
+    "time_s": 100.927,
+    "word_end_s": 100.827,
+    "next_word_start_s": 101.027,
+    "pause_s": 0.2,
+    "kind": "breath_pause",
+    "after_word": "measured"
+  },
+  {
+    "time_s": 104.665,
+    "word_end_s": 104.44,
+    "next_word_start_s": 105.161,
+    "pause_s": 0.721,
+    "kind": "breath_pause",
+    "after_word": "tube"
+  },
+  {
+    "time_s": 109.104,
+    "word_end_s": 108.988,
+    "next_word_start_s": 109.22,
+    "pause_s": 0.232,
+    "kind": "breath_pause",
+    "after_word": "minerals"
+  },
+  {
+    "time_s": 110.322,
+    "word_end_s": 110.199,
+    "next_word_start_s": 110.444,
+    "pause_s": 0.245,
+    "kind": "breath_pause",
+    "after_word": "grains"
+  },
+  {
+    "time_s": 114.06,
+    "word_end_s": 113.898,
+    "next_word_start_s": 114.223,
+    "pause_s": 0.325,
+    "kind": "breath_pause",
+    "after_word": "sediments"
+  },
+  {
+    "time_s": 118.703,
+    "word_end_s": 118.478,
+    "next_word_start_s": 119.096,
+    "pause_s": 0.618,
+    "kind": "breath_pause",
+    "after_word": "floor"
+  },
+  {
+    "time_s": 126.472,
+    "word_end_s": 126.305,
+    "next_word_start_s": 126.639,
+    "pause_s": 0.334,
+    "kind": "breath_pause",
+    "after_word": "life"
+  },
+  {
+    "time_s": 129.085,
+    "word_end_s": 128.98,
+    "next_word_start_s": 129.191,
+    "pause_s": 0.211,
+    "kind": "breath_pause",
+    "after_word": "tubes"
+  },
+  {
+    "time_s": 134.367,
+    "word_end_s": 133.783,
+    "next_word_start_s": 134.367,
+    "pause_s": 0.584,
+    "kind": "segment_end",
+    "after_word": "horizon"
+  }
+]

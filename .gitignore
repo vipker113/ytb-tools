@@ -43,3 +43,11 @@ youtube-shorts-channel/output/**/work_clips/
 youtube-shorts-channel/output/**/.scratch_build/
 youtube-shorts-channel/output/**/voice_acceptance_tests/
 youtube-shorts-channel/output/**/.rights_verification_cache.json
+
+# Auto-synthesized WAV/OGG stems in audio_library (regenerated automatically by ensure_audio_asset_registry)
+youtube-shorts-channel/assets/audio_library/**/*.wav
+youtube-shorts-channel/assets/audio_library/**/*.ogg
+youtube-shorts-channel/assets/audio_library/**/*.mp3
+youtube-shorts-channel/assets/audio_library/**/*.flac
+youtube-shorts-channel/assets/audio_library/field_recordings/*
+youtube-shorts-channel/assets/audio_library/music_beds/*

@@ -1,36 +1,34 @@
 #!/usr/bin/env python3
 """
-Zero-Cost Authentic Video Harvester & Human-Interaction Scorer (`pow_studio.video_sourcing`).
+Zero-Cost Authentic Video Harvester, Multi-Purpose Action Discovery &
+Optical Motion Authenticity Auditor (`pow_studio.video_sourcing` v8.0).
 
 Searches commercial-safe (`Public Domain`, `CC0`, `CC BY`) scientific & documentary video
 repositories without API keys ($0 budget):
 1. NASA Images & Video API (`images-api.nasa.gov`) — 1080p/4K Public Domain fieldwork, Earth & space video.
 2. Wikimedia Commons MediaWiki API (`commons.wikimedia.org` `filetype:video`) — 4K/1080p/720p `CC BY` & `PD`
-   expedition videos, peer-reviewed journal (`PLOS`, `Scientific Reports`, `eLife`) microscopy/experiments,
-   and `ZDF Terra X` (`CC BY 4.0`) documentary science footage.
-3. Internet Archive Advanced Search (`archive.org`) — Public Domain / `CC BY` scientific & federal films.
+   expedition videos, NOAA/USGS/NPS uploads, peer-reviewed journal (`PLOS`, `Scientific Reports`, `eLife`)
+   microscopy/experiments, and `ZDF Terra X` (`CC BY 4.0`) documentary science footage.
+3. Internet Archive Advanced Search (`archive.org/advancedsearch.php`) — Public Domain / `CC BY` federal
+   expedition & institutional science films (NOAA, USGS, NASA, National Archives, universities).
 
-Also provides `audit_clip_real_motion()` to verify that a candidate video contains genuine real-world
-temporal motion (rejecting static-photo Ken Burns slideshows disguised as video files) and scores
-human fieldwork / hands-on interaction relevance.
+Also provides `audit_clip_real_motion()` backed by `pow_studio.media_classifier.inspect_media_authenticity`
+to confirm genuine recorded video motion and reject static-photo Ken Burns slideshows disguised as MP4s.
 """
 
 from __future__ import annotations
 
-import io
 import json
 import re
-import subprocess
 import urllib.parse
 import urllib.request
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
 
-import numpy as np
-from PIL import Image
+from .media_classifier import inspect_media_authenticity
 
-USER_AGENT = "ProofOfWonderDocumentaryHarvester/3.1 (science-documentary-pipeline; zero-cost)"
+USER_AGENT = "ProofOfWonderDocumentaryHarvester/8.0 (science-documentary-pipeline; zero-cost)"
 
 HUMAN_INTERACTION_KEYWORDS = (
     "scientist",
@@ -58,9 +56,40 @@ HUMAN_INTERACTION_KEYWORDS = (
     "collect",
     "measuring",
     "bury",
+    "submersible",
+    "rov",
+)
+
+ACTION_PROCESS_KEYWORDS = (
+    "sampling",
+    "lowering",
+    "drilling",
+    "bubbling",
+    "boiling",
+    "erupting",
+    "flowing",
+    "pouring",
+    "venting",
+    "swimming",
+    "slithering",
+    "striking",
+    "diving",
+    "operating",
+    "deploying",
 )
 
 BLOCKED_LICENSE_MARKERS = ("by-nc", "noncommercial", "by-nd", "noderivs", "by-sa", "sharealike", "copyrighted")
+
+LECTURE_TALKING_HEAD_MARKERS = (
+    "lecture",
+    "keynote",
+    "webinar",
+    "symposium",
+    "press conference",
+    "podcast",
+    "panel discussion",
+    "talking head",
+)
 
 
 @dataclass
@@ -76,6 +105,8 @@ class VideoCandidate:
     height: int
     human_interaction_score: float
     relevance_notes: str
+    inferred_media_class: str = "REAL_VIDEO_ESTABLISHING"
+    query_purpose: str = "general"
 
 
 def _http_get_json(url: str, timeout: int = 15) -> dict:
@@ -86,8 +117,22 @@ def _http_get_json(url: str, timeout: int = 15) -> dict:
 
 def _score_human_interaction_text(title: str, description: str) -> float:
     blob = f"{title} {description}".lower()
+    if any(bad in blob for bad in LECTURE_TALKING_HEAD_MARKERS):
+        return 0.0
     hits = sum(1 for kw in HUMAN_INTERACTION_KEYWORDS if kw in blob)
-    return round(min(10.0, hits * 1.6), 2)
+    proc_hits = sum(1 for kw in ACTION_PROCESS_KEYWORDS if kw in blob)
+    return round(min(10.0, hits * 1.5 + proc_hits * 1.2), 2)
+
+
+def _infer_candidate_media_class(title: str, description: str) -> str:
+    blob = f"{title} {description}".lower()
+    if any(k in blob for k in ("animation", "simulation", "computer model", "cgi")):
+        return "REAL_ANIMATION"
+    if any(k in blob for k in ("time-lapse", "timelapse", "hyperlapse")):
+        return "REAL_TIME_LAPSE"
+    if any(k in blob for k in ACTION_PROCESS_KEYWORDS) or sum(1 for k in HUMAN_INTERACTION_KEYWORDS if k in blob) >= 2:
+        return "REAL_VIDEO_ACTION"
+    return "REAL_VIDEO_ESTABLISHING"
 
 
 def _is_commercial_safe_license_string(lic: str) -> bool:
@@ -96,10 +141,24 @@ def _is_commercial_safe_license_string(lic: str) -> bool:
         return False
     if any(b in low for b in BLOCKED_LICENSE_MARKERS):
         return False
-    return any(ok in low for ok in ("public domain", "pd", "cc0", "cc by 4.0", "cc by 3.0", "cc by 2.0", "cc-by"))
+    return any(
+        ok in low
+        for ok in (
+            "public domain",
+            "publicdomain",
+            "pd",
+            "cc0",
+            "cc by 4.0",
+            "cc by 3.0",
+            "cc by 2.0",
+            "cc-by",
+            "creativecommons.org/licenses/by/",
+            "creativecommons.org/publicdomain/",
+        )
+    )
 
 
-def search_nasa_public_domain_videos(query: str, max_results: int = 8) -> list[VideoCandidate]:
+def search_nasa_public_domain_videos(query: str, max_results: int = 8, purpose: str = "general") -> list[VideoCandidate]:
     """Query NASA Images & Video API (`Public Domain` federal media) and resolve direct MP4/MOV URLs."""
     url = "https://images-api.nasa.gov/search?media_type=video&q=" + urllib.parse.quote(query)
     out: list[VideoCandidate] = []
@@ -115,11 +174,12 @@ def search_nasa_public_domain_videos(query: str, max_results: int = 8) -> list[V
             continue
         title = str(meta.get("title", "")).strip()
         desc = re.sub(r"\s+", " ", str(meta.get("description", "")).strip())
-        # Screen NASA metadata for third-party copyright notices before assuming Public Domain
         credit_blob = f"{meta.get('secondary_creator', '')} {meta.get('photographer', '')} {desc}".lower()
         if any(bad in credit_blob for bad in ("copyright", "©", "all rights reserved", "used with permission", "not in the public domain")):
             continue
-        # Skip pure animations when looking for authentic real-world video unless explicitly requested
+        if any(bad in f"{title} {desc}".lower() for bad in LECTURE_TALKING_HEAD_MARKERS):
+            continue
+
         dl_url = ""
         try:
             asset_manifest = _http_get_json("https://images-api.nasa.gov/asset/" + urllib.parse.quote(nasa_id))
@@ -138,6 +198,7 @@ def search_nasa_public_domain_videos(query: str, max_results: int = 8) -> list[V
             continue
 
         h_score = _score_human_interaction_text(title, desc)
+        mcls = _infer_candidate_media_class(title, desc)
         out.append(
             VideoCandidate(
                 source_repo="nasa_images_api",
@@ -151,12 +212,19 @@ def search_nasa_public_domain_videos(query: str, max_results: int = 8) -> list[V
                 height=1080 if ("~large" in dl_url or "~orig" in dl_url) else 720,
                 human_interaction_score=h_score,
                 relevance_notes="human_fieldwork_candidate" if h_score >= 3.0 else "authentic_nasa_video",
+                inferred_media_class=mcls,
+                query_purpose=purpose,
             )
         )
     return out
 
 
-def search_wikimedia_commons_videos(query: str, max_results: int = 10, min_height: int = 720) -> list[VideoCandidate]:
+def search_wikimedia_commons_videos(
+    query: str,
+    max_results: int = 10,
+    min_height: int = 720,
+    purpose: str = "general",
+) -> list[VideoCandidate]:
     """Query Wikimedia Commons `filetype:video` and keep only HD `Public Domain` / `CC0` / `CC BY` clips."""
     search_url = (
         "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6"
@@ -197,9 +265,12 @@ def search_wikimedia_commons_videos(query: str, max_results: int = 10, min_heigh
         desc_raw = str(ext.get("ImageDescription", {}).get("value", ""))
         desc = re.sub(r"<[^>]+>", " ", desc_raw)
         desc = re.sub(r"\s+", " ", desc).strip()
+        if any(bad in f"{title} {desc}".lower() for bad in LECTURE_TALKING_HEAD_MARKERS):
+            continue
         dl_url = str(ii.get("url", "")).split("?")[0]
         page_url = str(ii.get("descriptionurl", f"https://commons.wikimedia.org/wiki/{urllib.parse.quote(title)}"))
         h_score = _score_human_interaction_text(title, desc)
+        mcls = _infer_candidate_media_class(title, desc)
         out.append(
             VideoCandidate(
                 source_repo="wikimedia_commons",
@@ -213,76 +284,184 @@ def search_wikimedia_commons_videos(query: str, max_results: int = 10, min_heigh
                 height=h,
                 human_interaction_score=h_score,
                 relevance_notes="human_fieldwork_candidate" if h_score >= 3.0 else "hd_open_video",
+                inferred_media_class=mcls,
+                query_purpose=purpose,
             )
         )
     return out
 
 
-def discover_documentary_videos(query: str, max_per_source: int = 8) -> list[dict]:
+def search_internet_archive_videos(
+    query: str,
+    max_results: int = 6,
+    purpose: str = "general",
+) -> list[VideoCandidate]:
     """
-    Search NASA + Wikimedia Commons in parallel-ready fashion and rank candidates by
-    (human_interaction_score, vertical-crop resolution height).
+    Query Internet Archive (`archive.org/advancedsearch.php`) for open commercial-safe
+    (`Public Domain`, `CC0`, `CC BY`) scientific, federal, and expedition videos ($0 API).
+    """
+    q_expr = f"({query}) AND mediatype:(movies) AND (licenseurl:*publicdomain* OR licenseurl:*zero* OR licenseurl:*/by/*)"
+    api_url = (
+        "https://archive.org/advancedsearch.php?q="
+        + urllib.parse.quote(q_expr)
+        + f"&fl[]=identifier&fl[]=title&fl[]=description&fl[]=licenseurl&fl[]=creator&rows={int(max_results)}&page=1&output=json"
+    )
+    out: list[VideoCandidate] = []
+    try:
+        data = _http_get_json(api_url)
+    except Exception:
+        return out
+
+    for doc in data.get("response", {}).get("docs", [])[:max_results]:
+        ident = str(doc.get("identifier", "")).strip()
+        if not ident:
+            continue
+        lic_url = str(doc.get("licenseurl", "")).strip()
+        if not _is_commercial_safe_license_string(lic_url):
+            continue
+        title = str(doc.get("title", ident)).strip()
+        raw_desc = doc.get("description", "")
+        if isinstance(raw_desc, list):
+            raw_desc = " ".join(str(x) for x in raw_desc)
+        desc = re.sub(r"<[^>]+>", " ", str(raw_desc))
+        desc = re.sub(r"\s+", " ", desc).strip()
+        if any(bad in f"{title} {desc}".lower() for bad in LECTURE_TALKING_HEAD_MARKERS):
+            continue
+
+        lic_label = (
+            "Public Domain"
+            if "publicdomain" in lic_url.lower()
+            else ("CC0" if "zero" in lic_url.lower() else "CC BY")
+        )
+        h_score = _score_human_interaction_text(title, desc)
+        mcls = _infer_candidate_media_class(title, desc)
+        out.append(
+            VideoCandidate(
+                source_repo="internet_archive",
+                asset_id=ident,
+                title=title,
+                description=desc[:260],
+                page_url=f"https://archive.org/details/{urllib.parse.quote(ident)}",
+                download_url=f"https://archive.org/download/{urllib.parse.quote(ident)}",
+                license_label=lic_label,
+                width=1280,
+                height=720,
+                human_interaction_score=h_score,
+                relevance_notes="open_archive_film",
+                inferred_media_class=mcls,
+                query_purpose=purpose,
+            )
+        )
+    return out
+
+
+def discover_documentary_videos(query: str, max_per_source: int = 8, include_internet_archive: bool = True) -> list[dict]:
+    """
+    Search NASA + Wikimedia Commons (+ Internet Archive) and rank genuine action footage
+    above static/establishing clips.
     """
     cands = search_nasa_public_domain_videos(query, max_results=max_per_source) + search_wikimedia_commons_videos(
         query, max_results=max_per_source
     )
-    cands.sort(key=lambda c: (c.human_interaction_score, c.height, c.width), reverse=True)
-    return [asdict(c) for c in cands]
+    if include_internet_archive:
+        cands += search_internet_archive_videos(query, max_results=max(4, max_per_source // 2))
+
+    seen_urls: set[str] = set()
+    unique: list[VideoCandidate] = []
+    for c in cands:
+        key = c.download_url or c.page_url
+        if key in seen_urls:
+            continue
+        seen_urls.add(key)
+        unique.append(c)
+
+    unique.sort(
+        key=lambda c: (
+            1 if c.inferred_media_class == "REAL_VIDEO_ACTION" else 0,
+            c.human_interaction_score,
+            c.height,
+            c.width,
+        ),
+        reverse=True,
+    )
+    return [asdict(c) for c in unique]
+
+
+def discover_footage_first_by_purpose(
+    topic: str,
+    beats: Optional[list[Any]] = None,
+    max_per_query: int = 4,
+    online: bool = True,
+) -> dict[str, Any]:
+    """
+    Execute Subject + Action multi-intent footage discovery (Part 2 Section 3):
+    Generates differentiated queries for sampling, fieldwork, environmental processes,
+    equipment operation, close-ups, and establishing views, returning deduplicated
+    footage candidates grouped by visual purpose.
+    """
+    from .action_storytelling import generate_footage_search_queries
+
+    planned_queries = generate_footage_search_queries(topic, beats=beats)
+    results_by_purpose: dict[str, list[dict[str, Any]]] = {}
+    all_seen: set[str] = set()
+
+    if online:
+        for q_item in planned_queries[:8]:
+            purp = q_item["purpose"]
+            q_str = q_item["query"]
+            found = (
+                search_nasa_public_domain_videos(q_str, max_results=max_per_query, purpose=purp)
+                + search_wikimedia_commons_videos(q_str, max_results=max_per_query, purpose=purp)
+                + search_internet_archive_videos(q_str, max_results=max(2, max_per_query // 2), purpose=purp)
+            )
+            bucket = results_by_purpose.setdefault(purp, [])
+            for fc in found:
+                k = fc.download_url or fc.page_url
+                if k in all_seen:
+                    continue
+                all_seen.add(k)
+                bucket.append(asdict(fc))
+
+    return {
+        "topic": topic,
+        "online_executed": online,
+        "planned_queries": planned_queries,
+        "total_unique_video_candidates": len(all_seen),
+        "results_by_purpose": results_by_purpose,
+    }
 
 
 def audit_clip_real_motion(
     video_path: Path,
     start_s: float = 0.0,
     duration_s: float = 4.0,
-    sample_fps: float = 4.0,
-) -> dict:
+    sample_fps: float = 8.0,
+    metadata_hint: str = "",
+) -> dict[str, Any]:
     """
-    Inspect actual decoded frames from `video_path` to confirm real temporal motion
-    (preventing static image slideshows or frozen title cards from counting as moving footage).
+    Inspect actual decoded frames from `video_path` using affine-compensated optical
+    motion decomposition (`inspect_media_authenticity`) so BOTH frozen title cards AND
+    Ken Burns pan/zoom animations over static JPEGs are rejected (`is_real_moving_footage=False`).
     """
-    proc = subprocess.run(
-        [
-            "ffmpeg",
-            "-hide_banner",
-            "-loglevel",
-            "error",
-            "-ss",
-            f"{max(0.0, start_s):.2f}",
-            "-t",
-            f"{max(1.0, duration_s):.2f}",
-            "-i",
-            str(video_path),
-            "-vf",
-            f"fps={sample_fps},scale=320:-2",
-            "-f",
-            "image2pipe",
-            "-vcodec",
-            "png",
-            "-",
-        ],
-        capture_output=True,
+    audit = inspect_media_authenticity(
+        media_path=video_path,
+        start_s=start_s,
+        duration_s=duration_s,
+        sample_fps=sample_fps,
+        metadata_hint=metadata_hint,
     )
-    raw = proc.stdout
-    sig = b"\x89PNG\r\n\x1a\n"
-    parts = raw.split(sig)[1:]
-    frames: list[np.ndarray] = []
-    for p in parts:
-        try:
-            im = Image.open(io.BytesIO(sig + p)).convert("L")
-            frames.append(np.asarray(im, dtype=np.float32))
-        except Exception:
-            continue
-
-    if len(frames) < 3:
-        return {"valid": False, "mean_temporal_diff": 0.0, "is_real_moving_footage": False}
-
-    diffs = [float(np.mean(np.abs(frames[i + 1] - frames[i]))) for i in range(len(frames) - 1)]
-    mean_diff = float(np.mean(diffs))
-    median_diff = float(np.median(diffs))
     return {
-        "valid": True,
-        "sampled_frames": len(frames),
-        "mean_temporal_diff": round(mean_diff, 3),
-        "median_temporal_diff": round(median_diff, 3),
-        "is_real_moving_footage": median_diff >= 0.45,
+        "valid": audit.valid,
+        "sampled_frames": audit.sampled_frames,
+        "mean_temporal_diff": audit.raw_mean_diff,
+        "median_temporal_diff": audit.raw_median_diff,
+        "affine_compensated_diff": audit.affine_compensated_diff,
+        "residual_to_raw_ratio": audit.residual_to_raw_ratio,
+        "p90_local_flow_residual_px": audit.p90_local_flow_residual_px,
+        "is_baked_animated_still": audit.is_baked_animated_still,
+        "is_dense_presentation_graphic": audit.is_dense_presentation_graphic,
+        "has_localized_action_motion": audit.has_localized_action_motion,
+        "inferred_media_class": audit.inferred_media_class,
+        "is_real_moving_footage": audit.is_real_moving_footage,
+        "diagnostic_note": audit.diagnostic_note,
     }

@@ -1,0 +1,57 @@
+{
+  "slug": "test-a-before-v6-fallback",
+  "engine_version": "6.0-fallback",
+  "legacy_v6_fallback": true,
+  "voice_input_mode": "directed_tts",
+  "scene_audio_profile": "minimal_investigation",
+  "adaptive_audio_profile": "legacy_v6",
+  "scene_optimization_counts": {
+    "Keep": 7,
+    "Merge": 0,
+    "Replace": 0,
+    "Remove": 0
+  },
+  "music_sections_count": 1,
+  "ambience_sections_count": 1,
+  "approved_sfx_count": 3,
+  "rejected_sfx_count": 0,
+  "bed_calibration": {
+    "pre_bed_lufs": -40.1,
+    "ceiling_lufs": -28.4,
+    "applied_bed_gain_db": 13.6,
+    "post_bed_lufs": -26.5
+  },
+  "voice_to_bed_margin_lu": 10.6,
+  "stem_loudness_lufs": {
+    "narration": -15.9,
+    "music": -70.0,
+    "ambience": -44.4,
+    "natural_sounds": -43.4,
+    "cinematic_sfx": -36.1,
+    "combined_bed": -26.5
+  },
+  "stems": {
+    "layer_1_narration": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-before-v6-fallback\\work_audio\\layer_1_narration.wav",
+    "layer_2_music": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-before-v6-fallback\\work_audio\\layer_2_music.wav",
+    "layer_3_ambience": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-before-v6-fallback\\work_audio\\layer_3_ambience.wav",
+    "layer_4_natural_sounds": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-before-v6-fallback\\work_audio\\layer_4_natural_sounds.wav",
+    "layer_5_cinematic_sfx": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\regression-v7\\test-a-before-v6-fallback\\work_audio\\layer_5_cinematic_sfx.wav"
+  },
+  "layers_active": {
+    "narration": true,
+    "music": false,
+    "ambience": true,
+    "natural_sounds": true,
+    "cinematic_sfx": true
+  },
+  "diagnostics": {
+    "integrated_lufs": -16.0,
+    "loudness_range_lra_lu": 1.4,
+    "true_peak_dbtp": -1.5,
+    "speech_crest_factor_db": 14.5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -1.52
+  }
+}

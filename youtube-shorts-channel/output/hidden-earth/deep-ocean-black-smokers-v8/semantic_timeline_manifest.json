@@ -1,0 +1,612 @@
+{
+  "slug": "deep-ocean-black-smokers-v8",
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "associated_seg_id": "N01",
+      "timeline_start_s": 0.0,
+      "timeline_end_s": 6.4,
+      "duration_s": 6.4,
+      "narration_start_s": 0.1,
+      "narration_end_s": 6.114,
+      "spoken_narration": "Two miles underwater black chimneys blast three-hundred-sixty-degree water without boiling into steam",
+      "selected_asset": "ifremer_active_black_smoker_81313.webm",
+      "media_type": "video",
+      "source_creator": "Ifremer (ROV Victor 6000 \u2014 MoMARSAT Campaign)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chemin%C3%A9e_hydrothermale_active_(Ifremer_00701-81313).webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "360\u00b0C seafloor black smoker chimney roaring without boiling",
+      "camera_perspective": "close_up",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.49
+        ],
+        "zoom_range": [
+          1.11,
+          1.14
+        ],
+        "rationale": "Centers the roaring black sulfide plume and chimney orifice edge-to-edge in 9:16 while trimming outer telemetry margins."
+      },
+      "transition": {
+        "type": "opening",
+        "duration_s": 0.0,
+        "reason": "Instant Frame-0 live deep-sea black smoker hook with zero burned poster flash."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.4,
+        "ideal_duration_s": 6.02,
+        "max_recommended_s": 10.3,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 12
+        }
+      },
+      "why_shot_belongs_here": "Delivers immediate visual proof of liquid water roaring like black smoke underwater without flashing to steam."
+    },
+    {
+      "scene_id": "S02",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 6.4,
+      "timeline_end_s": 13.1333,
+      "duration_s": 6.733,
+      "narration_start_s": 6.575,
+      "narration_end_s": 12.938,
+      "spoken_narration": "Along the Mid-Atlantic Ridge three hundred sixty atmospheres of crushing ocean weight trap superheated water as liquid",
+      "selected_asset": "ifremer_dive_1700m_29848.webm",
+      "media_type": "video",
+      "source_creator": "Ifremer",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Une_plong%C3%A9e_%C3%A0_1700_m%C3%A8tres_(Ifremer_00637-74893_-_29848).webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Submarine descent into crushing Mid-Atlantic Ridge pressure",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.62,
+          0.52
+        ],
+        "center_end": [
+          0.68,
+          0.5
+        ],
+        "zoom_range": [
+          1.08,
+          1.12
+        ],
+        "rationale": "Pans from the floodlit ROV cloud onto the towering abyssal mineral spire in native 3840x1920 4K clarity."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Hard cut on 0.46s pause after 'steam' from close-up orifice to wide abyssal depth."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.4,
+        "ideal_duration_s": 6.69,
+        "max_recommended_s": 10.3,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "context",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 17
+        }
+      },
+      "why_shot_belongs_here": "Visually conveys the immense ocean depth and darkness creating crushing hydrostatic pressure."
+    },
+    {
+      "scene_id": "S03",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 13.1333,
+      "timeline_end_s": 18.9667,
+      "duration_s": 5.833,
+      "narration_start_s": 13.347,
+      "narration_end_s": 18.839,
+      "spoken_narration": "When robotic arms thrust a steel thermometer inside that scalding fluid hits two-degree seawater",
+      "selected_asset": "ifremer_rov_temp_probe_81312.webm",
+      "media_type": "video",
+      "source_creator": "Ifremer (ROV Victor 6000 \u2014 MoMARSAT Campaign)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Prise_de_temp%C3%A9rature_de_l%27eau_(Ifremer_00701-81312).webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "ROV manipulator arm inserting steel temperature probe into scalding vent",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.44,
+          0.5
+        ],
+        "center_end": [
+          0.46,
+          0.5
+        ],
+        "zoom_range": [
+          1.11,
+          1.14
+        ],
+        "rationale": "Frames both the titanium manipulator claw and the red-wrapped steel thermometer entering the roaring black vent plume."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Action-matched cut on 0.41s pause right as narration says 'When robotic arms thrust a steel thermometer inside'."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.4,
+        "ideal_duration_s": 6.41,
+        "max_recommended_s": 10.3,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 14
+        }
+      },
+      "why_shot_belongs_here": "Literal 1:1 action match between spoken thermometer measurement and ROV Victor 6000 probe deployment."
+    },
+    {
+      "scene_id": "S04",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 18.9667,
+      "timeline_end_s": 25.8333,
+      "duration_s": 6.867,
+      "narration_start_s": 19.091,
+      "narration_end_s": 25.632,
+      "spoken_narration": "freezing dissolved metals into towering black chimneys You would expect bare sterile rock around poison that hot",
+      "selected_asset": "ifremer_tour_eiffel_chimney_81190.webm",
+      "media_type": "video",
+      "source_creator": "Ifremer",
+      "source_url": "https://commons.wikimedia.org/wiki/File:En_direction_de_la_source_hydrothermale_Tour_Eiffel_(Ifremer_00700-81190).webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Towering precipitated metal-sulfide chimney spire",
+      "camera_perspective": "medium",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.62,
+          0.5
+        ],
+        "center_end": [
+          0.64,
+          0.49
+        ],
+        "zoom_range": [
+          1.11,
+          1.14
+        ],
+        "rationale": "Vertical 9:16 framing showcases the jagged black sulfide spire of Tour Eiffel looming out of blue-black water."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Reveals the massive precipitated mineral tower and holds through 'bare, sterile rock around poison that hot'."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.4,
+        "ideal_duration_s": 7.19,
+        "max_recommended_s": 10.3,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 17
+        }
+      },
+      "why_shot_belongs_here": "Shows the monumental scale of dark sulfide rock right before revealing the walls are alive."
+    },
+    {
+      "scene_id": "S05",
+      "associated_seg_id": "N03",
+      "timeline_start_s": 25.8333,
+      "timeline_end_s": 33.0333,
+      "duration_s": 7.2,
+      "narration_start_s": 26.063,
+      "narration_end_s": 32.946,
+      "spoken_narration": "Instead the chimney walls are moving Up to twenty-five hundred pale shrimp pack every square meter in total darkness",
+      "selected_asset": "ifremer_tag_snakepit_shrimp_81166.webm",
+      "media_type": "video",
+      "source_creator": "Ifremer (Submersible Nautile)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Biodiversit%C3%A9_et_paysages_sous-marins_des_sites_hydrothermaux_TAG_et_Snake_Pit_(Ifremer_00700-81166).webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Chimney walls at TAG and Snake Pit writhing with living swarms",
+      "camera_perspective": "medium",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.54,
+          0.5
+        ],
+        "center_end": [
+          0.57,
+          0.5
+        ],
+        "zoom_range": [
+          1.11,
+          1.14
+        ],
+        "rationale": "Frames roaring black smoke right alongside the orange sulfide chimney face writhing with living vent fauna."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Exact 0.43s pause-aligned twist cut right before 'Instead, the chimney walls are moving'."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds",
+          "cinematic_sfx"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.4,
+        "ideal_duration_s": 7.91,
+        "max_recommended_s": 10.31,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 19
+        }
+      },
+      "why_shot_belongs_here": "Delivers the exact mid-video visual shock promised by N03 at the TAG and Snake Pit black smokers."
+    },
+    {
+      "scene_id": "S06",
+      "associated_seg_id": "N04",
+      "timeline_start_s": 33.0333,
+      "timeline_end_s": 38.8,
+      "duration_s": 5.767,
+      "narration_start_s": 33.135,
+      "narration_end_s": 38.513,
+      "spoken_narration": "centimeters from water hot enough to melt lead Look closely and none of them have eyeballs",
+      "selected_asset": "ifremer_rimicaris_swarm_81103.webm",
+      "media_type": "video",
+      "source_creator": "Ifremer (ROV Victor 6000)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Observation_de_crevettes_Rimicaris_exoculata_(Ifremer_00699-81103).webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Close-up of 2,500/m\u00b2 eyeless Rimicaris exoculata swarm beside scalding plume",
+      "camera_perspective": "close_up",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.52,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.11,
+          1.15
+        ],
+        "rationale": "Tight close-up on hundreds of eyeless Rimicaris exoculata heads and white dorsal organs packed wall-to-wall."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Punches in from medium wall view to tight swarm close-up so viewers can see they lack eyeballs."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.4,
+        "ideal_duration_s": 6.75,
+        "max_recommended_s": 10.3,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 16
+        }
+      },
+      "why_shot_belongs_here": "Lets viewers inspect the eyeless heads right beside shimmering lead-melting hydrothermal water."
+    },
+    {
+      "scene_id": "S07",
+      "associated_seg_id": "N05",
+      "timeline_start_s": 38.8,
+      "timeline_end_s": 44.6667,
+      "duration_s": 5.867,
+      "narration_start_s": 39.013,
+      "narration_end_s": 44.459,
+      "spoken_narration": "Across their backs sits a white light-sensing organ that detects the faint infrared glow of scalding vents",
+      "selected_asset": "ifremer_smoove_shrimp_closeup_81317.webm",
+      "media_type": "video",
+      "source_creator": "Ifremer (SMOOVE Deep-Sea Observatory)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Modioles_et_crevettes_film%C3%A9es_par_le_SMOOVE_(Ifremer_00701-81317).webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Macro reveal of white dorsal photoreceptor organ on Rimicaris backs",
+      "camera_perspective": "macro",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.68,
+          0.52
+        ],
+        "center_end": [
+          0.7,
+          0.5
+        ],
+        "zoom_range": [
+          1.12,
+          1.16
+        ],
+        "rationale": "Macro framing zooms onto the pale Rimicaris shrimp crawling across golden Bathymodiolus vent mussels."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Exact 0.50s pause-aligned cut to macro SMOOVE observatory view."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.4,
+        "ideal_duration_s": 6.98,
+        "max_recommended_s": 10.3,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "macro",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 17
+        }
+      },
+      "why_shot_belongs_here": "Direct anatomical visual proof of Rimicaris exoculata filmed by Ifremer's SMOOVE deep-sea observatory."
+    },
+    {
+      "scene_id": "S08",
+      "associated_seg_id": "N05",
+      "timeline_start_s": 44.6667,
+      "timeline_end_s": 52.7,
+      "duration_s": 8.033,
+      "narration_start_s": 44.861,
+      "narration_end_s": 52.391,
+      "spoken_narration": "It keeps them inside a narrow 20-degree safety zone close enough to farm sulfur-eating bacteria in their gills without cooking alive",
+      "selected_asset": "ifremer_biobaz_sampling_81111.webm",
+      "media_type": "video",
+      "source_creator": "Ifremer (BioBaz Sampling Campaign)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Modioles,_crevettes_et_chemin%C3%A9es_hydrothermales_(Ifremer_00699-81111).webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "BioBaz ROV biological survey in the chemosynthetic mixing zone",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.52,
+          0.5
+        ],
+        "center_end": [
+          0.54,
+          0.5
+        ],
+        "zoom_range": [
+          1.1,
+          1.13
+        ],
+        "rationale": "Shows the shimmering 20-degree mixing zone carpeted in sulfur-fueled vent shrimp and mussels."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Exact 0.40s pause-aligned cut showing the living chemosynthetic mixing zone."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.4,
+        "ideal_duration_s": 7.76,
+        "max_recommended_s": 10.3,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 21
+        }
+      },
+      "why_shot_belongs_here": "Shows the sulfur-fueled vent community surveyed during the BioBaz campaign."
+    },
+    {
+      "scene_id": "S09",
+      "associated_seg_id": "N06",
+      "timeline_start_s": 52.7,
+      "timeline_end_s": 59.7667,
+      "duration_s": 7.067,
+      "narration_start_s": 52.91,
+      "narration_end_s": 59.553,
+      "spoken_narration": "Since 1977 researchers still debate whether Earth's first cells sparked in deep vents or shallow surface pools",
+      "selected_asset": "ifremer_lucky_strike_fauna_88699.webm",
+      "media_type": "video",
+      "source_creator": "Ifremer",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peltospira_smaragdina_gastropod_assemblage_at_the_Y3_site_in_the_Lucky_Strike_vent_field_(MAR)_(Ifremer_00775-88699).webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Complete sunlight-free hydrothermal vent ecosystem and origin-of-life debate",
+      "camera_perspective": "medium",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.48,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.11,
+          1.14
+        ],
+        "rationale": "Frames both the active ROV sampling claw and the thriving sunlight-free chemosynthetic community."
+      },
+      "transition": {
+        "type": "dissolve",
+        "duration_s": 0.0,
+        "reason": "Single restrained reflective dissolve on 0.52s pause into the broader 1977 origin-of-life debate."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.4,
+        "ideal_duration_s": 6.51,
+        "max_recommended_s": 10.3,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "medium",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 16
+        }
+      },
+      "why_shot_belongs_here": "Illustrates active ROV research on a self-sustaining chemosynthetic ecosystem while stating the scientific caveat."
+    },
+    {
+      "scene_id": "S10",
+      "associated_seg_id": "N06",
+      "timeline_start_s": 59.7667,
+      "timeline_end_s": 68.8,
+      "duration_s": 9.033,
+      "narration_start_s": 59.955,
+      "narration_end_s": 68.379,
+      "spoken_narration": "Either way these blind shrimp prove whole ecosystems can thrive without sunlight making underwater chimneys a prime target in Yoo-roh-puhz hidden ocean",
+      "selected_asset": "ifremer_chimney_full_spire_81315.webm",
+      "media_type": "video",
+      "source_creator": "Ifremer (ROV Victor 6000 \u2014 MoMARSAT Campaign)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vue_sur_une_chemin%C3%A9e_hydrothermale_(Ifremer_00701-81315).webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Full roaring abyssal chimney payoff and Europa ocean-world loop",
+      "camera_perspective": "medium",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.52,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ],
+        "zoom_range": [
+          1.11,
+          1.14
+        ],
+        "rationale": "Wide full-chimney view in pitch-black water visually bridges Europa's sub-ice ocean target back into S01."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Exact 0.40s pause-aligned closing cut onto a full abyssal chimney spire for a seamless loop into Frame 0."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "music",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 4.4,
+        "ideal_duration_s": 8.46,
+        "max_recommended_s": 10.86,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 22
+        }
+      },
+      "why_shot_belongs_here": "Leaves a haunting final image of an abyssal chimney in pitch darkness that loops directly back into S01."
+    }
+  ]
+}

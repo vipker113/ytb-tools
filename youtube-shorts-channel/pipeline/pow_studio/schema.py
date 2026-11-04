@@ -156,8 +156,18 @@ class NarrationSegmentSpec(BaseModel):
         default=None,
         description="Optional Voice Studio delivery tag (e.g. 'MYSTERIOUS', 'SURPRISED BUT CONTROLLED', 'CINEMATIC REVEAL')",
     )
+    emotional_tone: Optional[str] = Field(
+        default=None,
+        description="Intended emotional tone (e.g. 'curious_restraint', 'authoritative_clarity', 'controlled_wonder', 'reflective')",
+    )
     pace: Optional[Literal["SLOW", "NATURAL", "MODERATE", "FAST"]] = None
     energy: Optional[int] = Field(default=None, ge=1, le=5, description="Delivery intensity from 1 to 5")
+    emotional_intensity: Optional[float] = Field(default=None, ge=0.0, le=1.0, description="Fine intensity scalar 0.0-1.0")
+    pitch_direction: Optional[Literal["falling", "steady", "gentle_rise", "low_intimate"]] = None
+    sentence_rhythm: Optional[Literal["measured", "flowing", "deliberate_staccato", "reflective_slow"]] = None
+    pause_before_s: float = Field(default=0.0, ge=0.0, le=1.5, description="Optional brief anticipatory pause before segment")
+    pronunciation_overrides: dict[str, str] = Field(default_factory=dict, description="Segment-specific phonetic overrides")
+    vocal_consistency: Literal["locked", "expressive_bounded"] = "locked"
     rate: str = Field(default="+0%", description="Explicit prosody rate override, e.g. '+0%', '-3%', '+2%'")
     pitch: str = Field(default="+0Hz", description="Explicit prosody pitch contour, e.g. '+0Hz', '-1Hz'")
     pause_after_s: float = Field(default=0.34, ge=0.05, le=3.0)
@@ -188,11 +198,13 @@ class SoundbiteSpec(BaseModel):
 
 
 class SfxCueSpec(BaseModel):
-    sfx_name: str = Field(description="Name of CC0 stem in assets/sfx_cc0/, e.g. 'glacial_sub_drop'")
+    sfx_name: str = Field(description="Name of CC0/PD stem in assets/sfx_cc0/ or audio_asset_registry, e.g. 'glacial_sub_drop'")
     anchor_type: Literal["time_s", "shot_start", "seg_start"] = "shot_start"
     anchor_ref: str = Field(description="Shot ID, Segment ID, or float seconds string")
     offset_s: float = 0.0
     gain_db: float = Field(default=-24.0, le=-10.0, description="Always subtle beneath speech")
+    purpose: str = Field(default="", description="Explicit narrative/visual reason this sound effect exists")
+    visual_event: str = Field(default="", description="Visible on-screen event synchronized with this sound")
 
 
 class ScaleCalloutAnnotation(BaseModel):
@@ -353,6 +365,31 @@ class ShotSpecModel(BaseModel):
         "contextual_observation",
         "illustrative_visualization",
     ] = "verified_fact"
+    # Footage-First v8.0 Action-Based Storytelling & Repetition-Control metadata
+    visual_objective: str = Field(default="", description="What the viewer should understand from this shot")
+    visible_action: str = Field(default="", description="Concrete visible action or physical process shown in frame")
+    continuity_note: str = Field(default="", description="Relationship with preceding and following shots")
+    progression_type: Optional[str] = Field(
+        default=None,
+        description="Meaningful progression dimension ('new_action', 'new_information', 'new_perspective', 'new_subject', 'new_evidence', 'new_process_stage', 'environment_change')",
+    )
+    essential_historical_or_scientific_evidence: bool = Field(
+        default=False,
+        description="True when a historical or scientific still photograph genuinely requires extended viewing",
+    )
+    intentional_callback: bool = Field(
+        default=False,
+        description="True when returning to an earlier image/clip serves a deliberate narrative payoff",
+    )
+    callback_purpose: str = Field(default="", description="Narrative justification for an intentional visual callback")
+    disable_artificial_still_motion: Optional[bool] = Field(
+        default=None,
+        description="Hold still photographs cleanly without artificial zoom/pan/parallax when True",
+    )
+    explicit_analog_comparison: bool = Field(
+        default=False,
+        description="True ONLY when narration explicitly discloses that a terrestrial/laboratory analog site is shown",
+    )
     story_beat: str
     visual_desc: str
 
@@ -362,6 +399,20 @@ class CaptionGroupSpec(BaseModel):
     first_word_idx: int = Field(ge=0)
     last_word_idx: int = Field(ge=0)
     text: str
+
+
+SourceMediaTypeLiteral = Literal[
+    "REAL_VIDEO_ACTION",
+    "REAL_VIDEO_ESTABLISHING",
+    "REAL_TIME_LAPSE",
+    "STILL_PHOTO",
+    "ANIMATED_STILL",
+    "SCIENTIFIC_IMAGE",
+    "INFOGRAPHIC",
+    "REAL_ANIMATION",
+    "AI_GENERATED",
+    "REENACTMENT",
+]
 
 
 class AssetLicenseSpec(BaseModel):
@@ -374,6 +425,23 @@ class AssetLicenseSpec(BaseModel):
     license_url: str
     required_attribution: str
     media_type: Optional[Literal["video", "photo", "diagram", "audio"]] = None
+    source_media_class: Optional[SourceMediaTypeLiteral] = Field(
+        default=None,
+        description="Explicit 10-category source media classification preserved across rendering",
+    )
+    original_media_file: Optional[str] = Field(
+        default=None,
+        description="Original pre-transcode filename (e.g., original .jpg if pre-rendered to .mp4); prevents promoting a still photo to video",
+    )
+    canonical_source_id: Optional[str] = Field(
+        default=None,
+        description="Canonical source shoot/asset identifier used to detect multi-crops and sub-clip splits",
+    )
+    depicts_meaningful_action: Optional[bool] = None
+    depicted_subject: str = ""
+    depicted_action: str = ""
+    depicted_location: str = ""
+    historical_era: Optional[str] = None
     priority_tier: int = Field(
         default=1,
         ge=1,
@@ -386,9 +454,33 @@ class AssetLicenseSpec(BaseModel):
 
     @model_validator(mode="after")
     def infer_media_type_if_omitted(self) -> "AssetLicenseSpec":
+        from .media_classifier import STILL_EXTENSIONS, VIDEO_EXTENSIONS, infer_asset_source_media_class
+
+        suf = Path(self.local_file).suffix.lower()
+        orig_suf = Path(self.original_media_file).suffix.lower() if self.original_media_file else ""
+
+        # Hard lineage rule (Part 2 Section 4): A JPEG/PNG converted into MP4 must remain a still photograph!
+        if orig_suf in STILL_EXTENSIONS:
+            self.media_type = "photo"
+            if self.priority_tier == 1:
+                self.priority_tier = 5
+            if self.source_media_class is None or self.source_media_class in (
+                "REAL_VIDEO_ACTION",
+                "REAL_VIDEO_ESTABLISHING",
+                "REAL_TIME_LAPSE",
+            ):
+                self.source_media_class = "ANIMATED_STILL" if suf in VIDEO_EXTENSIONS else "STILL_PHOTO"
+
         if self.media_type is None:
-            suf = Path(self.local_file).suffix.lower()
-            if self.is_first_party_original and suf in (".mp4", ".mov", ".webm"):
+            if self.source_media_class in ("STILL_PHOTO", "ANIMATED_STILL", "SCIENTIFIC_IMAGE"):
+                self.media_type = "photo"
+                if self.priority_tier == 1:
+                    self.priority_tier = 5
+            elif self.source_media_class in ("INFOGRAPHIC", "REAL_ANIMATION"):
+                self.media_type = "diagram"
+                if self.priority_tier == 1:
+                    self.priority_tier = 6
+            elif self.is_first_party_original and suf in (".mp4", ".mov", ".webm"):
                 self.media_type = "diagram"
                 if self.priority_tier == 1:
                     self.priority_tier = 6
@@ -400,6 +492,15 @@ class AssetLicenseSpec(BaseModel):
                 self.media_type = "photo"
                 if self.priority_tier == 1:
                     self.priority_tier = 5
+
+        if self.media_type != "audio" and self.source_media_class is None:
+            self.source_media_class = infer_asset_source_media_class(self, probe_pixels=False)  # type: ignore[assignment]
+        elif self.media_type == "photo" and self.source_media_class in (
+            "REAL_VIDEO_ACTION",
+            "REAL_VIDEO_ESTABLISHING",
+            "REAL_TIME_LAPSE",
+        ):
+            self.source_media_class = "ANIMATED_STILL" if suf in VIDEO_EXTENSIONS else "STILL_PHOTO"
         return self
 
 
@@ -441,10 +542,46 @@ class EpisodeManifest(BaseModel):
     hashtags: list[str]
     opening_hook_type: HookArchetypeLiteral = "surprising_visual"
     hook_candidates: list[HookCandidateSpec] = Field(default_factory=list)
-    target_duration_min_s: float = 48.0
-    target_duration_max_s: float = 90.0
+    target_duration_min_s: float = 20.0
+    target_duration_max_s: float = 240.0
+    adaptive_duration_mode: bool = Field(
+        default=True,
+        description="Allow actual approved narration duration to govern video timeline without forcing a fixed template length",
+    )
+    enforce_target_duration_bounds: bool = Field(
+        default=False,
+        description="Only enforce strict target_duration_min_s..max_s when an episode explicitly locks hard duration bounds",
+    )
+    legacy_v6_fallback: bool = Field(
+        default=False,
+        description="Run legacy v6 audio/scene behavior when requested as a fallback",
+    )
+    enable_intelligent_scene_editing: bool = Field(
+        default=True,
+        description="Run Keep/Replace/Merge/Remove scene optimization against finalized narration",
+    )
+    adaptive_audio_profile: Literal[
+        "auto",
+        "minimal_documentary",
+        "immersive_exploration",
+        "mystery_and_discovery",
+        "scientific_explanation",
+    ] = "auto"
 
-    # Custom Voice Studio & Advanced Voice Direction (Part 4)
+    # Custom Voice Studio & Advanced Voice Direction (Part 2 & Part 4)
+    tts_provider: Literal["auto", "elevenlabs", "edge_tts"] = "auto"
+    elevenlabs_model_id: str = Field(
+        default="eleven_multilingual_v2",
+        description="ElevenLabs model ('eleven_multilingual_v2', 'eleven_v3', 'eleven_turbo_v2_5', 'eleven_flash_v2_5')",
+    )
+    elevenlabs_voice_id: str = Field(
+        default="",
+        description="Optional ElevenLabs voice_id when ELEVENLABS_API_KEY is configured",
+    )
+    prefer_single_pass_narration: Optional[bool] = Field(
+        default=None,
+        description="Prefer generating complete narration in one request when voice direction is uniform/compatible",
+    )
     voice_input_mode: Literal["directed_tts", "uploaded_narration", "voice_reference"] = "directed_tts"
     voice_direction_profile: Optional[str] = Field(
         default=None,
@@ -484,6 +621,9 @@ class EpisodeManifest(BaseModel):
         "volcanic_abyss",
         "subterranean_earth",
         "scientific_discovery",
+        "wildlife_field",
+        "ancient_archaeology",
+        "minimal_investigation",
         "none",
     ] = "polar_glacial"
     ambience_ducked_lufs_target: float = -26.5
@@ -514,7 +654,7 @@ class EpisodeManifest(BaseModel):
     narration_segments: list[NarrationSegmentSpec] = Field(min_length=2)
     soundbites: list[SoundbiteSpec] = Field(default_factory=list)
     sfx_cues: list[SfxCueSpec] = Field(default_factory=list)
-    shots: list[ShotSpecModel] = Field(min_length=4)
+    shots: list[ShotSpecModel] = Field(min_length=1)
     caption_groups: list[CaptionGroupSpec] = Field(default_factory=list)
     assets_register: list[AssetLicenseSpec] = Field(min_length=1)
     excluded_sources_notes: list[str] = Field(default_factory=list)
@@ -661,6 +801,11 @@ def resolve_timed_shots(manifest: EpisodeManifest, total_frames_30fps: int, fps:
     Return a copy of `manifest.shots` snapped to exact `1/fps` frame boundaries
     matching `total_frames_30fps` (`0.000ms` audio/video duration drift).
     """
+    from .scene_editor import load_or_optimize_timed_shots
+
+    optimized = load_or_optimize_timed_shots(manifest, total_frames_30fps, fps=fps)
+    if optimized is not None:
+        return optimized
     shots = [s.model_copy(deep=True) for s in manifest.shots]
     n = len(shots)
     t_manifest = shots[-1].end_s

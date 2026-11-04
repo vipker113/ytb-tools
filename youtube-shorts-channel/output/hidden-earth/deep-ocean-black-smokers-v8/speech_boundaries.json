@@ -1,0 +1,183 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 1.511,
+    "word_end_s": 1.379,
+    "next_word_start_s": 1.644,
+    "pause_s": 0.265,
+    "kind": "breath_pause",
+    "after_word": "underwater"
+  },
+  {
+    "time_s": 4.441,
+    "word_end_s": 4.334,
+    "next_word_start_s": 4.548,
+    "pause_s": 0.214,
+    "kind": "breath_pause",
+    "after_word": "water"
+  },
+  {
+    "time_s": 6.339,
+    "word_end_s": 6.114,
+    "next_word_start_s": 6.575,
+    "pause_s": 0.461,
+    "kind": "breath_pause",
+    "after_word": "steam"
+  },
+  {
+    "time_s": 8.046,
+    "word_end_s": 7.938,
+    "next_word_start_s": 8.155,
+    "pause_s": 0.217,
+    "kind": "breath_pause",
+    "after_word": "Ridge"
+  },
+  {
+    "time_s": 13.143,
+    "word_end_s": 12.938,
+    "next_word_start_s": 13.347,
+    "pause_s": 0.409,
+    "kind": "breath_pause",
+    "after_word": "liquid"
+  },
+  {
+    "time_s": 16.389,
+    "word_end_s": 16.288,
+    "next_word_start_s": 16.49,
+    "pause_s": 0.202,
+    "kind": "breath_pause",
+    "after_word": "inside"
+  },
+  {
+    "time_s": 18.965,
+    "word_end_s": 18.839,
+    "next_word_start_s": 19.091,
+    "pause_s": 0.252,
+    "kind": "breath_pause",
+    "after_word": "seawater"
+  },
+  {
+    "time_s": 22.208,
+    "word_end_s": 21.983,
+    "next_word_start_s": 22.494,
+    "pause_s": 0.511,
+    "kind": "breath_pause",
+    "after_word": "chimneys"
+  },
+  {
+    "time_s": 23.495,
+    "word_end_s": 23.387,
+    "next_word_start_s": 23.604,
+    "pause_s": 0.217,
+    "kind": "breath_pause",
+    "after_word": "bare"
+  },
+  {
+    "time_s": 25.848,
+    "word_end_s": 25.632,
+    "next_word_start_s": 26.063,
+    "pause_s": 0.431,
+    "kind": "breath_pause",
+    "after_word": "hot"
+  },
+  {
+    "time_s": 28.553,
+    "word_end_s": 28.328,
+    "next_word_start_s": 28.838,
+    "pause_s": 0.51,
+    "kind": "breath_pause",
+    "after_word": "moving"
+  },
+  {
+    "time_s": 33.04,
+    "word_end_s": 32.946,
+    "next_word_start_s": 33.135,
+    "pause_s": 0.189,
+    "kind": "breath_pause",
+    "after_word": "darkness"
+  },
+  {
+    "time_s": 35.876,
+    "word_end_s": 35.661,
+    "next_word_start_s": 36.09,
+    "pause_s": 0.429,
+    "kind": "breath_pause",
+    "after_word": "lead"
+  },
+  {
+    "time_s": 36.885,
+    "word_end_s": 36.768,
+    "next_word_start_s": 37.002,
+    "pause_s": 0.234,
+    "kind": "breath_pause",
+    "after_word": "closely"
+  },
+  {
+    "time_s": 38.738,
+    "word_end_s": 38.513,
+    "next_word_start_s": 39.013,
+    "pause_s": 0.5,
+    "kind": "breath_pause",
+    "after_word": "eyeballs"
+  },
+  {
+    "time_s": 44.66,
+    "word_end_s": 44.459,
+    "next_word_start_s": 44.861,
+    "pause_s": 0.402,
+    "kind": "breath_pause",
+    "after_word": "vents"
+  },
+  {
+    "time_s": 47.832,
+    "word_end_s": 47.746,
+    "next_word_start_s": 47.917,
+    "pause_s": 0.171,
+    "kind": "breath_pause",
+    "after_word": "zone"
+  },
+  {
+    "time_s": 52.616,
+    "word_end_s": 52.391,
+    "next_word_start_s": 52.91,
+    "pause_s": 0.519,
+    "kind": "breath_pause",
+    "after_word": "alive"
+  },
+  {
+    "time_s": 59.754,
+    "word_end_s": 59.553,
+    "next_word_start_s": 59.955,
+    "pause_s": 0.402,
+    "kind": "breath_pause",
+    "after_word": "pools"
+  },
+  {
+    "time_s": 60.651,
+    "word_end_s": 60.541,
+    "next_word_start_s": 60.762,
+    "pause_s": 0.221,
+    "kind": "breath_pause",
+    "after_word": "way"
+  },
+  {
+    "time_s": 64.688,
+    "word_end_s": 64.59,
+    "next_word_start_s": 64.785,
+    "pause_s": 0.195,
+    "kind": "breath_pause",
+    "after_word": "sunlight"
+  },
+  {
+    "time_s": 68.8,
+    "word_end_s": 68.379,
+    "next_word_start_s": 68.8,
+    "pause_s": 0.421,
+    "kind": "segment_end",
+    "after_word": "ocean"
+  }
+]

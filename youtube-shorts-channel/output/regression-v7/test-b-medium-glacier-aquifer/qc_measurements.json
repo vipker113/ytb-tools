@@ -1,0 +1,775 @@
+{
+  "style_profile": "mysterious_earth_exploration",
+  "ffprobe": {
+    "duration_s": 81.067,
+    "within_target_window": true,
+    "adaptive_duration_mode": true,
+    "exact_frame_match": true,
+    "size_bytes": 399119697,
+    "size_mb": 380.63,
+    "video_codec": "h264",
+    "profile": "High",
+    "width": 1080,
+    "height": 1920,
+    "dimensions_exact": true,
+    "r_frame_rate": "30/1",
+    "avg_frame_rate": "30/1",
+    "nb_frames": 2432,
+    "pix_fmt": "yuv420p",
+    "color_space": "bt709",
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "black_segments": [
+    "black_start:22.766667 black_end:23.133333 black_duration:0.366667"
+  ],
+  "loudness": {
+    "integrated_LUFS": -16.0,
+    "LRA_LU": 1.7,
+    "true_peak_dBTP": -1.5,
+    "narration_stem_LUFS": -16.0,
+    "ambience_and_sfx_stem_LUFS": -39.8,
+    "voice_to_ambience_margin_LU": 23.8
+  },
+  "shot_plan_and_pacing_qc": {
+    "style_profile": "mysterious_earth_exploration",
+    "total_duration_s": 81.067,
+    "shot_count": 7,
+    "distinct_source_assets_count": 3,
+    "distinct_perspectives": [
+      "aerial",
+      "extreme_wide",
+      "first_person_pov",
+      "medium",
+      "scientific_fieldwork"
+    ],
+    "distinct_perspectives_count": 5,
+    "first_real_motion_start_s": 0.0,
+    "viral_script_audit": {
+      "total_words": 200,
+      "hook_first_sentence_words": 14,
+      "max_sentence_words": 20,
+      "llm_cliche_hits": 0,
+      "jargon_cluster_hits": 0,
+      "flat_prosody_ratio": 0.0,
+      "ending_tail_pause_s": 0.45,
+      "anti_ai_script_pass": true,
+      "errors": [],
+      "warnings": []
+    },
+    "moving_footage_s": 81.066,
+    "moving_footage_pct": 100.0,
+    "meets_moving_footage_goal": true,
+    "still_photography_s": 0.0,
+    "still_photography_pct": 0.0,
+    "human_interaction_shots": 4,
+    "human_interaction_s": 45.4,
+    "human_interaction_pct": 56.0,
+    "illustrative_diagram_s": 0.0,
+    "illustrative_diagram_pct": 0.0,
+    "authentic_visual_pct": 100.0,
+    "pacing_summary": {
+      "min_shot_s": 10.6,
+      "median_shot_s": 11.533,
+      "mean_shot_s": 11.581,
+      "max_shot_s": 12.4,
+      "internal_cuts": 6,
+      "clean_cuts": 4,
+      "dissolves": 2,
+      "dissolve_fraction": 0.333,
+      "speech_boundary_aligned_cuts": 6,
+      "speech_boundary_alignment_pct": 100.0
+    },
+    "errors": [],
+    "warnings": [
+      "[S01:nasa_helheim_glacier_aquifer.mp4] Effective upscale factor (2.77x) exceeds crisp HD target (2.35x).",
+      "[S04:nasa_helheim_glacier_aquifer.mp4] Effective upscale factor (2.77x) exceeds crisp HD target (2.35x).",
+      "[S07:nasa_helheim_glacier_aquifer.mp4] Effective upscale factor (2.77x) exceeds crisp HD target (2.35x).",
+      "Asset 'nasa_helheim_glacier_aquifer.mp4' used 3 times (exceeds max_uses_per_asset=2).",
+      "Asset 'nasa_helheim_glacier_aquifer.mp4' occupies 42.9% of runtime (exceeds 30% cap).",
+      "Asset 'nasa_exports_twilight_ocean.mp4' occupies 30.1% of runtime (exceeds 30% cap)."
+    ],
+    "shots": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 12.0333,
+        "duration_s": 12.033,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.6,
+          "ideal_duration_s": 8.56,
+          "max_recommended_s": 10.96,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "aerial",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 27
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "aerial",
+        "src_file": "nasa_helheim_glacier_aquifer.mp4",
+        "transition_in": "opening",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clean cut aligned to narration boundary",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.0,
+        "nearest_speech_boundary_kind": "start",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Twenty meters beneath Greenland's frozen surface trillions of liters of liquid water never freeze Across thousands of square kilometers a hidden reservoir flows inside solid polar ice",
+        "story_beat": "Aerial sweep over Greenland's Helheim Glacier ice sheet",
+        "crop_feasibility": {
+          "source_width": 1280,
+          "source_height": 720,
+          "crop_width_px": 389.4,
+          "crop_height_px": 692.3,
+          "upscale_factor": 2.773,
+          "feasible": true,
+          "warnings": [
+            "Effective upscale factor (2.77x) exceeds crisp HD target (2.35x)."
+          ]
+        }
+      },
+      {
+        "sid": "S03",
+        "start_s": 12.0333,
+        "end_s": 23.3333,
+        "duration_s": 11.3,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.6,
+          "ideal_duration_s": 8.27,
+          "max_recommended_s": 10.67,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 26
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "nasa_icebridge_fieldwork_2017.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clean cut aligned to narration boundary",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.102,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Even through minus thirty degree winter nights this buried water stays liquid inside porous snow Until 2011 ice models assumed summer meltwater simply refroze near the surface",
+        "story_beat": "Polar scientists and NASA IceBridge instruments surveying subzero snow",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 584.1,
+          "crop_height_px": 1038.5,
+          "upscale_factor": 1.849,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S04",
+        "start_s": 23.3333,
+        "end_s": 34.8667,
+        "duration_s": 11.533,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.6,
+          "ideal_duration_s": 8.55,
+          "max_recommended_s": 10.95,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "medium",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 29
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "nasa_helheim_glacier_aquifer.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clean cut aligned to narration boundary",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.086,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "While drilling cores near Helheim Glacier field teams pulled up dripping wet snow from twenty meters down Heavy autumn snowfall acts like an insulating blanket sealing summer warmth inside",
+        "story_beat": "Helheim Glacier firn drilling and buried liquid water layer",
+        "crop_feasibility": {
+          "source_width": 1280,
+          "source_height": 720,
+          "crop_width_px": 389.4,
+          "crop_height_px": 692.3,
+          "upscale_factor": 2.773,
+          "feasible": true,
+          "warnings": [
+            "Effective upscale factor (2.77x) exceeds crisp HD target (2.35x)."
+          ]
+        }
+      },
+      {
+        "sid": "S06",
+        "start_s": 34.8667,
+        "end_s": 45.4667,
+        "duration_s": 10.6,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.6,
+          "ideal_duration_s": 9.2,
+          "max_recommended_s": 11.6,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "first_person_pov",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 30
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "first_person_pov",
+        "src_file": "nasa_icebridge_fieldwork_2017.mp4",
+        "transition_in": "dissolve",
+        "transition_duration_s": 0.6,
+        "transition_reason": "Pivot from surface snowpack to deep radar crevasse drainage",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.092,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Airborne radar flights and ground sensors then uncovered a deeper surprise That buried water does not stay locked in place It drains downward through deep crevasses toward the glacier bed",
+        "story_beat": "Airborne radar flight mapping deep glacier crevasse drainage",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 584.1,
+          "crop_height_px": 1038.5,
+          "upscale_factor": 1.849,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S07",
+        "start_s": 45.4667,
+        "end_s": 56.7,
+        "duration_s": 11.233,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.6,
+          "ideal_duration_s": 8.55,
+          "max_recommended_s": 10.95,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "medium",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 29
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "nasa_helheim_glacier_aquifer.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clean cut aligned to narration boundary",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.08,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "At the bedrock pressurized water lubricates the ice base and speeds glacier motion toward dark coastal fjords Freshwater plumes then rise from hundreds of meters below the sea surface",
+        "story_beat": "Glacier meltwater lubricating ice motion toward dark coastal fjord",
+        "crop_feasibility": {
+          "source_width": 1280,
+          "source_height": 720,
+          "crop_width_px": 389.4,
+          "crop_height_px": 692.3,
+          "upscale_factor": 2.773,
+          "feasible": true,
+          "warnings": [
+            "Effective upscale factor (2.77x) exceeds crisp HD target (2.35x)."
+          ]
+        }
+      },
+      {
+        "sid": "S08",
+        "start_s": 56.7,
+        "end_s": 68.6667,
+        "duration_s": 11.967,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.6,
+          "ideal_duration_s": 9.07,
+          "max_recommended_s": 11.47,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 29
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "nasa_exports_twilight_ocean.mp4",
+        "transition_in": "dissolve",
+        "transition_duration_s": 0.65,
+        "transition_reason": "Location shift from Greenland glacier terminus to open ocean research vessel",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.054,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "When mineral-rich meltwater enters the North Atlantic ocean expeditions track how it stirs surface nutrients above the deep twilight zone Hidden glacier plumbing shapes marine food webs miles offshore",
+        "story_beat": "Ocean research vessel tracking nutrients above the deep twilight zone",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 584.1,
+          "crop_height_px": 1038.5,
+          "upscale_factor": 1.849,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S09",
+        "start_s": 68.6667,
+        "end_s": 81.0667,
+        "duration_s": 12.4,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.6,
+          "ideal_duration_s": 8.58,
+          "max_recommended_s": 10.98,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "extreme_wide",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 29
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "extreme_wide",
+        "src_file": "nasa_exports_twilight_ocean.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clean cut aligned to narration boundary",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.122,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Glaciologists are still studying how fast these aquifers drain into the sea so long-term sea-level forecasts remain an open question Beneath solid white ice a dark river keeps moving",
+        "story_beat": "Open dark ocean horizon as researchers measure ongoing drainage rates",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 584.1,
+          "crop_height_px": 1038.5,
+          "upscale_factor": 1.849,
+          "feasible": true,
+          "warnings": []
+        }
+      }
+    ]
+  },
+  "visual_evidence_breakdown": {
+    "total_shots": 7,
+    "moving_footage_s": 81.066,
+    "moving_footage_pct": 100.0,
+    "still_photography_s": 0.0,
+    "still_photography_pct": 0.0,
+    "human_interaction_shots": 4,
+    "human_interaction_s": 45.4,
+    "human_interaction_pct": 56.0,
+    "real_imagery_and_footage_s": 81.067,
+    "real_imagery_and_footage_pct": 100.0,
+    "illustrative_diagram_s": 0,
+    "illustrative_diagram_pct": 0.0,
+    "meets_real_target": true,
+    "meets_moving_video_target": true
+  },
+  "editorial_formula_qc": {
+    "first_word_start_s": 0.1,
+    "hook_within_limit": true,
+    "layer2_pivot_seg_id": "N04",
+    "scientific_caveat_seg_id": "N07",
+    "caveat_explicitly_stated": true,
+    "all_passed": true
+  },
+  "full_canvas_qc": {
+    "audited_shots": 7,
+    "suspicious_shots_count": 0,
+    "suspicious_shots": [],
+    "all_full_canvas_pass": true,
+    "shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "sample_t_s": 6.02,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.07,
+        "right_inset_spike_ratio": 1.08,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S03",
+        "kind": "video_full",
+        "sample_t_s": 17.68,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 3.63,
+        "right_inset_spike_ratio": 1.03,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S04",
+        "kind": "video_full",
+        "sample_t_s": 29.1,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.16,
+        "right_inset_spike_ratio": 1.3,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S06",
+        "kind": "video_full",
+        "sample_t_s": 40.17,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 2.97,
+        "right_inset_spike_ratio": 1.19,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S07",
+        "kind": "video_full",
+        "sample_t_s": 51.08,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.01,
+        "right_inset_spike_ratio": 1.18,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S08",
+        "kind": "video_full",
+        "sample_t_s": 62.68,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.07,
+        "right_inset_spike_ratio": 1.16,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S09",
+        "kind": "video_full",
+        "sample_t_s": 74.87,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.91,
+        "right_inset_spike_ratio": 1.33,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      }
+    ]
+  },
+  "overlay_cleanliness_qc": {
+    "style_profile": "mysterious_earth_exploration",
+    "scale_rings_rendered": 0,
+    "locator_huds_rendered": 0,
+    "source_banners_rendered": 0,
+    "callout_badges_rendered": 0,
+    "opening_cover_card_burned": false,
+    "closing_credit_burned": false,
+    "minimal_context_notes_used": [],
+    "violations": [],
+    "clean_documentary_pass": true
+  },
+  "protected_projects_qc": {
+    "checked_projects": {
+      "blood-falls-v3-documentary": {
+        "mp4_exists": true,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "brine-pools-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "day-in-the-life-of-an-astronaut": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "fermi-paradox-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "forbidden-zones-earth-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "gemstone-mine-secrets-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "how-high-could-you-jump-on-other-planets": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "lava-cave-gold-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "mars-helicopter-1-percent-air": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "unreal-places-earth-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "venus-hotter-than-mercury": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      }
+    },
+    "all_intact": false
+  },
+  "wcag_contrast_qc": {
+    "subtitle_style": "cinema_boxless",
+    "emphasis_mode": "color_accent",
+    "backdrop_worst_case_rgb": [
+      240,
+      245,
+      250
+    ],
+    "caption_white_contrast_ratio": 12.07,
+    "caption_gold_contrast_ratio": 9.34,
+    "all_wcag_aaa_pass": true
+  },
+  "viral_anti_ai_qc": {
+    "anti_ai_script_pass": true,
+    "llm_cliche_hits": 0,
+    "jargon_cluster_hits": 0,
+    "ending_tail_pause_s": 0.45,
+    "first_real_motion_start_s": 0.0,
+    "opening_motion_pass": true,
+    "diegetic_nat_sound_active": false,
+    "audible_location_bed_pass": true,
+    "subtitle_style": "cinema_boxless",
+    "filmic_color_grade_enabled": true,
+    "all_viral_anti_ai_pass": true
+  },
+  "thumbnail_qc": {
+    "thumbnail_jpg_bytes": 594859,
+    "under_2mb": true,
+    "width": 1080,
+    "height": 1920,
+    "dimensions_9x16": true,
+    "text_mode": "cinema_hook",
+    "frame0_vs_thumbnail_mae_rgb": 54.679,
+    "cover_variants_exported": 1,
+    "concepts_exported": 2,
+    "concepts_comparison_sheet_exists": true,
+    "preview_sheet_exists": true
+  },
+  "motion_smoothness_qc": {
+    "sampled_shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "min_frame_delta_luma": 1.7417,
+        "median_frame_delta_luma": 3.2234,
+        "max_to_median_ratio": 1.271,
+        "smooth": true
+      },
+      {
+        "sid": "S03",
+        "kind": "video_full",
+        "min_frame_delta_luma": 5.1628,
+        "median_frame_delta_luma": 5.5971,
+        "max_to_median_ratio": 1.054,
+        "smooth": true
+      },
+      {
+        "sid": "S04",
+        "kind": "video_full",
+        "min_frame_delta_luma": 5.8297,
+        "median_frame_delta_luma": 5.9088,
+        "max_to_median_ratio": 1.026,
+        "smooth": true
+      },
+      {
+        "sid": "S06",
+        "kind": "video_full",
+        "min_frame_delta_luma": 3.2256,
+        "median_frame_delta_luma": 3.2739,
+        "max_to_median_ratio": 1.033,
+        "smooth": true
+      }
+    ],
+    "worst_jump_ratio": 1.271,
+    "all_smooth": true
+  },
+  "subtitles_qc": {
+    "cue_count": 42,
+    "max_burned_lines_per_cue": 2,
+    "raw_word_match_ratio": 0.9778,
+    "normalized_word_match_ratio": 0.9926,
+    "normalized_diffs": [
+      [
+        "replace",
+        "porous",
+        "poorer"
+      ],
+      [
+        "delete",
+        "meters",
+        ""
+      ]
+    ],
+    "cue_start_vs_whisper_offset_s": {
+      "median": 0.038,
+      "p95_abs": 0.171,
+      "max_abs": 0.21
+    }
+  },
+  "licensing_register_qc": {
+    "source_register_csv_exists": true,
+    "source_register_md_exists": true,
+    "registered_assets_count": 4
+  },
+  "narrative_and_visual_intelligence_qc": {
+    "momentum_pass": true,
+    "momentum_error_count": 0,
+    "momentum_warning_count": 0,
+    "hook_candidates_count": 1,
+    "recommended_hook_id": "H01",
+    "recommended_hook_score": 9.53,
+    "mean_visual_weighted_score": 0.9494,
+    "visual_mismatch_count": 0,
+    "all_shots_eligible": true
+  },
+  "voice_studio_qc": {
+    "voice_input_mode": "directed_tts",
+    "voice_direction_profile": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "sentence_count": 15,
+    "approval_lock_present": false,
+    "approval_lock_synchronized": false
+  },
+  "audio_5layer_health_qc": {
+    "scene_audio_profile": "polar_glacial",
+    "stems_exported_count": 5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "loudness_range_lra_lu": 1.7,
+    "speech_crest_factor_db": 14.5,
+    "natural_dynamics_pass": true,
+    "all_audio_health_pass": true
+  },
+  "creative_qa": {
+    "slug": "test-b-medium-glacier-aquifer",
+    "creative_qa_pass": false,
+    "severity_counts": {
+      "CRITICAL": 0,
+      "MAJOR": 1,
+      "MINOR": 0,
+      "INFO": 0
+    },
+    "voice_metrics": {
+      "speaking_rate_wpm": 147.3,
+      "max_boundary_rms_jump_db": 0.76,
+      "high_drama_segment_ratio": 0.286
+    },
+    "soundscape_metrics": {
+      "adaptive_audio_profile": "mystery_and_discovery",
+      "music_sections_count": 2,
+      "audible_ambience_sections_count": 3,
+      "approved_sfx_count": 2,
+      "rejected_sfx_for_silence_count": 1,
+      "voice_to_bed_margin_lu": 23.8
+    },
+    "editing_metrics": {
+      "final_scene_count": 7,
+      "mean_scene_duration_s": 11.58,
+      "sync_issues_count": 0
+    },
+    "issues": [
+      {
+        "severity": "MAJOR",
+        "pillar": "visual_and_audio_qa",
+        "code": "redundant_consecutive_scene",
+        "message": "Consecutive surviving shots S08 and S09 repeat the exact same visual source 'nasa_exports_twilight_ocean.mp4' without narrative reason."
+      }
+    ]
+  },
+  "failed_gates": [
+    "2_zero_black_frames",
+    "10_protected_projects_safety",
+    "15_creative_story_and_sound_qc"
+  ],
+  "failed_gates_count": 3,
+  "overall_studio_v6_pass": false,
+  "overall_studio_v7_pass": false
+}

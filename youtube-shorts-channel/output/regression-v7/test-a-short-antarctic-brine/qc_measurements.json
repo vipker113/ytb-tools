@@ -1,0 +1,642 @@
+{
+  "style_profile": "scientific_investigation",
+  "ffprobe": {
+    "duration_s": 37.067,
+    "within_target_window": true,
+    "adaptive_duration_mode": true,
+    "exact_frame_match": true,
+    "size_bytes": 99769230,
+    "size_mb": 95.15,
+    "video_codec": "h264",
+    "profile": "High",
+    "width": 1080,
+    "height": 1920,
+    "dimensions_exact": true,
+    "r_frame_rate": "30/1",
+    "avg_frame_rate": "30/1",
+    "nb_frames": 1112,
+    "pix_fmt": "yuv420p",
+    "color_space": "bt709",
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "black_segments": [],
+  "loudness": {
+    "integrated_LUFS": -16.1,
+    "LRA_LU": 1.6,
+    "true_peak_dBTP": -1.5,
+    "narration_stem_LUFS": -16.0,
+    "ambience_and_sfx_stem_LUFS": -42.4,
+    "voice_to_ambience_margin_LU": 26.4
+  },
+  "shot_plan_and_pacing_qc": {
+    "style_profile": "scientific_investigation",
+    "total_duration_s": 37.067,
+    "shot_count": 5,
+    "distinct_source_assets_count": 4,
+    "distinct_perspectives": [
+      "aerial",
+      "close_up",
+      "scientific_fieldwork"
+    ],
+    "distinct_perspectives_count": 3,
+    "first_real_motion_start_s": 0.0,
+    "viral_script_audit": {
+      "total_words": 92,
+      "hook_first_sentence_words": 13,
+      "max_sentence_words": 19,
+      "llm_cliche_hits": 0,
+      "jargon_cluster_hits": 0,
+      "flat_prosody_ratio": 0.0,
+      "ending_tail_pause_s": 0.42,
+      "anti_ai_script_pass": true,
+      "errors": [],
+      "warnings": []
+    },
+    "moving_footage_s": 28.733,
+    "moving_footage_pct": 77.52,
+    "meets_moving_footage_goal": true,
+    "still_photography_s": 8.333,
+    "still_photography_pct": 22.48,
+    "human_interaction_shots": 2,
+    "human_interaction_s": 17.833,
+    "human_interaction_pct": 48.11,
+    "illustrative_diagram_s": 0.0,
+    "illustrative_diagram_pct": 0.0,
+    "authentic_visual_pct": 100.0,
+    "pacing_summary": {
+      "min_shot_s": 3.833,
+      "median_shot_s": 8.633,
+      "mean_shot_s": 7.413,
+      "max_shot_s": 10.9,
+      "internal_cuts": 4,
+      "clean_cuts": 4,
+      "dissolves": 0,
+      "dissolve_fraction": 0.0,
+      "speech_boundary_aligned_cuts": 3,
+      "speech_boundary_alignment_pct": 75.0
+    },
+    "errors": [],
+    "warnings": [
+      "[S01:nasa_m12666_nansen_scientists_ice.mp4] Effective upscale factor (2.77x) exceeds crisp HD target (2.35x).",
+      "[S07] Cut at 28.43s is 0.52s from nearest speech pause",
+      "[S07:nasa_m12666_nansen_scientists_ice.mp4] Effective upscale factor (2.77x) exceeds crisp HD target (2.35x).",
+      "Asset 'nasa_m12666_nansen_scientists_ice.mp4' occupies 48.1% of runtime (exceeds 30% cap)."
+    ],
+    "shots": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 9.2,
+        "duration_s": 9.2,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.8,
+          "ideal_duration_s": 7.42,
+          "max_recommended_s": 9.82,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 23
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "nasa_m12666_nansen_scientists_ice.mp4",
+        "transition_in": "opening",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clean cut aligned to narration boundary",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.0,
+        "nearest_speech_boundary_kind": "start",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "In East Antarctica crimson water pours straight out of solid white glacier ice Even at minus seventeen degrees Celsius the flow never freezes",
+        "story_beat": "Field scientists working across East Antarctic glacier ice",
+        "crop_feasibility": {
+          "source_width": 1280,
+          "source_height": 720,
+          "crop_width_px": 389.4,
+          "crop_height_px": 692.3,
+          "upscale_factor": 2.773,
+          "feasible": true,
+          "warnings": [
+            "Effective upscale factor (2.77x) exceeds crisp HD target (2.35x)."
+          ]
+        }
+      },
+      {
+        "sid": "S03",
+        "start_s": 9.2,
+        "end_s": 13.0333,
+        "duration_s": 3.833,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.5,
+          "ideal_duration_s": 4.0,
+          "max_recommended_s": 4.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "close_up",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": false,
+            "spoken_word_count": 7
+          }
+        },
+        "media_type": "photo",
+        "kind": "still_full",
+        "camera_perspective": "close_up",
+        "src_file": "bf_2010_12_14.jpg",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clean cut aligned to narration boundary",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.076,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "In 1911 early explorers blamed red surface algae",
+        "story_beat": "Crimson Blood Falls outflow staining white glacier ice",
+        "crop_feasibility": {
+          "source_width": 4160,
+          "source_height": 2340,
+          "crop_width_px": 1265.6,
+          "crop_height_px": 2250.0,
+          "upscale_factor": 0.853,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S05",
+        "start_s": 13.0333,
+        "end_s": 23.9333,
+        "duration_s": 10.9,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.8,
+          "ideal_duration_s": 8.95,
+          "max_recommended_s": 11.35,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "aerial",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 26
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "aerial",
+        "src_file": "nasa_pig_iceberg_2013.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clean cut aligned to narration boundary",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.001,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Chemical sampling decades later ruled algae out completely and pointed to dissolved iron Ice-penetrating radar traced the brine to hypersaline seawater trapped four hundred meters underground",
+        "story_beat": "Aerial radar survey over fractured Antarctic glacier ice",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 584.1,
+          "crop_height_px": 1038.5,
+          "upscale_factor": 1.849,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S06",
+        "start_s": 23.9333,
+        "end_s": 28.4333,
+        "duration_s": 4.5,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.5,
+          "ideal_duration_s": 4.0,
+          "max_recommended_s": 4.5,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "aerial",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": false,
+            "spoken_word_count": 15
+          }
+        },
+        "media_type": "photo",
+        "kind": "still_full",
+        "camera_perspective": "aerial",
+        "src_file": "bf_aerial_2013.jpg",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clean cut aligned to narration boundary",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.011,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "High salt content lowers its freezing point and dissolved iron rusts red when it meets",
+        "story_beat": "Taylor Glacier valley and iron brine terminus",
+        "crop_feasibility": {
+          "source_width": 3008,
+          "source_height": 2000,
+          "crop_width_px": 1081.7,
+          "crop_height_px": 1923.1,
+          "upscale_factor": 0.998,
+          "feasible": true,
+          "warnings": []
+        }
+      },
+      {
+        "sid": "S07",
+        "start_s": 28.4333,
+        "end_s": 37.0667,
+        "duration_s": 8.633,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.8,
+          "ideal_duration_s": 6.87,
+          "max_recommended_s": 9.3,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 20
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "nasa_m12666_nansen_scientists_ice.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Clean cut aligned to narration boundary",
+        "cut_speech_boundary_aligned": false,
+        "nearest_speech_boundary_s": 0.519,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "air Researchers are still studying how completely sealed those deep microbes remain yet they survive in total darkness without oxygen",
+        "story_beat": "Antarctic researchers continuing polar field measurements",
+        "crop_feasibility": {
+          "source_width": 1280,
+          "source_height": 720,
+          "crop_width_px": 389.4,
+          "crop_height_px": 692.3,
+          "upscale_factor": 2.773,
+          "feasible": true,
+          "warnings": [
+            "Effective upscale factor (2.77x) exceeds crisp HD target (2.35x)."
+          ]
+        }
+      }
+    ]
+  },
+  "visual_evidence_breakdown": {
+    "total_shots": 5,
+    "moving_footage_s": 28.733,
+    "moving_footage_pct": 77.52,
+    "still_photography_s": 8.333,
+    "still_photography_pct": 22.48,
+    "human_interaction_shots": 2,
+    "human_interaction_s": 17.833,
+    "human_interaction_pct": 48.11,
+    "real_imagery_and_footage_s": 37.067,
+    "real_imagery_and_footage_pct": 100.0,
+    "illustrative_diagram_s": 0,
+    "illustrative_diagram_pct": 0.0,
+    "meets_real_target": true,
+    "meets_moving_video_target": true
+  },
+  "editorial_formula_qc": {
+    "first_word_start_s": 0.1,
+    "hook_within_limit": true,
+    "layer2_pivot_seg_id": "N03",
+    "scientific_caveat_seg_id": "N04",
+    "caveat_explicitly_stated": true,
+    "all_passed": true
+  },
+  "full_canvas_qc": {
+    "audited_shots": 5,
+    "suspicious_shots_count": 0,
+    "suspicious_shots": [],
+    "all_full_canvas_pass": true,
+    "shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "sample_t_s": 4.6,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.86,
+        "right_inset_spike_ratio": 2.43,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S03",
+        "kind": "still_full",
+        "sample_t_s": 11.12,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.65,
+        "right_inset_spike_ratio": 0.9,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S05",
+        "kind": "video_full",
+        "sample_t_s": 18.48,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.93,
+        "right_inset_spike_ratio": 0.95,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S06",
+        "kind": "still_full",
+        "sample_t_s": 26.18,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.98,
+        "right_inset_spike_ratio": 1.04,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S07",
+        "kind": "video_full",
+        "sample_t_s": 32.75,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.13,
+        "right_inset_spike_ratio": 1.1,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      }
+    ]
+  },
+  "overlay_cleanliness_qc": {
+    "style_profile": "scientific_investigation",
+    "scale_rings_rendered": 0,
+    "locator_huds_rendered": 0,
+    "source_banners_rendered": 0,
+    "callout_badges_rendered": 0,
+    "opening_cover_card_burned": false,
+    "closing_credit_burned": false,
+    "minimal_context_notes_used": [],
+    "violations": [],
+    "clean_documentary_pass": true
+  },
+  "protected_projects_qc": {
+    "checked_projects": {
+      "blood-falls-v3-documentary": {
+        "mp4_exists": true,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "brine-pools-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "day-in-the-life-of-an-astronaut": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "fermi-paradox-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "forbidden-zones-earth-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "gemstone-mine-secrets-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "how-high-could-you-jump-on-other-planets": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "lava-cave-gold-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "mars-helicopter-1-percent-air": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "unreal-places-earth-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      },
+      "venus-hotter-than-mercury": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": false
+      }
+    },
+    "all_intact": false
+  },
+  "wcag_contrast_qc": {
+    "subtitle_style": "scientific_plain",
+    "emphasis_mode": "color_accent",
+    "backdrop_worst_case_rgb": [
+      240,
+      245,
+      250
+    ],
+    "caption_white_contrast_ratio": 12.07,
+    "caption_gold_contrast_ratio": 9.34,
+    "all_wcag_aaa_pass": true
+  },
+  "viral_anti_ai_qc": {
+    "anti_ai_script_pass": true,
+    "llm_cliche_hits": 0,
+    "jargon_cluster_hits": 0,
+    "ending_tail_pause_s": 0.42,
+    "first_real_motion_start_s": 0.0,
+    "opening_motion_pass": true,
+    "diegetic_nat_sound_active": true,
+    "audible_location_bed_pass": true,
+    "subtitle_style": "scientific_plain",
+    "filmic_color_grade_enabled": true,
+    "all_viral_anti_ai_pass": true
+  },
+  "thumbnail_qc": {
+    "thumbnail_jpg_bytes": 1295795,
+    "under_2mb": true,
+    "width": 1080,
+    "height": 1920,
+    "dimensions_9x16": true,
+    "text_mode": "cinema_hook",
+    "frame0_vs_thumbnail_mae_rgb": 66.248,
+    "cover_variants_exported": 1,
+    "concepts_exported": 2,
+    "concepts_comparison_sheet_exists": true,
+    "preview_sheet_exists": true
+  },
+  "motion_smoothness_qc": {
+    "sampled_shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "min_frame_delta_luma": 2.2812,
+        "median_frame_delta_luma": 4.4712,
+        "max_to_median_ratio": 1.13,
+        "smooth": true
+      },
+      {
+        "sid": "S03",
+        "kind": "still_full",
+        "min_frame_delta_luma": 0.7437,
+        "median_frame_delta_luma": 0.8153,
+        "max_to_median_ratio": 1.012,
+        "smooth": true
+      },
+      {
+        "sid": "S05",
+        "kind": "video_full",
+        "min_frame_delta_luma": 0.4493,
+        "median_frame_delta_luma": 0.5677,
+        "max_to_median_ratio": 1.223,
+        "smooth": true
+      },
+      {
+        "sid": "S06",
+        "kind": "still_full",
+        "min_frame_delta_luma": 0.9736,
+        "median_frame_delta_luma": 1.1675,
+        "max_to_median_ratio": 1.065,
+        "smooth": true
+      }
+    ],
+    "worst_jump_ratio": 1.223,
+    "all_smooth": true
+  },
+  "subtitles_qc": {
+    "cue_count": 18,
+    "max_burned_lines_per_cue": 2,
+    "raw_word_match_ratio": 0.973,
+    "normalized_word_match_ratio": 1.0,
+    "normalized_diffs": [],
+    "cue_start_vs_whisper_offset_s": {
+      "median": 0.015,
+      "p95_abs": 0.178,
+      "max_abs": 0.492
+    }
+  },
+  "licensing_register_qc": {
+    "source_register_csv_exists": true,
+    "source_register_md_exists": true,
+    "registered_assets_count": 4
+  },
+  "narrative_and_visual_intelligence_qc": {
+    "momentum_pass": true,
+    "momentum_error_count": 0,
+    "momentum_warning_count": 1,
+    "hook_candidates_count": 1,
+    "recommended_hook_id": "H01",
+    "recommended_hook_score": 9.06,
+    "mean_visual_weighted_score": 0.952,
+    "visual_mismatch_count": 0,
+    "all_shots_eligible": true
+  },
+  "voice_studio_qc": {
+    "voice_input_mode": "directed_tts",
+    "voice_direction_profile": "scientific_authority",
+    "voice_identity": "en-GB-RyanNeural",
+    "sentence_count": 7,
+    "approval_lock_present": false,
+    "approval_lock_synchronized": false
+  },
+  "audio_5layer_health_qc": {
+    "scene_audio_profile": "minimal_investigation",
+    "stems_exported_count": 5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "loudness_range_lra_lu": 1.6,
+    "speech_crest_factor_db": 14.5,
+    "natural_dynamics_pass": true,
+    "all_audio_health_pass": true
+  },
+  "creative_qa": {
+    "slug": "test-a-short-antarctic-brine",
+    "creative_qa_pass": true,
+    "severity_counts": {
+      "CRITICAL": 0,
+      "MAJOR": 0,
+      "MINOR": 0,
+      "INFO": 1
+    },
+    "voice_metrics": {
+      "speaking_rate_wpm": 147.3,
+      "max_boundary_rms_jump_db": 0.72,
+      "high_drama_segment_ratio": 0.25
+    },
+    "soundscape_metrics": {
+      "adaptive_audio_profile": "minimal_documentary",
+      "music_sections_count": 0,
+      "audible_ambience_sections_count": 1,
+      "approved_sfx_count": 1,
+      "rejected_sfx_for_silence_count": 2,
+      "voice_to_bed_margin_lu": 26.4
+    },
+    "editing_metrics": {
+      "final_scene_count": 5,
+      "mean_scene_duration_s": 7.41,
+      "sync_issues_count": 0
+    },
+    "issues": [
+      {
+        "severity": "INFO",
+        "pillar": "music_and_effect_qa",
+        "code": "intentional_no_music",
+        "message": "Episode intentionally uses zero background music so narration and authentic environment carry the story."
+      }
+    ]
+  },
+  "failed_gates": [
+    "10_protected_projects_safety"
+  ],
+  "failed_gates_count": 1,
+  "overall_studio_v6_pass": false,
+  "overall_studio_v7_pass": false
+}

@@ -144,14 +144,17 @@ def audit_viral_shorts_script(
             "shape rate/pitch across hook, twist, nuance, and payoff for natural human cadence."
         )
 
-    # 5. Seamless-loop tail pause audit (prevent 1.4s dead air at end of Short)
+    # 5. Seamless-loop tail pause audit (prevent dead air at end of Short; allow natural breath on longer docs)
     tail_pause_s = float(segs[-1].pause_after_s) if segs else 0.0
-    if tail_pause_s > style.viral_retention.max_ending_tail_pause_s:
+    est_dur_s = total_words / 2.55
+    is_short_loop_format = est_dur_s <= float(getattr(style.viral_retention, "loop_tail_max_episode_duration_s", 72.0))
+    eff_max_tail_s = style.viral_retention.max_ending_tail_pause_s if is_short_loop_format else max(1.10, style.viral_retention.max_ending_tail_pause_s)
+    if tail_pause_s > eff_max_tail_s:
         msg = (
-            f"Final segment pause_after_s ({tail_pause_s:.2f}s) exceeds seamless-loop cap "
-            f"({style.viral_retention.max_ending_tail_pause_s:.2f}s); dead air at the end triggers swipe-aways."
+            f"Final segment pause_after_s ({tail_pause_s:.2f}s) exceeds ending cadence cap "
+            f"({eff_max_tail_s:.2f}s); excessive dead air weakens final impression."
         )
-        if style.viral_retention.enforce_seamless_loop_tail:
+        if style.viral_retention.enforce_seamless_loop_tail and is_short_loop_format:
             errors.append(msg)
         else:
             warnings.append(msg)

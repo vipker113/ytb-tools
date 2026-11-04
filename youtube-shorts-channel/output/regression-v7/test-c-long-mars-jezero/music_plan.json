@@ -1,0 +1,160 @@
+{
+  "slug": "test-c-long-mars-jezero",
+  "adaptive_audio_profile": {
+    "selected_profile": "mystery_and_discovery",
+    "selection_reason": "Narrative mystery & reveal arc (8 mystery/discovery cues) favors restrained Mystery and Discovery.",
+    "script_metrics": {
+      "narration_duration_s": 134.367,
+      "segment_count": 10,
+      "sentence_count": 25,
+      "quantitative_fact_cues": 6,
+      "mystery_cues": 8,
+      "environmental_cues": 0,
+      "has_diegetic_field_audio": false
+    }
+  },
+  "emotional_progression": {
+    "opening_emotion": "Restrained curiosity and sense of place",
+    "curiosity_increase_at_s": 9.77,
+    "calm_authoritative_stretches": [
+      {
+        "seg_id": "N02",
+        "start_s": 9.77,
+        "end_s": 22.74
+      },
+      {
+        "seg_id": "N03",
+        "start_s": 23.19,
+        "end_s": 35.42
+      },
+      {
+        "seg_id": "N04",
+        "start_s": 35.87,
+        "end_s": 48.65
+      },
+      {
+        "seg_id": "N05",
+        "start_s": 49.1,
+        "end_s": 63.55
+      },
+      {
+        "seg_id": "N07",
+        "start_s": 79.91,
+        "end_s": 93.48
+      },
+      {
+        "seg_id": "N08",
+        "start_s": 93.94,
+        "end_s": 104.52
+      }
+    ],
+    "significant_reveal": {
+      "present": true,
+      "seg_id": "N09",
+      "start_s": 105.16
+    },
+    "requires_tension": true,
+    "less_prominent_windows": [
+      {
+        "reason": "Pre-reveal hush & central empirical explanation intelligibility",
+        "start_s": 104.01,
+        "end_s": 107.36
+      }
+    ],
+    "ending_approach": "Softer reflective resolution allowing the scientific takeaway to settle"
+  },
+  "music_present": true,
+  "music_sections_count": 3,
+  "structure_rationale": "Three narrative-aligned sections support the 134.4s long-form progression (Opening Curiosity -> Empirical Investigation -> Discovery & Reflective Resolution) with breathing room.",
+  "sections": [
+    {
+      "section_id": "M01",
+      "story_stage": "opening_hook_and_context",
+      "track_name": "mus_mysterious_undertow_cc0",
+      "start_s": 0.0,
+      "end_s": 56.434,
+      "base_gain_db": -23.5,
+      "fade_in_s": 0.8,
+      "fade_out_s": 1.25,
+      "purpose": "Subtle opening curiosity and geographic/scientific framing"
+    },
+    {
+      "section_id": "M02",
+      "story_stage": "scientific_investigation_and_discovery",
+      "track_name": "mus_discovery_ascent_cc0",
+      "start_s": 57.084,
+      "end_s": 116.367,
+      "base_gain_db": -22.0,
+      "fade_in_s": 1.3,
+      "fade_out_s": 1.35,
+      "purpose": "Gradual harmonic opening supporting empirical escalation and discovery"
+    },
+    {
+      "section_id": "M03",
+      "story_stage": "caveat_and_reflective_resolution",
+      "track_name": "mus_reflective_piano_settle_cc0",
+      "start_s": 116.817,
+      "end_s": 134.367,
+      "base_gain_db": -24.0,
+      "fade_in_s": 1.25,
+      "fade_out_s": 1.6,
+      "purpose": "Softer felt-piano resolution allowing scientific caveats and closing thought to settle"
+    }
+  ],
+  "silence_windows": [
+    {
+      "start_s": 103.91,
+      "end_s": 105.61,
+      "purpose": "Intentional musical hush before major scientific reveal"
+    }
+  ],
+  "musical_accents": [
+    {
+      "asset_name": "mus_reveal_harmonic_accent_cc0",
+      "time_s": 104.665,
+      "gain_db": -23.5,
+      "purpose": "Controlled harmonic bloom reinforcing central reveal (N09) without loud impact"
+    }
+  ],
+  "track_evaluations": [
+    {
+      "section_id": "M01",
+      "track_name": "mus_mysterious_undertow_cc0",
+      "emotional_appropriateness": "Subtle opening curiosity and geographic/scientific framing",
+      "tempo_bpm": 52,
+      "energy": "low",
+      "instrumentation": "Restrained Dorian modal low-register resonance (C2-G2-D3)",
+      "frequency_range": "65-480 Hz (below primary vocal formants)",
+      "narration_compatibility": "320-2850 Hz vocal pocket carved + dynamic speech & important-phrase ducking",
+      "transition_alignment": "Snapped to verified inter-sentence speech boundary",
+      "available_duration_s": 28.0,
+      "commercial_license": "CC0 1.0 Public Domain Dedication (First-Party Original)"
+    },
+    {
+      "section_id": "M02",
+      "track_name": "mus_discovery_ascent_cc0",
+      "emotional_appropriateness": "Gradual harmonic opening supporting empirical escalation and discovery",
+      "tempo_bpm": 66,
+      "energy": "moderate",
+      "instrumentation": "Ascending warm major-sixth harmonic progression (D-F-G-A)",
+      "frequency_range": "73-760 Hz (vocal pocket carved)",
+      "narration_compatibility": "320-2850 Hz vocal pocket carved + dynamic speech & important-phrase ducking",
+      "transition_alignment": "Snapped to verified inter-sentence speech boundary",
+      "available_duration_s": 28.0,
+      "commercial_license": "CC0 1.0 Public Domain Dedication (First-Party Original)"
+    },
+    {
+      "section_id": "M03",
+      "track_name": "mus_reflective_piano_settle_cc0",
+      "emotional_appropriateness": "Softer felt-piano resolution allowing scientific caveats and closing thought to settle",
+      "tempo_bpm": 48,
+      "energy": "very_low",
+      "instrumentation": "Soft damped felt-piano fifths with long natural decay",
+      "frequency_range": "110-700 Hz (vocal pocket carved)",
+      "narration_compatibility": "320-2850 Hz vocal pocket carved + dynamic speech & important-phrase ducking",
+      "transition_alignment": "Snapped to verified inter-sentence speech boundary",
+      "available_duration_s": 28.0,
+      "commercial_license": "CC0 1.0 Public Domain Dedication (First-Party Original)"
+    }
+  ]
+}

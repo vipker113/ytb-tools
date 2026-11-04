@@ -1,0 +1,121 @@
+# Proof of Wonder — Studio v8.0 Directed Documentary Voice Script
+# Episode: deep-ocean-black-smokers-v8
+# Title: Why Blind Shrimp Swarm 360°C Underwater Chimneys
+# Production Profile: deep_ocean_exploration | Voice Preset: mysterious_discovery (en-GB-RyanNeural / ElevenLabs)
+
+[SEG: N01]
+"Two miles underwater, black chimneys blast three-hundred-sixty-degree water—without boiling into steam."
+
+[DELIVERY: HOOK]
+[TONE: quiet_tension]
+[INTENSITY: 0.72]
+[PITCH DIRECTION: falling]
+[RHYTHM: crisp]
+[EMPHASIS: "Two miles underwater", "three-hundred-sixty-degree water", "without boiling"]
+[PAUSE AFTER: 380ms]
+
+[SEG: N02]
+"Along the Mid-Atlantic Ridge, three hundred sixty atmospheres of crushing ocean weight trap superheated water as liquid."
+
+[DELIVERY: CALM EXPLANATION]
+[TONE: calm_clarity]
+[INTENSITY: 0.48]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "three hundred sixty atmospheres", "trap superheated water"]
+[PAUSE AFTER: 320ms]
+
+"When robotic arms thrust a steel thermometer inside, that scalding fluid hits two-degree seawater—freezing dissolved metals into towering black chimneys."
+
+[DELIVERY: MEASURED EVIDENCE]
+[TONE: grounded_authority]
+[INTENSITY: 0.56]
+[PITCH DIRECTION: falling]
+[RHYTHM: steady]
+[EMPHASIS: "steel thermometer", "two-degree seawater", "towering black chimneys"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N03]
+"You would expect bare, sterile rock around poison that hot."
+
+[DELIVERY: CALM EXPLANATION]
+[TONE: quiet_wonder]
+[INTENSITY: 0.44]
+[PITCH DIRECTION: steady]
+[RHYTHM: slow]
+[EMPHASIS: "bare, sterile rock"]
+[PAUSE AFTER: 340ms]
+
+"Instead, the chimney walls are moving."
+
+[DELIVERY: SURPRISED BUT CONTROLLED]
+[TONE: hushed_reveal]
+[INTENSITY: 0.68]
+[PITCH DIRECTION: falling]
+[RHYTHM: deliberate]
+[EMPHASIS: "chimney walls are moving"]
+[PAUSE AFTER: 440ms]
+
+[SEG: N04]
+"Up to twenty-five hundred pale shrimp pack every square meter in total darkness—centimeters from water hot enough to melt lead."
+
+[DELIVERY: MEASURED EVIDENCE]
+[TONE: focused_awe]
+[INTENSITY: 0.58]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "twenty-five hundred pale shrimp", "melt lead"]
+[PAUSE AFTER: 340ms]
+
+"Look closely, and none of them have eyeballs."
+
+[DELIVERY: MYSTERIOUS]
+[TONE: quiet_intrigue]
+[INTENSITY: 0.54]
+[PITCH DIRECTION: falling]
+[RHYTHM: slow]
+[EMPHASIS: "none of them", "eyeballs"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N05]
+"Across their backs sits a white light-sensing organ that detects the faint infrared glow of scalding vents."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[TONE: clear_precision]
+[INTENSITY: 0.52]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "white light-sensing organ", "faint infrared glow"]
+[PAUSE AFTER: 300ms]
+
+"It keeps them inside a narrow 20-degree safety zone—close enough to farm sulfur-eating bacteria in their gills without cooking alive."
+
+[DELIVERY: CINEMATIC REVEAL]
+[TONE: controlled_marvel]
+[INTENSITY: 0.66]
+[PITCH DIRECTION: falling]
+[RHYTHM: deliberate]
+[EMPHASIS: "narrow 20-degree safety zone", "sulfur-eating bacteria", "without cooking alive"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N06]
+"Since 1977, researchers still debate whether Earth's first cells sparked in deep vents or shallow surface pools."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[TONE: balanced_nuance]
+[INTENSITY: 0.46]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "Since 1977", "deep vents", "shallow surface pools"]
+[PAUSE AFTER: 320ms]
+
+"Either way, these blind shrimp prove whole ecosystems can thrive without sunlight—making underwater chimneys a prime target in Europa's hidden ocean."
+
+[DELIVERY: EMOTIONAL REFLECTION]
+[TONE: resonant_payoff]
+[INTENSITY: 0.60]
+[PITCH DIRECTION: falling]
+[RHYTHM: unhurried]
+[PRONOUNCE: "Europa's"="Yoo-roh-puhz"]
+[EMPHASIS: "thrive without sunlight", "Europa's hidden ocean"]
+[PAUSE AFTER: 360ms]

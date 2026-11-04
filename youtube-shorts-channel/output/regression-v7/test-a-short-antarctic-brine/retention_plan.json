@@ -1,0 +1,61 @@
+{
+  "slug": "test-a-short-antarctic-brine",
+  "style_profile": "scientific_investigation",
+  "target_duration_range_s": [
+    20.0,
+    240.0
+  ],
+  "planned_duration_s": 36.64,
+  "timing_source": "word_timings",
+  "rows": [
+    {
+      "time": "0.1\u20139.0s",
+      "start_s": 0.1,
+      "end_s": 8.99,
+      "seg_id": "N01",
+      "narrative_beat": "opening_hook",
+      "viewer_question": "Why is red liquid water pouring out of subzero Antarctic ice?",
+      "new_information": "A subzero crimson outflow emerges unfrozen from Taylor Glacier.",
+      "visual_reveal": "S01: NASA field scientists traversing wind-swept Antarctic glacier ice sh; S02: Scientists walking across Antarctic glacier ice sheet",
+      "emotional_direction": "Immediate visual shock & curiosity",
+      "retention_purpose": "Stop scroll within 1-3s with a verified anomaly and clear story promise"
+    },
+    {
+      "time": "9.4\u201317.9s",
+      "start_s": 9.37,
+      "end_s": 17.93,
+      "seg_id": "N02",
+      "narrative_beat": "curiosity_gap",
+      "viewer_question": "Where does dissolved iron come from inside frozen ice?",
+      "new_information": "Water chemistry disproved the surface-algae hypothesis.",
+      "visual_reveal": "S03: Close view of rust-red iron brine emerging from Taylor Glacier; S04: Decorative filler establishing shot",
+      "emotional_direction": "Intrigue & puzzled anticipation",
+      "retention_purpose": "Establish the central 'how/why' question without giving away the deeper layer"
+    },
+    {
+      "time": "18.5\u201328.9s",
+      "start_s": 18.48,
+      "end_s": 28.85,
+      "seg_id": "N03",
+      "narrative_beat": "payoff",
+      "viewer_question": "How does the underground brine stay liquid and turn red?",
+      "new_information": "Extreme salinity keeps the 400-meter-deep brine liquid until iron oxidizes in air.",
+      "visual_reveal": "S05: NASA airborne survey flying over deep Antarctic glacier fractures; S06: Repeated Blood Falls photo seeded to verify Replace with aerial glac",
+      "emotional_direction": "Intellectual clarity & scientific respect",
+      "retention_purpose": "Resolve the core mystery honestly while qualifying what remains under study"
+    },
+    {
+      "time": "29.3\u201336.6s",
+      "start_s": 29.27,
+      "end_s": 36.64,
+      "seg_id": "N04",
+      "narrative_beat": "final_impression",
+      "viewer_question": "What remains under scientific investigation?",
+      "new_information": "Exact hydrological isolation remains under active study while chemosynthetic life persists.",
+      "visual_reveal": "S07: Field researchers inspecting instruments on East Antarctic ice",
+      "emotional_direction": "Lasting awe & seamless reflective resonance",
+      "retention_purpose": "Leave a memorable scientific insight without weakening the ending via generic CTAs"
+    }
+  ],
+  "markdown_table": "# Audience Retention Plan \u2014 `test-a-short-antarctic-brine` (`36.6s` Target/Actual Runtime)\n\n- **Production Profile:** `scientific_investigation`\n- **Configured Target Window:** `20\u2013240s`\n- **Timing Basis:** `Authoritative Narration Master (word_timings.json)`\n\n| Time | Narrative beat | Viewer question | New information | Visual reveal | Emotional direction | Retention purpose |\n|---|---|---|---|---|---|---|\n| `0.1\u20139.0s` | **opening_hook** (`N01`) | Why is red liquid water pouring out of subzero Antarctic ice? | A subzero crimson outflow emerges unfrozen from Taylor Glacier. | S01: NASA field scientists traversing wind-swept Antarctic glacier ice sh; S02: Scientists walking across Antarctic glacier ice sheet | Immediate visual shock & curiosity | Stop scroll within 1-3s with a verified anomaly and clear story promise |\n| `9.4\u201317.9s` | **curiosity_gap** (`N02`) | Where does dissolved iron come from inside frozen ice? | Water chemistry disproved the surface-algae hypothesis. | S03: Close view of rust-red iron brine emerging from Taylor Glacier; S04: Decorative filler establishing shot | Intrigue & puzzled anticipation | Establish the central 'how/why' question without giving away the deeper layer |\n| `18.5\u201328.9s` | **payoff** (`N03`) | How does the underground brine stay liquid and turn red? | Extreme salinity keeps the 400-meter-deep brine liquid until iron oxidizes in air. | S05: NASA airborne survey flying over deep Antarctic glacier fractures; S06: Repeated Blood Falls photo seeded to verify Replace with aerial glac | Intellectual clarity & scientific respect | Resolve the core mystery honestly while qualifying what remains under study |\n| `29.3\u201336.6s` | **final_impression** (`N04`) | What remains under scientific investigation? | Exact hydrological isolation remains under active study while chemosynthetic life persists. | S07: Field researchers inspecting instruments on East Antarctic ice | Lasting awe & seamless reflective resonance | Leave a memorable scientific insight without weakening the ending via generic CTAs |\n"
+}

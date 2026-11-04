@@ -1,0 +1,73 @@
+{
+  "slug": "test-b-medium-glacier-aquifer",
+  "ambience_sections_total": 3,
+  "audible_ambience_sections_count": 3,
+  "silent_or_vacuum_sections_count": 0,
+  "continuous_across_connected_scenes": true,
+  "sections": [
+    {
+      "ambience_id": "A01",
+      "environment": "polar_glacial",
+      "label": "Restrained Antarctic katabatic air floor",
+      "start_s": 0.0,
+      "end_s": 56.7,
+      "duration_s": 56.7,
+      "shot_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S06",
+        "S07"
+      ],
+      "audible": true,
+      "band_hz": [
+        115.0,
+        480.0
+      ],
+      "target_gain_db": -27.5,
+      "crossfade_s": 0.45,
+      "authentic_field_bed_file": null,
+      "provenance": "restrained_acoustic_room_air_tone"
+    },
+    {
+      "ambience_id": "A02",
+      "environment": "deep_ocean",
+      "label": "Deep-water hydrophone pressure floor",
+      "start_s": 56.7,
+      "end_s": 68.667,
+      "duration_s": 11.967,
+      "shot_ids": [
+        "S08"
+      ],
+      "audible": true,
+      "band_hz": [
+        62.0,
+        290.0
+      ],
+      "target_gain_db": -26.5,
+      "crossfade_s": 1.2,
+      "authentic_field_bed_file": null,
+      "provenance": "restrained_acoustic_room_air_tone"
+    },
+    {
+      "ambience_id": "A03",
+      "environment": "polar_glacial",
+      "label": "Restrained Antarctic katabatic air floor",
+      "start_s": 68.667,
+      "end_s": 81.067,
+      "duration_s": 12.4,
+      "shot_ids": [
+        "S09"
+      ],
+      "audible": true,
+      "band_hz": [
+        115.0,
+        480.0
+      ],
+      "target_gain_db": -27.5,
+      "crossfade_s": 1.2,
+      "authentic_field_bed_file": null,
+      "provenance": "restrained_acoustic_room_air_tone"
+    }
+  ]
+}
