@@ -24,4 +24,4 @@
 ## Detailed QA Findings
 | Severity | Pillar | Shot | Code | Message |
 |---|---|---|---|---|
-| **MAJOR** | `media_qa` | `S08` | `animated_still_disguised_as_video` | Shot S08 ('ifremer_biobaz_sampling_81111.webm') is a static image with artificial pan/zoom baked into MP4 (Artificial pan/zoom over static image detected (raw_diff=7.62, compensated_diff=2.76, ratio=0.36, p90_flow_res=0.43px).). |
+| **MAJOR** | `media_qa` | `S08` | `animated_still_disguised_as_video` | Shot S08 ('ifremer_biobaz_sampling_81111.webm') is a static image with artificial pan/zoom baked into MP4 (Artificial pan/zoom over static image detected (raw_diff=5.97, compensated_diff=2.38, ratio=0.40, p90_flow_res=0.19px).). |

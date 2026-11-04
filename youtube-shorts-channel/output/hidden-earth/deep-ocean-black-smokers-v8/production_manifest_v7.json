@@ -1,7 +1,7 @@
 {
   "schema_name": "proof_of_wonder_production_manifest",
   "manifest_version": "8.0",
-  "generated_at_utc": "2026-11-04T11:20:07.971546+00:00",
+  "generated_at_utc": "2026-11-04T11:42:55.108865+00:00",
   "slug": "deep-ocean-black-smokers-v8",
   "channel_name": "Proof of Wonder",
   "category_playlist": "Hidden Earth",
@@ -677,12 +677,12 @@
     "benchmarks": {
       "slug": "deep-ocean-black-smokers-v8",
       "encode_mode": "master",
-      "shots_render_or_cache_s": 0.019,
-      "timeline_assembly_and_mux_s": 107.68,
-      "thumbnail_concepts_s": 5.606,
-      "total_render_master_s": 113.575,
+      "shots_render_or_cache_s": 0.018,
+      "timeline_assembly_and_mux_s": 119.061,
+      "thumbnail_concepts_s": 5.422,
+      "total_render_master_s": 124.762,
       "rendered_frames": 2064,
-      "effective_render_fps": 18.17
+      "effective_render_fps": 16.54
     }
   },
   "qa_results": {

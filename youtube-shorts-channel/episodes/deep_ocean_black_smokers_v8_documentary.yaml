@@ -477,7 +477,7 @@ shots:
     end_s: 52.616
     kind: "video_full"
     src_file: "ifremer_biobaz_sampling_81111.webm"
-    src_in: 12.0
+    src_in: 5.0
     source_media_class: "REAL_VIDEO_ACTION"
     visible_action: "ROV BioBaz survey across dense sulfur-oxidizing mussel and shrimp beds in the 20-degree hydrothermal mixing zone"
     progression_dimension: "new_process_stage"
@@ -530,6 +530,7 @@ shots:
     shadow_lift: 0.08
     crop_rationale: "Frames both the active ROV sampling claw and the thriving sunlight-free chemosynthetic community."
     transition_in: "dissolve"
+    dissolve_duration_s: 0.60
     transition_reason: "Single restrained reflective dissolve on 0.52s pause into the broader 1977 origin-of-life debate."
     is_real_evidence: true
     has_human_interaction: true

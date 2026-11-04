@@ -32,13 +32,13 @@
 ## Render & Production Benchmarks
 
 - **Encode Mode:** `master`
-- **Shots Render / Cache Pass:** `0.019s`
-- **Timeline Assembly & Subtitle Mux:** `107.68s`
-- **Multi-Concept Thumbnail Studio:** `5.606s`
-- **Total Master Render Time:** `113.575s` (`18.17 fps` effective)
+- **Shots Render / Cache Pass:** `0.018s`
+- **Timeline Assembly & Subtitle Mux:** `119.061s`
+- **Multi-Concept Thumbnail Studio:** `5.422s`
+- **Total Master Render Time:** `124.762s` (`16.54 fps` effective)
 
 ## Shot-Planner Notes & Warnings
 
-- [S08:ifremer_biobaz_sampling_81111.webm] Reclassified from video to 'ANIMATED_STILL' (Artificial pan/zoom over static image detected (raw_diff=7.64, compensated_diff=2.78, ratio=0.36, p90_flow_res=0.43px).).
+- [S08:ifremer_biobaz_sampling_81111.webm] Reclassified from video to 'ANIMATED_STILL' (Artificial pan/zoom over static image detected (raw_diff=6.37, compensated_diff=2.39, ratio=0.38, p90_flow_res=0.19px).).
 - [S09] Dissolve duration 0.00s outside recommended 0.45–0.95s.
 - Moving footage ratio is 88.3% (goal >= 90% where authentic moving material is available).
