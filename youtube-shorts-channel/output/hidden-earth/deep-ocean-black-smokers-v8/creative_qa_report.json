@@ -1,0 +1,206 @@
+{
+  "slug": "deep-ocean-black-smokers-v8",
+  "creative_qa_pass": false,
+  "six_pillar_qa": {
+    "slug": "deep-ocean-black-smokers-v8",
+    "technical_approval": true,
+    "creative_approval": false,
+    "overall_release_approval": false,
+    "visual_coverage_metrics": {
+      "genuine_moving_footage_pct": 88.32,
+      "meaningful_action_footage_pct": 88.32,
+      "establishing_footage_pct": 0.0,
+      "real_time_lapse_pct": 0.0,
+      "static_image_pct": 11.68,
+      "animated_still_pct": 11.68,
+      "scientific_visualization_pct": 0.0
+    },
+    "canonical_asset_summary": {
+      "distinct_canonical_assets": 10,
+      "raw_unique_filenames": 10,
+      "meaningful_progression_pct": 100.0
+    },
+    "resolution_honesty_records": [
+      {
+        "sid": "S01",
+        "src_file": "ifremer_active_black_smoker_81313.webm",
+        "native_resolution": "1920x1080",
+        "cropped_9x16_px": "533x947",
+        "upscale_factor": 2.027,
+        "is_native_full_hd_vertical": false
+      },
+      {
+        "sid": "S02",
+        "src_file": "ifremer_dive_1700m_29848.webm",
+        "native_resolution": "3840x1920",
+        "cropped_9x16_px": "964x1714",
+        "upscale_factor": 1.12,
+        "is_native_full_hd_vertical": false
+      },
+      {
+        "sid": "S03",
+        "src_file": "ifremer_rov_temp_probe_81312.webm",
+        "native_resolution": "1920x1080",
+        "cropped_9x16_px": "533x947",
+        "upscale_factor": 2.027,
+        "is_native_full_hd_vertical": false
+      },
+      {
+        "sid": "S04",
+        "src_file": "ifremer_tour_eiffel_chimney_81190.webm",
+        "native_resolution": "1920x1080",
+        "cropped_9x16_px": "533x947",
+        "upscale_factor": 2.027,
+        "is_native_full_hd_vertical": false
+      },
+      {
+        "sid": "S05",
+        "src_file": "ifremer_tag_snakepit_shrimp_81166.webm",
+        "native_resolution": "1920x1080",
+        "cropped_9x16_px": "533x947",
+        "upscale_factor": 2.027,
+        "is_native_full_hd_vertical": false
+      },
+      {
+        "sid": "S06",
+        "src_file": "ifremer_rimicaris_swarm_81103.webm",
+        "native_resolution": "1920x1080",
+        "cropped_9x16_px": "528x939",
+        "upscale_factor": 2.044,
+        "is_native_full_hd_vertical": false
+      },
+      {
+        "sid": "S07",
+        "src_file": "ifremer_smoove_shrimp_closeup_81317.webm",
+        "native_resolution": "1920x1080",
+        "cropped_9x16_px": "524x931",
+        "upscale_factor": 2.062,
+        "is_native_full_hd_vertical": false
+      },
+      {
+        "sid": "S08",
+        "src_file": "ifremer_biobaz_sampling_81111.webm",
+        "native_resolution": "1920x1080",
+        "cropped_9x16_px": "538x956",
+        "upscale_factor": 2.009,
+        "is_native_full_hd_vertical": false
+      },
+      {
+        "sid": "S09",
+        "src_file": "ifremer_lucky_strike_fauna_88699.webm",
+        "native_resolution": "1920x1080",
+        "cropped_9x16_px": "533x947",
+        "upscale_factor": 2.027,
+        "is_native_full_hd_vertical": false
+      },
+      {
+        "sid": "S10",
+        "src_file": "ifremer_chimney_full_spire_81315.webm",
+        "native_resolution": "1920x1080",
+        "cropped_9x16_px": "533x947",
+        "upscale_factor": 2.027,
+        "is_native_full_hd_vertical": false
+      }
+    ],
+    "technical_details": {
+      "target_resolution": "1080x1920",
+      "target_aspect_ratio": "9:16",
+      "target_fps": 30,
+      "target_video_codec": "libx264",
+      "target_audio_codec": "aac",
+      "mode": "post_render_mp4",
+      "encoded_width": 1080,
+      "encoded_height": 1920,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "r_frame_rate": "30/1",
+      "av_sync_drift_s": 0.0
+    },
+    "pillars": {
+      "media_qa": {
+        "passed": false,
+        "critical_count": 0,
+        "major_count": 1,
+        "minor_count": 0,
+        "issues": [
+          {
+            "severity": "MAJOR",
+            "pillar": "media_qa",
+            "code": "animated_still_disguised_as_video",
+            "sid": "S08",
+            "message": "Shot S08 ('ifremer_biobaz_sampling_81111.webm') is a static image with artificial pan/zoom baked into MP4 (Artificial pan/zoom over static image detected (raw_diff=7.62, compensated_diff=2.76, ratio=0.36, p90_flow_res=0.43px).)."
+          }
+        ]
+      },
+      "semantic_qa": {
+        "passed": true,
+        "critical_count": 0,
+        "major_count": 0,
+        "minor_count": 0,
+        "issues": []
+      },
+      "repetition_qa": {
+        "passed": true,
+        "critical_count": 0,
+        "major_count": 0,
+        "minor_count": 0,
+        "issues": []
+      },
+      "timeline_qa": {
+        "passed": true,
+        "critical_count": 0,
+        "major_count": 0,
+        "minor_count": 0,
+        "issues": []
+      },
+      "technical_qa": {
+        "passed": true,
+        "critical_count": 0,
+        "major_count": 0,
+        "minor_count": 0,
+        "issues": []
+      },
+      "creative_qa": {
+        "passed": true,
+        "critical_count": 0,
+        "major_count": 0,
+        "minor_count": 0,
+        "issues": []
+      }
+    },
+    "issues": [
+      {
+        "severity": "MAJOR",
+        "pillar": "media_qa",
+        "code": "animated_still_disguised_as_video",
+        "sid": "S08",
+        "message": "Shot S08 ('ifremer_biobaz_sampling_81111.webm') is a static image with artificial pan/zoom baked into MP4 (Artificial pan/zoom over static image detected (raw_diff=7.62, compensated_diff=2.76, ratio=0.36, p90_flow_res=0.43px).)."
+      }
+    ]
+  },
+  "severity_counts": {
+    "CRITICAL": 0,
+    "MAJOR": 0,
+    "MINOR": 0,
+    "INFO": 0
+  },
+  "voice_metrics": {
+    "speaking_rate_wpm": 149.1,
+    "max_boundary_rms_jump_db": 0.21,
+    "high_drama_segment_ratio": 0.5
+  },
+  "soundscape_metrics": {
+    "adaptive_audio_profile": "immersive_exploration",
+    "music_sections_count": 2,
+    "audible_ambience_sections_count": 5,
+    "approved_sfx_count": 1,
+    "rejected_sfx_for_silence_count": 1,
+    "voice_to_bed_margin_lu": 25.8
+  },
+  "editing_metrics": {
+    "final_scene_count": 10,
+    "mean_scene_duration_s": 6.88,
+    "sync_issues_count": 0
+  },
+  "issues": []
+}

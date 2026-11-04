@@ -1,0 +1,1681 @@
+{
+  "style_profile": "deep_ocean_exploration",
+  "ffprobe": {
+    "duration_s": 68.8,
+    "within_target_window": true,
+    "adaptive_duration_mode": true,
+    "exact_frame_match": true,
+    "size_bytes": 241262224,
+    "size_mb": 230.09,
+    "video_codec": "h264",
+    "profile": "High",
+    "width": 1080,
+    "height": 1920,
+    "dimensions_exact": true,
+    "r_frame_rate": "30/1",
+    "avg_frame_rate": "30/1",
+    "nb_frames": 2064,
+    "pix_fmt": "yuv420p",
+    "color_space": "bt709",
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "black_segments": [],
+  "loudness": {
+    "integrated_LUFS": -16.0,
+    "LRA_LU": 1.9,
+    "true_peak_dBTP": -1.4,
+    "narration_stem_LUFS": -16.0,
+    "ambience_and_sfx_stem_LUFS": -41.8,
+    "voice_to_ambience_margin_LU": 25.8
+  },
+  "shot_plan_and_pacing_qc": {
+    "style_profile": "deep_ocean_exploration",
+    "total_duration_s": 68.8,
+    "shot_count": 10,
+    "distinct_source_assets_count": 10,
+    "raw_unique_filenames_count": 10,
+    "distinct_perspectives": [
+      "close_up",
+      "macro",
+      "medium",
+      "scientific_fieldwork"
+    ],
+    "distinct_perspectives_count": 4,
+    "first_real_motion_start_s": 0.0,
+    "viral_script_audit": {
+      "total_words": 172,
+      "hook_first_sentence_words": 12,
+      "max_sentence_words": 22,
+      "llm_cliche_hits": 0,
+      "jargon_cluster_hits": 0,
+      "flat_prosody_ratio": 0.0,
+      "ending_tail_pause_s": 0.34,
+      "anti_ai_script_pass": true,
+      "errors": [],
+      "warnings": []
+    },
+    "moving_footage_s": 60.767,
+    "moving_footage_pct": 88.32,
+    "meets_moving_footage_goal": true,
+    "still_photography_s": 8.033,
+    "still_photography_pct": 11.68,
+    "human_interaction_shots": 4,
+    "human_interaction_s": 27.666,
+    "human_interaction_pct": 40.21,
+    "illustrative_diagram_s": 0.0,
+    "illustrative_diagram_pct": 0.0,
+    "authentic_visual_pct": 100.0,
+    "visual_coverage_v8": {
+      "total_timeline_duration_s": 68.8,
+      "genuine_moving_footage_s": 60.767,
+      "genuine_moving_footage_ratio": 0.8832,
+      "genuine_moving_footage_pct": 88.32,
+      "meaningful_action_footage_s": 60.767,
+      "meaningful_action_footage_ratio": 0.8832,
+      "meaningful_action_footage_pct": 88.32,
+      "establishing_footage_s": 0.0,
+      "establishing_footage_ratio": 0.0,
+      "establishing_footage_pct": 0.0,
+      "real_time_lapse_s": 0.0,
+      "real_time_lapse_ratio": 0.0,
+      "real_time_lapse_pct": 0.0,
+      "static_image_s": 8.033,
+      "static_image_ratio": 0.1168,
+      "static_image_pct": 11.68,
+      "animated_still_s": 8.033,
+      "animated_still_pct": 11.68,
+      "pure_still_photo_s": 0.0,
+      "scientific_image_s": 0.0,
+      "scientific_visualization_s": 0.0,
+      "scientific_visualization_ratio": 0.0,
+      "scientific_visualization_pct": 0.0,
+      "infographic_s": 0.0,
+      "real_animation_s": 0.0,
+      "ai_generated_s": 0.0,
+      "reenactment_s": 0.0,
+      "by_media_class_s": {
+        "REAL_VIDEO_ACTION": 60.767,
+        "REAL_VIDEO_ESTABLISHING": 0.0,
+        "REAL_TIME_LAPSE": 0.0,
+        "STILL_PHOTO": 0.0,
+        "ANIMATED_STILL": 8.033,
+        "SCIENTIFIC_IMAGE": 0.0,
+        "INFOGRAPHIC": 0.0,
+        "REAL_ANIMATION": 0.0,
+        "AI_GENERATED": 0.0,
+        "REENACTMENT": 0.0
+      },
+      "by_media_class_pct": {
+        "REAL_VIDEO_ACTION": 88.32,
+        "REAL_VIDEO_ESTABLISHING": 0.0,
+        "REAL_TIME_LAPSE": 0.0,
+        "STILL_PHOTO": 0.0,
+        "ANIMATED_STILL": 11.68,
+        "SCIENTIFIC_IMAGE": 0.0,
+        "INFOGRAPHIC": 0.0,
+        "REAL_ANIMATION": 0.0,
+        "AI_GENERATED": 0.0,
+        "REENACTMENT": 0.0
+      },
+      "shot_classifications": [
+        {
+          "sid": "S01",
+          "duration_s": 6.4,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 6.4
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 2.902,
+            "raw_median_diff": 2.872,
+            "affine_compensated_diff": 3.345,
+            "residual_to_raw_ratio": 1.165,
+            "p90_local_flow_residual_px": 3.112,
+            "independent_motion_patch_ratio": 0.167,
+            "flat_graphic_pixel_ratio": 0.276,
+            "grid_box_edge_score": 1.456,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=3.11px, indep_patches=17%)."
+          }
+        },
+        {
+          "sid": "S02",
+          "duration_s": 6.7333,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 6.7333
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 3840,
+            "height": 1920,
+            "raw_mean_diff": 0.824,
+            "raw_median_diff": 0.792,
+            "affine_compensated_diff": 0.782,
+            "residual_to_raw_ratio": 0.988,
+            "p90_local_flow_residual_px": 3.068,
+            "independent_motion_patch_ratio": 0.188,
+            "flat_graphic_pixel_ratio": 0.637,
+            "grid_box_edge_score": 3.7,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=3.07px, indep_patches=19%)."
+          }
+        },
+        {
+          "sid": "S03",
+          "duration_s": 5.8334,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 5.8334
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 0.962,
+            "raw_median_diff": 1.191,
+            "affine_compensated_diff": 1.685,
+            "residual_to_raw_ratio": 1.415,
+            "p90_local_flow_residual_px": 0.886,
+            "independent_motion_patch_ratio": 0.103,
+            "flat_graphic_pixel_ratio": 0.318,
+            "grid_box_edge_score": 2.568,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=0.89px, indep_patches=10%)."
+          }
+        },
+        {
+          "sid": "S04",
+          "duration_s": 6.8666,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 6.8666
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 1.626,
+            "raw_median_diff": 1.615,
+            "affine_compensated_diff": 1.361,
+            "residual_to_raw_ratio": 0.843,
+            "p90_local_flow_residual_px": 0.414,
+            "independent_motion_patch_ratio": 0.0,
+            "flat_graphic_pixel_ratio": 0.488,
+            "grid_box_edge_score": 1.858,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=0.41px, indep_patches=0%)."
+          }
+        },
+        {
+          "sid": "S05",
+          "duration_s": 7.2,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 7.2
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 3.172,
+            "raw_median_diff": 3.139,
+            "affine_compensated_diff": 2.262,
+            "residual_to_raw_ratio": 0.721,
+            "p90_local_flow_residual_px": 0.188,
+            "independent_motion_patch_ratio": 0.0,
+            "flat_graphic_pixel_ratio": 0.226,
+            "grid_box_edge_score": 1.776,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=0.19px, indep_patches=0%)."
+          }
+        },
+        {
+          "sid": "S06",
+          "duration_s": 5.7667,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 5.7667
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 10.336,
+            "raw_median_diff": 8.48,
+            "affine_compensated_diff": 7.439,
+            "residual_to_raw_ratio": 0.877,
+            "p90_local_flow_residual_px": 0.25,
+            "independent_motion_patch_ratio": 0.0,
+            "flat_graphic_pixel_ratio": 0.009,
+            "grid_box_edge_score": 1.205,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=0.25px, indep_patches=0%)."
+          }
+        },
+        {
+          "sid": "S07",
+          "duration_s": 5.8667,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 5.8667
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 2.897,
+            "raw_median_diff": 2.721,
+            "affine_compensated_diff": 2.964,
+            "residual_to_raw_ratio": 1.089,
+            "p90_local_flow_residual_px": 0.181,
+            "independent_motion_patch_ratio": 0.028,
+            "flat_graphic_pixel_ratio": 0.034,
+            "grid_box_edge_score": 1.346,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": false,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+            "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.18px)."
+          }
+        },
+        {
+          "sid": "S08",
+          "duration_s": 8.0333,
+          "source_media_class": "ANIMATED_STILL",
+          "effective_media_class": "ANIMATED_STILL",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "ANIMATED_STILL": 8.0333
+          },
+          "counts_as_genuine_moving_footage": false,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 7.454,
+            "raw_median_diff": 7.433,
+            "affine_compensated_diff": 2.725,
+            "residual_to_raw_ratio": 0.367,
+            "p90_local_flow_residual_px": 0.419,
+            "independent_motion_patch_ratio": 0.0,
+            "flat_graphic_pixel_ratio": 0.146,
+            "grid_box_edge_score": 1.584,
+            "is_frozen_static": false,
+            "is_baked_animated_still": true,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": false,
+            "is_real_moving_footage": false,
+            "inferred_media_class": "ANIMATED_STILL",
+            "diagnostic_note": "Artificial pan/zoom over static image detected (raw_diff=7.43, compensated_diff=2.72, ratio=0.37, p90_flow_res=0.42px)."
+          }
+        },
+        {
+          "sid": "S09",
+          "duration_s": 7.0667,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 7.0667
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 3.085,
+            "raw_median_diff": 3.029,
+            "affine_compensated_diff": 2.947,
+            "residual_to_raw_ratio": 0.973,
+            "p90_local_flow_residual_px": 0.096,
+            "independent_motion_patch_ratio": 0.0,
+            "flat_graphic_pixel_ratio": 0.074,
+            "grid_box_edge_score": 1.344,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=0.10px, indep_patches=0%)."
+          }
+        },
+        {
+          "sid": "S10",
+          "duration_s": 9.0333,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 9.0333
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 5.015,
+            "raw_median_diff": 6.278,
+            "affine_compensated_diff": 3.113,
+            "residual_to_raw_ratio": 0.496,
+            "p90_local_flow_residual_px": 0.36,
+            "independent_motion_patch_ratio": 0.03,
+            "flat_graphic_pixel_ratio": 0.32,
+            "grid_box_edge_score": 2.864,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=0.36px, indep_patches=3%)."
+          }
+        }
+      ]
+    },
+    "genuine_moving_footage_pct": 88.32,
+    "meaningful_action_footage_pct": 88.32,
+    "establishing_footage_pct": 0.0,
+    "static_image_pct": 11.68,
+    "scientific_visualization_pct": 0.0,
+    "repetition_and_progression": {
+      "total_shots": 10,
+      "raw_unique_filenames_count": 10,
+      "distinct_canonical_assets_count": 10,
+      "inflated_asset_count_delta": 0,
+      "canonical_usage_counts": {
+        "url:commons.wikimedia.org/wiki/file:chemin%c3%a9e_hydrothermale_active_(ifremer_00701-81313).webm": 1,
+        "url:commons.wikimedia.org/wiki/file:une_plong%c3%a9e_%c3%a0_1700_m%c3%a8tres_(ifremer_00637-74893_-_29848).webm": 1,
+        "url:commons.wikimedia.org/wiki/file:prise_de_temp%c3%a9rature_de_l%27eau_(ifremer_00701-81312).webm": 1,
+        "url:commons.wikimedia.org/wiki/file:en_direction_de_la_source_hydrothermale_tour_eiffel_(ifremer_00700-81190).webm": 1,
+        "url:commons.wikimedia.org/wiki/file:biodiversit%c3%a9_et_paysages_sous-marins_des_sites_hydrothermaux_tag_et_snake_pit_(ifremer_00700-81166).webm": 1,
+        "url:commons.wikimedia.org/wiki/file:observation_de_crevettes_rimicaris_exoculata_(ifremer_00699-81103).webm": 1,
+        "url:commons.wikimedia.org/wiki/file:modioles_et_crevettes_film%c3%a9es_par_le_smoove_(ifremer_00701-81317).webm": 1,
+        "url:commons.wikimedia.org/wiki/file:modioles,_crevettes_et_chemin%c3%a9es_hydrothermales_(ifremer_00699-81111).webm": 1,
+        "url:commons.wikimedia.org/wiki/file:peltospira_smaragdina_gastropod_assemblage_at_the_y3_site_in_the_lucky_strike_vent_field_(mar)_(ifremer_00775-88699).webm": 1,
+        "url:commons.wikimedia.org/wiki/file:vue_sur_une_chemin%c3%a9e_hydrothermale_(ifremer_00701-81315).webm": 1
+      },
+      "meaningful_progression_ratio": 1.0,
+      "progression_steps": [
+        {
+          "from_sid": "S01",
+          "to_sid": "S02",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S02",
+          "to_sid": "S03",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S03",
+          "to_sid": "S04",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S04",
+          "to_sid": "S05",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S05",
+          "to_sid": "S06",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S06",
+          "to_sid": "S07",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S07",
+          "to_sid": "S08",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S08",
+          "to_sid": "S09",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S09",
+          "to_sid": "S10",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        }
+      ],
+      "stale_visual_topic_shifts": [],
+      "repetition_and_progression_pass": true,
+      "major_issue_count": 0,
+      "issues": []
+    },
+    "pacing_summary": {
+      "min_shot_s": 5.767,
+      "median_shot_s": 6.867,
+      "mean_shot_s": 6.88,
+      "max_shot_s": 9.033,
+      "internal_cuts": 9,
+      "clean_cuts": 8,
+      "dissolves": 1,
+      "dissolve_fraction": 0.111,
+      "speech_boundary_aligned_cuts": 9,
+      "speech_boundary_alignment_pct": 100.0
+    },
+    "errors": [],
+    "warnings": [
+      "[S08:ifremer_biobaz_sampling_81111.webm] Reclassified from video to 'ANIMATED_STILL' (Artificial pan/zoom over static image detected (raw_diff=7.64, compensated_diff=2.78, ratio=0.36, p90_flow_res=0.43px).).",
+      "[S09] Dissolve duration 0.00s outside recommended 0.45\u20130.95s.",
+      "Moving footage ratio is 88.3% (goal >= 90% where authentic moving material is available)."
+    ],
+    "shots": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 6.4,
+        "duration_s": 6.4,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.4,
+          "ideal_duration_s": 6.02,
+          "max_recommended_s": 10.3,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "close_up",
+            "camera_movement": "static",
+            "is_moving_footage": true,
+            "spoken_word_count": 12
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "close_up",
+        "src_file": "ifremer_active_black_smoker_81313.webm",
+        "transition_in": "opening",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Instant Frame-0 live deep-sea black smoker hook with zero burned poster flash.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.0,
+        "nearest_speech_boundary_kind": "start",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Two miles underwater black chimneys blast three-hundred-sixty-degree water without boiling into steam",
+        "story_beat": "360\u00b0C seafloor black smoker chimney roaring without boiling",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 532.9,
+          "crop_height_px": 947.4,
+          "upscale_factor": 2.027,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S02",
+        "start_s": 6.4,
+        "end_s": 13.1333,
+        "duration_s": 6.733,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.4,
+          "ideal_duration_s": 6.69,
+          "max_recommended_s": 10.3,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "context",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 17
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "ifremer_dive_1700m_29848.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Hard cut on 0.46s pause after 'steam' from close-up orifice to wide abyssal depth.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.061,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Along the Mid-Atlantic Ridge three hundred sixty atmospheres of crushing ocean weight trap superheated water as liquid",
+        "story_beat": "Submarine descent into crushing Mid-Atlantic Ridge pressure",
+        "crop_feasibility": {
+          "source_width": 3840,
+          "source_height": 1920,
+          "crop_width_px": 964.3,
+          "crop_height_px": 1714.3,
+          "upscale_factor": 1.12,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S03",
+        "start_s": 13.1333,
+        "end_s": 18.9667,
+        "duration_s": 5.833,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.4,
+          "ideal_duration_s": 6.41,
+          "max_recommended_s": 10.3,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "static",
+            "is_moving_footage": true,
+            "spoken_word_count": 14
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "ifremer_rov_temp_probe_81312.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Action-matched cut on 0.41s pause right as narration says 'When robotic arms thrust a steel thermometer inside'.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.01,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "When robotic arms thrust a steel thermometer inside that scalding fluid hits two-degree seawater",
+        "story_beat": "ROV manipulator arm inserting steel temperature probe into scalding vent",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 532.9,
+          "crop_height_px": 947.4,
+          "upscale_factor": 2.027,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S04",
+        "start_s": 18.9667,
+        "end_s": 25.8333,
+        "duration_s": 6.867,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.4,
+          "ideal_duration_s": 7.19,
+          "max_recommended_s": 10.3,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "medium",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 17
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "ifremer_tour_eiffel_chimney_81190.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Reveals the massive precipitated mineral tower and holds through 'bare, sterile rock around poison that hot'.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.002,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "freezing dissolved metals into towering black chimneys You would expect bare sterile rock around poison that hot",
+        "story_beat": "Towering precipitated metal-sulfide chimney spire",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 532.9,
+          "crop_height_px": 947.4,
+          "upscale_factor": 2.027,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S05",
+        "start_s": 25.8333,
+        "end_s": 33.0333,
+        "duration_s": 7.2,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.4,
+          "ideal_duration_s": 7.91,
+          "max_recommended_s": 10.31,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 19
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "ifremer_tag_snakepit_shrimp_81166.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.43s pause-aligned twist cut right before 'Instead, the chimney walls are moving'.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.015,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Instead the chimney walls are moving Up to twenty-five hundred pale shrimp pack every square meter in total darkness",
+        "story_beat": "Chimney walls at TAG and Snake Pit writhing with living swarms",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 532.9,
+          "crop_height_px": 947.4,
+          "upscale_factor": 2.027,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S06",
+        "start_s": 33.0333,
+        "end_s": 38.8,
+        "duration_s": 5.767,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.4,
+          "ideal_duration_s": 6.75,
+          "max_recommended_s": 10.3,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "close_up",
+            "camera_movement": "static",
+            "is_moving_footage": true,
+            "spoken_word_count": 16
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "close_up",
+        "src_file": "ifremer_rimicaris_swarm_81103.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Punches in from medium wall view to tight swarm close-up so viewers can see they lack eyeballs.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.007,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "centimeters from water hot enough to melt lead Look closely and none of them have eyeballs",
+        "story_beat": "Close-up of 2,500/m\u00b2 eyeless Rimicaris exoculata swarm beside scalding plume",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 528.3,
+          "crop_height_px": 939.1,
+          "upscale_factor": 2.044,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S07",
+        "start_s": 38.8,
+        "end_s": 44.6667,
+        "duration_s": 5.867,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.4,
+          "ideal_duration_s": 6.98,
+          "max_recommended_s": 10.3,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "macro",
+            "camera_movement": "static",
+            "is_moving_footage": true,
+            "spoken_word_count": 17
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "macro",
+        "src_file": "ifremer_smoove_shrimp_closeup_81317.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.50s pause-aligned cut to macro SMOOVE observatory view.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.062,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Across their backs sits a white light-sensing organ that detects the faint infrared glow of scalding vents",
+        "story_beat": "Macro reveal of white dorsal photoreceptor organ on Rimicaris backs",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 523.7,
+          "crop_height_px": 931.0,
+          "upscale_factor": 2.062,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S08",
+        "start_s": 44.6667,
+        "end_s": 52.7,
+        "duration_s": 8.033,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.4,
+          "ideal_duration_s": 7.76,
+          "max_recommended_s": 10.3,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 21
+          }
+        },
+        "media_type": "photo",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "ifremer_biobaz_sampling_81111.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.40s pause-aligned cut showing the living chemosynthetic mixing zone.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.007,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "It keeps them inside a narrow 20-degree safety zone close enough to farm sulfur-eating bacteria in their gills without cooking alive",
+        "story_beat": "BioBaz ROV biological survey in the chemosynthetic mixing zone",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 537.6,
+          "crop_height_px": 955.8,
+          "upscale_factor": 2.009,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S09",
+        "start_s": 52.7,
+        "end_s": 59.7667,
+        "duration_s": 7.067,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.4,
+          "ideal_duration_s": 6.51,
+          "max_recommended_s": 10.3,
+          "factors": {
+            "visual_complexity": "medium",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "medium",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 16
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "ifremer_lucky_strike_fauna_88699.webm",
+        "transition_in": "dissolve",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Single restrained reflective dissolve on 0.52s pause into the broader 1977 origin-of-life debate.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.084,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Since 1977 researchers still debate whether Earth's first cells sparked in deep vents or shallow surface pools",
+        "story_beat": "Complete sunlight-free hydrothermal vent ecosystem and origin-of-life debate",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 532.9,
+          "crop_height_px": 947.4,
+          "upscale_factor": 2.027,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S10",
+        "start_s": 59.7667,
+        "end_s": 68.8,
+        "duration_s": 9.033,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.4,
+          "ideal_duration_s": 8.46,
+          "max_recommended_s": 10.86,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 22
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "ifremer_chimney_full_spire_81315.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.40s pause-aligned closing cut onto a full abyssal chimney spire for a seamless loop into Frame 0.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.013,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Either way these blind shrimp prove whole ecosystems can thrive without sunlight making underwater chimneys a prime target in Yoo-roh-puhz hidden ocean",
+        "story_beat": "Full roaring abyssal chimney payoff and Europa ocean-world loop",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 532.9,
+          "crop_height_px": 947.4,
+          "upscale_factor": 2.027,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      }
+    ]
+  },
+  "visual_evidence_breakdown": {
+    "total_shots": 10,
+    "moving_footage_s": 60.767,
+    "moving_footage_pct": 88.32,
+    "genuine_moving_footage_pct": 88.32,
+    "meaningful_action_footage_pct": 88.32,
+    "establishing_footage_pct": 0.0,
+    "real_time_lapse_pct": 0.0,
+    "static_image_pct": 11.68,
+    "scientific_visualization_pct": 0.0,
+    "still_photography_s": 8.033,
+    "still_photography_pct": 11.68,
+    "human_interaction_shots": 4,
+    "human_interaction_s": 27.666,
+    "human_interaction_pct": 40.21,
+    "real_imagery_and_footage_s": 68.8,
+    "real_imagery_and_footage_pct": 100.0,
+    "illustrative_diagram_s": 0,
+    "illustrative_diagram_pct": 0.0,
+    "meets_real_target": true,
+    "meets_moving_video_target": true
+  },
+  "editorial_formula_qc": {
+    "first_word_start_s": 0.1,
+    "hook_within_limit": true,
+    "layer2_pivot_seg_id": "N03",
+    "scientific_caveat_seg_id": "N06",
+    "caveat_explicitly_stated": false,
+    "all_passed": false
+  },
+  "full_canvas_qc": {
+    "audited_shots": 10,
+    "suspicious_shots_count": 0,
+    "suspicious_shots": [],
+    "all_full_canvas_pass": true,
+    "shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "sample_t_s": 3.2,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.39,
+        "right_inset_spike_ratio": 1.26,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S02",
+        "kind": "video_full",
+        "sample_t_s": 9.77,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.02,
+        "right_inset_spike_ratio": 4.71,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S03",
+        "kind": "video_full",
+        "sample_t_s": 16.05,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.09,
+        "right_inset_spike_ratio": 1.27,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S04",
+        "kind": "video_full",
+        "sample_t_s": 22.4,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.08,
+        "right_inset_spike_ratio": 1.11,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S05",
+        "kind": "video_full",
+        "sample_t_s": 29.43,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.87,
+        "right_inset_spike_ratio": 1.25,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S06",
+        "kind": "video_full",
+        "sample_t_s": 35.92,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.09,
+        "right_inset_spike_ratio": 1.19,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S07",
+        "kind": "video_full",
+        "sample_t_s": 41.73,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.89,
+        "right_inset_spike_ratio": 1.37,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S08",
+        "kind": "video_full",
+        "sample_t_s": 48.68,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.09,
+        "right_inset_spike_ratio": 1.28,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S09",
+        "kind": "video_full",
+        "sample_t_s": 56.23,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.24,
+        "right_inset_spike_ratio": 1.23,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S10",
+        "kind": "video_full",
+        "sample_t_s": 64.28,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.86,
+        "right_inset_spike_ratio": 0.89,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      }
+    ]
+  },
+  "overlay_cleanliness_qc": {
+    "style_profile": "deep_ocean_exploration",
+    "scale_rings_rendered": 0,
+    "locator_huds_rendered": 0,
+    "source_banners_rendered": 0,
+    "callout_badges_rendered": 0,
+    "opening_cover_card_burned": false,
+    "closing_credit_burned": false,
+    "minimal_context_notes_used": [],
+    "violations": [],
+    "clean_documentary_pass": true
+  },
+  "protected_projects_qc": {
+    "checked_projects": {
+      "blood-falls-v3-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": true
+      },
+      "brine-pools-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": true
+      },
+      "day-in-the-life-of-an-astronaut": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": true
+      },
+      "fermi-paradox-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": true
+      },
+      "forbidden-zones-earth-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": true
+      },
+      "gemstone-mine-secrets-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": true
+      },
+      "how-high-could-you-jump-on-other-planets": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": true
+      },
+      "lava-cave-gold-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": true
+      },
+      "mars-helicopter-1-percent-air": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": true
+      },
+      "unreal-places-earth-v4-documentary": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": true
+      },
+      "venus-hotter-than-mercury": {
+        "mp4_exists": false,
+        "size_mb": 0.0,
+        "intact": true
+      }
+    },
+    "all_intact": true
+  },
+  "wcag_contrast_qc": {
+    "subtitle_style": "cinema_boxless",
+    "emphasis_mode": "color_accent",
+    "backdrop_worst_case_rgb": [
+      240,
+      245,
+      250
+    ],
+    "caption_white_contrast_ratio": 12.07,
+    "caption_gold_contrast_ratio": 9.34,
+    "all_wcag_aaa_pass": true
+  },
+  "viral_anti_ai_qc": {
+    "anti_ai_script_pass": true,
+    "llm_cliche_hits": 0,
+    "jargon_cluster_hits": 0,
+    "ending_tail_pause_s": 0.34,
+    "first_real_motion_start_s": 0.0,
+    "opening_motion_pass": true,
+    "diegetic_nat_sound_active": false,
+    "audible_location_bed_pass": true,
+    "subtitle_style": "cinema_boxless",
+    "filmic_color_grade_enabled": true,
+    "all_viral_anti_ai_pass": true
+  },
+  "thumbnail_qc": {
+    "thumbnail_jpg_bytes": 650139,
+    "under_2mb": true,
+    "width": 1080,
+    "height": 1920,
+    "dimensions_9x16": true,
+    "text_mode": "cinema_hook",
+    "frame0_vs_thumbnail_mae_rgb": 47.083,
+    "cover_variants_exported": 2,
+    "concepts_exported": 3,
+    "concepts_comparison_sheet_exists": true,
+    "preview_sheet_exists": true
+  },
+  "motion_smoothness_qc": {
+    "sampled_shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "min_frame_delta_luma": 1.0971,
+        "median_frame_delta_luma": 4.742,
+        "max_to_median_ratio": 1.048,
+        "smooth": true
+      },
+      {
+        "sid": "S02",
+        "kind": "video_full",
+        "min_frame_delta_luma": 3.6355,
+        "median_frame_delta_luma": 3.773,
+        "max_to_median_ratio": 1.077,
+        "smooth": true
+      },
+      {
+        "sid": "S03",
+        "kind": "video_full",
+        "min_frame_delta_luma": 1.7807,
+        "median_frame_delta_luma": 1.8291,
+        "max_to_median_ratio": 1.033,
+        "smooth": true
+      },
+      {
+        "sid": "S04",
+        "kind": "video_full",
+        "min_frame_delta_luma": 1.7798,
+        "median_frame_delta_luma": 2.0779,
+        "max_to_median_ratio": 1.043,
+        "smooth": true
+      }
+    ],
+    "worst_jump_ratio": 1.077,
+    "all_smooth": true
+  },
+  "subtitles_qc": {
+    "cue_count": 36,
+    "max_burned_lines_per_cue": 2,
+    "raw_word_match_ratio": 0.9385,
+    "normalized_word_match_ratio": 0.9702,
+    "normalized_diffs": [
+      [
+        "replace",
+        "twenty",
+        "two thousand"
+      ],
+      [
+        "replace",
+        "sits",
+        "it's"
+      ],
+      [
+        "replace",
+        "cells",
+        "cell"
+      ],
+      [
+        "replace",
+        "yoo roh puhz",
+        "europa's"
+      ]
+    ],
+    "cue_start_vs_whisper_offset_s": {
+      "median": 0.021,
+      "p95_abs": 0.152,
+      "max_abs": 0.558
+    }
+  },
+  "licensing_register_qc": {
+    "source_register_csv_exists": true,
+    "source_register_md_exists": true,
+    "registered_assets_count": 10
+  },
+  "narrative_and_visual_intelligence_qc": {
+    "momentum_pass": true,
+    "momentum_error_count": 0,
+    "momentum_warning_count": 0,
+    "hook_candidates_count": 3,
+    "recommended_hook_id": "H1",
+    "recommended_hook_score": 9.53,
+    "mean_visual_weighted_score": 0.9505,
+    "visual_mismatch_count": 0,
+    "all_shots_eligible": true
+  },
+  "voice_studio_qc": {
+    "voice_input_mode": "directed_tts",
+    "voice_direction_profile": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "sentence_count": 11,
+    "approval_lock_present": false,
+    "approval_lock_synchronized": false
+  },
+  "audio_5layer_health_qc": {
+    "scene_audio_profile": "deep_ocean_abyss",
+    "stems_exported_count": 5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "loudness_range_lra_lu": 1.9,
+    "speech_crest_factor_db": 14.5,
+    "natural_dynamics_pass": true,
+    "all_audio_health_pass": true
+  },
+  "creative_qa": {
+    "slug": "deep-ocean-black-smokers-v8",
+    "creative_qa_pass": false,
+    "six_pillar_qa": {
+      "slug": "deep-ocean-black-smokers-v8",
+      "technical_approval": true,
+      "creative_approval": false,
+      "overall_release_approval": false,
+      "visual_coverage_metrics": {
+        "genuine_moving_footage_pct": 88.32,
+        "meaningful_action_footage_pct": 88.32,
+        "establishing_footage_pct": 0.0,
+        "real_time_lapse_pct": 0.0,
+        "static_image_pct": 11.68,
+        "animated_still_pct": 11.68,
+        "scientific_visualization_pct": 0.0
+      },
+      "canonical_asset_summary": {
+        "distinct_canonical_assets": 10,
+        "raw_unique_filenames": 10,
+        "meaningful_progression_pct": 100.0
+      },
+      "resolution_honesty_records": [
+        {
+          "sid": "S01",
+          "src_file": "ifremer_active_black_smoker_81313.webm",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "533x947",
+          "upscale_factor": 2.027,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S02",
+          "src_file": "ifremer_dive_1700m_29848.webm",
+          "native_resolution": "3840x1920",
+          "cropped_9x16_px": "964x1714",
+          "upscale_factor": 1.12,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S03",
+          "src_file": "ifremer_rov_temp_probe_81312.webm",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "533x947",
+          "upscale_factor": 2.027,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S04",
+          "src_file": "ifremer_tour_eiffel_chimney_81190.webm",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "533x947",
+          "upscale_factor": 2.027,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S05",
+          "src_file": "ifremer_tag_snakepit_shrimp_81166.webm",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "533x947",
+          "upscale_factor": 2.027,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S06",
+          "src_file": "ifremer_rimicaris_swarm_81103.webm",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "528x939",
+          "upscale_factor": 2.044,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S07",
+          "src_file": "ifremer_smoove_shrimp_closeup_81317.webm",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "524x931",
+          "upscale_factor": 2.062,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S08",
+          "src_file": "ifremer_biobaz_sampling_81111.webm",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "538x956",
+          "upscale_factor": 2.009,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S09",
+          "src_file": "ifremer_lucky_strike_fauna_88699.webm",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "533x947",
+          "upscale_factor": 2.027,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S10",
+          "src_file": "ifremer_chimney_full_spire_81315.webm",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "533x947",
+          "upscale_factor": 2.027,
+          "is_native_full_hd_vertical": false
+        }
+      ],
+      "technical_details": {
+        "target_resolution": "1080x1920",
+        "target_aspect_ratio": "9:16",
+        "target_fps": 30,
+        "target_video_codec": "libx264",
+        "target_audio_codec": "aac",
+        "mode": "post_render_mp4",
+        "encoded_width": 1080,
+        "encoded_height": 1920,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "r_frame_rate": "30/1",
+        "av_sync_drift_s": 0.0
+      },
+      "pillars": {
+        "media_qa": {
+          "passed": false,
+          "critical_count": 0,
+          "major_count": 1,
+          "minor_count": 0,
+          "issues": [
+            {
+              "severity": "MAJOR",
+              "pillar": "media_qa",
+              "code": "animated_still_disguised_as_video",
+              "sid": "S08",
+              "message": "Shot S08 ('ifremer_biobaz_sampling_81111.webm') is a static image with artificial pan/zoom baked into MP4 (Artificial pan/zoom over static image detected (raw_diff=7.62, compensated_diff=2.76, ratio=0.36, p90_flow_res=0.43px).)."
+            }
+          ]
+        },
+        "semantic_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "repetition_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "timeline_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "technical_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "creative_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        }
+      },
+      "issues": [
+        {
+          "severity": "MAJOR",
+          "pillar": "media_qa",
+          "code": "animated_still_disguised_as_video",
+          "sid": "S08",
+          "message": "Shot S08 ('ifremer_biobaz_sampling_81111.webm') is a static image with artificial pan/zoom baked into MP4 (Artificial pan/zoom over static image detected (raw_diff=7.62, compensated_diff=2.76, ratio=0.36, p90_flow_res=0.43px).)."
+        }
+      ]
+    },
+    "severity_counts": {
+      "CRITICAL": 0,
+      "MAJOR": 0,
+      "MINOR": 0,
+      "INFO": 0
+    },
+    "voice_metrics": {
+      "speaking_rate_wpm": 149.1,
+      "max_boundary_rms_jump_db": 0.21,
+      "high_drama_segment_ratio": 0.5
+    },
+    "soundscape_metrics": {
+      "adaptive_audio_profile": "immersive_exploration",
+      "music_sections_count": 2,
+      "audible_ambience_sections_count": 5,
+      "approved_sfx_count": 1,
+      "rejected_sfx_for_silence_count": 1,
+      "voice_to_bed_margin_lu": 25.8
+    },
+    "editing_metrics": {
+      "final_scene_count": 10,
+      "mean_scene_duration_s": 6.88,
+      "sync_issues_count": 0
+    },
+    "issues": []
+  },
+  "failed_gates": [
+    "15_creative_story_and_sound_qc"
+  ],
+  "failed_gates_count": 1,
+  "overall_studio_v6_pass": false,
+  "overall_studio_v7_pass": false,
+  "overall_studio_v8_technical_pass": true,
+  "overall_studio_v8_creative_pass": false,
+  "overall_studio_v8_release_pass": false
+}

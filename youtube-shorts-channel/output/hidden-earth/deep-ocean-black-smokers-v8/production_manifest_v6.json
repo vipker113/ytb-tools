@@ -1,0 +1,731 @@
+{
+  "schema_name": "proof_of_wonder_production_manifest",
+  "manifest_version": "8.0",
+  "generated_at_utc": "2026-11-04T11:20:07.971546+00:00",
+  "slug": "deep-ocean-black-smokers-v8",
+  "channel_name": "Proof of Wonder",
+  "category_playlist": "Hidden Earth",
+  "topic": "Mid-Atlantic Ridge Hydrothermal Black Smokers (360\u00b0C Non-Boiling Abyssal Chimneys & Eyeless Rimicaris exoculata Shrimp)",
+  "production_profile": {
+    "profile_name": "deep_ocean_exploration",
+    "profile_version": "7.0.0",
+    "style_overrides": {
+      "asset_selection": {
+        "target_moving_footage_ratio": 0.9,
+        "target_genuine_moving_footage_ratio": 0.9,
+        "target_meaningful_action_footage_ratio": 0.75,
+        "max_static_image_ratio": 0.05,
+        "max_scientific_visualization_ratio": 0.05,
+        "min_human_interaction_shots": 2
+      }
+    },
+    "visual_scoring_weights": {
+      "direct_relevance": 0.32,
+      "visual_clarity": 0.22,
+      "authenticity": 0.22,
+      "technical_quality": 0.08,
+      "composition_potential": 0.08,
+      "motion_storytelling": 0.05,
+      "license_verification": 0.03,
+      "min_direct_relevance_floor": 0.35
+    }
+  },
+  "script_version": {
+    "version": "v8.0.0",
+    "script_sha256": "cd429645777d8c95b48ba6033a68d8ac321d2e1230c3d4e99f722779594ccf6e",
+    "segment_count": 6,
+    "word_count": 167,
+    "opening_hook_type": "paradox",
+    "layer2_pivot_seg_id": "N03",
+    "scientific_caveat_seg_id": "N06",
+    "factual_references": [
+      {
+        "citation": "Van Dover, C. L., Szuts, E. Z., Chamberlain, S. C., & Cann, J. R. (1989). A novel eye in 'eyeless' shrimp from hydrothermal vents of the Mid-Atlantic Ridge. Nature, 337, 458\u2013460.",
+        "url": "https://doi.org/10.1038/337458a0",
+        "doi": null,
+        "supported_claims": "Rimicaris exoculata lacks normal image-forming eyes and possesses a reflective dorsal rhodopsin photoreceptor organ sensitive to faint thermal radiation from ~350\u00b0C vents."
+      },
+      {
+        "citation": "Petersen, J. M. et al. (2011). Hydrogen is an energy source for hydrothermal vent symbioses. Nature, 476, 176\u2013180; Ponsard, J. et al. (2013). Inorganic carbon fixation by chemosynthetic ectosymbionts of Rimicaris exoculata. ISME Journal, 7, 96\u2013109.",
+        "url": "https://doi.org/10.1038/nature10325",
+        "doi": null,
+        "supported_claims": "Chemosynthetic ectosymbiotic bacteria inside Rimicaris gill chambers oxidize hydrogen sulfide and reduced compounds to nourish dense (~2,500/m\u00b2) shrimp swarms without sunlight."
+      },
+      {
+        "citation": "Humphris, S. E. et al. (1995). The internal structure of an active sea-floor massive sulphide deposit (TAG hydrothermal mound, 3,670 m, Mid-Atlantic Ridge). Nature, 377, 713\u2013716; Martin, W. et al. (2008). Hydrothermal vents and the origin of life. Nature Reviews Microbiology, 6, 805\u2013814.",
+        "url": "https://doi.org/10.1038/377713a0",
+        "doi": null,
+        "supported_claims": "At ~3,600 m (~360 bar hydrostatic pressure), ~360\u00b0C hydrothermal fluids remain liquid without boiling, precipitate metal-sulfide chimneys upon mixing with ~2\u00b0C seawater, and serve as a leading (though debated vs. terrestrial hot springs) model for abiogenesis and icy-moon astrobiology."
+      }
+    ]
+  },
+  "voice_direction_profile": {
+    "voice_input_mode": "directed_tts",
+    "profile_id": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "annotated_voice_script_file": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\episodes\\deep_ocean_black_smokers_v8_voice_script.txt",
+    "approval_lock": {
+      "locked": false,
+      "synchronized": false,
+      "detail": "No voice_approval_lock.json written yet."
+    }
+  },
+  "audio_source_and_final_narration": {
+    "voice_input_mode": "directed_tts",
+    "uploaded_narration_file": null,
+    "voice_reference_file": null,
+    "voice_owner_consent": false,
+    "narration_mp3": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\narration.mp3",
+    "final_audio_mix_mp3": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\final_audio_mix.mp3",
+    "word_timings_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\word_timings.json",
+    "total_duration_s": 68.8,
+    "total_frames_30fps": 2064,
+    "five_layer_stems": {
+      "layer_1_narration": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\work_audio\\layer_1_narration.wav",
+      "layer_2_music": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\work_audio\\layer_2_music.wav",
+      "layer_3_ambience": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\work_audio\\layer_3_ambience.wav",
+      "layer_4_natural_sounds": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\work_audio\\layer_4_natural_sounds.wav",
+      "layer_5_cinematic_sfx": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\work_audio\\layer_5_cinematic_sfx.wav"
+    },
+    "audio_diagnostics": {
+      "integrated_lufs": -16.0,
+      "loudness_range_lra_lu": 1.9,
+      "true_peak_dbtp": -1.5,
+      "speech_crest_factor_db": 14.5,
+      "clipped_samples_count": 0,
+      "excessive_silence_count": 0,
+      "excessive_silences": [],
+      "voice_peak_dbfs": -1.5
+    }
+  },
+  "source_assets": [
+    {
+      "local_file": "ifremer_active_black_smoker_81313.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Chemin\u00e9e hydrothermale active (Ifremer 00701-81313)",
+      "creator_agency": "Ifremer (ROV Victor 6000 \u2014 MoMARSAT Campaign)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Chemin%C3%A9e_hydrothermale_active_(Ifremer_00701-81313).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Chemin%C3%A9e_hydrothermale_active_%28Ifremer_00701-81313%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "ifremer_dive_1700m_29848.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Une plong\u00e9e \u00e0 1700 m\u00e8tres (Ifremer 00637-74893 - 29848)",
+      "creator_agency": "Ifremer",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Une_plong%C3%A9e_%C3%A0_1700_m%C3%A8tres_(Ifremer_00637-74893_-_29848).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Une_plong%C3%A9e_%C3%A0_1700_m%C3%A8tres_%28Ifremer_00637-74893_-_29848%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "ifremer_rov_temp_probe_81312.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Prise de temp\u00e9rature de l'eau (Ifremer 00701-81312)",
+      "creator_agency": "Ifremer (ROV Victor 6000 \u2014 MoMARSAT Campaign)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Prise_de_temp%C3%A9rature_de_l%27eau_(Ifremer_00701-81312).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Prise_de_temp%C3%A9rature_de_l%27eau_%28Ifremer_00701-81312%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "ifremer_tour_eiffel_chimney_81190.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "En direction de la source hydrothermale Tour Eiffel (Ifremer 00700-81190)",
+      "creator_agency": "Ifremer",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:En_direction_de_la_source_hydrothermale_Tour_Eiffel_(Ifremer_00700-81190).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/En_direction_de_la_source_hydrothermale_Tour_Eiffel_%28Ifremer_00700-81190%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "ifremer_tag_snakepit_shrimp_81166.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Biodiversit\u00e9 et paysages sous-marins des sites hydrothermaux TAG et Snake Pit (Ifremer 00700-81166)",
+      "creator_agency": "Ifremer (Submersible Nautile)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Biodiversit%C3%A9_et_paysages_sous-marins_des_sites_hydrothermaux_TAG_et_Snake_Pit_(Ifremer_00700-81166).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Biodiversit%C3%A9_et_paysages_sous-marins_des_sites_hydrothermaux_TAG_et_Snake_Pit_%28Ifremer_00700-81166%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "ifremer_rimicaris_swarm_81103.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Observation de crevettes Rimicaris exoculata (Ifremer 00699-81103)",
+      "creator_agency": "Ifremer (ROV Victor 6000)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Observation_de_crevettes_Rimicaris_exoculata_(Ifremer_00699-81103).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Observation_de_crevettes_Rimicaris_exoculata_%28Ifremer_00699-81103%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "ifremer_smoove_shrimp_closeup_81317.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Modioles et crevettes film\u00e9es par le SMOOVE (Ifremer 00701-81317)",
+      "creator_agency": "Ifremer (SMOOVE Deep-Sea Observatory)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Modioles_et_crevettes_film%C3%A9es_par_le_SMOOVE_(Ifremer_00701-81317).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Modioles_et_crevettes_film%C3%A9es_par_le_SMOOVE_%28Ifremer_00701-81317%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "ifremer_biobaz_sampling_81111.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Modioles, crevettes et chemin\u00e9es hydrothermales (Ifremer 00699-81111)",
+      "creator_agency": "Ifremer (BioBaz Sampling Campaign)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Modioles,_crevettes_et_chemin%C3%A9es_hydrothermales_(Ifremer_00699-81111).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Modioles%2C_crevettes_et_chemin%C3%A9es_hydrothermales_%28Ifremer_00699-81111%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "ifremer_lucky_strike_fauna_88699.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Peltospira smaragdina gastropod assemblage at the Y3 site in the Lucky Strike vent field (MAR) (Ifremer 00775-88699)",
+      "creator_agency": "Ifremer",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Peltospira_smaragdina_gastropod_assemblage_at_the_Y3_site_in_the_Lucky_Strike_vent_field_(MAR)_(Ifremer_00775-88699).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Peltospira_smaragdina_gastropod_assemblage_at_the_Y3_site_in_the_Lucky_Strike_vent_field_%28MAR%29_%28Ifremer_00775-88699%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "ifremer_chimney_full_spire_81315.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Vue sur une chemin\u00e9e hydrothermale (Ifremer 00701-81315)",
+      "creator_agency": "Ifremer (ROV Victor 6000 \u2014 MoMARSAT Campaign)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Vue_sur_une_chemin%C3%A9e_hydrothermale_(Ifremer_00701-81315).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Vue_sur_une_chemin%C3%A9e_hydrothermale_%28Ifremer_00701-81315%29.webm",
+      "is_first_party_original": false
+    }
+  ],
+  "licensing_metadata": {
+    "strict_zero_cost_budget": true,
+    "source_register_csv": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\source_register.csv",
+    "source_register_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\source_register.md",
+    "excluded_sources_notes": [],
+    "licenses": [
+      {
+        "local_file": "ifremer_active_black_smoker_81313.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Ifremer / MoMARSAT (CC BY 4.0)"
+      },
+      {
+        "local_file": "ifremer_dive_1700m_29848.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Ifremer (CC BY 4.0)"
+      },
+      {
+        "local_file": "ifremer_rov_temp_probe_81312.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Ifremer / MoMARSAT (CC BY 4.0)"
+      },
+      {
+        "local_file": "ifremer_tour_eiffel_chimney_81190.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Ifremer (CC BY 4.0)"
+      },
+      {
+        "local_file": "ifremer_tag_snakepit_shrimp_81166.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Ifremer / Nautile (CC BY 4.0)"
+      },
+      {
+        "local_file": "ifremer_rimicaris_swarm_81103.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Ifremer / Victor 6000 (CC BY 4.0)"
+      },
+      {
+        "local_file": "ifremer_smoove_shrimp_closeup_81317.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Ifremer / SMOOVE (CC BY 4.0)"
+      },
+      {
+        "local_file": "ifremer_biobaz_sampling_81111.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Ifremer / BioBaz (CC BY 4.0)"
+      },
+      {
+        "local_file": "ifremer_lucky_strike_fauna_88699.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Ifremer (CC BY 4.0)"
+      },
+      {
+        "local_file": "ifremer_chimney_full_spire_81315.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Ifremer / MoMARSAT (CC BY 4.0)"
+      }
+    ]
+  },
+  "shot_list": [
+    {
+      "sid": "S01",
+      "kind": "video_full",
+      "src_file": "ifremer_active_black_smoker_81313.webm",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "360\u00b0C seafloor black smoker chimney roaring without boiling",
+      "editorial_rationale": "Delivers immediate visual proof of liquid water roaring like black smoke underwater without flashing to steam."
+    },
+    {
+      "sid": "S02",
+      "kind": "video_full",
+      "src_file": "ifremer_dive_1700m_29848.webm",
+      "camera_perspective": "wide",
+      "visual_complexity": "medium",
+      "spoken_importance": "context",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Submarine descent into crushing Mid-Atlantic Ridge pressure",
+      "editorial_rationale": "Visually conveys the immense ocean depth and darkness creating crushing hydrostatic pressure."
+    },
+    {
+      "sid": "S03",
+      "kind": "video_full",
+      "src_file": "ifremer_rov_temp_probe_81312.webm",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "ROV manipulator arm inserting steel temperature probe into scalding vent",
+      "editorial_rationale": "Literal 1:1 action match between spoken thermometer measurement and ROV Victor 6000 probe deployment."
+    },
+    {
+      "sid": "S04",
+      "kind": "video_full",
+      "src_file": "ifremer_tour_eiffel_chimney_81190.webm",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Towering precipitated metal-sulfide chimney spire",
+      "editorial_rationale": "Shows the monumental scale of dark sulfide rock right before revealing the walls are alive."
+    },
+    {
+      "sid": "S05",
+      "kind": "video_full",
+      "src_file": "ifremer_tag_snakepit_shrimp_81166.webm",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds",
+        "cinematic_sfx"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Chimney walls at TAG and Snake Pit writhing with living swarms",
+      "editorial_rationale": "Delivers the exact mid-video visual shock promised by N03 at the TAG and Snake Pit black smokers."
+    },
+    {
+      "sid": "S06",
+      "kind": "video_full",
+      "src_file": "ifremer_rimicaris_swarm_81103.webm",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Close-up of 2,500/m\u00b2 eyeless Rimicaris exoculata swarm beside scalding plume",
+      "editorial_rationale": "Lets viewers inspect the eyeless heads right beside shimmering lead-melting hydrothermal water."
+    },
+    {
+      "sid": "S07",
+      "kind": "video_full",
+      "src_file": "ifremer_smoove_shrimp_closeup_81317.webm",
+      "camera_perspective": "macro",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Macro reveal of white dorsal photoreceptor organ on Rimicaris backs",
+      "editorial_rationale": "Direct anatomical visual proof of Rimicaris exoculata filmed by Ifremer's SMOOVE deep-sea observatory."
+    },
+    {
+      "sid": "S08",
+      "kind": "video_full",
+      "src_file": "ifremer_biobaz_sampling_81111.webm",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "BioBaz ROV biological survey in the chemosynthetic mixing zone",
+      "editorial_rationale": "Shows the sulfur-fueled vent community surveyed during the BioBaz campaign."
+    },
+    {
+      "sid": "S09",
+      "kind": "video_full",
+      "src_file": "ifremer_lucky_strike_fauna_88699.webm",
+      "camera_perspective": "medium",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "dissolve",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Complete sunlight-free hydrothermal vent ecosystem and origin-of-life debate",
+      "editorial_rationale": "Illustrates active ROV research on a self-sustaining chemosynthetic ecosystem while stating the scientific caveat."
+    },
+    {
+      "sid": "S10",
+      "kind": "video_full",
+      "src_file": "ifremer_chimney_full_spire_81315.webm",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Full roaring abyssal chimney payoff and Europa ocean-world loop",
+      "editorial_rationale": "Leaves a haunting final image of an abyssal chimney in pitch darkness that loops directly back into S01."
+    }
+  ],
+  "scene_timing": {
+    "fps": 30,
+    "semantic_timeline_manifest_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\semantic_timeline_manifest.json",
+    "timed_scenes": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 6.4,
+        "duration_s": 6.4,
+        "start_frame": 0,
+        "end_frame": 192
+      },
+      {
+        "sid": "S02",
+        "start_s": 6.4,
+        "end_s": 13.1333,
+        "duration_s": 6.7333,
+        "start_frame": 192,
+        "end_frame": 394
+      },
+      {
+        "sid": "S03",
+        "start_s": 13.1333,
+        "end_s": 18.9667,
+        "duration_s": 5.8334,
+        "start_frame": 394,
+        "end_frame": 569
+      },
+      {
+        "sid": "S04",
+        "start_s": 18.9667,
+        "end_s": 25.8333,
+        "duration_s": 6.8666,
+        "start_frame": 569,
+        "end_frame": 775
+      },
+      {
+        "sid": "S05",
+        "start_s": 25.8333,
+        "end_s": 33.0333,
+        "duration_s": 7.2,
+        "start_frame": 775,
+        "end_frame": 991
+      },
+      {
+        "sid": "S06",
+        "start_s": 33.0333,
+        "end_s": 38.8,
+        "duration_s": 5.7667,
+        "start_frame": 991,
+        "end_frame": 1164
+      },
+      {
+        "sid": "S07",
+        "start_s": 38.8,
+        "end_s": 44.6667,
+        "duration_s": 5.8667,
+        "start_frame": 1164,
+        "end_frame": 1340
+      },
+      {
+        "sid": "S08",
+        "start_s": 44.6667,
+        "end_s": 52.7,
+        "duration_s": 8.0333,
+        "start_frame": 1340,
+        "end_frame": 1581
+      },
+      {
+        "sid": "S09",
+        "start_s": 52.7,
+        "end_s": 59.7667,
+        "duration_s": 7.0667,
+        "start_frame": 1581,
+        "end_frame": 1793
+      },
+      {
+        "sid": "S10",
+        "start_s": 59.7667,
+        "end_s": 68.8,
+        "duration_s": 9.0333,
+        "start_frame": 1793,
+        "end_frame": 2064
+      }
+    ]
+  },
+  "subtitle_version": {
+    "version": "v8.0.0",
+    "style": "cinema_boxless",
+    "emphasis_mode": "color_accent",
+    "word_by_word_animation": false,
+    "cue_count": 36,
+    "srt_path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\subtitles.srt"
+  },
+  "thumbnail_variants": {
+    "primary_thumbnail_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\thumbnail.jpg",
+    "mobile_preview_sheet_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\thumbnail_small_preview_sheet.jpg",
+    "concepts_comparison_sheet_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\thumbnail_concepts_comparison_sheet.jpg",
+    "concepts": [
+      {
+        "concept_id": "A",
+        "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\thumbnail_concept_A.jpg",
+        "source_asset": "ifremer_active_black_smoker_81313.webm",
+        "matches_opening_scene_asset": true,
+        "headline_text": "360\u00b0C WATER|WON'T BOIL",
+        "headline_word_count": 4,
+        "kicker_text": "2 MILES UNDERWATER",
+        "concept_rationale": "High-contrast jet-black mineral plume roaring out of a glowing mineral chimney in pitch-black ocean water.",
+        "size_kb": 634.9,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "ifremer_active_black_smoker_81313.webm",
+          "sharpness_score": 2.1,
+          "subject_separation_score": 51.4,
+          "combined_score": 29.22,
+          "recommended_cx": 0.481,
+          "recommended_cy": 0.5539
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "B",
+        "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\thumbnail_concept_B.jpg",
+        "source_asset": "ifremer_rimicaris_swarm_81103.webm",
+        "matches_opening_scene_asset": false,
+        "headline_text": "NO EYES|360\u00b0C HEAT",
+        "headline_word_count": 4,
+        "kicker_text": "2,500 SHRIMP PER m\u00b2",
+        "concept_rationale": "Wall-to-wall living carpet of pale eyeless Rimicaris shrimp swarming beside black hydrothermal smoke.",
+        "size_kb": 848.4,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "ifremer_rimicaris_swarm_81103.webm",
+          "sharpness_score": 1.83,
+          "subject_separation_score": 37.2,
+          "combined_score": 21.28,
+          "recommended_cx": 0.4943,
+          "recommended_cy": 0.4673
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "C",
+        "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\thumbnail_concept_C.jpg",
+        "source_asset": "ifremer_rov_temp_probe_81312.webm",
+        "matches_opening_scene_asset": false,
+        "headline_text": "MELTS LEAD|UNDERWATER",
+        "headline_word_count": 3,
+        "kicker_text": "ROV LIVE PROBE",
+        "concept_rationale": "Robotic titanium manipulator arm inserting a steel thermometer probe directly into a roaring black smoker.",
+        "size_kb": 533.9,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "ifremer_rov_temp_probe_81312.webm",
+          "sharpness_score": 0.85,
+          "subject_separation_score": 29.73,
+          "combined_score": 16.74,
+          "recommended_cx": 0.4485,
+          "recommended_cy": 0.4543
+        },
+        "actual_analytics_outcome": null
+      }
+    ]
+  },
+  "rendering_configuration": {
+    "output_spec": {
+      "aspect_ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video_codec_master": "libx264",
+      "video_crf_master": 15,
+      "video_preset_master": "medium",
+      "video_profile": "high",
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "audio_codec": "aac",
+      "audio_bitrate": "192k",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "target_loudness_lufs": -16.0
+    },
+    "color_science": {
+      "enable_filmic_grade": true,
+      "cast_tame_strength": 0.22,
+      "luma_grain_sigma": 1.9
+    },
+    "benchmarks": {
+      "slug": "deep-ocean-black-smokers-v8",
+      "encode_mode": "master",
+      "shots_render_or_cache_s": 0.019,
+      "timeline_assembly_and_mux_s": 107.68,
+      "thumbnail_concepts_s": 5.606,
+      "total_render_master_s": 113.575,
+      "rendered_frames": 2064,
+      "effective_render_fps": 18.17
+    }
+  },
+  "qa_results": {
+    "qc_measurements_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\qc_measurements.json",
+    "qc_report_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\qc_report.md",
+    "summary": {
+      "overall_pass": false,
+      "failed_gates_count": 1,
+      "moving_footage_pct": 88.32,
+      "whisper_normalized_match_ratio": 0.9702,
+      "integrated_lufs": -16.0,
+      "true_peak_dbtp": -1.4,
+      "protected_projects_intact": true
+    }
+  },
+  "studio_v7_intelligence": {
+    "adaptive_audio_profile": "immersive_exploration",
+    "music_plan_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\music_plan.json",
+    "ambience_plan_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\ambience_plan.json",
+    "sfx_plan_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\sfx_plan.json",
+    "scene_optimization_report_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\scene_optimization_report.json",
+    "unified_av_timeline_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\unified_av_timeline.json",
+    "creative_qa_report_json": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\creative_qa_report.json",
+    "scene_optimization_counts": {
+      "Keep": 10,
+      "Merge": 0,
+      "Replace": 0,
+      "Remove": 0
+    },
+    "music_sections_count": 2,
+    "ambience_sections_count": 5,
+    "approved_sfx_count": 1,
+    "creative_qa_pass": false
+  },
+  "final_output_locations": {
+    "output_dir": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8",
+    "master_mp4": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\deep-ocean-black-smokers-v8.mp4",
+    "primary_thumbnail_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\thumbnail.jpg",
+    "subtitles_srt": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\subtitles.srt",
+    "script_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\script.md",
+    "retention_plan_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\retention_plan.md",
+    "storyboard_manifest_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\storyboard_and_shot_manifest.md",
+    "youtube_metadata_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\youtube_metadata.md",
+    "qc_report_md": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\qc_report.md"
+  }
+}
