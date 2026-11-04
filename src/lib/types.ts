@@ -289,11 +289,94 @@ export interface PublishedMacEpisodeRecord {
   updatedAt: string;
 }
 
+export type CrossSubStatus =
+  | "need_my_sub"
+  | "waiting_their_sub"
+  | "completed"
+  | "unsubscribed";
+
+export type PublicSubVerificationState =
+  | "unchecked"
+  | "confirmed_public_sub"
+  | "not_in_public_list"
+  | "unsubscribed_detected";
+
+export type NicheSafetyTier =
+  | "safe_same_niche"
+  | "neutral_adjacent"
+  | "risky_off_niche";
+
+export type CrossSubSourcePlatform =
+  | "niche_finder_us"
+  | "facebook_zalo"
+  | "reddit_discord"
+  | "youtube_comment"
+  | "other";
+
+export interface CrossSubPartner {
+  id: string;
+  channelId: string;
+  handle: string;
+  title: string;
+  description: string;
+  thumbnailUrl: string;
+  country?: string;
+  subscribers: number;
+  videoCount: number;
+  totalViews: number;
+  latestVideoId?: string;
+  latestVideoTitle?: string;
+  nicheMatchScore: number; // 0 - 100
+  nicheSafetyTier: NicheSafetyTier;
+  nicheReasonVi: string;
+  sourcePlatform: CrossSubSourcePlatform;
+  subAccountUsed: string;
+  status: CrossSubStatus;
+  iSubscribedAt?: string;
+  theySubscribedAt?: string;
+  publicSubState: PublicSubVerificationState;
+  myMainChannelSubscribed?: boolean;
+  lastVerifiedAt?: string;
+  notes: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface DiscoveredNichePeer {
+  channelId: string;
+  handle: string;
+  title: string;
+  description: string;
+  thumbnailUrl: string;
+  country?: string;
+  subscribers: number;
+  videoCount: number;
+  totalViews: number;
+  sampleVideoId: string;
+  sampleVideoTitle: string;
+  sampleVideoThumb: string;
+  nicheMatchScore: number;
+  nicheSafetyTier: NicheSafetyTier;
+  nicheReasonVi: string;
+  alreadySaved: boolean;
+}
+
+export interface RecentPublicSubscriberItem {
+  channelId: string;
+  title: string;
+  description: string;
+  thumbnailUrl: string;
+  subscribedAt: string;
+  alreadyInCrm: boolean;
+}
+
 export interface StoreData {
   activeChannelId: string;
   myChannels: TrackedChannel[];
   competitors: CompetitorChannel[];
   ideas: SavedIdea[];
+  crossSubPartners?: CrossSubPartner[];
+  lastCrossSubAuditAt?: string;
   activePlan?: GrowthSprintPlan | null;
   completedSprintsCount?: number;
   lastAutopilotSyncAt?: string;

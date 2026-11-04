@@ -10,6 +10,7 @@ import {
   PanelLeftOpen,
   RefreshCw,
   Settings,
+  Users,
   X,
 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -17,12 +18,13 @@ import { INITIAL_DEMO_STORE } from "@/lib/demo-data";
 import { formatCompact } from "@/lib/format";
 import type { AppSettings, SavedIdea, StoreData } from "@/lib/types";
 import { AnalyticsStudioTab } from "./AnalyticsStudioTab";
+import { CrossSubTab } from "./CrossSubTab";
 import { IdeasAndCompetitorsTab } from "./IdeasAndCompetitorsTab";
 import { MacStudioReviewTab } from "./MacStudioReviewTab";
 import { SettingsTab } from "./SettingsTab";
 import { YoutubeIcon } from "./YoutubeIcon";
 
-type ActiveTab = "mac_review" | "analytics" | "ideas" | "settings";
+type ActiveTab = "mac_review" | "analytics" | "ideas" | "cross_sub" | "settings";
 
 export function DashboardApp() {
   const [store, setStore] = useState<StoreData>(INITIAL_DEMO_STORE);
@@ -277,6 +279,22 @@ export function DashboardApp() {
           ? totalOutliersCount
           : undefined,
       icon: Lightbulb,
+    },
+    {
+      id: "cross_sub",
+      label: "Sub Chéo & Giao Lưu",
+      subtitle: "Đối soát OAuth & Lọc cùng ngách",
+      badge: (() => {
+        const list = store.crossSubPartners || [];
+        const pending = list.filter(
+          (p) =>
+            p.status === "waiting_their_sub" || p.status === "need_my_sub"
+        ).length;
+        if (pending > 0) return `${pending} chờ`;
+        if (list.length > 0) return list.length;
+        return undefined;
+      })(),
+      icon: Users,
     },
     {
       id: "settings",
@@ -761,7 +779,22 @@ export function DashboardApp() {
                 />
               )}
 
-              {/* TAB #4: SETTINGS, OAUTH 2.0 & API CONNECTIONS */}
+              {/* TAB #4: CROSS-SUB CRM, OAUTH AUDIT & SAME-NICHE US PEER FINDER */}
+              {activeTab === "cross_sub" && (
+                <CrossSubTab
+                  channel={activeChannel}
+                  partners={store.crossSubPartners || []}
+                  lastCrossSubAuditAt={store.lastCrossSubAuditAt}
+                  youtubeOAuth={store.youtubeOAuth}
+                  hasYoutubeKey={Boolean(store.settings.youtubeApiKey)}
+                  smartClicks={smartClicks}
+                  onStoreUpdate={(nextStore) => setStore(nextStore)}
+                  onGoToSettings={() => setActiveTab("settings")}
+                  onNotify={showToast}
+                />
+              )}
+
+              {/* TAB #5: SETTINGS, OAUTH 2.0 & API CONNECTIONS */}
               {activeTab === "settings" && (
                 <SettingsTab
                   myChannels={store.myChannels}
