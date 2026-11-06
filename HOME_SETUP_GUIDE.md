@@ -1,6 +1,8 @@
-# Hướng Dẫn Cài Đặt & Sản Xuất Video Trên Máy Ở Nhà (`Proof of Wonder — Studio v6.0`)
+# Hướng Dẫn Cài Đặt & Sản Xuất Video Trên Máy Ở Nhà (`Proof of Wonder — Studio v9.0`)
 
-Tài liệu này hướng dẫn từ **A → Z** cách kéo toàn bộ hệ thống **`science-knowledge`** (`Documentary Studio v6.0` + `ytb-tools` Web Dashboard) về bất kỳ máy tính mới nào ở nhà (**macOS**, **Ubuntu/Linux**, hoặc **Windows WSL2**) để dựng video chuẩn kênh **Proof of Wonder** với chi phí `\$0`.
+Tài liệu này hướng dẫn từ **A → Z** cách kéo toàn bộ hệ thống **`science-knowledge`** (`Documentary Studio v9.0` + `ytb-tools` Web Dashboard) về bất kỳ máy tính mới nào ở nhà (**macOS Apple Silicon / Intel**, **Ubuntu/Linux**, hoặc **Windows WSL2**) để dựng video chuẩn kênh **Proof of Wonder** với chi phí `$0`.
+
+> 📐 **Tài liệu kỹ thuật chuyên sâu cho Studio v9:** [youtube-shorts-channel/docs/STUDIO_V9_GUIDE.md](./youtube-shorts-channel/docs/STUDIO_V9_GUIDE.md)
 
 ---
 
@@ -8,15 +10,15 @@ Tài liệu này hướng dẫn từ **A → Z** cách kéo toàn bộ hệ th�
 
 Mở Terminal trên máy ở nhà và đảm bảo có đủ 4 công cụ cơ bản: `git`, `ffmpeg`, `python3` (`3.11+`), và `node` (`18+`).
 
-### Trên macOS (dùng Homebrew)
+### Trên macOS (dùng Homebrew — tự cài thêm `cairo` / `pango` khi dùng `--with-graphics`)
 ```bash
-brew install git ffmpeg python@3.11 node uv
+brew install git ffmpeg python@3.11 node uv cairo pango pkg-config
 ```
 
 ### Trên Ubuntu / Linux hoặc Windows (WSL2 Ubuntu)
 ```bash
 sudo apt update
-sudo apt install -y git ffmpeg python3 python3-venv python3-pip nodejs npm
+sudo apt install -y git ffmpeg python3 python3-venv python3-pip nodejs npm libcairo2-dev libpango1.0-dev pkg-config
 ```
 
 > **Kiểm tra nhanh:**
@@ -28,29 +30,32 @@ sudo apt install -y git ffmpeg python3 python3-venv python3-pip nodejs npm
 
 ## 2. Tải toàn bộ Source Code & Cài đặt tự động (1 cụm lệnh)
 
-Toàn bộ workspace `science-knowledge` (đã kèm submodule `ytb-tools`, bộ font `Anton` / `BebasNeue` / `BeVietnamPro`, kho âm thanh `CC0`, 4 Production Profiles, 7 Voice Presets và kịch bản mẫu) đã nằm trên GitHub.
+Toàn bộ workspace `science-knowledge` (đã kèm submodule `ytb-tools`, bộ font `Anton` / `BebasNeue` / `BeVietnamPro`, kho âm thanh `CC0`, Production Profiles, 7 Voice Presets, 6 Agent Skills và kịch bản mẫu) đã nằm trên GitHub.
 
-Chạy đúng 3 dòng sau tại thư mục bạn muốn lưu code ở nhà:
+Chạy 3 dòng sau tại thư mục bạn muốn lưu code ở nhà:
 
 ```bash
 git clone --recurse-submodules -b science-knowledge https://github.com/vipker113/ytb-tools.git science-knowledge
 cd science-knowledge
-./setup-studio-anywhere.sh
+./setup-studio-anywhere.sh --with-all
 ```
 
-### Script `setup-studio-anywhere.sh` sẽ tự động làm gì?
+### Script `setup-studio-anywhere.sh --with-all` sẽ tự động làm gì?
 1. Kiểm tra `ffmpeg` trên máy.
-2. Tạo môi trường ảo `youtube-shorts-channel/.venv` và cài toàn bộ thư viện Python trong `youtube-shorts-channel/requirements.txt` (`edge-tts`, `faster-whisper`, `onnxruntime`, `opencv-python-headless`, `pillow`, `pydantic`, `scipy`, v.v.).
-3. Chạy thử `cli.py profiles` để xác nhận **Studio v6.0** hoạt động hoàn hảo.
-4. Vào thư mục `ytb-tools` chạy `npm install` để cài đặt Web Dashboard.
+2. Tạo môi trường ảo `youtube-shorts-channel/.venv` (ưu tiên `Python 3.11` qua `uv`) và cài lõi `requirements.txt`.
+3. Cài 3 nhóm năng lực mở rộng của **Studio v9** (có thể bật lẻ bằng `--with-ml`, `--with-graphics`, `--with-analysis`):
+   - **Visual Corpus (`--with-ml`):** `torch` + `transformers` chạy `CLIP ViT-B/32` trực tiếp trên GPU Apple Silicon (`mps`, không tốn tiền API).
+   - **Mechanism Overlays (`--with-graphics`):** `ManimCE` xuất đồ họa cơ chế vật lý trong suốt `.mov` (`qtrle` RGBA) dùng trực tiếp font đi kèm, **không cần cài MacTeX**.
+   - **Outlier Analyst (`--with-analysis`):** `yt-dlp`, `scenedetect`, `youtube-transcript-api` để phân tích nhịp cắt cảnh đối thủ và tự xóa file video tạm sau khi trích chỉ số.
+4. Chạy thử `cli.py profiles` và cài `npm install` cho `ytb-tools`.
 
-*(Lưu ý: Model tách lớp chiều sâu `Depth-Anything-V2-Small FP16 ONNX` nặng `~50 MB` không đẩy lên Git cho nhẹ kho code — hệ thống sẽ **tự động tải từ Hugging Face** ngay lần đầu bạn dựng cảnh có hiệu ứng chiều sâu 2.5D).*
+*(Tuỳ chọn: Nếu bạn có khóa miễn phí của Cục Lưu trữ Quốc gia Hoa Kỳ `NARA`, thêm `export NARA_API_KEY="..."` vào `~/.zshrc` để tự động mở nguồn tư liệu thứ 8).*
 
 ---
 
-## 3. Khởi động Web Dashboard (`ytb-tools`) & Kết nối lại API / Kênh YouTube
+## 3. Khởi động Web Dashboard (`ytb-tools`) & Kết nối Kênh YouTube
 
-Vì lý do bảo mật, toàn bộ **API Key, OAuth Client Secret và Token đăng nhập kênh YouTube** (`ytb-tools/data/ytb-growth-db.json` & `.env*`) được chặn không đưa lên GitHub.
+Vì lý do bảo mật, toàn bộ **API Key, OAuth Client Secret và Token đăng nhập kênh YouTube** (`ytb-tools/data/ytb-growth-db.json` & `.env*`) không đưa lên GitHub.
 
 ### Bước 3.1: Bật Web UI
 ```bash
@@ -59,129 +64,65 @@ npm run dev
 ```
 Mở trình duyệt vào địa chỉ: **`http://localhost:3000`**
 
-### Bước 3.2: Nhập lại Khóa API & Kết nối YouTube Studio trên máy ở nhà
-1. Trên giao diện `http://localhost:3000`, bấm vào nút **Cài Đặt (Settings)** ở góc trên phải (hoặc tạo file `ytb-tools/.env.local` với `GEMINI_API_KEY=...` và `YOUTUBE_API_KEY=...`).
-2. Nhập:
-   - **Gemini API Key** (để dùng tính năng gợi ý chủ đề giữ chân & viết kịch bản AI).
-   - **YouTube Data API v3 Key** (để quét kênh, đối thủ & từ khóa).
-   - **Google OAuth Client ID & Client Secret** (để đồng bộ Analytics thật, chọn Playlist và bấm **Lưu Nháp / Đăng Video trực tiếp lên YouTube Studio**).
-3. Đảm bảo trong Google Cloud Console của bạn đã khai báo **Authorized redirect URI**:
-   ```text
-   http://localhost:3000/api/youtube/oauth/callback
-   ```
-4. Bấm **Kết nối OAuth YouTube** → chọn kênh **Proof of Wonder** → bấm **Đồng bộ Kênh**.
+### Bước 3.2: Ba khu vực làm việc chính trên `ytb-tools` (Studio v9)
+1. **Ý Tưởng & Đối Thủ (`Outlier Hunter`):** Bấm nút **Giải phẫu nhịp dựng** trên bất kỳ video đối thủ nào để xem thanh timeline cắt cảnh theo lớp chuyển động, bảng chỉ số 4 pha (`0–3s / 3–15s / 15–35s / 35s+`), so sánh với trung vị kênh mình và bấm **Lưu ý tưởng kèm giải phẫu**.
+2. **Bàn Dựng (`Studio Backlot`):** Theo dõi trực tiếp tiến độ dựng tập phim qua `SSE` (`< 2s` không cần tải lại trang), xem filmstrip `IN/MID/OUT` của từng cảnh kèm lớp phủ ManimCE, kiểm tra giấy phép + điểm `CLIP`, ghi chú sửa từng shot hoặc bấm **Duyệt Master** để mở khóa cổng render `1080x1920`.
+3. **Duyệt & Đăng Video (`Mac Studio Review`):** Xem video Master đã qua 14 cổng kỹ thuật + 6 trụ QA, chọn Thumbnail (`A / B / C`) và bấm **Lưu Bản Nháp** hoặc **Đăng Video** lên YouTube Studio.
 
-> **Mẹo mang nguyên Kho Backlog & Cấu hình sang máy ở nhà:**
-> Nếu bạn muốn giữ nguyên 100% cấu hình + danh sách Backlog cá nhân mà không cần nhập lại, chỉ cần chép riêng file `ytb-tools/data/ytb-growth-db.json` qua USB/AirDrop/Google Drive cá nhân vào đúng đường dẫn `science-knowledge/ytb-tools/data/ytb-growth-db.json` trên máy ở nhà (tuyệt đối không đưa file này lên Git công khai).
+### Bước 3.3: Nhập lại Khóa API & Kết nối YouTube Studio trên máy mới
+1. Bấm **Cài Đặt (Settings)** ở góc trên phải `http://localhost:3000`.
+2. Nhập `GEMINI_API_KEY` (tuỳ chọn cho gợi ý chủ đề trên web), `YOUTUBE_API_KEY`, và Google OAuth (`Authorized redirect URI`: `http://localhost:3000/api/youtube/oauth/callback`).
 
 ---
 
 ## 4. Hai Cách Dựng Video Trên Máy Ở Nhà
 
-### Cách A — Nhanh & Tự Động Nhất (Dùng cùng Antigravity IDE ở nhà)
+### Cách A — Dùng cùng Antigravity IDE (Tự động nạp `.agents/skills/pow-*`)
+1. Mở **Antigravity** → **Open Folder** chọn thư mục `science-knowledge`.
+2. Hệ thống tự động nạp luật bảo vệ `.agents/rules/pow-guardrails.md` và 6 kỹ năng `pow-*`. Bạn chỉ cần nhắn chủ đề (ví dụ: *"Sản xuất tập mới về NASA Parker Solar Probe bay xuyên vành nhật hoa 1,000,000°C theo quy trình Studio v9"*): Agent sẽ tự tìm tư liệu `$0`, nạp Visual Corpus, kiểm tra `feasibility`, sinh giọng đọc rồi dừng đúng tại cổng nghe giọng & cổng duyệt **Studio Backlot** cho bạn quyết định.
 
-1. Mở ứng dụng **Antigravity** trên máy ở nhà → **Open Folder** chọn thư mục `science-knowledge` vừa clone.
-2. Nếu bạn muốn dựng ngay **tập Tam Giác Quỷ (Bermuda Triangle)** đã được chuẩn bị sẵn kịch bản trên GitHub (`youtube-shorts-channel/episodes/bermuda_abyss_v6_voice_script.txt`), chỉ cần nhắn cho Antigravity câu lệnh sau:
-
-```text
-Hãy dựng hoàn chỉnh tập phim tài liệu Tam Giác Quỷ từ kịch bản có sẵn tại youtube-shorts-channel/episodes/bermuda_abyss_v6_voice_script.txt bằng quy trình 6 bước của Studio v6.0 (profile deep_ocean_documentary, voice mysterious_discovery). Thumbnail dùng Concept C chèn chữ lớn ("8,300M UNDER / BERMUDA" trên ảnh chụp xác tàu đắm dưới đèn xanh biển sâu của NOAA). Tải tư liệu thật từ NOAA / USGS / USCG, chạy đủ 14 cổng kiểm định QA và xuất ra youtube-shorts-channel/output để tôi duyệt trên ytb-tools.
-```
-
-3. Hoặc với bất kỳ chủ đề mới nào từ tab **Ý Tưởng & Đối Thủ (`Backlog`)** trên `http://localhost:3000`, bấm nút **Copy Lệnh Dựng** và dán thẳng vào Antigravity!
-
----
-
-### Cách B — Chạy Trực Tiếp Bằng Dòng Lệnh (`Studio v6.0 CLI` — 6 Bước Chuẩn)
-
-Mở Terminal tại thư mục gốc `science-knowledge`:
-
+### Cách B — Chạy Trực Tiếp Bằng Dòng Lệnh (`Studio v9.0 CLI`)
 ```bash
-export PY="$(pwd)/youtube-shorts-channel/.venv/bin/python"
-export STUDIO="$(pwd)/youtube-shorts-channel/pipeline/pow_studio/cli.py"
+cd science-knowledge/youtube-shorts-channel
+export PY=".venv/bin/python"
+export STUDIO="pipeline/pow_studio/cli.py"
+export EP="episodes/space_parker_solar_probe_v9_documentary.yaml"
 
-# Xem danh sách 4 Production Profiles & 7 Voice Presets có sẵn
-"$PY" "$STUDIO" profiles
-```
-
-#### Bước 0 (Tuỳ chọn): Dựng thử lại tập mẫu `Blood Falls v6 Pilot` để kiểm tra máy mới
-*(Lưu ý: Trên máy mới thư mục `assets/raw_footage/` đang trống để nhẹ Git; khi tạo tập mới hệ thống sẽ tải cảnh quay thật từ Wikimedia Commons / NASA / NOAA lưu vào `assets/raw_footage/<ten_tap>/`).*
-
-#### Quy trình 6 Bước cho một file cấu hình tập phim (`$EP`)
-```bash
-export EP="$(pwd)/youtube-shorts-channel/episodes/<ten_file_tap_phim>.yaml"
-
-# BƯỚC 1: Kiểm tra bản quyền tư liệu & chấm điểm cơ hội chủ đề (Topic Opportunity)
+# 1. Khớp nhịp Visual Corpus & kiểm tra cổng khả thi + bản quyền
+"$PY" "$STUDIO" match-beats -m "$EP"
+"$PY" "$STUDIO" feasibility -m "$EP" --out-dir output/space-and-universe/parker-solar-probe-corona-v9/planning
 "$PY" "$STUDIO" stage1-research -m "$EP"
 
-# BƯỚC 2: Chấm điểm 3 phương án mở đầu (0-3s Hook), kiểm tra nhịp giữ chân & chống văn phong AI
+# 2. Chấm điểm kịch bản & sinh giọng đọc 5 lớp âm thanh
 "$PY" "$STUDIO" stage2-story -m "$EP"
+"$PY" "$STUDIO" stage3-voice -m "$EP"
+# Nghe thử work_audio/narration_norm.wav rồi khóa giọng:
+"$PY" "$STUDIO" voice-approve -m "$EP" --note "Approved"
 
-# BƯỚC 3A: Sinh giọng đọc TTS có đạo diễn ngữ điệu (nhấn chữ, ngắt nhịp tự nhiên) + trộn âm thanh 5 lớp (-16 LUFS)
-"$PY" "$STUDIO" stage3-voice -m "$EP" --approve
+# 3. Render ManimCE overlays, lập khung hình & đẩy bảng phân cảnh lên Studio Backlot
+"$PY" "$STUDIO" render-overlays -m "$EP"
+"$PY" "$STUDIO" stage4-visual -m "$EP" --mode draft
+"$PY" "$STUDIO" optimize-scenes -m "$EP"
+"$PY" "$STUDIO" plan-soundscape -m "$EP"
+"$PY" "$STUDIO" export-storyboard -m "$EP"
 
-# (HOẶC BƯỚC 3B — Nếu bạn tự thu âm giọng thật bằng mic riêng):
-# "$PY" "$STUDIO" stage3-voice -m "$EP" --upload-voice "/duong/dan/giong_thu_am.wav" --approve
-
-# BƯỚC 4: Đánh giá độ khớp Lời thoại ↔ Hình ảnh, góc máy & xuất 3 phương án Thumbnail trên khung điện thoại
-"$PY" "$STUDIO" stage4-visual -m "$EP" --mode master
-
-# BƯỚC 5: Dựng video
-# - Chạy bản nháp 540x960 siêu nhanh để xem thử nhịp cắt cảnh:
-"$PY" "$STUDIO" stage5-edit -m "$EP" --mode draft
-# - Khi ưng ý, xuất bản Master 1080x1920 @ 30fps (tự động cache SHA-256 từng cảnh):
+# 4. Vào http://localhost:3000 -> tab "Studio Backlot" bấm "Duyệt Master", sau đó render Master + QA 6 trụ:
 "$PY" "$STUDIO" stage5-edit -m "$EP" --mode master
-
-# BƯỚC 6: Chạy 14 cổng kiểm định chất lượng tự động (14-Gate QA) & xuất hồ sơ cho Web UI
 "$PY" "$STUDIO" stage6-quality -m "$EP"
+"$PY" "$STUDIO" qa-6pillar -m "$EP" --out-dir output/space-and-universe/parker-solar-probe-corona-v9/qa
+"$PY" "$STUDIO" creative-qc -m "$EP"
 ```
-
-Sau khi **Bước 6** báo `14/14 PASS`:
-- Mở tab **Duyệt & Đăng Video (Mac Studio Review)** trên `http://localhost:3000` → bấm **Quét lại Output**.
-- Xem trực tiếp video, nghe âm thanh, chọn Thumbnail (`Primary` / `Variant B` / `Variant C`), chọn Playlist (ví dụ: *Hidden Earth* hoặc *Deep-Sea Mysteries*) và bấm **Lưu Bản Nháp (Draft)** hoặc **Đăng Công Khai** lên YouTube Studio!
 
 ---
 
-## 5. Cách Cập Nhật & Đồng Bộ Code Giữa Máy Công Ty ↔ Máy Ở Nhà
+## 5. Kiểm Tra Hệ Thống & Xử Lý Lỗi Thường Gặp
 
-### Khi ngồi vào máy ở nhà (kéo thay đổi mới nhất từ GitHub về)
-```bash
-cd science-knowledge
-git pull github-ytb science-knowledge || git pull origin science-knowledge
-git submodule update --init --recursive --remote
-```
-
-### Khi làm xong việc ở nhà muốn đẩy code/kịch bản mới lên lại GitHub
-1. Nếu có sửa code trong `ytb-tools`:
+1. **Chạy toàn bộ bộ kiểm thử tự động Studio v6–v9 (`79+` tests):**
    ```bash
-   cd science-knowledge/ytb-tools
-   git add .
-   git commit -m "update: cap nhat ytb-tools tu may o nha"
-   git push origin main
+   cd science-knowledge/youtube-shorts-channel
+   .venv/bin/pytest pipeline/tests -q
    ```
-2. Đẩy kịch bản `.yaml` / `.txt` hoặc code `Studio v6.0` từ thư mục gốc `science-knowledge`:
-   ```bash
-   cd science-knowledge
-   git add .
-   git commit -m "feat: them kich ban va cap nhat studio tu may o nha"
-   git push origin HEAD:science-knowledge
-   ```
-
----
-
-## 6. Kiểm Tra Hệ Thống & Xử Lý Lỗi Thường Gặp (Troubleshooting)
-
-1. **Chạy bộ kiểm thử tự động (20 Unit Tests) để chắc chắn máy ở nhà cài đúng 100%:**
-   ```bash
-   cd science-knowledge
-   ./youtube-shorts-channel/.venv/bin/python -m pytest youtube-shorts-channel/pipeline/tests/test_pow_studio_v6.py -q
-   ```
-   *(Kết quả hiện `20 passed` là toàn bộ hệ thống hoạt động chuẩn xác).*
-
 2. **Lỗi cổng `3000` đang bận khi chạy `npm run dev`:**
-   - Tắt tiến trình cũ đang chiếm cổng `3000`: `lsof -ti:3000 | xargs kill -9` rồi chạy lại `npm run dev` (nên giữ đúng cổng `3000` để khớp với Google OAuth Redirect URI).
-
-3. **Lỗi `Permission denied (publickey)` khi `git push` trên máy ở nhà:**
-   - Vì khi clone bằng link `https://github.com/vipker113/ytb-tools.git`, bạn có thể đăng nhập bằng GitHub Personal Access Token (PAT) hoặc cài GitHub CLI (`gh auth login`) trên máy ở nhà để push cực nhanh mà không cần cấu hình SSH key thủ công.
-
-4. ** Web UI báo không thấy tập video nào trong tab Duyệt Video:**
-   - Đó là bình thường khi mới clone về (vì các file `.mp4` nặng hàng GB không lưu trên Git). Ngay sau khi bạn dựng xong tập đầu tiên vào `youtube-shorts-channel/output/...`, bấm nút **Làm mới / Quét lại** trên Web UI là tập phim sẽ hiện lên đầy đủ kèm bảng điểm 14 cổng QA.
+   - Giải phóng cổng `3000`: `lsof -ti:3000 | xargs kill -9` rồi chạy lại `npm run dev`.
+3. **`stage5-edit --mode master` báo bị chặn bởi cổng Storyboard:**
+   - Đây là cơ chế bảo vệ chuẩn của `manifest_version: "9.0"` (`require_storyboard_approval: true`). Mở `http://localhost:3000` → tab **Studio Backlot** → chọn tập phim → bấm **Duyệt Master** (hoặc chạy bản nháp `--mode draft` để xem trước mà không cần mở khóa).

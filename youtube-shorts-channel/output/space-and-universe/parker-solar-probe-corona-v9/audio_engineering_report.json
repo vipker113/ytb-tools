@@ -1,0 +1,56 @@
+{
+  "slug": "parker-solar-probe-corona-v9",
+  "engine_version": "7.0",
+  "legacy_v6_fallback": false,
+  "voice_input_mode": "directed_tts",
+  "scene_audio_profile": "scientific_discovery",
+  "adaptive_audio_profile": "immersive_exploration",
+  "scene_optimization_counts": {
+    "Keep": 13,
+    "Merge": 1,
+    "Replace": 0,
+    "Remove": 0
+  },
+  "music_sections_count": 0,
+  "ambience_sections_count": 0,
+  "approved_sfx_count": 0,
+  "rejected_sfx_count": 2,
+  "bed_calibration": {
+    "pre_bed_lufs": -70.0,
+    "applied_bed_gain_db": 0.0,
+    "post_bed_lufs": -70.0
+  },
+  "voice_to_bed_margin_lu": 53.9,
+  "stem_loudness_lufs": {
+    "narration": -16.1,
+    "music": -70.0,
+    "ambience": -70.0,
+    "natural_sounds": -70.0,
+    "cinematic_sfx": -70.0,
+    "combined_bed": -70.0
+  },
+  "stems": {
+    "layer_1_narration": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/parker-solar-probe-corona-v9/work_audio/layer_1_narration.wav",
+    "layer_2_music": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/parker-solar-probe-corona-v9/work_audio/layer_2_music.wav",
+    "layer_3_ambience": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/parker-solar-probe-corona-v9/work_audio/layer_3_ambience.wav",
+    "layer_4_natural_sounds": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/parker-solar-probe-corona-v9/work_audio/layer_4_natural_sounds.wav",
+    "layer_5_cinematic_sfx": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/parker-solar-probe-corona-v9/work_audio/layer_5_cinematic_sfx.wav"
+  },
+  "layers_active": {
+    "narration": true,
+    "music": false,
+    "ambience": false,
+    "natural_sounds": false,
+    "cinematic_sfx": false
+  },
+  "diagnostics": {
+    "integrated_lufs": -15.9,
+    "loudness_range_lra_lu": 1.6,
+    "true_peak_dbtp": -1.5,
+    "speech_crest_factor_db": 14.4,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -2.35
+  }
+}

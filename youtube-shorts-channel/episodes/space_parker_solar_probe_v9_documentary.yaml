@@ -1,0 +1,897 @@
+manifest_version: "9.0"
+script_version: "v9.0.0"
+subtitle_version: "v9.0.0"
+channel_name: "Proof of Wonder"
+playlist: "Space & Universe"
+slug: "parker-solar-probe-corona-v9"
+topic: "NASA Parker Solar Probe Flying Inside the Sun's Million-Degree Corona Without Melting (WISPR Camera Data & 4.5-Inch Carbon-Foam Heat Shield)"
+
+style_profile: "space_discovery"
+style_overrides:
+  sound_design:
+    scene_audio_profile: "scientific_discovery"
+    enable_diegetic_nat_sound: false
+  asset_selection:
+    target_moving_footage_ratio: 0.90
+    target_genuine_moving_footage_ratio: 0.90
+    target_meaningful_action_footage_ratio: 0.72
+    max_static_image_ratio: 0.05
+    max_scientific_visualization_ratio: 0.05
+    min_human_interaction_shots: 2
+  pacing:
+    min_shot_duration_s: 2.2
+  subtitles:
+    style: "cinema_boxless"
+
+voice_input_mode: "directed_tts"
+voice_direction_profile: "mysterious_discovery"
+voice: "en-GB-RyanNeural"
+annotated_voice_script_file: "episodes/parker_solar_probe_v9_voice_script.txt"
+opening_hook_type: "paradox"
+adaptive_audio_profile: "immersive_exploration"
+
+primary_title: "How NASA Flew Through the Sun's Million-Degree Corona"
+alternative_title: "Why a 1,000,000°C Solar Atmosphere Didn't Melt NASA's Probe"
+
+youtube_description: |
+  How did NASA's Parker Solar Probe plunge straight into the Sun's outer atmosphere—where plasma temperatures exceed 1,000,000°C—without melting?
+
+  Crossing below the Alfvén critical surface and swooping within 3.8 million miles (6.1 million km) of the solar photosphere, Parker Solar Probe captured direct white-light WISPR camera sequences of coronal streamers rushing past the spacecraft. In space physics, temperature measures how fast individual particles move, while heat transfer depends on particle density: because the upper solar corona is billions of times more tenuous than sea-level air, relatively few superheated ions strike the spacecraft at once.
+
+  Facing intense solar radiation, a 4.5-inch (11.4 cm) carbon-composite foam Thermal Protection System—97% empty space coated in reflective white alumina—peaks near 1,370°C (2,500°F) on its sunlit face while keeping scientific instruments behind it near a comfortable 30°C (85°F).
+
+  Footage Attribution: NASA / Johns Hopkins APL / Naval Research Laboratory (WISPR & Mission Operations) / NASA Goddard Space Flight Center / SDO / NASA Kennedy (Public Domain).
+
+hashtags:
+  - "#NASA"
+  - "#ParkerSolarProbe"
+  - "#Sun"
+  - "#Astrophysics"
+  - "#SpaceExploration"
+  - "#ProofOfWonder"
+
+target_duration_min_s: 45.0
+target_duration_max_s: 65.0
+ambience_preset: "deep_space"
+ambience_ducked_lufs_target: -26.5
+
+raw_assets_dir: "assets/raw_footage/space_parker_solar_probe_v9"
+output_dir: "output/space-and-universe/parker-solar-probe-corona-v9"
+
+visual_corpus_mode: "on"
+require_storyboard_approval: true
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N03"
+  scientific_caveat_seg_id: "N05"
+  min_real_evidence_ratio: 0.95
+
+hook_candidates:
+  - hook_id: "H1"
+    archetype: "paradox"
+    spoken_line: "How did a NASA spacecraft fly straight through the Sun's million-degree atmosphere—without melting?"
+    opening_visual: "Real onboard WISPR white-light camera footage from Parker Solar Probe flying straight through glowing solar coronal streamers"
+    src_file: "nasa_svs_the_closest_images_ever_taken_of_the_suns_atmosp_538b0cfb5e.mp4"
+    promise_fulfilled_in_seg_id: "N04"
+    rationale: "Opens at 0.00s inside real onboard camera footage from inside the Sun's atmosphere paired with a direct 14-word thermal physics paradox."
+  - hook_id: "H2"
+    archetype: "unexpected_fact"
+    spoken_line: "Three point eight million miles from the Sun, NASA flew a camera inside million-degree plasma—and kept its instruments at room temperature."
+    opening_visual: "NASA SDO AIA 304A extreme-ultraviolet solar prominence erupting off the blazing limb of the Sun"
+    src_file: "nasa_svs_sdo_video_toolkit_the_trebuchet_eruption_upper_l_150a388c13.mp4"
+    promise_fulfilled_in_seg_id: "N04"
+    rationale: "Contrasts blazing extreme-ultraviolet solar plasma with a 30°C room-temperature payload."
+  - hook_id: "H3"
+    archetype: "credible_mystery"
+    spoken_line: "Why can an engineer touch the back of NASA's solar heat shield while its front faces the Sun's corona?"
+    opening_visual: "APL cleanroom engineers fitting the 4.5-inch octagonal carbon-foam Thermal Protection System onto Parker Solar Probe"
+    src_file: "nasa_images_why_won_t_it_melt_how_nasa_s_solar_probe_will_su_e403f6685e.mp4"
+    promise_fulfilled_in_seg_id: "N04"
+    rationale: "Grounds the mystery immediately in tangible cleanroom spacecraft engineering."
+
+thumbnail_spec:
+  src_file: "nasa_svs_sdo_video_toolkit_the_trebuchet_eruption_upper_l_150a388c13.mp4"
+  src_time_s: 5.4
+  headline_text: "1,000,000°C SUN|WON'T MELT IT"
+  kicker_text: "NASA PARKER PROBE"
+  cx: 0.54
+  cy: 0.44
+  zoom: 1.14
+  shadow_lift: 0.06
+  clarity_boost: true
+  text_position: "bottom"
+  accent_rgb: [255, 196, 68]
+
+thumbnail_concepts:
+  - concept_id: "A"
+    src_file: "nasa_svs_sdo_video_toolkit_the_trebuchet_eruption_upper_l_150a388c13.mp4"
+    src_time_s: 5.4
+    headline_text: "1,000,000°C SUN|WON'T MELT IT"
+    kicker_text: "NASA PARKER PROBE"
+    cx: 0.54
+    cy: 0.44
+    zoom: 1.14
+    shadow_lift: 0.06
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 196, 68]
+    concept_rationale: "Towering SDO extreme-ultraviolet solar eruption delivers instant 160x284 mobile contrast for the 1,000,000°C paradox."
+  - concept_id: "B"
+    src_file: "nasa_svs_the_closest_images_ever_taken_of_the_suns_atmosp_538b0cfb5e.mp4"
+    src_time_s: 1.6
+    headline_text: "INSIDE THE|SUN'S CORONA"
+    kicker_text: "REAL WISPR CAMERA"
+    cx: 0.48
+    cy: 0.48
+    zoom: 1.10
+    shadow_lift: 0.08
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [120, 214, 255]
+    concept_rationale: "Actual Dec 2024 onboard WISPR frame from 3.8 million miles inside glowing coronal streamers."
+  - concept_id: "C"
+    src_file: "nasa_images_why_won_t_it_melt_how_nasa_s_solar_probe_will_su_e403f6685e.mp4"
+    src_time_s: 95.0
+    headline_text: "1,370°C FRONT|30°C BEHIND"
+    kicker_text: "4.5-INCH CARBON FOAM"
+    cx: 0.50
+    cy: 0.48
+    zoom: 1.12
+    shadow_lift: 0.10
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 148, 76]
+    concept_rationale: "Cleanroom engineers fitting the real octagonal carbon-foam heat shield onto Parker Solar Probe."
+
+narration_segments:
+  - seg_id: "N01"
+    text: "How did a NASA spacecraft fly straight through the Sun's million-degree atmosphere—without melting?"
+    delivery: "HOOK"
+    pace: "MODERATE"
+    energy: 4
+    pause_after_ms: 380
+    emphasis_words: ["NASA", "spacecraft", "million-degree", "atmosphere", "melting"]
+    narrative_beat: "opening_hook"
+    viewer_question: "How can any human-made spacecraft fly through a 1,000,000°C solar atmosphere without vaporizing?"
+    new_information: "NASA's Parker Solar Probe flew directly inside the Sun's million-degree outer atmosphere and survived intact."
+    visual_reveal: "Real onboard WISPR white-light camera footage flying through bright coronal streamers, paired with roaring SDO solar plasma."
+    emotional_direction: "Immediate physical disbelief and visual awe"
+    retention_purpose: "Stop scrolling on Frame 0 with real footage from inside the Sun's corona and a crisp 14-word thermal contradiction"
+
+  - seg_id: "N02"
+    text: "Launched atop a Delta IV Heavy rocket, Parker Solar Probe plunged within three point eight million miles of the Sun. Its onboard camera filmed glowing plasma streamers rushing directly past the spacecraft."
+    delivery: "MEASURED EVIDENCE"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_ms: 400
+    emphasis_words: ["Delta", "Heavy", "three", "eight", "million", "onboard", "camera", "plasma", "streamers"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "Why didn't that surrounding million-degree plasma cook the spacecraft on contact?"
+    new_information: "A Delta IV Heavy launch sent Parker within 3.8 million miles (6.1M km) of the photosphere, where its WISPR camera recorded coronal streamers first-hand."
+    visual_reveal: "Night liftoff of the Delta IV Heavy rocket from Cape Canaveral followed by real Encounter 8 and Dec 2024 WISPR coronal streamer sequences."
+    emotional_direction: "Documentary momentum from launch pad to inside the solar atmosphere"
+    retention_purpose: "Prove with real rocket and onboard spacecraft camera footage that the mission physically entered the corona"
+
+  - seg_id: "N03"
+    text: "Out in the solar corona, particles race past a million degrees Celsius—yet the gas is so thin that very few strike the probe. Temperature measures particle speed, not total heat transfer."
+    delivery: "SURPRISED BUT CONTROLLED"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_ms: 420
+    emphasis_words: ["corona", "million", "degrees", "thin", "few", "Temperature", "speed", "heat"]
+    narrative_beat: "escalation"
+    viewer_question: "Even if the plasma is thin, what blocks the blinding solar sunlight at 3.8 million miles?"
+    new_information: "Coronal ions move at >1,000,000°C speeds, but ultra-low gas density means sparse collisions and far lower conductive heat transfer than temperature alone implies."
+    visual_reveal: "Close-up SDO extreme-ultraviolet magnetic plasma loops over the Sun's limb paired with a restrained ManimCE temperature comparison bar."
+    emotional_direction: "Aha-moment physical clarity resolving the million-degree paradox"
+    retention_purpose: "Deliver the mid-video physics pivot distinguishing particle velocity (temperature) from collision density (heat transfer)"
+
+  - seg_id: "N04"
+    text: "A four-point-five-inch carbon-foam shield reflects blinding sunlight, peaking near thirteen hundred seventy degrees Celsius while instruments behind stay near thirty degrees."
+    delivery: "CINEMATIC REVEAL"
+    pace: "MODERATE"
+    energy: 4
+    pause_after_ms: 420
+    emphasis_words: ["four-point-five-inch", "carbon-foam", "shield", "thirteen", "hundred", "seventy", "thirty", "degrees"]
+    narrative_beat: "payoff"
+    viewer_question: "What did Parker discover inside the corona—and what mystery still remains?"
+    new_information: "A 4.5-inch (97%-air) alumina-coated carbon-foam heat shield endures ~1,370°C on its front face while keeping shadowed instruments near 30°C."
+    visual_reveal: "Cleanroom engineers fitting the octagonal carbon-foam heat shield, laser-testing cooled solar arrays, and touching the cool backside during thermal lamp tests, topped with a 1,370°C ManimCE gauge."
+    emotional_direction: "Admiration for precision aerospace engineering"
+    retention_purpose: "Show real engineers testing the exact 4.5-inch shield and solar arrays as the temperature drop is quantified"
+
+  - seg_id: "N05"
+    text: "Physicists still debate which magnetic waves superheat the outer corona hundreds of times hotter than the solar surface. Yet when flight controllers heard Parker's survival signal, humanity had touched a star—and survived."
+    delivery: "EMOTIONAL REFLECTION"
+    pace: "SLOW"
+    energy: 3
+    pause_after_ms: 360
+    emphasis_words: ["still", "debate", "magnetic", "waves", "survival", "signal", "touched", "star", "survived"]
+    narrative_beat: "final_impression"
+    viewer_question: "Could future close passes finally solve the coronal heating mystery?"
+    new_information: "While Parker mapped magnetic switchbacks inside the corona, the exact balance of wave turbulence versus nanoflares heating the corona remains actively debated."
+    visual_reveal: "Johns Hopkins APL flight controllers cheering as Parker's survival beacon arrives, closing on erupting solar corona plasma that loops seamlessly back into Frame 0."
+    emotional_direction: "Honest scientific humility paired with human triumph"
+    retention_purpose: "State the coronal-heating caveat honestly and close on real mission-control celebration + visual loop into S01"
+
+sfx_cues:
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.08
+    gain_db: -25.5
+    purpose: "Subtle low-frequency space rumble as WISPR coronal streamers rush past Frame 0"
+    visual_event: "Bright solar coronal streamers sweeping across Parker Solar Probe's WISPR camera"
+  - sfx_name: "cavern_heartbeat_pulse"
+    anchor_type: "shot_start"
+    anchor_ref: "S06"
+    offset_s: 0.06
+    gain_db: -26.0
+    purpose: "Restrained mid-video pivot pulse on the temperature-versus-density physics reveal"
+    visual_event: "SDO extreme-ultraviolet magnetic plasma loops flashing across the solar limb"
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 2.933
+    kind: "video_full"
+    src_file: "nasa_svs_the_closest_images_ever_taken_of_the_suns_atmosp_538b0cfb5e.mp4"
+    src_in: 0.3
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Bright solar wind structures and coronal streamers rushing directly past Parker Solar Probe's WISPR camera"
+    progression_dimension: "new_action"
+    camera_perspective: "first_person_pov"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.46
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.08
+    crop_rationale: "Centers the glowing coronal streamer structures in native 960x1024 WISPR spacecraft imagery."
+    transition_in: "cut"
+    transition_reason: "Instant Frame-0 spacecraft POV inside the Sun's corona."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N01"
+    associated_narration_concept: "How did a NASA spacecraft fly straight through the Sun's"
+    editorial_rationale: "Opens at 0.00s inside genuine Dec 2024 WISPR camera footage from inside the solar atmosphere."
+    subject_match_kind: "direct_subject"
+    story_beat: "NASA spacecraft flying straight through the Sun's corona"
+    visual_desc: "Bright white solar coronal streamers and solar wind rushing past spacecraft camera against dark space"
+
+  - sid: "S02"
+    start_s: 2.933
+    end_s: 5.567
+    kind: "video_full"
+    src_file: "nasa_svs_sdo_video_toolkit_the_trebuchet_eruption_upper_l_150a388c13.mp4"
+    src_in: 1.8
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    visible_action: "Massive extreme-ultraviolet solar prominence erupting violently off the blazing orange surface of the Sun"
+    progression_dimension: "new_scale"
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.54
+    cy0: 0.44
+    cx1: 0.55
+    cy1: 0.42
+    z0: 1.12
+    z1: 1.16
+    shadow_lift: 0.04
+    crop_rationale: "Frames the towering SDO 304-angstrom plasma eruption dead-center in vertical 9:16."
+    transition_in: "cut"
+    transition_reason: "Clean cut right before 'million-degree atmosphere—without melting?' to blazing solar plasma."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N01"
+    associated_narration_concept: "million-degree atmosphere—without melting?"
+    editorial_rationale: "Visually underscores the ferocity of the Sun's atmosphere right on the hook question."
+    subject_match_kind: "direct_subject"
+    story_beat: "Blazing solar atmosphere plasma eruption"
+    visual_desc: "Glowing red-orange solar surface launching a towering plasma eruption into black space"
+
+  - sid: "S03"
+    start_s: 5.567
+    end_s: 9.200
+    kind: "video_full"
+    src_file: "wikimedia_parker_solar_probe_countdown_to_t_zero_in_4k_fly_3b118324a4.webm"
+    src_in: 185.2
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Pad tower camera filming the triple-core Delta IV Heavy rocket carrying Parker Solar Probe swinging vertical onto Space Launch Complex 37"
+    progression_dimension: "new_action"
+    camera_perspective: "wide"
+    visual_complexity: "medium"
+    spoken_importance: "context"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.62
+    cy0: 0.48
+    cx1: 0.56
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.04
+    crop_rationale: "Frames the three orange-and-white Delta IV Heavy booster cores rising onto the Cape Canaveral pad in native 1080p."
+    transition_in: "cut"
+    transition_reason: "Cut on sentence pause into 1080p Cape Canaveral Delta IV Heavy pad erection as N02 begins."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "Launched atop a Delta IV Heavy rocket, Parker Solar Probe plunged"
+    editorial_rationale: "Shows the actual triple-core Delta IV Heavy launch vehicle readying Parker Solar Probe at Cape Canaveral."
+    subject_match_kind: "direct_subject"
+    story_beat: "Delta IV Heavy rocket preparing to launch Parker Solar Probe"
+    visual_desc: "Top-down launch tower view of triple-core orange and white Delta IV Heavy rocket rising vertical on the pad"
+
+  - sid: "S04"
+    start_s: 9.200
+    end_s: 13.067
+    kind: "video_full"
+    src_file: "wikimedia_parker_solar_probe_humanitys_closest_encounter_w_a713b86b7b.webm"
+    src_in: 21.2
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Johns Hopkins APL mission operations telemetry display tracking Parker Solar Probe's perihelion plunge within 3.8 million miles of the Sun"
+    progression_dimension: "new_perspective"
+    camera_perspective: "close_up"
+    visual_complexity: "medium"
+    spoken_importance: "context"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.06
+    crop_rationale: "Centers the live APL telemetry plot as Parker's solar distance drops to 3.8 million miles."
+    transition_in: "cut"
+    transition_reason: "Cuts from Cape Canaveral rocket hardware to live mission telemetry on 'within three point eight million miles'."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "within three point eight million miles of the Sun. Its onboard camera"
+    editorial_rationale: "Grounds the 3.8-million-mile closest-approach distance in real APL flight telemetry."
+    subject_match_kind: "direct_subject"
+    story_beat: "Mission telemetry tracking Parker's 3.8-million-mile solar plunge"
+    visual_desc: "Wide mission control telemetry screen plotting spacecraft solar distance curve beside glowing solar imagery"
+
+  - sid: "S05"
+    start_s: 13.067
+    end_s: 17.133
+    kind: "video_full"
+    src_file: "nasa_svs_the_closest_images_ever_taken_of_the_suns_atmosp_538b0cfb5e.mp4"
+    src_in: 1.8
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Dense coronal plasma waves and energetic particle streaks sweeping across Parker Solar Probe's WISPR field of view"
+    progression_dimension: "new_action"
+    camera_perspective: "first_person_pov"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.52
+    cx1: 0.54
+    cy1: 0.50
+    z0: 1.10
+    z1: 1.14
+    shadow_lift: 0.08
+    crop_rationale: "Shows curling plasma fronts and energetic particle streaks from the second half of the Dec 2024 WISPR sequence."
+    transition_in: "cut"
+    transition_reason: "Direct visual proof right on 'filmed glowing plasma streamers rushing directly past the spacecraft'."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "filmed glowing plasma streamers rushing directly past the spacecraft."
+    editorial_rationale: "Matches the exact spoken claim with real onboard WISPR coronal streamer imagery."
+    subject_match_kind: "direct_subject"
+    story_beat: "Onboard WISPR camera filming glowing coronal plasma streamers"
+    visual_desc: "Swirling gray-white solar wind plasma clouds and bright particle streaks captured by spacecraft camera"
+
+  - sid: "S06"
+    start_s: 17.133
+    end_s: 24.680
+    kind: "video_full"
+    src_file: "nasa_images_nasas_sdo_captures_stunning_4k_view_of_april_17__723a35a331.mp4"
+    src_in: 23.8
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    visible_action: "Magnetic coronal loops arcing and flashing white-violet above the limb of the Sun in SDO extreme-ultraviolet data"
+    progression_dimension: "new_perspective"
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.56
+    cy0: 0.52
+    cx1: 0.58
+    cy1: 0.50
+    z0: 1.12
+    z1: 1.16
+    shadow_lift: 0.06
+    crop_rationale: "Positions the active coronal magnetic loops in the lower-mid frame, leaving clean dark space above for ManimCE overlay OV1."
+    transition_in: "cut"
+    transition_reason: "Layer-2 physics pivot into the superheated million-degree solar corona."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "Out in the solar corona, particles race past a million degrees Celsius—yet the gas is so thin that very few strike the probe."
+    editorial_rationale: "Provides real SDO coronal loop imagery underneath the 1,000,000°C vs 5,500°C scale overlay across the ultra-thin corona reveal."
+    subject_match_kind: "direct_subject"
+    story_beat: "Million-degree ultra-thin coronal magnetic plasma loops vs solar surface"
+    visual_desc: "Close-up of glowing violet and bronze magnetic plasma loops arcing above the curved solar horizon"
+
+  - sid: "S07"
+    start_s: 24.680
+    end_s: 28.433
+    kind: "video_full"
+    src_file: "nasa_svs_parker_solar_probe_s_wispr_images_inside_the_sun_6bcb45e408.mp4"
+    src_in: 0.04
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Fast coronal streamer rays and Milky Way starfield gliding past Parker Solar Probe's wide-field WISPR detector in native 1018p"
+    progression_dimension: "new_action"
+    camera_perspective: "first_person_pov"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.75
+    cy0: 0.543
+    cx1: 0.76
+    cy1: 0.538
+    z0: 1.235
+    z1: 1.24
+    shadow_lift: 0.06
+    crop_rationale: "Crops cleanly inside the full-height WISPR-Outer field (native 1298x1018) showing fast coronal streamer rays and background stars with zero border."
+    transition_in: "cut"
+    transition_reason: "Cut on sentence pause for the physics takeaway 'Temperature measures particle speed, not total heat transfer'."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "Temperature measures particle speed, not total heat transfer."
+    editorial_rationale: "Fast-moving coronal streamer particles streaking across transparent star-filled space visually contrast particle speed with sparse density."
+    subject_match_kind: "direct_subject"
+    story_beat: "Fast coronal particles streaking across tenuous star-filled space"
+    visual_desc: "Spacecraft wide-field camera view of fast wispy solar streamer rays drifting across a starry background"
+
+  - sid: "S08"
+    start_s: 28.433
+    end_s: 32.550
+    kind: "video_full"
+    src_file: "nasa_images_why_won_t_it_melt_how_nasa_s_solar_probe_will_su_e403f6685e.mp4"
+    src_in: 93.4
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Cleanroom engineers in white bunny suits positioning the 4.5-inch octagonal carbon-foam heat shield atop Parker Solar Probe"
+    progression_dimension: "new_action"
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.46
+    z0: 1.10
+    z1: 1.14
+    shadow_lift: 0.08
+    crop_rationale: "Centers the cleanroom technician and the octagonal Thermal Protection System shield."
+    transition_in: "cut"
+    transition_reason: "Cuts directly on sentence pause to the real 4.5-inch carbon-foam heat shield as N04 introduces it."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N04"
+    associated_narration_concept: "A four-point-five-inch carbon-foam shield reflects blinding sunlight,"
+    editorial_rationale: "Shows the real flight Thermal Protection System being installed by Johns Hopkins APL engineers."
+    subject_match_kind: "direct_subject"
+    story_beat: "Cleanroom engineers installing the 4.5-inch carbon-foam heat shield"
+    visual_desc: "Engineers in white cleanroom suits mounting a large dark octagonal heat shield onto a spacecraft"
+
+  - sid: "S09"
+    start_s: 32.550
+    end_s: 35.518
+    kind: "video_full"
+    src_file: "nasa_images_parker_solar_probe_environmental_testing_b_roll_ae3d1666a3.mp4"
+    src_in: 33.2
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Intense blue laser beam scanning across Parker Solar Probe's solar array panels during NASA Goddard environmental chamber testing"
+    progression_dimension: "new_action"
+    camera_perspective: "close_up"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.10
+    z1: 1.14
+    shadow_lift: 0.08
+    crop_rationale: "Places the glowing test beam in the middle third with clean dark upper margin for ManimCE gauge OV2."
+    transition_in: "cut"
+    transition_reason: "Cut on clause pause to real Goddard illumination testing while ManimCE gauge counts up to 1,370°C."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N04"
+    associated_narration_concept: "peaking near thirteen hundred seventy degrees Celsius"
+    editorial_rationale: "Pairs real Goddard optical/thermal chamber testing with the 1,370°C measured shield peak overlay."
+    subject_match_kind: "direct_subject"
+    story_beat: "High-intensity chamber testing of Parker Solar Probe flight hardware"
+    visual_desc: "Bright blue laser beam illuminating dark metallic spacecraft solar cells inside a test lab"
+
+  - sid: "S10"
+    start_s: 35.518
+    end_s: 38.733
+    kind: "video_full"
+    src_file: "wikimedia_parker_solar_probe_countdown_to_t_zero_in_4k_fly_3b118324a4.webm"
+    src_in: 88.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Cleanroom technicians on a lift platform inspecting Parker Solar Probe's thermal-blanketed instrument bus behind the shield"
+    progression_dimension: "new_perspective"
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.06
+    crop_rationale: "Centers Parker's silver foil-wrapped scientific payload protected in the shadow of the shield."
+    transition_in: "cut"
+    transition_reason: "Shows the real spacecraft instrument bus right on 'while instruments behind stay near thirty degrees'."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N04"
+    associated_narration_concept: "while instruments behind stay near thirty degrees."
+    editorial_rationale: "Displays the actual flight instruments engineered to operate near room temperature behind the 4.5-inch carbon-foam shield."
+    subject_match_kind: "direct_subject"
+    story_beat: "Cleanroom technicians preparing the room-temperature instrument payload behind the shield"
+    visual_desc: "Cleanroom engineers on an orange lift working beside the silver-foil spacecraft bus of Parker Solar Probe"
+
+  - sid: "S11"
+    start_s: 38.733
+    end_s: 42.630
+    kind: "video_full"
+    src_file: "nasa_images_parker_solar_probe_environmental_testing_b_roll_ae3d1666a3.mp4"
+    src_in: 67.6
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "NASA Goddard engineers in protective laser goggles inspecting Parker Solar Probe's instrument bus under red lab warning beacons"
+    progression_dimension: "new_action"
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "context"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.10
+    z1: 1.14
+    shadow_lift: 0.10
+    crop_rationale: "Frames cleanroom engineers working around the flight test rig."
+    transition_in: "cut"
+    transition_reason: "Transitions cleanly on sentence pause into the scientific caveat on magnetic wave heating."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N05"
+    associated_narration_concept: "Physicists still debate which magnetic waves superheat the outer corona"
+    editorial_rationale: "Grounds the ongoing solar physics investigation in real Goddard engineering fieldwork."
+    subject_match_kind: "direct_subject"
+    story_beat: "Engineers testing Parker's coronal plasma and magnetic wave instruments"
+    visual_desc: "Scientists in white lab coats and safety goggles operating blue-lit test equipment beside spacecraft"
+
+  - sid: "S12"
+    start_s: 42.630
+    end_s: 45.267
+    kind: "video_full"
+    src_file: "nasa_images_why_won_t_it_melt_how_nasa_s_solar_probe_will_su_e403f6685e.mp4"
+    src_in: 131.0
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    visible_action: "Golden solar surface bubbling beneath superheated coronal magnetic loops in 1080p SDO imagery"
+    progression_dimension: "new_scale"
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "medium"
+    spoken_importance: "context"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.50
+    cx1: 0.54
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.04
+    crop_rationale: "Frames the glowing curved solar photosphere and overlying coronal plasma."
+    transition_in: "cut"
+    transition_reason: "Visual contrast right on 'hundreds of times hotter than the solar surface'."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "hundreds of times hotter than the solar surface."
+    editorial_rationale: "Shows the blazing solar surface beneath its far hotter outer corona."
+    subject_match_kind: "direct_subject"
+    story_beat: "Solar photosphere surface contrasted with its superheated corona"
+    visual_desc: "Curved golden-yellow solar surface with glowing plasma filaments rising into black space"
+
+  - sid: "S13"
+    start_s: 45.267
+    end_s: 48.533
+    kind: "video_full"
+    src_file: "wikimedia_parker_solar_probe_humanitys_closest_encounter_w_a713b86b7b.webm"
+    src_in: 64.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Johns Hopkins APL flight controllers cheering and clapping in Mission Operations as Parker Solar Probe's survival beacon arrives"
+    progression_dimension: "new_action"
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.68
+    cy0: 0.50
+    cx1: 0.66
+    cy1: 0.50
+    z0: 1.12
+    z1: 1.16
+    shadow_lift: 0.10
+    crop_rationale: "Focuses on the standing, cheering flight control engineers beside telemetry monitors."
+    transition_in: "cut"
+    transition_reason: "Human emotional payoff on sentence pause right before 'Yet when flight controllers heard Parker's survival signal'."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N05"
+    associated_narration_concept: "Yet when flight controllers heard Parker's survival signal,"
+    editorial_rationale: "Captures the genuine moment APL mission controllers confirmed Parker survived closest solar approach."
+    subject_match_kind: "direct_subject"
+    story_beat: "Mission Operations engineers celebrating Parker's survival signal"
+    visual_desc: "Mission control engineers standing and applauding in front of spacecraft telemetry screens"
+
+  - sid: "S14"
+    start_s: 48.533
+    end_s: 51.867
+    kind: "video_full"
+    src_file: "nasa_svs_sdo_video_toolkit_the_trebuchet_eruption_upper_l_150a388c13.mp4"
+    src_in: 9.8
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    visible_action: "Glowing solar prominence plasma arching back across the Sun's limb in 1080p SDO imagery"
+    progression_dimension: "new_action"
+    camera_perspective: "satellite_or_telescope"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.54
+    cy0: 0.44
+    cx1: 0.52
+    cy1: 0.46
+    z0: 1.12
+    z1: 1.08
+    shadow_lift: 0.04
+    crop_rationale: "Closes on luminous coronal plasma that loops visually straight back into S01's WISPR corona flight."
+    transition_in: "cut"
+    transition_reason: "Final visual payoff on 'humanity had touched a star—and survived' designed for seamless Shorts replay."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "humanity had touched a star—and survived."
+    editorial_rationale: "Leaves a lasting closing image of real solar corona plasma looping into Frame 0."
+    subject_match_kind: "direct_subject"
+    story_beat: "Humanity touching a star and surviving inside the solar corona"
+    visual_desc: "Towering fiery plasma arch glowing above the curved surface of the Sun"
+
+assets_register:
+  - local_file: "nasa_svs_the_closest_images_ever_taken_of_the_suns_atmosp_538b0cfb5e.mp4"
+    title: "The Closest Images Ever Taken of the Sun's Atmosphere — WISPR Data (SVS 14865)"
+    creator_agency: "NASA / Johns Hopkins APL / Naval Research Laboratory"
+    source_page_url: "https://svs.gsfc.nasa.gov/14865/"
+    direct_media_url: "https://svs.gsfc.nasa.gov/vis/a010000/a014800/a014865/14865_WISPR_12252025.mp4"
+    license: "Public Domain (NASA SVS)"
+    license_url: "https://svs.gsfc.nasa.gov/help/#apis-mediausage"
+    required_attribution: "NASA / Johns Hopkins APL / Naval Research Lab"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_svs:svs-14865-14865_WISPR_12252025.mp4"
+    depicted_subject: "NASA spacecraft Parker Solar Probe onboard WISPR camera view of glowing plasma streamers"
+    depicted_action: "Spacecraft flying straight through the Sun's corona filming glowing plasma streamers rushing past"
+    depicted_location: "Solar corona (3.8 million miles from Sun)"
+    intended_use: "S01 opening hook, S05 onboard camera proof, & Thumbnail B"
+
+  - local_file: "nasa_svs_sdo_video_toolkit_the_trebuchet_eruption_upper_l_150a388c13.mp4"
+    title: "SDO Video Toolkit — The Trebuchet Eruption in SDO AIA 304 Angstrom Filter (SVS 14126)"
+    creator_agency: "NASA SVS / Solar Dynamics Observatory"
+    source_page_url: "https://svs.gsfc.nasa.gov/14126/"
+    direct_media_url: "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4"
+    license: "Public Domain (NASA SVS)"
+    license_url: "https://svs.gsfc.nasa.gov/help/#apis-mediausage"
+    required_attribution: "NASA's Scientific Visualization Studio / SDO"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    canonical_source_id: "nasa_svs:svs-14126-New_Trebuchet_mkII.mp4"
+    depicted_subject: "Sun's million-degree solar corona and blazing extreme-ultraviolet plasma eruption"
+    depicted_action: "Towering solar prominence plasma erupting off the blazing limb of the Sun"
+    depicted_location: "Solar atmosphere / corona"
+    intended_use: "S02 hook contrast, S14 closing star payoff, & Thumbnail A"
+
+  - local_file: "wikimedia_parker_solar_probe_countdown_to_t_zero_in_4k_fly_3b118324a4.webm"
+    title: "Parker Solar Probe Countdown to T-Zero in 4K — Flying Faster, Hotter and Closer Than Ever to the Sun"
+    creator_agency: "NASA Goddard / Johns Hopkins APL / ULA"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Parker_Solar_Probe_Countdown_to_T-Zero_in_4K_-_Flying_Faster,_Hotter_and_Closer_Than_Ever_to_the_Sun.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Parker_Solar_Probe_Countdown_to_T-Zero_in_4K_-_Flying_Faster%2C_Hotter_and_Closer_Than_Ever_to_the_Sun.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "NASA / JHUAPL (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "wikimedia:File:Parker Solar Probe Countdown to T-Zero in 4K - Flying Faster, Hotter and Closer Than Ever to the Sun.webm"
+    depicted_subject: "Delta IV Heavy launch vehicle at Cape Canaveral and Parker Solar Probe cleanroom payload assembly"
+    depicted_action: "Delta IV Heavy rocket swinging vertical on Launch Complex 37 and cleanroom technicians preparing Parker's thermal-blanketed payload"
+    depicted_location: "Cape Canaveral Space Launch Complex 37 & Astrotech cleanroom"
+    intended_use: "S03 Delta IV Heavy pad erection & S10 room-temperature payload bus"
+
+  - local_file: "nasa_images_nasas_sdo_captures_stunning_4k_view_of_april_17__723a35a331.mp4"
+    title: "NASA's SDO Captures Stunning 4K View of April 17 Solar Flare"
+    creator_agency: "NASA Goddard / SDO"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20160426_SDO_m12224_SolarFlare_4K"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20160426_SDO_m12224_SolarFlare_4K/GSFC_20160426_SDO_m12224_SolarFlare_4K~large.mp4"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "NASA / SDO (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    canonical_source_id: "nasa_images:GSFC_20160426_SDO_m12224_SolarFlare_4K"
+    depicted_subject: "Solar corona magnetic plasma loops"
+    depicted_action: "Magnetic waves and coronal loops glowing above the solar surface at over a million degrees"
+    depicted_location: "Solar corona and photosphere"
+    intended_use: "S06 coronal loops under OV1"
+
+  - local_file: "nasa_svs_parker_solar_probe_s_wispr_images_inside_the_sun_6bcb45e408.mp4"
+    title: "Parker Solar Probe's WISPR Images Inside The Sun's Atmosphere (SVS 14055)"
+    creator_agency: "NASA / Johns Hopkins APL / Naval Research Laboratory"
+    source_page_url: "https://svs.gsfc.nasa.gov/14055/"
+    direct_media_url: "https://svs.gsfc.nasa.gov/vis/a010000/a014000/a014055/WISPR_streamer_flythrough.mp4"
+    license: "Public Domain (NASA SVS)"
+    license_url: "https://svs.gsfc.nasa.gov/help/#apis-mediausage"
+    required_attribution: "NASA / Johns Hopkins APL / Naval Research Lab"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_svs:svs-14055-WISPR_streamer_flythrough.mp4"
+    depicted_subject: "Thin low-density coronal gas streamers and Milky Way background stars seen by Parker Solar Probe"
+    depicted_action: "Tenuous solar corona particles streaming past WISPR camera with stars visible straight through the gas"
+    depicted_location: "Solar corona (Encounter 8 below Alfvén critical surface)"
+    intended_use: "S07 particle speed vs ultra-thin gas density visual proof in native 1298x1018"
+
+  - local_file: "nasa_images_why_won_t_it_melt_how_nasa_s_solar_probe_will_su_e403f6685e.mp4"
+    title: "Why Won't It Melt? How NASA's Solar Probe Will Survive the Sun"
+    creator_agency: "NASA Goddard Space Flight Center / Johns Hopkins APL"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20180719_Parker_m12867_Congdon"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20180719_Parker_m12867_Congdon/GSFC_20180719_Parker_m12867_Congdon~large.mp4"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "NASA / JHUAPL (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_images:GSFC_20180719_Parker_m12867_Congdon"
+    depicted_subject: "4.5-inch carbon-foam Thermal Protection System heat shield, cleanroom engineers, and SDO solar surface"
+    depicted_action: "Engineers installing the 4.5-inch carbon-foam shield onto Parker Solar Probe"
+    depicted_location: "Johns Hopkins Applied Physics Laboratory cleanroom & solar photosphere"
+    intended_use: "S08 shield installation, S12 solar surface contrast, & Thumbnail C"
+
+  - local_file: "nasa_images_parker_solar_probe_environmental_testing_b_roll_ae3d1666a3.mp4"
+    title: "Parker Solar Probe: Environmental Testing: B-Roll"
+    creator_agency: "NASA Goddard Space Flight Center"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20171206_Parker_m12795_LaserTesting_BROLL"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20171206_Parker_m12795_LaserTesting_BROLL/GSFC_20171206_Parker_m12795_LaserTesting_BROLL~large.mp4"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "NASA Goddard (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_images:GSFC_20171206_Parker_m12795_LaserTesting_BROLL"
+    depicted_subject: "NASA Goddard engineers laser-testing Parker Solar Probe flight solar arrays and instruments"
+    depicted_action: "Engineers testing spacecraft hardware under intense illumination inside environmental chamber"
+    depicted_location: "NASA Goddard Space Flight Center, Maryland"
+    intended_use: "S09 laser illumination test under OV2 & S11 cleanroom instrument team"
+
+  - local_file: "wikimedia_parker_solar_probe_humanitys_closest_encounter_w_a713b86b7b.webm"
+    title: "Parker Solar Probe — Humanity's Closest Encounter with the Sun (SVS 14741 Beacon Tone Received)"
+    creator_agency: "NASA SVS / Johns Hopkins Applied Physics Laboratory"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Parker_Solar_Probe-_Humanity%E2%80%99s_Closest_Encounter_with_the_Sun_(SVS14741_PSP_BeaconToneReceived_YT).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Parker_Solar_Probe-_Humanity%E2%80%99s_Closest_Encounter_with_the_Sun_%28SVS14741_PSP_BeaconToneReceived_YT%29.webm"
+    license: "Public domain"
+    license_url: "https://svs.gsfc.nasa.gov/help/#apis-mediausage"
+    required_attribution: "NASA / Johns Hopkins APL (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "wikimedia:File:Parker Solar Probe- Humanity's Closest Encounter with the Sun (SVS14741 PSP BeaconToneReceived YT).webm"
+    depicted_subject: "Johns Hopkins APL mission telemetry and flight controllers receiving Parker Solar Probe's survival signal"
+    depicted_action: "Mission Operations tracking perihelion telemetry and cheering when Parker's beacon tone confirms survival"
+    depicted_location: "Johns Hopkins APL Mission Operations Center, Laurel, Maryland"
+    intended_use: "S04 perihelion telemetry & S13 Mission Operations survival beacon celebration"
+
+excluded_sources_notes:
+  - "wikimedia_liftoff_of_nasa_s_parker_solar_probe_1d71361c2c.webm & 8c0e6690a3.webm: Replaced 720p Wikimedia transcodes in Send-Back Round 1 with native 1920x1080 3b118324a4.webm and native 1298x1018 NASA SVS 6bcb45e408.mp4 so every shot passes <=2.35x vertical upscale."
+  - "nasa_images_why_won_t_it_melt t=14..80s & t=138..151s: Excluded interview talking-head segments, CGI inserts, and static bare-hand photo; used only genuine moving cleanroom assembly (t=93.4s) and SDO solar surface (t=131.0s)."
+  - "wikimedia_parker_solar_probe_countdown_to_t_zero_in_4k t=19..48s, 78..80s, 113..116s, 140s, 158s, 182s, 194..207s: Excluded CGI animation, interviews, and title slates; used only clean 1080p SDO loops (t=54.8s), cleanroom payload bus (t=88.0s), and Delta IV Heavy pad erection (t=185.2s)."
+
+factual_references:
+  - citation: "Kasper, J. C., Klein, K. G., Lichko, E., et al. (2021). Parker Solar Probe Enters the Magnetically Dominated Solar Corona. Physical Review Letters, 127(25), 255101."
+    url: "https://doi.org/10.1103/PhysRevLett.127.255101"
+    supported_claims: "Confirmed humanity's first direct spacecraft entry below the Alfvén critical surface into the magnetically dominated solar corona (>1,000,000°C ultra-tenuous plasma vs ~5,500°C photosphere) and ongoing investigation of magnetic switchbacks and Alfvénic wave heating."
+  - citation: "NASA Goddard Space Flight Center & Johns Hopkins Applied Physics Laboratory (Congdon, B. et al., 2018; Dec 2024 Perihelion Fact Sheet). Traveling to the Sun: Why Won't Parker Solar Probe Melt?"
+    url: "https://science.nasa.gov/science-research/heliophysics/traveling-to-the-sun-why-wont-parker-solar-probe-melt/"
+    supported_claims: "At 3.8 million miles (6.1 million km) closest solar approach, low coronal particle density limits conductive heat transfer while Parker's 4.5-inch (11.4 cm), 97%-void alumina-coated carbon-composite foam Thermal Protection System endures up to ~1,370°C (2,500°F) on its sun-facing side and keeps spacecraft instruments near ~30°C (85°F)."
+
+mechanism_overlays:
+  - overlay_id: "OV1_CORONA_SCALE"
+    template: "scale_bar_compare"
+    anchor:
+      seg_id: "N03"
+      phrase: "particles race past"
+      lead_in_s: 0.0
+    hold_s: 1.55
+    span_cut: false
+    region:
+      x: 0.08
+      y: 0.15
+      w: 0.84
+      h: 0.28
+    params:
+      length_label: "1,000,000°C+  CORONA (ULTRA-THIN)"
+      reference_label: "5,500°C  SOLAR SURFACE"
+      ratio: 4.5
+      color: "#FFA94D"
+    claim_ref: 0
+    honesty_label: "scale_comparison"
+
+  - overlay_id: "OV2_SHIELD_GAUGE"
+    template: "value_callout_gauge"
+    anchor:
+      seg_id: "N04"
+      phrase: "peaking near thirteen"
+      lead_in_s: 0.0
+    hold_s: 2.15
+    span_cut: false
+    region:
+      x: 0.12
+      y: 0.16
+      w: 0.76
+      h: 0.26
+    params:
+      value_from: 30
+      value_to: 1370
+      decimals: 0
+      unit: "°C"
+      label: "SHIELD FRONT (30°C BEHIND)"
+      point: [0.50, 0.54]
+      color: "#78D6FF"
+    claim_ref: 1
+    honesty_label: "measured_value"

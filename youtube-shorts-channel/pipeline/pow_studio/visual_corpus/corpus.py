@@ -345,7 +345,7 @@ def ingest_corpus(
     `.provenance.json` sidecar changed, metadata + tag embeddings refresh without re-decoding video.
     """
     t0 = time.perf_counter()
-    raw_root = Path(raw_root).resolve()
+    scan_root = Path(raw_root).resolve()
     cdir = Path(corpus_dir).resolve() if corpus_dir else default_corpus_dir().resolve()
     thumbs_dir = cdir / "thumbs"
     cdir.mkdir(parents=True, exist_ok=True)
@@ -365,7 +365,19 @@ def ingest_corpus(
             meta={},
         )
 
-    files = _discover_media_files(raw_root, limit=limit)
+    # Preserve parent raw_root when ingesting a single episode subdirectory inside it
+    existing_root_str = str(loaded.meta.get("raw_root") or "").strip()
+    existing_root = Path(existing_root_str).resolve() if existing_root_str else None
+    is_subdir_scan = bool(
+        existing_root
+        and existing_root != scan_root
+        and existing_root in scan_root.parents
+        and existing_root.exists()
+    )
+    raw_root = existing_root if is_subdir_scan and existing_root is not None else scan_root
+    subdir_prefix = (scan_root.relative_to(raw_root).as_posix().rstrip("/") + "/") if is_subdir_scan else ""
+
+    files = _discover_media_files(scan_root, limit=limit)
     on_disk_rels = {f.relative_to(raw_root).as_posix() for f in files}
 
     # Group existing records by rel_path
@@ -438,9 +450,10 @@ def ingest_corpus(
 
         to_ingest.append(f)
 
-    # Also retain records from other roots unless limit was unset and file disappeared under raw_root
+    # Retain records outside the scanned scope (e.g., `--limit` or ingesting a single episode subfolder)
     for rel, idxs in by_rel.items():
-        if limit is not None and rel not in on_disk_rels:
+        outside_subdir = bool(is_subdir_scan and subdir_prefix and not rel.startswith(subdir_prefix))
+        if rel not in on_disk_rels and (limit is not None or outside_subdir):
             for old_i in idxs:
                 kept_records.append(loaded.records[old_i])
                 kept_vis_rows.append(loaded.embeddings[old_i])

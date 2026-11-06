@@ -1,0 +1,92 @@
+{"ts": "2026-11-06T06:41:49.842+00:00", "stage": "match-beats", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:41:57.284+00:00", "stage": "match-beats", "event": "end", "status": "passed", "detail": "completed in 7.4s", "artifacts": []}
+{"ts": "2026-11-06T06:41:58.323+00:00", "stage": "feasibility", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:42:03.718+00:00", "stage": "gate:feasibility", "event": "gate", "status": "passed", "detail": "READY_FOOTAGE_FIRST", "artifacts": []}
+{"ts": "2026-11-06T06:42:03.718+00:00", "stage": "feasibility", "event": "end", "status": "passed", "detail": "completed in 5.4s", "artifacts": []}
+{"ts": "2026-11-06T06:42:05.358+00:00", "stage": "stage1-research", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:42:07.032+00:00", "stage": "stage1-research", "event": "end", "status": "passed", "detail": "completed in 1.7s", "artifacts": []}
+{"ts": "2026-11-06T06:42:07.364+00:00", "stage": "stage2-story", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:42:07.420+00:00", "stage": "stage2-story", "event": "end", "status": "passed", "detail": "completed in 0.1s", "artifacts": []}
+{"ts": "2026-11-06T06:42:07.746+00:00", "stage": "stage3-voice", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:43:14.779+00:00", "stage": "stage3-voice", "event": "end", "status": "passed", "detail": "completed in 67.0s", "artifacts": []}
+{"ts": "2026-11-06T06:43:55.688+00:00", "stage": "render-overlays", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:44:03.003+00:00", "stage": "render-overlays", "event": "end", "status": "passed", "detail": "completed in 7.3s", "artifacts": []}
+{"ts": "2026-11-06T06:44:03.452+00:00", "stage": "stage4-visual", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:53:15.175+00:00", "stage": "stage4-visual", "event": "end", "status": "passed", "detail": "completed in 551.7s", "artifacts": []}
+{"ts": "2026-11-06T06:53:15.781+00:00", "stage": "optimize-scenes", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:53:16.072+00:00", "stage": "optimize-scenes", "event": "end", "status": "passed", "detail": "completed in 0.3s", "artifacts": []}
+{"ts": "2026-11-06T06:53:16.395+00:00", "stage": "plan-soundscape", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:53:16.551+00:00", "stage": "plan-soundscape", "event": "end", "status": "passed", "detail": "completed in 0.2s", "artifacts": []}
+{"ts": "2026-11-06T06:53:16.865+00:00", "stage": "export-storyboard", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:53:19.858+00:00", "stage": "gate:storyboard_approval", "event": "gate", "status": "pending", "detail": "Exported board sha256=631600a33a46 (13 shots)", "artifacts": []}
+{"ts": "2026-11-06T06:53:19.862+00:00", "stage": "export-storyboard", "event": "end", "status": "passed", "detail": "completed in 3.0s", "artifacts": []}
+{"ts": "2026-11-06T06:53:20.198+00:00", "stage": "stage5-edit", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:53:40.276+00:00", "stage": "stage5-edit", "event": "end", "status": "passed", "detail": "completed in 20.1s", "artifacts": []}
+{"ts": "2026-11-06T06:53:40.766+00:00", "stage": "qa-6pillar", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T06:54:18.900+00:00", "stage": "gate:qa_six_pillar", "event": "gate", "status": "blocked", "detail": "technical=PASS creative=FAIL", "artifacts": []}
+{"ts": "2026-11-06T06:54:18.909+00:00", "stage": "qa-6pillar", "event": "end", "status": "failed", "detail": "Exit: ", "artifacts": []}
+{"ts": "2026-11-06T07:00:13.928+00:00", "stage": "download-footage", "event": "end", "status": "passed", "detail": "1/1 downloaded to assets/raw_footage/space_parker_solar_probe_v9", "artifacts": ["assets/raw_footage/space_parker_solar_probe_v9/wikimedia_parker_solar_probe_countdown_to_t_zero_in_4k_fly_3b118324a4.webm"]}
+{"ts": "2026-11-06T07:41:16.043+00:00", "stage": "send-back", "event": "round_1", "status": "running", "detail": "Round 1: upgraded S03/S07 from 720p to 1080p/1018p, replaced frozen S10/S12 sub-windows with genuine moving 1080p clips, and aligned all 14 cuts to word-timing pauses", "artifacts": []}
+{"ts": "2026-11-06T08:20:59.662+00:00", "stage": "match-beats", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T08:21:06.020+00:00", "stage": "match-beats", "event": "end", "status": "passed", "detail": "completed in 6.4s", "artifacts": []}
+{"ts": "2026-11-06T08:21:07.249+00:00", "stage": "feasibility", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T08:21:12.759+00:00", "stage": "gate:feasibility", "event": "gate", "status": "passed", "detail": "READY_FOOTAGE_FIRST", "artifacts": []}
+{"ts": "2026-11-06T08:21:12.760+00:00", "stage": "feasibility", "event": "end", "status": "passed", "detail": "completed in 5.5s", "artifacts": []}
+{"ts": "2026-11-06T08:21:13.970+00:00", "stage": "stage1-research", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T08:21:15.050+00:00", "stage": "stage1-research", "event": "end", "status": "passed", "detail": "completed in 1.1s", "artifacts": []}
+{"ts": "2026-11-06T08:21:15.360+00:00", "stage": "render-overlays", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T08:21:23.227+00:00", "stage": "render-overlays", "event": "end", "status": "failed", "detail": "Exit: ", "artifacts": []}
+{"ts": "2026-11-06T08:22:26.085+00:00", "stage": "render-overlays", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T08:22:31.373+00:00", "stage": "render-overlays", "event": "end", "status": "passed", "detail": "completed in 5.3s", "artifacts": []}
+{"ts": "2026-11-06T08:22:31.772+00:00", "stage": "stage4-visual", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T08:32:12.009+00:00", "stage": "stage4-visual", "event": "end", "status": "passed", "detail": "completed in 580.2s", "artifacts": []}
+{"ts": "2026-11-06T08:32:12.592+00:00", "stage": "optimize-scenes", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T08:32:12.896+00:00", "stage": "optimize-scenes", "event": "end", "status": "passed", "detail": "completed in 0.3s", "artifacts": []}
+{"ts": "2026-11-06T08:32:13.200+00:00", "stage": "plan-soundscape", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T08:32:13.341+00:00", "stage": "plan-soundscape", "event": "end", "status": "passed", "detail": "completed in 0.1s", "artifacts": []}
+{"ts": "2026-11-06T08:32:13.642+00:00", "stage": "export-storyboard", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T08:32:17.029+00:00", "stage": "gate:storyboard_approval", "event": "gate", "status": "pending", "detail": "Exported board sha256=0b84ee06437d (15 shots)", "artifacts": []}
+{"ts": "2026-11-06T08:32:17.034+00:00", "stage": "export-storyboard", "event": "end", "status": "passed", "detail": "completed in 3.4s", "artifacts": []}
+{"ts": "2026-11-06T08:32:17.351+00:00", "stage": "stage5-edit", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T08:32:36.812+00:00", "stage": "stage5-edit", "event": "end", "status": "passed", "detail": "completed in 19.5s", "artifacts": []}
+{"ts": "2026-11-06T08:32:37.267+00:00", "stage": "qa-6pillar", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T08:33:44.968+00:00", "stage": "gate:qa_six_pillar", "event": "gate", "status": "blocked", "detail": "technical=PASS creative=FAIL", "artifacts": []}
+{"ts": "2026-11-06T08:33:44.974+00:00", "stage": "qa-6pillar", "event": "end", "status": "failed", "detail": "Exit: ", "artifacts": []}
+{"ts": "2026-11-06T08:59:56.890+00:00", "stage": "download-footage", "event": "end", "status": "passed", "detail": "1/2 downloaded to assets/raw_footage/space_parker_solar_probe_v9", "artifacts": ["assets/raw_footage/space_parker_solar_probe_v9/internet_archive_parker_solar_probe_footage_of_earth_jupiter_merc_4f20e1563e.mov"]}
+{"ts": "2026-11-06T09:11:56.937+00:00", "stage": "send-back", "event": "round_2", "status": "running", "detail": "Round 2: extended S06 across continuous 23.8-31.35s SDO coronal loop window, refined S07 zero-border WISPR crop, dropped 3rd reuse of 3b118324a4.webm so all 8 assets have <=2 uses", "artifacts": []}
+{"ts": "2026-11-06T09:11:59.260+00:00", "stage": "stage1-research", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:12:00.061+00:00", "stage": "stage1-research", "event": "end", "status": "passed", "detail": "completed in 0.8s", "artifacts": []}
+{"ts": "2026-11-06T09:12:00.513+00:00", "stage": "render-overlays", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:12:02.686+00:00", "stage": "render-overlays", "event": "end", "status": "passed", "detail": "completed in 2.2s", "artifacts": []}
+{"ts": "2026-11-06T09:12:03.068+00:00", "stage": "stage4-visual", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:19:59.000+00:00", "stage": "stage4-visual", "event": "end", "status": "passed", "detail": "completed in 475.9s", "artifacts": []}
+{"ts": "2026-11-06T09:19:59.656+00:00", "stage": "optimize-scenes", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:19:59.981+00:00", "stage": "optimize-scenes", "event": "end", "status": "passed", "detail": "completed in 0.3s", "artifacts": []}
+{"ts": "2026-11-06T09:20:00.321+00:00", "stage": "plan-soundscape", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:20:00.477+00:00", "stage": "plan-soundscape", "event": "end", "status": "passed", "detail": "completed in 0.2s", "artifacts": []}
+{"ts": "2026-11-06T09:20:00.810+00:00", "stage": "export-storyboard", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:20:04.082+00:00", "stage": "gate:storyboard_approval", "event": "gate", "status": "pending", "detail": "Exported board sha256=f51693e7c54c (14 shots)", "artifacts": []}
+{"ts": "2026-11-06T09:20:04.088+00:00", "stage": "export-storyboard", "event": "end", "status": "passed", "detail": "completed in 3.3s", "artifacts": []}
+{"ts": "2026-11-06T09:20:04.459+00:00", "stage": "stage5-edit", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:20:24.649+00:00", "stage": "stage5-edit", "event": "end", "status": "passed", "detail": "completed in 20.2s", "artifacts": []}
+{"ts": "2026-11-06T09:20:25.154+00:00", "stage": "qa-6pillar", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:21:30.539+00:00", "stage": "gate:qa_six_pillar", "event": "gate", "status": "passed", "detail": "technical=PASS creative=PASS", "artifacts": []}
+{"ts": "2026-11-06T09:21:30.545+00:00", "stage": "qa-6pillar", "event": "end", "status": "passed", "detail": "completed in 65.4s", "artifacts": []}
+{"ts": "2026-11-06T09:21:31.021+00:00", "stage": "creative-qc", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:22:37.009+00:00", "stage": "creative-qc", "event": "end", "status": "failed", "detail": "Exit: ", "artifacts": []}
+{"ts": "2026-11-06T09:24:09.101+00:00", "stage": "stage2-story", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:24:09.159+00:00", "stage": "stage2-story", "event": "end", "status": "passed", "detail": "completed in 0.1s", "artifacts": []}
+{"ts": "2026-11-06T09:24:09.455+00:00", "stage": "export-storyboard", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:24:12.750+00:00", "stage": "gate:storyboard_approval", "event": "gate", "status": "pending", "detail": "Exported board sha256=f51693e7c54c (14 shots)", "artifacts": []}
+{"ts": "2026-11-06T09:24:12.753+00:00", "stage": "export-storyboard", "event": "end", "status": "passed", "detail": "completed in 3.3s", "artifacts": []}
+{"ts": "2026-11-06T09:24:13.055+00:00", "stage": "qa-6pillar", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:25:19.740+00:00", "stage": "gate:qa_six_pillar", "event": "gate", "status": "passed", "detail": "technical=PASS creative=PASS", "artifacts": []}
+{"ts": "2026-11-06T09:25:19.748+00:00", "stage": "qa-6pillar", "event": "end", "status": "passed", "detail": "completed in 66.7s", "artifacts": []}
+{"ts": "2026-11-06T09:25:20.348+00:00", "stage": "creative-qc", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:26:25.580+00:00", "stage": "creative-qc", "event": "end", "status": "passed", "detail": "completed in 65.2s", "artifacts": []}
+{"ts": "2026-11-06T09:26:42.437+00:00", "stage": "stage5-edit", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:26:42.489+00:00", "stage": "gate:storyboard_approval", "event": "gate", "status": "blocked", "detail": "storyboard has not been approved yet (`storyboard_approval.json` missing)", "artifacts": []}
+{"ts": "2026-11-06T09:26:42.493+00:00", "stage": "stage5-edit", "event": "end", "status": "failed", "detail": "Exit: ", "artifacts": []}
+{"ts": "2026-11-06T09:26:58.886+00:00", "stage": "export-storyboard", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T09:27:02.144+00:00", "stage": "gate:storyboard_approval", "event": "gate", "status": "pending", "detail": "Exported board sha256=f51693e7c54c (14 shots)", "artifacts": []}
+{"ts": "2026-11-06T09:27:02.149+00:00", "stage": "export-storyboard", "event": "end", "status": "passed", "detail": "completed in 3.3s", "artifacts": []}

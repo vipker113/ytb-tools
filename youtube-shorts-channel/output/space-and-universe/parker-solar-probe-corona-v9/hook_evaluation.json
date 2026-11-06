@@ -1,0 +1,69 @@
+{
+  "slug": "parker-solar-probe-corona-v9",
+  "evaluated_count": 3,
+  "recommended_hook_id": "H1",
+  "recommended_score": 9.53,
+  "candidates": [
+    {
+      "hook_id": "H1",
+      "archetype": "paradox",
+      "spoken_line": "How did a NASA spacecraft fly straight through the Sun's million-degree atmosphere\u2014without melting?",
+      "word_count": 14,
+      "estimated_spoken_s": 5.28,
+      "opening_visual": "Real onboard WISPR white-light camera footage from Parker Solar Probe flying straight through glowing solar coronal streamers",
+      "src_file": "nasa_svs_the_closest_images_ever_taken_of_the_suns_atmosp_538b0cfb5e.mp4",
+      "promise_fulfilled_in_seg_id": "N04",
+      "scores": {
+        "immediate_clarity": 9.4,
+        "visual_impact": 9.4,
+        "curiosity": 9.7,
+        "factual_accuracy": 9.5,
+        "relevance_to_story": 9.8,
+        "promise_fulfillment": 9.5
+      },
+      "composite_hook_score": 9.53,
+      "rationale": "Opens at 0.00s inside real onboard camera footage from inside the Sun's atmosphere paired with a direct 14-word thermal physics paradox.",
+      "recommended": true
+    },
+    {
+      "hook_id": "H2",
+      "archetype": "unexpected_fact",
+      "spoken_line": "Three point eight million miles from the Sun, NASA flew a camera inside million-degree plasma\u2014and kept its instruments at room temperature.",
+      "word_count": 22,
+      "estimated_spoken_s": 8.3,
+      "opening_visual": "NASA SDO AIA 304A extreme-ultraviolet solar prominence erupting off the blazing limb of the Sun",
+      "src_file": "nasa_svs_sdo_video_toolkit_the_trebuchet_eruption_upper_l_150a388c13.mp4",
+      "promise_fulfilled_in_seg_id": "N04",
+      "scores": {
+        "immediate_clarity": 8.0,
+        "visual_impact": 9.4,
+        "curiosity": 9.7,
+        "factual_accuracy": 9.5,
+        "relevance_to_story": 9.8,
+        "promise_fulfillment": 9.5
+      },
+      "composite_hook_score": 9.23,
+      "rationale": "Contrasts blazing extreme-ultraviolet solar plasma with a 30\u00b0C room-temperature payload."
+    },
+    {
+      "hook_id": "H3",
+      "archetype": "credible_mystery",
+      "spoken_line": "Why can an engineer touch the back of NASA's solar heat shield while its front faces the Sun's corona?",
+      "word_count": 19,
+      "estimated_spoken_s": 7.17,
+      "opening_visual": "APL cleanroom engineers fitting the 4.5-inch octagonal carbon-foam Thermal Protection System onto Parker Solar Probe",
+      "src_file": "nasa_images_why_won_t_it_melt_how_nasa_s_solar_probe_will_su_e403f6685e.mp4",
+      "promise_fulfilled_in_seg_id": "N04",
+      "scores": {
+        "immediate_clarity": 9.05,
+        "visual_impact": 9.4,
+        "curiosity": 8.3,
+        "factual_accuracy": 9.5,
+        "relevance_to_story": 9.8,
+        "promise_fulfillment": 9.5
+      },
+      "composite_hook_score": 9.18,
+      "rationale": "Grounds the mystery immediately in tangible cleanroom spacecraft engineering."
+    }
+  ]
+}

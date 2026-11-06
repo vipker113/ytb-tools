@@ -1,0 +1,88 @@
+{
+  "slug": "parker-solar-probe-corona-v9",
+  "style_profile": "space_discovery",
+  "segment_count": 5,
+  "estimated_or_actual_duration_s": 51.52,
+  "momentum_pass": true,
+  "error_count": 0,
+  "warning_count": 1,
+  "errors": [],
+  "warnings": [
+    "[information_drought:N04..N05] Stretch of 22.4s without concrete empirical facts or mechanisms (> 14.5s)."
+  ],
+  "issues": [
+    {
+      "severity": "warning",
+      "category": "information_drought",
+      "seg_id": "N04..N05",
+      "detail": "Stretch of 22.4s without concrete empirical facts or mechanisms (> 14.5s)."
+    }
+  ],
+  "narrative_map": [
+    {
+      "seg_id": "N01",
+      "start_s": 0.1,
+      "end_s": 5.38,
+      "time_window": "0.1\u20135.4s",
+      "narrative_beat": "opening_hook",
+      "viewer_question": "How can any human-made spacecraft fly through a 1,000,000\u00b0C solar atmosphere without vaporizing?",
+      "new_information": "NASA's Parker Solar Probe flew directly inside the Sun's million-degree outer atmosphere and survived intact.",
+      "visual_reveal": "Real onboard WISPR white-light camera footage flying through bright coronal streamers, paired with roaring SDO solar plasma.",
+      "emotional_direction": "Immediate physical disbelief and visual awe",
+      "retention_purpose": "Stop scrolling on Frame 0 with real footage from inside the Sun's corona and a crisp 14-word thermal contradiction",
+      "text": "How did a NASA spacecraft fly straight through the Sun's million-degree atmosphere\u2014without melting?"
+    },
+    {
+      "seg_id": "N02",
+      "start_s": 5.75,
+      "end_s": 16.93,
+      "time_window": "5.8\u201316.9s",
+      "narrative_beat": "evidence_and_discovery",
+      "viewer_question": "Why didn't that surrounding million-degree plasma cook the spacecraft on contact?",
+      "new_information": "A Delta IV Heavy launch sent Parker within 3.8 million miles (6.1M km) of the photosphere, where its WISPR camera recorded coronal streamers first-hand.",
+      "visual_reveal": "Night liftoff of the Delta IV Heavy rocket from Cape Canaveral followed by real Encounter 8 and Dec 2024 WISPR coronal streamer sequences.",
+      "emotional_direction": "Documentary momentum from launch pad to inside the solar atmosphere",
+      "retention_purpose": "Prove with real rocket and onboard spacecraft camera footage that the mission physically entered the corona",
+      "text": "Launched atop a Delta IV Heavy rocket, Parker Solar Probe plunged within three point eight million miles of the Sun. Its onboard camera filmed glowing plasma streamers rushing directly past the spacecraft."
+    },
+    {
+      "seg_id": "N03",
+      "start_s": 17.33,
+      "end_s": 28.27,
+      "time_window": "17.3\u201328.3s",
+      "narrative_beat": "escalation",
+      "viewer_question": "Even if the plasma is thin, what blocks the blinding solar sunlight at 3.8 million miles?",
+      "new_information": "Coronal ions move at >1,000,000\u00b0C speeds, but ultra-low gas density means sparse collisions and far lower conductive heat transfer than temperature alone implies.",
+      "visual_reveal": "Close-up SDO extreme-ultraviolet magnetic plasma loops over the Sun's limb paired with a restrained ManimCE temperature comparison bar.",
+      "emotional_direction": "Aha-moment physical clarity resolving the million-degree paradox",
+      "retention_purpose": "Deliver the mid-video physics pivot distinguishing particle velocity (temperature) from collision density (heat transfer)",
+      "text": "Out in the solar corona, particles race past a million degrees Celsius\u2014yet the gas is so thin that very few strike the probe. Temperature measures particle speed, not total heat transfer."
+    },
+    {
+      "seg_id": "N04",
+      "start_s": 28.69,
+      "end_s": 38.56,
+      "time_window": "28.7\u201338.6s",
+      "narrative_beat": "payoff",
+      "viewer_question": "What did Parker discover inside the corona\u2014and what mystery still remains?",
+      "new_information": "A 4.5-inch (97%-air) alumina-coated carbon-foam heat shield endures ~1,370\u00b0C on its front face while keeping shadowed instruments near 30\u00b0C.",
+      "visual_reveal": "Cleanroom engineers fitting the octagonal carbon-foam heat shield, laser-testing cooled solar arrays, and touching the cool backside during thermal lamp tests, topped with a 1,370\u00b0C ManimCE gauge.",
+      "emotional_direction": "Admiration for precision aerospace engineering",
+      "retention_purpose": "Show real engineers testing the exact 4.5-inch shield and solar arrays as the temperature drop is quantified",
+      "text": "A four-point-five-inch carbon-foam shield reflects blinding sunlight, peaking near thirteen hundred seventy degrees Celsius while instruments behind stay near thirty degrees."
+    },
+    {
+      "seg_id": "N05",
+      "start_s": 38.98,
+      "end_s": 51.52,
+      "time_window": "39.0\u201351.5s",
+      "narrative_beat": "final_impression",
+      "viewer_question": "Could future close passes finally solve the coronal heating mystery?",
+      "new_information": "While Parker mapped magnetic switchbacks inside the corona, the exact balance of wave turbulence versus nanoflares heating the corona remains actively debated.",
+      "visual_reveal": "Johns Hopkins APL flight controllers cheering as Parker's survival beacon arrives, closing on erupting solar corona plasma that loops seamlessly back into Frame 0.",
+      "emotional_direction": "Honest scientific humility paired with human triumph",
+      "retention_purpose": "State the coronal-heating caveat honestly and close on real mission-control celebration + visual loop into S01",
+      "text": "Physicists still debate which magnetic waves superheat the outer corona hundreds of times hotter than the solar surface. Yet when flight controllers heard Parker's survival signal, humanity had touched a star\u2014and survived."
+    }
+  ]
+}

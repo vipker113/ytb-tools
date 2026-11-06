@@ -1,0 +1,44 @@
+{
+  "slug": "parker-solar-probe-corona-v9",
+  "adaptive_audio_profile": "immersive_exploration",
+  "max_cues_cap": 2,
+  "proposed_cues_count": 2,
+  "approved_cues_count": 0,
+  "rejected_for_silence_count": 2,
+  "silence_preferred_when_zero": true,
+  "approved_cues": [],
+  "rejected_cues": [
+    {
+      "cue_index": 1,
+      "sfx_name": "glacial_sub_drop",
+      "proposed_time_s": 0.08,
+      "shot_id": "S01",
+      "decision": "REJECT_FOR_SILENCE",
+      "reason": "Outer-space vacuum scene: silence is physically accurate; never invent space sounds.",
+      "six_question_audit": {
+        "q1_narration_happening": "How did a NASA spacecraft fly straight through the Sun's million-degree atmosphere\u2014without melting?",
+        "q2_visible_on_screen": "Bright white solar coronal streamers and solar wind rushing past spacecraft camera against dark space NASA spacecraft flying straight throug",
+        "q3_viewer_understanding": "Subtle low-frequency space rumble as WISPR coronal streamers rush past Frame 0",
+        "q4_materially_improves_moment": false,
+        "q5_authentic_relevant_legal": true,
+        "q6_silence_or_ambience_better": true
+      }
+    },
+    {
+      "cue_index": 2,
+      "sfx_name": "cavern_heartbeat_pulse",
+      "proposed_time_s": 17.193,
+      "shot_id": "S06",
+      "decision": "REJECT_FOR_SILENCE",
+      "reason": "Outer-space vacuum scene: silence is physically accurate; never invent space sounds.",
+      "six_question_audit": {
+        "q1_narration_happening": "Launched atop a Delta IV Heavy rocket, Parker Solar Probe plunged within three point eight million miles of the Sun. Its onboard camera film",
+        "q2_visible_on_screen": "Close-up of glowing violet and bronze magnetic plasma loops arcing above the curved solar horizon Million-degree ultra-thin coronal magnetic",
+        "q3_viewer_understanding": "Restrained mid-video pivot pulse on the temperature-versus-density physics reveal",
+        "q4_materially_improves_moment": false,
+        "q5_authentic_relevant_legal": true,
+        "q6_silence_or_ambience_better": true
+      }
+    }
+  ]
+}

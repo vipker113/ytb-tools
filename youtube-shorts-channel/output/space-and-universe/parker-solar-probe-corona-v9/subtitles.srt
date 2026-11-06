@@ -1,0 +1,115 @@
+1
+00:00:00,100 --> 00:00:01,849
+How did a NASA spacecraft fly
+
+2
+00:00:01,879 --> 00:00:03,642
+straight through the Sun's million-degree
+
+3
+00:00:03,672 --> 00:00:05,400
+atmosphere without melting
+
+4
+00:00:05,755 --> 00:00:07,170
+Launched atop a Delta IV Heavy
+
+5
+00:00:07,200 --> 00:00:09,481
+rocket Parker Solar Probe plunged within
+
+6
+00:00:09,511 --> 00:00:11,046
+three point eight million miles
+
+7
+00:00:11,076 --> 00:00:11,757
+of the Sun
+
+8
+00:00:12,040 --> 00:00:14,171
+Its onboard camera filmed glowing plasma
+
+9
+00:00:14,201 --> 00:00:15,906
+streamers rushing directly past
+
+10
+00:00:15,936 --> 00:00:16,942
+the spacecraft
+
+11
+00:00:17,332 --> 00:00:19,265
+Out in the solar corona particles
+
+12
+00:00:19,295 --> 00:00:21,400
+race past a million degrees Celsius
+
+13
+00:00:21,523 --> 00:00:22,669
+yet the gas is so thin
+
+14
+00:00:22,699 --> 00:00:23,733
+that very few strike
+
+15
+00:00:23,763 --> 00:00:24,420
+the probe
+
+16
+00:00:24,721 --> 00:00:26,924
+Temperature measures particle speed not
+
+17
+00:00:26,954 --> 00:00:28,279
+total heat transfer
+
+18
+00:00:28,687 --> 00:00:30,862
+A four-point-five-inch carbon-foam shield
+
+19
+00:00:30,892 --> 00:00:33,244
+reflects blinding sunlight peaking near
+
+20
+00:00:33,274 --> 00:00:35,494
+thirteen hundred seventy degrees Celsius
+
+21
+00:00:35,524 --> 00:00:37,731
+while instruments behind stay near thirty
+
+22
+00:00:37,761 --> 00:00:38,571
+degrees
+
+23
+00:00:38,980 --> 00:00:40,909
+Physicists still debate which magnetic
+
+24
+00:00:40,939 --> 00:00:43,001
+waves superheat the outer corona hundreds
+
+25
+00:00:43,031 --> 00:00:43,945
+of times hotter than
+
+26
+00:00:43,975 --> 00:00:45,172
+the solar surface
+
+27
+00:00:45,469 --> 00:00:47,409
+Yet when flight controllers heard Parker's
+
+28
+00:00:47,439 --> 00:00:49,701
+survival signal humanity had touched
+
+29
+00:00:49,731 --> 00:00:51,536
+a star and survived

@@ -1,0 +1,89 @@
+# Proof of Wonder — Studio v9.0 Directed Documentary Voice Script
+# Episode: parker-solar-probe-corona-v9
+# Title: How NASA Flew Through the Sun's Million-Degree Corona
+# Production Profile: space_discovery | Voice Preset: mysterious_discovery (en-GB-RyanNeural)
+
+[SEG: N01]
+"How did a NASA spacecraft fly straight through the Sun's million-degree atmosphere—without melting?"
+
+[DELIVERY: HOOK]
+[TONE: quiet_tension]
+[INTENSITY: 0.72]
+[PITCH DIRECTION: falling]
+[RHYTHM: crisp]
+[EMPHASIS: "NASA spacecraft", "million-degree atmosphere", "without melting"]
+[PAUSE AFTER: 380ms]
+
+[SEG: N02]
+"Launched atop a Delta IV Heavy rocket, Parker Solar Probe plunged within three point eight million miles of the Sun."
+
+[DELIVERY: MEASURED EVIDENCE]
+[TONE: grounded_authority]
+[INTENSITY: 0.54]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "Delta IV Heavy", "three point eight million miles"]
+[PAUSE AFTER: 300ms]
+
+"Its onboard camera filmed glowing plasma streamers rushing directly past the spacecraft."
+
+[DELIVERY: CALM EXPLANATION]
+[TONE: focused_awe]
+[INTENSITY: 0.58]
+[PITCH DIRECTION: falling]
+[RHYTHM: steady]
+[EMPHASIS: "onboard camera", "glowing plasma streamers"]
+[PAUSE AFTER: 400ms]
+
+[SEG: N03]
+"Out in the solar corona, particles race past a million degrees Celsius—yet the gas is so thin that very few strike the probe."
+
+[DELIVERY: SURPRISED BUT CONTROLLED]
+[TONE: hushed_reveal]
+[INTENSITY: 0.64]
+[PITCH DIRECTION: steady]
+[RHYTHM: deliberate]
+[EMPHASIS: "million degrees Celsius", "gas is so thin", "very few"]
+[PAUSE AFTER: 320ms]
+
+"Temperature measures particle speed, not total heat transfer."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[TONE: clear_precision]
+[INTENSITY: 0.56]
+[PITCH DIRECTION: falling]
+[RHYTHM: crisp]
+[EMPHASIS: "particle speed", "not total heat transfer"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N04]
+"A four-point-five-inch carbon-foam shield reflects blinding sunlight, peaking near thirteen hundred seventy degrees Celsius while instruments behind stay near thirty degrees."
+
+[DELIVERY: CINEMATIC REVEAL]
+[TONE: controlled_marvel]
+[INTENSITY: 0.64]
+[PITCH DIRECTION: falling]
+[RHYTHM: measured]
+[EMPHASIS: "carbon-foam shield", "thirteen hundred seventy degrees", "thirty degrees"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N05]
+"Physicists still debate which magnetic waves superheat the outer corona hundreds of times hotter than the solar surface."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[TONE: balanced_nuance]
+[INTENSITY: 0.48]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "still debate", "magnetic waves", "solar surface"]
+[PAUSE AFTER: 320ms]
+
+"Yet when flight controllers heard Parker's survival signal, humanity had touched a star—and survived."
+
+[DELIVERY: EMOTIONAL REFLECTION]
+[TONE: resonant_payoff]
+[INTENSITY: 0.62]
+[PITCH DIRECTION: falling]
+[RHYTHM: unhurried]
+[EMPHASIS: "survival signal", "touched a star", "survived"]
+[PAUSE AFTER: 360ms]

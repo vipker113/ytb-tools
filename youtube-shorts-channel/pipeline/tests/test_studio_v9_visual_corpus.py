@@ -249,6 +249,46 @@ def test_empirical_percentiles_invariant_to_linear_scaling() -> None:
     assert np.allclose(compute_empirical_percentiles(raw_clip), compute_empirical_percentiles(raw_siglip))
 
 
+def test_subdirectory_ingest_preserves_parent_records(tmp_path: Path) -> None:
+    raw = tmp_path / "raw_footage"
+    ep1 = raw / "episode_one"
+    ep2 = raw / "episode_two"
+    cdir = tmp_path / "corpus"
+    ep1.mkdir(parents=True)
+    ep2.mkdir(parents=True)
+
+    p1 = ep1 / "corona_wispr.jpg"
+    Image.new("RGB", (240, 240), (240, 180, 40)).save(p1)
+    _write_prov(p1, "Public Domain (NASA)", title="Solar corona WISPR streamer")
+
+    p2 = ep2 / "deep_sea_vent.jpg"
+    Image.new("RGB", (240, 240), (20, 80, 220)).save(p2)
+    _write_prov(p2, "Public Domain (NOAA)", title="Hydrothermal vent plume")
+
+    emb = HashMockEmbedder()
+    st_full = ingest_corpus(raw_root=raw, corpus_dir=cdir, embedder=emb, workers=1)
+    assert st_full["total_windows"] == 2
+
+    # Add a new file inside episode_two and run ingest scoped ONLY to episode_two
+    p3 = ep2 / "new_rov_arm.jpg"
+    Image.new("RGB", (240, 240), (40, 200, 120)).save(p3)
+    _write_prov(p3, "Public Domain (NOAA)", title="ROV robotic arm sampling")
+
+    st_sub = ingest_corpus(raw_root=ep2, corpus_dir=cdir, embedder=emb, workers=1)
+    assert st_sub["ingested_files"] == 1
+    assert st_sub["skipped_unchanged_files"] == 1
+    assert st_sub["total_windows"] == 3
+
+    loaded = load_corpus(cdir)
+    assert Path(loaded.meta["raw_root"]).resolve() == raw.resolve()
+    rels = {r["rel_path"] for r in loaded.records}
+    assert rels == {
+        "episode_one/corona_wispr.jpg",
+        "episode_two/deep_sea_vent.jpg",
+        "episode_two/new_rov_arm.jpg",
+    }
+
+
 @pytest.mark.ml
 @pytest.mark.skipif(not is_ml_available()[0], reason="Optional ML group not installed")
 def test_live_clip_embedder_on_mps_or_cpu() -> None:
