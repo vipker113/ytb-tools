@@ -1233,5 +1233,51 @@ def export_storyboard_cmd(
     )
 
 
+@app.command(name="analyze-outlier")
+def analyze_outlier_cmd(
+    video_id: Optional[str] = typer.Option(None, "--video-id", "-v", help="11-character YouTube video ID"),
+    local: Optional[Path] = typer.Option(None, "--local", help="Analyze a local rendered MP4 episode instead of YouTube"),
+    mode: Literal["download", "transcript_only"] = typer.Option(
+        "download", "--mode", help="download (temp <=480p auto-deleted) | transcript_only"
+    ),
+    keep_media: bool = typer.Option(False, "--keep-media", help="Debug only: keep downloaded 480p media file"),
+    out_root: Optional[Path] = typer.Option(None, "--out-root", help="Override research/outliers directory"),
+) -> None:
+    """Analyze pacing, cut rhythm, motion classes, hook mechanics & loop similarity of an outlier Short."""
+    from pow_studio.outlier_analyst import analyze_outlier_video
+
+    brief = analyze_outlier_video(
+        video_id=video_id,
+        local_video_path=local,
+        mode=mode,
+        keep_media=keep_media,
+        out_root=out_root,
+    )
+    hk = brief["hook_and_loop"]
+    vm = brief["visual_mix"]
+    console.print(
+        f"[bold green]✓ Outlier Anatomy Complete ({brief['target_id']}):[/bold green] "
+        f"{brief['duration_s']}s • {brief['scene_count']} scenes ({brief['cut_count']} cuts) • media_deleted={brief['media_deleted']}\n"
+        f"  • Hook: type=[cyan]{hk['opening_hook_type']}[/cyan] | first_word={hk['first_word_time_s']}s | loop_sim={hk['loop_similarity_score']}\n"
+        f"  • Visual mix: Moving={vm['real_moving_pct']}% | Still={vm['static_or_animated_still_pct']}% | Graphic={vm['graphic_or_slide_pct']}%"
+    )
+
+
+@app.command(name="outlier-patterns")
+def outlier_patterns_cmd(
+    out_root: Optional[Path] = typer.Option(None, "--out-root", help="Override research/outliers directory"),
+) -> None:
+    """Aggregate analyzed competitor outliers and generate pacing gap report vs Proof of Wonder."""
+    from pow_studio.outlier_analyst import aggregate_outlier_patterns
+
+    rep = aggregate_outlier_patterns(out_root=out_root)
+    console.print(
+        f"[bold green]✓ Outlier Patterns Aggregated:[/bold green] "
+        f"{rep['competitor_outliers_count']} outliers across {rep['competitor_channels_count']} channels"
+    )
+    for note in rep["pacing_gap_report"]:
+        console.print(f"  • {note}")
+
+
 if __name__ == "__main__":
     app()

@@ -58,9 +58,6 @@ youtube-shorts-channel/.cache/
 youtube-shorts-channel/assets/visual_corpus/
 youtube-shorts-channel/output/**/overlays/
 youtube-shorts-channel/output/**/board/
-youtube-shorts-channel/research/outliers/**/*.mp4
-youtube-shorts-channel/research/outliers/**/*.webm
-youtube-shorts-channel/research/outliers/**/*.m4a
-youtube-shorts-channel/research/outliers/**/*.wav
-youtube-shorts-channel/research/outliers/**/*.jpg
-youtube-shorts-channel/research/outliers/**/*.png
+youtube-shorts-channel/research/outliers/*/
+!youtube-shorts-channel/research/outliers/outlier_patterns.json
+!youtube-shorts-channel/research/outliers/outlier_patterns.md

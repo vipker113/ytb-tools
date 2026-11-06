@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-11-06T06:15:10.816Z",
+  "competitor_outliers_count": 10,
+  "competitor_channels_count": 5,
+  "competitor_channels": [
+    "AstroKobi",
+    "Be Smart",
+    "Cleo Abram",
+    "MinuteEarth",
+    "Zack D. Films"
+  ],
+  "competitor_medians": {
+    "cuts_per_10s": 1.02,
+    "hook_0_3s_cuts": 0.0,
+    "median_shot_duration_s": 4.94,
+    "words_per_second": 3.12,
+    "first_word_time_s": 0.0,
+    "real_moving_footage_pct": 87.6,
+    "loop_similarity_score": 0.6
+  },
+  "hook_type_distribution": {
+    "direct_statement": 9,
+    "question": 1
+  },
+  "our_channel_medians": {
+    "episodes_count": 3,
+    "median_duration_s": 107.0,
+    "median_cuts_per_10s": 1.78,
+    "median_hook_0_3s_cuts": 0.0,
+    "median_shot_duration_s": 5.12,
+    "episodes": [
+      {
+        "slug": "deep-ocean-black-smokers-v8",
+        "duration_s": 68.8,
+        "cut_count": 9,
+        "cuts_per_10s": 1.31,
+        "hook_0_3s_cuts": 0,
+        "median_shot_duration_s": 6.8
+      },
+      {
+        "slug": "space-nasa-rocket-evolution-v8",
+        "duration_s": 107.0,
+        "cut_count": 19,
+        "cuts_per_10s": 1.78,
+        "hook_0_3s_cuts": 0,
+        "median_shot_duration_s": 4.87
+      },
+      {
+        "slug": "space-nasa-spacesuit-evolution-v8",
+        "duration_s": 110.667,
+        "cut_count": 21,
+        "cuts_per_10s": 1.9,
+        "hook_0_3s_cuts": 0,
+        "median_shot_duration_s": 5.12
+      }
+    ]
+  },
+  "pacing_gap_report": [
+    "Hook (0–3s) cuts median: Competitor Outliers = 0.0 cuts/3s vs Proof of Wonder = 0.0 cuts/3s.",
+    "Median shot length: Competitor Outliers = 4.94s vs Proof of Wonder = 5.12s.",
+    "Overall cut velocity: Competitor Outliers = 1.02 cuts/10s vs Proof of Wonder = 1.78 cuts/10s."
+  ],
+  "outliers": [
+    {
+      "video_id": "8zegi6-ZyiM",
+      "title": "Why Do All The Planes Fly This Line?",
+      "channel": "Cleo Abram",
+      "duration_s": 51.27,
+      "cut_count": 17,
+      "cuts_per_10s": 3.32,
+      "median_shot_duration_s": 3.08,
+      "words_per_second": 3.55,
+      "hook_type": "direct_statement",
+      "real_moving_pct": 87.2
+    },
+    {
+      "video_id": "P54XDbW_200",
+      "title": "The Fastest Star Ever Discovered",
+      "channel": "AstroKobi",
+      "duration_s": 60.743,
+      "cut_count": 6,
+      "cuts_per_10s": 0.99,
+      "median_shot_duration_s": 5.24,
+      "words_per_second": 3.24,
+      "hook_type": "direct_statement",
+      "real_moving_pct": 89.5
+    },
+    {
+      "video_id": "TY3s3VOHB9s",
+      "title": "Rabies isn't trying to kill - it's trying to control!",
+      "channel": "MinuteEarth",
+      "duration_s": 63.065,
+      "cut_count": 1,
+      "cuts_per_10s": 0.16,
+      "median_shot_duration_s": 31.53,
+      "words_per_second": 2.97,
+      "hook_type": "direct_statement",
+      "real_moving_pct": 0.0
+    },
+    {
+      "video_id": "TZd3xs5A3mE",
+      "title": "This Discovery Just Won the Nobel Prize in Physics",
+      "channel": "Cleo Abram",
+      "duration_s": 51.014,
+      "cut_count": 23,
+      "cuts_per_10s": 4.51,
+      "median_shot_duration_s": 2.08,
+      "words_per_second": 2.31,
+      "hook_type": "direct_statement",
+      "real_moving_pct": 88.0
+    },
+    {
+      "video_id": "V-74ztmK2oo",
+      "title": "The Apple In An Infinite Box Theory",
+      "channel": "AstroKobi",
+      "duration_s": 66.502,
+      "cut_count": 7,
+      "cuts_per_10s": 1.05,
+      "median_shot_duration_s": 4.32,
+      "words_per_second": 3.08,
+      "hook_type": "direct_statement",
+      "real_moving_pct": 80.2
+    },
+    {
+      "video_id": "aOiH-SSnyHs",
+      "title": "How do volcanos die?",
+      "channel": "MinuteEarth",
+      "duration_s": 73.445,
+      "cut_count": 7,
+      "cuts_per_10s": 0.95,
+      "median_shot_duration_s": 7.27,
+      "words_per_second": 3.05,
+      "hook_type": "direct_statement",
+      "real_moving_pct": 0.0
+    },
+    {
+      "video_id": "c1b6adSrK3g",
+      "title": "Why don’t humans have tails?",
+      "channel": "Be Smart",
+      "duration_s": 152.137,
+      "cut_count": 20,
+      "cuts_per_10s": 1.31,
+      "median_shot_duration_s": 2.54,
+      "words_per_second": 3.21,
+      "hook_type": "direct_statement",
+      "real_moving_pct": 28.3
+    },
+    {
+      "video_id": "gyOZv_ckZQU",
+      "title": "Why Dobermans Have Cropped Ears 😞",
+      "channel": "Zack D. Films",
+      "duration_s": 31.37,
+      "cut_count": 0,
+      "cuts_per_10s": 0.0,
+      "median_shot_duration_s": 31.37,
+      "words_per_second": 3.16,
+      "hook_type": "direct_statement",
+      "real_moving_pct": 100.0
+    },
+    {
+      "video_id": "ousa8Yy96Y4",
+      "title": "Why don't humans walk like THAT?",
+      "channel": "Be Smart",
+      "duration_s": 107.555,
+      "cut_count": 22,
+      "cuts_per_10s": 2.05,
+      "median_shot_duration_s": 4.63,
+      "words_per_second": 3.26,
+      "hook_type": "question",
+      "real_moving_pct": 88.5
+    },
+    {
+      "video_id": "uBUMTlXdS2I",
+      "title": "The Reason Humpty Dumpty Fell 🥚 (fiction)",
+      "channel": "Zack D. Films",
+      "duration_s": 55.937,
+      "cut_count": 2,
+      "cuts_per_10s": 0.36,
+      "median_shot_duration_s": 23.41,
+      "words_per_second": 2.52,
+      "hook_type": "direct_statement",
+      "real_moving_pct": 100.0
+    }
+  ]
+}
