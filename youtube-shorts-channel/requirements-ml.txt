@@ -1,0 +1,5 @@
+# Studio v9 optional: local visual corpus (CLIP / SigLIP on Apple Silicon `mps`). $0, open weights.
+# Install: uv pip install --python youtube-shorts-channel/.venv/bin/python -r youtube-shorts-channel/requirements-ml.txt
+torch>=2.4.0
+transformers>=4.44.0
+safetensors>=0.4.0

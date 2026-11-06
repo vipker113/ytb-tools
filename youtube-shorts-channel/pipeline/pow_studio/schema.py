@@ -523,6 +523,45 @@ class HookCandidateSpec(BaseModel):
     rationale: str = ""
 
 
+class OverlayAnchorSpec(BaseModel):
+    """Studio v9: anchor a mechanism overlay to narration (phrase) or explicit seconds."""
+
+    seg_id: Optional[str] = None
+    phrase: Optional[str] = Field(default=None, description="Spoken phrase inside seg_id; resolved via word_timings.json")
+    start_s: Optional[float] = Field(default=None, ge=0.0, description="Explicit start (overrides phrase when set)")
+    lead_in_s: float = Field(default=0.0, ge=-1.0, le=1.0, description="Shift reveal relative to the anchored word")
+
+    @model_validator(mode="after")
+    def _require_some_anchor(self) -> "OverlayAnchorSpec":
+        if self.start_s is None and not (self.seg_id and self.phrase):
+            raise ValueError("Overlay anchor needs either start_s or (seg_id + phrase).")
+        return self
+
+
+class OverlayRegionSpec(BaseModel):
+    """Normalized (0..1) canvas region reserved for an overlay's graphics."""
+
+    x: float = Field(default=0.08, ge=0.0, le=1.0)
+    y: float = Field(default=0.14, ge=0.0, le=1.0)
+    w: float = Field(default=0.84, gt=0.0, le=1.0)
+    h: float = Field(default=0.30, gt=0.0, le=1.0)
+
+
+class MechanismOverlaySpec(BaseModel):
+    """Studio v9: parameterized alpha mechanism overlay composited above real footage, below captions."""
+
+    overlay_id: str
+    template: str = Field(description="Template id in pow_studio.mechanism_overlay.templates")
+    anchor: OverlayAnchorSpec
+    hold_s: float = Field(default=2.4, gt=0.0, le=12.0)
+    region: OverlayRegionSpec = Field(default_factory=OverlayRegionSpec)
+    params: dict[str, Any] = Field(default_factory=dict)
+    claim_ref: Optional[int] = Field(default=None, ge=0, description="Index into factual_references")
+    honesty_label: Literal["measured_value", "illustrative_model", "scale_comparison"] = "illustrative_model"
+    span_cut: bool = Field(default=False, description="Allow overlay to continue across a hard cut")
+    purpose: str = ""
+
+
 class EpisodeManifest(BaseModel):
     manifest_version: str = Field(default="6.0", description="Versioned production manifest schema")
     script_version: str = Field(default="1.0", description="Approved script version identifier")
@@ -660,6 +699,16 @@ class EpisodeManifest(BaseModel):
     excluded_sources_notes: list[str] = Field(default_factory=list)
     factual_references: list[FactualReferenceSpec] = Field(min_length=1)
 
+    # Studio v9 (all optional; defaults keep v6-v8 behavior byte-identical)
+    visual_corpus_mode: Literal["off", "shadow", "on"] = Field(
+        default="off",
+        description="Local CLIP visual corpus influence on footage matching: off | shadow (report only) | on",
+    )
+    require_storyboard_approval: bool = Field(
+        default=False,
+        description="Block master render until storyboard_approval.json matches the current storyboard hash",
+    )
+    mechanism_overlays: list[MechanismOverlaySpec] = Field(default_factory=list)
     def resolve_style_profile(self) -> DocumentaryStyleProfile:
         return load_style_profile(self.style_profile, self.style_overrides)
 

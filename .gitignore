@@ -51,3 +51,16 @@ youtube-shorts-channel/assets/audio_library/**/*.mp3
 youtube-shorts-channel/assets/audio_library/**/*.flac
 youtube-shorts-channel/assets/audio_library/field_recordings/*
 youtube-shorts-channel/assets/audio_library/music_beds/*
+
+# Studio v9 heavy/derived artifacts
+youtube-shorts-channel/.golden/
+youtube-shorts-channel/.cache/
+youtube-shorts-channel/assets/visual_corpus/
+youtube-shorts-channel/output/**/overlays/
+youtube-shorts-channel/output/**/board/
+youtube-shorts-channel/research/outliers/**/*.mp4
+youtube-shorts-channel/research/outliers/**/*.webm
+youtube-shorts-channel/research/outliers/**/*.m4a
+youtube-shorts-channel/research/outliers/**/*.wav
+youtube-shorts-channel/research/outliers/**/*.jpg
+youtube-shorts-channel/research/outliers/**/*.png

@@ -1,0 +1,3 @@
+# Studio v9 optional: mechanism overlays rendered with ManimCE (alpha channel, no LaTeX needed).
+# System prerequisites (macOS): brew install cairo pango pkg-config
+manim>=0.18.1

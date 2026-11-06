@@ -29,6 +29,39 @@ else
 fi
 echo "✓ Studio v6.0 Python CLI sẵn sàng: $STUDIO_DIR/.venv/bin/python"
 
+# 2b. Studio v9 optional dependency groups (flags: --with-ml --with-graphics --with-analysis --with-all)
+WITH_ML=0; WITH_GRAPHICS=0; WITH_ANALYSIS=0
+for arg in "$@"; do
+  if [ "$arg" = "--with-ml" ] || [ "$arg" = "--with-all" ]; then WITH_ML=1; fi
+  if [ "$arg" = "--with-graphics" ] || [ "$arg" = "--with-all" ]; then WITH_GRAPHICS=1; fi
+  if [ "$arg" = "--with-analysis" ] || [ "$arg" = "--with-all" ]; then WITH_ANALYSIS=1; fi
+done
+install_group() {
+  local req="$1"
+  if command -v uv >/dev/null 2>&1; then
+    uv pip install --python "$STUDIO_DIR/.venv/bin/python" -r "$req"
+  else
+    "$STUDIO_DIR/.venv/bin/pip" install -r "$req"
+  fi
+}
+if [ "$WITH_ML" = "1" ]; then
+  echo "🧠 Cài nhóm Visual Corpus (torch + transformers, chạy trên Apple Silicon mps)..."
+  install_group "$STUDIO_DIR/requirements-ml.txt"
+fi
+if [ "$WITH_GRAPHICS" = "1" ]; then
+  echo "📐 Cài nhóm Mechanism Overlay (ManimCE)..."
+  if [ "$(uname)" = "Darwin" ] && command -v brew >/dev/null 2>&1; then
+    brew list cairo >/dev/null 2>&1 || brew install cairo
+    brew list pango >/dev/null 2>&1 || brew install pango
+    brew list pkg-config >/dev/null 2>&1 || brew install pkg-config
+  fi
+  install_group "$STUDIO_DIR/requirements-graphics.txt"
+fi
+if [ "$WITH_ANALYSIS" = "1" ]; then
+  echo "🔎 Cài nhóm Outlier Analyst (yt-dlp, scenedetect, transcript API)..."
+  install_group "$STUDIO_DIR/requirements-analysis.txt"
+fi
+
 # 3. Verify Studio profiles & unit tests
 "$STUDIO_DIR/.venv/bin/python" "$STUDIO_DIR/pipeline/pow_studio/cli.py" profiles
 

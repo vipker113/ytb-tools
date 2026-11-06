@@ -298,6 +298,33 @@ class QAStyleConfig(BaseModel):
     block_creative_approval_on_slideshow_or_proxy: bool = True
 
 
+class VisualCorpusStyleConfig(BaseModel):
+    """Studio v9: local CLIP/SigLIP visual corpus retrieval (`pow_studio.visual_corpus`)."""
+
+    default_model: str = "clip-b32"
+    visual_weight_when_on: float = 0.20
+    metadata_tag_weight: float = 0.30
+    mmr_diversity_lambda: float = 0.30
+    mislabel_text_score_min: float = 0.70
+    mislabel_visual_percentile_max: float = 0.25
+    cross_episode_reuse_penalty_days: int = 30
+
+
+class MechanismOverlayStyleConfig(BaseModel):
+    """Studio v9: alpha mechanism overlays layered on real footage (`pow_studio.mechanism_overlay`)."""
+
+    enabled: bool = True
+    max_runtime_ratio: float = 0.30
+    max_alpha_area_ratio: float = 0.35
+    alpha_area_reclassify_after_s: float = 1.0
+    forbid_in_hook_s: float = 1.5
+    safe_zone_y_min_px: int = 215
+    safe_zone_y_max_px: int = 1380
+    max_overlays_per_video: int = 4
+    min_hold_s: float = 1.2
+    require_claim_ref: bool = True
+
+
 class DocumentaryStyleProfile(BaseModel):
     profile_name: str = "pow_documentary_v3"
     profile_name_display: str = ""
@@ -315,6 +342,8 @@ class DocumentaryStyleProfile(BaseModel):
     subtitles: SubtitlesStyleConfig = Field(default_factory=SubtitlesStyleConfig)
     opening_and_thumbnail: OpeningAndThumbnailStyleConfig = Field(default_factory=OpeningAndThumbnailStyleConfig)
     qa: QAStyleConfig = Field(default_factory=QAStyleConfig)
+    visual_corpus: VisualCorpusStyleConfig = Field(default_factory=VisualCorpusStyleConfig)
+    mechanism_overlays: MechanismOverlayStyleConfig = Field(default_factory=MechanismOverlayStyleConfig)
 
 
 def _deep_merge(base: dict[str, Any], patch: dict[str, Any]) -> dict[str, Any]:

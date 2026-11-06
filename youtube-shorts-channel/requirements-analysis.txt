@@ -1,0 +1,4 @@
+# Studio v9 optional: Outlier Video Reference Analyst + footage harvesters.
+yt-dlp>=2024.8.6
+scenedetect[opencv-headless]>=0.6.4
+youtube-transcript-api>=0.6.2
