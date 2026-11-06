@@ -3,6 +3,7 @@
 import {
   BarChart3,
   ChevronDown,
+  Clapperboard,
   Film,
   Lightbulb,
   Menu,
@@ -22,9 +23,16 @@ import { CrossSubTab } from "./CrossSubTab";
 import { IdeasAndCompetitorsTab } from "./IdeasAndCompetitorsTab";
 import { MacStudioReviewTab } from "./MacStudioReviewTab";
 import { SettingsTab } from "./SettingsTab";
+import { StudioBacklotTab } from "./StudioBacklotTab";
 import { YoutubeIcon } from "./YoutubeIcon";
 
-type ActiveTab = "mac_review" | "analytics" | "ideas" | "cross_sub" | "settings";
+type ActiveTab =
+  | "mac_review"
+  | "backlot"
+  | "analytics"
+  | "ideas"
+  | "cross_sub"
+  | "settings";
 
 export function DashboardApp() {
   const [store, setStore] = useState<StoreData>(INITIAL_DEMO_STORE);
@@ -40,6 +48,10 @@ export function DashboardApp() {
     unposted: number;
     total: number;
   }>({ unposted: 0, total: 0 });
+  const [backlotCounts, setBacklotCounts] = useState<{
+    pending: number;
+    total: number;
+  }>({ pending: 0, total: 0 });
   const [keywordSeedForIdeas, setKeywordSeedForIdeas] = useState<string | null>(
     null
   );
@@ -258,6 +270,18 @@ export function DashboardApp() {
           ? macCounts.total
           : undefined,
       icon: Film,
+    },
+    {
+      id: "backlot",
+      label: "Studio Backlot",
+      subtitle: "Filmstrip 3-frame & Khóa Storyboard",
+      badge:
+        backlotCounts.pending > 0
+          ? `${backlotCounts.pending} chờ`
+          : backlotCounts.total > 0
+          ? backlotCounts.total
+          : "v9",
+      icon: Clapperboard,
     },
     {
       id: "analytics",
@@ -683,6 +707,20 @@ export function DashboardApp() {
                     setActiveTab("ideas");
                   }}
                   onNotify={showToast}
+                />
+              )}
+
+              {/* TAB #1B: STUDIO BACKLOT v9 (PRE-RENDER STORYBOARD FILMSTRIP & APPROVAL GATE) */}
+              {activeTab === "backlot" && (
+                <StudioBacklotTab
+                  onNotify={showToast}
+                  onPendingCountChange={(pending, total) => {
+                    setBacklotCounts((prev) =>
+                      prev.pending === pending && prev.total === total
+                        ? prev
+                        : { pending, total }
+                    );
+                  }}
                 />
               )}
 
