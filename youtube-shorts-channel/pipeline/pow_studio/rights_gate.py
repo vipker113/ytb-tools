@@ -123,6 +123,40 @@ def _verify_commons_api(source_page_url: str, cache: dict) -> dict:
         return {"api_checked": False, "note": f"offline_or_timeout ({exc})"}
 
 
+def _check_provenance_sidecar(resolved: Path | None, manifest_license: str, asset_name: str) -> str:
+    """
+    Studio v9: validate an asset's `.provenance.json` sidecar if present. Returns a verification label
+    (empty when no sidecar). Raises when the sidecar's own license is not commercial-safe or when the
+    file on disk no longer matches the hash recorded at download time.
+    """
+    if resolved is None:
+        return ""
+    sp = resolved.with_name(resolved.name + ".provenance.json")
+    if not sp.exists():
+        return ""
+    try:
+        prov = json.loads(sp.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return "PROVENANCE-UNREADABLE"
+    prov_lic = str(prov.get("license", "")).strip()
+    if prov_lic:
+        validate_license_string(prov_lic, f"{asset_name} [provenance sidecar]")
+    rec_sha = str(prov.get("sha256", ""))
+    if len(rec_sha) == 64:
+        h = hashlib.sha256()
+        with open(resolved, "rb") as f:
+            for chunk in iter(lambda: f.read(1024 * 1024), b""):
+                h.update(chunk)
+        if h.hexdigest() != rec_sha:
+            raise RightsViolationError(f"[{asset_name}] File changed since provenance was recorded (sha256 mismatch).")
+    ev = prov.get("license_evidence") or {}
+    src = prov.get("source_repo") or ev.get("source_repo") or prov.get("provenance_source", "sidecar")
+    mismatch = " · MANIFEST-LICENSE-DIFFERS" if prov_lic and prov_lic.upper() not in manifest_license.upper() and manifest_license.upper() not in prov_lic.upper() else ""
+    if ev.get("verified"):
+        return f"YES (provenance: {src}, evidence {str(ev.get('evidence_sha256', ''))[:8] or 'n/a'}){mismatch}"
+    return f"DECLARED (provenance backfill){mismatch}"
+
+
 def run_rights_gate(manifest: EpisodeManifest, verify_online: bool = True) -> list[dict]:
     """
     Validate all assets, soundbites, and references in `manifest`.
@@ -172,6 +206,9 @@ def run_rights_gate(manifest: EpisodeManifest, verify_online: bool = True) -> li
             if api_info.get("commons_license"):
                 validate_license_string(api_info["commons_license"], f"{asset.local_file} [Commons API]")
 
+        # Studio v9: provenance sidecar (`<file>.provenance.json`) written by download-footage / backfill.
+        prov_label = _check_provenance_sidecar(resolved, asset.license, asset.local_file)
+
         verified_rows.append(
             {
                 "asset_index": idx,
@@ -187,7 +224,7 @@ def run_rights_gate(manifest: EpisodeManifest, verify_online: bool = True) -> li
                 "license_url": asset.license_url,
                 "api_verified": "YES (Commons API)"
                 if api_info.get("api_checked")
-                else ("FIRST-PARTY" if asset.is_first_party_original else "DECLARED-URL"),
+                else (prov_label or ("FIRST-PARTY" if asset.is_first_party_original else "DECLARED-URL")),
                 "source_page_url": asset.source_page_url,
                 "direct_media_url": asset.direct_media_url,
                 "required_attribution": asset.required_attribution,

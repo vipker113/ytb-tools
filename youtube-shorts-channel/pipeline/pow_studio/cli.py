@@ -51,6 +51,7 @@ from pow_studio.compositor import (  # noqa: E402
     render_thumbnail_concepts_for_episode,
 )
 from pow_studio.deliverables import generate_all_deliverables  # noqa: E402
+from pow_studio.events import set_gate, studio_stage  # noqa: E402
 from pow_studio.qc_suite import run_episode_qc  # noqa: E402
 from pow_studio.rights_gate import run_rights_gate  # noqa: E402
 from pow_studio.schema import EpisodeManifest  # noqa: E402
@@ -181,6 +182,7 @@ def preview(
 
 
 @app.command()
+@studio_stage("render")
 def render(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True),
     mode: Literal["draft", "master"] = typer.Option("master", "--mode"),
@@ -224,6 +226,7 @@ def qc(
 
 
 @app.command(name="all")
+@studio_stage("all")
 def run_all(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True),
     mode: Literal["draft", "master"] = typer.Option("master", "--mode"),
@@ -408,6 +411,7 @@ def list_profiles() -> None:
 
 
 @app.command(name="stage1-research")
+@studio_stage("stage1-research")
 def stage1_research(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
     online_check: bool = typer.Option(True, "--online/--offline", help="Verify Wikimedia Commons API metadata"),
@@ -449,6 +453,7 @@ def stage1_research(
 
 
 @app.command(name="stage2-story")
+@studio_stage("stage2-story")
 def stage2_story(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
     export_voice_script: bool = typer.Option(
@@ -490,6 +495,7 @@ def stage2_story(
 
 
 @app.command(name="stage3-voice")
+@studio_stage("stage3-voice")
 def stage3_voice(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
     reuse_tts: bool = typer.Option(False, "--reuse-tts", help="Reuse full narration if already rendered"),
@@ -517,6 +523,7 @@ def stage3_voice(
 
 
 @app.command(name="stage4-visual")
+@studio_stage("stage4-visual")
 def stage4_visual(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
     mode: Literal["draft", "master"] = typer.Option("master", "--mode"),
@@ -555,6 +562,7 @@ def stage4_visual(
 
 
 @app.command(name="stage5-edit")
+@studio_stage("stage5-edit")
 def stage5_edit(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
     mode: Literal["draft", "master"] = typer.Option("master", "--mode"),
@@ -564,10 +572,13 @@ def stage5_edit(
     ep.assert_output_dir_writable()
     wt = json.loads((Path(ep.output_dir) / "word_timings.json").read_text(encoding="utf-8"))
     mp4 = render_episode_master(ep, wt, encode_mode=mode)
+    if mode == "master":
+        set_gate(ep.output_dir, "render_master", "passed", detail=str(mp4.name))
     console.print(f"[bold green]✓ Stage 5 Master Timeline Exported ({mode}):[/bold green] {mp4}")
 
 
 @app.command(name="stage6-quality")
+@studio_stage("stage6-quality")
 def stage6_quality(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
 ) -> None:
@@ -635,6 +646,7 @@ def voice_preview_cmd(
 
 
 @app.command(name="voice-approve")
+@studio_stage("voice-approve")
 def voice_approve_cmd(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
     note: str = typer.Option("Creator approved final narration timing master", "--note"),
@@ -642,6 +654,7 @@ def voice_approve_cmd(
     """Lock the approved narration track via SHA-256 checksums (`voice_approval_lock.json`)."""
     ep = _load(manifest)
     lk = approve_and_lock_voice_master(ep, reviewer_note=note)
+    set_gate(ep.output_dir, "voice_lock", "passed", detail=f"sha256 {lk['narration_norm_wav_sha256'][:12]} — {note}")
     console.print(
         f"[bold green]✓ Voice Master Approved & Locked:[/bold green] "
         f"{Path(ep.output_dir) / 'voice_approval_lock.json'} ({lk['narration_norm_wav_sha256'][:16]}...)"
@@ -699,6 +712,7 @@ def analytics_review_cmd(
 
 
 @app.command(name="optimize-scenes")
+@studio_stage("optimize-scenes")
 def optimize_scenes_cmd(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
 ) -> None:
@@ -715,6 +729,7 @@ def optimize_scenes_cmd(
 
 
 @app.command(name="plan-soundscape")
+@studio_stage("plan-soundscape")
 def plan_soundscape_cmd(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
 ) -> None:
@@ -740,6 +755,7 @@ def plan_soundscape_cmd(
 
 
 @app.command(name="creative-qc")
+@studio_stage("creative-qc")
 def creative_qc_cmd(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
 ) -> None:
@@ -777,6 +793,7 @@ def audio_registry_cmd(
 
 
 @app.command(name="feasibility")
+@studio_stage("feasibility")
 def feasibility_cmd(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest to evaluate before production"),
     out_dir: Optional[Path] = typer.Option(None, "--out-dir", help="Optional output folder for visual_feasibility_report.md"),
@@ -802,6 +819,12 @@ def feasibility_cmd(
     for r in rep["feasibility_table"]:
         tbl.add_row(r["story_beat"], r["required_visual"], r["available_footage"], r["evidence_relevance"], r["coverage_status"])
     console.print(tbl)
+    set_gate(
+        ep.output_dir,
+        "feasibility",
+        "passed" if rep["can_proceed_to_production"] else "blocked",
+        detail=f"{rep['feasibility_status']}" + (" (limited visuals accepted)" if accept_limited else ""),
+    )
     if not rep["can_proceed_to_production"]:
         console.print("[bold red]✗ Visual Feasibility Gate Blocked Production:[/bold red] Insufficient real footage for essential story events.")
         raise typer.Exit(code=1)
@@ -810,24 +833,127 @@ def feasibility_cmd(
 @app.command(name="discover-footage")
 def discover_footage_cmd(
     topic: str = typer.Option(..., "--topic", "-t", help="Documentary topic (generates multi-purpose Subject+Action queries)"),
-    online: bool = typer.Option(True, "--online/--offline", help="Query NASA, Wikimedia Commons & Internet Archive ($0 APIs)"),
-    limit: int = typer.Option(4, "--limit", "-n", help="Max results per query per archive"),
+    online: bool = typer.Option(True, "--online/--offline", help="Query the $0 footage sources (offline = only plan queries)"),
+    limit: int = typer.Option(4, "--limit", "-n", help="Max results per query per source"),
+    out: Optional[Path] = typer.Option(None, "--out", help="Folder for footage_discovery.{json,md} (v9: results are persisted)"),
+    sources: Optional[str] = typer.Option(
+        None, "--sources", help="Comma-separated source names (default: all enabled). See `footage-sources`."
+    ),
+    query: list[str] = typer.Option([], "--query", "-q", help="Extra literal search query (repeatable)"),
+    manifest: Optional[Path] = typer.Option(None, "--manifest", "-m", help="Optional episode YAML: derive beats + default --out"),
 ) -> None:
-    """Discover real documentary footage using Subject + Action multi-intent queries ($0)."""
+    """Discover real documentary footage across 8 $0 sources and persist candidates with license evidence."""
+    from pow_studio.footage_sources.discover import run_discovery
     from pow_studio.video_sourcing import discover_footage_first_by_purpose
 
-    res = discover_footage_first_by_purpose(topic=topic, max_per_query=limit, online=online)
-    q_tbl = Table(title=f"Generated Subject + Action Footage Queries — '{topic}'")
-    q_tbl.add_column("Purpose", style="cyan")
-    q_tbl.add_column("Query", style="white")
-    q_tbl.add_column("Target Media Class", style="green")
-    for q in res["planned_queries"]:
-        q_tbl.add_row(q["purpose"], q["query"], q["target_media_class"])
-    console.print(q_tbl)
-    console.print(f"[bold green]✓ Unique commercial-safe video candidates discovered:[/bold green] {res['total_unique_video_candidates']}")
+    if not online:
+        res = discover_footage_first_by_purpose(topic=topic, max_per_query=limit, online=False)
+        for q in res["planned_queries"]:
+            console.print(f"  • [cyan]{q['purpose']}[/cyan]: {q['query']} ({q['target_media_class']})")
+        return
+
+    beats = None
+    if manifest:
+        from pow_studio.action_storytelling import extract_narration_visual_beats
+
+        ep = _load(manifest)
+        beats = extract_narration_visual_beats(ep.narration_segments, topic=topic)
+        out = out or Path(ep.output_dir) / "planning"
+    src_list = [s.strip() for s in sources.split(",") if s.strip()] if sources else None
+    rep = run_discovery(topic, beats=beats, sources=src_list, max_per_query=limit, extra_queries=query, out_dir=out)
+
+    tbl = Table(title=f"Footage Discovery — '{topic}' ({rep['total_unique_candidates']} commercial-safe candidates)")
+    for col, style in (("ID", "cyan"), ("Source", "magenta"), ("Class hint", "green"), ("Res", "yellow"), ("Flags", "red"), ("Title", "white")):
+        tbl.add_column(col, style=style)
+    for purpose, rows in rep["results_by_purpose"].items():
+        for r in rows[:6]:
+            tbl.add_row(
+                r["candidate_id"], r["source_repo"], r["inferred_media_class"],
+                f"{r['width']}x{r['height']}" if r["height"] else "?", ",".join(r.get("source_flags", [])), r["title"][:70],
+            )
+    console.print(tbl)
+    for name, st in rep["source_stats"].items():
+        console.print(f"  • {name}: returned={st['returned']} kept={st['kept']} license_rejected={st['rejected_license']} errors={st.get('errors', 0)}")
+    if out:
+        console.print(f"[bold green]✓ Saved:[/bold green] {Path(out) / 'footage_discovery.json'} (+ .md)")
+
+
+@app.command(name="footage-sources")
+def footage_sources_cmd() -> None:
+    """List v9 footage sources, whether they are enabled/available, and why."""
+    from pow_studio.footage_sources import get_registry
+
+    tbl = Table(title="Studio v9 Footage Sources ($0)")
+    for col in ("Name", "Display", "Default", "Available", "Note"):
+        tbl.add_column(col)
+    for s in get_registry().values():
+        ok, note = s.is_available()
+        tbl.add_row(s.name, s.display_name, "yes" if s.default_enabled else "no", "yes" if ok else "no", note)
+    console.print(tbl)
+    console.print("Excluded by policy: ESA main site (CC BY-SA IGO), JAXA (non-commercial), Library of Congress (anti-bot challenge).")
+
+
+@app.command(name="download-footage")
+def download_footage_cmd(
+    discovery: Path = typer.Option(..., "--discovery", exists=True, help="footage_discovery.json from `discover-footage`"),
+    select: str = typer.Option(..., "--select", help="Comma-separated candidate IDs"),
+    dest: Path = typer.Option(..., "--dest", help="Destination folder, e.g. assets/raw_footage/<episode_dir>"),
+    max_mb: int = typer.Option(2500, "--max-mb", help="Per-file download cap (MB)"),
+    audit: bool = typer.Option(True, "--audit/--no-audit", help="Pixel motion audit to set source_media_class"),
+) -> None:
+    """Download candidates with provenance sidecars, audio stripping for music-risk sources, and pixel-based media class."""
+    from pow_studio.events import emit_event
+    from pow_studio.footage_sources.download import download_candidates
+
+    ids = [x.strip() for x in select.split(",") if x.strip()]
+    res = download_candidates(discovery, ids, dest, max_bytes=max_mb * 1_000_000, audit=audit)
+    ok = [r for r in res if r["ok"]]
+    for r in res:
+        if r["ok"]:
+            p = r["probe"]
+            console.print(
+                f"[green]✓[/green] {r['candidate_id']} → {r['local_path']} "
+                f"({p.get('width')}x{p.get('height')}, {p.get('duration_s')}s, class=[bold]{r['source_media_class']}[/bold])"
+            )
+        else:
+            console.print(f"[red]✗[/red] {r['candidate_id']}: {r['error']}")
+    if ok:
+        console.rule("assets_register entries (paste into the episode YAML)")
+        for r in ok:
+            console.print(r["assets_register_yaml"], markup=False)
+    disc_dir = Path(discovery).resolve().parent
+    if disc_dir.name == "planning":  # discovery saved inside an episode output folder → log to its event feed
+        emit_event(disc_dir.parent, "download-footage", "end", "passed" if ok else "failed",
+                   detail=f"{len(ok)}/{len(res)} downloaded to {dest}", artifacts=[r.get("local_path", "") for r in ok])
+
+
+@app.command(name="backfill-provenance")
+def backfill_provenance_cmd(
+    episodes_glob: str = typer.Option("episodes/*.yaml", "--episodes", help="Glob of episode manifests (relative to channel root)"),
+    overwrite: bool = typer.Option(False, "--overwrite", help="Rewrite existing sidecars"),
+) -> None:
+    """Write `.provenance.json` sidecars for media already registered in existing episode manifests."""
+    import glob as _glob
+
+    from pow_studio.footage_sources.download import backfill_provenance
+
+    root = Path(__file__).resolve().parents[2]
+    paths = [Path(p) for p in sorted(_glob.glob(str(root / episodes_glob)))]
+    st = backfill_provenance(paths, overwrite=overwrite)
+    covered = st["sidecars_written"] + st["already_present"]
+    on_disk = max(1, st["assets_seen"] - st["missing_files_count"])
+    pct = 100.0 * covered / on_disk
+    console.print(
+        f"[bold green]✓ Provenance backfill:[/bold green] {st['manifests']} manifests, {st['assets_seen']} visual assets, "
+        f"{st['sidecars_written']} written, {st['already_present']} existing, {st['missing_files_count']} files not on disk "
+        f"→ coverage of on-disk assets {pct:.1f}%"
+    )
+    for m in st["missing_files"][:15]:
+        console.print(f"  [yellow]• missing:[/yellow] {m}")
 
 
 @app.command(name="plan-storyboard")
+@studio_stage("plan-storyboard")
 def plan_storyboard_cmd(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
     out_dir: Optional[Path] = typer.Option(None, "--out-dir", help="Optional directory to export action_storyboard_plan.md"),
@@ -853,6 +979,7 @@ def plan_storyboard_cmd(
 
 
 @app.command(name="qa-6pillar")
+@studio_stage("qa-6pillar")
 def qa_6pillar_cmd(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
     out_dir: Optional[Path] = typer.Option(None, "--out-dir", help="Optional directory for six_pillar_qa_report.md (never overwrites protected dirs)"),
@@ -872,6 +999,12 @@ def qa_6pillar_cmd(
         out_dir=out_dir,
     )
     vc = rep["visual_coverage_metrics"]
+    set_gate(
+        ep.output_dir,
+        "qa_six_pillar",
+        "passed" if rep["overall_release_approval"] else "blocked",
+        detail=f"technical={'PASS' if rep['technical_approval'] else 'FAIL'} creative={'PASS' if rep['creative_approval'] else 'FAIL'}",
+    )
     console.print(
         f"[bold cyan]6-Pillar QA ({ep.slug}):[/bold cyan] "
         f"Technical=[bold]{'PASS' if rep['technical_approval'] else 'FAIL'}[/bold] | "

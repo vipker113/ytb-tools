@@ -22,10 +22,11 @@ import json
 import re
 import urllib.parse
 import urllib.request
-from dataclasses import asdict, dataclass
+from dataclasses import asdict
 from pathlib import Path
 from typing import Any, Optional
 
+from .footage_sources.base import VideoCandidate  # noqa: F401  (Studio v9 shared type, v8 fields unchanged)
 from .media_classifier import inspect_media_authenticity
 
 USER_AGENT = "ProofOfWonderDocumentaryHarvester/8.0 (science-documentary-pipeline; zero-cost)"
@@ -90,23 +91,6 @@ LECTURE_TALKING_HEAD_MARKERS = (
     "panel discussion",
     "talking head",
 )
-
-
-@dataclass
-class VideoCandidate:
-    source_repo: str
-    asset_id: str
-    title: str
-    description: str
-    page_url: str
-    download_url: str
-    license_label: str
-    width: int
-    height: int
-    human_interaction_score: float
-    relevance_notes: str
-    inferred_media_class: str = "REAL_VIDEO_ESTABLISHING"
-    query_purpose: str = "general"
 
 
 def _http_get_json(url: str, timeout: int = 15) -> dict:
@@ -300,7 +284,7 @@ def search_internet_archive_videos(
     Query Internet Archive (`archive.org/advancedsearch.php`) for open commercial-safe
     (`Public Domain`, `CC0`, `CC BY`) scientific, federal, and expedition videos ($0 API).
     """
-    q_expr = f"({query}) AND mediatype:(movies) AND (licenseurl:*publicdomain* OR licenseurl:*zero* OR licenseurl:*/by/*)"
+    q_expr = f"({query}) AND mediatype:(movies) AND (licenseurl:*publicdomain* OR licenseurl:*zero* OR licenseurl:*licenses\\/by\\/*)"
     api_url = (
         "https://archive.org/advancedsearch.php?q="
         + urllib.parse.quote(q_expr)
