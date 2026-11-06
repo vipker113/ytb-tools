@@ -30,16 +30,11 @@ Always know where production stands before acting: read `<output_dir>/studio_sta
 | 3 | Feasibility gate | `$PY $STUDIO feasibility -m $EP --out-dir <out>/planning` | **must pass** (exit 0) | `pow-footage-research` |
 | 4 | Story | `$PY $STUDIO stage2-story -m $EP` | hook + momentum pass | `pow-script-and-voice` |
 | 5 | Voice | `$PY $STUDIO stage3-voice -m $EP` then **PAUSE** for user listen | user runs/approves `voice-approve` | `pow-script-and-voice` |
-| 6 | Visual plan | `stage4-visual -m $EP --mode draft`, `optimize-scenes`, `plan-soundscape`, mechanism overlays | preview sheet, overlays QA | `pow-mechanism-overlay` |
+| 6 | Visual plan | `render-overlays -m $EP`, `stage4-visual -m $EP --mode draft`, `optimize-scenes`, `plan-soundscape` | preview sheet, `mechanism_overlay_qa.json` | `pow-mechanism-overlay` |
 | 7 | Storyboard approval | `export-storyboard -m $EP` → **PAUSE**: user approves in ytb-tools "Studio Backlot" | `storyboard_approval.json` hash matches | — |
 | 8 | Master render | `$PY $STUDIO stage5-edit -m $EP --mode master` | MP4 + thumbnails | — |
 | 9 | QA | `stage6-quality -m $EP`, `qa-6pillar -m $EP --out-dir <out>/qa`, `creative-qc -m $EP` | technical + creative approval | `pow-qa-and-release` |
 | 10 | Handoff | user reviews in ytb-tools "Mac Studio Review" | **PAUSE**: never publish yourself | `pow-qa-and-release` |
-
-Command availability: stages 1 (`download-footage`, `corpus-ingest`, `match-beats`), 6 (overlays) and
-7 (`export-storyboard`) arrive with Studio v9 milestones M2–M5. If a command is missing
-(`$PY $STUDIO --help`), use the v8 equivalent (`discover-footage`, manual `assets_register`) and tell
-the user which v9 step was skipped.
 
 ## Send-back loop (max 2 rounds)
 
@@ -60,8 +55,10 @@ emit_event(out_dir, "send-back", "decision", "info", detail="QA semantic MAJOR o
 ## Reading user storyboard notes
 
 When the user requests changes in Backlot, `storyboard_approval.json` has `decision:
-changes_requested` and `shot_notes {sid: text}`. Apply each note, re-run `export-storyboard`, and ask
-for approval again (the hash changes, so the old approval no longer counts).
+"changes_requested"`, `notes`, and `shotNotes: {sid: text}`. Apply each note in the episode YAML,
+re-run `render-overlays` (if an overlay changed) + `export-storyboard -m $EP`, and ask for approval
+again in `http://localhost:3000` → **Studio Backlot** (`storyboard_sha256` changes automatically, so
+the old approval is invalidated).
 
 ## Hard rules
 

@@ -258,6 +258,7 @@ def write_qc_report(manifest: EpisodeManifest, qc: dict) -> None:
     nvi = qc.get("narrative_and_visual_intelligence_qc", {})
     vs = qc.get("voice_studio_qc", {})
     a5 = qc.get("audio_5layer_health_qc", {})
+    sb = qc.get("storyboard_approval_qc", {})
 
     ps = sp["pacing_summary"]
 
@@ -304,6 +305,7 @@ def write_qc_report(manifest: EpisodeManifest, qc: dict) -> None:
 | **12. Narrative Momentum & Hook Promise** | `0` momentum errors, strong opening hook, promised payoff delivered | **{'PASS' if nvi.get('momentum_pass', True) else 'FAIL'}** | Errors=`{nvi.get('momentum_error_count', 0)}`, Warnings=`{nvi.get('momentum_warning_count', 0)}`, Hook=`{nvi.get('recommended_hook_id')}` (`{nvi.get('recommended_hook_score')}`) |
 | **13. 7-Criterion Visual Relevance** | All shots pass relevance floor (`0` decorative irrelevant visuals) | **{'PASS' if nvi.get('all_shots_eligible', True) else 'FAIL'}** | Mean weighted score=`{nvi.get('mean_visual_weighted_score', 0.0)}`, Mismatches=`{nvi.get('visual_mismatch_count', 0)}` |
 | **14. Voice Studio & 5-Layer Audio Health** | `0` clipped samples, `0` dead silences, natural LRA, 5 stems exported | **{'PASS' if a5.get('all_audio_health_pass', True) else 'FAIL'}** | Mode=`{vs.get('voice_input_mode', 'directed_tts')}` (`{vs.get('voice_direction_profile')}`), Lock=`{vs.get('approval_lock_synchronized')}`, Stems=`{a5.get('stems_exported_count', 0)}`, Clipped=`{a5.get('clipped_samples_count', 0)}`, Silences=`{a5.get('excessive_silence_count', 0)}` |
+| **15. Storyboard Approval Lock (v9)** | Required master approval matches `storyboard_sha256` | **{'PASS' if (not sb.get('required')) or sb.get('approved') else 'FAIL'}** | Required=`{sb.get('required', False)}`, Status=`{sb.get('status', 'not_required')}`, SHA=`{str(sb.get('current_storyboard_sha256') or '')[:12]}` |
 {bench_md}"""
     if sp.get("warnings"):
         md += "\n## Shot-Planner Notes & Warnings\n\n" + "\n".join(f"- {w}" for w in sp["warnings"]) + "\n"

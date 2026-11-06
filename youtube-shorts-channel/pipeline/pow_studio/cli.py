@@ -186,11 +186,22 @@ def preview(
 def render(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True),
     mode: Literal["draft", "master"] = typer.Option("master", "--mode"),
+    skip_storyboard_gate: bool = typer.Option(
+        False, "--skip-storyboard-gate", help="Emergency bypass for v9 storyboard approval gate (logged to studio_events.jsonl)"
+    ),
 ) -> None:
     """Assemble 30/1 CFR master MP4 (clean cuts + restrained dissolves), subtitles & clean thumbnail."""
+    from pow_studio.backlot import verify_storyboard_approval
+
     ep = _load(manifest)
     ep.assert_output_dir_writable()
     wt = json.loads((Path(ep.output_dir) / "word_timings.json").read_text())
+    if mode == "master":
+        try:
+            verify_storyboard_approval(ep, wt=wt, skip_gate=skip_storyboard_gate)
+        except RuntimeError as exc:
+            console.print(f"[bold red]✗ {exc}[/bold red]")
+            raise typer.Exit(code=1)
     mp4 = render_episode_master(ep, wt, encode_mode=mode)
     console.print(f"[bold green]✓ Documentary Master & Thumbnail Exported ({mode}):[/bold green] {mp4}")
 
@@ -232,8 +243,13 @@ def run_all(
     mode: Literal["draft", "master"] = typer.Option("master", "--mode"),
     online_check: bool = typer.Option(True, "--online/--offline"),
     reuse_tts: bool = typer.Option(False, "--reuse-tts"),
+    skip_storyboard_gate: bool = typer.Option(
+        False, "--skip-storyboard-gate", help="Emergency bypass for v9 storyboard approval gate (logged to studio_events.jsonl)"
+    ),
 ) -> None:
     """Execute the complete Narration-First Documentary v3.0 production workflow end-to-end."""
+    from pow_studio.backlot import verify_storyboard_approval
+
     ep = _load(manifest)
     style = ep.resolve_style_profile()
     ep.assert_output_dir_writable()
@@ -253,6 +269,13 @@ def run_all(
         for err in audit["errors"]:
             console.print(f"[bold red]✗ Shot Plan Error:[/bold red] {err}")
         raise typer.Exit(code=1)
+
+    if mode == "master":
+        try:
+            verify_storyboard_approval(ep, wt=wt, skip_gate=skip_storyboard_gate)
+        except RuntimeError as exc:
+            console.print(f"[bold red]✗ {exc}[/bold red]")
+            raise typer.Exit(code=1)
 
     from pow_studio.schema import resolve_timed_shots as _rts
     _opt_shots = _rts(ep, int(wt["total_frames_30fps"]), style.output.fps)
@@ -566,11 +589,22 @@ def stage4_visual(
 def stage5_edit(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
     mode: Literal["draft", "master"] = typer.Option("master", "--mode"),
+    skip_storyboard_gate: bool = typer.Option(
+        False, "--skip-storyboard-gate", help="Emergency bypass for v9 storyboard approval gate (logged to studio_events.jsonl)"
+    ),
 ) -> None:
     """Stage 5 (Editing): Render cached 9:16 shots, purposeful cuts/dissolves, documentary subtitles & master MP4."""
+    from pow_studio.backlot import verify_storyboard_approval
+
     ep = _load(manifest)
     ep.assert_output_dir_writable()
     wt = json.loads((Path(ep.output_dir) / "word_timings.json").read_text(encoding="utf-8"))
+    if mode == "master":
+        try:
+            verify_storyboard_approval(ep, wt=wt, skip_gate=skip_storyboard_gate)
+        except RuntimeError as exc:
+            console.print(f"[bold red]✗ {exc}[/bold red]")
+            raise typer.Exit(code=1)
     mp4 = render_episode_master(ep, wt, encode_mode=mode)
     if mode == "master":
         set_gate(ep.output_dir, "render_master", "passed", detail=str(mp4.name))
@@ -1174,6 +1208,29 @@ def render_overlays_cmd(
         console.print(f"  [{iss['severity']}] ({iss['overlay_id']}) {iss['code']}: {iss['message']}")
     if not qa.get("qa_passed", True):
         raise typer.Exit(code=1)
+
+
+@app.command(name="export-storyboard")
+@studio_stage("export-storyboard")
+def export_storyboard_cmd(
+    manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
+    frames: bool = typer.Option(True, "--frames/--no-frames", help="Extract 360x640 IN/MID/OUT filmstrip JPEGs"),
+    out_dir: Optional[Path] = typer.Option(None, "--out-dir", help="Optional output folder override"),
+) -> None:
+    """Export Studio Backlot storyboard board (`board/storyboard_board.json` + 3-frame filmstrips) & SHA-256 hash."""
+    from pow_studio.backlot import export_storyboard_board
+
+    ep = _load(manifest)
+    board = export_storyboard_board(manifest=ep, extract_frames=frames, out_dir=out_dir)
+    ap = board["approval"]
+    cm = board["coverage_metrics"]
+    console.print(
+        f"[bold green]✓ Storyboard Board Exported ({ep.slug}):[/bold green] "
+        f"{board['shot_count']} shots ({board['total_duration_s']:.2f}s) | "
+        f"sha256=[cyan]{board['storyboard_sha256'][:16]}[/cyan]\n"
+        f"  • Approval: status=[bold]{ap['status']}[/bold] (required={ap['required']}, approved={ap['approved']})\n"
+        f"  • Coverage: Genuine Moving={cm['genuine_moving_footage_pct']}% | Static={cm['static_image_pct']}% | Overlay={cm['mechanism_overlay_pct']}%"
+    )
 
 
 if __name__ == "__main__":

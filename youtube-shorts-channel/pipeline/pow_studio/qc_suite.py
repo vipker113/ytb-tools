@@ -1011,8 +1011,16 @@ def run_episode_qc(manifest: EpisodeManifest, wt: dict) -> dict:
     )
     report["creative_qa"] = creative_qa
 
+    # 9f. Studio v9 Storyboard Approval Lock Inspection
+    from .backlot import inspect_storyboard_approval_status
+
+    sb_status = inspect_storyboard_approval_status(manifest, wt=wt, out_dir=out_dir)
+    report["storyboard_approval_qc"] = sb_status
+
     # Compute aggregated QA summary & reclaim temporary scratch directory
     failed_gates: list[str] = []
+    if sb_status["required"] and not sb_status["approved"]:
+        failed_gates.append("16_storyboard_approval_lock")
     if not (report["ffprobe"]["within_target_window"] and report["ffprobe"]["dimensions_exact"] and report["ffprobe"]["exact_frame_match"]):
         failed_gates.append("1_resolution_cfr_duration")
     if len(report["black_segments"]) > 0:

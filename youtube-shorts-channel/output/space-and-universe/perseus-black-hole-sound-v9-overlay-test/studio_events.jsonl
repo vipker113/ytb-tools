@@ -7,3 +7,8 @@
 {"ts": "2026-11-06T05:13:33.175+00:00", "stage": "qa-6pillar", "event": "start", "status": "running", "detail": "", "artifacts": []}
 {"ts": "2026-11-06T05:14:35.950+00:00", "stage": "gate:qa_six_pillar", "event": "gate", "status": "blocked", "detail": "technical=PASS creative=FAIL", "artifacts": []}
 {"ts": "2026-11-06T05:14:35.959+00:00", "stage": "qa-6pillar", "event": "end", "status": "failed", "detail": "Exit: ", "artifacts": []}
+{"ts": "2026-11-06T05:44:42.059+00:00", "stage": "export-storyboard", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T05:44:48.903+00:00", "stage": "export-storyboard", "event": "end", "status": "passed", "detail": "completed in 6.8s", "artifacts": []}
+{"ts": "2026-11-06T05:53:41.542+00:00", "stage": "export-storyboard", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T05:53:41.610+00:00", "stage": "export-storyboard", "event": "end", "status": "passed", "detail": "completed in 0.1s", "artifacts": []}
+{"ts":"2026-11-06T05:53:41.939Z","stage":"gate:storyboard_approval","event":"gate","status":"passed","detail":"approved (sha256=6b1507a495ee) — Smoke test approval","artifacts":["storyboard_approval.json"]}

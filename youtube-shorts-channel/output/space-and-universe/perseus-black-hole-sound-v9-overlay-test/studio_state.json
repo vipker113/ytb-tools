@@ -27,6 +27,13 @@
       "status": "blocked",
       "finished_at": "2026-11-06T05:14:35.950+00:00",
       "detail": "technical=PASS creative=FAIL"
+    },
+    "export-storyboard": {
+      "status": "passed",
+      "started_at": "2026-11-06T05:53:41.542+00:00",
+      "finished_at": "2026-11-06T05:53:41.610+00:00",
+      "detail": "completed in 0.1s",
+      "duration_s": 0.068
     }
   },
   "gates": {
@@ -34,7 +41,12 @@
       "status": "blocked",
       "detail": "technical=PASS creative=FAIL",
       "updated_at": "2026-11-06T05:14:35.950+00:00"
+    },
+    "storyboard_approval": {
+      "status": "passed",
+      "detail": "approved (sha256=6b1507a495ee) — Smoke test approval",
+      "updated_at": "2026-11-06T05:53:41.939Z"
     }
   },
-  "updated_at": "2026-11-06T05:14:35.959+00:00"
+  "updated_at": "2026-11-06T05:53:41.939Z"
 }
