@@ -809,6 +809,7 @@ def feasibility_cmd(
         available_assets=ep.assets_register,
         user_accepted_limited_visuals=accept_limited,
         out_dir=out_dir,
+        visual_corpus_mode=ep.visual_corpus_mode,
     )
     tbl = Table(title=f"Visual Feasibility Report — {ep.slug} ({rep['feasibility_status']})")
     tbl.add_column("Story beat", style="cyan")
@@ -841,6 +842,7 @@ def discover_footage_cmd(
     ),
     query: list[str] = typer.Option([], "--query", "-q", help="Extra literal search query (repeatable)"),
     manifest: Optional[Path] = typer.Option(None, "--manifest", "-m", help="Optional episode YAML: derive beats + default --out"),
+    visual_rerank: bool = typer.Option(False, "--visual-rerank/--no-visual-rerank", help="Pre-screen candidate poster thumbnails with local CLIP/SigLIP before downloading"),
 ) -> None:
     """Discover real documentary footage across 8 $0 sources and persist candidates with license evidence."""
     from pow_studio.footage_sources.discover import run_discovery
@@ -861,6 +863,15 @@ def discover_footage_cmd(
         out = out or Path(ep.output_dir) / "planning"
     src_list = [s.strip() for s in sources.split(",") if s.strip()] if sources else None
     rep = run_discovery(topic, beats=beats, sources=src_list, max_per_query=limit, extra_queries=query, out_dir=out)
+    if visual_rerank:
+        from pow_studio.visual_corpus.embedder import is_ml_available
+        from pow_studio.visual_corpus.retrieval import rank_online_candidates_by_thumbnail
+
+        if is_ml_available()[0]:
+            for purpose, rows in list(rep["results_by_purpose"].items()):
+                rep["results_by_purpose"][purpose] = rank_online_candidates_by_thumbnail(f"{topic} {purpose}", rows)
+            if out:
+                (Path(out) / "footage_discovery.json").write_text(json.dumps(rep, indent=2, ensure_ascii=False), encoding="utf-8")
 
     tbl = Table(title=f"Footage Discovery — '{topic}' ({rep['total_unique_candidates']} commercial-safe candidates)")
     for col, style in (("ID", "cyan"), ("Source", "magenta"), ("Class hint", "green"), ("Res", "yellow"), ("Flags", "red"), ("Title", "white")):
@@ -1018,6 +1029,110 @@ def qa_6pillar_cmd(
         console.print(f"  [{iss['severity']}] ({iss['pillar']}) {iss['code']}: {iss['message']}")
     if not rep["overall_release_approval"]:
         raise typer.Exit(code=1)
+
+
+@app.command(name="corpus-ingest")
+def corpus_ingest_cmd(
+    path: Path = typer.Option(Path("assets/raw_footage"), "--path", "-p", help="Root media directory to index"),
+    model: str = typer.Option("clip-b32", "--model", help="Embedder alias ('clip-b32', 'siglip-b16', 'clip-l14')"),
+    limit: Optional[int] = typer.Option(None, "--limit", "-n", help="Optional max files to scan"),
+    workers: int = typer.Option(4, "--workers", help="Parallel FFmpeg/motion worker threads"),
+    corpus_dir: Optional[Path] = typer.Option(None, "--corpus-dir", help="Override corpus directory"),
+) -> None:
+    """Incrementally index local footage into `assets/visual_corpus/` (scene-cut windows + CLIP/SigLIP on `mps`)."""
+    from pow_studio.visual_corpus.corpus import ingest_corpus
+
+    root = Path(__file__).resolve().parents[2]
+    raw_root = path if path.is_absolute() else (root / path)
+    st = ingest_corpus(raw_root=raw_root, corpus_dir=corpus_dir, model_alias=model, limit=limit, workers=workers)
+    console.print(
+        f"[bold green]✓ Corpus Ingest Complete ({st['elapsed_s']}s, model={st['model_alias']} on {st['device']}):[/bold green]\n"
+        f"  • Scanned: {st['total_files_scanned']} files ({st['video_files_scanned']} videos, {st['photo_files_scanned']} photos)\n"
+        f"  • Ingested new/changed: {st['ingested_files']} | Skipped unchanged: {st['skipped_unchanged_files']} | Provenance refreshed: {st['refreshed_provenance_files']}\n"
+        f"  • Total windows: {st['total_windows']} | Commercial-licensed windows: {st['licensed_windows']} | Unlicensed quarantined files: {st['unknown_license_files_count']}"
+    )
+
+
+@app.command(name="corpus-search")
+def corpus_search_cmd(
+    text: str = typer.Option(..., "--text", "-q", help="Visual search query"),
+    top_k: int = typer.Option(10, "-k", "--top-k", help="Number of MMR-diversified windows to return"),
+    genuine_only: bool = typer.Option(False, "--genuine-only", help="Restrict to REAL_VIDEO_ACTION / ESTABLISHING / TIME_LAPSE"),
+    min_height: int = typer.Option(0, "--min-height", help="Minimum vertical pixel height"),
+    model: Optional[str] = typer.Option(None, "--model", help="Optional model alias override"),
+    corpus_dir: Optional[Path] = typer.Option(None, "--corpus-dir", help="Override corpus directory"),
+) -> None:
+    """Search the local visual corpus by visual+metadata percentile similarity with MMR diversification."""
+    from pow_studio.visual_corpus.retrieval import search_corpus
+
+    hits = search_corpus(
+        query_text=text,
+        top_k=top_k,
+        corpus_dir=corpus_dir,
+        model_alias=model,
+        genuine_only=genuine_only,
+        min_height=min_height,
+    )
+    tbl = Table(title=f"Visual Corpus Search — '{text}' ({len(hits)} hits)")
+    for col, st in (("#", "cyan"), ("File", "green"), ("Window", "yellow"), ("Class", "magenta"), ("VisPct", "white"), ("HybPct", "white"), ("License", "blue")):
+        tbl.add_column(col, style=st)
+    for h in hits:
+        tbl.add_row(
+            str(h["rank"]),
+            h["local_file"],
+            f"{h['start_s']:.1f}-{h['end_s']:.1f}s",
+            h["source_media_class"],
+            f"{h['visual_percentile']:.3f}",
+            f"{h['hybrid_percentile']:.3f}",
+            h["license"][:26],
+        )
+    console.print(tbl)
+
+
+@app.command(name="match-beats")
+@studio_stage("match-beats")
+def match_beats_cmd(
+    manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
+    mode: Optional[str] = typer.Option(None, "--mode", help="Override visual_corpus_mode ('shadow' or 'on')"),
+    top_k: int = typer.Option(5, "-k", "--top-k", help="Top-k global corpus windows per beat"),
+    out_dir: Optional[Path] = typer.Option(None, "--out-dir", help="Output folder (defaults to <output_dir>/planning)"),
+    corpus_dir: Optional[Path] = typer.Option(None, "--corpus-dir", help="Override corpus directory"),
+) -> None:
+    """Match episode narration beats against the visual corpus and export `beat_matches.{json,md}` + contact strip."""
+    from pow_studio.action_storytelling import match_episode_beats
+
+    ep = _load(manifest)
+    rep = match_episode_beats(ep=ep, out_dir=out_dir, corpus_dir=corpus_dir, mode_override=mode, top_k=top_k)
+    console.print(
+        f"[bold green]✓ Beat Match Complete ({ep.slug}, mode={rep['visual_corpus_mode']}):[/bold green] "
+        f"beats={rep['beats_count']} | disagreements={rep['disagreements_count']} | "
+        f"mislabel_suspects={rep['possible_mislabeled_count']}\n"
+        f"  • Strip: {rep['contact_strip_path']}"
+    )
+
+
+@app.command(name="corpus-eval")
+def corpus_eval_cmd(
+    models: str = typer.Option("clip-b32,siglip-b16,clip-l14", "--models", help="Comma-separated model aliases to benchmark"),
+    episodes_glob: str = typer.Option("episodes/*.yaml", "--episodes", help="Episode manifests glob for gold-set extraction"),
+    out: Path = typer.Option(Path("docs/v9_corpus_eval.md"), "--out", help="Markdown evaluation report path"),
+    corpus_dir: Optional[Path] = typer.Option(None, "--corpus-dir", help="Override corpus directory"),
+) -> None:
+    """Benchmark Token Baseline vs CLIP/SigLIP models on gold-set shots from existing episode manifests."""
+    import glob as _glob
+
+    from pow_studio.visual_corpus.eval import run_corpus_evaluation
+
+    root = Path(__file__).resolve().parents[2]
+    m_paths = [Path(p) for p in sorted(_glob.glob(str(root / episodes_glob)))]
+    m_list = [x.strip() for x in models.split(",") if x.strip()]
+    out_md = out if out.is_absolute() else (root / out)
+    res = run_corpus_evaluation(manifest_paths=m_paths, models=m_list, corpus_dir=corpus_dir, report_md_path=out_md)
+    console.print(
+        f"[bold green]✓ Corpus Evaluation Complete ({res['gold_queries_count']} gold queries across {res['licensed_windows_evaluated']} windows):[/bold green]\n"
+        f"  • Recommended: [bold]{res['recommended_method']}[/bold] (exceeds_token_baseline={res['exceeds_token_baseline']})\n"
+        f"  • Report: {out_md}"
+    )
 
 
 if __name__ == "__main__":

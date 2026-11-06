@@ -29,15 +29,21 @@ $PY $STUDIO footage-sources                       # which sources are on, and wh
 $PY $STUDIO discover-footage -t "<short topic>" -m $EP [-q "extra literal query"] [--sources nasa_images,wikimedia]
 # 2) download chosen candidates with provenance sidecars (+ pixel motion audit, audio strip for SVS/ESA)
 $PY $STUDIO download-footage --discovery <out>/planning/footage_discovery.json --select <ids> --dest assets/raw_footage/<dir>
-# 3) index + retrieve by what the frames show   (Studio v9 M3)
-$PY $STUDIO corpus-ingest --path assets/raw_footage/<dir>
-$PY $STUDIO match-beats -m $EP
+# 3) index + retrieve by what the frames show   (Studio v9 M3 — CLIP B/32 on mps, 165 img/s)
+$PY $STUDIO corpus-ingest --path assets/raw_footage
+$PY $STUDIO corpus-search --text "ROV manipulator arm black smoker plume" -k 10 --genuine-only
+$PY $STUDIO match-beats -m $EP                  # writes <out>/planning/beat_matches.{json,md} + beat_matches_strip.jpg
 # 4) gate
 $PY $STUDIO feasibility -m $EP --out-dir <out>/planning
 ```
 
 Topics/queries: keep them SHORT (2–5 content words). Archive engines return nothing for long
 planner phrases like "… aerial documentary footage". The tool already adds 2-word sub-phrases.
+For `corpus-search --text`, always describe **visible frame content** (nouns, colors, actions), never
+abstract narration prose (`clip-b32:hybrid-70-30` reaches `64.0%` Window R@5 / `90.5%` File R@5 on
+concrete visual descriptions vs `28.8%` on abstract prose; see `docs/v9_corpus_eval.md`). Watch out
+for expedition intro slates containing topic words — CLIP has OCR neurons that can score text slates
+highly if you do not check the window start time (`src_in`).
 
 `download-footage` prints ready-to-paste `assets_register` YAML. Its `source_media_class` comes from
 pixels and may downgrade the metadata hint (action → establishing, video → animated still) — keep it.

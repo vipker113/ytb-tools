@@ -1882,4 +1882,11 @@ def render_episode_master(
         "effective_render_fps": round(nframes / max(0.01, time.perf_counter() - t_render_start), 2),
     }
     (out_dir / "render_benchmarks.json").write_text(json.dumps(bench, indent=2), encoding="utf-8")
+    if encode_mode == "master" and not manifest.slug.endswith("__golden"):
+        try:
+            from .visual_corpus.corpus import record_episode_usage_in_ledger
+
+            record_episode_usage_in_ledger(manifest)
+        except Exception:
+            pass
     return final_mp4

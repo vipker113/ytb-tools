@@ -468,6 +468,10 @@ def generate_footage_search_queries(
 def evaluate_action_visual_match(
     beat: NarrationVisualBeat,
     candidate: dict[str, Any] | Any,
+    visual_semantic_pct: Optional[float] = None,
+    visual_corpus_mode: str = "off",
+    mislabel_text_min: float = 0.70,
+    mislabel_visual_pct_max: float = 0.25,
 ) -> dict[str, Any]:
     """
     Evaluate whether `candidate` genuinely illustrates `beat` based on visible subject,
@@ -624,19 +628,40 @@ def evaluate_action_visual_match(
         SourceMediaClass.AI_GENERATED.value: 0.0,
     }.get(media_cls, 0.50)
 
-    raw_rel = (
+    text_raw_rel = (
         0.32 * subject_score
         + 0.36 * action_score
         + 0.17 * location_score
         + 0.15 * media_bonus
     )
+    if visual_semantic_pct is not None:
+        vis_pct_clamped = max(0.0, min(1.0, float(visual_semantic_pct)))
+        vis_raw_rel = (
+            0.26 * subject_score
+            + 0.28 * action_score
+            + 0.14 * location_score
+            + 0.12 * media_bonus
+            + 0.20 * vis_pct_clamped
+        )
+        possible_mislabeled = bool(
+            max(subject_score, action_score) >= float(mislabel_text_min)
+            and vis_pct_clamped <= float(mislabel_visual_pct_max)
+        )
+    else:
+        vis_pct_clamped = None
+        vis_raw_rel = text_raw_rel
+        possible_mislabeled = False
+
+    raw_rel = vis_raw_rel if (visual_corpus_mode == "on" and vis_pct_clamped is not None) else text_raw_rel
+
     if subject_score == 0.0 and action_score < 0.35:
-        rejection_reasons.append("Neither subject nor action matches the narrated beat.")
+        if not (visual_corpus_mode == "on" and vis_pct_clamped is not None and vis_pct_clamped >= 0.85):
+            rejection_reasons.append("Neither subject nor action matches the narrated beat.")
 
     eligible = len(rejection_reasons) == 0 and raw_rel >= 0.42
     final_rel = round(raw_rel if eligible else min(0.32, raw_rel * 0.45), 3)
 
-    return {
+    result: dict[str, Any] = {
         "beat_id": beat.beat_id,
         "candidate_id": cand_id,
         "media_class": media_cls,
@@ -647,6 +672,38 @@ def evaluate_action_visual_match(
         "eligible": eligible,
         "rejection_reason": "; ".join(rejection_reasons),
     }
+    if vis_pct_clamped is not None or visual_corpus_mode in ("shadow", "on"):
+        result["visual_semantic_pct"] = round(vis_pct_clamped, 4) if vis_pct_clamped is not None else None
+        result["shadow_visual_relevance"] = round(
+            vis_raw_rel if (len(rejection_reasons) == 0 and vis_raw_rel >= 0.42) else min(0.32, vis_raw_rel * 0.45),
+            3,
+        )
+        result["possible_mislabeled_asset"] = possible_mislabeled
+    return result
+
+
+_PLACEHOLDER_BEAT_PHRASES = {
+    "observing phenomenon state",
+    "natural formation",
+    "target documentary site",
+    "physical observation",
+    "the phenomenon",
+    "contextual observation",
+}
+
+
+def _beat_visual_query(beat: NarrationVisualBeat, topic: str = "") -> str:
+    cleaned_parts: list[str] = []
+    for raw in (beat.subject, beat.action, beat.object_item, beat.scientific_process, beat.location):
+        val = (raw or "").strip()
+        if val and val.lower() not in _PLACEHOLDER_BEAT_PHRASES:
+            cleaned_parts.append(val)
+    if len(" ".join(cleaned_parts).split()) < 4:
+        cleaned_parts.append(beat.narration_text)
+    if topic:
+        cleaned_parts.append(topic.split("—")[0].strip())
+    q = re.sub(r"\s+", " ", " ".join(cleaned_parts)).strip()
+    return q[:220] or beat.narration_text
 
 
 def analyze_visual_feasibility(
@@ -655,6 +712,9 @@ def analyze_visual_feasibility(
     available_assets: list[Any],
     user_accepted_limited_visuals: bool = False,
     out_dir: Optional[Path] = None,
+    visual_corpus_mode: str = "off",
+    corpus_dir: Optional[Path] = None,
+    embedder: Optional[Any] = None,
 ) -> dict[str, Any]:
     """
     Pre-Production Visual Feasibility Gate (Part 3 Section 8):
@@ -663,11 +723,27 @@ def analyze_visual_feasibility(
         `| Story beat | Required visual | Available footage | Evidence relevance | Coverage status |`
       - Blocks silent approval when essential visual events lack authentic coverage unless
         `user_accepted_limited_visuals=True`.
+      - Studio v9: supports `visual_corpus_mode` (`"off"` | `"shadow"` | `"on"`).
     """
     beats = extract_narration_visual_beats(narration_segments, topic=topic)
     search_queries = generate_footage_search_queries(topic, beats)
 
+    corpus_loaded = None
+    if visual_corpus_mode in ("shadow", "on"):
+        try:
+            from .visual_corpus.corpus import load_corpus
+            from .visual_corpus.embedder import is_ml_available
+
+            if embedder is not None or is_ml_available()[0]:
+                loaded_tmp = load_corpus(corpus_dir)
+                if loaded_tmp.size > 0:
+                    corpus_loaded = loaded_tmp
+        except Exception:
+            corpus_loaded = None
+
     rows: list[dict[str, Any]] = []
+    shadow_disagreements: list[dict[str, Any]] = []
+    mislabel_suspects: list[dict[str, Any]] = []
     essential_total = 0
     essential_with_real_video = 0
     essential_with_any_valid = 0
@@ -677,11 +753,64 @@ def analyze_visual_feasibility(
         if b.genuine_footage_essential:
             essential_total += 1
 
+        file_vis_map: dict[str, dict[str, Any]] = {}
+        if corpus_loaded is not None:
+            from .visual_corpus.retrieval import lookup_file_visual_scores
+
+            file_vis_map = lookup_file_visual_scores(
+                _beat_visual_query(b, topic=topic),
+                corpus=corpus_loaded,
+                embedder=embedder,
+            )
+
         scored = []
         for cand in available_assets:
-            ev = evaluate_action_visual_match(b, cand)
+            cid = str(
+                (cand.get("local_file") if isinstance(cand, dict) else getattr(cand, "local_file", ""))
+                or ""
+            )
+            vis_info = file_vis_map.get(cid)
+            vp = vis_info["visual_percentile"] if vis_info else None
+            ev = evaluate_action_visual_match(
+                b,
+                cand,
+                visual_semantic_pct=vp,
+                visual_corpus_mode=visual_corpus_mode,
+            )
+            if ev.get("possible_mislabeled_asset"):
+                mislabel_suspects.append(
+                    {
+                        "beat_id": b.beat_id,
+                        "candidate_id": ev["candidate_id"],
+                        "subject_score": ev["subject_score"],
+                        "action_alignment_score": ev["action_alignment_score"],
+                        "visual_semantic_pct": ev.get("visual_semantic_pct"),
+                    }
+                )
             scored.append((ev, cand))
         scored.sort(key=lambda pair: (pair[0]["eligible"], pair[0]["overall_relevance"]), reverse=True)
+
+        if visual_corpus_mode in ("shadow", "on") and scored and file_vis_map:
+            text_top_id = scored[0][0]["candidate_id"]
+            elig_vis = [
+                pair[0]
+                for pair in scored
+                if pair[0]["eligible"] and pair[0].get("visual_semantic_pct") is not None
+            ]
+            if elig_vis:
+                vis_best = max(elig_vis, key=lambda e: float(e.get("visual_semantic_pct") or 0.0))
+                if vis_best["candidate_id"] != text_top_id:
+                    shadow_disagreements.append(
+                        {
+                            "beat_id": b.beat_id,
+                            "seg_id": b.seg_id,
+                            "narration_text": b.narration_text,
+                            "text_top_candidate": text_top_id,
+                            "text_top_visual_pct": scored[0][0].get("visual_semantic_pct"),
+                            "visual_top_candidate": vis_best["candidate_id"],
+                            "visual_top_pct": vis_best.get("visual_semantic_pct"),
+                        }
+                    )
 
         best_ev = scored[0][0] if scored else None
         best_cand = scored[0][1] if scored else None
@@ -778,6 +907,10 @@ def analyze_visual_feasibility(
         "remediation_plan": remediation_steps,
         "feasibility_table": serializable_rows,
     }
+    if visual_corpus_mode in ("shadow", "on"):
+        report["visual_corpus_mode"] = visual_corpus_mode
+        report["visual_corpus_disagreements"] = shadow_disagreements
+        report["possible_mislabeled_assets"] = mislabel_suspects
 
     if out_dir is not None:
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -798,6 +931,28 @@ def analyze_visual_feasibility(
             md_lines.append(
                 f"| {r['story_beat']} | {r['required_visual']} | {r['available_footage']} | {r['evidence_relevance']} | `{r['coverage_status']}` |"
             )
+        if visual_corpus_mode in ("shadow", "on"):
+            md_lines.extend(
+                [
+                    "",
+                    f"## Studio v9 Visual Corpus Audit (`mode={visual_corpus_mode}`)",
+                    "",
+                    f"- **Text vs Visual Top-1 Disagreements:** `{len(shadow_disagreements)}`",
+                    f"- **Possible Mislabeled Assets (`text >= 0.70` & `visual_pct <= 0.25`):** `{len(mislabel_suspects)}`",
+                ]
+            )
+            if shadow_disagreements:
+                md_lines.extend(
+                    [
+                        "",
+                        "| Beat | Text Top-1 (`visual_pct`) | Visual Top-1 (`visual_pct`) |",
+                        "|---|---|---|",
+                    ]
+                )
+                for d in shadow_disagreements:
+                    md_lines.append(
+                        f"| `{d['beat_id']}` ({d['seg_id']}) | `{d['text_top_candidate']}` ({d['text_top_visual_pct']}) | `{d['visual_top_candidate']}` ({d['visual_top_pct']}) |"
+                    )
         if remediation_steps:
             md_lines.extend(["", "## Required Remediation / Script Restructuring Actions", ""])
             for step in remediation_steps:
@@ -997,3 +1152,165 @@ def build_action_storyboard_plan(
         (out_dir / "action_storyboard_plan.md").write_text("\n".join(md) + "\n", encoding="utf-8")
 
     return plan_out
+
+
+def match_episode_beats(
+    ep: Any,
+    out_dir: Optional[Path] = None,
+    corpus_dir: Optional[Path] = None,
+    mode_override: Optional[str] = None,
+    top_k: int = 5,
+    embedder: Optional[Any] = None,
+) -> dict[str, Any]:
+    """
+    Studio v9 `match-beats`: compare lexical (`v8`) vs visual corpus (`CLIP`/`SigLIP`) top-k
+    candidates for every narration beat, flag `possible_mislabeled_asset` suspects, and export
+    `planning/beat_matches.{json,md}` + `planning/beat_matches_strip.jpg`.
+    """
+    from .visual_corpus.corpus import default_corpus_dir, load_corpus
+    from .visual_corpus.retrieval import (
+        lookup_file_visual_scores,
+        render_beat_matches_contact_strip,
+        search_corpus,
+    )
+
+    cdir = Path(corpus_dir).resolve() if corpus_dir else default_corpus_dir().resolve()
+    loaded = load_corpus(cdir)
+    mode = mode_override or getattr(ep, "visual_corpus_mode", "shadow") or "shadow"
+    if mode == "off":
+        mode = "shadow"
+
+    topic = getattr(ep, "topic", "") or getattr(ep, "primary_title", "")
+    beats = extract_narration_visual_beats(ep.narration_segments, topic=topic)
+    beat_rows: list[dict[str, Any]] = []
+    disagreements_count = 0
+    mislabel_count = 0
+
+    for b in beats:
+        q = _beat_visual_query(b, topic=topic)
+        file_vis = lookup_file_visual_scores(q, corpus=loaded, embedder=embedder)
+        corpus_hits = search_corpus(
+            q,
+            top_k=top_k,
+            corpus=loaded,
+            embedder=embedder,
+            current_episode_slug=ep.slug,
+        )
+
+        # Evaluate episode's own assets_register
+        asset_evals: list[dict[str, Any]] = []
+        beat_mislabel = False
+        for cand in ep.assets_register:
+            lf = getattr(cand, "local_file", "")
+            vinfo = file_vis.get(lf)
+            vp = vinfo["visual_percentile"] if vinfo else None
+            ev = evaluate_action_visual_match(b, cand, visual_semantic_pct=vp, visual_corpus_mode=mode)
+            ev["thumb_rel"] = vinfo["thumb_rel"] if vinfo else ""
+            ev["best_window_start_s"] = vinfo["start_s"] if vinfo else 0.0
+            ev["best_window_end_s"] = vinfo["end_s"] if vinfo else 0.0
+            if ev.get("possible_mislabeled_asset"):
+                beat_mislabel = True
+                mislabel_count += 1
+            asset_evals.append(ev)
+
+        # Text-only top-1 vs visual-ranked top-1 among registered assets (and global corpus top-k)
+        text_sorted = sorted(
+            asset_evals,
+            key=lambda e: (
+                e["eligible"],
+                0.32 * e["subject_score"] + 0.36 * e["action_alignment_score"] + 0.17 * e["location_integrity_score"],
+            ),
+            reverse=True,
+        )
+        vis_sorted = sorted(
+            [e for e in asset_evals if e["eligible"] and e.get("visual_semantic_pct") is not None],
+            key=lambda e: float(e.get("visual_semantic_pct") or 0.0),
+            reverse=True,
+        )
+
+        text_top = text_sorted[0] if text_sorted and text_sorted[0]["eligible"] else None
+        vis_top = vis_sorted[0] if vis_sorted else None
+        global_vis_top = corpus_hits[0] if corpus_hits else None
+
+        disagree = bool(
+            text_top
+            and vis_top
+            and text_top["candidate_id"] != vis_top["candidate_id"]
+        )
+        if disagree:
+            disagreements_count += 1
+
+        beat_rows.append(
+            {
+                "beat_id": b.beat_id,
+                "seg_id": b.seg_id,
+                "narration_text": b.narration_text,
+                "beat_query": q,
+                "disagreement": disagree,
+                "possible_mislabeled_asset": beat_mislabel,
+                "text_top_candidate": text_top["candidate_id"] if text_top else None,
+                "text_top_relevance": text_top["overall_relevance"] if text_top else 0.0,
+                "text_top_visual_pct": text_top.get("visual_semantic_pct") if text_top else None,
+                "text_top_thumb_rel": text_top.get("thumb_rel", "") if text_top else "",
+                "visual_top_candidate": (
+                    vis_top["candidate_id"]
+                    if vis_top
+                    else (global_vis_top["local_file"] if global_vis_top else None)
+                ),
+                "visual_top_pct": (
+                    vis_top.get("visual_semantic_pct")
+                    if vis_top
+                    else (global_vis_top["visual_percentile"] if global_vis_top else None)
+                ),
+                "visual_top_thumb_rel": (
+                    vis_top.get("thumb_rel", "")
+                    if vis_top
+                    else (global_vis_top.get("thumb_rel", "") if global_vis_top else "")
+                ),
+                "episode_asset_evaluations": asset_evals[:top_k],
+                "global_corpus_top_k": corpus_hits,
+            }
+        )
+
+    target_dir = Path(out_dir) if out_dir else (Path(ep.output_dir) / "planning")
+    target_dir.mkdir(parents=True, exist_ok=True)
+    strip_path = render_beat_matches_contact_strip(beat_rows, cdir, target_dir / "beat_matches_strip.jpg")
+
+    payload = {
+        "slug": ep.slug,
+        "topic": topic,
+        "visual_corpus_mode": mode,
+        "corpus_model": loaded.meta.get("model_alias", "clip-b32"),
+        "corpus_windows": loaded.size,
+        "beats_count": len(beat_rows),
+        "disagreements_count": disagreements_count,
+        "possible_mislabeled_count": mislabel_count,
+        "contact_strip_path": str(strip_path) if strip_path else None,
+        "beats": beat_rows,
+    }
+    (target_dir / "beat_matches.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    md = [
+        f"# Studio v9 Beat Match Report — `{ep.slug}`",
+        "",
+        f"- **Mode:** `{mode}` | **Corpus Model:** `{payload['corpus_model']}` (`{loaded.size}` windows)",
+        f"- **Text vs Visual Disagreements:** `{disagreements_count}/{len(beat_rows)}`",
+        f"- **Possible Mislabeled Assets (`text >= 0.70` & `visual_pct <= 0.25`):** `{mislabel_count}`",
+        f"- **Visual Audit Contact Strip:** `{strip_path.name if strip_path else 'none'}`",
+        "",
+        "## Beat Comparison Table (Text Top-1 vs Visual Top-1)",
+        "",
+        "| Beat | Narration | Text Top-1 (`vp`) | Visual Top-1 (`vp`) | Global Corpus Top-1 (`window`) | Status |",
+        "|---|---|---|---|---|---|",
+    ]
+    for r in beat_rows:
+        g0 = r["global_corpus_top_k"][0] if r["global_corpus_top_k"] else None
+        g_lbl = f"`{g0['local_file']}` [{g0['start_s']}-{g0['end_s']}s] ({g0['visual_percentile']:.2f})" if g0 else "—"
+        st = "MISLABEL_SUSPECT" if r["possible_mislabeled_asset"] else ("DISAGREE" if r["disagreement"] else "AGREE")
+        md.append(
+            f"| `{r['beat_id']}` ({r['seg_id']}) | {r['narration_text'][:68]} | "
+            f"`{r['text_top_candidate']}` ({r['text_top_visual_pct']}) | "
+            f"`{r['visual_top_candidate']}` ({r['visual_top_pct']}) | {g_lbl} | `{st}` |"
+        )
+    (target_dir / "beat_matches.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+    return payload
