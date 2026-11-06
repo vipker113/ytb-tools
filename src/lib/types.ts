@@ -74,6 +74,22 @@ export interface SubConversionChecklist {
   endScreenSub: boolean;
 }
 
+export interface OutlierAnatomyRef {
+  videoId: string;
+  analyzedAt: string;
+  durationSec: number;
+  cutCount: number;
+  cutsPer10s: number | null;
+  medianShotDurationSec: number | null;
+  wordsPerSecond: number;
+  openingHookType: string;
+  firstWordTimeSec: number | null;
+  realMovingPct: number | null;
+  loopSimilarityScore: number | null;
+  whatWorks: string[];
+  differentiationSeeds: string[];
+}
+
 export interface SavedIdea {
   id: string;
   title: string;
@@ -84,6 +100,7 @@ export interface SavedIdea {
   sourceChannelTitle?: string;
   sourceThumbnailUrl?: string;
   sourceOutlierScore?: number;
+  anatomyRef?: OutlierAnatomyRef;
   format: "short" | "long";
   status: "backlog" | "scripting" | "filming" | "published";
   notes: string;

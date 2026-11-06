@@ -56,6 +56,7 @@ export async function POST(request: Request) {
         sourceChannelTitle: incoming.sourceChannelTitle,
         sourceThumbnailUrl: incoming.sourceThumbnailUrl,
         sourceOutlierScore: incoming.sourceOutlierScore,
+        anatomyRef: incoming.anatomyRef,
         format: incoming.format === "short" ? "short" : "long",
         status: incoming.status || "backlog",
         notes: incoming.notes || "",

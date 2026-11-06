@@ -7,6 +7,7 @@ import {
   Flame,
   Plus,
   Rocket,
+  Scissors,
   Search,
   Sparkles,
   Trash2,
@@ -22,6 +23,7 @@ import {
   getOutlierBadgeStyle,
 } from "@/lib/format";
 import type { CompetitorChannel, SavedIdea, VideoItem } from "@/lib/types";
+import { OutlierAnatomyModal } from "./OutlierAnatomyModal";
 
 interface OutlierHunterTabProps {
   competitors: CompetitorChannel[];
@@ -55,6 +57,7 @@ export function OutlierHunterTab({
   const [sortBy, setSortBy] = useState<"outlier" | "velocity" | "subsRatio">("outlier");
   const [searchText, setSearchText] = useState("");
   const [savedVideoIds, setSavedVideoIds] = useState<Record<string, boolean>>({});
+  const [anatomyVideo, setAnatomyVideo] = useState<VideoItem | null>(null);
 
   const filteredOutliers = useMemo(() => {
     const allVideos: VideoItem[] = [];
@@ -518,6 +521,18 @@ export function OutlierHunterTab({
                   </button>
 
                   {!v.id.startsWith("out-") && !v.id.startsWith("demo-") && (
+                    <button
+                      type="button"
+                      onClick={() => setAnatomyVideo(v)}
+                      title="Giải phẫu nhịp dựng cục bộ ($0: cắt cảnh, Hook 0-3s, lớp chuyển động & vòng lặp)"
+                      className="inline-flex items-center gap-1 rounded-xl border border-amber-500/40 bg-amber-500/15 hover:bg-amber-500/25 px-2.5 py-2 text-[11px] font-semibold text-amber-300 transition cursor-pointer"
+                    >
+                      <Scissors className="h-3.5 w-3.5" />
+                      Giải phẫu nhịp dựng
+                    </button>
+                  )}
+
+                  {!v.id.startsWith("out-") && !v.id.startsWith("demo-") && (
                     <a
                       href={`https://www.youtube.com/watch?v=${v.id}`}
                       target="_blank"
@@ -533,6 +548,17 @@ export function OutlierHunterTab({
             );
           })}
         </div>
+      )}
+
+      {anatomyVideo && (
+        <OutlierAnatomyModal
+          video={anatomyVideo}
+          onClose={() => setAnatomyVideo(null)}
+          onSaveIdeaWithAnatomy={async (idea) => {
+            await onSaveIdeaFromVideo(idea);
+            setSavedVideoIds((prev) => ({ ...prev, [anatomyVideo.id]: true }));
+          }}
+        />
       )}
     </div>
   );
