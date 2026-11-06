@@ -1135,5 +1135,46 @@ def corpus_eval_cmd(
     )
 
 
+@app.command(name="render-overlays")
+@studio_stage("render-overlays")
+def render_overlays_cmd(
+    manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
+    use_cache: bool = typer.Option(True, "--cache/--no-cache", help="Use deterministic SHA-256 overlay cache"),
+    out_dir: Optional[Path] = typer.Option(None, "--out-dir", help="Optional output folder override"),
+) -> None:
+    """Render parameterized ManimCE alpha mechanism overlays (`overlays/*.mov`) and run `mechanism_overlay_qa.json`."""
+    from pow_studio.mechanism_overlay import render_episode_overlays
+
+    ep = _load(manifest)
+    summary = render_episode_overlays(manifest=ep, use_cache=use_cache, out_dir=out_dir)
+    if summary["overlay_count"] == 0:
+        console.print(f"[yellow]ℹ️ Episode {ep.slug} declares 0 mechanism overlays.[/yellow]")
+        return
+
+    qa = summary["qa_report"] or {}
+    tbl = Table(title=f"Mechanism Overlays — {ep.slug} ({summary['overlay_count']} overlays, cache_hits={summary['cache_hits']}, render={summary['render_elapsed_s']}s)")
+    for col, st in (("ID", "cyan"), ("Template", "green"), ("Window", "yellow"), ("Anchor", "white"), ("MaxAlpha", "magenta"), ("BBox (1080×1920)", "blue")):
+        tbl.add_column(col, style=st)
+    for ov_item in qa.get("overlays", []):
+        am = ov_item.get("alpha_metrics") or {}
+        tbl.add_row(
+            str(ov_item.get("overlay_id")),
+            str(ov_item.get("template")),
+            f"{ov_item.get('start_s', 0.0):.2f}–{ov_item.get('end_s', 0.0):.2f}s",
+            str(ov_item.get("anchor_source")),
+            f"{100.0 * float(am.get('max_alpha_area_ratio') or 0.0):.1f}%",
+            str(am.get("bbox_1080x1920") or "-"),
+        )
+    console.print(tbl)
+    console.print(
+        f"  • Total overlay runtime: {qa.get('mechanism_overlay_pct', 0.0)}% ({qa.get('total_overlay_duration_s', 0.0)}s) | "
+        f"QA passed: [bold {'green' if qa.get('qa_passed') else 'red'}]{qa.get('qa_passed')}[/bold {'green' if qa.get('qa_passed') else 'red'}]"
+    )
+    for iss in qa.get("issues", []):
+        console.print(f"  [{iss['severity']}] ({iss['overlay_id']}) {iss['code']}: {iss['message']}")
+    if not qa.get("qa_passed", True):
+        raise typer.Exit(code=1)
+
+
 if __name__ == "__main__":
     app()

@@ -481,6 +481,54 @@ def run_six_pillar_workflow_qa(
     if re.search(r"\b(?:like and subscribe|follow for part 2|smash that like)\b", last_seg_text, re.I):
         _flag("MAJOR", "creative_qa", "generic_cta_ending_weakens_payoff", "Ending uses generic subscribe CTA instead of delivering documentary payoff.")
 
+    # 4. Studio v9 Alpha Mechanism Overlays QA (safe-zone, caption dedup, claim_ref, runtime cap, contrast)
+    if getattr(manifest, "mechanism_overlays", None):
+        ov_qa_candidates = [
+            p
+            for p in (
+                (out_dir / "mechanism_overlay_qa.json") if out_dir is not None else None,
+                Path(manifest.output_dir) / "mechanism_overlay_qa.json",
+            )
+            if p is not None and p.exists()
+        ]
+        ov_rep: Optional[dict[str, Any]] = None
+        if ov_qa_candidates:
+            try:
+                loaded_ov = json.loads(ov_qa_candidates[0].read_text(encoding="utf-8"))
+                if loaded_ov.get("slug") in (None, manifest.slug):
+                    ov_rep = loaded_ov
+            except Exception:
+                ov_rep = None
+        if ov_rep is None:
+            from .compositor import build_cues
+            from .mechanism_overlay import resolve_overlay_timings, run_mechanism_overlay_qa
+
+            ov_timings = resolve_overlay_timings(manifest, wt_eff, timed_shots=timed_shots, fps=fps)
+            try:
+                ov_cues = build_cues(manifest, wt_eff)
+            except Exception:
+                ov_cues = None
+            ov_rep = run_mechanism_overlay_qa(
+                manifest=manifest,
+                resolved_timings=ov_timings,
+                rendered_paths={},
+                timed_shots=timed_shots,
+                cues=ov_cues,
+                total_duration_s=float(wt_eff.get("total_duration_s") or timed_shots[-1].end_s),
+                write_report=False,
+            )
+        for ov_iss in ov_rep.get("issues", []):
+            sev_ov = str(ov_iss.get("severity", "MINOR"))
+            if sev_ov not in ("CRITICAL", "MAJOR", "MINOR", "INFO"):
+                sev_ov = "MINOR"
+            _flag(
+                sev_ov,  # type: ignore[arg-type]
+                "creative_qa",
+                str(ov_iss.get("code", "mechanism_overlay_issue")),
+                str(ov_iss.get("message", "")),
+                sid=str(ov_iss.get("overlay_id") or "") or None,
+            )
+
     # Compute per-pillar pass/fail and strict separation of Technical vs Creative approval
     pillars = ("media_qa", "semantic_qa", "repetition_qa", "timeline_qa", "technical_qa", "creative_qa")
     pillar_verdicts: dict[str, dict[str, Any]] = {}
@@ -515,6 +563,7 @@ def run_six_pillar_workflow_qa(
             "static_image_pct": coverage["static_image_pct"],
             "animated_still_pct": coverage["animated_still_pct"],
             "scientific_visualization_pct": coverage["scientific_visualization_pct"],
+            "mechanism_overlay_pct": coverage.get("mechanism_overlay_pct", 0.0),
         },
         "canonical_asset_summary": {
             "distinct_canonical_assets": rep_audit["distinct_canonical_assets_count"],

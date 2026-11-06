@@ -79,11 +79,16 @@ def test_events_never_written_into_protected_completed_dir(tmp_path: Path) -> No
 def test_all_existing_manifests_load_with_v9_defaults_off() -> None:
     paths = sorted(glob.glob(str(CHANNEL_ROOT / "episodes" / "*.yaml")))
     assert paths, "expected episode manifests"
+    pre_v9_count = 0
     for p in paths:
         ep = EpisodeManifest.from_yaml(p)
+        if str(ep.manifest_version).startswith("9"):
+            continue
+        pre_v9_count += 1
         assert ep.visual_corpus_mode == "off"
         assert ep.require_storyboard_approval is False
         assert ep.mechanism_overlays == []
+    assert pre_v9_count >= 5
 
 
 def test_overlay_anchor_requires_phrase_or_start() -> None:

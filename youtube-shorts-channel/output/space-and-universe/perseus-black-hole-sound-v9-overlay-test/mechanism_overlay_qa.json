@@ -1,0 +1,85 @@
+{
+  "slug": "perseus-black-hole-sound-v9-overlay-test",
+  "overlay_count": 2,
+  "total_overlay_duration_s": 6.533,
+  "total_timeline_duration_s": 70.633,
+  "mechanism_overlay_ratio": 0.0925,
+  "mechanism_overlay_pct": 9.25,
+  "reclassified_infographic_intervals": [],
+  "qa_passed": true,
+  "issues": [],
+  "overlays": [
+    {
+      "overlay_id": "OV1_RIPPLE",
+      "template": "pressure_ripple",
+      "start_s": 22.1333,
+      "end_s": 24.5333,
+      "duration_s": 2.4,
+      "start_frame": 664,
+      "n_frames": 72,
+      "anchor_source": "phrase_in_N03",
+      "matched_phrase_score": 1.0,
+      "overlapping_shot_sids": [
+        "S06"
+      ],
+      "crosses_hard_cut": false,
+      "in_hook_zone": false,
+      "span_cut_allowed": false,
+      "diagnostic_note": "",
+      "mov_path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v9-overlay-test/overlays/OV1_RIPPLE_348d798cc50ce661.mov",
+      "claim_ref": 0,
+      "honesty_label": "measured_value",
+      "alpha_metrics": {
+        "valid": true,
+        "sampled_frames": 15,
+        "mean_alpha_area_ratio": 0.0352,
+        "max_alpha_area_ratio": 0.0419,
+        "max_contiguous_excess_s": 0.0,
+        "reclassified_as_infographic": false,
+        "bbox_1080x1920": [
+          276,
+          424,
+          804,
+          1044
+        ],
+        "foreground_luma_mean": 49.6
+      }
+    },
+    {
+      "overlay_id": "OV2_57_OCTAVES",
+      "template": "wave_frequency_scale",
+      "start_s": 39.1333,
+      "end_s": 43.2667,
+      "duration_s": 4.1333,
+      "start_frame": 1174,
+      "n_frames": 124,
+      "anchor_source": "explicit_start_s",
+      "matched_phrase_score": 1.0,
+      "overlapping_shot_sids": [
+        "S11"
+      ],
+      "crosses_hard_cut": false,
+      "in_hook_zone": false,
+      "span_cut_allowed": false,
+      "diagnostic_note": "",
+      "mov_path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/perseus-black-hole-sound-v9-overlay-test/overlays/OV2_57_OCTAVES_76d89881d1650073.mov",
+      "claim_ref": 0,
+      "honesty_label": "scale_comparison",
+      "alpha_metrics": {
+        "valid": true,
+        "sampled_frames": 25,
+        "mean_alpha_area_ratio": 0.2659,
+        "max_alpha_area_ratio": 0.2772,
+        "max_contiguous_excess_s": 0.0,
+        "reclassified_as_infographic": false,
+        "bbox_1080x1920": [
+          104,
+          284,
+          976,
+          944
+        ],
+        "foreground_luma_mean": 22.4
+      }
+    }
+  ]
+}

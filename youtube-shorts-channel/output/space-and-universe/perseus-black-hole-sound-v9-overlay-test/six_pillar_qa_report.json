@@ -1,0 +1,354 @@
+{
+  "slug": "perseus-black-hole-sound-v9-overlay-test",
+  "technical_approval": true,
+  "creative_approval": false,
+  "overall_release_approval": false,
+  "visual_coverage_metrics": {
+    "genuine_moving_footage_pct": 86.88,
+    "meaningful_action_footage_pct": 20.95,
+    "establishing_footage_pct": 65.93,
+    "real_time_lapse_pct": 0.0,
+    "static_image_pct": 13.12,
+    "animated_still_pct": 5.33,
+    "scientific_visualization_pct": 0.0,
+    "mechanism_overlay_pct": 9.25
+  },
+  "canonical_asset_summary": {
+    "distinct_canonical_assets": 11,
+    "raw_unique_filenames": 12,
+    "meaningful_progression_pct": 100.0
+  },
+  "resolution_honesty_records": [
+    {
+      "sid": "S01",
+      "src_file": "perseus_sonification_chandra_1080p.mp4",
+      "native_resolution": "1080x1080",
+      "cropped_9x16_px": "510x908",
+      "upscale_factor": 2.116,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S02",
+      "src_file": "eso_m87_zoom_4k.webm",
+      "native_resolution": "3840x2160",
+      "cropped_9x16_px": "1136x2019",
+      "upscale_factor": 0.951,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S03",
+      "src_file": "nasa_bh_approaching_4k.webm",
+      "native_resolution": "3840x2160",
+      "cropped_9x16_px": "1125x2000",
+      "upscale_factor": 0.96,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S04",
+      "src_file": "perseus_cluster_wave_4k.webm",
+      "native_resolution": "3840x2160",
+      "cropped_9x16_px": "1047x1862",
+      "upscale_factor": 1.031,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S05",
+      "src_file": "eso_alma_control_room_10.m4v",
+      "native_resolution": "1280x720",
+      "cropped_9x16_px": "382x679",
+      "upscale_factor": 2.827,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S06",
+      "src_file": "perseus_sound_waves_xray_clean.jpg",
+      "native_resolution": "2160x2160",
+      "cropped_9x16_px": "1125x2000",
+      "upscale_factor": 0.96,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S07",
+      "src_file": "nasa_bh_jets_orbit_4k.webm",
+      "native_resolution": "4000x4000",
+      "cropped_9x16_px": "1630x2899",
+      "upscale_factor": 0.662,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S08",
+      "src_file": "perseus_cavities_xray_clean.jpg",
+      "native_resolution": "2160x2160",
+      "cropped_9x16_px": "1136x2019",
+      "upscale_factor": 0.951,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S09",
+      "src_file": "nasa_bh_upclose_4k.webm",
+      "native_resolution": "3840x2160",
+      "cropped_9x16_px": "1104x1964",
+      "upscale_factor": 0.978,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S10",
+      "src_file": "nasa_bh_orbiting_4k.webm",
+      "native_resolution": "3840x2160",
+      "cropped_9x16_px": "1085x1929",
+      "upscale_factor": 0.996,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S11",
+      "src_file": "perseus_cluster_wave_4k.webm",
+      "native_resolution": "3840x2160",
+      "cropped_9x16_px": "1066x1895",
+      "upscale_factor": 1.013,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S12",
+      "src_file": "nasa_bh_approaching_4k.webm",
+      "native_resolution": "3840x2160",
+      "cropped_9x16_px": "1125x2000",
+      "upscale_factor": 0.96,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S13",
+      "src_file": "eso_alma_control_room_1.m4v",
+      "native_resolution": "1280x720",
+      "cropped_9x16_px": "382x679",
+      "upscale_factor": 2.827,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S14",
+      "src_file": "perseus_sonification_chandra_1080p.mp4",
+      "native_resolution": "1080x1080",
+      "cropped_9x16_px": "506x900",
+      "upscale_factor": 2.133,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S15",
+      "src_file": "ngc1275_hst_chandra_4k.jpg",
+      "native_resolution": "4689x3513",
+      "cropped_9x16_px": "1830x3253",
+      "upscale_factor": 0.59,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S16",
+      "src_file": "perseus_cluster_wave_4k.webm",
+      "native_resolution": "3840x2160",
+      "cropped_9x16_px": "1056x1878",
+      "upscale_factor": 1.022,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S17",
+      "src_file": "nasa_bh_orbiting_4k.webm",
+      "native_resolution": "3840x2160",
+      "cropped_9x16_px": "1125x2000",
+      "upscale_factor": 0.96,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S18",
+      "src_file": "perseus_sonification_chandra_1080p.mp4",
+      "native_resolution": "1080x1080",
+      "cropped_9x16_px": "519x923",
+      "upscale_factor": 2.08,
+      "is_native_full_hd_vertical": false
+    }
+  ],
+  "technical_details": {
+    "target_resolution": "1080x1920",
+    "target_aspect_ratio": "9:16",
+    "target_fps": 30,
+    "target_video_codec": "libx264",
+    "target_audio_codec": "aac",
+    "mode": "post_render_mp4",
+    "encoded_width": 1080,
+    "encoded_height": 1920,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "r_frame_rate": "30/1",
+    "av_sync_drift_s": 0.02
+  },
+  "pillars": {
+    "media_qa": {
+      "passed": true,
+      "critical_count": 0,
+      "major_count": 0,
+      "minor_count": 0,
+      "issues": []
+    },
+    "semantic_qa": {
+      "passed": true,
+      "critical_count": 0,
+      "major_count": 0,
+      "minor_count": 0,
+      "issues": []
+    },
+    "repetition_qa": {
+      "passed": false,
+      "critical_count": 0,
+      "major_count": 3,
+      "minor_count": 6,
+      "issues": [
+        {
+          "severity": "MAJOR",
+          "pillar": "repetition_qa",
+          "code": "repeated_photograph",
+          "sid": "S08",
+          "message": "Shot S08 reuses still source 'url:commons.wikimedia.org/wiki/file:perseus_cluster-_chandra_%22hears%22_a_supermassive_black_hole_in_perseus_(2003-perseus_-_perseus_xray).tiff' (first shown in S06) without an intentional callback purpose."
+        },
+        {
+          "severity": "MINOR",
+          "pillar": "repetition_qa",
+          "code": "repeated_establishing_shot",
+          "sid": "S11",
+          "message": "Shot S11 repeats establishing scenery already shown in S04."
+        },
+        {
+          "severity": "MINOR",
+          "pillar": "repetition_qa",
+          "code": "repeated_establishing_shot",
+          "sid": "S12",
+          "message": "Shot S12 repeats establishing scenery already shown in S03."
+        },
+        {
+          "severity": "MINOR",
+          "pillar": "repetition_qa",
+          "code": "repeated_establishing_shot",
+          "sid": "S14",
+          "message": "Shot S14 repeats establishing scenery already shown in S01."
+        },
+        {
+          "severity": "MINOR",
+          "pillar": "repetition_qa",
+          "code": "repeated_establishing_shot",
+          "sid": "S16",
+          "message": "Shot S16 repeats establishing scenery already shown in S04."
+        },
+        {
+          "severity": "MINOR",
+          "pillar": "repetition_qa",
+          "code": "repeated_establishing_shot",
+          "sid": "S17",
+          "message": "Shot S17 repeats establishing scenery already shown in S10."
+        },
+        {
+          "severity": "MINOR",
+          "pillar": "repetition_qa",
+          "code": "repeated_establishing_shot",
+          "sid": "S18",
+          "message": "Shot S18 repeats establishing scenery already shown in S01."
+        },
+        {
+          "severity": "MAJOR",
+          "pillar": "repetition_qa",
+          "code": "excessive_clip_reuse",
+          "sid": "S18",
+          "message": "Canonical asset 'url:commons.wikimedia.org/wiki/file:data_sonification-_black_hole_at_the_center_of_the_perseus_galaxy_cluster_(x-ray).webm' is reused 3 times (S01, S14, S18) without callback justification."
+        },
+        {
+          "severity": "MAJOR",
+          "pillar": "repetition_qa",
+          "code": "excessive_clip_reuse",
+          "sid": "S16",
+          "message": "Canonical asset 'url:commons.wikimedia.org/wiki/file:gigantic_wave_discovered_in_perseus_galaxy_cluster.webm' is reused 3 times (S04, S11, S16) without callback justification."
+        }
+      ]
+    },
+    "timeline_qa": {
+      "passed": true,
+      "critical_count": 0,
+      "major_count": 0,
+      "minor_count": 0,
+      "issues": []
+    },
+    "technical_qa": {
+      "passed": true,
+      "critical_count": 0,
+      "major_count": 0,
+      "minor_count": 0,
+      "issues": []
+    },
+    "creative_qa": {
+      "passed": true,
+      "critical_count": 0,
+      "major_count": 0,
+      "minor_count": 0,
+      "issues": []
+    }
+  },
+  "issues": [
+    {
+      "severity": "MAJOR",
+      "pillar": "repetition_qa",
+      "code": "repeated_photograph",
+      "sid": "S08",
+      "message": "Shot S08 reuses still source 'url:commons.wikimedia.org/wiki/file:perseus_cluster-_chandra_%22hears%22_a_supermassive_black_hole_in_perseus_(2003-perseus_-_perseus_xray).tiff' (first shown in S06) without an intentional callback purpose."
+    },
+    {
+      "severity": "MINOR",
+      "pillar": "repetition_qa",
+      "code": "repeated_establishing_shot",
+      "sid": "S11",
+      "message": "Shot S11 repeats establishing scenery already shown in S04."
+    },
+    {
+      "severity": "MINOR",
+      "pillar": "repetition_qa",
+      "code": "repeated_establishing_shot",
+      "sid": "S12",
+      "message": "Shot S12 repeats establishing scenery already shown in S03."
+    },
+    {
+      "severity": "MINOR",
+      "pillar": "repetition_qa",
+      "code": "repeated_establishing_shot",
+      "sid": "S14",
+      "message": "Shot S14 repeats establishing scenery already shown in S01."
+    },
+    {
+      "severity": "MINOR",
+      "pillar": "repetition_qa",
+      "code": "repeated_establishing_shot",
+      "sid": "S16",
+      "message": "Shot S16 repeats establishing scenery already shown in S04."
+    },
+    {
+      "severity": "MINOR",
+      "pillar": "repetition_qa",
+      "code": "repeated_establishing_shot",
+      "sid": "S17",
+      "message": "Shot S17 repeats establishing scenery already shown in S10."
+    },
+    {
+      "severity": "MINOR",
+      "pillar": "repetition_qa",
+      "code": "repeated_establishing_shot",
+      "sid": "S18",
+      "message": "Shot S18 repeats establishing scenery already shown in S01."
+    },
+    {
+      "severity": "MAJOR",
+      "pillar": "repetition_qa",
+      "code": "excessive_clip_reuse",
+      "sid": "S18",
+      "message": "Canonical asset 'url:commons.wikimedia.org/wiki/file:data_sonification-_black_hole_at_the_center_of_the_perseus_galaxy_cluster_(x-ray).webm' is reused 3 times (S01, S14, S18) without callback justification."
+    },
+    {
+      "severity": "MAJOR",
+      "pillar": "repetition_qa",
+      "code": "excessive_clip_reuse",
+      "sid": "S16",
+      "message": "Canonical asset 'url:commons.wikimedia.org/wiki/file:gigantic_wave_discovered_in_perseus_galaxy_cluster.webm' is reused 3 times (S04, S11, S16) without callback justification."
+    }
+  ]
+}

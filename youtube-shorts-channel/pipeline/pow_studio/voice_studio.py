@@ -1667,6 +1667,7 @@ def invalidate_dependent_timing_artifacts(
         "voice_approval_lock.json",
         "qc_measurements.json",
         "creative_qa_report.json",
+        "mechanism_overlay_qa.json",
     ]
     invalidated: list[str] = []
     for rel in stale_files:
@@ -1683,6 +1684,15 @@ def invalidate_dependent_timing_artifacts(
             removed_shots += 1
         if removed_shots > 0:
             invalidated.append(f"shots/*.mp4 ({removed_shots} cached clips)")
+
+    overlays_dir = out_dir / "overlays"
+    if overlays_dir.exists():
+        removed_overlays = 0
+        for mov_p in overlays_dir.glob("*.mov"):
+            mov_p.unlink(missing_ok=True)
+            removed_overlays += 1
+        if removed_overlays > 0:
+            invalidated.append(f"overlays/*.mov ({removed_overlays} cached overlays)")
 
     return invalidated
 

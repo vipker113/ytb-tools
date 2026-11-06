@@ -1502,8 +1502,17 @@ def build_preview_sheet(
     shots_dir = out_dir / "shots"
     scratch_dir = out_dir / ".scratch_build"
     scratch_dir.mkdir(parents=True, exist_ok=True)
-    states, _, total_dur, timed_shots, _ = compute_overlay_states(manifest, wt)
+    states, _, total_dur, timed_shots, cues = compute_overlay_states(manifest, wt)
     handles = compute_transition_handles(timed_shots, style)
+
+    mech_timings = []
+    mech_paths: dict[str, Path] = {}
+    if getattr(manifest, "mechanism_overlays", None) and style.mechanism_overlays.enabled:
+        from .mechanism_overlay import extract_overlay_rgba_frame, render_episode_overlays
+
+        ov_summary = render_episode_overlays(manifest, wt=wt, cues=cues, use_cache=True)
+        mech_timings = ov_summary["resolved_timings"]
+        mech_paths = ov_summary["rendered_paths"]
 
     pw, ph = 240, 426
     cols = 4
@@ -1532,6 +1541,13 @@ def build_preview_sheet(
                 tail_frames=hinfo["tail_frames"],
             )
         tm = 0.25 if k == 0 else 0.5 * (s.start_s + s.end_s)
+        overlapping_ovs = [
+            rt for rt in mech_timings if rt.end_s > s.start_s + 0.05 and rt.start_s < s.end_s - 0.05
+        ]
+        if k > 0 and overlapping_ovs and not any(rt.start_s + 0.25 <= tm <= rt.end_s - 0.25 for rt in overlapping_ovs):
+            rt0 = overlapping_ovs[0]
+            tm = 0.5 * (max(s.start_s, rt0.start_s) + min(s.end_s, rt0.end_s))
+
         local_t = max(0.0, (tm - s.start_s) + (hinfo["head_frames"] / float(style.output.fps)))
         run_cmd(
             [
@@ -1550,6 +1566,14 @@ def build_preview_sheet(
             ]
         )
         base = Image.open(tmp_png).convert("RGBA")
+        active_ov_ids: list[str] = []
+        for rt in mech_timings:
+            if rt.start_s <= tm < rt.end_s and rt.overlay_id in mech_paths:
+                ov_rgba = extract_overlay_rgba_frame(mech_paths[rt.overlay_id], tm - rt.start_s)
+                if ov_rgba is not None:
+                    base = Image.alpha_composite(base, ov_rgba)
+                    active_ov_ids.append(rt.overlay_id)
+
         st = next((st for a, b, st in states if a <= tm < b), states[-1][2])
         comp = Image.alpha_composite(base, render_overlay_rgba(st, manifest, style=style)).convert("RGB")
 
@@ -1558,7 +1582,8 @@ def build_preview_sheet(
         y = 66 + r * (ph + 62)
         sheet.paste(comp.resize((pw, ph), Image.Resampling.LANCZOS), (x, y))
         tr_tag = f" [dissolve {s.transition_duration_s:.2f}s]" if (k > 0 and s.transition_in == "dissolve") else ""
-        d.text((x + 2, y + ph + 4), f"{s.sid}  {s.start_s:.1f}–{s.end_s:.1f}s{tr_tag}", font=fb, fill=(255, 224, 110))
+        ov_tag = " [+OV]" if active_ov_ids else ""
+        d.text((x + 2, y + ph + 4), f"{s.sid}  {s.start_s:.1f}–{s.end_s:.1f}s{tr_tag}{ov_tag}", font=fb, fill=(255, 224, 110))
         d.text((x + 2, y + ph + 26), f"{s.kind} • {s.src_file[:22]}", font=fm, fill=(195, 210, 230))
 
     out_sheet = out_dir / "pre_render_storyboard_contact_sheet.jpg"
@@ -1791,7 +1816,7 @@ def render_episode_master(
     mix_wav = out_dir / "work_audio" / "final_audio_mix.wav"
     final_mp4 = out_dir / f"{manifest.slug}.mp4"
 
-    states, nframes, _, timed_shots, _ = compute_overlay_states(manifest, wt)
+    states, nframes, _, timed_shots, cues = compute_overlay_states(manifest, wt)
     handles = compute_transition_handles(timed_shots, style)
     t_shots_start = time.perf_counter()
     render_all_shots(manifest, wt, encode_mode=encode_mode, use_cache=True)
@@ -1801,45 +1826,100 @@ def render_episode_master(
     base_mp4 = _assemble_base_timeline_mp4(timed_shots, handles, shots_dir, scratch_dir, encode_mode, style)
     ovl_mov = build_overlay_mov(states, nframes, manifest, scratch_dir)
 
-    run_cmd(
-        [
-            "ffmpeg",
-            "-y",
-            "-hide_banner",
-            "-loglevel",
-            "error",
-            "-i",
-            str(base_mp4),
-            "-i",
-            str(ovl_mov),
-            "-i",
-            str(mix_wav),
-            "-filter_complex",
-            "[1:v]format=rgba[o];[0:v][o]overlay=0:0:format=auto:shortest=1,format=yuv420p[v]",
-            "-map",
-            "[v]",
-            "-map",
-            "2:a",
-            "-frames:v",
-            str(nframes),
-            "-r",
-            str(fps),
-            *_video_codec_args(encode_mode, style),
-            "-c:a",
-            style.output.audio_codec,
-            "-b:a",
-            style.output.audio_bitrate,
-            "-ar",
-            str(sr),
-            "-movflags",
-            "+faststart",
-            str(final_mp4),
-        ]
-    )
+    mech_temps: list[Path] = []
+    if getattr(manifest, "mechanism_overlays", None) and style.mechanism_overlays.enabled:
+        from .mechanism_overlay import build_ffmpeg_overlay_mux_plan, render_episode_overlays
+
+        ov_summary = render_episode_overlays(manifest, wt=wt, cues=cues, use_cache=True)
+        extra_in, filter_prefix, next_idx, mech_temps = build_ffmpeg_overlay_mux_plan(
+            timings=ov_summary["resolved_timings"],
+            rendered_paths=ov_summary["rendered_paths"],
+            scratch_dir=scratch_dir,
+            total_frames=nframes,
+            fps=fps,
+        )
+    else:
+        extra_in, filter_prefix, next_idx = [], "", 1
+
+    if extra_in:
+        run_cmd(
+            [
+                "ffmpeg",
+                "-y",
+                "-hide_banner",
+                "-loglevel",
+                "error",
+                "-i",
+                str(base_mp4),
+                *extra_in,
+                "-i",
+                str(ovl_mov),
+                "-i",
+                str(mix_wav),
+                "-filter_complex",
+                f"{filter_prefix}[{next_idx}:v]format=rgba[o];[v_mech][o]overlay=0:0:format=auto:shortest=1,format=yuv420p[v]",
+                "-map",
+                "[v]",
+                "-map",
+                f"{next_idx + 1}:a",
+                "-frames:v",
+                str(nframes),
+                "-r",
+                str(fps),
+                *_video_codec_args(encode_mode, style),
+                "-c:a",
+                style.output.audio_codec,
+                "-b:a",
+                style.output.audio_bitrate,
+                "-ar",
+                str(sr),
+                "-movflags",
+                "+faststart",
+                str(final_mp4),
+            ]
+        )
+    else:
+        run_cmd(
+            [
+                "ffmpeg",
+                "-y",
+                "-hide_banner",
+                "-loglevel",
+                "error",
+                "-i",
+                str(base_mp4),
+                "-i",
+                str(ovl_mov),
+                "-i",
+                str(mix_wav),
+                "-filter_complex",
+                "[1:v]format=rgba[o];[0:v][o]overlay=0:0:format=auto:shortest=1,format=yuv420p[v]",
+                "-map",
+                "[v]",
+                "-map",
+                "2:a",
+                "-frames:v",
+                str(nframes),
+                "-r",
+                str(fps),
+                *_video_codec_args(encode_mode, style),
+                "-c:a",
+                style.output.audio_codec,
+                "-b:a",
+                style.output.audio_bitrate,
+                "-ar",
+                str(sr),
+                "-movflags",
+                "+faststart",
+                str(final_mp4),
+            ]
+        )
     assembly_elapsed_s = round(time.perf_counter() - t_asm_start, 3)
     # Reclaim large lossless RGBA & intermediate concat files immediately after muxing
     ovl_mov.unlink(missing_ok=True)
     base_mp4.unlink(missing_ok=True)
+    for mp_tmp in mech_temps:
+        mp_tmp.unlink(missing_ok=True)
     for xf in scratch_dir.glob("xfade_group_*.mp4"):
         xf.unlink(missing_ok=True)
 

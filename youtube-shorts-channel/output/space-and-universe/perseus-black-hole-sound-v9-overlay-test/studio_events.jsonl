@@ -1,0 +1,9 @@
+{"ts": "2026-11-06T04:47:08.331+00:00", "stage": "render-overlays", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T04:47:13.568+00:00", "stage": "render-overlays", "event": "end", "status": "passed", "detail": "completed in 5.2s", "artifacts": []}
+{"ts": "2026-11-06T04:47:13.940+00:00", "stage": "render-overlays", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T04:47:14.820+00:00", "stage": "render-overlays", "event": "end", "status": "passed", "detail": "completed in 0.9s", "artifacts": []}
+{"ts": "2026-11-06T05:00:33.914+00:00", "stage": "render", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T05:13:32.538+00:00", "stage": "render", "event": "end", "status": "passed", "detail": "completed in 778.6s", "artifacts": []}
+{"ts": "2026-11-06T05:13:33.175+00:00", "stage": "qa-6pillar", "event": "start", "status": "running", "detail": "", "artifacts": []}
+{"ts": "2026-11-06T05:14:35.950+00:00", "stage": "gate:qa_six_pillar", "event": "gate", "status": "blocked", "detail": "technical=PASS creative=FAIL", "artifacts": []}
+{"ts": "2026-11-06T05:14:35.959+00:00", "stage": "qa-6pillar", "event": "end", "status": "failed", "detail": "Exit: ", "artifacts": []}

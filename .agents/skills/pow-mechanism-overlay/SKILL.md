@@ -20,13 +20,13 @@ above the video and below captions, at the final mux step (shot caches are untou
 
 | Template | Use | Key params |
 |---|---|---|
-| `pressure_ripple` | waves spreading from a source | `center`, `rings`, `period_s`, `color` |
-| `wave_frequency_scale` | log scale of frequency/energy | `ticks`, `marker_value`, `label` |
-| `value_callout_gauge` | number counting up + leader line to a point | `value_to`, `unit`, `label`, `point` |
-| `flow_arrows` | curved arrows along a flow path | `path` (normalized points), `count`, `label` |
-| `scale_bar_compare` | size comparison bar | `length_label`, `reference_label` |
-| `trajectory_trace` | orbit / flight path drawing | `path`, `label` |
-| `label_leader` | thin label + leader line, optional tracking | `point`, `text`, `track_keyframes` |
+| `pressure_ripple` | waves spreading from a source | `center`, `rings`, `period_s`, `label`, `sublabel`, `color` |
+| `wave_frequency_scale` | log scale of frequency/energy | `title` / `label`, `ticks` (`[{label, sub}]`), `marker_label` / `marker_value`, `color` |
+| `value_callout_gauge` | number counting up + leader line to a point | `value_from`, `value_to`, `decimals`, `unit`, `label`, `point` |
+| `flow_arrows` | curved arrows along a flow path | `path` (normalized `[x, y]` points), `count`, `label`, `color` |
+| `scale_bar_compare` | size comparison bar | `length_label`, `reference_label`, `ratio` |
+| `trajectory_trace` | orbit / flight path drawing | `path`, `label`, `color` |
+| `label_leader` | thin label + leader line, optional tracking | `point`, `text`, `subtext`, `track_keyframes` (`[[u, x, y], ...]`) |
 
 ## Manifest (`mechanism_overlays[]`)
 

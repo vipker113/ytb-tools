@@ -1,0 +1,1734 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "pronunciation_sig": "051094b0de67d14ad2427ca114cefb278925514f65c4bf206bda1d314ec40202",
+  "total_duration_s": 70.6333,
+  "total_frames_30fps": 2119,
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "You were taught that space is completely silent\u2014until NASA captured the real sound of a black hole.",
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "start": 0.1,
+      "end": 5.44,
+      "duration": 5.34,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "completely",
+        "silent",
+        "NASA",
+        "real",
+        "sound",
+        "black",
+        "hole"
+      ]
+    },
+    {
+      "seg_id": "N02",
+      "text": "Two hundred fifty million light-years away sits the Perseus galaxy cluster. While empty space is a silent vacuum, this giant cluster is wrapped in superheated plasma spanning hundreds of thousands of light-years.",
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "start": 5.86,
+      "end": 17.243,
+      "duration": 11.383,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "Two",
+        "hundred",
+        "fifty",
+        "Perseus",
+        "silent",
+        "vacuum",
+        "superheated",
+        "plasma"
+      ]
+    },
+    {
+      "seg_id": "N03",
+      "text": "In 2003, astronomers studying NASA's Chandra X-ray images noticed giant concentric ripples rolling through that gas. Relativistic jets blasting from the central black hole were inflating enormous cavities\u2014pushing true sound waves outward.",
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "start": 17.663,
+      "end": 31.734,
+      "duration": 14.071,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "2003",
+        "Chandra",
+        "concentric",
+        "ripples",
+        "Relativistic",
+        "jets",
+        "true",
+        "sound"
+      ]
+    },
+    {
+      "seg_id": "N04",
+      "text": "The pitch hit a deep B-flat fifty-seven octaves below middle C. Each oscillation takes nearly ten million years\u2014one hundred forty-four quadrillion times deeper than human ears can detect.",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 32.154,
+      "end": 43.402,
+      "duration": 11.248,
+      "pause_after": 0.44,
+      "emphasis_words": [
+        "B-flat",
+        "fifty-seven",
+        "octaves",
+        "ten",
+        "million",
+        "quadrillion",
+        "deeper"
+      ]
+    },
+    {
+      "seg_id": "N05",
+      "text": "Telescopes show no evidence of sound traveling through empty vacuum. Instead, NASA extracted Chandra's real X-ray pressure ripples and scaled them up fifty-seven octaves\u2014revealing this haunting cosmic roar.",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 43.842,
+      "end": 55.526,
+      "duration": 11.684,
+      "pause_after": 0.94,
+      "emphasis_words": [
+        "no",
+        "evidence",
+        "empty",
+        "vacuum",
+        "real",
+        "scaled",
+        "haunting",
+        "roar"
+      ]
+    },
+    {
+      "seg_id": "N06",
+      "text": "Those acoustic waves carry colossal energy across the cluster, heating the surrounding gas for billions of years so trillions of stars cannot chaotically collapse.",
+      "rate": "+2%",
+      "pitch": "-1Hz",
+      "start": 56.466,
+      "end": 64.415,
+      "duration": 7.949,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "colossal",
+        "energy",
+        "heating",
+        "billions",
+        "trillions",
+        "collapse"
+      ]
+    },
+    {
+      "seg_id": "N07",
+      "text": "The universe isn't silent after all\u2014we simply needed an X-ray telescope to hear its deepest note.",
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "start": 64.835,
+      "end": 70.378,
+      "duration": 5.543,
+      "pause_after": 0.24,
+      "emphasis_words": [
+        "universe",
+        "isn't",
+        "silent",
+        "X-ray",
+        "deepest",
+        "note"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "You were taught that space is completely silent\u2014until NASA captured the real sound of a black hole.",
+      "delivery": "HOOK",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "completely silent",
+        "real sound of a black hole"
+      ],
+      "start_s": 0.1,
+      "end_s": 5.44,
+      "cache_key": "5cad054525fcd736dd7e",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:HOOK->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N02",
+      "text": "Two hundred fifty million light-years away sits the Perseus galaxy cluster.",
+      "delivery": "MYSTERIOUS",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 340,
+      "emphasis_phrases": [
+        "Two hundred fifty million",
+        "Perseus galaxy cluster"
+      ],
+      "start_s": 5.86,
+      "end_s": 9.818,
+      "cache_key": "42ae1324c445fccce0b5",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MYSTERIOUS->profile_preset(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N02",
+      "text": "While empty space is a silent vacuum, this giant cluster is wrapped in superheated plasma spanning hundreds of thousands of light-years.",
+      "delivery": "MEASURED_EVIDENCE",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "silent vacuum",
+        "superheated plasma"
+      ],
+      "start_s": 10.158,
+      "end_s": 17.243,
+      "cache_key": "6e190a2acc68dcc8426c",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N03",
+      "text": "In 2003, astronomers studying NASA's Chandra X-ray images noticed giant concentric ripples rolling through that gas.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "Chandra X-ray images",
+        "concentric ripples"
+      ],
+      "start_s": 17.663,
+      "end_s": 24.789,
+      "cache_key": "08b6aa2a51242f0ff42a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N03",
+      "text": "Relativistic jets blasting from the central black hole were inflating enormous cavities\u2014pushing true sound waves outward.",
+      "delivery": "DRAMATIC_REVEAL",
+      "pace": "NATURAL",
+      "energy": 4,
+      "rate": "+0%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "Relativistic jets",
+        "true sound waves"
+      ],
+      "start_s": 25.149,
+      "end_s": 31.734,
+      "cache_key": "01c679214c6b3f85bd9a",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:DRAMATIC_REVEAL->bounded_prosody(rate=-4%,pitch=+0Hz,pause=640ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N04",
+      "text": "The pitch hit a deep B-flat fifty-seven octaves below middle C.",
+      "delivery": "SURPRISED_BUT_CONTROLLED",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "pause_after_ms": 360,
+      "emphasis_phrases": [
+        "deep B-flat",
+        "fifty-seven octaves"
+      ],
+      "start_s": 32.154,
+      "end_s": 35.862,
+      "cache_key": "0a168aa97fdf4a109500",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SURPRISED_BUT_CONTROLLED->profile_preset(rate=+2%,pitch=+1Hz,pause=340ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N04",
+      "text": "Each oscillation takes nearly ten million years\u2014one hundred forty-four quadrillion times deeper than human ears can detect.",
+      "delivery": "SCIENTIFIC_AUTHORITY",
+      "pace": "SLOW",
+      "energy": 4,
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 440,
+      "emphasis_phrases": [
+        "ten million years",
+        "one hundred forty-four quadrillion"
+      ],
+      "start_s": 36.222,
+      "end_s": 43.402,
+      "cache_key": "54e3a7a0d7c6a36e23c7",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC_AUTHORITY->bounded_prosody(rate=-1%,pitch=-1Hz,pause=350ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 7,
+      "seg_id": "N05",
+      "text": "Telescopes show no evidence of sound traveling through empty vacuum.",
+      "delivery": "CALM_EXPLANATION",
+      "pace": "NATURAL",
+      "energy": 3,
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 320,
+      "emphasis_phrases": [
+        "no evidence",
+        "empty vacuum"
+      ],
+      "start_s": 43.842,
+      "end_s": 47.408,
+      "cache_key": "e4ef0b53a149fa800a82",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CALM_EXPLANATION->bounded_prosody(rate=-1%,pitch=+0Hz,pause=350ms)",
+        "PACE:NATURAL->rate_pct=-1%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 8,
+      "seg_id": "N05",
+      "text": "Instead, NASA extracted Chandra's real X-ray pressure ripples and scaled them up fifty-seven octaves\u2014revealing this haunting cosmic roar.",
+      "delivery": "CINEMATIC_REVEAL",
+      "pace": "SLOW",
+      "energy": 5,
+      "rate": "-3%",
+      "pitch": "+0Hz",
+      "pause_after_ms": 940,
+      "emphasis_phrases": [
+        "real X-ray pressure ripples",
+        "haunting cosmic roar"
+      ],
+      "start_s": 47.728,
+      "end_s": 55.526,
+      "cache_key": "f7cebb68f57ad1be50d1",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:CINEMATIC_REVEAL->profile_preset(rate=-4%,pitch=+0Hz,pause=620ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "ENERGY:5/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 9,
+      "seg_id": "N06",
+      "text": "Those acoustic waves carry colossal energy across the cluster, heating the surrounding gas for billions of years so trillions of stars cannot chaotically collapse.",
+      "delivery": "DRAMATIC_REVEAL",
+      "pace": "MODERATE",
+      "energy": 4,
+      "rate": "+2%",
+      "pitch": "-1Hz",
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "colossal energy",
+        "billions of years"
+      ],
+      "start_s": 56.466,
+      "end_s": 64.415,
+      "cache_key": "e47ec1558b0067fb7981",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:DRAMATIC_REVEAL->bounded_prosody(rate=-4%,pitch=+0Hz,pause=640ms)",
+        "PACE:MODERATE->rate_pct=+1%",
+        "ENERGY:4/5->subtle_intensity_nudge",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 10,
+      "seg_id": "N07",
+      "text": "The universe isn't silent after all\u2014we simply needed an X-ray telescope to hear its deepest note.",
+      "delivery": "FINAL_IMPRESSION",
+      "pace": "SLOW",
+      "energy": 3,
+      "rate": "-5%",
+      "pitch": "-2Hz",
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "isn't silent after all",
+        "deepest note"
+      ],
+      "start_s": 64.835,
+      "end_s": 70.378,
+      "cache_key": "c9092123d60aba326ded",
+      "cache_hit": true,
+      "applied_approximations": [
+        "DELIVERY:FINAL_IMPRESSION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=380ms)",
+        "PACE:SLOW->rate_pct=-5%",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "You",
+      "start": 0.1,
+      "end": 0.295,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "were",
+      "start": 0.193,
+      "end": 0.31,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "taught",
+      "start": 0.323,
+      "end": 0.597,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "that",
+      "start": 0.61,
+      "end": 0.753,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "space",
+      "start": 0.766,
+      "end": 1.144,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "is",
+      "start": 1.157,
+      "end": 1.287,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "completely",
+      "start": 1.3,
+      "end": 1.769,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "silent",
+      "start": 1.782,
+      "end": 2.277,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "until",
+      "start": 2.485,
+      "end": 2.771,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "NASA",
+      "start": 2.784,
+      "end": 3.149,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "captured",
+      "start": 3.162,
+      "end": 3.553,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "the",
+      "start": 3.566,
+      "end": 3.67,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "real",
+      "start": 3.683,
+      "end": 4.034,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "sound",
+      "start": 4.047,
+      "end": 4.386,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "of",
+      "start": 4.399,
+      "end": 4.464,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "a",
+      "start": 4.477,
+      "end": 4.542,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "black",
+      "start": 4.555,
+      "end": 4.868,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "hole",
+      "start": 4.881,
+      "end": 5.376,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Two",
+      "start": 5.86,
+      "end": 6.11,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "hundred",
+      "start": 6.025,
+      "end": 6.325,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "fifty",
+      "start": 6.338,
+      "end": 6.675,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "million",
+      "start": 6.688,
+      "end": 7.088,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "light-years",
+      "start": 7.1,
+      "end": 7.538,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "away",
+      "start": 7.55,
+      "end": 7.8,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "sits",
+      "start": 7.813,
+      "end": 8.138,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "the",
+      "start": 8.15,
+      "end": 8.25,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Perseus",
+      "start": 8.263,
+      "end": 8.763,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "galaxy",
+      "start": 8.775,
+      "end": 9.225,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "cluster",
+      "start": 9.238,
+      "end": 9.738,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "While",
+      "start": 10.158,
+      "end": 10.483,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "empty",
+      "start": 10.396,
+      "end": 10.671,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "space",
+      "start": 10.684,
+      "end": 11.034,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "is",
+      "start": 11.046,
+      "end": 11.159,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "a",
+      "start": 11.171,
+      "end": 11.246,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "silent",
+      "start": 11.258,
+      "end": 11.696,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "vacuum",
+      "start": 11.709,
+      "end": 12.159,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "this",
+      "start": 12.358,
+      "end": 12.571,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "giant",
+      "start": 12.584,
+      "end": 12.984,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "cluster",
+      "start": 12.996,
+      "end": 13.346,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "is",
+      "start": 13.358,
+      "end": 13.546,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "wrapped",
+      "start": 13.559,
+      "end": 13.883,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "in",
+      "start": 13.896,
+      "end": 14.021,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "superheated",
+      "start": 14.034,
+      "end": 14.684,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "plasma",
+      "start": 14.696,
+      "end": 15.083,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "spanning",
+      "start": 15.096,
+      "end": 15.471,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "hundreds",
+      "start": 15.483,
+      "end": 15.821,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "of",
+      "start": 15.834,
+      "end": 15.921,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "thousands",
+      "start": 15.933,
+      "end": 16.396,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "of",
+      "start": 16.409,
+      "end": 16.483,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "light-years",
+      "start": 16.496,
+      "end": 17.183,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "In 2003",
+      "start": 17.663,
+      "end": 18.951,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "astronomers",
+      "start": 19.075,
+      "end": 19.587,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "studying",
+      "start": 19.6,
+      "end": 20.025,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "NASA's",
+      "start": 20.037,
+      "end": 20.425,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Chandra",
+      "start": 20.437,
+      "end": 20.812,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "X-ray",
+      "start": 20.825,
+      "end": 21.237,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "images",
+      "start": 21.25,
+      "end": 21.65,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "noticed",
+      "start": 21.662,
+      "end": 22.062,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "giant",
+      "start": 22.075,
+      "end": 22.425,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "concentric",
+      "start": 22.437,
+      "end": 23.025,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "ripples",
+      "start": 23.037,
+      "end": 23.4,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "rolling",
+      "start": 23.412,
+      "end": 23.8,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "through",
+      "start": 23.812,
+      "end": 24.05,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "that",
+      "start": 24.062,
+      "end": 24.25,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "gas",
+      "start": 24.262,
+      "end": 24.737,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Relativistic",
+      "start": 25.149,
+      "end": 25.924,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "jets",
+      "start": 25.844,
+      "end": 26.132,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "blasting",
+      "start": 26.144,
+      "end": 26.632,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "from",
+      "start": 26.644,
+      "end": 26.794,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 26.807,
+      "end": 26.882,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "central",
+      "start": 26.894,
+      "end": 27.294,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "black",
+      "start": 27.307,
+      "end": 27.569,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "hole",
+      "start": 27.582,
+      "end": 27.894,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "were",
+      "start": 27.907,
+      "end": 28.007,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "inflating",
+      "start": 28.019,
+      "end": 28.557,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "enormous",
+      "start": 28.569,
+      "end": 28.957,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "cavities",
+      "start": 28.969,
+      "end": 29.582,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "pushing",
+      "start": 29.794,
+      "end": 30.119,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "true",
+      "start": 30.132,
+      "end": 30.369,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "sound",
+      "start": 30.382,
+      "end": 30.744,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "waves",
+      "start": 30.757,
+      "end": 31.144,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "outward",
+      "start": 31.157,
+      "end": 31.669,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "The",
+      "start": 32.154,
+      "end": 32.31,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "pitch",
+      "start": 32.21,
+      "end": 32.471,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "hit",
+      "start": 32.484,
+      "end": 32.627,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "a",
+      "start": 32.64,
+      "end": 32.718,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "deep",
+      "start": 32.731,
+      "end": 33.044,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "B-flat",
+      "start": 33.057,
+      "end": 33.577,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "fifty-seven",
+      "start": 33.59,
+      "end": 34.268,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "octaves",
+      "start": 34.281,
+      "end": 34.645,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "below",
+      "start": 34.658,
+      "end": 34.997,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "middle",
+      "start": 35.01,
+      "end": 35.322,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "C",
+      "start": 35.335,
+      "end": 35.804,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Each",
+      "start": 36.222,
+      "end": 36.534,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "oscillation",
+      "start": 36.432,
+      "end": 37.07,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "takes",
+      "start": 37.083,
+      "end": 37.356,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "nearly",
+      "start": 37.369,
+      "end": 37.669,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "ten",
+      "start": 37.682,
+      "end": 37.981,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "million",
+      "start": 37.994,
+      "end": 38.346,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "years",
+      "start": 38.359,
+      "end": 38.815,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "one",
+      "start": 39.049,
+      "end": 39.296,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "hundred",
+      "start": 39.309,
+      "end": 39.648,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "forty-four",
+      "start": 39.661,
+      "end": 40.273,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "quadrillion",
+      "start": 40.286,
+      "end": 40.885,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "times",
+      "start": 40.898,
+      "end": 41.288,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "deeper",
+      "start": 41.302,
+      "end": 41.64,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "than",
+      "start": 41.653,
+      "end": 41.783,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "human",
+      "start": 41.796,
+      "end": 42.226,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "ears",
+      "start": 42.239,
+      "end": 42.591,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "can",
+      "start": 42.604,
+      "end": 42.76,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "detect",
+      "start": 42.773,
+      "end": 43.32,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Telescopes",
+      "start": 43.842,
+      "end": 44.499,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "show",
+      "start": 44.409,
+      "end": 44.611,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "no",
+      "start": 44.623,
+      "end": 44.914,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "evidence",
+      "start": 44.926,
+      "end": 45.33,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "of",
+      "start": 45.343,
+      "end": 45.431,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "sound",
+      "start": 45.444,
+      "end": 45.747,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "traveling",
+      "start": 45.76,
+      "end": 46.189,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "through",
+      "start": 46.202,
+      "end": 46.441,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "empty",
+      "start": 46.454,
+      "end": 46.77,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "vacuum",
+      "start": 46.782,
+      "end": 47.35,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "Instead",
+      "start": 47.728,
+      "end": 48.257,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "NASA",
+      "start": 48.386,
+      "end": 48.734,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "extracted",
+      "start": 48.747,
+      "end": 49.288,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Chandra's",
+      "start": 49.301,
+      "end": 49.765,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "real",
+      "start": 49.778,
+      "end": 50.061,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "X-ray",
+      "start": 50.074,
+      "end": 50.448,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "pressure",
+      "start": 50.461,
+      "end": 50.796,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "ripples",
+      "start": 50.809,
+      "end": 51.26,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "and",
+      "start": 51.273,
+      "end": 51.389,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "scaled",
+      "start": 51.401,
+      "end": 51.84,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "them",
+      "start": 51.852,
+      "end": 51.956,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "up",
+      "start": 51.968,
+      "end": 52.123,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "fifty-seven",
+      "start": 52.136,
+      "end": 52.793,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "octaves",
+      "start": 52.806,
+      "end": 53.244,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "revealing",
+      "start": 53.476,
+      "end": 53.914,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "this",
+      "start": 53.927,
+      "end": 54.12,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "haunting",
+      "start": 54.133,
+      "end": 54.559,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "cosmic",
+      "start": 54.572,
+      "end": 55.035,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "roar",
+      "start": 55.048,
+      "end": 55.435,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "Those",
+      "start": 56.466,
+      "end": 56.736,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "acoustic",
+      "start": 56.658,
+      "end": 57.087,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "waves",
+      "start": 57.099,
+      "end": 57.442,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "carry",
+      "start": 57.455,
+      "end": 57.737,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "colossal",
+      "start": 57.749,
+      "end": 58.227,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "energy",
+      "start": 58.239,
+      "end": 58.558,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "across",
+      "start": 58.57,
+      "end": 58.901,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 58.913,
+      "end": 58.999,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "cluster",
+      "start": 59.011,
+      "end": 59.44,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "heating",
+      "start": 59.624,
+      "end": 59.918,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 59.93,
+      "end": 60.016,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "surrounding",
+      "start": 60.028,
+      "end": 60.506,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "gas",
+      "start": 60.518,
+      "end": 60.8,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "for",
+      "start": 60.813,
+      "end": 60.923,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "billions",
+      "start": 60.935,
+      "end": 61.315,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "of",
+      "start": 61.327,
+      "end": 61.425,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "years",
+      "start": 61.438,
+      "end": 61.781,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "so",
+      "start": 61.793,
+      "end": 61.952,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "trillions",
+      "start": 61.965,
+      "end": 62.406,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "of",
+      "start": 62.418,
+      "end": 62.504,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "stars",
+      "start": 62.516,
+      "end": 62.908,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "cannot",
+      "start": 62.92,
+      "end": 63.276,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "chaotically",
+      "start": 63.288,
+      "end": 63.766,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "collapse",
+      "start": 63.778,
+      "end": 64.354,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "The",
+      "start": 64.835,
+      "end": 64.993,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "universe",
+      "start": 64.882,
+      "end": 65.434,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "isn't",
+      "start": 65.447,
+      "end": 65.684,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "silent",
+      "start": 65.697,
+      "end": 66.184,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "after",
+      "start": 66.197,
+      "end": 66.461,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "all",
+      "start": 66.474,
+      "end": 66.684,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "we",
+      "start": 66.882,
+      "end": 66.987,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "simply",
+      "start": 67.0,
+      "end": 67.382,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "needed",
+      "start": 67.395,
+      "end": 67.724,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "an",
+      "start": 67.737,
+      "end": 67.855,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "X-ray",
+      "start": 67.869,
+      "end": 68.224,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "telescope",
+      "start": 68.237,
+      "end": 68.882,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "to",
+      "start": 68.895,
+      "end": 68.974,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "hear",
+      "start": 68.987,
+      "end": 69.29,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "its",
+      "start": 69.303,
+      "end": 69.461,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "deepest",
+      "start": 69.474,
+      "end": 69.882,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "note",
+      "start": 69.895,
+      "end": 70.303,
+      "emphasis": true
+    }
+  ],
+  "sfx_applied": [
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 0.05,
+      "gain_db": -25.5
+    },
+    {
+      "sfx_name": "subterranean_gate_boom",
+      "time_s": 24.993,
+      "gain_db": -26.0
+    },
+    {
+      "sfx_name": "cavern_heartbeat_pulse",
+      "time_s": 38.983,
+      "gain_db": -26.0
+    },
+    {
+      "sfx_name": "glacial_sub_drop",
+      "time_s": 56.407,
+      "gain_db": -25.0
+    },
+    {
+      "sfx_name": "cavern_heartbeat_pulse",
+      "time_s": 66.827,
+      "gain_db": -26.0
+    }
+  ],
+  "diegetic_nat_sound_active": true,
+  "audio_layers_exported": [
+    "layer_1_narration",
+    "layer_2_music",
+    "layer_3_ambience",
+    "layer_4_natural_sounds",
+    "layer_5_cinematic_sfx"
+  ],
+  "audio_diagnostics": {
+    "integrated_lufs": -16.0,
+    "loudness_range_lra_lu": 1.9,
+    "true_peak_dbtp": -1.5,
+    "speech_crest_factor_db": 14.5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -1.51
+  }
+}

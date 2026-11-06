@@ -904,6 +904,54 @@ def compute_visual_coverage_metrics(
         for cls_name, sec in info["class_duration_s"].items():
             class_totals_s[cls_name] = class_totals_s.get(cls_name, 0.0) + float(sec)
 
+    mechanism_overlay_s = 0.0
+    reclassified_overlay_s = 0.0
+    if manifest is not None and getattr(manifest, "mechanism_overlays", None):
+        reclassified_intervals: list[dict[str, Any]] = []
+        qa_path = Path(manifest.output_dir) / "mechanism_overlay_qa.json"
+        loaded_qa = False
+        if qa_path.exists():
+            try:
+                qa_data = json.loads(qa_path.read_text(encoding="utf-8"))
+                if qa_data.get("slug") in (None, getattr(manifest, "slug", None)):
+                    mechanism_overlay_s = float(qa_data.get("total_overlay_duration_s") or 0.0)
+                    reclassified_intervals = list(qa_data.get("reclassified_infographic_intervals") or [])
+                    loaded_qa = True
+            except Exception:
+                loaded_qa = False
+        if not loaded_qa:
+            mechanism_overlay_s = sum(float(ov.hold_s) for ov in manifest.mechanism_overlays)
+
+        for iv in reclassified_intervals:
+            iv_a = float(iv.get("start_s") or 0.0)
+            iv_b = float(iv.get("end_s") or 0.0)
+            if iv_b <= iv_a:
+                continue
+            for s, info in zip(timed_shots, shot_classifications):
+                s_a = float(getattr(s, "start_s", 0.0))
+                s_b = float(getattr(s, "end_s", s_a + float(info["duration_s"])))
+                ov_sec = max(0.0, min(s_b, iv_b) - max(s_a, iv_a))
+                if ov_sec <= 0.0:
+                    continue
+                rem = ov_sec
+                info_cls_map = dict(info["class_duration_s"])
+                for cls_k in list(info_cls_map.keys()):
+                    if cls_k == SourceMediaClass.INFOGRAPHIC.value or rem <= 1e-6:
+                        continue
+                    take = min(rem, max(0.0, float(info_cls_map[cls_k])))
+                    if take > 0.0:
+                        info_cls_map[cls_k] = round(float(info_cls_map[cls_k]) - take, 4)
+                        class_totals_s[cls_k] = max(0.0, class_totals_s.get(cls_k, 0.0) - take)
+                        info_cls_map[SourceMediaClass.INFOGRAPHIC.value] = round(
+                            float(info_cls_map.get(SourceMediaClass.INFOGRAPHIC.value, 0.0)) + take, 4
+                        )
+                        class_totals_s[SourceMediaClass.INFOGRAPHIC.value] = (
+                            class_totals_s.get(SourceMediaClass.INFOGRAPHIC.value, 0.0) + take
+                        )
+                        reclassified_overlay_s += take
+                        rem -= take
+                info["class_duration_s"] = info_cls_map
+
     denom = max(1e-6, total_dur)
     genuine_moving_s = sum(class_totals_s[c] for c in GENUINE_MOVING_CLASSES)
     meaningful_action_s = sum(class_totals_s[c] for c in MEANINGFUL_ACTION_CLASSES)
@@ -946,6 +994,11 @@ def compute_visual_coverage_metrics(
         "scientific_visualization_pct": round(100.0 * sci_viz_s / denom, 2),
         "infographic_s": round(class_totals_s[SourceMediaClass.INFOGRAPHIC.value], 3),
         "real_animation_s": round(class_totals_s[SourceMediaClass.REAL_ANIMATION.value], 3),
+        # Studio v9 Alpha Mechanism Overlays (preserve REAL_VIDEO_* when alpha <= 35%)
+        "mechanism_overlay_s": round(mechanism_overlay_s, 3),
+        "mechanism_overlay_ratio": round(mechanism_overlay_s / denom, 4),
+        "mechanism_overlay_pct": round(100.0 * mechanism_overlay_s / denom, 2),
+        "reclassified_overlay_infographic_s": round(reclassified_overlay_s, 3),
         # Non-documentary / staged disclosures
         "ai_generated_s": round(ai_gen_s, 3),
         "reenactment_s": round(reenact_s, 3),

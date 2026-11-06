@@ -1,0 +1,40 @@
+{
+  "state_version": "9.0",
+  "slug": "perseus-black-hole-sound-v9-overlay-test",
+  "stages": {
+    "render-overlays": {
+      "status": "passed",
+      "started_at": "2026-11-06T04:47:13.940+00:00",
+      "finished_at": "2026-11-06T04:47:14.820+00:00",
+      "detail": "completed in 0.9s",
+      "duration_s": 0.88
+    },
+    "render": {
+      "status": "passed",
+      "started_at": "2026-11-06T05:00:33.914+00:00",
+      "finished_at": "2026-11-06T05:13:32.538+00:00",
+      "detail": "completed in 778.6s",
+      "duration_s": 778.624
+    },
+    "qa-6pillar": {
+      "status": "failed",
+      "started_at": "2026-11-06T05:13:33.175+00:00",
+      "finished_at": "2026-11-06T05:14:35.959+00:00",
+      "detail": "Exit: ",
+      "duration_s": 62.784
+    },
+    "gate:qa_six_pillar": {
+      "status": "blocked",
+      "finished_at": "2026-11-06T05:14:35.950+00:00",
+      "detail": "technical=PASS creative=FAIL"
+    }
+  },
+  "gates": {
+    "qa_six_pillar": {
+      "status": "blocked",
+      "detail": "technical=PASS creative=FAIL",
+      "updated_at": "2026-11-06T05:14:35.950+00:00"
+    }
+  },
+  "updated_at": "2026-11-06T05:14:35.959+00:00"
+}
