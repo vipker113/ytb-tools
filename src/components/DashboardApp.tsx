@@ -2,8 +2,8 @@
 
 import {
   BarChart3,
+  Camera,
   ChevronDown,
-  Clapperboard,
   Film,
   Lightbulb,
   Menu,
@@ -11,7 +11,6 @@ import {
   PanelLeftOpen,
   RefreshCw,
   Settings,
-  Users,
   X,
 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -19,19 +18,17 @@ import { INITIAL_DEMO_STORE } from "@/lib/demo-data";
 import { formatCompact } from "@/lib/format";
 import type { AppSettings, SavedIdea, StoreData } from "@/lib/types";
 import { AnalyticsStudioTab } from "./AnalyticsStudioTab";
-import { CrossSubTab } from "./CrossSubTab";
 import { IdeasAndCompetitorsTab } from "./IdeasAndCompetitorsTab";
 import { MacStudioReviewTab } from "./MacStudioReviewTab";
+import { ReupBeautyStudioTab } from "./ReupBeautyStudioTab";
 import { SettingsTab } from "./SettingsTab";
-import { StudioBacklotTab } from "./StudioBacklotTab";
 import { YoutubeIcon } from "./YoutubeIcon";
 
 type ActiveTab =
   | "mac_review"
-  | "backlot"
+  | "reup_beauty"
   | "analytics"
   | "ideas"
-  | "cross_sub"
   | "settings";
 
 export function DashboardApp() {
@@ -48,10 +45,6 @@ export function DashboardApp() {
     unposted: number;
     total: number;
   }>({ unposted: 0, total: 0 });
-  const [backlotCounts, setBacklotCounts] = useState<{
-    pending: number;
-    total: number;
-  }>({ pending: 0, total: 0 });
   const [keywordSeedForIdeas, setKeywordSeedForIdeas] = useState<string | null>(
     null
   );
@@ -142,6 +135,10 @@ export function DashboardApp() {
 
           if (typeof window !== "undefined") {
             const params = new URLSearchParams(window.location.search);
+            const requestedTab = params.get("tab");
+            if (requestedTab === "reup" || requestedTab === "reup_beauty") {
+              setActiveTab("reup_beauty");
+            }
             const oauthStatus = params.get("oauth");
             if (oauthStatus === "connected") {
               showToast(
@@ -239,11 +236,6 @@ export function DashboardApp() {
     store.myChannels.find((c) => c.id === store.activeChannelId) ||
     store.myChannels[0];
 
-  const totalOutliersCount = store.competitors.reduce(
-    (sum, c) => sum + c.videos.filter((v) => v.outlierScore >= 2).length,
-    0
-  );
-
   const realBacklogCount =
     activeChannel && !activeChannel.isDemo
       ? store.ideas.filter(
@@ -262,7 +254,7 @@ export function DashboardApp() {
     {
       id: "mac_review",
       label: "Phòng Duyệt & Đăng",
-      subtitle: "Review 9:16, AI SEO Diff & Đăng",
+      subtitle: "1 Video + 3 Thumbnail Mẫu & Đăng",
       badge:
         macCounts.unposted > 0
           ? `${macCounts.unposted} mới`
@@ -272,16 +264,11 @@ export function DashboardApp() {
       icon: Film,
     },
     {
-      id: "backlot",
-      label: "Studio Backlot",
-      subtitle: "Filmstrip 3-frame & Khóa Storyboard",
-      badge:
-        backlotCounts.pending > 0
-          ? `${backlotCounts.pending} chờ`
-          : backlotCounts.total > 0
-          ? backlotCounts.total
-          : "v9",
-      icon: Clapperboard,
+      id: "reup_beauty",
+      label: "Cắt Thumb & Tag Reup",
+      subtitle: "Lọc Khung Đẹp HD & SEO Đa Ngôn Ngữ",
+      badge: "HD",
+      icon: Camera,
     },
     {
       id: "analytics",
@@ -294,31 +281,10 @@ export function DashboardApp() {
     },
     {
       id: "ideas",
-      label: "Ý Tưởng & Đối Thủ",
-      subtitle: "AI Chủ đề, Outlier & Từ khóa Mỹ",
-      badge:
-        realBacklogCount > 0
-          ? `${realBacklogCount} backlog`
-          : totalOutliersCount > 0
-          ? totalOutliersCount
-          : undefined,
+      label: "Ý Tưởng & Từ Khóa",
+      subtitle: "AI Chủ đề, Kịch bản & Từ khóa Mỹ",
+      badge: realBacklogCount > 0 ? `${realBacklogCount} backlog` : undefined,
       icon: Lightbulb,
-    },
-    {
-      id: "cross_sub",
-      label: "Sub Chéo & Giao Lưu",
-      subtitle: "Đối soát OAuth & Lọc cùng ngách",
-      badge: (() => {
-        const list = store.crossSubPartners || [];
-        const pending = list.filter(
-          (p) =>
-            p.status === "waiting_their_sub" || p.status === "need_my_sub"
-        ).length;
-        if (pending > 0) return `${pending} chờ`;
-        if (list.length > 0) return list.length;
-        return undefined;
-      })(),
-      icon: Users,
     },
     {
       id: "settings",
@@ -710,17 +676,12 @@ export function DashboardApp() {
                 />
               )}
 
-              {/* TAB #1B: STUDIO BACKLOT v9 (PRE-RENDER STORYBOARD FILMSTRIP & APPROVAL GATE) */}
-              {activeTab === "backlot" && (
-                <StudioBacklotTab
+              {/* TAB #1B: STANDALONE REUP BEAUTY HD THUMBNAIL & MULTI-LANGUAGE SEO STUDIO */}
+              {activeTab === "reup_beauty" && (
+                <ReupBeautyStudioTab
+                  channelHandle={cleanHandle}
+                  hasGeminiKey={Boolean(store.settings.geminiApiKey)}
                   onNotify={showToast}
-                  onPendingCountChange={(pending, total) => {
-                    setBacklotCounts((prev) =>
-                      prev.pending === pending && prev.total === total
-                        ? prev
-                        : { pending, total }
-                    );
-                  }}
                 />
               )}
 
@@ -778,13 +739,11 @@ export function DashboardApp() {
                 />
               )}
 
-              {/* TAB #3: AI TOPIC SUGGESTIONS + OUTLIER HUNTER + US KEYWORD EXPLORER */}
+              {/* TAB #3: AI TOPIC SUGGESTIONS + US KEYWORD EXPLORER */}
               {activeTab === "ideas" && (
                 <IdeasAndCompetitorsTab
                   channel={activeChannel}
-                  competitors={store.competitors}
                   ideas={store.ideas}
-                  hasYoutubeKey={Boolean(store.settings.youtubeApiKey)}
                   initialKeywordQuery={keywordSeedForIdeas}
                   onConsumeInitialKeyword={() => setKeywordSeedForIdeas(null)}
                   onAddIdea={async (idea: Partial<SavedIdea>) => {
@@ -801,38 +760,12 @@ export function DashboardApp() {
                     await postStateAction({ action: "deleteIdea", ideaId });
                     showToast("Đã xóa ý tưởng khỏi Backlog.");
                   }}
-                  onAddCompetitor={(query, niche) =>
-                    handleAddChannelOrCompetitor("competitor", query, niche)
-                  }
-                  onRemoveCompetitor={async (competitorId) => {
-                    await postStateAction({
-                      action: "removeCompetitor",
-                      competitorId,
-                    });
-                    showToast("Đã gỡ kênh đối thủ.");
-                  }}
-                  onGoToSettings={() => setActiveTab("settings")}
                   defaultGeminiModel={displayModel}
                   onNotify={showToast}
                 />
               )}
 
-              {/* TAB #4: CROSS-SUB CRM, OAUTH AUDIT & SAME-NICHE US PEER FINDER */}
-              {activeTab === "cross_sub" && (
-                <CrossSubTab
-                  channel={activeChannel}
-                  partners={store.crossSubPartners || []}
-                  lastCrossSubAuditAt={store.lastCrossSubAuditAt}
-                  youtubeOAuth={store.youtubeOAuth}
-                  hasYoutubeKey={Boolean(store.settings.youtubeApiKey)}
-                  smartClicks={smartClicks}
-                  onStoreUpdate={(nextStore) => setStore(nextStore)}
-                  onGoToSettings={() => setActiveTab("settings")}
-                  onNotify={showToast}
-                />
-              )}
-
-              {/* TAB #5: SETTINGS, OAUTH 2.0 & API CONNECTIONS */}
+              {/* TAB #4: SETTINGS, OAUTH 2.0 & API CONNECTIONS */}
               {activeTab === "settings" && (
                 <SettingsTab
                   myChannels={store.myChannels}

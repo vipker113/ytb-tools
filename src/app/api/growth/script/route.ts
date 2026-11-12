@@ -56,18 +56,6 @@ async function buildLiveRetentionTelemetry(store: StoreData): Promise<{
     (v) => v.stayedToWatchPct !== null && v.stayedToWatchPct < 28
   );
 
-  const outlierExamples = (store.competitors || [])
-    .flatMap((c) => c.videos)
-    .filter((v) => v.outlierScore >= 2)
-    .sort((a, b) => b.outlierScore - a.outlierScore)
-    .slice(0, 8)
-    .map(
-      (v) =>
-        `- "${v.title}" by ${v.channelTitle} (${v.outlierScore.toFixed(
-          1
-        )}x channel average, ${v.views.toLocaleString("en-US")} views)`
-    );
-
   const lines: string[] = [];
   if (topWinners.length > 0) {
     lines.push(
@@ -99,11 +87,6 @@ async function buildLiveRetentionTelemetry(store: StoreData): Promise<{
         `- "${low.title}" (Only ${low.stayedToWatchPct}% stayed to watch — 90% swiped away in first 3s; avoid slow/technical openings without immediate visual shock!)`
       );
     }
-  }
-
-  if (outlierExamples.length > 0) {
-    lines.push("\nCOMPETITOR VIRAL OUTLIERS (PROVEN HIGH-DEMAND ANGLES):");
-    lines.push(...outlierExamples);
   }
 
   return {

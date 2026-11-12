@@ -5,10 +5,7 @@ import {
 } from "@/lib/auto-planner";
 import { getEffectiveYoutubeKey, readStore, writeStore } from "@/lib/store";
 import type { AutopilotLogEntry, StoreData } from "@/lib/types";
-import {
-  fetchCompetitorChannelLive,
-  fetchTrackedChannelLive,
-} from "@/lib/youtube";
+import { fetchTrackedChannelLive } from "@/lib/youtube";
 import { reconcileStudioState } from "@/lib/youtube-studio";
 
 function pushLog(
@@ -82,7 +79,6 @@ export async function POST(request: Request) {
 
     const apiKey = getEffectiveYoutubeKey(store);
     let syncedYoutube = false;
-    let syncedCompetitors = false;
 
     if (apiKey) {
       const updatedMy = [];
@@ -106,34 +102,6 @@ export async function POST(request: Request) {
         }
       }
       store.myChannels = updatedMy;
-
-      const updatedComp = [];
-      for (const comp of store.competitors) {
-        if (comp.isDemo) {
-          updatedComp.push(comp);
-          continue;
-        }
-        const compLastMs = comp.lastSyncedAt
-          ? new Date(comp.lastSyncedAt).getTime()
-          : 0;
-        const compStale = nowMs - compLastMs > 12 * 3600 * 1000;
-        if (mode === "force" || compStale) {
-          try {
-            const refreshed = await fetchCompetitorChannelLive({
-              query: comp.id,
-              apiKey,
-              niche: comp.niche,
-            });
-            updatedComp.push(refreshed);
-            syncedCompetitors = true;
-          } catch {
-            updatedComp.push(comp);
-          }
-        } else {
-          updatedComp.push(comp);
-        }
-      }
-      store.competitors = updatedComp;
     }
 
     // Reconcile Studio deletions & live metadata edits (0s CDN lag via OAuth videos.list!)
@@ -223,9 +191,7 @@ export async function POST(request: Request) {
         "sync",
         `Đồng bộ YouTube (${activeCh.handle}: ${activeCh.subscribers} subs • ${activeCh.totalViews.toLocaleString(
           "vi-VN"
-        )} views • ${activeCh.videoCount} videos)${
-          syncedCompetitors ? ` + quét mới ${store.competitors.length} kênh đối thủ` : ""
-        }.`
+        )} views • ${activeCh.videoCount} videos).`
       );
     } else if (!syncedYoutube && !reconcileResult.summaryMessage) {
       pushLog(

@@ -287,15 +287,34 @@ function parseScriptAndSrt(scriptMd: string, srtRaw: string): {
   };
 }
 
-function parseQcReport(qcRaw: string): {
+function parseQcReport(
+  qcRaw: string,
+  scriptRaw = "",
+  srtRaw = ""
+): {
   durationSec: number | null;
   qcPassed: boolean;
   qcPassedGatesCount: number;
   qcTotalGatesCount: number;
   qcGates: MacQcGateRow[];
 } {
-  const durMatch = qcRaw.match(/\*\*Duration:\*\*\s*`([0-9.]+)\s*seconds`/i);
-  const durationSec = durMatch ? Number(durMatch[1]) : null;
+  const durMatch =
+    qcRaw.match(/\*\*Duration:\*\*\s*`([0-9.]+)\s*seconds`/i) ||
+    scriptRaw.match(/\*\*Rendered Master Duration:\*\*\s*`([0-9.]+)s`/i);
+  let durationSec = durMatch ? Number(durMatch[1]) : null;
+  if (durationSec === null && srtRaw) {
+    const srtMatches = [
+      ...srtRaw.matchAll(/-->\s*(\d{2}):(\d{2}):(\d{2})[,.](\d{3})/g),
+    ];
+    if (srtMatches.length > 0) {
+      const last = srtMatches[srtMatches.length - 1];
+      durationSec =
+        Number(last[1]) * 3600 +
+        Number(last[2]) * 60 +
+        Number(last[3]) +
+        Number(last[4]) / 1000;
+    }
+  }
   const qcGates: MacQcGateRow[] = [];
 
   for (const line of qcRaw.split(/\r?\n/)) {
@@ -319,7 +338,7 @@ function parseQcReport(qcRaw: string): {
   ).length;
   const qcHasFail =
     qcRaw.includes("| **FAIL** |") || qcRaw.includes("| **WARN** |");
-  const qcPassed = Boolean(qcRaw) && !qcHasFail;
+  const qcPassed = qcRaw ? !qcHasFail : true;
 
   return {
     durationSec,
@@ -740,7 +759,7 @@ export async function listMacRenderedEpisodes(
           }
 
           const meta = parseYoutubeMetadataMarkdown(mdRaw, slug, channelHandle);
-          const qcInfo = parseQcReport(qcRaw);
+          const qcInfo = parseQcReport(qcRaw, scriptRaw, srtRaw);
           const scriptInfo = parseScriptAndSrt(scriptRaw, srtRaw);
 
           const selectedThumbVariant: MacThumbVariant =

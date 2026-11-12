@@ -1627,34 +1627,12 @@ export function MacStudioReviewTab({
               )}
             </div>
 
-            {/* Spoken Script, Subtitles & Technical QC Inspector */}
+            {/* Spoken Script & Subtitles Inspector */}
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900/80 p-4 sm:p-5 space-y-4">
               <div className="flex items-center justify-between gap-2 border-b border-zinc-800 pb-3">
-                <div className="inline-flex rounded-xl bg-zinc-950 p-1 border border-zinc-800">
-                  <button
-                    type="button"
-                    onClick={() => setInspectTab("script")}
-                    className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-bold transition cursor-pointer ${
-                      inspectTab === "script"
-                        ? "bg-zinc-800 text-white"
-                        : "text-zinc-400 hover:text-white"
-                    }`}
-                  >
-                    <FileText className="h-3.5 w-3.5 text-sky-400" />
-                    Lời Thoại & Nhịp Đọc ({selectedEp.wordCount} từ)
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setInspectTab("qc")}
-                    className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-bold transition cursor-pointer ${
-                      inspectTab === "qc"
-                        ? "bg-zinc-800 text-white"
-                        : "text-zinc-400 hover:text-white"
-                    }`}
-                  >
-                    <FileCheck2 className="h-3.5 w-3.5 text-emerald-400" />
-                    Báo Cáo QC & Contact Sheet
-                  </button>
+                <div className="inline-flex items-center gap-1.5 text-xs font-bold text-white">
+                  <FileText className="h-3.5 w-3.5 text-sky-400" />
+                  Lời Thoại & Nhịp Đọc ({selectedEp.wordCount} từ)
                 </div>
               </div>
 

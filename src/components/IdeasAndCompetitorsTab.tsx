@@ -8,7 +8,6 @@ import {
   Compass,
   Copy,
   ExternalLink,
-  Flame,
   Lightbulb,
   Plus,
   RefreshCw,
@@ -22,32 +21,24 @@ import type {
   AiSuggestedTopic,
   RetentionWinnerBenchmark,
 } from "@/app/api/growth/script/route";
-import { formatCompact, formatDuration, formatNumber } from "@/lib/format";
+import { formatCompact, formatDuration } from "@/lib/format";
 import type {
-  CompetitorChannel,
   KeywordAnalysisResult,
   SavedIdea,
   TrackedChannel,
-  VideoItem,
 } from "@/lib/types";
 import { GrowthEngineTab } from "./GrowthEngineTab";
-import { OutlierHunterTab } from "./OutlierHunterTab";
 
 interface IdeasAndCompetitorsTabProps {
   channel?: TrackedChannel;
-  competitors: CompetitorChannel[];
   ideas: SavedIdea[];
-  hasYoutubeKey: boolean;
   defaultGeminiModel?: string;
-  initialSubView?: "ai_backlog" | "script_builder" | "outliers" | "keywords";
+  initialSubView?: "ai_backlog" | "script_builder" | "keywords";
   initialKeywordQuery?: string | null;
   onConsumeInitialKeyword?: () => void;
   onAddIdea: (idea: Partial<SavedIdea>) => Promise<void>;
   onUpdateIdea: (ideaId: string, patch: Partial<SavedIdea>) => Promise<void>;
   onDeleteIdea: (ideaId: string) => Promise<void>;
-  onAddCompetitor: (query: string, niche: string) => Promise<void>;
-  onRemoveCompetitor: (competitorId: string) => Promise<void>;
-  onGoToSettings: () => void;
   onNotify: (msg: string) => void;
 }
 
@@ -86,9 +77,7 @@ function buildAntigravityBriefPrompt(params: {
 
 export function IdeasAndCompetitorsTab({
   channel,
-  competitors,
   ideas,
-  hasYoutubeKey,
   defaultGeminiModel = "gemini-3.6-flash",
   initialSubView = "ai_backlog",
   initialKeywordQuery,
@@ -96,13 +85,10 @@ export function IdeasAndCompetitorsTab({
   onAddIdea,
   onUpdateIdea,
   onDeleteIdea,
-  onAddCompetitor,
-  onRemoveCompetitor,
-  onGoToSettings,
   onNotify,
 }: IdeasAndCompetitorsTabProps) {
   const [subView, setSubView] = useState<
-    "ai_backlog" | "script_builder" | "outliers" | "keywords"
+    "ai_backlog" | "script_builder" | "keywords"
   >(initialKeywordQuery ? "keywords" : initialSubView);
 
   // AI Topic Suggestions state
@@ -135,11 +121,6 @@ export function IdeasAndCompetitorsTab({
   const [kwLoading, setKwLoading] = useState(false);
   const [kwError, setKwError] = useState<string | null>(null);
   const [kwResult, setKwResult] = useState<KeywordAnalysisResult | null>(null);
-
-  const totalOutliers = competitors.reduce(
-    (sum, c) => sum + c.videos.filter((v) => v.outlierScore >= 2).length,
-    0
-  );
 
   const copyText = (id: string, val: string) => {
     navigator.clipboard.writeText(val);
@@ -288,19 +269,6 @@ export function IdeasAndCompetitorsTab({
 
           <button
             type="button"
-            onClick={() => setSubView("outliers")}
-            className={`inline-flex items-center gap-2 rounded-lg px-4 py-2 text-xs font-bold transition cursor-pointer ${
-              subView === "outliers"
-                ? "bg-red-600 text-white shadow"
-                : "text-zinc-400 hover:text-white"
-            }`}
-          >
-            <Flame className="h-3.5 w-3.5" />
-            Săn Video Outlier Đối Thủ ({totalOutliers})
-          </button>
-
-          <button
-            type="button"
             onClick={() => setSubView("keywords")}
             className={`inline-flex items-center gap-2 rounded-lg px-4 py-2 text-xs font-bold transition cursor-pointer ${
               subView === "keywords"
@@ -326,7 +294,7 @@ export function IdeasAndCompetitorsTab({
                   Trợ Lý Sáng Tạo Chủ Đề Documentary (Dựa Trên Video Thắng Của Kênh)
                 </div>
                 <h2 className="text-base font-extrabold text-white">
-                  Phân tích các tập giữ chân tốt nhất của {channel?.title || "Proof of Wonder"} & đối thủ để đề xuất 5 chủ đề mới
+                  Phân tích các tập giữ chân tốt nhất của {channel?.title || "Proof of Wonder"} để đề xuất 5 chủ đề mới
                 </h2>
               </div>
 
@@ -568,7 +536,7 @@ export function IdeasAndCompetitorsTab({
 
             {displayedIdeas.length === 0 ? (
               <div className="rounded-xl border border-zinc-800/70 bg-zinc-950/50 p-8 text-center text-xs text-zinc-400">
-                Kho Backlog đang trống. Hãy bấm &ldquo;Gợi Ý 5 Chủ Đề Mới&rdquo; ở trên hoặc lưu từ tab Săn Outlier Đối Thủ!
+                Kho Backlog đang trống. Hãy bấm &ldquo;Gợi Ý 5 Chủ Đề Mới&rdquo; ở trên để tạo chủ đề mới!
               </div>
             ) : (
               <div className="space-y-2.5">
@@ -746,44 +714,6 @@ export function IdeasAndCompetitorsTab({
             await onAddIdea(idea);
             onNotify("✨ Đã lưu trọn bộ kịch bản giữ chân vào Backlog!");
           }}
-        />
-      )}
-
-      {/* VIEW 2: COMPETITOR OUTLIER HUNTER */}
-      {subView === "outliers" && (
-        <OutlierHunterTab
-          competitors={competitors}
-          hasYoutubeKey={hasYoutubeKey}
-          onAddCompetitor={onAddCompetitor}
-          onRemoveCompetitor={onRemoveCompetitor}
-          onSaveIdeaFromVideo={async (idea) => {
-            await onAddIdea(idea);
-            onNotify("Đã lưu video Outlier vào Backlog!");
-          }}
-          onAuditCompetitorVideo={(vid: VideoItem) => {
-            const kw =
-              vid.tags[0] ||
-              vid.title
-                .replace(/#\S+/g, "")
-                .split(/\s+/)
-                .slice(0, 4)
-                .join(" ");
-            setKwInput(kw);
-            setSubView("keywords");
-            void runKeywordAnalysis(kw, "US");
-          }}
-          onBuildViralScriptFromVideo={(vid: VideoItem) => {
-            const clean = vid.title.replace(/#\S+/g, "").trim();
-            setScriptSeed({
-              topic: clean,
-              sourceTitle: `${clean} (${vid.channelTitle} • ${vid.outlierScore.toFixed(
-                1
-              )}x Outlier • ${formatNumber(vid.views)} views)`,
-              autoRun: true,
-            });
-            setSubView("script_builder");
-          }}
-          onGoToSettings={onGoToSettings}
         />
       )}
 
