@@ -343,21 +343,21 @@
           "sampled_frames": 36,
           "width": 1920,
           "height": 1080,
-          "raw_mean_diff": 7.454,
-          "raw_median_diff": 7.433,
-          "affine_compensated_diff": 2.725,
-          "residual_to_raw_ratio": 0.367,
-          "p90_local_flow_residual_px": 0.419,
+          "raw_mean_diff": 6.119,
+          "raw_median_diff": 6.311,
+          "affine_compensated_diff": 2.388,
+          "residual_to_raw_ratio": 0.378,
+          "p90_local_flow_residual_px": 0.196,
           "independent_motion_patch_ratio": 0.0,
-          "flat_graphic_pixel_ratio": 0.146,
-          "grid_box_edge_score": 1.584,
+          "flat_graphic_pixel_ratio": 0.097,
+          "grid_box_edge_score": 2.049,
           "is_frozen_static": false,
           "is_baked_animated_still": true,
           "is_dense_presentation_graphic": false,
           "has_localized_action_motion": false,
           "is_real_moving_footage": false,
           "inferred_media_class": "ANIMATED_STILL",
-          "diagnostic_note": "Artificial pan/zoom over static image detected (raw_diff=7.43, compensated_diff=2.72, ratio=0.37, p90_flow_res=0.42px)."
+          "diagnostic_note": "Artificial pan/zoom over static image detected (raw_diff=6.31, compensated_diff=2.39, ratio=0.38, p90_flow_res=0.20px)."
         }
       },
       {
@@ -591,7 +591,7 @@
   },
   "errors": [],
   "warnings": [
-    "[S08:ifremer_biobaz_sampling_81111.webm] Reclassified from video to 'ANIMATED_STILL' (Artificial pan/zoom over static image detected (raw_diff=7.64, compensated_diff=2.78, ratio=0.36, p90_flow_res=0.43px).).",
+    "[S08:ifremer_biobaz_sampling_81111.webm] Reclassified from video to 'ANIMATED_STILL' (Artificial pan/zoom over static image detected (raw_diff=6.37, compensated_diff=2.39, ratio=0.38, p90_flow_res=0.19px).).",
     "[S09] Dissolve duration 0.00s outside recommended 0.45\u20130.95s.",
     "Moving footage ratio is 88.3% (goal >= 90% where authentic moving material is available)."
   ],

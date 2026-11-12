@@ -1,0 +1,72 @@
+{
+  "slug": "deep-ocean-black-smokers-v8",
+  "primary_title": "Why Blind Shrimp Swarm 360\u00b0C Underwater Chimneys",
+  "concepts_count": 3,
+  "comparison_sheet_jpg": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\thumbnail_concepts_comparison_sheet.jpg",
+  "ctr_prediction_disclaimer": "Visual sharpness and subject-separation scores verify small-screen mobile legibility only. They do NOT predict real YouTube click-through or swipe-away rates; populate `actual_analytics_outcome` via `analytics_learning.py` once real YouTube Studio impressions/views are available.",
+  "concepts": [
+    {
+      "concept_id": "A",
+      "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\thumbnail_concept_A.jpg",
+      "source_asset": "ifremer_active_black_smoker_81313.webm",
+      "matches_opening_scene_asset": true,
+      "headline_text": "360\u00b0C WATER|WON'T BOIL",
+      "headline_word_count": 4,
+      "kicker_text": "2 MILES UNDERWATER",
+      "concept_rationale": "High-contrast jet-black mineral plume roaring out of a glowing mineral chimney in pitch-black ocean water.",
+      "size_kb": 634.9,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "ifremer_active_black_smoker_81313.webm",
+        "sharpness_score": 2.1,
+        "subject_separation_score": 51.4,
+        "combined_score": 29.22,
+        "recommended_cx": 0.481,
+        "recommended_cy": 0.5539
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "B",
+      "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\thumbnail_concept_B.jpg",
+      "source_asset": "ifremer_rimicaris_swarm_81103.webm",
+      "matches_opening_scene_asset": false,
+      "headline_text": "NO EYES|360\u00b0C HEAT",
+      "headline_word_count": 4,
+      "kicker_text": "2,500 SHRIMP PER m\u00b2",
+      "concept_rationale": "Wall-to-wall living carpet of pale eyeless Rimicaris shrimp swarming beside black hydrothermal smoke.",
+      "size_kb": 848.4,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "ifremer_rimicaris_swarm_81103.webm",
+        "sharpness_score": 1.83,
+        "subject_separation_score": 37.2,
+        "combined_score": 21.28,
+        "recommended_cx": 0.4943,
+        "recommended_cy": 0.4673
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "C",
+      "path": "C:\\Users\\Admin\\Desktop\\code\\science-knowledge\\youtube-shorts-channel\\output\\hidden-earth\\deep-ocean-black-smokers-v8\\thumbnail_concept_C.jpg",
+      "source_asset": "ifremer_rov_temp_probe_81312.webm",
+      "matches_opening_scene_asset": false,
+      "headline_text": "MELTS LEAD|UNDERWATER",
+      "headline_word_count": 3,
+      "kicker_text": "ROV LIVE PROBE",
+      "concept_rationale": "Robotic titanium manipulator arm inserting a steel thermometer probe directly into a roaring black smoker.",
+      "size_kb": 533.9,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "ifremer_rov_temp_probe_81312.webm",
+        "sharpness_score": 0.85,
+        "subject_separation_score": 29.73,
+        "combined_score": 16.74,
+        "recommended_cx": 0.4485,
+        "recommended_cy": 0.4543
+      },
+      "actual_analytics_outcome": null
+    }
+  ]
+}
