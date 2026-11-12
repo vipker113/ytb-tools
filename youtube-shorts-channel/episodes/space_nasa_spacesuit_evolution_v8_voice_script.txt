@@ -1,0 +1,80 @@
+# Proof of Wonder — Studio v8.0 Annotated Voice Script
+# Episode: space-nasa-spacesuit-evolution-v8
+# Title: Spacesuit Evolution 65 Years: From Silver Cocoons to NASA's Moon Armor
+
+[SEG: N01]
+"Look closely at America's first spacesuit in nineteen sixty-one. Wrapped in mirror-bright aluminized nylon, it was only an emergency pressure cocoon. Inflated in vacuum, its fabric joints locked so stiff an astronaut could barely bend an elbow."
+
+[DELIVERY: HOOK]
+[TONE: quiet_awe]
+[INTENSITY: 0.68]
+[PITCH DIRECTION: steady]
+[RHYTHM: crisp]
+[EMPHASIS: "nineteen sixty-one", "mirror-bright aluminized nylon", "barely bend an elbow"]
+[PAUSE AFTER: 320ms]
+
+[SEG: N02]
+"Four years later, Project Gemini pushed astronauts outside into raw vacuum. Tethered by a twenty-five-foot golden umbilical hose, Ed White floated over Earth firing a handheld gas gun. Yet internal pressure ballooned soft Gemini suits like car tires, nearly exhausting crews squeezing back inside."
+
+[DELIVERY: MEASURED EVIDENCE]
+[TONE: grounded_authority]
+[INTENSITY: 0.58]
+[PITCH DIRECTION: rising]
+[RHYTHM: measured]
+[EMPHASIS: "twenty-five-foot golden umbilical", "floated over Earth", "like car tires"]
+[PAUSE AFTER: 300ms]
+
+[SEG: N03]
+"Walking on the Moon in nineteen sixty-nine demanded a wearable twenty-one-layer spacecraft. Beneath fireproof white Beta-cloth, stacked Mylar and ballistic armor stopped tiny space rocks at eight kilometers per second. A thin gold-plated visor reflected blinding, unfiltered sunlight."
+
+[DELIVERY: SCIENTIFIC WONDER]
+[TONE: intrigued_wonder]
+[INTENSITY: 0.58]
+[PITCH DIRECTION: steady]
+[RHYTHM: fluid]
+[EMPHASIS: "twenty-one-layer spacecraft", "eight kilometers per second", "gold-plated visor"]
+[PAUSE AFTER: 300ms]
+
+[SEG: N04]
+"On each astronaut's back rode a life-support pack pumping chilled water through tubes against their skin. Still, Apollo's pressurized fabric torso fought every bend—forcing crews to bunny-hop and topple whenever they reached down for rocks."
+
+[DELIVERY: MEASURED EVIDENCE]
+[TONE: observational_clarity]
+[INTENSITY: 0.58]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "chilled water through tubes", "fought every bend", "bunny-hop and topple"]
+[PAUSE AFTER: 320ms]
+
+[SEG: N05]
+"In nineteen eighty-four, NASA rebuilt the upper body around a rigid fiberglass shell. Snapped onto a twenty-four-thruster nitrogen jetpack, Bruce McCandless flew untethered one hundred meters from Challenger. He became a standalone human satellite above Earth."
+
+[DELIVERY: ESCALATION]
+[TONE: monumental_scale]
+[INTENSITY: 0.72]
+[PITCH DIRECTION: rising]
+[RHYTHM: deliberate]
+[EMPHASIS: "rigid fiberglass shell", "twenty-four-thruster nitrogen jetpack", "untethered one hundred meters"]
+[PAUSE AFTER: 340ms]
+
+[SEG: N06]
+"Now for twenty twenty-six, Artemis lunar suits replace stiff fabric bends with sealed metal bearings. Astronauts step straight through a rear-entry hatch on the backpack, then twist and kneel effortlessly across rocky craters."
+
+[DELIVERY: SCIENTIFIC WONDER]
+[TONE: crisp_precision]
+[INTENSITY: 0.62]
+[PITCH DIRECTION: steady]
+[RHYTHM: fluid]
+[EMPHASIS: "sealed metal bearings", "rear-entry hatch", "twist and kneel effortlessly"]
+[PAUSE AFTER: 300ms]
+
+[SEG: N07]
+"Glass-sharp lunar dust remains NASA's toughest enemy, chewing at metal seals and joints. Yet sixty-five years after Mercury's silver cocoon, dust-hardened Artemis suits are built to work deep inside the Moon's frozen southern shadows."
+
+[DELIVERY: EMOTIONAL REFLECTION]
+[TONE: resonant_payoff]
+[INTENSITY: 0.68]
+[PITCH DIRECTION: falling]
+[RHYTHM: deliberate]
+[EMPHASIS: "remains NASA's toughest enemy", "sixty-five years", "frozen southern shadows"]
+[PAUSE AFTER: 420ms]

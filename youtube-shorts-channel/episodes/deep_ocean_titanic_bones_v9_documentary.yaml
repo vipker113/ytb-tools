@@ -1,0 +1,1001 @@
+manifest_version: "9.0"
+script_version: "v9.0.0"
+subtitle_version: "v9.0.0"
+channel_name: "Proof of Wonder"
+playlist: "Hidden Earth"
+slug: "titanic-vanished-skeletons-v9"
+topic: "Why Every Human Skeleton Vanished From the Titanic Wreck at 3,800 m While Pairs of Vegetable-Tanned Leather Shoes Remain (Deep-Sea Scavenging, 380-Atmosphere Mineral-Undersaturated Seawater, Acid-Secreting Marine Microbes & Tannic-Acid Collagen Cross-Linking)"
+
+style_profile: "deep_ocean_exploration"
+style_overrides:
+  sound_design:
+    scene_audio_profile: "scientific_discovery"
+    enable_diegetic_nat_sound: false
+  asset_selection:
+    target_moving_footage_ratio: 0.90
+    target_genuine_moving_footage_ratio: 0.90
+    target_meaningful_action_footage_ratio: 0.72
+    max_static_image_ratio: 0.05
+    max_scientific_visualization_ratio: 0.05
+    min_human_interaction_shots: 2
+  pacing:
+    min_shot_duration_s: 2.2
+  subtitles:
+    style: "cinema_boxless"
+
+voice_input_mode: "directed_tts"
+voice_direction_profile: "mysterious_discovery"
+voice: "en-GB-RyanNeural"
+annotated_voice_script_file: "episodes/titanic_bones_v9_voice_script.txt"
+opening_hook_type: "paradox"
+adaptive_audio_profile: "immersive_exploration"
+
+primary_title: "Why Zero Human Skeletons Remain at the Titanic Wreck"
+alternative_title: "3,800 m Down: Why Titanic's Shoes Survived Bone"
+
+youtube_description: |
+  Nearly four kilometers beneath the North Atlantic (~3,800 meters / 12,500 feet), robotic surveys of the RMS Titanic debris field photographed leather boots and shoes still resting in matched pairs where victims settled—yet across the entire exposed wreck and seafloor, cameras have never found a single human bone.
+
+  Deep-sea taphonomy explains this haunting contrast. Within weeks of sinking, abyssal scavengers strip exposed soft tissue. At 3,800 meters—under roughly 380 atmospheres of hydrostatic pressure in near-freezing (1–2°C), mineral-undersaturated deep water—exposed calcium-phosphate bone mineral (hydroxyapatite) is gradually dissolved by seawater chemistry and acid-secreting marine bone-degrading microbes and organisms over decades. By contrast, early-20th-century bootmakers cured cowhide in oak-bark tannic acid, chemically cross-linking collagen fibers into a rot-resistant polymer that marine bacteria cannot digest. Oceanographers note that sealed, oxygen-starved interior compartments deep inside Titanic's hull could theoretically still shelter isolated fragments from scavengers and circulating currents.
+
+  Media Attribution: NOAA Ocean Exploration / Institute for Exploration / University of Rhode Island — Return to Titanic 2004, Okeanos Explorer & Orpheus Expeditions (Public Domain); Wikimedia Commons contributors — Traditional Vegetable Leather Tannery (CC0 1.0) & LVR-Institut für Landeskunde und Regionalgeschichte Leather Craftsmanship (CC BY 3.0).
+
+hashtags:
+  - "#Titanic"
+  - "#DeepOcean"
+  - "#OceanScience"
+  - "#MarineArchaeology"
+  - "#HiddenEarth"
+  - "#ProofOfWonder"
+
+target_duration_min_s: 45.0
+target_duration_max_s: 72.0
+ambience_preset: "deep_ocean"
+ambience_ducked_lufs_target: -27.0
+
+raw_assets_dir: "assets/raw_footage/deep_ocean_titanic_bones_v9"
+output_dir: "output/hidden-earth/titanic-vanished-skeletons-v9"
+
+visual_corpus_mode: "off"
+require_storyboard_approval: false
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N03"
+  scientific_caveat_seg_id: "N05"
+  min_real_evidence_ratio: 0.95
+
+hook_candidates:
+  - hook_id: "H1"
+    archetype: "paradox"
+    spoken_line: "Four kilometers underwater, leather shoes still rest beside the Titanic—so where did every human skeleton go?"
+    opening_visual: "Deep-sea ROV floodlights emerging out of pitch-black ocean water onto a towering sunken steel ship bow, followed immediately by NOAA's 2004 RMS Titanic bow photograph"
+    src_file: "noaa_amakasu_shipwreck_rov_1080p.mp4"
+    promise_fulfilled_in_seg_id: "N03"
+    rationale: "Opens at 0.00s on haunting moving 1080p ROV shipwreck spotlight action paired with a 17-word physical contradiction between surviving leather shoes and vanished human bone."
+  - hook_id: "H2"
+    archetype: "credible_mystery"
+    spoken_line: "Robotic cameras found matched pairs of boots around the Titanic—yet zero exposed human bones remain."
+    opening_visual: "ROV floodlights sweeping across corroded shipwreck debris half-buried in dark abyssal seafloor mud"
+    src_file: "noaa_ex2502_shipwreck_nevada_1080p.mp4"
+    promise_fulfilled_in_seg_id: "N03"
+    rationale: "Leads directly with the forensic seafloor evidence documented during Robert Ballard and NOAA's 2004 Return to Titanic survey."
+  - hook_id: "H3"
+    archetype: "strong_contrast"
+    spoken_line: "At thirty-eight hundred meters underwater, solid human bone dissolves—while century-old leather boots survive intact."
+    opening_visual: "Deep-sea scavenger shark patrolling dark abyssal mud juxtaposed with vegetable-tanned cowhide craftsmanship"
+    src_file: "noaa_abyssal_shark_1080p.mp4"
+    promise_fulfilled_in_seg_id: "N04"
+    rationale: "Highlights the counterintuitive material chemistry pitting calcium-phosphate bone against tannic-acid-cured leather."
+
+thumbnail_spec:
+  src_file: "noaa_2004_titanic_bow.jpg"
+  headline_text: "SHOES REMAIN|NO BONES?"
+  kicker_text: "TITANIC • 3,800 M DEEP"
+  cx: 0.48
+  cy: 0.48
+  zoom: 1.08
+  shadow_lift: 0.08
+  clarity_boost: true
+  text_position: "bottom"
+  accent_rgb: [255, 200, 72]
+
+thumbnail_concepts:
+  - concept_id: "A"
+    src_file: "noaa_2004_titanic_bow.jpg"
+    headline_text: "SHOES REMAIN|NO BONES?"
+    kicker_text: "TITANIC • 3,800 M DEEP"
+    cx: 0.48
+    cy: 0.48
+    zoom: 1.08
+    shadow_lift: 0.08
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 200, 72]
+    concept_rationale: "Authentic 2004 NOAA ROV Hercules photograph of the rusticle-draped RMS Titanic bow in pitch darkness delivers unmistakable instant recognition at 160x284 mobile size."
+  - concept_id: "B"
+    src_file: "noaa_amakasu_shipwreck_rov_1080p.mp4"
+    src_time_s: 26.8
+    headline_text: "ZERO SKELETONS|AT TITANIC"
+    kicker_text: "380 ATM DEEP SEA"
+    cx: 0.50
+    cy: 0.46
+    zoom: 1.12
+    shadow_lift: 0.12
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [108, 224, 255]
+    concept_rationale: "Ghostly sunken ship bow illuminated from below in dark abyssal blue water creates immediate forensic mystery."
+  - concept_id: "C"
+    src_file: "noaa_abyssal_shark_1080p.mp4"
+    src_time_s: 15.5
+    headline_text: "BONE DISSOLVES|LEATHER LASTS"
+    kicker_text: "ABYSSAL CHEMISTRY"
+    cx: 0.52
+    cy: 0.56
+    zoom: 1.10
+    shadow_lift: 0.08
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 148, 72]
+    concept_rationale: "Close-up deep-sea scavenger patrolling dark ocean mud anchors the biological and chemical taphonomy mechanism."
+
+narration_segments:
+  - seg_id: "N01"
+    text: "Four kilometers underwater, leather shoes still rest beside the Titanic—so where did every human skeleton go?"
+    delivery: "HOOK"
+    pace: "MODERATE"
+    energy: 4
+    pause_after_s: 0.38
+    emphasis_words: ["Four", "kilometers", "leather", "shoes", "Titanic", "human", "skeleton"]
+    narrative_beat: "opening_hook"
+    viewer_question: "How could fragile leather shoes survive on the ocean floor beside the Titanic when every human skeleton disappeared?"
+    new_information: "Nearly four kilometers underwater at the Titanic site, leather footwear remains intact while exposed human skeletons have completely vanished."
+    visual_reveal: "1080p ROV floodlights revealing a sunken steel bow in pitch-black water followed by NOAA's 2004 ROV Hercules photograph of the RMS Titanic prow."
+    emotional_direction: "Quiet forensic tension and haunting physical contradiction"
+    retention_purpose: "Stop scrolling at Frame 0 with an eerie 17-word paradox directly linking thumbnail, title, and authentic Titanic evidence"
+
+  - seg_id: "N02"
+    text: "Across the North Atlantic seafloor at thirty-eight hundred meters, robotic surveys photographed boots lying in matched pairs where victims settled. Yet across the entire exposed wreck and debris field, cameras have never found a single human bone."
+    delivery: "MEASURED EVIDENCE"
+    pace: "MODERATE"
+    energy: 3
+    pause_after_s: 0.40
+    emphasis_words: ["thirty-eight", "hundred", "meters", "matched", "pairs", "never", "single", "human", "bone"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "Why would pairs of boots stay side by side on the mud if no bones remain inside them?"
+    new_information: "Deep-sea robotic surveys at 3,800 meters documented matched pairs of boots resting side by side in the debris field, proving bodies settled there before all exposed bone disappeared."
+    visual_reveal: "Deep-sea ROV plunging into the dark Atlantic abyss, oceanographers deploying an autonomous deep-ocean vehicle, and ROV spotlights sweeping barren shipwreck debris on seafloor mud."
+    emotional_direction: "Measured archaeological authority building eerie intrigue"
+    retention_purpose: "Prove the boots were not random fallen cargo—they mark exact resting places stripped of every bone"
+
+  - seg_id: "N03"
+    text: "Deep-sea scavengers strip soft tissue within weeks, leaving bare skeletons exposed to freezing water under three hundred eighty atmospheres of pressure. At this mineral-starved depth, seawater and acid-secreting marine microbes slowly dissolve the calcium-phosphate crystals inside bone until nothing remains."
+    delivery: "SURPRISED BUT CONTROLLED"
+    pace: "MODERATE"
+    energy: 3
+    pause_after_s: 0.42
+    emphasis_words: ["scavengers", "strip", "three", "hundred", "eighty", "atmospheres", "acid-secreting", "calcium-phosphate", "dissolve"]
+    narrative_beat: "escalation"
+    viewer_question: "If freezing, high-pressure seawater and acid-secreting microbes dissolve solid bone, why didn't they destroy leather shoes too?"
+    new_information: "Scavengers remove flesh within weeks; then 1–2°C mineral-undersaturated seawater at ~380 atm and acid-secreting bone-boring marine microbes dissolve hydroxyapatite (calcium-phosphate) bone matrix over decades."
+    visual_reveal: "Long-legged abyssal isopod and sixgill scavenger shark patrolling dark mud, ROV manipulator sampling deep seafloor substrate, and marine organisms colonizing corroded shipwreck iron."
+    emotional_direction: "Controlled scientific marvel at the ocean's slow chemical erasure"
+    retention_purpose: "Deliver the mid-video taphonomic mechanism pivot backed by a 380-atmosphere hydrostatic pressure callout"
+
+  - seg_id: "N04"
+    text: "Early twentieth-century bootmakers, however, soaked cowhide in oak-bark tannic acid, locking collagen fibers into a rot-proof polymer. Deep-sea bacteria cannot digest tanned leather, allowing century-old boots to outlast both flesh and solid bone."
+    delivery: "CINEMATIC REVEAL"
+    pace: "MODERATE"
+    energy: 4
+    pause_after_s: 0.40
+    emphasis_words: ["oak-bark", "tannic", "acid", "collagen", "rot-proof", "polymer", "cannot", "digest", "outlast"]
+    narrative_beat: "payoff"
+    viewer_question: "Could any human remains still exist anywhere inside the sealed interior of the Titanic?"
+    new_information: "Vegetable tanning with oak-bark tannic acid cross-links hide collagen into an insoluble, bacteria-resistant polymer that survives over 110 years while exposed bone dissolves within ~25–30 years."
+    visual_reveal: "Cowhides steeping in traditional vegetable tannin stone vats and macro close-up of craftsman's hands stitching heavy vegetable-tanned boot leather."
+    emotional_direction: "Satisfying chemical eureka resolving the opening paradox"
+    retention_purpose: "Answer why 1912 leather footwear beat solid bone on the ocean floor"
+
+  - seg_id: "N05"
+    text: "Oceanographers note that sealed, oxygen-starved rooms deep inside Titanic's hull could still shelter isolated fragments from scavengers and currents. Out on the open mud, only empty pairs of shoes remain—silent footprints where passengers came to rest."
+    delivery: "EMOTIONAL REFLECTION"
+    pace: "SLOW"
+    energy: 3
+    pause_after_s: 0.36
+    emphasis_words: ["sealed", "oxygen-starved", "isolated", "fragments", "empty", "pairs", "silent", "footprints"]
+    narrative_beat: "final_impression"
+    viewer_question: "What remains visible across the open seafloor around Titanic today?"
+    new_information: "Forensic oceanographers caveat that anoxic, sealed interior hull compartments might still preserve isolated remains, whereas on the open seafloor only tanned leather shoes endure."
+    visual_reveal: "NOAA oceanographers' ROV floodlights peering into dark enclosed steel rooms inside a sunken hull, closing on silent rippled abyssal mud fading back into dark water."
+    emotional_direction: "Scientific nuance followed by quiet, respectful human resonance"
+    retention_purpose: "State the honest interior-hull scientific debate and close on a haunting visual loop back into Frame 0"
+
+sfx_cues:
+  - sfx_name: "glacial_sub_drop"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.08
+    gain_db: -25.5
+    purpose: "Subtle low-frequency abyssal pressure weight as ROV floodlights reveal the sunken ship bow on Frame 0"
+    visual_event: "Sunken steel ship bow emerging out of pitch-black deep ocean water"
+  - sfx_name: "cavern_heartbeat_pulse"
+    anchor_type: "shot_start"
+    anchor_ref: "S07"
+    offset_s: 0.06
+    gain_db: -26.0
+    purpose: "Quiet tension pulse marking the mid-video pivot to deep-sea scavengers and 380-atm bone dissolution"
+    visual_event: "Deep-sea scavenger isopod propelling through dark abyssal water"
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 4.067
+    kind: "video_full"
+    src_file: "noaa_amakasu_shipwreck_rov_1080p.mp4"
+    src_in: 26.2
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.46
+    cx1: 0.50
+    cy1: 0.44
+    z0: 1.08
+    z1: 1.13
+    shadow_lift: 0.10
+    crop_rationale: "Centers the ghostly sunken ship bow illuminated by ROV spotlights in 1080p while keeping the top hook zone dark and legible."
+    transition_in: "cut"
+    transition_reason: "Instant Frame-0 moving ROV shipwreck reveal in pitch-black deep water."
+    context_note: "NOAA ROV deep-sea wreck survey"
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N01"
+    associated_narration_concept: "Four kilometers underwater, leather shoes still rest beside the Titanic"
+    editorial_rationale: "Opens at 0.00s on genuine 1080p ROV underwater shipwreck footage matching the abyssal forensic mystery."
+    subject_match_kind: "direct_subject"
+    progression_type: "new_action"
+    visible_action: "Deep-sea ROV floodlights gliding beneath a corroded sunken ship bow suspended in pitch-black ocean water"
+    story_beat: "Sunken steel shipwreck resting four kilometers underwater in pitch darkness"
+    visual_desc: "NOAA ROV floodlights illuminating the encrusted steel bow of a deep-sea shipwreck in dark blue-black water"
+
+  - sid: "S02"
+    start_s: 4.067
+    end_s: 6.500
+    kind: "still_full"
+    src_file: "noaa_2004_titanic_bow.jpg"
+    src_in: 0.0
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.46
+    cy0: 0.48
+    cx1: 0.46
+    cy1: 0.48
+    z0: 1.02
+    z1: 1.02
+    shadow_lift: 0.06
+    disable_artificial_still_motion: true
+    essential_historical_or_scientific_evidence: true
+    crop_rationale: "Frames the iconic rusticle-draped prow and railings of the actual RMS Titanic photographed by NOAA ROV Hercules in June 2004."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.21s pause after 'Titanic' onto the authentic 2004 NOAA RMS Titanic bow photograph."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N01"
+    associated_narration_concept: "so where did every human skeleton go?"
+    editorial_rationale: "Shows viewers authentic Public Domain 2004 NOAA ROV Hercules photographic proof of the actual RMS Titanic bow at 3,800 meters."
+    subject_match_kind: "direct_subject"
+    progression_type: "new_evidence"
+    visible_action: "ROV Hercules floodlights illuminating the rusticle-draped steel bow and railings of RMS Titanic at 3,800 meters"
+    story_beat: "Authentic 2004 NOAA ROV photograph of the RMS Titanic bow at 3,800 m"
+    visual_desc: "High-resolution 2004 NOAA ROV Hercules photograph of the wrecked RMS Titanic bow covered in orange-brown rusticles in pitch darkness"
+
+  - sid: "S03"
+    start_s: 6.500
+    end_s: 9.967
+    kind: "video_full"
+    src_file: "noaa_ex2201_puerto_rico_cp_1080p.mov"
+    src_in: 15.0
+    camera_perspective: "first_person_pov"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.52
+    z0: 1.06
+    z1: 1.10
+    shadow_lift: 0.06
+    crop_rationale: "Tracks from the tether camera POV as NOAA ROV Deep Discoverer descends with glowing spotlights into the Atlantic abyss."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.47s pause onto an active Atlantic deep-sea ROV survey descent."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "Across the North Atlantic seafloor at thirty-eight hundred meters,"
+    editorial_rationale: "Shows genuine NOAA robotic submersible survey operations descending into deep Atlantic darkness."
+    subject_match_kind: "contextual_fieldwork"
+    progression_type: "new_perspective"
+    visible_action: "Tethered deep-sea ROV descending into dark Atlantic ocean water with twin LED floodlights"
+    story_beat: "Deep-sea robotic survey vehicle descending toward the Atlantic abyssal floor"
+    visual_desc: "Underwater tether-camera view of NOAA ROV Deep Discoverer diving into dark blue Atlantic water with bright floodlights"
+
+  - sid: "S04"
+    start_s: 9.967
+    end_s: 14.633
+    kind: "video_full"
+    src_file: "noaa_orpheus_hadal_auv_1080p.mp4"
+    src_in: 67.5
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.62
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.06
+    crop_rationale: "Pans from expedition engineers on the research vessel fantail to the glowing orange deep-ocean robot being lowered into dark Atlantic swells."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.28s clause pause after 'meters' to human oceanographers launching deep-sea survey robotics."
+    context_note: "NOAA deep-ocean robot deployment"
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N02"
+    associated_narration_concept: "robotic surveys photographed boots lying in matched pairs where victims settled."
+    editorial_rationale: "Provides authentic human expedition scale showing oceanographers launching deep-sea survey robotics at night."
+    subject_match_kind: "contextual_fieldwork"
+    progression_type: "new_subject"
+    visible_action: "Expedition engineers in hardhats lowering an orange deep-ocean autonomous robot off the stern winch into dark water"
+    story_beat: "Expedition oceanographers deploying deep-sea survey robotics from a research vessel"
+    visual_desc: "Marine engineers on a nighttime research ship stern lowering an orange deep-ocean robotic explorer into dark ocean water"
+
+  - sid: "S05"
+    start_s: 14.633
+    end_s: 17.700
+    kind: "video_full"
+    src_file: "noaa_ex2502_shipwreck_nevada_1080p.mp4"
+    src_in: 22.8
+    camera_perspective: "wide"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.54
+    cy1: 0.50
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.06
+    crop_rationale: "Follows ROV spotlights across corroded shipwreck steel resting half-buried in barren abyssal sediment."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.37s sentence pause before 'Yet across the entire exposed wreck and debris field'."
+    context_note: "NOAA ROV 4,700 m debris survey"
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "Yet across the entire exposed wreck and debris field,"
+    editorial_rationale: "Demonstrates with real 4,700-meter ROV debris-field footage how metallic wreckage sits on bare abyssal mud."
+    subject_match_kind: "direct_subject"
+    progression_type: "new_evidence"
+    visible_action: "ROV camera gliding over corroded steel wreckage half-buried in empty gray abyssal seafloor mud"
+    story_beat: "Abyssal shipwreck debris field resting on bare ocean mud"
+    visual_desc: "NOAA ROV floodlight view of rusted shipwreck metal lying on barren deep-sea sediment"
+
+  - sid: "S06"
+    start_s: 17.700
+    end_s: 20.667
+    kind: "video_full"
+    src_file: "noaa_amakasu_shipwreck_rov_1080p.mp4"
+    src_in: 8.0
+    camera_perspective: "extreme_wide"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.60
+    cy0: 0.52
+    cx1: 0.54
+    cy1: 0.52
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.08
+    crop_rationale: "Sweeps across dark debris on pale seafloor mud beside a towering sunken steel ship hull with zero skeletal remains."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.23s clause pause after 'field' onto open seafloor sediment beside a sunken steel hull."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "cameras have never found a single human bone."
+    editorial_rationale: "Shows open abyssal seafloor sediment alongside a sunken ship hull devoid of any exposed human bone."
+    subject_match_kind: "direct_subject"
+    progression_type: "new_perspective"
+    visible_action: "ROV floodlights sweeping across dark seafloor sediment and scattered debris beside a sunken steel hull"
+    story_beat: "Empty seafloor mud beside a sunken steel wreck with zero human bones"
+    visual_desc: "Wide NOAA ROV view of barren seafloor mud and dark debris beside a sunken steel hull in pitch-black water"
+
+  - sid: "S07"
+    start_s: 20.667
+    end_s: 23.633
+    kind: "video_full"
+    src_file: "noaa_bathynomus_isopod_1080p.mp4"
+    src_in: 11.5
+    camera_perspective: "close_up"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.56
+    cy0: 0.48
+    cx1: 0.60
+    cy1: 0.44
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.06
+    crop_rationale: "Tracks the long articulated legs of a deep-sea munnopsid isopod crustacean swimming across dark abyssal water."
+    transition_in: "cut"
+    transition_reason: "Mid-video mechanism pivot cut in the 0.48s pause as N03 introduces deep-sea scavengers."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "Deep-sea scavengers strip soft tissue within weeks,"
+    editorial_rationale: "Shows real abyssal crustacean scavengers that rapidly locate and consume organic soft tissue on the ocean floor."
+    subject_match_kind: "direct_subject"
+    progression_type: "new_subject"
+    visible_action: "Long-legged pale deep-sea isopod crustacean propelling itself through dark abyssal water"
+    story_beat: "Deep-sea crustacean scavenger active in pitch-black abyssal water"
+    visual_desc: "Close-up NOAA ROV footage of a spindly white deep-sea isopod swimming through dark blue abyssal water"
+
+  - sid: "S08"
+    start_s: 23.633
+    end_s: 28.800
+    kind: "video_full"
+    src_file: "noaa_abyssal_shark_1080p.mp4"
+    src_in: 14.0
+    camera_perspective: "medium"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.54
+    cx1: 0.48
+    cy1: 0.54
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.08
+    crop_rationale: "Places the patrolling sixgill scavenger shark in the lower-middle frame while leaving clean dark upper water for OV1_ABYSS_PRESSURE."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.21s clause pause after 'weeks' while anchoring the 380-atmosphere hydrostatic pressure gauge."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "leaving bare skeletons exposed to freezing water under three hundred eighty atmospheres of pressure."
+    editorial_rationale: "Pairs a deep-sea scavenger shark gliding across freezing dark mud with the 380-atmosphere Titanic depth callout."
+    subject_match_kind: "direct_subject"
+    progression_type: "new_process_stage"
+    visible_action: "Large deep-sea sixgill scavenger shark gliding slowly inches above dark abyssal sediment"
+    story_beat: "Abyssal scavenger shark patrolling freezing seafloor under 380 atmospheres of pressure"
+    visual_desc: "NOAA ROV footage of a deep-sea sixgill shark swimming low across dark gray ocean floor mud"
+
+  - sid: "S09"
+    start_s: 28.800
+    end_s: 34.033
+    kind: "video_full"
+    src_file: "noaa_wetlab_scientists_1080p.mp4"
+    src_in: 71.5
+    camera_perspective: "first_person_pov"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.50
+    cx1: 0.54
+    cy1: 0.50
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.04
+    crop_rationale: "Frames the ROV titanium manipulator claw sampling mineral-starved deep-sea substrate and benthic organisms."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.39s sentence pause before 'At this mineral-starved depth, seawater'."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "At this mineral-starved depth, seawater and acid-secreting marine microbes slowly dissolve"
+    editorial_rationale: "Illustrates deep-sea mineral dissolution and benthic substrate sampling at extreme depth."
+    subject_match_kind: "contextual_fieldwork"
+    progression_type: "new_action"
+    visible_action: "Robotic ROV manipulator arm reaching across dark mineral seafloor rock to collect a deep-sea biological sample"
+    story_beat: "ROV manipulator sampling deep-sea mineral substrate"
+    visual_desc: "Close underwater view of a robotic ROV claw collecting biological and mineral material on the deep ocean floor"
+
+  - sid: "S10"
+    start_s: 34.033
+    end_s: 38.033
+    kind: "video_full"
+    src_file: "noaa_ex2502_shipwreck_lst884_1080p.mp4"
+    src_in: 85.0
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.52
+    cx1: 0.54
+    cy1: 0.50
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.06
+    crop_rationale: "Highlights orange benthic marine organisms and microbial rust crusts consuming submerged shipwreck surfaces."
+    transition_in: "cut"
+    transition_reason: "Cut cleanly after 'dissolve' onto benthic organisms and microbial rust crusts breaking down submerged hull fittings."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "the calcium-phosphate crystals inside bone until nothing remains."
+    editorial_rationale: "Shows marine organisms and microbial crusts actively colonizing and chemically breaking down submerged wreck surfaces."
+    subject_match_kind: "direct_subject"
+    progression_type: "new_process_stage"
+    visible_action: "Deep-sea crinoids and microbial rust crusts clinging to heavily corroded sunken hull fittings in ROV light"
+    story_beat: "Marine organisms and corrosive deep seawater breaking down exposed mineralized structures"
+    visual_desc: "Close-up NOAA ROV view of orange deep-sea crinoids and rust crusts covering corroded shipwreck metal"
+
+  - sid: "S11"
+    start_s: 38.033
+    end_s: 43.267
+    kind: "video_full"
+    src_file: "wikimedia_tetouan_tannery_vats_1080p.webm"
+    src_in: 1.8
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.02
+    crop_rationale: "Centers thick cowhides soaking inside stone vats of brown vegetable tannic-acid liquor."
+    transition_in: "cut"
+    transition_reason: "Hard visual contrast cut in the 0.49s pause from dark abyssal water to brown vegetable tannin curing vats on N04."
+    context_note: "Traditional vegetable tannin vats"
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N04"
+    associated_narration_concept: "Early twentieth-century bootmakers, however, soaked cowhide in oak-bark tannic acid,"
+    editorial_rationale: "Directly shows the vegetable tannic-acid hide-soaking process that chemically cross-links collagen against rot."
+    subject_match_kind: "direct_subject"
+    progression_type: "environment_change"
+    visible_action: "Raw cowhides steeping inside circular stone vats filled with dark oak-bark vegetable tannin liquid"
+    story_beat: "Cowhide soaking in vegetable tannic-acid vats"
+    visual_desc: "Overhead close view of cowhides steeped in dark brown liquid inside traditional stone leather-tanning vats"
+
+  - sid: "S12"
+    start_s: 43.267
+    end_s: 49.300
+    kind: "video_full"
+    src_file: "wikimedia_leather_stitching_1080p.webm"
+    src_in: 416.5
+    camera_perspective: "close_up"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.12
+    z1: 1.16
+    shadow_lift: 0.02
+    crop_rationale: "Fills the 9:16 frame edge-to-edge with the craftsman's hands cutting thick cured cowhide leather."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.25s clause pause before 'locking collagen fibers into a rot-proof polymer'."
+    context_note: "Vegetable-tanned cowhide craft"
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N04"
+    associated_narration_concept: "locking collagen fibers into a rot-proof polymer. Deep-sea bacteria cannot digest tanned leather,"
+    editorial_rationale: "Shows the dense, fibrous physical toughness of vegetable-tanned leather that marine bacteria cannot digest."
+    subject_match_kind: "direct_subject"
+    progression_type: "new_action"
+    visible_action: "Leatherworker's hands slicing and shaping thick cured cowhide leather on a wooden workbench"
+    story_beat: "Tough cross-linked tanned cowhide polymer resisting bacterial digestion"
+    visual_desc: "Close-up of a craftsman's hands cutting thick cured cowhide leather with a steel blade on a workbench"
+
+  - sid: "S13"
+    start_s: 49.300
+    end_s: 53.267
+    kind: "video_full"
+    src_file: "noaa_wetlab_scientists_1080p.mp4"
+    src_in: 32.2
+    camera_perspective: "macro"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.54
+    cx1: 0.50
+    cy1: 0.52
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.02
+    crop_rationale: "Frames gloved marine biologist hands examining a recovered brown leathery seafloor specimen while keeping upper space clear for OV2_SURVIVAL_SCALE."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.23s pause before 'allowing century-old boots to outlast both flesh and solid bone' under OV2_SURVIVAL_SCALE."
+    context_note: "NOAA Okeanos wet-lab specimen"
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N04"
+    associated_narration_concept: "allowing century-old boots to outlast both flesh and solid bone."
+    editorial_rationale: "Connects tanned leather's marine survival back to real oceanographic specimen inspection alongside the 110+ year vs ~25 year scale bar."
+    subject_match_kind: "contextual_fieldwork"
+    progression_type: "new_perspective"
+    visible_action: "Gloved marine scientist holding and inspecting a recovered brown leathery deep-sea specimen inside a shipboard laboratory tray"
+    story_beat: "Marine laboratory inspection paired with 110+ year leather vs ~25 year bone survival comparison"
+    visual_desc: "Close-up of blue-gloved scientist hands examining a brown recovered deep-sea specimen in a NOAA wet-lab tray"
+
+  - sid: "S14"
+    start_s: 53.267
+    end_s: 61.767
+    kind: "video_full"
+    src_file: "noaa_ex2502_shipwreck_nevada_1080p.mp4"
+    src_in: 81.2
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.08
+    crop_rationale: "Frames dark enclosed steel interior rooms and doorways of a deep-sea wreck illuminated by ROV spotlights."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.49s sentence pause onto enclosed interior steel shipwreck compartments as N05 states the hull-interior scientific caveat."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "Oceanographers note that sealed, oxygen-starved rooms deep inside Titanic's hull could still shelter isolated fragments from scavengers and currents."
+    editorial_rationale: "Visually illustrates dark, enclosed interior steel hull compartments sheltered from open bottom currents."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "credible_hypothesis"
+    progression_type: "new_perspective"
+    visible_action: "Oceanographers' ROV floodlights peering into dark enclosed steel bridge and interior hull rooms of a sunken ship"
+    story_beat: "Enclosed interior steel shipwreck rooms sheltered from open seafloor currents"
+    visual_desc: "NOAA oceanographers' ROV view of rusted enclosed steel rooms and doorways inside a deep-sea shipwreck hull in pitch darkness"
+
+  - sid: "S15"
+    start_s: 61.767
+    end_s: 68.300
+    kind: "video_full"
+    src_file: "noaa_ex2605_abyssal_organisms_1080p.mp4"
+    src_in: 12.0
+    camera_perspective: "extreme_wide"
+    visual_complexity: "low"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.06
+    z1: 1.10
+    shadow_lift: 0.04
+    crop_rationale: "Sweeps across silent rippled abyssal ocean mud fading into pitch-black water to loop seamlessly back into S01."
+    transition_in: "cut"
+    transition_reason: "Final reflective cut in the 0.40s pause onto silent open abyssal mud as the narrator delivers 'Out on the open mud, only empty pairs of shoes remain'."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "Out on the open mud, only empty pairs of shoes remain—silent footprints where passengers came to rest."
+    editorial_rationale: "Closes on quiet, empty deep-ocean mud stretching into pitch darkness, creating a haunting visual and tonal loop into Frame 0."
+    subject_match_kind: "direct_location"
+    progression_type: "environment_change"
+    visible_action: "ROV floodlight gliding slowly across rippled pale abyssal seafloor mud vanishing into pitch-black deep water"
+    story_beat: "Silent open abyssal mud floor stretching into darkness at the close"
+    visual_desc: "Wide NOAA ROV view of empty, current-rippled pale seafloor sediment fading into pitch-black abyssal water"
+
+assets_register:
+  - local_file: "noaa_amakasu_shipwreck_rov_1080p.mp4"
+    title: "Amakasu Maru Deep-Sea Shipwreck ROV Survey (NOAA Ocean Exploration)"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://archive.org/details/noaa-oe-video-edu-themes-archaeology-media-video-multimedia-amakasu"
+    direct_media_url: "https://archive.org/download/noaa-oe-video-edu-themes-archaeology-media-video-multimedia-amakasu/dive9_long-1920x1080-1.mp4"
+    license: "Public Domain (NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/backmatter/disclaimer.html"
+    required_attribution: "NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    canonical_source_id: "ia:noaa-oe-video-edu-themes-archaeology-media-video-multimedia-amakasu"
+    depicted_subject: "Sunken steel shipwreck bow and encrusted deck railings in pitch-black deep ocean water"
+    depicted_action: "ROV Deep Discoverer floodlights gliding beneath a sunken steel ship bow in dark abyssal water"
+    depicted_location: "Deep Pacific Ocean (NOAA Okeanos Explorer shipwreck survey)"
+    intended_use: "S01 Frame-0 deep-sea shipwreck bow hook & Thumbnail Concept B"
+
+  - local_file: "noaa_2004_titanic_bow.jpg"
+    title: "Bow of the Wrecked RMS Titanic Photographed by ROV Hercules (June 2004 Return to Titanic)"
+    creator_agency: "NOAA / Institute for Exploration / University of Rhode Island"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Titanic_wreck_bow.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Titanic_wreck_bow.jpg"
+    license: "Public Domain (NOAA)"
+    license_url: "https://archive.oceanexplorer.noaa.gov/explorations/04titanic/media/titanic_bow.html"
+    required_attribution: "NOAA / IFE / URI — Return to Titanic 2004 (Public Domain)"
+    media_type: "photo"
+    source_media_class: "STILL_PHOTO"
+    canonical_source_id: "wikimedia:File:Titanic_wreck_bow.jpg"
+    historical_era: "2004"
+    depicted_subject: "Rusticle-draped steel bow and railings of the RMS Titanic wreck at 3,800 meters"
+    depicted_action: "ROV Hercules floodlights illuminating the iconic prow of RMS Titanic on the North Atlantic floor"
+    depicted_location: "RMS Titanic Wreck Site, North Atlantic Ocean (3,800 m)"
+    intended_use: "S02 authentic 2004 NOAA RMS Titanic bow evidence & Primary Thumbnail A"
+
+  - local_file: "noaa_ex2201_puerto_rico_cp_1080p.mov"
+    title: "NOAA Okeanos Explorer Deep-Sea ROV Descent Into Atlantic Ocean Abyss (EX2201)"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://oceanexplorer.noaa.gov/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/"
+    license: "Public Domain (NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/backmatter/disclaimer.html"
+    required_attribution: "NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "ia:noaa_ex2201_puerto_rico_cp_1080p"
+    depicted_subject: "NOAA ROV Deep Discoverer descending on armored tether into dark Atlantic abyss"
+    depicted_action: "Deep-sea remotely operated vehicle diving downward through dark Atlantic water with twin floodlights"
+    depicted_location: "Atlantic Ocean Deep-Sea Basin (NOAA EX2201)"
+    intended_use: "S03 Atlantic deep-sea ROV survey descent"
+
+  - local_file: "noaa_orpheus_hadal_auv_1080p.mp4"
+    title: "Deployment of Deep-Ocean Autonomous Robotic Vehicle Orpheus from Research Ship"
+    creator_agency: "NOAA Ocean Exploration / Woods Hole Oceanographic Institution"
+    source_page_url: "https://oceanexplorer.noaa.gov/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/"
+    license: "Public Domain (NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/backmatter/disclaimer.html"
+    required_attribution: "NOAA Ocean Exploration / WHOI (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "ia:noaa_orpheus_hadal_auv_1080p"
+    depicted_subject: "Oceanographers and engineers deploying deep-ocean autonomous survey vehicle Orpheus"
+    depicted_action: "Deck engineers operating stern A-frame winch to lower orange deep-sea robot into ocean swells"
+    depicted_location: "Atlantic Research Vessel Operations (NOAA / WHOI)"
+    intended_use: "S04 human expedition deployment of deep-ocean robotic survey vehicle"
+
+  - local_file: "noaa_ex2502_shipwreck_nevada_1080p.mp4"
+    title: "NOAA ROV Survey of Deep-Sea Battleship USS Nevada Wreck & Debris Field (4,700 m)"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://oceanexplorer.noaa.gov/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/"
+    license: "Public Domain (NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/backmatter/disclaimer.html"
+    required_attribution: "NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "ia:noaa_ex2502_shipwreck_nevada_1080p"
+    depicted_subject: "Abyssal 4,700-meter shipwreck debris field on seafloor mud and enclosed steel interior hull rooms"
+    depicted_action: "Oceanographers' ROV gliding across rusted shipwreck artifacts on bare abyssal mud and peering into enclosed steel hull rooms"
+    depicted_location: "Deep Pacific Abyssal Plain, 4,700 m (NOAA Ocean Exploration)"
+    intended_use: "S05 barren 4,700 m shipwreck debris field & S13 enclosed interior hull rooms"
+
+  - local_file: "noaa_bathynomus_isopod_1080p.mp4"
+    title: "Deep-Sea Isopod Crustacean Swimming Across Abyssal Water (EX1803)"
+    creator_agency: "NOAA Office of Ocean Exploration and Research"
+    source_page_url: "https://archive.org/details/noaa-oe-video-video-shorts-ex1803-isopod-legs"
+    direct_media_url: "https://archive.org/download/noaa-oe-video-video-shorts-ex1803-isopod-legs/ex1803-isopod-legs.mp4"
+    license: "Public Domain (NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/backmatter/disclaimer.html"
+    required_attribution: "NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "ia:noaa-oe-video-video-shorts-ex1803-isopod-legs"
+    depicted_subject: "Deep-sea munnopsid isopod scavenger crustacean with elongated walking/swimming legs"
+    depicted_action: "Deep-sea isopod propelling itself through pitch-dark abyssal water"
+    depicted_location: "Gulf of Mexico Deep Abyssal Basin (NOAA EX1803)"
+    intended_use: "S06 deep-sea crustacean scavenger beat"
+
+  - local_file: "noaa_abyssal_shark_1080p.mp4"
+    title: "Deep-Sea Scavenger Shark Patrolling the Seafloor (EX2206)"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://archive.org/details/noaa-oe-video-video-shorts-ex2206-shark"
+    direct_media_url: "https://archive.org/download/noaa-oe-video-video-shorts-ex2206-shark/ex2206-shark.mp4"
+    license: "Public Domain (NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/backmatter/disclaimer.html"
+    required_attribution: "NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "ia:noaa-oe-video-video-shorts-ex2206-shark"
+    depicted_subject: "Deep-sea bluntnose sixgill scavenger shark patrolling cold abyssal mud"
+    depicted_action: "Large abyssal shark gliding slowly inches above dark ocean sediment in ROV floodlights"
+    depicted_location: "North Atlantic / Caribbean Deep Seafloor (NOAA EX2206)"
+    intended_use: "S07 deep-sea scavenger & 380-atm pressure beat under OV1, plus Thumbnail Concept C"
+
+  - local_file: "noaa_wetlab_scientists_1080p.mp4"
+    title: "ROV Seafloor Biological Sampling & Okeanos Explorer Wet-Lab Operations"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://oceanexplorer.noaa.gov/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/"
+    license: "Public Domain (NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/backmatter/disclaimer.html"
+    required_attribution: "NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "ia:noaa_wetlab_scientists_1080p"
+    depicted_subject: "Robotic ROV manipulator claw sampling deep-sea mineral substrate and marine biologist hands examining recovered seafloor specimens"
+    depicted_action: "ROV manipulator arm collecting seafloor material and gloved marine scientists inspecting a leathery deep-sea specimen in wet lab"
+    depicted_location: "Deep Ocean Floor & Shipboard Wet Lab (NOAA Ship Okeanos Explorer)"
+    intended_use: "S08 deep-sea mineral substrate sampling & S12 wet-lab specimen inspection under OV2_SURVIVAL_SCALE"
+
+  - local_file: "noaa_ex2502_shipwreck_lst884_1080p.mp4"
+    title: "NOAA ROV Deep-Sea Survey of Sunken Steel Shipwreck Hull & Benthic Colonization"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://oceanexplorer.noaa.gov/"
+    direct_media_url: "https://oceanexplorer.noaa.gov/"
+    license: "Public Domain (NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/backmatter/disclaimer.html"
+    required_attribution: "NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "ia:noaa_ex2502_shipwreck_lst884_1080p"
+    depicted_subject: "Benthic marine organisms and microbial rust crusts colonizing corroded deep-sea shipwreck steel"
+    depicted_action: "Orange deep-sea crinoids and microbial crusts clinging to heavily corroded submerged hull fittings"
+    depicted_location: "Deep Pacific Seafloor (NOAA Ocean Exploration)"
+    intended_use: "S09 biological and chemical breakdown of exposed mineralized wreck structures"
+
+  - local_file: "wikimedia_tetouan_tannery_vats_1080p.webm"
+    title: "Traditional Vegetable Leather Tannery Vats in Tetouan"
+    creator_agency: "Wikimedia Commons contributor (CC0 1.0)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Medina_of_Tetouan_traditional_tannery_1.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/5/53/Medina_of_Tetouan_traditional_tannery_1.webm"
+    license: "CC0 1.0"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "CC0 1.0 Public Domain Dedication via Wikimedia Commons"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "wikimedia:File:Medina_of_Tetouan_traditional_tannery_1.webm"
+    depicted_subject: "Cowhides soaking inside circular stone vats of vegetable tannic-acid liquor"
+    depicted_action: "Raw hides steeping in dark brown oak/vegetable tannin vats to cross-link collagen fibers"
+    depicted_location: "Traditional Vegetable Tannery, Tetouan, Morocco"
+    intended_use: "S10 vegetable tannic-acid collagen cross-linking chemistry"
+
+  - local_file: "wikimedia_leather_stitching_1080p.webm"
+    title: "Traditional Leather Craftsmanship — Cutting and Stitching Heavy Tanned Cowhide"
+    creator_agency: "LVR-Institut für Landeskunde und Regionalgeschichte"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Das_Handwerk_der_Hamenmacher._Teil_2-_Zuschneiden,_N%C3%A4hen_und_F%C3%BCllen_des_Hamenleibes.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Das_Handwerk_der_Hamenmacher._Teil_2-_Zuschneiden%2C_N%C3%A4hen_und_F%C3%BCllen_des_Hamenleibes.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "LVR-Institut für Landeskunde und Regionalgeschichte, CC BY 3.0 via Wikimedia Commons"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "wikimedia:File:Das_Handwerk_der_Hamenmacher_Teil_2.webm"
+    depicted_subject: "Craftsman's hands cutting and shaping thick vegetable-tanned cowhide leather"
+    depicted_action: "Leatherworker slicing heavy cured brown cowhide with a steel knife on a wooden workbench"
+    depicted_location: "Rhineland Traditional Leather Workshop, Germany"
+    intended_use: "S11 tough bacteria-resistant tanned leather craftsmanship"
+
+  - local_file: "noaa_ex2605_abyssal_organisms_1080p.mp4"
+    title: "Deep-Sea Abyssal Mud Floor and Benthic Habitat Survey (EX2605 Dive 03)"
+    creator_agency: "NOAA Ocean Exploration"
+    source_page_url: "https://archive.org/details/noaa-oe-video-anemones-and-shrimp"
+    direct_media_url: "https://archive.org/download/noaa-oe-video-anemones-and-shrimp/ex2605-dive03-anemones-shrimp.mp4"
+    license: "Public Domain (NOAA)"
+    license_url: "https://oceanexplorer.noaa.gov/backmatter/disclaimer.html"
+    required_attribution: "NOAA Ocean Exploration (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    canonical_source_id: "ia:noaa-oe-video-anemones-and-shrimp"
+    depicted_subject: "Silent current-rippled pale abyssal seafloor mud stretching into pitch darkness"
+    depicted_action: "ROV spotlight gliding slowly across empty rippled deep-sea sediment vanishing into black water"
+    depicted_location: "Deep Ocean Abyssal Floor (NOAA EX2605)"
+    intended_use: "S14 haunting closing payoff on open abyssal mud looping back into S01"
+
+excluded_sources_notes:
+  - "noaa_bathynomus_isopod_1080p t<5s & t>18s: Excluded opening 'ISOPOD' label and NOAA closing slate; used only clean 1080p action window t=11.5..16.5s."
+  - "noaa_ex2502_shipwreck_nevada_1080p t<18s & t=28..38s: Excluded lower-third archaeologist nameplates; used only clean 1080p windows t=23.8s and t=81.2s."
+  - "noaa_orpheus_hadal_auv_1080p t<15s & t>90s: Excluded opening nameplate and closing partner logos; used clean deck deployment window t=33.0s."
+  - "Dropped noaa_wwii_shipwreck_control_1080p, noaa_microbes_abyss_1080p, noaa_ex1811_puerto_rico_1080p, and usblm_stormy_sea_waves_1080p after visual/pixel audit detected open captions, animated stills, or coastal rocks."
+
+factual_references:
+  - citation: "NOAA Ocean Exploration & Robert Ballard / Institute for Exploration (2004). Return to Titanic Expedition (June 2004, NOAA Ship Ronald H. Brown & ROV Hercules, 3,800 m North Atlantic)."
+    url: "https://archive.oceanexplorer.noaa.gov/explorations/04titanic/welcome.html"
+    supported_claims: "RMS Titanic rests ~3,800 meters (~4 km / 12,500 ft) beneath the North Atlantic under ~380 atmospheres of hydrostatic pressure in 1–2°C deep water; ROV surveys documented tanned leather boots and shoes lying in matched pairs on the debris-field sediment where victims settled, while zero exposed human bones have ever been observed across the exterior wreck or debris field (with oceanographers noting sealed, anoxic interior hull spaces could theoretically shelter isolated fragments)."
+  - citation: "Tresguerres, M., Katz, S., & Rouse, G. W. (2013). How to get into bones: proton pump and carbonic anhydrase in Osedax boneworms. Proceedings of the Royal Society B, 280(1761), 20130625; paired with Smith, C. R., & Baco, A. R. (2003). Ecology of whale falls at the deep-sea floor. Oceanography and Marine Biology: An Annual Review, 41, 311–354, and Covington, A. D. (2009). Tanning Chemistry: The Science of Leather (RSC Publishing)."
+    url: "https://doi.org/10.1098/rspb.2013.0625"
+    supported_claims: "Deep-sea scavengers strip vertebrate soft tissue within weeks; exposed hydroxyapatite (calcium-phosphate) bone matrix in cold, mineral-undersaturated abyssal seawater is progressively dissolved over ~5–30 years by seawater undersaturation and acid-secreting marine microbes/bone-degrading organisms, whereas early-20th-century vegetable tanning with oak-bark tannic acid cross-links hide collagen into a bacteria-resistant polymer capable of enduring over 110 years on the seafloor."
+
+mechanism_overlays:
+  - overlay_id: "OV1_ABYSS_PRESSURE"
+    template: "value_callout_gauge"
+    anchor:
+      seg_id: "N03"
+      phrase: "three hundred eighty atmospheres"
+      lead_in_s: 0.0
+    hold_s: 2.00
+    span_cut: false
+    region:
+      x: 0.12
+      y: 0.15
+      w: 0.76
+      h: 0.26
+    params:
+      value_from: 1
+      value_to: 380
+      decimals: 0
+      unit: " atm"
+      label: "TITANIC DEPTH PRESSURE"
+      point: [0.50, 0.54]
+      color: "#6CE0FF"
+    claim_ref: 0
+    honesty_label: "measured_value"
+
+  - overlay_id: "OV2_SURVIVAL_SCALE"
+    template: "scale_bar_compare"
+    anchor:
+      seg_id: "N04"
+      phrase: "century-old boots to outlast"
+      lead_in_s: 0.0
+    hold_s: 2.10
+    span_cut: false
+    region:
+      x: 0.08
+      y: 0.15
+      w: 0.84
+      h: 0.28
+    params:
+      length_label: "110+ YR  TANNED LEATHER BOOTS"
+      reference_label: "~25 YR  EXPOSED ABYSSAL BONE"
+      ratio: 4.4
+      color: "#FFC848"
+    claim_ref: 1
+    honesty_label: "scale_comparison"

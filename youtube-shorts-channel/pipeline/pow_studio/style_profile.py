@@ -33,7 +33,7 @@ class OutputStyleConfig(BaseModel):
     fps: int = 30
     video_codec_master: str = "libx264"
     video_crf_master: int = 15
-    video_preset_master: str = "medium"
+    video_preset_master: str = "veryfast"
     video_profile: str = "high"
     pixel_format: str = "yuv420p"
     color_space: str = "bt709"
@@ -278,9 +278,10 @@ class OpeningAndThumbnailStyleConfig(BaseModel):
     thumbnail_aspect_ratio: str = "9:16"
     thumbnail_subject_first: bool = True
     thumbnail_text_mode: Literal["none", "minimal_headline", "cinema_hook", "legacy_card"] = "cinema_hook"
-    thumbnail_max_words: int = 6
+    thumbnail_max_words: int = 8
     thumbnail_concepts_count: int = 3
-    thumbnail_forbid_boxes_badges_rings: bool = True
+    thumbnail_visual_cue_default: bool = True
+    thumbnail_forbid_boxes_badges_rings: bool = False
     thumbnail_max_bytes: int = 1_950_000
 
 

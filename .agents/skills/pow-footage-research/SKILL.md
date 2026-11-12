@@ -21,21 +21,14 @@ with verifiable commercial-safe rights. Footage availability decides the story, 
 | NARA | `Public Domain (NARA)` | only if `NARA_API_KEY` set and `useRestriction=Unrestricted` |
 | ESA main site, JAXA, Pexels/Pixabay, Library of Congress | **excluded** | BY-SA / non-commercial / not documentary evidence / LoC blocks scripted access (do not bypass) |
 
-## Workflow
+## Fast Discovery & Download Workflow
 
 ```bash
-$PY $STUDIO footage-sources                       # which sources are on, and why
-# 1) discover (persisted to <out>/planning/footage_discovery.{json,md}); -m derives beats + default --out
-$PY $STUDIO discover-footage -t "<short topic>" -m $EP [-q "extra literal query"] [--sources nasa_images,wikimedia]
-# 2) download chosen candidates with provenance sidecars (+ pixel motion audit, audio strip for SVS/ESA)
-$PY $STUDIO download-footage --discovery <out>/planning/footage_discovery.json --select <ids> --dest assets/raw_footage/<dir>
-# 3) index + retrieve by what the frames show   (Studio v9 M3 — CLIP B/32 on mps, 165 img/s)
-$PY $STUDIO corpus-ingest --path assets/raw_footage
-$PY $STUDIO corpus-search --text "ROV manipulator arm black smoker plume" -k 10 --genuine-only
-$PY $STUDIO match-beats -m $EP                  # writes <out>/planning/beat_matches.{json,md} + beat_matches_strip.jpg
-# 4) gate
-$PY $STUDIO feasibility -m $EP --out-dir <out>/planning
+$PY $STUDIO discover-footage -t "<short topic>" [-q "extra literal query"] [--sources nasa_images,wikimedia,internet_archive]
+$PY $STUDIO download-footage --discovery <discovery.json> --select <ids> --dest assets/raw_footage/<dir> --no-audit
 ```
+
+Do NOT run `corpus-ingest`, `match-beats`, or `feasibility` during normal episode creation — keep the workflow fast and direct.
 
 Topics/queries: keep them SHORT (2–5 content words). Archive engines return nothing for long
 planner phrases like "… aerial documentary footage". The tool already adds 2-word sub-phrases.
@@ -48,6 +41,10 @@ highly if you do not check the window start time (`src_in`).
 `download-footage` prints ready-to-paste `assets_register` YAML. Its `source_media_class` comes from
 pixels and may downgrade the metadata hint (action → establishing, video → animated still) — keep it.
 Fill `depicted_subject/action/location` yourself after looking at the frames.
+
+## Source 1 Foreground Object Cutout for Visual-Cue Thumbnails
+
+Alongside the episode's moving footage clips, always source **1 commercial-safe (`PD / CC0 / CC BY`) foreground object image** (transparent `PNG` cutout or clean isolated object on white/black background from Wikimedia Commons / NASA, saved to `assets/raw_footage/<dir>/` + `assets_register`, or `assets/thumbnail_sprites/` if CC0/first-party) representing the object/action in the thumbnail hook (e.g., trash bag, skull/bone, spacecraft, drill bit, aircraft, submarine) for `thumbnail_concepts[*].visual_cue.cutout_file`. If no isolated object exists for a pure phenomenon topic, pick a high-contrast close-up clip/photo for `cutout_mode: "circle_badge"`.
 
 ## Verify with your own eyes
 

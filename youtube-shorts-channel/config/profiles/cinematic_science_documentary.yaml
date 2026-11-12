@@ -68,5 +68,6 @@ subtitles:
 
 opening_and_thumbnail:
   thumbnail_text_mode: "cinema_hook"
-  thumbnail_max_words: 6
+  thumbnail_max_words: 8
   thumbnail_concepts_count: 3
+  thumbnail_visual_cue_default: true

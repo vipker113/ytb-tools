@@ -1,0 +1,178 @@
+{
+  "slug": "snake-island-v8-10s-test",
+  "active_tts_provider": "edge_tts",
+  "elevenlabs_configured": false,
+  "elevenlabs_target_model": "eleven_multilingual_v2",
+  "segmentation_strategy": {
+    "method": "contrast_directed_rms_matched_segmented",
+    "reason": "Multi-beat emotional contrast active; using bounded prosody + active RMS matching + raised-cosine fades + studio room-tone bed."
+  },
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "voice_identity": "en-GB-RyanNeural",
+  "sentence_count": 3,
+  "sentence_cache_hits": 3,
+  "contrast_guardrail_summary": {
+    "sentence_count": 3,
+    "distinct_delivery_styles": [
+      "EMOTIONAL REFLECTION",
+      "HOOK",
+      "MEASURED EVIDENCE"
+    ],
+    "distinct_delivery_count": 3,
+    "energy_min": 3,
+    "energy_max": 3,
+    "energy_span": 0,
+    "blocked_theatrical_count": 0,
+    "rebalanced_overdrama_count": 0,
+    "contrast_healthy": true,
+    "guardrail_notes": []
+  },
+  "continuity_review": {
+    "segment_count": 3,
+    "max_adjacent_rms_jump_db": 0.14,
+    "max_spectral_centroid_ratio": 1.068,
+    "clipped_word_boundaries_count": 0,
+    "unnatural_pause_count": 0,
+    "continuity_pass": true,
+    "issues": [],
+    "joins": [
+      {
+        "from_sentence": 0,
+        "to_sentence": 1,
+        "rms_jump_db": 0.06,
+        "spectral_centroid_ratio": 1.068,
+        "pause_s": 0.26
+      },
+      {
+        "from_sentence": 1,
+        "to_sentence": 2,
+        "rms_jump_db": 0.14,
+        "spectral_centroid_ratio": 1.037,
+        "pause_s": 0.24
+      }
+    ]
+  },
+  "invalidated_stale_artifacts_on_regeneration": [],
+  "supported_controls": [
+    "elevenlabs_model_capability_aware_settings",
+    "elevenlabs_request_stitching_when_supported",
+    "sentence_level_speaking_rate_bounded",
+    "sentence_level_pitch_bounded",
+    "pre_and_post_sentence_pause_ms",
+    "custom_pronunciation_dictionary",
+    "anti_overdrama_contrast_rebalancer",
+    "post_concatenation_continuity_reviewer",
+    "automatic_dependent_cache_invalidation"
+  ],
+  "engine_limitations": [
+    "ELEVENLABS_API_KEY not set in environment; running $0 neural edge-tts fallback while preserving full ElevenLabs model-specific voice_settings payloads.",
+    "edge-tts does not support zero-shot voice cloning from audio samples."
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "On Brazil's Snake Island, up to ninety pit vipers pack every hectare.",
+      "delivery": "HOOK",
+      "emotional_tone": "quiet_tension",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.7,
+      "pitch_direction": "falling",
+      "sentence_rhythm": "crisp",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 260,
+      "emphasis_phrases": [
+        "Snake Island",
+        "ninety pit vipers"
+      ],
+      "start_s": 0.1,
+      "end_s": 4.197,
+      "cache_key": "5bfdf1984926e180c60b",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.196,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:HOOK->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N02",
+      "text": "There is no evidence of five per meter\u2014yet vipers ambush birds overhead,",
+      "delivery": "MEASURED_EVIDENCE",
+      "emotional_tone": "grounded_authority",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.54,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 240,
+      "emphasis_phrases": [
+        "no evidence",
+        "ambush birds overhead"
+      ],
+      "start_s": 4.457,
+      "end_s": 8.593,
+      "cache_key": "aecc575fac6bb5d72df2",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.151,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N03",
+      "text": "with venom five times deadlier.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "resonant_payoff",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.58,
+      "pitch_direction": "falling",
+      "sentence_rhythm": "deliberate",
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 340,
+      "emphasis_phrases": [
+        "five times deadlier"
+      ],
+      "start_s": 8.833,
+      "end_s": 10.746,
+      "cache_key": "fd43ea210e598f5982c6",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.162,
+        "use_speaker_boost": true,
+        "speed": 0.96
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ]
+}

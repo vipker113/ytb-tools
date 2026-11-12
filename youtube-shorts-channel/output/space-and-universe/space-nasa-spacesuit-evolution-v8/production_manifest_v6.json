@@ -1,0 +1,1317 @@
+{
+  "schema_name": "proof_of_wonder_production_manifest",
+  "manifest_version": "8.0",
+  "generated_at_utc": "2026-11-04T10:30:54.839799+00:00",
+  "slug": "space-nasa-spacesuit-evolution-v8",
+  "channel_name": "Proof of Wonder",
+  "category_playlist": "Space & Universe",
+  "topic": "65 Years of NASA Spacesuit Evolution (1961\u20132026) \u2014 From Mercury's Stiff Silver Pressure Cocoon & Gemini's Golden Umbilical to Apollo's 21-Layer Lunar Armor, 1984 Untethered MMU Jetpack & 2026 Rear-Entry Artemis Suits",
+  "production_profile": {
+    "profile_name": "space_discovery",
+    "profile_version": "6.0.0",
+    "style_overrides": {
+      "asset_selection": {
+        "target_moving_footage_ratio": 0.88,
+        "target_genuine_moving_footage_ratio": 0.88,
+        "target_meaningful_action_footage_ratio": 0.8,
+        "max_static_image_ratio": 0.12,
+        "max_still_photo_ratio": 0.12,
+        "max_scientific_visualization_ratio": 0.05,
+        "max_duration_share_per_asset": 0.2,
+        "min_human_interaction_shots": 3
+      },
+      "viral_retention": {
+        "max_opening_still_duration_s": 5.0
+      },
+      "pacing": {
+        "min_shot_duration_s": 2.2
+      },
+      "subtitles": {
+        "style": "cinema_boxless"
+      }
+    },
+    "visual_scoring_weights": {
+      "direct_relevance": 0.32,
+      "visual_clarity": 0.2,
+      "authenticity": 0.2,
+      "technical_quality": 0.12,
+      "composition_potential": 0.1,
+      "motion_storytelling": 0.03,
+      "license_verification": 0.03,
+      "min_direct_relevance_floor": 0.35
+    }
+  },
+  "script_version": {
+    "version": "v8.0.0",
+    "script_sha256": "e348dba363e8c3a1b6cd527e07f987715d41157ac7ec9c44231ad857b7a442ee",
+    "segment_count": 7,
+    "word_count": 257,
+    "opening_hook_type": "surprising_visual",
+    "layer2_pivot_seg_id": "N04",
+    "scientific_caveat_seg_id": "N07",
+    "factual_references": [
+      {
+        "citation": "NASA History Division / Smithsonian National Air and Space Museum \u2014 Project Mercury Navy Mark IV Pressure Suit (1961) & Project Gemini G4C Extravehicular Suit (Ed White, Gemini IV, June 3, 1965).",
+        "url": "https://www.nasa.gov/spacesuits/",
+        "doi": null,
+        "supported_claims": "Mercury's silver aluminized-nylon Mark IV suit served strictly as unpressurized cabin backup and stiffened when inflated; Ed White spacewalked on a 25-foot gold-wrapped umbilical using a handheld gas maneuvering gun while pressurized soft Gemini suits ballooned stiff."
+      },
+      {
+        "citation": "NASA Johnson Space Center \u2014 Apollo A7L / A7LB Lunar Extravehicular Mobility Unit (21 layers, Beta-cloth, Mylar/ballistic micrometeoroid defense, LEVA gold visor, LCVG water-cooling garment & PLSS).",
+        "url": "https://www.nasa.gov/history/alsj/",
+        "doi": null,
+        "supported_claims": "Apollo suits combined 21 thermal and ballistic layers to stop ~28,000 km/h micrometeoroids, gold-plated visors, and chilled-water LCVG tubes, while pressurized fabric torsos restricted bending and contributed to lunar falls."
+      },
+      {
+        "citation": "NASA Johnson Space Center \u2014 Space Shuttle Hard Upper Torso EMU & Manned Maneuvering Unit (STS-41B, Bruce McCandless, Feb 7, 1984, 24 nitrogen thrusters, ~100 m untethered) and Artemis Next-Generation Lunar Spacesuits (rear-entry hatch, rotary bearings & lunar regolith dust mitigation, 2026).",
+        "url": "https://www.nasa.gov/humans-in-space/spacesuits/",
+        "doi": null,
+        "supported_claims": "Shuttle EMUs introduced a rigid fiberglass Hard Upper Torso and paired with the 24-thruster nitrogen MMU for McCandless's 100-meter untethered flight; Artemis generation suits add a rear-entry hatch, sealed rotary metal bearings, and dust-tolerant seals for Lunar South Pole craters."
+      }
+    ]
+  },
+  "voice_direction_profile": {
+    "voice_input_mode": "directed_tts",
+    "profile_id": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "annotated_voice_script_file": "/Applications/code/science-knowledge/youtube-shorts-channel/episodes/space_nasa_spacesuit_evolution_v8_voice_script.txt",
+    "approval_lock": {
+      "locked": true,
+      "synchronized": true,
+      "approved_at_utc": "2026-11-04T09:32:29.053004+00:00",
+      "script_matches": true,
+      "audio_matches": true,
+      "timings_matches": true
+    }
+  },
+  "audio_source_and_final_narration": {
+    "voice_input_mode": "directed_tts",
+    "uploaded_narration_file": null,
+    "voice_reference_file": null,
+    "voice_owner_consent": false,
+    "narration_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/narration.mp3",
+    "final_audio_mix_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/final_audio_mix.mp3",
+    "word_timings_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/word_timings.json",
+    "total_duration_s": 110.6667,
+    "total_frames_30fps": 3320,
+    "five_layer_stems": {
+      "layer_1_narration": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/work_audio/layer_1_narration.wav",
+      "layer_2_music": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/work_audio/layer_2_music.wav",
+      "layer_3_ambience": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/work_audio/layer_3_ambience.wav",
+      "layer_4_natural_sounds": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/work_audio/layer_4_natural_sounds.wav",
+      "layer_5_cinematic_sfx": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/work_audio/layer_5_cinematic_sfx.wav"
+    },
+    "audio_diagnostics": {
+      "integrated_lufs": -16.0,
+      "loudness_range_lra_lu": 2.3,
+      "true_peak_dbtp": -1.5,
+      "speech_crest_factor_db": 14.5,
+      "clipped_samples_count": 0,
+      "excessive_silence_count": 0,
+      "excessive_silences": [],
+      "voice_peak_dbfs": -1.5
+    }
+  },
+  "source_assets": [
+    {
+      "local_file": "mercury_seven_silver_suits_5k.jpg",
+      "media_type": "photo",
+      "priority_tier": 1,
+      "title": "Project Mercury Astronauts Suited in Mirror-Silver Navy Mark IV Pressure Suits (S62-08774, 5K Scan)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/s62-08774",
+      "direct_media_url": "https://images-assets.nasa.gov/image/s62-08774/s62-08774~orig.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "mercury_suiting_up_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Project Mercury Navy Mark IV Silver Aluminized-Nylon Pressure Suit Fastening (NASA GRC)",
+      "creator_agency": "NASA Glenn Research Center",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:John_Glenn_B-Roll.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/John_Glenn_B-Roll.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "mercury_ingress_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Project Mercury Silver Pressure Suit Capsule Hatch Ingress (NASA GRC)",
+      "creator_agency": "NASA Glenn Research Center",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:John_Glenn_B-Roll.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/John_Glenn_B-Roll.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "gemini_eva_earth_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Project Gemini Open-Hatch Spacewalk Camera Sweep Over Blue Earth (NASA HD 049)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201",
+      "direct_media_url": "https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~orig.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "thumb_1965_ed_white_eva_4k.jpg",
+      "media_type": "photo",
+      "priority_tier": 1,
+      "title": "Astronaut Edward H. White II During Gemini-Titan IV Spacewalk on 25-Foot Golden Umbilical (S65-30433)",
+      "creator_agency": "NASA / James A. McDivitt",
+      "source_page_url": "https://images.nasa.gov/details/s65-30433",
+      "direct_media_url": "https://images-assets.nasa.gov/image/s65-30433/s65-30433~orig.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "gemini_rig_horizontal_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Project Gemini Pressurized G4C Suit Zero-G Umbilical Maneuvering Rig (NASA HD 049)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201",
+      "direct_media_url": "https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~orig.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "gemini_inflated_walk_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Project Gemini Internally Pressurized G4C Suit Pneumatic Stiffness Test (NASA HD 049)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201",
+      "direct_media_url": "https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~orig.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "apollo9_a7l_eva1_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Apollo 9 Flight Test of the 21-Layer Apollo A7L Lunar Spacesuit \u2014 Hatch Emergence (NASA HD 049)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201",
+      "direct_media_url": "https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~orig.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "apollo9_a7l_eva2_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Apollo 9 Rusty Schweickart Testing 21-Layer Mylar & Ballistic A7L Armor in Vacuum (NASA HD 049)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201",
+      "direct_media_url": "https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~orig.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "gold_visor_closeup_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Spacesuits for Artemis: Gold-Plated Lunar Solar Visor Close-Up (jsc2022m000171, 1080p)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/jsc2022m000171_Spacesuits%20for%20Artemis%20Moon%20Dust%20and%20Mobility_7_6_22",
+      "direct_media_url": "https://images-assets.nasa.gov/video/jsc2022m000171_Spacesuits%20for%20Artemis%20Moon%20Dust%20and%20Mobility_7_6_22/jsc2022m000171_Spacesuits%20for%20Artemis%20Moon%20Dust%20and%20Mobility_7_6_22~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "artemis_regolith_dust_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Artemis Lunar Spacesuit Kneeling & Scooping Abrasive Lunar Regolith Simulant (jsc2026m000052, 1080p)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324",
+      "direct_media_url": "https://images-assets.nasa.gov/video/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "apollo_plss_pack_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Open Portable Life Support System Chilled-Water & Oxygen Backpack Plumbing (jsc2020m000244, 1080p)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4",
+      "direct_media_url": "https://images-assets.nasa.gov/video/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "apollo16_lunar_fall_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Apollo 16 Lunar Surface Film \u2014 Stiff Pressurized Suit Bunny-Hop & Fall (jsc2020m000244, 1080p)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4",
+      "direct_media_url": "https://images-assets.nasa.gov/video/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "shuttle_hut_shell_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Fitting the Rigid Fiberglass Hard Upper Torso Spacesuit Shell (jsc2026m000932, 1080p)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/jsc2026m000932_Spacewalk_101_AVAIL1080p",
+      "direct_media_url": "https://images-assets.nasa.gov/video/jsc2026m000932_Spacewalk_101_AVAIL1080p/jsc2026m000932_Spacewalk_101_AVAIL1080p~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "shuttle_eva_orbit1_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Modular Hard-Torso EMU Spacesuit & Nitrogen Thruster Pack in Orbital Vacuum (jsc2026m000932, 1080p)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/jsc2026m000932_Spacewalk_101_AVAIL1080p",
+      "direct_media_url": "https://images-assets.nasa.gov/video/jsc2026m000932_Spacewalk_101_AVAIL1080p/jsc2026m000932_Spacewalk_101_AVAIL1080p~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "mccandless_mmu_closeup_7k.jpg",
+      "media_type": "photo",
+      "priority_tier": 1,
+      "title": "Astronaut Bruce McCandless II Telephoto Portrait Untethered in the Manned Maneuvering Unit During STS-41B (S84-27017, 7K Scan)",
+      "creator_agency": "NASA / Robert L. Gibson",
+      "source_page_url": "https://images.nasa.gov/details/s84-27017",
+      "direct_media_url": "https://images-assets.nasa.gov/image/s84-27017/s84-27017~orig.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "xemu_rotary_bearings_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Exploration EMU (xEMU) Sealed Rotary Metal Waist & Hip Bearings Mobility Test (jsc2019m000727, 1080p)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4",
+      "direct_media_url": "https://images-assets.nasa.gov/video/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4~orig.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "xemu_rear_entry_hatch_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Exploration EMU (xEMU) Stepping Through the Open Rear-Entry Backpack Hatch (jsc2019m000727, 1080p)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4",
+      "direct_media_url": "https://images-assets.nasa.gov/video/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4~orig.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "xemu_crater_kneeling_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "NASA Next-Generation Rear-Entry Planetary Suits Rock Sampling Across Volcanic Craters (jsc2020m000244, 1080p)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4",
+      "direct_media_url": "https://images-assets.nasa.gov/video/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "artemis_2026_testing_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Artemis Lunar Spacesuit Testing Resource Reel \u2014 March 2026 (jsc2026m000052, 1080p)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324",
+      "direct_media_url": "https://images-assets.nasa.gov/video/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "spacesuits_next_explorers_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Spacesuits for the Next Explorers \u2014 Lunar South Pole Floodlit Crater Climb (jsc2020m000244, 1080p)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4",
+      "direct_media_url": "https://images-assets.nasa.gov/video/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "spacesuit_evolution_65y_plate_B.png",
+      "media_type": "photo",
+      "priority_tier": 3,
+      "title": "65-Year NASA Spacesuit Evolution Composite Plate B (1961, 1969 & Mystery Silhouettes)",
+      "creator_agency": "Proof of Wonder Studio (Public Domain NASA Archival Photographs)",
+      "source_page_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "direct_media_url": "local://assets/raw_footage/space_spacesuit_evolution_v8/spacesuit_evolution_65y_plate_B.png",
+      "is_first_party_original": true
+    },
+    {
+      "local_file": "spacesuit_evolution_65y_plate_A.png",
+      "media_type": "photo",
+      "priority_tier": 3,
+      "title": "65-Year NASA Spacesuit Evolution Composite Plate A (Split Stacked Early Suits vs 2026 Silhouette)",
+      "creator_agency": "Proof of Wonder Studio (Public Domain NASA Archival Photographs)",
+      "source_page_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "direct_media_url": "local://assets/raw_footage/space_spacesuit_evolution_v8/spacesuit_evolution_65y_plate_A.png",
+      "is_first_party_original": true
+    },
+    {
+      "local_file": "spacesuit_evolution_65y_plate_C.png",
+      "media_type": "photo",
+      "priority_tier": 3,
+      "title": "65-Year NASA Spacesuit Evolution Composite Plate C (3-Column Contrast)",
+      "creator_agency": "Proof of Wonder Studio (Public Domain NASA Archival Photographs)",
+      "source_page_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "direct_media_url": "local://assets/raw_footage/space_spacesuit_evolution_v8/spacesuit_evolution_65y_plate_C.png",
+      "is_first_party_original": true
+    },
+    {
+      "local_file": "spacesuit_airlock_ambience.wav",
+      "media_type": "audio",
+      "priority_tier": 3,
+      "title": "Spacecraft Airlock Ventilation & PLSS Cooling-Loop Airflow Bed",
+      "creator_agency": "Proof of Wonder Documentary Studio",
+      "source_page_url": "local://assets/raw_footage/space_spacesuit_evolution_v8/spacesuit_airlock_ambience.wav",
+      "direct_media_url": "local://assets/raw_footage/space_spacesuit_evolution_v8/spacesuit_airlock_ambience.wav",
+      "is_first_party_original": true
+    }
+  ],
+  "licensing_metadata": {
+    "strict_zero_cost_budget": true,
+    "source_register_csv": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/source_register.csv",
+    "source_register_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/source_register.md",
+    "excluded_sources_notes": [],
+    "licenses": [
+      {
+        "local_file": "mercury_seven_silver_suits_5k.jpg",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA (S62-08774)"
+      },
+      {
+        "local_file": "mercury_suiting_up_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Glenn Research Center"
+      },
+      {
+        "local_file": "mercury_ingress_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Glenn Research Center"
+      },
+      {
+        "local_file": "gemini_eva_earth_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "thumb_1965_ed_white_eva_4k.jpg",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA (S65-30433)"
+      },
+      {
+        "local_file": "gemini_rig_horizontal_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "gemini_inflated_walk_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "apollo9_a7l_eva1_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "apollo9_a7l_eva2_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "gold_visor_closeup_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "artemis_regolith_dust_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "apollo_plss_pack_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "apollo16_lunar_fall_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "shuttle_hut_shell_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "shuttle_eva_orbit1_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "mccandless_mmu_closeup_7k.jpg",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA (S84-27017)"
+      },
+      {
+        "local_file": "xemu_rotary_bearings_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "xemu_rear_entry_hatch_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "xemu_crater_kneeling_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "artemis_2026_testing_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "spacesuits_next_explorers_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Lyndon B. Johnson Space Center"
+      },
+      {
+        "local_file": "spacesuit_evolution_65y_plate_B.png",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA archival composite (G60-02665, AS11-40-5903, S84-27031)"
+      },
+      {
+        "local_file": "spacesuit_evolution_65y_plate_A.png",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA archival composite (S61-00239, S65-30433, AS11-40-5903)"
+      },
+      {
+        "local_file": "spacesuit_evolution_65y_plate_C.png",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA archival composite (G60-02665, S65-30433)"
+      },
+      {
+        "local_file": "spacesuit_airlock_ambience.wav",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "required_attribution": "First-party synthesized spacecraft airlock airflow ambience (CC0)"
+      }
+    ]
+  },
+  "shot_list": [
+    {
+      "sid": "S01",
+      "kind": "still_parallax_25d",
+      "src_file": "mercury_seven_silver_suits_5k.jpg",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "5K Kodachrome reveal of Project Mercury's mirror-silver Navy Mark IV spacesuits",
+      "editorial_rationale": "Unmistakable 5K NASA Kodachrome master scan showing every silver aluminized-nylon pleat, zipper, and helmet ring at Frame 0."
+    },
+    {
+      "sid": "S02",
+      "kind": "video_full",
+      "src_file": "mercury_suiting_up_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Suit technician fastening the mirror-silver Mercury aluminized-nylon pressure cocoon",
+      "editorial_rationale": "Authentic NASA color suiting-up film proving the tight aluminized-nylon backup pressure garment."
+    },
+    {
+      "sid": "S03",
+      "kind": "video_full",
+      "src_file": "mercury_ingress_1080p.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Silver-suited Mercury astronaut wedged inside cramped capsule hatch",
+      "editorial_rationale": "Shows the physical confinement of the Mercury pressure suit and stiff sleeve geometry."
+    },
+    {
+      "sid": "S04",
+      "kind": "video_full",
+      "src_file": "gemini_eva_earth_1080p.mp4",
+      "camera_perspective": "first_person_pov",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "aerial_sweep",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1965 Project Gemini open-hatch view into raw vacuum above blue Earth",
+      "editorial_rationale": "Authentic 1965 Gemini 16mm orbital color transfer showing raw vacuum outside the open hatch."
+    },
+    {
+      "sid": "S05",
+      "kind": "still_parallax_25d",
+      "src_file": "thumb_1965_ed_white_eva_4k.jpg",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4K detail of Ed White's 25-foot golden umbilical hose and handheld gas gun",
+      "editorial_rationale": "Iconic June 3, 1965 NASA photograph S65-30433 showing the exact 25-foot golden umbilical hose and gas gun."
+    },
+    {
+      "sid": "S06",
+      "kind": "video_full",
+      "src_file": "gemini_rig_horizontal_1080p.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Gemini G4C spacewalk umbilical maneuvering test",
+      "editorial_rationale": "Authentic 1965 NASA Gemini EVA air-bearing simulator film showing umbilical zero-G maneuvering."
+    },
+    {
+      "sid": "S07",
+      "kind": "video_full",
+      "src_file": "gemini_inflated_walk_1080p.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Pressurized Gemini G4C suit inflated stiff like car tires",
+      "editorial_rationale": "Direct moving NASA pressure-suit footage proving the exhausting pneumatic stiffness of soft Gemini suits."
+    },
+    {
+      "sid": "S08",
+      "kind": "video_full",
+      "src_file": "apollo9_a7l_eva1_1080p.mp4",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1969 wearable 21-layer Apollo A7L spacecraft in flight",
+      "editorial_rationale": "1969 NASA flight test footage of the exact 21-layer Apollo A7L lunar spacesuit."
+    },
+    {
+      "sid": "S09",
+      "kind": "video_full",
+      "src_file": "artemis_2026_testing_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Close-up of white fireproof outer spacesuit fabric and pressure gloves",
+      "editorial_rationale": "Crisp 1080p close-up revealing the woven white fireproof spacesuit outer garment."
+    },
+    {
+      "sid": "S10",
+      "kind": "video_full",
+      "src_file": "apollo9_a7l_eva2_1080p.mp4",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Stacked Mylar and ballistic micrometeoroid armor operating in raw space",
+      "editorial_rationale": "Authentic 1969 Apollo EVA film proving the 21-layer ballistic micrometeoroid garment in open space."
+    },
+    {
+      "sid": "S11",
+      "kind": "video_full",
+      "src_file": "gold_visor_closeup_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Gold-plated lunar visor reflecting harsh unfiltered sunlight",
+      "editorial_rationale": "1:1 visual match of the gold-plated lunar visor reflecting sunlight."
+    },
+    {
+      "sid": "S12",
+      "kind": "video_full",
+      "src_file": "apollo_plss_pack_1080p.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Inside NASA's Portable Life Support System chilled-water & oxygen backpack",
+      "editorial_rationale": "Hands-on 1080p NASA lab footage revealing the compact life-support pack plumbing hidden inside the backpack."
+    },
+    {
+      "sid": "S13",
+      "kind": "video_full",
+      "src_file": "apollo16_lunar_fall_1080p.mp4",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Apollo 16 astronaut bunny-hopping and toppling into Moon dust due to stiff suit joints",
+      "editorial_rationale": "Unforgettable real Apollo 16 lunar surface fall directly proving the narration's mechanical point."
+    },
+    {
+      "sid": "S14",
+      "kind": "video_full",
+      "src_file": "shuttle_hut_shell_1080p.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Fitting the rigid fiberglass Hard Upper Torso spacesuit shell",
+      "editorial_rationale": "Hands-on 1080p NASA suiting-up footage showing the rigid fiberglass Hard Upper Torso shell."
+    },
+    {
+      "sid": "S15",
+      "kind": "video_full",
+      "src_file": "shuttle_eva_orbit1_1080p.mp4",
+      "camera_perspective": "first_person_pov",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Modular hard-torso spacesuit and nitrogen thruster backpack in orbital vacuum",
+      "editorial_rationale": "Crisp 1080p orbital spacewalk motion building up to the iconic untethered 100-meter human-satellite reveal."
+    },
+    {
+      "sid": "S16",
+      "kind": "still_parallax_25d",
+      "src_file": "mccandless_mmu_closeup_7k.jpg",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Bruce McCandless hovering untethered over Earth in the 24-thruster MMU as a standalone human satellite",
+      "editorial_rationale": "Historic February 7, 1984 STS-41B 47-megapixel Hasselblad master photograph (S84-27017) matching 'a standalone human satellite above Earth' word for word."
+    },
+    {
+      "sid": "S17",
+      "kind": "video_full",
+      "src_file": "xemu_rotary_bearings_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Artemis lunar suit sealed rotary metal waist and hip bearings",
+      "editorial_rationale": "Direct NASA JSC test footage of the rotary metal waist and hip bearings flexing under pressure."
+    },
+    {
+      "sid": "S18",
+      "kind": "video_full",
+      "src_file": "xemu_rear_entry_hatch_1080p.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Stepping feet-first straight through the open rear-entry backpack hatch",
+      "editorial_rationale": "Jaw-dropping 1:1 action shot of an astronaut literally stepping through the open backpack hatch."
+    },
+    {
+      "sid": "S19",
+      "kind": "video_full",
+      "src_file": "xemu_crater_kneeling_1080p.mp4",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Next-gen planetary spacesuits bending effortlessly to collect dark volcanic crater rocks",
+      "editorial_rationale": "Direct 1080p field geology payoff resolving Apollo's stiff-joint fall problem shown in S13."
+    },
+    {
+      "sid": "S20",
+      "kind": "video_full",
+      "src_file": "artemis_regolith_dust_1080p.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Artemis spacesuit kneeling in abrasive lunar regolith simulant dust",
+      "editorial_rationale": "Real 1080p NASA JSC lunar regolith simulant test showing abrasive dust surrounding kneeling spacesuit seals."
+    },
+    {
+      "sid": "S21",
+      "kind": "video_full",
+      "src_file": "artemis_2026_testing_1080p.mp4",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "March 2026 NASA Artemis lunar spacesuit dark-crater walk test",
+      "editorial_rationale": "Official March 2026 NASA JSC Artemis Lunar Spacesuit Testing footage bridging 1961 to 2026."
+    },
+    {
+      "sid": "S22",
+      "kind": "video_full",
+      "src_file": "spacesuits_next_explorers_1080p.mp4",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Artemis spacesuit helmet floodlights piercing Lunar South Pole shadows",
+      "editorial_rationale": "Haunting, unforgettable 65-year visual payoff contrasting helmet floodlights in South Pole shadows back into Frame 0's 1961 silver Mercury suits."
+    }
+  ],
+  "scene_timing": {
+    "fps": 30,
+    "semantic_timeline_manifest_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/semantic_timeline_manifest.json",
+    "timed_scenes": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 3.8333,
+        "duration_s": 3.8333,
+        "start_frame": 0,
+        "end_frame": 115
+      },
+      {
+        "sid": "S02",
+        "start_s": 3.8333,
+        "end_s": 9.0667,
+        "duration_s": 5.2334,
+        "start_frame": 115,
+        "end_frame": 272
+      },
+      {
+        "sid": "S03",
+        "start_s": 9.0667,
+        "end_s": 15.0667,
+        "duration_s": 6.0,
+        "start_frame": 272,
+        "end_frame": 452
+      },
+      {
+        "sid": "S04",
+        "start_s": 15.0667,
+        "end_s": 20.0667,
+        "duration_s": 5.0,
+        "start_frame": 452,
+        "end_frame": 602
+      },
+      {
+        "sid": "S05",
+        "start_s": 20.0667,
+        "end_s": 23.5,
+        "duration_s": 3.4333,
+        "start_frame": 602,
+        "end_frame": 705
+      },
+      {
+        "sid": "S06",
+        "start_s": 23.5,
+        "end_s": 26.9667,
+        "duration_s": 3.4667,
+        "start_frame": 705,
+        "end_frame": 809
+      },
+      {
+        "sid": "S07",
+        "start_s": 26.9667,
+        "end_s": 34.2667,
+        "duration_s": 7.3,
+        "start_frame": 809,
+        "end_frame": 1028
+      },
+      {
+        "sid": "S08",
+        "start_s": 34.2667,
+        "end_s": 39.4,
+        "duration_s": 5.1333,
+        "start_frame": 1028,
+        "end_frame": 1182
+      },
+      {
+        "sid": "S09",
+        "start_s": 39.4,
+        "end_s": 42.1333,
+        "duration_s": 2.7333,
+        "start_frame": 1182,
+        "end_frame": 1264
+      },
+      {
+        "sid": "S10",
+        "start_s": 42.1333,
+        "end_s": 47.2333,
+        "duration_s": 5.1,
+        "start_frame": 1264,
+        "end_frame": 1417
+      },
+      {
+        "sid": "S11",
+        "start_s": 47.2333,
+        "end_s": 52.1,
+        "duration_s": 4.8667,
+        "start_frame": 1417,
+        "end_frame": 1563
+      },
+      {
+        "sid": "S12",
+        "start_s": 52.1,
+        "end_s": 57.6333,
+        "duration_s": 5.5333,
+        "start_frame": 1563,
+        "end_frame": 1729
+      },
+      {
+        "sid": "S13",
+        "start_s": 57.6333,
+        "end_s": 65.9,
+        "duration_s": 8.2667,
+        "start_frame": 1729,
+        "end_frame": 1977
+      },
+      {
+        "sid": "S14",
+        "start_s": 65.9,
+        "end_s": 71.1,
+        "duration_s": 5.2,
+        "start_frame": 1977,
+        "end_frame": 2133
+      },
+      {
+        "sid": "S15",
+        "start_s": 71.1,
+        "end_s": 78.2333,
+        "duration_s": 7.1333,
+        "start_frame": 2133,
+        "end_frame": 2347
+      },
+      {
+        "sid": "S16",
+        "start_s": 78.2333,
+        "end_s": 81.9667,
+        "duration_s": 3.7334,
+        "start_frame": 2347,
+        "end_frame": 2459
+      },
+      {
+        "sid": "S17",
+        "start_s": 81.9667,
+        "end_s": 87.9667,
+        "duration_s": 6.0,
+        "start_frame": 2459,
+        "end_frame": 2639
+      },
+      {
+        "sid": "S18",
+        "start_s": 87.9667,
+        "end_s": 92.0667,
+        "duration_s": 4.1,
+        "start_frame": 2639,
+        "end_frame": 2762
+      },
+      {
+        "sid": "S19",
+        "start_s": 92.0667,
+        "end_s": 95.6,
+        "duration_s": 3.5333,
+        "start_frame": 2762,
+        "end_frame": 2868
+      },
+      {
+        "sid": "S20",
+        "start_s": 95.6,
+        "end_s": 101.2,
+        "duration_s": 5.6,
+        "start_frame": 2868,
+        "end_frame": 3036
+      },
+      {
+        "sid": "S21",
+        "start_s": 101.2,
+        "end_s": 105.0333,
+        "duration_s": 3.8333,
+        "start_frame": 3036,
+        "end_frame": 3151
+      },
+      {
+        "sid": "S22",
+        "start_s": 105.0333,
+        "end_s": 110.6667,
+        "duration_s": 5.6334,
+        "start_frame": 3151,
+        "end_frame": 3320
+      }
+    ]
+  },
+  "subtitle_version": {
+    "version": "v8.0.0",
+    "style": "cinema_boxless",
+    "emphasis_mode": "subtle_warm",
+    "word_by_word_animation": false,
+    "cue_count": 54,
+    "srt_path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/subtitles.srt"
+  },
+  "thumbnail_variants": {
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/thumbnail.jpg",
+    "mobile_preview_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/thumbnail_small_preview_sheet.jpg",
+    "concepts_comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/thumbnail_concepts_comparison_sheet.jpg",
+    "concepts": [
+      {
+        "concept_id": "A",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/thumbnail_concept_A.jpg",
+        "source_asset": "spacesuit_evolution_65y_plate_B.png",
+        "matches_opening_scene_asset": false,
+        "headline_text": "SPACESUIT EVOLUTION|65 YEARS",
+        "headline_word_count": 4,
+        "kicker_text": "",
+        "concept_rationale": "4-column chronological lineup: crisp 1961 silver Mercury suit and 1969 Apollo Moon suit escalating into blurred dark mystery spacesuit silhouettes with glowing '?' for 1984 ? and 2026 ?.",
+        "size_kb": 855.2,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "spacesuit_evolution_65y_plate_B.png",
+          "sharpness_score": 5.16,
+          "subject_separation_score": 68.67,
+          "combined_score": 40.09,
+          "recommended_cx": 0.4667,
+          "recommended_cy": 0.4887
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "B",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/thumbnail_concept_B.jpg",
+        "source_asset": "spacesuit_evolution_65y_plate_A.png",
+        "matches_opening_scene_asset": false,
+        "headline_text": "SPACESUIT EVOLUTION|65 YEARS",
+        "headline_word_count": 4,
+        "kicker_text": "",
+        "concept_rationale": "Split comparison hero: three stacked classic NASA spacesuits (1961 silver Mercury, 1965 Gemini golden umbilical, 1969 Apollo Moon suit) vs towering blurred dark 2026 ? Artemis silhouette.",
+        "size_kb": 825.6,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "spacesuit_evolution_65y_plate_A.png",
+          "sharpness_score": 4.42,
+          "subject_separation_score": 69.73,
+          "combined_score": 40.34,
+          "recommended_cx": 0.4405,
+          "recommended_cy": 0.4434
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "C",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/thumbnail_concept_C.jpg",
+        "source_asset": "spacesuit_evolution_65y_plate_C.png",
+        "matches_opening_scene_asset": false,
+        "headline_text": "SPACESUIT EVOLUTION|65 YEARS",
+        "headline_word_count": 4,
+        "kicker_text": "",
+        "concept_rationale": "Bold 3-column mobile contrast: 1961 gleaming silver suit | 1965 Ed White golden-visor spacewalk | 2026 ? shadowed Artemis lunar suit silhouette.",
+        "size_kb": 864.4,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "spacesuit_evolution_65y_plate_C.png",
+          "sharpness_score": 4.97,
+          "subject_separation_score": 52.56,
+          "combined_score": 31.15,
+          "recommended_cx": 0.4322,
+          "recommended_cy": 0.4601
+        },
+        "actual_analytics_outcome": null
+      }
+    ]
+  },
+  "rendering_configuration": {
+    "output_spec": {
+      "aspect_ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video_codec_master": "libx264",
+      "video_crf_master": 15,
+      "video_preset_master": "medium",
+      "video_profile": "high",
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "audio_codec": "aac",
+      "audio_bitrate": "192k",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "target_loudness_lufs": -16.0
+    },
+    "color_science": {
+      "enable_filmic_grade": true,
+      "cast_tame_strength": 0.1,
+      "luma_grain_sigma": 1.5
+    },
+    "benchmarks": {
+      "slug": "space-nasa-spacesuit-evolution-v8",
+      "encode_mode": "master",
+      "shots_render_or_cache_s": 0.008,
+      "timeline_assembly_and_mux_s": 98.371,
+      "thumbnail_concepts_s": 2.189,
+      "total_render_master_s": 100.864,
+      "rendered_frames": 3320,
+      "effective_render_fps": 32.92
+    }
+  },
+  "qa_results": {
+    "qc_measurements_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/qc_measurements.json",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/qc_report.md",
+    "summary": {
+      "overall_pass": true,
+      "failed_gates_count": 0,
+      "moving_footage_pct": 90.06,
+      "whisper_normalized_match_ratio": 0.9691,
+      "integrated_lufs": -16.1,
+      "true_peak_dbtp": -1.3,
+      "protected_projects_intact": true
+    }
+  },
+  "studio_v7_intelligence": {
+    "adaptive_audio_profile": "immersive_exploration",
+    "music_plan_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/music_plan.json",
+    "ambience_plan_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/ambience_plan.json",
+    "sfx_plan_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/sfx_plan.json",
+    "scene_optimization_report_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/scene_optimization_report.json",
+    "unified_av_timeline_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/unified_av_timeline.json",
+    "creative_qa_report_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/creative_qa_report.json",
+    "scene_optimization_counts": {
+      "Keep": 22,
+      "Merge": 0,
+      "Replace": 0,
+      "Remove": 0
+    },
+    "music_sections_count": 2,
+    "ambience_sections_count": 0,
+    "approved_sfx_count": 0,
+    "creative_qa_pass": true
+  },
+  "final_output_locations": {
+    "output_dir": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8",
+    "master_mp4": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/space-nasa-spacesuit-evolution-v8.mp4",
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/thumbnail.jpg",
+    "subtitles_srt": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/subtitles.srt",
+    "script_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/script.md",
+    "retention_plan_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/retention_plan.md",
+    "storyboard_manifest_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/storyboard_and_shot_manifest.md",
+    "youtube_metadata_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/youtube_metadata.md",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/qc_report.md"
+  }
+}

@@ -1,0 +1,2989 @@
+{
+  "style_profile": "space_discovery",
+  "ffprobe": {
+    "duration_s": 110.667,
+    "within_target_window": true,
+    "adaptive_duration_mode": true,
+    "exact_frame_match": true,
+    "size_bytes": 295015219,
+    "size_mb": 281.35,
+    "video_codec": "h264",
+    "profile": "High",
+    "width": 1080,
+    "height": 1920,
+    "dimensions_exact": true,
+    "r_frame_rate": "30/1",
+    "avg_frame_rate": "30/1",
+    "nb_frames": 3320,
+    "pix_fmt": "yuv420p",
+    "color_space": "bt709",
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "black_segments": [],
+  "loudness": {
+    "integrated_LUFS": -16.1,
+    "LRA_LU": 2.3,
+    "true_peak_dBTP": -1.3,
+    "narration_stem_LUFS": -16.0,
+    "ambience_and_sfx_stem_LUFS": -45.7,
+    "voice_to_ambience_margin_LU": 29.7
+  },
+  "shot_plan_and_pacing_qc": {
+    "style_profile": "space_discovery",
+    "total_duration_s": 110.667,
+    "shot_count": 22,
+    "distinct_source_assets_count": 21,
+    "raw_unique_filenames_count": 21,
+    "distinct_perspectives": [
+      "close_up",
+      "first_person_pov",
+      "medium",
+      "satellite_or_telescope",
+      "scientific_fieldwork"
+    ],
+    "distinct_perspectives_count": 5,
+    "first_real_motion_start_s": 3.833,
+    "viral_script_audit": {
+      "total_words": 258,
+      "hook_first_sentence_words": 9,
+      "max_sentence_words": 21,
+      "llm_cliche_hits": 0,
+      "jargon_cluster_hits": 0,
+      "flat_prosody_ratio": 0.0,
+      "ending_tail_pause_s": 0.34,
+      "anti_ai_script_pass": true,
+      "errors": [],
+      "warnings": []
+    },
+    "moving_footage_s": 99.665,
+    "moving_footage_pct": 90.06,
+    "meets_moving_footage_goal": true,
+    "still_photography_s": 10.999,
+    "still_photography_pct": 9.94,
+    "human_interaction_shots": 12,
+    "human_interaction_s": 59.632,
+    "human_interaction_pct": 53.88,
+    "illustrative_diagram_s": 0.0,
+    "illustrative_diagram_pct": 0.0,
+    "authentic_visual_pct": 100.0,
+    "visual_coverage_v8": {
+      "total_timeline_duration_s": 110.667,
+      "genuine_moving_footage_s": 99.667,
+      "genuine_moving_footage_ratio": 0.9006,
+      "genuine_moving_footage_pct": 90.06,
+      "meaningful_action_footage_s": 99.667,
+      "meaningful_action_footage_ratio": 0.9006,
+      "meaningful_action_footage_pct": 90.06,
+      "establishing_footage_s": 0.0,
+      "establishing_footage_ratio": 0.0,
+      "establishing_footage_pct": 0.0,
+      "real_time_lapse_s": 0.0,
+      "real_time_lapse_ratio": 0.0,
+      "real_time_lapse_pct": 0.0,
+      "static_image_s": 11.0,
+      "static_image_ratio": 0.0994,
+      "static_image_pct": 9.94,
+      "animated_still_s": 11.0,
+      "animated_still_pct": 9.94,
+      "pure_still_photo_s": 0.0,
+      "scientific_image_s": 0.0,
+      "scientific_visualization_s": 0.0,
+      "scientific_visualization_ratio": 0.0,
+      "scientific_visualization_pct": 0.0,
+      "infographic_s": 0.0,
+      "real_animation_s": 0.0,
+      "ai_generated_s": 0.0,
+      "reenactment_s": 0.0,
+      "by_media_class_s": {
+        "REAL_VIDEO_ACTION": 99.667,
+        "REAL_VIDEO_ESTABLISHING": 0.0,
+        "REAL_TIME_LAPSE": 0.0,
+        "STILL_PHOTO": 0.0,
+        "ANIMATED_STILL": 11.0,
+        "SCIENTIFIC_IMAGE": 0.0,
+        "INFOGRAPHIC": 0.0,
+        "REAL_ANIMATION": 0.0,
+        "AI_GENERATED": 0.0,
+        "REENACTMENT": 0.0
+      },
+      "by_media_class_pct": {
+        "REAL_VIDEO_ACTION": 90.06,
+        "REAL_VIDEO_ESTABLISHING": 0.0,
+        "REAL_TIME_LAPSE": 0.0,
+        "STILL_PHOTO": 0.0,
+        "ANIMATED_STILL": 9.94,
+        "SCIENTIFIC_IMAGE": 0.0,
+        "INFOGRAPHIC": 0.0,
+        "REAL_ANIMATION": 0.0,
+        "AI_GENERATED": 0.0,
+        "REENACTMENT": 0.0
+      },
+      "shot_classifications": [
+        {
+          "sid": "S01",
+          "duration_s": 3.8333,
+          "source_media_class": "STILL_PHOTO",
+          "effective_media_class": "ANIMATED_STILL",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "ANIMATED_STILL": 3.8333
+          },
+          "counts_as_genuine_moving_footage": false,
+          "pixel_audit": null
+        },
+        {
+          "sid": "S02",
+          "duration_s": 5.2334,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 5.2334
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 12.027,
+            "raw_median_diff": 10.561,
+            "affine_compensated_diff": 9.4,
+            "residual_to_raw_ratio": 0.89,
+            "p90_local_flow_residual_px": 3.261,
+            "independent_motion_patch_ratio": 0.529,
+            "flat_graphic_pixel_ratio": 0.413,
+            "grid_box_edge_score": 2.295,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=3.26px, indep_patches=53%)."
+          }
+        },
+        {
+          "sid": "S03",
+          "duration_s": 6.0,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 6.0
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 9.104,
+            "raw_median_diff": 9.159,
+            "affine_compensated_diff": 7.041,
+            "residual_to_raw_ratio": 0.769,
+            "p90_local_flow_residual_px": 3.433,
+            "independent_motion_patch_ratio": 0.361,
+            "flat_graphic_pixel_ratio": 0.382,
+            "grid_box_edge_score": 2.463,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=3.43px, indep_patches=36%)."
+          }
+        },
+        {
+          "sid": "S04",
+          "duration_s": 5.0,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 5.0
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 2.853,
+            "raw_median_diff": 2.823,
+            "affine_compensated_diff": 1.886,
+            "residual_to_raw_ratio": 0.668,
+            "p90_local_flow_residual_px": 0.495,
+            "independent_motion_patch_ratio": 0.069,
+            "flat_graphic_pixel_ratio": 0.495,
+            "grid_box_edge_score": 1.571,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": false,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+            "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.50px)."
+          }
+        },
+        {
+          "sid": "S05",
+          "duration_s": 3.4333,
+          "source_media_class": "STILL_PHOTO",
+          "effective_media_class": "ANIMATED_STILL",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "ANIMATED_STILL": 3.4333
+          },
+          "counts_as_genuine_moving_footage": false,
+          "pixel_audit": null
+        },
+        {
+          "sid": "S06",
+          "duration_s": 3.4667,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 3.4667
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 28,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 3.162,
+            "raw_median_diff": 3.024,
+            "affine_compensated_diff": 2.736,
+            "residual_to_raw_ratio": 0.905,
+            "p90_local_flow_residual_px": 0.413,
+            "independent_motion_patch_ratio": 0.0,
+            "flat_graphic_pixel_ratio": 0.415,
+            "grid_box_edge_score": 2.255,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": false,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+            "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.41px)."
+          }
+        },
+        {
+          "sid": "S07",
+          "duration_s": 7.3,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 7.3
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 10.358,
+            "raw_median_diff": 10.168,
+            "affine_compensated_diff": 8.962,
+            "residual_to_raw_ratio": 0.881,
+            "p90_local_flow_residual_px": 3.74,
+            "independent_motion_patch_ratio": 0.639,
+            "flat_graphic_pixel_ratio": 0.388,
+            "grid_box_edge_score": 2.332,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=3.74px, indep_patches=64%)."
+          }
+        },
+        {
+          "sid": "S08",
+          "duration_s": 5.1333,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 5.1333
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 25.345,
+            "raw_median_diff": 25.63,
+            "affine_compensated_diff": 26.057,
+            "residual_to_raw_ratio": 1.017,
+            "p90_local_flow_residual_px": 19.267,
+            "independent_motion_patch_ratio": 0.972,
+            "flat_graphic_pixel_ratio": 0.287,
+            "grid_box_edge_score": 1.867,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=19.27px, indep_patches=97%)."
+          }
+        },
+        {
+          "sid": "S09",
+          "duration_s": 2.7333,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 2.7333
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 22,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 9.374,
+            "raw_median_diff": 9.277,
+            "affine_compensated_diff": 4.859,
+            "residual_to_raw_ratio": 0.524,
+            "p90_local_flow_residual_px": 0.73,
+            "independent_motion_patch_ratio": 0.056,
+            "flat_graphic_pixel_ratio": 0.093,
+            "grid_box_edge_score": 1.553,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=0.73px, indep_patches=6%)."
+          }
+        },
+        {
+          "sid": "S10",
+          "duration_s": 5.1,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 5.1
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 15.97,
+            "raw_median_diff": 15.959,
+            "affine_compensated_diff": 18.636,
+            "residual_to_raw_ratio": 1.168,
+            "p90_local_flow_residual_px": 8.236,
+            "independent_motion_patch_ratio": 0.944,
+            "flat_graphic_pixel_ratio": 0.296,
+            "grid_box_edge_score": 1.541,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=8.24px, indep_patches=94%)."
+          }
+        },
+        {
+          "sid": "S11",
+          "duration_s": 4.8667,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 4.8667
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 6.234,
+            "raw_median_diff": 6.251,
+            "affine_compensated_diff": 5.53,
+            "residual_to_raw_ratio": 0.885,
+            "p90_local_flow_residual_px": 0.723,
+            "independent_motion_patch_ratio": 0.056,
+            "flat_graphic_pixel_ratio": 0.118,
+            "grid_box_edge_score": 1.435,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": false,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+            "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.72px)."
+          }
+        },
+        {
+          "sid": "S12",
+          "duration_s": 5.5333,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 5.5333
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 5.135,
+            "raw_median_diff": 5.173,
+            "affine_compensated_diff": 3.378,
+            "residual_to_raw_ratio": 0.653,
+            "p90_local_flow_residual_px": 0.234,
+            "independent_motion_patch_ratio": 0.0,
+            "flat_graphic_pixel_ratio": 0.148,
+            "grid_box_edge_score": 2.157,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": false,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+            "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.23px)."
+          }
+        },
+        {
+          "sid": "S13",
+          "duration_s": 8.2667,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 8.2667
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 5.172,
+            "raw_median_diff": 4.744,
+            "affine_compensated_diff": 4.007,
+            "residual_to_raw_ratio": 0.845,
+            "p90_local_flow_residual_px": 1.21,
+            "independent_motion_patch_ratio": 0.167,
+            "flat_graphic_pixel_ratio": 0.386,
+            "grid_box_edge_score": 1.901,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=1.21px, indep_patches=17%)."
+          }
+        },
+        {
+          "sid": "S14",
+          "duration_s": 5.2,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 5.2
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 22.626,
+            "raw_median_diff": 23.079,
+            "affine_compensated_diff": 16.965,
+            "residual_to_raw_ratio": 0.735,
+            "p90_local_flow_residual_px": 4.947,
+            "independent_motion_patch_ratio": 0.778,
+            "flat_graphic_pixel_ratio": 0.104,
+            "grid_box_edge_score": 1.753,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=4.95px, indep_patches=78%)."
+          }
+        },
+        {
+          "sid": "S15",
+          "duration_s": 7.1333,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 7.1333
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 10.937,
+            "raw_median_diff": 10.176,
+            "affine_compensated_diff": 8.12,
+            "residual_to_raw_ratio": 0.798,
+            "p90_local_flow_residual_px": 1.257,
+            "independent_motion_patch_ratio": 0.167,
+            "flat_graphic_pixel_ratio": 0.093,
+            "grid_box_edge_score": 1.439,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=1.26px, indep_patches=17%)."
+          }
+        },
+        {
+          "sid": "S16",
+          "duration_s": 3.7334,
+          "source_media_class": "STILL_PHOTO",
+          "effective_media_class": "ANIMATED_STILL",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "ANIMATED_STILL": 3.7334
+          },
+          "counts_as_genuine_moving_footage": false,
+          "pixel_audit": null
+        },
+        {
+          "sid": "S17",
+          "duration_s": 6.0,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 6.0
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 7.403,
+            "raw_median_diff": 6.907,
+            "affine_compensated_diff": 5.892,
+            "residual_to_raw_ratio": 0.853,
+            "p90_local_flow_residual_px": 0.651,
+            "independent_motion_patch_ratio": 0.083,
+            "flat_graphic_pixel_ratio": 0.079,
+            "grid_box_edge_score": 1.611,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": false,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+            "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.65px)."
+          }
+        },
+        {
+          "sid": "S18",
+          "duration_s": 4.1,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 4.1
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 33,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 7.979,
+            "raw_median_diff": 6.73,
+            "affine_compensated_diff": 6.425,
+            "residual_to_raw_ratio": 0.955,
+            "p90_local_flow_residual_px": 2.231,
+            "independent_motion_patch_ratio": 0.368,
+            "flat_graphic_pixel_ratio": 0.239,
+            "grid_box_edge_score": 1.835,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=2.23px, indep_patches=37%)."
+          }
+        },
+        {
+          "sid": "S19",
+          "duration_s": 3.5333,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 3.5333
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 28,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 9.398,
+            "raw_median_diff": 9.856,
+            "affine_compensated_diff": 8.121,
+            "residual_to_raw_ratio": 0.824,
+            "p90_local_flow_residual_px": 1.816,
+            "independent_motion_patch_ratio": 0.361,
+            "flat_graphic_pixel_ratio": 0.096,
+            "grid_box_edge_score": 3.139,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=1.82px, indep_patches=36%)."
+          }
+        },
+        {
+          "sid": "S20",
+          "duration_s": 5.6,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 5.6
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 2.844,
+            "raw_median_diff": 2.9,
+            "affine_compensated_diff": 3.364,
+            "residual_to_raw_ratio": 1.16,
+            "p90_local_flow_residual_px": 0.472,
+            "independent_motion_patch_ratio": 0.056,
+            "flat_graphic_pixel_ratio": 0.112,
+            "grid_box_edge_score": 1.636,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": false,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+            "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.47px)."
+          }
+        },
+        {
+          "sid": "S21",
+          "duration_s": 3.8333,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 3.8333
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 31,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 3.235,
+            "raw_median_diff": 3.499,
+            "affine_compensated_diff": 3.666,
+            "residual_to_raw_ratio": 1.048,
+            "p90_local_flow_residual_px": 0.528,
+            "independent_motion_patch_ratio": 0.056,
+            "flat_graphic_pixel_ratio": 0.11,
+            "grid_box_edge_score": 1.654,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=0.53px, indep_patches=6%)."
+          }
+        },
+        {
+          "sid": "S22",
+          "duration_s": 5.6334,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 5.6334
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 36,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 2.648,
+            "raw_median_diff": 2.843,
+            "affine_compensated_diff": 1.883,
+            "residual_to_raw_ratio": 0.662,
+            "p90_local_flow_residual_px": 1.407,
+            "independent_motion_patch_ratio": 0.24,
+            "flat_graphic_pixel_ratio": 0.441,
+            "grid_box_edge_score": 2.37,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=1.41px, indep_patches=24%)."
+          }
+        }
+      ]
+    },
+    "genuine_moving_footage_pct": 90.06,
+    "meaningful_action_footage_pct": 90.06,
+    "establishing_footage_pct": 0.0,
+    "static_image_pct": 9.94,
+    "scientific_visualization_pct": 0.0,
+    "repetition_and_progression": {
+      "total_shots": 22,
+      "raw_unique_filenames_count": 21,
+      "distinct_canonical_assets_count": 21,
+      "inflated_asset_count_delta": 0,
+      "canonical_usage_counts": {
+        "nasa_s62_08774_mercury_silver_suits_5k": 1,
+        "nasa_mercury_suiting_up_1962": 1,
+        "nasa_mercury_capsule_ingress_1962": 1,
+        "nasa_hd049_gemini_eva_earth_1965": 1,
+        "nasa_s65_30433_ed_white_umbilical": 1,
+        "nasa_hd049_gemini_rig_horizontal_1965": 1,
+        "nasa_hd049_gemini_inflated_stiff_1965": 1,
+        "nasa_apollo9_a7l_eva1_1969": 1,
+        "nasa_jsc_artemis_lunar_suit_testing_march_2026": 2,
+        "nasa_apollo9_a7l_eva2_1969": 1,
+        "nasa_jsc_gold_visor_closeup_1080p": 1,
+        "nasa_jsc_plss_cooling_pack_1080p": 1,
+        "nasa_apollo16_stiff_suit_lunar_fall_1080p": 1,
+        "nasa_jsc_hard_upper_torso_shell_1080p": 1,
+        "nasa_jsc_modular_emu_orbital_eva_1080p": 1,
+        "nasa_s84_27017_mccandless_mmu_1984": 1,
+        "nasa_jsc_xemu_rotary_bearings_1080p": 1,
+        "nasa_jsc_xemu_rear_entry_hatch_1080p": 1,
+        "nasa_jsc_crater_rock_sampling_1080p": 1,
+        "nasa_jsc_artemis_regolith_dust_test_2026": 1,
+        "nasa_jsc_south_pole_floodlit_climb_1080p": 1
+      },
+      "meaningful_progression_ratio": 1.0,
+      "progression_steps": [
+        {
+          "from_sid": "S01",
+          "to_sid": "S02",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject",
+            "new_evidence"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S02",
+          "to_sid": "S03",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S03",
+          "to_sid": "S04",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S04",
+          "to_sid": "S05",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject",
+            "new_evidence"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S05",
+          "to_sid": "S06",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject",
+            "new_evidence"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S06",
+          "to_sid": "S07",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S07",
+          "to_sid": "S08",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S08",
+          "to_sid": "S09",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S09",
+          "to_sid": "S10",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S10",
+          "to_sid": "S11",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S11",
+          "to_sid": "S12",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S12",
+          "to_sid": "S13",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S13",
+          "to_sid": "S14",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S14",
+          "to_sid": "S15",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S15",
+          "to_sid": "S16",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject",
+            "new_evidence"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S16",
+          "to_sid": "S17",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject",
+            "new_evidence"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S17",
+          "to_sid": "S18",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S18",
+          "to_sid": "S19",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S19",
+          "to_sid": "S20",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S20",
+          "to_sid": "S21",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S21",
+          "to_sid": "S22",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        }
+      ],
+      "stale_visual_topic_shifts": [],
+      "repetition_and_progression_pass": true,
+      "major_issue_count": 0,
+      "issues": []
+    },
+    "pacing_summary": {
+      "min_shot_s": 2.733,
+      "median_shot_s": 5.133,
+      "mean_shot_s": 5.03,
+      "max_shot_s": 8.267,
+      "internal_cuts": 21,
+      "clean_cuts": 21,
+      "dissolves": 0,
+      "dissolve_fraction": 0.0,
+      "speech_boundary_aligned_cuts": 21,
+      "speech_boundary_alignment_pct": 100.0
+    },
+    "errors": [],
+    "warnings": [],
+    "shots": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 3.8333,
+        "duration_s": 3.833,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.5,
+          "ideal_duration_s": 4.0,
+          "max_recommended_s": 4.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": false,
+            "spoken_word_count": 9
+          }
+        },
+        "media_type": "photo",
+        "kind": "still_parallax_25d",
+        "camera_perspective": "medium",
+        "src_file": "mercury_seven_silver_suits_5k.jpg",
+        "transition_in": "opening",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Instant Frame-0 5K Kodachrome reveal of America's gleaming silver 1961 spacesuits.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.0,
+        "nearest_speech_boundary_kind": "start",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Look closely at America's first spacesuit in nineteen sixty-one",
+        "story_beat": "5K Kodachrome reveal of Project Mercury's mirror-silver Navy Mark IV spacesuits",
+        "crop_feasibility": {
+          "source_width": 4096,
+          "source_height": 5120,
+          "crop_width_px": 2594.6,
+          "crop_height_px": 4612.6,
+          "upscale_factor": 0.416,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": true,
+          "honest_quality_tier": "native_1080x1920"
+        }
+      },
+      {
+        "sid": "S02",
+        "start_s": 3.8333,
+        "end_s": 9.0667,
+        "duration_s": 5.233,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.15,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "close_up",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 12
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "close_up",
+        "src_file": "mercury_suiting_up_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.87s breath-pause cut after 'sixty-one' into live moving color film of sealing the silver cocoon.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.007,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Wrapped in mirror-bright aluminized nylon it was only an emergency pressure cocoon",
+        "story_beat": "Suit technician fastening the mirror-silver Mercury aluminized-nylon pressure cocoon",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 498.0,
+          "crop_height_px": 885.2,
+          "upscale_factor": 2.169,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S03",
+        "start_s": 9.0667,
+        "end_s": 15.0667,
+        "duration_s": 6.0,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.88,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "static",
+            "is_moving_footage": true,
+            "spoken_word_count": 16
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "mercury_ingress_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.87s breath-pause cut after 'cocoon' showing stiff sleeve restriction inside the cramped capsule.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.001,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Inflated in vacuum its fabric joints locked so stiff an astronaut could barely bend an elbow",
+        "story_beat": "Silver-suited Mercury astronaut wedged inside cramped capsule hatch",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 498.0,
+          "crop_height_px": 885.2,
+          "upscale_factor": 2.169,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S04",
+        "start_s": 15.0667,
+        "end_s": 20.0667,
+        "duration_s": 5.0,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.36,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "first_person_pov",
+            "camera_movement": "aerial_sweep",
+            "is_moving_footage": true,
+            "spoken_word_count": 11
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "first_person_pov",
+        "src_file": "gemini_eva_earth_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.43s segment-pause cut after 'elbow' opening the hatch into raw orbital vacuum.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.065,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Four years later Project Gemini pushed astronauts outside into raw vacuum",
+        "story_beat": "1965 Project Gemini open-hatch view into raw vacuum above blue Earth",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 498.0,
+          "crop_height_px": 885.2,
+          "upscale_factor": 2.169,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S05",
+        "start_s": 20.0667,
+        "end_s": 23.5,
+        "duration_s": 3.433,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.5,
+          "ideal_duration_s": 4.0,
+          "max_recommended_s": 4.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "close_up",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": false,
+            "spoken_word_count": 7
+          }
+        },
+        "media_type": "photo",
+        "kind": "still_parallax_25d",
+        "camera_perspective": "close_up",
+        "src_file": "thumb_1965_ed_white_eva_4k.jpg",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.87s breath-pause cut after 'vacuum' onto 4K Hasselblad proof of the golden umbilical hose.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.011,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Tethered by a twenty-five-foot golden umbilical hose",
+        "story_beat": "4K detail of Ed White's 25-foot golden umbilical hose and handheld gas gun",
+        "crop_feasibility": {
+          "source_width": 4086,
+          "source_height": 4092,
+          "crop_width_px": 2092.5,
+          "crop_height_px": 3720.0,
+          "upscale_factor": 0.516,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": true,
+          "honest_quality_tier": "native_1080x1920"
+        }
+      },
+      {
+        "sid": "S06",
+        "start_s": 23.5,
+        "end_s": 26.9667,
+        "duration_s": 3.467,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.93,
+          "ideal_duration_s": 5.43,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "static",
+            "is_moving_footage": true,
+            "spoken_word_count": 10
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "gemini_rig_horizontal_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.21s comma-pause cut after 'hose' into moving 1965 Gemini spacewalk maneuvering footage.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.001,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Ed White floated over Earth firing a handheld gas gun",
+        "story_beat": "Gemini G4C spacewalk umbilical maneuvering test",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 498.0,
+          "crop_height_px": 885.2,
+          "upscale_factor": 2.169,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S07",
+        "start_s": 26.9667,
+        "end_s": 34.2667,
+        "duration_s": 7.3,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 7.27,
+          "max_recommended_s": 9.67,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 16
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "gemini_inflated_walk_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.87s breath-pause cut after 'gun' demonstrating soft Gemini limbs blown stiff like car tires.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.004,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Yet internal pressure ballooned soft Gemini suits like car tires nearly exhausting crews squeezing back inside",
+        "story_beat": "Pressurized Gemini G4C suit inflated stiff like car tires",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 498.0,
+          "crop_height_px": 885.2,
+          "upscale_factor": 2.169,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S08",
+        "start_s": 34.2667,
+        "end_s": 39.4,
+        "duration_s": 5.133,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.39,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 12
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "apollo9_a7l_eva1_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.39s segment-pause cut after 'inside' unveiling the 1969 21-layer Apollo spacecraft suit.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.027,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Walking on the Moon in nineteen sixty-nine demanded a wearable twenty-one-layer spacecraft",
+        "story_beat": "1969 wearable 21-layer Apollo A7L spacecraft in flight",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 498.0,
+          "crop_height_px": 885.2,
+          "upscale_factor": 2.169,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S09",
+        "start_s": 39.4,
+        "end_s": 42.1333,
+        "duration_s": 2.733,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.07,
+          "ideal_duration_s": 4.57,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "close_up",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 4
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "close_up",
+        "src_file": "artemis_2026_testing_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.87s breath-pause cut after 'spacecraft' zooming into the white fireproof outer fabric.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.007,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Beneath fireproof white Beta-cloth",
+        "story_beat": "Close-up of white fireproof outer spacesuit fabric and pressure gloves",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 552.3,
+          "crop_height_px": 981.8,
+          "upscale_factor": 1.956,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S10",
+        "start_s": 42.1333,
+        "end_s": 47.2333,
+        "duration_s": 5.1,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.75,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 14
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "apollo9_a7l_eva2_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.18s comma-pause cut after 'Beta-cloth' showing the 21-layer ballistic armor in raw vacuum.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.015,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "stacked Mylar and ballistic armor stopped tiny space rocks at eight kilometers per second",
+        "story_beat": "Stacked Mylar and ballistic micrometeoroid armor operating in raw space",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 498.0,
+          "crop_height_px": 885.2,
+          "upscale_factor": 2.169,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S11",
+        "start_s": 47.2333,
+        "end_s": 52.1,
+        "duration_s": 4.867,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.56,
+          "ideal_duration_s": 5.06,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "close_up",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 8
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "close_up",
+        "src_file": "gold_visor_closeup_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.87s breath-pause cut after 'second' directly onto the gold-plated solar visor.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.001,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "A thin gold-plated visor reflected blinding unfiltered sunlight",
+        "story_beat": "Gold-plated lunar visor reflecting harsh unfiltered sunlight",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 552.3,
+          "crop_height_px": 981.8,
+          "upscale_factor": 1.956,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S12",
+        "start_s": 52.1,
+        "end_s": 57.6333,
+        "duration_s": 5.533,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.88,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "static",
+            "is_moving_footage": true,
+            "spoken_word_count": 16
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "apollo_plss_pack_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.41s segment-pause cut after 'sunlight' opening up the backpack life-support and water-cooling plumbing.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.062,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "On each astronaut's back rode a life-support pack pumping chilled water through tubes against their skin",
+        "story_beat": "Inside NASA's Portable Life Support System chilled-water & oxygen backpack",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 542.4,
+          "crop_height_px": 964.3,
+          "upscale_factor": 1.991,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S13",
+        "start_s": 57.6333,
+        "end_s": 65.9,
+        "duration_s": 8.267,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 7.44,
+          "max_recommended_s": 9.84,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "static",
+            "is_moving_footage": true,
+            "spoken_word_count": 20
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "apollo16_lunar_fall_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.87s breath-pause cut after 'skin' proving why stiff pressurized Apollo fabric joints made astronauts topple.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.006,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Still Apollo's pressurized fabric torso fought every bend forcing crews to bunny-hop and topple whenever they reached down for rocks",
+        "story_beat": "Apollo 16 astronaut bunny-hopping and toppling into Moon dust due to stiff suit joints",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 482.1,
+          "crop_height_px": 857.1,
+          "upscale_factor": 2.24,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S14",
+        "start_s": 65.9,
+        "end_s": 71.1,
+        "duration_s": 5.2,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.72,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 13
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "shuttle_hut_shell_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.43s segment-pause cut after 'rocks' jumping to the rigid fiberglass Hard Upper Torso breakthrough.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.066,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "In nineteen eighty-four NASA rebuilt the upper body around a rigid fiberglass shell",
+        "story_beat": "Fitting the rigid fiberglass Hard Upper Torso spacesuit shell",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 552.3,
+          "crop_height_px": 981.8,
+          "upscale_factor": 1.956,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S15",
+        "start_s": 71.1,
+        "end_s": 78.2333,
+        "duration_s": 7.133,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 7.03,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "first_person_pov",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 15
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "first_person_pov",
+        "src_file": "shuttle_eva_orbit1_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.85s breath-pause cut after 'shell' into live 1080p orbital EVA propulsion.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.004,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Snapped onto a twenty-four-thruster nitrogen jetpack Bruce McCandless flew untethered one hundred meters from Challenger",
+        "story_beat": "Modular hard-torso spacesuit and nitrogen thruster backpack in orbital vacuum",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 552.3,
+          "crop_height_px": 981.8,
+          "upscale_factor": 1.956,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S16",
+        "start_s": 78.2333,
+        "end_s": 81.9667,
+        "duration_s": 3.733,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.5,
+          "ideal_duration_s": 4.0,
+          "max_recommended_s": 4.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "satellite_or_telescope",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": false,
+            "spoken_word_count": 8
+          }
+        },
+        "media_type": "photo",
+        "kind": "still_parallax_25d",
+        "camera_perspective": "satellite_or_telescope",
+        "src_file": "mccandless_mmu_closeup_7k.jpg",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.85s breath-pause cut after 'Challenger' onto the 47MP Hasselblad master frame of a standalone human satellite above Earth.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.004,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "He became a standalone human satellite above Earth",
+        "story_beat": "Bruce McCandless hovering untethered over Earth in the 24-thruster MMU as a standalone human satellite",
+        "crop_feasibility": {
+          "source_width": 6852,
+          "source_height": 6904,
+          "crop_width_px": 3291.1,
+          "crop_height_px": 5850.8,
+          "upscale_factor": 0.328,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": true,
+          "honest_quality_tier": "native_1080x1920"
+        }
+      },
+      {
+        "sid": "S17",
+        "start_s": 81.9667,
+        "end_s": 87.9667,
+        "duration_s": 6.0,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.69,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "close_up",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 15
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "close_up",
+        "src_file": "xemu_rotary_bearings_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.42s segment-pause cut after 'Earth' jumping to 2026 Artemis sealed metal bearing joints.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.031,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Now for twenty twenty-six Artemis lunar suits replace stiff fabric bends with sealed metal bearings",
+        "story_beat": "Artemis lunar suit sealed rotary metal waist and hip bearings",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 552.3,
+          "crop_height_px": 981.8,
+          "upscale_factor": 1.956,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S18",
+        "start_s": 87.9667,
+        "end_s": 92.0667,
+        "duration_s": 4.1,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.18,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 10
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "xemu_rear_entry_hatch_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.87s breath-pause cut after 'bearings' showing an astronaut stepping straight into the rear-entry backpack hatch.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.002,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Astronauts step straight through a rear-entry hatch on the backpack",
+        "story_beat": "Stepping feet-first straight through the open rear-entry backpack hatch",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 552.3,
+          "crop_height_px": 981.8,
+          "upscale_factor": 1.956,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S19",
+        "start_s": 92.0667,
+        "end_s": 95.6,
+        "duration_s": 3.533,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.16,
+          "ideal_duration_s": 5.66,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 8
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "xemu_crater_kneeling_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.24s comma-pause cut after 'backpack' contrasting S13's Apollo lunar fall with effortless crater rock sampling.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.014,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "then twist and kneel effortlessly across rocky craters",
+        "story_beat": "Next-gen planetary spacesuits bending effortlessly to collect dark volcanic crater rocks",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 542.4,
+          "crop_height_px": 964.3,
+          "upscale_factor": 1.991,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S20",
+        "start_s": 95.6,
+        "end_s": 101.2,
+        "duration_s": 5.6,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.72,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 13
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "artemis_regolith_dust_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.41s segment-pause cut after 'craters' introducing the scientific caveat of glass-sharp lunar dust.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.067,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Glass-sharp lunar dust remains NASA's toughest enemy chewing at metal seals and joints",
+        "story_beat": "Artemis spacesuit kneeling in abrasive lunar regolith simulant dust",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 489.9,
+          "crop_height_px": 871.0,
+          "upscale_factor": 2.204,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      },
+      {
+        "sid": "S21",
+        "start_s": 101.2,
+        "end_s": 105.0333,
+        "duration_s": 3.833,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.77,
+          "ideal_duration_s": 5.27,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 7
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "artemis_2026_testing_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.90s breath-pause cut after 'joints' onto March 2026 NASA Artemis lunar crater testing.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.01,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "Yet sixty-five years after Mercury's silver cocoon",
+        "story_beat": "March 2026 NASA Artemis lunar spacesuit dark-crater walk test",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 552.3,
+          "crop_height_px": 981.8,
+          "upscale_factor": 1.956,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S22",
+        "start_s": 105.0333,
+        "end_s": 110.6667,
+        "duration_s": 5.633,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 4.2,
+          "ideal_duration_s": 6.75,
+          "max_recommended_s": 9.5,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 14
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "spacesuits_next_explorers_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.20s comma-pause cut after 'cocoon' into the pitch-dark Lunar South Pole crater payoff.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.01,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "dust-hardened Artemis suits are built to work deep inside the Moon's frozen southern shadows",
+        "story_beat": "Artemis spacesuit helmet floodlights piercing Lunar South Pole shadows",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 532.9,
+          "crop_height_px": 947.4,
+          "upscale_factor": 2.027,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      }
+    ]
+  },
+  "visual_evidence_breakdown": {
+    "total_shots": 22,
+    "moving_footage_s": 99.665,
+    "moving_footage_pct": 90.06,
+    "genuine_moving_footage_pct": 90.06,
+    "meaningful_action_footage_pct": 90.06,
+    "establishing_footage_pct": 0.0,
+    "real_time_lapse_pct": 0.0,
+    "static_image_pct": 9.94,
+    "scientific_visualization_pct": 0.0,
+    "still_photography_s": 10.999,
+    "still_photography_pct": 9.94,
+    "human_interaction_shots": 12,
+    "human_interaction_s": 59.632,
+    "human_interaction_pct": 53.88,
+    "real_imagery_and_footage_s": 110.667,
+    "real_imagery_and_footage_pct": 100.0,
+    "illustrative_diagram_s": 0,
+    "illustrative_diagram_pct": 0.0,
+    "meets_real_target": true,
+    "meets_moving_video_target": true
+  },
+  "editorial_formula_qc": {
+    "first_word_start_s": 0.1,
+    "hook_within_limit": true,
+    "layer2_pivot_seg_id": "N04",
+    "scientific_caveat_seg_id": "N07",
+    "caveat_explicitly_stated": true,
+    "all_passed": true
+  },
+  "full_canvas_qc": {
+    "audited_shots": 22,
+    "suspicious_shots_count": 0,
+    "suspicious_shots": [],
+    "all_full_canvas_pass": true,
+    "shots": [
+      {
+        "sid": "S01",
+        "kind": "still_parallax_25d",
+        "sample_t_s": 1.92,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.41,
+        "right_inset_spike_ratio": 0.94,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S02",
+        "kind": "video_full",
+        "sample_t_s": 6.45,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.23,
+        "right_inset_spike_ratio": 1.09,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S03",
+        "kind": "video_full",
+        "sample_t_s": 12.07,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 2.05,
+        "right_inset_spike_ratio": 0.76,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S04",
+        "kind": "video_full",
+        "sample_t_s": 17.57,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.97,
+        "right_inset_spike_ratio": 0.99,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S05",
+        "kind": "still_parallax_25d",
+        "sample_t_s": 21.78,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.25,
+        "right_inset_spike_ratio": 0.9,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S06",
+        "kind": "video_full",
+        "sample_t_s": 25.23,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.39,
+        "right_inset_spike_ratio": 1.66,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S07",
+        "kind": "video_full",
+        "sample_t_s": 30.62,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.69,
+        "right_inset_spike_ratio": 0.82,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S08",
+        "kind": "video_full",
+        "sample_t_s": 36.83,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.53,
+        "right_inset_spike_ratio": 0.98,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S09",
+        "kind": "video_full",
+        "sample_t_s": 40.77,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.4,
+        "right_inset_spike_ratio": 0.98,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S10",
+        "kind": "video_full",
+        "sample_t_s": 44.68,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.15,
+        "right_inset_spike_ratio": 1.94,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S11",
+        "kind": "video_full",
+        "sample_t_s": 49.67,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.09,
+        "right_inset_spike_ratio": 2.01,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S12",
+        "kind": "video_full",
+        "sample_t_s": 54.87,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 3.2,
+        "right_inset_spike_ratio": 5.18,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S13",
+        "kind": "video_full",
+        "sample_t_s": 61.77,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.45,
+        "right_inset_spike_ratio": 1.1,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S14",
+        "kind": "video_full",
+        "sample_t_s": 68.5,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.23,
+        "right_inset_spike_ratio": 1.42,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S15",
+        "kind": "video_full",
+        "sample_t_s": 74.67,
+        "top_black_px": 0,
+        "bottom_black_px": 6,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.93,
+        "right_inset_spike_ratio": 1.44,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S16",
+        "kind": "still_parallax_25d",
+        "sample_t_s": 80.1,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.56,
+        "right_inset_spike_ratio": 1.0,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S17",
+        "kind": "video_full",
+        "sample_t_s": 84.97,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.78,
+        "right_inset_spike_ratio": 1.33,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S18",
+        "kind": "video_full",
+        "sample_t_s": 90.02,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.57,
+        "right_inset_spike_ratio": 1.51,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S19",
+        "kind": "video_full",
+        "sample_t_s": 93.83,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.68,
+        "right_inset_spike_ratio": 1.52,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S20",
+        "kind": "video_full",
+        "sample_t_s": 98.4,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.18,
+        "right_inset_spike_ratio": 1.18,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S21",
+        "kind": "video_full",
+        "sample_t_s": 103.12,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.24,
+        "right_inset_spike_ratio": 0.71,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S22",
+        "kind": "video_full",
+        "sample_t_s": 107.85,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.26,
+        "right_inset_spike_ratio": 1.0,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      }
+    ]
+  },
+  "overlay_cleanliness_qc": {
+    "style_profile": "space_discovery",
+    "scale_rings_rendered": 0,
+    "locator_huds_rendered": 0,
+    "source_banners_rendered": 0,
+    "callout_badges_rendered": 0,
+    "opening_cover_card_burned": false,
+    "closing_credit_burned": false,
+    "minimal_context_notes_used": [],
+    "violations": [],
+    "clean_documentary_pass": true
+  },
+  "protected_projects_qc": {
+    "checked_projects": {
+      "blood-falls-v3-documentary": {
+        "mp4_exists": true,
+        "size_mb": 338.67,
+        "intact": true
+      },
+      "brine-pools-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 331.23,
+        "intact": true
+      },
+      "day-in-the-life-of-an-astronaut": {
+        "mp4_exists": true,
+        "size_mb": 126.43,
+        "intact": true
+      },
+      "fermi-paradox-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 413.61,
+        "intact": true
+      },
+      "forbidden-zones-earth-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 544.82,
+        "intact": true
+      },
+      "gemstone-mine-secrets-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 380.86,
+        "intact": true
+      },
+      "how-high-could-you-jump-on-other-planets": {
+        "mp4_exists": true,
+        "size_mb": 34.22,
+        "intact": true
+      },
+      "lava-cave-gold-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 386.85,
+        "intact": true
+      },
+      "mars-helicopter-1-percent-air": {
+        "mp4_exists": true,
+        "size_mb": 118.82,
+        "intact": true
+      },
+      "unreal-places-earth-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 441.92,
+        "intact": true
+      },
+      "venus-hotter-than-mercury": {
+        "mp4_exists": true,
+        "size_mb": 88.07,
+        "intact": true
+      }
+    },
+    "all_intact": true
+  },
+  "wcag_contrast_qc": {
+    "subtitle_style": "cinema_boxless",
+    "emphasis_mode": "subtle_warm",
+    "backdrop_worst_case_rgb": [
+      240,
+      245,
+      250
+    ],
+    "caption_white_contrast_ratio": 12.07,
+    "caption_gold_contrast_ratio": 9.34,
+    "all_wcag_aaa_pass": true
+  },
+  "viral_anti_ai_qc": {
+    "anti_ai_script_pass": true,
+    "llm_cliche_hits": 0,
+    "jargon_cluster_hits": 0,
+    "ending_tail_pause_s": 0.34,
+    "first_real_motion_start_s": 3.833,
+    "opening_motion_pass": true,
+    "diegetic_nat_sound_active": false,
+    "audible_location_bed_pass": true,
+    "subtitle_style": "cinema_boxless",
+    "filmic_color_grade_enabled": true,
+    "all_viral_anti_ai_pass": true
+  },
+  "thumbnail_qc": {
+    "thumbnail_jpg_bytes": 875752,
+    "under_2mb": true,
+    "width": 1080,
+    "height": 1920,
+    "dimensions_9x16": true,
+    "text_mode": "cinema_hook",
+    "frame0_vs_thumbnail_mae_rgb": 75.117,
+    "cover_variants_exported": 2,
+    "concepts_exported": 3,
+    "concepts_comparison_sheet_exists": true,
+    "preview_sheet_exists": true
+  },
+  "motion_smoothness_qc": {
+    "sampled_shots": [
+      {
+        "sid": "S01",
+        "kind": "still_parallax_25d",
+        "min_frame_delta_luma": 4.0282,
+        "median_frame_delta_luma": 4.1041,
+        "max_to_median_ratio": 1.023,
+        "smooth": true
+      },
+      {
+        "sid": "S02",
+        "kind": "video_full",
+        "min_frame_delta_luma": 8.511,
+        "median_frame_delta_luma": 12.87,
+        "max_to_median_ratio": 1.27,
+        "smooth": true
+      },
+      {
+        "sid": "S03",
+        "kind": "video_full",
+        "min_frame_delta_luma": 3.7242,
+        "median_frame_delta_luma": 7.301,
+        "max_to_median_ratio": 1.646,
+        "smooth": true
+      },
+      {
+        "sid": "S04",
+        "kind": "video_full",
+        "min_frame_delta_luma": 3.0229,
+        "median_frame_delta_luma": 9.5663,
+        "max_to_median_ratio": 1.224,
+        "smooth": true
+      }
+    ],
+    "worst_jump_ratio": 1.646,
+    "all_smooth": true
+  },
+  "subtitles_qc": {
+    "cue_count": 54,
+    "max_burned_lines_per_cue": 2,
+    "raw_word_match_ratio": 0.9111,
+    "normalized_word_match_ratio": 0.9691,
+    "normalized_diffs": [
+      [
+        "replace",
+        "mirror bright",
+        "mirabrite"
+      ],
+      [
+        "replace",
+        "four",
+        "for"
+      ],
+      [
+        "replace",
+        "ballooned",
+        "balloon"
+      ],
+      [
+        "replace",
+        "astronaut's",
+        "astronauts"
+      ],
+      [
+        "replace",
+        "rode",
+        "road"
+      ],
+      [
+        "replace",
+        "bunny hop",
+        "bunnyhop"
+      ],
+      [
+        "replace",
+        "untethered",
+        "and tethered"
+      ]
+    ],
+    "cue_start_vs_whisper_offset_s": {
+      "median": 0.037,
+      "p95_abs": 0.214,
+      "max_abs": 0.348
+    }
+  },
+  "licensing_register_qc": {
+    "source_register_csv_exists": true,
+    "source_register_md_exists": true,
+    "registered_assets_count": 25
+  },
+  "narrative_and_visual_intelligence_qc": {
+    "momentum_pass": true,
+    "momentum_error_count": 0,
+    "momentum_warning_count": 0,
+    "hook_candidates_count": 2,
+    "recommended_hook_id": "H2",
+    "recommended_hook_score": 9.03,
+    "mean_visual_weighted_score": 0.9533,
+    "visual_mismatch_count": 0,
+    "all_shots_eligible": true
+  },
+  "voice_studio_qc": {
+    "voice_input_mode": "directed_tts",
+    "voice_direction_profile": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "sentence_count": 7,
+    "approval_lock_present": true,
+    "approval_lock_synchronized": true
+  },
+  "audio_5layer_health_qc": {
+    "scene_audio_profile": "space_vacuum_restrained",
+    "stems_exported_count": 5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "loudness_range_lra_lu": 2.3,
+    "speech_crest_factor_db": 14.5,
+    "natural_dynamics_pass": true,
+    "all_audio_health_pass": true
+  },
+  "creative_qa": {
+    "slug": "space-nasa-spacesuit-evolution-v8",
+    "creative_qa_pass": true,
+    "six_pillar_qa": {
+      "slug": "space-nasa-spacesuit-evolution-v8",
+      "technical_approval": true,
+      "creative_approval": true,
+      "overall_release_approval": true,
+      "visual_coverage_metrics": {
+        "genuine_moving_footage_pct": 90.06,
+        "meaningful_action_footage_pct": 90.06,
+        "establishing_footage_pct": 0.0,
+        "real_time_lapse_pct": 0.0,
+        "static_image_pct": 9.94,
+        "animated_still_pct": 9.94,
+        "scientific_visualization_pct": 0.0
+      },
+      "canonical_asset_summary": {
+        "distinct_canonical_assets": 21,
+        "raw_unique_filenames": 21,
+        "meaningful_progression_pct": 100.0
+      },
+      "resolution_honesty_records": [
+        {
+          "sid": "S01",
+          "src_file": "mercury_seven_silver_suits_5k.jpg",
+          "native_resolution": "4096x5120",
+          "cropped_9x16_px": "2595x4613",
+          "upscale_factor": 0.416,
+          "is_native_full_hd_vertical": true
+        },
+        {
+          "sid": "S02",
+          "src_file": "mercury_suiting_up_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "498x885",
+          "upscale_factor": 2.169,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S03",
+          "src_file": "mercury_ingress_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "498x885",
+          "upscale_factor": 2.169,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S04",
+          "src_file": "gemini_eva_earth_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "498x885",
+          "upscale_factor": 2.169,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S05",
+          "src_file": "thumb_1965_ed_white_eva_4k.jpg",
+          "native_resolution": "4086x4092",
+          "cropped_9x16_px": "2092x3720",
+          "upscale_factor": 0.516,
+          "is_native_full_hd_vertical": true
+        },
+        {
+          "sid": "S06",
+          "src_file": "gemini_rig_horizontal_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "498x885",
+          "upscale_factor": 2.169,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S07",
+          "src_file": "gemini_inflated_walk_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "498x885",
+          "upscale_factor": 2.169,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S08",
+          "src_file": "apollo9_a7l_eva1_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "498x885",
+          "upscale_factor": 2.169,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S09",
+          "src_file": "artemis_2026_testing_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "552x982",
+          "upscale_factor": 1.956,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S10",
+          "src_file": "apollo9_a7l_eva2_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "498x885",
+          "upscale_factor": 2.169,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S11",
+          "src_file": "gold_visor_closeup_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "552x982",
+          "upscale_factor": 1.956,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S12",
+          "src_file": "apollo_plss_pack_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "542x964",
+          "upscale_factor": 1.991,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S13",
+          "src_file": "apollo16_lunar_fall_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "482x857",
+          "upscale_factor": 2.24,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S14",
+          "src_file": "shuttle_hut_shell_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "552x982",
+          "upscale_factor": 1.956,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S15",
+          "src_file": "shuttle_eva_orbit1_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "552x982",
+          "upscale_factor": 1.956,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S16",
+          "src_file": "mccandless_mmu_closeup_7k.jpg",
+          "native_resolution": "6852x6904",
+          "cropped_9x16_px": "3291x5851",
+          "upscale_factor": 0.328,
+          "is_native_full_hd_vertical": true
+        },
+        {
+          "sid": "S17",
+          "src_file": "xemu_rotary_bearings_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "552x982",
+          "upscale_factor": 1.956,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S18",
+          "src_file": "xemu_rear_entry_hatch_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "552x982",
+          "upscale_factor": 1.956,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S19",
+          "src_file": "xemu_crater_kneeling_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "542x964",
+          "upscale_factor": 1.991,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S20",
+          "src_file": "artemis_regolith_dust_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "490x871",
+          "upscale_factor": 2.204,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S21",
+          "src_file": "artemis_2026_testing_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "552x982",
+          "upscale_factor": 1.956,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S22",
+          "src_file": "spacesuits_next_explorers_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "533x947",
+          "upscale_factor": 2.027,
+          "is_native_full_hd_vertical": false
+        }
+      ],
+      "technical_details": {
+        "target_resolution": "1080x1920",
+        "target_aspect_ratio": "9:16",
+        "target_fps": 30,
+        "target_video_codec": "libx264",
+        "target_audio_codec": "aac",
+        "mode": "post_render_mp4",
+        "encoded_width": 1080,
+        "encoded_height": 1920,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "r_frame_rate": "30/1",
+        "av_sync_drift_s": 0.0
+      },
+      "pillars": {
+        "media_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "semantic_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "repetition_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "timeline_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "technical_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "creative_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        }
+      },
+      "issues": []
+    },
+    "severity_counts": {
+      "CRITICAL": 0,
+      "MAJOR": 0,
+      "MINOR": 0,
+      "INFO": 1
+    },
+    "voice_metrics": {
+      "speaking_rate_wpm": 139.9,
+      "max_boundary_rms_jump_db": 0.07,
+      "high_drama_segment_ratio": 0.429
+    },
+    "soundscape_metrics": {
+      "adaptive_audio_profile": "immersive_exploration",
+      "music_sections_count": 2,
+      "audible_ambience_sections_count": 0,
+      "approved_sfx_count": 0,
+      "rejected_sfx_for_silence_count": 0,
+      "voice_to_bed_margin_lu": 29.7
+    },
+    "editing_metrics": {
+      "final_scene_count": 22,
+      "mean_scene_duration_s": 5.03,
+      "sync_issues_count": 0
+    },
+    "issues": [
+      {
+        "severity": "INFO",
+        "pillar": "music_and_effect_qa",
+        "code": "intentional_zero_sfx",
+        "message": "Episode intentionally uses zero point SFX; silence and natural ambience preferred over artificial effects."
+      }
+    ]
+  },
+  "failed_gates": [],
+  "failed_gates_count": 0,
+  "overall_studio_v6_pass": true,
+  "overall_studio_v7_pass": true,
+  "overall_studio_v8_technical_pass": true,
+  "overall_studio_v8_creative_pass": true,
+  "overall_studio_v8_release_pass": true
+}

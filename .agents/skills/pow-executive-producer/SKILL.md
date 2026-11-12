@@ -1,12 +1,14 @@
 ---
 name: pow-executive-producer
-description: Orchestrates a full Proof of Wonder science Short from topic to approved master (Studio v9). Use when the user asks to make, produce, render, redo, or continue an episode/video/Short for the Proof of Wonder channel, or says "làm tập", "dựng video", "sản xuất tập mới".
+description: Orchestrates a fast, single-pass Proof of Wonder science Short from topic to 1 Master Video + 3 Sample Thumbnails. Use when the user asks to make, produce, render, redo, or continue an episode/video/Short for the Proof of Wonder channel, or says "làm tập", "dựng video", "sản xuất tập mới".
 ---
 
-# Proof of Wonder — Executive Producer (Studio v9)
+# Proof of Wonder — Fast Single-Pass Executive Producer
 
-You orchestrate production end to end. You do NOT improvise the workflow: follow the stage order,
-read the stage skills, run the CLI, check the gates, and stop at the user pause points.
+You produce complete Proof of Wonder Shorts in a **single uninterrupted pass** without stopping for intermediate approvals (`Studio Backlot` and `voice-approve` are retired). Your target deliverable for every episode is:
+1. **`1` Master Video (`<slug>.mp4`)** — `1080×1920` (`9:16`), `30fps`, real documentary footage, 5-layer audio, cinema boxless subtitles, optional ManimCE alpha overlays.
+2. **`3` Intuitive Visual-Cue Thumbnails (`thumbnail.jpg`, `thumbnail_variant_B.jpg`, `thumbnail_variant_C.jpg`)** — 3 distinct `9:16` visual-story concepts (`[Upper-Left Cutout/Inset] ──(Curved Arrow + ✕/?/!)──► [Real Phenomenon] + [2-Line English Hook]`) ready to pick in `ytb-tools` (`Phòng Duyệt & Đăng`).
+3. **Lightweight YouTube Metadata (`youtube_metadata.md`, `subtitles.srt`, `script.md`)** — so `ytb-tools` loads the episode immediately.
 
 ## Environment
 
@@ -17,52 +19,60 @@ STUDIO=pipeline/pow_studio/cli.py
 EP=episodes/<episode>.yaml
 ```
 
-Always know where production stands before acting: read `<output_dir>/studio_state.json`
-(stage statuses + gates) and the tail of `<output_dir>/studio_events.jsonl`.
+## Streamlined 3-Step Production Workflow (Do Not Run Bloated Intermediate Stages)
 
-## Stage order (do not reorder)
+| Step | Action | Command | Output |
+|---|---|---|---|
+| **1. Footage + Cutout** | Search & download commercial-safe (`PD / CC0 / CC BY`) real moving clips (`>=90%` real moving video, `0` burned-in open captions in cropped 9:16 zone) **plus 1 foreground object image/PNG cutout** for the thumbnail `visual_cue` | `$PY $STUDIO discover-footage -t "<topic>"` + `$PY $STUDIO download-footage ... --no-audit` | Verified clips + cutout in `assets/raw_footage/<dir>/` (or `assets/thumbnail_sprites/`) |
+| **2. Manifest** | Write `episodes/<slug>.yaml` (`require_storyboard_approval: false`, `visual_corpus_mode: "off"`, 3 `thumbnail_concepts` A/B/C with `visual_cue`, 0–2 `mechanism_overlays`) | Edit YAML directly | Schema-valid episode YAML |
+| **3. Single-Pass Render** | Synthesize directed narration + 5-layer audio, render shots in parallel via in-memory pipe, mux `<slug>.mp4` + 3 visual-cue thumbnails, and auto-prune all intermediate build files | `$PY $STUDIO all -m $EP --mode master` | `<slug>.mp4` + `thumbnail.jpg` + `thumbnail_variant_B.jpg` + `thumbnail_variant_C.jpg` |
 
-| # | Stage | Command(s) | Gate / output | Skill to read |
-|---|---|---|---|---|
-| 0 | Topic intake | `$PY $STUDIO sprint` (reads ytb-tools `/api/pipeline`) | topic, hook, title | — |
-| 1 | Footage research | `discover-footage`, `download-footage`, `corpus-ingest`, `match-beats` | candidates on disk with provenance | `pow-footage-research` |
-| 2 | Script + manifest | write `episodes/<slug>_v9_documentary.yaml` (`manifest_version: "9.0"`) | schema-valid manifest | `pow-script-and-voice` |
-| 3 | Feasibility gate | `$PY $STUDIO feasibility -m $EP --out-dir <out>/planning` | **must pass** (exit 0) | `pow-footage-research` |
-| 4 | Story | `$PY $STUDIO stage2-story -m $EP` | hook + momentum pass | `pow-script-and-voice` |
-| 5 | Voice | `$PY $STUDIO stage3-voice -m $EP` then **PAUSE** for user listen | user runs/approves `voice-approve` | `pow-script-and-voice` |
-| 6 | Visual plan | `render-overlays -m $EP`, `stage4-visual -m $EP --mode draft`, `optimize-scenes`, `plan-soundscape` | preview sheet, `mechanism_overlay_qa.json` | `pow-mechanism-overlay` |
-| 7 | Storyboard approval | `export-storyboard -m $EP` → **PAUSE**: user approves in ytb-tools "Studio Backlot" | `storyboard_approval.json` hash matches | — |
-| 8 | Master render | `$PY $STUDIO stage5-edit -m $EP --mode master` | MP4 + thumbnails | — |
-| 9 | QA | `stage6-quality -m $EP`, `qa-6pillar -m $EP --out-dir <out>/qa`, `creative-qc -m $EP` | technical + creative approval | `pow-qa-and-release` |
-| 10 | Handoff | user reviews in ytb-tools "Mac Studio Review" | **PAUSE**: never publish yourself | `pow-qa-and-release` |
+## Visual-Cue Thumbnail Standard (Mandatory for All 3 Sample Thumbnails)
 
-## Send-back loop (max 2 rounds)
+Every episode MUST define 3 distinct `thumbnail_concepts` (`A`, `B`, `C`) using the declarative `visual_cue` schema so viewers grasp the scientific paradox in `0.3s`:
+- **Foreground Cutout (`cutout_file`):** Isolated object (`RGBA PNG` or clean white/black background photo via `cutout_mode: "auto"`, or `circle_badge` subject close-up) placed in the upper-left (`cutout_cx: 0.23, cutout_cy: 0.21`), leaving the main phenomenon unobstructed in the middle/right (`x ≈ 0.55–0.85, y ≈ 0.45–0.60`). Use `mirror_horizontal: true` on text-free background frames whenever flipping places the phenomenon directly under `arrow_end`.
+- **Curved Ribbon Arrow + Status Badge (`symbol`):** Point `arrow_end` directly into the phenomenon and pick the matching badge on the arrow shaft:
+  - `red_x` (`✕`) or `ban_circle`: *"Why can't we / Never / Forbidden / Impossible / Vanished"* (e.g., `WHY CAN'T WE DUMP | TRASH INTO LAVA?`)
+  - `question_mark` (`?`): *"Why / How / Unsolved scientific mystery"*
+  - `warning` (`!`): *"Deadly physics / Explosive trigger / Extreme hazard"*
+  - `check` (`✓`): *"How it actually survived / Counterintuitive mechanism"*
+- **2-Line English Curiosity Headline (`headline_text`):** Clear, everyday English (`<= 8` words, split with `|`), paired with a short uppercase `kicker_text`.
 
-If `qa-6pillar` reports `creative_approval=False`, or `creative-qc` has CRITICAL/MAJOR issues:
-1. Read the report and map each issue to its stage (media → research/visual plan, semantic → shot
-   choice, repetition → `optimize-scenes`, timeline → shots/overlays, technical → render).
-2. Fix at that stage, re-run from there, re-run QA.
-3. After 2 rounds without passing, stop and report to the user with the remaining issues and options
-   (re-scope topic, accept limited visuals, swap footage). Never paper over a failing gate.
-
-Record each send-back decision so it appears in the Backlot feed:
-
-```python
-from pow_studio.events import emit_event
-emit_event(out_dir, "send-back", "decision", "info", detail="QA semantic MAJOR on S04 -> replaced footage")
+```yaml
+thumbnail_concepts:
+  - concept_id: "A"
+    src_file: "<phenomenon_clip_A.mp4>"
+    src_time_s: 12.0
+    headline_text: "WHY CAN'T WE DUMP|TRASH INTO LAVA?"
+    kicker_text: "1,600× STEAM EXPLOSION"
+    cx: 0.52
+    cy: 0.54
+    zoom: 1.04
+    text_position: "bottom"
+    accent_rgb: [255, 212, 59]
+    visual_cue:
+      cutout_file: "<foreground_object_cutout.png>"
+      cutout_mode: "auto"
+      cutout_cx: 0.23
+      cutout_cy: 0.21
+      cutout_scale: 0.36
+      cutout_rotation_deg: -14.0
+      arrow_end: [0.72, 0.51]
+      symbol: "red_x"
 ```
+*(To regenerate ONLY the 3 thumbnails of an existing episode in ~2 seconds, run `$PY $STUDIO thumbnail-studio -m $EP`.)*
 
-## Reading user storyboard notes
+## What NOT to Run During Normal Episode Creation
 
-When the user requests changes in Backlot, `storyboard_approval.json` has `decision:
-"changes_requested"`, `notes`, and `shotNotes: {sid: text}`. Apply each note in the episode YAML,
-re-run `render-overlays` (if an overlay changed) + `export-storyboard -m $EP`, and ask for approval
-again in `http://localhost:3000` → **Studio Backlot** (`storyboard_sha256` changes automatically, so
-the old approval is invalidated).
+To keep episode creation fast, **do NOT run** these slow/redundant commands unless explicitly debugging a specific failure:
+- Do NOT run `corpus-ingest` or `match-beats` (CLIP neural network indexing across the whole library).
+- Do NOT run `export-storyboard` or wait for `Studio Backlot` approval.
+- Do NOT run `voice-approve` or pause after `stage3-voice`.
+- Do NOT render twice (`--mode draft` then `--mode master`) — run `$PY $STUDIO all -m $EP --mode master` once!
+- Do NOT run `stage6-quality`, `qa-6pillar`, or `creative-qc` (which re-transcribe audio with Whisper and generate 6 contact sheet JPEGs). Instead, verify clean framing on your source clips before/during step 1.
 
-## Hard rules
+## Hard Rules
 
-- New episode = new slug and output_dir. Never write into protected folders.
-- Narration on disk (`script.md`) must match the rendered voice word-for-word.
-- Frame 0 must be the real first frame of a moving shot with the hook question in the top safe zone.
-- Report progress to the user in Vietnamese, concise, with links to the key artifacts.
+- New episode = new slug and `output_dir`. Never write into `PROTECTED_COMPLETED_OUTPUT_DIRS`.
+- Never run `$PY $STUDIO publish` or upload to YouTube unless the user explicitly asks you to publish that specific episode.
+- Report completion concisely in Vietnamese with clickable links to `<slug>.mp4` and the 3 sample thumbnails (`thumbnail.jpg`, `thumbnail_variant_B.jpg`, `thumbnail_variant_C.jpg`).

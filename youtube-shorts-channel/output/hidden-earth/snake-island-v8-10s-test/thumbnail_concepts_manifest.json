@@ -1,0 +1,51 @@
+{
+  "slug": "snake-island-v8-10s-test",
+  "primary_title": "Snake Island: 90 Deadly Vipers in Every Hectare",
+  "concepts_count": 2,
+  "comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/thumbnail_concepts_comparison_sheet.jpg",
+  "ctr_prediction_disclaimer": "Visual sharpness and subject-separation scores verify small-screen mobile legibility only. They do NOT predict real YouTube click-through or swipe-away rates; populate `actual_analytics_outcome` via `analytics_learning.py` once real YouTube Studio impressions/views are available.",
+  "concepts": [
+    {
+      "concept_id": "A",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/thumbnail_concept_A.jpg",
+      "source_asset": "snakes_intertwined_mating_1080p.webm",
+      "matches_opening_scene_asset": true,
+      "headline_text": "90 VIPERS|PER HECTARE",
+      "headline_word_count": 4,
+      "kicker_text": "BRAZIL'S SNAKE ISLAND",
+      "concept_rationale": "Matches Frame 0 opening hook: multiple real snakes coiled and tangled in green branches at eye level.",
+      "size_kb": 843.8,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "snakes_intertwined_mating_1080p.webm",
+        "sharpness_score": 1.91,
+        "subject_separation_score": 61.16,
+        "combined_score": 34.5,
+        "recommended_cx": 0.5367,
+        "recommended_cy": 0.4662
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "B",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/thumbnail_concept_B.jpg",
+      "source_asset": "viper_ambushing_bird_iran_1080p.webm",
+      "matches_opening_scene_asset": false,
+      "headline_text": "VIPERS HUNT|IN THE TREES",
+      "headline_word_count": 5,
+      "kicker_text": "5X DEADLIER VENOM",
+      "concept_rationale": "Split-second real wildlife action frame of a camouflaged viper ambushing a landing bird.",
+      "size_kb": 491.3,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "viper_ambushing_bird_iran_1080p.webm",
+        "sharpness_score": 0.81,
+        "subject_separation_score": 60.93,
+        "combined_score": 33.87,
+        "recommended_cx": 0.4316,
+        "recommended_cy": 0.494
+      },
+      "actual_analytics_outcome": null
+    }
+  ]
+}

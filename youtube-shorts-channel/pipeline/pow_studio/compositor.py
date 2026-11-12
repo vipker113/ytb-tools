@@ -22,10 +22,12 @@ Key v3.0 architectural upgrades:
 
 from __future__ import annotations
 
+import concurrent.futures
 import difflib
 import hashlib
 import io
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -46,12 +48,20 @@ from .reframing import (
     estimate_salient_subject_center,
     interpolate_reframe_keyframes,
 )
-from .schema import CoverVariantSpec, EpisodeManifest, ShotSpecModel, ThumbnailSpecModel, resolve_timed_shots
+from .schema import (
+    CoverVariantSpec,
+    EpisodeManifest,
+    ShotSpecModel,
+    ThumbnailSpecModel,
+    ThumbnailVisualCueSpec,
+    resolve_timed_shots,
+)
 from .style_profile import DocumentaryStyleProfile, load_style_profile
 from .thumbnail_engine import (
     compose_subject_first_thumbnail,
     export_documentary_thumbnail_package,
     generate_thumbnail_concepts_package,
+    infer_default_visual_cue_symbol,
     score_thumbnail_candidate,
 )
 from .voice_studio import auto_build_caption_groups_from_words
@@ -222,11 +232,33 @@ def _pipe_frames_to_mp4(
     assert proc.stdin is not None
     for idx in range(nframes):
         rgb = frame_gen(idx)
-        proc.stdin.write(np.asarray(rgb, dtype=np.uint8).tobytes())
+        if rgb.mode != "RGB":
+            rgb = rgb.convert("RGB")
+        proc.stdin.write(rgb.tobytes())
     proc.stdin.close()
     rc = proc.wait()
     if rc != 0:
         raise RuntimeError(f"Shot encode failed for {out_mp4} (rc={rc})")
+
+
+def _probe_video_dimensions(src_vid: Path) -> tuple[int, int]:
+    proc = run_cmd(
+        [
+            "ffprobe",
+            "-v",
+            "error",
+            "-select_streams",
+            "v:0",
+            "-show_entries",
+            "stream=width,height",
+            "-of",
+            "csv=s=x:p=0",
+            str(src_vid),
+        ]
+    )
+    line = proc.stdout.strip().splitlines()[0]
+    w_s, h_s = line.split("x")[:2]
+    return int(w_s), int(h_s)
 
 
 def _apply_shot_annotations(
@@ -519,15 +551,13 @@ def render_single_shot(
 
     if s.kind in ("video_full", "video_window"):
         src_vid = _resolve_asset_path(s.src_file, manifest)
-        tmp_dir = scratch_dir / f"vid_{s.sid}"
-        shutil.rmtree(tmp_dir, ignore_errors=True)
-        tmp_dir.mkdir(parents=True, exist_ok=True)
         actual_src_in = max(0.0, s.src_in - (head_frames / float(fps)))
         dur = shot_dur + 0.35
-        run_cmd(
+        src_w, src_h = _probe_video_dimensions(src_vid)
+        frame_bytes = src_w * src_h * 3
+        decode_proc = subprocess.Popen(
             [
                 "ffmpeg",
-                "-y",
                 "-hide_banner",
                 "-loglevel",
                 "error",
@@ -539,11 +569,26 @@ def render_single_shot(
                 str(src_vid),
                 "-vf",
                 f"fps={fps}",
-                str(tmp_dir / "f_%04d.png"),
-            ]
+                "-f",
+                "rawvideo",
+                "-pix_fmt",
+                "rgb24",
+                "-",
+            ],
+            stdout=subprocess.PIPE,
         )
-        frame_files = sorted(tmp_dir.glob("f_*.png"))
-        if not frame_files:
+        assert decode_proc.stdout is not None
+        last_im_holder: list[Optional[Image.Image]] = [None]
+
+        def _next_decoded_rgb() -> Image.Image:
+            assert decode_proc.stdout is not None
+            buf = decode_proc.stdout.read(frame_bytes)
+            if len(buf) == frame_bytes:
+                im = Image.frombytes("RGB", (src_w, src_h), buf)
+                last_im_holder[0] = im
+                return im
+            if last_im_holder[0] is not None:
+                return last_im_holder[0]
             raise RuntimeError(f"Zero frames extracted from {src_vid} at src_in={actual_src_in:.2f}s")
 
         auto_kfs: list[tuple[float, float, float]] = []
@@ -562,7 +607,7 @@ def render_single_shot(
                     cx = s.cx0 + u * (s.cx1 - s.cx0)
                     cy = s.cy0 + u * (s.cy1 - s.cy0)
                 zz = max(1.0, s.z0 + u * (s.z1 - s.z0))
-                raw = Image.open(frame_files[min(i, len(frame_files) - 1)]).convert("RGB")
+                raw = _next_decoded_rgb()
                 if s.crop_box is not None:
                     raw = raw.crop(s.crop_box)
                 if s.shadow_lift > 1e-3:
@@ -581,8 +626,12 @@ def render_single_shot(
                 arr = (np.asarray(fr, dtype=np.float32) * keep_mult).astype(np.uint8)
                 return _apply_shot_annotations(Image.fromarray(arr), s, i / float(fps), shot_dur, style)
 
-            _pipe_frames_to_mp4(out_mp4, total_frames, gen_vfull, encode_mode, style)
-            shutil.rmtree(tmp_dir, ignore_errors=True)
+            try:
+                _pipe_frames_to_mp4(out_mp4, total_frames, gen_vfull, encode_mode, style)
+            finally:
+                decode_proc.stdout.close()
+                decode_proc.terminate()
+                decode_proc.wait()
             return out_mp4
 
         # Legacy `video_window` retained only for `legacy_v2` backward compatibility
@@ -595,7 +644,7 @@ def render_single_shot(
             cx = s.cx0 + u * (s.cx1 - s.cx0)
             cy = s.cy0 + u * (s.cy1 - s.cy0)
             zz = s.z0 + u * (s.z1 - s.z0)
-            raw = Image.open(frame_files[min(i, len(frame_files) - 1)]).convert("RGB")
+            raw = _next_decoded_rgb()
             if s.crop_box is not None:
                 raw = raw.crop(s.crop_box)
             bg = raw.resize((out_w, out_h), Image.Resampling.BICUBIC).filter(ImageFilter.GaussianBlur(radius=40))
@@ -618,20 +667,21 @@ def render_single_shot(
                     d.text((44, 250), s.card_subtitle, font=fm, fill=(182, 204, 226))
             return _apply_shot_annotations(bg, s, i / float(fps), shot_dur, style)
 
-        _pipe_frames_to_mp4(out_mp4, total_frames, gen_vwin, encode_mode, style)
-        shutil.rmtree(tmp_dir, ignore_errors=True)
+        try:
+            _pipe_frames_to_mp4(out_mp4, total_frames, gen_vwin, encode_mode, style)
+        finally:
+            decode_proc.stdout.close()
+            decode_proc.terminate()
+            decode_proc.wait()
         return out_mp4
 
     if s.kind == "diagram":
         diag_src = _resolve_asset_path(s.src_file, manifest)
         actual_src_in = max(0.0, s.src_in - (head_frames / float(fps)))
-        tmp_dir = scratch_dir / f"diag_{s.sid}"
-        shutil.rmtree(tmp_dir, ignore_errors=True)
-        tmp_dir.mkdir(parents=True, exist_ok=True)
-        run_cmd(
+        frame_bytes = out_w * out_h * 3
+        decode_proc = subprocess.Popen(
             [
                 "ffmpeg",
-                "-y",
                 "-hide_banner",
                 "-loglevel",
                 "error",
@@ -643,18 +693,34 @@ def render_single_shot(
                 str(diag_src),
                 "-vf",
                 f"fps={fps},scale={out_w}:{out_h}",
-                str(tmp_dir / "f_%04d.png"),
-            ]
+                "-f",
+                "rawvideo",
+                "-pix_fmt",
+                "rgb24",
+                "-",
+            ],
+            stdout=subprocess.PIPE,
         )
-        frame_files = sorted(tmp_dir.glob("f_*.png"))
-        if not frame_files:
-            raise RuntimeError(f"Zero frames extracted from diagram {diag_src}")
+        assert decode_proc.stdout is not None
+        last_diag_holder: list[Optional[Image.Image]] = [None]
 
         def gen_diag(i: int) -> Image.Image:
-            return Image.open(frame_files[min(i, len(frame_files) - 1)]).convert("RGB")
+            assert decode_proc.stdout is not None
+            buf = decode_proc.stdout.read(frame_bytes)
+            if len(buf) == frame_bytes:
+                im = Image.frombytes("RGB", (out_w, out_h), buf)
+                last_diag_holder[0] = im
+                return im
+            if last_diag_holder[0] is not None:
+                return last_diag_holder[0]
+            raise RuntimeError(f"Zero frames extracted from diagram {diag_src}")
 
-        _pipe_frames_to_mp4(out_mp4, total_frames, gen_diag, encode_mode, style)
-        shutil.rmtree(tmp_dir, ignore_errors=True)
+        try:
+            _pipe_frames_to_mp4(out_mp4, total_frames, gen_diag, encode_mode, style)
+        finally:
+            decode_proc.stdout.close()
+            decode_proc.terminate()
+            decode_proc.wait()
         return out_mp4
 
     # --- Legacy v2 inset/dashboard shot kinds (reachable ONLY when style_profile == "legacy_v2") ---
@@ -822,6 +888,7 @@ def render_all_shots(
 
     timed_shots = resolve_timed_shots(manifest, int(wt["total_frames_30fps"]), style.output.fps)
     handles = compute_transition_handles(timed_shots, style)
+    pending_jobs: list[tuple[ShotSpecModel, dict, str]] = []
     for s, hinfo in zip(timed_shots, handles):
         if only and s.sid not in only:
             continue
@@ -829,14 +896,30 @@ def render_all_shots(
         sp = shots_dir / f"{s.sid}.mp4"
         if use_cache and sp.exists() and sp.stat().st_size > 1024 and cache_map.get(s.sid) == sig and not only:
             continue
-        render_single_shot(
-            s,
-            manifest,
-            encode_mode=encode_mode,
-            head_frames=hinfo["head_frames"],
-            tail_frames=hinfo["tail_frames"],
-        )
-        cache_map[s.sid] = sig
+        pending_jobs.append((s, hinfo, sig))
+
+    if pending_jobs:
+        max_workers = min(len(pending_jobs), max(1, min(4, os.cpu_count() or 4)))
+
+        def _render_job(job: tuple[ShotSpecModel, dict, str]) -> tuple[str, str]:
+            sh, hi, sg = job
+            render_single_shot(
+                sh,
+                manifest,
+                encode_mode=encode_mode,
+                head_frames=hi["head_frames"],
+                tail_frames=hi["tail_frames"],
+            )
+            return sh.sid, sg
+
+        if max_workers == 1:
+            for jb in pending_jobs:
+                sid, sg = _render_job(jb)
+                cache_map[sid] = sg
+        else:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as pool:
+                for sid, sg in pool.map(_render_job, pending_jobs):
+                    cache_map[sid] = sg
 
     cache_file.write_text(json.dumps(cache_map, indent=2), encoding="utf-8")
     return timed_shots
@@ -1362,7 +1445,7 @@ def build_overlay_mov(
         key = json.dumps(st, sort_keys=True)
         if key not in cache:
             im = render_overlay_rgba(st, manifest, style=style)
-            cache[key] = np.asarray(im, dtype=np.uint8).tobytes()
+            cache[key] = im.tobytes()
         raw = cache[key]
         last_bytes = raw
         fa, fb = int(round(a * fps)), int(round(b * fps))
@@ -1637,15 +1720,55 @@ def _load_thumbnail_source_rgb(
     return _open_upright_rgb(src_path, max_long_edge=3400, crop_box=crop_box), src_name
 
 
+def _load_cutout_source_image(
+    cutout_file: str,
+    cutout_src_time_s: float,
+    manifest: EpisodeManifest,
+) -> Image.Image:
+    src_path = _resolve_asset_path(cutout_file, manifest)
+    if src_path.suffix.lower() in (".mp4", ".mov", ".webm", ".mkv", ".m4v"):
+        proc = subprocess.run(
+            [
+                "ffmpeg",
+                "-hide_banner",
+                "-loglevel",
+                "error",
+                "-ss",
+                f"{max(0.0, cutout_src_time_s):.3f}",
+                "-i",
+                str(src_path),
+                "-frames:v",
+                "1",
+                "-f",
+                "image2pipe",
+                "-vcodec",
+                "png",
+                "-",
+            ],
+            capture_output=True,
+        )
+        if proc.returncode != 0 or not proc.stdout:
+            raise RuntimeError(f"Failed to grab cutout frame from {src_path} at {cutout_src_time_s:.2f}s")
+        return Image.open(io.BytesIO(proc.stdout)).convert("RGB")
+
+    raw = ImageOps.exif_transpose(Image.open(src_path))
+    has_alpha = ("A" in raw.getbands()) or (raw.mode == "P" and "transparency" in raw.info)
+    im = raw.convert("RGBA") if has_alpha else raw.convert("RGB")
+    iw, ih = im.size
+    if max(iw, ih) > 2400:
+        sc = 2400.0 / float(max(iw, ih))
+        im = im.resize((int(round(iw * sc)), int(round(ih * sc))), Image.Resampling.LANCZOS)
+    return im
+
+
 def render_thumbnail_concepts_for_episode(
     manifest: EpisodeManifest,
     timed_shots: Optional[list[ShotSpecModel]] = None,
 ) -> dict:
     """
     Standalone & integrated Thumbnail Studio workflow (`Part 7, Section 9`):
-    Renders multiple distinct thumbnail concepts (from `manifest.thumbnail_concepts`, or derived
-    from `thumbnail_spec` + `alt_headlines` + pure subject visual) and exports mobile-size
-    comparison sheets without claiming visual scores predict real CTR.
+    Renders 3 intuitive visual-cue thumbnail concepts (from `manifest.thumbnail_concepts`, or derived
+    from `thumbnail_spec` + `alt_headlines`) and exports mobile-size comparison sheets.
     """
     style = manifest.resolve_style_profile()
     out_dir = Path(manifest.output_dir)
@@ -1655,7 +1778,7 @@ def render_thumbnail_concepts_for_episode(
     specs: list[ThumbnailSpecModel] = list(manifest.thumbnail_concepts)
     if not specs:
         base_spec = manifest.thumbnail_spec or ThumbnailSpecModel(concept_id="A", headline_text="")
-        specs.append(base_spec.model_copy(update={"concept_id": "A", "concept_rationale": base_spec.concept_rationale or "Primary opening-matched focal subject + concise curiosity hook"}))
+        specs.append(base_spec.model_copy(update={"concept_id": "A", "concept_rationale": base_spec.concept_rationale or "Primary visual-cue concept + curiosity hook"}))
         for idx, alt_h in enumerate((base_spec.alt_headlines or [])[:2]):
             specs.append(
                 base_spec.model_copy(
@@ -1667,15 +1790,17 @@ def render_thumbnail_concepts_for_episode(
                     }
                 )
             )
-        # Ensure at least 2 concepts exist by adding a pure-visual / tighter focal framing concept
-        if len(specs) < 2:
+        while len(specs) < 3 and len(t_shots) > len(specs):
+            v_tag = chr(ord("A") + len(specs))
+            alt_shot = t_shots[min(len(specs), len(t_shots) - 1)]
             specs.append(
                 base_spec.model_copy(
                     update={
-                        "concept_id": "B",
-                        "headline_text": "",
-                        "zoom": min(1.35, base_spec.zoom + 0.08),
-                        "concept_rationale": "Pure authentic phenomenon close-up with zero text overlay",
+                        "concept_id": v_tag,
+                        "src_file": alt_shot.src_file,
+                        "src_time_s": alt_shot.src_in,
+                        "zoom": min(1.35, base_spec.zoom + 0.06),
+                        "concept_rationale": f"Alternative scene framing ({alt_shot.sid})",
                     }
                 )
             )
@@ -1686,6 +1811,77 @@ def render_thumbnail_concepts_for_episode(
         cscore = score_thumbnail_candidate(src_rgb, source_name=src_name)
         cx = cspec.cx if cspec.cx is not None else (t_shots[0].cx0 if src_name == t_shots[0].src_file else cscore.recommended_cx)
         cy = cspec.cy if cspec.cy is not None else (t_shots[0].cy0 if src_name == t_shots[0].src_file else cscore.recommended_cy)
+
+        def _asset_exists(fn: str) -> bool:
+            try:
+                _resolve_asset_path(fn, manifest)
+                return True
+            except FileNotFoundError:
+                return False
+
+        active_vcue = cspec.visual_cue
+        if (
+            active_vcue is None
+            and style.opening_and_thumbnail.thumbnail_visual_cue_default
+            and cspec.headline_text.strip()
+        ):
+            comp_shot = next(
+                (s for s in t_shots if s.src_file != src_name and _asset_exists(s.src_file)),
+                None,
+            )
+            alt_concept = next(
+                (tc for tc in specs if tc.src_file and tc.src_file != src_name and _asset_exists(tc.src_file)),
+                None,
+            )
+            auto_sym = infer_default_visual_cue_symbol(cspec.headline_text)
+            if comp_shot is not None:
+                active_vcue = ThumbnailVisualCueSpec(
+                    enabled=True,
+                    cutout_file=comp_shot.src_file,
+                    cutout_src_time_s=float(comp_shot.src_in),
+                    cutout_mode="auto",
+                    cutout_crop_cx=float(comp_shot.cx0),
+                    cutout_crop_cy=float(comp_shot.cy0),
+                    cutout_crop_zoom=1.22,
+                    arrow_end=(0.70, 0.52),
+                    symbol=auto_sym,  # type: ignore[arg-type]
+                )
+            elif alt_concept is not None and alt_concept.src_file:
+                active_vcue = ThumbnailVisualCueSpec(
+                    enabled=True,
+                    cutout_file=alt_concept.src_file,
+                    cutout_src_time_s=float(alt_concept.src_time_s or 1.0),
+                    cutout_mode="auto",
+                    cutout_crop_zoom=1.22,
+                    arrow_end=(0.70, 0.52),
+                    symbol=auto_sym,  # type: ignore[arg-type]
+                )
+            else:
+                active_vcue = ThumbnailVisualCueSpec(
+                    enabled=True,
+                    cutout_file=None,
+                    cutout_mode="circle_badge",
+                    cutout_crop_cx=float(cx),
+                    cutout_crop_cy=float(cy),
+                    cutout_crop_zoom=1.45,
+                    arrow_end=(0.70, 0.52),
+                    symbol=auto_sym,  # type: ignore[arg-type]
+                )
+
+        cutout_img: Optional[Image.Image] = None
+        if active_vcue is not None and active_vcue.enabled:
+            if active_vcue.cutout_file:
+                cutout_img = _load_cutout_source_image(active_vcue.cutout_file, active_vcue.cutout_src_time_s, manifest)
+            else:
+                comp_shot = next(
+                    (s for s in t_shots if s.src_file != src_name and _asset_exists(s.src_file)),
+                    None,
+                )
+                if comp_shot is not None:
+                    cutout_img = _load_cutout_source_image(comp_shot.src_file, float(comp_shot.src_in), manifest)
+                else:
+                    cutout_img = src_rgb
+
         im = compose_subject_first_thumbnail(
             source_rgb=src_rgb,
             style=style,
@@ -1699,6 +1895,9 @@ def render_thumbnail_concepts_for_episode(
             accent_rgb=cspec.accent_rgb,
             clarity_boost=cspec.clarity_boost,
             shadow_lift=cspec.shadow_lift,
+            mirror_horizontal=cspec.mirror_horizontal,
+            visual_cue=active_vcue,
+            cutout_image=cutout_img,
         )
         rendered_concepts.append(
             {

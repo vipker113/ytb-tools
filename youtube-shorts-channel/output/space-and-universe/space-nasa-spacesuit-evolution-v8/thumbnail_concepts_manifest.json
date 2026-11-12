@@ -1,0 +1,72 @@
+{
+  "slug": "space-nasa-spacesuit-evolution-v8",
+  "primary_title": "Spacesuit Evolution 65 Years: Silver Cocoons to Moon Armor",
+  "concepts_count": 3,
+  "comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/thumbnail_concepts_comparison_sheet.jpg",
+  "ctr_prediction_disclaimer": "Visual sharpness and subject-separation scores verify small-screen mobile legibility only. They do NOT predict real YouTube click-through or swipe-away rates; populate `actual_analytics_outcome` via `analytics_learning.py` once real YouTube Studio impressions/views are available.",
+  "concepts": [
+    {
+      "concept_id": "A",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/thumbnail_concept_A.jpg",
+      "source_asset": "spacesuit_evolution_65y_plate_B.png",
+      "matches_opening_scene_asset": false,
+      "headline_text": "SPACESUIT EVOLUTION|65 YEARS",
+      "headline_word_count": 4,
+      "kicker_text": "",
+      "concept_rationale": "4-column chronological lineup: crisp 1961 silver Mercury suit and 1969 Apollo Moon suit escalating into blurred dark mystery spacesuit silhouettes with glowing '?' for 1984 ? and 2026 ?.",
+      "size_kb": 855.2,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "spacesuit_evolution_65y_plate_B.png",
+        "sharpness_score": 5.16,
+        "subject_separation_score": 68.67,
+        "combined_score": 40.09,
+        "recommended_cx": 0.4667,
+        "recommended_cy": 0.4887
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "B",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/thumbnail_concept_B.jpg",
+      "source_asset": "spacesuit_evolution_65y_plate_A.png",
+      "matches_opening_scene_asset": false,
+      "headline_text": "SPACESUIT EVOLUTION|65 YEARS",
+      "headline_word_count": 4,
+      "kicker_text": "",
+      "concept_rationale": "Split comparison hero: three stacked classic NASA spacesuits (1961 silver Mercury, 1965 Gemini golden umbilical, 1969 Apollo Moon suit) vs towering blurred dark 2026 ? Artemis silhouette.",
+      "size_kb": 825.6,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "spacesuit_evolution_65y_plate_A.png",
+        "sharpness_score": 4.42,
+        "subject_separation_score": 69.73,
+        "combined_score": 40.34,
+        "recommended_cx": 0.4405,
+        "recommended_cy": 0.4434
+      },
+      "actual_analytics_outcome": null
+    },
+    {
+      "concept_id": "C",
+      "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-spacesuit-evolution-v8/thumbnail_concept_C.jpg",
+      "source_asset": "spacesuit_evolution_65y_plate_C.png",
+      "matches_opening_scene_asset": false,
+      "headline_text": "SPACESUIT EVOLUTION|65 YEARS",
+      "headline_word_count": 4,
+      "kicker_text": "",
+      "concept_rationale": "Bold 3-column mobile contrast: 1961 gleaming silver suit | 1965 Ed White golden-visor spacewalk | 2026 ? shadowed Artemis lunar suit silhouette.",
+      "size_kb": 864.4,
+      "jpeg_quality": 96,
+      "legibility_metrics": {
+        "source_name": "spacesuit_evolution_65y_plate_C.png",
+        "sharpness_score": 4.97,
+        "subject_separation_score": 52.56,
+        "combined_score": 31.15,
+        "recommended_cx": 0.4322,
+        "recommended_cy": 0.4601
+      },
+      "actual_analytics_outcome": null
+    }
+  ]
+}

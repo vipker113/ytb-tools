@@ -1,0 +1,32 @@
+{
+  "slug": "snake-island-v8-10s-test",
+  "ambience_sections_total": 1,
+  "audible_ambience_sections_count": 1,
+  "silent_or_vacuum_sections_count": 0,
+  "continuous_across_connected_scenes": true,
+  "sections": [
+    {
+      "ambience_id": "A01",
+      "environment": "aerial_natural_wind",
+      "label": "Subtle natural open-air wind horizon",
+      "start_s": 0.0,
+      "end_s": 11.1,
+      "duration_s": 11.1,
+      "shot_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "audible": true,
+      "band_hz": [
+        120.0,
+        510.0
+      ],
+      "target_gain_db": -28.0,
+      "crossfade_s": 0.45,
+      "authentic_field_bed_file": "jungle_rainforest_canopy_ambience.wav",
+      "provenance": "authentic_expedition_field_audio"
+    }
+  ]
+}

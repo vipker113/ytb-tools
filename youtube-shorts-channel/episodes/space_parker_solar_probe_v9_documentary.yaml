@@ -58,8 +58,8 @@ ambience_ducked_lufs_target: -26.5
 raw_assets_dir: "assets/raw_footage/space_parker_solar_probe_v9"
 output_dir: "output/space-and-universe/parker-solar-probe-corona-v9"
 
-visual_corpus_mode: "on"
-require_storyboard_approval: true
+visual_corpus_mode: "off"
+require_storyboard_approval: false
 
 editorial_formula:
   hook_max_start_s: 1.5

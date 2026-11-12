@@ -1,0 +1,1187 @@
+{
+  "schema_name": "proof_of_wonder_production_manifest",
+  "manifest_version": "8.0",
+  "generated_at_utc": "2026-11-04T06:34:00.145319+00:00",
+  "slug": "space-nasa-rocket-evolution-v8",
+  "channel_name": "Proof of Wonder",
+  "category_playlist": "Space & Universe",
+  "topic": "100 Years of NASA & American Rocket Evolution (1926\u20132026) \u2014 From Goddard's Naked Metal Pipes & Vanguard's Pencil Collapse to Saturn V F-1 Nozzles, Shuttle Shock Diamonds & Artemis SLS",
+  "production_profile": {
+    "profile_name": "space_discovery",
+    "profile_version": "6.0.0",
+    "style_overrides": {
+      "asset_selection": {
+        "target_moving_footage_ratio": 0.88,
+        "target_genuine_moving_footage_ratio": 0.88,
+        "target_meaningful_action_footage_ratio": 0.8,
+        "max_static_image_ratio": 0.12,
+        "max_still_photo_ratio": 0.12,
+        "max_scientific_visualization_ratio": 0.05,
+        "max_duration_share_per_asset": 0.2,
+        "min_human_interaction_shots": 3
+      },
+      "viral_retention": {
+        "max_opening_still_duration_s": 5.0
+      },
+      "pacing": {
+        "min_shot_duration_s": 2.2
+      },
+      "subtitles": {
+        "style": "cinema_boxless"
+      }
+    },
+    "visual_scoring_weights": {
+      "direct_relevance": 0.32,
+      "visual_clarity": 0.2,
+      "authenticity": 0.2,
+      "technical_quality": 0.12,
+      "composition_potential": 0.1,
+      "motion_storytelling": 0.03,
+      "license_verification": 0.03,
+      "min_direct_relevance_floor": 0.35
+    }
+  },
+  "script_version": {
+    "version": "v8.0.0",
+    "script_sha256": "520982bb536b65792e938420aabfdbc9d90350cd3b9966185bc71019c9247dc3",
+    "segment_count": 7,
+    "word_count": 255,
+    "opening_hook_type": "surprising_visual",
+    "layer2_pivot_seg_id": "N04",
+    "scientific_caveat_seg_id": "N07",
+    "factual_references": [
+      {
+        "citation": "NASA Goddard Space Flight Center / Smithsonian National Air and Space Museum \u2014 March 16, 1926: Dr. Robert H. Goddard's First Liquid-Propellant Rocket Flight ('Nell', Auburn, Massachusetts).",
+        "url": "https://www.nasa.gov/centers-and-facilities/goddard/march-16-1926-goddards-first-liquid-fueled-rocket/",
+        "doi": null,
+        "supported_claims": "Goddard's 1926 liquid oxygen/gasoline rocket lacked an aerodynamic fuselage or nose cone, placing the combustion chamber and nozzle at the top above naked fuel lines and suspended tanks."
+      },
+      {
+        "citation": "NASA History Division \u2014 Vanguard TV-3 Launch Failure (Dec 6, 1957), Juno I / Explorer 1 Spinning Solid-Rocket Cluster (Jan 31, 1958), and Mercury-Atlas Pressurized Stainless-Steel Balloon Tanks (1962).",
+        "url": "https://www.nasa.gov/history/",
+        "doi": null,
+        "supported_claims": "Vanguard TV-3 rose ~4 feet before collapsing into flames; Juno I spun an upper-stage tub of 11 scaled-down Sergeant rockets; Atlas used <1 mm pressurized stainless-steel balloon tanks and 1.5-stage side booster staging."
+      },
+      {
+        "citation": "NASA Marshall Space Flight Center & Kennedy Space Center \u2014 Saturn IB (8 Redstone/Jupiter tanks & 8 H-1 engines), Saturn V (363 ft, five F-1 engines at 7.5M lbf), Space Shuttle RS-25, and Artemis Space Launch System (four RS-25s + twin SRBs at 8.8M lbf).",
+        "url": "https://www.nasa.gov/reference/space-launch-system/",
+        "doi": null,
+        "supported_claims": "Saturn IB clustered eight narrow tanks over eight H-1 engines; Saturn V stood 36 stories with five 3.7 m F-1 nozzles generating 7.5M lbf; Space Shuttle paired a ceramic-tiled orbiter with an external tank and 3 RS-25s; Artemis SLS generates 8.8M lbf while propellant remains ~88\u201390% of launch mass."
+      }
+    ]
+  },
+  "voice_direction_profile": {
+    "voice_input_mode": "directed_tts",
+    "profile_id": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "annotated_voice_script_file": "/Applications/code/science-knowledge/youtube-shorts-channel/episodes/space_nasa_rocket_evolution_v8_voice_script.txt",
+    "approval_lock": {
+      "locked": true,
+      "synchronized": true,
+      "approved_at_utc": "2026-11-04T04:13:57.284582+00:00",
+      "script_matches": true,
+      "audio_matches": true,
+      "timings_matches": true
+    }
+  },
+  "audio_source_and_final_narration": {
+    "voice_input_mode": "directed_tts",
+    "uploaded_narration_file": null,
+    "voice_reference_file": null,
+    "voice_owner_consent": false,
+    "narration_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/narration.mp3",
+    "final_audio_mix_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/final_audio_mix.mp3",
+    "word_timings_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/word_timings.json",
+    "total_duration_s": 107.0,
+    "total_frames_30fps": 3210,
+    "five_layer_stems": {
+      "layer_1_narration": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/work_audio/layer_1_narration.wav",
+      "layer_2_music": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/work_audio/layer_2_music.wav",
+      "layer_3_ambience": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/work_audio/layer_3_ambience.wav",
+      "layer_4_natural_sounds": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/work_audio/layer_4_natural_sounds.wav",
+      "layer_5_cinematic_sfx": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/work_audio/layer_5_cinematic_sfx.wav"
+    },
+    "audio_diagnostics": {
+      "integrated_lufs": -16.1,
+      "loudness_range_lra_lu": 2.5,
+      "true_peak_dbtp": -1.5,
+      "speech_crest_factor_db": 14.6,
+      "clipped_samples_count": 0,
+      "excessive_silence_count": 0,
+      "excessive_silences": [],
+      "voice_peak_dbfs": -1.69
+    }
+  },
+  "source_assets": [
+    {
+      "local_file": "goddard_1926_nell_4k.jpg",
+      "media_type": "photo",
+      "priority_tier": 1,
+      "title": "First Flight of a Liquid Propellant Rocket \u2014 Dr. Robert H. Goddard & 'Nell', March 16, 1926 (4K Master Scan)",
+      "creator_agency": "NASA Goddard Space Flight Center / Esther C. Goddard",
+      "source_page_url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e002224",
+      "direct_media_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002224/GSFC_20171208_Archive_e002224~orig.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "goddard_1926_no_skin_schematic_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 3,
+      "title": "1926 Goddard 'Nell' Inverted Naked-Pipe Architecture Kinematic Schematic (1080x1920)",
+      "creator_agency": "Proof of Wonder Documentary Studio",
+      "source_page_url": "local://assets/raw_footage/space_rocket_evolution_v8/goddard_1926_no_skin_schematic_1080p.mp4",
+      "direct_media_url": "local://assets/raw_footage/space_rocket_evolution_v8/goddard_1926_no_skin_schematic_1080p.mp4",
+      "is_first_party_original": true
+    },
+    {
+      "local_file": "goddard_1925_naked_pipes_lab.jpg",
+      "media_type": "photo",
+      "priority_tier": 2,
+      "title": "Dr. Robert H. Goddard Beside His Exposed Naked-Pipe Liquid-Fuel Rocket Assembly (GPN-2002-000139)",
+      "creator_agency": "NASA / Smithsonian Institution (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Robert_Goddard_with_his_Double_Acting_Engine_Rocket_in_1925_-_GPN-2002-000139.jpg",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Robert_Goddard_with_his_Double_Acting_Engine_Rocket_in_1925_-_GPN-2002-000139.jpg",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "vanguard_1958_explosion_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Project Vanguard Launch Pad Collapse and Fireball Explosion (Restored 1080p)",
+      "creator_agency": "U.S. Navy / Universal Newsreel Public Domain Archive (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:1958-02-06_Vanguard_Fails_in_Second_Launching.ogv",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/1958-02-06_Vanguard_Fails_in_Second_Launching.ogv",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "jpl_explorer1_1958_archive.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Explorer 1: America's First Satellite (JPL-19580131-EXPLORf-0001)",
+      "creator_agency": "NASA / Jet Propulsion Laboratory (JPL)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:JPL-19580131-EXPLORf-0001-AVC2004245_Explorer_1_Americas_First_Satellite.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/JPL-19580131-EXPLORf-0001-AVC2004245_Explorer_1_Americas_First_Satellite.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "explorer1_vanguard_juno_1958_hd.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Explorer 1 60th Anniversary Archival Launch Transfer (GSFC_20180129_Explorer1)",
+      "creator_agency": "NASA Goddard Space Flight Center",
+      "source_page_url": "https://images.nasa.gov/details/GSFC_20180129_Explorer1_m12837_60yrs1",
+      "direct_media_url": "http://images-assets.nasa.gov/video/GSFC_20180129_Explorer1_m12837_60yrs1/GSFC_20180129_Explorer1_m12837_60yrs1~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "mercury_atlas_glenn_broll_720p.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "John Glenn Friendship 7 Mercury-Atlas Launch B-Roll (NASA GRC)",
+      "creator_agency": "NASA Glenn Research Center",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:John_Glenn_B-Roll.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/John_Glenn_B-Roll.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "gemini_titan2_launch_hd049.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Project Gemini Titan II Twin-Engine Launch from Pad 19 (NASA HD 049 Resource Reel)",
+      "creator_agency": "NASA Lyndon B. Johnson Space Center",
+      "source_page_url": "https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201",
+      "direct_media_url": "https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "saturn_ib_story_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "The Saturn IB Story \u2014 Eight Clustered Tanks & H-1 Engines (NASA MSFC)",
+      "creator_agency": "NASA George C. Marshall Space Flight Center",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:The_Saturn_IB_Story_1960.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/The_Saturn_IB_Story_1960.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "power_for_apollo_saturn5_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Power for Apollo \u2014 Saturn V Propulsion Documentary (1080p)",
+      "creator_agency": "NASA Marshall Space Flight Center",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Power_for_Apollo_-_Saturn_V.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Power_for_Apollo_-_Saturn_V.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "michoud_apollo_saturn_assembly_hd.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Michoud Assembly Facility Historic Saturn V S-IC Resource Reel",
+      "creator_agency": "NASA Michoud Assembly Facility / MSFC",
+      "source_page_url": "https://images.nasa.gov/details/Michoud_Apollo_Work",
+      "direct_media_url": "http://images-assets.nasa.gov/video/Michoud_Apollo_Work/Michoud_Apollo_Work~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "apollo11_f1_500fps_camera_e8_720p.ogv",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Apollo 11 Saturn V F-1 Engines at 500 fps (Pad Camera E-8)",
+      "creator_agency": "NASA Kennedy Space Center",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Apollo_11_launch,_video_of_engines_at_500_fps_(camera_E-8).ogv",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Apollo_11_launch%2C_video_of_engines_at_500_fps_%28camera_E-8%29.ogv",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "shuttle_atlantis_sts129_launch_720p.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Launch of Space Shuttle Atlantis (STS-129)",
+      "creator_agency": "NASA Kennedy Space Center",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Launch_of_Space_Shuttle_Atlantis_STS-129.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Launch_of_Space_Shuttle_Atlantis_STS-129.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "stennis_rs25_engine_test_hd.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "NASA Stennis RS-25 Liquid-Hydrogen Main Engine Hot-Fire Test (SSC_2022-02-08)",
+      "creator_agency": "NASA Stennis Space Center",
+      "source_page_url": "https://images.nasa.gov/details/SSC_2022-02-08_RS-25_Engine_Test",
+      "direct_media_url": "http://images-assets.nasa.gov/video/SSC_2022-02-08_RS-25_Engine_Test/SSC_2022-02-08_RS-25_Engine_Test~medium.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "artemis3_rs25_processing_ksc_4k.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Artemis III RS-25 Four-Engine Cluster Processing at KSC (4K)",
+      "creator_agency": "NASA Kennedy Space Center",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Artemis_III_RS-25_Engine_Processing_at_KSC_(KSC-20260901-MH--CSH01-0001-Artemis_III_RS-25_Engine_Processing-M21611).webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Artemis_III_RS-25_Engine_Processing_at_KSC_%28KSC-20260901-MH--CSH01-0001-Artemis_III_RS-25_Engine_Processing-M21611%29.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "artemis1_sls_press_launch_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Artemis I Space Launch System Night Launch from Pad 39B (1080p)",
+      "creator_agency": "NASA Kennedy Space Center",
+      "source_page_url": "https://images.nasa.gov/details/Artemis%20I%20Launch%202022%20CU%20tracking%20from%20Press%20Site_compressed",
+      "direct_media_url": "http://images-assets.nasa.gov/video/Artemis%20I%20Launch%202022%20CU%20tracking%20from%20Press%20Site_compressed/Artemis%20I%20Launch%202022%20CU%20tracking%20from%20Press%20Site_compressed~large.mp4",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "rocket_evolution_100y_plate_B.png",
+      "media_type": "photo",
+      "priority_tier": 3,
+      "title": "100-Year NASA Rocket Evolution Composite Plate B (1926, 1957 & Mystery Silhouettes)",
+      "creator_agency": "Proof of Wonder Studio (Public Domain NASA & Smithsonian Photographs)",
+      "source_page_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "direct_media_url": "local://assets/raw_footage/space_rocket_evolution_v8/rocket_evolution_100y_plate_B.png",
+      "is_first_party_original": true
+    },
+    {
+      "local_file": "rocket_evolution_100y_plate_A.png",
+      "media_type": "photo",
+      "priority_tier": 3,
+      "title": "100-Year NASA Rocket Evolution Composite Plate A (Split Stacked Early vs 2026 Silhouette)",
+      "creator_agency": "Proof of Wonder Studio (Public Domain NASA Photographs)",
+      "source_page_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "direct_media_url": "local://assets/raw_footage/space_rocket_evolution_v8/rocket_evolution_100y_plate_A.png",
+      "is_first_party_original": true
+    },
+    {
+      "local_file": "rocket_evolution_100y_plate_C.png",
+      "media_type": "photo",
+      "priority_tier": 3,
+      "title": "100-Year NASA Rocket Evolution Composite Plate C (3-Column Contrast)",
+      "creator_agency": "Proof of Wonder Studio (Public Domain NASA Photographs)",
+      "source_page_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "direct_media_url": "local://assets/raw_footage/space_rocket_evolution_v8/rocket_evolution_100y_plate_C.png",
+      "is_first_party_original": true
+    },
+    {
+      "local_file": "cape_canaveral_pad_ambience.wav",
+      "media_type": "audio",
+      "priority_tier": 3,
+      "title": "Cape Canaveral Coastal Launch Complex Wind & Test-Stand Air Bed",
+      "creator_agency": "Proof of Wonder Documentary Studio",
+      "source_page_url": "local://assets/raw_footage/space_rocket_evolution_v8/cape_canaveral_pad_ambience.wav",
+      "direct_media_url": "local://assets/raw_footage/space_rocket_evolution_v8/cape_canaveral_pad_ambience.wav",
+      "is_first_party_original": true
+    }
+  ],
+  "licensing_metadata": {
+    "strict_zero_cost_budget": true,
+    "source_register_csv": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/source_register.csv",
+    "source_register_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/source_register.md",
+    "excluded_sources_notes": [],
+    "licenses": [
+      {
+        "local_file": "goddard_1926_nell_4k.jpg",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Goddard Space Flight Center (GSFC_20171208_Archive_e002224)"
+      },
+      {
+        "local_file": "goddard_1926_no_skin_schematic_1080p.mp4",
+        "license": "100% Original First-Party Graphic",
+        "license_url": "https://www.nasa.gov/centers-and-facilities/goddard/march-16-1926-goddards-first-liquid-fueled-rocket/",
+        "required_attribution": "Original first-party engineering schematic based on NASA Goddard historical specifications"
+      },
+      {
+        "local_file": "goddard_1925_naked_pipes_lab.jpg",
+        "license": "Public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain",
+        "required_attribution": "Public Domain \u2014 NASA Great Images in NASA (GPN-2002-000139)"
+      },
+      {
+        "local_file": "vanguard_1958_explosion_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain",
+        "required_attribution": "Public Domain \u2014 U.S. Government / Universal Newsreel (PD-US-not renewed)"
+      },
+      {
+        "local_file": "jpl_explorer1_1958_archive.webm",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA / Jet Propulsion Laboratory"
+      },
+      {
+        "local_file": "explorer1_vanguard_juno_1958_hd.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Goddard Space Flight Center"
+      },
+      {
+        "local_file": "mercury_atlas_glenn_broll_720p.webm",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA"
+      },
+      {
+        "local_file": "gemini_titan2_launch_hd049.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA JSC (HD 049 Mercury/Gemini/Apollo Resource Reel)"
+      },
+      {
+        "local_file": "saturn_ib_story_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Marshall Space Flight Center"
+      },
+      {
+        "local_file": "power_for_apollo_saturn5_1080p.webm",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA"
+      },
+      {
+        "local_file": "michoud_apollo_saturn_assembly_hd.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Michoud Assembly Facility"
+      },
+      {
+        "local_file": "apollo11_f1_500fps_camera_e8_720p.ogv",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Camera E-8 (Apollo 11)"
+      },
+      {
+        "local_file": "shuttle_atlantis_sts129_launch_720p.webm",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA"
+      },
+      {
+        "local_file": "stennis_rs25_engine_test_hd.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Stennis Space Center"
+      },
+      {
+        "local_file": "artemis3_rs25_processing_ksc_4k.webm",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA Kennedy Space Center"
+      },
+      {
+        "local_file": "artemis1_sls_press_launch_1080p.mp4",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA"
+      },
+      {
+        "local_file": "rocket_evolution_100y_plate_B.png",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA / Smithsonian archival composite"
+      },
+      {
+        "local_file": "rocket_evolution_100y_plate_A.png",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA archival composite"
+      },
+      {
+        "local_file": "rocket_evolution_100y_plate_C.png",
+        "license": "Public domain",
+        "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "required_attribution": "Public Domain \u2014 NASA archival composite"
+      },
+      {
+        "local_file": "cape_canaveral_pad_ambience.wav",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "required_attribution": "First-party synthesized coastal pad wind ambience (CC0)"
+      }
+    ]
+  },
+  "shot_list": [
+    {
+      "sid": "S01",
+      "kind": "still_parallax_25d",
+      "src_file": "goddard_1926_nell_4k.jpg",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "March 16, 1926 Goddard rocket 'Nell' in 4K archival detail",
+      "editorial_rationale": "Direct, unmistakable 4K archival photograph of the exact March 16, 1926 machine as the narrator tells viewers to look closely."
+    },
+    {
+      "sid": "S02",
+      "kind": "video_full",
+      "src_file": "goddard_1926_no_skin_schematic_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "medium",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": false,
+      "has_human_interaction": false,
+      "story_beat": "Animated schematic of missing nose cone and missing outer skin",
+      "editorial_rationale": "Clarifies the counterintuitive inverted geometry of Goddard's skinless 1926 rocket in 2.55 seconds."
+    },
+    {
+      "sid": "S03",
+      "kind": "still_parallax_25d",
+      "src_file": "goddard_1925_naked_pipes_lab.jpg",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Laboratory close-up of Goddard's top nozzle, naked metal pipes, and dual fuel tanks",
+      "editorial_rationale": "High-resolution NASA archival laboratory photograph proving the exact top-nozzle + naked-pipes + lower-tanks architecture."
+    },
+    {
+      "sid": "S04",
+      "kind": "video_full",
+      "src_file": "explorer1_vanguard_juno_1958_hd.mp4",
+      "camera_perspective": "medium",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Late-1950s fragile metal-pencil orbital rocket",
+      "editorial_rationale": "Direct visual match to 'fragile metal pencils'."
+    },
+    {
+      "sid": "S05",
+      "kind": "video_full",
+      "src_file": "vanguard_1958_explosion_1080p.mp4",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1957 Vanguard pencil rocket collapsing into flames",
+      "editorial_rationale": "Timed so the pad explosion erupts right as the narrator says 'collapsing into flames'."
+    },
+    {
+      "sid": "S06",
+      "kind": "video_full",
+      "src_file": "jpl_explorer1_1958_archive.webm",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "medium",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "1958 JPL engineers assembling Juno I miniature rocket tubes",
+      "editorial_rationale": "Hands-on 1958 JPL assembly footage proving how small and exposed America's first orbital upper-stage rockets were."
+    },
+    {
+      "sid": "S07",
+      "kind": "video_full",
+      "src_file": "mercury_atlas_glenn_broll_720p.webm",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1962 Mercury-Atlas stainless-steel balloon-tank liftoff",
+      "editorial_rationale": "Direct visual match to 'gleamed like solid steel' while explaining the dime-thin pressurized balloon tank."
+    },
+    {
+      "sid": "S08",
+      "kind": "video_full",
+      "src_file": "michoud_apollo_saturn_assembly_hd.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Thin-walled cylindrical rocket tank structure",
+      "editorial_rationale": "Visualizes lightweight cylindrical tank walls inside NASA's vertical bay."
+    },
+    {
+      "sid": "S09",
+      "kind": "video_full",
+      "src_file": "mercury_atlas_glenn_broll_720p.webm",
+      "camera_perspective": "wide",
+      "visual_complexity": "medium",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Mercury-Atlas mid-sky ascent",
+      "editorial_rationale": "Tracks Atlas climbing steeply mid-sky."
+    },
+    {
+      "sid": "S10",
+      "kind": "video_full",
+      "src_file": "saturn_ib_story_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Exposed mid-1960s rocket engine struts and raw plumbing",
+      "editorial_rationale": "Literal close-up of wide-open mid-sixties rocket machinery and steel struts."
+    },
+    {
+      "sid": "S11",
+      "kind": "video_full",
+      "src_file": "gemini_titan2_launch_hd049.mp4",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1965 Gemini Titan II twin-engine HD launch",
+      "editorial_rationale": "Authentic NASA HD Resource Reel scan of Gemini Titan II firing twin engines at Pad 19."
+    },
+    {
+      "sid": "S12",
+      "kind": "video_full",
+      "src_file": "saturn_ib_story_1080p.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1966 Saturn IB eight clustered missile tanks",
+      "editorial_rationale": "1:1 literal visual proof of the 8 clustered missile tanks described in the narration."
+    },
+    {
+      "sid": "S13",
+      "kind": "video_full",
+      "src_file": "power_for_apollo_saturn5_1080p.webm",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "1969 Saturn V 36-story colossus hull sweep",
+      "editorial_rationale": "Sweeps vertically down the actual 36-story Saturn V hull before diving beneath its five F-1 nozzles in S14."
+    },
+    {
+      "sid": "S14",
+      "kind": "video_full",
+      "src_file": "michoud_apollo_saturn_assembly_hd.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "Five cavernous 4-meter F-1 nozzles beside NASA technician",
+      "editorial_rationale": "Real human technician beside the five F-1 bells makes 'nearly four meters wide' viscerally undeniable."
+    },
+    {
+      "sid": "S15",
+      "kind": "video_full",
+      "src_file": "apollo11_f1_500fps_camera_e8_720p.ogv",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Apollo 11 500-fps F-1 ignition and cascading cryogenic ice",
+      "editorial_rationale": "Historic Apollo 11 500-fps Camera E-8 footage matches 'silver batting', 'thrust', and 'ice cascaded' simultaneously."
+    },
+    {
+      "sid": "S16",
+      "kind": "video_full",
+      "src_file": "shuttle_atlantis_sts129_launch_720p.webm",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Space Shuttle asymmetric ceramic glider and orange tank climb",
+      "editorial_rationale": "Shows the side-mounted winged ceramic-tiled glider + orange external tank rolling skyward."
+    },
+    {
+      "sid": "S17",
+      "kind": "video_full",
+      "src_file": "stennis_rs25_engine_test_hd.mp4",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "RS-25 hydrogen engine firing with glowing shock column",
+      "editorial_rationale": "Direct close-up NASA Stennis static-fire footage of the RS-25 hydrogen exhaust plume."
+    },
+    {
+      "sid": "S18",
+      "kind": "video_full",
+      "src_file": "power_for_apollo_saturn5_1080p.webm",
+      "camera_perspective": "aerial",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Colossal rocket propellant static test burn (~90% propellant mass fraction)",
+      "editorial_rationale": "Visualizes the staggering propellant burn rate imposed by the Tsiolkovsky rocket equation."
+    },
+    {
+      "sid": "S19",
+      "kind": "video_full",
+      "src_file": "artemis3_rs25_processing_ksc_4k.webm",
+      "camera_perspective": "first_person_pov",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "4K close-up beneath Artemis SLS's four upgraded RS-25 engines",
+      "editorial_rationale": "4K KSC hardware close-up showing a century of engine evolution from 1926's tiny pipe nozzle to four RS-25 bells."
+    },
+    {
+      "sid": "S20",
+      "kind": "video_full",
+      "src_file": "artemis1_sls_press_launch_1080p.mp4",
+      "camera_perspective": "wide",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "music",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Artemis I SLS 8.8-million-pound night liftoff toward the Moon",
+      "editorial_rationale": "Unforgettable 100-year visual payoff contrasting 8.8M-lbf Artemis liftoff back into Frame 0's tiny 1926 pipe rocket."
+    }
+  ],
+  "scene_timing": {
+    "fps": 30,
+    "semantic_timeline_manifest_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/semantic_timeline_manifest.json",
+    "timed_scenes": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 4.2667,
+        "duration_s": 4.2667,
+        "start_frame": 0,
+        "end_frame": 128
+      },
+      {
+        "sid": "S02",
+        "start_s": 4.2667,
+        "end_s": 7.4,
+        "duration_s": 3.1333,
+        "start_frame": 128,
+        "end_frame": 222
+      },
+      {
+        "sid": "S03",
+        "start_s": 7.4,
+        "end_s": 11.3,
+        "duration_s": 3.9,
+        "start_frame": 222,
+        "end_frame": 339
+      },
+      {
+        "sid": "S04",
+        "start_s": 11.3,
+        "end_s": 16.3667,
+        "duration_s": 5.0667,
+        "start_frame": 339,
+        "end_frame": 491
+      },
+      {
+        "sid": "S05",
+        "start_s": 16.3667,
+        "end_s": 21.9,
+        "duration_s": 5.5333,
+        "start_frame": 491,
+        "end_frame": 657
+      },
+      {
+        "sid": "S06",
+        "start_s": 21.9,
+        "end_s": 29.0667,
+        "duration_s": 7.1667,
+        "start_frame": 657,
+        "end_frame": 872
+      },
+      {
+        "sid": "S07",
+        "start_s": 29.0667,
+        "end_s": 35.8667,
+        "duration_s": 6.8,
+        "start_frame": 872,
+        "end_frame": 1076
+      },
+      {
+        "sid": "S08",
+        "start_s": 35.8667,
+        "end_s": 40.4333,
+        "duration_s": 4.5666,
+        "start_frame": 1076,
+        "end_frame": 1213
+      },
+      {
+        "sid": "S09",
+        "start_s": 40.4333,
+        "end_s": 43.6333,
+        "duration_s": 3.2,
+        "start_frame": 1213,
+        "end_frame": 1309
+      },
+      {
+        "sid": "S10",
+        "start_s": 43.6333,
+        "end_s": 46.9667,
+        "duration_s": 3.3334,
+        "start_frame": 1309,
+        "end_frame": 1409
+      },
+      {
+        "sid": "S11",
+        "start_s": 46.9667,
+        "end_s": 52.0667,
+        "duration_s": 5.1,
+        "start_frame": 1409,
+        "end_frame": 1562
+      },
+      {
+        "sid": "S12",
+        "start_s": 52.0667,
+        "end_s": 60.3,
+        "duration_s": 8.2333,
+        "start_frame": 1562,
+        "end_frame": 1809
+      },
+      {
+        "sid": "S13",
+        "start_s": 60.3,
+        "end_s": 65.1333,
+        "duration_s": 4.8333,
+        "start_frame": 1809,
+        "end_frame": 1954
+      },
+      {
+        "sid": "S14",
+        "start_s": 65.1333,
+        "end_s": 71.7,
+        "duration_s": 6.5667,
+        "start_frame": 1954,
+        "end_frame": 2151
+      },
+      {
+        "sid": "S15",
+        "start_s": 71.7,
+        "end_s": 76.5667,
+        "duration_s": 4.8667,
+        "start_frame": 2151,
+        "end_frame": 2297
+      },
+      {
+        "sid": "S16",
+        "start_s": 76.5667,
+        "end_s": 85.7667,
+        "duration_s": 9.2,
+        "start_frame": 2297,
+        "end_frame": 2573
+      },
+      {
+        "sid": "S17",
+        "start_s": 85.7667,
+        "end_s": 90.5,
+        "duration_s": 4.7333,
+        "start_frame": 2573,
+        "end_frame": 2715
+      },
+      {
+        "sid": "S18",
+        "start_s": 90.5,
+        "end_s": 95.3667,
+        "duration_s": 4.8667,
+        "start_frame": 2715,
+        "end_frame": 2861
+      },
+      {
+        "sid": "S19",
+        "start_s": 95.3667,
+        "end_s": 102.7333,
+        "duration_s": 7.3666,
+        "start_frame": 2861,
+        "end_frame": 3082
+      },
+      {
+        "sid": "S20",
+        "start_s": 102.7333,
+        "end_s": 107.0,
+        "duration_s": 4.2667,
+        "start_frame": 3082,
+        "end_frame": 3210
+      }
+    ]
+  },
+  "subtitle_version": {
+    "version": "v8.0.0",
+    "style": "cinema_boxless",
+    "emphasis_mode": "subtle_warm",
+    "word_by_word_animation": false,
+    "cue_count": 57,
+    "srt_path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/subtitles.srt"
+  },
+  "thumbnail_variants": {
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/thumbnail.jpg",
+    "mobile_preview_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/thumbnail_small_preview_sheet.jpg",
+    "concepts_comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/thumbnail_concepts_comparison_sheet.jpg",
+    "concepts": [
+      {
+        "concept_id": "A",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/thumbnail_concept_A.jpg",
+        "source_asset": "rocket_evolution_100y_plate_B.png",
+        "matches_opening_scene_asset": false,
+        "headline_text": "ROCKET EVOLUTION|100 YEARS",
+        "headline_word_count": 4,
+        "kicker_text": "",
+        "concept_rationale": "4-column chronological lineup: crisp early rockets (1926 naked pipes, 1957 pencil Vanguard) escalating into blurred dark mystery rocket silhouettes with glowing '?' for 1981 ? and 2026 ?.",
+        "size_kb": 696.0,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "rocket_evolution_100y_plate_B.png",
+          "sharpness_score": 4.26,
+          "subject_separation_score": 100.18,
+          "combined_score": 57.02,
+          "recommended_cx": 0.4148,
+          "recommended_cy": 0.4836
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "B",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/thumbnail_concept_B.jpg",
+        "source_asset": "rocket_evolution_100y_plate_A.png",
+        "matches_opening_scene_asset": false,
+        "headline_text": "ROCKET EVOLUTION|100 YEARS",
+        "headline_word_count": 4,
+        "kicker_text": "",
+        "concept_rationale": "Split comparison hero: three stacked early NASA/Goddard rocket frames (1926, 1957, 1966) vs towering blurred dark 2026 ? super-rocket silhouette.",
+        "size_kb": 832.3,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "rocket_evolution_100y_plate_A.png",
+          "sharpness_score": 3.96,
+          "subject_separation_score": 106.51,
+          "combined_score": 60.36,
+          "recommended_cx": 0.427,
+          "recommended_cy": 0.361
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "C",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/thumbnail_concept_C.jpg",
+        "source_asset": "rocket_evolution_100y_plate_C.png",
+        "matches_opening_scene_asset": false,
+        "headline_text": "ROCKET EVOLUTION|100 YEARS",
+        "headline_word_count": 4,
+        "kicker_text": "",
+        "concept_rationale": "Bold 3-column mobile-first contrast: 1926 naked pipes | 1957 Vanguard explosion | 2026 ? shadowed super-rocket silhouette.",
+        "size_kb": 658.1,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "rocket_evolution_100y_plate_C.png",
+          "sharpness_score": 3.81,
+          "subject_separation_score": 84.28,
+          "combined_score": 48.07,
+          "recommended_cx": 0.511,
+          "recommended_cy": 0.4802
+        },
+        "actual_analytics_outcome": null
+      }
+    ]
+  },
+  "rendering_configuration": {
+    "output_spec": {
+      "aspect_ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video_codec_master": "libx264",
+      "video_crf_master": 15,
+      "video_preset_master": "medium",
+      "video_profile": "high",
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "audio_codec": "aac",
+      "audio_bitrate": "192k",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "target_loudness_lufs": -16.0
+    },
+    "color_science": {
+      "enable_filmic_grade": true,
+      "cast_tame_strength": 0.1,
+      "luma_grain_sigma": 1.5
+    },
+    "benchmarks": {
+      "slug": "space-nasa-rocket-evolution-v8",
+      "encode_mode": "master",
+      "shots_render_or_cache_s": 0.009,
+      "timeline_assembly_and_mux_s": 94.258,
+      "thumbnail_concepts_s": 2.184,
+      "total_render_master_s": 96.646,
+      "rendered_frames": 3210,
+      "effective_render_fps": 33.21
+    }
+  },
+  "qa_results": {
+    "qc_measurements_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/qc_measurements.json",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/qc_report.md",
+    "summary": {
+      "overall_pass": true,
+      "failed_gates_count": 0,
+      "moving_footage_pct": 89.44,
+      "whisper_normalized_match_ratio": 0.9695,
+      "integrated_lufs": -16.1,
+      "true_peak_dbtp": -1.5,
+      "protected_projects_intact": true
+    }
+  },
+  "studio_v7_intelligence": {
+    "adaptive_audio_profile": "immersive_exploration",
+    "music_plan_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/music_plan.json",
+    "ambience_plan_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/ambience_plan.json",
+    "sfx_plan_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/sfx_plan.json",
+    "scene_optimization_report_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/scene_optimization_report.json",
+    "unified_av_timeline_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/unified_av_timeline.json",
+    "creative_qa_report_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/creative_qa_report.json",
+    "scene_optimization_counts": {
+      "Keep": 20,
+      "Merge": 0,
+      "Replace": 0,
+      "Remove": 0
+    },
+    "music_sections_count": 2,
+    "ambience_sections_count": 0,
+    "approved_sfx_count": 0,
+    "creative_qa_pass": true
+  },
+  "final_output_locations": {
+    "output_dir": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8",
+    "master_mp4": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/space-nasa-rocket-evolution-v8.mp4",
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/thumbnail.jpg",
+    "subtitles_srt": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/subtitles.srt",
+    "script_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/script.md",
+    "retention_plan_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/retention_plan.md",
+    "storyboard_manifest_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/storyboard_and_shot_manifest.md",
+    "youtube_metadata_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/youtube_metadata.md",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/space-and-universe/space-nasa-rocket-evolution-v8/qc_report.md"
+  }
+}

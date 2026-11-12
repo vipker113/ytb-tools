@@ -1,0 +1,99 @@
+# Proof of Wonder — Studio v9.0 Directed Documentary Voice Script
+# Episode: titanic-vanished-skeletons-v9
+# Title: Why Every Human Skeleton Vanished From the Titanic Wreck
+# Production Profile: deep_ocean_exploration | Voice Preset: mysterious_discovery (en-GB-RyanNeural)
+
+[SEG: N01]
+"Four kilometers underwater, leather shoes still rest beside the Titanic—so where did every human skeleton go?"
+
+[DELIVERY: HOOK]
+[TONE: quiet_tension]
+[INTENSITY: 0.72]
+[PITCH DIRECTION: falling]
+[RHYTHM: crisp]
+[EMPHASIS: "Four kilometers underwater", "leather shoes", "every human skeleton"]
+[PAUSE AFTER: 380ms]
+
+[SEG: N02]
+"Across the North Atlantic seafloor at thirty-eight hundred meters, robotic surveys photographed boots lying in matched pairs where victims settled."
+
+[DELIVERY: MEASURED EVIDENCE]
+[TONE: grounded_authority]
+[INTENSITY: 0.54]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "thirty-eight hundred meters", "matched pairs", "victims settled"]
+[PAUSE AFTER: 300ms]
+
+"Yet across the entire exposed wreck and debris field, cameras have never found a single human bone."
+
+[DELIVERY: CALM EXPLANATION]
+[TONE: focused_awe]
+[INTENSITY: 0.58]
+[PITCH DIRECTION: falling]
+[RHYTHM: deliberate]
+[EMPHASIS: "entire exposed wreck", "never found", "single human bone"]
+[PAUSE AFTER: 400ms]
+
+[SEG: N03]
+"Deep-sea scavengers strip soft tissue within weeks, leaving bare skeletons exposed to freezing water under three hundred eighty atmospheres of pressure."
+
+[DELIVERY: SURPRISED BUT CONTROLLED]
+[TONE: hushed_reveal]
+[INTENSITY: 0.60]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "strip soft tissue", "three hundred eighty atmospheres"]
+[PAUSE AFTER: 320ms]
+
+"At this mineral-starved depth, seawater and acid-secreting marine microbes slowly dissolve the calcium-phosphate crystals inside bone until nothing remains."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[TONE: clear_precision]
+[INTENSITY: 0.56]
+[PITCH DIRECTION: falling]
+[RHYTHM: crisp]
+[EMPHASIS: "mineral-starved depth", "acid-secreting marine microbes", "calcium-phosphate crystals"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N04]
+"Early twentieth-century bootmakers, however, soaked cowhide in oak-bark tannic acid, locking collagen fibers into a rot-proof polymer."
+
+[DELIVERY: CINEMATIC REVEAL]
+[TONE: controlled_marvel]
+[INTENSITY: 0.64]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "oak-bark tannic acid", "collagen fibers", "rot-proof polymer"]
+[PAUSE AFTER: 320ms]
+
+"Deep-sea bacteria cannot digest tanned leather, allowing century-old boots to outlast both flesh and solid bone."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[TONE: clear_precision]
+[INTENSITY: 0.56]
+[PITCH DIRECTION: falling]
+[RHYTHM: steady]
+[EMPHASIS: "cannot digest tanned leather", "outlast both flesh", "solid bone"]
+[PAUSE AFTER: 400ms]
+
+[SEG: N05]
+"Oceanographers note that sealed, oxygen-starved rooms deep inside Titanic's hull could still shelter isolated fragments from scavengers and currents."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[TONE: balanced_nuance]
+[INTENSITY: 0.50]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "sealed, oxygen-starved rooms", "isolated fragments"]
+[PAUSE AFTER: 320ms]
+
+"Out on the open mud, only empty pairs of shoes remain—silent footprints where passengers came to rest."
+
+[DELIVERY: EMOTIONAL REFLECTION]
+[TONE: resonant_payoff]
+[INTENSITY: 0.62]
+[PITCH DIRECTION: falling]
+[RHYTHM: unhurried]
+[EMPHASIS: "empty pairs of shoes", "silent footprints", "came to rest"]
+[PAUSE AFTER: 360ms]

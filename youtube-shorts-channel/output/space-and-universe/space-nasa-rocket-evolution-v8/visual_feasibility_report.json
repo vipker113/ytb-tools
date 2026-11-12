@@ -1,0 +1,284 @@
+{
+  "topic": "100 Years of NASA & American Rocket Evolution (1926\u20132026) \u2014 From Goddard's Naked Metal Pipes & Vanguard's Pencil Collapse to Saturn V F-1 Nozzles, Shuttle Shock Diamonds & Artemis SLS",
+  "total_visual_beats": 16,
+  "essential_action_beats": 4,
+  "essential_beats_with_real_footage": 4,
+  "essential_beats_with_any_authentic_visual": 4,
+  "missing_evidence_beats": [
+    "B11",
+    "B15"
+  ],
+  "beat_coverage_ratio": 0.875,
+  "essential_footage_coverage_ratio": 1.0,
+  "feasibility_status": "PARTIAL_COVERAGE_ACTION_NEEDED",
+  "can_proceed_to_production": true,
+  "recommended_search_queries": [
+    {
+      "purpose": "scientific_sampling",
+      "query": "Scientists sampling 100 Years of NASA",
+      "target_media_class": "REAL_VIDEO_ACTION"
+    },
+    {
+      "purpose": "expedition_fieldwork",
+      "query": "100 Years of NASA expedition fieldwork",
+      "target_media_class": "REAL_VIDEO_ACTION"
+    },
+    {
+      "purpose": "environmental_process",
+      "query": "100 Years of NASA active process footage",
+      "target_media_class": "REAL_VIDEO_ACTION"
+    },
+    {
+      "purpose": "close_up_evidence",
+      "query": "100 Years of NASA formations close-up",
+      "target_media_class": "REAL_VIDEO_ACTION"
+    },
+    {
+      "purpose": "establishing_location",
+      "query": "100 Years of NASA aerial documentary footage",
+      "target_media_class": "REAL_VIDEO_ESTABLISHING"
+    },
+    {
+      "purpose": "field_operation",
+      "query": "100 Years of NASA Vanguard lifted lifted four feet before",
+      "target_media_class": "REAL_VIDEO_ACTION",
+      "beat_id": "B04"
+    },
+    {
+      "purpose": "field_operation",
+      "query": "100 Years of NASA Juno One spinning an exposed tub",
+      "target_media_class": "REAL_VIDEO_ACTION",
+      "beat_id": "B05"
+    },
+    {
+      "purpose": "equipment_operation",
+      "query": "Researchers thrust as ice cascaded natural formation 100 Years of NASA",
+      "target_media_class": "REAL_VIDEO_ACTION",
+      "beat_id": "B12"
+    },
+    {
+      "purpose": "equipment_operation",
+      "query": "Researchers thrust back toward the natural formation 100 Years of NASA",
+      "target_media_class": "REAL_VIDEO_ACTION",
+      "beat_id": "B16"
+    }
+  ],
+  "remediation_plan": [
+    "1. Search deeper official archives using generated Subject+Action queries (9 queries prepared across NASA, NOAA, USGS, Wikimedia Commons, Internet Archive).",
+    "2. Investigate alternative camera angles (instrument close-ups, sample handling, macro formations, satellite/ROV telemetry).",
+    "3. Search peer-reviewed open-access supplemental videos (`CC BY` PLOS / Nature Communications / Scientific Reports).",
+    "4. Evaluate whether 1 concise, progressive scientific animation (`<= 10%` runtime) is justified for unseen subsurface processes.",
+    "5. Restructure or condense script clauses whose visual events have zero authentic footage rather than padding with proxy locations.",
+    "6. Remaining explicit gaps flagged on beats: B11, B15."
+  ],
+  "feasibility_table": [
+    {
+      "beat_id": "B01",
+      "seg_id": "N01",
+      "story_beat": "B01 (N01): Look closely at the machine that launched modern rocketry in nineteen twenty-six.",
+      "required_visual": "Authentic location footage establishing Look closely at Target documentary site",
+      "available_footage": "goddard_1926_archival_1080p.mp4 (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.60 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "goddard_1926_archival_1080p.mp4",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.603
+    },
+    {
+      "beat_id": "B02",
+      "seg_id": "N01",
+      "story_beat": "B02 (N01): It had no outer skin and no nose cone\u2014just a tiny nozzle pulling two fuel tanks on naked metal pipes.",
+      "required_visual": "Authentic location footage establishing outer skin at Target documentary site",
+      "available_footage": "goddard_1926_archival_1080p.mp4 (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.60 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "goddard_1926_archival_1080p.mp4",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.603
+    },
+    {
+      "beat_id": "B03",
+      "seg_id": "N02",
+      "story_beat": "B03 (N02): Thirty years later, early orbital rockets still looked like fragile metal pencils.",
+      "required_visual": "Authentic location footage establishing early orbital at Target documentary site",
+      "available_footage": "explorer1_vanguard_juno_1958_hd.mp4 (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.60 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "explorer1_vanguard_juno_1958_hd.mp4",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.603
+    },
+    {
+      "beat_id": "B04",
+      "seg_id": "N02",
+      "story_beat": "B04 (N02): In nineteen fifty-seven, Vanguard lifted four feet before collapsing into flames.",
+      "required_visual": "Genuine moving footage showing Vanguard lifted actively lifted four feet before (Target documentary site)",
+      "available_footage": "vanguard_1958_explosion_1080p.mp4 (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.80 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": true,
+      "best_candidate_id": "vanguard_1958_explosion_1080p.mp4",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.803
+    },
+    {
+      "beat_id": "B05",
+      "seg_id": "N02",
+      "story_beat": "B05 (N02): Weeks later, Juno One reached orbit by spinning an exposed tub of eleven miniature rocket tubes bolted to its nose.",
+      "required_visual": "Genuine moving footage showing Juno One actively spinning an exposed tub (Target documentary site)",
+      "available_footage": "jpl_explorer1_1958_archive.webm (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.96 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": true,
+      "best_candidate_id": "jpl_explorer1_1958_archive.webm",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.963
+    },
+    {
+      "beat_id": "B06",
+      "seg_id": "N03",
+      "story_beat": "B06 (N03): By nineteen sixty-two, NASA's Mercury-Atlas gleamed like solid steel\u2014yet its tank walls were thinner than a dime.",
+      "required_visual": "Authentic location footage establishing NASA's Mercury-Atlas at Target documentary site",
+      "available_footage": "mercury_atlas_glenn_broll_720p.webm (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.60 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "mercury_atlas_glenn_broll_720p.webm",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.603
+    },
+    {
+      "beat_id": "B07",
+      "seg_id": "N03",
+      "story_beat": "B07 (N03): Left unpressurized, the entire rocket would crumple under its own weight, dropping two side boosters mid-sky as it climbed.",
+      "required_visual": "Authentic location footage establishing entire rocket at Target documentary site",
+      "available_footage": "goddard_1926_archival_1080p.mp4 (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.44 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "goddard_1926_archival_1080p.mp4",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.443
+    },
+    {
+      "beat_id": "B08",
+      "seg_id": "N04",
+      "story_beat": "B08 (N04): Mid-sixties rockets left raw machinery wide open.",
+      "required_visual": "Authentic location footage establishing Mid-sixties rockets at Target documentary site",
+      "available_footage": "saturn_ib_story_1080p.mp4 (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.60 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "saturn_ib_story_1080p.mp4",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.603
+    },
+    {
+      "beat_id": "B09",
+      "seg_id": "N04",
+      "story_beat": "B09 (N04): Gemini's Titan Two fired twin engines inside an exposed steel frame.",
+      "required_visual": "Authentic location footage establishing Gemini's Titan at Target documentary site",
+      "available_footage": "gemini_titan_1965_1080p.mp4 (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.60 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "gemini_titan_1965_1080p.mp4",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.603
+    },
+    {
+      "beat_id": "B10",
+      "seg_id": "N04",
+      "story_beat": "B10 (N04): And for Saturn One-B in nineteen sixty-six, NASA bolted eight narrow missile tanks in a circle\u2014above eight tightly packed engines.",
+      "required_visual": "Authentic location footage establishing NASA bolted at Target documentary site",
+      "available_footage": "saturn_ib_story_1080p.mp4 (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.60 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "saturn_ib_story_1080p.mp4",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.603
+    },
+    {
+      "beat_id": "B11",
+      "seg_id": "N05",
+      "story_beat": "B11 (N05): Then nineteen sixty-nine unveiled a thirty-six-story colossus: Saturn Five.",
+      "required_visual": "Authentic location footage establishing nineteen sixty-nine at Target documentary site",
+      "available_footage": "None (0 eligible commercial-safe assets)",
+      "evidence_relevance": "0.00 \u2014 No matching media in library",
+      "coverage_status": "MISSING_CRITICAL_EVIDENCE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": null,
+      "best_media_class": null,
+      "relevance_score": 0.0
+    },
+    {
+      "beat_id": "B12",
+      "seg_id": "N05",
+      "story_beat": "B12 (N05): Beneath its hull hung five cavernous F-1 nozzles\u2014each nearly four meters wide in rough silver batting\u2014unleashing seven point five million pounds of thrust as ice cascaded down its sides.",
+      "required_visual": "Genuine moving footage showing Beneath hull actively thrust as ice cascaded (Target documentary site)",
+      "available_footage": "apollo11_f1_500fps_camera_e8_720p.ogv (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.64 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": true,
+      "best_candidate_id": "apollo11_f1_500fps_camera_e8_720p.ogv",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.643
+    },
+    {
+      "beat_id": "B13",
+      "seg_id": "N06",
+      "story_beat": "B13 (N06): In nineteen eighty-one, rocket geometry broke symmetry completely.",
+      "required_visual": "Authentic location footage establishing rocket geometry at Target documentary site",
+      "available_footage": "shuttle_atlantis_sts129_launch_720p.webm (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.60 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "shuttle_atlantis_sts129_launch_720p.webm",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.603
+    },
+    {
+      "beat_id": "B14",
+      "seg_id": "N06",
+      "story_beat": "B14 (N06): The Space Shuttle mounted a black ceramic-tiled glider beside a giant orange tank, firing three computer-throttled hydrogen engines glowing with blue shock diamonds.",
+      "required_visual": "Authentic location footage establishing Space Shuttle at Target documentary site",
+      "available_footage": "shuttle_atlantis_sts129_launch_720p.webm (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.60 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "shuttle_atlantis_sts129_launch_720p.webm",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.603
+    },
+    {
+      "beat_id": "B15",
+      "seg_id": "N07",
+      "story_beat": "B15 (N07): Physics still forces propellant to fill nearly ninety percent of every rocket's mass.",
+      "required_visual": "Authentic location footage establishing Physics still at Target documentary site",
+      "available_footage": "None (0 eligible commercial-safe assets)",
+      "evidence_relevance": "0.00 \u2014 No matching media in library",
+      "coverage_status": "MISSING_CRITICAL_EVIDENCE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": null,
+      "best_media_class": null,
+      "relevance_score": 0.0
+    },
+    {
+      "beat_id": "B16",
+      "seg_id": "N07",
+      "story_beat": "B16 (N07): Yet today, NASA's Artemis super-rocket fuses four laser-upgraded RS-25 engines with twin boosters\u2014unleashing eight point eight million pounds of thrust back toward the Moon.",
+      "required_visual": "Genuine moving footage showing NASA's Artemis actively thrust back toward the (Target documentary site)",
+      "available_footage": "artemis1_sls_press_launch_1080p.mp4 (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.96 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": true,
+      "best_candidate_id": "artemis1_sls_press_launch_1080p.mp4",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.963
+    }
+  ]
+}

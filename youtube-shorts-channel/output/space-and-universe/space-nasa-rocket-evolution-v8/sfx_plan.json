@@ -1,0 +1,11 @@
+{
+  "slug": "space-nasa-rocket-evolution-v8",
+  "adaptive_audio_profile": "immersive_exploration",
+  "max_cues_cap": 4,
+  "proposed_cues_count": 0,
+  "approved_cues_count": 0,
+  "rejected_for_silence_count": 0,
+  "silence_preferred_when_zero": true,
+  "approved_cues": [],
+  "rejected_cues": []
+}

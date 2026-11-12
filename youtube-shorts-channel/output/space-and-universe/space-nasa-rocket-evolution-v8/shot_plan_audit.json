@@ -1,0 +1,1951 @@
+{
+  "style_profile": "space_discovery",
+  "total_duration_s": 107.0,
+  "shot_count": 20,
+  "distinct_source_assets_count": 16,
+  "raw_unique_filenames_count": 16,
+  "distinct_perspectives": [
+    "aerial",
+    "close_up",
+    "first_person_pov",
+    "medium",
+    "scientific_fieldwork"
+  ],
+  "distinct_perspectives_count": 5,
+  "first_real_motion_start_s": 11.3,
+  "viral_script_audit": {
+    "total_words": 261,
+    "hook_first_sentence_words": 12,
+    "max_sentence_words": 31,
+    "llm_cliche_hits": 0,
+    "jargon_cluster_hits": 0,
+    "flat_prosody_ratio": 0.0,
+    "ending_tail_pause_s": 0.34,
+    "anti_ai_script_pass": true,
+    "errors": [],
+    "warnings": [
+      "[N05] Sentence has 31 words (> 24): 'Beneath its hull hung five cavernous F-1 nozzles\u2014each nearly four meters...'",
+      "[N07] Sentence has 25 words (> 24): 'Yet today, NASA's Artemis super-rocket fuses four laser-upgraded RS-25 e...'"
+    ]
+  },
+  "moving_footage_s": 95.701,
+  "moving_footage_pct": 89.44,
+  "meets_moving_footage_goal": true,
+  "still_photography_s": 8.167,
+  "still_photography_pct": 7.63,
+  "human_interaction_shots": 4,
+  "human_interaction_s": 21.901,
+  "human_interaction_pct": 20.47,
+  "illustrative_diagram_s": 3.133,
+  "illustrative_diagram_pct": 2.93,
+  "authentic_visual_pct": 97.07,
+  "visual_coverage_v8": {
+    "total_timeline_duration_s": 107.0,
+    "genuine_moving_footage_s": 95.7,
+    "genuine_moving_footage_ratio": 0.8944,
+    "genuine_moving_footage_pct": 89.44,
+    "meaningful_action_footage_s": 95.7,
+    "meaningful_action_footage_ratio": 0.8944,
+    "meaningful_action_footage_pct": 89.44,
+    "establishing_footage_s": 0.0,
+    "establishing_footage_ratio": 0.0,
+    "establishing_footage_pct": 0.0,
+    "real_time_lapse_s": 0.0,
+    "real_time_lapse_ratio": 0.0,
+    "real_time_lapse_pct": 0.0,
+    "static_image_s": 8.167,
+    "static_image_ratio": 0.0763,
+    "static_image_pct": 7.63,
+    "animated_still_s": 8.167,
+    "animated_still_pct": 7.63,
+    "pure_still_photo_s": 0.0,
+    "scientific_image_s": 0.0,
+    "scientific_visualization_s": 3.133,
+    "scientific_visualization_ratio": 0.0293,
+    "scientific_visualization_pct": 2.93,
+    "infographic_s": 3.133,
+    "real_animation_s": 0.0,
+    "ai_generated_s": 0.0,
+    "reenactment_s": 0.0,
+    "by_media_class_s": {
+      "REAL_VIDEO_ACTION": 95.7,
+      "REAL_VIDEO_ESTABLISHING": 0.0,
+      "REAL_TIME_LAPSE": 0.0,
+      "STILL_PHOTO": 0.0,
+      "ANIMATED_STILL": 8.167,
+      "SCIENTIFIC_IMAGE": 0.0,
+      "INFOGRAPHIC": 3.133,
+      "REAL_ANIMATION": 0.0,
+      "AI_GENERATED": 0.0,
+      "REENACTMENT": 0.0
+    },
+    "by_media_class_pct": {
+      "REAL_VIDEO_ACTION": 89.44,
+      "REAL_VIDEO_ESTABLISHING": 0.0,
+      "REAL_TIME_LAPSE": 0.0,
+      "STILL_PHOTO": 0.0,
+      "ANIMATED_STILL": 7.63,
+      "SCIENTIFIC_IMAGE": 0.0,
+      "INFOGRAPHIC": 2.93,
+      "REAL_ANIMATION": 0.0,
+      "AI_GENERATED": 0.0,
+      "REENACTMENT": 0.0
+    },
+    "shot_classifications": [
+      {
+        "sid": "S01",
+        "duration_s": 4.2667,
+        "source_media_class": "STILL_PHOTO",
+        "effective_media_class": "ANIMATED_STILL",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "ANIMATED_STILL": 4.2667
+        },
+        "counts_as_genuine_moving_footage": false,
+        "pixel_audit": null
+      },
+      {
+        "sid": "S02",
+        "duration_s": 3.1333,
+        "source_media_class": "INFOGRAPHIC",
+        "effective_media_class": "INFOGRAPHIC",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "INFOGRAPHIC": 3.1333
+        },
+        "counts_as_genuine_moving_footage": false,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 25,
+          "width": 1080,
+          "height": 1920,
+          "raw_mean_diff": 0.652,
+          "raw_median_diff": 0.635,
+          "affine_compensated_diff": 0.734,
+          "residual_to_raw_ratio": 1.155,
+          "p90_local_flow_residual_px": 0.145,
+          "independent_motion_patch_ratio": 0.0,
+          "flat_graphic_pixel_ratio": 0.497,
+          "grid_box_edge_score": 3.942,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": false,
+          "is_real_moving_footage": false,
+          "inferred_media_class": "INFOGRAPHIC",
+          "diagnostic_note": "Presentation chart/diagram/infographic layout detected."
+        }
+      },
+      {
+        "sid": "S03",
+        "duration_s": 3.9,
+        "source_media_class": "STILL_PHOTO",
+        "effective_media_class": "ANIMATED_STILL",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "ANIMATED_STILL": 3.9
+        },
+        "counts_as_genuine_moving_footage": false,
+        "pixel_audit": null
+      },
+      {
+        "sid": "S04",
+        "duration_s": 5.0667,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 5.0667
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1920,
+          "height": 1080,
+          "raw_mean_diff": 2.753,
+          "raw_median_diff": 2.528,
+          "affine_compensated_diff": 5.657,
+          "residual_to_raw_ratio": 2.238,
+          "p90_local_flow_residual_px": 5.494,
+          "independent_motion_patch_ratio": 0.867,
+          "flat_graphic_pixel_ratio": 0.553,
+          "grid_box_edge_score": 2.576,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": true,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ACTION",
+          "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=5.49px, indep_patches=87%)."
+        }
+      },
+      {
+        "sid": "S05",
+        "duration_s": 5.5333,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 5.5333
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1440,
+          "height": 1080,
+          "raw_mean_diff": 8.603,
+          "raw_median_diff": 4.88,
+          "affine_compensated_diff": 5.907,
+          "residual_to_raw_ratio": 1.211,
+          "p90_local_flow_residual_px": 4.555,
+          "independent_motion_patch_ratio": 0.469,
+          "flat_graphic_pixel_ratio": 0.39,
+          "grid_box_edge_score": 5.888,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": true,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ACTION",
+          "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=4.56px, indep_patches=47%)."
+        }
+      },
+      {
+        "sid": "S06",
+        "duration_s": 7.1667,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 7.1667
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 960,
+          "height": 720,
+          "raw_mean_diff": 6.881,
+          "raw_median_diff": 6.969,
+          "affine_compensated_diff": 7.942,
+          "residual_to_raw_ratio": 1.14,
+          "p90_local_flow_residual_px": 7.482,
+          "independent_motion_patch_ratio": 0.829,
+          "flat_graphic_pixel_ratio": 0.268,
+          "grid_box_edge_score": 1.995,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": true,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ACTION",
+          "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=7.48px, indep_patches=83%)."
+        }
+      },
+      {
+        "sid": "S07",
+        "duration_s": 6.8,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 6.8
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1280,
+          "height": 720,
+          "raw_mean_diff": 1.217,
+          "raw_median_diff": 1.169,
+          "affine_compensated_diff": 1.368,
+          "residual_to_raw_ratio": 1.17,
+          "p90_local_flow_residual_px": 3.399,
+          "independent_motion_patch_ratio": 0.421,
+          "flat_graphic_pixel_ratio": 0.757,
+          "grid_box_edge_score": 5.366,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": true,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ACTION",
+          "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=3.40px, indep_patches=42%)."
+        }
+      },
+      {
+        "sid": "S08",
+        "duration_s": 4.5666,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 4.5666
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1920,
+          "height": 1080,
+          "raw_mean_diff": 2.547,
+          "raw_median_diff": 2.442,
+          "affine_compensated_diff": 1.908,
+          "residual_to_raw_ratio": 0.781,
+          "p90_local_flow_residual_px": 0.506,
+          "independent_motion_patch_ratio": 0.028,
+          "flat_graphic_pixel_ratio": 0.405,
+          "grid_box_edge_score": 4.144,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": false,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+          "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.51px)."
+        }
+      },
+      {
+        "sid": "S09",
+        "duration_s": 3.2,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 3.2
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 26,
+          "width": 1280,
+          "height": 720,
+          "raw_mean_diff": 3.278,
+          "raw_median_diff": 1.221,
+          "affine_compensated_diff": 1.366,
+          "residual_to_raw_ratio": 1.119,
+          "p90_local_flow_residual_px": 3.338,
+          "independent_motion_patch_ratio": 0.5,
+          "flat_graphic_pixel_ratio": 0.786,
+          "grid_box_edge_score": 3.805,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": true,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ACTION",
+          "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=3.34px, indep_patches=50%)."
+        }
+      },
+      {
+        "sid": "S10",
+        "duration_s": 3.3334,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 3.3334
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 27,
+          "width": 1440,
+          "height": 1080,
+          "raw_mean_diff": 5.887,
+          "raw_median_diff": 5.465,
+          "affine_compensated_diff": 3.56,
+          "residual_to_raw_ratio": 0.651,
+          "p90_local_flow_residual_px": 0.258,
+          "independent_motion_patch_ratio": 0.0,
+          "flat_graphic_pixel_ratio": 0.129,
+          "grid_box_edge_score": 1.951,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": false,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+          "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.26px)."
+        }
+      },
+      {
+        "sid": "S11",
+        "duration_s": 5.1,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 5.1
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1280,
+          "height": 720,
+          "raw_mean_diff": 3.068,
+          "raw_median_diff": 3.069,
+          "affine_compensated_diff": 3.452,
+          "residual_to_raw_ratio": 1.125,
+          "p90_local_flow_residual_px": 2.488,
+          "independent_motion_patch_ratio": 0.364,
+          "flat_graphic_pixel_ratio": 0.416,
+          "grid_box_edge_score": 2.766,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": true,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ACTION",
+          "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=2.49px, indep_patches=36%)."
+        }
+      },
+      {
+        "sid": "S12",
+        "duration_s": 8.2333,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 8.2333
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1440,
+          "height": 1080,
+          "raw_mean_diff": 5.346,
+          "raw_median_diff": 5.043,
+          "affine_compensated_diff": 3.521,
+          "residual_to_raw_ratio": 0.698,
+          "p90_local_flow_residual_px": 0.289,
+          "independent_motion_patch_ratio": 0.0,
+          "flat_graphic_pixel_ratio": 0.182,
+          "grid_box_edge_score": 2.326,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": false,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+          "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.29px)."
+        }
+      },
+      {
+        "sid": "S13",
+        "duration_s": 4.8333,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 4.8333
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1920,
+          "height": 1080,
+          "raw_mean_diff": 2.423,
+          "raw_median_diff": 2.511,
+          "affine_compensated_diff": 1.282,
+          "residual_to_raw_ratio": 0.51,
+          "p90_local_flow_residual_px": 5.341,
+          "independent_motion_patch_ratio": 0.75,
+          "flat_graphic_pixel_ratio": 0.715,
+          "grid_box_edge_score": 7.054,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": true,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ACTION",
+          "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=5.34px, indep_patches=75%)."
+        }
+      },
+      {
+        "sid": "S14",
+        "duration_s": 6.5667,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 6.5667
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1920,
+          "height": 1080,
+          "raw_mean_diff": 5.108,
+          "raw_median_diff": 3.653,
+          "affine_compensated_diff": 3.181,
+          "residual_to_raw_ratio": 0.871,
+          "p90_local_flow_residual_px": 0.123,
+          "independent_motion_patch_ratio": 0.0,
+          "flat_graphic_pixel_ratio": 0.319,
+          "grid_box_edge_score": 1.791,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": false,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+          "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.12px)."
+        }
+      },
+      {
+        "sid": "S15",
+        "duration_s": 4.8667,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 4.8667
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1280,
+          "height": 720,
+          "raw_mean_diff": 2.14,
+          "raw_median_diff": 2.163,
+          "affine_compensated_diff": 2.061,
+          "residual_to_raw_ratio": 0.953,
+          "p90_local_flow_residual_px": 0.606,
+          "independent_motion_patch_ratio": 0.056,
+          "flat_graphic_pixel_ratio": 0.208,
+          "grid_box_edge_score": 2.091,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": false,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+          "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.61px)."
+        }
+      },
+      {
+        "sid": "S16",
+        "duration_s": 9.2,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 9.2
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1280,
+          "height": 720,
+          "raw_mean_diff": 4.397,
+          "raw_median_diff": 1.095,
+          "affine_compensated_diff": 1.29,
+          "residual_to_raw_ratio": 1.178,
+          "p90_local_flow_residual_px": 4.739,
+          "independent_motion_patch_ratio": 0.625,
+          "flat_graphic_pixel_ratio": 0.815,
+          "grid_box_edge_score": 3.309,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": true,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ACTION",
+          "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=4.74px, indep_patches=62%)."
+        }
+      },
+      {
+        "sid": "S17",
+        "duration_s": 4.7333,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 4.7333
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1280,
+          "height": 720,
+          "raw_mean_diff": 2.835,
+          "raw_median_diff": 2.834,
+          "affine_compensated_diff": 2.988,
+          "residual_to_raw_ratio": 1.054,
+          "p90_local_flow_residual_px": 0.274,
+          "independent_motion_patch_ratio": 0.028,
+          "flat_graphic_pixel_ratio": 0.123,
+          "grid_box_edge_score": 2.22,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": false,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+          "diagnostic_note": "Genuine moving location/establishing footage without distinct localized action (p90_flow_res=0.27px)."
+        }
+      },
+      {
+        "sid": "S18",
+        "duration_s": 4.8667,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 4.8667
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 1920,
+          "height": 1080,
+          "raw_mean_diff": 3.0,
+          "raw_median_diff": 1.761,
+          "affine_compensated_diff": 1.895,
+          "residual_to_raw_ratio": 1.076,
+          "p90_local_flow_residual_px": 2.113,
+          "independent_motion_patch_ratio": 0.207,
+          "flat_graphic_pixel_ratio": 0.58,
+          "grid_box_edge_score": 2.033,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": false,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ESTABLISHING",
+          "diagnostic_note": "Genuine establishing aerial/landscape video."
+        }
+      },
+      {
+        "sid": "S19",
+        "duration_s": 7.3666,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 7.3666
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 36,
+          "width": 3840,
+          "height": 2160,
+          "raw_mean_diff": 11.051,
+          "raw_median_diff": 10.39,
+          "affine_compensated_diff": 8.576,
+          "residual_to_raw_ratio": 0.825,
+          "p90_local_flow_residual_px": 1.397,
+          "independent_motion_patch_ratio": 0.306,
+          "flat_graphic_pixel_ratio": 0.191,
+          "grid_box_edge_score": 1.678,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": true,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ACTION",
+          "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=1.40px, indep_patches=31%)."
+        }
+      },
+      {
+        "sid": "S20",
+        "duration_s": 4.2667,
+        "source_media_class": "REAL_VIDEO_ACTION",
+        "effective_media_class": "REAL_VIDEO_ACTION",
+        "is_multi_panel": false,
+        "panel_breakdown": [],
+        "class_duration_s": {
+          "REAL_VIDEO_ACTION": 4.2667
+        },
+        "counts_as_genuine_moving_footage": true,
+        "pixel_audit": {
+          "valid": true,
+          "container_kind": "video_file",
+          "sampled_frames": 34,
+          "width": 1920,
+          "height": 1080,
+          "raw_mean_diff": 2.172,
+          "raw_median_diff": 2.116,
+          "affine_compensated_diff": 1.732,
+          "residual_to_raw_ratio": 0.818,
+          "p90_local_flow_residual_px": 2.319,
+          "independent_motion_patch_ratio": 0.333,
+          "flat_graphic_pixel_ratio": 0.507,
+          "grid_box_edge_score": 4.164,
+          "is_frozen_static": false,
+          "is_baked_animated_still": false,
+          "is_dense_presentation_graphic": false,
+          "has_localized_action_motion": true,
+          "is_real_moving_footage": true,
+          "inferred_media_class": "REAL_VIDEO_ACTION",
+          "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=2.32px, indep_patches=33%)."
+        }
+      }
+    ]
+  },
+  "genuine_moving_footage_pct": 89.44,
+  "meaningful_action_footage_pct": 89.44,
+  "establishing_footage_pct": 0.0,
+  "static_image_pct": 7.63,
+  "scientific_visualization_pct": 2.93,
+  "repetition_and_progression": {
+    "total_shots": 20,
+    "raw_unique_filenames_count": 16,
+    "distinct_canonical_assets_count": 16,
+    "inflated_asset_count_delta": 0,
+    "canonical_usage_counts": {
+      "nasa_gsfc_goddard_nell_1926_4k": 1,
+      "pow_goddard_1926_anatomy_schematic": 1,
+      "nasa_gpn_goddard_naked_pipes_lab": 1,
+      "nasa_gsfc_juno1_launch_1958": 1,
+      "vanguard_pad_explosion_1957_58": 1,
+      "nasa_jpl_explorer1_1958_film": 1,
+      "nasa_mercury_atlas_1962_launch": 2,
+      "nasa_michoud_saturn5_f1_nozzles": 2,
+      "nasa_msfc_saturn_ib_story": 2,
+      "nasa_hd049_gemini_titan2_launch": 1,
+      "nasa_power_for_apollo_saturn5": 2,
+      "nasa_apollo11_camera_e8_500fps": 1,
+      "nasa_space_shuttle_atlantis_ascent": 1,
+      "nasa_stennis_rs25_shock_diamonds": 1,
+      "nasa_ksc_artemis_four_rs25_4k": 1,
+      "nasa_artemis1_sls_launch_pad39b": 1
+    },
+    "meaningful_progression_ratio": 1.0,
+    "progression_steps": [
+      {
+        "from_sid": "S01",
+        "to_sid": "S02",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject",
+          "new_evidence"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S02",
+        "to_sid": "S03",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_subject",
+          "new_evidence"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S03",
+        "to_sid": "S04",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject",
+          "new_evidence"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S04",
+        "to_sid": "S05",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S05",
+        "to_sid": "S06",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S06",
+        "to_sid": "S07",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S07",
+        "to_sid": "S08",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S08",
+        "to_sid": "S09",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S09",
+        "to_sid": "S10",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S10",
+        "to_sid": "S11",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S11",
+        "to_sid": "S12",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S12",
+        "to_sid": "S13",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S13",
+        "to_sid": "S14",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S14",
+        "to_sid": "S15",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S15",
+        "to_sid": "S16",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S16",
+        "to_sid": "S17",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S17",
+        "to_sid": "S18",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S18",
+        "to_sid": "S19",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      },
+      {
+        "from_sid": "S19",
+        "to_sid": "S20",
+        "meaningful_progression": true,
+        "progression_dimensions": [
+          "new_action",
+          "new_information",
+          "new_perspective",
+          "new_subject"
+        ],
+        "is_same_still_recrop": false,
+        "is_unmotivated_clip_split": false
+      }
+    ],
+    "stale_visual_topic_shifts": [],
+    "repetition_and_progression_pass": true,
+    "major_issue_count": 0,
+    "issues": []
+  },
+  "pacing_summary": {
+    "min_shot_s": 3.133,
+    "median_shot_s": 4.867,
+    "mean_shot_s": 5.35,
+    "max_shot_s": 9.2,
+    "internal_cuts": 19,
+    "clean_cuts": 19,
+    "dissolves": 0,
+    "dissolve_fraction": 0.0,
+    "speech_boundary_aligned_cuts": 18,
+    "speech_boundary_alignment_pct": 94.7
+  },
+  "errors": [],
+  "warnings": [
+    "[S03] Cut at 7.40s is 3.13s from nearest speech pause",
+    "[S06:jpl_explorer1_1958_archive.webm] Effective upscale factor (2.93x) exceeds crisp HD target (2.35x).",
+    "[S07:mercury_atlas_glenn_broll_720p.webm] Effective upscale factor (3.04x) exceeds crisp HD target (2.35x).",
+    "[S09:mercury_atlas_glenn_broll_720p.webm] Effective upscale factor (3.09x) exceeds crisp HD target (2.35x).",
+    "[S11:gemini_titan2_launch_hd049.mp4] Effective upscale factor (2.99x) exceeds crisp HD target (2.35x).",
+    "[S15:apollo11_f1_500fps_camera_e8_720p.ogv] Effective upscale factor (2.93x) exceeds crisp HD target (2.35x).",
+    "[S16:shuttle_atlantis_sts129_launch_720p.webm] Effective upscale factor (3.07x) exceeds crisp HD target (2.35x).",
+    "[S17:stennis_rs25_engine_test_hd.mp4] Effective upscale factor (3.04x) exceeds crisp HD target (2.35x).",
+    "[N05] Sentence has 31 words (> 24): 'Beneath its hull hung five cavernous F-1 nozzles\u2014each nearly four meters...'",
+    "[N07] Sentence has 25 words (> 24): 'Yet today, NASA's Artemis super-rocket fuses four laser-upgraded RS-25 e...'"
+  ],
+  "shots": [
+    {
+      "sid": "S01",
+      "start_s": 0.0,
+      "end_s": 4.2667,
+      "duration_s": 4.267,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 12
+        }
+      },
+      "media_type": "photo",
+      "kind": "still_parallax_25d",
+      "camera_perspective": "scientific_fieldwork",
+      "src_file": "goddard_1926_nell_4k.jpg",
+      "transition_in": "opening",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Instant Frame-0 4K reveal of the March 16, 1926 rocket 'Nell'.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.0,
+      "nearest_speech_boundary_kind": "start",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Look closely at the machine that launched modern rocketry in nineteen twenty-six",
+      "story_beat": "March 16, 1926 Goddard rocket 'Nell' in 4K archival detail",
+      "crop_feasibility": {
+        "source_width": 3297,
+        "source_height": 4296,
+        "crop_width_px": 2237.5,
+        "crop_height_px": 3977.8,
+        "upscale_factor": 0.483,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": true,
+        "honest_quality_tier": "native_1080x1920"
+      }
+    },
+    {
+      "sid": "S02",
+      "start_s": 4.2667,
+      "end_s": 7.4,
+      "duration_s": 3.133,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 9
+        }
+      },
+      "media_type": "diagram",
+      "kind": "video_full",
+      "camera_perspective": "close_up",
+      "src_file": "goddard_1926_no_skin_schematic_1080p.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.87s breath-pause cut after 'twenty-six' illustrating the missing outer skin and nose cone.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.001,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "illustrative_diagram",
+      "scientific_claim_status": "illustrative_visualization",
+      "context_note": "1926 Goddard Rocket Schematic",
+      "spoken_narration": "It had no outer skin and no nose cone",
+      "story_beat": "Animated schematic of missing nose cone and missing outer skin",
+      "crop_feasibility": null
+    },
+    {
+      "sid": "S03",
+      "start_s": 7.4,
+      "end_s": 11.3,
+      "duration_s": 3.9,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 2.5,
+        "ideal_duration_s": 4.0,
+        "max_recommended_s": 4.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": false,
+          "spoken_word_count": 12
+        }
+      },
+      "media_type": "photo",
+      "kind": "still_parallax_25d",
+      "camera_perspective": "close_up",
+      "src_file": "goddard_1925_naked_pipes_lab.jpg",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Em-dash pause cut after 'cone' onto close-up laboratory photo of the top nozzle, naked pipes, and fuel tanks.",
+      "cut_speech_boundary_aligned": false,
+      "nearest_speech_boundary_s": 3.134,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "just a tiny nozzle pulling two fuel tanks on naked metal pipes",
+      "story_beat": "Laboratory close-up of Goddard's top nozzle, naked metal pipes, and dual fuel tanks",
+      "crop_feasibility": {
+        "source_width": 1647,
+        "source_height": 2761,
+        "crop_width_px": 1424.8,
+        "crop_height_px": 2533.0,
+        "upscale_factor": 0.758,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": true,
+        "honest_quality_tier": "native_1080x1920"
+      }
+    },
+    {
+      "sid": "S04",
+      "start_s": 11.3,
+      "end_s": 16.3667,
+      "duration_s": 5.067,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.11,
+        "ideal_duration_s": 5.61,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 12
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "medium",
+      "src_file": "explorer1_vanguard_juno_1958_hd.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.41s segment-pause cut after 'pipes' jumping 30 years forward.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.059,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Thirty years later early orbital rockets still looked like fragile metal pencils",
+      "story_beat": "Late-1950s fragile metal-pencil orbital rocket",
+      "crop_feasibility": {
+        "source_width": 1920,
+        "source_height": 1080,
+        "crop_width_px": 498.0,
+        "crop_height_px": 885.2,
+        "upscale_factor": 2.169,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "upscaled_sub_hd_crop"
+      }
+    },
+    {
+      "sid": "S05",
+      "start_s": 16.3667,
+      "end_s": 21.9,
+      "duration_s": 5.533,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 5.81,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "medium",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 11
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "medium",
+      "src_file": "vanguard_1958_explosion_1080p.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.87s breath-pause cut after 'pencils' into Vanguard's pad collapse.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.007,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "In nineteen fifty-seven Vanguard lifted four feet before collapsing into flames",
+      "story_beat": "1957 Vanguard pencil rocket collapsing into flames",
+      "crop_feasibility": {
+        "source_width": 1440,
+        "source_height": 1080,
+        "crop_width_px": 552.3,
+        "crop_height_px": 981.8,
+        "upscale_factor": 1.956,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "hd_vertical_reframe"
+      }
+    },
+    {
+      "sid": "S06",
+      "start_s": 21.9,
+      "end_s": 29.0667,
+      "duration_s": 7.167,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 7.18,
+        "max_recommended_s": 9.58,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 20
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "scientific_fieldwork",
+      "src_file": "jpl_explorer1_1958_archive.webm",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.87s breath-pause cut after 'flames' to JPL's miniature solid rocket tubes.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.008,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Weeks later Juno One reached orbit by spinning an exposed tub of eleven miniature rocket tubes bolted to its nose",
+      "story_beat": "1958 JPL engineers assembling Juno I miniature rocket tubes",
+      "crop_feasibility": {
+        "source_width": 960,
+        "source_height": 720,
+        "crop_width_px": 368.2,
+        "crop_height_px": 654.5,
+        "upscale_factor": 2.933,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (2.93x) exceeds crisp HD target (2.35x)."
+        ],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "upscaled_sub_hd_crop"
+      }
+    },
+    {
+      "sid": "S07",
+      "start_s": 29.0667,
+      "end_s": 35.8667,
+      "duration_s": 6.8,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 7.47,
+        "max_recommended_s": 9.87,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 18
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "medium",
+      "src_file": "mercury_atlas_glenn_broll_720p.webm",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.39s segment-pause cut after 'nose' to 1962 gleaming stainless-steel Mercury-Atlas.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.059,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "By nineteen sixty-two NASA's Mercury-Atlas gleamed like solid steel yet its tank walls were thinner than a dime",
+      "story_beat": "1962 Mercury-Atlas stainless-steel balloon-tank liftoff",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 355.3,
+        "crop_height_px": 631.6,
+        "upscale_factor": 3.04,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (3.04x) exceeds crisp HD target (2.35x)."
+        ],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "upscaled_sub_hd_crop"
+      }
+    },
+    {
+      "sid": "S08",
+      "start_s": 35.8667,
+      "end_s": 40.4333,
+      "duration_s": 4.567,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.3,
+        "ideal_duration_s": 4.8,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "close_up",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 11
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "close_up",
+      "src_file": "michoud_apollo_saturn_assembly_hd.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.87s breath-pause cut after 'dime' showing thin-walled rocket tank structure.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.012,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "contextual_fieldwork",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Left unpressurized the entire rocket would crumple under its own weight",
+      "story_beat": "Thin-walled cylindrical rocket tank structure",
+      "crop_feasibility": {
+        "source_width": 1920,
+        "source_height": 1080,
+        "crop_width_px": 542.4,
+        "crop_height_px": 964.3,
+        "upscale_factor": 1.991,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "hd_vertical_reframe"
+      }
+    },
+    {
+      "sid": "S09",
+      "start_s": 40.4333,
+      "end_s": 43.6333,
+      "duration_s": 3.2,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.38,
+        "ideal_duration_s": 4.88,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "medium",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 8
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "medium",
+      "src_file": "mercury_atlas_glenn_broll_720p.webm",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.19s clause-pause cut after 'weight' onto Mercury-Atlas climbing mid-sky.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.011,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "dropping two side boosters mid-sky as it climbed",
+      "story_beat": "Mercury-Atlas mid-sky ascent",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 349.1,
+        "crop_height_px": 620.7,
+        "upscale_factor": 3.093,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (3.09x) exceeds crisp HD target (2.35x)."
+        ],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "upscaled_sub_hd_crop"
+      }
+    },
+    {
+      "sid": "S10",
+      "start_s": 43.6333,
+      "end_s": 46.9667,
+      "duration_s": 3.333,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.38,
+        "ideal_duration_s": 4.88,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "close_up",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 7
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "close_up",
+      "src_file": "saturn_ib_story_1080p.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.40s segment-pause cut after 'climbed' onto exposed mid-sixties rocket machinery.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.051,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Mid-sixties rockets left raw machinery wide open",
+      "story_beat": "Exposed mid-1960s rocket engine struts and raw plumbing",
+      "crop_feasibility": {
+        "source_width": 1440,
+        "source_height": 1080,
+        "crop_width_px": 542.4,
+        "crop_height_px": 964.3,
+        "upscale_factor": 1.991,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "hd_vertical_reframe"
+      }
+    },
+    {
+      "sid": "S11",
+      "start_s": 46.9667,
+      "end_s": 52.0667,
+      "duration_s": 5.1,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 5.84,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 11
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "medium",
+      "src_file": "gemini_titan2_launch_hd049.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.87s breath-pause cut after 'open' to Gemini Titan II's twin-engine liftoff.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.01,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Gemini's Titan Two fired twin engines inside an exposed steel frame",
+      "story_beat": "1965 Gemini Titan II twin-engine HD launch",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 361.6,
+        "crop_height_px": 642.9,
+        "upscale_factor": 2.987,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (2.99x) exceeds crisp HD target (2.35x)."
+        ],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "upscaled_sub_hd_crop"
+      }
+    },
+    {
+      "sid": "S12",
+      "start_s": 52.0667,
+      "end_s": 60.3,
+      "duration_s": 8.233,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 7.78,
+        "max_recommended_s": 10.18,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 21
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "close_up",
+      "src_file": "saturn_ib_story_1080p.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.87s breath-pause cut after 'frame' revealing Saturn IB's literal 8-tank bundled structure.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.011,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "And for Saturn One-B in nineteen sixty-six NASA bolted eight narrow missile tanks in a circle above eight tightly packed engines",
+      "story_beat": "1966 Saturn IB eight clustered missile tanks",
+      "crop_feasibility": {
+        "source_width": 1440,
+        "source_height": 1080,
+        "crop_width_px": 542.4,
+        "crop_height_px": 964.3,
+        "upscale_factor": 1.991,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "hd_vertical_reframe"
+      }
+    },
+    {
+      "sid": "S13",
+      "start_s": 60.3,
+      "end_s": 65.1333,
+      "duration_s": 4.833,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 5.84,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 9
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "medium",
+      "src_file": "power_for_apollo_saturn5_1080p.webm",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.40s segment-pause cut after 'engines' introducing the 36-story 1969 Saturn V.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.052,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Then nineteen sixty-nine unveiled a thirty-six-story colossus Saturn Five",
+      "story_beat": "1969 Saturn V 36-story colossus hull sweep",
+      "crop_feasibility": {
+        "source_width": 1920,
+        "source_height": 1080,
+        "crop_width_px": 552.3,
+        "crop_height_px": 981.8,
+        "upscale_factor": 1.956,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "hd_vertical_reframe"
+      }
+    },
+    {
+      "sid": "S14",
+      "start_s": 65.1333,
+      "end_s": 71.7,
+      "duration_s": 6.567,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 7.55,
+        "max_recommended_s": 9.95,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 17
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "scientific_fieldwork",
+      "src_file": "michoud_apollo_saturn_assembly_hd.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.85s breath-pause cut after 'Five' onto the five cavernous F-1 nozzles.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.01,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Beneath its hull hung five cavernous F-1 nozzles each nearly four meters wide in rough silver batting",
+      "story_beat": "Five cavernous 4-meter F-1 nozzles beside NASA technician",
+      "crop_feasibility": {
+        "source_width": 1920,
+        "source_height": 1080,
+        "crop_width_px": 542.4,
+        "crop_height_px": 964.3,
+        "upscale_factor": 1.991,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "hd_vertical_reframe"
+      }
+    },
+    {
+      "sid": "S15",
+      "start_s": 71.7,
+      "end_s": 76.5667,
+      "duration_s": 4.867,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 6.12,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 14
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "close_up",
+      "src_file": "apollo11_f1_500fps_camera_e8_720p.ogv",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.24s em-dash pause cut after 'batting' into 500-fps Apollo 11 ignition.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.015,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "unleashing seven point five million pounds of thrust as ice cascaded down its sides",
+      "story_beat": "Apollo 11 500-fps F-1 ignition and cascading cryogenic ice",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 368.2,
+        "crop_height_px": 654.5,
+        "upscale_factor": 2.933,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (2.93x) exceeds crisp HD target (2.35x)."
+        ],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "upscaled_sub_hd_crop"
+      }
+    },
+    {
+      "sid": "S16",
+      "start_s": 76.5667,
+      "end_s": 85.7667,
+      "duration_s": 9.2,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 8.02,
+        "max_recommended_s": 10.42,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 21
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "medium",
+      "src_file": "shuttle_atlantis_sts129_launch_720p.webm",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.41s segment-pause cut after 'sides' to 1981 asymmetric Space Shuttle geometry.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.03,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "In nineteen eighty-one rocket geometry broke symmetry completely The Space Shuttle mounted a black ceramic-tiled glider beside a giant orange tank",
+      "story_beat": "Space Shuttle asymmetric ceramic glider and orange tank climb",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 352.2,
+        "crop_height_px": 626.1,
+        "upscale_factor": 3.067,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (3.07x) exceeds crisp HD target (2.35x)."
+        ],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "upscaled_sub_hd_crop"
+      }
+    },
+    {
+      "sid": "S17",
+      "start_s": 85.7667,
+      "end_s": 90.5,
+      "duration_s": 4.733,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 3.9,
+        "ideal_duration_s": 5.4,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 10
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "close_up",
+      "src_file": "stennis_rs25_engine_test_hd.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.33s comma-pause cut after 'tank' onto close-up hydrogen engine shock column.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.006,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "firing three computer-throttled hydrogen engines glowing with blue shock diamonds",
+      "story_beat": "RS-25 hydrogen engine firing with glowing shock column",
+      "crop_feasibility": {
+        "source_width": 1280,
+        "source_height": 720,
+        "crop_width_px": 355.3,
+        "crop_height_px": 631.6,
+        "upscale_factor": 3.04,
+        "feasible": true,
+        "warnings": [
+          "Effective upscale factor (3.04x) exceeds crisp HD target (2.35x)."
+        ],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "upscaled_sub_hd_crop"
+      }
+    },
+    {
+      "sid": "S18",
+      "start_s": 90.5,
+      "end_s": 95.3667,
+      "duration_s": 4.867,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 6.18,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "aerial",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 13
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "aerial",
+      "src_file": "power_for_apollo_saturn5_1080p.webm",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.42s segment-pause cut after 'diamonds' illustrating massive propellant consumption.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.075,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Physics still forces propellant to fill nearly ninety percent of every rocket's mass",
+      "story_beat": "Colossal rocket propellant static test burn (~90% propellant mass fraction)",
+      "crop_feasibility": {
+        "source_width": 1920,
+        "source_height": 1080,
+        "crop_width_px": 542.4,
+        "crop_height_px": 964.3,
+        "upscale_factor": 1.991,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "hd_vertical_reframe"
+      }
+    },
+    {
+      "sid": "S19",
+      "start_s": 95.3667,
+      "end_s": 102.7333,
+      "duration_s": 7.367,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 6.78,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "first_person_pov",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 13
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "first_person_pov",
+      "src_file": "artemis3_rs25_processing_ksc_4k.webm",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.90s breath-pause cut after 'mass' looking straight up into Artemis SLS's four upgraded RS-25 engines.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.009,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "Yet today NASA's Artemis super-rocket fuses four laser-upgraded RS-25 engines with twin boosters",
+      "story_beat": "4K close-up beneath Artemis SLS's four upgraded RS-25 engines",
+      "crop_feasibility": {
+        "source_width": 3840,
+        "source_height": 2160,
+        "crop_width_px": 1104.5,
+        "crop_height_px": 1963.6,
+        "upscale_factor": 0.978,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": true,
+        "honest_quality_tier": "native_1080x1920"
+      }
+    },
+    {
+      "sid": "S20",
+      "start_s": 102.7333,
+      "end_s": 107.0,
+      "duration_s": 4.267,
+      "adaptive_duration_eval": {
+        "min_recommended_s": 4.2,
+        "ideal_duration_s": 6.39,
+        "max_recommended_s": 9.5,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 12
+        }
+      },
+      "media_type": "video",
+      "kind": "video_full",
+      "camera_perspective": "medium",
+      "src_file": "artemis1_sls_press_launch_1080p.mp4",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "transition_reason": "Exact 0.25s em-dash pause cut after 'boosters' as Artemis SLS thunders toward the Moon.",
+      "cut_speech_boundary_aligned": true,
+      "nearest_speech_boundary_s": 0.017,
+      "nearest_speech_boundary_kind": "breath_pause",
+      "subject_match_kind": "direct_subject",
+      "scientific_claim_status": "verified_fact",
+      "context_note": null,
+      "spoken_narration": "unleashing eight point eight million pounds of thrust back toward the Moon",
+      "story_beat": "Artemis I SLS 8.8-million-pound night liftoff toward the Moon",
+      "crop_feasibility": {
+        "source_width": 1920,
+        "source_height": 1080,
+        "crop_width_px": 542.4,
+        "crop_height_px": 964.3,
+        "upscale_factor": 1.991,
+        "feasible": true,
+        "warnings": [],
+        "is_native_full_hd_vertical": false,
+        "honest_quality_tier": "hd_vertical_reframe"
+      }
+    }
+  ]
+}

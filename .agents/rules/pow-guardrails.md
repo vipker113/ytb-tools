@@ -2,24 +2,9 @@
 
 These rules apply to every task in this workspace (`/Applications/code/science-knowledge`).
 
-1. **Zero cost.** Use only free local tools and open-weight models. Never call paid APIs, never enable
-   Google Cloud Vertex AI or any billing-linked service. ElevenLabs is used only if `ELEVENLABS_API_KEY`
-   is already set by the user; never ask for or create keys yourself.
-2. **No publishing without explicit approval.** Never run `cli.py publish`, never POST to
-   `/api/youtube/upload`, never schedule or make a video public unless the user says so in the current
-   conversation for that specific episode.
-3. **Never overwrite completed work.** Respect `PROTECTED_COMPLETED_OUTPUT_DIRS` in
-   `youtube-shorts-channel/pipeline/pow_studio/schema.py`. Experiments go into a NEW slug/output_dir.
-   Never edit or delete files inside a protected episode folder.
-4. **License whitelist is code, not opinion.** Only Public Domain, CC0, CC BY, or first-party original
-   media. `rights_gate.validate_license_string` is the authority (it rejects NC, ND and ShareAlike/BY-SA,
-   even though older docs mention CC BY-SA). ESA main multimedia (CC BY-SA IGO) and JAXA are excluded.
-   Strip audio from NASA SVS / ESA videos (third-party music risk).
-5. **Footage first, honest media.** Run the visual feasibility gate before locking narration. Never
-   present stills, Ken Burns moves, AI imagery, reenactments, or proxy locations as real footage of the
-   narrated event. Keep `source_media_class` derived from pixels (`inspect_media_authenticity`).
-6. **Use the studio environment.** Python is `youtube-shorts-channel/.venv/bin/python` (Python 3.11).
-   Run `pytest youtube-shorts-channel/pipeline/tests -q` after code changes and report the result.
-   ytb-tools is a separate git submodule (Next.js 16): read `ytb-tools/AGENTS.md` before editing it.
-7. **Pause points need the user.** Voice lock, storyboard approval, thumbnail choice, and publishing
-   always stop and wait for the user. Do not self-approve.
+1. **Zero cost (`$0`).** Use only free local tools and open-weight models (`edge-tts`, `ManimCE`, `FFmpeg`). Never call paid APIs, never enable Google Cloud Vertex AI or any billing-linked service. ElevenLabs is used only if `ELEVENLABS_API_KEY` is already set by the user; never ask for or create keys yourself.
+2. **No publishing without explicit approval.** Never run `cli.py publish`, never POST to `/api/youtube/upload`, never schedule or make a video public unless the user says so in the current conversation for that specific episode.
+3. **Never overwrite completed work.** Respect `PROTECTED_COMPLETED_OUTPUT_DIRS` in `youtube-shorts-channel/pipeline/pow_studio/schema.py`. Experiments go into a NEW slug/output_dir. Never edit or delete files inside a protected episode folder.
+4. **License whitelist is code, not opinion.** Only Public Domain, CC0, CC BY, or first-party original media. `rights_gate.validate_license_string` is the authority (it rejects NC, ND and ShareAlike/BY-SA). ESA main multimedia (CC BY-SA IGO) and JAXA are excluded. Strip audio from NASA SVS / ESA videos (third-party music risk).
+5. **Fast single-pass production (`1 Video + 3 Intuitive Visual-Cue Thumbnails`).** Do not pause for intermediate human approvals (`Studio Backlot` and `voice-approve` are retired) and do not run two-pass rendering (`draft` then `master`) or bloated contact-sheet/Whisper QA suites during episode generation. Every episode's 3 sample thumbnails (`thumbnail.jpg`, `thumbnail_variant_B.jpg`, `thumbnail_variant_C.jpg`) MUST use the **Visual-Cue Thumbnail Format** (`visual_cue` in `thumbnail_concepts`: foreground object cutout/inset + curved directional arrow pointing into the real phenomenon + high-contrast status symbol `red_x` / `question_mark` / `warning` / `ban_circle` / `check` on the arrow + 2-line English curiosity hook `<= 8` words). Run `python -m pow_studio.cli all -m $EP --mode master` to produce `<slug>.mp4` + 3 visual-cue thumbnails directly in one pass.
+6. **Use the studio environment.** Python is `youtube-shorts-channel/.venv/bin/python` (Python 3.11). Run `pytest youtube-shorts-channel/pipeline/tests -q` after code changes and report the result. `ytb-tools` is a separate git submodule (Next.js 16): read `ytb-tools/AGENTS.md` before editing it.

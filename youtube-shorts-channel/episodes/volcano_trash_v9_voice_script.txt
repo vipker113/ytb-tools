@@ -1,0 +1,99 @@
+# Proof of Wonder — Studio v9.0 Directed Documentary Voice Script
+# Episode: volcano-trash-explosion-v9
+# Title: Why Don't We Dump All Our Trash Into Volcanoes?
+# Production Profile: mysterious_earth_exploration | Voice Preset: mysterious_discovery (en-GB-RyanNeural)
+
+[SEG: N01]
+"Lava lakes burn past eleven hundred degrees Celsius—so why don't we dump all our trash into volcanoes?"
+
+[DELIVERY: HOOK]
+[TONE: quiet_tension]
+[INTENSITY: 0.72]
+[PITCH DIRECTION: falling]
+[RHYTHM: crisp]
+[EMPHASIS: "eleven hundred degrees", "dump all our trash", "volcanoes"]
+[PAUSE AFTER: 380ms]
+
+[SEG: N02]
+"In 2002, researchers at Ethiopia's Erta Ale volcano dropped a thirty-kilogram bag of camp waste onto a crusted lava lake."
+
+[DELIVERY: MEASURED EVIDENCE]
+[TONE: grounded_authority]
+[INTENSITY: 0.54]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "Erta Ale volcano", "thirty-kilogram bag", "crusted lava lake"]
+[PAUSE AFTER: 300ms]
+
+"Instead of vanishing quietly, the crust ruptured into a violent fountain of molten rock."
+
+[DELIVERY: CALM EXPLANATION]
+[TONE: focused_awe]
+[INTENSITY: 0.58]
+[PITCH DIRECTION: falling]
+[RHYTHM: steady]
+[EMPHASIS: "crust ruptured", "violent fountain", "molten rock"]
+[PAUSE AFTER: 400ms]
+
+[SEG: N03]
+"Household trash holds trapped moisture that flashes into steam, expanding sixteen hundred times in volume beneath the crust."
+
+[DELIVERY: SURPRISED BUT CONTROLLED]
+[TONE: hushed_reveal]
+[INTENSITY: 0.62]
+[PITCH DIRECTION: steady]
+[RHYTHM: deliberate]
+[EMPHASIS: "trapped moisture", "sixteen hundred times", "beneath the crust"]
+[PAUSE AFTER: 320ms]
+
+"Worse, basalt lava hovers near twelve hundred degrees Celsius—too cool to melt steel, which simply floats and smolders."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[TONE: clear_precision]
+[INTENSITY: 0.56]
+[PITCH DIRECTION: falling]
+[RHYTHM: crisp]
+[EMPHASIS: "twelve hundred degrees", "too cool to melt steel", "floats and smolders"]
+[PAUSE AFTER: 420ms]
+
+[SEG: N04]
+"Burning plastics and electronics in an open crater blasts unfiltered dioxins, heavy metals, and acid gases skyward."
+
+[DELIVERY: CINEMATIC REVEAL]
+[TONE: controlled_marvel]
+[INTENSITY: 0.64]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "open crater", "unfiltered dioxins", "acid gases"]
+[PAUSE AFTER: 320ms]
+
+"Modern waste-to-energy plants prevent that fallout using sealed thermal reactors and chemical scrubbers."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[TONE: clear_precision]
+[INTENSITY: 0.56]
+[PITCH DIRECTION: falling]
+[RHYTHM: steady]
+[EMPHASIS: "sealed thermal reactors", "chemical scrubbers"]
+[PAUSE AFTER: 400ms]
+
+[SEG: N05]
+"Even if emissions vanished, fewer than ten volcanoes on Earth hold persistent lava lakes, and pressurized magma flows upward—not down."
+
+[DELIVERY: SCIENTIFIC AUTHORITY]
+[TONE: balanced_nuance]
+[INTENSITY: 0.50]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "fewer than ten", "flows upward", "not down"]
+[PAUSE AFTER: 320ms]
+
+"Dump two billion tons of waste inside, and Earth wouldn't swallow our garbage—it would fire it back."
+
+[DELIVERY: EMOTIONAL REFLECTION]
+[TONE: resonant_payoff]
+[INTENSITY: 0.62]
+[PITCH DIRECTION: falling]
+[RHYTHM: unhurried]
+[EMPHASIS: "two billion tons", "swallow our garbage", "fire it back"]
+[PAUSE AFTER: 360ms]

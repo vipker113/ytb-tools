@@ -1,0 +1,10 @@
+{
+  "slug": "space-nasa-rocket-evolution-v8",
+  "encode_mode": "master",
+  "shots_render_or_cache_s": 0.009,
+  "timeline_assembly_and_mux_s": 94.258,
+  "thumbnail_concepts_s": 2.184,
+  "total_render_master_s": 96.646,
+  "rendered_frames": 3210,
+  "effective_render_fps": 33.21
+}

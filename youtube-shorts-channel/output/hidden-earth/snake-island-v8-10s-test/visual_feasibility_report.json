@@ -1,0 +1,93 @@
+{
+  "topic": "Ilha da Queimada Grande (Snake Island, Brazil) \u2014 90 Pit Vipers Per Hectare, Canopy Bird Ambush & 5x Avian Venom",
+  "total_visual_beats": 3,
+  "essential_action_beats": 1,
+  "essential_beats_with_real_footage": 1,
+  "essential_beats_with_any_authentic_visual": 1,
+  "missing_evidence_beats": [],
+  "beat_coverage_ratio": 1.0,
+  "essential_footage_coverage_ratio": 1.0,
+  "feasibility_status": "READY_FOOTAGE_FIRST",
+  "can_proceed_to_production": true,
+  "recommended_search_queries": [
+    {
+      "purpose": "scientific_sampling",
+      "query": "Scientists sampling Ilha da Queimada Grande",
+      "target_media_class": "REAL_VIDEO_ACTION"
+    },
+    {
+      "purpose": "expedition_fieldwork",
+      "query": "Ilha da Queimada Grande expedition fieldwork",
+      "target_media_class": "REAL_VIDEO_ACTION"
+    },
+    {
+      "purpose": "environmental_process",
+      "query": "Ilha da Queimada Grande active process footage",
+      "target_media_class": "REAL_VIDEO_ACTION"
+    },
+    {
+      "purpose": "close_up_evidence",
+      "query": "Ilha da Queimada Grande formations close-up",
+      "target_media_class": "REAL_VIDEO_ACTION"
+    },
+    {
+      "purpose": "establishing_location",
+      "query": "Ilha da Queimada Grande aerial documentary footage",
+      "target_media_class": "REAL_VIDEO_ESTABLISHING"
+    },
+    {
+      "purpose": "animal_action",
+      "query": "snake pack every hectare Snake Island footage",
+      "target_media_class": "REAL_VIDEO_ACTION",
+      "beat_id": "B01"
+    },
+    {
+      "purpose": "scientific_process",
+      "query": "Snake Island venom video",
+      "target_media_class": "REAL_VIDEO_ACTION",
+      "beat_id": "B03"
+    }
+  ],
+  "remediation_plan": [],
+  "feasibility_table": [
+    {
+      "beat_id": "B01",
+      "seg_id": "N01",
+      "story_beat": "B01 (N01): On Brazil's Snake Island, up to ninety pit vipers pack every hectare.",
+      "required_visual": "Genuine moving footage showing snake actively pack every hectare (Snake Island, Brazil)",
+      "available_footage": "snakes_intertwined_mating_1080p.webm (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.95 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": true,
+      "best_candidate_id": "snakes_intertwined_mating_1080p.webm",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.946
+    },
+    {
+      "beat_id": "B02",
+      "seg_id": "N02",
+      "story_beat": "B02 (N02): There is no evidence of five per meter\u2014yet vipers ambush birds overhead,",
+      "required_visual": "Authentic location footage establishing vipers at Snake Island, Brazil",
+      "available_footage": "snakes_intertwined_mating_1080p.webm (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.64 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "snakes_intertwined_mating_1080p.webm",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.64
+    },
+    {
+      "beat_id": "B03",
+      "seg_id": "N03",
+      "story_beat": "B03 (N03): with venom five times deadlier.",
+      "required_visual": "Authentic location footage establishing venom five at Snake Island, Brazil",
+      "available_footage": "pit_viper_venom_fangs_slowmo_1080p.mp4 (REAL_VIDEO_ACTION)",
+      "evidence_relevance": "0.56 \u2014 Verified match",
+      "coverage_status": "STRONG_ACTION_FOOTAGE",
+      "genuine_footage_essential": false,
+      "best_candidate_id": "pit_viper_venom_fangs_slowmo_1080p.mp4",
+      "best_media_class": "REAL_VIDEO_ACTION",
+      "relevance_score": 0.563
+    }
+  ]
+}

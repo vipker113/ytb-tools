@@ -1,0 +1,1678 @@
+manifest_version: '8.0'
+script_version: v8.0.0
+subtitle_version: v8.0.0
+channel_name: Proof of Wonder
+playlist: Space & Universe
+slug: space-nasa-spacesuit-evolution-v8
+topic: 65 Years of NASA Spacesuit Evolution (1961–2026) — From Mercury's Stiff Silver Pressure Cocoon & Gemini's Golden Umbilical
+  to Apollo's 21-Layer Lunar Armor, 1984 Untethered MMU Jetpack & 2026 Rear-Entry Artemis Suits
+style_profile: space_discovery
+style_overrides:
+  asset_selection:
+    target_moving_footage_ratio: 0.88
+    target_genuine_moving_footage_ratio: 0.88
+    target_meaningful_action_footage_ratio: 0.8
+    max_static_image_ratio: 0.12
+    max_still_photo_ratio: 0.12
+    max_scientific_visualization_ratio: 0.05
+    max_duration_share_per_asset: 0.2
+    min_human_interaction_shots: 3
+  viral_retention:
+    max_opening_still_duration_s: 5.0
+  pacing:
+    min_shot_duration_s: 2.2
+  subtitles:
+    style: cinema_boxless
+adaptive_duration_mode: true
+enforce_target_duration_bounds: false
+enable_intelligent_scene_editing: true
+adaptive_audio_profile: immersive_exploration
+voice_input_mode: directed_tts
+voice_direction_profile: mysterious_discovery
+voice: en-GB-RyanNeural
+annotated_voice_script_file: episodes/space_nasa_spacesuit_evolution_v8_voice_script.txt
+opening_hook_type: surprising_visual
+primary_title: 'Spacesuit Evolution 65 Years: Silver Cocoons to Moon Armor'
+alternative_title: How NASA Spacesuits Evolved Over 65 Years (1961 to 2026)
+youtube_description: 'In 1961, America''s first spacesuit—the Project Mercury Navy Mark IV—was a gleaming aluminized-nylon
+  backup cocoon. If cabin pressure ever failed in vacuum, the suit ballooned so stiff that an astronaut could barely bend
+  an elbow.
+
+
+  Over 65 years, NASA spacesuit hardware evolved from soft fabric bladders into standalone, joint-bearing human spacecraft:
+
+  • 1961 (Mercury Mark IV): Mirror-bright aluminized nylon over a neoprene pressure bladder, worn strictly as unpressurized
+  cabin backup inside cramped capsules.
+
+  • 1965 (Gemini G4C): First American spacewalk suit tethered to a 25-foot golden umbilical hose as Ed White fired a handheld
+  gas gun—though internal pressure inflated soft suits rigid like car tires.
+
+  • 1969–1972 (Apollo A7L / A7LB): A 21-layer wearable spacecraft combining fireproof white Beta-cloth, alternating Mylar
+  insulation, ballistic micrometeoroid armor (28,000 km/h impact defense), gold-plated solar visors, and chilled-water cooling
+  tubes—yet stiff fabric torsos still forced astronauts to bunny-hop and topple when reaching for rocks.
+
+  • 1984 (Space Shuttle EMU + MMU): Two-piece modular suit built around a rigid fiberglass Hard Upper Torso, snapped onto
+  the 24-thruster nitrogen Manned Maneuvering Unit as Bruce McCandless flew untethered 100 meters from Challenger.
+
+  • 2026 (NASA Artemis Next-Generation Lunar Suit): Sealed rotary metal bearings at the waist, hips, and knees paired with
+  a rear-entry backpack hatch—engineered to kneel across craters while defending joints against glass-sharp lunar dust at
+  the Moon''s South Pole.
+
+
+  Footage & Photography: Public Domain — NASA Johnson Space Center, Kennedy Space Center, Glenn Research Center & Wikimedia
+  Commons.
+
+  '
+hashtags:
+- '#SpacesuitEvolution'
+- '#NASA'
+- '#SpaceHistory'
+- '#Apollo'
+- '#Artemis'
+- '#ProofOfWonder'
+target_duration_min_s: 75.0
+target_duration_max_s: 115.0
+ambience_preset: deep_space
+ambience_ducked_lufs_target: -26.5
+nat_sound_bed_file: spacesuit_airlock_ambience.wav
+nat_sound_bed_range_s:
+- 0.0
+- 111.5
+nat_sound_gain_db: -17.0
+raw_assets_dir: assets/raw_footage/space_spacesuit_evolution_v8
+output_dir: output/space-and-universe/space-nasa-spacesuit-evolution-v8
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: N04
+  scientific_caveat_seg_id: N07
+  min_real_evidence_ratio: 0.95
+hook_candidates:
+- hook_id: H1
+  archetype: surprising_visual
+  spoken_line: Look closely at America's first spacesuit in nineteen sixty-one. Wrapped in mirror-bright aluminized nylon,
+    it was only an emergency pressure cocoon. Inflated in vacuum, its fabric joints locked so stiff an astronaut could barely
+    bend an elbow.
+  opening_visual: 5K 21-megapixel NASA Kodachrome portrait of the Project Mercury astronauts sealed in gleaming mirror-bright
+    aluminized-nylon Navy Mark IV pressure suits
+  src_file: mercury_seven_silver_suits_5k.jpg
+  promise_fulfilled_in_seg_id: N07
+  rationale: Immediate Frame-0 motion on gleaming 1961 silver aluminized nylon sets up a dramatic 65-year mechanical contrast
+    against 2026 rotary-bearing lunar suits.
+- hook_id: H2
+  archetype: paradox
+  spoken_line: In nineteen sixty-five, vacuum inflated America's first spacewalk suits so rigid like car tires that crews
+    nearly collapsed fighting to squeeze back inside.
+  opening_visual: Ed White floating over blue Earth on a 25-foot golden umbilical hose
+  src_file: gemini_inflated_walk_1080p.mp4
+  promise_fulfilled_in_seg_id: N06
+  rationale: Highlights the hidden pneumatic stiffness problem that drove 65 years of spacesuit joint engineering.
+thumbnail_spec:
+  src_file: spacesuit_evolution_65y_plate_B.png
+  headline_text: SPACESUIT EVOLUTION|65 YEARS
+  kicker_text: ''
+  cx: 0.5
+  cy: 0.5
+  zoom: 1.0
+  shadow_lift: 0.0
+  clarity_boost: false
+  text_position: bottom
+  accent_rgb:
+  - 255
+  - 212
+  - 59
+thumbnail_concepts:
+- concept_id: A
+  src_file: spacesuit_evolution_65y_plate_B.png
+  headline_text: SPACESUIT EVOLUTION|65 YEARS
+  kicker_text: ''
+  cx: 0.5
+  cy: 0.5
+  zoom: 1.0
+  shadow_lift: 0.0
+  clarity_boost: false
+  text_position: bottom
+  accent_rgb:
+  - 255
+  - 212
+  - 59
+  concept_rationale: '4-column chronological lineup: crisp 1961 silver Mercury suit and 1969 Apollo Moon suit escalating into
+    blurred dark mystery spacesuit silhouettes with glowing ''?'' for 1984 ? and 2026 ?.'
+- concept_id: B
+  src_file: spacesuit_evolution_65y_plate_A.png
+  headline_text: SPACESUIT EVOLUTION|65 YEARS
+  kicker_text: ''
+  cx: 0.5
+  cy: 0.5
+  zoom: 1.0
+  shadow_lift: 0.0
+  clarity_boost: false
+  text_position: bottom
+  accent_rgb:
+  - 255
+  - 212
+  - 59
+  concept_rationale: 'Split comparison hero: three stacked classic NASA spacesuits (1961 silver Mercury, 1965 Gemini golden
+    umbilical, 1969 Apollo Moon suit) vs towering blurred dark 2026 ? Artemis silhouette.'
+- concept_id: C
+  src_file: spacesuit_evolution_65y_plate_C.png
+  headline_text: SPACESUIT EVOLUTION|65 YEARS
+  kicker_text: ''
+  cx: 0.5
+  cy: 0.5
+  zoom: 1.0
+  shadow_lift: 0.0
+  clarity_boost: false
+  text_position: bottom
+  accent_rgb:
+  - 255
+  - 212
+  - 59
+  concept_rationale: 'Bold 3-column mobile contrast: 1961 gleaming silver suit | 1965 Ed White golden-visor spacewalk | 2026
+    ? shadowed Artemis lunar suit silhouette.'
+narration_segments:
+- seg_id: N01
+  text: Look closely at America's first spacesuit in nineteen sixty-one. Wrapped in mirror-bright aluminized nylon, it was
+    only an emergency pressure cocoon. Inflated in vacuum, its fabric joints locked so stiff an astronaut could barely bend
+    an elbow.
+  delivery: HOOK
+  pace: MODERATE
+  energy: 4
+  pause_after_ms: 320
+  emphasis_words:
+  - nineteen
+  - sixty-one
+  - mirror-bright
+  - aluminized
+  - nylon
+  - pressure
+  - cocoon
+  - barely
+  - bend
+  - elbow
+  narrative_beat: opening_hook
+  viewer_question: How did a stiff silver backup cocoon evolve into standalone lunar armor and untethered jetpacks?
+  new_information: Project Mercury's 1961 Navy Mark IV suit used aluminized nylon for thermal reflection and locked nearly
+    rigid if pressurized in vacuum.
+  visual_reveal: NASA technicians fastening the mirror-silver Mercury suit torso, close-up silver helmet fitting, and crew
+    shoehorning the silver-suited astronaut into the cramped capsule.
+  emotional_direction: Quiet amazement at how raw, tight, and immobile early human spaceflight protection was
+  retention_purpose: Stop scrolling at Frame 0 with gleaming mirror-silver 1961 spacesuit hardware in crisp motion
+- seg_id: N02
+  text: Four years later, Project Gemini pushed astronauts outside into raw vacuum. Tethered by a twenty-five-foot golden
+    umbilical hose, Ed White floated over Earth firing a handheld gas gun. Yet internal pressure ballooned soft Gemini suits
+    like car tires, nearly exhausting crews squeezing back inside.
+  delivery: MEASURED EVIDENCE
+  pace: NATURAL
+  energy: 3
+  pause_after_ms: 300
+  emphasis_words:
+  - raw
+  - vacuum
+  - twenty-five-foot
+  - golden
+  - umbilical
+  - floated
+  - car
+  - tires
+  - exhausting
+  narrative_beat: curiosity_gap
+  viewer_question: How did NASA solve soft spacesuits inflating like rigid car tires before walking on the Moon?
+  new_information: In June 1965 Ed White spacewalked on a 25-foot gold-wrapped umbilical using a handheld gas gun, while vacuum
+    ballooned soft Gemini G4C suits dangerously stiff.
+  visual_reveal: 16mm color Gemini IV spacewalk film over blue Earth, 4K close-up of the golden umbilical hose and gas gun,
+    and pressurized Gemini suit testing.
+  emotional_direction: Visceral awe at floating over Earth paired with physical claustrophobic tension
+  retention_purpose: Contrast exhilarating orbital freedom against the dangerous pneumatic ballooning problem
+- seg_id: N03
+  text: Walking on the Moon in nineteen sixty-nine demanded a wearable twenty-one-layer spacecraft. Beneath fireproof white
+    Beta-cloth, stacked Mylar and ballistic armor stopped tiny space rocks at eight kilometers per second. A thin gold-plated
+    visor reflected blinding, unfiltered sunlight.
+  delivery: SCIENTIFIC WONDER
+  pace: NATURAL
+  energy: 3
+  pause_after_ms: 300
+  emphasis_words:
+  - twenty-one-layer
+  - spacecraft
+  - Beta-cloth
+  - eight
+  - kilometers
+  - gold-plated
+  - visor
+  narrative_beat: evidence_and_discovery
+  viewer_question: With 21 protective layers and a backpack spacecraft, why did Apollo astronauts still struggle to bend and
+    keep toppling on the Moon?
+  new_information: Apollo's A7L suit stacked 21 layers of fireproof Beta-cloth, Mylar insulation, and ballistic micrometeoroid
+    armor rated for 28,000 km/h impacts, plus a gold solar visor.
+  visual_reveal: Apollo astronaut walking across bright lunar regolith, close-up multi-layer Apollo spacesuit glove/fabric
+    anatomy, and mirror-gold visor glinting in lunar sunlight.
+  emotional_direction: Scientific respect for 21-layer ballistic and thermal engineering
+  retention_purpose: Break down the exact physical anatomy inside Apollo's iconic white Moon suit
+- seg_id: N04
+  text: On each astronaut's back rode a life-support pack pumping chilled water through tubes against their skin. Still, Apollo's
+    pressurized fabric torso fought every bend—forcing crews to bunny-hop and topple whenever they reached down for rocks.
+  delivery: MEASURED EVIDENCE
+  pace: NATURAL
+  energy: 3
+  pause_after_ms: 320
+  emphasis_words:
+  - life-support
+  - pack
+  - chilled
+  - water
+  - fought
+  - every
+  - bend
+  - bunny-hop
+  - topple
+  narrative_beat: escalation
+  viewer_question: How did NASA redesign the upper body in the 1980s and build an untethered space jetpack?
+  new_information: Apollo's PLSS circulated chilled water through a liquid-cooling garment, yet pressurized soft fabric joints
+    forced astronauts to bunny-hop and fall when bending.
+  visual_reveal: Open NASA Portable Life Support System cooling/oxygen pack hardware followed by real 1080p Apollo 16 lunar
+    film of an astronaut bunny-hopping and toppling into Moon dust.
+  emotional_direction: Observational clarity turning a famous lunar stumble into a concrete mechanical lesson
+  retention_purpose: Deliver unforgettable real footage of an Apollo astronaut toppling on the Moon to prove why fabric joints
+    failed
+- seg_id: N05
+  text: In nineteen eighty-four, NASA rebuilt the upper body around a rigid fiberglass shell. Snapped onto a twenty-four-thruster
+    nitrogen jetpack, Bruce McCandless flew untethered one hundred meters from Challenger. He became a standalone human satellite
+    above Earth.
+  delivery: ESCALATION
+  pace: MODERATE
+  energy: 4
+  pause_after_ms: 340
+  emphasis_words:
+  - rigid
+  - fiberglass
+  - shell
+  - twenty-four-thruster
+  - nitrogen
+  - jetpack
+  - untethered
+  - one
+  - hundred
+  - meters
+  narrative_beat: escalation
+  viewer_question: If Shuttle suits floated effortlessly in zero-G, how is NASA rebuilding spacesuits to walk and kneel on
+    the Moon in 2026?
+  new_information: Space Shuttle EMUs introduced a rigid fiberglass Hard Upper Torso and paired with the 24-thruster nitrogen
+    MMU to fly Bruce McCandless 100 meters untethered in 1984.
+  visual_reveal: NASA engineer holding the rigid fiberglass Hard Upper Torso shell, 8K Hasselblad master of Bruce McCandless
+    floating alone 100m over Earth in the MMU, and 1080p orbital EVA.
+  emotional_direction: Breathtaking vertigo and awe at a lone untethered human floating in open space
+  retention_purpose: Deliver the ultimate orbital spacesuit climax before pivoting to 2026 lunar surface mobility
+- seg_id: N06
+  text: Now for twenty twenty-six, Artemis lunar suits replace stiff fabric bends with sealed metal bearings. Astronauts step
+    straight through a rear-entry hatch on the backpack, then twist and kneel effortlessly across rocky craters.
+  delivery: SCIENTIFIC WONDER
+  pace: MODERATE
+  energy: 3
+  pause_after_ms: 300
+  emphasis_words:
+  - twenty
+  - twenty-six
+  - sealed
+  - metal
+  - bearings
+  - rear-entry
+  - hatch
+  - twist
+  - kneel
+  narrative_beat: payoff
+  viewer_question: What severe lunar hazard still threatens every metal bearing and seal on the Moon?
+  new_information: Artemis generation lunar suits use rotary sealed metal waist, hip, and arm bearings plus a rear-entry backpack
+    hatch door so astronauts can kneel for geology.
+  visual_reveal: Pressurized rotary metal waist/hip bearings flexing in NASA's lab, open rear-entry hatch door on the suit's
+    back, and Artemis suit kneeling effortlessly to scoop rocks.
+  emotional_direction: Satisfying mechanical contrast against 1961 stiff cocoons and 1972 lunar falls
+  retention_purpose: Show the bizarre open backpack door and effortless kneeling mobility of next-gen Moon suits
+- seg_id: N07
+  text: Glass-sharp lunar dust remains NASA's toughest enemy, chewing at metal seals and joints. Yet sixty-five years after
+    Mercury's silver cocoon, dust-hardened Artemis suits are built to work deep inside the Moon's frozen southern shadows.
+  delivery: EMOTIONAL REFLECTION
+  pace: SLOW
+  energy: 4
+  pause_after_ms: 420
+  emphasis_words:
+  - Glass-sharp
+  - lunar
+  - dust
+  - remains
+  - sixty-five
+  - years
+  - frozen
+  - southern
+  - shadows
+  narrative_beat: final_impression
+  viewer_question: How far will wearable spacecraft evolve over the next 65 years on the Moon and Mars?
+  new_information: Abrasive unweathered lunar regolith remains the primary threat to rotary suit seals, driving dust-hardened
+    Artemis suits with helmet floodlights for South Pole craters.
+  visual_reveal: Apollo spacesuit coated in black abrasive lunar regolith, followed by March 2026 NASA Artemis spacesuits
+    illuminating pitch-dark Lunar South Pole crater shadows.
+  emotional_direction: Grounded engineering honesty closing on cinematic South Pole exploration
+  retention_purpose: State the honest regolith-abrasion caveat while closing on striking floodlit Lunar South Pole suit footage
+sfx_cues: []
+shots:
+- sid: S01
+  start_s: 0.0
+  end_s: 3.826
+  kind: still_parallax_25d
+  src_file: mercury_seven_silver_suits_5k.jpg
+  source_media_class: STILL_PHOTO
+  essential_historical_or_scientific_evidence: true
+  visible_action: 21-megapixel 5K NASA Kodachrome portrait of America's Project Mercury astronauts standing in gleaming mirror-bright
+    aluminized-nylon Navy Mark IV pressure suits and white helmets
+  visual_objective: Stop scrolling immediately at Frame 0 with razor-sharp 5K Kodachrome detail of America's gleaming silver
+    1961 Mercury spacesuits
+  progression_dimension: new_subject
+  camera_perspective: medium
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: gentle_drift
+  scene_audio_layers:
+  - narration
+  - ambience
+  reframe_mode: manual
+  cx0: 0.5
+  cy0: 0.46
+  cx1: 0.5
+  cy1: 0.43
+  z0: 1.05
+  z1: 1.11
+  crop_rationale: 4096x5120 5K NASA Kodachrome master scan framing the gleaming mirror-silver Mercury pressure suits edge-to-edge
+    in crystal-clear 9:16 detail.
+  transition_in: cut
+  transition_reason: Instant Frame-0 5K Kodachrome reveal of America's gleaming silver 1961 spacesuits.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N01
+  associated_narration_concept: Look closely at America's first spacesuit in nineteen sixty-one.
+  editorial_rationale: Unmistakable 5K NASA Kodachrome master scan showing every silver aluminized-nylon pleat, zipper, and
+    helmet ring at Frame 0.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: 5K Kodachrome reveal of Project Mercury's mirror-silver Navy Mark IV spacesuits
+  visual_desc: 4096x5120 NASA Kodachrome master photograph (S62-08774) of the Project Mercury astronauts in mirror-silver
+    aluminized-nylon spacesuits.
+- sid: S02
+  start_s: 3.826
+  end_s: 9.066
+  kind: video_full
+  src_file: mercury_suiting_up_1080p.mp4
+  src_in: 0.1
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: NASA suit technician fastening the gleaming mirror-bright aluminized-nylon neck ring and torso zipper of
+    John Glenn's Project Mercury emergency pressure suit
+  visual_objective: Show real moving archival color film of technicians sealing the aluminized-nylon emergency pressure cocoon
+  progression_dimension: closer_inspection
+  camera_perspective: close_up
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - ambience
+  reframe_mode: manual
+  cx0: 0.45
+  cy0: 0.5
+  cx1: 0.47
+  cy1: 0.49
+  z0: 1.18
+  z1: 1.22
+  crop_rationale: Centers the silver aluminized-nylon Mercury suit torso and technician's hands strictly inside active x=[232..1686]
+    bounds.
+  transition_in: cut
+  transition_reason: Exact 0.87s breath-pause cut after 'sixty-one' into live moving color film of sealing the silver cocoon.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N01
+  associated_narration_concept: Wrapped in mirror-bright aluminized nylon, it was only an emergency pressure cocoon.
+  editorial_rationale: Authentic NASA color suiting-up film proving the tight aluminized-nylon backup pressure garment.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Suit technician fastening the mirror-silver Mercury aluminized-nylon pressure cocoon
+  visual_desc: 1080p restored NASA archival color film of a technician fastening the silver Project Mercury pressure suit.
+- sid: S03
+  start_s: 9.066
+  end_s: 15.002
+  kind: video_full
+  src_file: mercury_ingress_1080p.mp4
+  src_in: 2.9
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: White-suited pad technicians shoehorning the silver-suited Mercury astronaut tightly inside the cramped
+    capsule hatch with arms pinned close to his chest
+  visual_objective: Show how stiff and cramped the silver Mercury pressure suit was inside the tiny cockpit
+  progression_dimension: new_action
+  camera_perspective: scientific_fieldwork
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: static
+  scene_audio_layers:
+  - narration
+  - ambience
+  reframe_mode: manual
+  cx0: 0.52
+  cy0: 0.5
+  cx1: 0.5
+  cy1: 0.49
+  z0: 1.18
+  z1: 1.22
+  crop_rationale: Frames the silver-suited astronaut and white helmet wedged inside the cramped Friendship 7 hatch.
+  transition_in: cut
+  transition_reason: Exact 0.87s breath-pause cut after 'cocoon' showing stiff sleeve restriction inside the cramped capsule.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N01
+  associated_narration_concept: Inflated in vacuum, its fabric joints locked so stiff an astronaut could barely bend an elbow.
+  editorial_rationale: Shows the physical confinement of the Mercury pressure suit and stiff sleeve geometry.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Silver-suited Mercury astronaut wedged inside cramped capsule hatch
+  visual_desc: 1080p restored NASA pad film of crew strapping the silver-suited Mercury astronaut into the capsule.
+- sid: S04
+  start_s: 15.002
+  end_s: 20.056
+  kind: video_full
+  src_file: gemini_eva_earth_1080p.mp4
+  src_in: 0.2
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: 1965 Project Gemini 16mm color orbital camera sweeping past the open spacecraft hatch into raw black vacuum
+    high above cloud-swirled blue Earth
+  visual_objective: Deliver authentic 1965 Project Gemini orbital film looking straight out into raw vacuum above Earth
+  progression_dimension: scale_shift
+  camera_perspective: first_person_pov
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: aerial_sweep
+  scene_audio_layers:
+  - narration
+  - ambience
+  - natural_sounds
+  reframe_mode: manual
+  cx0: 0.52
+  cy0: 0.5
+  cx1: 0.48
+  cy1: 0.5
+  z0: 1.18
+  z1: 1.22
+  crop_rationale: Frames the bright blue curved Earth limb against pitch-black orbital vacuum strictly inside active x=[233..1684]
+    bounds.
+  transition_in: cut
+  transition_reason: Exact 0.43s segment-pause cut after 'elbow' opening the hatch into raw orbital vacuum.
+  is_real_evidence: true
+  has_human_interaction: false
+  associated_seg_id: N02
+  associated_narration_concept: Four years later, Project Gemini pushed astronauts outside into raw vacuum.
+  editorial_rationale: Authentic 1965 Gemini 16mm orbital color transfer showing raw vacuum outside the open hatch.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: 1965 Project Gemini open-hatch view into raw vacuum above blue Earth
+  visual_desc: 1080p restored NASA Gemini 16mm color orbital film sweeping over glowing blue Earth in raw vacuum.
+- sid: S05
+  start_s: 20.056
+  end_s: 23.499
+  kind: still_parallax_25d
+  src_file: thumb_1965_ed_white_eva_4k.jpg
+  source_media_class: STILL_PHOTO
+  essential_historical_or_scientific_evidence: true
+  visible_action: 4K NASA Hasselblad photograph of astronaut Ed White floating above blue Earth tethered to his gleaming 25-foot
+    gold-wrapped umbilical hose while gripping the handheld gas gun
+  visual_objective: Reveal crystal-clear 4K detail of the 25-foot golden umbilical hose and handheld gas maneuvering gun
+  progression_dimension: closer_inspection
+  camera_perspective: close_up
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: gentle_drift
+  scene_audio_layers:
+  - narration
+  - ambience
+  reframe_mode: manual
+  cx0: 0.54
+  cy0: 0.46
+  cx1: 0.48
+  cy1: 0.5
+  z0: 1.04
+  z1: 1.1
+  crop_rationale: 4086x4092 scan framing the coiled 25-foot golden umbilical hose, handheld gas gun, and Ed White's gold visor.
+  transition_in: cut
+  transition_reason: Exact 0.87s breath-pause cut after 'vacuum' onto 4K Hasselblad proof of the golden umbilical hose.
+  is_real_evidence: true
+  has_human_interaction: false
+  associated_seg_id: N02
+  associated_narration_concept: Tethered by a twenty-five-foot golden umbilical hose,
+  editorial_rationale: Iconic June 3, 1965 NASA photograph S65-30433 showing the exact 25-foot golden umbilical hose and gas
+    gun.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: 4K detail of Ed White's 25-foot golden umbilical hose and handheld gas gun
+  visual_desc: 4086x4092 NASA Hasselblad photograph (S65-30433) of Ed White tethered to his golden umbilical hose over Earth.
+- sid: S06
+  start_s: 23.499
+  end_s: 26.963
+  kind: video_full
+  src_file: gemini_rig_horizontal_1080p.mp4
+  src_in: 0.2
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: Gemini astronaut suspended horizontally in a pressurized white G4C spacewalk suit on NASA's frictionless
+    zero-G air-bearing simulator with umbilical hoses attached
+  visual_objective: Show moving 1965 NASA film of a Gemini spacewalker training horizontal free-float attitude control on
+    umbilical hoses
+  progression_dimension: new_action
+  camera_perspective: scientific_fieldwork
+  visual_complexity: high
+  spoken_importance: key_fact
+  camera_movement: static
+  scene_audio_layers:
+  - narration
+  - ambience
+  reframe_mode: manual
+  cx0: 0.5
+  cy0: 0.5
+  cx1: 0.48
+  cy1: 0.5
+  z0: 1.18
+  z1: 1.22
+  crop_rationale: Centers the horizontal pressurized Gemini G4C spacewalker and umbilical rig inside active x=[232..1687]
+    bounds.
+  transition_in: cut
+  transition_reason: Exact 0.21s comma-pause cut after 'hose' into moving 1965 Gemini spacewalk maneuvering footage.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N02
+  associated_narration_concept: Ed White floated over Earth firing a handheld gas gun.
+  editorial_rationale: Authentic 1965 NASA Gemini EVA air-bearing simulator film showing umbilical zero-G maneuvering.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Gemini G4C spacewalk umbilical maneuvering test
+  visual_desc: 1080p restored NASA archival film of a Gemini astronaut suspended horizontally in a pressurized G4C suit.
+- sid: S07
+  start_s: 26.963
+  end_s: 34.24
+  kind: video_full
+  src_file: gemini_inflated_walk_1080p.mp4
+  src_in: 0.2
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: Astronaut inside an internally pressurized Gemini G4C suit straining with stiff, tire-rigid arms and legs
+    while wrestling umbilical hardware in NASA's test chamber
+  visual_objective: Prove visually how internal pressure ballooned soft Gemini fabric suits rigid like car tires
+  progression_dimension: new_evidence
+  camera_perspective: scientific_fieldwork
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - ambience
+  reframe_mode: manual
+  cx0: 0.56
+  cy0: 0.5
+  cx1: 0.54
+  cy1: 0.49
+  z0: 1.18
+  z1: 1.22
+  crop_rationale: Centers the stiff, ballooned white Gemini G4C spacesuit limbs straining against internal pressure.
+  transition_in: cut
+  transition_reason: Exact 0.87s breath-pause cut after 'gun' demonstrating soft Gemini limbs blown stiff like car tires.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N02
+  associated_narration_concept: Yet internal pressure ballooned soft Gemini suits like car tires, nearly exhausting crews
+    squeezing back inside.
+  editorial_rationale: Direct moving NASA pressure-suit footage proving the exhausting pneumatic stiffness of soft Gemini
+    suits.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Pressurized Gemini G4C suit inflated stiff like car tires
+  visual_desc: 1080p restored NASA test film of an astronaut straining inside a rigidly inflated Gemini G4C spacesuit.
+- sid: S08
+  start_s: 34.24
+  end_s: 39.393
+  kind: video_full
+  src_file: apollo9_a7l_eva1_1080p.mp4
+  src_in: 1.0
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: 1969 Apollo 9 astronaut Dave Scott emerging in the standalone 21-layer white Apollo A7L lunar spacesuit
+    and red lunar visor assembly against bright blue Earth
+  visual_objective: Introduce the 1969 wearable 21-layer Apollo A7L spacecraft in crisp color flight footage
+  progression_dimension: scale_shift
+  camera_perspective: medium
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - ambience
+  - natural_sounds
+  reframe_mode: manual
+  cx0: 0.46
+  cy0: 0.5
+  cx1: 0.48
+  cy1: 0.49
+  z0: 1.18
+  z1: 1.22
+  crop_rationale: Frames the bright white 21-layer Apollo A7L suit and lunar visor shell cleanly inside active x=[228..1684]
+    bounds.
+  transition_in: cut
+  transition_reason: Exact 0.39s segment-pause cut after 'inside' unveiling the 1969 21-layer Apollo spacecraft suit.
+  is_real_evidence: true
+  has_human_interaction: false
+  associated_seg_id: N03
+  associated_narration_concept: Walking on the Moon in nineteen sixty-nine demanded a wearable twenty-one-layer spacecraft.
+  editorial_rationale: 1969 NASA flight test footage of the exact 21-layer Apollo A7L lunar spacesuit.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: 1969 wearable 21-layer Apollo A7L spacecraft in flight
+  visual_desc: 1080p restored NASA 16mm color film of Apollo 9 flight-testing the 21-layer Apollo A7L spacesuit.
+- sid: S09
+  start_s: 39.393
+  end_s: 42.148
+  kind: video_full
+  src_file: artemis_2026_testing_1080p.mp4
+  src_in: 61.0
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: Close-up of white fireproof Beta-cloth / Ortho-Fabric spacesuit outer shell, reinforced wrist rings, and
+    thermal pressure gloves flexing
+  visual_objective: Show close-up woven texture of NASA's white fireproof outer spacesuit shell
+  progression_dimension: closer_inspection
+  camera_perspective: close_up
+  visual_complexity: high
+  spoken_importance: key_fact
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - ambience
+  reframe_mode: manual
+  cx0: 0.52
+  cy0: 0.5
+  cx1: 0.5
+  cy1: 0.48
+  z0: 1.06
+  z1: 1.1
+  crop_rationale: Native 1920x1080 close-up of the woven white fireproof outer spacesuit fabric and glove joints.
+  transition_in: cut
+  transition_reason: Exact 0.87s breath-pause cut after 'spacecraft' zooming into the white fireproof outer fabric.
+  is_real_evidence: true
+  has_human_interaction: false
+  associated_seg_id: N03
+  associated_narration_concept: Beneath fireproof white Beta-cloth,
+  editorial_rationale: Crisp 1080p close-up revealing the woven white fireproof spacesuit outer garment.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Close-up of white fireproof outer spacesuit fabric and pressure gloves
+  visual_desc: 1080p NASA close-up of a pressurized white fireproof spacesuit outer shell and gloves.
+- sid: S10
+  start_s: 42.148
+  end_s: 47.234
+  kind: video_full
+  src_file: apollo9_a7l_eva2_1080p.mp4
+  src_in: 0.5
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: Apollo astronaut Rusty Schweickart maneuvering outside in raw orbital vacuum protected by the thick 21-layer
+    Mylar and ballistic micrometeoroid armor
+  visual_objective: Show the 21-layer Mylar and ballistic armor shielding an Apollo astronaut in open space
+  progression_dimension: new_perspective
+  camera_perspective: medium
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - ambience
+  reframe_mode: manual
+  cx0: 0.52
+  cy0: 0.5
+  cx1: 0.54
+  cy1: 0.49
+  z0: 1.18
+  z1: 1.22
+  crop_rationale: Centers the thick 21-layer Apollo A7L torso, chest connectors, and helmet cleanly inside active x=[232..1685]
+    bounds.
+  transition_in: cut
+  transition_reason: Exact 0.18s comma-pause cut after 'Beta-cloth' showing the 21-layer ballistic armor in raw vacuum.
+  is_real_evidence: true
+  has_human_interaction: false
+  associated_seg_id: N03
+  associated_narration_concept: stacked Mylar and ballistic armor stopped tiny space rocks at eight kilometers per second.
+  editorial_rationale: Authentic 1969 Apollo EVA film proving the 21-layer ballistic micrometeoroid garment in open space.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Stacked Mylar and ballistic micrometeoroid armor operating in raw space
+  visual_desc: 1080p restored NASA Apollo 9 EVA film of Rusty Schweickart wearing the 21-layer A7L ballistic spacesuit.
+- sid: S11
+  start_s: 47.234
+  end_s: 52.038
+  kind: video_full
+  src_file: gold_visor_closeup_1080p.mp4
+  src_in: 0.05
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: Close-up of a lunar spacesuit helmet with its mirror-gold solar visor lowered, reflecting harsh unfiltered
+    sunlight as the astronaut climbs a lunar ladder
+  visual_objective: Show the thin gold-plated solar visor reflecting blinding sunlight
+  progression_dimension: closer_inspection
+  camera_perspective: close_up
+  visual_complexity: high
+  spoken_importance: key_fact
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - ambience
+  reframe_mode: manual
+  cx0: 0.52
+  cy0: 0.46
+  cx1: 0.5
+  cy1: 0.44
+  z0: 1.06
+  z1: 1.1
+  crop_rationale: Centers the gleaming gold-plated lunar visor and ladder climb in native 1080p.
+  transition_in: cut
+  transition_reason: Exact 0.87s breath-pause cut after 'second' directly onto the gold-plated solar visor.
+  is_real_evidence: true
+  has_human_interaction: false
+  associated_seg_id: N03
+  associated_narration_concept: A thin gold-plated visor reflected blinding, unfiltered sunlight.
+  editorial_rationale: 1:1 visual match of the gold-plated lunar visor reflecting sunlight.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Gold-plated lunar visor reflecting harsh unfiltered sunlight
+  visual_desc: 1080p NASA lunar footage showing a mirror-gold spacesuit visor glinting in bright light.
+- sid: S12
+  start_s: 52.038
+  end_s: 57.627
+  kind: video_full
+  src_file: apollo_plss_pack_1080p.mp4
+  src_in: 0.2
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: NASA spacesuit engineer adjusting the exposed cooling-water tubes, oxygen valves, and heat-exchanger plumbing
+    inside an open Portable Life Support System backpack
+  visual_objective: Reveal the compact internal plumbing of the backpack life-support and chilled-water cooling loop
+  progression_dimension: new_evidence
+  camera_perspective: scientific_fieldwork
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: static
+  scene_audio_layers:
+  - narration
+  - ambience
+  reframe_mode: manual
+  cx0: 0.62
+  cy0: 0.5
+  cx1: 0.6
+  cy1: 0.5
+  z0: 1.08
+  z1: 1.12
+  crop_rationale: Frames the open life-support backpack plumbing and engineer's hands while cropping left graphic labels completely
+    offscreen.
+  transition_in: cut
+  transition_reason: Exact 0.41s segment-pause cut after 'sunlight' opening up the backpack life-support and water-cooling
+    plumbing.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N04
+  associated_narration_concept: On each astronaut's back rode a life-support pack pumping chilled water through tubes against
+    their skin.
+  editorial_rationale: Hands-on 1080p NASA lab footage revealing the compact life-support pack plumbing hidden inside the
+    backpack.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Inside NASA's Portable Life Support System chilled-water & oxygen backpack
+  visual_desc: 1080p NASA JSC footage of an engineer working on open Portable Life Support System cooling plumbing.
+- sid: S13
+  start_s: 57.627
+  end_s: 65.834
+  kind: video_full
+  src_file: apollo16_lunar_fall_1080p.mp4
+  src_in: 1.2
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: Archival 16mm Apollo 16 lunar film of astronaut Charlie Duke trying to bend down in his stiff pressurized
+    fabric suit, bunny-hopping, and toppling headfirst into the lunar dust
+  visual_objective: Deliver literal lunar footage of an Apollo astronaut bunny-hopping and toppling when reaching for rocks
+  progression_dimension: new_action
+  camera_perspective: wide
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: static
+  scene_audio_layers:
+  - narration
+  - ambience
+  - natural_sounds
+  reframe_mode: manual
+  cx0: 0.56
+  cy0: 0.55
+  cx1: 0.54
+  cy1: 0.56
+  z0: 1.22
+  z1: 1.26
+  crop_rationale: Centers the Apollo astronaut falling into lunar dust strictly inside active x=[261..1671], y=[92..1079]
+    bounds.
+  transition_in: cut
+  transition_reason: Exact 0.87s breath-pause cut after 'skin' proving why stiff pressurized Apollo fabric joints made astronauts
+    topple.
+  is_real_evidence: true
+  has_human_interaction: false
+  associated_seg_id: N04
+  associated_narration_concept: Still, Apollo's pressurized fabric torso fought every bend—forcing crews to bunny-hop and
+    topple whenever they reached down for rocks.
+  editorial_rationale: Unforgettable real Apollo 16 lunar surface fall directly proving the narration's mechanical point.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Apollo 16 astronaut bunny-hopping and toppling into Moon dust due to stiff suit joints
+  visual_desc: 1080p NASA transfer of Apollo 16 lunar surface film showing an astronaut toppling over while trying to bend.
+- sid: S14
+  start_s: 65.834
+  end_s: 71.096
+  kind: video_full
+  src_file: shuttle_hut_shell_1080p.mp4
+  src_in: 0.2
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: NASA suit technicians fitting the rigid white fiberglass Hard Upper Torso shell and metal wrist rings onto
+    an astronaut
+  visual_objective: Show the rigid fiberglass Hard Upper Torso shell replacing soft upper-body fabric
+  progression_dimension: closer_inspection
+  camera_perspective: scientific_fieldwork
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - music
+  - ambience
+  reframe_mode: manual
+  cx0: 0.48
+  cy0: 0.5
+  cx1: 0.5
+  cy1: 0.48
+  z0: 1.06
+  z1: 1.1
+  crop_rationale: Centers the rigid white fiberglass Hard Upper Torso shell being fitted onto the astronaut in native 1080p.
+  transition_in: cut
+  transition_reason: Exact 0.43s segment-pause cut after 'rocks' jumping to the rigid fiberglass Hard Upper Torso breakthrough.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N05
+  associated_narration_concept: In nineteen eighty-four, NASA rebuilt the upper body around a rigid fiberglass shell.
+  editorial_rationale: Hands-on 1080p NASA suiting-up footage showing the rigid fiberglass Hard Upper Torso shell.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Fitting the rigid fiberglass Hard Upper Torso spacesuit shell
+  visual_desc: 1080p NASA JSC footage of technicians fitting a rigid fiberglass Hard Upper Torso shell onto an astronaut.
+- sid: S15
+  start_s: 71.096
+  end_s: 78.237
+  kind: video_full
+  src_file: shuttle_eva_orbit1_1080p.mp4
+  src_in: 0.4
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: Spacewalking astronaut in a modular hard-torso EMU spacesuit and nitrogen thruster rescue pack translating
+    smoothly outside in raw orbital vacuum above Earth
+  visual_objective: Show the modular hard-torso suit and nitrogen thruster backpack operating in raw orbital vacuum
+  progression_dimension: new_perspective
+  camera_perspective: first_person_pov
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - music
+  - ambience
+  reframe_mode: manual
+  cx0: 0.42
+  cy0: 0.5
+  cx1: 0.46
+  cy1: 0.48
+  z0: 1.06
+  z1: 1.1
+  crop_rationale: Frames the modular white EMU astronaut and nitrogen backpack in crisp native 1080p motion.
+  transition_in: cut
+  transition_reason: Exact 0.85s breath-pause cut after 'shell' into live 1080p orbital EVA propulsion.
+  is_real_evidence: true
+  has_human_interaction: false
+  associated_seg_id: N05
+  associated_narration_concept: Snapped onto a twenty-four-thruster nitrogen jetpack, Bruce McCandless flew untethered one
+    hundred meters from Challenger.
+  editorial_rationale: Crisp 1080p orbital spacewalk motion building up to the iconic untethered 100-meter human-satellite
+    reveal.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Modular hard-torso spacesuit and nitrogen thruster backpack in orbital vacuum
+  visual_desc: 1080p NASA orbital EVA footage of an astronaut translating in a modular hard-torso EMU spacesuit.
+- sid: S16
+  start_s: 78.237
+  end_s: 81.936
+  kind: still_parallax_25d
+  src_file: mccandless_mmu_closeup_7k.jpg
+  source_media_class: STILL_PHOTO
+  essential_historical_or_scientific_evidence: true
+  visible_action: 47-megapixel NASA Hasselblad telephoto photograph of astronaut Bruce McCandless hovering completely untethered
+    100 meters from Challenger in the 24-thruster nitrogen MMU jetpack directly above glowing cloud-swirled blue Earth
+  visual_objective: Deliver the iconic 47-megapixel Hasselblad telephoto frame of Bruce McCandless floating untethered as
+    a standalone human satellite above Earth
+  progression_dimension: scale_shift
+  camera_perspective: wide
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: gentle_drift
+  scene_audio_layers:
+  - narration
+  - music
+  - ambience
+  reframe_mode: manual
+  cx0: 0.505
+  cy0: 0.54
+  cx1: 0.505
+  cy1: 0.52
+  z0: 1.12
+  z1: 1.18
+  crop_rationale: 6852x6904 (47MP) Hasselblad master scan (S84-27017) cropped edge-to-edge across Bruce McCandless's white
+    MMU jetpack, gold visor, and glowing blue Earth below with zero top border.
+  transition_in: cut
+  transition_reason: Exact 0.85s breath-pause cut after 'Challenger' onto the 47MP Hasselblad master frame of a standalone
+    human satellite above Earth.
+  is_real_evidence: true
+  has_human_interaction: false
+  associated_seg_id: N05
+  associated_narration_concept: He became a standalone human satellite above Earth.
+  editorial_rationale: Historic February 7, 1984 STS-41B 47-megapixel Hasselblad master photograph (S84-27017) matching 'a
+    standalone human satellite above Earth' word for word.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Bruce McCandless hovering untethered over Earth in the 24-thruster MMU as a standalone human satellite
+  visual_desc: 6852x6904 NASA Hasselblad photograph (S84-27017) of Bruce McCandless untethered in the Manned Maneuvering Unit
+    above blue Earth.
+- sid: S17
+  start_s: 81.936
+  end_s: 87.965
+  kind: video_full
+  src_file: xemu_rotary_bearings_1080p.mp4
+  src_in: 0.2
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: Pressurized NASA Artemis xEMU prototype rotating its sealed metal waist, hip, and shoulder bearings smoothly
+    on a test stand
+  visual_objective: Show the sealed rotary metal bearings replacing stiff fabric bends on Artemis lunar suits
+  progression_dimension: closer_inspection
+  camera_perspective: close_up
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - music
+  - ambience
+  reframe_mode: manual
+  cx0: 0.46
+  cy0: 0.5
+  cx1: 0.48
+  cy1: 0.48
+  z0: 1.06
+  z1: 1.1
+  crop_rationale: Centers the pressurized Artemis xEMU suit torso, metal waist bearing ring, and articulated hip joints in
+    1080p.
+  transition_in: cut
+  transition_reason: Exact 0.42s segment-pause cut after 'Earth' jumping to 2026 Artemis sealed metal bearing joints.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N06
+  associated_narration_concept: Now for twenty twenty-six, Artemis lunar suits replace stiff fabric bends with sealed metal
+    bearings.
+  editorial_rationale: Direct NASA JSC test footage of the rotary metal waist and hip bearings flexing under pressure.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Artemis lunar suit sealed rotary metal waist and hip bearings
+  visual_desc: 1080p NASA JSC resource footage of the Exploration EMU flexing its rotary metal waist and hip bearings.
+- sid: S18
+  start_s: 87.965
+  end_s: 92.053
+  kind: video_full
+  src_file: xemu_rear_entry_hatch_1080p.mp4
+  src_in: 0.2
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: NASA test subject wearing a white liquid-cooling garment stepping feet-first straight through the open rear-entry
+    hatch door on the back of the Artemis spacesuit
+  visual_objective: Deliver literal moving proof of an astronaut stepping straight through the rear-entry hatch on the backpack
+  progression_dimension: new_action
+  camera_perspective: scientific_fieldwork
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - music
+  - ambience
+  reframe_mode: manual
+  cx0: 0.48
+  cy0: 0.5
+  cx1: 0.52
+  cy1: 0.5
+  z0: 1.06
+  z1: 1.1
+  crop_rationale: Frames the astronaut climbing feet-first directly into the open rear-entry backpack hatch door in 1080p.
+  transition_in: cut
+  transition_reason: Exact 0.87s breath-pause cut after 'bearings' showing an astronaut stepping straight into the rear-entry
+    backpack hatch.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N06
+  associated_narration_concept: Astronauts step straight through a rear-entry hatch on the backpack,
+  editorial_rationale: Jaw-dropping 1:1 action shot of an astronaut literally stepping through the open backpack hatch.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Stepping feet-first straight through the open rear-entry backpack hatch
+  visual_desc: 1080p NASA JSC footage of an astronaut climbing straight into the open rear-entry hatch of the Artemis xEMU
+    suit.
+- sid: S19
+  start_s: 92.053
+  end_s: 95.533
+  kind: video_full
+  src_file: xemu_crater_kneeling_1080p.mp4
+  src_in: 0.5
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: Two NASA test astronauts in next-generation rear-entry planetary spacesuits twisting and bending down effortlessly
+    across a dark volcanic crater field to collect rock samples
+  visual_objective: Prove in native 1080p fieldwork that rotary bearings let next-gen suits twist and kneel across rocky craters
+  progression_dimension: new_action
+  camera_perspective: medium
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - music
+  - ambience
+  reframe_mode: manual
+  cx0: 0.58
+  cy0: 0.5
+  cx1: 0.6
+  cy1: 0.5
+  z0: 1.08
+  z1: 1.12
+  crop_rationale: Centers the NASA planetary spacesuit bending effortlessly down to sample dark volcanic crater rocks in native
+    1080p.
+  transition_in: cut
+  transition_reason: Exact 0.24s comma-pause cut after 'backpack' contrasting S13's Apollo lunar fall with effortless crater
+    rock sampling.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N06
+  associated_narration_concept: then twist and kneel effortlessly across rocky craters.
+  editorial_rationale: Direct 1080p field geology payoff resolving Apollo's stiff-joint fall problem shown in S13.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Next-gen planetary spacesuits bending effortlessly to collect dark volcanic crater rocks
+  visual_desc: 1080p NASA JSC planetary fieldwork footage of rear-entry spacesuits bending to collect dark crater rocks.
+- sid: S20
+  start_s: 95.533
+  end_s: 101.19
+  kind: video_full
+  src_file: artemis_regolith_dust_1080p.mp4
+  src_in: 0.2
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: Pressurized NASA Artemis spacesuit kneeling directly in abrasive lunar regolith simulant digging and scooping
+    dusty soil right around its knee, hip, and glove joint seals
+  visual_objective: Show real 2026 NASA regolith testing as abrasive lunar dust coats spacesuit knee and glove joints
+  progression_dimension: new_evidence
+  camera_perspective: scientific_fieldwork
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - music
+  - ambience
+  reframe_mode: manual
+  cx0: 0.49
+  cy0: 0.56
+  cx1: 0.5
+  cy1: 0.57
+  z0: 1.2
+  z1: 1.24
+  crop_rationale: Centers the kneeling white Artemis spacesuit scooping lunar regolith dust in the middle of the 9:16 frame
+    while cropping top y=[0..96] lab timecode completely offscreen (y_top=155px).
+  transition_in: cut
+  transition_reason: Exact 0.41s segment-pause cut after 'craters' introducing the scientific caveat of glass-sharp lunar
+    dust.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N07
+  associated_narration_concept: Glass-sharp lunar dust remains NASA's toughest enemy, chewing at metal seals and joints.
+  editorial_rationale: Real 1080p NASA JSC lunar regolith simulant test showing abrasive dust surrounding kneeling spacesuit
+    seals.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Artemis spacesuit kneeling in abrasive lunar regolith simulant dust
+  visual_desc: 1080p March 2026 NASA JSC test footage of a pressurized Artemis suit kneeling and digging in lunar regolith
+    simulant.
+- sid: S21
+  start_s: 101.19
+  end_s: 105.023
+  kind: video_full
+  src_file: artemis_2026_testing_1080p.mp4
+  src_in: 47.4
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: March 2026 NASA JSC lunar spacesuit test showing twin Artemis astronauts walking across a darkened Lunar
+    South Pole crater floor with helmet lights piercing the gloom
+  visual_objective: Show active March 2026 NASA Artemis spacesuit testing for dark Lunar South Pole operations
+  progression_dimension: new_action
+  camera_perspective: wide
+  visual_complexity: high
+  spoken_importance: key_fact
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - music
+  - ambience
+  reframe_mode: manual
+  cx0: 0.44
+  cy0: 0.48
+  cx1: 0.48
+  cy1: 0.46
+  z0: 1.06
+  z1: 1.1
+  crop_rationale: Frames the two Artemis test astronauts striding across the darkened simulated lunar crater floor in native
+    1080p.
+  transition_in: cut
+  transition_reason: Exact 0.90s breath-pause cut after 'joints' onto March 2026 NASA Artemis lunar crater testing.
+  is_real_evidence: true
+  has_human_interaction: true
+  associated_seg_id: N07
+  associated_narration_concept: Yet sixty-five years after Mercury's silver cocoon,
+  editorial_rationale: Official March 2026 NASA JSC Artemis Lunar Spacesuit Testing footage bridging 1961 to 2026.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: March 2026 NASA Artemis lunar spacesuit dark-crater walk test
+  visual_desc: 1080p March 2026 NASA JSC resource footage of dual Artemis spacesuits walking across a darkened lunar testbed.
+- sid: S22
+  start_s: 105.023
+  end_s: 110.667
+  kind: video_full
+  src_file: spacesuits_next_explorers_1080p.mp4
+  src_in: 637.5
+  source_media_class: REAL_VIDEO_ACTION
+  visible_action: Artemis astronaut climbing up over a pitch-dark Lunar South Pole crater ridge carrying geology tools as
+    blazing helmet floodlights illuminate frozen shadows
+  visual_objective: Close the 65-year evolution on a breathtaking 1080p reveal inside the Moon's frozen southern shadows
+  progression_dimension: scale_shift
+  camera_perspective: wide
+  visual_complexity: high
+  spoken_importance: central_reveal
+  camera_movement: tracking
+  scene_audio_layers:
+  - narration
+  - music
+  - ambience
+  - natural_sounds
+  reframe_mode: manual
+  cx0: 0.52
+  cy0: 0.5
+  cx1: 0.5
+  cy1: 0.46
+  z0: 1.08
+  z1: 1.14
+  crop_rationale: Centers the floodlit Artemis astronaut climbing over the dark rocky lunar ridge strictly inside active x=[81..1919]
+    bounds.
+  transition_in: cut
+  transition_reason: Exact 0.20s comma-pause cut after 'cocoon' into the pitch-dark Lunar South Pole crater payoff.
+  is_real_evidence: true
+  has_human_interaction: false
+  associated_seg_id: N07
+  associated_narration_concept: dust-hardened Artemis suits are built to work deep inside the Moon's frozen southern shadows.
+  editorial_rationale: Haunting, unforgettable 65-year visual payoff contrasting helmet floodlights in South Pole shadows
+    back into Frame 0's 1961 silver Mercury suits.
+  subject_match_kind: direct_subject
+  scientific_claim_status: verified_fact
+  story_beat: Artemis spacesuit helmet floodlights piercing Lunar South Pole shadows
+  visual_desc: 1080p NASA JSC feature shot of an Artemis spacesuit with blazing helmet lights climbing a darkened lunar crater
+    ridge.
+assets_register:
+- local_file: mercury_seven_silver_suits_5k.jpg
+  title: Project Mercury Astronauts Suited in Mirror-Silver Navy Mark IV Pressure Suits (S62-08774, 5K Scan)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/s62-08774
+  direct_media_url: https://images-assets.nasa.gov/image/s62-08774/s62-08774~orig.jpg
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA (S62-08774)
+  media_type: photo
+  source_media_class: STILL_PHOTO
+  canonical_source_id: nasa_s62_08774_mercury_silver_suits_5k
+  depicts_meaningful_action: false
+  depicted_subject: America's first spacesuit in 1961 wrapped in mirror-bright aluminized nylon
+  depicted_action: Project Mercury astronauts suited in full mirror-silver aluminized-nylon Navy Mark IV pressure suits and
+    helmets
+  depicted_location: Cape Canaveral, Florida, USA
+  priority_tier: 1
+  intended_use: S01 Frame-0 5K Kodachrome reveal of America's gleaming silver Project Mercury spacesuits
+- local_file: mercury_suiting_up_1080p.mp4
+  title: Project Mercury Navy Mark IV Silver Aluminized-Nylon Pressure Suit Fastening (NASA GRC)
+  creator_agency: NASA Glenn Research Center
+  source_page_url: https://commons.wikimedia.org/wiki/File:John_Glenn_B-Roll.webm
+  direct_media_url: https://upload.wikimedia.org/wikipedia/commons/3/3d/John_Glenn_B-Roll.webm
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Glenn Research Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_mercury_suiting_up_1962
+  depicts_meaningful_action: true
+  depicted_subject: Mirror-bright aluminized-nylon Project Mercury emergency pressure cocoon
+  depicted_action: Suit technician fastening the silver aluminized-nylon neck ring and torso zipper on John Glenn
+  depicted_location: Cape Canaveral, Florida, USA
+  priority_tier: 1
+  intended_use: S02 moving color close-up of fastening the silver Mercury cocoon
+- local_file: mercury_ingress_1080p.mp4
+  title: Project Mercury Silver Pressure Suit Capsule Hatch Ingress (NASA GRC)
+  creator_agency: NASA Glenn Research Center
+  source_page_url: https://commons.wikimedia.org/wiki/File:John_Glenn_B-Roll.webm
+  direct_media_url: https://upload.wikimedia.org/wikipedia/commons/3/3d/John_Glenn_B-Roll.webm
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Glenn Research Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_mercury_capsule_ingress_1962
+  depicts_meaningful_action: true
+  depicted_subject: Stiff fabric joints on Project Mercury spacesuit inside cramped cockpit
+  depicted_action: White-suited pad crew guiding the silver-suited Mercury astronaut tightly into the capsule hatch
+  depicted_location: Cape Canaveral, Florida, USA
+  priority_tier: 1
+  intended_use: S03 stiff Mercury suit confinement inside cramped capsule
+- local_file: gemini_eva_earth_1080p.mp4
+  title: Project Gemini Open-Hatch Spacewalk Camera Sweep Over Blue Earth (NASA HD 049)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201
+  direct_media_url: https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~orig.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_hd049_gemini_eva_earth_1965
+  depicts_meaningful_action: true
+  depicted_subject: 1965 Project Gemini pushing astronauts outside into raw vacuum over Earth
+  depicted_action: 16mm color Gemini EVA camera sweeping across raw black vacuum and bright blue Earth
+  depicted_location: Low Earth Orbit
+  priority_tier: 1
+  intended_use: S04 Gemini open-hatch emergence into raw orbital vacuum
+- local_file: thumb_1965_ed_white_eva_4k.jpg
+  title: Astronaut Edward H. White II During Gemini-Titan IV Spacewalk on 25-Foot Golden Umbilical (S65-30433)
+  creator_agency: NASA / James A. McDivitt
+  source_page_url: https://images.nasa.gov/details/s65-30433
+  direct_media_url: https://images-assets.nasa.gov/image/s65-30433/s65-30433~orig.jpg
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA (S65-30433)
+  media_type: photo
+  source_media_class: STILL_PHOTO
+  canonical_source_id: nasa_s65_30433_ed_white_umbilical
+  depicts_meaningful_action: false
+  depicted_subject: Ed White tethered by a twenty-five-foot golden umbilical hose floating over Earth firing a handheld gas
+    gun
+  depicted_action: Ed White floating over blue Earth tethered to the gold-wrapped 25-foot umbilical hose while holding the
+    handheld gas maneuvering gun
+  depicted_location: Low Earth Orbit
+  priority_tier: 1
+  intended_use: S05 4K inspection of the 25-foot golden umbilical hose and handheld gas gun
+- local_file: gemini_rig_horizontal_1080p.mp4
+  title: Project Gemini Pressurized G4C Suit Zero-G Umbilical Maneuvering Rig (NASA HD 049)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201
+  direct_media_url: https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~orig.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_hd049_gemini_rig_horizontal_1965
+  depicts_meaningful_action: true
+  depicted_subject: Gemini spacewalker floating horizontally on umbilical hoses
+  depicted_action: Pressurized Gemini G4C spacewalk suit suspended horizontally on NASA's frictionless zero-G air-bearing
+    simulator
+  depicted_location: Houston, Texas, USA
+  priority_tier: 1
+  intended_use: S06 moving Gemini horizontal zero-G umbilical maneuvering
+- local_file: gemini_inflated_walk_1080p.mp4
+  title: Project Gemini Internally Pressurized G4C Suit Pneumatic Stiffness Test (NASA HD 049)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201
+  direct_media_url: https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~orig.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_hd049_gemini_inflated_stiff_1965
+  depicts_meaningful_action: true
+  depicted_subject: Internal pressure ballooning soft Gemini suits rigid like car tires
+  depicted_action: Astronaut straining to bend stiffly inflated arms and legs inside a pressurized Gemini G4C spacesuit
+  depicted_location: Houston, Texas, USA
+  priority_tier: 1
+  intended_use: S07 pneumatic ballooning stiffness of soft Gemini suits
+- local_file: apollo9_a7l_eva1_1080p.mp4
+  title: Apollo 9 Flight Test of the 21-Layer Apollo A7L Lunar Spacesuit — Hatch Emergence (NASA HD 049)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201
+  direct_media_url: https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~orig.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_apollo9_a7l_eva1_1969
+  depicts_meaningful_action: true
+  depicted_subject: 1969 wearable twenty-one-layer Apollo A7L spacecraft
+  depicted_action: Apollo 9 astronaut Dave Scott emerging in the standalone 21-layer white Apollo A7L lunar spacesuit
+  depicted_location: Low Earth Orbit
+  priority_tier: 1
+  intended_use: S08 unveiling the 1969 21-layer Apollo A7L spacecraft suit
+- local_file: apollo9_a7l_eva2_1080p.mp4
+  title: Apollo 9 Rusty Schweickart Testing 21-Layer Mylar & Ballistic A7L Armor in Vacuum (NASA HD 049)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201
+  direct_media_url: https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~orig.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_apollo9_a7l_eva2_1969
+  depicts_meaningful_action: true
+  depicted_subject: Stacked Mylar and ballistic armor stopping tiny space rocks at eight kilometers per second
+  depicted_action: Apollo 9 astronaut Rusty Schweickart maneuvering outside in raw vacuum wearing the 21-layer ballistic A7L
+    suit
+  depicted_location: Low Earth Orbit
+  priority_tier: 1
+  intended_use: S10 21-layer Mylar and ballistic micrometeoroid armor in open space
+- local_file: gold_visor_closeup_1080p.mp4
+  title: 'Spacesuits for Artemis: Gold-Plated Lunar Solar Visor Close-Up (jsc2022m000171, 1080p)'
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/jsc2022m000171_Spacesuits%20for%20Artemis%20Moon%20Dust%20and%20Mobility_7_6_22
+  direct_media_url: https://images-assets.nasa.gov/video/jsc2022m000171_Spacesuits%20for%20Artemis%20Moon%20Dust%20and%20Mobility_7_6_22/jsc2022m000171_Spacesuits%20for%20Artemis%20Moon%20Dust%20and%20Mobility_7_6_22~large.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_jsc_gold_visor_closeup_1080p
+  depicts_meaningful_action: true
+  depicted_subject: Thin gold-plated solar visor reflecting blinding unfiltered sunlight
+  depicted_action: Lunar spacesuit climbing a ladder with its mirror-gold solar visor reflecting harsh sunlight
+  depicted_location: NASA Johnson Space Center, Houston, USA
+  priority_tier: 1
+  intended_use: S11 gold-plated lunar visor close-up
+- local_file: artemis_regolith_dust_1080p.mp4
+  title: Artemis Lunar Spacesuit Kneeling & Scooping Abrasive Lunar Regolith Simulant (jsc2026m000052, 1080p)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324
+  direct_media_url: https://images-assets.nasa.gov/video/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324~large.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_jsc_artemis_regolith_dust_test_2026
+  depicts_meaningful_action: true
+  depicted_subject: Glass-sharp lunar dust chewing at metal seals and joints during kneeling geology work
+  depicted_action: Pressurized Artemis spacesuit kneeling in lunar regolith simulant scooping dusty soil near its knee and
+    glove seals
+  depicted_location: NASA Johnson Space Center, Houston, USA
+  priority_tier: 1
+  intended_use: S20 March 2026 NASA regolith dust abrasion test
+- local_file: apollo_plss_pack_1080p.mp4
+  title: Open Portable Life Support System Chilled-Water & Oxygen Backpack Plumbing (jsc2020m000244, 1080p)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4
+  direct_media_url: https://images-assets.nasa.gov/video/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4~large.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_jsc_plss_cooling_pack_1080p
+  depicts_meaningful_action: true
+  depicted_subject: Backpack life-support pack pumping chilled water through tubes against astronaut skin
+  depicted_action: NASA engineer inspecting exposed cooling-water tubes and oxygen valves inside an open PLSS backpack
+  depicted_location: NASA Johnson Space Center, Houston, USA
+  priority_tier: 1
+  intended_use: S12 internal water-cooling and oxygen plumbing of the life-support backpack
+- local_file: apollo16_lunar_fall_1080p.mp4
+  title: Apollo 16 Lunar Surface Film — Stiff Pressurized Suit Bunny-Hop & Fall (jsc2020m000244, 1080p)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4
+  direct_media_url: https://images-assets.nasa.gov/video/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4~large.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_apollo16_stiff_suit_lunar_fall_1080p
+  depicts_meaningful_action: true
+  depicted_subject: Pressurized Apollo fabric torso fighting every bend and forcing crews to bunny-hop and topple
+  depicted_action: Apollo 16 astronaut Charlie Duke bunny-hopping and toppling headfirst into Moon dust while trying to bend
+  depicted_location: Descartes Highlands, Moon
+  priority_tier: 1
+  intended_use: S13 literal lunar surface fall proving stiff Apollo joint restriction
+- local_file: shuttle_hut_shell_1080p.mp4
+  title: Fitting the Rigid Fiberglass Hard Upper Torso Spacesuit Shell (jsc2026m000932, 1080p)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/jsc2026m000932_Spacewalk_101_AVAIL1080p
+  direct_media_url: https://images-assets.nasa.gov/video/jsc2026m000932_Spacewalk_101_AVAIL1080p/jsc2026m000932_Spacewalk_101_AVAIL1080p~large.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_jsc_hard_upper_torso_shell_1080p
+  depicts_meaningful_action: true
+  depicted_subject: Rebuilding the spacesuit upper body around a rigid fiberglass shell
+  depicted_action: Technicians fitting a rigid white fiberglass Hard Upper Torso shell onto an astronaut
+  depicted_location: NASA Johnson Space Center, Houston, USA
+  priority_tier: 1
+  intended_use: S14 rigid fiberglass Hard Upper Torso shell fitting
+- local_file: shuttle_eva_orbit1_1080p.mp4
+  title: Modular Hard-Torso EMU Spacesuit & Nitrogen Thruster Pack in Orbital Vacuum (jsc2026m000932, 1080p)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/jsc2026m000932_Spacewalk_101_AVAIL1080p
+  direct_media_url: https://images-assets.nasa.gov/video/jsc2026m000932_Spacewalk_101_AVAIL1080p/jsc2026m000932_Spacewalk_101_AVAIL1080p~large.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_jsc_modular_emu_orbital_eva_1080p
+  depicts_meaningful_action: true
+  depicted_subject: Modular hard-torso spacesuit snapped onto a nitrogen thruster backpack in orbit
+  depicted_action: Spacewalking astronaut translating outside in raw orbital vacuum wearing a modular EMU suit
+  depicted_location: Low Earth Orbit
+  priority_tier: 1
+  intended_use: S15 live 1080p orbital EVA propulsion lead-in
+- local_file: mccandless_mmu_closeup_7k.jpg
+  title: Astronaut Bruce McCandless II Telephoto Portrait Untethered in the Manned Maneuvering Unit During STS-41B (S84-27017,
+    7K Scan)
+  creator_agency: NASA / Robert L. Gibson
+  source_page_url: https://images.nasa.gov/details/s84-27017
+  direct_media_url: https://images-assets.nasa.gov/image/s84-27017/s84-27017~orig.jpg
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA (S84-27017)
+  media_type: photo
+  source_media_class: STILL_PHOTO
+  canonical_source_id: nasa_s84_27017_mccandless_mmu_1984
+  depicts_meaningful_action: false
+  depicted_subject: Bruce McCandless flying untethered one hundred meters from Challenger as a standalone human satellite
+    above Earth
+  depicted_action: Bruce McCandless hovering completely untethered in the 24-thruster nitrogen MMU directly above glowing
+    cloud-swirled blue Earth
+  depicted_location: Low Earth Orbit
+  priority_tier: 1
+  intended_use: S16 47-megapixel Hasselblad telephoto payoff of a standalone human satellite above Earth
+- local_file: xemu_rotary_bearings_1080p.mp4
+  title: Exploration EMU (xEMU) Sealed Rotary Metal Waist & Hip Bearings Mobility Test (jsc2019m000727, 1080p)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4
+  direct_media_url: https://images-assets.nasa.gov/video/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4~orig.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_jsc_xemu_rotary_bearings_1080p
+  depicts_meaningful_action: true
+  depicted_subject: Artemis lunar suits replacing stiff fabric bends with sealed metal bearings
+  depicted_action: Pressurized Artemis xEMU prototype flexing sealed rotary metal waist, hip, and shoulder bearings
+  depicted_location: NASA Johnson Space Center, Houston, Texas, USA
+  priority_tier: 1
+  intended_use: S17 sealed rotary metal bearing mobility demonstration
+- local_file: xemu_rear_entry_hatch_1080p.mp4
+  title: Exploration EMU (xEMU) Stepping Through the Open Rear-Entry Backpack Hatch (jsc2019m000727, 1080p)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4
+  direct_media_url: https://images-assets.nasa.gov/video/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4/jsc2019m000727_xEMU_NextGenerationSpacesuitResourceReel01_MP4~orig.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_jsc_xemu_rear_entry_hatch_1080p
+  depicts_meaningful_action: true
+  depicted_subject: Rear-entry hatch on the backpack allowing astronauts to step straight into the Artemis spacesuit
+  depicted_action: Astronaut wearing a liquid-cooling garment climbing feet-first straight through the open rear-entry hatch
+    on the back of the Artemis suit
+  depicted_location: NASA Johnson Space Center, Houston, Texas, USA
+  priority_tier: 1
+  intended_use: S18 stepping straight through the open rear-entry hatch door
+- local_file: xemu_crater_kneeling_1080p.mp4
+  title: NASA Next-Generation Rear-Entry Planetary Suits Rock Sampling Across Volcanic Craters (jsc2020m000244, 1080p)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4
+  direct_media_url: https://images-assets.nasa.gov/video/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4~large.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_jsc_crater_rock_sampling_1080p
+  depicts_meaningful_action: true
+  depicted_subject: Artemis lunar suits twisting and kneeling effortlessly across rocky craters
+  depicted_action: Planetary rear-entry NASA spacesuits twisting and bending down across dark volcanic craters to sample rocks
+  depicted_location: San Francisco Volcanic Field, Arizona, USA
+  priority_tier: 1
+  intended_use: S19 effortless crater twisting and rock sampling payoff
+- local_file: artemis_2026_testing_1080p.mp4
+  title: Artemis Lunar Spacesuit Testing Resource Reel — March 2026 (jsc2026m000052, 1080p)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324
+  direct_media_url: https://images-assets.nasa.gov/video/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324/jsc2026m000052_Artemis_Lunar_Spacesuit_Testing_Resource_Reel_March_2026_260324~large.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_jsc_artemis_lunar_suit_testing_march_2026
+  depicts_meaningful_action: true
+  depicted_subject: Fireproof white outer spacesuit garment and 2026 dust-hardened Artemis lunar suits
+  depicted_action: Close-up inspection of white fireproof outer suit fabric and dual Artemis lunar spacesuits walking across
+    NASA's darkened Lunar South Pole crater testbed in March 2026
+  depicted_location: NASA Johnson Space Center, Houston, Texas, USA
+  priority_tier: 1
+  intended_use: S09 white fireproof outer garment close-up & S21 March 2026 NASA Artemis South Pole crater walk
+- local_file: spacesuits_next_explorers_1080p.mp4
+  title: Spacesuits for the Next Explorers — Lunar South Pole Floodlit Crater Climb (jsc2020m000244, 1080p)
+  creator_agency: NASA Lyndon B. Johnson Space Center
+  source_page_url: https://images.nasa.gov/details/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4
+  direct_media_url: https://images-assets.nasa.gov/video/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4/jsc2020m000244_Spacesuits%20for%20the%20Next%20Explorers_Full%20Feature_1080_MP4~large.mp4
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA Lyndon B. Johnson Space Center
+  media_type: video
+  source_media_class: REAL_VIDEO_ACTION
+  canonical_source_id: nasa_jsc_south_pole_floodlit_climb_1080p
+  depicts_meaningful_action: true
+  depicted_subject: Dust-hardened Artemis suits built to work deep inside the Moon's frozen southern shadows
+  depicted_action: Artemis astronaut with blazing helmet floodlights climbing over a pitch-dark Lunar South Pole crater ridge
+  depicted_location: NASA Johnson Space Center Lunar Testbed, Houston, USA
+  priority_tier: 1
+  intended_use: S22 Lunar South Pole floodlit crater ridge finale
+- local_file: spacesuit_evolution_65y_plate_B.png
+  title: 65-Year NASA Spacesuit Evolution Composite Plate B (1961, 1969 & Mystery Silhouettes)
+  creator_agency: Proof of Wonder Studio (Public Domain NASA Archival Photographs)
+  source_page_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  direct_media_url: local://assets/raw_footage/space_spacesuit_evolution_v8/spacesuit_evolution_65y_plate_B.png
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA archival composite (G60-02665, AS11-40-5903, S84-27031)
+  media_type: photo
+  source_media_class: STILL_PHOTO
+  canonical_source_id: pow_spacesuit_evolution_thumb_b
+  depicts_meaningful_action: false
+  depicted_subject: 1961 silver Mercury suit, 1969 Apollo Moon suit, and blurred dark 1984/2026 spacesuit silhouettes
+  depicted_action: 65-year visual comparison plate for Thumbnail Concept A
+  depicted_location: United States & Moon
+  priority_tier: 3
+  intended_use: Thumbnail Concept A (Primary Cover)
+  is_first_party_original: true
+- local_file: spacesuit_evolution_65y_plate_A.png
+  title: 65-Year NASA Spacesuit Evolution Composite Plate A (Split Stacked Early Suits vs 2026 Silhouette)
+  creator_agency: Proof of Wonder Studio (Public Domain NASA Archival Photographs)
+  source_page_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  direct_media_url: local://assets/raw_footage/space_spacesuit_evolution_v8/spacesuit_evolution_65y_plate_A.png
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA archival composite (S61-00239, S65-30433, AS11-40-5903)
+  media_type: photo
+  source_media_class: STILL_PHOTO
+  canonical_source_id: pow_spacesuit_evolution_thumb_a
+  depicts_meaningful_action: false
+  depicted_subject: 1961, 1965, 1969 NASA spacesuits contrasted with 2026 dark Artemis silhouette
+  depicted_action: Split comparison plate for Thumbnail Concept B
+  depicted_location: United States & Moon
+  priority_tier: 3
+  intended_use: Thumbnail Concept B
+  is_first_party_original: true
+- local_file: spacesuit_evolution_65y_plate_C.png
+  title: 65-Year NASA Spacesuit Evolution Composite Plate C (3-Column Contrast)
+  creator_agency: Proof of Wonder Studio (Public Domain NASA Archival Photographs)
+  source_page_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  direct_media_url: local://assets/raw_footage/space_spacesuit_evolution_v8/spacesuit_evolution_65y_plate_C.png
+  license: Public domain
+  license_url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+  required_attribution: Public Domain — NASA archival composite (G60-02665, S65-30433)
+  media_type: photo
+  source_media_class: STILL_PHOTO
+  canonical_source_id: pow_spacesuit_evolution_thumb_c
+  depicts_meaningful_action: false
+  depicted_subject: 1961 silver Mercury suit, 1965 Ed White spacewalk suit, and 2026 dark Artemis silhouette
+  depicted_action: 3-column comparison plate for Thumbnail Concept C
+  depicted_location: United States & Low Earth Orbit
+  priority_tier: 3
+  intended_use: Thumbnail Concept C
+  is_first_party_original: true
+- local_file: spacesuit_airlock_ambience.wav
+  title: Spacecraft Airlock Ventilation & PLSS Cooling-Loop Airflow Bed
+  creator_agency: Proof of Wonder Documentary Studio
+  source_page_url: local://assets/raw_footage/space_spacesuit_evolution_v8/spacesuit_airlock_ambience.wav
+  direct_media_url: local://assets/raw_footage/space_spacesuit_evolution_v8/spacesuit_airlock_ambience.wav
+  license: CC0
+  license_url: https://creativecommons.org/publicdomain/zero/1.0/
+  required_attribution: First-party synthesized spacecraft airlock airflow ambience (CC0)
+  media_type: audio
+  priority_tier: 3
+  intended_use: Continuous restrained spacecraft airlock & life-support airflow bed
+  is_first_party_original: true
+factual_references:
+- citation: NASA History Division / Smithsonian National Air and Space Museum — Project Mercury Navy Mark IV Pressure Suit
+    (1961) & Project Gemini G4C Extravehicular Suit (Ed White, Gemini IV, June 3, 1965).
+  url: https://www.nasa.gov/spacesuits/
+  supported_claims: Mercury's silver aluminized-nylon Mark IV suit served strictly as unpressurized cabin backup and stiffened
+    when inflated; Ed White spacewalked on a 25-foot gold-wrapped umbilical using a handheld gas maneuvering gun while pressurized
+    soft Gemini suits ballooned stiff.
+- citation: NASA Johnson Space Center — Apollo A7L / A7LB Lunar Extravehicular Mobility Unit (21 layers, Beta-cloth, Mylar/ballistic
+    micrometeoroid defense, LEVA gold visor, LCVG water-cooling garment & PLSS).
+  url: https://www.nasa.gov/history/alsj/
+  supported_claims: Apollo suits combined 21 thermal and ballistic layers to stop ~28,000 km/h micrometeoroids, gold-plated
+    visors, and chilled-water LCVG tubes, while pressurized fabric torsos restricted bending and contributed to lunar falls.
+- citation: NASA Johnson Space Center — Space Shuttle Hard Upper Torso EMU & Manned Maneuvering Unit (STS-41B, Bruce McCandless,
+    Feb 7, 1984, 24 nitrogen thrusters, ~100 m untethered) and Artemis Next-Generation Lunar Spacesuits (rear-entry hatch,
+    rotary bearings & lunar regolith dust mitigation, 2026).
+  url: https://www.nasa.gov/humans-in-space/spacesuits/
+  supported_claims: Shuttle EMUs introduced a rigid fiberglass Hard Upper Torso and paired with the 24-thruster nitrogen MMU
+    for McCandless's 100-meter untethered flight; Artemis generation suits add a rear-entry hatch, sealed rotary metal bearings,
+    and dust-tolerant seals for Lunar South Pole craters.

@@ -1,0 +1,907 @@
+manifest_version: "9.0"
+script_version: "v9.0.0"
+subtitle_version: "v9.0.0"
+channel_name: "Proof of Wonder"
+playlist: "Hidden Earth"
+slug: "volcano-trash-explosion-v9"
+topic: "Why Humanity Cannot Dump Municipal Solid Waste Into Active Volcanoes (2002 Erta Ale 30-kg Waste Steam Explosion, 1,600x Moisture Flash Expansion, 1,200°C Basalt Lava vs Steel Melting Point & Unfiltered Toxic Plumes)"
+
+style_profile: "mysterious_earth_exploration"
+style_overrides:
+  sound_design:
+    scene_audio_profile: "scientific_discovery"
+    enable_diegetic_nat_sound: false
+  asset_selection:
+    target_moving_footage_ratio: 0.90
+    target_genuine_moving_footage_ratio: 0.90
+    target_meaningful_action_footage_ratio: 0.72
+    max_static_image_ratio: 0.05
+    max_scientific_visualization_ratio: 0.05
+    min_human_interaction_shots: 2
+  pacing:
+    min_shot_duration_s: 2.2
+  subtitles:
+    style: "cinema_boxless"
+
+voice_input_mode: "directed_tts"
+voice_direction_profile: "mysterious_discovery"
+voice: "en-GB-RyanNeural"
+annotated_voice_script_file: "episodes/volcano_trash_v9_voice_script.txt"
+opening_hook_type: "paradox"
+adaptive_audio_profile: "immersive_exploration"
+
+primary_title: "Why Don't We Dump All Our Trash Into Volcanoes?"
+alternative_title: "What Happened When Scientists Dropped 30 kg of Trash Into Lava"
+
+youtube_description: |
+  Lava lakes glow past 1,100°C—so why doesn't humanity dump its 2 billion annual tons of municipal garbage straight into active volcanoes?
+
+  In 2002, field researchers at Ethiopia's Erta Ale volcano dropped a 30-kilogram bag of camp waste onto a crusted basaltic lava lake. Rather than sinking harmlessly, the bag pierced the cooled crust and triggered a violent fountain of molten spatter: trapped moisture inside organic waste flashes instantaneously into steam, expanding roughly 1,600 times in volume beneath viscous magma.
+
+  Even worse, most lava on Earth is basaltic (~1,100–1,200°C), cooler than the melting point of structural steels (~1,370–1,540°C), while burning plastics and electronics in an open crater vents unfiltered dioxins, heavy metals, and acid gases directly into the atmosphere—unlike sealed waste-to-energy reactors equipped with multi-stage chemical scrubbers. Fewer than ten volcanoes worldwide even host persistent lava lakes, and pressurized magma rises upward rather than draining downward.
+
+  Footage Attribution: U.S. Geological Survey Hawaiian Volcano Observatory (Public Domain), NASA Kennedy Space Center & NASA Goddard ATom Campaign (Public Domain), Alton Chang — Erta Ale Volcano (CC BY 3.0), Vincent M. E. Verheyen — Ranadi Landfill (CC BY 3.0), Geldingadalsgos Aerial Eruption via Wikimedia Commons (CC BY 3.0).
+
+hashtags:
+  - "#Volcano"
+  - "#Geology"
+  - "#EarthScience"
+  - "#Physics"
+  - "#HiddenEarth"
+  - "#ProofOfWonder"
+
+target_duration_min_s: 45.0
+target_duration_max_s: 65.0
+ambience_preset: "subterranean_earth"
+ambience_ducked_lufs_target: -26.5
+
+raw_assets_dir: "assets/raw_footage/hidden_earth_volcano_trash_v9"
+output_dir: "output/hidden-earth/volcano-trash-explosion-v9"
+
+visual_corpus_mode: "off"
+require_storyboard_approval: false
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N03"
+  scientific_caveat_seg_id: "N05"
+  min_real_evidence_ratio: 0.95
+
+hook_candidates:
+  - hook_id: "H1"
+    archetype: "paradox"
+    spoken_line: "Lava lakes burn past eleven hundred degrees Celsius—so why don't we dump all our trash into volcanoes?"
+    opening_visual: "Real night footage of Ethiopia's Erta Ale persistent lava lake cracking its black crust into blinding molten orange fissures"
+    src_file: "wikimedia_erta_ale_volcano_ethiopia_webm_442af29faa.webm"
+    promise_fulfilled_in_seg_id: "N03"
+    rationale: "Opens at 0.00s inside the exact Ethiopian lava lake where the 2002 waste-drop explosion occurred, paired with an 18-word mainstream curiosity paradox."
+  - hook_id: "H2"
+    archetype: "unexpected_fact"
+    spoken_line: "When researchers dropped thirty kilograms of camp trash into a volcano, the lava lake violently exploded back."
+    opening_visual: "Towering USGS Kīlauea lava fountain blasting molten rock skyward out of a dark volcanic crater"
+    src_file: "wikimedia_april_22_2025_kilauea_episode_18_lava_fountainin_b2997e734c.webm"
+    promise_fulfilled_in_seg_id: "N03"
+    rationale: "Leads directly with the documented 2002 Erta Ale field test and explosive molten spatter."
+  - hook_id: "H3"
+    archetype: "credible_mystery"
+    spoken_line: "Twelve-hundred-degree volcano lava looks unstoppable—yet it isn't even hot enough to melt ordinary steel trash."
+    opening_visual: "Molten basaltic lava oozing across asphalt on Kaupili Street while smoldering and crusting into solid black rock"
+    src_file: "wikimedia_fissure_21_pahoehoe_lava_flows_ooze_onto_kaupili_3ae886e7f0.webm"
+    promise_fulfilled_in_seg_id: "N03"
+    rationale: "Subverts the popular assumption that lava vaporizes every solid material on contact."
+
+thumbnail_spec:
+  src_file: "wikimedia_erta_ale_volcano_ethiopia_webm_442af29faa.webm"
+  src_time_s: 24.0
+  headline_text: "WHY CAN'T WE DUMP|TRASH INTO LAVA?"
+  kicker_text: "1,600× STEAM EXPLOSION"
+  cx: 0.52
+  cy: 0.54
+  zoom: 1.04
+  shadow_lift: 0.04
+  clarity_boost: true
+  text_position: "bottom"
+  accent_rgb: [255, 212, 59]
+
+thumbnail_concepts:
+  - concept_id: "A"
+    src_file: "wikimedia_erta_ale_volcano_ethiopia_webm_442af29faa.webm"
+    src_time_s: 24.0
+    headline_text: "WHY CAN'T WE DUMP|TRASH INTO LAVA?"
+    kicker_text: "1,600× STEAM EXPLOSION"
+    cx: 0.52
+    cy: 0.54
+    zoom: 1.04
+    shadow_lift: 0.04
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 212, 59]
+    concept_rationale: "Trash bag with curved arrow pointing into Erta Ale lava lake and red X prohibition mark on the arrow."
+  - concept_id: "B"
+    src_file: "wikimedia_april_22_2025_kilauea_episode_18_lava_fountainin_b2997e734c.webm"
+    src_time_s: 9.0
+    headline_text: "WHY NOT THROW|TRASH IN LAVA?"
+    kicker_text: "DEADLY VOLCANO PHYSICS"
+    cx: 0.46
+    cy: 0.52
+    zoom: 1.05
+    shadow_lift: 0.08
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 168, 45]
+    concept_rationale: "Trash bag with curved arrow pointing into USGS Kīlauea lava fountain and red X prohibition mark on the arrow."
+  - concept_id: "C"
+    src_file: "iceland_volcano_1080p.mp4"
+    src_time_s: 5.0
+    headline_text: "NEVER DUMP TRASH|INTO VOLCANO LAVA"
+    kicker_text: "30 KG ERTA ALE TEST"
+    cx: 0.55
+    cy: 0.50
+    zoom: 1.06
+    shadow_lift: 0.08
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [120, 214, 255]
+    concept_rationale: "Real street-level pahoehoe lava crusting over asphalt highlights the 1,200°C vs 1,450°C melting-point surprise."
+
+narration_segments:
+  - seg_id: "N01"
+    text: "Lava lakes burn past eleven hundred degrees Celsius—so why don't we dump all our trash into volcanoes?"
+    delivery: "HOOK"
+    pace: "MODERATE"
+    energy: 4
+    pause_after_ms: 380
+    emphasis_words: ["Lava", "eleven", "hundred", "degrees", "dump", "trash", "volcanoes"]
+    narrative_beat: "opening_hook"
+    viewer_question: "Why doesn't humanity use 1,100°C+ volcano craters as giant natural trash incinerators?"
+    new_information: "Active lava lakes exceed 1,100°C, yet dumping municipal solid waste into them is physically and chemically catastrophic."
+    visual_reveal: "Real night footage of Ethiopia's Erta Ale boiling lava lake juxtaposed with mountains of open municipal plastic waste."
+    emotional_direction: "Immediate mainstream curiosity paired with visceral volcanic heat"
+    retention_purpose: "Hook viewers at 0.00s with a universal question backed by genuine Erta Ale lava lake footage"
+
+  - seg_id: "N02"
+    text: "In 2002, researchers at Ethiopia's Erta Ale volcano dropped a thirty-kilogram bag of camp waste onto a crusted lava lake. Instead of vanishing quietly, the crust ruptured into a violent fountain of molten rock."
+    delivery: "MEASURED EVIDENCE"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_ms: 400
+    emphasis_words: ["Erta", "Ale", "thirty-kilogram", "bag", "crust", "ruptured", "violent", "fountain"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "Why did just 30 kilograms of camp waste make a massive lava lake erupt?"
+    new_information: "During a documented 2002 Erta Ale field test, a 30 kg trash bag broke through the cooled lava crust and triggered violent molten fountaining."
+    visual_reveal: "Close-up crust fissures tearing open across Erta Ale's lava lake followed by a towering USGS Kīlauea lava fountain blasting molten rock skyward."
+    emotional_direction: "Grounded documentary proof escalating into physical shock"
+    retention_purpose: "Replace speculation with a real field test showing what actually happens when waste hits crusted lava"
+
+  - seg_id: "N03"
+    text: "Household trash holds trapped moisture that flashes into steam, expanding sixteen hundred times in volume beneath the crust. Worse, basalt lava hovers near twelve hundred degrees Celsius—too cool to melt steel, which simply floats and smolders."
+    delivery: "SURPRISED BUT CONTROLLED"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_ms: 420
+    emphasis_words: ["moisture", "steam", "sixteen", "hundred", "twelve", "cool", "melt", "steel", "smolders"]
+    narrative_beat: "escalation"
+    viewer_question: "Even if dry non-metallic waste burned on top, where would all the smoke go?"
+    new_information: "Liquid water flashing to steam expands ~1,600x in volume to drive explosive spatter, while ~1,200°C basaltic lava sits below the ~1,370–1,540°C melting point of steel."
+    visual_reveal: "Close eruptive lava surge paired with a 1,600x steam expansion ManimCE gauge, followed by street-level lava crusting dark under a 1,200°C vs 1,450°C steel melting-point scale bar."
+    emotional_direction: "Clear thermodynamic aha-moment"
+    retention_purpose: "Deliver the mid-video dual physics pivot: explosive steam flash expansion plus lava's temperature ceiling"
+
+  - seg_id: "N04"
+    text: "Burning plastics and electronics in an open crater blasts unfiltered dioxins, heavy metals, and acid gases skyward. Modern waste-to-energy plants prevent that fallout using sealed thermal reactors and chemical scrubbers."
+    delivery: "CINEMATIC REVEAL"
+    pace: "MODERATE"
+    energy: 4
+    pause_after_ms: 400
+    emphasis_words: ["plastics", "open", "crater", "unfiltered", "dioxins", "sealed", "thermal", "reactors", "scrubbers"]
+    narrative_beat: "payoff"
+    viewer_question: "Could we ever capture volcanic emissions or find enough open lava lakes for 2 billion tons of trash?"
+    new_information: "Open volcanic combustion vents toxic dioxins, heavy metals, and acid gases directly into the sky, whereas engineered waste reactors seal and scrub exhaust gases."
+    visual_reveal: "Roaring unfiltered volcanic gas plume from Kīlauea, NASA atmospheric scientists sampling toxic volcanic plumes, and NASA engineers testing a sealed stainless-steel waste-conversion reactor inside a fume hood."
+    emotional_direction: "Environmental clarity contrasting raw planetary fury with precision human engineering"
+    retention_purpose: "Contrast open volcanic toxic plumes against real human engineers operating sealed waste-to-gas scrubber hardware"
+
+  - seg_id: "N05"
+    text: "Even if emissions vanished, fewer than ten volcanoes on Earth hold persistent lava lakes, and pressurized magma flows upward—not down. Dump two billion tons of waste inside, and Earth wouldn't swallow our garbage—it would fire it back."
+    delivery: "EMOTIONAL REFLECTION"
+    pace: "SLOW"
+    energy: 3
+    pause_after_ms: 360
+    emphasis_words: ["fewer", "ten", "volcanoes", "upward", "two", "billion", "tons", "fire", "back"]
+    narrative_beat: "final_impression"
+    viewer_question: "What happens to a pressurized volcanic conduit when millions of tons of cold wet mass hit rising magma?"
+    new_information: "Fewer than 10 volcanoes on Earth maintain open persistent lava lakes, and volcanic conduits are pressurized upward channels rather than bottomless drains."
+    visual_reveal: "Engineers sealing high-pressure gas lines, drone view of an Icelandic crater overflowing pressurized lava upward over its rim, and night incandescent lava surging back into Frame 0."
+    emotional_direction: "Geological humility and unforgettable closing punchline"
+    retention_purpose: "Close with geological scarcity and upward magma pressure while looping seamlessly back into S01's night lava lake"
+
+sfx_cues:
+  - sfx_name: "subterranean_gate_boom"
+    anchor_type: "shot_start"
+    anchor_ref: "S01"
+    offset_s: 0.08
+    gain_db: -25.5
+    purpose: "Restrained low-end volcanic rumble as Erta Ale's molten crust cracks open on Frame 0"
+    visual_event: "Incandescent orange lava bursting through dark basalt crust at Erta Ale"
+  - sfx_name: "fumarole_gas_jet"
+    anchor_type: "shot_start"
+    anchor_ref: "S05"
+    offset_s: 0.06
+    gain_db: -26.0
+    purpose: "Subtle pressurized steam hiss marking the 1,600x moisture flash-expansion physics pivot"
+    visual_event: "Pressurized molten spatter and volcanic steam surging upward inside Kīlauea crater"
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 3.067
+    kind: "video_full"
+    src_file: "wikimedia_erta_ale_volcano_ethiopia_webm_442af29faa.webm"
+    src_in: 22.4
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Boiling lava lake inside Ethiopia's Erta Ale crater tearing open its dark crust with bright molten orange bursts"
+    progression_dimension: "new_action"
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.10
+    z1: 1.14
+    shadow_lift: 0.04
+    crop_rationale: "Centers the blinding orange-white Erta Ale lava burst and glowing crust fissures in 1080p."
+    transition_in: "cut"
+    transition_reason: "Instant Frame-0 visual heat inside the real Ethiopian persistent lava lake."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N01"
+    associated_narration_concept: "Lava lakes burn past eleven hundred degrees Celsius"
+    editorial_rationale: "Opens at 0.00s on genuine footage of Erta Ale's persistent lava lake churning past 1,100°C."
+    subject_match_kind: "direct_subject"
+    story_beat: "Active volcano lava lake burning past 1,100 degrees Celsius"
+    visual_desc: "Glowing orange molten lava lake bursting through dark cooled basalt crust at night"
+
+  - sid: "S02"
+    start_s: 3.067
+    end_s: 6.367
+    kind: "video_full"
+    src_file: "wikimedia_scavenging_on_solomon_islands_ranadi_landfill_1__951d32f8cb.webm"
+    src_in: 0.4
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Sanitation worker walking across a towering open landfill slope of mixed plastic bags and household trash"
+    progression_dimension: "new_subject"
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.56
+    cy1: 0.52
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.04
+    crop_rationale: "Frames both the sprawling mountain of plastic household waste and the human worker on the landfill."
+    transition_in: "cut"
+    transition_reason: "Hard visual juxtaposition right in the 0.20s pause before 'so why don't we dump all our trash into volcanoes?'."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N01"
+    associated_narration_concept: "so why don't we dump all our trash into volcanoes?"
+    editorial_rationale: "Visually connects boiling lava directly to humanity's sprawling municipal plastic waste crisis."
+    subject_match_kind: "direct_subject"
+    story_beat: "Mountains of human household plastic trash at an open municipal landfill"
+    visual_desc: "Towering pile of plastic bags and household garbage at an open landfill with a worker walking across waste"
+
+  - sid: "S03"
+    start_s: 6.367
+    end_s: 14.333
+    kind: "video_full"
+    src_file: "wikimedia_erta_ale_volcano_ethiopia_webm_442af29faa.webm"
+    src_in: 65.8
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Close-up of Erta Ale's black solidified surface crust fracturing and churning over incandescent magma"
+    progression_dimension: "new_perspective"
+    camera_perspective: "close_up"
+    visual_complexity: "medium"
+    spoken_importance: "context"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.10
+    z1: 1.15
+    shadow_lift: 0.06
+    crop_rationale: "Focuses tightly on the thin black crust riding atop Erta Ale's molten lava lake."
+    transition_in: "cut"
+    transition_reason: "Cut on sentence boundary into the exact Ethiopian volcano named in the 2002 field experiment."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "In 2002, researchers at Ethiopia's Erta Ale volcano dropped a thirty-kilogram bag of camp waste onto a crusted lava lake."
+    editorial_rationale: "Shows the exact fragile black crust of Ethiopia's Erta Ale lava lake that the 30 kg waste bag struck."
+    subject_match_kind: "direct_subject"
+    story_beat: "Crusted surface of Ethiopia's Erta Ale lava lake before rupture"
+    visual_desc: "Pitch-black cooled volcanic crust splitting apart to reveal glowing red-orange magma seams underneath"
+
+  - sid: "S04"
+    start_s: 14.333
+    end_s: 19.533
+    kind: "video_full"
+    src_file: "wikimedia_april_22_2025_kilauea_episode_18_lava_fountainin_b2997e734c.webm"
+    src_in: 7.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Violent volcanic lava fountain blasting jets of molten orange rock and gas high above a dark crater floor"
+    progression_dimension: "new_action"
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.46
+    z0: 1.10
+    z1: 1.14
+    shadow_lift: 0.06
+    crop_rationale: "Centers the towering vertical jet of molten rock erupting from the ruptured crater crust."
+    transition_in: "cut"
+    transition_reason: "Explosive payoff cut in the 0.38s sentence pause before 'Instead of vanishing quietly, the crust ruptured'."
+    context_note: "Kīlauea basalt fountain, Hawaii"
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "Instead of vanishing quietly, the crust ruptured into a violent fountain of molten rock."
+    editorial_rationale: "Demonstrates with disclosed USGS Kīlauea basaltic fountaining how violently ruptured lava crusts blast molten spatter upward."
+    subject_match_kind: "direct_subject"
+    story_beat: "Ruptured lava crust erupting into a towering fountain of molten rock"
+    visual_desc: "Tall bright orange lava fountain shooting molten rock and thick smoke out of a dark crater"
+
+  - sid: "S05"
+    start_s: 19.533
+    end_s: 26.633
+    kind: "video_full"
+    src_file: "wikimedia_april_22_2025_kilauea_episode_18_lava_fountainin_b2997e734c.webm"
+    src_in: 37.5
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Pressurized volcanic steam and glowing spatter surging rapidly up a steep eruptive cone"
+    progression_dimension: "new_scale"
+    camera_perspective: "close_up"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.46
+    cx1: 0.54
+    cy1: 0.44
+    z0: 1.14
+    z1: 1.18
+    shadow_lift: 0.06
+    crop_rationale: "Frames surging steam and molten spatter while leaving clean upper-frame space for OV1_STEAM_EXPANSION."
+    transition_in: "cut"
+    transition_reason: "Mid-video physics pivot cut in the 0.48s pause as N03 explains 1,600x steam expansion."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "Household trash holds trapped moisture that flashes into steam, expanding sixteen hundred times in volume beneath the crust."
+    editorial_rationale: "Pairs turbulent volcanic steam and spatter directly with the 1,600x moisture flash-expansion gauge."
+    subject_match_kind: "direct_subject"
+    story_beat: "Trapped moisture flashing into steam and expanding 1,600 times beneath lava"
+    visual_desc: "Close view of pressurized steam clouds and glowing red lava surging over a volcanic cone"
+
+  - sid: "S06"
+    start_s: 26.633
+    end_s: 34.233
+    kind: "video_full"
+    src_file: "wikimedia_fissure_21_pahoehoe_lava_flows_ooze_onto_kaupili_3ae886e7f0.webm"
+    src_in: 44.2
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Viscous basaltic pahoehoe lava oozing slowly onto Kaupili Street asphalt while smoldering and crusting into solid black rock"
+    progression_dimension: "new_subject"
+    camera_perspective: "medium"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.45
+    cx1: 0.54
+    cy1: 0.44
+    z0: 1.16
+    z1: 1.20
+    shadow_lift: 0.06
+    crop_rationale: "Centers the smoldering street-level basalt flow at z>=1.16 so corners remain 100% watermark-free under OV2_TEMP_COMPARE."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.38s sentence pause to viscous ~1,200°C street-level basalt lava smoldering without melting steel."
+    context_note: "Kīlauea basalt flow, Hawaii"
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "Worse, basalt lava hovers near twelve hundred degrees Celsius—too cool to melt steel, which simply floats and smolders."
+    editorial_rationale: "Shows real basaltic pahoehoe lava crusting and smoldering on an asphalt street rather than vaporizing solid infrastructure."
+    subject_match_kind: "direct_subject"
+    story_beat: "1,200°C basalt lava oozing and smoldering below the melting point of steel"
+    visual_desc: "Thick black-and-red pahoehoe lava lobe creeping across paved road asphalt with rising smoke"
+
+  - sid: "S07"
+    start_s: 34.233
+    end_s: 38.933
+    kind: "video_full"
+    src_file: "wikimedia_a_uas_mission_on_may_31_2018_filmed_details_of_t_d23b90865d.webm"
+    src_in: 84.5
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    visible_action: "Dense unfiltered sulfur-stained volcanic gas and acidic steam plumes roaring straight out of Kīlauea's open crater throat"
+    progression_dimension: "new_scale"
+    camera_perspective: "aerial"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "aerial_sweep"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.45
+    cx1: 0.50
+    cy1: 0.44
+    z0: 1.16
+    z1: 1.20
+    shadow_lift: 0.04
+    crop_rationale: "Aerial view into yellow sulfur deposits and billowing crater gas at z>=1.16 for zero corner marks."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.49s segment pause to massive unfiltered crater gas plumes roaring skyward."
+    context_note: "Kīlauea crater plume, Hawaii"
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N04"
+    associated_narration_concept: "Burning plastics and electronics in an open crater blasts unfiltered dioxins,"
+    editorial_rationale: "Makes the atmospheric danger of open-crater combustion unmistakable with real USGS UAS crater plume footage."
+    subject_match_kind: "direct_subject"
+    story_beat: "Unfiltered toxic acid gases and plumes blasting out of an open volcanic crater"
+    visual_desc: "Thick gray-white acidic gas plume billowing upward from yellow sulfur vents inside an open volcanic crater"
+
+  - sid: "S08"
+    start_s: 38.933
+    end_s: 41.800
+    kind: "video_full"
+    src_file: "nasa_images_atom_postcard_kona_hawaii_89dff370ae.mp4"
+    src_in: 60.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "NASA ATom atmospheric researcher connecting overhead intake tubing inside the flying laboratory to sample Hawaii's volcanic gas plume"
+    progression_dimension: "new_perspective"
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "high"
+    spoken_importance: "context"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.46
+    cy0: 0.52
+    cx1: 0.44
+    cy1: 0.52
+    z0: 1.16
+    z1: 1.18
+    shadow_lift: 0.08
+    crop_rationale: "Centers the NASA atmospheric scientist operating airborne gas-sampling intakes while excluding the top-right corner."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.22s clause pause after 'dioxins' to NASA scientists sampling toxic volcanic plumes."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N04"
+    associated_narration_concept: "heavy metals, and acid gases skyward."
+    editorial_rationale: "Grounds volcanic atmospheric pollution in real NASA ATom airborne gas-sampling fieldwork over Kīlauea."
+    subject_match_kind: "direct_subject"
+    story_beat: "Atmospheric scientists sampling toxic volcanic gas emissions over Hawaii"
+    visual_desc: "Scientist inside NASA airborne laboratory adjusting overhead gas intake line to measure volcanic plumes"
+
+  - sid: "S09"
+    start_s: 41.800
+    end_s: 47.433
+    kind: "video_full"
+    src_file: "nasa_images_orbital_syngas_commodity_augmentation_reactor_os_43d1d7e108.mp4"
+    src_in: 159.4
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Engineer in purple nitrile gloves holding a thermal infrared camera aimed at NASA's sealed stainless-steel OSCAR trash-to-gas reactor inside a fume hood"
+    progression_dimension: "new_subject"
+    camera_perspective: "first_person_pov"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.36
+    cy0: 0.50
+    cx1: 0.46
+    cy1: 0.50
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.06
+    crop_rationale: "Pans smoothly from the engineer's live thermal infrared screen to the sealed stainless-steel waste reactor inside the fume hood."
+    transition_in: "cut"
+    transition_reason: "Engineering contrast cut in the 0.42s sentence pause before 'Modern waste-to-energy plants prevent that fallout'."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N04"
+    associated_narration_concept: "Modern waste-to-energy plants prevent that fallout using sealed thermal reactors and chemical scrubbers."
+    editorial_rationale: "Shows real NASA engineers thermally testing a sealed trash-conversion reactor inside an exhaust-scrubbed enclosure."
+    subject_match_kind: "direct_subject"
+    story_beat: "Engineers thermally monitoring a sealed stainless-steel waste-conversion reactor"
+    visual_desc: "Gloved engineer holding thermal imaging display aimed at stainless-steel waste reactor inside laboratory fume hood"
+
+  - sid: "S10"
+    start_s: 47.433
+    end_s: 52.467
+    kind: "video_full"
+    src_file: "nasa_images_oscar_flight_module_assembly_work_82a4cae5d1.mp4"
+    src_in: 13.4
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Engineers in safety glasses tightening sealed stainless-steel gas scrubbing lines and pressure gauges on the waste-conversion rig"
+    progression_dimension: "new_action"
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "high"
+    spoken_importance: "context"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.48
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.06
+    crop_rationale: "Frames the engineer's hands, safety glasses, and sealed stainless-steel gas manifold gauges."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.50s segment pause bridging sealed exhaust engineering into N05's geological caveat."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N05"
+    associated_narration_concept: "Even if emissions vanished, fewer than ten volcanoes on Earth hold persistent lava lakes,"
+    editorial_rationale: "Highlights the intricate sealed gas containment hardware required before pivoting to the rarity of open lava lakes."
+    subject_match_kind: "direct_subject"
+    story_beat: "Engineers sealing high-pressure gas containment lines on waste reactor"
+    visual_desc: "Engineer in safety goggles assembling stainless-steel pressure tanks and gas lines on laboratory test stand"
+
+  - sid: "S11"
+    start_s: 52.467
+    end_s: 55.567
+    kind: "video_full"
+    src_file: "iceland_volcano_1080p.mp4"
+    src_in: 32.0
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    visible_action: "Aerial drone view over Iceland's Geldingadalsgos volcanic cone as pressurized magma surges upward and overflows the crater rim"
+    progression_dimension: "new_scale"
+    camera_perspective: "aerial"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "aerial_sweep"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.14
+    shadow_lift: 0.06
+    crop_rationale: "Frames the glowing volcanic crater cone overflowing molten rivers outward down its dark slopes."
+    transition_in: "cut"
+    transition_reason: "Aerial geological reveal in the 0.23s pause right before 'and pressurized magma flows upward—not down'."
+    context_note: "Geldingadalsgos crater, Iceland"
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "and pressurized magma flows upward—not down."
+    editorial_rationale: "Proves visually from the air that volcanic craters are upward-pressurized vents pouring lava out, not drains pulling matter down."
+    subject_match_kind: "direct_subject"
+    story_beat: "Pressurized volcanic crater overflowing molten magma upward over its rim"
+    visual_desc: "Aerial view of glowing volcanic cone overflowing bright orange lava rivers down dark basalt slopes"
+
+  - sid: "S12"
+    start_s: 55.567
+    end_s: 58.033
+    kind: "video_full"
+    src_file: "wikimedia_fissure_21_pahoehoe_lava_flows_ooze_onto_kaupili_3ae886e7f0.webm"
+    src_in: 12.2
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Incandescent molten lava river surging forward at night and igniting brush along its advancing front"
+    progression_dimension: "new_action"
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "context"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.45
+    cx1: 0.50
+    cy1: 0.44
+    z0: 1.16
+    z1: 1.20
+    shadow_lift: 0.04
+    crop_rationale: "Frames the blazing night lava surge at z>=1.16 with zero corner marks."
+    transition_in: "cut"
+    transition_reason: "Cut in the 0.40s sentence pause before 'Dump two billion tons of waste inside'."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "Dump two billion tons of waste inside,"
+    editorial_rationale: "Shows unstoppable outward-pushing incandescent magma refusing to swallow surface material."
+    subject_match_kind: "direct_subject"
+    story_beat: "Advancing night river of molten magma burning surface debris"
+    visual_desc: "Bright orange-white molten lava river surging across dark ground and igniting vegetation at night"
+
+  - sid: "S13"
+    start_s: 58.033
+    end_s: 61.833
+    kind: "video_full"
+    src_file: "wikimedia_overnight_usgs_hawaiian_volcano_observatory_scie_93aaedbf0c.webm"
+    src_in: 8.2
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Blazing wall of molten lava hurling glowing sparks and orange smoke into the night sky beside silhouetted palm trees"
+    progression_dimension: "new_perspective"
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.45
+    cx1: 0.50
+    cy1: 0.46
+    z0: 1.16
+    z1: 1.12
+    shadow_lift: 0.04
+    crop_rationale: "Frames the roaring night lava wall at z>=1.12 so it loops visually straight back into S01's night Erta Ale lava lake."
+    transition_in: "cut"
+    transition_reason: "Final visual punchline in the 0.18s clause pause before 'and Earth wouldn't swallow our garbage—it would fire it back'."
+    explicit_analog_comparison: true
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "and Earth wouldn't swallow our garbage—it would fire it back."
+    editorial_rationale: "Closes on incandescent night lava roaring skyward so Frame Last loops seamlessly back into S01."
+    subject_match_kind: "direct_subject"
+    story_beat: "Earth firing glowing molten lava and sparks back into the night"
+    visual_desc: "Towering orange night lava front throwing sparks beneath dark palm silhouettes"
+
+assets_register:
+  - local_file: "wikimedia_erta_ale_volcano_ethiopia_webm_442af29faa.webm"
+    title: "Erta Ale Volcano, Ethiopia"
+    creator_agency: "Alton Chang (via Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Erta_Ale_Volcano,_Ethiopia.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Erta_Ale_Volcano%2C_Ethiopia.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Alton Chang, CC BY 3.0 via Wikimedia Commons"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "wikimedia:File:Erta Ale Volcano, Ethiopia.webm"
+    depicted_subject: "Persistent basaltic lava lake inside Ethiopia's Erta Ale volcano"
+    depicted_action: "Boiling lava lake churning past 1,100°C and rupturing its black cooled surface crust"
+    depicted_location: "Erta Ale Volcano, Afar Region, Ethiopia"
+    intended_use: "S01 opening hook, S03 crusted lava lake before rupture, & Thumbnail A"
+
+  - local_file: "wikimedia_scavenging_on_solomon_islands_ranadi_landfill_1__951d32f8cb.webm"
+    title: "Scavenging on Solomon Islands Ranadi Landfill (1)"
+    creator_agency: "Vincent M. E. Verheyen (via Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Scavenging_on_Solomon_Islands_Ranadi_Landfill_(1).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Scavenging_on_Solomon_Islands_Ranadi_Landfill_%281%29.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Vincent M. E. Verheyen, CC BY 3.0 via Wikimedia Commons"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "wikimedia:File:Scavenging on Solomon Islands Ranadi Landfill (1).webm"
+    depicted_subject: "Municipal solid waste mountain of plastics and household trash with landfill worker"
+    depicted_action: "Worker walking across deep piles of uncompacted plastic and municipal household waste"
+    depicted_location: "Ranadi Municipal Landfill, Honiara"
+    intended_use: "S02 municipal trash juxtaposition in opening hook"
+
+  - local_file: "wikimedia_april_22_2025_kilauea_episode_18_lava_fountainin_b2997e734c.webm"
+    title: "April 22, 2025 — Kīlauea Episode 18 Lava Fountaining Video"
+    creator_agency: "U.S. Geological Survey Hawaiian Volcano Observatory (H. Winslow & M. Patrick)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:April_22,_2025_%E2%80%94_K%C4%ABlauea_Episode_18_Lava_Fountaining_Video.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/6/62/April_22%2C_2025_%E2%80%94_K%C4%ABlauea_Episode_18_Lava_Fountaining_Video.webm"
+    license: "Public domain"
+    license_url: "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    required_attribution: "USGS Hawaiian Volcano Observatory (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "wikimedia:File:April 22, 2025 — Kīlauea Episode 18 Lava Fountaining Video.webm"
+    depicted_subject: "Violent volcanic lava fountain and pressurized steam-and-spatter surge"
+    depicted_action: "Towering jets of molten basaltic lava and volcanic steam blasting skyward out of crater"
+    depicted_location: "Halemaʻumaʻu Crater, Kīlauea Volcano, Hawaii"
+    intended_use: "S04 violent lava fountain payoff, S05 1,600x steam surge under OV1, & Thumbnail B"
+
+  - local_file: "wikimedia_fissure_21_pahoehoe_lava_flows_ooze_onto_kaupili_3ae886e7f0.webm"
+    title: "Fissure 21 pāhoehoe lava flows ooze onto Kaupili Street, in the Leilani Estates"
+    creator_agency: "U.S. Geological Survey Volcanoes"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Fissure_21_p%C4%81hoehoe_lava_flows_ooze_onto_Kaupili_Street,_in_the_Leilani_Estat....webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/2/25/Fissure_21_p%C4%81hoehoe_lava_flows_ooze_onto_Kaupili_Street%2C_in_the_Leilani_Estat....webm"
+    license: "Public domain"
+    license_url: "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    required_attribution: "USGS Volcanoes (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "wikimedia:File:Fissure 21 pāhoehoe lava flows ooze onto Kaupili Street, in the Leilani Estat....webm"
+    depicted_subject: "Basaltic pahoehoe lava (~1,200°C) oozing across Kaupili Street asphalt and incandescent night magma flow"
+    depicted_action: "Lava crusting into black solid rock while smoldering on asphalt and surging across dark ground at night"
+    depicted_location: "Leilani Estates, Lower East Rift Zone, Kīlauea, Hawaii"
+    intended_use: "S06 1,200°C basalt lava vs steel melting point under OV2, S12 night magma flow, & Thumbnail C"
+
+  - local_file: "wikimedia_a_uas_mission_on_may_31_2018_filmed_details_of_t_d23b90865d.webm"
+    title: "A UAS mission on May 31, 2018, filmed details of the dramatic changes occurring at Halemaʻumaʻu"
+    creator_agency: "U.S. Geological Survey Volcanoes"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:A_UAS_mission_on_May_31,_2018,_filmed_details_of_the_dramatic_changes_occurri....webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/e/e9/A_UAS_mission_on_May_31%2C_2018%2C_filmed_details_of_the_dramatic_changes_occurri....webm"
+    license: "Public domain"
+    license_url: "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    required_attribution: "USGS Volcanoes (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    canonical_source_id: "wikimedia:File:A UAS mission on May 31, 2018, filmed details of the dramatic changes occurri....webm"
+    depicted_subject: "Unfiltered volcanic sulfur dioxide, acid gas, and ash plume billowing from open crater"
+    depicted_action: "Thick acidic gas plumes roaring out of sulfur-encrusted open volcanic crater vents"
+    depicted_location: "Halemaʻumaʻu Crater, Kīlauea Volcano, Hawaii"
+    intended_use: "S07 unfiltered open-crater toxic gas plume"
+
+  - local_file: "nasa_images_atom_postcard_kona_hawaii_89dff370ae.mp4"
+    title: "ATom Postcard — Kona, Hawaii (Atmospheric Tomography Mission Sampling Kīlauea Plume)"
+    creator_agency: "NASA Goddard Space Flight Center"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20170217_m12518_ATom2_Hawaii"
+    direct_media_url: "https://images-assets.nasa.gov/video/GSFC_20170217_m12518_ATom2_Hawaii/GSFC_20170217_m12518_ATom2_Hawaii~large.mp4"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "NASA Goddard Space Flight Center (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_images:GSFC_20170217_m12518_ATom2_Hawaii"
+    depicted_subject: "NASA ATom atmospheric scientist operating airborne volcanic plume gas-sampling instruments"
+    depicted_action: "Researcher adjusting overhead atmospheric gas intake line inside NASA DC-8 flying laboratory over Hawaii"
+    depicted_location: "Airspace downwind of Kīlauea Volcano, Kona, Hawaii"
+    intended_use: "S08 human atmospheric fieldwork measuring toxic volcanic plumes"
+
+  - local_file: "nasa_images_orbital_syngas_commodity_augmentation_reactor_os_43d1d7e108.mp4"
+    title: "Orbital Syngas Commodity Augmentation Reactor (OSCAR) Assembly and Thermal Testing"
+    creator_agency: "NASA Kennedy Space Center"
+    source_page_url: "https://images.nasa.gov/details/KSC-20190822-MH-GEB01_0002-Work_on_OSCAR-3229667"
+    direct_media_url: "https://images-assets.nasa.gov/video/KSC-20190822-MH-GEB01_0002-Work_on_OSCAR-3229667/KSC-20190822-MH-GEB01_0002-Work_on_OSCAR-3229667~large.mp4"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "NASA Kennedy Space Center (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_images:KSC-20190822-MH-GEB01_0002-Work_on_OSCAR-3229667"
+    depicted_subject: "NASA engineer scanning sealed stainless-steel OSCAR trash-to-gas thermal reactor inside exhaust fume hood"
+    depicted_action: "Gloved engineer holding live thermal infrared camera aimed at sealed waste-conversion reactor inside laboratory fume hood"
+    depicted_location: "NASA Kennedy Space Center Swamp Works Laboratory, Florida"
+    intended_use: "S09 sealed thermal waste reactor and fume-hood exhaust engineering"
+
+  - local_file: "nasa_images_oscar_flight_module_assembly_work_82a4cae5d1.mp4"
+    title: "OSCAR Flight Module Assembly Work"
+    creator_agency: "NASA Kennedy Space Center"
+    source_page_url: "https://images.nasa.gov/details/KSC-20191010-RV-CMS01_0001-OSCAR_Flight_Module_Assembly_Work-3234428"
+    direct_media_url: "https://images-assets.nasa.gov/video/KSC-20191010-RV-CMS01_0001-OSCAR_Flight_Module_Assembly_Work-3234428/KSC-20191010-RV-CMS01_0001-OSCAR_Flight_Module_Assembly_Work-3234428~large.mp4"
+    license: "Public Domain (NASA)"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "NASA Kennedy Space Center (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_images:KSC-20191010-RV-CMS01_0001-OSCAR_Flight_Module_Assembly_Work-3234428"
+    depicted_subject: "Engineers sealing stainless-steel gas scrubbing lines and pressure tanks on OSCAR waste reactor"
+    depicted_action: "Engineer in safety glasses connecting high-pressure gas lines and pressure gauges on sealed waste-to-gas rig"
+    depicted_location: "NASA Kennedy Space Center, Florida"
+    intended_use: "S10 sealed gas containment engineering transition"
+
+  - local_file: "iceland_volcano_1080p.mp4"
+    title: "Eruption of a volcano in Iceland — Geldingadalsgos"
+    creator_agency: "Tetiana (via Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Eruption_of_a_volcano_in_Iceland_-_Geldingadalsgos.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/0/07/Eruption_of_a_volcano_in_Iceland_-_Geldingadalsgos.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Tetiana, CC BY 3.0 via Wikimedia Commons"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ESTABLISHING"
+    canonical_source_id: "wikimedia:File:Eruption of a volcano in Iceland - Geldingadalsgos.webm"
+    depicted_subject: "Active Geldingadalsgos volcanic cone overflowing pressurized molten lava upward over its crater rim"
+    depicted_action: "Drone flying past erupting volcanic cone as rising magma overflows outward down basalt slopes"
+    depicted_location: "Fagradalsfjall / Geldingadalir, Reykjanes Peninsula, Iceland"
+    intended_use: "S11 upward-pressurized magma overflowing volcanic crater rim"
+
+  - local_file: "wikimedia_overnight_usgs_hawaiian_volcano_observatory_scie_93aaedbf0c.webm"
+    title: "Overnight, USGS-Hawaiian Volcano Observatory scientists track lava flows"
+    creator_agency: "U.S. Geological Survey Hawaiian Volcano Observatory"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Overnight,_USGS-Hawaiian_Volcano_Observatory_scientists_track_lava_flows_as_t....webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Overnight%2C_USGS-Hawaiian_Volcano_Observatory_scientists_track_lava_flows_as_t....webm"
+    license: "Public domain"
+    license_url: "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    required_attribution: "USGS Hawaiian Volcano Observatory (Public Domain)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "wikimedia:File:Overnight, USGS-Hawaiian Volcano Observatory scientists track lava flows as t....webm"
+    depicted_subject: "Incandescent night lava wall hurling sparks and glowing smoke beside palm silhouettes"
+    depicted_action: "Advancing molten lava front throwing glowing spatter into the night sky"
+    depicted_location: "Lower Puna, Island of Hawaiʻi"
+    intended_use: "S13 closing night-lava payoff engineered to loop seamlessly into S01"
+
+excluded_sources_notes:
+  - "wikimedia_erta_ale_volcano_ethiopia t>=85s: Excluded final credit/caption seconds; used only clean cut-free night lava windows t=22.4s and t=66.0s."
+  - "nasa_images_orbital_syngas_commodity_augmentation_reactor_os t=0..35s & nasa_images_oscar_flight_module_assembly_work t=0..12s: Excluded KSC title slates; used only clean 1080p laboratory action windows."
+  - "wikimedia USGS clips (3ae886e7f0, d23b90865d, 93aaedbf0c): Cropped with z>=1.16 and cy<=0.45 so tiny bottom-left agency bugs never enter the 9:16 frame; excluded opening/closing USGS text slates."
+
+factual_references:
+  - citation: "Patrick, M. R., Orr, T., Sutton, A. J., Lev, E., Thelen, W., & Fee, D. (2015). Spattering triggered by rockfalls at Kīlauea Volcano, Hawaiʻi. Geology, 43(9), 835–838; and USGS Volcano Hazards Program — Volcano Lava & Gas Fact Sheets."
+    url: "https://doi.org/10.1130/G36896.1"
+    supported_claims: "Basaltic lava lakes erupt at ~1,100–1,200°C (below the ~1,370–1,540°C melting range of carbon/stainless steels), maintain cooled surface crusts over gas-charged magma that violently fountain when punctured by cold foreign masses (as in the documented 2002 30-kg camp-waste drop at Ethiopia's Erta Ale), and vent massive unfiltered plumes of sulfur dioxide and acidic volcanic gases from upward-pressurized conduits."
+  - citation: "Kaza, S., Yao, L., Bhada-Tata, P., & Van Woerden, F. (2018). What a Waste 2.0: A Global Snapshot of Solid Waste Management to 2050. World Bank; paired with thermodynamic steam-table expansion at 1 atm & Smithsonian Global Volcanism Program persistent lava lake inventory."
+    url: "https://openknowledge.worldbank.org/handle/10986/30317"
+    supported_claims: "Humanity generates over 2.01 billion metric tons of municipal solid waste per year containing moisture, plastics, and metals; liquid water flashing to steam at atmospheric pressure expands ~1,600–1,700x in volume, modern waste-to-energy plants require sealed combustion chambers with chemical flue-gas scrubbers to prevent dioxin/heavy-metal emissions, and fewer than ten volcanoes on Earth host persistent open lava lakes."
+
+mechanism_overlays:
+  - overlay_id: "OV1_STEAM_EXPANSION"
+    template: "value_callout_gauge"
+    anchor:
+      seg_id: "N03"
+      phrase: "expanding sixteen hundred"
+      lead_in_s: 0.0
+    hold_s: 1.90
+    span_cut: false
+    region:
+      x: 0.12
+      y: 0.15
+      w: 0.76
+      h: 0.26
+    params:
+      value_from: 1
+      value_to: 1600
+      decimals: 0
+      unit: "×"
+      label: "STEAM FLASH VOLUME"
+      point: [0.50, 0.54]
+      color: "#FFA94D"
+    claim_ref: 1
+    honesty_label: "measured_value"
+
+  - overlay_id: "OV2_TEMP_COMPARE"
+    template: "scale_bar_compare"
+    anchor:
+      seg_id: "N03"
+      phrase: "near twelve hundred"
+      lead_in_s: 0.0
+    hold_s: 2.10
+    span_cut: false
+    region:
+      x: 0.08
+      y: 0.15
+      w: 0.84
+      h: 0.28
+    params:
+      length_label: "1,450°C  STEEL MELTING POINT"
+      reference_label: "1,200°C  BASALT LAVA"
+      ratio: 1.25
+      color: "#78D6FF"
+    claim_ref: 0
+    honesty_label: "scale_comparison"

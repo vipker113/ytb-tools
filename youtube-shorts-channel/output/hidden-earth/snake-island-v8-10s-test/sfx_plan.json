@@ -1,0 +1,11 @@
+{
+  "slug": "snake-island-v8-10s-test",
+  "adaptive_audio_profile": "immersive_exploration",
+  "max_cues_cap": 1,
+  "proposed_cues_count": 0,
+  "approved_cues_count": 0,
+  "rejected_for_silence_count": 0,
+  "silence_preferred_when_zero": true,
+  "approved_cues": [],
+  "rejected_cues": []
+}

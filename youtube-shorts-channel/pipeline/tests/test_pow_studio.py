@@ -1110,6 +1110,60 @@ def test_phase4_thumbnail_concepts_subtitles_manifest_v6_analytics_and_cli(tmp_p
         assert expected_cmd in cmd_names, f"Missing CLI command: {expected_cmd}"
 
 
+def test_visual_cue_thumbnail_engine_and_auto_flow(tmp_path: Path):
+    from PIL import ImageDraw
+    from pow_studio.schema import ThumbnailVisualCueSpec
+    from pow_studio.thumbnail_engine import infer_default_visual_cue_symbol
+
+    style = load_style_profile("pow_documentary_v3")
+    assert style.opening_and_thumbnail.thumbnail_visual_cue_default is True
+    assert style.opening_and_thumbnail.thumbnail_max_words == 8
+
+    assert infer_default_visual_cue_symbol("WHY CAN'T WE DUMP|TRASH INTO LAVA?") == "red_x"
+    assert infer_default_visual_cue_symbol("NEVER DUMP TRASH|INTO VOLCANO LAVA") == "red_x"
+    assert infer_default_visual_cue_symbol("HOW DID THIS PROBE|TOUCH THE SUN?") == "question_mark"
+    assert infer_default_visual_cue_symbol("DEADLY STEAM EXPLOSION") == "warning"
+
+    bg = Image.new("RGB", (1280, 720), (35, 18, 12))
+    bg_draw = ImageDraw.Draw(bg)
+    bg_draw.ellipse([620, 260, 1120, 660], fill=(255, 115, 20))
+
+    # 1. RGBA alpha cutout + red_x + 7-word headline
+    alpha_cutout = Image.new("RGBA", (320, 380), (0, 0, 0, 0))
+    ImageDraw.Draw(alpha_cutout).ellipse([40, 40, 280, 340], fill=(24, 26, 32, 255))
+
+    for sym in ("red_x", "ban_circle", "question_mark", "warning", "check"):
+        vcue = ThumbnailVisualCueSpec(
+            cutout_mode="auto",
+            arrow_end=(0.72, 0.52),
+            symbol=sym,
+            target_ring=(sym == "question_mark"),
+        )
+        out = compose_subject_first_thumbnail(
+            source_rgb=bg,
+            style=style,
+            headline_text="WHY CAN'T WE DUMP|TRASH INTO LAVA?",
+            kicker_text="1,600× STEAM EXPLOSION",
+            mirror_horizontal=(sym == "warning"),
+            visual_cue=vcue,
+            cutout_image=alpha_cutout,
+        )
+        assert out.size == (1080, 1920)
+
+    # 2. Studio white-background auto removal
+    white_bg_obj = Image.new("RGB", (300, 300), (252, 252, 252))
+    ImageDraw.Draw(white_bg_obj).ellipse([70, 70, 230, 230], fill=(30, 35, 45))
+    out_wbg = compose_subject_first_thumbnail(
+        source_rgb=bg,
+        style=style,
+        headline_text="WHY NOT THROW|TRASH IN LAVA?",
+        visual_cue=ThumbnailVisualCueSpec(cutout_mode="auto", symbol="red_x"),
+        cutout_image=white_bg_obj,
+    )
+    assert out_wbg.size == (1080, 1920)
+
+
+
 
 
 

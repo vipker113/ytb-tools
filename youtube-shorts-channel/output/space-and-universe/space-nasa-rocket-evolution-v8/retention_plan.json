@@ -1,0 +1,97 @@
+{
+  "slug": "space-nasa-rocket-evolution-v8",
+  "style_profile": "space_discovery",
+  "target_duration_range_s": [
+    75.0,
+    112.0
+  ],
+  "planned_duration_s": 106.57,
+  "timing_source": "word_timings",
+  "rows": [
+    {
+      "time": "0.1\u201311.1s",
+      "start_s": 0.1,
+      "end_s": 11.12,
+      "seg_id": "N01",
+      "narrative_beat": "opening_hook",
+      "viewer_question": "How did a bare metal pipe frame with an upside-down nozzle evolve into giant Moon rockets?",
+      "new_information": "Goddard's 1926 rocket 'Nell' had zero aerodynamic skin or nose cone\u2014an exposed top nozzle pulling two fuel tanks on naked metal pipes.",
+      "visual_reveal": "16mm archival film of Goddard's skeletal pipe-frame rocket firing downward flames, paired with the March 16, 1926 photograph and crew carrying the bare rocket.",
+      "emotional_direction": "Quiet amazement at how raw and awkward modern rocketry began",
+      "retention_purpose": "Stop scrolling at Frame 0 with an unrecognizable bare-pipe 1926 rocket firing live flame"
+    },
+    {
+      "time": "11.4\u201328.9s",
+      "start_s": 11.45,
+      "end_s": 28.9,
+      "seg_id": "N02",
+      "narrative_beat": "curiosity_gap",
+      "viewer_question": "How did NASA move beyond fragile 1-meter-wide pencil rockets and spinning rocket tubs?",
+      "new_information": "In Dec 1957 Vanguard TV-3 lifted 4 feet before exploding on the pad; in Jan 1958 Juno I reached orbit using a spinning nose tub of 11 small solid rockets.",
+      "visual_reveal": "Slender 1950s orbital pencil rocket, Vanguard collapsing into a massive fireball on Cape Canaveral Pad 18A, and JPL engineers assembling Juno I's exposed upper-stage rocket tubes.",
+      "emotional_direction": "Grounded historical tension from explosive failure to improvised orbital breakthrough",
+      "retention_purpose": "Deliver visceral pad-explosion action and bizarre exposed 1958 hardware"
+    },
+    {
+      "time": "29.2\u201343.5s",
+      "start_s": 29.2,
+      "end_s": 43.48,
+      "seg_id": "N03",
+      "narrative_beat": "evidence_and_discovery",
+      "viewer_question": "What did mid-1960s multi-stage rockets look like as payloads grew heavier?",
+      "new_information": "Mercury-Atlas used pressurized stainless-steel balloon tanks thinner than a dime (<1 mm) and staged two booster engines mid-flight ('1.5-stage' design).",
+      "visual_reveal": "Gleaming stainless-steel Mercury-Atlas igniting on Pad 14, thin cylindrical rocket shell hoisting, and Atlas climbing mid-sky.",
+      "emotional_direction": "Scientific intrigue at razor-thin structural engineering",
+      "retention_purpose": "Reveal the hidden fragility inside gleaming 1962 stainless steel"
+    },
+    {
+      "time": "43.8\u201360.1s",
+      "start_s": 43.78,
+      "end_s": 60.13,
+      "seg_id": "N04",
+      "narrative_beat": "escalation",
+      "viewer_question": "What happened when NASA replaced bundled missile tanks with a purpose-built Moon giant?",
+      "new_information": "Gemini Titan II used an open truss interstage for hot-staging, while 1966 Saturn IB bundled eight Redstone/Jupiter tanks in a circle over eight H-1 engines.",
+      "visual_reveal": "Exposed rocket engine truss plumbing, color 1965 Gemini Titan II launch, and NASA Marshall film showing Saturn IB's literal ring of eight narrow cylindrical tanks.",
+      "emotional_direction": "Observational clarity showing transitional clustered machinery",
+      "retention_purpose": "Mid-video visual escalation showing literal 8-tank bundled rocket anatomy before Saturn V"
+    },
+    {
+      "time": "60.4\u201376.4s",
+      "start_s": 60.45,
+      "end_s": 76.4,
+      "seg_id": "N05",
+      "narrative_beat": "escalation",
+      "viewer_question": "Why did NASA abandon tall cylindrical stacks in 1981 for a completely asymmetric rocket?",
+      "new_information": "Saturn V stood 36 stories tall with five 3.7-meter-wide F-1 nozzles wrapped in silver thermal batting generating 7.5 million lbf thrust.",
+      "visual_reveal": "Towering 36-story Saturn V stack, NASA technician dwarfed beside five giant F-1 nozzles at Michoud, and Apollo 11's 500-fps Camera E-8 capturing F-1 ignition and cascading ice.",
+      "emotional_direction": "Monumental awe at human-scale vs F-1 nozzle scale and 500-fps slow-motion fire",
+      "retention_purpose": "Deliver iconic 500-fps Camera E-8 close-up of F-1 ignition and falling cryogenic ice"
+    },
+    {
+      "time": "76.7\u201390.3s",
+      "start_s": 76.74,
+      "end_s": 90.33,
+      "seg_id": "N06",
+      "narrative_beat": "payoff",
+      "viewer_question": "What does NASA's modern Moon rocket look like after a full century of evolution?",
+      "new_information": "In 1981 the Space Shuttle introduced side-mounted winged ceramic-tile orbiter geometry with an external hydrogen tank and three computer-throttled RS-25 engines.",
+      "visual_reveal": "Space Shuttle Atlantis mounted beside its orange external tank climbing to orbit, paired with close-up RS-25 liquid-hydrogen firing glowing with crisp blue-white shock diamonds.",
+      "emotional_direction": "Crisp appreciation of radical aerodynamic asymmetry and clean hydrogen propulsion",
+      "retention_purpose": "Contrast cylindrical Saturn V with side-mounted winged Shuttle and glowing shock diamonds"
+    },
+    {
+      "time": "90.6\u2013106.6s",
+      "start_s": 90.63,
+      "end_s": 106.57,
+      "seg_id": "N07",
+      "narrative_beat": "final_impression",
+      "viewer_question": "What will rockets look like another hundred years from 1926's naked metal pipes?",
+      "new_information": "Rocket equation physics still demands ~90% propellant mass fraction, yet NASA's Artemis SLS combines four modernized RS-25 engines and twin boosters for 8.8 million lbf thrust.",
+      "visual_reveal": "Massive multi-story cryogenic propellant hull, 4K close-up underneath Artemis SLS's four RS-25 engine bells at Kennedy Space Center, and Artemis I's 8.8-million-pound night launch lighting up Pad 39B.",
+      "emotional_direction": "Resonant century-spanning payoff grounded in real orbital physics",
+      "retention_purpose": "State the honest Tsiolkovsky mass-fraction constraint while closing on 4K Artemis engine bells and thunderous Pad 39B liftoff"
+    }
+  ],
+  "markdown_table": "# Audience Retention Plan \u2014 `space-nasa-rocket-evolution-v8` (`106.6s` Target/Actual Runtime)\n\n- **Production Profile:** `space_discovery`\n- **Configured Target Window:** `75\u2013112s`\n- **Timing Basis:** `Authoritative Narration Master (word_timings.json)`\n\n| Time | Narrative beat | Viewer question | New information | Visual reveal | Emotional direction | Retention purpose |\n|---|---|---|---|---|---|---|\n| `0.1\u201311.1s` | **opening_hook** (`N01`) | How did a bare metal pipe frame with an upside-down nozzle evolve into giant Moon rockets? | Goddard's 1926 rocket 'Nell' had zero aerodynamic skin or nose cone\u2014an exposed top nozzle pulling two fuel tanks on naked metal pipes. | 16mm archival film of Goddard's skeletal pipe-frame rocket firing downward flames, paired with the March 16, 1926 photograph and crew carrying the bare rocket. | Quiet amazement at how raw and awkward modern rocketry began | Stop scrolling at Frame 0 with an unrecognizable bare-pipe 1926 rocket firing live flame |\n| `11.4\u201328.9s` | **curiosity_gap** (`N02`) | How did NASA move beyond fragile 1-meter-wide pencil rockets and spinning rocket tubs? | In Dec 1957 Vanguard TV-3 lifted 4 feet before exploding on the pad; in Jan 1958 Juno I reached orbit using a spinning nose tub of 11 small solid rockets. | Slender 1950s orbital pencil rocket, Vanguard collapsing into a massive fireball on Cape Canaveral Pad 18A, and JPL engineers assembling Juno I's exposed upper-stage rocket tubes. | Grounded historical tension from explosive failure to improvised orbital breakthrough | Deliver visceral pad-explosion action and bizarre exposed 1958 hardware |\n| `29.2\u201343.5s` | **evidence_and_discovery** (`N03`) | What did mid-1960s multi-stage rockets look like as payloads grew heavier? | Mercury-Atlas used pressurized stainless-steel balloon tanks thinner than a dime (<1 mm) and staged two booster engines mid-flight ('1.5-stage' design). | Gleaming stainless-steel Mercury-Atlas igniting on Pad 14, thin cylindrical rocket shell hoisting, and Atlas climbing mid-sky. | Scientific intrigue at razor-thin structural engineering | Reveal the hidden fragility inside gleaming 1962 stainless steel |\n| `43.8\u201360.1s` | **escalation** (`N04`) | What happened when NASA replaced bundled missile tanks with a purpose-built Moon giant? | Gemini Titan II used an open truss interstage for hot-staging, while 1966 Saturn IB bundled eight Redstone/Jupiter tanks in a circle over eight H-1 engines. | Exposed rocket engine truss plumbing, color 1965 Gemini Titan II launch, and NASA Marshall film showing Saturn IB's literal ring of eight narrow cylindrical tanks. | Observational clarity showing transitional clustered machinery | Mid-video visual escalation showing literal 8-tank bundled rocket anatomy before Saturn V |\n| `60.4\u201376.4s` | **escalation** (`N05`) | Why did NASA abandon tall cylindrical stacks in 1981 for a completely asymmetric rocket? | Saturn V stood 36 stories tall with five 3.7-meter-wide F-1 nozzles wrapped in silver thermal batting generating 7.5 million lbf thrust. | Towering 36-story Saturn V stack, NASA technician dwarfed beside five giant F-1 nozzles at Michoud, and Apollo 11's 500-fps Camera E-8 capturing F-1 ignition and cascading ice. | Monumental awe at human-scale vs F-1 nozzle scale and 500-fps slow-motion fire | Deliver iconic 500-fps Camera E-8 close-up of F-1 ignition and falling cryogenic ice |\n| `76.7\u201390.3s` | **payoff** (`N06`) | What does NASA's modern Moon rocket look like after a full century of evolution? | In 1981 the Space Shuttle introduced side-mounted winged ceramic-tile orbiter geometry with an external hydrogen tank and three computer-throttled RS-25 engines. | Space Shuttle Atlantis mounted beside its orange external tank climbing to orbit, paired with close-up RS-25 liquid-hydrogen firing glowing with crisp blue-white shock diamonds. | Crisp appreciation of radical aerodynamic asymmetry and clean hydrogen propulsion | Contrast cylindrical Saturn V with side-mounted winged Shuttle and glowing shock diamonds |\n| `90.6\u2013106.6s` | **final_impression** (`N07`) | What will rockets look like another hundred years from 1926's naked metal pipes? | Rocket equation physics still demands ~90% propellant mass fraction, yet NASA's Artemis SLS combines four modernized RS-25 engines and twin boosters for 8.8 million lbf thrust. | Massive multi-story cryogenic propellant hull, 4K close-up underneath Artemis SLS's four RS-25 engine bells at Kennedy Space Center, and Artemis I's 8.8-million-pound night launch lighting up Pad 39B. | Resonant century-spanning payoff grounded in real orbital physics | State the honest Tsiolkovsky mass-fraction constraint while closing on 4K Artemis engine bells and thunderous Pad 39B liftoff |\n"
+}

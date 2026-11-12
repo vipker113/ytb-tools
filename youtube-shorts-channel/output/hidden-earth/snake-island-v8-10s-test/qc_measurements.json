@@ -1,0 +1,945 @@
+{
+  "style_profile": "mysterious_earth_exploration",
+  "ffprobe": {
+    "duration_s": 11.1,
+    "within_target_window": true,
+    "adaptive_duration_mode": true,
+    "exact_frame_match": true,
+    "size_bytes": 51795395,
+    "size_mb": 49.4,
+    "video_codec": "h264",
+    "profile": "High",
+    "width": 1080,
+    "height": 1920,
+    "dimensions_exact": true,
+    "r_frame_rate": "30/1",
+    "avg_frame_rate": "30/1",
+    "nb_frames": 333,
+    "pix_fmt": "yuv420p",
+    "color_space": "bt709",
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "black_segments": [],
+  "loudness": {
+    "integrated_LUFS": -16.0,
+    "LRA_LU": 1.6,
+    "true_peak_dBTP": -1.5,
+    "narration_stem_LUFS": -16.2,
+    "ambience_and_sfx_stem_LUFS": -42.1,
+    "voice_to_ambience_margin_LU": 25.9
+  },
+  "shot_plan_and_pacing_qc": {
+    "style_profile": "mysterious_earth_exploration",
+    "total_duration_s": 11.1,
+    "shot_count": 4,
+    "distinct_source_assets_count": 4,
+    "raw_unique_filenames_count": 4,
+    "distinct_perspectives": [
+      "close_up",
+      "medium",
+      "scientific_fieldwork"
+    ],
+    "distinct_perspectives_count": 3,
+    "first_real_motion_start_s": 0.0,
+    "viral_script_audit": {
+      "total_words": 30,
+      "hook_first_sentence_words": 12,
+      "max_sentence_words": 13,
+      "llm_cliche_hits": 0,
+      "jargon_cluster_hits": 0,
+      "flat_prosody_ratio": 0.0,
+      "ending_tail_pause_s": 0.34,
+      "anti_ai_script_pass": true,
+      "errors": [],
+      "warnings": []
+    },
+    "moving_footage_s": 11.1,
+    "moving_footage_pct": 100.0,
+    "meets_moving_footage_goal": true,
+    "still_photography_s": 0.0,
+    "still_photography_pct": 0.0,
+    "human_interaction_shots": 1,
+    "human_interaction_s": 2.4,
+    "human_interaction_pct": 21.62,
+    "illustrative_diagram_s": 0.0,
+    "illustrative_diagram_pct": 0.0,
+    "authentic_visual_pct": 100.0,
+    "visual_coverage_v8": {
+      "total_timeline_duration_s": 11.1,
+      "genuine_moving_footage_s": 11.1,
+      "genuine_moving_footage_ratio": 1.0,
+      "genuine_moving_footage_pct": 100.0,
+      "meaningful_action_footage_s": 11.1,
+      "meaningful_action_footage_ratio": 1.0,
+      "meaningful_action_footage_pct": 100.0,
+      "establishing_footage_s": 0.0,
+      "establishing_footage_ratio": 0.0,
+      "establishing_footage_pct": 0.0,
+      "real_time_lapse_s": 0.0,
+      "real_time_lapse_ratio": 0.0,
+      "real_time_lapse_pct": 0.0,
+      "static_image_s": 0.0,
+      "static_image_ratio": 0.0,
+      "static_image_pct": 0.0,
+      "animated_still_s": 0.0,
+      "animated_still_pct": 0.0,
+      "pure_still_photo_s": 0.0,
+      "scientific_image_s": 0.0,
+      "scientific_visualization_s": 0.0,
+      "scientific_visualization_ratio": 0.0,
+      "scientific_visualization_pct": 0.0,
+      "infographic_s": 0.0,
+      "real_animation_s": 0.0,
+      "ai_generated_s": 0.0,
+      "reenactment_s": 0.0,
+      "by_media_class_s": {
+        "REAL_VIDEO_ACTION": 11.1,
+        "REAL_VIDEO_ESTABLISHING": 0.0,
+        "REAL_TIME_LAPSE": 0.0,
+        "STILL_PHOTO": 0.0,
+        "ANIMATED_STILL": 0.0,
+        "SCIENTIFIC_IMAGE": 0.0,
+        "INFOGRAPHIC": 0.0,
+        "REAL_ANIMATION": 0.0,
+        "AI_GENERATED": 0.0,
+        "REENACTMENT": 0.0
+      },
+      "by_media_class_pct": {
+        "REAL_VIDEO_ACTION": 100.0,
+        "REAL_VIDEO_ESTABLISHING": 0.0,
+        "REAL_TIME_LAPSE": 0.0,
+        "STILL_PHOTO": 0.0,
+        "ANIMATED_STILL": 0.0,
+        "SCIENTIFIC_IMAGE": 0.0,
+        "INFOGRAPHIC": 0.0,
+        "REAL_ANIMATION": 0.0,
+        "AI_GENERATED": 0.0,
+        "REENACTMENT": 0.0
+      },
+      "shot_classifications": [
+        {
+          "sid": "S01",
+          "duration_s": 4.3333,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 4.3333
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 35,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 21.769,
+            "raw_median_diff": 20.586,
+            "affine_compensated_diff": 11.282,
+            "residual_to_raw_ratio": 0.548,
+            "p90_local_flow_residual_px": 1.161,
+            "independent_motion_patch_ratio": 0.194,
+            "flat_graphic_pixel_ratio": 0.072,
+            "grid_box_edge_score": 1.539,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=1.16px, indep_patches=19%)."
+          }
+        },
+        {
+          "sid": "S02",
+          "duration_s": 2.1,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 2.1
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 17,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 15.13,
+            "raw_median_diff": 14.976,
+            "affine_compensated_diff": 6.841,
+            "residual_to_raw_ratio": 0.457,
+            "p90_local_flow_residual_px": 2.487,
+            "independent_motion_patch_ratio": 0.444,
+            "flat_graphic_pixel_ratio": 0.187,
+            "grid_box_edge_score": 1.446,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=2.49px, indep_patches=44%)."
+          }
+        },
+        {
+          "sid": "S03",
+          "duration_s": 2.2667,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 2.2667
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 18,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 8.336,
+            "raw_median_diff": 7.965,
+            "affine_compensated_diff": 9.943,
+            "residual_to_raw_ratio": 1.248,
+            "p90_local_flow_residual_px": 15.945,
+            "independent_motion_patch_ratio": 0.333,
+            "flat_graphic_pixel_ratio": 0.044,
+            "grid_box_edge_score": 1.678,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=15.94px, indep_patches=33%)."
+          }
+        },
+        {
+          "sid": "S04",
+          "duration_s": 2.4,
+          "source_media_class": "REAL_VIDEO_ACTION",
+          "effective_media_class": "REAL_VIDEO_ACTION",
+          "is_multi_panel": false,
+          "panel_breakdown": [],
+          "class_duration_s": {
+            "REAL_VIDEO_ACTION": 2.4
+          },
+          "counts_as_genuine_moving_footage": true,
+          "pixel_audit": {
+            "valid": true,
+            "container_kind": "video_file",
+            "sampled_frames": 19,
+            "width": 1920,
+            "height": 1080,
+            "raw_mean_diff": 4.385,
+            "raw_median_diff": 4.511,
+            "affine_compensated_diff": 5.858,
+            "residual_to_raw_ratio": 1.299,
+            "p90_local_flow_residual_px": 10.75,
+            "independent_motion_patch_ratio": 0.385,
+            "flat_graphic_pixel_ratio": 0.323,
+            "grid_box_edge_score": 1.997,
+            "is_frozen_static": false,
+            "is_baked_animated_still": false,
+            "is_dense_presentation_graphic": false,
+            "has_localized_action_motion": true,
+            "is_real_moving_footage": true,
+            "inferred_media_class": "REAL_VIDEO_ACTION",
+            "diagnostic_note": "Genuine moving footage with localized subject/process activity (p90_flow_res=10.75px, indep_patches=38%)."
+          }
+        }
+      ]
+    },
+    "genuine_moving_footage_pct": 100.0,
+    "meaningful_action_footage_pct": 100.0,
+    "establishing_footage_pct": 0.0,
+    "static_image_pct": 0.0,
+    "scientific_visualization_pct": 0.0,
+    "repetition_and_progression": {
+      "total_shots": 4,
+      "raw_unique_filenames_count": 4,
+      "distinct_canonical_assets_count": 4,
+      "inflated_asset_count_delta": 0,
+      "canonical_usage_counts": {
+        "commons_canopy_intertwined_snakes": 1,
+        "butantan_clustered_pit_vipers_brazil": 1,
+        "fathinia_2015_viper_bird_ambush": 1,
+        "rushen_pit_viper_venom_milking_adult": 1
+      },
+      "meaningful_progression_ratio": 1.0,
+      "progression_steps": [
+        {
+          "from_sid": "S01",
+          "to_sid": "S02",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_perspective",
+            "new_action",
+            "new_information",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S02",
+          "to_sid": "S03",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_action",
+            "new_information",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        },
+        {
+          "from_sid": "S03",
+          "to_sid": "S04",
+          "meaningful_progression": true,
+          "progression_dimensions": [
+            "new_evidence",
+            "new_action",
+            "new_information",
+            "new_perspective",
+            "new_subject"
+          ],
+          "is_same_still_recrop": false,
+          "is_unmotivated_clip_split": false
+        }
+      ],
+      "stale_visual_topic_shifts": [],
+      "repetition_and_progression_pass": true,
+      "major_issue_count": 0,
+      "issues": []
+    },
+    "pacing_summary": {
+      "min_shot_s": 2.1,
+      "median_shot_s": 2.4,
+      "mean_shot_s": 2.775,
+      "max_shot_s": 4.333,
+      "internal_cuts": 3,
+      "clean_cuts": 3,
+      "dissolves": 0,
+      "dissolve_fraction": 0.0,
+      "speech_boundary_aligned_cuts": 3,
+      "speech_boundary_alignment_pct": 100.0
+    },
+    "errors": [],
+    "warnings": [],
+    "shots": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 4.3333,
+        "duration_s": 4.333,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.6,
+          "ideal_duration_s": 5.61,
+          "max_recommended_s": 8.7,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "close_up",
+            "camera_movement": "gentle_drift",
+            "is_moving_footage": true,
+            "spoken_word_count": 12
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "close_up",
+        "src_file": "snakes_intertwined_mating_1080p.webm",
+        "transition_in": "opening",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Instant Frame-0 live 1080p multi-snake canopy hook.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.0,
+        "nearest_speech_boundary_kind": "start",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "On Brazil's Snake Island up to ninety pit vipers pack every hectare",
+        "story_beat": "Multiple real snakes coiled in green canopy branches (N01)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 567.8,
+          "crop_height_px": 1009.3,
+          "upscale_factor": 1.902,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S02",
+        "start_s": 4.3333,
+        "end_s": 6.4333,
+        "duration_s": 2.1,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.43,
+          "ideal_duration_s": 4.93,
+          "max_recommended_s": 8.7,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "key_fact",
+            "camera_perspective": "medium",
+            "camera_movement": "tracking",
+            "is_moving_footage": true,
+            "spoken_word_count": 8
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "butantan_pit_vipers_cluster_720p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.37s breath-pause cut after 'hectare' to clustered Brazilian pit vipers on forest leaf litter.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.062,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "contextual_observation",
+        "context_note": "Instituto Butantan pit-viper enclosure",
+        "spoken_narration": "There is no evidence of five per meter",
+        "story_beat": "Multiple Brazilian pit vipers moving across overlapping coils at Instituto Butantan (N02a)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 562.5,
+          "crop_height_px": 1000.0,
+          "upscale_factor": 1.92,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S03",
+        "start_s": 6.4333,
+        "end_s": 8.7,
+        "duration_s": 2.267,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 2.92,
+          "ideal_duration_s": 4.42,
+          "max_recommended_s": 8.7,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "medium",
+            "camera_movement": "static",
+            "is_moving_footage": true,
+            "spoken_word_count": 5
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "medium",
+        "src_file": "viper_ambushing_bird_iran_1080p.webm",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.22s em-dash pause cut after 'meter' into the live viper bird-ambush strike.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.005,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "direct_subject",
+        "scientific_claim_status": "verified_fact",
+        "context_note": "Illustrative viper bird-ambush strike",
+        "spoken_narration": "yet vipers ambush birds overhead",
+        "story_beat": "Real 1080p venomous viper ambushing a landing bird in mid-air (N02b)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 562.5,
+          "crop_height_px": 1000.0,
+          "upscale_factor": 1.92,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "hd_vertical_reframe"
+        }
+      },
+      {
+        "sid": "S04",
+        "start_s": 8.7,
+        "end_s": 11.1,
+        "duration_s": 2.4,
+        "adaptive_duration_eval": {
+          "min_recommended_s": 3.39,
+          "ideal_duration_s": 4.89,
+          "max_recommended_s": 8.7,
+          "factors": {
+            "visual_complexity": "high",
+            "spoken_importance": "central_reveal",
+            "camera_perspective": "scientific_fieldwork",
+            "camera_movement": "handheld_field",
+            "is_moving_footage": true,
+            "spoken_word_count": 5
+          }
+        },
+        "media_type": "video",
+        "kind": "video_full",
+        "camera_perspective": "scientific_fieldwork",
+        "src_file": "pit_viper_venom_fangs_slowmo_1080p.mp4",
+        "transition_in": "cut",
+        "transition_duration_s": 0.0,
+        "transition_reason": "Exact 0.33s breath-pause cut after 'overhead' revealing real slow-motion pit-viper venom extraction.",
+        "cut_speech_boundary_aligned": true,
+        "nearest_speech_boundary_s": 0.031,
+        "nearest_speech_boundary_kind": "breath_pause",
+        "subject_match_kind": "contextual_fieldwork",
+        "scientific_claim_status": "verified_fact",
+        "context_note": null,
+        "spoken_narration": "with venom five times deadlier",
+        "story_beat": "1080p slow-motion herpetologist extracting pit-viper venom from live fangs (N03)",
+        "crop_feasibility": {
+          "source_width": 1920,
+          "source_height": 1080,
+          "crop_width_px": 506.2,
+          "crop_height_px": 900.0,
+          "upscale_factor": 2.133,
+          "feasible": true,
+          "warnings": [],
+          "is_native_full_hd_vertical": false,
+          "honest_quality_tier": "upscaled_sub_hd_crop"
+        }
+      }
+    ]
+  },
+  "visual_evidence_breakdown": {
+    "total_shots": 4,
+    "moving_footage_s": 11.1,
+    "moving_footage_pct": 100.0,
+    "genuine_moving_footage_pct": 100.0,
+    "meaningful_action_footage_pct": 100.0,
+    "establishing_footage_pct": 0.0,
+    "real_time_lapse_pct": 0.0,
+    "static_image_pct": 0.0,
+    "scientific_visualization_pct": 0.0,
+    "still_photography_s": 0.0,
+    "still_photography_pct": 0.0,
+    "human_interaction_shots": 1,
+    "human_interaction_s": 2.4,
+    "human_interaction_pct": 21.62,
+    "real_imagery_and_footage_s": 11.1,
+    "real_imagery_and_footage_pct": 100.0,
+    "illustrative_diagram_s": 0,
+    "illustrative_diagram_pct": 0.0,
+    "meets_real_target": true,
+    "meets_moving_video_target": true
+  },
+  "editorial_formula_qc": {
+    "first_word_start_s": 0.1,
+    "hook_within_limit": true,
+    "layer2_pivot_seg_id": "N02",
+    "scientific_caveat_seg_id": "N02",
+    "caveat_explicitly_stated": true,
+    "all_passed": true
+  },
+  "full_canvas_qc": {
+    "audited_shots": 4,
+    "suspicious_shots_count": 0,
+    "suspicious_shots": [],
+    "all_full_canvas_pass": true,
+    "shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "sample_t_s": 2.17,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 0.92,
+        "right_inset_spike_ratio": 0.97,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S02",
+        "kind": "video_full",
+        "sample_t_s": 5.38,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.08,
+        "right_inset_spike_ratio": 1.11,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S03",
+        "kind": "video_full",
+        "sample_t_s": 7.57,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.26,
+        "right_inset_spike_ratio": 1.12,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      },
+      {
+        "sid": "S04",
+        "kind": "video_full",
+        "sample_t_s": 9.9,
+        "top_black_px": 0,
+        "bottom_black_px": 0,
+        "left_black_px": 0,
+        "right_black_px": 0,
+        "left_inset_spike_ratio": 1.11,
+        "right_inset_spike_ratio": 2.32,
+        "has_inset_border": false,
+        "full_canvas_pass": true
+      }
+    ]
+  },
+  "overlay_cleanliness_qc": {
+    "style_profile": "mysterious_earth_exploration",
+    "scale_rings_rendered": 0,
+    "locator_huds_rendered": 0,
+    "source_banners_rendered": 0,
+    "callout_badges_rendered": 0,
+    "opening_cover_card_burned": false,
+    "closing_credit_burned": false,
+    "minimal_context_notes_used": [
+      "Illustrative viper bird-ambush strike",
+      "Instituto Butantan pit-viper enclosure"
+    ],
+    "violations": [],
+    "clean_documentary_pass": true
+  },
+  "protected_projects_qc": {
+    "checked_projects": {
+      "blood-falls-v3-documentary": {
+        "mp4_exists": true,
+        "size_mb": 338.67,
+        "intact": true
+      },
+      "brine-pools-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 331.23,
+        "intact": true
+      },
+      "day-in-the-life-of-an-astronaut": {
+        "mp4_exists": true,
+        "size_mb": 126.43,
+        "intact": true
+      },
+      "fermi-paradox-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 413.61,
+        "intact": true
+      },
+      "forbidden-zones-earth-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 544.82,
+        "intact": true
+      },
+      "gemstone-mine-secrets-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 380.86,
+        "intact": true
+      },
+      "how-high-could-you-jump-on-other-planets": {
+        "mp4_exists": true,
+        "size_mb": 34.22,
+        "intact": true
+      },
+      "lava-cave-gold-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 386.85,
+        "intact": true
+      },
+      "mars-helicopter-1-percent-air": {
+        "mp4_exists": true,
+        "size_mb": 118.82,
+        "intact": true
+      },
+      "unreal-places-earth-v4-documentary": {
+        "mp4_exists": true,
+        "size_mb": 441.92,
+        "intact": true
+      },
+      "venus-hotter-than-mercury": {
+        "mp4_exists": true,
+        "size_mb": 88.07,
+        "intact": true
+      }
+    },
+    "all_intact": true
+  },
+  "wcag_contrast_qc": {
+    "subtitle_style": "cinema_boxless",
+    "emphasis_mode": "color_accent",
+    "backdrop_worst_case_rgb": [
+      240,
+      245,
+      250
+    ],
+    "caption_white_contrast_ratio": 12.07,
+    "caption_gold_contrast_ratio": 9.34,
+    "all_wcag_aaa_pass": true
+  },
+  "viral_anti_ai_qc": {
+    "anti_ai_script_pass": true,
+    "llm_cliche_hits": 0,
+    "jargon_cluster_hits": 0,
+    "ending_tail_pause_s": 0.34,
+    "first_real_motion_start_s": 0.0,
+    "opening_motion_pass": true,
+    "diegetic_nat_sound_active": true,
+    "audible_location_bed_pass": true,
+    "subtitle_style": "cinema_boxless",
+    "filmic_color_grade_enabled": true,
+    "all_viral_anti_ai_pass": true
+  },
+  "thumbnail_qc": {
+    "thumbnail_jpg_bytes": 864053,
+    "under_2mb": true,
+    "width": 1080,
+    "height": 1920,
+    "dimensions_9x16": true,
+    "text_mode": "cinema_hook",
+    "frame0_vs_thumbnail_mae_rgb": 64.445,
+    "cover_variants_exported": 1,
+    "concepts_exported": 2,
+    "concepts_comparison_sheet_exists": true,
+    "preview_sheet_exists": true
+  },
+  "motion_smoothness_qc": {
+    "sampled_shots": [
+      {
+        "sid": "S01",
+        "kind": "video_full",
+        "min_frame_delta_luma": 4.9554,
+        "median_frame_delta_luma": 25.5258,
+        "max_to_median_ratio": 1.26,
+        "smooth": true
+      }
+    ],
+    "worst_jump_ratio": 1.26,
+    "all_smooth": true
+  },
+  "subtitles_qc": {
+    "cue_count": 7,
+    "max_burned_lines_per_cue": 1,
+    "raw_word_match_ratio": 0.9667,
+    "normalized_word_match_ratio": 1.0,
+    "normalized_diffs": [],
+    "cue_start_vs_whisper_offset_s": {
+      "median": 0.007,
+      "p95_abs": 0.095,
+      "max_abs": 0.1
+    }
+  },
+  "licensing_register_qc": {
+    "source_register_csv_exists": true,
+    "source_register_md_exists": true,
+    "registered_assets_count": 5
+  },
+  "narrative_and_visual_intelligence_qc": {
+    "momentum_pass": true,
+    "momentum_error_count": 0,
+    "momentum_warning_count": 0,
+    "hook_candidates_count": 1,
+    "recommended_hook_id": "H1",
+    "recommended_hook_score": 8.88,
+    "mean_visual_weighted_score": 0.9407,
+    "visual_mismatch_count": 0,
+    "all_shots_eligible": true
+  },
+  "voice_studio_qc": {
+    "voice_input_mode": "directed_tts",
+    "voice_direction_profile": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "sentence_count": 3,
+    "approval_lock_present": true,
+    "approval_lock_synchronized": true
+  },
+  "audio_5layer_health_qc": {
+    "scene_audio_profile": "polar_glacial",
+    "stems_exported_count": 5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "loudness_range_lra_lu": 1.6,
+    "speech_crest_factor_db": 14.5,
+    "natural_dynamics_pass": true,
+    "all_audio_health_pass": true
+  },
+  "creative_qa": {
+    "slug": "snake-island-v8-10s-test",
+    "creative_qa_pass": true,
+    "six_pillar_qa": {
+      "slug": "snake-island-v8-10s-test",
+      "technical_approval": true,
+      "creative_approval": true,
+      "overall_release_approval": true,
+      "visual_coverage_metrics": {
+        "genuine_moving_footage_pct": 100.0,
+        "meaningful_action_footage_pct": 100.0,
+        "establishing_footage_pct": 0.0,
+        "real_time_lapse_pct": 0.0,
+        "static_image_pct": 0.0,
+        "animated_still_pct": 0.0,
+        "scientific_visualization_pct": 0.0
+      },
+      "canonical_asset_summary": {
+        "distinct_canonical_assets": 4,
+        "raw_unique_filenames": 4,
+        "meaningful_progression_pct": 100.0
+      },
+      "resolution_honesty_records": [
+        {
+          "sid": "S01",
+          "src_file": "snakes_intertwined_mating_1080p.webm",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "568x1009",
+          "upscale_factor": 1.902,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S02",
+          "src_file": "butantan_pit_vipers_cluster_720p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "562x1000",
+          "upscale_factor": 1.92,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S03",
+          "src_file": "viper_ambushing_bird_iran_1080p.webm",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "562x1000",
+          "upscale_factor": 1.92,
+          "is_native_full_hd_vertical": false
+        },
+        {
+          "sid": "S04",
+          "src_file": "pit_viper_venom_fangs_slowmo_1080p.mp4",
+          "native_resolution": "1920x1080",
+          "cropped_9x16_px": "506x900",
+          "upscale_factor": 2.133,
+          "is_native_full_hd_vertical": false
+        }
+      ],
+      "technical_details": {
+        "target_resolution": "1080x1920",
+        "target_aspect_ratio": "9:16",
+        "target_fps": 30,
+        "target_video_codec": "libx264",
+        "target_audio_codec": "aac",
+        "mode": "post_render_mp4",
+        "encoded_width": 1080,
+        "encoded_height": 1920,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "r_frame_rate": "30/1",
+        "av_sync_drift_s": 0.0
+      },
+      "pillars": {
+        "media_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "semantic_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "repetition_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "timeline_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "technical_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        },
+        "creative_qa": {
+          "passed": true,
+          "critical_count": 0,
+          "major_count": 0,
+          "minor_count": 0,
+          "issues": []
+        }
+      },
+      "issues": []
+    },
+    "severity_counts": {
+      "CRITICAL": 0,
+      "MAJOR": 0,
+      "MINOR": 0,
+      "INFO": 2
+    },
+    "voice_metrics": {
+      "speaking_rate_wpm": 162.2,
+      "max_boundary_rms_jump_db": 0.14,
+      "high_drama_segment_ratio": 0.333
+    },
+    "soundscape_metrics": {
+      "adaptive_audio_profile": "immersive_exploration",
+      "music_sections_count": 0,
+      "audible_ambience_sections_count": 1,
+      "approved_sfx_count": 0,
+      "rejected_sfx_for_silence_count": 0,
+      "voice_to_bed_margin_lu": 25.9
+    },
+    "editing_metrics": {
+      "final_scene_count": 4,
+      "mean_scene_duration_s": 2.77,
+      "sync_issues_count": 0
+    },
+    "issues": [
+      {
+        "severity": "INFO",
+        "pillar": "music_and_effect_qa",
+        "code": "intentional_no_music",
+        "message": "Episode intentionally uses zero background music so narration and authentic environment carry the story."
+      },
+      {
+        "severity": "INFO",
+        "pillar": "music_and_effect_qa",
+        "code": "intentional_zero_sfx",
+        "message": "Episode intentionally uses zero point SFX; silence and natural ambience preferred over artificial effects."
+      }
+    ]
+  },
+  "failed_gates": [],
+  "failed_gates_count": 0,
+  "overall_studio_v6_pass": true,
+  "overall_studio_v7_pass": true,
+  "overall_studio_v8_technical_pass": true,
+  "overall_studio_v8_creative_pass": true,
+  "overall_studio_v8_release_pass": true
+}

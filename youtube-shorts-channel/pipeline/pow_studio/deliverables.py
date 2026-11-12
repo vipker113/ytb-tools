@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import csv
 import json
+import shutil
 from pathlib import Path
 
 from .manifest_v6 import export_versioned_production_manifest
@@ -320,3 +321,59 @@ def generate_all_deliverables(manifest: EpisodeManifest, wt: dict, qc: dict) -> 
     generate_retention_plan(manifest, wt=wt)
     export_versioned_production_manifest(manifest, wt, qc)
     write_qc_report(manifest, qc)
+
+
+def finalize_clean_episode_output(manifest: EpisodeManifest, wt: dict) -> dict:
+    """
+    Write lightweight metadata (`youtube_metadata.md`, `script.md`) for `ytb-tools` review/upload
+    and prune intermediate build directories & non-essential reports so the episode directory
+    cleanly contains 1 video (`<slug>.mp4`) + 3 sample thumbnails (`thumbnail.jpg`,
+    `thumbnail_variant_B.jpg`, `thumbnail_variant_C.jpg`) + YouTube upload metadata.
+    """
+    manifest.assert_output_dir_writable()
+    out_dir = Path(manifest.output_dir)
+    write_script_md(manifest, wt)
+    write_youtube_metadata(manifest)
+
+    # Ensure the 3 canonical thumbnail files exist before removing duplicates
+    for cid, target_name in (
+        ("A", "thumbnail.jpg"),
+        ("B", "thumbnail_variant_B.jpg"),
+        ("C", "thumbnail_variant_C.jpg"),
+    ):
+        target_p = out_dir / target_name
+        concept_p = out_dir / f"thumbnail_concept_{cid}.jpg"
+        if not target_p.exists() and concept_p.exists():
+            shutil.copy2(concept_p, target_p)
+
+    keep_files = {
+        f"{manifest.slug}.mp4",
+        "thumbnail.jpg",
+        "thumbnail_variant_B.jpg",
+        "thumbnail_variant_C.jpg",
+        "youtube_metadata.md",
+        "subtitles.srt",
+        "script.md",
+        "web_metadata_override.json",
+    }
+
+    removed_count = 0
+    for item in list(out_dir.iterdir()):
+        if item.name in keep_files:
+            continue
+        if item.is_dir():
+            shutil.rmtree(item, ignore_errors=True)
+            removed_count += 1
+        else:
+            item.unlink(missing_ok=True)
+            removed_count += 1
+
+    return {
+        "video": str(out_dir / f"{manifest.slug}.mp4"),
+        "thumbnails": [
+            str(out_dir / "thumbnail.jpg"),
+            str(out_dir / "thumbnail_variant_B.jpg"),
+            str(out_dir / "thumbnail_variant_C.jpg"),
+        ],
+        "removed_items_count": removed_count,
+    }

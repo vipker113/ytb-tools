@@ -1,0 +1,395 @@
+manifest_version: "8.0"
+script_version: "v8.0.0"
+subtitle_version: "v8.0.0"
+channel_name: "Proof of Wonder"
+playlist: "Hidden Earth"
+slug: "snake-island-v8-10s-test"
+topic: "Ilha da Queimada Grande (Snake Island, Brazil) — 90 Pit Vipers Per Hectare, Canopy Bird Ambush & 5x Avian Venom"
+
+style_profile: "mysterious_earth_exploration"
+style_overrides:
+  asset_selection:
+    target_moving_footage_ratio: 0.95
+    target_genuine_moving_footage_ratio: 0.95
+    target_meaningful_action_footage_ratio: 0.75
+    max_static_image_ratio: 0.0
+    max_scientific_visualization_ratio: 0.0
+    max_duration_share_per_asset: 0.42
+    min_human_interaction_shots: 1
+  pacing:
+    min_shot_duration_s: 2.0
+
+adaptive_duration_mode: true
+enforce_target_duration_bounds: false
+enable_intelligent_scene_editing: true
+adaptive_audio_profile: "immersive_exploration"
+
+voice_input_mode: "directed_tts"
+voice_direction_profile: "mysterious_discovery"
+voice: "en-GB-RyanNeural"
+annotated_voice_script_file: "episodes/snake_island_v8_10s_test_voice_script.txt"
+opening_hook_type: "surprising_visual"
+
+primary_title: "Snake Island: 90 Deadly Vipers in Every Hectare"
+alternative_title: "Why Brazil's Snake Island Vipers Hunt in the Trees"
+
+youtube_description: |
+  Thirty-three kilometers off São Paulo, Brazil, Ilha da Queimada Grande (Snake Island) holds roughly 2,000 to 4,000 golden lancehead pit vipers (Bothrops insularis)—up to 90 vipers per hectare in prime forest habitat according to Instituto Butantan surveys. While there is no evidence for viral rumors claiming five snakes per square meter, isolated vipers adapted to ambush migratory birds in the canopy with hemotoxic venom up to five times more potent against avian prey.
+
+hashtags:
+  - "#SnakeIsland"
+  - "#QueimadaGrande"
+  - "#HiddenEarth"
+  - "#Wildlife"
+  - "#ProofOfWonder"
+
+target_duration_min_s: 8.0
+target_duration_max_s: 15.0
+ambience_preset: "wildlife_field"
+ambience_ducked_lufs_target: -26.5
+nat_sound_bed_file: "jungle_rainforest_canopy_ambience.wav"
+nat_sound_bed_range_s: [0.0, 20.0]
+nat_sound_gain_db: -16.5
+
+raw_assets_dir: "assets/raw_footage/hidden_earth_snake_island_v6"
+output_dir: "output/hidden-earth/snake-island-v8-10s-test"
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N02"
+  scientific_caveat_seg_id: "N02"
+  min_real_evidence_ratio: 0.95
+
+hook_candidates:
+  - hook_id: "H1"
+    archetype: "surprising_visual"
+    spoken_line: "On Brazil's Snake Island, up to ninety pit vipers pack every hectare."
+    opening_visual: "Multiple real snakes coiled and tangled across green tree branches at eye level staring directly at the lens"
+    src_file: "snakes_intertwined_mating_1080p.webm"
+    promise_fulfilled_in_seg_id: "N03"
+    rationale: "Instant Frame-0 live 1080p multi-snake canopy cluster paired with verified 90-vipers-per-hectare density."
+
+thumbnail_spec:
+  src_file: "snakes_intertwined_mating_1080p.webm"
+  src_time_s: 134.2
+  headline_text: "90 VIPERS|PER HECTARE"
+  kicker_text: "BRAZIL'S SNAKE ISLAND"
+  cx: 0.56
+  cy: 0.48
+  zoom: 1.05
+  shadow_lift: 0.10
+  clarity_boost: true
+  text_position: "bottom"
+  accent_rgb: [255, 208, 64]
+
+thumbnail_concepts:
+  - concept_id: "A"
+    src_file: "snakes_intertwined_mating_1080p.webm"
+    src_time_s: 134.2
+    headline_text: "90 VIPERS|PER HECTARE"
+    kicker_text: "BRAZIL'S SNAKE ISLAND"
+    cx: 0.56
+    cy: 0.48
+    zoom: 1.05
+    shadow_lift: 0.10
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 208, 64]
+    concept_rationale: "Matches Frame 0 opening hook: multiple real snakes coiled and tangled in green branches at eye level."
+  - concept_id: "B"
+    src_file: "viper_ambushing_bird_iran_1080p.webm"
+    src_time_s: 35.9
+    headline_text: "VIPERS HUNT|IN THE TREES"
+    kicker_text: "5X DEADLIER VENOM"
+    cx: 0.44
+    cy: 0.52
+    zoom: 1.08
+    shadow_lift: 0.10
+    clarity_boost: true
+    text_position: "bottom"
+    accent_rgb: [255, 112, 76]
+    concept_rationale: "Split-second real wildlife action frame of a camouflaged viper ambushing a landing bird."
+
+narration_segments:
+  - seg_id: "N01"
+    text: "On Brazil's Snake Island, up to ninety pit vipers pack every hectare."
+    delivery: "HOOK"
+    pace: "MODERATE"
+    energy: 4
+    pause_after_ms: 260
+    emphasis_words: ["Snake", "Island", "ninety", "vipers", "hectare"]
+    narrative_beat: "opening_hook"
+    viewer_question: "Is it really five snakes per square meter, and how do so many vipers hunt on one small island?"
+    new_information: "Ilha da Queimada Grande off Brazil packs up to 90 venomous pit vipers per hectare."
+    visual_reveal: "1080p real footage of multiple heavy snakes coiled and tangled across green tree branches at eye level."
+    emotional_direction: "Immediate visceral dread and curiosity"
+    retention_purpose: "Stop scrolling at Frame 0 with real multi-snake canopy motion"
+
+  - seg_id: "N02"
+    text: "There is no evidence of five per meter—yet vipers ambush birds overhead,"
+    delivery: "MEASURED EVIDENCE"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_ms: 240
+    emphasis_words: ["no", "evidence", "ambush", "birds", "overhead"]
+    narrative_beat: "escalation"
+    viewer_question: "How lethal did their venom become to stop struck birds from flying away?"
+    new_information: "Debunks the 5-per-m² rumor (no evidence) while revealing real arboreal ambush hunting on migratory birds."
+    visual_reveal: "1080p wildlife recording of a camouflaged venomous viper exploding upward to seize a landing bird in mid-air."
+    emotional_direction: "Controlled scientific authority escalating into split-second strike shock"
+    retention_purpose: "Deliver literal 1:1 physical action proof right on 'ambush birds'"
+
+  - seg_id: "N03"
+    text: "with venom five times deadlier."
+    delivery: "EMOTIONAL REFLECTION"
+    pace: "SLOW"
+    energy: 3
+    pause_after_ms: 340
+    emphasis_words: ["venom", "five", "times", "deadlier"]
+    narrative_beat: "final_impression"
+    viewer_question: "Would anyone dare step inside a forest ruled by evolved canopy vipers?"
+    new_information: "Natural selection evolved avian-targeted hemotoxic venom up to five times more potent."
+    visual_reveal: "1080p slow-motion close-up of a herpetologist extracting liquid hemotoxic venom from live pit-viper fangs."
+    emotional_direction: "Visceral closing payoff"
+    retention_purpose: "Close on unforgettable slow-motion fang venom evidence"
+
+sfx_cues: []
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 4.271
+    kind: "video_full"
+    src_file: "snakes_intertwined_mating_1080p.webm"
+    src_in: 126.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Multiple heavy real snakes coiled and gliding over one another across green forest canopy branches at eye level"
+    visual_objective: "Show dense multi-snake presence hanging in green branches immediately at Frame 0"
+    progression_type: "new_action"
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.56
+    cy0: 0.48
+    cx1: 0.53
+    cy1: 0.50
+    z0: 1.04
+    z1: 1.07
+    shadow_lift: 0.08
+    crop_rationale: "Centers three intertwined snakes coiled high across green tree branches staring into the camera."
+    transition_in: "cut"
+    transition_reason: "Instant Frame-0 live 1080p multi-snake canopy hook."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N01"
+    associated_narration_concept: "On Brazil's Snake Island, up to ninety pit vipers pack every hectare."
+    editorial_rationale: "Opens with real 1080p multi-snake canopy footage matching Snake Island's tree-dwelling viper density."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Multiple real snakes coiled in green canopy branches (N01)"
+    visual_desc: "1080p close-up of multiple intertwined snakes coiled across leafy green tree branches."
+
+  - sid: "S02"
+    start_s: 4.271
+    end_s: 6.428
+    kind: "video_full"
+    src_file: "butantan_pit_vipers_cluster_720p.mp4"
+    src_in: 1.8
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Multiple venomous Brazilian pit vipers actively slithering and moving over overlapping coils across forest leaf litter at Instituto Butantan"
+    visual_objective: "Show genuine multi-viper cluster movement in Brazil while stating the scientific survey density caveat"
+    progression_type: "new_perspective"
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.52
+    cx1: 0.52
+    cy1: 0.50
+    z0: 1.05
+    z1: 1.08
+    shadow_lift: 0.14
+    crop_rationale: "Centers multiple Brazilian pit vipers moving across overlapping coils on dry leaf litter at Instituto Butantan."
+    transition_in: "cut"
+    transition_reason: "Exact 0.37s breath-pause cut after 'hectare' to clustered Brazilian pit vipers on forest leaf litter."
+    context_note: "Instituto Butantan pit-viper enclosure"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "There is no evidence of five vipers per meter—"
+    editorial_rationale: "Pairs the Instituto Butantan scientific density caveat with real moving Brazilian pit-viper footage."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "contextual_observation"
+    story_beat: "Multiple Brazilian pit vipers moving across overlapping coils at Instituto Butantan (N02a)"
+    visual_desc: "Live footage from Instituto Butantan in Brazil showing multiple venomous pit vipers moving across overlapping coils on dry leaves."
+
+  - sid: "S03"
+    start_s: 6.428
+    end_s: 8.669
+    kind: "video_full"
+    src_file: "viper_ambushing_bird_iran_1080p.webm"
+    src_in: 35.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Camouflaged venomous viper striking upward in a split second to ambush and catch a landing migratory bird"
+    visual_objective: "Prove visually how arboreal ambush vipers seize landing birds before they can escape"
+    progression_type: "new_action"
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.42
+    cy0: 0.53
+    cx1: 0.45
+    cy1: 0.52
+    z0: 1.06
+    z1: 1.08
+    crop_rationale: "Frames the motionless viper and incoming songbird so the mid-air strike lands squarely in center 9:16 at +0.85s."
+    transition_in: "cut"
+    transition_reason: "Exact 0.22s em-dash pause cut after 'meter' into the live viper bird-ambush strike."
+    context_note: "Illustrative viper bird-ambush strike"
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "yet vipers ambush birds overhead,"
+    editorial_rationale: "Literal 1:1 action match between spoken 'vipers ambush birds overhead' and a real 1080p mid-air viper bird strike."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Real 1080p venomous viper ambushing a landing bird in mid-air (N02b)"
+    visual_desc: "1080p wildlife recording of a camouflaged venomous viper lunging upward to catch a landing songbird."
+
+  - sid: "S04"
+    start_s: 8.669
+    end_s: 11.100
+    kind: "video_full"
+    src_file: "pit_viper_venom_fangs_slowmo_1080p.mp4"
+    src_in: 10.5
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Herpetologist pressing a live pit viper's fangs onto a collection membrane as golden hemotoxic venom streams out in slow motion"
+    visual_objective: "Deliver direct close-up physical proof of pit-viper fangs and potent liquid venom"
+    progression_type: "new_evidence"
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "handheld_field"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.42
+    cx1: 0.50
+    cy1: 0.44
+    z0: 1.16
+    z1: 1.20
+    crop_rationale: "Centers the pit viper's wide-open jaws, fangs piercing the green collection membrane, and coiled patterned body."
+    transition_in: "cut"
+    transition_reason: "Exact 0.33s breath-pause cut after 'overhead' revealing real slow-motion pit-viper venom extraction."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N03"
+    associated_narration_concept: "with venom five times deadlier."
+    editorial_rationale: "Hands-on herpetological venom extraction closes the 11-second test with visceral scientific proof."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1080p slow-motion herpetologist extracting pit-viper venom from live fangs (N03)"
+    visual_desc: "1080p slow-motion close-up of a herpetologist safely milking liquid venom from live pit-viper fangs."
+
+assets_register:
+  - local_file: "snakes_intertwined_mating_1080p.webm"
+    title: "Multiple Intertwined Snakes Coiled in Green Tree Branches (1080p)"
+    creator_agency: "Wikimedia Commons (Elaphe climacophora in tree canopy)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Japanese_rat_snakes_(Elaphe_climacophora)_mating.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Japanese_rat_snakes_%28Elaphe_climacophora%29_mating.webm"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Canopy intertwined snakes video: Wikimedia Commons contributor, CC BY 4.0"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "commons_canopy_intertwined_snakes"
+    depicts_meaningful_action: true
+    depicted_subject: "Multiple pit vipers and snakes packed densely in forest canopy branches"
+    depicted_action: "Multiple snakes coiling and gliding over one another across green tree branches on Snake Island"
+    depicted_location: "Subtropical island forest canopy"
+    priority_tier: 1
+    intended_use: "S01 opening multi-snake canopy hook & Thumbnail A"
+
+  - local_file: "butantan_pit_vipers_cluster_720p.mp4"
+    title: "Cobras do Butantan — Clustered Brazilian Pit Vipers Moving Across Forest Leaf Litter"
+    creator_agency: "Rogerio Ramos / Instituto Butantan Serpentarium (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Cobras_do_Butantan.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/8/88/Cobras_do_Butantan.webm"
+    license: "CC BY 3.0"
+    license_url: "https://creativecommons.org/licenses/by/3.0/"
+    required_attribution: "Instituto Butantan pit vipers video ('Cobras do Butantan'): Rogerio Ramos, CC BY 3.0"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "butantan_clustered_pit_vipers_brazil"
+    depicts_meaningful_action: true
+    depicted_subject: "Multiple venomous Brazilian pit vipers and snakes packed across forest leaf litter"
+    depicted_action: "Brazilian pit vipers actively slithering and moving over overlapping coils during Instituto Butantan density observation"
+    depicted_location: "São Paulo, Brazil (Instituto Butantan)"
+    priority_tier: 1
+    intended_use: "S02 authentic Brazilian pit-viper cluster action matching the Instituto Butantan density caveat"
+
+  - local_file: "viper_ambushing_bird_iran_1080p.webm"
+    title: "Venomous Viper Ambushing a Landing Migratory Bird in Mid-Air (1080p)"
+    creator_agency: "Behzad Fathinia et al. / Wikimedia Commons"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Iran_-_Pseudocerastes_urarachnoides_2015.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Iran_-_Pseudocerastes_urarachnoides_2015.webm"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Viper bird-ambush footage (Pseudocerastes urarachnoides): Behzad Fathinia et al., CC BY 4.0"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "fathinia_2015_viper_bird_ambush"
+    depicts_meaningful_action: true
+    depicted_subject: "Venomous viper ambushing migratory birds"
+    depicted_action: "Camouflaged venomous viper striking upward to ambush a landing bird"
+    depicted_location: "Wild shrub/branch ambush perch"
+    priority_tier: 1
+    intended_use: "S02 literal mid-air bird ambush strike & Thumbnail B"
+
+  - local_file: "pit_viper_venom_fangs_slowmo_1080p.mp4"
+    title: "Milking Adult Pit Viper Venom in Slow Motion (1080p)"
+    creator_agency: "Rushen / Queen Saovabha Memorial Institute Venom Research (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Milking_Adult_Malayan_Pit_Viper_(Calloselasma_rhodostoma)_Venom,_in_Slow_Motion.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Milking_Adult_Malayan_Pit_Viper_%28Calloselasma_rhodostoma%29_Venom%2C_in_Slow_Motion.webm"
+    license: "CC BY 4.0"
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    required_attribution: "Slow-motion pit-viper venom extraction video: Rushen / Wikimedia Commons, CC BY 4.0"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "rushen_pit_viper_venom_milking_adult"
+    depicts_meaningful_action: true
+    depicted_subject: "Herpetologist extracting deadly pit-viper venom from live fangs"
+    depicted_action: "Live pit viper biting collection glass and releasing potent liquid venom in slow motion"
+    depicted_location: "Herpetological venom research institute"
+    priority_tier: 1
+    intended_use: "S03 slow-motion venom fang payoff"
+
+  - local_file: "jungle_rainforest_canopy_ambience.wav"
+    title: "Subtropical Island Rainforest Canopy Breeze & Cliff Surf Natural Sound Bed"
+    creator_agency: "Proof of Wonder Documentary Studio"
+    source_page_url: "local://assets/raw_footage/hidden_earth_snake_island_v6/jungle_rainforest_canopy_ambience.wav"
+    direct_media_url: "local://assets/raw_footage/hidden_earth_snake_island_v6/jungle_rainforest_canopy_ambience.wav"
+    license: "CC0"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "First-party synthesized subtropical island canopy & surf atmosphere (CC0)"
+    media_type: "audio"
+    priority_tier: 3
+    intended_use: "Continuous subtropical forest canopy and coastal wind ambience bed"
+    is_first_party_original: true
+
+factual_references:
+  - citation: "Marques, O. A. V., Martins, M., Develey, P. F., Macarrão, A., & Sazima, I. (2012) / Instituto Butantan — Population ecology and arboreal bird-ambush foraging of Bothrops insularis on Ilha da Queimada Grande."
+    url: "https://butantan.gov.br/"
+    supported_claims: "50–90 pit vipers per hectare in forest habitat (no scientific evidence for 5 snakes/m² rumors) and arboreal bird-ambush hunting."
+  - citation: "Zelanis, A. et al. / Instituto Butantan Toxinology — Differential avian venom potency of Bothrops insularis."
+    url: "https://pubmed.ncbi.nlm.nih.gov/"
+    supported_claims: "Bothrops insularis venom exhibits up to 5x higher potency against avian prey than mainland relatives."

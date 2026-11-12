@@ -1,0 +1,247 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 4.266,
+    "word_end_s": 4.041,
+    "next_word_start_s": 4.913,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "twenty-six"
+  },
+  {
+    "time_s": 11.241,
+    "word_end_s": 11.036,
+    "next_word_start_s": 11.445,
+    "pause_s": 0.409,
+    "kind": "breath_pause",
+    "after_word": "pipes"
+  },
+  {
+    "time_s": 12.652,
+    "word_end_s": 12.513,
+    "next_word_start_s": 12.791,
+    "pause_s": 0.278,
+    "kind": "breath_pause",
+    "after_word": "later"
+  },
+  {
+    "time_s": 16.374,
+    "word_end_s": 16.149,
+    "next_word_start_s": 17.021,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "pencils"
+  },
+  {
+    "time_s": 21.892,
+    "word_end_s": 21.667,
+    "next_word_start_s": 22.539,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "flames"
+  },
+  {
+    "time_s": 23.391,
+    "word_end_s": 23.309,
+    "next_word_start_s": 23.473,
+    "pause_s": 0.164,
+    "kind": "breath_pause",
+    "after_word": "later"
+  },
+  {
+    "time_s": 29.008,
+    "word_end_s": 28.814,
+    "next_word_start_s": 29.202,
+    "pause_s": 0.388,
+    "kind": "breath_pause",
+    "after_word": "nose"
+  },
+  {
+    "time_s": 30.624,
+    "word_end_s": 30.479,
+    "next_word_start_s": 30.769,
+    "pause_s": 0.29,
+    "kind": "breath_pause",
+    "after_word": "sixty-two"
+  },
+  {
+    "time_s": 33.428,
+    "word_end_s": 33.295,
+    "next_word_start_s": 33.56,
+    "pause_s": 0.265,
+    "kind": "breath_pause",
+    "after_word": "steel"
+  },
+  {
+    "time_s": 35.855,
+    "word_end_s": 35.63,
+    "next_word_start_s": 36.502,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "dime"
+  },
+  {
+    "time_s": 37.834,
+    "word_end_s": 37.739,
+    "next_word_start_s": 37.929,
+    "pause_s": 0.19,
+    "kind": "breath_pause",
+    "after_word": "unpressurized"
+  },
+  {
+    "time_s": 40.422,
+    "word_end_s": 40.328,
+    "next_word_start_s": 40.517,
+    "pause_s": 0.189,
+    "kind": "breath_pause",
+    "after_word": "weight"
+  },
+  {
+    "time_s": 43.582,
+    "word_end_s": 43.383,
+    "next_word_start_s": 43.781,
+    "pause_s": 0.398,
+    "kind": "breath_pause",
+    "after_word": "climbed"
+  },
+  {
+    "time_s": 46.977,
+    "word_end_s": 46.752,
+    "next_word_start_s": 47.623,
+    "pause_s": 0.871,
+    "kind": "breath_pause",
+    "after_word": "open"
+  },
+  {
+    "time_s": 52.078,
+    "word_end_s": 51.853,
+    "next_word_start_s": 52.724,
+    "pause_s": 0.871,
+    "kind": "breath_pause",
+    "after_word": "frame"
+  },
+  {
+    "time_s": 58.147,
+    "word_end_s": 58.053,
+    "next_word_start_s": 58.242,
+    "pause_s": 0.189,
+    "kind": "breath_pause",
+    "after_word": "circle"
+  },
+  {
+    "time_s": 60.248,
+    "word_end_s": 60.048,
+    "next_word_start_s": 60.447,
+    "pause_s": 0.399,
+    "kind": "breath_pause",
+    "after_word": "engines"
+  },
+  {
+    "time_s": 63.877,
+    "word_end_s": 63.784,
+    "next_word_start_s": 63.969,
+    "pause_s": 0.185,
+    "kind": "breath_pause",
+    "after_word": "colossus"
+  },
+  {
+    "time_s": 65.123,
+    "word_end_s": 64.898,
+    "next_word_start_s": 65.751,
+    "pause_s": 0.853,
+    "kind": "breath_pause",
+    "after_word": "Five"
+  },
+  {
+    "time_s": 68.758,
+    "word_end_s": 68.622,
+    "next_word_start_s": 68.895,
+    "pause_s": 0.273,
+    "kind": "breath_pause",
+    "after_word": "nozzles"
+  },
+  {
+    "time_s": 71.685,
+    "word_end_s": 71.568,
+    "next_word_start_s": 71.803,
+    "pause_s": 0.235,
+    "kind": "breath_pause",
+    "after_word": "batting"
+  },
+  {
+    "time_s": 76.537,
+    "word_end_s": 76.333,
+    "next_word_start_s": 76.741,
+    "pause_s": 0.408,
+    "kind": "breath_pause",
+    "after_word": "sides"
+  },
+  {
+    "time_s": 77.938,
+    "word_end_s": 77.83,
+    "next_word_start_s": 78.045,
+    "pause_s": 0.215,
+    "kind": "breath_pause",
+    "after_word": "eighty-one"
+  },
+  {
+    "time_s": 80.682,
+    "word_end_s": 80.457,
+    "next_word_start_s": 81.328,
+    "pause_s": 0.871,
+    "kind": "breath_pause",
+    "after_word": "completely"
+  },
+  {
+    "time_s": 85.773,
+    "word_end_s": 85.609,
+    "next_word_start_s": 85.937,
+    "pause_s": 0.328,
+    "kind": "breath_pause",
+    "after_word": "tank"
+  },
+  {
+    "time_s": 90.425,
+    "word_end_s": 90.217,
+    "next_word_start_s": 90.634,
+    "pause_s": 0.417,
+    "kind": "breath_pause",
+    "after_word": "diamonds"
+  },
+  {
+    "time_s": 95.376,
+    "word_end_s": 95.151,
+    "next_word_start_s": 96.051,
+    "pause_s": 0.9,
+    "kind": "breath_pause",
+    "after_word": "mass"
+  },
+  {
+    "time_s": 96.858,
+    "word_end_s": 96.702,
+    "next_word_start_s": 97.015,
+    "pause_s": 0.313,
+    "kind": "breath_pause",
+    "after_word": "today"
+  },
+  {
+    "time_s": 102.75,
+    "word_end_s": 102.627,
+    "next_word_start_s": 102.874,
+    "pause_s": 0.247,
+    "kind": "breath_pause",
+    "after_word": "boosters"
+  },
+  {
+    "time_s": 107.0,
+    "word_end_s": 106.481,
+    "next_word_start_s": 107.0,
+    "pause_s": 0.519,
+    "kind": "segment_end",
+    "after_word": "Moon"
+  }
+]

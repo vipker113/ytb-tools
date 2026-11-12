@@ -1,37 +1,25 @@
 ---
 name: pow-qa-and-release
-description: Runs Proof of Wonder quality gates (14-gate technical QA, 6-pillar QA, creative QA, visual contact sheets), reviews them visually, and hands the approved episode to ytb-tools for the user's review. Use when checking a rendered episode, preparing delivery, or when the user asks whether a video is ready to post.
+description: Verifies the final 1 video + 3 sample thumbnails deliverable package and hands off to ytb-tools (Phòng Duyệt & Đăng) for the user's review. Use when checking a rendered episode, preparing delivery, or when the user asks whether a video is ready to post.
 ---
 
-# QA & Release Handoff
+# Proof of Wonder — Fast Deliverable Verification & Release Handoff
 
-## Run all gates
+## Clean Output Deliverable Standard
 
-```bash
-$PY $STUDIO stage6-quality -m $EP                      # 14 technical gates + deliverables + production manifest
-$PY $STUDIO qa-6pillar -m $EP --out-dir <out>/qa       # Media, Semantic, Repetition, Timeline, Technical, Creative
-$PY $STUDIO creative-qc -m $EP                         # severity-graded creative issues
-```
+Every completed episode folder (`youtube-shorts-channel/output/<playlist>/<slug>/`) must stay fast and clean, containing **only**:
+- `<slug>.mp4` (`1` final rendered `1080×1920` `30fps` video)
+- `thumbnail.jpg` (Sample Thumbnail A — Primary)
+- `thumbnail_variant_B.jpg` (Sample Thumbnail B)
+- `thumbnail_variant_C.jpg` (Sample Thumbnail C)
+- `youtube_metadata.md`, `subtitles.srt`, `script.md` (lightweight text metadata read by `ytb-tools` `Phòng Duyệt & Đăng`)
 
-Release requires **both** `technical_approval` and `creative_approval`, zero CRITICAL/MAJOR creative
-issues, storyboard approval matching the current hash (v9 manifests), and voice lock synchronized.
+Running `$PY $STUDIO all -m $EP --mode master` automatically generates these files and prunes all intermediate build directories (`shots/`, `overlays/`, `work_audio/`, `board/`, `planning/`, `qa/`, contact sheets, and JSON/CSV reports).
 
-## Look at the sheets yourself
+## Handoff to `ytb-tools` (`Phòng Duyệt & Đăng`)
 
-Open and inspect (you can read images): `first_3_seconds_audit_sheet.jpg`,
-`transitions_contact_sheet.jpg` / `contact_sheet.jpg`, `native_1to1_pixel_qc_sheet.jpg`,
-`thumbnail_small_preview_sheet.jpg`, `ending_audit_sheet.jpg`. Check: frame 0 shows the real subject
-with the hook text in the top safe zone and no subtitle bar; no macroblocking in dark areas; no
-jitter; captions never cover the subject; overlays inside safe zones; thumbnail readable at 160×284.
-
-## Handoff
-
-1. Confirm `youtube_metadata.md` (title without hashtags, description with sources and credits,
-   tags, pinned comment) and thumbnails `thumbnail.jpg` / `thumbnail_variant_B.jpg` / `_C.jpg` exist.
-2. Tell the user to open `http://localhost:3000` → "Mac Studio Review" → "Quét lại Output".
-3. **Stop.** Publishing/scheduling (default golden window 17:15 VN) happens only on the user's explicit
-   instruction for this episode.
-
-## Failing QA
-
-Use the send-back loop in `pow-executive-producer` (max 2 rounds), then report remaining issues.
+1. Visually inspect `thumbnail.jpg`, `thumbnail_variant_B.jpg`, and `thumbnail_variant_C.jpg` (via `read_file`) to confirm:
+   - Each follows the **Visual-Cue Thumbnail Standard**: clear foreground cutout/inset + smooth curved arrow pointing directly at the phenomenon + unmistakable status badge (`✕` / `?` / `!` / `✓`) on the arrow + legible 2-line English hook headline (`<= 8` words) with zero text/graphic collisions.
+2. Verify `http://localhost:3000` is running (`curl -sI http://localhost:3000/api/mac-outputs | head -n 5`).
+3. Present the finished `<slug>.mp4` and the 3 sample thumbnails (`thumbnail.jpg`, `thumbnail_variant_B.jpg`, `thumbnail_variant_C.jpg`) to the user in Vietnamese.
+4. **Never publish to YouTube yourself** (`cli.py publish` or `/api/youtube/upload`) unless the user explicitly instructs you to upload/publish.

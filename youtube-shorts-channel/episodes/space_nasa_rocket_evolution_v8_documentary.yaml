@@ -1,0 +1,1322 @@
+manifest_version: "8.0"
+script_version: "v8.0.0"
+subtitle_version: "v8.0.0"
+channel_name: "Proof of Wonder"
+playlist: "Space & Universe"
+slug: "space-nasa-rocket-evolution-v8"
+topic: "100 Years of NASA & American Rocket Evolution (1926–2026) — From Goddard's Naked Metal Pipes & Vanguard's Pencil Collapse to Saturn V F-1 Nozzles, Shuttle Shock Diamonds & Artemis SLS"
+
+style_profile: "space_discovery"
+style_overrides:
+  asset_selection:
+    target_moving_footage_ratio: 0.88
+    target_genuine_moving_footage_ratio: 0.88
+    target_meaningful_action_footage_ratio: 0.80
+    max_static_image_ratio: 0.12
+    max_still_photo_ratio: 0.12
+    max_scientific_visualization_ratio: 0.05
+    max_duration_share_per_asset: 0.20
+    min_human_interaction_shots: 3
+  viral_retention:
+    max_opening_still_duration_s: 5.0
+  pacing:
+    min_shot_duration_s: 2.2
+  subtitles:
+    style: "cinema_boxless"
+
+adaptive_duration_mode: true
+enforce_target_duration_bounds: false
+enable_intelligent_scene_editing: true
+adaptive_audio_profile: "immersive_exploration"
+
+voice_input_mode: "directed_tts"
+voice_direction_profile: "mysterious_discovery"
+voice: "en-GB-RyanNeural"
+annotated_voice_script_file: "episodes/space_nasa_rocket_evolution_v8_voice_script.txt"
+opening_hook_type: "surprising_visual"
+
+primary_title: "Rocket Evolution 100 Years: From Naked Pipes to Moon Giants"
+alternative_title: "How Rockets Evolved Over 100 Years (1926 to NASA Artemis)"
+
+youtube_description: |
+  In March 1926, Robert H. Goddard launched the world's first liquid-fueled rocket ("Nell") in Auburn, Massachusetts: a bare 10-foot frame with no outer aerodynamic skin and no nose cone, pulling two fuel tanks beneath an exposed top nozzle on naked metal pipes.
+
+  Over the next century, rocket hardware transformed decade by decade through trial, failure, and radical structural architecture:
+  • 1957–1958: Slender orbital "metal pencils" — Vanguard TV-3 collapsing into flames on Cape Canaveral Pad 18A, followed weeks later by Juno I spinning an open tub of 11 scaled-down solid rocket tubes to place Explorer 1 in orbit.
+  • 1962: NASA's gleaming stainless-steel Mercury-Atlas "balloon tank" whose walls (<1 mm, thinner than a dime) would crumple under their own weight if depressurized, staging 1.5-stage side boosters mid-climb.
+  • 1965–1966: Open-truss Titan II interstages for Gemini and Saturn IB's cluster of eight narrow Redstone/Jupiter tanks bolted in a circle above eight H-1 engines.
+  • 1969: The 36-story Saturn V firing five cavernous F-1 nozzles wrapped in silver thermal batting (7.5 million lbf thrust) as cryogenic ice cascaded down its hull.
+  • 1981: Asymmetric Space Shuttle architecture pairing a black ceramic-tiled winged glider beside an external liquid-hydrogen/oxygen tank and three computer-throttled RS-25 main engines glowing with Mach shock diamonds.
+  • Today: Governed by the Tsiolkovsky rocket equation (~90% propellant mass fraction), NASA's Space Launch System (Artemis) pairs four upgraded RS-25 engines with twin solid rocket boosters for 8.8 million pounds of thrust back toward the Moon.
+
+  Footage & Photography: Public Domain — NASA, JPL, Marshall Space Flight Center, Kennedy Space Center, Stennis Space Center & U.S. National Archives (via NASA Images & Wikimedia Commons).
+
+hashtags:
+  - "#RocketEvolution"
+  - "#NASA"
+  - "#SpaceHistory"
+  - "#SaturnV"
+  - "#Artemis"
+  - "#ProofOfWonder"
+
+target_duration_min_s: 75.0
+target_duration_max_s: 112.0
+ambience_preset: "deep_space"
+ambience_ducked_lufs_target: -26.5
+nat_sound_bed_file: "cape_canaveral_pad_ambience.wav"
+nat_sound_bed_range_s: [0.0, 109.0]
+nat_sound_gain_db: -16.5
+
+raw_assets_dir: "assets/raw_footage/space_rocket_evolution_v8"
+output_dir: "output/space-and-universe/space-nasa-rocket-evolution-v8"
+
+editorial_formula:
+  hook_max_start_s: 1.5
+  layer2_pivot_seg_id: "N04"
+  scientific_caveat_seg_id: "N07"
+  min_real_evidence_ratio: 0.95
+
+hook_candidates:
+  - hook_id: "H1"
+    archetype: "surprising_visual"
+    spoken_line: "Look closely at the machine that launched modern rocketry in nineteen twenty-six. It had no outer skin and no nose cone—just a tiny nozzle pulling two fuel tanks on naked metal pipes."
+    opening_visual: "14-megapixel NASA master photograph of Dr. Robert Goddard holding his 1926 bare skeletal pipe-frame rocket 'Nell' in the snow, followed by animated naked-pipe anatomy and lab close-up"
+    src_file: "goddard_1926_nell_4k.jpg"
+    promise_fulfilled_in_seg_id: "N07"
+    rationale: "Instant razor-sharp Frame-0 visual shock contrasting 1926 naked plumbing pipes against modern multi-million-pound NASA Moon rockets."
+  - hook_id: "H2"
+    archetype: "paradox"
+    spoken_line: "In nineteen sixty-two, NASA's orbital rocket had stainless-steel walls thinner than a dime—left unpressurized, it would crumple under its own weight."
+    opening_visual: "Gleaming stainless-steel Mercury-Atlas lifting off from Cape Canaveral"
+    src_file: "mercury_atlas_glenn_broll_720p.webm"
+    promise_fulfilled_in_seg_id: "N03"
+    rationale: "Counterintuitive structural physics of pressurized balloon tanks."
+
+thumbnail_spec:
+  src_file: "rocket_evolution_100y_plate_B.png"
+  headline_text: "ROCKET EVOLUTION|100 YEARS"
+  kicker_text: ""
+  cx: 0.50
+  cy: 0.50
+  zoom: 1.00
+  shadow_lift: 0.0
+  clarity_boost: false
+  text_position: "bottom"
+  accent_rgb: [255, 212, 59]
+
+thumbnail_concepts:
+  - concept_id: "A"
+    src_file: "rocket_evolution_100y_plate_B.png"
+    headline_text: "ROCKET EVOLUTION|100 YEARS"
+    kicker_text: ""
+    cx: 0.50
+    cy: 0.50
+    zoom: 1.00
+    shadow_lift: 0.0
+    clarity_boost: false
+    text_position: "bottom"
+    accent_rgb: [255, 212, 59]
+    concept_rationale: "4-column chronological lineup: crisp early rockets (1926 naked pipes, 1957 pencil Vanguard) escalating into blurred dark mystery rocket silhouettes with glowing '?' for 1981 ? and 2026 ?."
+  - concept_id: "B"
+    src_file: "rocket_evolution_100y_plate_A.png"
+    headline_text: "ROCKET EVOLUTION|100 YEARS"
+    kicker_text: ""
+    cx: 0.50
+    cy: 0.50
+    zoom: 1.00
+    shadow_lift: 0.0
+    clarity_boost: false
+    text_position: "bottom"
+    accent_rgb: [255, 212, 59]
+    concept_rationale: "Split comparison hero: three stacked early NASA/Goddard rocket frames (1926, 1957, 1966) vs towering blurred dark 2026 ? super-rocket silhouette."
+  - concept_id: "C"
+    src_file: "rocket_evolution_100y_plate_C.png"
+    headline_text: "ROCKET EVOLUTION|100 YEARS"
+    kicker_text: ""
+    cx: 0.50
+    cy: 0.50
+    zoom: 1.00
+    shadow_lift: 0.0
+    clarity_boost: false
+    text_position: "bottom"
+    accent_rgb: [255, 212, 59]
+    concept_rationale: "Bold 3-column mobile-first contrast: 1926 naked pipes | 1957 Vanguard explosion | 2026 ? shadowed super-rocket silhouette."
+
+narration_segments:
+  - seg_id: "N01"
+    text: "Look closely at the machine that launched modern rocketry in nineteen twenty-six. It had no outer skin and no nose cone—just a tiny nozzle pulling two fuel tanks on naked metal pipes."
+    delivery: "HOOK"
+    pace: "MODERATE"
+    energy: 4
+    pause_after_ms: 320
+    emphasis_words: ["nineteen", "twenty-six", "outer", "skin", "naked", "metal", "pipes"]
+    narrative_beat: "opening_hook"
+    viewer_question: "How did a bare metal pipe frame with an upside-down nozzle evolve into giant Moon rockets?"
+    new_information: "Goddard's 1926 rocket 'Nell' had zero aerodynamic skin or nose cone—an exposed top nozzle pulling two fuel tanks on naked metal pipes."
+    visual_reveal: "16mm archival film of Goddard's skeletal pipe-frame rocket firing downward flames, paired with the March 16, 1926 photograph and crew carrying the bare rocket."
+    emotional_direction: "Quiet amazement at how raw and awkward modern rocketry began"
+    retention_purpose: "Stop scrolling at Frame 0 with an unrecognizable bare-pipe 1926 rocket firing live flame"
+
+  - seg_id: "N02"
+    text: "Thirty years later, early orbital rockets still looked like fragile metal pencils. In nineteen fifty-seven, Vanguard lifted four feet before collapsing into flames. Weeks later, Juno One reached orbit by spinning an exposed tub of eleven miniature rocket tubes bolted to its nose."
+    delivery: "MEASURED EVIDENCE"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_ms: 300
+    emphasis_words: ["fragile", "metal", "pencils", "collapsing", "flames", "eleven", "miniature", "rocket", "tubes"]
+    narrative_beat: "curiosity_gap"
+    viewer_question: "How did NASA move beyond fragile 1-meter-wide pencil rockets and spinning rocket tubs?"
+    new_information: "In Dec 1957 Vanguard TV-3 lifted 4 feet before exploding on the pad; in Jan 1958 Juno I reached orbit using a spinning nose tub of 11 small solid rockets."
+    visual_reveal: "Slender 1950s orbital pencil rocket, Vanguard collapsing into a massive fireball on Cape Canaveral Pad 18A, and JPL engineers assembling Juno I's exposed upper-stage rocket tubes."
+    emotional_direction: "Grounded historical tension from explosive failure to improvised orbital breakthrough"
+    retention_purpose: "Deliver visceral pad-explosion action and bizarre exposed 1958 hardware"
+
+  - seg_id: "N03"
+    text: "By nineteen sixty-two, NASA's Mercury-Atlas gleamed like solid steel—yet its tank walls were thinner than a dime. Left unpressurized, the entire rocket would crumple under its own weight, dropping two side boosters mid-sky as it climbed."
+    delivery: "SCIENTIFIC WONDER"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_ms: 300
+    emphasis_words: ["thinner", "dime", "crumple", "dropping", "two", "side", "boosters"]
+    narrative_beat: "evidence_and_discovery"
+    viewer_question: "What did mid-1960s multi-stage rockets look like as payloads grew heavier?"
+    new_information: "Mercury-Atlas used pressurized stainless-steel balloon tanks thinner than a dime (<1 mm) and staged two booster engines mid-flight ('1.5-stage' design)."
+    visual_reveal: "Gleaming stainless-steel Mercury-Atlas igniting on Pad 14, thin cylindrical rocket shell hoisting, and Atlas climbing mid-sky."
+    emotional_direction: "Scientific intrigue at razor-thin structural engineering"
+    retention_purpose: "Reveal the hidden fragility inside gleaming 1962 stainless steel"
+
+  - seg_id: "N04"
+    text: "Mid-sixties rockets left raw machinery wide open. Gemini's Titan Two fired twin engines inside an exposed steel frame. And for Saturn One-B in nineteen sixty-six, NASA bolted eight narrow missile tanks in a circle—above eight tightly packed engines."
+    delivery: "MEASURED EVIDENCE"
+    pace: "NATURAL"
+    energy: 3
+    pause_after_ms: 320
+    emphasis_words: ["exposed", "steel", "frame", "eight", "narrow", "missile", "tanks", "eight", "engines"]
+    narrative_beat: "escalation"
+    viewer_question: "What happened when NASA replaced bundled missile tanks with a purpose-built Moon giant?"
+    new_information: "Gemini Titan II used an open truss interstage for hot-staging, while 1966 Saturn IB bundled eight Redstone/Jupiter tanks in a circle over eight H-1 engines."
+    visual_reveal: "Exposed rocket engine truss plumbing, color 1965 Gemini Titan II launch, and NASA Marshall film showing Saturn IB's literal ring of eight narrow cylindrical tanks."
+    emotional_direction: "Observational clarity showing transitional clustered machinery"
+    retention_purpose: "Mid-video visual escalation showing literal 8-tank bundled rocket anatomy before Saturn V"
+
+  - seg_id: "N05"
+    text: "Then nineteen sixty-nine unveiled a thirty-six-story colossus: Saturn Five. Beneath its hull hung five cavernous F-1 nozzles—each nearly four meters wide in rough silver batting—unleashing seven point five million pounds of thrust as ice cascaded down its sides."
+    delivery: "ESCALATION"
+    pace: "MODERATE"
+    energy: 4
+    pause_after_ms: 340
+    emphasis_words: ["thirty-six-story", "Saturn", "Five", "five", "cavernous", "F-1", "nozzles", "seven", "point", "five", "million"]
+    narrative_beat: "escalation"
+    viewer_question: "Why did NASA abandon tall cylindrical stacks in 1981 for a completely asymmetric rocket?"
+    new_information: "Saturn V stood 36 stories tall with five 3.7-meter-wide F-1 nozzles wrapped in silver thermal batting generating 7.5 million lbf thrust."
+    visual_reveal: "Towering 36-story Saturn V stack, NASA technician dwarfed beside five giant F-1 nozzles at Michoud, and Apollo 11's 500-fps Camera E-8 capturing F-1 ignition and cascading ice."
+    emotional_direction: "Monumental awe at human-scale vs F-1 nozzle scale and 500-fps slow-motion fire"
+    retention_purpose: "Deliver iconic 500-fps Camera E-8 close-up of F-1 ignition and falling cryogenic ice"
+
+  - seg_id: "N06"
+    text: "In nineteen eighty-one, rocket geometry broke symmetry completely. The Space Shuttle mounted a black ceramic-tiled glider beside a giant orange tank, firing three computer-throttled hydrogen engines glowing with blue shock diamonds."
+    delivery: "SCIENTIFIC WONDER"
+    pace: "MODERATE"
+    energy: 3
+    pause_after_ms: 300
+    emphasis_words: ["broke", "symmetry", "ceramic-tiled", "glider", "orange", "tank", "blue", "shock", "diamonds"]
+    narrative_beat: "payoff"
+    viewer_question: "What does NASA's modern Moon rocket look like after a full century of evolution?"
+    new_information: "In 1981 the Space Shuttle introduced side-mounted winged ceramic-tile orbiter geometry with an external hydrogen tank and three computer-throttled RS-25 engines."
+    visual_reveal: "Space Shuttle Atlantis mounted beside its orange external tank climbing to orbit, paired with close-up RS-25 liquid-hydrogen firing glowing with crisp blue-white shock diamonds."
+    emotional_direction: "Crisp appreciation of radical aerodynamic asymmetry and clean hydrogen propulsion"
+    retention_purpose: "Contrast cylindrical Saturn V with side-mounted winged Shuttle and glowing shock diamonds"
+
+  - seg_id: "N07"
+    text: "Physics still forces propellant to fill nearly ninety percent of every rocket's mass. Yet today, NASA's Artemis super-rocket fuses four laser-upgraded RS-25 engines with twin boosters—unleashing eight point eight million pounds of thrust back toward the Moon."
+    delivery: "EMOTIONAL REFLECTION"
+    pace: "SLOW"
+    energy: 4
+    pause_after_ms: 420
+    emphasis_words: ["ninety", "percent", "Artemis", "super-rocket", "four", "RS-25", "eight", "point", "eight", "million", "Moon"]
+    narrative_beat: "final_impression"
+    viewer_question: "What will rockets look like another hundred years from 1926's naked metal pipes?"
+    new_information: "Rocket equation physics still demands ~90% propellant mass fraction, yet NASA's Artemis SLS combines four modernized RS-25 engines and twin boosters for 8.8 million lbf thrust."
+    visual_reveal: "Massive multi-story cryogenic propellant hull, 4K close-up underneath Artemis SLS's four RS-25 engine bells at Kennedy Space Center, and Artemis I's 8.8-million-pound night launch lighting up Pad 39B."
+    emotional_direction: "Resonant century-spanning payoff grounded in real orbital physics"
+    retention_purpose: "State the honest Tsiolkovsky mass-fraction constraint while closing on 4K Artemis engine bells and thunderous Pad 39B liftoff"
+
+sfx_cues: []
+
+shots:
+  - sid: "S01"
+    start_s: 0.000
+    end_s: 4.850
+    kind: "still_parallax_25d"
+    src_file: "goddard_1926_nell_4k.jpg"
+    source_media_class: "STILL_PHOTO"
+    essential_historical_or_scientific_evidence: true
+    visible_action: "Dr. Robert H. Goddard standing in snowy Auburn, Massachusetts holding the bare 10-foot skeletal metal pipe frame of his March 16, 1926 rocket 'Nell'"
+    visual_objective: "Stop scrolling immediately at Frame 0 with a razor-sharp 4K master archival scan of the bizarre 1926 naked-pipe machine that launched modern rocketry"
+    progression_dimension: "new_subject"
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.47
+    cx1: 0.47
+    cy1: 0.44
+    z0: 1.03
+    z1: 1.08
+    crop_rationale: "4K 3297x4296 scan framing Dr. Goddard and the entire bare skeletal 1926 pipe rocket edge-to-edge in crystal-clear 9:16 detail."
+    transition_in: "cut"
+    transition_reason: "Instant Frame-0 4K reveal of the March 16, 1926 rocket 'Nell'."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N01"
+    associated_narration_concept: "Look closely at the machine that launched modern rocketry in nineteen twenty-six."
+    editorial_rationale: "Direct, unmistakable 4K archival photograph of the exact March 16, 1926 machine as the narrator tells viewers to look closely."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "March 16, 1926 Goddard rocket 'Nell' in 4K archival detail"
+    visual_desc: "14-megapixel NASA Goddard archival master photograph of Dr. Robert H. Goddard holding his March 16, 1926 liquid-fuel rocket 'Nell'."
+
+  - sid: "S02"
+    start_s: 4.850
+    end_s: 7.400
+    kind: "video_full"
+    src_file: "goddard_1926_no_skin_schematic_1080p.mp4"
+    src_in: 0.0
+    source_media_class: "INFOGRAPHIC"
+    context_note: "1926 Goddard Rocket Schematic"
+    visible_action: "Animated engineering blueprint peeling away a dashed nose cone and outer fuselage to highlight Goddard's exposed top nozzle firing downward between naked pipes"
+    visual_objective: "Demonstrate visually why the 1926 rocket had zero outer skin and zero nose cone"
+    progression_dimension: "closer_inspection"
+    camera_perspective: "close_up"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.50
+    cy1: 0.50
+    z0: 1.00
+    z1: 1.02
+    crop_rationale: "Native 1080x1920 kinematic schematic keeping all callouts cleanly above the subtitle zone."
+    transition_in: "cut"
+    transition_reason: "Exact 0.87s breath-pause cut after 'twenty-six' illustrating the missing outer skin and nose cone."
+    is_real_evidence: false
+    has_human_interaction: false
+    associated_seg_id: "N01"
+    associated_narration_concept: "It had no outer skin and no nose cone—"
+    editorial_rationale: "Clarifies the counterintuitive inverted geometry of Goddard's skinless 1926 rocket in 2.55 seconds."
+    subject_match_kind: "illustrative_diagram"
+    scientific_claim_status: "illustrative_visualization"
+    story_beat: "Animated schematic of missing nose cone and missing outer skin"
+    visual_desc: "Original 1080x1920 30fps kinematic engineering schematic showing Goddard's inverted top nozzle, missing nose cone, and naked pipes."
+
+  - sid: "S03"
+    start_s: 7.400
+    end_s: 11.241
+    kind: "still_parallax_25d"
+    src_file: "goddard_1925_naked_pipes_lab.jpg"
+    source_media_class: "STILL_PHOTO"
+    essential_historical_or_scientific_evidence: true
+    visible_action: "Dr. Robert H. Goddard standing beside his exposed liquid-fuel rocket assembly in the laboratory, clearly showing the tiny top nozzle suspended above naked metal pipes and dual fuel tanks"
+    visual_objective: "Show crystal-clear laboratory photographic proof of the tiny top nozzle pulling two fuel tanks on naked metal pipes"
+    progression_dimension: "new_evidence"
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "gentle_drift"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.46
+    cx1: 0.47
+    cy1: 0.51
+    z0: 1.04
+    z1: 1.09
+    crop_rationale: "Frames the bare top combustion nozzle, bowed naked metal pipes, and lower cylindrical fuel tanks against the crisp white lab backdrop."
+    transition_in: "cut"
+    transition_reason: "Em-dash pause cut after 'cone' onto close-up laboratory photo of the top nozzle, naked pipes, and fuel tanks."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N01"
+    associated_narration_concept: "just a tiny nozzle pulling two fuel tanks on naked metal pipes."
+    editorial_rationale: "High-resolution NASA archival laboratory photograph proving the exact top-nozzle + naked-pipes + lower-tanks architecture."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Laboratory close-up of Goddard's top nozzle, naked metal pipes, and dual fuel tanks"
+    visual_desc: "High-resolution NASA photograph (GPN-2002-000139) of Robert Goddard beside his exposed naked-pipe liquid-fuel rocket."
+
+  - sid: "S04"
+    start_s: 11.241
+    end_s: 16.374
+    kind: "video_full"
+    src_file: "explorer1_vanguard_juno_1958_hd.mp4"
+    src_in: 21.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Slender pencil-thin late-1950s American orbital rocket rising out of pad smoke on a narrow column of flame"
+    visual_objective: "Show how thin and fragile 1957–1958 orbital rockets looked—like narrow metal pencils"
+    progression_dimension: "new_perspective"
+    camera_perspective: "medium"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.505
+    cx1: 0.50
+    cy1: 0.505
+    z0: 1.18
+    z1: 1.22
+    crop_rationale: "Strictly inside active y=[57..1031] archival frame so zero top or bottom black border pixels appear."
+    transition_in: "cut"
+    transition_reason: "Exact 0.41s segment-pause cut after 'pipes' jumping 30 years forward."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "Thirty years later, early orbital rockets still looked like fragile metal pencils."
+    editorial_rationale: "Direct visual match to 'fragile metal pencils'."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Late-1950s fragile metal-pencil orbital rocket"
+    visual_desc: "1080p NASA archival transfer of an early pencil-thin 1958 orbital launch vehicle."
+
+  - sid: "S05"
+    start_s: 16.374
+    end_s: 21.892
+    kind: "video_full"
+    src_file: "vanguard_1958_explosion_1080p.mp4"
+    src_in: 23.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Pencil-thin Vanguard rocket lifting slightly off Cape Canaveral Pad 18A before buckling and collapsing into an enormous fireball explosion"
+    visual_objective: "Deliver literal archival action of Vanguard lifting slightly and collapsing into flames"
+    progression_dimension: "new_action"
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.48
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.48
+    z0: 1.06
+    z1: 1.10
+    shadow_lift: 0.08
+    crop_rationale: "Centers the slender Vanguard rocket on the pad as its base buckles into a massive billowing fireball right on 'flames'."
+    transition_in: "cut"
+    transition_reason: "Exact 0.87s breath-pause cut after 'pencils' into Vanguard's pad collapse."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N02"
+    associated_narration_concept: "In nineteen fifty-seven, Vanguard lifted four feet before collapsing into flames."
+    editorial_rationale: "Timed so the pad explosion erupts right as the narrator says 'collapsing into flames'."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1957 Vanguard pencil rocket collapsing into flames"
+    visual_desc: "Archival newsreel film of the slender Project Vanguard rocket igniting and exploding into a giant fireball on the pad."
+
+  - sid: "S06"
+    start_s: 21.892
+    end_s: 29.008
+    kind: "video_full"
+    src_file: "jpl_explorer1_1958_archive.webm"
+    src_in: 44.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Two JPL engineers in white lab coats inspecting and aligning Juno I's exposed miniature solid-rocket upper-stage tubes by hand"
+    visual_objective: "Show the exposed miniature rocket tubes bolted to Juno I's nose to reach orbit in January 1958"
+    progression_dimension: "new_evidence"
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "medium"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.48
+    cx1: 0.54
+    cy1: 0.47
+    z0: 1.06
+    z1: 1.10
+    crop_rationale: "Frames the two JPL engineers holding and aligning the miniature Sergeant solid rocket tube stage."
+    transition_in: "cut"
+    transition_reason: "Exact 0.87s breath-pause cut after 'flames' to JPL's miniature solid rocket tubes."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N02"
+    associated_narration_concept: "Weeks later, Juno One reached orbit by spinning an exposed tub of eleven miniature rocket tubes bolted to its nose."
+    editorial_rationale: "Hands-on 1958 JPL assembly footage proving how small and exposed America's first orbital upper-stage rockets were."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1958 JPL engineers assembling Juno I miniature rocket tubes"
+    visual_desc: "1958 NASA/JPL archival film of engineers in white coats assembling the Explorer 1 / Juno I solid rocket stage."
+
+  - sid: "S07"
+    start_s: 29.008
+    end_s: 35.855
+    kind: "video_full"
+    src_file: "mercury_atlas_glenn_broll_720p.webm"
+    src_in: 211.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Gleaming bare stainless-steel Mercury-Atlas rocket thundering off Cape Canaveral Pad 14 on twin booster + sustainer engines"
+    visual_objective: "Show the mirror-bright pressurized stainless-steel 'balloon tank' hull of 1962 Mercury-Atlas in active launch"
+    progression_dimension: "new_action"
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.45
+    cy0: 0.50
+    cx1: 0.47
+    cy1: 0.46
+    z0: 1.10
+    z1: 1.14
+    shadow_lift: 0.08
+    crop_rationale: "Centers the gleaming pressurized stainless-steel Atlas hull and flared booster skirt as it climbs."
+    transition_in: "cut"
+    transition_reason: "Exact 0.39s segment-pause cut after 'nose' to 1962 gleaming stainless-steel Mercury-Atlas."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "By nineteen sixty-two, NASA's Mercury-Atlas gleamed like solid steel—yet its tank walls were thinner than a dime."
+    editorial_rationale: "Direct visual match to 'gleamed like solid steel' while explaining the dime-thin pressurized balloon tank."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1962 Mercury-Atlas stainless-steel balloon-tank liftoff"
+    visual_desc: "NASA 1962 film of John Glenn's stainless-steel Mercury-Atlas lifting off."
+
+  - sid: "S08"
+    start_s: 35.855
+    end_s: 40.422
+    kind: "video_full"
+    src_file: "michoud_apollo_saturn_assembly_hd.mp4"
+    src_in: 6.2
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Thin-walled cylindrical NASA rocket propellant stage suspended vertically inside a high-bay structural assembly tower"
+    visual_objective: "Illustrate thin-walled cylindrical rocket tank construction requiring internal structural support or pressure"
+    progression_dimension: "closer_inspection"
+    camera_perspective: "close_up"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.53
+    cy0: 0.48
+    cx1: 0.53
+    cy1: 0.44
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.10
+    crop_rationale: "Frames the tall thin-skinned cylindrical rocket tank stage inside the NASA assembly bay."
+    transition_in: "cut"
+    transition_reason: "Exact 0.87s breath-pause cut after 'dime' showing thin-walled rocket tank structure."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "Left unpressurized, the entire rocket would crumple under its own weight,"
+    editorial_rationale: "Visualizes lightweight cylindrical tank walls inside NASA's vertical bay."
+    subject_match_kind: "contextual_fieldwork"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Thin-walled cylindrical rocket tank structure"
+    visual_desc: "NASA archival HD film of a cylindrical rocket tank stage inside the vertical assembly bay."
+
+  - sid: "S09"
+    start_s: 40.422
+    end_s: 43.582
+    kind: "video_full"
+    src_file: "mercury_atlas_glenn_broll_720p.webm"
+    src_in: 270.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Mercury-Atlas climbing high into the upper atmosphere on twin booster + sustainer plumes prior to booster drop"
+    visual_objective: "Show Mercury-Atlas climbing mid-sky as it stages its side booster engines"
+    progression_dimension: "new_perspective"
+    camera_perspective: "wide"
+    visual_complexity: "medium"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.46
+    cy0: 0.46
+    cx1: 0.46
+    cy1: 0.43
+    z0: 1.12
+    z1: 1.16
+    crop_rationale: "Centers the climbing Mercury-Atlas high in the sky trailing bright twin-booster exhaust."
+    transition_in: "cut"
+    transition_reason: "Exact 0.19s clause-pause cut after 'weight' onto Mercury-Atlas climbing mid-sky."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N03"
+    associated_narration_concept: "dropping two side boosters mid-sky as it climbed."
+    editorial_rationale: "Tracks Atlas climbing steeply mid-sky."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Mercury-Atlas mid-sky ascent"
+    visual_desc: "1962 NASA tracking camera following Mercury-Atlas climbing high into the sky."
+
+  - sid: "S10"
+    start_s: 43.582
+    end_s: 46.977
+    kind: "video_full"
+    src_file: "saturn_ib_story_1080p.mp4"
+    src_in: 266.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Close-up of raw unshrouded mid-1960s rocket engine bell, turbopump lines, and open steel tubular thrust struts"
+    visual_objective: "Show how mid-1960s NASA rockets left raw engine plumbing and steel trusses wide open"
+    progression_dimension: "closer_inspection"
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.50
+    cx1: 0.52
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.12
+    crop_rationale: "Frames the exposed ribbed rocket nozzle and open tubular steel support struts."
+    transition_in: "cut"
+    transition_reason: "Exact 0.40s segment-pause cut after 'climbed' onto exposed mid-sixties rocket machinery."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N04"
+    associated_narration_concept: "Mid-sixties rockets left raw machinery wide open."
+    editorial_rationale: "Literal close-up of wide-open mid-sixties rocket machinery and steel struts."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Exposed mid-1960s rocket engine struts and raw plumbing"
+    visual_desc: "NASA MSFC close-up film of an exposed 1960s rocket engine mounted inside open tubular steel struts."
+
+  - sid: "S11"
+    start_s: 46.977
+    end_s: 52.078
+    kind: "video_full"
+    src_file: "gemini_titan2_launch_hd049.mp4"
+    src_in: 4.1
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Gemini's metallic Titan II rocket igniting twin hypergolic engines in brilliant orange flame and rising beside the exposed red-orange steel erector tower at Pad 19"
+    visual_objective: "Show crisp 720p NASA HD film of Gemini Titan II firing twin engines beside its exposed steel launch frame"
+    progression_dimension: "new_action"
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.52
+    cx1: 0.50
+    cy1: 0.46
+    z0: 1.08
+    z1: 1.12
+    crop_rationale: "Centers the igniting Titan II twin-engine plume and adjacent red-orange exposed steel tower cleanly inside 9:16."
+    transition_in: "cut"
+    transition_reason: "Exact 0.87s breath-pause cut after 'open' to Gemini Titan II's twin-engine liftoff."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N04"
+    associated_narration_concept: "Gemini's Titan Two fired twin engines inside an exposed steel frame."
+    editorial_rationale: "Authentic NASA HD Resource Reel scan of Gemini Titan II firing twin engines at Pad 19."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1965 Gemini Titan II twin-engine HD launch"
+    visual_desc: "Crisp NASA HD Resource Reel 16mm transfer of Gemini Titan II firing twin engines and climbing past Pad 19's steel tower."
+
+  - sid: "S12"
+    start_s: 52.078
+    end_s: 60.248
+    kind: "video_full"
+    src_file: "saturn_ib_story_1080p.mp4"
+    src_in: 86.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Saturn IB S-IB first stage inside NASA Marshall assembly bay clearly showing eight narrow Redstone/Jupiter missile tanks bolted in a circle"
+    visual_objective: "Prove visually that 1966 Saturn IB literally bundled eight narrow cylindrical missile tanks in a circle"
+    progression_dimension: "closer_inspection"
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.52
+    cy0: 0.48
+    cx1: 0.56
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.12
+    shadow_lift: 0.08
+    crop_rationale: "Centers the unmistakable bundle of eight narrow cylindrical missile tanks bolted around the Saturn IB core."
+    transition_in: "cut"
+    transition_reason: "Exact 0.87s breath-pause cut after 'frame' revealing Saturn IB's literal 8-tank bundled structure."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N04"
+    associated_narration_concept: "And for Saturn One-B in nineteen sixty-six, NASA bolted eight narrow missile tanks in a circle—above eight tightly packed engines."
+    editorial_rationale: "1:1 literal visual proof of the 8 clustered missile tanks described in the narration."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1966 Saturn IB eight clustered missile tanks"
+    visual_desc: "NASA Marshall Space Flight Center film showing Saturn IB's cluster of eight narrow cylindrical tanks."
+
+  - sid: "S13"
+    start_s: 60.248
+    end_s: 65.123
+    kind: "video_full"
+    src_file: "power_for_apollo_saturn5_1080p.webm"
+    src_in: 22.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Vertical NASA camera sweep straight down the towering 36-story white-and-black hull of the Saturn V Moon rocket"
+    visual_objective: "Reveal the monumental 36-story vertical scale of the real 1969 Saturn V hull"
+    progression_dimension: "scale_shift"
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.52
+    z0: 1.06
+    z1: 1.10
+    crop_rationale: "Centers the colossal white-and-black Saturn V S-II and S-IC stages as the camera tilts down the 36-story stack."
+    transition_in: "cut"
+    transition_reason: "Exact 0.40s segment-pause cut after 'engines' introducing the 36-story 1969 Saturn V."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "Then nineteen sixty-nine unveiled a thirty-six-story colossus: Saturn Five."
+    editorial_rationale: "Sweeps vertically down the actual 36-story Saturn V hull before diving beneath its five F-1 nozzles in S14."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "1969 Saturn V 36-story colossus hull sweep"
+    visual_desc: "1080p NASA film tilting vertically down the towering 36-story Saturn V Moon rocket."
+
+  - sid: "S14"
+    start_s: 65.123
+    end_s: 71.685
+    kind: "video_full"
+    src_file: "michoud_apollo_saturn_assembly_hd.mp4"
+    src_in: 28.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "NASA technician in white work clothes standing on scaffolding dwarfed beside Saturn V's five cavernous 4-meter-wide F-1 engine nozzles"
+    visual_objective: "Prove the cavernous ~4-meter diameter of each F-1 nozzle using real human-scale fieldwork"
+    progression_dimension: "closer_inspection"
+    camera_perspective: "scientific_fieldwork"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.56
+    cy0: 0.48
+    cx1: 0.52
+    cy1: 0.46
+    z0: 1.08
+    z1: 1.12
+    crop_rationale: "Centers the five massive red-capped F-1 nozzles with the NASA technician standing right beside them for jaw-dropping human scale."
+    transition_in: "cut"
+    transition_reason: "Exact 0.85s breath-pause cut after 'Five' onto the five cavernous F-1 nozzles."
+    is_real_evidence: true
+    has_human_interaction: true
+    associated_seg_id: "N05"
+    associated_narration_concept: "Beneath its hull hung five cavernous F-1 nozzles—each nearly four meters wide in rough silver batting—"
+    editorial_rationale: "Real human technician beside the five F-1 bells makes 'nearly four meters wide' viscerally undeniable."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Five cavernous 4-meter F-1 nozzles beside NASA technician"
+    visual_desc: "1080p NASA Michoud film showing a technician dwarfed beside the five F-1 engine nozzles of Saturn V."
+
+  - sid: "S15"
+    start_s: 71.685
+    end_s: 76.537
+    kind: "video_full"
+    src_file: "apollo11_f1_500fps_camera_e8_720p.ogv"
+    src_in: 124.5
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Apollo 11 Pad Camera E-8 at 500 fps capturing the rough silver-batted F-1 nozzle roaring at 7.5 million pounds of thrust as cryogenic ice cascades past hold-down arms"
+    visual_objective: "Show the rough silver thermal batting, blinding 7.5M-lbf F-1 flame, and cascading ice in 500-fps slow motion"
+    progression_dimension: "new_action"
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.46
+    cy0: 0.48
+    cx1: 0.46
+    cy1: 0.45
+    z0: 1.06
+    z1: 1.10
+    crop_rationale: "Frames the silver-batted F-1 nozzle, incandescent exhaust plume, hold-down arms releasing, and falling cryogenic ice."
+    transition_in: "cut"
+    transition_reason: "Exact 0.24s em-dash pause cut after 'batting' into 500-fps Apollo 11 ignition."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N05"
+    associated_narration_concept: "unleashing seven point five million pounds of thrust as ice cascaded down its sides."
+    editorial_rationale: "Historic Apollo 11 500-fps Camera E-8 footage matches 'silver batting', 'thrust', and 'ice cascaded' simultaneously."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Apollo 11 500-fps F-1 ignition and cascading cryogenic ice"
+    visual_desc: "NASA Apollo 11 500-fps high-speed Pad Camera E-8 film of F-1 engine ignition and liftoff."
+
+  - sid: "S16"
+    start_s: 76.537
+    end_s: 85.773
+    kind: "video_full"
+    src_file: "shuttle_atlantis_sts129_launch_720p.webm"
+    src_in: 72.5
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Close tracking shot of the asymmetric Space Shuttle orbiter with black ceramic belly tiles mounted sideways onto its giant orange external tank rolling and climbing skyward"
+    visual_objective: "Clearly show the black ceramic-tiled winged glider mounted sideways beside its giant orange external tank"
+    progression_dimension: "new_perspective"
+    camera_perspective: "medium"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.48
+    cy1: 0.46
+    z0: 1.10
+    z1: 1.15
+    crop_rationale: "Frames the close-up roll maneuver so the black ceramic tiles and giant orange tank fill the 9:16 frame."
+    transition_in: "cut"
+    transition_reason: "Exact 0.41s segment-pause cut after 'sides' to 1981 asymmetric Space Shuttle geometry."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N06"
+    associated_narration_concept: "In nineteen eighty-one, rocket geometry broke symmetry completely. The Space Shuttle mounted a black ceramic-tiled glider beside a giant orange tank,"
+    editorial_rationale: "Shows the side-mounted winged ceramic-tiled glider + orange external tank rolling skyward."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Space Shuttle asymmetric ceramic glider and orange tank climb"
+    visual_desc: "NASA HD tracking footage of Space Shuttle Atlantis climbing beside its orange external tank."
+
+  - sid: "S17"
+    start_s: 85.773
+    end_s: 90.425
+    kind: "video_full"
+    src_file: "stennis_rs25_engine_test_hd.mp4"
+    src_in: 284.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Close-up of a computer-throttled RS-25 liquid-hydrogen main engine bell roaring at full power with a crisp glowing blue-white shock diamond column"
+    visual_objective: "Show the computer-throttled liquid-hydrogen RS-25 engine firing with visible glowing shock diamonds"
+    progression_dimension: "closer_inspection"
+    camera_perspective: "close_up"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.45
+    cy0: 0.48
+    cx1: 0.45
+    cy1: 0.50
+    z0: 1.10
+    z1: 1.14
+    crop_rationale: "Centers the ribbed RS-25 hydrogen nozzle and brilliant blue-white supersonic exhaust column."
+    transition_in: "cut"
+    transition_reason: "Exact 0.33s comma-pause cut after 'tank' onto close-up hydrogen engine shock column."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N06"
+    associated_narration_concept: "firing three computer-throttled hydrogen engines glowing with blue shock diamonds."
+    editorial_rationale: "Direct close-up NASA Stennis static-fire footage of the RS-25 hydrogen exhaust plume."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "RS-25 hydrogen engine firing with glowing shock column"
+    visual_desc: "NASA Stennis Space Center close-up HD video of an RS-25 liquid-hydrogen engine firing."
+
+  - sid: "S18"
+    start_s: 90.425
+    end_s: 95.376
+    kind: "video_full"
+    src_file: "power_for_apollo_saturn5_1080p.webm"
+    src_in: 181.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "Massive multi-story NASA rocket booster stage burning thousands of pounds of liquid propellant per second in a roaring static test plume"
+    visual_objective: "Demonstrate visually why physics forces propellant to fill nearly 90% of every rocket's mass"
+    progression_dimension: "scale_shift"
+    camera_perspective: "aerial"
+    visual_complexity: "high"
+    spoken_importance: "key_fact"
+    camera_movement: "static"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.46
+    cy0: 0.50
+    cx1: 0.48
+    cy1: 0.48
+    z0: 1.08
+    z1: 1.12
+    crop_rationale: "Frames the towering test stand and colossal propellant exhaust plume billowing across the valley."
+    transition_in: "cut"
+    transition_reason: "Exact 0.42s segment-pause cut after 'diamonds' illustrating massive propellant consumption."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N07"
+    associated_narration_concept: "Physics still forces propellant to fill nearly ninety percent of every rocket's mass."
+    editorial_rationale: "Visualizes the staggering propellant burn rate imposed by the Tsiolkovsky rocket equation."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Colossal rocket propellant static test burn (~90% propellant mass fraction)"
+    visual_desc: "1080p NASA film of a massive rocket stage burning tons of propellant per second on a test stand."
+
+  - sid: "S19"
+    start_s: 95.376
+    end_s: 102.750
+    kind: "video_full"
+    src_file: "artemis3_rs25_processing_ksc_4k.webm"
+    src_in: 88.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "4K upward camera sweep directly beneath NASA's Artemis SLS core stage revealing four laser-upgraded RS-25 engine bells clustered inside the white thrust structure"
+    visual_objective: "Reveal the modern precision-engineered cluster of four upgraded RS-25 nozzles beneath NASA's Artemis super-rocket"
+    progression_dimension: "closer_inspection"
+    camera_perspective: "first_person_pov"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience"]
+    reframe_mode: "manual"
+    cx0: 0.50
+    cy0: 0.48
+    cx1: 0.50
+    cy1: 0.45
+    z0: 1.06
+    z1: 1.10
+    shadow_lift: 0.10
+    crop_rationale: "4K upward view framing all four dark contoured RS-25 engine bells beneath the Artemis core stage."
+    transition_in: "cut"
+    transition_reason: "Exact 0.90s breath-pause cut after 'mass' looking straight up into Artemis SLS's four upgraded RS-25 engines."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N07"
+    associated_narration_concept: "Yet today, NASA's Artemis super-rocket fuses four laser-upgraded RS-25 engines with twin boosters—"
+    editorial_rationale: "4K KSC hardware close-up showing a century of engine evolution from 1926's tiny pipe nozzle to four RS-25 bells."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "4K close-up beneath Artemis SLS's four upgraded RS-25 engines"
+    visual_desc: "4K NASA Kennedy Space Center footage looking up at four RS-25 engines installed on the Artemis SLS core stage."
+
+  - sid: "S20"
+    start_s: 102.750
+    end_s: 107.000
+    kind: "video_full"
+    src_file: "artemis1_sls_press_launch_1080p.mp4"
+    src_in: 54.0
+    source_media_class: "REAL_VIDEO_ACTION"
+    visible_action: "NASA's towering Artemis I SLS super-rocket and twin solid boosters unleashing 8.8 million pounds of thrust, turning midnight at Pad 39B into blinding golden daylight as it climbs Moonward"
+    visual_objective: "Deliver the 100-year climax as Artemis SLS thunders off Pad 39B with 8.8 million pounds of thrust"
+    progression_dimension: "new_action"
+    camera_perspective: "wide"
+    visual_complexity: "high"
+    spoken_importance: "central_reveal"
+    camera_movement: "tracking"
+    scene_audio_layers: ["narration", "music", "ambience", "natural_sounds"]
+    reframe_mode: "manual"
+    cx0: 0.56
+    cy0: 0.52
+    cx1: 0.54
+    cy1: 0.44
+    z0: 1.08
+    z1: 1.12
+    crop_rationale: "Centers the orange SLS core stage, twin white solid boosters, and blinding 8.8M-lbf twin exhaust column rising off Pad 39B."
+    transition_in: "cut"
+    transition_reason: "Exact 0.25s em-dash pause cut after 'boosters' as Artemis SLS thunders toward the Moon."
+    is_real_evidence: true
+    has_human_interaction: false
+    associated_seg_id: "N07"
+    associated_narration_concept: "unleashing eight point eight million pounds of thrust back toward the Moon."
+    editorial_rationale: "Unforgettable 100-year visual payoff contrasting 8.8M-lbf Artemis liftoff back into Frame 0's tiny 1926 pipe rocket."
+    subject_match_kind: "direct_subject"
+    scientific_claim_status: "verified_fact"
+    story_beat: "Artemis I SLS 8.8-million-pound night liftoff toward the Moon"
+    visual_desc: "1080p NASA tracking video of Artemis I Space Launch System thundering off Launch Pad 39B."
+
+assets_register:
+  - local_file: "goddard_1926_nell_4k.jpg"
+    title: "First Flight of a Liquid Propellant Rocket — Dr. Robert H. Goddard & 'Nell', March 16, 1926 (4K Master Scan)"
+    creator_agency: "NASA Goddard Space Flight Center / Esther C. Goddard"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20171208_Archive_e002224"
+    direct_media_url: "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002224/GSFC_20171208_Archive_e002224~orig.jpg"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA Goddard Space Flight Center (GSFC_20171208_Archive_e002224)"
+    media_type: "photo"
+    source_media_class: "STILL_PHOTO"
+    canonical_source_id: "nasa_gsfc_goddard_nell_1926_4k"
+    depicts_meaningful_action: false
+    depicted_subject: "The machine that launched modern rocketry in nineteen twenty-six with no outer skin and no nose cone"
+    depicted_action: "Dr. Robert Goddard holding the bare skeletal metal-pipe launch frame of the March 16, 1926 rocket 'Nell' in snow"
+    depicted_location: "Auburn, Massachusetts, USA"
+    priority_tier: 1
+    intended_use: "S01 Frame-0 4K reveal of the March 16, 1926 rocket 'Nell'"
+
+  - local_file: "goddard_1926_no_skin_schematic_1080p.mp4"
+    title: "1926 Goddard 'Nell' Inverted Naked-Pipe Architecture Kinematic Schematic (1080x1920)"
+    creator_agency: "Proof of Wonder Documentary Studio"
+    source_page_url: "local://assets/raw_footage/space_rocket_evolution_v8/goddard_1926_no_skin_schematic_1080p.mp4"
+    direct_media_url: "local://assets/raw_footage/space_rocket_evolution_v8/goddard_1926_no_skin_schematic_1080p.mp4"
+    license: "100% Original First-Party Graphic"
+    license_url: "https://www.nasa.gov/centers-and-facilities/goddard/march-16-1926-goddards-first-liquid-fueled-rocket/"
+    required_attribution: "Original first-party engineering schematic based on NASA Goddard historical specifications"
+    media_type: "video"
+    source_media_class: "INFOGRAPHIC"
+    canonical_source_id: "pow_goddard_1926_anatomy_schematic"
+    depicts_meaningful_action: false
+    depicted_subject: "1926 Goddard rocket anatomy with no outer skin, no nose cone, top nozzle, naked metal pipes, and two suspended fuel tanks"
+    depicted_action: "Animated schematic peeling away missing nose cone and outer skin to highlight the inverted top nozzle and naked pipes"
+    depicted_location: "Auburn, Massachusetts, USA"
+    priority_tier: 3
+    intended_use: "S02 2.55s visual explanation of missing nose cone and missing outer skin"
+    is_first_party_original: true
+
+  - local_file: "goddard_1925_naked_pipes_lab.jpg"
+    title: "Dr. Robert H. Goddard Beside His Exposed Naked-Pipe Liquid-Fuel Rocket Assembly (GPN-2002-000139)"
+    creator_agency: "NASA / Smithsonian Institution (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Robert_Goddard_with_his_Double_Acting_Engine_Rocket_in_1925_-_GPN-2002-000139.jpg"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Robert_Goddard_with_his_Double_Acting_Engine_Rocket_in_1925_-_GPN-2002-000139.jpg"
+    license: "Public domain"
+    license_url: "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
+    required_attribution: "Public Domain — NASA Great Images in NASA (GPN-2002-000139)"
+    media_type: "photo"
+    source_media_class: "STILL_PHOTO"
+    canonical_source_id: "nasa_gpn_goddard_naked_pipes_lab"
+    depicts_meaningful_action: false
+    depicted_subject: "Tiny top nozzle pulling two fuel tanks on naked metal pipes with no outer skin"
+    depicted_action: "Dr. Robert Goddard standing beside his exposed top-nozzle and naked-metal-pipe fuel-tank assembly in the laboratory"
+    depicted_location: "Worcester, Massachusetts, USA"
+    priority_tier: 2
+    intended_use: "S03 sharp laboratory close-up of top nozzle, naked metal pipes, and dual fuel tanks"
+
+  - local_file: "vanguard_1958_explosion_1080p.mp4"
+    title: "Project Vanguard Launch Pad Collapse and Fireball Explosion (Restored 1080p)"
+    creator_agency: "U.S. Navy / Universal Newsreel Public Domain Archive (Wikimedia Commons)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:1958-02-06_Vanguard_Fails_in_Second_Launching.ogv"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/2/23/1958-02-06_Vanguard_Fails_in_Second_Launching.ogv"
+    license: "Public domain"
+    license_url: "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
+    required_attribution: "Public Domain — U.S. Government / Universal Newsreel (PD-US-not renewed)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "vanguard_pad_explosion_1957_58"
+    depicts_meaningful_action: true
+    depicted_subject: "Pencil-thin Project Vanguard orbital rocket lifting four feet before collapsing into flames"
+    depicted_action: "Slender Vanguard fragile metal pencil rocket lifting four feet and collapsing into flames on the launchpad"
+    depicted_location: "Cape Canaveral, Florida, USA"
+    priority_tier: 1
+    intended_use: "S05 fragile metal pencil collapsing into flames"
+
+  - local_file: "jpl_explorer1_1958_archive.webm"
+    title: "Explorer 1: America's First Satellite (JPL-19580131-EXPLORf-0001)"
+    creator_agency: "NASA / Jet Propulsion Laboratory (JPL)"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:JPL-19580131-EXPLORf-0001-AVC2004245_Explorer_1_Americas_First_Satellite.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/6/6b/JPL-19580131-EXPLORf-0001-AVC2004245_Explorer_1_Americas_First_Satellite.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA / Jet Propulsion Laboratory"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_jpl_explorer1_1958_film"
+    depicts_meaningful_action: true
+    depicted_subject: "Juno One exposed tub of eleven miniature rocket tubes bolted to its nose"
+    depicted_action: "JPL engineers assembling Juno One's spinning exposed tub of eleven miniature rocket tubes"
+    depicted_location: "Pasadena, California & Cape Canaveral, USA"
+    priority_tier: 1
+    intended_use: "S06 hands-on JPL rocket-tube assembly"
+
+  - local_file: "explorer1_vanguard_juno_1958_hd.mp4"
+    title: "Explorer 1 60th Anniversary Archival Launch Transfer (GSFC_20180129_Explorer1)"
+    creator_agency: "NASA Goddard Space Flight Center"
+    source_page_url: "https://images.nasa.gov/details/GSFC_20180129_Explorer1_m12837_60yrs1"
+    direct_media_url: "http://images-assets.nasa.gov/video/GSFC_20180129_Explorer1_m12837_60yrs1/GSFC_20180129_Explorer1_m12837_60yrs1~large.mp4"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA Goddard Space Flight Center"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_gsfc_juno1_launch_1958"
+    depicts_meaningful_action: true
+    depicted_subject: "Early orbital rockets looking like fragile metal pencils (Juno One reaching orbit)"
+    depicted_action: "Slender fragile metal pencil Juno One rocket igniting and climbing into orbit"
+    depicted_location: "Cape Canaveral, Florida, USA"
+    priority_tier: 1
+    intended_use: "S04 slender 1958 orbital pencil rocket liftoff"
+
+  - local_file: "mercury_atlas_glenn_broll_720p.webm"
+    title: "John Glenn Friendship 7 Mercury-Atlas Launch B-Roll (NASA GRC)"
+    creator_agency: "NASA Glenn Research Center"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:John_Glenn_B-Roll.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/3/3d/John_Glenn_B-Roll.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_mercury_atlas_1962_launch"
+    depicts_meaningful_action: true
+    depicted_subject: "1962 NASA Mercury-Atlas gleaming like solid steel with tank walls thinner than a dime"
+    depicted_action: "Pressurized dime-thin stainless-steel Mercury-Atlas roaring off Pad 14 and dropping two side boosters mid-sky as it climbed"
+    depicted_location: "Cape Canaveral, Florida, USA"
+    priority_tier: 1
+    intended_use: "S07 & S09 1962 Mercury-Atlas pressurized steel hull liftoff and mid-sky climb"
+
+  - local_file: "gemini_titan2_launch_hd049.mp4"
+    title: "Project Gemini Titan II Twin-Engine Launch from Pad 19 (NASA HD 049 Resource Reel)"
+    creator_agency: "NASA Lyndon B. Johnson Space Center"
+    source_page_url: "https://images.nasa.gov/details/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201"
+    direct_media_url: "https://images-assets.nasa.gov/video/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201/HD%20049%20Mercury_Gemini_Apollo_Resource%20Reel%201~large.mp4"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA JSC (HD 049 Mercury/Gemini/Apollo Resource Reel)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_hd049_gemini_titan2_launch"
+    depicts_meaningful_action: true
+    depicted_subject: "Mid-sixties Gemini Titan Two rocket firing twin engines inside an exposed steel frame"
+    depicted_action: "Gemini Titan Two igniting twin engines in bright orange flame and rising beside Pad 19's exposed steel frame"
+    depicted_location: "Cape Canaveral Pad 19, Florida, USA"
+    priority_tier: 1
+    intended_use: "S11 crisp HD 1965 Gemini Titan II twin-engine launch"
+
+  - local_file: "saturn_ib_story_1080p.mp4"
+    title: "The Saturn IB Story — Eight Clustered Tanks & H-1 Engines (NASA MSFC)"
+    creator_agency: "NASA George C. Marshall Space Flight Center"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:The_Saturn_IB_Story_1960.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/c/c8/The_Saturn_IB_Story_1960.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA Marshall Space Flight Center"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_msfc_saturn_ib_story"
+    depicts_meaningful_action: true
+    depicted_subject: "1966 Saturn One-B raw machinery with eight narrow missile tanks bolted in a circle above eight tightly packed engines"
+    depicted_action: "Mid-sixties rockets leaving raw machinery wide open and bolting eight narrow missile tanks in a circle"
+    depicted_location: "Huntsville, Alabama & Cape Canaveral, USA"
+    priority_tier: 1
+    intended_use: "S10 exposed engine truss & S12 literal eight narrow missile tanks bolted in a circle"
+
+  - local_file: "power_for_apollo_saturn5_1080p.webm"
+    title: "Power for Apollo — Saturn V Propulsion Documentary (1080p)"
+    creator_agency: "NASA Marshall Space Flight Center"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Power_for_Apollo_-_Saturn_V.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Power_for_Apollo_-_Saturn_V.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_power_for_apollo_saturn5"
+    depicts_meaningful_action: true
+    depicted_subject: "Thirty-six-story colossus Saturn Five where physics forces propellant to fill nearly ninety percent of every rocket's mass"
+    depicted_action: "Sweeping down the thirty-six-story Saturn Five colossus hull and static-firing massive propellant stages"
+    depicted_location: "Kennedy Space Center, Florida & Huntsville, Alabama, USA"
+    priority_tier: 1
+    intended_use: "S13 1969 Saturn V 36-story colossus hull sweep & S18 90% propellant burn"
+
+  - local_file: "michoud_apollo_saturn_assembly_hd.mp4"
+    title: "Michoud Assembly Facility Historic Saturn V S-IC Resource Reel"
+    creator_agency: "NASA Michoud Assembly Facility / MSFC"
+    source_page_url: "https://images.nasa.gov/details/Michoud_Apollo_Work"
+    direct_media_url: "http://images-assets.nasa.gov/video/Michoud_Apollo_Work/Michoud_Apollo_Work~large.mp4"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA Michoud Assembly Facility"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_michoud_saturn5_f1_nozzles"
+    depicts_meaningful_action: true
+    depicted_subject: "Five cavernous F-1 nozzles nearly four meters wide beneath Saturn Five's hull and thin-walled cylindrical rocket tanks"
+    depicted_action: "NASA technician working beside five cavernous four-meter-wide F-1 nozzles and hoisting thin cylindrical rocket shells"
+    depicted_location: "New Orleans, Louisiana, USA"
+    priority_tier: 1
+    intended_use: "S08 cylindrical tank shell & S14 human-scale inspection of five 4-meter F-1 nozzles"
+
+  - local_file: "apollo11_f1_500fps_camera_e8_720p.ogv"
+    title: "Apollo 11 Saturn V F-1 Engines at 500 fps (Pad Camera E-8)"
+    creator_agency: "NASA Kennedy Space Center"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Apollo_11_launch,_video_of_engines_at_500_fps_(camera_E-8).ogv"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/6/61/Apollo_11_launch%2C_video_of_engines_at_500_fps_%28camera_E-8%29.ogv"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA Camera E-8 (Apollo 11)"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_apollo11_camera_e8_500fps"
+    depicts_meaningful_action: true
+    depicted_subject: "Saturn Five F-1 nozzles in rough silver batting unleashing seven point five million pounds of thrust as ice cascaded down its sides"
+    depicted_action: "500-fps slow-motion F-1 ignition unleashing 7.5 million pounds of thrust while cryogenic ice cascades down Saturn V"
+    depicted_location: "Launch Complex 39A, Kennedy Space Center, Florida, USA"
+    priority_tier: 1
+    intended_use: "S15 500-fps F-1 ignition & cascading ice"
+
+  - local_file: "shuttle_atlantis_sts129_launch_720p.webm"
+    title: "Launch of Space Shuttle Atlantis (STS-129)"
+    creator_agency: "NASA Kennedy Space Center"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Launch_of_Space_Shuttle_Atlantis_STS-129.webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/8/89/Launch_of_Space_Shuttle_Atlantis_STS-129.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_space_shuttle_atlantis_ascent"
+    depicts_meaningful_action: true
+    depicted_subject: "1981 Space Shuttle breaking rocket geometry symmetry—black ceramic-tiled glider mounted beside a giant orange tank"
+    depicted_action: "Asymmetric Space Shuttle ceramic-tiled glider and giant orange external tank climbing to orbit"
+    depicted_location: "Kennedy Space Center, Florida, USA"
+    priority_tier: 1
+    intended_use: "S16 asymmetric Space Shuttle geometry"
+
+  - local_file: "stennis_rs25_engine_test_hd.mp4"
+    title: "NASA Stennis RS-25 Liquid-Hydrogen Main Engine Hot-Fire Test (SSC_2022-02-08)"
+    creator_agency: "NASA Stennis Space Center"
+    source_page_url: "https://images.nasa.gov/details/SSC_2022-02-08_RS-25_Engine_Test"
+    direct_media_url: "http://images-assets.nasa.gov/video/SSC_2022-02-08_RS-25_Engine_Test/SSC_2022-02-08_RS-25_Engine_Test~medium.mp4"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA Stennis Space Center"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_stennis_rs25_shock_diamonds"
+    depicts_meaningful_action: true
+    depicted_subject: "Computer-throttled hydrogen engines (RS-25) glowing with blue shock diamonds"
+    depicted_action: "Firing computer-throttled liquid-hydrogen rocket engine glowing with blue shock diamonds"
+    depicted_location: "Stennis Space Center, Mississippi, USA"
+    priority_tier: 1
+    intended_use: "S17 close-up hydrogen engine shock column"
+
+  - local_file: "artemis3_rs25_processing_ksc_4k.webm"
+    title: "Artemis III RS-25 Four-Engine Cluster Processing at KSC (4K)"
+    creator_agency: "NASA Kennedy Space Center"
+    source_page_url: "https://commons.wikimedia.org/wiki/File:Artemis_III_RS-25_Engine_Processing_at_KSC_(KSC-20260901-MH--CSH01-0001-Artemis_III_RS-25_Engine_Processing-M21611).webm"
+    direct_media_url: "https://upload.wikimedia.org/wikipedia/commons/2/25/Artemis_III_RS-25_Engine_Processing_at_KSC_%28KSC-20260901-MH--CSH01-0001-Artemis_III_RS-25_Engine_Processing-M21611%29.webm"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA Kennedy Space Center"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_ksc_artemis_four_rs25_4k"
+    depicts_meaningful_action: true
+    depicted_subject: "NASA Artemis super-rocket fusing four laser-upgraded RS-25 engines beneath massive propellant tanks"
+    depicted_action: "4K inspection camera sweeping underneath the four laser-upgraded RS-25 nozzles mounted on Artemis SLS"
+    depicted_location: "Kennedy Space Center, Florida, USA"
+    priority_tier: 1
+    intended_use: "S19 4K upward reveal of Artemis SLS's four upgraded RS-25 engines"
+
+  - local_file: "artemis1_sls_press_launch_1080p.mp4"
+    title: "Artemis I Space Launch System Night Launch from Pad 39B (1080p)"
+    creator_agency: "NASA Kennedy Space Center"
+    source_page_url: "https://images.nasa.gov/details/Artemis%20I%20Launch%202022%20CU%20tracking%20from%20Press%20Site_compressed"
+    direct_media_url: "http://images-assets.nasa.gov/video/Artemis%20I%20Launch%202022%20CU%20tracking%20from%20Press%20Site_compressed/Artemis%20I%20Launch%202022%20CU%20tracking%20from%20Press%20Site_compressed~large.mp4"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA"
+    media_type: "video"
+    source_media_class: "REAL_VIDEO_ACTION"
+    canonical_source_id: "nasa_artemis1_sls_launch_pad39b"
+    depicts_meaningful_action: true
+    depicted_subject: "NASA Artemis super-rocket and twin boosters unleashing eight point eight million pounds of thrust back toward the Moon"
+    depicted_action: "Artemis I SLS igniting four RS-25 engines and twin boosters to unleash 8.8 million pounds of thrust toward the Moon"
+    depicted_location: "Launch Pad 39B, Kennedy Space Center, Florida, USA"
+    priority_tier: 1
+    intended_use: "S20 8.8-million-pound Artemis liftoff climax"
+
+  - local_file: "rocket_evolution_100y_plate_B.png"
+    title: "100-Year NASA Rocket Evolution Composite Plate B (1926, 1957 & Mystery Silhouettes)"
+    creator_agency: "Proof of Wonder Studio (Public Domain NASA & Smithsonian Photographs)"
+    source_page_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    direct_media_url: "local://assets/raw_footage/space_rocket_evolution_v8/rocket_evolution_100y_plate_B.png"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA / Smithsonian archival composite"
+    media_type: "photo"
+    source_media_class: "STILL_PHOTO"
+    canonical_source_id: "pow_rocket_evolution_thumb_b"
+    depicts_meaningful_action: false
+    depicted_subject: "1926 Goddard rocket, 1957 Vanguard rocket, and blurred dark mystery rocket silhouettes"
+    depicted_action: "100-year visual comparison plate for Thumbnail Concept A"
+    depicted_location: "United States"
+    priority_tier: 3
+    intended_use: "Thumbnail Concept A (Primary Cover)"
+    is_first_party_original: true
+
+  - local_file: "rocket_evolution_100y_plate_A.png"
+    title: "100-Year NASA Rocket Evolution Composite Plate A (Split Stacked Early vs 2026 Silhouette)"
+    creator_agency: "Proof of Wonder Studio (Public Domain NASA Photographs)"
+    source_page_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    direct_media_url: "local://assets/raw_footage/space_rocket_evolution_v8/rocket_evolution_100y_plate_A.png"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA archival composite"
+    media_type: "photo"
+    source_media_class: "STILL_PHOTO"
+    canonical_source_id: "pow_rocket_evolution_thumb_a"
+    depicts_meaningful_action: false
+    depicted_subject: "1926, 1957, 1966 early rockets contrasted with 2026 dark rocket silhouette"
+    depicted_action: "Split comparison plate for Thumbnail Concept B"
+    depicted_location: "United States"
+    priority_tier: 3
+    intended_use: "Thumbnail Concept B"
+    is_first_party_original: true
+
+  - local_file: "rocket_evolution_100y_plate_C.png"
+    title: "100-Year NASA Rocket Evolution Composite Plate C (3-Column Contrast)"
+    creator_agency: "Proof of Wonder Studio (Public Domain NASA Photographs)"
+    source_page_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    direct_media_url: "local://assets/raw_footage/space_rocket_evolution_v8/rocket_evolution_100y_plate_C.png"
+    license: "Public domain"
+    license_url: "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    required_attribution: "Public Domain — NASA archival composite"
+    media_type: "photo"
+    source_media_class: "STILL_PHOTO"
+    canonical_source_id: "pow_rocket_evolution_thumb_c"
+    depicts_meaningful_action: false
+    depicted_subject: "1926 naked pipes, 1957 Vanguard explosion, and 2026 dark rocket silhouette"
+    depicted_action: "3-column comparison plate for Thumbnail Concept C"
+    depicted_location: "United States"
+    priority_tier: 3
+    intended_use: "Thumbnail Concept C"
+    is_first_party_original: true
+
+  - local_file: "cape_canaveral_pad_ambience.wav"
+    title: "Cape Canaveral Coastal Launch Complex Wind & Test-Stand Air Bed"
+    creator_agency: "Proof of Wonder Documentary Studio"
+    source_page_url: "local://assets/raw_footage/space_rocket_evolution_v8/cape_canaveral_pad_ambience.wav"
+    direct_media_url: "local://assets/raw_footage/space_rocket_evolution_v8/cape_canaveral_pad_ambience.wav"
+    license: "CC0"
+    license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
+    required_attribution: "First-party synthesized coastal pad wind ambience (CC0)"
+    media_type: "audio"
+    priority_tier: 3
+    intended_use: "Continuous restrained launchpad air & coastal wind bed"
+    is_first_party_original: true
+
+factual_references:
+  - citation: "NASA Goddard Space Flight Center / Smithsonian National Air and Space Museum — March 16, 1926: Dr. Robert H. Goddard's First Liquid-Propellant Rocket Flight ('Nell', Auburn, Massachusetts)."
+    url: "https://www.nasa.gov/centers-and-facilities/goddard/march-16-1926-goddards-first-liquid-fueled-rocket/"
+    supported_claims: "Goddard's 1926 liquid oxygen/gasoline rocket lacked an aerodynamic fuselage or nose cone, placing the combustion chamber and nozzle at the top above naked fuel lines and suspended tanks."
+  - citation: "NASA History Division — Vanguard TV-3 Launch Failure (Dec 6, 1957), Juno I / Explorer 1 Spinning Solid-Rocket Cluster (Jan 31, 1958), and Mercury-Atlas Pressurized Stainless-Steel Balloon Tanks (1962)."
+    url: "https://www.nasa.gov/history/"
+    supported_claims: "Vanguard TV-3 rose ~4 feet before collapsing into flames; Juno I spun an upper-stage tub of 11 scaled-down Sergeant rockets; Atlas used <1 mm pressurized stainless-steel balloon tanks and 1.5-stage side booster staging."
+  - citation: "NASA Marshall Space Flight Center & Kennedy Space Center — Saturn IB (8 Redstone/Jupiter tanks & 8 H-1 engines), Saturn V (363 ft, five F-1 engines at 7.5M lbf), Space Shuttle RS-25, and Artemis Space Launch System (four RS-25s + twin SRBs at 8.8M lbf)."
+    url: "https://www.nasa.gov/reference/space-launch-system/"
+    supported_claims: "Saturn IB clustered eight narrow tanks over eight H-1 engines; Saturn V stood 36 stories with five 3.7 m F-1 nozzles generating 7.5M lbf; Space Shuttle paired a ceramic-tiled orbiter with an external tank and 3 RS-25s; Artemis SLS generates 8.8M lbf while propellant remains ~88–90% of launch mass."

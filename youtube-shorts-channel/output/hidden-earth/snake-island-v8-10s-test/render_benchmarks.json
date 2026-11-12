@@ -1,0 +1,10 @@
+{
+  "slug": "snake-island-v8-10s-test",
+  "encode_mode": "master",
+  "shots_render_or_cache_s": 0.01,
+  "timeline_assembly_and_mux_s": 13.331,
+  "thumbnail_concepts_s": 3.097,
+  "total_render_master_s": 16.562,
+  "rendered_frames": 333,
+  "effective_render_fps": 20.11
+}

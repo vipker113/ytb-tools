@@ -1,0 +1,49 @@
+{
+  "slug": "snake-island-v8-10s-test",
+  "style_profile": "mysterious_earth_exploration",
+  "target_duration_range_s": [
+    8.0,
+    15.0
+  ],
+  "planned_duration_s": 10.75,
+  "timing_source": "word_timings",
+  "rows": [
+    {
+      "time": "0.1\u20134.2s",
+      "start_s": 0.1,
+      "end_s": 4.2,
+      "seg_id": "N01",
+      "narrative_beat": "opening_hook",
+      "viewer_question": "Is it really five snakes per square meter, and how do so many vipers hunt on one small island?",
+      "new_information": "Ilha da Queimada Grande off Brazil packs up to 90 venomous pit vipers per hectare.",
+      "visual_reveal": "1080p real footage of multiple heavy snakes coiled and tangled across green tree branches at eye level.",
+      "emotional_direction": "Immediate visceral dread and curiosity",
+      "retention_purpose": "Stop scrolling at Frame 0 with real multi-snake canopy motion"
+    },
+    {
+      "time": "4.5\u20138.6s",
+      "start_s": 4.46,
+      "end_s": 8.59,
+      "seg_id": "N02",
+      "narrative_beat": "escalation",
+      "viewer_question": "How lethal did their venom become to stop struck birds from flying away?",
+      "new_information": "Debunks the 5-per-m\u00b2 rumor (no evidence) while revealing real arboreal ambush hunting on migratory birds.",
+      "visual_reveal": "1080p wildlife recording of a camouflaged venomous viper exploding upward to seize a landing bird in mid-air.",
+      "emotional_direction": "Controlled scientific authority escalating into split-second strike shock",
+      "retention_purpose": "Deliver literal 1:1 physical action proof right on 'ambush birds'"
+    },
+    {
+      "time": "8.8\u201310.7s",
+      "start_s": 8.83,
+      "end_s": 10.75,
+      "seg_id": "N03",
+      "narrative_beat": "final_impression",
+      "viewer_question": "Would anyone dare step inside a forest ruled by evolved canopy vipers?",
+      "new_information": "Natural selection evolved avian-targeted hemotoxic venom up to five times more potent.",
+      "visual_reveal": "1080p slow-motion close-up of a herpetologist extracting liquid hemotoxic venom from live pit-viper fangs.",
+      "emotional_direction": "Visceral closing payoff",
+      "retention_purpose": "Close on unforgettable slow-motion fang venom evidence"
+    }
+  ],
+  "markdown_table": "# Audience Retention Plan \u2014 `snake-island-v8-10s-test` (`10.8s` Target/Actual Runtime)\n\n- **Production Profile:** `mysterious_earth_exploration`\n- **Configured Target Window:** `8\u201315s`\n- **Timing Basis:** `Authoritative Narration Master (word_timings.json)`\n\n| Time | Narrative beat | Viewer question | New information | Visual reveal | Emotional direction | Retention purpose |\n|---|---|---|---|---|---|---|\n| `0.1\u20134.2s` | **opening_hook** (`N01`) | Is it really five snakes per square meter, and how do so many vipers hunt on one small island? | Ilha da Queimada Grande off Brazil packs up to 90 venomous pit vipers per hectare. | 1080p real footage of multiple heavy snakes coiled and tangled across green tree branches at eye level. | Immediate visceral dread and curiosity | Stop scrolling at Frame 0 with real multi-snake canopy motion |\n| `4.5\u20138.6s` | **escalation** (`N02`) | How lethal did their venom become to stop struck birds from flying away? | Debunks the 5-per-m\u00b2 rumor (no evidence) while revealing real arboreal ambush hunting on migratory birds. | 1080p wildlife recording of a camouflaged venomous viper exploding upward to seize a landing bird in mid-air. | Controlled scientific authority escalating into split-second strike shock | Deliver literal 1:1 physical action proof right on 'ambush birds' |\n| `8.8\u201310.7s` | **final_impression** (`N03`) | Would anyone dare step inside a forest ruled by evolved canopy vipers? | Natural selection evolved avian-targeted hemotoxic venom up to five times more potent. | 1080p slow-motion close-up of a herpetologist extracting liquid hemotoxic venom from live pit-viper fangs. | Visceral closing payoff | Close on unforgettable slow-motion fang venom evidence |\n"
+}

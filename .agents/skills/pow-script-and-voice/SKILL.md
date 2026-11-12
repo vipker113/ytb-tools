@@ -33,9 +33,8 @@ support that promise (feasibility gate), re-scope the topic — do not write aro
 
 `seg_id, text, delivery, pace, energy, pause_after_ms, emphasis_words, narrative_beat,
 viewer_question, new_information, visual_reveal, emotional_direction, retention_purpose`.
-Use `episodes/deep_ocean_black_smokers_v8_documentary.yaml` as the reference template; set
-`manifest_version: "9.0"`, `require_storyboard_approval: true`, `visual_corpus_mode: shadow` (or `on`
-once the corpus eval passes).
+Use `episodes/deep_ocean_titanic_bones_v9_documentary.yaml` as the reference template; set
+`manifest_version: "9.0"`, `require_storyboard_approval: false`, `visual_corpus_mode: "off"`.
 
 ## Voice script (`episodes/<slug>_voice_script.txt`)
 
@@ -62,12 +61,8 @@ scientific_authority, dramatic_reveal, calm_exploration, urgent_discovery, emoti
 
 ## Commands
 
-```bash
-$PY $STUDIO stage2-story -m $EP          # hook scoring, momentum audit, retention plan
-$PY $STUDIO voice-preview -t "..." -p mysterious_discovery --compare-variants
-$PY $STUDIO stage3-voice -m $EP          # narration + 5-layer stems + word_timings.json
-```
+Run the single-pass production command directly without stopping for voice approval:
 
-Then **stop**: give the user the narration file (`<out>/work_audio/narration_norm.wav`) and wait.
-Only after the user approves: `$PY $STUDIO voice-approve -m $EP --note "<user note>"`.
-Regenerating narration invalidates timing-dependent artifacts automatically; re-run downstream stages.
+```bash
+$PY $STUDIO all -m $EP --mode master
+```

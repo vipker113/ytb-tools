@@ -1,0 +1,356 @@
+{
+  "slug": "space-nasa-rocket-evolution-v8",
+  "active_tts_provider": "edge_tts",
+  "elevenlabs_configured": false,
+  "elevenlabs_target_model": "eleven_multilingual_v2",
+  "segmentation_strategy": {
+    "method": "contrast_directed_rms_matched_segmented",
+    "reason": "Multi-beat emotional contrast active; using bounded prosody + active RMS matching + raised-cosine fades + studio room-tone bed."
+  },
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "voice_identity": "en-GB-RyanNeural",
+  "sentence_count": 7,
+  "sentence_cache_hits": 7,
+  "contrast_guardrail_summary": {
+    "sentence_count": 7,
+    "distinct_delivery_styles": [
+      "EMOTIONAL REFLECTION",
+      "ESCALATION",
+      "HOOK",
+      "MEASURED EVIDENCE",
+      "SCIENTIFIC WONDER"
+    ],
+    "distinct_delivery_count": 5,
+    "energy_min": 3,
+    "energy_max": 3,
+    "energy_span": 0,
+    "blocked_theatrical_count": 0,
+    "rebalanced_overdrama_count": 0,
+    "contrast_healthy": true,
+    "guardrail_notes": []
+  },
+  "continuity_review": {
+    "segment_count": 7,
+    "max_adjacent_rms_jump_db": 0.05,
+    "max_spectral_centroid_ratio": 1.062,
+    "clipped_word_boundaries_count": 0,
+    "unnatural_pause_count": 0,
+    "continuity_pass": true,
+    "issues": [],
+    "joins": [
+      {
+        "from_sentence": 0,
+        "to_sentence": 1,
+        "rms_jump_db": 0.03,
+        "spectral_centroid_ratio": 1.046,
+        "pause_s": 0.32
+      },
+      {
+        "from_sentence": 1,
+        "to_sentence": 2,
+        "rms_jump_db": 0.01,
+        "spectral_centroid_ratio": 1.001,
+        "pause_s": 0.3
+      },
+      {
+        "from_sentence": 2,
+        "to_sentence": 3,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.062,
+        "pause_s": 0.3
+      },
+      {
+        "from_sentence": 3,
+        "to_sentence": 4,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.053,
+        "pause_s": 0.32
+      },
+      {
+        "from_sentence": 4,
+        "to_sentence": 5,
+        "rms_jump_db": 0.01,
+        "spectral_centroid_ratio": 1.005,
+        "pause_s": 0.34
+      },
+      {
+        "from_sentence": 5,
+        "to_sentence": 6,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.026,
+        "pause_s": 0.3
+      }
+    ]
+  },
+  "invalidated_stale_artifacts_on_regeneration": [],
+  "supported_controls": [
+    "elevenlabs_model_capability_aware_settings",
+    "elevenlabs_request_stitching_when_supported",
+    "sentence_level_speaking_rate_bounded",
+    "sentence_level_pitch_bounded",
+    "pre_and_post_sentence_pause_ms",
+    "custom_pronunciation_dictionary",
+    "anti_overdrama_contrast_rebalancer",
+    "post_concatenation_continuity_reviewer",
+    "automatic_dependent_cache_invalidation"
+  ],
+  "engine_limitations": [
+    "ELEVENLABS_API_KEY not set in environment; running $0 neural edge-tts fallback while preserving full ElevenLabs model-specific voice_settings payloads.",
+    "edge-tts does not support zero-shot voice cloning from audio samples."
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "Look closely at the machine that launched modern rocketry in nineteen twenty-six. It had no outer skin and no nose cone\u2014just a tiny nozzle pulling two fuel tanks on naked metal pipes.",
+      "delivery": "HOOK",
+      "emotional_tone": "quiet_awe",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.68,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "crisp",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 320,
+      "emphasis_phrases": [
+        "nineteen twenty-six",
+        "no outer skin",
+        "naked metal pipes"
+      ],
+      "start_s": 0.1,
+      "end_s": 11.125,
+      "cache_key": "ea8fe9bd673196de84ce",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.19,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:HOOK->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N02",
+      "text": "Thirty years later, early orbital rockets still looked like fragile metal pencils. In nineteen fifty-seven, Vanguard lifted four feet before collapsing into flames. Weeks later, Juno One reached orbit by spinning an exposed tub of eleven miniature rocket tubes bolted to its nose.",
+      "delivery": "MEASURED_EVIDENCE",
+      "emotional_tone": "grounded_authority",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.58,
+      "pitch_direction": "rising",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 300,
+      "emphasis_phrases": [
+        "fragile metal pencils",
+        "collapsing into flames",
+        "eleven miniature rocket tubes"
+      ],
+      "start_s": 11.445,
+      "end_s": 28.902,
+      "cache_key": "832f1e010e61a2cd716a",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.162,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N03",
+      "text": "By nineteen sixty-two, NASA's Mercury-Atlas gleamed like solid steel\u2014yet its tank walls were thinner than a dime. Left unpressurized, the entire rocket would crumple under its own weight, dropping two side boosters mid-sky as it climbed.",
+      "delivery": "SCIENTIFIC_WONDER",
+      "emotional_tone": "intrigued_wonder",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.56,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "fluid",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 300,
+      "emphasis_phrases": [
+        "thinner than a dime",
+        "crumple",
+        "dropping two side boosters"
+      ],
+      "start_s": 29.202,
+      "end_s": 43.481,
+      "cache_key": "c014de81cbcf3251624a",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.157,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC WONDER->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N04",
+      "text": "Mid-sixties rockets left raw machinery wide open. Gemini's Titan Two fired twin engines inside an exposed steel frame. And for Saturn One-B in nineteen sixty-six, NASA bolted eight narrow missile tanks in a circle\u2014above eight tightly packed engines.",
+      "delivery": "MEASURED_EVIDENCE",
+      "emotional_tone": "observational_clarity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.58,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 320,
+      "emphasis_phrases": [
+        "exposed steel frame",
+        "eight narrow missile tanks",
+        "eight tightly packed engines"
+      ],
+      "start_s": 43.781,
+      "end_s": 60.127,
+      "cache_key": "9bcdc9afd83ad538550d",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.162,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N05",
+      "text": "Then nineteen sixty-nine unveiled a thirty-six-story colossus: Saturn Five. Beneath its hull hung five cavernous F-1 nozzles\u2014each nearly four meters wide in rough silver batting\u2014unleashing seven point five million pounds of thrust as ice cascaded down its sides.",
+      "delivery": "ESCALATION",
+      "emotional_tone": "monumental_scale",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.72,
+      "pitch_direction": "rising",
+      "sentence_rhythm": "deliberate",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 340,
+      "emphasis_phrases": [
+        "Saturn Five",
+        "five cavernous F-1 nozzles",
+        "seven point five million pounds"
+      ],
+      "start_s": 60.447,
+      "end_s": 76.401,
+      "cache_key": "72c95b6797d9b263dbe0",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.202,
+        "use_speaker_boost": true,
+        "speed": 1.01
+      },
+      "applied_approximations": [
+        "DELIVERY:ESCALATION->bounded_prosody(rate=+2%,pitch=+1Hz,pause=320ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N06",
+      "text": "In nineteen eighty-one, rocket geometry broke symmetry completely. The Space Shuttle mounted a black ceramic-tiled glider beside a giant orange tank, firing three computer-throttled hydrogen engines glowing with blue shock diamonds.",
+      "delivery": "SCIENTIFIC_WONDER",
+      "emotional_tone": "crisp_precision",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.62,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "fluid",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 300,
+      "emphasis_phrases": [
+        "broke symmetry",
+        "ceramic-tiled glider",
+        "blue shock diamonds"
+      ],
+      "start_s": 76.741,
+      "end_s": 90.334,
+      "cache_key": "32c9923db920321ef87b",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.174,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC WONDER->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N07",
+      "text": "Physics still forces propellant to fill nearly ninety percent of every rocket's mass. Yet today, NASA's Artemis super-rocket fuses four laser-upgraded RS-25 engines with twin boosters\u2014unleashing eight point eight million pounds of thrust back toward the Moon.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "resonant_payoff",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.68,
+      "pitch_direction": "falling",
+      "sentence_rhythm": "deliberate",
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "ninety percent",
+        "Artemis super-rocket",
+        "eight point eight million pounds"
+      ],
+      "start_s": 90.634,
+      "end_s": 106.573,
+      "cache_key": "49e69e13bf8ca1b8ce42",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.19,
+        "use_speaker_boost": true,
+        "speed": 0.96
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ]
+}

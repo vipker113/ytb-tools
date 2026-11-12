@@ -1,0 +1,36 @@
+# Proof of Wonder — Studio v8.0 Ultra-Short (~10s) Voice Script
+# Episode: snake-island-v8-10s-test
+# Title: Snake Island in 10 Seconds: 90 Vipers Per Hectare
+
+[SEG: N01]
+"On Brazil's Snake Island, up to ninety pit vipers pack every hectare."
+
+[DELIVERY: HOOK]
+[TONE: quiet_tension]
+[INTENSITY: 0.70]
+[PITCH DIRECTION: falling]
+[RHYTHM: crisp]
+[EMPHASIS: "Snake Island", "ninety pit vipers"]
+[PAUSE AFTER: 260ms]
+
+[SEG: N02]
+"There is no evidence of five per meter—yet vipers ambush birds overhead,"
+
+[DELIVERY: MEASURED EVIDENCE]
+[TONE: grounded_authority]
+[INTENSITY: 0.54]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "no evidence", "ambush birds overhead"]
+[PAUSE AFTER: 240ms]
+
+[SEG: N03]
+"with venom five times deadlier."
+
+[DELIVERY: EMOTIONAL REFLECTION]
+[TONE: resonant_payoff]
+[INTENSITY: 0.58]
+[PITCH DIRECTION: falling]
+[RHYTHM: deliberate]
+[EMPHASIS: "five times deadlier"]
+[PAUSE AFTER: 340ms]

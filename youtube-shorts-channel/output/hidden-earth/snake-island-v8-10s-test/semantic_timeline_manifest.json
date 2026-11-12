@@ -1,0 +1,244 @@
+{
+  "slug": "snake-island-v8-10s-test",
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "associated_seg_id": "N01",
+      "timeline_start_s": 0.0,
+      "timeline_end_s": 4.3333,
+      "duration_s": 4.333,
+      "narration_start_s": 0.1,
+      "narration_end_s": 4.084,
+      "spoken_narration": "On Brazil's Snake Island up to ninety pit vipers pack every hectare",
+      "selected_asset": "snakes_intertwined_mating_1080p.webm",
+      "media_type": "video",
+      "source_creator": "Wikimedia Commons (Elaphe climacophora in tree canopy)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_rat_snakes_(Elaphe_climacophora)_mating.webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Multiple real snakes coiled in green canopy branches (N01)",
+      "camera_perspective": "close_up",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.56,
+          0.48
+        ],
+        "center_end": [
+          0.53,
+          0.5
+        ],
+        "zoom_range": [
+          1.04,
+          1.07
+        ],
+        "rationale": "Centers three intertwined snakes coiled high across green tree branches staring into the camera."
+      },
+      "transition": {
+        "type": "opening",
+        "duration_s": 0.0,
+        "reason": "Instant Frame-0 live 1080p multi-snake canopy hook."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.6,
+        "ideal_duration_s": 5.61,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "close_up",
+          "camera_movement": "gentle_drift",
+          "is_moving_footage": true,
+          "spoken_word_count": 12
+        }
+      },
+      "why_shot_belongs_here": "Opens with real 1080p multi-snake canopy footage matching Snake Island's tree-dwelling viper density."
+    },
+    {
+      "scene_id": "S02",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 4.3333,
+      "timeline_end_s": 6.4333,
+      "duration_s": 2.1,
+      "narration_start_s": 4.457,
+      "narration_end_s": 6.321,
+      "spoken_narration": "There is no evidence of five per meter",
+      "selected_asset": "butantan_pit_vipers_cluster_720p.mp4",
+      "media_type": "video",
+      "source_creator": "Rogerio Ramos / Instituto Butantan Serpentarium (Wikimedia Commons)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cobras_do_Butantan.webm",
+      "license": "CC BY 3.0",
+      "visual_purpose": "Multiple Brazilian pit vipers moving across overlapping coils at Instituto Butantan (N02a)",
+      "camera_perspective": "medium",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.48,
+          0.52
+        ],
+        "center_end": [
+          0.52,
+          0.5
+        ],
+        "zoom_range": [
+          1.05,
+          1.08
+        ],
+        "rationale": "Centers multiple Brazilian pit vipers moving across overlapping coils on dry leaf litter at Instituto Butantan."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Exact 0.37s breath-pause cut after 'hectare' to clustered Brazilian pit vipers on forest leaf litter."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.43,
+        "ideal_duration_s": 4.93,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "key_fact",
+          "camera_perspective": "medium",
+          "camera_movement": "tracking",
+          "is_moving_footage": true,
+          "spoken_word_count": 8
+        }
+      },
+      "why_shot_belongs_here": "Pairs the Instituto Butantan scientific density caveat with real moving Brazilian pit-viper footage."
+    },
+    {
+      "scene_id": "S03",
+      "associated_seg_id": "N02",
+      "timeline_start_s": 6.4333,
+      "timeline_end_s": 8.7,
+      "duration_s": 2.267,
+      "narration_start_s": 6.536,
+      "narration_end_s": 8.505,
+      "spoken_narration": "yet vipers ambush birds overhead",
+      "selected_asset": "viper_ambushing_bird_iran_1080p.webm",
+      "media_type": "video",
+      "source_creator": "Behzad Fathinia et al. / Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Iran_-_Pseudocerastes_urarachnoides_2015.webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "Real 1080p venomous viper ambushing a landing bird in mid-air (N02b)",
+      "camera_perspective": "medium",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.42,
+          0.53
+        ],
+        "center_end": [
+          0.45,
+          0.52
+        ],
+        "zoom_range": [
+          1.06,
+          1.08
+        ],
+        "rationale": "Frames the motionless viper and incoming songbird so the mid-air strike lands squarely in center 9:16 at +0.85s."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Exact 0.22s em-dash pause cut after 'meter' into the live viper bird-ambush strike."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience",
+          "natural_sounds"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 2.92,
+        "ideal_duration_s": 4.42,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "medium",
+          "camera_movement": "static",
+          "is_moving_footage": true,
+          "spoken_word_count": 5
+        }
+      },
+      "why_shot_belongs_here": "Literal 1:1 action match between spoken 'vipers ambush birds overhead' and a real 1080p mid-air viper bird strike."
+    },
+    {
+      "scene_id": "S04",
+      "associated_seg_id": "N03",
+      "timeline_start_s": 8.7,
+      "timeline_end_s": 11.1,
+      "duration_s": 2.4,
+      "narration_start_s": 8.833,
+      "narration_end_s": 10.647,
+      "spoken_narration": "with venom five times deadlier",
+      "selected_asset": "pit_viper_venom_fangs_slowmo_1080p.mp4",
+      "media_type": "video",
+      "source_creator": "Rushen / Queen Saovabha Memorial Institute Venom Research (Wikimedia Commons)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Milking_Adult_Malayan_Pit_Viper_(Calloselasma_rhodostoma)_Venom,_in_Slow_Motion.webm",
+      "license": "CC BY 4.0",
+      "visual_purpose": "1080p slow-motion herpetologist extracting pit-viper venom from live fangs (N03)",
+      "camera_perspective": "scientific_fieldwork",
+      "crop_and_framing": {
+        "reframe_mode": "manual",
+        "center_start": [
+          0.48,
+          0.42
+        ],
+        "center_end": [
+          0.5,
+          0.44
+        ],
+        "zoom_range": [
+          1.16,
+          1.2
+        ],
+        "rationale": "Centers the pit viper's wide-open jaws, fangs piercing the green collection membrane, and coiled patterned body."
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "reason": "Exact 0.33s breath-pause cut after 'overhead' revealing real slow-motion pit-viper venom extraction."
+      },
+      "audio_design": {
+        "active_layers": [
+          "narration",
+          "ambience"
+        ],
+        "diegetic_nat_gain_db": null
+      },
+      "adaptive_duration_evaluation": {
+        "min_recommended_s": 3.39,
+        "ideal_duration_s": 4.89,
+        "max_recommended_s": 8.7,
+        "factors": {
+          "visual_complexity": "high",
+          "spoken_importance": "central_reveal",
+          "camera_perspective": "scientific_fieldwork",
+          "camera_movement": "handheld_field",
+          "is_moving_footage": true,
+          "spoken_word_count": 5
+        }
+      },
+      "why_shot_belongs_here": "Hands-on herpetological venom extraction closes the 11-second test with visceral scientific proof."
+    }
+  ]
+}

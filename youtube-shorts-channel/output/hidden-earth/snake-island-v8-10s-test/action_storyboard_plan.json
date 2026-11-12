@@ -1,0 +1,64 @@
+{
+  "slug": "snake-island-v8-10s-test",
+  "topic": "Ilha da Queimada Grande (Snake Island, Brazil) \u2014 90 Pit Vipers Per Hectare, Canopy Bird Ambush & 5x Avian Venom",
+  "planned_scene_count": 3,
+  "planned_total_duration_s": 11.1,
+  "coverage_metrics": {
+    "genuine_moving_footage_pct": 100.0,
+    "meaningful_action_footage_pct": 100.0,
+    "establishing_footage_pct": 0.0,
+    "static_image_pct": 0.0,
+    "scientific_visualization_pct": 0.0,
+    "unresolved_gap_pct": 0.0
+  },
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "narration_segment": "On Brazil's Snake Island, up to ninety pit vipers pack every hectare.",
+      "visual_objective": "Ilha da Queimada Grande off Brazil packs up to 90 venomous pit vipers per hectare.",
+      "visible_action": "Multiple snakes coiling and gliding over one another across green tree branches on Snake Island",
+      "asset": "snakes_intertwined_mating_1080p.webm",
+      "source": "Wikimedia Commons (Elaphe climacophora in tree canopy) (https://commons.wikimedia.org/wiki/File:Japanese_rat_snakes_(Elaphe_climacophora)_mating.webm)",
+      "media_type": "REAL_VIDEO_ACTION",
+      "shot_perspective": "close_up",
+      "relevance": "Score 0.95: directly depicts snake (pack every hectare) with verified location/process alignment.",
+      "duration": "0.00s\u20134.42s (4.42s)",
+      "start_s": 0.0,
+      "end_s": 4.42,
+      "duration_s": 4.42,
+      "continuity": "Opening visual hook on Frame 0"
+    },
+    {
+      "scene_id": "S02",
+      "narration_segment": "There is no evidence of five per meter\u2014yet vipers ambush birds overhead,",
+      "visual_objective": "Debunks the 5-per-m\u00b2 rumor (no evidence) while revealing real arboreal ambush hunting on migratory birds.",
+      "visible_action": "Multiple venomous vipers coiled and moving over one another on forest floor leaves",
+      "asset": "vipera_modras_cluster_4_1080p.mp4",
+      "source": "Petar Milo\u0161evi\u0107 / Zoo Ljubljana (Wikimedia Commons) (https://commons.wikimedia.org/wiki/File:2023-02-17_ZOO_LJUBLJANA_SERPENTES_Vipera_ammodytes_MODRAS_4.webm)",
+      "media_type": "REAL_VIDEO_ACTION",
+      "shot_perspective": "medium_detail",
+      "relevance": "Score 0.60: directly depicts vipers (observing phenomenon state) with verified location/process alignment.",
+      "duration": "4.42s\u20138.84s (4.42s)",
+      "start_s": 4.42,
+      "end_s": 8.84,
+      "duration_s": 4.42,
+      "continuity": "Advances from close_up (REAL_VIDEO_ACTION) to medium_detail new action/evidence; leads into medium_detail on next beat"
+    },
+    {
+      "scene_id": "S03",
+      "narration_segment": "with venom five times deadlier.",
+      "visual_objective": "Natural selection evolved avian-targeted hemotoxic venom up to five times more potent.",
+      "visible_action": "Live pit viper biting collection glass and releasing potent liquid venom in slow motion",
+      "asset": "pit_viper_venom_fangs_slowmo_1080p.mp4",
+      "source": "Rushen / Queen Saovabha Memorial Institute Venom Research (Wikimedia Commons) (https://commons.wikimedia.org/wiki/File:Milking_Adult_Malayan_Pit_Viper_(Calloselasma_rhodostoma)_Venom,_in_Slow_Motion.webm)",
+      "media_type": "REAL_VIDEO_ACTION",
+      "shot_perspective": "medium_detail",
+      "relevance": "Score 0.56: directly depicts venom five (observing phenomenon state) with verified location/process alignment.",
+      "duration": "8.84s\u201311.10s (2.26s)",
+      "start_s": 8.84,
+      "end_s": 11.1,
+      "duration_s": 2.26,
+      "continuity": "Advances from medium_detail (REAL_VIDEO_ACTION) to medium_detail new action/evidence"
+    }
+  ]
+}

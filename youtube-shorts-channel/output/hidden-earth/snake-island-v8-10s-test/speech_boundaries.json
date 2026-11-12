@@ -1,0 +1,47 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 1.654,
+    "word_end_s": 1.559,
+    "next_word_start_s": 1.749,
+    "pause_s": 0.19,
+    "kind": "breath_pause",
+    "after_word": "Island"
+  },
+  {
+    "time_s": 4.271,
+    "word_end_s": 4.084,
+    "next_word_start_s": 4.457,
+    "pause_s": 0.373,
+    "kind": "breath_pause",
+    "after_word": "hectare"
+  },
+  {
+    "time_s": 6.428,
+    "word_end_s": 6.321,
+    "next_word_start_s": 6.536,
+    "pause_s": 0.215,
+    "kind": "breath_pause",
+    "after_word": "meter"
+  },
+  {
+    "time_s": 8.669,
+    "word_end_s": 8.505,
+    "next_word_start_s": 8.833,
+    "pause_s": 0.328,
+    "kind": "breath_pause",
+    "after_word": "overhead"
+  },
+  {
+    "time_s": 11.1,
+    "word_end_s": 10.647,
+    "next_word_start_s": 11.1,
+    "pause_s": 0.453,
+    "kind": "segment_end",
+    "after_word": "deadlier"
+  }
+]

@@ -1,0 +1,2329 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "active_tts_provider": "edge_tts",
+  "segmentation_method": "contrast_directed_rms_matched_segmented",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "pronunciation_sig": "cb749d32c25d539b0591207081b8b02f8da67c69f66562d290159a7d3b4f8170",
+  "total_duration_s": 110.6667,
+  "total_frames_30fps": 3320,
+  "continuity_review": {
+    "segment_count": 7,
+    "max_adjacent_rms_jump_db": 0.07,
+    "max_spectral_centroid_ratio": 1.084,
+    "clipped_word_boundaries_count": 0,
+    "unnatural_pause_count": 0,
+    "continuity_pass": true,
+    "issues": [],
+    "joins": [
+      {
+        "from_sentence": 0,
+        "to_sentence": 1,
+        "rms_jump_db": 0.04,
+        "spectral_centroid_ratio": 1.008,
+        "pause_s": 0.32
+      },
+      {
+        "from_sentence": 1,
+        "to_sentence": 2,
+        "rms_jump_db": 0.05,
+        "spectral_centroid_ratio": 1.036,
+        "pause_s": 0.3
+      },
+      {
+        "from_sentence": 2,
+        "to_sentence": 3,
+        "rms_jump_db": 0.02,
+        "spectral_centroid_ratio": 1.053,
+        "pause_s": 0.3
+      },
+      {
+        "from_sentence": 3,
+        "to_sentence": 4,
+        "rms_jump_db": 0.03,
+        "spectral_centroid_ratio": 1.029,
+        "pause_s": 0.32
+      },
+      {
+        "from_sentence": 4,
+        "to_sentence": 5,
+        "rms_jump_db": 0.07,
+        "spectral_centroid_ratio": 1.084,
+        "pause_s": 0.34
+      },
+      {
+        "from_sentence": 5,
+        "to_sentence": 6,
+        "rms_jump_db": 0.03,
+        "spectral_centroid_ratio": 1.021,
+        "pause_s": 0.3
+      }
+    ]
+  },
+  "contrast_summary": {
+    "sentence_count": 7,
+    "distinct_delivery_styles": [
+      "EMOTIONAL REFLECTION",
+      "ESCALATION",
+      "HOOK",
+      "MEASURED EVIDENCE",
+      "SCIENTIFIC WONDER"
+    ],
+    "distinct_delivery_count": 5,
+    "energy_min": 3,
+    "energy_max": 3,
+    "energy_span": 0,
+    "blocked_theatrical_count": 0,
+    "rebalanced_overdrama_count": 0,
+    "contrast_healthy": true,
+    "guardrail_notes": []
+  },
+  "invalidated_artifacts": [],
+  "segments": [
+    {
+      "seg_id": "N01",
+      "text": "Look closely at America's first spacesuit in nineteen sixty-one. Wrapped in mirror-bright aluminized nylon, it was only an emergency pressure cocoon. Inflated in vacuum, its fabric joints locked so stiff an astronaut could barely bend an elbow.",
+      "delivery": "HOOK",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 0.1,
+      "end": 14.895,
+      "duration": 14.795,
+      "pause_after": 0.32,
+      "emphasis_words": [
+        "nineteen",
+        "sixty-one",
+        "mirror-bright",
+        "aluminized",
+        "nylon",
+        "pressure",
+        "cocoon",
+        "barely",
+        "bend",
+        "elbow"
+      ]
+    },
+    {
+      "seg_id": "N02",
+      "text": "Four years later, Project Gemini pushed astronauts outside into raw vacuum. Tethered by a twenty-five-foot golden umbilical hose, Ed White floated over Earth firing a handheld gas gun. Yet internal pressure ballooned soft Gemini suits like car tires, nearly exhausting crews squeezing back inside.",
+      "delivery": "MEASURED_EVIDENCE",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 15.215,
+      "end": 34.133,
+      "duration": 18.919,
+      "pause_after": 0.3,
+      "emphasis_words": [
+        "raw",
+        "vacuum",
+        "twenty-five-foot",
+        "golden",
+        "umbilical",
+        "floated",
+        "car",
+        "tires",
+        "exhausting"
+      ]
+    },
+    {
+      "seg_id": "N03",
+      "text": "Walking on the Moon in nineteen sixty-nine demanded a wearable twenty-one-layer spacecraft. Beneath fireproof white Beta-cloth, stacked Mylar and ballistic armor stopped tiny space rocks at eight kilometers per second. A thin gold-plated visor reflected blinding, unfiltered sunlight.",
+      "delivery": "SCIENTIFIC_WONDER",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 34.433,
+      "end": 51.943,
+      "duration": 17.509,
+      "pause_after": 0.3,
+      "emphasis_words": [
+        "twenty-one-layer",
+        "spacecraft",
+        "Beta-cloth",
+        "eight",
+        "kilometers",
+        "gold-plated",
+        "visor"
+      ]
+    },
+    {
+      "seg_id": "N04",
+      "text": "On each astronaut's back rode a life-support pack pumping chilled water through tubes against their skin. Still, Apollo's pressurized fabric torso fought every bend\u2014forcing crews to bunny-hop and topple whenever they reached down for rocks.",
+      "delivery": "MEASURED_EVIDENCE",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 52.243,
+      "end": 65.727,
+      "duration": 13.484,
+      "pause_after": 0.32,
+      "emphasis_words": [
+        "life-support",
+        "pack",
+        "chilled",
+        "water",
+        "fought",
+        "every",
+        "bend",
+        "bunny-hop",
+        "topple"
+      ]
+    },
+    {
+      "seg_id": "N05",
+      "text": "In nineteen eighty-four, NASA rebuilt the upper body around a rigid fiberglass shell. Snapped onto a twenty-four-thruster nitrogen jetpack, Bruce McCandless flew untethered one hundred meters from Challenger. He became a standalone human satellite above Earth.",
+      "delivery": "ESCALATION",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "start": 66.047,
+      "end": 81.807,
+      "duration": 15.76,
+      "pause_after": 0.34,
+      "emphasis_words": [
+        "rigid",
+        "fiberglass",
+        "shell",
+        "twenty-four-thruster",
+        "nitrogen",
+        "jetpack",
+        "untethered",
+        "one",
+        "hundred",
+        "meters"
+      ]
+    },
+    {
+      "seg_id": "N06",
+      "text": "Now for twenty twenty-six, Artemis lunar suits replace stiff fabric bends with sealed metal bearings. Astronauts step straight through a rear-entry hatch on the backpack, then twist and kneel effortlessly across rocky craters.",
+      "delivery": "SCIENTIFIC_WONDER",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "start": 82.147,
+      "end": 95.437,
+      "duration": 13.29,
+      "pause_after": 0.3,
+      "emphasis_words": [
+        "twenty",
+        "twenty-six",
+        "sealed",
+        "metal",
+        "bearings",
+        "rear-entry",
+        "hatch",
+        "twist",
+        "kneel"
+      ]
+    },
+    {
+      "seg_id": "N07",
+      "text": "Glass-sharp lunar dust remains NASA's toughest enemy, chewing at metal seals and joints. Yet sixty-five years after Mercury's silver cocoon, dust-hardened Artemis suits are built to work deep inside the Moon's frozen southern shadows.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "start": 95.737,
+      "end": 110.237,
+      "duration": 14.501,
+      "pause_after": 0.42,
+      "emphasis_words": [
+        "Glass-sharp",
+        "lunar",
+        "dust",
+        "remains",
+        "sixty-five",
+        "years",
+        "frozen",
+        "southern",
+        "shadows"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "sentence_index": 0,
+      "seg_id": "N01",
+      "text": "Look closely at America's first spacesuit in nineteen sixty-one. Wrapped in mirror-bright aluminized nylon, it was only an emergency pressure cocoon. Inflated in vacuum, its fabric joints locked so stiff an astronaut could barely bend an elbow.",
+      "delivery": "HOOK",
+      "emotional_tone": "quiet_awe",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.68,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "crisp",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 320,
+      "emphasis_phrases": [
+        "nineteen sixty-one",
+        "mirror-bright aluminized nylon",
+        "barely bend an elbow"
+      ],
+      "start_s": 0.1,
+      "end_s": 14.895,
+      "cache_key": "1f081b4b04cd3f638f28",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.19,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:HOOK->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 1,
+      "seg_id": "N02",
+      "text": "Four years later, Project Gemini pushed astronauts outside into raw vacuum. Tethered by a twenty-five-foot golden umbilical hose, Ed White floated over Earth firing a handheld gas gun. Yet internal pressure ballooned soft Gemini suits like car tires, nearly exhausting crews squeezing back inside.",
+      "delivery": "MEASURED_EVIDENCE",
+      "emotional_tone": "grounded_authority",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.58,
+      "pitch_direction": "rising",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 300,
+      "emphasis_phrases": [
+        "twenty-five-foot golden umbilical",
+        "floated over Earth",
+        "like car tires"
+      ],
+      "start_s": 15.215,
+      "end_s": 34.133,
+      "cache_key": "8b081b3b83b36510413e",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.162,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 2,
+      "seg_id": "N03",
+      "text": "Walking on the Moon in nineteen sixty-nine demanded a wearable twenty-one-layer spacecraft. Beneath fireproof white Beta-cloth, stacked Mylar and ballistic armor stopped tiny space rocks at eight kilometers per second. A thin gold-plated visor reflected blinding, unfiltered sunlight.",
+      "delivery": "SCIENTIFIC_WONDER",
+      "emotional_tone": "intrigued_wonder",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.58,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "fluid",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 300,
+      "emphasis_phrases": [
+        "twenty-one-layer spacecraft",
+        "eight kilometers per second",
+        "gold-plated visor"
+      ],
+      "start_s": 34.433,
+      "end_s": 51.943,
+      "cache_key": "9a6f2d505fda719d2fdb",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.162,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC WONDER->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 3,
+      "seg_id": "N04",
+      "text": "On each astronaut's back rode a life-support pack pumping chilled water through tubes against their skin. Still, Apollo's pressurized fabric torso fought every bend\u2014forcing crews to bunny-hop and topple whenever they reached down for rocks.",
+      "delivery": "MEASURED_EVIDENCE",
+      "emotional_tone": "observational_clarity",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.58,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "measured",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 320,
+      "emphasis_phrases": [
+        "chilled water through tubes",
+        "fought every bend",
+        "bunny-hop and topple"
+      ],
+      "start_s": 52.243,
+      "end_s": 65.727,
+      "cache_key": "a003ff56b46a525b3983",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.72,
+        "similarity_boost": 0.8,
+        "style": 0.162,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:MEASURED_EVIDENCE->bounded_prosody(rate=+0%,pitch=+0Hz,pause=320ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 4,
+      "seg_id": "N05",
+      "text": "In nineteen eighty-four, NASA rebuilt the upper body around a rigid fiberglass shell. Snapped onto a twenty-four-thruster nitrogen jetpack, Bruce McCandless flew untethered one hundred meters from Challenger. He became a standalone human satellite above Earth.",
+      "delivery": "ESCALATION",
+      "emotional_tone": "monumental_scale",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.72,
+      "pitch_direction": "rising",
+      "sentence_rhythm": "deliberate",
+      "rate": "+1%",
+      "pitch": "+0Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 340,
+      "emphasis_phrases": [
+        "rigid fiberglass shell",
+        "twenty-four-thruster nitrogen jetpack",
+        "untethered one hundred meters"
+      ],
+      "start_s": 66.047,
+      "end_s": 81.807,
+      "cache_key": "1befacd6ea9c5990cf75",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.202,
+        "use_speaker_boost": true,
+        "speed": 1.01
+      },
+      "applied_approximations": [
+        "DELIVERY:ESCALATION->bounded_prosody(rate=+2%,pitch=+1Hz,pause=320ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 5,
+      "seg_id": "N06",
+      "text": "Now for twenty twenty-six, Artemis lunar suits replace stiff fabric bends with sealed metal bearings. Astronauts step straight through a rear-entry hatch on the backpack, then twist and kneel effortlessly across rocky craters.",
+      "delivery": "SCIENTIFIC_WONDER",
+      "emotional_tone": "crisp_precision",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.62,
+      "pitch_direction": "steady",
+      "sentence_rhythm": "fluid",
+      "rate": "-1%",
+      "pitch": "-1Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 300,
+      "emphasis_phrases": [
+        "sealed metal bearings",
+        "rear-entry hatch",
+        "twist and kneel effortlessly"
+      ],
+      "start_s": 82.147,
+      "end_s": 95.437,
+      "cache_key": "0bb206565608e5521c90",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.174,
+        "use_speaker_boost": true,
+        "speed": 0.99
+      },
+      "applied_approximations": [
+        "DELIVERY:SCIENTIFIC WONDER->preserved_neutral_cadence(unrecognized_style_kept_natural)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    },
+    {
+      "sentence_index": 6,
+      "seg_id": "N07",
+      "text": "Glass-sharp lunar dust remains NASA's toughest enemy, chewing at metal seals and joints. Yet sixty-five years after Mercury's silver cocoon, dust-hardened Artemis suits are built to work deep inside the Moon's frozen southern shadows.",
+      "delivery": "EMOTIONAL_REFLECTION",
+      "emotional_tone": "resonant_payoff",
+      "pace": "NATURAL",
+      "energy": 3,
+      "emotional_intensity": 0.68,
+      "pitch_direction": "falling",
+      "sentence_rhythm": "deliberate",
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "pause_before_ms": 0,
+      "pause_after_ms": 420,
+      "emphasis_phrases": [
+        "remains NASA's toughest enemy",
+        "sixty-five years",
+        "frozen southern shadows"
+      ],
+      "start_s": 95.737,
+      "end_s": 110.237,
+      "cache_key": "e54353cccf3c901a07e1",
+      "cache_hit": true,
+      "elevenlabs_model_settings": {
+        "stability": 0.64,
+        "similarity_boost": 0.8,
+        "style": 0.19,
+        "use_speaker_boost": true,
+        "speed": 0.96
+      },
+      "applied_approximations": [
+        "DELIVERY:EMOTIONAL_REFLECTION->bounded_prosody(rate=-3%,pitch=-1Hz,pause=480ms)",
+        "EMPHASIS->word_boundary_highlight_and_measured_articulation"
+      ]
+    }
+  ],
+  "soundbites": [],
+  "words": [
+    {
+      "seg_id": "N01",
+      "word": "Look",
+      "start": 0.1,
+      "end": 0.327,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "closely",
+      "start": 0.242,
+      "end": 0.697,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "at",
+      "start": 0.71,
+      "end": 0.823,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "America's",
+      "start": 0.836,
+      "end": 1.316,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "first",
+      "start": 1.328,
+      "end": 1.669,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "spacesuit",
+      "start": 1.682,
+      "end": 2.25,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "in",
+      "start": 2.263,
+      "end": 2.389,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "nineteen",
+      "start": 2.402,
+      "end": 2.856,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "sixty-one",
+      "start": 2.869,
+      "end": 3.601,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "Wrapped",
+      "start": 4.473,
+      "end": 4.864,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "in",
+      "start": 4.877,
+      "end": 4.978,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "mirror-bright",
+      "start": 4.99,
+      "end": 5.483,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "aluminized",
+      "start": 5.495,
+      "end": 6.101,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "nylon",
+      "start": 6.114,
+      "end": 6.531,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "it",
+      "start": 6.783,
+      "end": 6.859,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "was",
+      "start": 6.872,
+      "end": 6.998,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "only",
+      "start": 7.011,
+      "end": 7.251,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "an",
+      "start": 7.263,
+      "end": 7.339,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "emergency",
+      "start": 7.352,
+      "end": 7.92,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "pressure",
+      "start": 7.932,
+      "end": 8.248,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "cocoon",
+      "start": 8.261,
+      "end": 8.841,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "Inflated",
+      "start": 9.713,
+      "end": 10.306,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "in",
+      "start": 10.319,
+      "end": 10.458,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "vacuum",
+      "start": 10.47,
+      "end": 10.963,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "its",
+      "start": 11.165,
+      "end": 11.291,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "fabric",
+      "start": 11.304,
+      "end": 11.72,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "joints",
+      "start": 11.733,
+      "end": 12.086,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "locked",
+      "start": 12.099,
+      "end": 12.352,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "so",
+      "start": 12.364,
+      "end": 12.528,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "stiff",
+      "start": 12.541,
+      "end": 12.831,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "an",
+      "start": 12.844,
+      "end": 12.92,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "astronaut",
+      "start": 12.932,
+      "end": 13.437,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "could",
+      "start": 13.45,
+      "end": 13.639,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N01",
+      "word": "barely",
+      "start": 13.652,
+      "end": 13.955,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "bend",
+      "start": 13.968,
+      "end": 14.208,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "an",
+      "start": 14.22,
+      "end": 14.309,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N01",
+      "word": "elbow",
+      "start": 14.321,
+      "end": 14.788,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Four",
+      "start": 15.215,
+      "end": 15.391,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "years",
+      "start": 15.31,
+      "end": 15.639,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "later",
+      "start": 15.651,
+      "end": 16.03,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Project",
+      "start": 16.245,
+      "end": 16.661,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Gemini",
+      "start": 16.674,
+      "end": 17.129,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "pushed",
+      "start": 17.141,
+      "end": 17.482,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "astronauts",
+      "start": 17.495,
+      "end": 18.038,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "outside",
+      "start": 18.05,
+      "end": 18.593,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "into",
+      "start": 18.606,
+      "end": 18.921,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "raw",
+      "start": 18.934,
+      "end": 19.225,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "vacuum",
+      "start": 19.237,
+      "end": 19.831,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Tethered",
+      "start": 20.702,
+      "end": 21.018,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "by",
+      "start": 21.031,
+      "end": 21.195,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "a",
+      "start": 21.207,
+      "end": 21.283,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "twenty-five-foot",
+      "start": 21.296,
+      "end": 22.079,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "golden",
+      "start": 22.091,
+      "end": 22.47,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "umbilical",
+      "start": 22.483,
+      "end": 23.0,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "hose",
+      "start": 23.013,
+      "end": 23.392,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Ed",
+      "start": 23.606,
+      "end": 23.745,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "White",
+      "start": 23.758,
+      "end": 24.023,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "floated",
+      "start": 24.036,
+      "end": 24.44,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "over",
+      "start": 24.452,
+      "end": 24.705,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "Earth",
+      "start": 24.717,
+      "end": 24.945,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "firing",
+      "start": 24.957,
+      "end": 25.425,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "a",
+      "start": 25.437,
+      "end": 25.462,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "handheld",
+      "start": 25.475,
+      "end": 26.056,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "gas",
+      "start": 26.068,
+      "end": 26.321,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "gun",
+      "start": 26.334,
+      "end": 26.738,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Yet",
+      "start": 27.609,
+      "end": 27.874,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "internal",
+      "start": 27.887,
+      "end": 28.354,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "pressure",
+      "start": 28.366,
+      "end": 28.657,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "ballooned",
+      "start": 28.669,
+      "end": 29.036,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "soft",
+      "start": 29.048,
+      "end": 29.313,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "Gemini",
+      "start": 29.326,
+      "end": 29.743,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "suits",
+      "start": 29.755,
+      "end": 30.109,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "like",
+      "start": 30.121,
+      "end": 30.349,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "car",
+      "start": 30.361,
+      "end": 30.639,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "tires",
+      "start": 30.652,
+      "end": 31.182,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "nearly",
+      "start": 31.397,
+      "end": 31.725,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "exhausting",
+      "start": 31.738,
+      "end": 32.268,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N02",
+      "word": "crews",
+      "start": 32.281,
+      "end": 32.621,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "squeezing",
+      "start": 32.634,
+      "end": 33.101,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "back",
+      "start": 33.114,
+      "end": 33.366,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N02",
+      "word": "inside",
+      "start": 33.379,
+      "end": 34.048,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Walking",
+      "start": 34.433,
+      "end": 34.888,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "on",
+      "start": 34.799,
+      "end": 34.913,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "the",
+      "start": 34.925,
+      "end": 34.988,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Moon",
+      "start": 35.001,
+      "end": 35.304,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "in",
+      "start": 35.317,
+      "end": 35.468,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "nineteen",
+      "start": 35.481,
+      "end": 35.91,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "sixty-nine",
+      "start": 35.923,
+      "end": 36.516,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "demanded",
+      "start": 36.529,
+      "end": 36.946,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "a",
+      "start": 36.958,
+      "end": 37.009,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "wearable",
+      "start": 37.021,
+      "end": 37.514,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "twenty-one-layer",
+      "start": 37.526,
+      "end": 38.334,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "spacecraft",
+      "start": 38.347,
+      "end": 39.168,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "Beneath",
+      "start": 40.04,
+      "end": 40.456,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "fireproof",
+      "start": 40.469,
+      "end": 41.113,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "white",
+      "start": 41.125,
+      "end": 41.416,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Beta-cloth",
+      "start": 41.428,
+      "end": 42.06,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "stacked",
+      "start": 42.236,
+      "end": 42.59,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "Mylar",
+      "start": 42.603,
+      "end": 43.082,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "and",
+      "start": 43.171,
+      "end": 43.272,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "ballistic",
+      "start": 43.284,
+      "end": 43.752,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "armor",
+      "start": 43.764,
+      "end": 44.017,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "stopped",
+      "start": 44.029,
+      "end": 44.358,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "tiny",
+      "start": 44.37,
+      "end": 44.661,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "space",
+      "start": 44.673,
+      "end": 45.052,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "rocks",
+      "start": 45.065,
+      "end": 45.418,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "at",
+      "start": 45.431,
+      "end": 45.557,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "eight",
+      "start": 45.57,
+      "end": 45.747,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "kilometers",
+      "start": 45.759,
+      "end": 46.315,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "per",
+      "start": 46.327,
+      "end": 46.466,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "second",
+      "start": 46.479,
+      "end": 47.009,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "A",
+      "start": 47.88,
+      "end": 48.019,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "thin",
+      "start": 48.032,
+      "end": 48.284,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "gold-plated",
+      "start": 48.297,
+      "end": 48.966,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "visor",
+      "start": 48.979,
+      "end": 49.396,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N03",
+      "word": "reflected",
+      "start": 49.408,
+      "end": 49.989,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "blinding",
+      "start": 50.002,
+      "end": 50.481,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "unfiltered",
+      "start": 50.696,
+      "end": 51.226,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N03",
+      "word": "sunlight",
+      "start": 51.239,
+      "end": 51.832,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "On",
+      "start": 52.243,
+      "end": 52.47,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "each",
+      "start": 52.376,
+      "end": 52.604,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "astronaut's",
+      "start": 52.616,
+      "end": 53.172,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "back",
+      "start": 53.184,
+      "end": 53.487,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "rode",
+      "start": 53.5,
+      "end": 53.753,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "a",
+      "start": 53.765,
+      "end": 53.828,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "life-support",
+      "start": 53.841,
+      "end": 54.523,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "pack",
+      "start": 54.535,
+      "end": 54.75,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "pumping",
+      "start": 54.763,
+      "end": 55.141,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "chilled",
+      "start": 55.154,
+      "end": 55.432,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "water",
+      "start": 55.444,
+      "end": 55.785,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "through",
+      "start": 55.798,
+      "end": 56.051,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "tubes",
+      "start": 56.063,
+      "end": 56.404,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "against",
+      "start": 56.417,
+      "end": 56.745,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "their",
+      "start": 56.758,
+      "end": 56.909,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "skin",
+      "start": 56.922,
+      "end": 57.402,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Still",
+      "start": 58.273,
+      "end": 58.703,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "Apollo's",
+      "start": 58.892,
+      "end": 59.334,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "pressurized",
+      "start": 59.346,
+      "end": 59.953,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "fabric",
+      "start": 59.965,
+      "end": 60.319,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "torso",
+      "start": 60.331,
+      "end": 60.761,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "fought",
+      "start": 60.773,
+      "end": 61.102,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "every",
+      "start": 61.114,
+      "end": 61.354,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "bend",
+      "start": 61.367,
+      "end": 61.695,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "forcing",
+      "start": 61.91,
+      "end": 62.301,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "crews",
+      "start": 62.314,
+      "end": 62.617,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "to",
+      "start": 62.629,
+      "end": 62.743,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "bunny-hop",
+      "start": 62.756,
+      "end": 63.261,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "and",
+      "start": 63.273,
+      "end": 63.374,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "topple",
+      "start": 63.387,
+      "end": 63.766,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N04",
+      "word": "whenever",
+      "start": 63.778,
+      "end": 64.144,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "they",
+      "start": 64.157,
+      "end": 64.283,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "reached",
+      "start": 64.296,
+      "end": 64.612,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "down",
+      "start": 64.624,
+      "end": 64.915,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "for",
+      "start": 64.927,
+      "end": 65.054,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N04",
+      "word": "rocks",
+      "start": 65.066,
+      "end": 65.622,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "In",
+      "start": 66.047,
+      "end": 66.245,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "nineteen",
+      "start": 66.156,
+      "end": 66.614,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "eighty-four",
+      "start": 66.626,
+      "end": 67.22,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "NASA",
+      "start": 67.53,
+      "end": 67.876,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "rebuilt",
+      "start": 67.889,
+      "end": 68.347,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "the",
+      "start": 68.359,
+      "end": 68.47,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "upper",
+      "start": 68.483,
+      "end": 68.705,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "body",
+      "start": 68.718,
+      "end": 69.002,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "around",
+      "start": 69.015,
+      "end": 69.349,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "a",
+      "start": 69.361,
+      "end": 69.398,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "rigid",
+      "start": 69.411,
+      "end": 69.782,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "fiberglass",
+      "start": 69.795,
+      "end": 70.426,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "shell",
+      "start": 70.438,
+      "end": 70.871,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "Snapped",
+      "start": 71.725,
+      "end": 72.158,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "onto",
+      "start": 72.17,
+      "end": 72.418,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "a",
+      "start": 72.43,
+      "end": 72.492,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "twenty-four-thruster",
+      "start": 72.504,
+      "end": 73.383,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "nitrogen",
+      "start": 73.396,
+      "end": 73.977,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "jetpack",
+      "start": 73.99,
+      "end": 74.546,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "Bruce",
+      "start": 74.658,
+      "end": 74.955,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "McCandless",
+      "start": 74.967,
+      "end": 75.512,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "flew",
+      "start": 75.524,
+      "end": 75.834,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "untethered",
+      "start": 75.846,
+      "end": 76.267,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "one",
+      "start": 76.279,
+      "end": 76.502,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "hundred",
+      "start": 76.514,
+      "end": 76.824,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "meters",
+      "start": 76.836,
+      "end": 77.195,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N05",
+      "word": "from",
+      "start": 77.207,
+      "end": 77.393,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Challenger",
+      "start": 77.405,
+      "end": 78.012,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "He",
+      "start": 78.866,
+      "end": 79.051,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "became",
+      "start": 79.064,
+      "end": 79.373,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "a",
+      "start": 79.386,
+      "end": 79.435,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "standalone",
+      "start": 79.448,
+      "end": 80.017,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "human",
+      "start": 80.029,
+      "end": 80.425,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "satellite",
+      "start": 80.438,
+      "end": 80.982,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "above",
+      "start": 80.995,
+      "end": 81.304,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N05",
+      "word": "Earth",
+      "start": 81.316,
+      "end": 81.725,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "Now",
+      "start": 82.147,
+      "end": 82.45,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "for",
+      "start": 82.362,
+      "end": 82.501,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "twenty",
+      "start": 82.513,
+      "end": 82.829,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "twenty-six",
+      "start": 82.842,
+      "end": 83.586,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "Artemis",
+      "start": 83.814,
+      "end": 84.268,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "lunar",
+      "start": 84.281,
+      "end": 84.584,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "suits",
+      "start": 84.597,
+      "end": 84.912,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "replace",
+      "start": 84.925,
+      "end": 85.316,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "stiff",
+      "start": 85.329,
+      "end": 85.607,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "fabric",
+      "start": 85.619,
+      "end": 86.011,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "bends",
+      "start": 86.023,
+      "end": 86.301,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "with",
+      "start": 86.314,
+      "end": 86.478,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "sealed",
+      "start": 86.491,
+      "end": 86.819,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "metal",
+      "start": 86.831,
+      "end": 87.122,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "bearings",
+      "start": 87.134,
+      "end": 87.74,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "Astronauts",
+      "start": 88.612,
+      "end": 89.269,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "step",
+      "start": 89.281,
+      "end": 89.547,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "straight",
+      "start": 89.559,
+      "end": 89.9,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "through",
+      "start": 89.913,
+      "end": 90.153,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "a",
+      "start": 90.165,
+      "end": 90.216,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "rear-entry",
+      "start": 90.228,
+      "end": 90.797,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "hatch",
+      "start": 90.809,
+      "end": 91.15,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "on",
+      "start": 91.163,
+      "end": 91.264,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "the",
+      "start": 91.276,
+      "end": 91.352,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "backpack",
+      "start": 91.365,
+      "end": 91.933,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "then",
+      "start": 92.173,
+      "end": 92.362,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "twist",
+      "start": 92.375,
+      "end": 92.754,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "and",
+      "start": 92.829,
+      "end": 93.006,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "kneel",
+      "start": 93.019,
+      "end": 93.334,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "effortlessly",
+      "start": 93.347,
+      "end": 93.966,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N06",
+      "word": "across",
+      "start": 93.978,
+      "end": 94.37,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "rocky",
+      "start": 94.382,
+      "end": 94.711,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N06",
+      "word": "craters",
+      "start": 94.723,
+      "end": 95.329,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Glass-sharp",
+      "start": 95.737,
+      "end": 96.492,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "lunar",
+      "start": 96.382,
+      "end": 96.707,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "dust",
+      "start": 96.72,
+      "end": 97.007,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "remains",
+      "start": 97.02,
+      "end": 97.475,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "NASA's",
+      "start": 97.489,
+      "end": 97.931,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "toughest",
+      "start": 97.944,
+      "end": 98.387,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "enemy",
+      "start": 98.4,
+      "end": 98.712,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "chewing",
+      "start": 98.96,
+      "end": 99.337,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "at",
+      "start": 99.35,
+      "end": 99.468,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "metal",
+      "start": 99.481,
+      "end": 99.767,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "seals",
+      "start": 99.78,
+      "end": 100.223,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "and",
+      "start": 100.236,
+      "end": 100.379,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "joints",
+      "start": 100.392,
+      "end": 100.965,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Yet",
+      "start": 101.866,
+      "end": 102.113,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "sixty-five",
+      "start": 102.126,
+      "end": 102.842,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "years",
+      "start": 102.855,
+      "end": 103.259,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "after",
+      "start": 103.272,
+      "end": 103.545,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Mercury's",
+      "start": 103.558,
+      "end": 104.105,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "silver",
+      "start": 104.118,
+      "end": 104.405,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "cocoon",
+      "start": 104.418,
+      "end": 104.925,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "dust-hardened",
+      "start": 105.121,
+      "end": 105.72,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Artemis",
+      "start": 105.733,
+      "end": 106.215,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "suits",
+      "start": 106.228,
+      "end": 106.514,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "are",
+      "start": 106.527,
+      "end": 106.631,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "built",
+      "start": 106.644,
+      "end": 106.97,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "to",
+      "start": 106.983,
+      "end": 107.061,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "work",
+      "start": 107.074,
+      "end": 107.438,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "deep",
+      "start": 107.452,
+      "end": 107.686,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "inside",
+      "start": 107.699,
+      "end": 108.155,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "the",
+      "start": 108.168,
+      "end": 108.233,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "Moon's",
+      "start": 108.246,
+      "end": 108.675,
+      "emphasis": false
+    },
+    {
+      "seg_id": "N07",
+      "word": "frozen",
+      "start": 108.689,
+      "end": 109.105,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "southern",
+      "start": 109.118,
+      "end": 109.47,
+      "emphasis": true
+    },
+    {
+      "seg_id": "N07",
+      "word": "shadows",
+      "start": 109.483,
+      "end": 110.16,
+      "emphasis": true
+    }
+  ],
+  "sfx_applied": [],
+  "diegetic_nat_sound_active": false,
+  "adaptive_audio_profile": "immersive_exploration",
+  "music_sections_count": 2,
+  "ambience_sections_count": 0,
+  "scene_optimization_counts": {
+    "Keep": 22,
+    "Merge": 0,
+    "Replace": 0,
+    "Remove": 0
+  },
+  "audio_layers_exported": [
+    "layer_1_narration",
+    "layer_2_music",
+    "layer_3_ambience",
+    "layer_4_natural_sounds",
+    "layer_5_cinematic_sfx"
+  ],
+  "audio_diagnostics": {
+    "integrated_lufs": -16.0,
+    "loudness_range_lra_lu": 2.3,
+    "true_peak_dbtp": -1.5,
+    "speech_crest_factor_db": 14.5,
+    "clipped_samples_count": 0,
+    "excessive_silence_count": 0,
+    "excessive_silences": [],
+    "voice_peak_dbfs": -1.5
+  }
+}

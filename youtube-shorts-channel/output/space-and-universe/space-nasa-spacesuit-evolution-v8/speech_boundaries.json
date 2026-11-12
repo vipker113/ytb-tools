@@ -1,0 +1,263 @@
+[
+  {
+    "time_s": 0.0,
+    "kind": "start",
+    "pause_s": 0.0
+  },
+  {
+    "time_s": 3.826,
+    "word_end_s": 3.601,
+    "next_word_start_s": 4.473,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "sixty-one"
+  },
+  {
+    "time_s": 6.657,
+    "word_end_s": 6.531,
+    "next_word_start_s": 6.783,
+    "pause_s": 0.252,
+    "kind": "breath_pause",
+    "after_word": "nylon"
+  },
+  {
+    "time_s": 9.066,
+    "word_end_s": 8.841,
+    "next_word_start_s": 9.713,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "cocoon"
+  },
+  {
+    "time_s": 11.064,
+    "word_end_s": 10.963,
+    "next_word_start_s": 11.165,
+    "pause_s": 0.202,
+    "kind": "breath_pause",
+    "after_word": "vacuum"
+  },
+  {
+    "time_s": 15.002,
+    "word_end_s": 14.788,
+    "next_word_start_s": 15.215,
+    "pause_s": 0.427,
+    "kind": "breath_pause",
+    "after_word": "elbow"
+  },
+  {
+    "time_s": 16.138,
+    "word_end_s": 16.03,
+    "next_word_start_s": 16.245,
+    "pause_s": 0.215,
+    "kind": "breath_pause",
+    "after_word": "later"
+  },
+  {
+    "time_s": 20.056,
+    "word_end_s": 19.831,
+    "next_word_start_s": 20.702,
+    "pause_s": 0.871,
+    "kind": "breath_pause",
+    "after_word": "vacuum"
+  },
+  {
+    "time_s": 23.499,
+    "word_end_s": 23.392,
+    "next_word_start_s": 23.606,
+    "pause_s": 0.214,
+    "kind": "breath_pause",
+    "after_word": "hose"
+  },
+  {
+    "time_s": 26.963,
+    "word_end_s": 26.738,
+    "next_word_start_s": 27.609,
+    "pause_s": 0.871,
+    "kind": "breath_pause",
+    "after_word": "gun"
+  },
+  {
+    "time_s": 31.289,
+    "word_end_s": 31.182,
+    "next_word_start_s": 31.397,
+    "pause_s": 0.215,
+    "kind": "breath_pause",
+    "after_word": "tires"
+  },
+  {
+    "time_s": 34.24,
+    "word_end_s": 34.048,
+    "next_word_start_s": 34.433,
+    "pause_s": 0.385,
+    "kind": "breath_pause",
+    "after_word": "inside"
+  },
+  {
+    "time_s": 39.393,
+    "word_end_s": 39.168,
+    "next_word_start_s": 40.04,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "spacecraft"
+  },
+  {
+    "time_s": 42.148,
+    "word_end_s": 42.06,
+    "next_word_start_s": 42.236,
+    "pause_s": 0.176,
+    "kind": "breath_pause",
+    "after_word": "Beta-cloth"
+  },
+  {
+    "time_s": 47.234,
+    "word_end_s": 47.009,
+    "next_word_start_s": 47.88,
+    "pause_s": 0.871,
+    "kind": "breath_pause",
+    "after_word": "second"
+  },
+  {
+    "time_s": 50.588,
+    "word_end_s": 50.481,
+    "next_word_start_s": 50.696,
+    "pause_s": 0.215,
+    "kind": "breath_pause",
+    "after_word": "blinding"
+  },
+  {
+    "time_s": 52.038,
+    "word_end_s": 51.832,
+    "next_word_start_s": 52.243,
+    "pause_s": 0.411,
+    "kind": "breath_pause",
+    "after_word": "sunlight"
+  },
+  {
+    "time_s": 57.627,
+    "word_end_s": 57.402,
+    "next_word_start_s": 58.273,
+    "pause_s": 0.871,
+    "kind": "breath_pause",
+    "after_word": "skin"
+  },
+  {
+    "time_s": 58.797,
+    "word_end_s": 58.703,
+    "next_word_start_s": 58.892,
+    "pause_s": 0.189,
+    "kind": "breath_pause",
+    "after_word": "Still"
+  },
+  {
+    "time_s": 61.802,
+    "word_end_s": 61.695,
+    "next_word_start_s": 61.91,
+    "pause_s": 0.215,
+    "kind": "breath_pause",
+    "after_word": "bend"
+  },
+  {
+    "time_s": 65.834,
+    "word_end_s": 65.622,
+    "next_word_start_s": 66.047,
+    "pause_s": 0.425,
+    "kind": "breath_pause",
+    "after_word": "rocks"
+  },
+  {
+    "time_s": 67.375,
+    "word_end_s": 67.22,
+    "next_word_start_s": 67.53,
+    "pause_s": 0.31,
+    "kind": "breath_pause",
+    "after_word": "eighty-four"
+  },
+  {
+    "time_s": 71.096,
+    "word_end_s": 70.871,
+    "next_word_start_s": 71.725,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "shell"
+  },
+  {
+    "time_s": 78.237,
+    "word_end_s": 78.012,
+    "next_word_start_s": 78.866,
+    "pause_s": 0.854,
+    "kind": "breath_pause",
+    "after_word": "Challenger"
+  },
+  {
+    "time_s": 81.936,
+    "word_end_s": 81.725,
+    "next_word_start_s": 82.147,
+    "pause_s": 0.422,
+    "kind": "breath_pause",
+    "after_word": "Earth"
+  },
+  {
+    "time_s": 83.7,
+    "word_end_s": 83.586,
+    "next_word_start_s": 83.814,
+    "pause_s": 0.228,
+    "kind": "breath_pause",
+    "after_word": "twenty-six"
+  },
+  {
+    "time_s": 87.965,
+    "word_end_s": 87.74,
+    "next_word_start_s": 88.612,
+    "pause_s": 0.872,
+    "kind": "breath_pause",
+    "after_word": "bearings"
+  },
+  {
+    "time_s": 92.053,
+    "word_end_s": 91.933,
+    "next_word_start_s": 92.173,
+    "pause_s": 0.24,
+    "kind": "breath_pause",
+    "after_word": "backpack"
+  },
+  {
+    "time_s": 95.533,
+    "word_end_s": 95.329,
+    "next_word_start_s": 95.737,
+    "pause_s": 0.408,
+    "kind": "breath_pause",
+    "after_word": "craters"
+  },
+  {
+    "time_s": 98.836,
+    "word_end_s": 98.712,
+    "next_word_start_s": 98.96,
+    "pause_s": 0.248,
+    "kind": "breath_pause",
+    "after_word": "enemy"
+  },
+  {
+    "time_s": 101.19,
+    "word_end_s": 100.965,
+    "next_word_start_s": 101.866,
+    "pause_s": 0.901,
+    "kind": "breath_pause",
+    "after_word": "joints"
+  },
+  {
+    "time_s": 105.023,
+    "word_end_s": 104.925,
+    "next_word_start_s": 105.121,
+    "pause_s": 0.196,
+    "kind": "breath_pause",
+    "after_word": "cocoon"
+  },
+  {
+    "time_s": 110.667,
+    "word_end_s": 110.16,
+    "next_word_start_s": 110.667,
+    "pause_s": 0.507,
+    "kind": "segment_end",
+    "after_word": "shadows"
+  }
+]

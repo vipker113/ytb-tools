@@ -20,15 +20,20 @@ Implements Section 8 & v4.0 Top-0.5% Packaging Rules of the Proof of Wonder Docu
 
 from __future__ import annotations
 
+import math
+import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional
+from typing import TYPE_CHECKING, Optional
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 
 from .reframing import crop_subpixel_full_canvas, estimate_salient_subject_center
 from .style_profile import DocumentaryStyleProfile
+
+if TYPE_CHECKING:
+    from .schema import ThumbnailVisualCueSpec
 
 CHANNEL_ROOT = Path(__file__).resolve().parents[2]
 FONT_ANTON = str(CHANNEL_ROOT / "assets" / "fonts" / "Anton-Regular.ttf")
@@ -149,6 +154,502 @@ def _split_hook_lines(raw_text: str, max_words: int) -> list[str]:
     return [" ".join(words[:best_idx]).upper(), " ".join(words[best_idx:]).upper()]
 
 
+_NEGATION_TOKENS = {
+    "cant",
+    "cannot",
+    "never",
+    "not",
+    "dont",
+    "do",
+    "no",
+    "wont",
+    "stopped",
+    "forbidden",
+    "impossible",
+    "illegal",
+    "ban",
+    "banned",
+    "vanished",
+    "missing",
+    "empty",
+    "zero",
+}
+_HAZARD_TOKENS = {
+    "deadly",
+    "toxic",
+    "explosion",
+    "explode",
+    "explodes",
+    "danger",
+    "dangerous",
+    "lethal",
+    "boil",
+    "boiling",
+    "acid",
+    "fatal",
+    "extreme",
+}
+
+
+def infer_default_visual_cue_symbol(headline_text: str) -> str:
+    """Infer the most intuitive visual status badge ('red_x', 'question_mark', 'warning') from an English hook."""
+    tokens = {re.sub(r"[^a-z0-9]", "", w.lower()) for w in headline_text.replace("|", " ").split()}
+    tokens.discard("")
+    if tokens & (_NEGATION_TOKENS - {"do"}):
+        return "red_x"
+    if "why" in tokens or "how" in tokens or "what" in tokens or "?" in headline_text:
+        return "question_mark"
+    if tokens & _HAZARD_TOKENS:
+        return "warning"
+    return "question_mark"
+
+
+def _flood_remove_uniform_bg(im_rgba: Image.Image, target_white: bool) -> Image.Image:
+    """
+    Border-seeded flood-fill background removal for studio objects on uniform white or black backgrounds.
+    Preserves 100% of interior highlights/shadows that are not connected to the image border.
+    """
+    w0, h0 = im_rgba.size
+    scale = min(1.0, 760.0 / float(max(w0, h0)))
+    ws, hs = max(16, int(round(w0 * scale))), max(16, int(round(h0 * scale)))
+    small_rgb = im_rgba.convert("RGB").resize((ws, hs), Image.Resampling.BILINEAR)
+    arr = np.asarray(small_rgb, dtype=np.uint8).copy()
+    # Reserve exact marker RGB (255, 0, 255)
+    marker_hits = (arr[:, :, 0] == 255) & (arr[:, :, 1] == 0) & (arr[:, :, 2] == 255)
+    arr[marker_hits, 0] = 254
+    work = Image.fromarray(arr)
+
+    luma = 0.299 * arr[:, :, 0] + 0.587 * arr[:, :, 1] + 0.114 * arr[:, :, 2]
+    step = max(4, min(ws, hs) // 28)
+    border_pts: list[tuple[int, int]] = []
+    for x in range(0, ws, step):
+        border_pts.append((x, 0))
+        border_pts.append((x, hs - 1))
+    for y in range(0, hs, step):
+        border_pts.append((0, y))
+        border_pts.append((ws - 1, y))
+
+    for sx, sy in border_pts:
+        px = work.getpixel((sx, sy))
+        if px == (255, 0, 255):
+            continue
+        lv = luma[sy, sx]
+        if (target_white and lv >= 228.0) or ((not target_white) and lv <= 28.0):
+            ImageDraw.floodfill(work, (sx, sy), (255, 0, 255), thresh=34)
+
+    w_arr = np.asarray(work, dtype=np.uint8)
+    fg_mask = ~((w_arr[:, :, 0] == 255) & (w_arr[:, :, 1] == 0) & (w_arr[:, :, 2] == 255))
+    mask_im = Image.fromarray((fg_mask.astype(np.uint8) * 255))
+    mask_im = mask_im.filter(ImageFilter.MinFilter(3)).filter(ImageFilter.GaussianBlur(radius=1.2))
+    if (ws, hs) != (w0, h0):
+        mask_im = mask_im.resize((w0, h0), Image.Resampling.LANCZOS)
+
+    out = im_rgba.convert("RGBA")
+    orig_a = np.asarray(out.split()[3], dtype=np.float32) / 255.0
+    new_a = (np.asarray(mask_im, dtype=np.float32) / 255.0) * orig_a
+    out.putalpha(Image.fromarray((np.clip(new_a, 0.0, 1.0) * 255.0).astype(np.uint8)))
+    return out
+
+
+def _prepare_visual_cue_cutout_rgba(
+    cutout_src: Image.Image,
+    vcue: "ThumbnailVisualCueSpec",
+    out_w: int,
+    out_h: int,
+) -> tuple[Image.Image, str]:
+    """
+    Prepare a crisp foreground cutout RGBA sprite (or circular magnifier badge) scaled for `out_w x out_h`.
+    Returns `(sprite_rgba, resolved_mode)`.
+    """
+    mode = vcue.cutout_mode
+    has_real_alpha = False
+    if "A" in cutout_src.getbands():
+        a_arr = np.asarray(cutout_src.getchannel("A"))
+        if int(a_arr.min()) < 235 and int(a_arr.max()) > 40:
+            has_real_alpha = True
+
+    if mode == "auto":
+        if has_real_alpha:
+            mode = "alpha"
+        else:
+            rgb_arr = np.asarray(cutout_src.convert("RGB"), dtype=np.float32)
+            ch, cw = max(4, rgb_arr.shape[0] // 18), max(4, rgb_arr.shape[1] // 18)
+            corners = np.concatenate(
+                [
+                    rgb_arr[:ch, :cw].reshape(-1, 3),
+                    rgb_arr[:ch, -cw:].reshape(-1, 3),
+                    rgb_arr[-ch:, :cw].reshape(-1, 3),
+                    rgb_arr[-ch:, -cw:].reshape(-1, 3),
+                ],
+                axis=0,
+            )
+            c_luma = 0.299 * corners[:, 0] + 0.587 * corners[:, 1] + 0.114 * corners[:, 2]
+            if float(np.mean(c_luma)) > 238.0 and float(np.std(c_luma)) < 12.0:
+                mode = "white_bg"
+            elif float(np.mean(c_luma)) < 16.0 and float(np.std(c_luma)) < 10.0:
+                mode = "black_bg"
+            else:
+                mode = "circle_badge"
+
+    target_w = max(140, int(round(out_w * vcue.cutout_scale)))
+    max_h = max(180, int(round(out_h * 0.28)))
+
+    if mode in ("alpha", "white_bg", "black_bg"):
+        rgba = cutout_src.convert("RGBA")
+        if mode == "white_bg" and not has_real_alpha:
+            rgba = _flood_remove_uniform_bg(rgba, target_white=True)
+        elif mode == "black_bg" and not has_real_alpha:
+            rgba = _flood_remove_uniform_bg(rgba, target_white=False)
+
+        a_np = np.asarray(rgba.getchannel("A"))
+        ys, xs = np.where(a_np > 24)
+        if len(xs) >= 16 and len(ys) >= 16:
+            rgba = rgba.crop((int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1))
+            cw0, ch0 = rgba.size
+            scale = min(target_w / float(max(1, cw0)), max_h / float(max(1, ch0)))
+            nw, nh = max(32, int(round(cw0 * scale))), max(32, int(round(ch0 * scale)))
+            rgba = rgba.resize((nw, nh), Image.Resampling.LANCZOS)
+            if abs(vcue.cutout_rotation_deg) > 0.2:
+                rgba = rgba.rotate(vcue.cutout_rotation_deg, resample=Image.Resampling.BICUBIC, expand=True)
+            return rgba, mode
+
+    # Fallback / explicit `circle_badge`: crisp circular subject magnifier inset (2x supersampled)
+    diam = min(target_w, max_h)
+    S = 2
+    d_hi = diam * S
+    cropped = crop_subpixel_full_canvas(
+        cutout_src.convert("RGB"),
+        vcue.cutout_crop_cx,
+        vcue.cutout_crop_cy,
+        max(1.0, vcue.cutout_crop_zoom),
+        d_hi,
+        d_hi,
+    )
+    cropped = _apply_optical_subject_clarity(cropped)
+
+    pad = 16 * S
+    full_hi = d_hi + 2 * pad
+    badge_hi = Image.new("RGBA", (full_hi, full_hi), (0, 0, 0, 0))
+    bd = ImageDraw.Draw(badge_hi)
+    # Outer dark contour + bright rim ring
+    bd.ellipse([2 * S, 2 * S, full_hi - 2 * S, full_hi - 2 * S], fill=(10, 12, 18, 255))
+    bd.ellipse([8 * S, 8 * S, full_hi - 8 * S, full_hi - 8 * S], fill=(*vcue.cutout_rim_rgb, 255))
+
+    circ_mask = Image.new("L", (d_hi, d_hi), 0)
+    ImageDraw.Draw(circ_mask).ellipse([0, 0, d_hi - 1, d_hi - 1], fill=255)
+    badge_hi.paste(cropped, (pad, pad), circ_mask)
+
+    badge_lo = badge_hi.resize((diam + 32, diam + 32), Image.Resampling.LANCZOS)
+    return badge_lo, "circle_badge"
+
+
+def _build_ribbon_polygon(
+    pts: list[tuple[float, float]],
+    half_w0: float,
+    half_w1: float,
+) -> list[tuple[float, float]]:
+    left_side: list[tuple[float, float]] = []
+    right_side: list[tuple[float, float]] = []
+    n = len(pts)
+    for i, (x, y) in enumerate(pts):
+        if i == 0:
+            dx, dy = pts[1][0] - x, pts[1][1] - y
+        elif i == n - 1:
+            dx, dy = x - pts[i - 1][0], y - pts[i - 1][1]
+        else:
+            dx, dy = pts[i + 1][0] - pts[i - 1][0], pts[i + 1][1] - pts[i - 1][1]
+        length = max(1e-4, math.hypot(dx, dy))
+        nx, ny = -dy / length, dx / length
+        u = i / float(max(1, n - 1))
+        hw = half_w0 + (half_w1 - half_w0) * u
+        left_side.append((x + nx * hw, y + ny * hw))
+        right_side.append((x - nx * hw, y - ny * hw))
+    return left_side + right_side[::-1]
+
+
+def _draw_rounded_segment(
+    draw_obj: ImageDraw.ImageDraw,
+    a: tuple[float, float],
+    b: tuple[float, float],
+    width: float,
+    fill: tuple[int, int, int, int],
+) -> None:
+    w_int = max(1, int(round(width)))
+    draw_obj.line([a, b], fill=fill, width=w_int)
+    r = width / 2.0
+    for pt in (a, b):
+        draw_obj.ellipse([pt[0] - r, pt[1] - r, pt[0] + r, pt[1] + r], fill=fill)
+
+
+def _draw_symbol_badge_2x(
+    sw: int,
+    sh: int,
+    xc: float,
+    yc: float,
+    symbol: str,
+    scale: float,
+    S: int = 2,
+) -> tuple[Image.Image, Image.Image]:
+    shadow_hi = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
+    badge_hi = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
+    sd = ImageDraw.Draw(shadow_hi)
+    bd = ImageDraw.Draw(badge_hi)
+    ox, oy = 6.0 * S, 10.0 * S
+
+    if symbol == "red_x":
+        arm = 78.0 * scale * S
+        p_tl, p_br = (xc - arm, yc - arm), (xc + arm, yc + arm)
+        p_bl, p_tr = (xc - arm, yc + arm), (xc + arm, yc - arm)
+        _draw_rounded_segment(sd, (p_tl[0] + ox, p_tl[1] + oy), (p_br[0] + ox, p_br[1] + oy), 62 * scale * S, (0, 0, 0, 235))
+        _draw_rounded_segment(sd, (p_bl[0] + ox, p_bl[1] + oy), (p_tr[0] + ox, p_tr[1] + oy), 62 * scale * S, (0, 0, 0, 235))
+        _draw_rounded_segment(bd, p_tl, p_br, 60 * scale * S, (10, 12, 16, 255))
+        _draw_rounded_segment(bd, p_bl, p_tr, 60 * scale * S, (10, 12, 16, 255))
+        _draw_rounded_segment(bd, p_tl, p_br, 48 * scale * S, (255, 255, 255, 255))
+        _draw_rounded_segment(bd, p_bl, p_tr, 48 * scale * S, (255, 255, 255, 255))
+        _draw_rounded_segment(bd, p_tl, p_br, 34 * scale * S, (235, 20, 20, 255))
+        _draw_rounded_segment(bd, p_bl, p_tr, 34 * scale * S, (235, 20, 20, 255))
+        _draw_rounded_segment(bd, p_tl, p_br, 10 * scale * S, (255, 95, 95, 255))
+        _draw_rounded_segment(bd, p_bl, p_tr, 10 * scale * S, (255, 95, 95, 255))
+    elif symbol == "ban_circle":
+        r = 82.0 * scale * S
+        sd.ellipse([xc - r - 8 * S + ox, yc - r - 8 * S + oy, xc + r + 8 * S + ox, yc + r + 8 * S + oy], outline=(0, 0, 0, 235), width=int(52 * scale * S))
+        d45 = r * 0.68
+        p1, p2 = (xc - d45, yc - d45), (xc + d45, yc + d45)
+        for w_ring, col in [
+            (50 * scale * S, (10, 12, 16, 255)),
+            (38 * scale * S, (255, 255, 255, 255)),
+            (26 * scale * S, (235, 20, 20, 255)),
+        ]:
+            hw = w_ring / 2.0
+            bd.ellipse([xc - r - hw, yc - r - hw, xc + r + hw, yc + r + hw], outline=col, width=max(1, int(round(w_ring))))
+            _draw_rounded_segment(bd, p1, p2, w_ring, col)
+    elif symbol == "question_mark":
+        r = 78.0 * scale * S
+        sd.ellipse([xc - r - 12 * S + ox, yc - r - 12 * S + oy, xc + r + 12 * S + ox, yc + r + 12 * S + oy], fill=(0, 0, 0, 235))
+        bd.ellipse([xc - r - 12 * S, yc - r - 12 * S, xc + r + 12 * S, yc + r + 12 * S], fill=(10, 12, 16, 255))
+        bd.ellipse([xc - r - 5 * S, yc - r - 5 * S, xc + r + 5 * S, yc + r + 5 * S], fill=(255, 255, 255, 255))
+        bd.ellipse([xc - r, yc - r, xc + r, yc + r], fill=(226, 24, 34, 255))
+        q_font_path = FONT_ANTON if Path(FONT_ANTON).exists() else FONT_BOLD
+        qf = ImageFont.truetype(q_font_path, max(24, int(round(126 * scale * S))))
+        qbb = bd.textbbox((0, 0), "?", font=qf)
+        qx = xc - (qbb[2] - qbb[0]) / 2.0 - qbb[0]
+        qy = yc - (qbb[3] - qbb[1]) / 2.0 - qbb[1] - 2 * S
+        bd.text((qx, qy), "?", font=qf, fill=(255, 255, 255, 255), stroke_width=max(2, int(round(4 * S))), stroke_fill=(90, 8, 12, 245))
+    elif symbol == "warning":
+        h_tri = 158.0 * scale * S
+        vt = (xc, yc - 0.58 * h_tri)
+        vbl = (xc - 0.58 * h_tri, yc + 0.44 * h_tri)
+        vbr = (xc + 0.58 * h_tri, yc + 0.44 * h_tri)
+        verts_s = [(vx + ox, vy + oy) for (vx, vy) in (vt, vbl, vbr)]
+        sd.polygon(verts_s, fill=(0, 0, 0, 235))
+        for a, b in ((verts_s[0], verts_s[1]), (verts_s[1], verts_s[2]), (verts_s[2], verts_s[0])):
+            _draw_rounded_segment(sd, a, b, 42 * scale * S, (0, 0, 0, 235))
+        for w_edge, col in [
+            (42 * scale * S, (10, 12, 16, 255)),
+            (30 * scale * S, (255, 255, 255, 255)),
+            (18 * scale * S, (255, 196, 18, 255)),
+        ]:
+            bd.polygon([vt, vbl, vbr], fill=col)
+            for a, b in ((vt, vbl), (vbl, vbr), (vbr, vt)):
+                _draw_rounded_segment(bd, a, b, w_edge, col)
+        w_font_path = FONT_ANTON if Path(FONT_ANTON).exists() else FONT_BOLD
+        wf = ImageFont.truetype(w_font_path, max(24, int(round(108 * scale * S))))
+        wbb = bd.textbbox((0, 0), "!", font=wf)
+        wx = xc - (wbb[2] - wbb[0]) / 2.0 - wbb[0]
+        wy = yc + 0.06 * h_tri - (wbb[3] - wbb[1]) / 2.0 - wbb[1]
+        bd.text((wx, wy), "!", font=wf, fill=(12, 14, 18, 255))
+    elif symbol == "check":
+        sc = 78.0 * scale * S
+        p_l = (xc - 0.82 * sc, yc + 0.04 * sc)
+        p_m = (xc - 0.18 * sc, yc + 0.68 * sc)
+        p_r = (xc + 0.90 * sc, yc - 0.68 * sc)
+        _draw_rounded_segment(sd, (p_l[0] + ox, p_l[1] + oy), (p_m[0] + ox, p_m[1] + oy), 60 * scale * S, (0, 0, 0, 235))
+        _draw_rounded_segment(sd, (p_m[0] + ox, p_m[1] + oy), (p_r[0] + ox, p_r[1] + oy), 60 * scale * S, (0, 0, 0, 235))
+        for w_st, col in [
+            (58 * scale * S, (10, 12, 16, 255)),
+            (46 * scale * S, (255, 255, 255, 255)),
+            (32 * scale * S, (20, 192, 86, 255)),
+            (10 * scale * S, (115, 245, 160, 255)),
+        ]:
+            _draw_rounded_segment(bd, p_l, p_m, w_st, col)
+            _draw_rounded_segment(bd, p_m, p_r, w_st, col)
+
+    return shadow_hi, badge_hi
+
+
+def apply_visual_cue_overlay(
+    canvas_rgba: Image.Image,
+    vcue: "ThumbnailVisualCueSpec",
+    cutout_src: Optional[Image.Image] = None,
+) -> Image.Image:
+    """
+    Composite the intuitive visual-story layer onto `canvas_rgba`:
+    1. Foreground cutout / circular inset in upper-left (with atmospheric scrim, rim glow & drop shadow)
+    2. Optional target focus ring at `arrow_end`
+    3. 2x-supersampled curved Bezier ribbon arrow pointing into `arrow_end`
+    4. 2x-supersampled high-contrast action/paradox symbol (`red_x`, `question_mark`, `warning`, etc.) on the arrow
+    """
+    if not vcue.enabled:
+        return canvas_rgba
+
+    w, h = canvas_rgba.size
+    out = canvas_rgba.convert("RGBA")
+
+    cut_cx_px = vcue.cutout_cx * w
+    cut_cy_px = vcue.cutout_cy * h
+    cut_half_w = 0.0
+    cut_half_h = 0.0
+
+    if cutout_src is not None:
+        sprite_rgba, resolved_mode = _prepare_visual_cue_cutout_rgba(cutout_src, vcue, w, h)
+        bw, bh = sprite_rgba.size
+        cut_half_w, cut_half_h = bw * 0.5, bh * 0.5
+        bx = int(round(cut_cx_px - cut_half_w))
+        by = int(round(cut_cy_px - cut_half_h))
+
+        # Subtle localized atmospheric contrast behind cutout
+        arr = np.asarray(out, dtype=np.float32)
+        yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+        zone = np.exp(-(((xx - cut_cx_px) / max(120.0, bw * 0.85)) ** 2 + ((yy - cut_cy_px) / max(120.0, bh * 0.85)) ** 2))
+        arr[:, :, :3] = arr[:, :, :3] * (1.0 - 0.24 * zone[:, :, None])
+        out = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
+
+        sp_alpha = sprite_rgba.getchannel("A")
+        shadow_layer = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        shadow_layer.paste(Image.new("RGBA", (bw, bh), (0, 0, 0, 220)), (bx + 12, by + 18), sp_alpha)
+        shadow_layer = shadow_layer.filter(ImageFilter.GaussianBlur(radius=16))
+        out = Image.alpha_composite(out, shadow_layer)
+
+        if resolved_mode != "circle_badge":
+            rim_dilated = sp_alpha.filter(ImageFilter.MaxFilter(9)).filter(ImageFilter.GaussianBlur(radius=2.2))
+            rim_layer = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+            rim_layer.paste(Image.new("RGBA", (bw, bh), (*vcue.cutout_rim_rgb, 235)), (bx, by), rim_dilated)
+            out = Image.alpha_composite(out, rim_layer)
+
+        sprite_canvas = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        sprite_canvas.paste(sprite_rgba, (bx, by), sprite_rgba)
+        out = Image.alpha_composite(out, sprite_canvas)
+
+    S = 2
+    sw, sh = w * S, h * S
+    end_x, end_y = vcue.arrow_end[0] * w, vcue.arrow_end[1] * h
+
+    if vcue.target_ring:
+        tr_hi = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
+        td = ImageDraw.Draw(tr_hi)
+        rr = vcue.target_ring_radius_px * S
+        tx_hi, ty_hi = end_x * S, end_y * S
+        td.ellipse([tx_hi - rr - 6 * S, ty_hi - rr - 6 * S, tx_hi + rr + 6 * S, ty_hi + rr + 6 * S], outline=(10, 12, 18, 235), width=18 * S)
+        td.ellipse([tx_hi - rr, ty_hi - rr, tx_hi + rr, ty_hi + rr], outline=(*vcue.arrow_rgb, 250), width=10 * S)
+        out = Image.alpha_composite(out, tr_hi.resize((w, h), Image.Resampling.LANCZOS))
+
+    if vcue.show_arrow:
+        if vcue.arrow_start is not None:
+            start_x, start_y = vcue.arrow_start[0] * w, vcue.arrow_start[1] * h
+        elif cutout_src is not None:
+            dx0, dy0 = end_x - cut_cx_px, end_y - cut_cy_px
+            d0 = max(1e-3, math.hypot(dx0, dy0))
+            ux0, uy0 = dx0 / d0, dy0 / d0
+            start_x = cut_cx_px + ux0 * (cut_half_w * 0.78)
+            start_y = cut_cy_px + uy0 * (cut_half_h * 0.42)
+        else:
+            start_x, start_y = 0.28 * w, 0.24 * h
+
+        if vcue.arrow_control is not None:
+            ctrl_x, ctrl_y = vcue.arrow_control[0] * w, vcue.arrow_control[1] * h
+        else:
+            mx, my = 0.5 * (start_x + end_x), 0.5 * (start_y + end_y)
+            dx_c, dy_c = end_x - start_x, end_y - start_y
+            dist_c = max(1.0, math.hypot(dx_c, dy_c))
+            # Curve upward-outward so the arc sweeps cleanly into the target
+            nx_c, ny_c = dy_c / dist_c, -dx_c / dist_c
+            if ny_c > 0:
+                nx_c, ny_c = -nx_c, -ny_c
+            ctrl_x = mx + nx_c * (dist_c * 0.30)
+            ctrl_y = my + ny_c * (dist_c * 0.30)
+
+        P0 = (start_x * S, start_y * S)
+        P1 = (ctrl_x * S, ctrl_y * S)
+        P2 = (end_x * S, end_y * S)
+
+        t_shaft_end = 0.82
+        ts = np.linspace(0.0, t_shaft_end, 160)
+        pts = [
+            (
+                float((1 - t) ** 2 * P0[0] + 2 * (1 - t) * t * P1[0] + t**2 * P2[0]),
+                float((1 - t) ** 2 * P0[1] + 2 * (1 - t) * t * P1[1] + t**2 * P2[1]),
+            )
+            for t in ts
+        ]
+
+        dx = P2[0] - pts[-1][0]
+        dy = P2[1] - pts[-1][1]
+        length = max(1e-3, math.hypot(dx, dy))
+        ux, uy = dx / length, dy / length
+        nx, ny = -uy, ux
+
+        head_base_x, head_base_y = pts[-1][0] - ux * (14 * S), pts[-1][1] - uy * (14 * S)
+        head_half_w = 68.0 * S
+        head_poly = [
+            (P2[0], P2[1]),
+            (head_base_x + nx * head_half_w, head_base_y + ny * head_half_w),
+            (head_base_x - nx * head_half_w, head_base_y - ny * head_half_w),
+        ]
+        head_cx = sum(p[0] for p in head_poly) / 3.0
+        head_cy = sum(p[1] for p in head_poly) / 3.0
+        head_border = []
+        for px, py in head_poly:
+            vx, vy = px - head_cx, py - head_cy
+            vl = max(1e-3, math.hypot(vx, vy))
+            head_border.append((px + vx / vl * (10.0 * S), py + vy / vl * (10.0 * S)))
+
+        shaft_border_poly = _build_ribbon_polygon(pts, 24.0 * S, 30.0 * S)
+        shaft_gold_poly = _build_ribbon_polygon(pts, 16.0 * S, 22.0 * S)
+        shaft_core_poly = _build_ribbon_polygon(pts[3:-2], 8.0 * S, 11.0 * S)
+
+        shadow_hi = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
+        sd = ImageDraw.Draw(shadow_hi)
+        sd.polygon([(x + 7 * S, y + 12 * S) for (x, y) in shaft_border_poly], fill=(0, 0, 0, 220))
+        sd.polygon([(x + 7 * S, y + 12 * S) for (x, y) in head_border], fill=(0, 0, 0, 220))
+        out = Image.alpha_composite(
+            out,
+            shadow_hi.resize((w, h), Image.Resampling.LANCZOS).filter(ImageFilter.GaussianBlur(radius=14)),
+        )
+
+        arrow_hi = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
+        ad = ImageDraw.Draw(arrow_hi)
+        r_b0 = 24.0 * S
+        ad.ellipse([P0[0] - r_b0, P0[1] - r_b0, P0[0] + r_b0, P0[1] + r_b0], fill=(10, 12, 16, 255))
+        ad.polygon(shaft_border_poly, fill=(10, 12, 16, 255))
+        ad.polygon(head_border, fill=(10, 12, 16, 255))
+
+        r_g0 = 16.0 * S
+        ad.ellipse([P0[0] - r_g0, P0[1] - r_g0, P0[0] + r_g0, P0[1] + r_g0], fill=(*vcue.arrow_rgb, 255))
+        ad.polygon(shaft_gold_poly, fill=(*vcue.arrow_rgb, 255))
+        ad.polygon(head_poly, fill=(*vcue.arrow_rgb, 255))
+        core_rgb = (
+            min(255, int(vcue.arrow_rgb[0] * 0.4 + 153)),
+            min(255, int(vcue.arrow_rgb[1] * 0.4 + 153)),
+            min(255, int(vcue.arrow_rgb[2] * 0.4 + 153)),
+            255,
+        )
+        ad.polygon(shaft_core_poly, fill=core_rgb)
+        out = Image.alpha_composite(out, arrow_hi.resize((w, h), Image.Resampling.LANCZOS))
+
+        if vcue.symbol != "none":
+            st = vcue.symbol_t
+            xc = (1 - st) ** 2 * P0[0] + 2 * (1 - st) * st * P1[0] + st**2 * P2[0]
+            yc = (1 - st) ** 2 * P0[1] + 2 * (1 - st) * st * P1[1] + st**2 * P2[1]
+            sym_shadow_hi, sym_badge_hi = _draw_symbol_badge_2x(sw, sh, xc, yc, vcue.symbol, vcue.symbol_scale, S=S)
+            out = Image.alpha_composite(
+                out,
+                sym_shadow_hi.resize((w, h), Image.Resampling.LANCZOS).filter(ImageFilter.GaussianBlur(radius=14)),
+            )
+            out = Image.alpha_composite(out, sym_badge_hi.resize((w, h), Image.Resampling.LANCZOS))
+
+    return out
+
+
 def compose_subject_first_thumbnail(
     source_rgb: Image.Image,
     style: DocumentaryStyleProfile,
@@ -162,19 +663,23 @@ def compose_subject_first_thumbnail(
     accent_rgb: tuple[int, int, int] = (255, 212, 59),
     clarity_boost: bool = True,
     shadow_lift: float = 0.0,
+    mirror_horizontal: bool = False,
+    visual_cue: Optional["ThumbnailVisualCueSpec"] = None,
+    cutout_image: Optional[Image.Image] = None,
 ) -> Image.Image:
     """
-    Compose a high-CTR, subject-focused 1080x1920 documentary cover image.
-    Never draws rounded boxes, badges, circles, arrows, or artificial HUD graphics.
+    Compose a high-CTR 1080x1920 documentary cover image, supporting optional intuitive
+    `visual_cue` storytelling (foreground cutout/inset + curved Bezier arrow + status badge).
     """
     out_w = style.output.width
     out_h = style.output.height
+    src_work = ImageOps.mirror(source_rgb) if mirror_horizontal else source_rgb
     if cx is None or cy is None:
-        auto_cx, auto_cy = estimate_salient_subject_center(source_rgb, keep_above_subtitle_ratio=0.72)
+        auto_cx, auto_cy = estimate_salient_subject_center(src_work, keep_above_subtitle_ratio=0.72)
         cx = auto_cx if cx is None else cx
         cy = auto_cy if cy is None else cy
 
-    base = crop_subpixel_full_canvas(source_rgb, cx, cy, max(1.0, zoom), out_w, out_h)
+    base = crop_subpixel_full_canvas(src_work, cx, cy, max(1.0, zoom), out_w, out_h)
     if shadow_lift > 1e-4:
         b_arr = np.asarray(base, dtype=np.float32) / 255.0
         b_arr = np.clip(b_arr + float(shadow_lift) * b_arr * ((1.0 - b_arr) ** 1.6), 0.0, 1.0)
@@ -182,8 +687,11 @@ def compose_subject_first_thumbnail(
     if clarity_boost:
         base = _apply_optical_subject_clarity(base)
 
+    has_vcue = visual_cue is not None and visual_cue.enabled
     mode = style.opening_and_thumbnail.thumbnail_text_mode
     if mode == "none" or not headline_text.strip():
+        if has_vcue and visual_cue is not None:
+            return apply_visual_cue_overlay(base.convert("RGBA"), visual_cue, cutout_src=cutout_image).convert("RGB")
         return base
 
     max_w = style.opening_and_thumbnail.thumbnail_max_words
@@ -192,7 +700,10 @@ def compose_subject_first_thumbnail(
     luma_bot = float(np.mean(arr[1240:1660, :, :]))
 
     if text_position == "auto":
-        place_top = cy >= 0.47
+        if has_vcue and visual_cue is not None and visual_cue.cutout_cy < 0.45:
+            place_top = False
+        else:
+            place_top = cy >= 0.47
     else:
         place_top = text_position == "top"
 
@@ -211,6 +722,8 @@ def compose_subject_first_thumbnail(
             text_y = 1365
         toned = np.clip(arr * (1.0 - scrim), 0.0, 255.0).astype(np.uint8)
         canvas = Image.fromarray(toned).convert("RGBA")
+        if has_vcue and visual_cue is not None:
+            canvas = apply_visual_cue_overlay(canvas, visual_cue, cutout_src=cutout_image)
         d = ImageDraw.Draw(canvas)
         font_sz = 84
         font = ImageFont.truetype(FONT_BOLD, font_sz)
@@ -257,6 +770,8 @@ def compose_subject_first_thumbnail(
     toned = np.clip(arr * (1.0 - np.clip(scrim + radial, 0.0, 0.86)), 0.0, 255.0).astype(np.uint8)
 
     canvas = Image.fromarray(toned).convert("RGBA")
+    if has_vcue and visual_cue is not None:
+        canvas = apply_visual_cue_overlay(canvas, visual_cue, cutout_src=cutout_image)
     d = ImageDraw.Draw(canvas)
 
     disp_font_path = FONT_ANTON if Path(FONT_ANTON).exists() else FONT_BOLD

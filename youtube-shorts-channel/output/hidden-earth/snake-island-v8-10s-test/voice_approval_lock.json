@@ -1,0 +1,11 @@
+{
+  "slug": "snake-island-v8-10s-test",
+  "script_version": "v8.0.0",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "approved_at_utc": "2026-11-04T02:40:00.618417+00:00",
+  "reviewer_note": "Creator approved final narration timing master",
+  "script_sha256": "55e13d554c9c7069e898c7ef41d0c223f12a18788af585570df7e7cd03803b80",
+  "narration_norm_wav_sha256": "7b694f80895ef30a8371e74827ea9acc1dfd2950acdddf76332cf48145a533df",
+  "word_timings_sha256": "448b7ea0d1d5a43f13daddebe6c444122b57c1965cc59052350c4dc4f02d2d27"
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "snake-island-v8-10s-test",
+  "adaptive_audio_profile": {
+    "selected_profile": "immersive_exploration",
+    "selection_reason": "Explicitly configured adaptive audio profile 'immersive_exploration'.",
+    "script_metrics": {
+      "narration_duration_s": 11.1,
+      "segment_count": 3,
+      "sentence_count": 2,
+      "quantitative_fact_cues": 1,
+      "mystery_cues": 0,
+      "environmental_cues": 1,
+      "has_diegetic_field_audio": true
+    }
+  },
+  "emotional_progression": {
+    "opening_emotion": "Restrained curiosity and sense of place",
+    "curiosity_increase_at_s": 4.46,
+    "calm_authoritative_stretches": [],
+    "significant_reveal": {
+      "present": true,
+      "seg_id": "N02",
+      "start_s": 4.46
+    },
+    "requires_tension": false,
+    "less_prominent_windows": [
+      {
+        "reason": "Pre-reveal hush & central empirical explanation intelligibility",
+        "start_s": 3.31,
+        "end_s": 6.66
+      }
+    ],
+    "ending_approach": "Quiet, unhurried factual finish"
+  },
+  "music_present": false,
+  "music_sections_count": 0,
+  "structure_rationale": "Intentional no-music documentary decision: concise script with authentic environmental/field sound achieves higher clarity and realism without an artificial underscore.",
+  "sections": [],
+  "silence_windows": [],
+  "musical_accents": [],
+  "track_evaluations": []
+}

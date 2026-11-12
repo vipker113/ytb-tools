@@ -112,17 +112,87 @@ class CoverVariantSpec(BaseModel):
     accent_rgb: tuple[int, int, int] = Field(default=(228, 72, 52))
 
 
+ThumbnailCueSymbolLiteral = Literal[
+    "none",
+    "red_x",
+    "ban_circle",
+    "question_mark",
+    "warning",
+    "check",
+]
+
+ThumbnailCutoutModeLiteral = Literal[
+    "auto",
+    "alpha",
+    "white_bg",
+    "black_bg",
+    "circle_badge",
+]
+
+
+class ThumbnailVisualCueSpec(BaseModel):
+    """
+    Intuitive visual-story overlay for high-CTR thumbnails:
+    [Foreground Cutout / Subject Inset] -> [Curved Ribbon Arrow + Status Symbol (X / ? / !)] -> [Phenomenon].
+    """
+
+    enabled: bool = True
+    cutout_file: Optional[str] = Field(
+        default=None,
+        description="Foreground object image/video filename (RGBA PNG cutout, isolated studio photo, or clip/photo for circle_badge)",
+    )
+    cutout_src_time_s: float = Field(default=1.0, ge=0.0, description="Timestamp (s) if cutout_file is a video")
+    cutout_mode: ThumbnailCutoutModeLiteral = Field(
+        default="auto",
+        description="How to extract foreground object: 'auto', 'alpha', 'white_bg', 'black_bg', or 'circle_badge'",
+    )
+    cutout_crop_cx: float = Field(default=0.5, ge=0.05, le=0.95)
+    cutout_crop_cy: float = Field(default=0.5, ge=0.05, le=0.95)
+    cutout_crop_zoom: float = Field(default=1.15, ge=1.0, le=3.0)
+    cutout_cx: float = Field(default=0.23, ge=0.08, le=0.92, description="Normalized X center of cutout on 1080x1920 canvas")
+    cutout_cy: float = Field(default=0.21, ge=0.08, le=0.85, description="Normalized Y center of cutout on 1080x1920 canvas")
+    cutout_scale: float = Field(default=0.36, ge=0.14, le=0.65, description="Target width of cutout as fraction of canvas width")
+    cutout_rotation_deg: float = Field(default=-12.0, ge=-60.0, le=60.0, description="Tilt angle in degrees (negative = clockwise)")
+    cutout_rim_rgb: tuple[int, int, int] = Field(default=(255, 232, 195), description="High-contrast outer rim glow RGB")
+    show_arrow: bool = True
+    arrow_start: Optional[tuple[float, float]] = Field(
+        default=None,
+        description="Normalized (x, y) start of arrow; auto-anchored at cutout edge if omitted",
+    )
+    arrow_control: Optional[tuple[float, float]] = Field(
+        default=None,
+        description="Normalized (x, y) quadratic Bezier control point; auto-curved if omitted",
+    )
+    arrow_end: tuple[float, float] = Field(
+        default=(0.72, 0.51),
+        description="Normalized (x, y) arrowhead target pointing into the background phenomenon",
+    )
+    arrow_rgb: tuple[int, int, int] = Field(default=(255, 228, 95), description="Arrow body fill RGB")
+    symbol: ThumbnailCueSymbolLiteral = Field(
+        default="red_x",
+        description="Action/paradox badge placed directly on the arrow shaft ('red_x', 'ban_circle', 'question_mark', 'warning', 'check', 'none')",
+    )
+    symbol_t: float = Field(default=0.47, ge=0.15, le=0.82, description="Position (0..1) of symbol along arrow curve")
+    symbol_scale: float = Field(default=1.0, ge=0.5, le=1.8)
+    target_ring: bool = Field(default=False, description="Optional high-contrast focus ring around arrow_end target")
+    target_ring_radius_px: int = Field(default=92, ge=30, le=260)
+
+
 class ThumbnailSpecModel(BaseModel):
-    """Subject-first documentary thumbnail concept specification (zero boxes/rings)."""
+    """Intuitive visual-cue & cinema-hook documentary thumbnail concept specification."""
 
     concept_id: str = Field(default="A", description="Concept identifier, e.g. 'A', 'B', 'C'")
     concept_rationale: str = Field(default="", description="Editorial hypothesis behind this thumbnail concept")
     src_file: Optional[str] = Field(default=None, description="Asset filename in register; defaults to opening shot asset")
     src_time_s: Optional[float] = Field(default=None, description="Timestamp (s) if `src_file` is a video")
     crop_box: Optional[tuple[int, int, int, int]] = None
+    mirror_horizontal: bool = Field(
+        default=False,
+        description="Flip background horizontally (when free of text) so the phenomenon sits cleanly beneath the visual-cue arrow",
+    )
     headline_text: str = Field(
         default="",
-        description="High-impact <=6-word hook headline (use '|' or newline for explicit 2-line split); empty for pure subject",
+        description="High-impact <=8-word English hook headline (use '|' or newline for explicit 2-line split); empty for pure subject",
     )
     kicker_text: str = Field(default="", description="Optional crisp <=6-word uppercase context eyebrow (no box)")
     accent_line_index: int = Field(default=1, ge=0, le=2, description="Which stacked headline line receives accent_rgb")
@@ -139,6 +209,10 @@ class ThumbnailSpecModel(BaseModel):
     cy: Optional[float] = Field(default=None, ge=0.05, le=0.95)
     zoom: float = Field(default=1.02, ge=1.0, le=1.5)
     text_position: Literal["auto", "top", "bottom"] = "auto"
+    visual_cue: Optional[ThumbnailVisualCueSpec] = Field(
+        default=None,
+        description="Intuitive visual-cue graphic (cutout + curved arrow + X/?/! symbol); auto-generated when enabled in style profile",
+    )
 
 
 class NarrationSegmentSpec(BaseModel):
@@ -713,7 +787,12 @@ class EpisodeManifest(BaseModel):
         return load_style_profile(self.style_profile, self.style_overrides)
 
     def all_asset_search_dirs(self) -> list[Path]:
-        dirs = [Path(self.output_dir) / "work_clips", Path(self.raw_assets_dir)]
+        channel_root = Path(__file__).resolve().parents[2]
+        dirs = [
+            Path(self.output_dir) / "work_clips",
+            Path(self.raw_assets_dir),
+            channel_root / "assets" / "thumbnail_sprites",
+        ]
         for extra in self.extra_assets_dirs:
             dirs.append(Path(extra))
         return dirs
@@ -804,11 +883,31 @@ class EpisodeManifest(BaseModel):
                     f"Manifest defines {len(ch_shots)} chapter_stamp headers, exceeding max_chapter_stamps_per_video="
                     f"{style.overlays.max_chapter_stamps_per_video}."
                 )
+        sprites_dir = Path(__file__).resolve().parents[2] / "assets" / "thumbnail_sprites"
         if self.thumbnail_spec and self.thumbnail_spec.src_file and self.thumbnail_spec.src_file not in reg_files:
             raise ValueError(f"thumbnail_spec uses unregistered asset '{self.thumbnail_spec.src_file}'")
+        if (
+            self.thumbnail_spec
+            and self.thumbnail_spec.visual_cue
+            and self.thumbnail_spec.visual_cue.cutout_file
+            and self.thumbnail_spec.visual_cue.cutout_file not in reg_files
+            and not (sprites_dir / self.thumbnail_spec.visual_cue.cutout_file).exists()
+        ):
+            raise ValueError(
+                f"thumbnail_spec.visual_cue uses unregistered cutout_file '{self.thumbnail_spec.visual_cue.cutout_file}'"
+            )
         for tc in self.thumbnail_concepts:
             if tc.src_file and tc.src_file not in reg_files:
                 raise ValueError(f"thumbnail_concepts[{tc.concept_id}] uses unregistered asset '{tc.src_file}'")
+            if (
+                tc.visual_cue
+                and tc.visual_cue.cutout_file
+                and tc.visual_cue.cutout_file not in reg_files
+                and not (sprites_dir / tc.visual_cue.cutout_file).exists()
+            ):
+                raise ValueError(
+                    f"thumbnail_concepts[{tc.concept_id}].visual_cue uses unregistered cutout_file '{tc.visual_cue.cutout_file}'"
+                )
         return self
 
     @classmethod

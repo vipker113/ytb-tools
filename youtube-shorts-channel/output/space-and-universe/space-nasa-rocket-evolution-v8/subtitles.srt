@@ -1,0 +1,227 @@
+1
+00:00:00,100 --> 00:00:00,766
+Look closely at
+
+2
+00:00:00,796 --> 00:00:02,546
+the machine that launched modern rocketry
+
+3
+00:00:02,576 --> 00:00:04,141
+in nineteen twenty-six
+
+4
+00:00:04,913 --> 00:00:06,335
+It had no outer skin and
+
+5
+00:00:06,365 --> 00:00:07,597
+no nose cone just
+
+6
+00:00:07,627 --> 00:00:09,327
+a tiny nozzle pulling two fuel
+
+7
+00:00:09,357 --> 00:00:11,136
+tanks on naked metal pipes
+
+8
+00:00:11,445 --> 00:00:13,834
+Thirty years later early orbital rockets
+
+9
+00:00:13,864 --> 00:00:16,249
+still looked like fragile metal pencils
+
+10
+00:00:17,021 --> 00:00:19,327
+In nineteen fifty-seven Vanguard lifted
+
+11
+00:00:19,357 --> 00:00:21,767
+four feet before collapsing into flames
+
+12
+00:00:22,539 --> 00:00:24,668
+Weeks later Juno One reached orbit
+
+13
+00:00:24,698 --> 00:00:26,006
+by spinning an exposed tub
+
+14
+00:00:26,036 --> 00:00:27,925
+of eleven miniature rocket tubes bolted
+
+15
+00:00:27,955 --> 00:00:28,914
+to its nose
+
+16
+00:00:29,202 --> 00:00:30,579
+By nineteen sixty-two
+
+17
+00:00:30,769 --> 00:00:32,848
+NASA's Mercury-Atlas gleamed like solid
+
+18
+00:00:32,878 --> 00:00:34,603
+steel yet its tank walls were
+
+19
+00:00:34,633 --> 00:00:35,730
+thinner than a dime
+
+20
+00:00:36,502 --> 00:00:38,972
+Left unpressurized the entire rocket would
+
+21
+00:00:39,002 --> 00:00:40,904
+crumple under its own weight dropping
+
+22
+00:00:40,934 --> 00:00:42,760
+two side boosters mid-sky as it
+
+23
+00:00:42,790 --> 00:00:43,483
+climbed
+
+24
+00:00:43,781 --> 00:00:45,901
+Mid-sixties rockets left raw machinery
+
+25
+00:00:45,931 --> 00:00:46,852
+wide open
+
+26
+00:00:47,623 --> 00:00:49,816
+Gemini's Titan Two fired twin engines
+
+27
+00:00:49,846 --> 00:00:51,953
+inside an exposed steel frame
+
+28
+00:00:52,724 --> 00:00:53,869
+And for Saturn One-B
+
+29
+00:00:53,899 --> 00:00:56,306
+in nineteen sixty-six NASA bolted eight
+
+30
+00:00:56,336 --> 00:00:57,391
+narrow missile tanks
+
+31
+00:00:57,421 --> 00:00:59,121
+in a circle above eight tightly
+
+32
+00:00:59,151 --> 00:01:00,148
+packed engines
+
+33
+00:01:00,447 --> 00:01:02,182
+Then nineteen sixty-nine unveiled
+
+34
+00:01:02,212 --> 00:01:04,998
+a thirty-six-story colossus Saturn Five
+
+35
+00:01:05,751 --> 00:01:07,578
+Beneath its hull hung five cavernous
+
+36
+00:01:07,608 --> 00:01:10,016
+F-1 nozzles each nearly four meters
+
+37
+00:01:10,046 --> 00:01:12,243
+wide in rough silver batting unleashing
+
+38
+00:01:12,273 --> 00:01:13,976
+seven point five million pounds
+
+39
+00:01:14,006 --> 00:01:15,573
+of thrust as ice cascaded down
+
+40
+00:01:15,603 --> 00:01:16,433
+its sides
+
+41
+00:01:16,741 --> 00:01:18,949
+In nineteen eighty-one rocket geometry
+
+42
+00:01:18,979 --> 00:01:20,557
+broke symmetry completely
+
+43
+00:01:21,328 --> 00:01:22,511
+The Space Shuttle mounted
+
+44
+00:01:22,541 --> 00:01:24,379
+a black ceramic-tiled glider beside
+
+45
+00:01:24,409 --> 00:01:25,709
+a giant orange tank
+
+46
+00:01:25,937 --> 00:01:27,990
+firing three computer-throttled hydrogen
+
+47
+00:01:28,020 --> 00:01:30,317
+engines glowing with blue shock diamonds
+
+48
+00:01:30,634 --> 00:01:32,243
+Physics still forces propellant
+
+49
+00:01:32,273 --> 00:01:33,767
+to fill nearly ninety percent
+
+50
+00:01:33,797 --> 00:01:35,251
+of every rocket's mass
+
+51
+00:01:36,051 --> 00:01:36,802
+Yet today
+
+52
+00:01:37,015 --> 00:01:39,133
+NASA's Artemis super-rocket fuses four
+
+53
+00:01:39,163 --> 00:01:41,646
+laser-upgraded RS-25 engines
+
+54
+00:01:41,676 --> 00:01:43,834
+with twin boosters unleashing eight point
+
+55
+00:01:43,864 --> 00:01:44,784
+eight million pounds
+
+56
+00:01:44,814 --> 00:01:45,904
+of thrust back toward
+
+57
+00:01:45,934 --> 00:01:46,581
+the Moon

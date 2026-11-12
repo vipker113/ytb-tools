@@ -1,0 +1,449 @@
+{
+  "schema_name": "proof_of_wonder_production_manifest",
+  "manifest_version": "8.0",
+  "generated_at_utc": "2026-11-04T03:03:07.226208+00:00",
+  "slug": "snake-island-v8-10s-test",
+  "channel_name": "Proof of Wonder",
+  "category_playlist": "Hidden Earth",
+  "topic": "Ilha da Queimada Grande (Snake Island, Brazil) \u2014 90 Pit Vipers Per Hectare, Canopy Bird Ambush & 5x Avian Venom",
+  "production_profile": {
+    "profile_name": "mysterious_earth_exploration",
+    "profile_version": "6.0.0",
+    "style_overrides": {
+      "asset_selection": {
+        "target_moving_footage_ratio": 0.95,
+        "target_genuine_moving_footage_ratio": 0.95,
+        "target_meaningful_action_footage_ratio": 0.75,
+        "max_static_image_ratio": 0.0,
+        "max_scientific_visualization_ratio": 0.0,
+        "max_duration_share_per_asset": 0.42,
+        "min_human_interaction_shots": 1
+      },
+      "pacing": {
+        "min_shot_duration_s": 2.0
+      }
+    },
+    "visual_scoring_weights": {
+      "direct_relevance": 0.3,
+      "visual_clarity": 0.2,
+      "authenticity": 0.22,
+      "technical_quality": 0.1,
+      "composition_potential": 0.1,
+      "motion_storytelling": 0.05,
+      "license_verification": 0.03,
+      "min_direct_relevance_floor": 0.35
+    }
+  },
+  "script_version": {
+    "version": "v8.0.0",
+    "script_sha256": "51ee98ef6ec9502aae0b6b49a3502422c10fe637615000acd5996bac202b1bc6",
+    "segment_count": 3,
+    "word_count": 29,
+    "opening_hook_type": "surprising_visual",
+    "layer2_pivot_seg_id": "N02",
+    "scientific_caveat_seg_id": "N02",
+    "factual_references": [
+      {
+        "citation": "Marques, O. A. V., Martins, M., Develey, P. F., Macarr\u00e3o, A., & Sazima, I. (2012) / Instituto Butantan \u2014 Population ecology and arboreal bird-ambush foraging of Bothrops insularis on Ilha da Queimada Grande.",
+        "url": "https://butantan.gov.br/",
+        "doi": null,
+        "supported_claims": "50\u201390 pit vipers per hectare in forest habitat (no scientific evidence for 5 snakes/m\u00b2 rumors) and arboreal bird-ambush hunting."
+      },
+      {
+        "citation": "Zelanis, A. et al. / Instituto Butantan Toxinology \u2014 Differential avian venom potency of Bothrops insularis.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/",
+        "doi": null,
+        "supported_claims": "Bothrops insularis venom exhibits up to 5x higher potency against avian prey than mainland relatives."
+      }
+    ]
+  },
+  "voice_direction_profile": {
+    "voice_input_mode": "directed_tts",
+    "profile_id": "mysterious_discovery",
+    "voice_identity": "en-GB-RyanNeural",
+    "annotated_voice_script_file": "/Applications/code/science-knowledge/youtube-shorts-channel/episodes/snake_island_v8_10s_test_voice_script.txt",
+    "approval_lock": {
+      "locked": true,
+      "synchronized": true,
+      "approved_at_utc": "2026-11-04T02:40:00.618417+00:00",
+      "script_matches": true,
+      "audio_matches": true,
+      "timings_matches": true
+    }
+  },
+  "audio_source_and_final_narration": {
+    "voice_input_mode": "directed_tts",
+    "uploaded_narration_file": null,
+    "voice_reference_file": null,
+    "voice_owner_consent": false,
+    "narration_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/narration.mp3",
+    "final_audio_mix_mp3": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/final_audio_mix.mp3",
+    "word_timings_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/word_timings.json",
+    "total_duration_s": 11.1,
+    "total_frames_30fps": 333,
+    "five_layer_stems": {
+      "layer_1_narration": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/work_audio/layer_1_narration.wav",
+      "layer_2_music": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/work_audio/layer_2_music.wav",
+      "layer_3_ambience": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/work_audio/layer_3_ambience.wav",
+      "layer_4_natural_sounds": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/work_audio/layer_4_natural_sounds.wav",
+      "layer_5_cinematic_sfx": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/work_audio/layer_5_cinematic_sfx.wav"
+    },
+    "audio_diagnostics": {
+      "integrated_lufs": -16.0,
+      "loudness_range_lra_lu": 1.6,
+      "true_peak_dbtp": -1.5,
+      "speech_crest_factor_db": 14.5,
+      "clipped_samples_count": 0,
+      "excessive_silence_count": 0,
+      "excessive_silences": [],
+      "voice_peak_dbfs": -2.4
+    }
+  },
+  "source_assets": [
+    {
+      "local_file": "snakes_intertwined_mating_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Multiple Intertwined Snakes Coiled in Green Tree Branches (1080p)",
+      "creator_agency": "Wikimedia Commons (Elaphe climacophora in tree canopy)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Japanese_rat_snakes_(Elaphe_climacophora)_mating.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Japanese_rat_snakes_%28Elaphe_climacophora%29_mating.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "butantan_pit_vipers_cluster_720p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Cobras do Butantan \u2014 Clustered Brazilian Pit Vipers Moving Across Forest Leaf Litter",
+      "creator_agency": "Rogerio Ramos / Instituto Butantan Serpentarium (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Cobras_do_Butantan.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Cobras_do_Butantan.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "viper_ambushing_bird_iran_1080p.webm",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Venomous Viper Ambushing a Landing Migratory Bird in Mid-Air (1080p)",
+      "creator_agency": "Behzad Fathinia et al. / Wikimedia Commons",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Iran_-_Pseudocerastes_urarachnoides_2015.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Iran_-_Pseudocerastes_urarachnoides_2015.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "pit_viper_venom_fangs_slowmo_1080p.mp4",
+      "media_type": "video",
+      "priority_tier": 1,
+      "title": "Milking Adult Pit Viper Venom in Slow Motion (1080p)",
+      "creator_agency": "Rushen / Queen Saovabha Memorial Institute Venom Research (Wikimedia Commons)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Milking_Adult_Malayan_Pit_Viper_(Calloselasma_rhodostoma)_Venom,_in_Slow_Motion.webm",
+      "direct_media_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Milking_Adult_Malayan_Pit_Viper_%28Calloselasma_rhodostoma%29_Venom%2C_in_Slow_Motion.webm",
+      "is_first_party_original": false
+    },
+    {
+      "local_file": "jungle_rainforest_canopy_ambience.wav",
+      "media_type": "audio",
+      "priority_tier": 3,
+      "title": "Subtropical Island Rainforest Canopy Breeze & Cliff Surf Natural Sound Bed",
+      "creator_agency": "Proof of Wonder Documentary Studio",
+      "source_page_url": "local://assets/raw_footage/hidden_earth_snake_island_v6/jungle_rainforest_canopy_ambience.wav",
+      "direct_media_url": "local://assets/raw_footage/hidden_earth_snake_island_v6/jungle_rainforest_canopy_ambience.wav",
+      "is_first_party_original": true
+    }
+  ],
+  "licensing_metadata": {
+    "strict_zero_cost_budget": true,
+    "source_register_csv": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/source_register.csv",
+    "source_register_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/source_register.md",
+    "excluded_sources_notes": [],
+    "licenses": [
+      {
+        "local_file": "snakes_intertwined_mating_1080p.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Canopy intertwined snakes video: Wikimedia Commons contributor, CC BY 4.0"
+      },
+      {
+        "local_file": "butantan_pit_vipers_cluster_720p.mp4",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "required_attribution": "Instituto Butantan pit vipers video ('Cobras do Butantan'): Rogerio Ramos, CC BY 3.0"
+      },
+      {
+        "local_file": "viper_ambushing_bird_iran_1080p.webm",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Viper bird-ambush footage (Pseudocerastes urarachnoides): Behzad Fathinia et al., CC BY 4.0"
+      },
+      {
+        "local_file": "pit_viper_venom_fangs_slowmo_1080p.mp4",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "required_attribution": "Slow-motion pit-viper venom extraction video: Rushen / Wikimedia Commons, CC BY 4.0"
+      },
+      {
+        "local_file": "jungle_rainforest_canopy_ambience.wav",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "required_attribution": "First-party synthesized subtropical island canopy & surf atmosphere (CC0)"
+      }
+    ]
+  },
+  "shot_list": [
+    {
+      "sid": "S01",
+      "kind": "video_full",
+      "src_file": "snakes_intertwined_mating_1080p.webm",
+      "camera_perspective": "close_up",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "gentle_drift",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Multiple real snakes coiled in green canopy branches (N01)",
+      "editorial_rationale": "Opens with real 1080p multi-snake canopy footage matching Snake Island's tree-dwelling viper density."
+    },
+    {
+      "sid": "S02",
+      "kind": "video_full",
+      "src_file": "butantan_pit_vipers_cluster_720p.mp4",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "key_fact",
+      "camera_movement": "tracking",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Multiple Brazilian pit vipers moving across overlapping coils at Instituto Butantan (N02a)",
+      "editorial_rationale": "Pairs the Instituto Butantan scientific density caveat with real moving Brazilian pit-viper footage."
+    },
+    {
+      "sid": "S03",
+      "kind": "video_full",
+      "src_file": "viper_ambushing_bird_iran_1080p.webm",
+      "camera_perspective": "medium",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "static",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience",
+        "natural_sounds"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": false,
+      "story_beat": "Real 1080p venomous viper ambushing a landing bird in mid-air (N02b)",
+      "editorial_rationale": "Literal 1:1 action match between spoken 'vipers ambush birds overhead' and a real 1080p mid-air viper bird strike."
+    },
+    {
+      "sid": "S04",
+      "kind": "video_full",
+      "src_file": "pit_viper_venom_fangs_slowmo_1080p.mp4",
+      "camera_perspective": "scientific_fieldwork",
+      "visual_complexity": "high",
+      "spoken_importance": "central_reveal",
+      "camera_movement": "handheld_field",
+      "reframe_mode": "manual",
+      "transition_in": "cut",
+      "transition_duration_s": 0.0,
+      "scene_audio_layers": [
+        "narration",
+        "ambience"
+      ],
+      "is_real_evidence": true,
+      "has_human_interaction": true,
+      "story_beat": "1080p slow-motion herpetologist extracting pit-viper venom from live fangs (N03)",
+      "editorial_rationale": "Hands-on herpetological venom extraction closes the 11-second test with visceral scientific proof."
+    }
+  ],
+  "scene_timing": {
+    "fps": 30,
+    "semantic_timeline_manifest_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/semantic_timeline_manifest.json",
+    "timed_scenes": [
+      {
+        "sid": "S01",
+        "start_s": 0.0,
+        "end_s": 4.3333,
+        "duration_s": 4.3333,
+        "start_frame": 0,
+        "end_frame": 130
+      },
+      {
+        "sid": "S02",
+        "start_s": 4.3333,
+        "end_s": 6.4333,
+        "duration_s": 2.1,
+        "start_frame": 130,
+        "end_frame": 193
+      },
+      {
+        "sid": "S03",
+        "start_s": 6.4333,
+        "end_s": 8.7,
+        "duration_s": 2.2667,
+        "start_frame": 193,
+        "end_frame": 261
+      },
+      {
+        "sid": "S04",
+        "start_s": 8.7,
+        "end_s": 11.1,
+        "duration_s": 2.4,
+        "start_frame": 261,
+        "end_frame": 333
+      }
+    ]
+  },
+  "subtitle_version": {
+    "version": "v8.0.0",
+    "style": "cinema_boxless",
+    "emphasis_mode": "color_accent",
+    "word_by_word_animation": false,
+    "cue_count": 7,
+    "srt_path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/subtitles.srt"
+  },
+  "thumbnail_variants": {
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/thumbnail.jpg",
+    "mobile_preview_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/thumbnail_small_preview_sheet.jpg",
+    "concepts_comparison_sheet_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/thumbnail_concepts_comparison_sheet.jpg",
+    "concepts": [
+      {
+        "concept_id": "A",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/thumbnail_concept_A.jpg",
+        "source_asset": "snakes_intertwined_mating_1080p.webm",
+        "matches_opening_scene_asset": true,
+        "headline_text": "90 VIPERS|PER HECTARE",
+        "headline_word_count": 4,
+        "kicker_text": "BRAZIL'S SNAKE ISLAND",
+        "concept_rationale": "Matches Frame 0 opening hook: multiple real snakes coiled and tangled in green branches at eye level.",
+        "size_kb": 843.8,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "snakes_intertwined_mating_1080p.webm",
+          "sharpness_score": 1.91,
+          "subject_separation_score": 61.16,
+          "combined_score": 34.5,
+          "recommended_cx": 0.5367,
+          "recommended_cy": 0.4662
+        },
+        "actual_analytics_outcome": null
+      },
+      {
+        "concept_id": "B",
+        "path": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/thumbnail_concept_B.jpg",
+        "source_asset": "viper_ambushing_bird_iran_1080p.webm",
+        "matches_opening_scene_asset": false,
+        "headline_text": "VIPERS HUNT|IN THE TREES",
+        "headline_word_count": 5,
+        "kicker_text": "5X DEADLIER VENOM",
+        "concept_rationale": "Split-second real wildlife action frame of a camouflaged viper ambushing a landing bird.",
+        "size_kb": 491.3,
+        "jpeg_quality": 96,
+        "legibility_metrics": {
+          "source_name": "viper_ambushing_bird_iran_1080p.webm",
+          "sharpness_score": 0.81,
+          "subject_separation_score": 60.93,
+          "combined_score": 33.87,
+          "recommended_cx": 0.4316,
+          "recommended_cy": 0.494
+        },
+        "actual_analytics_outcome": null
+      }
+    ]
+  },
+  "rendering_configuration": {
+    "output_spec": {
+      "aspect_ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "video_codec_master": "libx264",
+      "video_crf_master": 15,
+      "video_preset_master": "medium",
+      "video_profile": "high",
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "audio_codec": "aac",
+      "audio_bitrate": "192k",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "target_loudness_lufs": -16.0
+    },
+    "color_science": {
+      "enable_filmic_grade": true,
+      "cast_tame_strength": 0.16,
+      "luma_grain_sigma": 2.2
+    },
+    "benchmarks": {
+      "slug": "snake-island-v8-10s-test",
+      "encode_mode": "master",
+      "shots_render_or_cache_s": 0.01,
+      "timeline_assembly_and_mux_s": 13.331,
+      "thumbnail_concepts_s": 3.097,
+      "total_render_master_s": 16.562,
+      "rendered_frames": 333,
+      "effective_render_fps": 20.11
+    }
+  },
+  "qa_results": {
+    "qc_measurements_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/qc_measurements.json",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/qc_report.md",
+    "summary": {
+      "overall_pass": true,
+      "failed_gates_count": 0,
+      "moving_footage_pct": 100.0,
+      "whisper_normalized_match_ratio": 1.0,
+      "integrated_lufs": -16.0,
+      "true_peak_dbtp": -1.5,
+      "protected_projects_intact": true
+    }
+  },
+  "studio_v7_intelligence": {
+    "adaptive_audio_profile": "immersive_exploration",
+    "music_plan_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/music_plan.json",
+    "ambience_plan_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/ambience_plan.json",
+    "sfx_plan_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/sfx_plan.json",
+    "scene_optimization_report_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/scene_optimization_report.json",
+    "unified_av_timeline_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/unified_av_timeline.json",
+    "creative_qa_report_json": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/creative_qa_report.json",
+    "scene_optimization_counts": {
+      "Keep": 4,
+      "Merge": 0,
+      "Replace": 0,
+      "Remove": 0
+    },
+    "music_sections_count": 0,
+    "ambience_sections_count": 1,
+    "approved_sfx_count": 0,
+    "creative_qa_pass": true
+  },
+  "final_output_locations": {
+    "output_dir": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test",
+    "master_mp4": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/snake-island-v8-10s-test.mp4",
+    "primary_thumbnail_jpg": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/thumbnail.jpg",
+    "subtitles_srt": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/subtitles.srt",
+    "script_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/script.md",
+    "retention_plan_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/retention_plan.md",
+    "storyboard_manifest_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/storyboard_and_shot_manifest.md",
+    "youtube_metadata_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/youtube_metadata.md",
+    "qc_report_md": "/Applications/code/science-knowledge/youtube-shorts-channel/output/hidden-earth/snake-island-v8-10s-test/qc_report.md"
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "slug": "space-nasa-spacesuit-evolution-v8",
+  "technical_approval": true,
+  "creative_approval": true,
+  "overall_release_approval": true,
+  "visual_coverage_metrics": {
+    "genuine_moving_footage_pct": 90.06,
+    "meaningful_action_footage_pct": 90.06,
+    "establishing_footage_pct": 0.0,
+    "real_time_lapse_pct": 0.0,
+    "static_image_pct": 9.94,
+    "animated_still_pct": 9.94,
+    "scientific_visualization_pct": 0.0
+  },
+  "canonical_asset_summary": {
+    "distinct_canonical_assets": 21,
+    "raw_unique_filenames": 21,
+    "meaningful_progression_pct": 100.0
+  },
+  "resolution_honesty_records": [
+    {
+      "sid": "S01",
+      "src_file": "mercury_seven_silver_suits_5k.jpg",
+      "native_resolution": "4096x5120",
+      "cropped_9x16_px": "2595x4613",
+      "upscale_factor": 0.416,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S02",
+      "src_file": "mercury_suiting_up_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "498x885",
+      "upscale_factor": 2.169,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S03",
+      "src_file": "mercury_ingress_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "498x885",
+      "upscale_factor": 2.169,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S04",
+      "src_file": "gemini_eva_earth_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "498x885",
+      "upscale_factor": 2.169,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S05",
+      "src_file": "thumb_1965_ed_white_eva_4k.jpg",
+      "native_resolution": "4086x4092",
+      "cropped_9x16_px": "2092x3720",
+      "upscale_factor": 0.516,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S06",
+      "src_file": "gemini_rig_horizontal_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "498x885",
+      "upscale_factor": 2.169,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S07",
+      "src_file": "gemini_inflated_walk_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "498x885",
+      "upscale_factor": 2.169,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S08",
+      "src_file": "apollo9_a7l_eva1_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "498x885",
+      "upscale_factor": 2.169,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S09",
+      "src_file": "artemis_2026_testing_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "552x982",
+      "upscale_factor": 1.956,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S10",
+      "src_file": "apollo9_a7l_eva2_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "498x885",
+      "upscale_factor": 2.169,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S11",
+      "src_file": "gold_visor_closeup_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "552x982",
+      "upscale_factor": 1.956,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S12",
+      "src_file": "apollo_plss_pack_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "542x964",
+      "upscale_factor": 1.991,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S13",
+      "src_file": "apollo16_lunar_fall_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "482x857",
+      "upscale_factor": 2.24,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S14",
+      "src_file": "shuttle_hut_shell_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "552x982",
+      "upscale_factor": 1.956,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S15",
+      "src_file": "shuttle_eva_orbit1_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "552x982",
+      "upscale_factor": 1.956,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S16",
+      "src_file": "mccandless_mmu_closeup_7k.jpg",
+      "native_resolution": "6852x6904",
+      "cropped_9x16_px": "3291x5851",
+      "upscale_factor": 0.328,
+      "is_native_full_hd_vertical": true
+    },
+    {
+      "sid": "S17",
+      "src_file": "xemu_rotary_bearings_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "552x982",
+      "upscale_factor": 1.956,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S18",
+      "src_file": "xemu_rear_entry_hatch_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "552x982",
+      "upscale_factor": 1.956,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S19",
+      "src_file": "xemu_crater_kneeling_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "542x964",
+      "upscale_factor": 1.991,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S20",
+      "src_file": "artemis_regolith_dust_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "490x871",
+      "upscale_factor": 2.204,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S21",
+      "src_file": "artemis_2026_testing_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "552x982",
+      "upscale_factor": 1.956,
+      "is_native_full_hd_vertical": false
+    },
+    {
+      "sid": "S22",
+      "src_file": "spacesuits_next_explorers_1080p.mp4",
+      "native_resolution": "1920x1080",
+      "cropped_9x16_px": "533x947",
+      "upscale_factor": 2.027,
+      "is_native_full_hd_vertical": false
+    }
+  ],
+  "technical_details": {
+    "target_resolution": "1080x1920",
+    "target_aspect_ratio": "9:16",
+    "target_fps": 30,
+    "target_video_codec": "libx264",
+    "target_audio_codec": "aac",
+    "mode": "post_render_mp4",
+    "encoded_width": 1080,
+    "encoded_height": 1920,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "r_frame_rate": "30/1",
+    "av_sync_drift_s": 0.0
+  },
+  "pillars": {
+    "media_qa": {
+      "passed": true,
+      "critical_count": 0,
+      "major_count": 0,
+      "minor_count": 0,
+      "issues": []
+    },
+    "semantic_qa": {
+      "passed": true,
+      "critical_count": 0,
+      "major_count": 0,
+      "minor_count": 0,
+      "issues": []
+    },
+    "repetition_qa": {
+      "passed": true,
+      "critical_count": 0,
+      "major_count": 0,
+      "minor_count": 0,
+      "issues": []
+    },
+    "timeline_qa": {
+      "passed": true,
+      "critical_count": 0,
+      "major_count": 0,
+      "minor_count": 0,
+      "issues": []
+    },
+    "technical_qa": {
+      "passed": true,
+      "critical_count": 0,
+      "major_count": 0,
+      "minor_count": 0,
+      "issues": []
+    },
+    "creative_qa": {
+      "passed": true,
+      "critical_count": 0,
+      "major_count": 0,
+      "minor_count": 0,
+      "issues": []
+    }
+  },
+  "issues": []
+}

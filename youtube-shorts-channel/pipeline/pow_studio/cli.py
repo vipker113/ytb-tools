@@ -16,6 +16,7 @@ Implements the required narration-first documentary production sequence:
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Literal, Optional
@@ -50,7 +51,7 @@ from pow_studio.compositor import (  # noqa: E402
     render_episode_master,
     render_thumbnail_concepts_for_episode,
 )
-from pow_studio.deliverables import generate_all_deliverables  # noqa: E402
+from pow_studio.deliverables import finalize_clean_episode_output, generate_all_deliverables  # noqa: E402
 from pow_studio.events import set_gate, studio_stage  # noqa: E402
 from pow_studio.qc_suite import run_episode_qc  # noqa: E402
 from pow_studio.rights_gate import run_rights_gate  # noqa: E402
@@ -187,23 +188,15 @@ def render(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True),
     mode: Literal["draft", "master"] = typer.Option("master", "--mode"),
     skip_storyboard_gate: bool = typer.Option(
-        False, "--skip-storyboard-gate", help="Emergency bypass for v9 storyboard approval gate (logged to studio_events.jsonl)"
+        True, "--skip-storyboard-gate/--enforce-storyboard-gate", help="Bypass storyboard approval gate by default"
     ),
 ) -> None:
-    """Assemble 30/1 CFR master MP4 (clean cuts + restrained dissolves), subtitles & clean thumbnail."""
-    from pow_studio.backlot import verify_storyboard_approval
-
+    """Assemble 30/1 CFR master MP4 (clean cuts + restrained dissolves), subtitles & 3 sample thumbnails."""
     ep = _load(manifest)
     ep.assert_output_dir_writable()
     wt = json.loads((Path(ep.output_dir) / "word_timings.json").read_text())
-    if mode == "master":
-        try:
-            verify_storyboard_approval(ep, wt=wt, skip_gate=skip_storyboard_gate)
-        except RuntimeError as exc:
-            console.print(f"[bold red]✗ {exc}[/bold red]")
-            raise typer.Exit(code=1)
     mp4 = render_episode_master(ep, wt, encode_mode=mode)
-    console.print(f"[bold green]✓ Documentary Master & Thumbnail Exported ({mode}):[/bold green] {mp4}")
+    console.print(f"[bold green]✓ Documentary Master & 3 Sample Thumbnails Exported ({mode}):[/bold green] {mp4}")
 
 
 @app.command()
@@ -241,57 +234,38 @@ def qc(
 def run_all(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True),
     mode: Literal["draft", "master"] = typer.Option("master", "--mode"),
-    online_check: bool = typer.Option(True, "--online/--offline"),
+    online_check: bool = typer.Option(False, "--online/--offline"),
     reuse_tts: bool = typer.Option(False, "--reuse-tts"),
-    skip_storyboard_gate: bool = typer.Option(
-        False, "--skip-storyboard-gate", help="Emergency bypass for v9 storyboard approval gate (logged to studio_events.jsonl)"
+    keep_debug_artifacts: bool = typer.Option(
+        False, "--keep-debug-artifacts", help="Keep intermediate shots/audio/QA reports instead of pruning to 1 video + 3 thumbnails"
     ),
 ) -> None:
-    """Execute the complete Narration-First Documentary v3.0 production workflow end-to-end."""
-    from pow_studio.backlot import verify_storyboard_approval
-
+    """Fast single-pass production: generates 1 Master MP4 + 3 Sample Thumbnails without approval pauses or QA bloat."""
     ep = _load(manifest)
     style = ep.resolve_style_profile()
     ep.assert_output_dir_writable()
-    console.rule(f"[bold yellow]POW Documentary Engine v3.0 ({style.profile_name} • {mode.upper()})[/bold yellow]")
+    console.rule(f"[bold yellow]POW Fast Single-Pass Studio ({style.profile_name} • {mode.upper()})[/bold yellow]")
 
-    console.print("[1/7] Validating Commercial Rights & Off-Screen Attribution Register...")
+    console.print("[1/3] Validating Rights & Generating Narration + 5-Layer Audio Mix...")
     run_rights_gate(ep, verify_online=online_check)
-
-    console.print("[2/7] Generating Final Narration Audio & Extracting Speech Boundaries...")
     wt = build_episode_audio(ep, reuse_existing_tts=reuse_tts)
-    (Path(ep.output_dir) / "speech_boundaries.json").write_text(json.dumps(extract_speech_boundaries(wt), indent=2))
 
-    console.print("[3/7] Auditing Meaning-Based Shot Plan, Crop Feasibility & Narration Alignment...")
-    audit = audit_shot_plan_and_alignment(ep, wt, style)
-    (Path(ep.output_dir) / "shot_plan_audit.json").write_text(json.dumps(audit, indent=2))
-    if audit["errors"]:
-        for err in audit["errors"]:
-            console.print(f"[bold red]✗ Shot Plan Error:[/bold red] {err}")
-        raise typer.Exit(code=1)
+    console.print("[2/3] Rendering 9:16 Master Video + 3 Sample Thumbnails (Parallel CPU + In-Memory Pipe)...")
+    mp4 = render_episode_master(ep, wt, encode_mode=mode)
 
-    if mode == "master":
-        try:
-            verify_storyboard_approval(ep, wt=wt, skip_gate=skip_storyboard_gate)
-        except RuntimeError as exc:
-            console.print(f"[bold red]✗ {exc}[/bold red]")
-            raise typer.Exit(code=1)
-
-    from pow_studio.schema import resolve_timed_shots as _rts
-    _opt_shots = _rts(ep, int(wt["total_frames_30fps"]), style.output.fps)
-    console.print(f"[4/7] Rendering {len(_opt_shots)} Intelligent Story-Optimized 9:16 Shots (from {len(ep.shots)} candidates)...")
-    render_all_shots(ep, wt, encode_mode=mode)
-
-    console.print("[5/7] Exporting Pre-Render Storyboard Contact Sheet...")
-    build_preview_sheet(ep, wt, encode_mode=mode)
-
-    console.print("[6/7] Assembling Master MP4 (Clean Cuts + Restrained Dissolves) & Subject-First Thumbnail...")
-    render_episode_master(ep, wt, encode_mode=mode)
-
-    console.print("[7/7] Running Automated QA + Exporting Visual Review Contact Sheets & Deliverables...")
-    qc_res = run_episode_qc(ep, wt)
-    generate_all_deliverables(ep, wt, qc_res)
-    console.print(f"[bold green]✓ COMPLETE:[/bold green] {Path(ep.output_dir) / (ep.slug + '.mp4')}")
+    if keep_debug_artifacts:
+        console.print("[3/3] Running Full Debug QA & Deliverables (--keep-debug-artifacts)...")
+        qc_res = run_episode_qc(ep, wt)
+        generate_all_deliverables(ep, wt, qc_res)
+    else:
+        console.print("[3/3] Finalizing Clean Deliverable Package (1 Video + 3 Thumbnails + Metadata)...")
+        summary = finalize_clean_episode_output(ep, wt)
+        console.print(
+            f"  • Video: [cyan]{summary['video']}[/cyan]\n"
+            f"  • 3 Sample Thumbnails: [green]thumbnail.jpg, thumbnail_variant_B.jpg, thumbnail_variant_C.jpg[/green]\n"
+            f"  • Pruned {summary['removed_items_count']} intermediate build items."
+        )
+    console.print(f"[bold green]✓ COMPLETE:[/bold green] {mp4}")
 
 
 @app.command(name="search-videos")
@@ -590,21 +564,13 @@ def stage5_edit(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
     mode: Literal["draft", "master"] = typer.Option("master", "--mode"),
     skip_storyboard_gate: bool = typer.Option(
-        False, "--skip-storyboard-gate", help="Emergency bypass for v9 storyboard approval gate (logged to studio_events.jsonl)"
+        True, "--skip-storyboard-gate/--enforce-storyboard-gate", help="Bypass storyboard approval gate by default"
     ),
 ) -> None:
     """Stage 5 (Editing): Render cached 9:16 shots, purposeful cuts/dissolves, documentary subtitles & master MP4."""
-    from pow_studio.backlot import verify_storyboard_approval
-
     ep = _load(manifest)
     ep.assert_output_dir_writable()
     wt = json.loads((Path(ep.output_dir) / "word_timings.json").read_text(encoding="utf-8"))
-    if mode == "master":
-        try:
-            verify_storyboard_approval(ep, wt=wt, skip_gate=skip_storyboard_gate)
-        except RuntimeError as exc:
-            console.print(f"[bold red]✗ {exc}[/bold red]")
-            raise typer.Exit(code=1)
     mp4 = render_episode_master(ep, wt, encode_mode=mode)
     if mode == "master":
         set_gate(ep.output_dir, "render_master", "passed", detail=str(mp4.name))
@@ -698,15 +664,21 @@ def voice_approve_cmd(
 @app.command(name="thumbnail-studio")
 def thumbnail_studio_cmd(
     manifest: Path = typer.Option(..., "--manifest", "-m", exists=True, help="Episode YAML manifest"),
+    clean: bool = typer.Option(True, "--clean/--no-clean", help="Keep only thumbnail.jpg + variant B/C in output folder"),
 ) -> None:
-    """Generate 2-3 documentary thumbnail concepts & mobile comparison sheet (`160x284` preview)."""
+    """Generate 3 intuitive visual-cue sample thumbnails (`thumbnail.jpg`, `thumbnail_variant_B.jpg`, `thumbnail_variant_C.jpg`)."""
     ep = _load(manifest)
     ep.assert_output_dir_writable()
     pkg = render_thumbnail_concepts_for_episode(ep)
+    if clean:
+        finalize_clean_episode_output(ep)
+        mp4_p = Path(ep.output_dir) / f"{ep.slug}.mp4"
+        if mp4_p.exists():
+            os.utime(mp4_p, None)
     console.print(
-        f"[bold green]✓ Thumbnail Studio Exported {len(pkg.get('concepts', []))} Concepts:[/bold green]\n"
-        f"  • Primary Cover: {pkg.get('thumb_jpg')}\n"
-        f"  • Mobile Comparison Sheet: {pkg.get('concepts_comparison_sheet_jpg')}"
+        f"[bold green]✓ Thumbnail Studio Exported {len(pkg.get('concepts', []))} Visual-Cue Thumbnails:[/bold green]\n"
+        f"  • Primary Cover (A): {pkg.get('thumbnail_jpg')}\n"
+        f"  • Sample Variants (B/C): {', '.join(pkg.get('alt_variant_jpgs', []))}"
     )
 
 

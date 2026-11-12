@@ -1,0 +1,80 @@
+# Proof of Wonder — Studio v8.0 Annotated Voice Script
+# Episode: space-nasa-rocket-evolution-v8
+# Title: Rocket Evolution 100 Years: From Naked Pipes to NASA's Moon Giant
+
+[SEG: N01]
+"Look closely at the machine that launched modern rocketry in nineteen twenty-six. It had no outer skin and no nose cone—just a tiny nozzle pulling two fuel tanks on naked metal pipes."
+
+[DELIVERY: HOOK]
+[TONE: quiet_awe]
+[INTENSITY: 0.68]
+[PITCH DIRECTION: steady]
+[RHYTHM: crisp]
+[EMPHASIS: "nineteen twenty-six", "no outer skin", "naked metal pipes"]
+[PAUSE AFTER: 320ms]
+
+[SEG: N02]
+"Thirty years later, early orbital rockets still looked like fragile metal pencils. In nineteen fifty-seven, Vanguard lifted four feet before collapsing into flames. Weeks later, Juno One reached orbit by spinning an exposed tub of eleven miniature rocket tubes bolted to its nose."
+
+[DELIVERY: MEASURED EVIDENCE]
+[TONE: grounded_authority]
+[INTENSITY: 0.58]
+[PITCH DIRECTION: rising]
+[RHYTHM: measured]
+[EMPHASIS: "fragile metal pencils", "collapsing into flames", "eleven miniature rocket tubes"]
+[PAUSE AFTER: 300ms]
+
+[SEG: N03]
+"By nineteen sixty-two, NASA's Mercury-Atlas gleamed like solid steel—yet its tank walls were thinner than a dime. Left unpressurized, the entire rocket would crumple under its own weight, dropping two side boosters mid-sky as it climbed."
+
+[DELIVERY: SCIENTIFIC WONDER]
+[TONE: intrigued_wonder]
+[INTENSITY: 0.56]
+[PITCH DIRECTION: steady]
+[RHYTHM: fluid]
+[EMPHASIS: "thinner than a dime", "crumple", "dropping two side boosters"]
+[PAUSE AFTER: 300ms]
+
+[SEG: N04]
+"Mid-sixties rockets left raw machinery wide open. Gemini's Titan Two fired twin engines inside an exposed steel frame. And for Saturn One-B in nineteen sixty-six, NASA bolted eight narrow missile tanks in a circle—above eight tightly packed engines."
+
+[DELIVERY: MEASURED EVIDENCE]
+[TONE: observational_clarity]
+[INTENSITY: 0.58]
+[PITCH DIRECTION: steady]
+[RHYTHM: measured]
+[EMPHASIS: "exposed steel frame", "eight narrow missile tanks", "eight tightly packed engines"]
+[PAUSE AFTER: 320ms]
+
+[SEG: N05]
+"Then nineteen sixty-nine unveiled a thirty-six-story colossus: Saturn Five. Beneath its hull hung five cavernous F-1 nozzles—each nearly four meters wide in rough silver batting—unleashing seven point five million pounds of thrust as ice cascaded down its sides."
+
+[DELIVERY: ESCALATION]
+[TONE: monumental_scale]
+[INTENSITY: 0.72]
+[PITCH DIRECTION: rising]
+[RHYTHM: deliberate]
+[EMPHASIS: "Saturn Five", "five cavernous F-1 nozzles", "seven point five million pounds"]
+[PAUSE AFTER: 340ms]
+
+[SEG: N06]
+"In nineteen eighty-one, rocket geometry broke symmetry completely. The Space Shuttle mounted a black ceramic-tiled glider beside a giant orange tank, firing three computer-throttled hydrogen engines glowing with blue shock diamonds."
+
+[DELIVERY: SCIENTIFIC WONDER]
+[TONE: crisp_precision]
+[INTENSITY: 0.62]
+[PITCH DIRECTION: steady]
+[RHYTHM: fluid]
+[EMPHASIS: "broke symmetry", "ceramic-tiled glider", "blue shock diamonds"]
+[PAUSE AFTER: 300ms]
+
+[SEG: N07]
+"Physics still forces propellant to fill nearly ninety percent of every rocket's mass. Yet today, NASA's Artemis super-rocket fuses four laser-upgraded RS-25 engines with twin boosters—unleashing eight point eight million pounds of thrust back toward the Moon."
+
+[DELIVERY: EMOTIONAL REFLECTION]
+[TONE: resonant_payoff]
+[INTENSITY: 0.68]
+[PITCH DIRECTION: falling]
+[RHYTHM: deliberate]
+[EMPHASIS: "ninety percent", "Artemis super-rocket", "eight point eight million pounds"]
+[PAUSE AFTER: 420ms]

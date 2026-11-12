@@ -1,0 +1,97 @@
+{
+  "slug": "space-nasa-spacesuit-evolution-v8",
+  "style_profile": "space_discovery",
+  "target_duration_range_s": [
+    75.0,
+    115.0
+  ],
+  "planned_duration_s": 110.24,
+  "timing_source": "word_timings",
+  "rows": [
+    {
+      "time": "0.1\u201314.9s",
+      "start_s": 0.1,
+      "end_s": 14.89,
+      "seg_id": "N01",
+      "narrative_beat": "opening_hook",
+      "viewer_question": "How did a stiff silver backup cocoon evolve into standalone lunar armor and untethered jetpacks?",
+      "new_information": "Project Mercury's 1961 Navy Mark IV suit used aluminized nylon for thermal reflection and locked nearly rigid if pressurized in vacuum.",
+      "visual_reveal": "NASA technicians fastening the mirror-silver Mercury suit torso, close-up silver helmet fitting, and crew shoehorning the silver-suited astronaut into the cramped capsule.",
+      "emotional_direction": "Quiet amazement at how raw, tight, and immobile early human spaceflight protection was",
+      "retention_purpose": "Stop scrolling at Frame 0 with gleaming mirror-silver 1961 spacesuit hardware in crisp motion"
+    },
+    {
+      "time": "15.2\u201334.1s",
+      "start_s": 15.21,
+      "end_s": 34.13,
+      "seg_id": "N02",
+      "narrative_beat": "curiosity_gap",
+      "viewer_question": "How did NASA solve soft spacesuits inflating like rigid car tires before walking on the Moon?",
+      "new_information": "In June 1965 Ed White spacewalked on a 25-foot gold-wrapped umbilical using a handheld gas gun, while vacuum ballooned soft Gemini G4C suits dangerously stiff.",
+      "visual_reveal": "16mm color Gemini IV spacewalk film over blue Earth, 4K close-up of the golden umbilical hose and gas gun, and pressurized Gemini suit testing.",
+      "emotional_direction": "Visceral awe at floating over Earth paired with physical claustrophobic tension",
+      "retention_purpose": "Contrast exhilarating orbital freedom against the dangerous pneumatic ballooning problem"
+    },
+    {
+      "time": "34.4\u201351.9s",
+      "start_s": 34.43,
+      "end_s": 51.94,
+      "seg_id": "N03",
+      "narrative_beat": "evidence_and_discovery",
+      "viewer_question": "With 21 protective layers and a backpack spacecraft, why did Apollo astronauts still struggle to bend and keep toppling on the Moon?",
+      "new_information": "Apollo's A7L suit stacked 21 layers of fireproof Beta-cloth, Mylar insulation, and ballistic micrometeoroid armor rated for 28,000 km/h impacts, plus a gold solar visor.",
+      "visual_reveal": "Apollo astronaut walking across bright lunar regolith, close-up multi-layer Apollo spacesuit glove/fabric anatomy, and mirror-gold visor glinting in lunar sunlight.",
+      "emotional_direction": "Scientific respect for 21-layer ballistic and thermal engineering",
+      "retention_purpose": "Break down the exact physical anatomy inside Apollo's iconic white Moon suit"
+    },
+    {
+      "time": "52.2\u201365.7s",
+      "start_s": 52.24,
+      "end_s": 65.73,
+      "seg_id": "N04",
+      "narrative_beat": "escalation",
+      "viewer_question": "How did NASA redesign the upper body in the 1980s and build an untethered space jetpack?",
+      "new_information": "Apollo's PLSS circulated chilled water through a liquid-cooling garment, yet pressurized soft fabric joints forced astronauts to bunny-hop and fall when bending.",
+      "visual_reveal": "Open NASA Portable Life Support System cooling/oxygen pack hardware followed by real 1080p Apollo 16 lunar film of an astronaut bunny-hopping and toppling into Moon dust.",
+      "emotional_direction": "Observational clarity turning a famous lunar stumble into a concrete mechanical lesson",
+      "retention_purpose": "Deliver unforgettable real footage of an Apollo astronaut toppling on the Moon to prove why fabric joints failed"
+    },
+    {
+      "time": "66.0\u201381.8s",
+      "start_s": 66.05,
+      "end_s": 81.81,
+      "seg_id": "N05",
+      "narrative_beat": "escalation",
+      "viewer_question": "If Shuttle suits floated effortlessly in zero-G, how is NASA rebuilding spacesuits to walk and kneel on the Moon in 2026?",
+      "new_information": "Space Shuttle EMUs introduced a rigid fiberglass Hard Upper Torso and paired with the 24-thruster nitrogen MMU to fly Bruce McCandless 100 meters untethered in 1984.",
+      "visual_reveal": "NASA engineer holding the rigid fiberglass Hard Upper Torso shell, 8K Hasselblad master of Bruce McCandless floating alone 100m over Earth in the MMU, and 1080p orbital EVA.",
+      "emotional_direction": "Breathtaking vertigo and awe at a lone untethered human floating in open space",
+      "retention_purpose": "Deliver the ultimate orbital spacesuit climax before pivoting to 2026 lunar surface mobility"
+    },
+    {
+      "time": "82.1\u201395.4s",
+      "start_s": 82.15,
+      "end_s": 95.44,
+      "seg_id": "N06",
+      "narrative_beat": "payoff",
+      "viewer_question": "What severe lunar hazard still threatens every metal bearing and seal on the Moon?",
+      "new_information": "Artemis generation lunar suits use rotary sealed metal waist, hip, and arm bearings plus a rear-entry backpack hatch door so astronauts can kneel for geology.",
+      "visual_reveal": "Pressurized rotary metal waist/hip bearings flexing in NASA's lab, open rear-entry hatch door on the suit's back, and Artemis suit kneeling effortlessly to scoop rocks.",
+      "emotional_direction": "Satisfying mechanical contrast against 1961 stiff cocoons and 1972 lunar falls",
+      "retention_purpose": "Show the bizarre open backpack door and effortless kneeling mobility of next-gen Moon suits"
+    },
+    {
+      "time": "95.7\u2013110.2s",
+      "start_s": 95.74,
+      "end_s": 110.24,
+      "seg_id": "N07",
+      "narrative_beat": "final_impression",
+      "viewer_question": "How far will wearable spacecraft evolve over the next 65 years on the Moon and Mars?",
+      "new_information": "Abrasive unweathered lunar regolith remains the primary threat to rotary suit seals, driving dust-hardened Artemis suits with helmet floodlights for South Pole craters.",
+      "visual_reveal": "Apollo spacesuit coated in black abrasive lunar regolith, followed by March 2026 NASA Artemis spacesuits illuminating pitch-dark Lunar South Pole crater shadows.",
+      "emotional_direction": "Grounded engineering honesty closing on cinematic South Pole exploration",
+      "retention_purpose": "State the honest regolith-abrasion caveat while closing on striking floodlit Lunar South Pole suit footage"
+    }
+  ],
+  "markdown_table": "# Audience Retention Plan \u2014 `space-nasa-spacesuit-evolution-v8` (`110.2s` Target/Actual Runtime)\n\n- **Production Profile:** `space_discovery`\n- **Configured Target Window:** `75\u2013115s`\n- **Timing Basis:** `Authoritative Narration Master (word_timings.json)`\n\n| Time | Narrative beat | Viewer question | New information | Visual reveal | Emotional direction | Retention purpose |\n|---|---|---|---|---|---|---|\n| `0.1\u201314.9s` | **opening_hook** (`N01`) | How did a stiff silver backup cocoon evolve into standalone lunar armor and untethered jetpacks? | Project Mercury's 1961 Navy Mark IV suit used aluminized nylon for thermal reflection and locked nearly rigid if pressurized in vacuum. | NASA technicians fastening the mirror-silver Mercury suit torso, close-up silver helmet fitting, and crew shoehorning the silver-suited astronaut into the cramped capsule. | Quiet amazement at how raw, tight, and immobile early human spaceflight protection was | Stop scrolling at Frame 0 with gleaming mirror-silver 1961 spacesuit hardware in crisp motion |\n| `15.2\u201334.1s` | **curiosity_gap** (`N02`) | How did NASA solve soft spacesuits inflating like rigid car tires before walking on the Moon? | In June 1965 Ed White spacewalked on a 25-foot gold-wrapped umbilical using a handheld gas gun, while vacuum ballooned soft Gemini G4C suits dangerously stiff. | 16mm color Gemini IV spacewalk film over blue Earth, 4K close-up of the golden umbilical hose and gas gun, and pressurized Gemini suit testing. | Visceral awe at floating over Earth paired with physical claustrophobic tension | Contrast exhilarating orbital freedom against the dangerous pneumatic ballooning problem |\n| `34.4\u201351.9s` | **evidence_and_discovery** (`N03`) | With 21 protective layers and a backpack spacecraft, why did Apollo astronauts still struggle to bend and keep toppling on the Moon? | Apollo's A7L suit stacked 21 layers of fireproof Beta-cloth, Mylar insulation, and ballistic micrometeoroid armor rated for 28,000 km/h impacts, plus a gold solar visor. | Apollo astronaut walking across bright lunar regolith, close-up multi-layer Apollo spacesuit glove/fabric anatomy, and mirror-gold visor glinting in lunar sunlight. | Scientific respect for 21-layer ballistic and thermal engineering | Break down the exact physical anatomy inside Apollo's iconic white Moon suit |\n| `52.2\u201365.7s` | **escalation** (`N04`) | How did NASA redesign the upper body in the 1980s and build an untethered space jetpack? | Apollo's PLSS circulated chilled water through a liquid-cooling garment, yet pressurized soft fabric joints forced astronauts to bunny-hop and fall when bending. | Open NASA Portable Life Support System cooling/oxygen pack hardware followed by real 1080p Apollo 16 lunar film of an astronaut bunny-hopping and toppling into Moon dust. | Observational clarity turning a famous lunar stumble into a concrete mechanical lesson | Deliver unforgettable real footage of an Apollo astronaut toppling on the Moon to prove why fabric joints failed |\n| `66.0\u201381.8s` | **escalation** (`N05`) | If Shuttle suits floated effortlessly in zero-G, how is NASA rebuilding spacesuits to walk and kneel on the Moon in 2026? | Space Shuttle EMUs introduced a rigid fiberglass Hard Upper Torso and paired with the 24-thruster nitrogen MMU to fly Bruce McCandless 100 meters untethered in 1984. | NASA engineer holding the rigid fiberglass Hard Upper Torso shell, 8K Hasselblad master of Bruce McCandless floating alone 100m over Earth in the MMU, and 1080p orbital EVA. | Breathtaking vertigo and awe at a lone untethered human floating in open space | Deliver the ultimate orbital spacesuit climax before pivoting to 2026 lunar surface mobility |\n| `82.1\u201395.4s` | **payoff** (`N06`) | What severe lunar hazard still threatens every metal bearing and seal on the Moon? | Artemis generation lunar suits use rotary sealed metal waist, hip, and arm bearings plus a rear-entry backpack hatch door so astronauts can kneel for geology. | Pressurized rotary metal waist/hip bearings flexing in NASA's lab, open rear-entry hatch door on the suit's back, and Artemis suit kneeling effortlessly to scoop rocks. | Satisfying mechanical contrast against 1961 stiff cocoons and 1972 lunar falls | Show the bizarre open backpack door and effortless kneeling mobility of next-gen Moon suits |\n| `95.7\u2013110.2s` | **final_impression** (`N07`) | How far will wearable spacecraft evolve over the next 65 years on the Moon and Mars? | Abrasive unweathered lunar regolith remains the primary threat to rotary suit seals, driving dust-hardened Artemis suits with helmet floodlights for South Pole craters. | Apollo spacesuit coated in black abrasive lunar regolith, followed by March 2026 NASA Artemis spacesuits illuminating pitch-dark Lunar South Pole crater shadows. | Grounded engineering honesty closing on cinematic South Pole exploration | State the honest regolith-abrasion caveat while closing on striking floodlit Lunar South Pole suit footage |\n"
+}

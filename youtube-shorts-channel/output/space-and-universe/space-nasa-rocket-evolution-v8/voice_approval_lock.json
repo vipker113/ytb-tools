@@ -1,0 +1,11 @@
+{
+  "slug": "space-nasa-rocket-evolution-v8",
+  "script_version": "v8.0.0",
+  "voice_input_mode": "directed_tts",
+  "voice_direction_profile": "mysterious_discovery",
+  "approved_at_utc": "2026-11-04T04:13:57.284582+00:00",
+  "reviewer_note": "Creator approved final narration timing master",
+  "script_sha256": "e1f05de9a48703dd1c9fed25f7834fad711f19649057c0e3a086f2364d5a7e9d",
+  "narration_norm_wav_sha256": "d5ac7589483a29ab63273e3fa8c5174a77c65eaa5e83959ef534559ce2f3b833",
+  "word_timings_sha256": "ed61498bf8dae022e2541f4de9aabbf2b32c8ccc3a40da36150a1e84d8c11f9f"
+}

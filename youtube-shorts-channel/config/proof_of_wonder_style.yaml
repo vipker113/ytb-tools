@@ -14,7 +14,7 @@ output:
   fps: 30
   video_codec_master: "libx264"
   video_crf_master: 15
-  video_preset_master: "medium"
+  video_preset_master: "veryfast"
   video_profile: "high"
   pixel_format: "yuv420p"
   color_space: "bt709"
@@ -144,15 +144,17 @@ subtitles:
   enable_keyword_color_flash: true
   min_first_cue_start_s: 0.08
 
-# 10. Subject-First Opening Frame & High-CTR Content-Driven Cinema Thumbnail
+# 10. Intuitive Visual-Cue & Cinema Hook Thumbnail Standard
 opening_and_thumbnail:
   max_central_subject_delay_s: 1.2
   forbid_intro_logos_and_title_cards: true
   thumbnail_aspect_ratio: "9:16"
   thumbnail_subject_first: true
   thumbnail_text_mode: "cinema_hook"
-  thumbnail_max_words: 6
-  thumbnail_forbid_boxes_badges_rings: true
+  thumbnail_max_words: 8
+  thumbnail_concepts_count: 3
+  thumbnail_visual_cue_default: true
+  thumbnail_forbid_boxes_badges_rings: false
   thumbnail_max_bytes: 1950000
 
 # 11. Automated & Visual Quality Assurance Gates
