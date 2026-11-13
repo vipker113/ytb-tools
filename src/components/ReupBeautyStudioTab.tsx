@@ -6,28 +6,100 @@ import {
   Copy,
   Crown,
   Download,
+  Eye,
+  Film,
+  FlipHorizontal,
   FolderOpen,
   FolderSync,
   Image as ImageIcon,
   Languages,
   Loader2,
+  Music,
+  Pause,
+  Play,
   RefreshCw,
+  Scissors,
   Sparkles,
   Tag,
   Type,
   Upload,
+  Volume2,
+  VolumeX,
   Wand2,
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   generateLocalReupSeoPackage,
   type ReupLanguageMode,
+  type ReupTitleLengthStyle,
   type ReupVibeCategory,
+  type VisualFrameProfile,
 } from "@/lib/reup-seo-generator";
 
 type EnhanceMode = "beauty_glow" | "crisp_hd" | "raw_hd";
 type TextOverlayPreset = "clean_white" | "pink_glow" | "luxury_gold" | "magazine_minimal";
 type TextOverlayPosition = "bottom" | "top" | "lower_mid";
+type VideoQualityPreset = "beauty_hd" | "crisp_hd" | "clean_upscale";
+type VideoCropMode = "auto_remove_bars" | "force_9_16" | "keep_original";
+type AudioCopyrightMode = "replace_bgm" | "anti_id_shift" | "mute" | "keep_original";
+
+interface RemasteredVideoResult {
+  remasteredFile: string;
+  out_path: string;
+  orig_width: number;
+  orig_height: number;
+  out_width: number;
+  out_height: number;
+  did_crop_bars: boolean;
+  duration_s: number;
+  size_mb: number;
+  elapsed_s: number;
+  encoder: string;
+}
+
+const BUILTIN_BGM_OPTIONS: {
+  file: string;
+  label: string;
+  sub: string;
+  forVibe: ReupVibeCategory;
+}[] = [
+  {
+    file: "sweet_douyin_bell.m4a",
+    label: "🌸 Douyin Sweet Pluck",
+    sub: "108 BPM • Ngọt ngào, trong trẻo",
+    forVibe: "visual_smile",
+  },
+  {
+    file: "cute_kpop_bounce.m4a",
+    label: "💖 Cute K-Vibe Pop",
+    sub: "118 BPM • Tươi vui, năng lượng",
+    forVibe: "street_fashion",
+  },
+  {
+    file: "dreamy_fairy_chill.m4a",
+    label: "✨ Dreamy Fairy Chill",
+    sub: "92 BPM • Mộng mơ, Hanfu/Cosplay",
+    forVibe: "cosplay_trad",
+  },
+  {
+    file: "lofi_cafe_smile.m4a",
+    label: "☕ Lo-Fi Cafe Aesthetic",
+    sub: "86 BPM • Chill nhẹ, Selfie/Ulzzang",
+    forVibe: "visual_smile",
+  },
+  {
+    file: "dance_trend_club.m4a",
+    label: "🔥 Trendy Dance Beat",
+    sub: "124 BPM • Bắt nhịp nhảy & Gym",
+    forVibe: "dance_trend",
+  },
+  {
+    file: "sunny_summer_breeze.m4a",
+    label: "☀️ Sunny Summer Breeze",
+    sub: "112 BPM • Ngoại cảnh, Du lịch/Biển",
+    forVibe: "beach_travel",
+  },
+];
 
 interface FrameCandidate {
   id: string;
@@ -171,9 +243,12 @@ export function ReupBeautyStudioTab({
   const [overlayPosition, setOverlayPosition] = useState<TextOverlayPosition>("bottom");
   const [overlayFontScale, setOverlayFontScale] = useState<number>(100);
 
-  // SEO Title & Tags generator state
-  const [language, setLanguage] = useState<ReupLanguageMode>("vi");
+  // SEO Title & Tags generator state (defaults to English + Ultra-Short Channel Signature)
+  const [language, setLanguage] = useState<ReupLanguageMode>("en");
+  const [titleStyle, setTitleStyle] = useState<ReupTitleLengthStyle>("short");
   const [vibe, setVibe] = useState<ReupVibeCategory>("visual_smile");
+  const [visualProfile, setVisualProfile] = useState<VisualFrameProfile | null>(null);
+  const [visionUsed, setVisionUsed] = useState(false);
   const [customNote, setCustomNote] = useState("");
   const [isShortFormat, setIsShortFormat] = useState(true);
   const [seoSeed, setSeoSeed] = useState(0);
@@ -185,10 +260,37 @@ export function ReupBeautyStudioTab({
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [savingBundle, setSavingBundle] = useState(false);
 
+  // Video Full HD Enhancer & Copyright-Safe Audio Replacer state
+  const [videoQualityPreset, setVideoQualityPreset] =
+    useState<VideoQualityPreset>("beauty_hd");
+  const [videoCropMode, setVideoCropMode] =
+    useState<VideoCropMode>("auto_remove_bars");
+  const [mirrorVideo, setMirrorVideo] = useState(false);
+  const [audioCopyrightMode, setAudioCopyrightMode] =
+    useState<AudioCopyrightMode>("replace_bgm");
+  const [bgmSourceType, setBgmSourceType] = useState<"builtin" | "custom_path">(
+    "builtin"
+  );
+  const [selectedBuiltinBgm, setSelectedBuiltinBgm] = useState<string>(
+    "sweet_douyin_bell.m4a"
+  );
+  const [customAudioPath, setCustomAudioPath] = useState<string>("");
+  const [customAudioName, setCustomAudioName] = useState<string>("");
+  const [customAudioPreviewUrl, setCustomAudioPreviewUrl] = useState<string>("");
+  const [uploadingAudio, setUploadingAudio] = useState(false);
+  const [bgmStartSec, setBgmStartSec] = useState<number>(0);
+  const [playingTrackKey, setPlayingTrackKey] = useState<string | null>(null);
+  const [remastering, setRemastering] = useState(false);
+  const [remasteredResult, setRemasteredResult] =
+    useState<RemasteredVideoResult | null>(null);
+
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const audioInputRef = useRef<HTMLInputElement | null>(null);
+  const previewAudioRef = useRef<HTMLAudioElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const loadedBaseImgRef = useRef<HTMLImageElement | null>(null);
+  const visionReqSeqRef = useRef(0);
   const [canvasReadyTick, setCanvasReadyTick] = useState(0);
 
   const selectedCandidate = useMemo(
@@ -199,30 +301,41 @@ export function ReupBeautyStudioTab({
     [candidates, selectedCandidateId]
   );
 
-  // Auto-sync Shorts vs Horizontal format when video loads
+  // Auto-sync Shorts vs Horizontal format when video loads (pillarboxed vertical clips become Shorts!)
   useEffect(() => {
     if (videoInfo) {
-      setIsShortFormat(videoInfo.is_vertical);
+      setIsShortFormat(Boolean(videoInfo.is_vertical || visualProfile?.has_pillarbox));
     }
-  }, [videoInfo]);
+  }, [videoInfo, visualProfile]);
 
-  // Instant deterministic SEO package (or AI-polished override until inputs change)
+  // Auto-suggest matching built-in BGM track when vibe changes (if using builtin source)
+  useEffect(() => {
+    const matched = BUILTIN_BGM_OPTIONS.find((b) => b.forVibe === vibe);
+    if (matched) {
+      setSelectedBuiltinBgm(matched.file);
+    }
+  }, [vibe]);
+
+  // Instant deterministic SEO package (or Vision AI frame-analyzed override)
   const localSeo = useMemo(
     () =>
       generateLocalReupSeoPackage({
         language,
         vibe,
+        titleStyle,
+        visualProfile,
         customNote,
         isShort: isShortFormat,
         channelHandle,
         seed: seoSeed,
       }),
-    [language, vibe, customNote, isShortFormat, channelHandle, seoSeed]
+    [language, vibe, titleStyle, visualProfile, customNote, isShortFormat, channelHandle, seoSeed]
   );
 
   useEffect(() => {
     setAiOverrideSeo(null);
-  }, [language, vibe, customNote, isShortFormat, seoSeed]);
+    setVisionUsed(false);
+  }, [language, vibe, titleStyle, customNote, isShortFormat, seoSeed]);
 
   const activeSeo = aiOverrideSeo || localSeo;
 
@@ -376,6 +489,89 @@ export function ReupBeautyStudioTab({
     overlayFontScale,
   ]);
 
+  const runFrameVisionNaming = useCallback(
+    async (opts?: {
+      sid?: string;
+      selFile?: string;
+      vidName?: string;
+      vp?: VisualFrameProfile | null;
+      vibeOverride?: ReupVibeCategory;
+      langOverride?: ReupLanguageMode;
+      styleOverride?: ReupTitleLengthStyle;
+      silent?: boolean;
+    }) => {
+      const targetSid = opts?.sid ?? sessionId;
+      if (!targetSid && !hasGeminiKey) {
+        setSeoSeed((s) => s + 1);
+        return;
+      }
+      const reqId = ++visionReqSeqRef.current;
+      setAiPolishing(true);
+      try {
+        const res = await fetch("/api/reup-tool/action", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            action: "analyzeFramesSeo",
+            sessionId: targetSid,
+            selectedFile: opts?.selFile ?? selectedCandidate?.jpg_file ?? "",
+            videoName: opts?.vidName ?? videoDisplayName,
+            visualProfile: opts?.vp ?? visualProfile,
+            language: opts?.langOverride ?? language,
+            titleStyle: opts?.styleOverride ?? titleStyle,
+            vibe: opts?.vibeOverride ?? vibe,
+            customNote,
+            isShort: isShortFormat,
+            channelHandle,
+            seed: seoSeed + 1,
+          }),
+        });
+        const json = await res.json();
+        if (reqId !== visionReqSeqRef.current) return;
+        if (res.ok && json.ok && json.seo) {
+          setAiOverrideSeo(json.seo);
+          setVisionUsed(Boolean(json.usedVision));
+          if (json.suggestedVibe && !opts?.vibeOverride) {
+            setVibe(json.suggestedVibe);
+          }
+          setSelectedTitleIdx(0);
+          if (!opts?.silent) {
+            onNotify(
+              json.usedVision
+                ? "👁️ Đã đọc khung hình & đặt tên ngắn gọn theo phong cách kênh của bạn!"
+                : json.usedAi
+                ? "✨ Đã tạo bộ Tiêu đề & Tags ngắn gọn chuẩn kênh!"
+                : "🔄 Đã làm mới bộ Tiêu đề & Tags ngắn gọn!"
+            );
+          }
+        }
+      } catch {
+        if (reqId === visionReqSeqRef.current) {
+          setSeoSeed((s) => s + 1);
+        }
+      } finally {
+        if (reqId === visionReqSeqRef.current) {
+          setAiPolishing(false);
+        }
+      }
+    },
+    [
+      sessionId,
+      hasGeminiKey,
+      selectedCandidate,
+      videoDisplayName,
+      visualProfile,
+      language,
+      titleStyle,
+      vibe,
+      customNote,
+      isShortFormat,
+      channelHandle,
+      seoSeed,
+      onNotify,
+    ]
+  );
+
   const handleUploadFile = useCallback(
     async (file: File, modeOverride?: EnhanceMode) => {
       const mode = modeOverride || enhanceMode;
@@ -385,6 +581,7 @@ export function ReupBeautyStudioTab({
         return localObjUrl;
       });
       setVideoDisplayName(file.name);
+      setRemasteredResult(null);
       setScanning(true);
 
       try {
@@ -404,6 +601,11 @@ export function ReupBeautyStudioTab({
         setSessionId(json.sessionId);
         setServerVideoPath(json.videoPath);
         setVideoInfo(json.video_info || null);
+        const vp: VisualFrameProfile | null = json.visual_profile || null;
+        setVisualProfile(vp);
+        if (vp?.suggested_vibe) {
+          setVibe(vp.suggested_vibe);
+        }
         const cands: FrameCandidate[] = json.candidates || [];
         setCandidates(cands);
         if (cands[0]) {
@@ -413,22 +615,32 @@ export function ReupBeautyStudioTab({
           }
         }
         onNotify(
-          `✨ Đã lọc xong ${cands.length} khung hình HD đẹp nhất từ "${file.name}"!`
+          `✨ Đã lọc ${cands.length} khung HD đẹp nhất — đang đặt tên tự động từ khung hình...`
         );
+        void runFrameVisionNaming({
+          sid: json.sessionId,
+          selFile: cands[0]?.jpg_file || "",
+          vidName: file.name,
+          vp,
+          vibeOverride: vp?.suggested_vibe,
+          silent: true,
+        });
       } catch (err) {
         onNotify(err instanceof Error ? err.message : "Lỗi phân tích video");
       } finally {
         setScanning(false);
       }
     },
-    [enhanceMode, onNotify]
+    [enhanceMode, onNotify, runFrameVisionNaming]
   );
 
   const handleScanLocalPath = useCallback(
     async (fullPath: string, modeOverride?: EnhanceMode) => {
       const mode = modeOverride || enhanceMode;
+      const dispName = fullPath.split("/").pop() || "video.mp4";
       setScanning(true);
-      setVideoDisplayName(fullPath.split("/").pop() || "video.mp4");
+      setVideoDisplayName(dispName);
+      setRemasteredResult(null);
       setVideoPreviewUrl(
         `/api/reup-tool/media?videoPath=${encodeURIComponent(fullPath)}`
       );
@@ -450,6 +662,11 @@ export function ReupBeautyStudioTab({
         setSessionId(json.sessionId);
         setServerVideoPath(json.videoPath);
         setVideoInfo(json.video_info || null);
+        const vp: VisualFrameProfile | null = json.visual_profile || null;
+        setVisualProfile(vp);
+        if (vp?.suggested_vibe) {
+          setVibe(vp.suggested_vibe);
+        }
         const cands: FrameCandidate[] = json.candidates || [];
         setCandidates(cands);
         if (cands[0]) {
@@ -459,15 +676,23 @@ export function ReupBeautyStudioTab({
           }
         }
         onNotify(
-          `✨ Đã chọn ra khung hình HD đẹp nhất (#1: ${cands[0]?.total_score || 0} điểm)!`
+          `✨ Đã chọn khung HD đẹp nhất (#1: ${cands[0]?.total_score || 0}đ) — đang đặt tên từ khung hình...`
         );
+        void runFrameVisionNaming({
+          sid: json.sessionId,
+          selFile: cands[0]?.jpg_file || "",
+          vidName: dispName,
+          vp,
+          vibeOverride: vp?.suggested_vibe,
+          silent: true,
+        });
       } catch (err) {
         onNotify(err instanceof Error ? err.message : "Lỗi quét đường dẫn video");
       } finally {
         setScanning(false);
       }
     },
-    [enhanceMode, onNotify]
+    [enhanceMode, onNotify, runFrameVisionNaming]
   );
 
   const handleLoadFolderList = useCallback(async () => {
@@ -611,6 +836,7 @@ export function ReupBeautyStudioTab({
           baseName: videoDisplayName || "reup_video",
           sessionId,
           imageFile: selectedCandidate?.jpg_file,
+          remasteredVideoFile: remasteredResult?.remasteredFile,
           dataUrl,
           seoTextContent: buildFullSeoText(),
           revealInFinder: true,
@@ -621,7 +847,9 @@ export function ReupBeautyStudioTab({
         throw new Error(json.error || "Không thể lưu gói xuất bản");
       }
       onNotify(
-        `💾 Đã lưu Thumbnail HD + File Tiêu đề/Tags vào ${json.targetDir} (đã mở Finder)!`
+        json.savedVideoPath
+          ? `💾 Đã lưu trọn bộ (Video Full HD + Thumbnail HD + File Tiêu đề/Tags) vào ${json.targetDir}!`
+          : `💾 Đã lưu Thumbnail HD + File Tiêu đề/Tags vào ${json.targetDir} (đã mở Finder)!`
       );
     } catch (err) {
       onNotify(err instanceof Error ? err.message : "Lỗi lưu file");
@@ -633,42 +861,134 @@ export function ReupBeautyStudioTab({
     videoDisplayName,
     sessionId,
     selectedCandidate,
+    remasteredResult,
     buildFullSeoText,
     onNotify,
   ]);
 
-  const handleAiPolishSeo = useCallback(async () => {
-    setAiPolishing(true);
+  const togglePreviewTrack = useCallback((trackKey: string, audioUrl: string) => {
+    const audioEl = previewAudioRef.current;
+    if (!audioEl) return;
+    if (playingTrackKey === trackKey && !audioEl.paused) {
+      audioEl.pause();
+      setPlayingTrackKey(null);
+      return;
+    }
+    audioEl.src = audioUrl;
+    audioEl.currentTime = 0;
+    audioEl.play().catch(() => {});
+    setPlayingTrackKey(trackKey);
+  }, [playingTrackKey]);
+
+  const handleUploadCustomAudio = useCallback(
+    async (file: File) => {
+      setUploadingAudio(true);
+      try {
+        const res = await fetch(
+          `/api/reup-tool/upload?kind=audio&name=${encodeURIComponent(
+            file.name
+          )}&session=${encodeURIComponent(sessionId || "")}`,
+          {
+            method: "POST",
+            body: file,
+          }
+        );
+        const json = await res.json();
+        if (!res.ok || !json.ok) {
+          throw new Error(json.error || "Không thể tải file nhạc");
+        }
+        if (!sessionId && json.sessionId) {
+          setSessionId(json.sessionId);
+        }
+        setCustomAudioPath(json.audioPath);
+        setCustomAudioName(file.name);
+        setCustomAudioPreviewUrl(
+          `/api/reup-tool/media?session=${encodeURIComponent(
+            json.sessionId
+          )}&file=${encodeURIComponent(json.audioFile)}`
+        );
+        setBgmSourceType("custom_path");
+        setAudioCopyrightMode("replace_bgm");
+        onNotify(`🎵 Đã nạp bài nhạc riêng "${file.name}"!`);
+      } catch (err) {
+        onNotify(err instanceof Error ? err.message : "Lỗi tải nhạc nền");
+      } finally {
+        setUploadingAudio(false);
+      }
+    },
+    [sessionId, onNotify]
+  );
+
+  const handleRunVideoRemaster = useCallback(async () => {
+    if (!serverVideoPath) {
+      onNotify("Hãy chọn 1 video trước khi nâng cấp!");
+      return;
+    }
+    if (
+      audioCopyrightMode === "replace_bgm" &&
+      bgmSourceType === "custom_path" &&
+      !customAudioPath
+    ) {
+      onNotify("Hãy chọn file nhạc .mp3/.m4a riêng hoặc chọn 1 bài trong kho nhạc có sẵn!");
+      return;
+    }
+    // Pause any preview audio before rendering
+    if (previewAudioRef.current) {
+      previewAudioRef.current.pause();
+      setPlayingTrackKey(null);
+    }
+
+    setRemastering(true);
     try {
       const res = await fetch("/api/reup-tool/action", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          action: "aiPolishSeo",
-          language,
-          vibe,
-          customNote,
-          isShort: isShortFormat,
-          channelHandle,
-          seed: seoSeed + 1,
+          action: "remasterVideo",
+          videoPath: serverVideoPath,
+          sessionId,
+          qualityPreset: videoQualityPreset,
+          cropMode: videoCropMode,
+          mirror: mirrorVideo,
+          audioMode: audioCopyrightMode,
+          bgmSourceType,
+          builtinTrack: selectedBuiltinBgm,
+          customAudioPath,
+          bgmStart: bgmStartSec,
+          bgmVolume: 1.0,
+          origMix: 0.0,
         }),
       });
       const json = await res.json();
-      if (res.ok && json.ok && json.seo) {
-        setAiOverrideSeo(json.seo);
-        setSelectedTitleIdx(0);
-        onNotify(
-          json.usedAi
-            ? "✨ AI đã viết bộ Tiêu đề & Tags mới!"
-            : "🔄 Đã làm mới bộ Tiêu đề & Tags (chế độ Local 0₫)!"
-        );
+      if (!res.ok || !json.ok) {
+        throw new Error(json.error || "Lỗi xuất video nâng cấp");
       }
-    } catch {
-      setSeoSeed((s) => s + 1);
+      setRemasteredResult(json as RemasteredVideoResult);
+      onNotify(
+        `🚀 Đã xuất Video Full HD (${json.out_width}×${json.out_height}, ${json.size_mb}MB) trong ${json.elapsed_s}s!`
+      );
+    } catch (err) {
+      onNotify(err instanceof Error ? err.message : "Lỗi nâng cấp video");
     } finally {
-      setAiPolishing(false);
+      setRemastering(false);
     }
-  }, [language, vibe, customNote, isShortFormat, channelHandle, seoSeed, onNotify]);
+  }, [
+    serverVideoPath,
+    sessionId,
+    videoQualityPreset,
+    videoCropMode,
+    mirrorVideo,
+    audioCopyrightMode,
+    bgmSourceType,
+    selectedBuiltinBgm,
+    customAudioPath,
+    bgmStartSec,
+    onNotify,
+  ]);
+
+  const handleAiPolishSeo = useCallback(async () => {
+    await runFrameVisionNaming({ silent: false });
+  }, [runFrameVisionNaming]);
 
   const stepVideoFrame = (deltaSec: number) => {
     if (!videoRef.current) return;
@@ -1217,6 +1537,421 @@ export function ReupBeautyStudioTab({
               />
             </div>
           )}
+
+          {/* Hidden BGM Preview Audio Element & Custom Audio File Input */}
+          <audio
+            ref={previewAudioRef}
+            onEnded={() => setPlayingTrackKey(null)}
+            className="hidden"
+          />
+          <input
+            ref={audioInputRef}
+            type="file"
+            accept=".mp3,.m4a,.wav,.aac,.ogg,audio/*"
+            className="hidden"
+            onChange={(e) => {
+              const f = e.target.files?.[0];
+              if (f) void handleUploadCustomAudio(f);
+              e.target.value = "";
+            }}
+          />
+
+          {/* FULL HD VIDEO ENHANCER & COPYRIGHT-SAFE BGM REPLACER CARD */}
+          {serverVideoPath && (
+            <div className="rounded-2xl border border-emerald-500/30 bg-gradient-to-br from-zinc-900 via-zinc-900/95 to-emerald-950/20 p-4 sm:p-5 space-y-4 shadow-lg">
+              <div className="flex flex-wrap items-start justify-between gap-2">
+                <div>
+                  <h3 className="text-sm font-extrabold text-white flex items-center gap-2">
+                    <Film className="h-4 w-4 text-emerald-400" />
+                    Nâng Cấp Chất Lượng Video Full HD 1080p & Thay Nhạc Nền Sạch Bản Quyền
+                  </h3>
+                  <p className="text-[11px] text-zinc-400">
+                    Tăng tốc phần cứng Apple M2 Pro (~3–6s/clip) • Upscale 1080p nét mịn da + Tự bỏ viền đen + Đổi nhạc 0% Content ID
+                  </p>
+                </div>
+                <span className="rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-[10px] font-extrabold text-emerald-300">
+                  M2 Pro VideoToolbox
+                </span>
+              </div>
+
+              {visualProfile?.has_pillarbox && (
+                <div className="rounded-xl border border-amber-500/35 bg-amber-950/25 px-3 py-2 text-[11px] text-amber-200 flex items-center gap-2">
+                  <Scissors className="h-3.5 w-3.5 text-amber-400 shrink-0" />
+                  <span>
+                    <strong>Phát hiện video bị dính 2 dải viền đen ngang:</strong> Đã bật sẵn chế độ <strong>Tự bỏ viền đen → Chuẩn Shorts 9:16 (1080×1920)</strong> để video lên kệ Shorts full màn hình!
+                  </span>
+                </div>
+              )}
+
+              {/* Row 1: Video Quality + Framing + Mirror */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="space-y-1.5">
+                  <label className="block text-[11px] font-bold text-zinc-300">
+                    1. Chế độ nâng nét & màu sắc Video (15 Mbps Full HD)
+                  </label>
+                  <div className="grid grid-cols-1 gap-1.5">
+                    {(
+                      [
+                        {
+                          id: "beauty_hd",
+                          label: "✨ Mịn Sáng Da & Nét Căng 1080p",
+                          sub: "Khử vỡ hạt TikTok/Douyin + CAS nét mắt/tóc + tôn da",
+                        },
+                        {
+                          id: "crisp_hd",
+                          label: "💎 Siêu Nét Chi Tiết 1080p",
+                          sub: "Tăng độ sắc nét tối đa, giữ nguyên độ sáng gốc",
+                        },
+                        {
+                          id: "clean_upscale",
+                          label: "🎞️ Chỉ Upscale Full HD 1080p",
+                          sub: "Giữ 100% màu gốc, nâng độ phân giải chuẩn HD",
+                        },
+                      ] as const
+                    ).map((opt) => (
+                      <button
+                        key={opt.id}
+                        type="button"
+                        onClick={() => setVideoQualityPreset(opt.id)}
+                        className={`rounded-xl border px-3 py-2 text-left transition cursor-pointer ${
+                          videoQualityPreset === opt.id
+                            ? "border-emerald-500 bg-emerald-500/15 text-white"
+                            : "border-zinc-800 bg-zinc-950/70 text-zinc-400 hover:text-zinc-200"
+                        }`}
+                      >
+                        <div className="text-xs font-bold">{opt.label}</div>
+                        <div className="text-[10px] text-zinc-500">{opt.sub}</div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-2.5">
+                  <div className="space-y-1.5">
+                    <label className="block text-[11px] font-bold text-zinc-300">
+                      2. Xử lý viền đen & Khung hình Reup
+                    </label>
+                    <div className="grid grid-cols-1 gap-1.5">
+                      {(
+                        [
+                          {
+                            id: "auto_remove_bars",
+                            label: "✂️ Tự cắt bỏ viền đen → Chuẩn Shorts 9:16",
+                          },
+                          {
+                            id: "force_9_16",
+                            label: "📱 Ép dọc 9:16 trung tâm (Cho video ngang)",
+                          },
+                          {
+                            id: "keep_original",
+                            label: "🖼️ Giữ nguyên khung hình gốc",
+                          },
+                        ] as const
+                      ).map((c) => (
+                        <button
+                          key={c.id}
+                          type="button"
+                          onClick={() => setVideoCropMode(c.id)}
+                          className={`rounded-xl border px-3 py-2 text-left text-xs font-bold transition cursor-pointer ${
+                            videoCropMode === c.id
+                              ? "border-emerald-500 bg-emerald-500/15 text-white"
+                              : "border-zinc-800 bg-zinc-950/70 text-zinc-400 hover:text-zinc-200"
+                          }`}
+                        >
+                          {c.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Anti-duplicate horizontal mirror toggle */}
+                  <button
+                    type="button"
+                    onClick={() => setMirrorVideo((v) => !v)}
+                    className={`w-full flex items-center justify-between rounded-xl border px-3 py-2 text-xs font-bold transition cursor-pointer ${
+                      mirrorVideo
+                        ? "border-amber-500 bg-amber-500/15 text-amber-200"
+                        : "border-zinc-800 bg-zinc-950/70 text-zinc-400 hover:text-zinc-200"
+                    }`}
+                  >
+                    <span className="flex items-center gap-1.5">
+                      <FlipHorizontal className="h-3.5 w-3.5" />
+                      Lật ngang gương (Mirror chống quét trùng hình)
+                    </span>
+                    <span className="text-[10px] uppercase">
+                      {mirrorVideo ? "ĐANG BẬT" : "TẮT"}
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Row 2: Copyright-Safe Audio / BGM Replacer */}
+              <div className="space-y-2.5 pt-1 border-t border-zinc-800/80">
+                <label className="block text-[11px] font-bold text-zinc-300 flex items-center gap-1.5">
+                  <Music className="h-3.5 w-3.5 text-emerald-400" />
+                  3. Chế độ Âm thanh / Thay nhạc nền tránh bản quyền (Content ID)
+                </label>
+
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
+                  {(
+                    [
+                      {
+                        id: "replace_bgm",
+                        label: "🎵 Thay Nhạc Sạch",
+                        icon: Music,
+                      },
+                      {
+                        id: "anti_id_shift",
+                        label: "⚡ Đổi Pitch Nhạc Gốc",
+                        icon: Volume2,
+                      },
+                      {
+                        id: "mute",
+                        label: "🔇 Tắt Tiếng (Mute)",
+                        icon: VolumeX,
+                      },
+                      {
+                        id: "keep_original",
+                        label: "🔊 Giữ Nhạc Gốc",
+                        icon: Volume2,
+                      },
+                    ] as const
+                  ).map((am) => (
+                    <button
+                      key={am.id}
+                      type="button"
+                      onClick={() => setAudioCopyrightMode(am.id)}
+                      className={`rounded-xl border px-2.5 py-2 text-xs font-bold transition cursor-pointer text-center ${
+                        audioCopyrightMode === am.id
+                          ? "border-emerald-500 bg-emerald-500/15 text-white"
+                          : "border-zinc-800 bg-zinc-950/70 text-zinc-400 hover:text-zinc-200"
+                      }`}
+                    >
+                      {am.label}
+                    </button>
+                  ))}
+                </div>
+
+                {audioCopyrightMode === "replace_bgm" && (
+                  <div className="rounded-xl border border-zinc-800 bg-zinc-950/75 p-3 space-y-3">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <div className="flex rounded-lg border border-zinc-800 bg-zinc-900 p-0.5 text-[11px]">
+                        <button
+                          type="button"
+                          onClick={() => setBgmSourceType("builtin")}
+                          className={`rounded-md px-2.5 py-1 font-bold cursor-pointer ${
+                            bgmSourceType === "builtin"
+                              ? "bg-emerald-600 text-white"
+                              : "text-zinc-400 hover:text-white"
+                          }`}
+                        >
+                          Kho 6 Nhạc 0% Bản Quyền
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setBgmSourceType("custom_path")}
+                          className={`rounded-md px-2.5 py-1 font-bold cursor-pointer ${
+                            bgmSourceType === "custom_path"
+                              ? "bg-emerald-600 text-white"
+                              : "text-zinc-400 hover:text-white"
+                          }`}
+                        >
+                          Nhạc .MP3/.M4A Của Bạn
+                        </button>
+                      </div>
+
+                      <div className="flex items-center gap-2 text-[11px] text-zinc-400">
+                        <span>Cắt từ giây: {bgmStartSec}s</span>
+                        <input
+                          type="range"
+                          min={0}
+                          max={24}
+                          step={1}
+                          value={bgmStartSec}
+                          onChange={(e) => setBgmStartSec(Number(e.target.value))}
+                          className="w-20 accent-emerald-500"
+                        />
+                      </div>
+                    </div>
+
+                    {bgmSourceType === "builtin" ? (
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                        {BUILTIN_BGM_OPTIONS.map((trk) => {
+                          const isSel = selectedBuiltinBgm === trk.file;
+                          const previewUrl = `/reup-bgm/${trk.file}`;
+                          const isPlaying = playingTrackKey === trk.file;
+                          return (
+                            <div
+                              key={trk.file}
+                              onClick={() => setSelectedBuiltinBgm(trk.file)}
+                              className={`flex items-center justify-between gap-2 rounded-xl border px-2.5 py-2 transition cursor-pointer ${
+                                isSel
+                                  ? "border-emerald-500 bg-emerald-500/15 text-white"
+                                  : "border-zinc-800 bg-zinc-900/60 text-zinc-300 hover:border-zinc-700"
+                              }`}
+                            >
+                              <div className="min-w-0">
+                                <div className="text-xs font-bold truncate">
+                                  {trk.label}
+                                </div>
+                                <div className="text-[10px] text-zinc-500 truncate">
+                                  {trk.sub}
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  setSelectedBuiltinBgm(trk.file);
+                                  togglePreviewTrack(trk.file, previewUrl);
+                                }}
+                                title="Nghe thử nhạc nền"
+                                className="shrink-0 inline-flex items-center gap-1 rounded-lg border border-zinc-700 bg-zinc-800 hover:bg-zinc-700 px-2 py-1 text-[10px] font-bold text-zinc-100 cursor-pointer"
+                              >
+                                {isPlaying ? (
+                                  <Pause className="h-3 w-3 text-emerald-400" />
+                                ) : (
+                                  <Play className="h-3 w-3 text-emerald-400" />
+                                )}
+                                {isPlaying ? "Dừng" : "Nghe"}
+                              </button>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    ) : (
+                      <div className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-dashed border-zinc-700 bg-zinc-900/60 p-3">
+                        <div className="text-xs text-zinc-300">
+                          {customAudioName ? (
+                            <span>
+                              🎵 Đang chọn: <strong className="text-emerald-300">{customAudioName}</strong>
+                            </span>
+                          ) : (
+                            <span>
+                              Chọn file nhạc <code>.mp3</code> / <code>.m4a</code> / <code>.wav</code> tải từ YouTube Audio Library
+                            </span>
+                          )}
+                        </div>
+                        <div className="flex items-center gap-2">
+                          {customAudioPreviewUrl && (
+                            <button
+                              type="button"
+                              onClick={() =>
+                                togglePreviewTrack("custom_audio", customAudioPreviewUrl)
+                              }
+                              className="inline-flex items-center gap-1 rounded-lg border border-zinc-700 bg-zinc-800 hover:bg-zinc-700 px-2.5 py-1.5 text-xs font-bold text-white cursor-pointer"
+                            >
+                              {playingTrackKey === "custom_audio" ? (
+                                <Pause className="h-3.5 w-3.5 text-emerald-400" />
+                              ) : (
+                                <Play className="h-3.5 w-3.5 text-emerald-400" />
+                              )}
+                              Nghe thử
+                            </button>
+                          )}
+                          <button
+                            type="button"
+                            onClick={() => audioInputRef.current?.click()}
+                            disabled={uploadingAudio}
+                            className="inline-flex items-center gap-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 px-3 py-1.5 text-xs font-extrabold text-white cursor-pointer"
+                          >
+                            {uploadingAudio ? (
+                              <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                            ) : (
+                              <Upload className="h-3.5 w-3.5" />
+                            )}
+                            Chọn File Nhạc
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {audioCopyrightMode === "anti_id_shift" && (
+                  <p className="text-[11px] text-zinc-400 px-1">
+                    💡 Giữ khớp nhịp nhảy với video gốc nhưng nâng nhẹ cao độ (+3.8% Pitch), vi chỉnh tốc độ & EQ ấm để giảm nhận diện mã âm thanh tự động.
+                  </p>
+                )}
+                {audioCopyrightMode === "mute" && (
+                  <p className="text-[11px] text-zinc-400 px-1">
+                    💡 Xuất video Full HD tắt tiếng hoàn toàn để bạn tự chọn nhạc Trend có bản quyền trực tiếp trong ứng dụng YouTube Shorts trên điện thoại.
+                  </p>
+                )}
+              </div>
+
+              {/* Render Action Button */}
+              <button
+                type="button"
+                onClick={handleRunVideoRemaster}
+                disabled={remastering}
+                className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 disabled:opacity-60 px-4 py-3 text-xs sm:text-sm font-extrabold text-white shadow-lg shadow-emerald-600/20 cursor-pointer"
+              >
+                {remastering ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    Đang nâng cấp Full HD 1080p & ghép nhạc bằng chip M2 Pro...
+                  </>
+                ) : (
+                  <>
+                    <Sparkles className="h-4 w-4" />
+                    Xuất Video Full HD 1080p + Âm Thanh An Toàn
+                  </>
+                )}
+              </button>
+
+              {/* Remastered Result Preview + Download + Re-scan Clean 9:16 Thumbnail */}
+              {remasteredResult && (
+                <div className="rounded-xl border border-emerald-500/40 bg-zinc-950/90 p-3.5 space-y-3">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <div className="text-xs font-bold text-emerald-300">
+                      ✅ Đã xuất bản mới: {remasteredResult.out_width}×{remasteredResult.out_height} Full HD •{" "}
+                      {remasteredResult.size_mb} MB • {remasteredResult.elapsed_s}s
+                      {remasteredResult.did_crop_bars ? " • Đã xóa sạch viền đen" : ""}
+                    </div>
+                    <div className="flex flex-wrap items-center gap-2">
+                      {remasteredResult.did_crop_bars && (
+                        <button
+                          type="button"
+                          onClick={() =>
+                            void handleScanLocalPath(remasteredResult.out_path)
+                          }
+                          className="inline-flex items-center gap-1.5 rounded-lg border border-pink-500/40 bg-pink-500/15 hover:bg-pink-500/25 px-2.5 py-1.5 text-[11px] font-bold text-pink-200 cursor-pointer"
+                        >
+                          <Camera className="h-3.5 w-3.5" />
+                          Cắt lại Thumbnail 9:16 không viền đen
+                        </button>
+                      )}
+                      <a
+                        href={`/api/reup-tool/media?session=${encodeURIComponent(
+                          sessionId
+                        )}&file=${encodeURIComponent(
+                          remasteredResult.remasteredFile
+                        )}&download=${encodeURIComponent(
+                          `${(videoDisplayName || "reup_video").replace(
+                            /\.[^.]+$/,
+                            ""
+                          )}_FullHD_SafeAudio.mp4`
+                        )}`}
+                        className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 px-3 py-1.5 text-xs font-extrabold text-white cursor-pointer"
+                      >
+                        <Download className="h-3.5 w-3.5" />
+                        Tải Video Full HD (.MP4)
+                      </a>
+                    </div>
+                  </div>
+                  <video
+                    src={`/api/reup-tool/media?session=${encodeURIComponent(
+                      sessionId
+                    )}&file=${encodeURIComponent(remasteredResult.remasteredFile)}`}
+                    controls
+                    playsInline
+                    className="w-full max-h-80 rounded-lg bg-black object-contain"
+                  />
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         {/* RIGHT COLUMN (5 cols): Multi-Language Title, Description & Tags Generator */}
@@ -1225,10 +1960,10 @@ export function ReupBeautyStudioTab({
             <div>
               <h3 className="text-sm font-extrabold text-white flex items-center gap-2">
                 <Languages className="h-4 w-4 text-pink-400" />
-                Render Tiêu Đề, Mô Tả & Bộ Tags Chuẩn SEO
+                Đặt Tên Tự Động Từ Khung Hình & Bộ Tags
               </h3>
               <p className="text-[11px] text-zinc-400">
-                Tạo tức thì 6 tiêu đề hút click + Hashtags + Thẻ Tags YouTube (&lt; 500 ký tự)
+                Ưu tiên kiểu ngắn gọn chuẩn kênh của bạn (VD: &ldquo;Cute Girl ✨ | Douyin&rdquo;)
               </p>
             </div>
 
@@ -1259,6 +1994,83 @@ export function ReupBeautyStudioTab({
             </div>
           </div>
 
+          {/* Frame Visual Recognition Status Banner */}
+          {(sessionId || aiPolishing || activeSeo.detectedVisualSummary) && (
+            <div className="rounded-xl border border-pink-500/30 bg-gradient-to-r from-pink-950/35 to-purple-950/30 px-3 py-2.5 flex items-start justify-between gap-2">
+              <div className="min-w-0 space-y-0.5">
+                <div className="flex items-center gap-1.5 text-[11px] font-extrabold text-pink-300">
+                  {aiPolishing ? (
+                    <>
+                      <Loader2 className="h-3.5 w-3.5 animate-spin text-pink-400" />
+                      <span>Đang nhìn khung hình video để đặt tên ngắn gọn...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Eye className="h-3.5 w-3.5 text-pink-400 shrink-0" />
+                      <span>
+                        {visionUsed
+                          ? "Đã đặt tên trực tiếp từ khung hình (Vision AI Chuẩn Kênh)"
+                          : "Nhận diện bố cục & màu sắc khung hình"}
+                      </span>
+                    </>
+                  )}
+                </div>
+                {activeSeo.detectedVisualSummary && !aiPolishing && (
+                  <p className="text-[11px] text-zinc-300 leading-snug">
+                    {activeSeo.detectedVisualSummary}
+                  </p>
+                )}
+              </div>
+              {sessionId && (
+                <button
+                  type="button"
+                  onClick={() => void runFrameVisionNaming({ silent: false })}
+                  disabled={aiPolishing}
+                  className="shrink-0 inline-flex items-center gap-1 rounded-lg border border-pink-500/40 bg-pink-500/15 hover:bg-pink-500/25 disabled:opacity-50 px-2.5 py-1 text-[11px] font-bold text-pink-200 cursor-pointer"
+                >
+                  <Sparkles className="h-3 w-3" />
+                  Đọc lại ảnh
+                </button>
+              )}
+            </div>
+          )}
+
+          {/* Title Length Style Selector (Short Channel Signature vs Longer Hook) */}
+          <div className="flex items-center justify-between gap-2 rounded-xl border border-zinc-800 bg-zinc-950/80 p-1 text-xs">
+            <button
+              type="button"
+              onClick={() => {
+                setTitleStyle("short");
+                if (sessionId) {
+                  void runFrameVisionNaming({ styleOverride: "short", silent: true });
+                }
+              }}
+              className={`flex-1 rounded-lg px-2.5 py-1.5 font-bold transition cursor-pointer ${
+                titleStyle === "short"
+                  ? "bg-pink-600 text-white shadow"
+                  : "text-zinc-400 hover:text-zinc-200"
+              }`}
+            >
+              ⚡ Ngắn Gọn Chuẩn Kênh (25–42 ký tự)
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setTitleStyle("detailed");
+                if (sessionId) {
+                  void runFrameVisionNaming({ styleOverride: "detailed", silent: true });
+                }
+              }}
+              className={`flex-1 rounded-lg px-2.5 py-1.5 font-bold transition cursor-pointer ${
+                titleStyle === "detailed"
+                  ? "bg-pink-600 text-white shadow"
+                  : "text-zinc-400 hover:text-zinc-200"
+              }`}
+            >
+              📝 Câu Hook Dài (50–75 ký tự)
+            </button>
+          </div>
+
           {/* 1. Language Selector */}
           <div className="space-y-1.5">
             <label className="block text-[11px] font-bold text-zinc-300">
@@ -1269,7 +2081,12 @@ export function ReupBeautyStudioTab({
                 <button
                   key={lang.id}
                   type="button"
-                  onClick={() => setLanguage(lang.id)}
+                  onClick={() => {
+                    setLanguage(lang.id);
+                    if (sessionId) {
+                      void runFrameVisionNaming({ langOverride: lang.id, silent: true });
+                    }
+                  }}
                   className={`rounded-xl border px-2.5 py-2 text-left transition cursor-pointer ${
                     language === lang.id
                       ? "border-pink-500 bg-pink-500/15 text-white"
@@ -1288,7 +2105,7 @@ export function ReupBeautyStudioTab({
           {/* 2. Vibe / Category Selector */}
           <div className="space-y-1.5">
             <label className="block text-[11px] font-bold text-zinc-300">
-              2. Phong cách / Chủ đề video
+              2. Phong cách / Chủ đề video (tự nhận diện theo khung hình)
             </label>
             <div className="grid grid-cols-2 gap-1.5">
               {VIBE_OPTIONS.map((v) => (
@@ -1308,17 +2125,23 @@ export function ReupBeautyStudioTab({
             </div>
           </div>
 
-          {/* 3. Optional Custom Keyword / Detail */}
+          {/* 3. Optional Custom Keyword / Idol Name */}
           <div className="space-y-1.5">
             <label className="block text-[11px] font-bold text-zinc-300">
-              3. Chi tiết điểm nhấn (Tùy chọn — gõ để lồng vào tiêu đề & tags)
+              3. Tên Idol / Nguồn tùy chọn (Bấm Enter hoặc nút nhìn ảnh để lồng vào)
             </label>
             <div className="flex gap-2">
               <input
                 type="text"
                 value={customNote}
                 onChange={(e) => setCustomNote(e.target.value)}
-                placeholder="VD: áo dài trắng, tóc ngắn, nhảy nhạc remix, phố đi bộ..."
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    void handleAiPolishSeo();
+                  }
+                }}
+                placeholder="VD: ASA | BABYMONSTER, Douyin, Yuqi... (bỏ trống AI tự nhìn ảnh)"
                 className="flex-1 rounded-xl border border-zinc-700 bg-zinc-950 px-3 py-2 text-xs text-white focus:border-pink-500 focus:outline-none"
               />
               <button
@@ -1330,22 +2153,20 @@ export function ReupBeautyStudioTab({
                 <RefreshCw className="h-3.5 w-3.5" />
                 Đổi mẫu
               </button>
-              {hasGeminiKey && (
-                <button
-                  type="button"
-                  onClick={handleAiPolishSeo}
-                  disabled={aiPolishing}
-                  title="Dùng Gemini AI sáng tạo thêm bộ tiêu đề mới"
-                  className="inline-flex items-center gap-1 rounded-xl bg-purple-600 hover:bg-purple-500 disabled:opacity-50 px-3 py-2 text-xs font-bold text-white cursor-pointer shrink-0"
-                >
-                  {aiPolishing ? (
-                    <Loader2 className="h-3.5 w-3.5 animate-spin" />
-                  ) : (
-                    <Wand2 className="h-3.5 w-3.5" />
-                  )}
-                  AI
-                </button>
-              )}
+              <button
+                type="button"
+                onClick={handleAiPolishSeo}
+                disabled={aiPolishing}
+                title="Đọc khung hình bằng Vision AI & đặt tên mới chuẩn kênh"
+                className="inline-flex items-center gap-1 rounded-xl bg-purple-600 hover:bg-purple-500 disabled:opacity-50 px-3 py-2 text-xs font-bold text-white cursor-pointer shrink-0"
+              >
+                {aiPolishing ? (
+                  <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                ) : (
+                  <Wand2 className="h-3.5 w-3.5" />
+                )}
+                Đặt từ ảnh
+              </button>
             </div>
           </div>
 
@@ -1353,10 +2174,10 @@ export function ReupBeautyStudioTab({
           <div className="space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-xs font-extrabold text-white">
-                6 Phương Án Tiêu Đề Hút Click (Bấm Copy nhanh)
+                6 Phương Án Đặt Tên (Bấm Copy nhanh)
               </span>
               <span className="text-[10px] text-zinc-400">
-                Chuẩn &lt; 100 ký tự YouTube
+                {titleStyle === "short" ? "Ngắn gọn 22–42 ký tự" : "Chuẩn < 90 ký tự"}
               </span>
             </div>
             <div className="space-y-1.5">

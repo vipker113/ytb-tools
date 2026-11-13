@@ -6,6 +6,7 @@ import type { ReadableStream as NodeReadableStream } from "node:stream/web";
 import type { NextRequest } from "next/server";
 import {
   ensureSessionDir,
+  isAllowedAudioFile,
   isAllowedVideoFile,
   runBeautyAnalyzer,
 } from "@/lib/reup-studio-server";
@@ -13,19 +14,51 @@ import {
 export async function POST(request: NextRequest) {
   try {
     const url = request.nextUrl;
-    const rawName = url.searchParams.get("name") || "video.mp4";
+    const kind = url.searchParams.get("kind") || "video";
+    const rawName = url.searchParams.get("name") || (kind === "audio" ? "bgm.mp3" : "video.mp4");
     const enhanceMode = url.searchParams.get("enhance") || "beauty_glow";
     const sessionId =
       url.searchParams.get("session") ||
       `sess_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
 
-    const ext = path.extname(rawName).toLowerCase() || ".mp4";
+    const ext = path.extname(rawName).toLowerCase() || (kind === "audio" ? ".mp3" : ".mp4");
     const safeStem =
       path
         .basename(rawName, ext)
         .replace(/[^a-zA-Z0-9_-]/g, "_")
-        .slice(0, 80) || "video";
-    const safeFileName = `${safeStem}${ext}`;
+        .slice(0, 80) || (kind === "audio" ? "bgm" : "video");
+    const safeFileName = kind === "audio" ? `custom_bgm_${safeStem}${ext}` : `${safeStem}${ext}`;
+
+    if (kind === "audio") {
+      if (!isAllowedAudioFile(safeFileName)) {
+        return Response.json(
+          {
+            ok: false,
+            error: "Định dạng nhạc không hỗ trợ. Hãy chọn file .mp3, .m4a, .wav, .aac hoặc .ogg.",
+          },
+          { status: 400 }
+        );
+      }
+      if (!request.body) {
+        return Response.json(
+          { ok: false, error: "Không nhận được dữ liệu file nhạc." },
+          { status: 400 }
+        );
+      }
+      const sessionDir = ensureSessionDir(sessionId);
+      const savedAudioPath = path.join(sessionDir, safeFileName);
+      const nodeStream = Readable.fromWeb(request.body as unknown as NodeReadableStream);
+      const writeStream = fs.createWriteStream(savedAudioPath);
+      await pipeline(nodeStream, writeStream);
+
+      return Response.json({
+        ok: true,
+        sessionId: path.basename(sessionDir),
+        audioPath: savedAudioPath,
+        audioFile: safeFileName,
+        originalName: rawName,
+      });
+    }
 
     if (!isAllowedVideoFile(safeFileName)) {
       return Response.json(

@@ -254,6 +254,8 @@ def score_beauty_frame_bgr(frame_bgr: np.ndarray, detector) -> dict:
             "sharpness_score": round((sharpness_score / 28.0) * 100.0, 1),
             "lighting_score": round((lighting_score / 18.0) * 100.0, 1),
             "has_face": True,
+            "face_h_ratio": round(face_h_ratio, 3),
+            "face_box": [fx, fy, fw, fh],
             "reason": "Rõ mặt, mắt sáng, nét căng & ánh sáng tôn da",
         }
 
@@ -269,8 +271,227 @@ def score_beauty_frame_bgr(frame_bgr: np.ndarray, detector) -> dict:
         "sharpness_score": round(sharp_norm * 100.0, 1),
         "lighting_score": round(((exp_pts + sat_pts) / 32.0) * 100.0, 1),
         "has_face": False,
+        "face_h_ratio": 0.0,
+        "face_box": None,
         "reason": "Toàn cảnh / Dáng người sắc nét",
     }
+
+
+def _crop_pillarbox_black_bars(bgr: np.ndarray) -> np.ndarray:
+    """Trim pure black pillarbox/letterbox bars so Vision AI & color analysis focus on actual video content."""
+    h, w = bgr.shape[:2]
+    gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
+    col_p92 = np.percentile(gray, 92, axis=0)
+    row_p92 = np.percentile(gray, 92, axis=1)
+    xs = np.where(col_p92 > 14)[0]
+    ys = np.where(row_p92 > 14)[0]
+    if len(xs) >= max(32, int(w * 0.18)) and len(ys) >= max(32, int(h * 0.18)):
+        x0, x1 = int(xs[0]), int(xs[-1]) + 1
+        y0, y1 = int(ys[0]), int(ys[-1]) + 1
+        if (x1 - x0) < w * 0.96 or (y1 - y0) < h * 0.96:
+            return bgr[y0:y1, x0:x1]
+    return bgr
+
+
+def _classify_outfit_or_scene_color(bgr_content: np.ndarray, has_face: bool) -> str:
+    """Classify dominant outfit / scene palette inside active content ROI (excluding face skin)."""
+    h, w = bgr_content.shape[:2]
+    # Focus on lower-middle torso / dress / scene region
+    y0 = int(h * (0.52 if has_face else 0.25))
+    y1 = int(h * 0.92)
+    x0, x1 = int(w * 0.18), int(w * 0.82)
+    roi = bgr_content[max(0, y0):max(y0 + 8, y1), max(0, x0):max(x0 + 8, x1)]
+    if roi.size == 0:
+        return "soft_neutral"
+    hsv = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
+    hue = hsv[:, :, 0]
+    sat = hsv[:, :, 1]
+    val = hsv[:, :, 2]
+
+    mean_sat = float(np.mean(sat))
+    mean_val = float(np.mean(val))
+
+    # Achromatic outfits (classic black / pure white)
+    dark_frac = float(np.mean(val < 58))
+    bright_low_sat = float(np.mean((val > 192) & (sat < 42)))
+    if dark_frac > 0.48:
+        return "classic_black"
+    if bright_low_sat > 0.42:
+        return "pure_white"
+    if mean_sat < 34:
+        return "pure_white" if mean_val > 168 else ("classic_black" if mean_val < 78 else "soft_neutral")
+
+    colored_mask = (sat >= 38) & (val >= 48)
+    if np.sum(colored_mask) < roi.shape[0] * roi.shape[1] * 0.12:
+        return "soft_neutral"
+
+    h_vals = hue[colored_mask]
+    pink_purple_frac = float(np.mean((h_vals >= 132) & (h_vals <= 174)))
+    red_frac = float(np.mean((h_vals < 10) | (h_vals > 174)))
+    blue_frac = float(np.mean((h_vals >= 92) & (h_vals < 132)))
+    green_frac = float(np.mean((h_vals >= 36) & (h_vals < 88)))
+    warm_frac = float(np.mean((h_vals >= 10) & (h_vals < 30)))
+
+    best_group, best_frac = max(
+        [
+            ("pink_purple", pink_purple_frac),
+            ("sky_blue", blue_frac),
+            ("red_charm", red_frac),
+            ("green_outdoor", green_frac),
+            ("warm_beige", warm_frac),
+        ],
+        key=lambda kv: kv[1],
+    )
+    if best_frac < 0.24:
+        return "soft_neutral"
+    if best_group == "pink_purple":
+        med_h = float(np.median(h_vals[(h_vals >= 132) & (h_vals <= 174)]))
+        return "purple_fairy" if med_h < 154 else "pink_pastel"
+    return best_group
+
+
+def build_visual_profile_and_strip(
+    out_dir: Path,
+    candidates_out: list[dict],
+    best_sample: dict,
+    motion_score: float,
+    video_name: str,
+) -> tuple[dict, Optional[str]]:
+    """
+    Create a compact 3-frame contact sheet (`vision_strip.jpg`, ~60 KB) for multimodal Vision naming
+    and return a deterministic OpenCV `visual_profile` for instant 0ms local naming.
+    """
+    # Pick up to 3 temporally spread candidates: Best (#1), Earliest, and Latest
+    ordered_by_time = sorted(candidates_out, key=lambda c: c["timestamp_s"])
+    chosen: list[dict] = []
+    if candidates_out:
+        chosen.append(candidates_out[0])
+    for c in (ordered_by_time[0] if ordered_by_time else None, ordered_by_time[-1] if ordered_by_time else None):
+        if c and all(c["id"] != x["id"] for x in chosen) and len(chosen) < 3:
+            chosen.append(c)
+    for c in candidates_out[1:]:
+        if len(chosen) >= 3:
+            break
+        if all(c["id"] != x["id"] for x in chosen):
+            chosen.append(c)
+
+    tiles: list[np.ndarray] = []
+    primary_cropped: Optional[np.ndarray] = None
+    has_pillarbox = False
+    target_h = 520
+
+    for idx, c in enumerate(chosen):
+        p = out_dir / c["jpg_file"]
+        img = cv2.imread(str(p))
+        if img is None:
+            continue
+        cropped = _crop_pillarbox_black_bars(img)
+        if idx == 0:
+            primary_cropped = cropped
+            ih, iw = img.shape[:2]
+            ch0, cw0 = cropped.shape[:2]
+            if cw0 < iw * 0.84 or ch0 < ih * 0.84:
+                has_pillarbox = True
+        ch, cw = cropped.shape[:2]
+        tw = max(120, int(round(cw * (target_h / float(max(1, ch))))))
+        tile = cv2.resize(cropped, (tw, target_h), interpolation=cv2.INTER_AREA)
+        tiles.append(tile)
+
+    strip_filename: Optional[str] = None
+    if tiles:
+        sep = np.full((target_h, 6, 3), 24, dtype=np.uint8)
+        spaced: list[np.ndarray] = []
+        for i, t in enumerate(tiles):
+            if i > 0:
+                spaced.append(sep)
+            spaced.append(t)
+        strip_bgr = np.hstack(spaced)
+        strip_path = out_dir / "vision_strip.jpg"
+        Image.fromarray(cv2.cvtColor(strip_bgr, cv2.COLOR_BGR2RGB)).save(
+            strip_path, format="JPEG", quality=82, optimize=True
+        )
+        strip_filename = strip_path.name
+
+    has_face = bool(best_sample.get("has_face"))
+    face_h_ratio = float(best_sample.get("face_h_ratio") or 0.0)
+    if has_face and face_h_ratio >= 0.34:
+        shot_type = "closeup_selfie"
+    elif has_face and face_h_ratio >= 0.18:
+        shot_type = "portrait"
+    elif has_face and face_h_ratio >= 0.09:
+        shot_type = "half_body"
+    else:
+        shot_type = "full_body"
+
+    palette = (
+        _classify_outfit_or_scene_color(primary_cropped, has_face)
+        if primary_cropped is not None
+        else "soft_neutral"
+    )
+
+    mean_luma = (
+        float(np.mean(cv2.cvtColor(primary_cropped, cv2.COLOR_BGR2GRAY)))
+        if primary_cropped is not None
+        else 145.0
+    )
+    if mean_luma >= 165:
+        lighting_mood = "bright_daylight"
+    elif mean_luma >= 112:
+        lighting_mood = "soft_glow"
+    else:
+        lighting_mood = "moody_chic"
+
+    motion_level = "dance_motion" if motion_score >= 16.5 else "calm_pose"
+
+    lower_name = video_name.lower()
+    if any(k in lower_name for k in ("dance", "nhay", "choreo", "kpop")):
+        suggested_vibe = "dance_trend"
+    elif any(k in lower_name for k in ("hanfu", "cosplay", "aodai", "kimono")):
+        suggested_vibe = "cosplay_trad"
+    elif any(k in lower_name for k in ("gym", "fitness", "workout", "yoga")):
+        suggested_vibe = "gym_sport"
+    elif any(k in lower_name for k in ("beach", "sea", "pool", "bikini", "travel")):
+        suggested_vibe = "beach_travel"
+    elif palette in ("purple_fairy", "pink_pastel") and shot_type == "full_body":
+        suggested_vibe = "cosplay_trad"
+    elif motion_level == "dance_motion" and shot_type in ("half_body", "full_body"):
+        suggested_vibe = "dance_trend"
+    elif shot_type in ("half_body", "full_body") and lighting_mood == "bright_daylight":
+        suggested_vibe = "street_fashion"
+    else:
+        suggested_vibe = "visual_smile"
+
+    shot_vi_map = {
+        "closeup_selfie": "Cận mặt Selfie",
+        "portrait": "Chân dung gần",
+        "half_body": "Nửa người / Outfit",
+        "full_body": "Toàn thân / Bối cảnh",
+    }
+    palette_vi_map = {
+        "pink_pastel": "Tông hồng ngọt ngào",
+        "purple_fairy": "Tông tím mộng mơ",
+        "pure_white": "Tông trắng tinh khôi",
+        "classic_black": "Tông đen cuốn hút",
+        "sky_blue": "Tông xanh dịu mắt",
+        "red_charm": "Tông đỏ nổi bật",
+        "green_outdoor": "Ngoại cảnh xanh mát",
+        "warm_beige": "Tông ấm nhẹ nhàng",
+        "soft_neutral": "Ánh sáng tự nhiên",
+    }
+    motion_vi = "Chuyển động / Vũ đạo" if motion_level == "dance_motion" else "Thần thái dịu dàng"
+
+    return (
+        {
+            "shot_type": shot_type,
+            "dominant_palette": palette,
+            "lighting_mood": lighting_mood,
+            "motion_level": motion_level,
+            "suggested_vibe": suggested_vibe,
+            "has_pillarbox": has_pillarbox,
+            "summary_vi": f"{shot_vi_map[shot_type]} • {palette_vi_map.get(palette, 'Tông tự nhiên')} • {motion_vi}",
+        },
+        strip_filename,
+    )
 
 
 def extract_and_enhance_hd_frame(
@@ -422,6 +643,8 @@ def cmd_scan(args: argparse.Namespace) -> None:
     detector = _load_yunet(an_w, an_h)
     frame_bytes = an_w * an_h * 3
     scored_samples: list[dict] = []
+    prev_small_gray: Optional[np.ndarray] = None
+    motion_diffs: list[float] = []
     idx = 0
     while True:
         raw = proc.stdout.read(frame_bytes)
@@ -429,6 +652,12 @@ def cmd_scan(args: argparse.Namespace) -> None:
             break
         ts = round(min(dur - 0.04, t_start + (idx + 0.5) / sample_fps), 3)
         frame_bgr = np.frombuffer(raw, dtype=np.uint8).reshape((an_h, an_w, 3)).copy()
+        small_gray = cv2.resize(
+            cv2.cvtColor(frame_bgr, cv2.COLOR_BGR2GRAY), (96, 96), interpolation=cv2.INTER_AREA
+        )
+        if prev_small_gray is not None:
+            motion_diffs.append(float(np.mean(cv2.absdiff(small_gray, prev_small_gray))))
+        prev_small_gray = small_gray
         sc = score_beauty_frame_bgr(frame_bgr, detector)
         scored_samples.append({"timestamp_s": ts, **sc})
         idx += 1
@@ -497,6 +726,15 @@ def cmd_scan(args: argparse.Namespace) -> None:
             }
         )
 
+    motion_score = float(np.median(motion_diffs)) if motion_diffs else 8.0
+    visual_profile, vision_strip_file = build_visual_profile_and_strip(
+        out_dir=out_dir,
+        candidates_out=candidates_out,
+        best_sample=selected[0] if selected else {},
+        motion_score=motion_score,
+        video_name=video_path.name,
+    )
+
     print(
         json.dumps(
             {
@@ -505,6 +743,8 @@ def cmd_scan(args: argparse.Namespace) -> None:
                 "video_info": info,
                 "enhance_mode": args.enhance,
                 "sampled_frames_count": len(scored_samples),
+                "visual_profile": visual_profile,
+                "vision_strip_file": vision_strip_file,
                 "candidates": candidates_out,
             }
         )

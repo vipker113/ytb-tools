@@ -6,6 +6,7 @@ import path from "node:path";
 export const REUP_TMP_ROOT = path.join(os.tmpdir(), "ytb-reup-studio");
 
 const VIDEO_EXTS = new Set([".mp4", ".mov", ".webm", ".mkv", ".m4v"]);
+const AUDIO_EXTS = new Set([".mp3", ".m4a", ".wav", ".aac", ".ogg", ".flac"]);
 
 export function expandHomePath(rawPath: string): string {
   const trimmed = rawPath.trim().replace(/^["']|["']$/g, "");
@@ -44,6 +45,68 @@ export function ensureSessionDir(sessionId: string): string {
 
 export function isAllowedVideoFile(filePath: string): boolean {
   return VIDEO_EXTS.has(path.extname(filePath).toLowerCase());
+}
+
+export function isAllowedAudioFile(filePath: string): boolean {
+  return AUDIO_EXTS.has(path.extname(filePath).toLowerCase());
+}
+
+export function resolveBuiltinBgmPath(trackId: string): string {
+  const safeFile = path.basename(trackId);
+  return path.resolve(process.cwd(), "public/reup-bgm", safeFile);
+}
+
+export function runVideoRemaster(args: string[]): Promise<Record<string, unknown>> {
+  const py = resolvePythonBin();
+  const script = path.resolve(process.cwd(), "scripts/reup_video_remaster.py");
+
+  return new Promise((resolve, reject) => {
+    const child = spawn(py, [script, ...args], {
+      env: {
+        ...process.env,
+        OPENCV_LOG_LEVEL: "OFF",
+      },
+    });
+
+    let stdout = "";
+    let stderr = "";
+    child.stdout.on("data", (chunk) => {
+      stdout += chunk.toString();
+    });
+    child.stderr.on("data", (chunk) => {
+      stderr += chunk.toString();
+    });
+
+    child.on("error", (err) => reject(err));
+    child.on("close", (code) => {
+      const lines = stdout
+        .trim()
+        .split("\n")
+        .map((l) => l.trim())
+        .filter((l) => l.startsWith("{") && l.endsWith("}"));
+      const lastJsonLine = lines[lines.length - 1];
+      if (lastJsonLine) {
+        try {
+          const parsed = JSON.parse(lastJsonLine);
+          if (parsed.ok === false) {
+            reject(new Error(String(parsed.error || "Lỗi nâng cấp video")));
+            return;
+          }
+          resolve(parsed);
+          return;
+        } catch {
+          // Fall through
+        }
+      }
+      reject(
+        new Error(
+          stderr.trim().slice(-400) ||
+            stdout.trim().slice(-400) ||
+            `Remaster exited with code ${code}`
+        )
+      );
+    });
+  });
 }
 
 export async function runBeautyAnalyzer(args: string[]): Promise<Record<string, unknown>> {

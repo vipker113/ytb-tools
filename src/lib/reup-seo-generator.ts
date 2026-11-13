@@ -8,9 +8,23 @@ export type ReupVibeCategory =
   | "beach_travel"
   | "gym_sport";
 
+export type ReupTitleLengthStyle = "short" | "detailed";
+
+export interface VisualFrameProfile {
+  shot_type?: "closeup_selfie" | "portrait" | "half_body" | "full_body";
+  dominant_palette?: string;
+  lighting_mood?: string;
+  motion_level?: "calm_pose" | "dance_motion";
+  suggested_vibe?: ReupVibeCategory;
+  has_pillarbox?: boolean;
+  summary_vi?: string;
+}
+
 export interface ReupSeoInput {
   language: ReupLanguageMode;
   vibe: ReupVibeCategory;
+  titleStyle?: ReupTitleLengthStyle;
+  visualProfile?: VisualFrameProfile | null;
   customNote?: string;
   isShort: boolean;
   channelHandle?: string;
@@ -24,6 +38,7 @@ export interface ReupSeoPackage {
   studioTags: string[];
   studioTagsCsv: string;
   studioTagsCharCount: number;
+  detectedVisualSummary?: string;
 }
 
 interface VibeLexicon {
@@ -860,24 +875,228 @@ function rotateArray<T>(arr: T[], offset: number): T[] {
   return [...arr.slice(k), ...arr.slice(0, k)];
 }
 
+function buildShortSignatureTitles(input: ReupSeoInput): string[] {
+  const lang = input.language || "en";
+  const vibe = input.vibe || "visual_smile";
+  const vp = input.visualProfile || {};
+  const shot = vp.shot_type || "portrait";
+  const palette = vp.dominant_palette || "soft_neutral";
+  const note = (input.customNote || "").trim();
+  const seed = Math.max(0, Math.floor(input.seed || 0));
+
+  // If user typed "ASA | BABYMONSTER" or "Yuqi" or "Douyin", parse optional left/right parts cleanly
+  let customSubject = "";
+  let customTag = "";
+  if (note) {
+    if (note.includes("|")) {
+      const [l, r] = note.split("|", 2).map((s) => s.trim());
+      customSubject = l;
+      customTag = r;
+    } else if (note.length <= 18) {
+      customSubject = note;
+    } else {
+      customSubject = note.split(/\s+/).slice(0, 4).join(" ");
+    }
+  }
+
+  const colorHookEn: Record<string, string> = {
+    pink_pastel: "Sweet Pink Vibe",
+    purple_fairy: "Dreamy Fairy Girl",
+    pure_white: "Pure White Angel",
+    classic_black: "Chic In Black",
+    sky_blue: "Soft Blue Aesthetic",
+    red_charm: "Stunning In Red",
+    green_outdoor: "Sunny Outdoor Girl",
+    warm_beige: "Soft Golden Glow",
+    soft_neutral: "Natural Doll Visuals",
+  };
+
+  const colorHookVi: Record<string, string> = {
+    pink_pastel: "Tone Hồng Ngọt Ngào",
+    purple_fairy: "Nàng Thơ Tím Mộng Mơ",
+    pure_white: "Áo Trắng Tinh Khôi",
+    classic_black: "Outfit Đen Cuốn Hút",
+    sky_blue: "Tone Xanh Trong Trẻo",
+    red_charm: "Sắc Đỏ Nổi Bật",
+    green_outdoor: "Nắng Ngoại Cảnh Xinh",
+    warm_beige: "Visual Ấm Áp",
+    soft_neutral: "Visual Xinh Tự Nhiên",
+  };
+
+  const shotHookEn =
+    shot === "closeup_selfie"
+      ? "Pretty Close-Up Gaze"
+      : shot === "portrait"
+      ? "Sweetest Eye Smile"
+      : shot === "half_body"
+      ? "Effortless Cute Vibe"
+      : "Lovely Full Vibe";
+
+  const shotHookVi =
+    shot === "closeup_selfie"
+      ? "Cận Mặt Xinh Xỉu"
+      : shot === "portrait"
+      ? "Ánh Mắt Biết Cười"
+      : shot === "half_body"
+      ? "Thần Thái Cuốn Hút"
+      : "Dáng Xinh Hết Nước Chấm";
+
+  const vibeTagEn: Record<ReupVibeCategory, string> = {
+    visual_smile: "Douyin",
+    dance_trend: "Dance Vibe",
+    street_fashion: "OOTD",
+    cosplay_trad: "Cosplay",
+    beach_travel: "Summer Vibe",
+    gym_sport: "Fit Girl",
+  };
+
+  const tagEn = customTag || vibeTagEn[vibe] || "Douyin";
+  const subjEn = customSubject || "";
+
+  const pools: Record<ReupLanguageMode, string[]> = {
+    en: subjEn
+      ? [
+          `${subjEn} Is So Adorable! ✨ | ${tagEn}`,
+          `${subjEn} Visuals 💖 | ${customTag || "Cute Vibes"}`,
+          `Cute ${subjEn} Moment ✨ | ${tagEn}`,
+          `${shotHookEn} 🌸 | ${subjEn}`,
+          `${colorHookEn[palette] || "Sweet Visuals"} ✨ | ${subjEn}`,
+          `Can't Stop Watching! 💖 | ${subjEn}`,
+        ]
+      : vibe === "dance_trend"
+      ? [
+          `Smooth Dance Moves ✨ | ${tagEn}`,
+          `She Nailed The Beat! 🔥 | Dance`,
+          `Cute Girl Dancing 💖 | Douyin`,
+          `${colorHookEn[palette] || "Sweet Vibe"} ✨ | Dance`,
+          `Addictive Rhythm 💫 | Cute Vibes`,
+          `So Effortlessly Cute! ✨ | Dance`,
+        ]
+      : vibe === "street_fashion"
+      ? [
+          `${colorHookEn[palette] || "Chic Street Style"} ✨ | OOTD`,
+          `Cute Street Girl 💖 | Fashion`,
+          `Effortless Outfit Vibe ✨ | Douyin`,
+          `She Looks Stunning! 🖤 | OOTD`,
+          `${shotHookEn} ✨ | Street Style`,
+          `Pure Model Vibes 💫 | Asian Girl`,
+        ]
+      : vibe === "cosplay_trad"
+      ? [
+          `${colorHookEn[palette] || "Fairy Girl"} 🌸 | ${customTag || "Douyin"}`,
+          `Real-Life Anime Girl ✨ | Cosplay`,
+          `She Is So Dreamy! 💖 | Fairy Vibe`,
+          `Cute Traditional Look ✨ | Douyin`,
+          `Pure Fairy Visuals 🌸 | Cute Girl`,
+          `Adorable Cosplay Girl ✨ | Kawaii`,
+        ]
+      : vibe === "beach_travel"
+      ? [
+          `Sunny Summer Girl ☀️ | Beach Vibe`,
+          `Golden Hour Smile ✨ | Travel`,
+          `Fresh Ocean Breeze 💖 | Cute Girl`,
+          `${colorHookEn[palette] || "Summer Glow"} ✨ | Vacation`,
+          `Radiant Holiday Vibe 🌸 | Douyin`,
+          `Sweetest Beach Smile ✨ | Cute Vibes`,
+        ]
+      : vibe === "gym_sport"
+      ? [
+          `Healthy & Glowing ✨ | Fit Girl`,
+          `Sporty Cute Vibe 💪 | Gym`,
+          `${colorHookEn[palette] || "Active Chic"} ✨ | Fitness`,
+          `Stunning Workout Glow 💖 | Fit Vibe`,
+          `Pure Energy & Charm ✨ | Sporty`,
+          `Fit & Adorable! 🔥 | Asian Girl`,
+        ]
+      : [
+          `She Is So Adorable! ✨ | ${tagEn}`,
+          `${shotHookEn} 💖 | Cute Vibes`,
+          `Cute Asian Girl ✨ | ${tagEn}`,
+          `${colorHookEn[palette] || "Doll-Like Visuals"} 🌸 | Ulzzang`,
+          `Wait For Her Smile 💖 | ${tagEn}`,
+          `Unreal Doll Visuals ✨ | Pretty Girl`,
+        ],
+
+    vi: subjEn
+      ? [
+          `${subjEn} Xinh Xỉu Luôn ✨ | ${customTag || "Gái Xinh"}`,
+          `${shotHookVi} 💖 | ${subjEn}`,
+          `${colorHookVi[palette] || "Visual Trong Trẻo"} ✨ | ${subjEn}`,
+          `Nụ Cười Đốn Tim 🥰 | ${subjEn}`,
+          `Ngắm Mãi Không Chán ✨ | ${subjEn}`,
+          `Vibe Nàng Thơ 🌸 | ${subjEn}`,
+        ]
+      : [
+          `${shotHookVi} ✨ | Gái Xinh`,
+          `${colorHookVi[palette] || "Visual Trong Trẻo"} 💖 | Douyin`,
+          `Xinh Xắn Đáng Yêu Quá 🥰 | Cute`,
+          `Nụ Cười Gây Thương Nhớ 🌸 | Visual`,
+          `Ngắm Thôi Cũng Thấy Cuốn ✨ | Trend`,
+          `Vibe Nhẹ Nhàng Dịu Mắt 💖 | Nàng Thơ`,
+        ],
+
+    vi_en: [
+          `${shotHookVi} ✨ | ${tagEn}`,
+          `${colorHookVi[palette] || "Visual Cực Phẩm"} 💖 | Cute Vibes`,
+          `Xinh Xỉu Luôn! ✨ | Pretty Girl`,
+          `Nụ Cười Đốn Tim 🌸 | Sweet Smile`,
+          `Thần Thái Cuốn Hút ✨ | Ulzzang`,
+          `Ngắm Mãi Không Chán 💖 | ${tagEn}`,
+        ],
+
+    ko: [
+          `너무 귀여운 비주얼 ✨ | ${customTag || "여신"}`,
+          `심쿵 눈맞춤 모먼트 💖 | 청순미녀`,
+          `인형 같은 분위기 🌸 | Ulzzang`,
+          `미소가 너무 예뻐요 ✨ | Cute Vibe`,
+          `무한 반복 비주얼 💫 | 데일리`,
+          `청순 열매 먹은 미모 🥰 | Shorts`,
+        ],
+
+    zh: [
+          `甜妹颜值暴击 ✨ | 抖音美女`,
+          `一眼心动的神仙颜值 💖 | 纯欲风`,
+          `这眼神太绝了 🌸 | 氛围感`,
+          `笑容超治愈的小姐姐 ✨ | 甜美`,
+          `精致娃娃脸美少女 💫 | 高颜值`,
+          `越看越可爱的心动瞬间 🥰 | 美女`,
+        ],
+
+    ja: [
+          `お人形さんみたいな可愛さ ✨ | 美少女`,
+          `天使すぎる透明感 💖 | 可愛い`,
+          `目が合う瞬間ドキッ 🌸 | ナチュラル`,
+          `笑顔が癒やしすぎる ✨ | トレンド`,
+          `圧倒的ヒロイン感 💫 | Kawaii`,
+          `ずっと見てられる可愛さ 🥰 | 美女`,
+        ],
+  };
+
+  return rotateArray(pools[lang] || pools.en, seed).slice(0, 6);
+}
+
 export function generateLocalReupSeoPackage(input: ReupSeoInput): ReupSeoPackage {
   const lex = VIBE_DATA[input.vibe] || VIBE_DATA.visual_smile;
-  const lang = input.language || "vi";
+  const lang = input.language || "en";
+  const titleStyle: ReupTitleLengthStyle = input.titleStyle || "short";
   const note = (input.customNote || "").trim();
   const focus = note || lex.defaultFocus[lang];
   const seed = Math.max(0, Math.floor(input.seed || 0));
 
-  const shortSuffix = input.isShort ? " #Shorts" : "";
-  const rawTemplates = rotateArray(lex.titleTemplates[lang], seed);
-
-  const titles = rawTemplates.slice(0, 6).map((tpl, idx) => {
-    const filled = tpl.replace("{focus}", focus);
-    // Add #Shorts cleanly to top short titles when under 92 chars
-    if (input.isShort && idx < 4 && filled.length <= 90 && !filled.toLowerCase().includes("#shorts")) {
-      return `${filled}${shortSuffix}`;
-    }
-    return filled;
-  });
+  let titles: string[];
+  if (titleStyle === "short") {
+    titles = buildShortSignatureTitles(input);
+  } else {
+    const shortSuffix = input.isShort ? " #Shorts" : "";
+    const rawTemplates = rotateArray(lex.titleTemplates[lang], seed);
+    titles = rawTemplates.slice(0, 6).map((tpl, idx) => {
+      const filled = tpl.replace("{focus}", focus);
+      if (input.isShort && idx < 4 && filled.length <= 90 && !filled.toLowerCase().includes("#shorts")) {
+        return `${filled}${shortSuffix}`;
+      }
+      return filled;
+    });
+  }
 
   // Build hashtags
   const baseHashtags = [...lex.hashtags[lang]];
@@ -936,19 +1155,48 @@ export function generateLocalReupSeoPackage(input: ReupSeoInput): ReupSeoPackage
   const studioTagsCsv = studioTags.join(", ");
 
   // Build Description
-  const handleLine = input.channelHandle
-    ? `\n🔔 Channel: ${input.channelHandle.startsWith("@") ? input.channelHandle : `@${input.channelHandle}`}`
+  const cleanHandle = input.channelHandle
+    ? input.channelHandle.startsWith("@")
+      ? input.channelHandle
+      : `@${input.channelHandle}`
     : "";
 
-  const description = [
-    titles[0],
-    "",
-    lex.descIntro[lang] + (note ? ` (${note})` : ""),
-    "",
-    lex.ctaLine[lang] + handleLine,
-    "",
-    hashtags.join(" "),
-  ].join("\n");
+  const shortDescOpener: Record<ReupLanguageMode, string> = {
+    en: note
+      ? `A lovely moment featuring ${note}! 💖`
+      : "Wait For Her Smile At The End 💖",
+    vi: note
+      ? `Khoảnh khắc cực xinh của ${note} 💖`
+      : "Chờ xem nụ cười ở giây cuối nhé 💖",
+    vi_en: note
+      ? `Khoảnh khắc cực cuốn của ${note} ✨ | Lovely moment!`
+      : "Chờ xem nụ cười cuối clip nhé 💖 | Wait For Her Smile!",
+    ko: "끝까지 보면 심쿵하는 모먼트 💖",
+    zh: "看到最后有心动笑容哦 💖",
+    ja: "最後の笑顔まで見逃せない可愛さ 💖",
+  };
+
+  const shortCta: Record<ReupLanguageMode, string> = {
+    en: `👉 Hit Like 👍 & Subscribe${cleanHandle ? ` (${cleanHandle})` : ""}`,
+    vi: `👉 Bấm Like 👍 & Đăng ký kênh${cleanHandle ? ` (${cleanHandle})` : ""} nhé!`,
+    vi_en: `👉 Hit Like 👍 & Subscribe${cleanHandle ? ` ${cleanHandle}` : ""}`,
+    ko: `👉 좋아요 👍 & 구독 부탁드려요!`,
+    zh: `👉 点赞 👍 并订阅频道看更多高颜值视频！`,
+    ja: `👉 高評価 👍 & チャンネル登録お願いします！`,
+  };
+
+  const description =
+    titleStyle === "short"
+      ? [shortDescOpener[lang], "", shortCta[lang], "", hashtags.join(" ")].join("\n")
+      : [
+          titles[0],
+          "",
+          lex.descIntro[lang] + (note ? ` (${note})` : ""),
+          "",
+          lex.ctaLine[lang] + (cleanHandle ? `\n🔔 Channel: ${cleanHandle}` : ""),
+          "",
+          hashtags.join(" "),
+        ].join("\n");
 
   return {
     titles,
@@ -957,5 +1205,6 @@ export function generateLocalReupSeoPackage(input: ReupSeoInput): ReupSeoPackage
     studioTags,
     studioTagsCsv,
     studioTagsCharCount: studioTagsCsv.length,
+    detectedVisualSummary: input.visualProfile?.summary_vi,
   };
 }
