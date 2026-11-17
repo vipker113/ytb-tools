@@ -11,6 +11,7 @@ import {
   PanelLeftOpen,
   RefreshCw,
   Settings,
+  Sparkles,
   X,
 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -22,10 +23,12 @@ import { IdeasAndCompetitorsTab } from "./IdeasAndCompetitorsTab";
 import { MacStudioReviewTab } from "./MacStudioReviewTab";
 import { ReupBeautyStudioTab } from "./ReupBeautyStudioTab";
 import { SettingsTab } from "./SettingsTab";
+import { VideoEnhancerStudioTab } from "./VideoEnhancerStudioTab";
 import { YoutubeIcon } from "./YoutubeIcon";
 
 type ActiveTab =
   | "mac_review"
+  | "video_enhancer"
   | "reup_beauty"
   | "analytics"
   | "ideas"
@@ -138,6 +141,12 @@ export function DashboardApp() {
             const requestedTab = params.get("tab");
             if (requestedTab === "reup" || requestedTab === "reup_beauty") {
               setActiveTab("reup_beauty");
+            } else if (
+              requestedTab === "enhance" ||
+              requestedTab === "upscale" ||
+              requestedTab === "video_enhancer"
+            ) {
+              setActiveTab("video_enhancer");
             }
             const oauthStatus = params.get("oauth");
             if (oauthStatus === "connected") {
@@ -262,6 +271,13 @@ export function DashboardApp() {
           ? macCounts.total
           : undefined,
       icon: Film,
+    },
+    {
+      id: "video_enhancer",
+      label: "Nâng Cấp Video AI / 4K",
+      subtitle: "Real-ESRGAN GPU, Nét Mặt & 60FPS",
+      badge: "AI 4K",
+      icon: Sparkles,
     },
     {
       id: "reup_beauty",
@@ -674,6 +690,11 @@ export function DashboardApp() {
                   }}
                   onNotify={showToast}
                 />
+              )}
+
+              {/* TAB #1A: STANDALONE AI VIDEO SUPER-RESOLUTION & 4K ENHANCER */}
+              {activeTab === "video_enhancer" && (
+                <VideoEnhancerStudioTab onNotify={showToast} />
               )}
 
               {/* TAB #1B: STANDALONE REUP BEAUTY HD THUMBNAIL & MULTI-LANGUAGE SEO STUDIO */}
