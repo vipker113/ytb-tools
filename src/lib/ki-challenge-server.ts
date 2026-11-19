@@ -12,6 +12,7 @@ import {
   getValidYoutubeAccessToken,
   uploadShortVideoToStudio,
 } from "./youtube-studio";
+import { ytApiFetch } from "./youtube-quota";
 
 export interface KiPointWeights {
   view: number;
@@ -216,12 +217,13 @@ export async function fetchAuthenticatedChannelSubscriberCount(
   accessToken: string
 ): Promise<number> {
   try {
-    const res = await fetch(
+    const res = await ytApiFetch(
       "https://www.googleapis.com/youtube/v3/channels?part=statistics&mine=true",
       {
         headers: { Authorization: `Bearer ${accessToken}` },
         cache: "no-store",
-      }
+      },
+      { category: "kiRead", label: "KI Sync: Đọc Subscriber kênh" }
     );
     if (!res.ok) return 0;
     const json = await res.json();
@@ -254,10 +256,14 @@ export async function syncSingleKiChallenge(
     vUrl.searchParams.set("part", "snippet,statistics");
     vUrl.searchParams.set("id", item.videoId);
 
-    const vRes = await fetch(vUrl.toString(), {
-      headers: { Authorization: `Bearer ${accessToken}` },
-      cache: "no-store",
-    });
+    const vRes = await ytApiFetch(
+      vUrl.toString(),
+      {
+        headers: { Authorization: `Bearer ${accessToken}` },
+        cache: "no-store",
+      },
+      { category: "kiRead", label: `KI Sync: Đọc View/Like/Cmt (${item.videoId})` }
+    );
     const vJson = await vRes.json();
     if (!vRes.ok) {
       throw new Error(
@@ -364,7 +370,7 @@ export async function syncSingleKiChallenge(
         updatedSnippet.defaultAudioLanguage = existingSnippet.defaultAudioLanguage;
       }
 
-      const putRes = await fetch(
+      const putRes = await ytApiFetch(
         "https://www.googleapis.com/youtube/v3/videos?part=snippet",
         {
           method: "PUT",
@@ -377,6 +383,10 @@ export async function syncSingleKiChallenge(
             snippet: updatedSnippet,
           }),
           cache: "no-store",
+        },
+        {
+          category: "kiTitleUpdate",
+          label: `KI Sync: Cập nhật Title (${totalKi.toLocaleString()} KI)`,
         }
       );
 

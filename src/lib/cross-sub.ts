@@ -5,6 +5,7 @@ import type {
   RecentPublicSubscriberItem,
 } from "./types";
 import { extractVideoId, parseChannelQuery } from "./youtube";
+import { ytApiFetch } from "./youtube-quota";
 
 const YT_API_BASE = "https://www.googleapis.com/youtube/v3";
 
@@ -123,7 +124,7 @@ async function ytPublicFetch<T>(
   }
   url.searchParams.set("key", apiKey);
 
-  const res = await fetch(url.toString(), { cache: "no-store" });
+  const res = await ytApiFetch(url.toString(), { cache: "no-store" });
   const json = await res.json();
   if (!res.ok) {
     throw new Error(
@@ -145,7 +146,7 @@ async function ytOAuthFetch<T>(
     }
   }
 
-  const res = await fetch(url.toString(), {
+  const res = await ytApiFetch(url.toString(), {
     headers: { Authorization: `Bearer ${accessToken}` },
     cache: "no-store",
   });

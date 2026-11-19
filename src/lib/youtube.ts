@@ -5,6 +5,7 @@ import type {
   TrackedChannel,
   VideoItem,
 } from "./types";
+import { ytApiFetch } from "./youtube-quota";
 
 const YT_API_BASE = "https://www.googleapis.com/youtube/v3";
 
@@ -101,7 +102,7 @@ async function ytFetch<T>(endpoint: string, params: Record<string, string>, apiK
   }
   url.searchParams.set("key", apiKey);
 
-  const res = await fetch(url.toString(), { cache: "no-store" });
+  const res = await ytApiFetch(url.toString(), { cache: "no-store" });
   const json = await res.json();
   if (!res.ok) {
     const errMsg =

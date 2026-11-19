@@ -27,6 +27,7 @@ import { ReupBeautyStudioTab } from "./ReupBeautyStudioTab";
 import { SettingsTab } from "./SettingsTab";
 import { VideoEnhancerStudioTab } from "./VideoEnhancerStudioTab";
 import { YoutubeIcon } from "./YoutubeIcon";
+import { YoutubeQuotaBadge } from "./YoutubeQuotaBadge";
 
 type ActiveTab =
   | "mac_review"
@@ -574,10 +575,7 @@ export function DashboardApp() {
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="hidden md:inline-flex items-center gap-1.5 rounded-xl border border-emerald-500/30 bg-emerald-950/20 px-3 py-1.5 text-[11px] font-bold text-emerald-300">
-              <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              0₫ API Chính Thống
-            </span>
+            <YoutubeQuotaBadge variant="header" />
 
             <button
               type="button"

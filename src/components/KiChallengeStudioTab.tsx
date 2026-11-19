@@ -25,6 +25,10 @@ import {
   Zap,
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  triggerYoutubeQuotaRefresh,
+  YoutubeQuotaBadge,
+} from "./YoutubeQuotaBadge";
 
 interface StagePreset {
   id: string;
@@ -1587,6 +1591,7 @@ export function KiChallengeStudioTab({
         onNotify("Lỗi kết nối tới YouTube Data API.");
       } finally {
         setSyncingId(null);
+        triggerYoutubeQuotaRefresh();
       }
     },
     [fetchTrackers, onNotify]
@@ -2714,7 +2719,7 @@ export function KiChallengeStudioTab({
             <div className="flex flex-wrap items-center gap-2">
               <h3 className="text-sm sm:text-base font-extrabold text-white flex items-center gap-2">
                 <Activity className="h-4 w-4 text-emerald-400" />
-                Đồng Bộ 5 Phút/Lần • Đổi Tiêu Đề YouTube Ở Mốc 25% • 50% • 75% • 100%
+                Đồng Bộ Tự Động • Tự Đổi Tiêu Đề YouTube Khi KI Tăng (Cooldown 10 Phút)
               </h3>
               <a
                 href="/ki-live"
@@ -2727,7 +2732,7 @@ export function KiChallengeStudioTab({
               </a>
             </div>
             <p className="text-xs text-zinc-400 mt-0.5">
-              Tiết kiệm 100% Quota (~576 read units/ngày + tối đa 4 lần ghi = 200 units/video). Thanh KI realtime từng điểm hiển thị tại trang riêng <code className="text-amber-300">/ki-live</code>.
+              Tự động đẩy Title mới lên YouTube mỗi khi điểm KI thay đổi (giãn cách tối thiểu 10 phút/lần ghi để bảo vệ hạn mức 10,000 quota/ngày). Trang realtime từng điểm: <code className="text-amber-300">/ki-live</code>.
             </p>
           </div>
 
@@ -2755,6 +2760,8 @@ export function KiChallengeStudioTab({
             </button>
           </div>
         </div>
+
+        <YoutubeQuotaBadge variant="card" />
 
         {trackers.length === 0 ? (
           <div className="rounded-xl border border-dashed border-zinc-800 bg-zinc-950/60 py-8 text-center text-xs text-zinc-400">

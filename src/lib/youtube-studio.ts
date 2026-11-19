@@ -12,6 +12,7 @@ import type {
   YoutubeOAuthState,
   YoutubePlaylistSummary,
 } from "./types";
+import { ytApiFetch } from "./youtube-quota";
 
 export const YOUTUBE_OAUTH_REDIRECT_URI =
   "http://localhost:3000/api/youtube/oauth/callback";
@@ -76,7 +77,7 @@ export async function exchangeYoutubeAuthCode(params: {
   let connectedChannelTitle: string | undefined;
   let connectedChannelHandle: string | undefined;
 
-  const chRes = await fetch(
+  const chRes = await ytApiFetch(
     "https://www.googleapis.com/youtube/v3/channels?part=snippet&mine=true",
     {
       headers: { Authorization: `Bearer ${accessToken}` },
@@ -195,7 +196,7 @@ export async function postOwnerCommentIfMissing(params: {
     checkUrl.searchParams.set("videoId", params.videoId);
     checkUrl.searchParams.set("maxResults", "15");
 
-    const checkRes = await fetch(checkUrl.toString(), {
+    const checkRes = await ytApiFetch(checkUrl.toString(), {
       headers: { Authorization: `Bearer ${params.accessToken}` },
       cache: "no-store",
     });
@@ -223,7 +224,7 @@ export async function postOwnerCommentIfMissing(params: {
       }
     }
 
-    const postRes = await fetch(
+    const postRes = await ytApiFetch(
       "https://www.googleapis.com/youtube/v3/commentThreads?part=snippet",
       {
         method: "POST",
@@ -273,7 +274,7 @@ export async function rescueSingleVideoOnStudio(params: {
   getUrl.searchParams.set("part", "snippet,status");
   getUrl.searchParams.set("id", params.videoId);
 
-  const getRes = await fetch(getUrl.toString(), {
+  const getRes = await ytApiFetch(getUrl.toString(), {
     headers: { Authorization: `Bearer ${params.accessToken}` },
     cache: "no-store",
   });
@@ -338,7 +339,7 @@ export async function rescueSingleVideoOnStudio(params: {
     updatedStatus.publishAt = existingStatus.publishAt;
   }
 
-  const putRes = await fetch(
+  const putRes = await ytApiFetch(
     "https://www.googleapis.com/youtube/v3/videos?part=snippet,status",
     {
       method: "PUT",
@@ -399,7 +400,7 @@ export async function applyEpisodeMetadataToVideo(params: {
   getUrl.searchParams.set("part", "snippet,status");
   getUrl.searchParams.set("id", params.videoId);
 
-  const getRes = await fetch(getUrl.toString(), {
+  const getRes = await ytApiFetch(getUrl.toString(), {
     headers: { Authorization: `Bearer ${params.accessToken}` },
     cache: "no-store",
   });
@@ -444,7 +445,7 @@ export async function applyEpisodeMetadataToVideo(params: {
     updatedStatus.publishAt = existingStatus.publishAt;
   }
 
-  const putRes = await fetch(
+  const putRes = await ytApiFetch(
     "https://www.googleapis.com/youtube/v3/videos?part=snippet,status",
     {
       method: "PUT",
@@ -536,7 +537,7 @@ export async function listChannelPlaylists(
   url.searchParams.set("mine", "true");
   url.searchParams.set("maxResults", "50");
 
-  const res = await fetch(url.toString(), {
+  const res = await ytApiFetch(url.toString(), {
     headers: { Authorization: `Bearer ${accessToken}` },
     cache: "no-store",
   });
@@ -584,7 +585,7 @@ export async function createChannelPlaylist(params: {
     throw new Error("Vui lòng nhập tên Playlist mới.");
   }
 
-  const res = await fetch(
+  const res = await ytApiFetch(
     "https://www.googleapis.com/youtube/v3/playlists?part=snippet,status",
     {
       method: "POST",
@@ -644,7 +645,7 @@ export async function addVideoToPlaylistIfMissing(params: {
     checkUrl.searchParams.set("videoId", params.videoId);
     checkUrl.searchParams.set("maxResults", "5");
 
-    const checkRes = await fetch(checkUrl.toString(), {
+    const checkRes = await ytApiFetch(checkUrl.toString(), {
       headers: { Authorization: `Bearer ${params.accessToken}` },
       cache: "no-store",
     });
@@ -655,7 +656,7 @@ export async function addVideoToPlaylistIfMissing(params: {
       }
     }
 
-    const insRes = await fetch(
+    const insRes = await ytApiFetch(
       "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
       {
         method: "POST",
@@ -707,7 +708,7 @@ async function uploadThumbnailWithRetry(params: {
   let lastError = "";
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
-      const thumbRes = await fetch(
+      const thumbRes = await ytApiFetch(
         `https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=${encodeURIComponent(
           params.videoId
         )}&uploadType=media`,
@@ -846,7 +847,7 @@ export async function uploadShortVideoToStudio(params: {
   };
 
   // Step 1: Initiate YouTube Resumable Upload session (with paidProductPlacementDetails + graceful fallback)
-  let initRes = await fetch(
+  let initRes = await ytApiFetch(
     "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status,paidProductPlacementDetails",
     {
       method: "POST",
@@ -869,7 +870,7 @@ export async function uploadShortVideoToStudio(params: {
 
   if (!initRes.ok && initRes.status === 400) {
     // Fallback without paidProductPlacementDetails part if rejected
-    initRes = await fetch(
+    initRes = await ytApiFetch(
       "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
       {
         method: "POST",
@@ -1009,7 +1010,7 @@ export async function updateOrPromoteStudioVideo(params: {
   getUrl.searchParams.set("part", "snippet,status");
   getUrl.searchParams.set("id", params.videoId);
 
-  const getRes = await fetch(getUrl.toString(), {
+  const getRes = await ytApiFetch(getUrl.toString(), {
     headers: { Authorization: `Bearer ${params.accessToken}` },
     cache: "no-store",
   });
@@ -1058,7 +1059,7 @@ export async function updateOrPromoteStudioVideo(params: {
     embeddable: true,
   };
 
-  let putRes = await fetch(
+  let putRes = await ytApiFetch(
     "https://www.googleapis.com/youtube/v3/videos?part=snippet,status,paidProductPlacementDetails",
     {
       method: "PUT",
@@ -1079,7 +1080,7 @@ export async function updateOrPromoteStudioVideo(params: {
   );
 
   if (!putRes.ok && putRes.status === 400) {
-    putRes = await fetch(
+    putRes = await ytApiFetch(
       "https://www.googleapis.com/youtube/v3/videos?part=snippet,status",
       {
         method: "PUT",
@@ -1258,7 +1259,7 @@ export async function reconcileStudioState(store: StoreData): Promise<{
       url.searchParams.set("key", apiKey);
     }
 
-    const res = await fetch(url.toString(), {
+    const res = await ytApiFetch(url.toString(), {
       headers: accessToken ? { Authorization: `Bearer ${accessToken}` } : {},
       cache: "no-store",
     });
