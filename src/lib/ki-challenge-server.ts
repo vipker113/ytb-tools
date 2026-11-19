@@ -332,13 +332,21 @@ export async function syncSingleKiChallenge(
     const existingSnippet = videoObj.snippet || {};
     const currentYtTitle = String(existingSnippet.title || "").trim();
 
-    // QUOTA-SAFE MILESTONE GATING:
-    // Auto-daemon ONLY calls `videos.update` (50 quota units) when crossing 25%, 50%, 75%, or 100%
-    // (max 4 writes = 200 units across the entire video lifecycle!), unless admin clicks Force Push.
+    // QUOTA-SAFE AUTO TITLE SYNC:
+    // Push `videos.update` (50 quota units out of 10,000/day = up to 200 writes/day) whenever
+    // the rendered title actually changed (e.g. KI increased) and at least 10 minutes have elapsed
+    // since the last YouTube title write (max ~144 writes/day worst-case, ~4,800 units on 15m cron),
+    // or immediately when crossing a 25%/50%/75%/100% milestone or clicking Force Push.
     const crossedNewCheckpoint = reachedMilestone > prevMilestone;
+    const lastWriteMs = item.lastUpdatedYoutubeAt
+      ? Date.parse(item.lastUpdatedYoutubeAt)
+      : 0;
+    const writeCooldownElapsed =
+      !lastWriteMs || Date.now() - lastWriteMs >= 10 * 60_000;
     const shouldPushTitle =
       Boolean(options?.forceUpdateTitle) ||
-      (crossedNewCheckpoint && currentYtTitle !== desiredTitle);
+      (currentYtTitle !== desiredTitle &&
+        (crossedNewCheckpoint || writeCooldownElapsed));
 
     if (shouldPushTitle) {
       const updatedSnippet: Record<string, unknown> = {
