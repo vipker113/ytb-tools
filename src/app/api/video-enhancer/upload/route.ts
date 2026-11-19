@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
     }
 
     const sessionDir = ensureSessionDir(sessionId);
-    const savedVideoPath = path.join(sessionDir, safeFileName);
+    const savedVideoPath = path.join(/*turbopackIgnore: true*/ sessionDir, safeFileName);
 
     const nodeStream = Readable.fromWeb(request.body as unknown as NodeReadableStream);
     const writeStream = fs.createWriteStream(savedVideoPath);

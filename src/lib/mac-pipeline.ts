@@ -535,14 +535,14 @@ export async function findMacEpisodeDirBySlug(
   if (!slug || slug.includes("/") || slug.includes("..")) return null;
   let playlistDirs: string[] = [];
   try {
-    playlistDirs = await readdir(DEFAULT_MAC_OUTPUT_ROOT);
+    playlistDirs = await readdir(/*turbopackIgnore: true*/ DEFAULT_MAC_OUTPUT_ROOT);
   } catch {
     return null;
   }
 
   for (const playlist of playlistDirs) {
     if (playlist.startsWith(".")) continue;
-    const candidateDir = path.join(DEFAULT_MAC_OUTPUT_ROOT, playlist, slug);
+    const candidateDir = path.join(/*turbopackIgnore: true*/ DEFAULT_MAC_OUTPUT_ROOT, playlist, slug);
     const mp4Path = path.join(candidateDir, `${slug}.mp4`);
     if (await fileExists(mp4Path)) {
       return { epDir: candidateDir, playlist };
@@ -632,7 +632,7 @@ export async function listMacRenderedEpisodes(
 ): Promise<MacRenderedEpisode[]> {
   let playlistDirs: string[] = [];
   try {
-    playlistDirs = await readdir(DEFAULT_MAC_OUTPUT_ROOT);
+    playlistDirs = await readdir(/*turbopackIgnore: true*/ DEFAULT_MAC_OUTPUT_ROOT);
   } catch {
     return [];
   }
@@ -647,16 +647,16 @@ export async function listMacRenderedEpisodes(
     playlistDirs
       .filter((p) => !p.startsWith("."))
       .map(async (playlist) => {
-        const playlistPath = path.join(DEFAULT_MAC_OUTPUT_ROOT, playlist);
-        const pStat = await stat(playlistPath).catch(() => null);
+        const playlistPath = path.join(/*turbopackIgnore: true*/ DEFAULT_MAC_OUTPUT_ROOT, playlist);
+        const pStat = await stat(/*turbopackIgnore: true*/ playlistPath).catch(() => null);
         if (!pStat?.isDirectory()) return;
-        const epDirs = await readdir(playlistPath).catch(() => []);
+        const epDirs = await readdir(/*turbopackIgnore: true*/ playlistPath).catch(() => []);
         for (const slug of epDirs) {
           if (slug.startsWith(".")) continue;
           candidateJobs.push({
             playlist,
             slug,
-            epDir: path.join(playlistPath, slug),
+            epDir: path.join(/*turbopackIgnore: true*/ playlistPath, slug),
           });
         }
       })
@@ -725,7 +725,7 @@ export async function listMacRenderedEpisodes(
             Promise.all(
               sheetDefs.map(async (sd) => ({
                 key: sd.key,
-                ok: await fileExists(path.join(epDir, sd.file)),
+                ok: await fileExists(path.join(/*turbopackIgnore: true*/ epDir, sd.file)),
               }))
             ),
             readFile(metaFile, "utf-8").catch(() => ""),
@@ -890,7 +890,7 @@ export async function optimizeThumbnailForYoutube(
   try {
     if (typeof inputPathOrBuffer === "string") {
       srcPath = inputPathOrBuffer;
-      rawBuf = await readFile(srcPath);
+      rawBuf = await readFile(/*turbopackIgnore: true*/ srcPath);
     } else {
       rawBuf = Buffer.from(inputPathOrBuffer);
     }

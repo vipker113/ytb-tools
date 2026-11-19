@@ -139,7 +139,7 @@ export async function getOutlierAnalysisRecord(videoId: string): Promise<{
   if (!OUTLIER_VIDEO_ID_RE.test(videoId)) {
     throw new Error("videoId không hợp lệ (cần đúng 11 ký tự YouTube ID).");
   }
-  const rootResolved = path.resolve(DEFAULT_OUTLIERS_ROOT);
+  const rootResolved = path.resolve(/*turbopackIgnore: true*/ DEFAULT_OUTLIERS_ROOT);
   const videoDir = path.resolve(rootResolved, videoId);
   if (!videoDir.startsWith(rootResolved + path.sep)) {
     throw new Error("Đường dẫn không hợp lệ.");
@@ -204,7 +204,7 @@ export async function enqueueOutlierAnalysisJob(params: {
     return existing;
   }
 
-  const rootResolved = path.resolve(DEFAULT_OUTLIERS_ROOT);
+  const rootResolved = path.resolve(/*turbopackIgnore: true*/ DEFAULT_OUTLIERS_ROOT);
   const videoDir = path.resolve(rootResolved, videoId);
   await mkdir(/*turbopackIgnore: true*/ videoDir, { recursive: true });
   const queuedStatus: OutlierStatusFile = {
@@ -283,7 +283,7 @@ export async function resolveSafeOutlierMediaPath(
   ) {
     return null;
   }
-  const rootResolved = path.resolve(DEFAULT_OUTLIERS_ROOT);
+  const rootResolved = path.resolve(/*turbopackIgnore: true*/ DEFAULT_OUTLIERS_ROOT);
   const videoDir = path.resolve(rootResolved, videoId);
   if (!videoDir.startsWith(rootResolved + path.sep)) {
     return null;

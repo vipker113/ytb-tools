@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   serverExternalPackages: ["ffmpeg-static"],
+  outputFileTracingExcludes: {
+    "/api/**": ["./public/**", "./scripts/**", "./data/**"],
+  },
   turbopack: {
     root: import.meta.dirname,
     rules: {

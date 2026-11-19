@@ -25,7 +25,7 @@ export function resolvePythonBin(): string {
     "python3",
   ];
   for (const c of candidates) {
-    if (c === "python3" || fs.existsSync(c)) {
+    if (c === "python3" || fs.existsSync(/*turbopackIgnore: true*/ c)) {
       return c;
     }
   }
@@ -61,7 +61,7 @@ export function runVideoRemaster(args: string[]): Promise<Record<string, unknown
   const script = path.resolve(process.cwd(), "scripts/reup_video_remaster.py");
 
   return new Promise((resolve, reject) => {
-    const child = spawn(py, [script, ...args], {
+    const child = spawn(/*turbopackIgnore: true*/ py, [script, ...args], {
       env: {
         ...process.env,
         OPENCV_LOG_LEVEL: "OFF",
@@ -114,7 +114,7 @@ export async function runBeautyAnalyzer(args: string[]): Promise<Record<string, 
   const script = resolveAnalyzerScript();
 
   return new Promise((resolve, reject) => {
-    const child = spawn(py, [script, ...args], {
+    const child = spawn(/*turbopackIgnore: true*/ py, [script, ...args], {
       env: {
         ...process.env,
         OPENCV_LOG_LEVEL: "OFF",
