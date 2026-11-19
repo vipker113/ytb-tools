@@ -13,7 +13,7 @@ import {
   Trash2,
 } from "lucide-react";
 import { YoutubeIcon } from "./YoutubeIcon";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { formatNumber } from "@/lib/format";
 import type {
   AppSettings,
@@ -64,6 +64,12 @@ export function SettingsTab({
   const [countryCode, setCountryCode] = useState(
     settings.defaultCountryCode || "VN"
   );
+  const [oauthRedirectUri, setOauthRedirectUri] = useState(
+    "/api/youtube/oauth/callback"
+  );
+  useEffect(() => {
+    setOauthRedirectUri(`${window.location.origin}/api/youtube/oauth/callback`);
+  }, []);
 
   const [testingKey, setTestingKey] = useState(false);
   const [savingSettings, setSavingSettings] = useState(false);
@@ -296,6 +302,14 @@ export function SettingsTab({
                 placeholder="Google OAuth Client Secret (GOCSPX-...)"
                 className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2 text-xs text-white font-mono placeholder:text-zinc-600 focus:border-amber-500 focus:outline-none"
               />
+
+              <p className="text-[11px] text-zinc-400">
+                💡 Nếu muốn bấm đăng nhập OAuth trực tiếp trên tên miền này, hãy thêm{" "}
+                <code className="text-amber-300 select-all">
+                  {oauthRedirectUri}
+                </code>{" "}
+                vào mục <strong>Authorized redirect URIs</strong> của OAuth Client trên Google Cloud Console (nhớ bấm <strong>Lưu cấu hình API</strong> trước khi bấm Cấp quyền).
+              </p>
 
               <div className="flex flex-wrap items-center gap-2">
                 {clientId.trim() && clientSecret.trim() && (

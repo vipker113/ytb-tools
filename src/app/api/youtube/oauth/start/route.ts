@@ -16,6 +16,6 @@ export async function GET(request: Request) {
     );
   }
 
-  const authUrl = buildYoutubeOAuthUrl(clientId);
+  const authUrl = buildYoutubeOAuthUrl(clientId, origin);
   return Response.redirect(authUrl);
 }

@@ -30,6 +30,7 @@ export async function GET(request: Request) {
       code,
       clientId,
       clientSecret,
+      origin,
     });
 
     store.youtubeOAuth = oauthState;

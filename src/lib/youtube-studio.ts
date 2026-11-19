@@ -17,6 +17,14 @@ import { ytApiFetch } from "./youtube-quota";
 export const YOUTUBE_OAUTH_REDIRECT_URI =
   "http://localhost:3000/api/youtube/oauth/callback";
 
+export function resolveYoutubeOAuthRedirectUri(origin?: string): string {
+  const cleanOrigin = (origin || "").trim().replace(/\/+$/, "");
+  if (cleanOrigin) {
+    return `${cleanOrigin}/api/youtube/oauth/callback`;
+  }
+  return YOUTUBE_OAUTH_REDIRECT_URI;
+}
+
 const YOUTUBE_SCOPES = [
   "https://www.googleapis.com/auth/youtube",
   "https://www.googleapis.com/auth/youtube.force-ssl",
@@ -24,10 +32,10 @@ const YOUTUBE_SCOPES = [
   "https://www.googleapis.com/auth/yt-analytics.readonly",
 ].join(" ");
 
-export function buildYoutubeOAuthUrl(clientId: string): string {
+export function buildYoutubeOAuthUrl(clientId: string, origin?: string): string {
   const url = new URL("https://accounts.google.com/o/oauth2/v2/auth");
   url.searchParams.set("client_id", clientId.trim());
-  url.searchParams.set("redirect_uri", YOUTUBE_OAUTH_REDIRECT_URI);
+  url.searchParams.set("redirect_uri", resolveYoutubeOAuthRedirectUri(origin));
   url.searchParams.set("response_type", "code");
   url.searchParams.set("scope", YOUTUBE_SCOPES);
   url.searchParams.set("access_type", "offline");
@@ -39,6 +47,7 @@ export async function exchangeYoutubeAuthCode(params: {
   code: string;
   clientId: string;
   clientSecret: string;
+  origin?: string;
 }): Promise<YoutubeOAuthState> {
   const tokenRes = await fetch("https://oauth2.googleapis.com/token", {
     method: "POST",
@@ -47,7 +56,7 @@ export async function exchangeYoutubeAuthCode(params: {
       code: params.code,
       client_id: params.clientId.trim(),
       client_secret: params.clientSecret.trim(),
-      redirect_uri: YOUTUBE_OAUTH_REDIRECT_URI,
+      redirect_uri: resolveYoutubeOAuthRedirectUri(params.origin),
       grant_type: "authorization_code",
     }),
     cache: "no-store",
