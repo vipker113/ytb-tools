@@ -24,9 +24,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="vi"
+      suppressHydrationWarning
       className={`${jakartaSans.variable} ${jetbrainsMono.variable} dark h-full antialiased`}
     >
-      <body className="min-h-full bg-zinc-950 text-zinc-100 font-sans">
+      <body
+        suppressHydrationWarning
+        className="min-h-full bg-zinc-950 text-zinc-100 font-sans"
+      >
         {children}
       </body>
     </html>

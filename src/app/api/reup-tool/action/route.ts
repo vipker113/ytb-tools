@@ -458,9 +458,8 @@ Return ONLY valid JSON with exact keys:
 }`;
 
       const visionModels = [
+        "gemini-4-hydrogen",
         "gemini-3-flash-preview",
-        "gemini-3.6-flash",
-        "gemini-3.5-flash",
       ];
 
       for (const model of visionModels) {
@@ -551,6 +550,7 @@ Return ONLY valid JSON with exact keys:
               seo: {
                 titles: cleanedTitles,
                 description: String(parsed.description || fallbackPkg.description),
+                pinnedComment: fallbackPkg.pinnedComment,
                 hashtags: hashtagsOut,
                 studioTags: fitted,
                 studioTagsCsv: csv,

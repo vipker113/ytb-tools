@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   serverExternalPackages: ["ffmpeg-static"],
   turbopack: {
+    root: import.meta.dirname,
     rules: {
       "*.css": {
         loaders: ["@tailwindcss/turbopack"],

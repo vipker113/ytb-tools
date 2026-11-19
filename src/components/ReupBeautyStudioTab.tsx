@@ -812,6 +812,9 @@ export function ReupBeautyStudioTab({
       `=== MÔ TẢ VIDEO (DESCRIPTION) ===`,
       activeSeo.description,
       ``,
+      `=== BÌNH LUẬN GHIM (PINNED COMMENT) ===`,
+      activeSeo.pinnedComment,
+      ``,
       `=== HASHTAGS ===`,
       activeSeo.hashtags.join(" "),
       ``,
@@ -2310,6 +2313,36 @@ export function ReupBeautyStudioTab({
             <pre className="whitespace-pre-wrap rounded-lg bg-zinc-900/90 p-2.5 text-[11px] text-zinc-300 font-sans leading-relaxed border border-zinc-800/80 max-h-40 overflow-y-auto">
               {activeSeo.description}
             </pre>
+          </div>
+
+          {/* Pinned Comment Card */}
+          <div className="rounded-xl border border-amber-500/30 bg-zinc-950/85 p-3.5 space-y-2">
+            <div className="flex items-center justify-between gap-2">
+              <span className="text-xs font-extrabold text-amber-300">
+                📌 Bình Luận Ghim (Kéo Follow & Gợi Ý Chủ Đề)
+              </span>
+              <button
+                type="button"
+                onClick={() =>
+                  markCopied(
+                    "pinned_comment",
+                    activeSeo.pinnedComment,
+                    "Bình luận ghim"
+                  )
+                }
+                className="inline-flex items-center gap-1 rounded-lg border border-amber-500/40 bg-amber-500/15 hover:bg-amber-500/25 px-2.5 py-1 text-[11px] font-bold text-amber-200 cursor-pointer"
+              >
+                {copiedKey === "pinned_comment" ? (
+                  <Check className="h-3 w-3 text-emerald-400" />
+                ) : (
+                  <Copy className="h-3 w-3" />
+                )}
+                Copy Bình Luận Ghim
+              </button>
+            </div>
+            <p className="rounded-lg bg-zinc-900/90 p-2.5 text-xs text-zinc-200 leading-relaxed border border-zinc-800/80">
+              {activeSeo.pinnedComment}
+            </p>
           </div>
 
           {/* Save Complete Bundle Button */}

@@ -52,7 +52,9 @@ export function SettingsTab({
   const [geminiKey, setGeminiKey] = useState(settings.geminiApiKey || "");
   const [geminiModel, setGeminiModel] = useState(() => {
     const m = settings.geminiModel || "";
-    if (!m || m.startsWith("gemini-2.5")) return "gemini-3.6-flash";
+    if (!m || m.startsWith("gemini-2.5") || m === "gemini-3.6-flash" || m === "gemini-3.5-flash") {
+      return "gemini-4-hydrogen";
+    }
     return m;
   });
   const [clientId, setClientId] = useState(settings.googleClientId || "");
@@ -226,11 +228,8 @@ export function SettingsTab({
                 onChange={(e) => setGeminiModel(e.target.value)}
                 className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2.5 text-sm text-zinc-200 focus:outline-none"
               >
-                <option value="gemini-3.6-flash">
-                  Gemini 3.6 Flash (Khuyên dùng • Miễn phí 0₫ • Thế hệ mới nhất ~1.5s)
-                </option>
-                <option value="gemini-3.5-flash">
-                  Gemini 3.5 Flash (Miễn phí 0₫ • Siêu tốc ~1.0s)
+                <option value="gemini-4-hydrogen">
+                  Gemini 4 Hydrogen (Khuyên dùng • Thế hệ mới nhất thay thế 3.6 Flash)
                 </option>
                 <option value="gemini-3-flash-preview">
                   Gemini 3 Flash Preview (Miễn phí 0₫ • Ổn định)
@@ -243,8 +242,7 @@ export function SettingsTab({
                 </option>
               </select>
               <p className="mt-1.5 text-[11px] text-zinc-400 leading-relaxed">
-                💡 Gói <strong className="text-emerald-400">Free Tier (0₫)</strong> của Google AI Studio mở tối đa đến{" "}
-                <strong className="text-white">Gemini 3.6 Flash</strong> (các dòng Pro / Argon bị Google giới hạn quota = 0 nếu chưa gắn thẻ Billing; nếu chọn Pro khi dùng key Free, hệ thống sẽ tự động dự phòng mượt sang Gemini 3.6 Flash).
+                💡 <strong className="text-white">Gemini 4 Hydrogen</strong> là model kế nhiệm chính thức thay thế Gemini 3.6 Flash. Nếu key Free Tier chưa hỗ trợ, hệ thống sẽ tự động dự phòng mượt sang <strong className="text-emerald-400">Gemini 3 Flash Preview</strong>.
               </p>
             </div>
 

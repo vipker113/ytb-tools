@@ -391,7 +391,7 @@ export const INITIAL_DEMO_STORE: StoreData = {
   settings: {
     youtubeApiKey: "",
     geminiApiKey: "",
-    geminiModel: "gemini-3.6-flash",
+    geminiModel: "gemini-4-hydrogen",
     defaultCountryCode: "US",
     defaultLanguage: "en",
   },

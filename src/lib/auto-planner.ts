@@ -351,7 +351,7 @@ Return pure JSON matching:
 }`;
 
     const models = options?.fastMode
-      ? ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-3-flash-preview"]
+      ? ["gemini-4-hydrogen", "gemini-3-flash-preview"]
       : buildGeminiModelChain(store.settings.geminiModel);
     for (const model of models) {
       try {

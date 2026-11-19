@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "src/app/api/schedules/ki-sync/route.ts": {
+      "experimentalTriggers": [{ "type": "schedule/v1beta" }]
+    }
+  },
+  "schedules": {
+    "ki-challenge-sync": {
+      "schedule": "*/5 * * * *",
+      "function": "api/schedules/ki-sync"
+    }
+  }
+}

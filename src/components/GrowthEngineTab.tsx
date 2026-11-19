@@ -38,7 +38,7 @@ const SCIENCE_POWER_TOPICS = [
 
 export function GrowthEngineTab({
   channel,
-  defaultModel = "gemini-3.6-flash",
+  defaultModel = "gemini-4-hydrogen",
   initialTopic,
   onSaveBlueprintAsIdea,
 }: GrowthEngineTabProps) {
@@ -49,7 +49,7 @@ export function GrowthEngineTab({
     initialTopic?.sourceTitle || ""
   );
   const [selectedModel, setSelectedModel] = useState<string>(
-    defaultModel || "gemini-3.6-flash"
+    defaultModel || "gemini-4-hydrogen"
   );
   const [generating, setGenerating] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
@@ -219,20 +219,17 @@ Hãy tải tư liệu thực tế chuẩn NASA/NOAA/CC-BY, chạy đủ 11 cổn
             onChange={(e) => setSelectedModel(e.target.value)}
             className="rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-3 text-xs sm:text-sm font-medium text-zinc-200 focus:border-red-500 focus:outline-none"
           >
-            <option value="gemini-3.6-flash">
-              Gemini 3.6 Flash (0₫ • Khuyên dùng • Mới nhất)
-            </option>
-            <option value="gemini-3.5-flash">
-              Gemini 3.5 Flash (0₫ • Siêu nhanh ~1s)
+            <option value="gemini-4-hydrogen">
+              Gemini 4 Hydrogen (Khuyên dùng • Mới nhất)
             </option>
             <option value="gemini-3-flash-preview">
               Gemini 3 Flash Preview (0₫ • Ổn định)
             </option>
             <option value="gemini-3.1-pro-preview">
-              Gemini 3.1 Pro (Cần Billing • Tự fallback 3.6 Flash)
+              Gemini 3.1 Pro (Cần Billing • Tự fallback Hydrogen)
             </option>
             <option value="gemini-4-argon">
-              Gemini 4 Argon (Cần Billing • Tự fallback 3.6 Flash)
+              Gemini 4 Argon (Cần Billing • Tự fallback Hydrogen)
             </option>
           </select>
 

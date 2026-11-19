@@ -34,6 +34,7 @@ export interface ReupSeoInput {
 export interface ReupSeoPackage {
   titles: string[];
   description: string;
+  pinnedComment: string;
   hashtags: string[];
   studioTags: string[];
   studioTagsCsv: string;
@@ -1198,9 +1199,36 @@ export function generateLocalReupSeoPackage(input: ReupSeoInput): ReupSeoPackage
           hashtags.join(" "),
         ].join("\n");
 
+  const pinnedCommentVariants: Record<ReupLanguageMode, string[]> = {
+    vi: [
+      "Bạn còn yêu thích nhân vật nào khác không? 💖 Hãy nhấn Follow / Đăng ký kênh và comment cho mình biết về chủ đề tiếp theo bạn mong muốn nhé! 👇✨",
+      "Ngoài nhân vật này ra bạn còn thích ai nữa không? 🌸 Nhấn Follow và bình luận bên dưới chủ đề tiếp theo bạn muốn mình lên clip nhé! 💬💖",
+    ],
+    en: [
+      "Do you have another favorite character or idol? 💖 Hit Follow / Subscribe and comment below to let me know what topic you want to see next! 👇✨",
+      "Who else do you love watching? 🌸 Hit Subscribe & drop a comment with the next character or topic you want me to post! 💬💖",
+    ],
+    vi_en: [
+      "Bạn còn yêu thích nhân vật khác không? 💖 Hit Follow / Subscribe & comment below what topic or character you want to see next! 👇✨",
+      "Ai là nhân vật bạn muốn xem ở clip tới? 🌸 Nhấn Subscribe và comment chủ đề tiếp theo bạn mong muốn nhé! 💬💖",
+    ],
+    ko: [
+      "다른 좋아하는 캐릭터나 최애가 있나요? 💖 팔로우 / 구독 누르고 다음에 보고 싶은 주제를 댓글로 알려주세요! 👇✨",
+    ],
+    zh: [
+      "你还有其他喜欢的角色或人物吗？💖 欢迎点击关注/订阅，并在评论区告诉我你下一个想看的主题吧！👇✨",
+    ],
+    ja: [
+      "他に好きなキャラクターや推しはいますか？💖 ぜひフォロー＆チャンネル登録して、次に見てみたいテーマをコメントで教えてね！👇✨",
+    ],
+  };
+  const pinnedList = pinnedCommentVariants[lang];
+  const pinnedComment = pinnedList[seed % pinnedList.length];
+
   return {
     titles,
     description,
+    pinnedComment,
     hashtags,
     studioTags,
     studioTagsCsv,

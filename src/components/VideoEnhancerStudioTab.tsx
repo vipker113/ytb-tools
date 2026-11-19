@@ -371,23 +371,33 @@ export function VideoEnhancerStudioTab({ onNotify }: VideoEnhancerStudioTabProps
           method: "POST",
           body: file,
         });
-        const json = await res.json();
+        const rawText = await res.text();
+        let json: Record<string, unknown> = {};
+        try {
+          json = rawText ? JSON.parse(rawText) : {};
+        } catch {
+          throw new Error(`Server trả về HTTP ${res.status} (không phải JSON).`);
+        }
         if (!res.ok || !json.ok) {
-          onNotify(json.error || "Không thể đọc file video");
+          onNotify(String(json.error || `Không thể đọc file video (HTTP ${res.status})`));
           return;
         }
         skipNextAutoPreviewRef.current = true;
-        setSessionId(json.sessionId);
-        setVideoPath(json.videoPath);
-        setFileName(json.originalName || file.name);
+        setSessionId(String(json.sessionId || ""));
+        setVideoPath(String(json.videoPath || ""));
+        setFileName(String(json.originalName || file.name));
         const info = json.videoInfo as ProbedVideoInfo;
         setVideoInfo(info);
         setPreviewTimestamp(info.recommended_ts ?? 1.0);
         setPreviewResult(json.preview as PreviewFrameResult);
         setSplitPct(50);
         onNotify("✨ Đã phân tích video & ép chuẩn xem thử màn hình Shorts 9:16!");
-      } catch {
-        onNotify("Lỗi tải video lên bộ xử lý.");
+      } catch (err) {
+        onNotify(
+          err instanceof Error && err.message
+            ? `Lỗi tải video: ${err.message}`
+            : "Lỗi tải video lên bộ xử lý."
+        );
       } finally {
         setUploading(false);
       }

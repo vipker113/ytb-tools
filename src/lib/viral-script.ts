@@ -1,6 +1,6 @@
 import type { VideoItem } from "./types";
 
-export const DEFAULT_GEMINI_MODEL = "gemini-3.6-flash";
+export const DEFAULT_GEMINI_MODEL = "gemini-4-hydrogen";
 
 export function normalizePreferredGeminiModel(raw?: string): string {
   const clean = (raw || "").trim();
@@ -8,7 +8,9 @@ export function normalizePreferredGeminiModel(raw?: string): string {
     !clean ||
     clean === "gemini-2.5-flash" ||
     clean === "gemini-2.5-pro" ||
-    clean === "gemini-2.5-flash-lite"
+    clean === "gemini-2.5-flash-lite" ||
+    clean === "gemini-3.6-flash" ||
+    clean === "gemini-3.5-flash"
   ) {
     return DEFAULT_GEMINI_MODEL;
   }
@@ -20,8 +22,7 @@ export function buildGeminiModelChain(preferredRaw?: string): string[] {
   return Array.from(
     new Set([
       preferred,
-      "gemini-3.6-flash",
-      "gemini-3.5-flash",
+      "gemini-4-hydrogen",
       "gemini-3-flash-preview",
     ])
   );

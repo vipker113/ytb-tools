@@ -36,7 +36,11 @@ yarn-error.log*
 # local persistent database (contains personal API keys & channel snapshots)
 /data/
 /public/generated-videos/
+/public/ki-challenge/custom/
+/public/ki-challenge/custom-audio/
 /mac-setup-package/
+__pycache__/
+*.pyc
 
 # vercel
 .vercel

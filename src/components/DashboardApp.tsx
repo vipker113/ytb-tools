@@ -5,6 +5,7 @@ import {
   Camera,
   ChevronDown,
   Film,
+  Flame,
   Lightbulb,
   Menu,
   PanelLeftClose,
@@ -20,6 +21,7 @@ import { formatCompact } from "@/lib/format";
 import type { AppSettings, SavedIdea, StoreData } from "@/lib/types";
 import { AnalyticsStudioTab } from "./AnalyticsStudioTab";
 import { IdeasAndCompetitorsTab } from "./IdeasAndCompetitorsTab";
+import { KiChallengeStudioTab } from "./KiChallengeStudioTab";
 import { MacStudioReviewTab } from "./MacStudioReviewTab";
 import { ReupBeautyStudioTab } from "./ReupBeautyStudioTab";
 import { SettingsTab } from "./SettingsTab";
@@ -28,6 +30,7 @@ import { YoutubeIcon } from "./YoutubeIcon";
 
 type ActiveTab =
   | "mac_review"
+  | "ki_challenge"
   | "video_enhancer"
   | "reup_beauty"
   | "analytics"
@@ -147,6 +150,12 @@ export function DashboardApp() {
               requestedTab === "video_enhancer"
             ) {
               setActiveTab("video_enhancer");
+            } else if (
+              requestedTab === "ki" ||
+              requestedTab === "goku" ||
+              requestedTab === "ki_challenge"
+            ) {
+              setActiveTab("ki_challenge");
             }
             const oauthStatus = params.get("oauth");
             if (oauthStatus === "connected") {
@@ -165,6 +174,7 @@ export function DashboardApp() {
           if (!autoTriggeredRef.current && data.autoSyncOnOpen !== false) {
             autoTriggeredRef.current = true;
             void runAutopilot("autoIfStale");
+            void fetch("/api/ki-challenge", { cache: "no-store" }).catch(() => {});
           }
         }
       })
@@ -273,6 +283,13 @@ export function DashboardApp() {
       icon: Film,
     },
     {
+      id: "ki_challenge",
+      label: "Thử Thách KI Tiến Hóa",
+      subtitle: "Video Idle & Auto-KI Tiêu Đề",
+      badge: "LIVE KI",
+      icon: Flame,
+    },
+    {
       id: "video_enhancer",
       label: "Nâng Cấp Video AI / 4K",
       subtitle: "Real-ESRGAN GPU, Nét Mặt & 60FPS",
@@ -322,10 +339,11 @@ export function DashboardApp() {
     : "";
   const smartClicks = cleanHandle ? store.smartLinkClicks[cleanHandle] || 0 : 0;
 
-  const rawModel = store.settings.geminiModel || "gemini-3.6-flash";
-  const displayModel = rawModel.startsWith("gemini-2.5")
-    ? "gemini-3.6-flash"
-    : rawModel;
+  const rawModel = store.settings.geminiModel || "gemini-4-hydrogen";
+  const displayModel =
+    rawModel.startsWith("gemini-2.5") || rawModel === "gemini-3.6-flash"
+      ? "gemini-4-hydrogen"
+      : rawModel;
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 flex">
@@ -688,6 +706,19 @@ export function DashboardApp() {
                     setKeywordSeedForIdeas(kw);
                     setActiveTab("ideas");
                   }}
+                  onNotify={showToast}
+                />
+              )}
+
+              {/* TAB #1-KI: INTERACTIVE ANIME KI POWER EVOLUTION & AUTO-TITLE UPDATER */}
+              {activeTab === "ki_challenge" && (
+                <KiChallengeStudioTab
+                  hasYoutubeOAuth={Boolean(store.youtubeOAuth?.refreshToken)}
+                  connectedChannelLabel={
+                    store.youtubeOAuth?.connectedChannelHandle ||
+                    store.youtubeOAuth?.connectedChannelTitle
+                  }
+                  onGoToSettings={() => setActiveTab("settings")}
                   onNotify={showToast}
                 />
               )}

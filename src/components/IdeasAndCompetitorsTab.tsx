@@ -78,7 +78,7 @@ function buildAntigravityBriefPrompt(params: {
 export function IdeasAndCompetitorsTab({
   channel,
   ideas,
-  defaultGeminiModel = "gemini-3.6-flash",
+  defaultGeminiModel = "gemini-4-hydrogen",
   initialSubView = "ai_backlog",
   initialKeywordQuery,
   onConsumeInitialKeyword,

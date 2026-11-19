@@ -294,17 +294,27 @@ async function fetchChannelVideosFromUploads(
     return { videos: [], avgViews: 0, medianViews: 0, avgEngagement: 0 };
   }
 
-  const plRes = await ytFetch<{
-    items?: Array<{ contentDetails?: { videoId?: string } }>;
-  }>(
-    "playlistItems",
-    {
-      part: "contentDetails",
-      playlistId: uploadsId,
-      maxResults: String(maxResults),
-    },
-    apiKey
-  );
+  let plRes: { items?: Array<{ contentDetails?: { videoId?: string } }> };
+  try {
+    plRes = await ytFetch<{
+      items?: Array<{ contentDetails?: { videoId?: string } }>;
+    }>(
+      "playlistItems",
+      {
+        part: "contentDetails",
+        playlistId: uploadsId,
+        maxResults: String(maxResults),
+      },
+      apiKey
+    );
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : "";
+    if (/playlistId|playlistNotFound|cannot be found/i.test(msg)) {
+      // Brand-new channel with 0 public videos doesn't have an active uploads playlist yet
+      return { videos: [], avgViews: 0, medianViews: 0, avgEngagement: 0 };
+    }
+    throw err;
+  }
 
   const videoIds = (plRes.items || [])
     .map((item) => item.contentDetails?.videoId)

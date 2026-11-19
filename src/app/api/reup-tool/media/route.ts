@@ -23,6 +23,28 @@ function getMimeType(filePath: string): string {
   return "application/octet-stream";
 }
 
+function buildContentDisposition(downloadName: string): string {
+  const cleanDl = path.basename(downloadName).replace(/[\r\n]/g, "").trim() || "download";
+  // HTTP headers require ByteString (ISO-8859-1); sanitize ASCII fallback & encode UTF-8 per RFC 5987
+  const asciiFallback =
+    cleanDl
+      .normalize("NFKD")
+      .replace(/[^\x20-\x7E]/g, "_")
+      .replace(/["\\;]/g, "_")
+      .replace(/_+/g, "_")
+      .replace(/^_+|_+$/g, "") || "download";
+  const ext = path.extname(cleanDl);
+  const safeAscii =
+    ext && !asciiFallback.endsWith(ext) && /^[\x20-\x7E]+$/.test(ext)
+      ? `${asciiFallback}${ext}`
+      : asciiFallback;
+  const utf8Encoded = encodeURIComponent(cleanDl).replace(
+    /['()*]/g,
+    (c) => `%${c.charCodeAt(0).toString(16).toUpperCase()}`
+  );
+  return `attachment; filename="${safeAscii}"; filename*=UTF-8''${utf8Encoded}`;
+}
+
 function streamFileWithRange(
   absPath: string,
   request: NextRequest,
@@ -34,8 +56,7 @@ function streamFileWithRange(
 
   const extraHeaders: Record<string, string> = {};
   if (downloadName) {
-    const cleanDl = path.basename(downloadName).replace(/["\r\n]/g, "");
-    extraHeaders["Content-Disposition"] = `attachment; filename="${cleanDl}"`;
+    extraHeaders["Content-Disposition"] = buildContentDisposition(downloadName);
   }
 
   const range = request.headers.get("range");
@@ -111,8 +132,7 @@ export async function GET(request: NextRequest) {
       "Cache-Control": "no-store",
     };
     if (downloadName) {
-      const cleanDl = path.basename(downloadName).replace(/["\r\n]/g, "");
-      headers["Content-Disposition"] = `attachment; filename="${cleanDl}"`;
+      headers["Content-Disposition"] = buildContentDisposition(downloadName);
     }
 
     return new Response(buf, { status: 200, headers });
