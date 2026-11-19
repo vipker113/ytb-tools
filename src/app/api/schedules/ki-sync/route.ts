@@ -4,7 +4,7 @@ import { runAllDueKiChallengesSync } from "@/lib/ki-challenge-server";
 export const maxDuration = 60;
 
 export const POST = handleSchedule(async (metadata) => {
-  const result = await runAllDueKiChallengesSync({ forceAll: false });
+  const result = await runAllDueKiChallengesSync({ forceAll: true });
   console.log(
     `[ki-challenge-sync] ${metadata.name} exec=${metadata.executionId} checked=${result.checked} synced=${result.synced} errors=${result.errors.length}`
   );
