@@ -1,0 +1,679 @@
+1
+00:00:00,000 --> 00:00:03,000
+Every Sunday evening, around seven or eight o'clock,
+
+2
+00:00:03,460 --> 00:00:07,140
+a strange feeling quietly settles into millions of living rooms.
+
+3
+00:00:07,780 --> 00:00:09,180
+You are still off work.
+
+4
+00:00:09,660 --> 00:00:12,780
+You are sitting on your couch, nobody is asking for a spreadsheet,
+
+5
+00:00:13,440 --> 00:00:16,340
+and yet, your chest tightens just a little bit
+
+6
+00:00:17,000 --> 00:00:18,180
+because tomorrow is Monday.
+
+7
+00:00:19,160 --> 00:00:22,440
+And Monday means five straight days of trading your waking hours
+
+8
+00:00:22,440 --> 00:00:24,360
+for two days left over at the end.
+
+9
+00:00:25,140 --> 00:00:28,040
+Ah, five days on, two days off.
+
+10
+00:00:28,580 --> 00:00:30,740
+Most of us treat it like a law of nature,
+
+11
+00:00:31,140 --> 00:00:34,120
+like seven days in a week or 24 hours in a day.
+
+12
+00:00:34,680 --> 00:00:36,760
+And if you ask people why we do it this way,
+
+13
+00:00:37,080 --> 00:00:38,800
+they usually tell you the same story.
+
+14
+00:00:39,380 --> 00:00:42,220
+They say life used to be an endless, brutal grind
+
+15
+00:00:42,800 --> 00:00:46,160
+that our ancestors worked from sunrise to sunset every day
+
+16
+00:00:46,160 --> 00:00:46,980
+just to survive,
+
+17
+00:00:47,520 --> 00:00:50,680
+and that the five-day work week is the pinnacle of modern progress.
+
+18
+00:00:51,560 --> 00:00:53,520
+That is the official story.
+
+19
+00:00:53,960 --> 00:00:55,980
+There is just one problem with it.
+
+20
+00:00:56,540 --> 00:00:58,480
+When historians opened the tax ledgers,
+
+21
+00:00:58,500 --> 00:01:00,400
+parish calendars, and court records
+
+22
+00:01:00,400 --> 00:01:01,860
+of the pre-industrial world,
+
+23
+00:01:02,460 --> 00:01:04,060
+they found the exact opposite.
+
+24
+00:01:04,920 --> 00:01:07,920
+In 1991, Harvard economist Juliet Shor
+
+25
+00:01:07,920 --> 00:01:10,980
+examined the work records of 14th century English peasants.
+
+26
+00:01:11,760 --> 00:01:13,760
+These were people living under feudal lords
+
+27
+00:01:13,760 --> 00:01:17,360
+with no tractors, no electricity, and no labor laws.
+
+28
+00:01:18,060 --> 00:01:19,700
+And yet, in a typical year,
+
+29
+00:01:20,040 --> 00:01:23,220
+a medieval peasant worked roughly 150 days,
+
+30
+00:01:23,940 --> 00:01:27,660
+not 260 days like a modern office worker, 150.
+
+31
+00:01:29,200 --> 00:01:31,300
+Between winter lulls, harvest pauses,
+
+32
+00:01:31,800 --> 00:01:33,640
+and over 100 parish feast days,
+
+33
+00:01:34,020 --> 00:01:36,360
+medieval laborers spent nearly half the year
+
+34
+00:01:36,360 --> 00:01:38,140
+not working for their lord at all.
+
+35
+00:01:38,700 --> 00:01:39,600
+Even on work days,
+
+36
+00:01:39,940 --> 00:01:42,180
+the day was broken up by long midday meals,
+
+37
+00:01:42,560 --> 00:01:44,100
+afternoon naps, and ale breaks.
+
+38
+00:01:44,820 --> 00:01:46,880
+So how did a species with power grids,
+
+39
+00:01:47,140 --> 00:01:48,980
+computers, and time-saving machines
+
+40
+00:01:48,980 --> 00:01:51,320
+end up locked inside a stricter schedule
+
+41
+00:01:51,320 --> 00:01:52,960
+than a 14th century peasant?
+
+42
+00:01:53,840 --> 00:01:56,900
+To find out, you have to trace a 300-year war
+
+43
+00:01:56,900 --> 00:01:59,600
+over something you carry in your pocket every day.
+
+44
+00:02:00,260 --> 00:02:00,600
+The clock.
+
+45
+00:02:01,400 --> 00:02:03,040
+For almost all of human history,
+
+46
+00:02:03,380 --> 00:02:05,000
+people did not work by the hour.
+
+47
+00:02:05,480 --> 00:02:06,620
+They worked by the task.
+
+48
+00:02:07,300 --> 00:02:09,140
+If you were a cobbler, a blacksmith,
+
+49
+00:02:09,140 --> 00:02:11,160
+or a weaver in the 1700s,
+
+50
+00:02:11,360 --> 00:02:12,960
+your rhythm was bursts of effort
+
+51
+00:02:12,960 --> 00:02:14,800
+followed by long stretches of rest.
+
+52
+00:02:15,400 --> 00:02:17,080
+You worked hard when an order came in,
+
+53
+00:02:17,260 --> 00:02:18,480
+or when the harvest was ripe.
+
+54
+00:02:18,480 --> 00:02:20,800
+And when the job was done, you stopped.
+
+55
+00:02:21,480 --> 00:02:23,320
+Across England and early America,
+
+56
+00:02:23,680 --> 00:02:25,560
+artisans even had a weekly tradition
+
+57
+00:02:25,560 --> 00:02:27,660
+that drove early business owners crazy.
+
+58
+00:02:28,800 --> 00:02:29,940
+They called it Saint Monday.
+
+59
+00:02:30,960 --> 00:02:33,540
+Sunday was for church, family, and the tavern,
+
+60
+00:02:34,080 --> 00:02:36,580
+which meant Monday was for recovering from Sunday.
+
+61
+00:02:37,340 --> 00:02:39,200
+Workshops stood half empty on Mondays.
+
+62
+00:02:39,860 --> 00:02:41,760
+Many weavers did not touch their looms
+
+63
+00:02:41,760 --> 00:02:42,960
+until Tuesday afternoon,
+
+64
+00:02:43,480 --> 00:02:46,220
+working late on Thursday and Friday to finish their quota.
+
+65
+00:02:46,860 --> 00:02:49,040
+Time belonged to the person doing the work
+
+66
+00:02:49,740 --> 00:02:51,620
+until the steam engine changed the rules.
+
+67
+00:02:52,320 --> 00:02:54,480
+A hand loom can sit quiet on a Monday morning
+
+68
+00:02:54,480 --> 00:02:55,700
+without costing a penny.
+
+69
+00:02:56,300 --> 00:02:58,380
+A massive coal-powered factory cannot.
+
+70
+00:02:59,180 --> 00:03:01,460
+Every hour those iron machines stood cold
+
+71
+00:03:01,460 --> 00:03:03,300
+was money burning in the furnace.
+
+72
+00:03:04,020 --> 00:03:07,100
+As historian E.P. Thompson documented in 1967,
+
+73
+00:03:07,860 --> 00:03:10,900
+the Industrial Revolution was not just a revolution in machines.
+
+74
+00:03:11,740 --> 00:03:13,840
+It was a revolution in human discipline.
+
+75
+00:03:14,640 --> 00:03:17,720
+Factory owners needed human bodies that behaved like gears,
+
+76
+00:03:18,200 --> 00:03:21,300
+showing up at the exact same minute six days a week.
+
+77
+00:03:21,940 --> 00:03:23,360
+In many early textile mills,
+
+78
+00:03:23,760 --> 00:03:26,040
+workers were forbidden from carrying pocket watches.
+
+79
+00:03:26,800 --> 00:03:28,980
+Only the master clock on the factory wall
+
+80
+00:03:28,980 --> 00:03:30,320
+was allowed to tell the time,
+
+81
+00:03:30,740 --> 00:03:33,700
+and mill owners routinely slowed the clock down during the shift,
+
+82
+00:03:34,060 --> 00:03:36,780
+so workers stayed 30 minutes longer without knowing it.
+
+83
+00:03:37,220 --> 00:03:39,620
+Saint Monday was crushed with heavy fines.
+
+84
+00:03:40,560 --> 00:03:42,220
+Parish feast days were wiped off the calendar.
+
+85
+00:03:42,860 --> 00:03:46,200
+By the 1850s, the new normal across Europe and America
+
+86
+00:03:46,200 --> 00:03:49,180
+was six full days a week, 12 hours a day,
+
+87
+00:03:49,460 --> 00:03:51,440
+with only Sunday left to catch your breath.
+
+88
+00:03:52,200 --> 00:03:54,440
+People did not evolve toward working more.
+
+89
+00:03:54,880 --> 00:03:57,960
+They were forced into a six-day cage in a single generation.
+
+90
+00:03:58,880 --> 00:04:02,180
+So how did Saturday finally break free from that six-day cage?
+
+91
+00:04:02,980 --> 00:04:06,320
+Most textbooks give the credit to one man, Henry Ford.
+
+92
+00:04:06,980 --> 00:04:09,060
+On September 25th, 1926,
+
+93
+00:04:09,780 --> 00:04:12,700
+Ford stunned the business world by announcing that his workers
+
+94
+00:04:12,700 --> 00:04:14,940
+would now work only five days a week,
+
+95
+00:04:15,280 --> 00:04:18,540
+Monday through Friday, for the same six-dollar daily pay.
+
+96
+00:04:19,100 --> 00:04:21,960
+On the surface, it looked like extraordinary generosity.
+
+97
+00:04:22,800 --> 00:04:26,500
+The head of U.S. Steel warned that giving workers two whole days off
+
+98
+00:04:26,500 --> 00:04:28,880
+would destroy the moral fabric of America.
+
+99
+00:04:29,700 --> 00:04:31,100
+Wait, stop right there.
+
+100
+00:04:31,760 --> 00:04:35,680
+Henry Ford was one of the most ruthless efficiency obsessives in history.
+
+101
+00:04:35,680 --> 00:04:39,080
+He had a private security force that spied on his workers
+
+102
+00:04:39,080 --> 00:04:41,220
+to make sure they were not slacking off.
+
+103
+00:04:41,740 --> 00:04:44,960
+He did not give away millions of hours of labor out of kindness.
+
+104
+00:04:45,780 --> 00:04:48,920
+He had discovered a fatal math problem at the heart of capitalism.
+
+105
+00:04:49,920 --> 00:04:53,480
+By the mid-1920s, Ford's assembly lines were churning out
+
+106
+00:04:53,480 --> 00:04:55,560
+Model T cars faster than ever.
+
+107
+00:04:56,020 --> 00:04:58,100
+His workers even earned enough to afford one.
+
+108
+00:04:58,580 --> 00:05:00,000
+There was just one catch.
+
+109
+00:05:00,640 --> 00:05:03,960
+Why would a man buy a family car if he worked six days a week,
+
+110
+00:05:03,960 --> 00:05:08,680
+collapsed into bed on Saturday night, and spent his only day off in church on Sunday?
+
+111
+00:05:09,340 --> 00:05:12,860
+A worker who is always working has no time to be a customer.
+
+112
+00:05:13,460 --> 00:05:17,020
+Listen to what Henry Ford told World's Work magazine in 1926,
+
+113
+00:05:17,620 --> 00:05:19,420
+right after announcing the five-day week.
+
+114
+00:05:20,040 --> 00:05:22,600
+People who have more leisure must have more clothes.
+
+115
+00:05:23,260 --> 00:05:25,220
+They must have a greater variety of food.
+
+116
+00:05:25,680 --> 00:05:27,580
+They must have more transportation facilities.
+
+117
+00:05:28,520 --> 00:05:32,480
+This increased consumption will require greater production than we now have.
+
+118
+00:05:33,120 --> 00:05:33,860
+Read that again.
+
+119
+00:05:34,640 --> 00:05:39,320
+Saturday was not given back so you could sit under a tree like an ancient hunter-gatherer.
+
+120
+00:05:39,780 --> 00:05:42,940
+Saturday was invented so you would have time to go shopping.
+
+121
+00:05:43,640 --> 00:05:45,040
+One day for rest on Sunday.
+
+122
+00:05:45,780 --> 00:05:47,600
+One day to spend your paycheck on Saturday.
+
+123
+00:05:48,500 --> 00:05:50,960
+And five days to earn it all back again.
+
+124
+00:05:51,700 --> 00:05:55,020
+And here is the part of the story almost nobody gets taught in school.
+
+125
+00:05:55,560 --> 00:06:00,560
+In the 1930s, nobody believed the five-day 40-hour week was the final destination.
+
+126
+00:06:01,280 --> 00:06:04,340
+Everybody thought it was just a temporary stop on the way down.
+
+127
+00:06:04,920 --> 00:06:10,700
+In 1930, economist John Maynard Keynes calculated that with technology advancing so fast,
+
+128
+00:06:11,080 --> 00:06:16,080
+his grandchildren would only need to work about 15 hours a week — maybe three hours a day.
+
+129
+00:06:16,640 --> 00:06:20,040
+And in April 1933, at the height of the Great Depression,
+
+130
+00:06:20,520 --> 00:06:24,640
+the U.S. Senate actually voted on a bill introduced by Senator Hugo Black.
+
+131
+00:06:25,100 --> 00:06:29,600
+The bill made it illegal for any factory or business to employ someone for more than
+
+132
+00:06:29,620 --> 00:06:33,140
+30 hours a week, six hours a day, five days a week.
+
+133
+00:06:33,680 --> 00:06:37,020
+And it passed the U.S. Senate, 53 to 30.
+
+134
+00:06:37,560 --> 00:06:42,240
+Kellogg's even switched its battle creek plant to six-hour shifts and found that accidents dropped,
+
+135
+00:06:42,580 --> 00:06:46,120
+efficiency rose, and workers had the entire afternoon free.
+
+136
+00:06:46,720 --> 00:06:52,440
+For a few months in 1933, the six-hour workday was on the verge of becoming the law of the land.
+
+137
+00:06:53,120 --> 00:06:55,180
+Then came a wave of corporate lobbying.
+
+138
+00:06:55,740 --> 00:07:00,100
+Business leaders warned President Roosevelt that if workers tasted 30 hours a week,
+
+139
+00:07:00,460 --> 00:07:01,480
+they would never go back.
+
+140
+00:07:02,040 --> 00:07:03,460
+The bill was buried in the house.
+
+141
+00:07:04,040 --> 00:07:10,720
+Five years later, in 1938, the Fair Labor Standards Act locked the counter at 40 hours across five days.
+
+142
+00:07:11,420 --> 00:07:13,540
+And then the clock simply froze.
+
+143
+00:07:14,340 --> 00:07:20,160
+Since 1938, the productivity of an American worker has increased by over 300 percent.
+
+144
+00:07:20,160 --> 00:07:25,880
+A task that took a room of clerks a week in 1940 now takes a spreadsheet four seconds.
+
+145
+00:07:26,520 --> 00:07:29,220
+By every law of math, Keynes should have been right.
+
+146
+00:07:29,700 --> 00:07:31,900
+We should be leaving our desks on Tuesday afternoon.
+
+147
+00:07:32,600 --> 00:07:35,600
+So why are you still sitting there at 501 on a Friday?
+
+148
+00:07:36,360 --> 00:07:41,600
+In 1955, historian Cyril Northcoat Parkinson wrote a famous line in The Economist.
+
+149
+00:07:42,480 --> 00:07:45,740
+Work expands so as to fill the time available for its completion.
+
+150
+00:07:46,460 --> 00:07:49,500
+When society moved from factory floors to office desks,
+
+151
+00:07:50,000 --> 00:07:55,380
+we stopped measuring work by what you produce and kept measuring it by how many days your chair is warm.
+
+152
+00:07:55,920 --> 00:07:58,880
+If a five-hour task is given 40 hours of office time,
+
+153
+00:07:59,240 --> 00:08:03,780
+it grows meetings, reports, and email chains until it takes all 40 hours.
+
+154
+00:08:04,520 --> 00:08:09,180
+Anthropologist David Graber found that millions of office workers admit they could finish their
+
+155
+00:08:09,180 --> 00:08:11,720
+real work in 15 to 20 hours a week.
+
+156
+00:08:12,140 --> 00:08:16,720
+Almost the exact same 17 hours recorded among Kalahari hunter-gatherers.
+
+157
+00:08:17,480 --> 00:08:21,180
+The rest of the week is spent performing the ritual of being busy.
+
+158
+00:08:21,820 --> 00:08:23,460
+And the extra welfare machines created?
+
+159
+00:08:24,060 --> 00:08:26,400
+Instead of trading it for Tuesday and Wednesday off,
+
+160
+00:08:26,760 --> 00:08:29,140
+our economy taught us to trade it for bigger houses,
+
+161
+00:08:29,540 --> 00:08:31,280
+newer phones, and faster subscriptions.
+
+162
+00:08:32,100 --> 00:08:34,440
+Things that require five days of paycheck to maintain.
+
+163
+00:08:35,260 --> 00:08:38,120
+The five-day work week is not an ancient human law.
+
+164
+00:08:38,120 --> 00:08:40,260
+It is barely 90 years old.
+
+165
+00:08:40,800 --> 00:08:42,180
+It was born from steam engines,
+
+166
+00:08:42,200 --> 00:08:45,020
+polished by a carmaker who needed weekend shoppers,
+
+167
+00:08:45,580 --> 00:08:47,180
+and frozen in 1938.
+
+168
+00:08:48,100 --> 00:08:51,940
+Which makes that tightness in your chest on Sunday night look very different.
+
+169
+00:08:52,660 --> 00:08:56,020
+Your body isn't broken for dreading a 40-hour fluorescent box.
+
+170
+00:08:57,100 --> 00:09:01,120
+Your body is just remembering how human time used to work.

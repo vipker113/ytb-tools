@@ -1,0 +1,269 @@
+{
+  "count": 44,
+  "items": [
+    {
+      "id": "01_pop_appear",
+      "file": "01_pop_appear.mp3",
+      "path": "/kairo-stickman/sfx/01_pop_appear.mp3",
+      "durationSec": 0.7
+    },
+    {
+      "id": "02_whoosh_card",
+      "file": "02_whoosh_card.mp3",
+      "path": "/kairo-stickman/sfx/02_whoosh_card.mp3",
+      "durationSec": 0.65
+    },
+    {
+      "id": "03_ding_eureka",
+      "file": "03_ding_eureka.mp3",
+      "path": "/kairo-stickman/sfx/03_ding_eureka.mp3",
+      "durationSec": 2.95
+    },
+    {
+      "id": "04_stamp_red_x",
+      "file": "04_stamp_red_x.mp3",
+      "path": "/kairo-stickman/sfx/04_stamp_red_x.mp3",
+      "durationSec": 1.12
+    },
+    {
+      "id": "05_record_scratch",
+      "file": "05_record_scratch.mp3",
+      "path": "/kairo-stickman/sfx/05_record_scratch.mp3",
+      "durationSec": 0.65
+    },
+    {
+      "id": "06_cash_register",
+      "file": "06_cash_register.mp3",
+      "path": "/kairo-stickman/sfx/06_cash_register.mp3",
+      "durationSec": 1.3
+    },
+    {
+      "id": "07_clock_ticking",
+      "file": "07_clock_ticking.mp3",
+      "path": "/kairo-stickman/sfx/07_clock_ticking.mp3",
+      "durationSec": 5.4
+    },
+    {
+      "id": "08_alarm_buzzer",
+      "file": "08_alarm_buzzer.mp3",
+      "path": "/kairo-stickman/sfx/08_alarm_buzzer.mp3",
+      "durationSec": 7.19
+    },
+    {
+      "id": "09_page_flip",
+      "file": "09_page_flip.mp3",
+      "path": "/kairo-stickman/sfx/09_page_flip.mp3",
+      "durationSec": 0.39
+    },
+    {
+      "id": "10_keyboard_type",
+      "file": "10_keyboard_type.mp3",
+      "path": "/kairo-stickman/sfx/10_keyboard_type.mp3",
+      "durationSec": 10.06
+    },
+    {
+      "id": "11_pencil_write",
+      "file": "11_pencil_write.mp3",
+      "path": "/kairo-stickman/sfx/11_pencil_write.mp3",
+      "durationSec": 6.64
+    },
+    {
+      "id": "12_dramatic_dun",
+      "file": "12_dramatic_dun.mp3",
+      "path": "/kairo-stickman/sfx/12_dramatic_dun.mp3",
+      "durationSec": 5.12
+    },
+    {
+      "id": "13_campfire_crackle",
+      "file": "13_campfire_crackle.mp3",
+      "path": "/kairo-stickman/sfx/13_campfire_crackle.mp3",
+      "durationSec": 11.38
+    },
+    {
+      "id": "14_swoosh_fast",
+      "file": "14_swoosh_fast.mp3",
+      "path": "/kairo-stickman/sfx/14_swoosh_fast.mp3",
+      "durationSec": 0.36
+    },
+    {
+      "id": "15_stamp_thud",
+      "file": "15_stamp_thud.mp3",
+      "path": "/kairo-stickman/sfx/15_stamp_thud.mp3",
+      "durationSec": 1.53
+    },
+    {
+      "id": "16_correct_chime",
+      "file": "16_correct_chime.mp3",
+      "path": "/kairo-stickman/sfx/16_correct_chime.mp3",
+      "durationSec": 1.27
+    },
+    {
+      "id": "17_camera_shutter",
+      "file": "17_camera_shutter.mp3",
+      "path": "/kairo-stickman/sfx/17_camera_shutter.mp3",
+      "durationSec": 0.88
+    },
+    {
+      "id": "18_paper_crumple",
+      "file": "18_paper_crumple.mp3",
+      "path": "/kairo-stickman/sfx/18_paper_crumple.mp3",
+      "durationSec": 7.66
+    },
+    {
+      "id": "19_typewriter_ding",
+      "file": "19_typewriter_ding.mp3",
+      "path": "/kairo-stickman/sfx/19_typewriter_ding.mp3",
+      "durationSec": 4.27
+    },
+    {
+      "id": "20_chalk_draw",
+      "file": "20_chalk_draw.mp3",
+      "path": "/kairo-stickman/sfx/20_chalk_draw.mp3",
+      "durationSec": 5.67
+    },
+    {
+      "id": "21_book_close",
+      "file": "21_book_close.mp3",
+      "path": "/kairo-stickman/sfx/21_book_close.mp3",
+      "durationSec": 0.76
+    },
+    {
+      "id": "22_mouse_click",
+      "file": "22_mouse_click.mp3",
+      "path": "/kairo-stickman/sfx/22_mouse_click.mp3",
+      "durationSec": 3.07
+    },
+    {
+      "id": "23_phone_vibrate",
+      "file": "23_phone_vibrate.mp3",
+      "path": "/kairo-stickman/sfx/23_phone_vibrate.mp3",
+      "durationSec": 12.72
+    },
+    {
+      "id": "24_coffee_pour",
+      "file": "24_coffee_pour.mp3",
+      "path": "/kairo-stickman/sfx/24_coffee_pour.mp3",
+      "durationSec": 1.69
+    },
+    {
+      "id": "25_factory_whistle",
+      "file": "25_factory_whistle.mp3",
+      "path": "/kairo-stickman/sfx/25_factory_whistle.mp3",
+      "durationSec": 7.11
+    },
+    {
+      "id": "26_sigh_exhausted",
+      "file": "26_sigh_exhausted.mp3",
+      "path": "/kairo-stickman/sfx/26_sigh_exhausted.mp3",
+      "durationSec": 1.27
+    },
+    {
+      "id": "27_yawn_tired",
+      "file": "27_yawn_tired.mp3",
+      "path": "/kairo-stickman/sfx/27_yawn_tired.mp3",
+      "durationSec": 2.35
+    },
+    {
+      "id": "28_rain_thunder",
+      "file": "28_rain_thunder.mp3",
+      "path": "/kairo-stickman/sfx/28_rain_thunder.mp3",
+      "durationSec": 5.0
+    },
+    {
+      "id": "29_wind_desert",
+      "file": "29_wind_desert.mp3",
+      "path": "/kairo-stickman/sfx/29_wind_desert.mp3",
+      "durationSec": 5.42
+    },
+    {
+      "id": "30_crickets_night",
+      "file": "30_crickets_night.mp3",
+      "path": "/kairo-stickman/sfx/30_crickets_night.mp3",
+      "durationSec": 4.23
+    },
+    {
+      "id": "31_rooster_morning",
+      "file": "31_rooster_morning.mp3",
+      "path": "/kairo-stickman/sfx/31_rooster_morning.mp3",
+      "durationSec": 3.68
+    },
+    {
+      "id": "32_footsteps",
+      "file": "32_footsteps.mp3",
+      "path": "/kairo-stickman/sfx/32_footsteps.mp3",
+      "durationSec": 4.64
+    },
+    {
+      "id": "33_heartbeat",
+      "file": "33_heartbeat.mp3",
+      "path": "/kairo-stickman/sfx/33_heartbeat.mp3",
+      "durationSec": 31.76
+    },
+    {
+      "id": "34_bass_drop",
+      "file": "34_bass_drop.mp3",
+      "path": "/kairo-stickman/sfx/34_bass_drop.mp3",
+      "durationSec": 1.25
+    },
+    {
+      "id": "35_electric_spark",
+      "file": "35_electric_spark.mp3",
+      "path": "/kairo-stickman/sfx/35_electric_spark.mp3",
+      "durationSec": 3.02
+    },
+    {
+      "id": "36_drum_roll",
+      "file": "36_drum_roll.mp3",
+      "path": "/kairo-stickman/sfx/36_drum_roll.mp3",
+      "durationSec": 4.16
+    },
+    {
+      "id": "37_sad_trombone",
+      "file": "37_sad_trombone.mp3",
+      "path": "/kairo-stickman/sfx/37_sad_trombone.mp3",
+      "durationSec": 3.63
+    },
+    {
+      "id": "38_crowd_gasp",
+      "file": "38_crowd_gasp.mp3",
+      "path": "/kairo-stickman/sfx/38_crowd_gasp.mp3",
+      "durationSec": 1.03
+    },
+    {
+      "id": "39_mystery_chime",
+      "file": "39_mystery_chime.mp3",
+      "path": "/kairo-stickman/sfx/39_mystery_chime.mp3",
+      "durationSec": 4.99
+    },
+    {
+      "id": "40_tape_rewind",
+      "file": "40_tape_rewind.mp3",
+      "path": "/kairo-stickman/sfx/40_tape_rewind.mp3",
+      "durationSec": 2.76
+    },
+    {
+      "id": "41_church_bell",
+      "file": "41_church_bell.mp3",
+      "path": "/kairo-stickman/sfx/41_church_bell.mp3",
+      "durationSec": 3.47
+    },
+    {
+      "id": "42_steam_engine",
+      "file": "42_steam_engine.mp3",
+      "path": "/kairo-stickman/sfx/42_steam_engine.mp3",
+      "durationSec": 3.65
+    },
+    {
+      "id": "43_car_horn",
+      "file": "43_car_horn.mp3",
+      "path": "/kairo-stickman/sfx/43_car_horn.mp3",
+      "durationSec": 1.1
+    },
+    {
+      "id": "44_gavel_hit",
+      "file": "44_gavel_hit.mp3",
+      "path": "/kairo-stickman/sfx/44_gavel_hit.mp3",
+      "durationSec": 2.44
+    }
+  ]
+}

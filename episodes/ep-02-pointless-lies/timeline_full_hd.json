@@ -1,0 +1,1780 @@
+{
+  "total_duration": 476.8,
+  "act_starts": {
+    "ACT_1": 0.0,
+    "ACT_2": 63.94,
+    "ACT_3": 136.9,
+    "ACT_4": 211.06,
+    "ACT_5": 290.91,
+    "ACT_6": 333.74,
+    "ACT_7": 401.99
+  },
+  "sfx_events": [
+    [
+      0.98,
+      "01_pop_appear.mp3",
+      -16,
+      0.7
+    ],
+    [
+      5.43,
+      "09_page_flip.mp3",
+      -16,
+      0.4
+    ],
+    [
+      7.8,
+      "24_coffee_pour.mp3",
+      -18,
+      1.5
+    ],
+    [
+      9.54,
+      "27_yawn_tired.mp3",
+      -20,
+      1.2
+    ],
+    [
+      11.04,
+      "01_pop_appear.mp3",
+      -16,
+      0.7
+    ],
+    [
+      15.56,
+      "14_swoosh_fast.mp3",
+      -17,
+      0.36
+    ],
+    [
+      24.22,
+      "23_phone_vibrate.mp3",
+      -20,
+      1.0
+    ],
+    [
+      28.72,
+      "07_clock_ticking.mp3",
+      -18,
+      1.4
+    ],
+    [
+      30.38,
+      "26_sigh_exhausted.mp3",
+      -18,
+      1.1
+    ],
+    [
+      34.86,
+      "15_stamp_thud.mp3",
+      -17,
+      0.9
+    ],
+    [
+      36.5,
+      "44_gavel_hit.mp3",
+      -18,
+      0.9
+    ],
+    [
+      42.28,
+      "16_correct_chime.mp3",
+      -18,
+      1.0
+    ],
+    [
+      49.32,
+      "05_record_scratch.mp3",
+      -17,
+      0.65
+    ],
+    [
+      51.34,
+      "01_pop_appear.mp3",
+      -16,
+      0.7
+    ],
+    [
+      53.62,
+      "09_page_flip.mp3",
+      -17,
+      0.4
+    ],
+    [
+      57.81,
+      "32_footsteps.mp3",
+      -20,
+      1.3
+    ],
+    [
+      59.16,
+      "26_sigh_exhausted.mp3",
+      -19,
+      1.0
+    ],
+    [
+      63.94,
+      "02_whoosh_card.mp3",
+      -17,
+      0.6
+    ],
+    [
+      66.26,
+      "23_phone_vibrate.mp3",
+      -20,
+      0.9
+    ],
+    [
+      76.61,
+      "04_stamp_red_x.mp3",
+      -17,
+      0.9
+    ],
+    [
+      81.54,
+      "09_page_flip.mp3",
+      -17,
+      0.4
+    ],
+    [
+      90.994,
+      "01_pop_appear.mp3",
+      -17,
+      0.6
+    ],
+    [
+      95.7,
+      "21_book_close.mp3",
+      -17,
+      0.7
+    ],
+    [
+      98.54,
+      "11_pencil_write.mp3",
+      -19,
+      1.8
+    ],
+    [
+      103.11,
+      "03_ding_eureka.mp3",
+      -18,
+      1.2
+    ],
+    [
+      106.72,
+      "01_pop_appear.mp3",
+      -16,
+      0.6
+    ],
+    [
+      111.11,
+      "14_swoosh_fast.mp3",
+      -17,
+      0.36
+    ],
+    [
+      115.94,
+      "04_stamp_red_x.mp3",
+      -17,
+      0.9
+    ],
+    [
+      118.65,
+      "01_pop_appear.mp3",
+      -17,
+      0.5
+    ],
+    [
+      121.64,
+      "01_pop_appear.mp3",
+      -17,
+      0.5
+    ],
+    [
+      124.06,
+      "01_pop_appear.mp3",
+      -17,
+      0.5
+    ],
+    [
+      136.9,
+      "02_whoosh_card.mp3",
+      -17,
+      0.6
+    ],
+    [
+      142.66,
+      "09_page_flip.mp3",
+      -16,
+      0.4
+    ],
+    [
+      156.03,
+      "14_swoosh_fast.mp3",
+      -16,
+      0.36
+    ],
+    [
+      160.37,
+      "23_phone_vibrate.mp3",
+      -19,
+      1.0
+    ],
+    [
+      169.28,
+      "26_sigh_exhausted.mp3",
+      -19,
+      1.1
+    ],
+    [
+      180.76,
+      "01_pop_appear.mp3",
+      -16,
+      0.6
+    ],
+    [
+      184.63,
+      "14_swoosh_fast.mp3",
+      -17,
+      0.36
+    ],
+    [
+      192.79,
+      "22_mouse_click.mp3",
+      -18,
+      0.6
+    ],
+    [
+      197.65,
+      "16_correct_chime.mp3",
+      -18,
+      1.0
+    ],
+    [
+      200.84,
+      "03_ding_eureka.mp3",
+      -18,
+      1.1
+    ],
+    [
+      207.38,
+      "14_swoosh_fast.mp3",
+      -17,
+      0.36
+    ],
+    [
+      213.18,
+      "01_pop_appear.mp3",
+      -16,
+      0.6
+    ],
+    [
+      222.34,
+      "01_pop_appear.mp3",
+      -17,
+      0.6
+    ],
+    [
+      230.68,
+      "15_stamp_thud.mp3",
+      -17,
+      0.9
+    ],
+    [
+      233.89,
+      "17_camera_shutter.mp3",
+      -17,
+      0.8
+    ],
+    [
+      245.98,
+      "17_camera_shutter.mp3",
+      -18,
+      0.7
+    ],
+    [
+      248.15,
+      "40_tape_rewind.mp3",
+      -19,
+      1.0
+    ],
+    [
+      251.14,
+      "01_pop_appear.mp3",
+      -17,
+      0.5
+    ],
+    [
+      255.2,
+      "16_correct_chime.mp3",
+      -19,
+      1.0
+    ],
+    [
+      259.98,
+      "03_ding_eureka.mp3",
+      -18,
+      1.2
+    ],
+    [
+      285.76,
+      "02_whoosh_card.mp3",
+      -17,
+      0.6
+    ],
+    [
+      295.46,
+      "14_swoosh_fast.mp3",
+      -16,
+      0.36
+    ],
+    [
+      300.94,
+      "05_record_scratch.mp3",
+      -17,
+      0.65
+    ],
+    [
+      319.05,
+      "01_pop_appear.mp3",
+      -16,
+      0.6
+    ],
+    [
+      323.44,
+      "09_page_flip.mp3",
+      -16,
+      0.4
+    ],
+    [
+      325.9,
+      "26_sigh_exhausted.mp3",
+      -19,
+      1.0
+    ],
+    [
+      329.97,
+      "15_stamp_thud.mp3",
+      -18,
+      0.8
+    ],
+    [
+      333.74,
+      "02_whoosh_card.mp3",
+      -18,
+      0.6
+    ],
+    [
+      340.87,
+      "39_mystery_chime.mp3",
+      -20,
+      1.6
+    ],
+    [
+      349.78,
+      "01_pop_appear.mp3",
+      -17,
+      0.6
+    ],
+    [
+      353.42,
+      "03_ding_eureka.mp3",
+      -18,
+      1.0
+    ],
+    [
+      359.6,
+      "06_cash_register.mp3",
+      -19,
+      1.0
+    ],
+    [
+      371.3,
+      "14_swoosh_fast.mp3",
+      -17,
+      0.36
+    ],
+    [
+      374.64,
+      "21_book_close.mp3",
+      -18,
+      0.7
+    ],
+    [
+      388.64,
+      "09_page_flip.mp3",
+      -17,
+      0.4
+    ],
+    [
+      391.1,
+      "26_sigh_exhausted.mp3",
+      -19,
+      1.1
+    ],
+    [
+      405.34,
+      "38_crowd_gasp.mp3",
+      -18,
+      0.9
+    ],
+    [
+      411.4,
+      "07_clock_ticking.mp3",
+      -20,
+      1.4
+    ],
+    [
+      419.74,
+      "16_correct_chime.mp3",
+      -19,
+      1.0
+    ],
+    [
+      428.3,
+      "02_whoosh_card.mp3",
+      -18,
+      0.6
+    ],
+    [
+      442.16,
+      "26_sigh_exhausted.mp3",
+      -20,
+      0.9
+    ],
+    [
+      445.52,
+      "16_correct_chime.mp3",
+      -17,
+      1.1
+    ],
+    [
+      468.24,
+      "39_mystery_chime.mp3",
+      -20,
+      1.8
+    ]
+  ],
+  "frames": [
+    {
+      "act": "ACT_1",
+      "seg": 1,
+      "start": 0.0,
+      "end": 0.98,
+      "sub": "Why do we lie,",
+      "spec": "scene:p01_truth_zero_scale.png+reveal_left:815"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 1,
+      "start": 0.98,
+      "end": 2.56,
+      "sub": "even when telling the truth",
+      "spec": "scene:p01_truth_zero_scale.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 1,
+      "start": 2.56,
+      "end": 5.43,
+      "sub": "wouldn't cost us anything?",
+      "spec": "scene:p01_truth_zero_scale.png+closeup:1310,670,1.42"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 2,
+      "start": 5.43,
+      "end": 7.8,
+      "sub": "Think about a normal Monday morning.",
+      "spec": "scene:p02_monday_breakroom_wide.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 2,
+      "start": 7.8,
+      "end": 9.54,
+      "sub": "You're standing by the coffee machine,",
+      "spec": "scene:h01_coffee_sleepy.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 2,
+      "start": 9.54,
+      "end": 11.04,
+      "sub": "still half asleep,",
+      "spec": "scene:h01_coffee_sleepy.png+closeup:1290,360,1.50"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 2,
+      "start": 11.04,
+      "end": 13.3,
+      "sub": "and a coworker looks over and asks,",
+      "spec": "scene:h02_coworker_waves.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 2,
+      "start": 13.3,
+      "end": 15.56,
+      "sub": "\"Hey, how was your weekend?\"",
+      "spec": "scene:g01_1.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 3,
+      "start": 15.56,
+      "end": 18.94,
+      "sub": "Now, if you actually answered honestly,",
+      "spec": "scene:g01_2.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 3,
+      "start": 18.94,
+      "end": 20.63,
+      "sub": "what would you say?",
+      "spec": "host:06_pose_thinking_lookup.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 4,
+      "start": 20.63,
+      "end": 24.22,
+      "sub": "Maybe the real truth is that you barely left your apartment.",
+      "spec": "scene:p03_apartment_door_locked.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 4,
+      "start": 24.22,
+      "end": 26.22,
+      "sub": "You spent most of Saturday on your phone,",
+      "spec": "scene:h03_saturday_couch_phone.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 4,
+      "start": 26.22,
+      "end": 28.72,
+      "sub": "ate dinner straight out of a takeout container",
+      "spec": "scene:p04_takeout_couch_dinner.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 4,
+      "start": 28.72,
+      "end": 30.38,
+      "sub": "at four in the afternoon,",
+      "spec": "clock:4|4:00 PM|SATURDAY"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 4,
+      "start": 30.38,
+      "end": 32.48,
+      "sub": "and went to bed early.",
+      "spec": "scene:p05_bed_early_sunset.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 5,
+      "start": 32.48,
+      "end": 34.86,
+      "sub": "What would happen if you said that out loud?",
+      "spec": "host:01_pose_shrug_question.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 5,
+      "start": 34.86,
+      "end": 36.5,
+      "sub": "Nobody's going to fire you.",
+      "spec": "scene:g01_3.png+reveal_left:960"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 5,
+      "start": 36.5,
+      "end": 39.87,
+      "sub": "Nobody's going to judge you for resting on a Saturday.",
+      "spec": "scene:g01_3.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 6,
+      "start": 39.87,
+      "end": 42.28,
+      "sub": "Most likely, your coworker would just say,",
+      "spec": "scene:h02_coworker_waves.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 6,
+      "start": 42.28,
+      "end": 46.8,
+      "sub": "\"Honestly, that sounds great,\" and go back to making their coffee.",
+      "spec": "scene:g01_4.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 7,
+      "start": 46.8,
+      "end": 49.32,
+      "sub": "Nothing bad happens if you tell the truth here.",
+      "spec": "scene:p01_truth_zero_scale.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 7,
+      "start": 49.32,
+      "end": 51.34,
+      "sub": "And yet, before you even think about it,",
+      "spec": "host:04_pose_eureka_point_up.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 7,
+      "start": 51.34,
+      "end": 53.62,
+      "sub": "you hear yourself say, \"Oh, it was nice!\"",
+      "spec": "scene:p06_fake_nice_coffee_reply.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 7,
+      "start": 53.62,
+      "end": 55.52,
+      "sub": "Got a few things done, caught up on some reading,",
+      "spec": "scene:p07_fake_reading_checklist.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 7,
+      "start": 55.52,
+      "end": 57.81,
+      "sub": "went for a walk in the park.",
+      "spec": "scene:h04_fake_park_walk.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 8,
+      "start": 57.81,
+      "end": 59.16,
+      "sub": "Then you walk back to your desk",
+      "spec": "scene:p08_back_at_desk_realization.png"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 8,
+      "start": 59.16,
+      "end": 61.844,
+      "sub": "and realize you haven't set foot",
+      "spec": "scene:p08_back_at_desk_realization.png+closeup:1080,450,1.32"
+    },
+    {
+      "act": "ACT_1",
+      "seg": 8,
+      "start": 61.844,
+      "end": 63.94,
+      "sub": "in a park in three weeks.",
+      "spec": "scene:p08_back_at_desk_realization.png+closeup:1080,450,1.32"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 9,
+      "start": 63.94,
+      "end": 66.26,
+      "sub": "Most of us have done some version of this.",
+      "spec": "scene:g02_4.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 9,
+      "start": 66.26,
+      "end": 68.297,
+      "sub": "Saying \"I'm on my way!\" when",
+      "spec": "scene:g02_1.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 9,
+      "start": 68.297,
+      "end": 70.77,
+      "sub": "you haven't put your shoes on yet.",
+      "spec": "scene:g02_1.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 10,
+      "start": 70.77,
+      "end": 73.38,
+      "sub": "Smiling and pretending you've heard of a band",
+      "spec": "scene:g02_2.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 10,
+      "start": 73.38,
+      "end": 76.61,
+      "sub": "just so you don't have to stop the conversation.",
+      "spec": "scene:g02_2.png+closeup:1320,420,1.28"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 11,
+      "start": 76.61,
+      "end": 79.1,
+      "sub": "It doesn't mean you're manipulative.",
+      "spec": "scene:g02_3.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 11,
+      "start": 79.1,
+      "end": 81.54,
+      "sub": "It's a habit almost everyone shares,",
+      "spec": "scene:g02_4.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 11,
+      "start": 81.54,
+      "end": 85.55,
+      "sub": "and psychologists have actually measured how often it happens.",
+      "spec": "scene:g03_1.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 12,
+      "start": 85.55,
+      "end": 90.994,
+      "sub": "Back in 1996, psychologist Bella DePaulo at the University of Virginia",
+      "spec": "scene:g03_1.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 12,
+      "start": 90.994,
+      "end": 95.7,
+      "sub": "asked 147 ordinary people, college students and working adults,",
+      "spec": "scene:g03_2.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 12,
+      "start": 95.7,
+      "end": 98.54,
+      "sub": "to keep a small diary for a week.",
+      "spec": "scene:g03_3.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 13,
+      "start": 98.54,
+      "end": 103.11,
+      "sub": "Every time they misled someone, even slightly, they wrote it down.",
+      "spec": "scene:g03_4.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 14,
+      "start": 103.11,
+      "end": 106.72,
+      "sub": "On average, people told one or two lies a day,",
+      "spec": "scene:g04_1.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 14,
+      "start": 106.72,
+      "end": 111.11,
+      "sub": "coming up in roughly a quarter of their daily social interactions.",
+      "spec": "scene:g04_2.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 15,
+      "start": 111.11,
+      "end": 113.215,
+      "sub": "More than seventy percent of those",
+      "spec": "scene:g04_3.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 15,
+      "start": 113.215,
+      "end": 115.94,
+      "sub": "lies weren't about hiding something serious,",
+      "spec": "scene:g04_3.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 15,
+      "start": 115.94,
+      "end": 118.65,
+      "sub": "getting money, or staying out of trouble.",
+      "spec": "scene:g04_4.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 16,
+      "start": 118.65,
+      "end": 121.64,
+      "sub": "People lied about liking a sandwich that was dry,",
+      "spec": "scene:g05_1.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 16,
+      "start": 121.64,
+      "end": 124.06,
+      "sub": "about why they were five minutes late,",
+      "spec": "scene:g05_2.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 16,
+      "start": 124.06,
+      "end": 127.65,
+      "sub": "or about having seen a movie someone brought up at lunch.",
+      "spec": "scene:g05_3.png"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 17,
+      "start": 127.65,
+      "end": 130.476,
+      "sub": "When DePaulo asked them afterward if anything bad",
+      "spec": "scene:g05_4.png+reveal_left:620"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 17,
+      "start": 130.476,
+      "end": 133.36,
+      "sub": "would have happened if they'd just told the truth,",
+      "spec": "scene:g05_4.png+reveal_left:620"
+    },
+    {
+      "act": "ACT_2",
+      "seg": 17,
+      "start": 133.36,
+      "end": 136.9,
+      "sub": "most of them said no. Not really.",
+      "spec": "scene:g05_4.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 18,
+      "start": 136.9,
+      "end": 140.78,
+      "sub": "Sometimes, telling the truth is just more trouble than it's worth.",
+      "spec": "scene:g06_1.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 18,
+      "start": 140.78,
+      "end": 142.66,
+      "sub": "Not because you're afraid of getting caught.",
+      "spec": "host:01_pose_shrug_question.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 18,
+      "start": 142.66,
+      "end": 145.68,
+      "sub": "You just don't feel like explaining yourself.",
+      "spec": "scene:g06_2.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 19,
+      "start": 145.68,
+      "end": 148.192,
+      "sub": "We're used to thinking that honesty",
+      "spec": "scene:g06_3.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 19,
+      "start": 148.192,
+      "end": 150.56,
+      "sub": "is simple and lying takes effort.",
+      "spec": "scene:g06_3.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 19,
+      "start": 150.56,
+      "end": 151.555,
+      "sub": "For a big lie,",
+      "spec": "scene:g06_3.png+closeup:960,520,1.28"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 19,
+      "start": 151.555,
+      "end": 156.03,
+      "sub": "making up a whole story under pressure, that's definitely true.",
+      "spec": "scene:g06_3.png+closeup:960,520,1.28"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 20,
+      "start": 156.03,
+      "end": 160.37,
+      "sub": "In casual conversation, though, it often works the other way around.",
+      "spec": "scene:g06_4.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 21,
+      "start": 160.37,
+      "end": 162.597,
+      "sub": "Say a friend texts on Friday evening",
+      "spec": "scene:g07_1.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 21,
+      "start": 162.597,
+      "end": 164.7,
+      "sub": "asking if you want to grab drinks.",
+      "spec": "scene:g07_1.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 21,
+      "start": 164.7,
+      "end": 166.926,
+      "sub": "The honest reason you don't want to",
+      "spec": "scene:g07_1.png+closeup:660,540,1.28"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 21,
+      "start": 166.926,
+      "end": 169.28,
+      "sub": "go isn't that you're upset with them.",
+      "spec": "scene:g07_1.png+closeup:660,540,1.28"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 22,
+      "start": 169.28,
+      "end": 171.543,
+      "sub": "You're just tired, your week was long,",
+      "spec": "scene:g07_2.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 22,
+      "start": 171.543,
+      "end": 175.77,
+      "sub": "and you've been looking forward to staying home in comfortable clothes.",
+      "spec": "scene:g07_2.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 23,
+      "start": 175.77,
+      "end": 178.068,
+      "sub": "If you give that unfiltered answer,",
+      "spec": "scene:g07_3.png+reveal_left:950"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 23,
+      "start": 178.068,
+      "end": 180.76,
+      "sub": "you often end up managing their reaction.",
+      "spec": "scene:g07_3.png+reveal_left:950"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 23,
+      "start": 180.76,
+      "end": 183.07,
+      "sub": "They might wonder if you're mad at them,",
+      "spec": "scene:g07_3.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 23,
+      "start": 183.07,
+      "end": 184.63,
+      "sub": "or try to talk you into it.",
+      "spec": "scene:g07_3.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 24,
+      "start": 184.63,
+      "end": 185.909,
+      "sub": "\"Come on, just for one drink,",
+      "spec": "scene:g07_4.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 24,
+      "start": 185.909,
+      "end": 187.32,
+      "sub": "it'll get you out of the house.\"",
+      "spec": "scene:g07_4.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 24,
+      "start": 187.32,
+      "end": 189.551,
+      "sub": "Now a simple reply turns into a",
+      "spec": "scene:g07_4.png+closeup:940,480,1.25"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 24,
+      "start": 189.551,
+      "end": 192.79,
+      "sub": "back-and-forth you don't really want to have.",
+      "spec": "scene:g07_4.png+closeup:940,480,1.25"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 25,
+      "start": 192.79,
+      "end": 195.068,
+      "sub": "Compare that to: \"I'd love to,",
+      "spec": "scene:g08_1.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 25,
+      "start": 195.068,
+      "end": 197.65,
+      "sub": "I just have a headache coming on.\"",
+      "spec": "scene:g08_1.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 26,
+      "start": 197.65,
+      "end": 200.84,
+      "sub": "Nobody feels rejected, nobody argues with a headache,",
+      "spec": "scene:g08_2.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 26,
+      "start": 200.84,
+      "end": 203.81,
+      "sub": "and the conversation wraps up in five seconds.",
+      "spec": "scene:g08_3.png"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 27,
+      "start": 203.81,
+      "end": 207.38,
+      "sub": "Calling in an easy excuse isn't really about deception.",
+      "spec": "scene:g08_4.png+reveal_left:960"
+    },
+    {
+      "act": "ACT_3",
+      "seg": 27,
+      "start": 207.38,
+      "end": 211.06,
+      "sub": "It's just a way to avoid unnecessary friction.",
+      "spec": "scene:g08_4.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 28,
+      "start": 211.06,
+      "end": 213.18,
+      "sub": "Avoiding plans makes sense.",
+      "spec": "host:02_pose_walk_idea.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 28,
+      "start": 213.18,
+      "end": 215.505,
+      "sub": "What's stranger are the lies that slip",
+      "spec": "scene:g09_1.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 28,
+      "start": 215.505,
+      "end": 217.83,
+      "sub": "out when we're just making small talk.",
+      "spec": "scene:g09_1.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 29,
+      "start": 217.83,
+      "end": 222.34,
+      "sub": "Someone mentions a neighborhood restaurant, or a book everybody's talking about,",
+      "spec": "scene:g09_2.png+reveal_left:1100"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 29,
+      "start": 222.34,
+      "end": 224.03,
+      "sub": "and you hear yourself say, \"Oh yeah,",
+      "spec": "scene:g09_2.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 29,
+      "start": 224.03,
+      "end": 225.72,
+      "sub": "I've been meaning to go back there,\"",
+      "spec": "scene:g09_2.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 29,
+      "start": 225.72,
+      "end": 228.39,
+      "sub": "even though you've never walked through the door.",
+      "spec": "scene:g09_2.png+closeup:1450,480,1.32"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 30,
+      "start": 228.39,
+      "end": 230.68,
+      "sub": "You're not even trying to impress them.",
+      "spec": "scene:g09_3.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 30,
+      "start": 230.68,
+      "end": 233.89,
+      "sub": "You just didn't want the conversation to hit a wall.",
+      "spec": "scene:g09_4.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 31,
+      "start": 233.89,
+      "end": 237.393,
+      "sub": "Psychologist Robert Feldman at the University of",
+      "spec": "scene:g10_1.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 31,
+      "start": 237.393,
+      "end": 241.48,
+      "sub": "Massachusetts tested how naturally this happens in 2002.",
+      "spec": "scene:g10_1.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 32,
+      "start": 241.48,
+      "end": 243.659,
+      "sub": "He paired up strangers, asked them to chat for",
+      "spec": "scene:g10_2.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 32,
+      "start": 243.659,
+      "end": 245.98,
+      "sub": "ten minutes so they could get to know each other,",
+      "spec": "scene:g10_2.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 32,
+      "start": 245.98,
+      "end": 248.15,
+      "sub": "and recorded the conversation.",
+      "spec": "scene:g10_2.png+closeup:1320,460,1.28"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 33,
+      "start": 248.15,
+      "end": 251.14,
+      "sub": "Afterward, he had each person watch the video back",
+      "spec": "scene:g10_3.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 33,
+      "start": 251.14,
+      "end": 255.2,
+      "sub": "and point out every statement that wasn't completely accurate.",
+      "spec": "scene:g10_4.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 34,
+      "start": 255.2,
+      "end": 259.98,
+      "sub": "Before watching the tape, almost everyone assumed they'd been totally honest.",
+      "spec": "scene:g11_1.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 35,
+      "start": 259.98,
+      "end": 263.436,
+      "sub": "Once they saw the footage, around sixty percent realized",
+      "spec": "scene:g11_2.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 35,
+      "start": 263.436,
+      "end": 266.46,
+      "sub": "they'd told at least one lie in just ten minutes,",
+      "spec": "scene:g11_2.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 35,
+      "start": 266.46,
+      "end": 270.36,
+      "sub": "averaging nearly three small inaccuracies per conversation.",
+      "spec": "scene:g11_2.png+closeup:620,460,1.28"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 36,
+      "start": 270.36,
+      "end": 272.88,
+      "sub": "People exaggerated how much they liked something,",
+      "spec": "scene:g11_3.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 36,
+      "start": 272.88,
+      "end": 276.131,
+      "sub": "claimed familiarity with things they barely knew,",
+      "spec": "scene:g02_2.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 36,
+      "start": 276.131,
+      "end": 279.98,
+      "sub": "and nodded along with opinions they didn't actually share.",
+      "spec": "scene:g02_2.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 37,
+      "start": 279.98,
+      "end": 283.275,
+      "sub": "Most of it happened automatically because nobody wants to",
+      "spec": "scene:g09_4.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 37,
+      "start": 283.275,
+      "end": 285.76,
+      "sub": "look odd or kill the flow of a normal chat.",
+      "spec": "scene:g09_4.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 37,
+      "start": 285.76,
+      "end": 288.628,
+      "sub": "If the blunt truth creates an awkward pause,",
+      "spec": "scene:g11_4.png"
+    },
+    {
+      "act": "ACT_4",
+      "seg": 37,
+      "start": 288.628,
+      "end": 290.91,
+      "sub": "we smooth it over without noticing.",
+      "spec": "scene:g11_4.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 38,
+      "start": 290.91,
+      "end": 294.009,
+      "sub": "Once one of those small lies leaves your mouth,",
+      "spec": "host:04_pose_eureka_point_up.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 38,
+      "start": 294.009,
+      "end": 295.46,
+      "sub": "a funny thing happens:",
+      "spec": "host:04_pose_eureka_point_up.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 38,
+      "start": 295.46,
+      "end": 298.4,
+      "sub": "it's almost impossible to walk it back.",
+      "spec": "scene:g12_1.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 39,
+      "start": 298.4,
+      "end": 300.94,
+      "sub": "Imagine telling a coworker you went hiking over the weekend,",
+      "spec": "scene:g12_2.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 39,
+      "start": 300.94,
+      "end": 303.816,
+      "sub": "and then two seconds later stopping and saying,",
+      "spec": "scene:g12_3.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 39,
+      "start": 303.816,
+      "end": 306.08,
+      "sub": "\"Wait, I don't know why I said that.\"",
+      "spec": "scene:g12_3.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 39,
+      "start": 306.08,
+      "end": 309.2,
+      "sub": "\"I didn't go hiking. I stayed home all weekend.\"",
+      "spec": "scene:g12_3.png+closeup:840,520,1.30"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 40,
+      "start": 309.2,
+      "end": 312.62,
+      "sub": "Confessing to a major secret makes sense to people.",
+      "spec": "scene:g12_4.png+reveal_left:960"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 40,
+      "start": 312.62,
+      "end": 315.612,
+      "sub": "Confessing to a meaningless lie about a weekend",
+      "spec": "scene:g12_4.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 40,
+      "start": 315.612,
+      "end": 319.05,
+      "sub": "walk just makes the whole moment deeply uncomfortable.",
+      "spec": "scene:g12_4.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 41,
+      "start": 319.05,
+      "end": 321.828,
+      "sub": "So you don't correct it. When they follow up with,",
+      "spec": "scene:g13_1.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 41,
+      "start": 321.828,
+      "end": 323.44,
+      "sub": "\"Oh nice, where did you go?\",",
+      "spec": "scene:g13_1.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 41,
+      "start": 323.44,
+      "end": 325.9,
+      "sub": "you name a trail you drove past last summer,",
+      "spec": "scene:g13_2.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 41,
+      "start": 325.9,
+      "end": 328.014,
+      "sub": "just to close out a conversation neither",
+      "spec": "scene:g13_3.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 41,
+      "start": 328.014,
+      "end": 329.97,
+      "sub": "of you even cared about a minute ago.",
+      "spec": "scene:g13_3.png"
+    },
+    {
+      "act": "ACT_5",
+      "seg": 42,
+      "start": 329.97,
+      "end": 333.74,
+      "sub": "One casual phrase pulls a second one behind it.",
+      "spec": "scene:g13_4.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 43,
+      "start": 333.74,
+      "end": 337.42,
+      "sub": "When a white lie is isolated, it seems harmless.",
+      "spec": "scene:g14_1.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 43,
+      "start": 337.42,
+      "end": 340.87,
+      "sub": "Polite untruths help daily life run smoothly.",
+      "spec": "scene:g14_1.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 44,
+      "start": 340.87,
+      "end": 345.399,
+      "sub": "In 2016, neuroscientists Tali Sharot and Neil Garrett studied",
+      "spec": "scene:g14_2.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 44,
+      "start": 345.399,
+      "end": 349.78,
+      "sub": "what happens in the brain during repeated small dishonesty.",
+      "spec": "scene:g14_2.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 45,
+      "start": 349.78,
+      "end": 353.42,
+      "sub": "Using fMRI scans, they focused on the amygdala,",
+      "spec": "scene:g14_3.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 45,
+      "start": 353.42,
+      "end": 356.207,
+      "sub": "a region closely tied to the emotional tension",
+      "spec": "scene:g14_4.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 45,
+      "start": 356.207,
+      "end": 359.6,
+      "sub": "or guilt people feel when doing something uncomfortable.",
+      "spec": "scene:g14_4.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 46,
+      "start": 359.6,
+      "end": 365.16,
+      "sub": "What they found was interesting. As people repeatedly benefited from dishonesty,",
+      "spec": "scene:g15_1.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 46,
+      "start": 365.16,
+      "end": 368.46,
+      "sub": "their emotional response to it gradually weakened.",
+      "spec": "scene:g15_2.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 47,
+      "start": 368.46,
+      "end": 371.3,
+      "sub": "In other words, something that felt uncomfortable at first",
+      "spec": "scene:g15_3.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 47,
+      "start": 371.3,
+      "end": 374.64,
+      "sub": "could become easier to do over time.",
+      "spec": "scene:g15_4.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 48,
+      "start": 374.64,
+      "end": 378.441,
+      "sub": "There's also a simpler, everyday cost that deception",
+      "spec": "scene:g16_1.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 48,
+      "start": 378.441,
+      "end": 382.9,
+      "sub": "researcher Aldert Vrij has studied for years: mental fatigue.",
+      "spec": "scene:g16_1.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 49,
+      "start": 382.9,
+      "end": 385.159,
+      "sub": "Holding back what you actually think,",
+      "spec": "scene:g16_2.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 49,
+      "start": 385.159,
+      "end": 388.64,
+      "sub": "or keeping track of two versions of the same small story,",
+      "spec": "scene:g16_2.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 49,
+      "start": 388.64,
+      "end": 391.1,
+      "sub": "takes real attention.",
+      "spec": "scene:g16_3.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 50,
+      "start": 391.1,
+      "end": 393.511,
+      "sub": "If you've ever walked away from a long social",
+      "spec": "scene:g16_4.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 50,
+      "start": 393.511,
+      "end": 397.1,
+      "sub": "gathering feeling strangely drained even though nothing went wrong,",
+      "spec": "scene:g16_4.png"
+    },
+    {
+      "act": "ACT_6",
+      "seg": 50,
+      "start": 397.1,
+      "end": 401.99,
+      "sub": "part of that exhaustion comes from quietly editing yourself all evening.",
+      "spec": "scene:g16_4.png+closeup:1320,620,1.28"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 51,
+      "start": 401.99,
+      "end": 405.34,
+      "sub": "Stopping every white lie isn't realistic,",
+      "spec": "host:01_pose_shrug_question.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 51,
+      "start": 405.34,
+      "end": 408.491,
+      "sub": "and being bluntly honest at all times would probably",
+      "spec": "scene:g17_1.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 51,
+      "start": 408.491,
+      "end": 411.4,
+      "sub": "just make life harder for the people around you.",
+      "spec": "scene:g17_1.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 52,
+      "start": 411.4,
+      "end": 416.686,
+      "sub": "Most pointless lies happen in the first split second after someone asks a casual question,",
+      "spec": "scene:g17_2.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 52,
+      "start": 416.686,
+      "end": 419.74,
+      "sub": "before you've decided what you actually want to say.",
+      "spec": "scene:g17_2.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 53,
+      "start": 419.74,
+      "end": 423.5,
+      "sub": "Simply taking a half-second pause before replying, \"Hmm, honestly...\"",
+      "spec": "scene:g17_3.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 53,
+      "start": 423.5,
+      "end": 428.3,
+      "sub": "breaks the automatic response just enough to give you a choice.",
+      "spec": "scene:g17_4.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 54,
+      "start": 428.3,
+      "end": 431.217,
+      "sub": "When a question doesn't really carry high stakes,",
+      "spec": "scene:g18_1.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 54,
+      "start": 431.217,
+      "end": 433.48,
+      "sub": "it helps to be a little more ordinary.",
+      "spec": "scene:g18_1.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 55,
+      "start": 433.48,
+      "end": 436.22,
+      "sub": "The next time someone asks what you did over the weekend,",
+      "spec": "scene:g18_2.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 55,
+      "start": 436.22,
+      "end": 439.156,
+      "sub": "saying, \"Honestly, I didn't do much at all,",
+      "spec": "scene:g18_2.png+closeup:1180,440,1.28"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 55,
+      "start": 439.156,
+      "end": 442.16,
+      "sub": "and I needed it,\" almost never lands poorly.",
+      "spec": "scene:g18_2.png+closeup:1180,440,1.28"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 56,
+      "start": 442.16,
+      "end": 445.52,
+      "sub": "More often than not, the other person looks noticeably relieved",
+      "spec": "scene:g18_3.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 56,
+      "start": 445.52,
+      "end": 448.83,
+      "sub": "and says, \"Yeah, me too.\"",
+      "spec": "scene:g18_4.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 57,
+      "start": 448.83,
+      "end": 453.55,
+      "sub": "We tell small, pointless lies because we're trying to look a little busier,",
+      "spec": "scene:g19_1.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 57,
+      "start": 453.55,
+      "end": 456.57,
+      "sub": "a little more interesting, or easier to talk to.",
+      "spec": "scene:g19_1.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 58,
+      "start": 456.57,
+      "end": 459.09,
+      "sub": "Everyone ends up protecting an image",
+      "spec": "scene:g19_2.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 58,
+      "start": 459.09,
+      "end": 461.82,
+      "sub": "nobody was judging that closely anyway.",
+      "spec": "scene:g19_2.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 59,
+      "start": 461.82,
+      "end": 464.993,
+      "sub": "Usually, real connection doesn't start when",
+      "spec": "scene:g19_3.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 59,
+      "start": 464.993,
+      "end": 468.24,
+      "sub": "two people trade impressive weekend stories.",
+      "spec": "scene:g19_3.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 60,
+      "start": 468.24,
+      "end": 470.144,
+      "sub": "It starts the moment someone admits",
+      "spec": "scene:g19_4.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 60,
+      "start": 470.144,
+      "end": 471.94,
+      "sub": "they stayed home and did nothing,",
+      "spec": "scene:g19_4.png"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 60,
+      "start": 471.94,
+      "end": 473.932,
+      "sub": "and makes it safe for the",
+      "spec": "scene:g19_4.png+closeup:960,540,1.18"
+    },
+    {
+      "act": "ACT_7",
+      "seg": 60,
+      "start": 473.932,
+      "end": 476.8,
+      "sub": "other person to tell the truth, too.",
+      "spec": "scene:g19_4.png+closeup:960,540,1.18"
+    }
+  ]
+}

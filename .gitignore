@@ -48,3 +48,33 @@ __pycache__/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Python virtualenvs & third-party local MCP clones
+.venv*/
+mcp-servers/
+
+# Kairo Spark heavy derived media & render caches (keep scripts, .md, .srt, .json, *_final.jpg, ref voice)
+episodes/**/*.mp4
+episodes/**/*.mov
+episodes/**/*.mp3
+episodes/**/*.wav
+!episodes/pilot-01-why-5-days/audio/ref_kairo_voice_12s.wav
+episodes/**/audio/full_chunks/
+episodes/**/audio/chatterbox_samples/
+episodes/**/audio/ep02_audio_filter.txt
+episodes/**/frames*/
+episodes/**/preview_28s_frames/
+episodes/**/rendered_beats/
+episodes/**/scenes/
+episodes/**/scenes_raw/
+episodes/**/scenes_hd/
+episodes/**/keyframes/
+episodes/**/flow_grids/
+episodes/**/animated_clips/
+episodes/**/thumbnails/
+episodes/**/verify_*.jpg
+episodes/**/test_*.png
+episodes/**/ep02_thumbnail_base*
+episodes/**/pilot_01_thumbnail_5days.jpg
+episodes/**/concat_*.txt
+episodes/**/frames_concat.txt

@@ -1,0 +1,606 @@
+{
+  "total_duration": 476.8,
+  "sample_rate": 24000,
+  "segments": [
+    {
+      "id": 1,
+      "act": "ACT_1",
+      "start": 0.0,
+      "end": 4.88,
+      "duration": 4.88,
+      "pause_after": 0.55,
+      "text": "Why do we lie even when telling the truth wouldn't cost us anything?",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_01.wav"
+    },
+    {
+      "id": 2,
+      "act": "ACT_1",
+      "start": 5.43,
+      "end": 15.11,
+      "duration": 9.68,
+      "pause_after": 0.45,
+      "text": "Think about a normal Monday morning. You're standing by the coffee machine, still half asleep, and a coworker looks over and asks, Hey, how was your weekend?",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_02.wav"
+    },
+    {
+      "id": 3,
+      "act": "ACT_1",
+      "start": 15.56,
+      "end": 20.28,
+      "duration": 4.72,
+      "pause_after": 0.35,
+      "text": "Now, if you actually answered honestly, what would you say?",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_03.wav"
+    },
+    {
+      "id": 4,
+      "act": "ACT_1",
+      "start": 20.63,
+      "end": 32.03,
+      "duration": 11.4,
+      "pause_after": 0.45,
+      "text": "Maybe the real truth is that you barely left your apartment. You spent most of Saturday on your phone, ate dinner straight out of a takeout container at four in the afternoon, and went to bed early.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_04.wav"
+    },
+    {
+      "id": 5,
+      "act": "ACT_1",
+      "start": 32.48,
+      "end": 39.52,
+      "duration": 7.04,
+      "pause_after": 0.35,
+      "text": "What would happen if you said that out loud? Nobody's going to fire you. Nobody's going to judge you for resting on a Saturday.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_05.wav"
+    },
+    {
+      "id": 6,
+      "act": "ACT_1",
+      "start": 39.87,
+      "end": 46.35,
+      "duration": 6.48,
+      "pause_after": 0.45,
+      "text": "Most likely, your coworker would just say, Honestly, that sounds great, and go back to making their coffee.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_06.wav"
+    },
+    {
+      "id": 7,
+      "act": "ACT_1",
+      "start": 46.8,
+      "end": 57.36,
+      "duration": 10.56,
+      "pause_after": 0.45,
+      "text": "Nothing bad happens if you tell the truth here. And yet, before you even think about it, you hear yourself say, Oh, it was nice! Got a few things done, caught up on some reading, went for a walk in the park.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_07.wav"
+    },
+    {
+      "id": 8,
+      "act": "ACT_1",
+      "start": 57.81,
+      "end": 63.29,
+      "duration": 5.48,
+      "pause_after": 0.65,
+      "text": "Then you walk back to your desk and realize you haven't set foot in a park in three weeks.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_08.wav"
+    },
+    {
+      "id": 9,
+      "act": "ACT_2",
+      "start": 63.94,
+      "end": 70.42,
+      "duration": 6.48,
+      "pause_after": 0.35,
+      "text": "Most of us have done some version of this. Saying, I'm on my way! when you haven't put your shoes on yet.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_09.wav"
+    },
+    {
+      "id": 10,
+      "act": "ACT_2",
+      "start": 70.77,
+      "end": 76.21,
+      "duration": 5.44,
+      "pause_after": 0.4,
+      "text": "Smiling and pretending you've heard of a band just so you don't have to stop the conversation.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_10.wav"
+    },
+    {
+      "id": 11,
+      "act": "ACT_2",
+      "start": 76.61,
+      "end": 85.05,
+      "duration": 8.44,
+      "pause_after": 0.5,
+      "text": "It doesn't mean you're manipulative. It's a habit almost everyone shares, and psychologists have actually measured how often it happens.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_11.wav"
+    },
+    {
+      "id": 12,
+      "act": "ACT_2",
+      "start": 85.55,
+      "end": 98.19,
+      "duration": 12.64,
+      "pause_after": 0.35,
+      "text": "Back in 1996, psychologist Bella DePaulo at the University of Virginia asked 147 ordinary people, college students and working adults, to keep a small diary for a week.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_12.wav"
+    },
+    {
+      "id": 13,
+      "act": "ACT_2",
+      "start": 98.54,
+      "end": 102.66,
+      "duration": 4.12,
+      "pause_after": 0.45,
+      "text": "Every time they misled someone, even slightly, they wrote it down.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_13.wav"
+    },
+    {
+      "id": 14,
+      "act": "ACT_2",
+      "start": 103.11,
+      "end": 110.71,
+      "duration": 7.6,
+      "pause_after": 0.4,
+      "text": "On average, people told one or two lies a day, coming up in roughly a quarter of their daily social interactions.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_14.wav"
+    },
+    {
+      "id": 15,
+      "act": "ACT_2",
+      "start": 111.11,
+      "end": 118.27,
+      "duration": 7.16,
+      "pause_after": 0.38,
+      "text": "More than seventy percent of those lies weren't about hiding something serious, getting money, or staying out of trouble.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_15.wav"
+    },
+    {
+      "id": 16,
+      "act": "ACT_2",
+      "start": 118.65,
+      "end": 127.25,
+      "duration": 8.6,
+      "pause_after": 0.4,
+      "text": "People lied about liking a sandwich that was dry, about why they were five minutes late, or about having seen a movie someone brought up at lunch.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_16.wav"
+    },
+    {
+      "id": 17,
+      "act": "ACT_2",
+      "start": 127.65,
+      "end": 136.25,
+      "duration": 8.6,
+      "pause_after": 0.65,
+      "text": "When DePaulo asked them afterward if anything bad would have happened if they'd just told the truth, most of them said no. Not really.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_17.wav"
+    },
+    {
+      "id": 18,
+      "act": "ACT_3",
+      "start": 136.9,
+      "end": 145.18,
+      "duration": 8.28,
+      "pause_after": 0.5,
+      "text": "Sometimes, telling the truth is just more trouble than it's worth. Not because you're afraid of getting caught. You just don't feel like explaining yourself.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_18.wav"
+    },
+    {
+      "id": 19,
+      "act": "ACT_3",
+      "start": 145.68,
+      "end": 155.68,
+      "duration": 10.0,
+      "pause_after": 0.35,
+      "text": "We're used to thinking that honesty is simple and lying takes effort. For a big lie, making up a whole story under pressure, that's definitely true.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_19.wav"
+    },
+    {
+      "id": 20,
+      "act": "ACT_3",
+      "start": 156.03,
+      "end": 159.87,
+      "duration": 3.84,
+      "pause_after": 0.5,
+      "text": "In casual conversation, though, it often works the other way around.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_20.wav"
+    },
+    {
+      "id": 21,
+      "act": "ACT_3",
+      "start": 160.37,
+      "end": 168.93,
+      "duration": 8.56,
+      "pause_after": 0.35,
+      "text": "Say a friend texts on Friday evening asking if you want to grab drinks. The honest reason you don't want to go isn't that you're upset with them.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_21.wav"
+    },
+    {
+      "id": 22,
+      "act": "ACT_3",
+      "start": 169.28,
+      "end": 175.32,
+      "duration": 6.04,
+      "pause_after": 0.45,
+      "text": "You're just tired, your week was long, and you've been looking forward to staying home in comfortable clothes.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_22.wav"
+    },
+    {
+      "id": 23,
+      "act": "ACT_3",
+      "start": 175.77,
+      "end": 184.33,
+      "duration": 8.56,
+      "pause_after": 0.3,
+      "text": "If you give that unfiltered answer, you often end up managing their reaction. They might wonder if you're mad at them, or try to talk you into it.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_23.wav"
+    },
+    {
+      "id": 24,
+      "act": "ACT_3",
+      "start": 184.63,
+      "end": 192.39,
+      "duration": 7.76,
+      "pause_after": 0.4,
+      "text": "Come on, just for one drink, it'll get you out of the house. Now a simple reply turns into a back-and-forth you don't really want to have.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_24.wav"
+    },
+    {
+      "id": 25,
+      "act": "ACT_3",
+      "start": 192.79,
+      "end": 197.27,
+      "duration": 4.48,
+      "pause_after": 0.38,
+      "text": "Compare that to: I'd love to, I just have a headache coming on.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_25.wav"
+    },
+    {
+      "id": 26,
+      "act": "ACT_3",
+      "start": 197.65,
+      "end": 203.41,
+      "duration": 5.76,
+      "pause_after": 0.4,
+      "text": "Nobody feels rejected, nobody argues with a headache, and the conversation wraps up in five seconds.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_26.wav"
+    },
+    {
+      "id": 27,
+      "act": "ACT_3",
+      "start": 203.81,
+      "end": 210.41,
+      "duration": 6.6,
+      "pause_after": 0.65,
+      "text": "Calling in an easy excuse isn't really about deception. It's just a way to avoid unnecessary friction.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_27.wav"
+    },
+    {
+      "id": 28,
+      "act": "ACT_4",
+      "start": 211.06,
+      "end": 217.38,
+      "duration": 6.32,
+      "pause_after": 0.45,
+      "text": "Avoiding plans makes sense. What's stranger are the lies that slip out when we're just making small talk.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_28.wav"
+    },
+    {
+      "id": 29,
+      "act": "ACT_4",
+      "start": 217.83,
+      "end": 227.99,
+      "duration": 10.16,
+      "pause_after": 0.4,
+      "text": "Someone mentions a neighborhood restaurant, or a book everybody's talking about, and you hear yourself say, Oh yeah, I've been meaning to go back there, even though you've never walked through the door.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_29.wav"
+    },
+    {
+      "id": 30,
+      "act": "ACT_4",
+      "start": 228.39,
+      "end": 233.39,
+      "duration": 5.0,
+      "pause_after": 0.5,
+      "text": "You're not even trying to impress them. You just didn't want the conversation to hit a wall.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_30.wav"
+    },
+    {
+      "id": 31,
+      "act": "ACT_4",
+      "start": 233.89,
+      "end": 241.13,
+      "duration": 7.24,
+      "pause_after": 0.35,
+      "text": "Psychologist Robert Feldman at the University of Massachusetts tested how naturally this happens in 2002.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_31.wav"
+    },
+    {
+      "id": 32,
+      "act": "ACT_4",
+      "start": 241.48,
+      "end": 247.8,
+      "duration": 6.32,
+      "pause_after": 0.35,
+      "text": "He paired up strangers, asked them to chat for ten minutes so they could get to know each other, and recorded the conversation.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_32.wav"
+    },
+    {
+      "id": 33,
+      "act": "ACT_4",
+      "start": 248.15,
+      "end": 254.75,
+      "duration": 6.6,
+      "pause_after": 0.45,
+      "text": "Afterward, he had each person watch the video back and point out every statement that wasn't completely accurate.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_33.wav"
+    },
+    {
+      "id": 34,
+      "act": "ACT_4",
+      "start": 255.2,
+      "end": 259.6,
+      "duration": 4.4,
+      "pause_after": 0.38,
+      "text": "Before watching the tape, almost everyone assumed they'd been totally honest.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_34.wav"
+    },
+    {
+      "id": 35,
+      "act": "ACT_4",
+      "start": 259.98,
+      "end": 269.94,
+      "duration": 9.96,
+      "pause_after": 0.42,
+      "text": "Once they saw the footage, around sixty percent realized they'd told at least one lie in just ten minutes, averaging nearly three small inaccuracies per conversation.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_35.wav"
+    },
+    {
+      "id": 36,
+      "act": "ACT_4",
+      "start": 270.36,
+      "end": 279.6,
+      "duration": 9.24,
+      "pause_after": 0.38,
+      "text": "People exaggerated how much they liked something, claimed familiarity with things they barely knew, and nodded along with opinions they didn't actually share.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_36.wav"
+    },
+    {
+      "id": 37,
+      "act": "ACT_4",
+      "start": 279.98,
+      "end": 290.26,
+      "duration": 10.28,
+      "pause_after": 0.65,
+      "text": "Most of it happened automatically because nobody wants to look odd or kill the flow of a normal chat. If the blunt truth creates an awkward pause, we smooth it over without noticing.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_37.wav"
+    },
+    {
+      "id": 38,
+      "act": "ACT_5",
+      "start": 290.91,
+      "end": 297.95,
+      "duration": 7.04,
+      "pause_after": 0.45,
+      "text": "Once one of those small lies leaves your mouth, a funny thing happens: it's almost impossible to walk it back.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_38.wav"
+    },
+    {
+      "id": 39,
+      "act": "ACT_5",
+      "start": 298.4,
+      "end": 308.8,
+      "duration": 10.4,
+      "pause_after": 0.4,
+      "text": "Imagine telling a coworker you went hiking over the weekend, and then two seconds later stopping and saying, Wait, I don't know why I said that. I didn't go hiking. I stayed home all weekend.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_39.wav"
+    },
+    {
+      "id": 40,
+      "act": "ACT_5",
+      "start": 309.2,
+      "end": 318.6,
+      "duration": 9.4,
+      "pause_after": 0.45,
+      "text": "Confessing to a major secret makes sense to people. Confessing to a meaningless lie about a weekend walk just makes the whole moment deeply uncomfortable.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_40.wav"
+    },
+    {
+      "id": 41,
+      "act": "ACT_5",
+      "start": 319.05,
+      "end": 329.57,
+      "duration": 10.52,
+      "pause_after": 0.4,
+      "text": "So you don't correct it. When they follow up with, Oh nice, where did you go?, you name a trail you drove past last summer, just to close out a conversation neither of you even cared about a minute ago.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_41.wav"
+    },
+    {
+      "id": 42,
+      "act": "ACT_5",
+      "start": 329.97,
+      "end": 333.09,
+      "duration": 3.12,
+      "pause_after": 0.65,
+      "text": "One casual phrase pulls a second one behind it.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_42.wav"
+    },
+    {
+      "id": 43,
+      "act": "ACT_6",
+      "start": 333.74,
+      "end": 340.42,
+      "duration": 6.68,
+      "pause_after": 0.45,
+      "text": "When a white lie is isolated, it seems harmless. Polite untruths help daily life run smoothly.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_43.wav"
+    },
+    {
+      "id": 44,
+      "act": "ACT_6",
+      "start": 340.87,
+      "end": 349.43,
+      "duration": 8.56,
+      "pause_after": 0.35,
+      "text": "In 2016, neuroscientists Tali Sharot and Neil Garrett studied what happens in the brain during repeated small dishonesty.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_44.wav"
+    },
+    {
+      "id": 45,
+      "act": "ACT_6",
+      "start": 349.78,
+      "end": 359.18,
+      "duration": 9.4,
+      "pause_after": 0.42,
+      "text": "Using fMRI scans, they focused on the amygdala, a region closely tied to the emotional tension or guilt people feel when doing something uncomfortable.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_45.wav"
+    },
+    {
+      "id": 46,
+      "act": "ACT_6",
+      "start": 359.6,
+      "end": 368.08,
+      "duration": 8.48,
+      "pause_after": 0.38,
+      "text": "What they found was interesting. As people repeatedly benefited from dishonesty, their emotional response to it gradually weakened.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_46.wav"
+    },
+    {
+      "id": 47,
+      "act": "ACT_6",
+      "start": 368.46,
+      "end": 374.14,
+      "duration": 5.68,
+      "pause_after": 0.5,
+      "text": "In other words, something that felt uncomfortable at first could become easier to do over time.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_47.wav"
+    },
+    {
+      "id": 48,
+      "act": "ACT_6",
+      "start": 374.64,
+      "end": 382.52,
+      "duration": 7.88,
+      "pause_after": 0.38,
+      "text": "There's also a simpler, everyday cost that deception researcher Aldert Vrij has studied for years: mental fatigue.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_48.wav"
+    },
+    {
+      "id": 49,
+      "act": "ACT_6",
+      "start": 382.9,
+      "end": 390.7,
+      "duration": 7.8,
+      "pause_after": 0.4,
+      "text": "Holding back what you actually think, or keeping track of two versions of the same small story, takes real attention.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_49.wav"
+    },
+    {
+      "id": 50,
+      "act": "ACT_6",
+      "start": 391.1,
+      "end": 401.34,
+      "duration": 10.24,
+      "pause_after": 0.65,
+      "text": "If you've ever walked away from a long social gathering feeling strangely drained even though nothing went wrong, part of that exhaustion comes from quietly editing yourself all evening.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_50.wav"
+    },
+    {
+      "id": 51,
+      "act": "ACT_7",
+      "start": 401.99,
+      "end": 410.95,
+      "duration": 8.96,
+      "pause_after": 0.45,
+      "text": "Stopping every white lie isn't realistic, and being bluntly honest at all times would probably just make life harder for the people around you.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_51.wav"
+    },
+    {
+      "id": 52,
+      "act": "ACT_7",
+      "start": 411.4,
+      "end": 419.36,
+      "duration": 7.96,
+      "pause_after": 0.38,
+      "text": "Most pointless lies happen in the first split second after someone asks a casual question, before you've decided what you actually want to say.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_52.wav"
+    },
+    {
+      "id": 53,
+      "act": "ACT_7",
+      "start": 419.74,
+      "end": 427.82,
+      "duration": 8.08,
+      "pause_after": 0.48,
+      "text": "Simply taking a half-second pause before replying, Hmm, honestly, breaks the automatic response just enough to give you a choice.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_53.wav"
+    },
+    {
+      "id": 54,
+      "act": "ACT_7",
+      "start": 428.3,
+      "end": 433.1,
+      "duration": 4.8,
+      "pause_after": 0.38,
+      "text": "When a question doesn't really carry high stakes, it helps to be a little more ordinary.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_54.wav"
+    },
+    {
+      "id": 55,
+      "act": "ACT_7",
+      "start": 433.48,
+      "end": 441.76,
+      "duration": 8.28,
+      "pause_after": 0.4,
+      "text": "The next time someone asks what you did over the weekend, saying, Honestly, I didn't do much at all, and I needed it, almost never lands poorly.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_55.wav"
+    },
+    {
+      "id": 56,
+      "act": "ACT_7",
+      "start": 442.16,
+      "end": 448.28,
+      "duration": 6.12,
+      "pause_after": 0.55,
+      "text": "More often than not, the other person looks noticeably relieved and says, Yeah, me too.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_56.wav"
+    },
+    {
+      "id": 57,
+      "act": "ACT_7",
+      "start": 448.83,
+      "end": 456.19,
+      "duration": 7.36,
+      "pause_after": 0.38,
+      "text": "We tell small, pointless lies because we're trying to look a little busier, a little more interesting, or easier to talk to.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_57.wav"
+    },
+    {
+      "id": 58,
+      "act": "ACT_7",
+      "start": 456.57,
+      "end": 461.37,
+      "duration": 4.8,
+      "pause_after": 0.45,
+      "text": "Everyone ends up protecting an image nobody was judging that closely anyway.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_58.wav"
+    },
+    {
+      "id": 59,
+      "act": "ACT_7",
+      "start": 461.82,
+      "end": 467.86,
+      "duration": 6.04,
+      "pause_after": 0.38,
+      "text": "Usually, real connection doesn't start when two people trade impressive weekend stories.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_59.wav"
+    },
+    {
+      "id": 60,
+      "act": "ACT_7",
+      "start": 468.24,
+      "end": 476.0,
+      "duration": 7.76,
+      "pause_after": 0.8,
+      "text": "It starts the moment someone admits they stayed home and did nothing, and makes it safe for the other person to tell the truth, too.",
+      "wav": "/Applications/code/science-knowledge/ytb-tools/episodes/ep-02-pointless-lies/audio/full_chunks/seg_60.wav"
+    }
+  ]
+}

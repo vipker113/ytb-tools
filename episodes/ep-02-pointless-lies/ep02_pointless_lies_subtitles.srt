@@ -1,0 +1,659 @@
+1
+00:00:00,000 --> 00:00:00,980
+Why do we lie,
+
+2
+00:00:00,980 --> 00:00:02,560
+even when telling the truth
+
+3
+00:00:02,560 --> 00:00:05,430
+wouldn't cost us anything?
+
+4
+00:00:05,430 --> 00:00:07,800
+Think about a normal Monday morning.
+
+5
+00:00:07,800 --> 00:00:09,540
+You're standing by the coffee machine,
+
+6
+00:00:09,540 --> 00:00:11,040
+still half asleep,
+
+7
+00:00:11,040 --> 00:00:13,300
+and a coworker looks over and asks,
+
+8
+00:00:13,300 --> 00:00:15,560
+"Hey, how was your weekend?"
+
+9
+00:00:15,560 --> 00:00:18,940
+Now, if you actually answered honestly,
+
+10
+00:00:18,940 --> 00:00:20,630
+what would you say?
+
+11
+00:00:20,630 --> 00:00:24,220
+Maybe the real truth is that you barely left your apartment.
+
+12
+00:00:24,220 --> 00:00:26,220
+You spent most of Saturday on your phone,
+
+13
+00:00:26,220 --> 00:00:28,720
+ate dinner straight out of a takeout container
+
+14
+00:00:28,720 --> 00:00:30,380
+at four in the afternoon,
+
+15
+00:00:30,380 --> 00:00:32,480
+and went to bed early.
+
+16
+00:00:32,480 --> 00:00:34,860
+What would happen if you said that out loud?
+
+17
+00:00:34,860 --> 00:00:36,500
+Nobody's going to fire you.
+
+18
+00:00:36,500 --> 00:00:39,870
+Nobody's going to judge you for resting on a Saturday.
+
+19
+00:00:39,870 --> 00:00:42,280
+Most likely, your coworker would just say,
+
+20
+00:00:42,280 --> 00:00:46,800
+"Honestly, that sounds great," and go back to making their coffee.
+
+21
+00:00:46,800 --> 00:00:49,320
+Nothing bad happens if you tell the truth here.
+
+22
+00:00:49,320 --> 00:00:51,340
+And yet, before you even think about it,
+
+23
+00:00:51,340 --> 00:00:53,620
+you hear yourself say, "Oh, it was nice!"
+
+24
+00:00:53,620 --> 00:00:55,520
+Got a few things done, caught up on some reading,
+
+25
+00:00:55,520 --> 00:00:57,810
+went for a walk in the park.
+
+26
+00:00:57,810 --> 00:00:59,160
+Then you walk back to your desk
+
+27
+00:00:59,160 --> 00:01:01,844
+and realize you haven't set foot
+
+28
+00:01:01,844 --> 00:01:03,940
+in a park in three weeks.
+
+29
+00:01:03,940 --> 00:01:06,260
+Most of us have done some version of this.
+
+30
+00:01:06,260 --> 00:01:08,297
+Saying "I'm on my way!" when
+
+31
+00:01:08,297 --> 00:01:10,770
+you haven't put your shoes on yet.
+
+32
+00:01:10,770 --> 00:01:13,380
+Smiling and pretending you've heard of a band
+
+33
+00:01:13,380 --> 00:01:16,610
+just so you don't have to stop the conversation.
+
+34
+00:01:16,610 --> 00:01:19,100
+It doesn't mean you're manipulative.
+
+35
+00:01:19,100 --> 00:01:21,540
+It's a habit almost everyone shares,
+
+36
+00:01:21,540 --> 00:01:25,550
+and psychologists have actually measured how often it happens.
+
+37
+00:01:25,550 --> 00:01:30,994
+Back in 1996, psychologist Bella DePaulo at the University of Virginia
+
+38
+00:01:30,994 --> 00:01:35,700
+asked 147 ordinary people, college students and working adults,
+
+39
+00:01:35,700 --> 00:01:38,540
+to keep a small diary for a week.
+
+40
+00:01:38,540 --> 00:01:43,110
+Every time they misled someone, even slightly, they wrote it down.
+
+41
+00:01:43,110 --> 00:01:46,720
+On average, people told one or two lies a day,
+
+42
+00:01:46,720 --> 00:01:51,110
+coming up in roughly a quarter of their daily social interactions.
+
+43
+00:01:51,110 --> 00:01:53,215
+More than seventy percent of those
+
+44
+00:01:53,215 --> 00:01:55,940
+lies weren't about hiding something serious,
+
+45
+00:01:55,940 --> 00:01:58,650
+getting money, or staying out of trouble.
+
+46
+00:01:58,650 --> 00:02:01,640
+People lied about liking a sandwich that was dry,
+
+47
+00:02:01,640 --> 00:02:04,060
+about why they were five minutes late,
+
+48
+00:02:04,060 --> 00:02:07,650
+or about having seen a movie someone brought up at lunch.
+
+49
+00:02:07,650 --> 00:02:10,476
+When DePaulo asked them afterward if anything bad
+
+50
+00:02:10,476 --> 00:02:13,360
+would have happened if they'd just told the truth,
+
+51
+00:02:13,360 --> 00:02:16,900
+most of them said no. Not really.
+
+52
+00:02:16,900 --> 00:02:20,780
+Sometimes, telling the truth is just more trouble than it's worth.
+
+53
+00:02:20,780 --> 00:02:22,660
+Not because you're afraid of getting caught.
+
+54
+00:02:22,660 --> 00:02:25,680
+You just don't feel like explaining yourself.
+
+55
+00:02:25,680 --> 00:02:28,192
+We're used to thinking that honesty
+
+56
+00:02:28,192 --> 00:02:30,560
+is simple and lying takes effort.
+
+57
+00:02:30,560 --> 00:02:31,555
+For a big lie,
+
+58
+00:02:31,555 --> 00:02:36,030
+making up a whole story under pressure, that's definitely true.
+
+59
+00:02:36,030 --> 00:02:40,370
+In casual conversation, though, it often works the other way around.
+
+60
+00:02:40,370 --> 00:02:42,597
+Say a friend texts on Friday evening
+
+61
+00:02:42,597 --> 00:02:44,700
+asking if you want to grab drinks.
+
+62
+00:02:44,700 --> 00:02:46,926
+The honest reason you don't want to
+
+63
+00:02:46,926 --> 00:02:49,280
+go isn't that you're upset with them.
+
+64
+00:02:49,280 --> 00:02:51,543
+You're just tired, your week was long,
+
+65
+00:02:51,543 --> 00:02:55,770
+and you've been looking forward to staying home in comfortable clothes.
+
+66
+00:02:55,770 --> 00:02:58,068
+If you give that unfiltered answer,
+
+67
+00:02:58,068 --> 00:03:00,760
+you often end up managing their reaction.
+
+68
+00:03:00,760 --> 00:03:03,070
+They might wonder if you're mad at them,
+
+69
+00:03:03,070 --> 00:03:04,630
+or try to talk you into it.
+
+70
+00:03:04,630 --> 00:03:05,909
+"Come on, just for one drink,
+
+71
+00:03:05,909 --> 00:03:07,320
+it'll get you out of the house."
+
+72
+00:03:07,320 --> 00:03:09,551
+Now a simple reply turns into a
+
+73
+00:03:09,551 --> 00:03:12,790
+back-and-forth you don't really want to have.
+
+74
+00:03:12,790 --> 00:03:15,068
+Compare that to: "I'd love to,
+
+75
+00:03:15,068 --> 00:03:17,650
+I just have a headache coming on."
+
+76
+00:03:17,650 --> 00:03:20,840
+Nobody feels rejected, nobody argues with a headache,
+
+77
+00:03:20,840 --> 00:03:23,810
+and the conversation wraps up in five seconds.
+
+78
+00:03:23,810 --> 00:03:27,380
+Calling in an easy excuse isn't really about deception.
+
+79
+00:03:27,380 --> 00:03:31,060
+It's just a way to avoid unnecessary friction.
+
+80
+00:03:31,060 --> 00:03:33,180
+Avoiding plans makes sense.
+
+81
+00:03:33,180 --> 00:03:35,505
+What's stranger are the lies that slip
+
+82
+00:03:35,505 --> 00:03:37,830
+out when we're just making small talk.
+
+83
+00:03:37,830 --> 00:03:42,340
+Someone mentions a neighborhood restaurant, or a book everybody's talking about,
+
+84
+00:03:42,340 --> 00:03:44,030
+and you hear yourself say, "Oh yeah,
+
+85
+00:03:44,030 --> 00:03:45,720
+I've been meaning to go back there,"
+
+86
+00:03:45,720 --> 00:03:48,390
+even though you've never walked through the door.
+
+87
+00:03:48,390 --> 00:03:50,680
+You're not even trying to impress them.
+
+88
+00:03:50,680 --> 00:03:53,890
+You just didn't want the conversation to hit a wall.
+
+89
+00:03:53,890 --> 00:03:57,393
+Psychologist Robert Feldman at the University of
+
+90
+00:03:57,393 --> 00:04:01,480
+Massachusetts tested how naturally this happens in 2002.
+
+91
+00:04:01,480 --> 00:04:03,659
+He paired up strangers, asked them to chat for
+
+92
+00:04:03,659 --> 00:04:05,980
+ten minutes so they could get to know each other,
+
+93
+00:04:05,980 --> 00:04:08,150
+and recorded the conversation.
+
+94
+00:04:08,150 --> 00:04:11,140
+Afterward, he had each person watch the video back
+
+95
+00:04:11,140 --> 00:04:15,200
+and point out every statement that wasn't completely accurate.
+
+96
+00:04:15,200 --> 00:04:19,980
+Before watching the tape, almost everyone assumed they'd been totally honest.
+
+97
+00:04:19,980 --> 00:04:23,436
+Once they saw the footage, around sixty percent realized
+
+98
+00:04:23,436 --> 00:04:26,460
+they'd told at least one lie in just ten minutes,
+
+99
+00:04:26,460 --> 00:04:30,360
+averaging nearly three small inaccuracies per conversation.
+
+100
+00:04:30,360 --> 00:04:32,880
+People exaggerated how much they liked something,
+
+101
+00:04:32,880 --> 00:04:36,131
+claimed familiarity with things they barely knew,
+
+102
+00:04:36,131 --> 00:04:39,980
+and nodded along with opinions they didn't actually share.
+
+103
+00:04:39,980 --> 00:04:43,275
+Most of it happened automatically because nobody wants to
+
+104
+00:04:43,275 --> 00:04:45,760
+look odd or kill the flow of a normal chat.
+
+105
+00:04:45,760 --> 00:04:48,628
+If the blunt truth creates an awkward pause,
+
+106
+00:04:48,628 --> 00:04:50,910
+we smooth it over without noticing.
+
+107
+00:04:50,910 --> 00:04:54,009
+Once one of those small lies leaves your mouth,
+
+108
+00:04:54,009 --> 00:04:55,460
+a funny thing happens:
+
+109
+00:04:55,460 --> 00:04:58,400
+it's almost impossible to walk it back.
+
+110
+00:04:58,400 --> 00:05:00,940
+Imagine telling a coworker you went hiking over the weekend,
+
+111
+00:05:00,940 --> 00:05:03,816
+and then two seconds later stopping and saying,
+
+112
+00:05:03,816 --> 00:05:06,080
+"Wait, I don't know why I said that."
+
+113
+00:05:06,080 --> 00:05:09,200
+"I didn't go hiking. I stayed home all weekend."
+
+114
+00:05:09,200 --> 00:05:12,620
+Confessing to a major secret makes sense to people.
+
+115
+00:05:12,620 --> 00:05:15,612
+Confessing to a meaningless lie about a weekend
+
+116
+00:05:15,612 --> 00:05:19,050
+walk just makes the whole moment deeply uncomfortable.
+
+117
+00:05:19,050 --> 00:05:21,828
+So you don't correct it. When they follow up with,
+
+118
+00:05:21,828 --> 00:05:23,440
+"Oh nice, where did you go?",
+
+119
+00:05:23,440 --> 00:05:25,900
+you name a trail you drove past last summer,
+
+120
+00:05:25,900 --> 00:05:28,014
+just to close out a conversation neither
+
+121
+00:05:28,014 --> 00:05:29,970
+of you even cared about a minute ago.
+
+122
+00:05:29,970 --> 00:05:33,740
+One casual phrase pulls a second one behind it.
+
+123
+00:05:33,740 --> 00:05:37,420
+When a white lie is isolated, it seems harmless.
+
+124
+00:05:37,420 --> 00:05:40,870
+Polite untruths help daily life run smoothly.
+
+125
+00:05:40,870 --> 00:05:45,399
+In 2016, neuroscientists Tali Sharot and Neil Garrett studied
+
+126
+00:05:45,399 --> 00:05:49,780
+what happens in the brain during repeated small dishonesty.
+
+127
+00:05:49,780 --> 00:05:53,420
+Using fMRI scans, they focused on the amygdala,
+
+128
+00:05:53,420 --> 00:05:56,207
+a region closely tied to the emotional tension
+
+129
+00:05:56,207 --> 00:05:59,600
+or guilt people feel when doing something uncomfortable.
+
+130
+00:05:59,600 --> 00:06:05,160
+What they found was interesting. As people repeatedly benefited from dishonesty,
+
+131
+00:06:05,160 --> 00:06:08,460
+their emotional response to it gradually weakened.
+
+132
+00:06:08,460 --> 00:06:11,300
+In other words, something that felt uncomfortable at first
+
+133
+00:06:11,300 --> 00:06:14,640
+could become easier to do over time.
+
+134
+00:06:14,640 --> 00:06:18,441
+There's also a simpler, everyday cost that deception
+
+135
+00:06:18,441 --> 00:06:22,900
+researcher Aldert Vrij has studied for years: mental fatigue.
+
+136
+00:06:22,900 --> 00:06:25,159
+Holding back what you actually think,
+
+137
+00:06:25,159 --> 00:06:28,640
+or keeping track of two versions of the same small story,
+
+138
+00:06:28,640 --> 00:06:31,100
+takes real attention.
+
+139
+00:06:31,100 --> 00:06:33,511
+If you've ever walked away from a long social
+
+140
+00:06:33,511 --> 00:06:37,100
+gathering feeling strangely drained even though nothing went wrong,
+
+141
+00:06:37,100 --> 00:06:41,990
+part of that exhaustion comes from quietly editing yourself all evening.
+
+142
+00:06:41,990 --> 00:06:45,340
+Stopping every white lie isn't realistic,
+
+143
+00:06:45,340 --> 00:06:48,491
+and being bluntly honest at all times would probably
+
+144
+00:06:48,491 --> 00:06:51,400
+just make life harder for the people around you.
+
+145
+00:06:51,400 --> 00:06:56,686
+Most pointless lies happen in the first split second after someone asks a casual question,
+
+146
+00:06:56,686 --> 00:06:59,740
+before you've decided what you actually want to say.
+
+147
+00:06:59,740 --> 00:07:03,500
+Simply taking a half-second pause before replying, "Hmm, honestly..."
+
+148
+00:07:03,500 --> 00:07:08,300
+breaks the automatic response just enough to give you a choice.
+
+149
+00:07:08,300 --> 00:07:11,217
+When a question doesn't really carry high stakes,
+
+150
+00:07:11,217 --> 00:07:13,480
+it helps to be a little more ordinary.
+
+151
+00:07:13,480 --> 00:07:16,220
+The next time someone asks what you did over the weekend,
+
+152
+00:07:16,220 --> 00:07:19,156
+saying, "Honestly, I didn't do much at all,
+
+153
+00:07:19,156 --> 00:07:22,160
+and I needed it," almost never lands poorly.
+
+154
+00:07:22,160 --> 00:07:25,520
+More often than not, the other person looks noticeably relieved
+
+155
+00:07:25,520 --> 00:07:28,830
+and says, "Yeah, me too."
+
+156
+00:07:28,830 --> 00:07:33,550
+We tell small, pointless lies because we're trying to look a little busier,
+
+157
+00:07:33,550 --> 00:07:36,570
+a little more interesting, or easier to talk to.
+
+158
+00:07:36,570 --> 00:07:39,090
+Everyone ends up protecting an image
+
+159
+00:07:39,090 --> 00:07:41,820
+nobody was judging that closely anyway.
+
+160
+00:07:41,820 --> 00:07:44,993
+Usually, real connection doesn't start when
+
+161
+00:07:44,993 --> 00:07:48,240
+two people trade impressive weekend stories.
+
+162
+00:07:48,240 --> 00:07:50,144
+It starts the moment someone admits
+
+163
+00:07:50,144 --> 00:07:51,940
+they stayed home and did nothing,
+
+164
+00:07:51,940 --> 00:07:53,932
+and makes it safe for the
+
+165
+00:07:53,932 --> 00:07:56,800
+other person to tell the truth, too.
