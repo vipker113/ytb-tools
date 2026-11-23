@@ -20,7 +20,9 @@
 
 ## 2. Cấu trúc Repository & 2 File Luật Vĩnh Viễn (BẮT BUỘC ĐỌC TRƯỚC KHI LÀM TẬP MỚI)
 
-Dự án gồm repo cha `science-knowledge` (`git@github.com:vipker113/science-knowledge.git`) chứa submodule `ytb-tools` (`git@github.com:vipker113/ytb-tools.git`):
+Dự án được lưu trên GitHub repo `git@github.com:vipker113/ytb-tools.git` với 2 nhánh:
+- Nhánh **`science-knowledge`**: Repo cha `science-knowledge` (chứa `.agents/rules/`, font phụ đề, và submodule `ytb-tools`).
+- Nhánh **`main`**: Submodule `ytb-tools` (chứa toàn bộ pipeline, sprites, SFX, Real-ESRGAN weights, voice mẫu & episodes).
 
 ```text
 science-knowledge/
@@ -102,12 +104,12 @@ science-knowledge/
 ## 5. Hướng Dẫn Cài Đặt Nhanh Trên Máy Mới (macOS Apple Silicon / Linux)
 
 ```bash
-# 1. Clone repo kèm submodule ytb-tools
-git clone --recurse-submodules git@github.com:vipker113/science-knowledge.git
+# 1. Clone repo cha (nhánh science-knowledge) kèm submodule ytb-tools (nhánh main)
+git clone -b science-knowledge --recurse-submodules git@github.com:vipker113/ytb-tools.git science-knowledge
 cd science-knowledge
 
 # Nếu đã clone rồi thì cập nhật cả repo cha + submodule:
-git pull origin main && git submodule update --init --recursive
+git pull github-ytb science-knowledge && git submodule update --init --recursive
 
 # 2. Cài FFmpeg (macOS)
 brew install ffmpeg
